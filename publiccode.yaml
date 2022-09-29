@@ -1,0 +1,47 @@
+publiccodeYmlVersion: "0.2"
+
+name: ndc-feed
+url: "https://github.com/bruno-marino/ndc-feed.git"
+softwareVersion: "dev"    # Optional
+releaseDate: "2022-09-01"
+platforms:
+  - web
+
+categories:
+  - data-analytics
+
+developmentStatus: development
+
+softwareType: "configurationFiles"
+
+description:
+  en:
+    localisedName: ndc-feed   # Optional
+    genericName: Repository INAIL per NDC
+    shortDescription: >
+          Repository INAIL per l'alimentazione
+          del National Data Catalog
+
+    longDescription: >
+          Very long description of this software, also split
+          on multiple rows. You should note what the software
+          is and why one should need it. We can potentially
+          have many pages of text here.
+
+    features:
+       - Just one feature
+
+legal:
+  license: CC BY 4.0
+maintenance:
+  contacts:
+    email: info@almawave.it
+    name: Almawave SPA
+it:
+  riuso:
+    codiceIPA: inail
+
+localisation:
+  localisationReady: yes
+  availableLanguages:
+    - it
