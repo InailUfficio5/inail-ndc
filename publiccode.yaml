@@ -1,9 +1,9 @@
 publiccodeYmlVersion: "0.2"
 
-name: ndc-feed
-url: "https://github.com/bruno-marino/ndc-feed.git"
-softwareVersion: "dev"    # Optional
-releaseDate: "2022-09-01"
+name: inail-ndc
+url: "https://github.com/InailUfficio5/inail-ndc"
+softwareVersion: "1.0"    # Optional
+releaseDate: "2022-11-01"
 platforms:
   - web
 
@@ -15,7 +15,7 @@ developmentStatus: development
 softwareType: "configurationFiles"
 
 description:
-  en:
+  it:
     localisedName: ndc-feed   # Optional
     genericName: Repository INAIL per NDC
     shortDescription: >
@@ -23,13 +23,16 @@ description:
           del National Data Catalog
 
     longDescription: >
-          Very long description of this software, also split
-          on multiple rows. You should note what the software
-          is and why one should need it. We can potentially
-          have many pages of text here.
+          Repository INAIL per l'alimentazione
+          del National Data Catalog contenente ontologie,
+          vocabolari controllati e schemi.
 
     features:
-       - Just one feature
+       - Interoperabilità semantica
+       - Interoperabilità tecnica
+       - API semantiche
+       - Modellazione dati
+       - Tassonomie
 
 legal:
   license: CC BY 4.0
