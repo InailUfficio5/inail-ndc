@@ -1,0 +1,839 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix cov: <https://w3id.org/italia/onto/COV> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Annotations
+
+<http://dati.inail.it/data/Organization/inail> a cov:Organization ;
+    rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
+    cov:IPAcode "inail" ;
+    cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
+    cov:orgAcronym "inail" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento> a adms:Asset,
+        dcatapit:Dataset,
+        skos:ConceptScheme ;
+    rdfs:label "This is the controlled vocabulary on typology of the places of occurrence"@en,
+        "Vocabolario Controllato sulla tipologia dei luoghi di accadimento"@it ;
+    skos:prefLabel "Vocabolario Controllato sulla tipologia dei luoghi di accadimento"@it ;
+    rdfs:comment "Classification of places where the harmful event happened "@en,
+        "Classificazione dei luoghi in cui è avvenuto l'evento lesivo"@it ;
+    owl:versionInfo "0.1" ;
+    rdfs:isDefinedBy <http://dati.inail.it/opendata/vocabolari/luogo_accadimento> ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:distribution <https://w3id.org/italia/data/distribution/PS-RDF-Turtle> ;
+    dcat:keyword "inail"@it,
+        "infortunio"@it,
+        "injury"@en,
+        "luogo di lavoro"@it,
+        "workplace"@en ;
+    dcat:theme <http://eurovoc.europa.eu/825>,
+        <http://eurovoc.europa.eu/1653>,
+        <http://eurovoc.europa.eu/3940>,
+        <http://publications.europa.eu/resource/authority/organization-type/OFFICE> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dct:creator <http://dati.inail.it/data/Organization/inail> ;
+    dct:description "Classification of places where the harmful event happened "@en,
+        "Classificazione dei luoghi in cui è avvenuto l'evento lesivo"@it ;
+    dct:identifier <http://dati.inail.it/opendata/vocabolari/luogo_accadimento> ;
+    dct:issued "2022-09-06"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/IT> ;
+    dct:modified "2022-09-28"^^xsd:date ;
+    dct:publisher <http://dati.inail.it/data/Organization/inail> ;
+    dct:rightsHolder <http://dati.inail.it/data/Organization/inail> ;
+    dct:title "Classification of places of occurrence adopted by INAIL Controlled Vocabulary"@en,
+        "Vocabolario Controllato sulla tipologia dei luoghi di accadimento"@it ;
+    dct:type <http://purl.org/adms/assettype/Taxonomy> ;
+    ndc:keyConcept "Luogo Accadimento" ;
+    xkos:numberOfLevels "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/010> a skos:Concept ;
+    skos:prefLabel "sito industriale - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "010" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/01> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "sito industriale - non precisato"@it ;
+    skos:notation "010" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/011> a skos:Concept ;
+    skos:prefLabel "luogo di produzione, officina, laboratorio"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "011" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/01> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "luogo di produzione, officina, laboratorio"@it ;
+    skos:notation "011" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/012> a skos:Concept ;
+    skos:prefLabel "area destinata ad operazioni di manutenzione o riparazione"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "012" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/01> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "area destinata ad operazioni di manutenzione o riparazione"@it ;
+    skos:notation "012" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/013> a skos:Concept ;
+    skos:prefLabel "luogo dedicato principalmente al magazzinaggio, al carico, allo scarico"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "013" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/01> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "luogo dedicato principalmente al magazzinaggio, al carico, allo scarico"@it ;
+    skos:notation "013" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/019> a skos:Concept ;
+    skos:prefLabel "altro tipo di luogo conosciuto del gruppo 010 non indicato qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "019" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/01> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "altro tipo di luogo conosciuto del gruppo 010 non indicato qui sopra"@it ;
+    skos:notation "019" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/020> a skos:Concept ;
+    skos:prefLabel "cantiere di costruzione, cava, miniera a cielo aperto - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "020" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/02> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "cantiere di costruzione, cava, miniera a cielo aperto - non precisato"@it ;
+    skos:notation "020" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/021> a skos:Concept ;
+    skos:prefLabel "cantiere, fabbricato in costruzione"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "021" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/02> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "cantiere, fabbricato in costruzione"@it ;
+    skos:notation "021" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/022> a skos:Concept ;
+    skos:prefLabel "cantiere, fabbricato in demolizione, restauro, manutenzione"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "022" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/02> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "cantiere, fabbricato in demolizione, restauro, manutenzione"@it ;
+    skos:notation "022" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/023> a skos:Concept ;
+    skos:prefLabel "cava, miniera a cielo aperto, scavo, trincea (comprese le miniere a cielo aperto e le cave in sfruttamento)"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "023" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/02> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "cava, miniera a cielo aperto, scavo, trincea (comprese le miniere a cielo aperto e le cave in sfruttamento)"@it ;
+    skos:notation "023" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/024> a skos:Concept ;
+    skos:prefLabel "cantiere sotterraneo"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "024" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/02> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "cantiere sotterraneo"@it ;
+    skos:notation "024" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/025> a skos:Concept ;
+    skos:prefLabel "cantiere sull'acqua"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "025" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/02> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "cantiere sull'acqua"@it ;
+    skos:notation "025" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/026> a skos:Concept ;
+    skos:prefLabel "cantiere in ambiente iperbarico"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "026" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/02> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "cantiere in ambiente iperbarico"@it ;
+    skos:notation "026" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/029> a skos:Concept ;
+    skos:prefLabel "altro tipo di luogo conosciuto del gruppo 020 non indicato qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "029" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/02> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "altro tipo di luogo conosciuto del gruppo 020 non indicato qui sopra"@it ;
+    skos:notation "029" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/030> a skos:Concept ;
+    skos:prefLabel "luogo per l'agricoltura, l'allevamento, forestale, ittico ?non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "030" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/03> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "luogo per l'agricoltura, l'allevamento, forestale, ittico ?non precisato"@it ;
+    skos:notation "030" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/031> a skos:Concept ;
+    skos:prefLabel "luogo di allevamento"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "031" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/03> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "luogo di allevamento"@it ;
+    skos:notation "031" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/032> a skos:Concept ;
+    skos:prefLabel "luogo agricolo - coltura del suolo"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "032" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/03> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "luogo agricolo - coltura del suolo"@it ;
+    skos:notation "032" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/033> a skos:Concept ;
+    skos:prefLabel "luogo agricolo - coltura su albero, arbusto"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "033" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/03> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "luogo agricolo - coltura su albero, arbusto"@it ;
+    skos:notation "033" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/034> a skos:Concept ;
+    skos:prefLabel "zona di attività forestale"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "034" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/03> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "zona di attività forestale"@it ;
+    skos:notation "034" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/035> a skos:Concept ;
+    skos:prefLabel "zona di attività ittica, pesca, acquacultura (non a bordo di un'imbarcazione)"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "035" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/03> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "zona di attività ittica, pesca, acquacultura (non a bordo di un'imbarcazione)"@it ;
+    skos:notation "035" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/036> a skos:Concept ;
+    skos:prefLabel "giardino, parco, giardino botanico, parco zoologico"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "036" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/03> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "giardino, parco, giardino botanico, parco zoologico"@it ;
+    skos:notation "036" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/039> a skos:Concept ;
+    skos:prefLabel "altro tipo di luogo conosciuto del gruppo 030 non indicato qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "039" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/03> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "altro tipo di luogo conosciuto del gruppo 030 non indicato qui sopra"@it ;
+    skos:notation "039" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/040> a skos:Concept ;
+    skos:prefLabel "luogo di attività terziaria, ufficio, luogo di svago, varie - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "040" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/04> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "luogo di attività terziaria, ufficio, luogo di svago, varie - non precisato"@it ;
+    skos:notation "040" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/041> a skos:Concept ;
+    skos:prefLabel "ufficio, sala di riunione, biblioteca, ecc."@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "041" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/04> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "ufficio, sala di riunione, biblioteca, ecc."@it ;
+    skos:notation "041" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/042> a skos:Concept ;
+    skos:prefLabel "istituto di insegnamento, scuola d'ogni ordine e grado"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "042" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/04> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "istituto di insegnamento, scuola d'ogni ordine e grado"@it ;
+    skos:notation "042" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/043> a skos:Concept ;
+    skos:prefLabel "luogo di vendita, piccolo o grande (compresa la vendita ambulante)"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "043" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/04> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "luogo di vendita, piccolo o grande (compresa la vendita ambulante)"@it ;
+    skos:notation "043" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/044> a skos:Concept ;
+    skos:prefLabel "ristorante, albergo, pensione, luogo di svago (compresi musei, luoghi di spettacolo, fiere, ecc.)"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "044" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/04> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "ristorante, albergo, pensione, luogo di svago (compresi musei, luoghi di spettacolo, fiere, ecc.)"@it ;
+    skos:notation "044" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/049> a skos:Concept ;
+    skos:prefLabel "altro tipo di luogo conosciuto del gruppo 040 non indicato qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "049" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/04> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "altro tipo di luogo conosciuto del gruppo 040 non indicato qui sopra"@it ;
+    skos:notation "049" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/050> a skos:Concept ;
+    skos:prefLabel "luogo di cura - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "050" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/05> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "luogo di cura - non precisato"@it ;
+    skos:notation "050" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/051> a skos:Concept ;
+    skos:prefLabel "luogo di cura, clinica, ospedale, nurseries"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "051" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/05> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "luogo di cura, clinica, ospedale, nurseries"@it ;
+    skos:notation "051" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/059> a skos:Concept ;
+    skos:prefLabel "altro tipo di luogo conosciuto del gruppo 050 non indicato qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "059" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/05> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "altro tipo di luogo conosciuto del gruppo 050 non indicato qui sopra"@it ;
+    skos:notation "059" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/060> a skos:Concept ;
+    skos:prefLabel "luogo pubblico - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "060" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/06> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "luogo pubblico - non precisato"@it ;
+    skos:notation "060" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/061> a skos:Concept ;
+    skos:prefLabel "luogo aperto in permanenza al transito del pubblico (via d'accesso, di circolazione, zona di stazionamento, sala d¿attesa in stazione/aerostazione, ecc.)"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "061" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/06> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "luogo aperto in permanenza al transito del pubblico (via d'accesso, di circolazione, zona di stazionamento, sala d¿attesa in stazione/aerostazione, ecc.)"@it ;
+    skos:notation "061" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/062> a skos:Concept ;
+    skos:prefLabel "mezzo di trasporto terrestre, strada/rotaia, privato/pubblico (treno, bus, automobile, ecc.)"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "062" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/06> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "mezzo di trasporto terrestre, strada/rotaia, privato/pubblico (treno, bus, automobile, ecc.)"@it ;
+    skos:notation "062" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/063> a skos:Concept ;
+    skos:prefLabel "zona connessa ai luoghi pubblici ad accesso riservato al personale autorizzato: ferrovia, pista d'aeroporto, corsia d'emergenza d'autostrada"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "063" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/06> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "zona connessa ai luoghi pubblici ad accesso riservato al personale autorizzato: ferrovia, pista d'aeroporto, corsia d'emergenza d'autostrada"@it ;
+    skos:notation "063" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/069> a skos:Concept ;
+    skos:prefLabel "altro tipo di luogo conosciuto del gruppo 060 non indicato qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "069" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/06> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "altro tipo di luogo conosciuto del gruppo 060 non indicato qui sopra"@it ;
+    skos:notation "069" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/070> a skos:Concept ;
+    skos:prefLabel "domicilio - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "070" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/07> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "domicilio - non precisato"@it ;
+    skos:notation "070" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/071> a skos:Concept ;
+    skos:prefLabel "domicilio privato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "071" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/07> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "domicilio privato"@it ;
+    skos:notation "071" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/072> a skos:Concept ;
+    skos:prefLabel "parti comuni, locali di servizio, giardino attinente la proprietà privata"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "072" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/07> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "parti comuni, locali di servizio, giardino attinente la proprietà privata"@it ;
+    skos:notation "072" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/079> a skos:Concept ;
+    skos:prefLabel "altro tipo di luogo conosciuto del gruppo 070 non indicato qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "079" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/07> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "altro tipo di luogo conosciuto del gruppo 070 non indicato qui sopra"@it ;
+    skos:notation "079" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/080> a skos:Concept ;
+    skos:prefLabel "luogo d'attività sportiva - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "080" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/08> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "luogo d'attività sportiva - non precisato"@it ;
+    skos:notation "080" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/081> a skos:Concept ;
+    skos:prefLabel "all'interno - sala per attività sportiva, palestra, piscina coperta"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "081" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/08> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "all'interno - sala per attività sportiva, palestra, piscina coperta"@it ;
+    skos:notation "081" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/082> a skos:Concept ;
+    skos:prefLabel "all'esterno - campo sportivo, piscina, pista di sci"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "082" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/08> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "all'esterno - campo sportivo, piscina, pista di sci"@it ;
+    skos:notation "082" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/089> a skos:Concept ;
+    skos:prefLabel "altro tipo di luogo conosciuto del gruppo 080 non indicato qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "089" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/08> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "altro tipo di luogo conosciuto del gruppo 080 non indicato qui sopra"@it ;
+    skos:notation "089" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/090> a skos:Concept ;
+    skos:prefLabel "per aria, in alto (cantieri esclusi) non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "090" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/09> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "per aria, in alto (cantieri esclusi) non precisato"@it ;
+    skos:notation "090" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/091> a skos:Concept ;
+    skos:prefLabel "in alto - su un piano fisso (tetto, terrazza, ecc.)"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "091" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/09> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "in alto - su un piano fisso (tetto, terrazza, ecc.)"@it ;
+    skos:notation "091" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/092> a skos:Concept ;
+    skos:prefLabel "in alto - palo, pilone, piattaforma sospesa"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "092" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/09> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "in alto - palo, pilone, piattaforma sospesa"@it ;
+    skos:notation "092" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/093> a skos:Concept ;
+    skos:prefLabel "per aria, a bordo di un aeromobile, ecc."@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "093" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/09> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "per aria, a bordo di un aeromobile, ecc."@it ;
+    skos:notation "093" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/099> a skos:Concept ;
+    skos:prefLabel "altro tipo di luogo conosciuto del gruppo 090, cantieri esclusi, non indicato qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "099" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/09> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "altro tipo di luogo conosciuto del gruppo 090, cantieri esclusi, non indicato qui sopra"@it ;
+    skos:notation "099" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/100> a skos:Concept ;
+    skos:prefLabel "ambiente sotterraneo (cantieri esclusi) - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "100" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/10> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "ambiente sotterraneo (cantieri esclusi) - non precisato"@it ;
+    skos:notation "100" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/101> a skos:Concept ;
+    skos:prefLabel "sotterraneo, tunnel (strada, treno, metropolitana, ecc.)"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "101" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/10> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "sotterraneo, tunnel (strada, treno, metropolitana, ecc.)"@it ;
+    skos:notation "101" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/102> a skos:Concept ;
+    skos:prefLabel "sotterraneo - miniera"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "102" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/10> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "sotterraneo - miniera"@it ;
+    skos:notation "102" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/103> a skos:Concept ;
+    skos:prefLabel "sotterraneo - impianti fognari"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "103" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/10> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "sotterraneo - impianti fognari"@it ;
+    skos:notation "103" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/109> a skos:Concept ;
+    skos:prefLabel "altro tipo di luogo conosciuto del gruppo 100, cantieri esclusi, non indicato qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "109" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/10> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "altro tipo di luogo conosciuto del gruppo 100, cantieri esclusi, non indicato qui sopra"@it ;
+    skos:notation "109" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/110> a skos:Concept ;
+    skos:prefLabel "sull'acqua (cantieri esclusi) -  non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "110" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/11> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "sull'acqua (cantieri esclusi) -  non precisato"@it ;
+    skos:notation "110" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/111> a skos:Concept ;
+    skos:prefLabel "mare o oceano - a bordo di ogni tipo di imbarcazione, battello, chiatta, piattaforma"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "111" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/11> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "mare o oceano - a bordo di ogni tipo di imbarcazione, battello, chiatta, piattaforma"@it ;
+    skos:notation "111" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/112> a skos:Concept ;
+    skos:prefLabel "lago, fiume, porto - a bordo di ogni tipo di imbarcazione, battello, chiatta, piattaforma"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "112" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/11> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "lago, fiume, porto - a bordo di ogni tipo di imbarcazione, battello, chiatta, piattaforma"@it ;
+    skos:notation "112" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/119> a skos:Concept ;
+    skos:prefLabel "altro tipo di luogo conosciuto del gruppo 110, cantieri esclusi, non indicato qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "119" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/11> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "altro tipo di luogo conosciuto del gruppo 110, cantieri esclusi, non indicato qui sopra"@it ;
+    skos:notation "119" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/120> a skos:Concept ;
+    skos:prefLabel "ambiente iperbarico (cantieri esclusi) - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "120" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/12> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "ambiente iperbarico (cantieri esclusi) - non precisato"@it ;
+    skos:notation "120" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/121> a skos:Concept ;
+    skos:prefLabel "ambiente iperbarico - sott'acqua (immerso)"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "121" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/12> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "ambiente iperbarico - sott'acqua (immerso)"@it ;
+    skos:notation "121" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/122> a skos:Concept ;
+    skos:prefLabel "ambiente iperbarico - cassoni"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "122" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/12> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "ambiente iperbarico - cassoni"@it ;
+    skos:notation "122" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/129> a skos:Concept ;
+    skos:prefLabel "altro tipo di luogo conosciuto del gruppo 120, cantieri esclusi, non indicato qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "129" ;
+    skos:broader <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/12> ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "altro tipo di luogo conosciuto del gruppo 120, cantieri esclusi, non indicato qui sopra"@it ;
+    skos:notation "129" ;
+    xkos:depth "2" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/01> a skos:Concept ;
+    skos:prefLabel "sito industriale"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "01" ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "sito industriale"@it ;
+    skos:narrower <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/010>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/011>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/012>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/013>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/019> ;
+    skos:notation "01" ;
+    xkos:depth "1" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/02> a skos:Concept ;
+    skos:prefLabel "cantiere di costruzione, cava, miniera a cielo aperto"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "02" ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "cantiere di costruzione, cava, miniera a cielo aperto"@it ;
+    skos:narrower <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/020>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/021>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/022>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/023>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/024>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/025>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/026>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/029> ;
+    skos:notation "02" ;
+    xkos:depth "1" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/03> a skos:Concept ;
+    skos:prefLabel "luogo per l'agricoltura, l'allevamento, forestale, ittico"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "03" ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "luogo per l'agricoltura, l'allevamento, forestale, ittico"@it ;
+    skos:narrower <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/030>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/031>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/032>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/033>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/034>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/035>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/036>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/039> ;
+    skos:notation "03" ;
+    xkos:depth "1" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/04> a skos:Concept ;
+    skos:prefLabel "luogo di attività terziaria, ufficio, luogo di svago, varie"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "04" ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "luogo di attività terziaria, ufficio, luogo di svago, varie"@it ;
+    skos:narrower <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/040>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/041>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/042>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/043>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/044>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/049> ;
+    skos:notation "04" ;
+    xkos:depth "1" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/05> a skos:Concept ;
+    skos:prefLabel "luogo di cura"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "05" ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "luogo di cura"@it ;
+    skos:narrower <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/050>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/051>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/059> ;
+    skos:notation "05" ;
+    xkos:depth "1" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/06> a skos:Concept ;
+    skos:prefLabel "luogo pubblico"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "06" ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "luogo pubblico"@it ;
+    skos:narrower <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/060>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/061>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/062>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/063>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/069> ;
+    skos:notation "06" ;
+    xkos:depth "1" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/07> a skos:Concept ;
+    skos:prefLabel "domicilio"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "07" ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "domicilio"@it ;
+    skos:narrower <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/070>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/071>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/072>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/079> ;
+    skos:notation "07" ;
+    xkos:depth "1" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/08> a skos:Concept ;
+    skos:prefLabel "luogo d'attività sportiva"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "08" ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "luogo d'attività sportiva"@it ;
+    skos:narrower <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/080>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/081>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/082>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/089> ;
+    skos:notation "08" ;
+    xkos:depth "1" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/09> a skos:Concept ;
+    skos:prefLabel "per aria, in alto (cantieri esclusi)"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "09" ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "per aria, in alto (cantieri esclusi)"@it ;
+    skos:narrower <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/090>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/091>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/092>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/093>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/099> ;
+    skos:notation "09" ;
+    xkos:depth "1" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/10> a skos:Concept ;
+    skos:prefLabel "ambiente sotterraneo (cantieri esclusi)"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "10" ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "ambiente sotterraneo (cantieri esclusi)"@it ;
+    skos:narrower <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/100>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/101>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/102>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/103>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/109> ;
+    skos:notation "10" ;
+    xkos:depth "1" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/11> a skos:Concept ;
+    skos:prefLabel "sull'acqua (cantieri esclusi)"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "11" ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "sull'acqua (cantieri esclusi)"@it ;
+    skos:narrower <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/110>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/111>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/112>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/119> ;
+    skos:notation "11" ;
+    xkos:depth "1" .
+
+<http://dati.inail.it/opendata/vocabolari/luogo_accadimento/gruppo/12> a skos:Concept ;
+    skos:prefLabel "ambiente iperbarico (cantieri esclusi)"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "12" ;
+    skos:inScheme <http://dati.inail.it/opendata/luogo_accadimento> ;
+    skos:label "ambiente iperbarico (cantieri esclusi)"@it ;
+    skos:narrower <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/120>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/121>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/122>,
+        <http://dati.inail.it/opendata/vocabolari/luogo_accadimento/codice/129> ;
+    skos:notation "12" ;
+    xkos:depth "1" .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

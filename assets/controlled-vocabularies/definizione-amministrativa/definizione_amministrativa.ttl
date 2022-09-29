@@ -1,0 +1,94 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix cov: <https://w3id.org/italia/onto/COV> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Annotations
+
+<http://dati.inail.it/data/Organization/inail> a cov:Organization ;
+    rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
+    cov:IPAcode "inail" ;
+    cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
+    cov:orgAcronym "inail" .
+
+<http://dati.inail.it/opendata/vocabolari/definizione_amministrativa> a adms:Asset,
+        dcat:Dataset,
+        skos:ConceptScheme ;
+    rdfs:label "This is the controlled vocabulary of the administrative definition adopted by INAIL classification"@en,
+        "Vocabolario Controllato sulla classificazione della definizione amministrativa adottata dall'INAIL"@it ;
+    skos:prefLabel "Vocabolario Controllato sulla classificazione della definizione amministrativa adottata dall'INAIL"@it ;
+    rdfs:comment "Definition of Occupational Disease/Injury: Positive, Negative, Deductible, Investigation"@en,
+        "Definizione della Malattia Professionale/Infortunio: Positivo, Negativo, Franchigia, In Istruttoria"@it ;
+    owl:versionInfo "0.2" ;
+    rdfs:isDefinedBy <http://dati.inail.it/opendata/vocabolari/definizione_amministrativa> ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:distribution <https://w3id.org/italia/data/distribution/PS-RDF-Turtle> ;
+    dcat:keyword "inail"@it,
+        "infortunio"@it,
+        "injury"@en,
+        "malattia professionale"@it,
+        "occupational desease"@en ;
+    dcat:theme <http://eurovoc.europa.eu/825>,
+        <http://eurovoc.europa.eu/1761>,
+        <http://eurovoc.europa.eu/100215> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dct:creator <http://dati.inail.it/data/Organization/inail> ;
+    dct:description "Definition of Occupational Disease/Injury: Positive, Negative, Deductible, Investigation"@en,
+        "Definizione della Malattia Professionale/Infortunio: Positivo, Negativo, Franchigia, In Istruttoria"@it ;
+    dct:identifier <http://dati.inail.it/opendata/vocabolari/definizione_amministrativa> ;
+    dct:issued "2022-07-22"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/IT> ;
+    dct:modified "2022-08-29"^^xsd:date ;
+    dct:publisher <http://dati.inail.it/data/Organization/inail> ;
+    dct:rightsHolder <http://dati.inail.it/data/Organization/inail> ;
+    dct:title "Classification of the administrative definition adopted by INAIL Controlled Vocabulary"@en,
+        "Vocabolario Controllato sulla classificazione della definizione amministrativa adottata dall'INAIL"@it ;
+    dct:type <http://purl.org/adms/assettype/Taxonomy> ;
+    ndc:keyConcept "Definizione Amministrativa" ;
+    xkos:numberOfLevels "1" .
+
+<http://dati.inail.it/opendata/vocabolari/definizione_amministrativa/F> a skos:Concept ;
+    rdfs:label "Franchigia"@it ;
+    skos:prefLabel "Franchigia"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "F" ;
+    skos:inScheme <http://dati.inail.it/opendata/vocabolari/definizione_amministrativa> ;
+    skos:notation "F" ;
+    xkos:depth "1" .
+
+<http://dati.inail.it/opendata/vocabolari/definizione_amministrativa/I> a skos:Concept ;
+    rdfs:label "In istruttoria"@it ;
+    skos:prefLabel "In istruttoria"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "I" ;
+    skos:inScheme <http://dati.inail.it/opendata/vocabolari/definizione_amministrativa> ;
+    skos:notation "I" ;
+    xkos:depth "1" .
+
+<http://dati.inail.it/opendata/vocabolari/definizione_amministrativa/N> a skos:Concept ;
+    rdfs:label "Negativo"@it ;
+    skos:prefLabel "Negativo"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "N" ;
+    skos:inScheme <http://dati.inail.it/opendata/vocabolari/definizione_amministrativa> ;
+    skos:notation "N" ;
+    xkos:depth "1" .
+
+<http://dati.inail.it/opendata/vocabolari/definizione_amministrativa/P> a skos:Concept ;
+    rdfs:label "Positivo"@it ;
+    skos:prefLabel "Positivo"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "P" ;
+    skos:inScheme <http://dati.inail.it/opendata/vocabolari/definizione_amministrativa> ;
+    skos:notation "P" ;
+    xkos:depth "1" .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

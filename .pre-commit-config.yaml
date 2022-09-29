@@ -17,51 +17,51 @@ repos:
     -   id: check-added-large-files
         args:
         - "--maxkb=4000"
-- repo: https://github.com/myint/autoflake
-  rev: v1.4
-  hooks:
-    - id: autoflake
-      args:
-        - --in-place
-        - --remove-unused-variables
-        - --remove-all-unused-imports
--   repo: https://github.com/psf/black
-    rev: 22.6.0
-    hooks:
-    -   id: black
-- repo: https://github.com/pycqa/isort
-  rev: 5.10.1
-  hooks:
-    - id: isort
-      name: isort (python)
-      # Use black profile for isort to avoid conflicts
-      #   see https://github.com/PyCQA/isort/issues/1518
-      args: ["--profile", "black"]
-    - id: isort
-      name: isort (cython)
-      types: [cython]
-    - id: isort
-      name: isort (pyi)
-      types: [pyi]
-- repo: https://gitlab.com/pycqa/flake8
-  rev: 3.9.2
-  hooks:
-  - id: flake8
-- repo: https://github.com/PyCQA/bandit
-  rev: 1.7.4
-  hooks:
-    - id: bandit
-      name: bandit
-      args: ["-c", ".bandit.yaml"]
-      description: 'Bandit is a tool for finding common security issues in Python code'
-      entry: bandit
-      language: python
-      language_version: python3
-      types: [python]
-- repo: https://github.com/Lucas-C/pre-commit-hooks-safety
-  rev: v1.3.0
-  hooks:
-    - id: python-safety-dependencies-check
+# - repo: https://github.com/myint/autoflake
+#   rev: v1.4
+#   hooks:
+#     - id: autoflake
+#       args:
+#         - --in-place
+#         - --remove-unused-variables
+#         - --remove-all-unused-imports
+# -   repo: https://github.com/psf/black
+#     rev: 22.6.0
+#     hooks:
+#     -   id: black
+# - repo: https://github.com/pycqa/isort
+#   rev: 5.10.1
+#   hooks:
+#     - id: isort
+#       name: isort (python)
+#       # Use black profile for isort to avoid conflicts
+#       #   see https://github.com/PyCQA/isort/issues/1518
+#       args: ["--profile", "black"]
+#     - id: isort
+#       name: isort (cython)
+#       types: [cython]
+#     - id: isort
+#       name: isort (pyi)
+#       types: [pyi]
+# - repo: https://gitlab.com/pycqa/flake8
+#   rev: 3.9.2
+#   hooks:
+#   - id: flake8
+# - repo: https://github.com/PyCQA/bandit
+#   rev: 1.7.4
+#   hooks:
+#     - id: bandit
+#       name: bandit
+#       args: ["-c", ".bandit.yaml"]
+#       description: 'Bandit is a tool for finding common security issues in Python code'
+#       entry: bandit
+#       language: python
+#       language_version: python3
+#       types: [python]
+# - repo: https://github.com/Lucas-C/pre-commit-hooks-safety
+#   rev: v1.3.0
+#   hooks:
+#     - id: python-safety-dependencies-check
 
 #
 # Semantic checks.
@@ -71,7 +71,7 @@ repos:
   hooks:
   - id: validate-csv
     files: >-
-      ^assets\/controlled-vocabularies/.*\.csv
+      ^assets\/controlled-vocabularies\/.*\.csv
   - id: validate-oas-schema
     files: >-
       ^assets\/schemas\/.*.oas3.yaml
