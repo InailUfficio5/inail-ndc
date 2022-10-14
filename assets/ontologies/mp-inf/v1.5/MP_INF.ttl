@@ -1276,7 +1276,7 @@ inail:descrizioneFlagEventoLesivoPositivoNegativo a owl:DatatypeProperty,
 inail:descrizioneGestioneContabile a owl:DatatypeProperty ;
     rdfs:label "descrizione Gestione Contabile"@it ;
     rdfs:domain inail:GestioneContabile ;
-    rdfs:comment "Descrizione delle voci del Sistema di classificazione dell’evento lesivo ai fini della imputazione contabile ai capitoli di spesa"@it .
+    rdfs:comment "Descrizione delle voci del Sistema di classificazione dell'evento lesivo ai fini della imputazione contabile ai capitoli di spesa"@it .
 
 inail:descrizioneGestioneContabileAggregata a owl:DatatypeProperty ;
     rdfs:label "descrizione Gestione Contabile Aggregata"@it ;
@@ -1696,7 +1696,7 @@ inail:importoRivalsa a owl:DatatypeProperty ;
     rdfs:label "importo Rivalsa"@it ;
     rdfs:domain inail:PagamentoRivalsa ;
     rdfs:range xsd:double ;
-    rdfs:comment "Importo relativo azioni di rivalsa dell’Istituto (regresso o surroga), contro i responsabili in caso di infortunio o malattia professionale."@it .
+    rdfs:comment "Importo relativo azioni di rivalsa dell'Istituto (regresso o surroga), contro i responsabili in caso di infortunio o malattia professionale."@it .
 
 inail:importoSpesaRivalsa a owl:DatatypeProperty ;
     rdfs:label "importo Spesa Rivalsa"@it ;
@@ -2226,7 +2226,7 @@ inail:Azienda a owl:Class ;
 inail:Citazione a owl:Class ;
     rdfs:label "Citazione"@it ;
     owl:disjointWith inail:Opposizione ;
-    rdfs:comment "Il lavoratore che non ritiene corrette le valutazioni dell’Istituto può presentare con l’assistenza di un avvocato, ricorso giudiziale presso il Tribunale del lavoro. Il termine di prescrizione per il ricorso giudiziale è di tre anni e 150 giorni (210 per le revisioni) e decorre dal giorno dell’infortunio."@it .
+    rdfs:comment "Il lavoratore che non ritiene corrette le valutazioni dell'Istituto può presentare con l'assistenza di un avvocato, ricorso giudiziale presso il Tribunale del lavoro. Il termine di prescrizione per il ricorso giudiziale è di tre anni e 150 giorni (210 per le revisioni) e decorre dal giorno dell'infortunio."@it .
 
 inail:Cittadinanza a owl:Class ;
     owl:equivalentClass [ a owl:Restriction ;
@@ -2256,7 +2256,7 @@ inail:ClasseMenomazione a owl:Class ;
             owl:onProperty inail:valoreClasseMenomazione ;
             owl:someValuesFrom rdfs:Literal ] ;
     rdfs:label "Classe  Menomazione"@it ;
-    rdfs:comment "Classificazione del grado di menomazione rispetto agli intervalli di variabilità del grado di menomazione p.  sono state definite convenzionalmente 6 classi: 1.    menomazioni micro permanenti: p nell’intervallo [1-5%]; 2.    menomazioni di minima entità ma superiori alle micro permanenti: p nell’intervallo [6-15%]; 3.    menomazioni di entità media inferiore: p nell’intervallo [16-25%]; 4.    menomazioni di entità media superiore: p nell’intervallo [26-50%]; 5.    macro menomazioni permanenti: p nell’intervallo [51-85%]; 6.    macro menomazioni permanenti che giungono ad annullare il bene salute: p nell’intervallo [86-100%]. La partizione in classi è orlata dai casi in assenza di menomazioni e dai casi esito mortale"@it,
+    rdfs:comment "Classificazione del grado di menomazione rispetto agli intervalli di variabilità del grado di menomazione p.  sono state definite convenzionalmente 6 classi: 1.    menomazioni micro permanenti: p nell'intervallo [1-5%]; 2.    menomazioni di minima entità ma superiori alle micro permanenti: p nell'intervallo [6-15%]; 3.    menomazioni di entità media inferiore: p nell'intervallo [16-25%]; 4.    menomazioni di entità media superiore: p nell'intervallo [26-50%]; 5.    macro menomazioni permanenti: p nell'intervallo [51-85%]; 6.    macro menomazioni permanenti che giungono ad annullare il bene salute: p nell'intervallo [86-100%]. La partizione in classi è orlata dai casi in assenza di menomazioni e dai casi esito mortale"@it,
         "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2000-02-23;38~art13-com1 https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2000-02-23;38~art13-com2"^^xsd:anyURI .
 
 inail:ClassificazioneATECO a owl:Class ;
@@ -2398,7 +2398,7 @@ inail:CoefficienteDiAbbatimentoDellaRetribuzione a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty inail:contribuisceAComponentePatrimoniale ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "Coefficiente, attribuito dal medico in sede di valutazione dei postumi permanenti, da utilizzare per la determinazione della percentuale di retribuzione da prendere a base per l’indennizzo delle conseguenze della menomazione (indicato nella tabella allegata al d.m. 12 luglio 2000)."@it ;
+    rdfs:comment "Coefficiente, attribuito dal medico in sede di valutazione dei postumi permanenti, da utilizzare per la determinazione della percentuale di retribuzione da prendere a base per l'indennizzo delle conseguenze della menomazione (indicato nella tabella allegata al d.m. 12 luglio 2000)."@it ;
     owl:incompatibleWith "true" .
 
 inail:ComponenteDannoBiologico a owl:Class ;
@@ -2421,7 +2421,7 @@ inail:ComponenteDiRendita a owl:Class ;
 
 inail:ComponentePatrimoniale a owl:Class ;
     rdfs:label "Componente  Patrimoniale"@it ;
-    rdfs:comment "È una delle due parti che compongono la rendita di Danno Biologico. Viene calcolata in base alla retribuzione percepita dall’infortunato (nei dodici mesi precedenti) la data dell’evento lesivo, al grado di menomazione permanente e al coefficiente di abbattimento della retribuzione."@it ;
+    rdfs:comment "È una delle due parti che compongono la rendita di Danno Biologico. Viene calcolata in base alla retribuzione percepita dall'infortunato (nei dodici mesi precedenti) la data dell'evento lesivo, al grado di menomazione permanente e al coefficiente di abbattimento della retribuzione."@it ;
     owl:versionInfo "Componente patrimoniale/danno biologico"^^xsd:string ;
     owl:incompatibleWith "true" .
 
@@ -2653,7 +2653,7 @@ inail:EventoLesivo a owl:Class ;
             owl:onProperty [ owl:inverseOf inail:trattazioneRelativaAEvento ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Evento  Lesivo"@it ;
-    rdfs:comment "rappresentano i contenuti relativi ai casi di infortuni e malattie professionali denunciati, riconosciuti dall’Istituto, definiti positivamente, e i casi mortali denunciati, riconosciuti e respinti"@it .
+    rdfs:comment "rappresentano i contenuti relativi ai casi di infortuni e malattie professionali denunciati, riconosciuti dall'Istituto, definiti positivamente, e i casi mortali denunciati, riconosciuti e respinti"@it .
 
 inail:EventoLesivoNegativo a owl:Class ;
     rdfs:label "Evento Lesivo  Negativo"@it ;
@@ -2738,7 +2738,7 @@ inail:GestioneContabile a owl:Class ;
             owl:onProperty [ owl:inverseOf inail:haGestioneContabile ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Gestione Contabile"@it ;
-    rdfs:comment "Sistema di classificazione dell’evento lesivo ai fini della imputazione contabile ai capitoli di spesa"@it .
+    rdfs:comment "Sistema di classificazione dell'evento lesivo ai fini della imputazione contabile ai capitoli di spesa"@it .
 
 inail:GradoDiInabilita a owl:Class ;
     owl:equivalentClass [ a owl:Restriction ;
@@ -2783,7 +2783,7 @@ inail:GradoDiMenomazione a owl:Class ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Grado Di  Menomazione"@it ;
     rdfs:comment "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2000-02-23;38~art13-com1 https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2000-02-23;38~art13-com2"^^xsd:anyURI,
-        "Percentuale con cui si misura il livello di menomazione dell’integrità psicofisica complessiva in conseguenza della malattia professionale In regime di danno biologico (per casi con data di denuncia uguale o successiva al 25 luglio 2000) è la percentuale p con cui si misura il livello di menomazione dell’integrità psicofisica complessiva in conseguenza della malattia professionale e di eventuali eventi preesistenti anch’essi disciplinati dal medesimo regime; l’intervallo di variabilità di p (da 1 a 100%) è suddiviso convenzionalmente in classi di menomazione"@it .
+        "Percentuale con cui si misura il livello di menomazione dell'integrità psicofisica complessiva in conseguenza della malattia professionale In regime di danno biologico (per casi con data di denuncia uguale o successiva al 25 luglio 2000) è la percentuale p con cui si misura il livello di menomazione dell'integrità psicofisica complessiva in conseguenza della malattia professionale e di eventuali eventi preesistenti anch'essi disciplinati dal medesimo regime; l'intervallo di variabilità di p (da 1 a 100%) è suddiviso convenzionalmente in classi di menomazione"@it .
 
 inail:GrandeGruppoVoceDiTariffa a owl:Class ;
     owl:equivalentClass [ a owl:Restriction ;
@@ -2884,7 +2884,7 @@ inail:Indennizzo a owl:Class ;
             owl:someValuesFrom rdfs:Literal ] ;
     rdfs:label "Indennizzo"@it ;
     rdfs:comment "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1965-06-30;1124~art66 https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1965-06-30;1124~art131 https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1965-06-30;1124~art141 https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1965-06-30;1124~art249 https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2000-02-23;38~art13-com2"^^xsd:anyURI,
-        "È la prestazione economica che l’Inail corrisponde ad infortunati o tecnopatici; sono 4 le modalità principali con cui viene erogata la prestazione: in temporanea, in capitale, in rendita diretta e in rendita a superstiti."@it ;
+        "È la prestazione economica che l'Inail corrisponde ad infortunati o tecnopatici; sono 4 le modalità principali con cui viene erogata la prestazione: in temporanea, in capitale, in rendita diretta e in rendita a superstiti."@it ;
     owl:versionInfo "Tipo Prestazione Economica"^^xsd:string .
 
 inail:IndennizzoGiornalieroPerInabilitaTemporanea a owl:Class ;
@@ -2899,12 +2899,12 @@ inail:IndennizzoGiornalieroPerInabilitaTemporanea a owl:Class ;
             owl:someValuesFrom rdfs:Literal ] ;
     rdfs:label "Indennizzo  Giornaliero Per  Inabilita Temporanea"@it ;
     owl:disjointWith inail:IndennizzoInCapitalePerDannoBiologico ;
-    rdfs:comment "Prestazione economica, sostitutiva della retribuzione. Viene corrisposta al lavoratore in caso di infortunio o di malattia professionale - che impedisca totalmente e di fatto all’infortunato di svolgere l’attività lavorativa - a decorrere dal quarto giorno successivo alla data di infortunio o di manifestazione della malattia professionale, compresi i giorni festivi, fino alla guarigione clinica. L’Inail eroga l’indennità giornaliera nella misura del 60% della retribuzione media giornaliera fino al 90° giorno, del 75% della retribuzione media giornaliera dal 91° giorno fino alla guarigione clinica."@it ;
+    rdfs:comment "Prestazione economica, sostitutiva della retribuzione. Viene corrisposta al lavoratore in caso di infortunio o di malattia professionale - che impedisca totalmente e di fatto all'infortunato di svolgere l'attività lavorativa - a decorrere dal quarto giorno successivo alla data di infortunio o di manifestazione della malattia professionale, compresi i giorni festivi, fino alla guarigione clinica. L'Inail eroga l'indennità giornaliera nella misura del 60% della retribuzione media giornaliera fino al 90° giorno, del 75% della retribuzione media giornaliera dal 91° giorno fino alla guarigione clinica."@it ;
     owl:versionInfo "Tipo Prestazione Economica"^^xsd:string .
 
 inail:IndennizzoInCapitalePerDannoBiologico a owl:Class ;
     rdfs:label "Indennizzo  In Capitale Per  Danno Biologico"@it ;
-    rdfs:comment "Prestazione economica una tantum riconosciuta per gli infortuni e le malattie professionali verificatisi a decorrere dal 25 luglio 2000, per i quali sia accertato un grado di menomazione dell’integrità psicofisica compreso tra il 6% ed il 15%. Per gli eventi fino al 31 dicembre 2018 , gli indennizzi in capitale sono tabellati  in funzione dell’età, del genere dell'infortunato/tecnopatico e del grado di menomazione accertato in sede di valutazione dei postumi permanenti (Tabella allegata al d.m. 12 luglio 2000); per gli eventi a decorrere dal 1° gennaio 2019, gli importi sono invece definiti secondo la “Tabella indennizzo danno biologico in capitale” di cui al d.m. 45 del  23 aprile 2019 indipendentemente dal genere dell'infortunato/tecnopatico."@it ;
+    rdfs:comment "Prestazione economica una tantum riconosciuta per gli infortuni e le malattie professionali verificatisi a decorrere dal 25 luglio 2000, per i quali sia accertato un grado di menomazione dell'integrità psicofisica compreso tra il 6% ed il 15%. Per gli eventi fino al 31 dicembre 2018 , gli indennizzi in capitale sono tabellati  in funzione dell'età, del genere dell'infortunato/tecnopatico e del grado di menomazione accertato in sede di valutazione dei postumi permanenti (Tabella allegata al d.m. 12 luglio 2000); per gli eventi a decorrere dal 1° gennaio 2019, gli importi sono invece definiti secondo la “Tabella indennizzo danno biologico in capitale” di cui al d.m. 45 del  23 aprile 2019 indipendentemente dal genere dell'infortunato/tecnopatico."@it ;
     owl:versionInfo "Tipo Prestazione Economica"^^xsd:string .
 
 inail:Infortunato a owl:Class ;
@@ -3002,7 +3002,7 @@ inail:Infortunio a owl:Class ;
             owl:someValuesFrom rdfs:Literal ] ;
     rdfs:label "Infortunio"@it ;
     owl:disjointWith inail:MalattiaProfessionale ;
-    rdfs:comment "L'Infortunio sul lavoro viene definito quando l’evento scatenante è improvviso e violento e si riscontri il nesso di causalità con il lavoro svolto. L’assicurazione obbligatoria Inail copre ogni evento avvenuto per “causa violenta in occasione di lavoro” dal quale derivi la morte, l’inabilità permanente o l’inabilità assoluta temporanea per più di tre giorni."@it ;
+    rdfs:comment "L'Infortunio sul lavoro viene definito quando l'evento scatenante è improvviso e violento e si riscontri il nesso di causalità con il lavoro svolto. L'assicurazione obbligatoria Inail copre ogni evento avvenuto per “causa violenta in occasione di lavoro” dal quale derivi la morte, l'inabilità permanente o l'inabilità assoluta temporanea per più di tre giorni."@it ;
     owl:versionInfo "Tipo Evento"^^xsd:string .
 
 inail:InfortunioChiuso a owl:Class ;
@@ -3170,7 +3170,7 @@ inail:MalattiaProfessionale a owl:Class ;
             owl:someValuesFrom rdfs:Literal ] ;
     rdfs:label "Malattia  Professionale"@it ;
     rdfs:comment "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1965-06-30;1124~art3 https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1965-06-30;1124~art140 https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1965-06-30;1124~art211 https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2000-02-23;38~art10"^^xsd:anyURI,
-        "La malattia professionale è una patologia la cui causa agisce lentamente e progressivamente sull’organismo (causa diluita e non causa violenta e concentrata nel tempo). La stessa causa deve essere diretta ed efficiente, cioè in grado di produrre l’infermità in modo esclusivo o prevalente: il Testo Unico, infatti, parla di malattie contratte nell’esercizio e a causa delle lavorazioni rischiose. È ammesso, tuttavia, il concorso di cause extraprofessionali, purché queste non interrompano il nesso causale in quanto capaci di produrre da sole l’infermità.Per le malattie professionali, quindi, non basta l’occasione di lavoro come per gli infortuni, cioè un rapporto anche mediato o indiretto con il rischio lavorativo, ma deve esistere un rapporto causale, o concausale, diretto tra il rischio professionale e la malattia.Il rischio può essere provocato dalla lavorazione che l’assicurato svolge, oppure dall’ambiente in cui la lavorazione stessa si svolge (cosiddetto “rischio ambientale”)."@it ;
+        "La malattia professionale è una patologia la cui causa agisce lentamente e progressivamente sull'organismo (causa diluita e non causa violenta e concentrata nel tempo). La stessa causa deve essere diretta ed efficiente, cioè in grado di produrre l'infermità in modo esclusivo o prevalente: il Testo Unico, infatti, parla di malattie contratte nell'esercizio e a causa delle lavorazioni rischiose. È ammesso, tuttavia, il concorso di cause extraprofessionali, purché queste non interrompano il nesso causale in quanto capaci di produrre da sole l'infermità.Per le malattie professionali, quindi, non basta l'occasione di lavoro come per gli infortuni, cioè un rapporto anche mediato o indiretto con il rischio lavorativo, ma deve esistere un rapporto causale, o concausale, diretto tra il rischio professionale e la malattia.Il rischio può essere provocato dalla lavorazione che l'assicurato svolge, oppure dall'ambiente in cui la lavorazione stessa si svolge (cosiddetto “rischio ambientale”)."@it ;
     owl:versionInfo "Tipo Evento"^^xsd:string .
 
 inail:MalattiaProfessionaleConPrognosi a owl:Class ;
@@ -3192,7 +3192,7 @@ inail:MalattiaProfessionaleInDefinizione a owl:Class ;
 inail:MalattiaProfessionaleInFranchigia a owl:Class ;
     rdfs:label "Malattia  Professionale  InFranchigia"@it ;
     rdfs:subClassOf inail:MalattiaProfessionale ;
-    rdfs:comment "Un caso di malattia professionale si dice “ in franchigia” se provoca assenza dal lavoro non superiore ai tre giorni; per il periodo di franchigia l’Inail non corrisponde alcuna prestazione al lavoratore."@it .
+    rdfs:comment "Un caso di malattia professionale si dice “ in franchigia” se provoca assenza dal lavoro non superiore ai tre giorni; per il periodo di franchigia l'Inail non corrisponde alcuna prestazione al lavoratore."@it .
 
 inail:MalattiaProfessionaleMortale a owl:Class ;
     rdfs:label "Malattia  Professionale  Mortale"@it ;
@@ -3250,7 +3250,7 @@ inail:Mansione a owl:Class ;
             owl:onProperty [ owl:inverseOf inail:eventoRelativoAMansione ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Mansione"@it ;
-    rdfs:comment "Il mansionario INAIL è realizzato in un’ottica di analisi del rischio e individua le singole professioni. A differenza del Mansionario ISTAT che arriva a dettagliare gruppi di mansioni affini ed è molto specifica solo per alcune professioni (es. Medici). "@it .
+    rdfs:comment "Il mansionario INAIL è realizzato in un'ottica di analisi del rischio e individua le singole professioni. A differenza del Mansionario ISTAT che arriva a dettagliare gruppi di mansioni affini ed è molto specifica solo per alcune professioni (es. Medici). "@it .
 
 inail:Maschio a owl:Class ;
     rdfs:label "Maschio"@it ;
@@ -3283,7 +3283,7 @@ inail:NucleoFamiliare a owl:Class ;
 
 inail:Opposizione a owl:Class ;
     rdfs:label "Opposizione"@it ;
-    rdfs:comment "Può presentare opposizione il lavoratore che non ritiene corrette le valutazioni dell’Istituto in merito a:  il grado di menomazione che ha riconosciuto nel suo caso la data di cessazione dell’indennità per inabilità temporanea l'inesistenza di danno permanente la liquidazione della rendita"@it .
+    rdfs:comment "Può presentare opposizione il lavoratore che non ritiene corrette le valutazioni dell'Istituto in merito a:  il grado di menomazione che ha riconosciuto nel suo caso la data di cessazione dell'indennità per inabilità temporanea l'inesistenza di danno permanente la liquidazione della rendita"@it .
 
 inail:PagamentoRivalsa a owl:Class ;
     owl:equivalentClass [ a owl:Restriction ;
@@ -3351,7 +3351,7 @@ inail:PosizioneAssicurativaTerritoriale a owl:Class ;
             owl:onProperty [ owl:inverseOf inail:eventoCoinvolgePAT ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Posizione  Assicurativa  Territoriale"@it ;
-    rdfs:comment "La Posizione Assicurativa Territoriale è l’entità di riferimento del rapporto assicurativo in termini di collocazione geografica dell’attività produttiva svolta dall’Azienda. Un’Azienda può essere associata ad una o più Pat secondo la distribuzione territoriale dei lavori svolti."@it .
+    rdfs:comment "La Posizione Assicurativa Territoriale è l'entità di riferimento del rapporto assicurativo in termini di collocazione geografica dell'attività produttiva svolta dall'Azienda. Un'Azienda può essere associata ad una o più Pat secondo la distribuzione territoriale dei lavori svolti."@it .
 
 inail:PrestazioneABreveDurata a owl:Class ;
     rdfs:label "Prestazione  Non  Continuativa"@it ;
@@ -3375,14 +3375,14 @@ inail:PrestazioneEconomica a owl:Class ;
             owl:onProperty inail:prestazioneRelativaAEvento ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Prestazione  Economica"@it ;
-    rdfs:comment "L’Inail tutela i lavoratori che subiscono un infortunio sul lavoro o contraggono una malattia professionale (tecnopatici), mediante l'erogazione di prestazioni economiche, sanitarie e integrative, anche se il datore di lavoro non ha versato regolarmente il premio assicurativo."@it .
+    rdfs:comment "L'Inail tutela i lavoratori che subiscono un infortunio sul lavoro o contraggono una malattia professionale (tecnopatici), mediante l'erogazione di prestazioni economiche, sanitarie e integrative, anche se il datore di lavoro non ha versato regolarmente il premio assicurativo."@it .
 
 inail:PrestazioneSanitaria a owl:Class ;
     owl:equivalentClass [ a owl:Restriction ;
             owl:onProperty inail:prestazioneSanitariaRelativaAEvento ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Prestazione  Sanitaria"@it ;
-    rdfs:comment "L’infortunato/tecnopatico ha diritto a ricevere le cure mediche e chirurgiche, erogate a carico del Servizio sanitario nazionale, compresi gli accertamenti clinici, ai fini della guarigione, della stabilizzazione dei postumi e/o del miglior recupero possibile dell’integrità psico-fisica.L’Inail effettua gli accertamenti dei requisiti medico-legali per accedere alle prestazioni e svolge servizi e interventi integrativi delle prestazioni di tipo sanitario e riabilitativo finalizzati a promuovere il reinserimento della persona con disabilità da lavoro nel proprio contesto di vita familiare, sociale e lavorativo o a sostenere il nucleo familiare del lavoratore in caso di decesso. "@it .
+    rdfs:comment "L'infortunato/tecnopatico ha diritto a ricevere le cure mediche e chirurgiche, erogate a carico del Servizio sanitario nazionale, compresi gli accertamenti clinici, ai fini della guarigione, della stabilizzazione dei postumi e/o del miglior recupero possibile dell'integrità psico-fisica.L'Inail effettua gli accertamenti dei requisiti medico-legali per accedere alle prestazioni e svolge servizi e interventi integrativi delle prestazioni di tipo sanitario e riabilitativo finalizzati a promuovere il reinserimento della persona con disabilità da lavoro nel proprio contesto di vita familiare, sociale e lavorativo o a sostenere il nucleo familiare del lavoratore in caso di decesso. "@it .
 
 inail:QualificaAssicurativa a owl:Class ;
     owl:equivalentClass [ a owl:Restriction ;
@@ -3411,7 +3411,7 @@ inail:QuotaIntegrativa a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty inail:contribuisceARenditaTestoUnico ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "È la quota pari ad  un ventesimo della rendita con cui la rendita stessa viene aumentata se l’infortunato ha coniuge o è unito civilmente con persona dello stesso sesso  e figli, solo coniuge o soltanto la persona con cui è unito civilmente o solo figli aventi requisiti di cui ai nn. 1 e 2 dell’art. 85. "@it ;
+    rdfs:comment "È la quota pari ad  un ventesimo della rendita con cui la rendita stessa viene aumentata se l'infortunato ha coniuge o è unito civilmente con persona dello stesso sesso  e figli, solo coniuge o soltanto la persona con cui è unito civilmente o solo figli aventi requisiti di cui ai nn. 1 e 2 dell'art. 85. "@it ;
     owl:incompatibleWith "true" .
 
 inail:Rendita a owl:Class ;
@@ -3424,7 +3424,7 @@ inail:Rendita a owl:Class ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Rendita"@it ;
     rdfs:subClassOf inail:PrestazioneALungaDurata ;
-    rdfs:comment "Prestazione economica erogata dall’INAIL a coloro che subiscono un infortunio sul lavoro o contraggono una malattia professionale che comporti un' inabilità permanente  (Rendita Diretta) o ai supertiti aventi diritto del lavoratore deceduto (Rendita a superstiti)."@it ;
+    rdfs:comment "Prestazione economica erogata dall'INAIL a coloro che subiscono un infortunio sul lavoro o contraggono una malattia professionale che comporti un' inabilità permanente  (Rendita Diretta) o ai supertiti aventi diritto del lavoratore deceduto (Rendita a superstiti)."@it ;
     owl:versionInfo "Tipo Prestazione Economica"^^xsd:string .
 
 inail:RenditaASuperstiti a owl:Class ;
@@ -3433,7 +3433,7 @@ inail:RenditaASuperstiti a owl:Class ;
             owl:onProperty inail:emessaVersoNucleoFamiliare ;
             owl:someValuesFrom owl:Thing ] ;
     owl:disjointWith inail:RenditaDiInabilitaPermanente ;
-    rdfs:comment "Ai sensi dell'art.85 del Testo Unico, se l'infortunio o la malattia professionale hanno per conseguenza la morte, spetta, a favore dei superstiti del lavoratore deceduto, a decorrere dal giorno successivo alla morte del dante causa, una prestazione in rendita. La rendita ai superstiti viene calcolata moltiplicando la retribuzione del lavoratore deceduto per specifiche aliquote differenziate per tipo di familiare avente diritto. La retribuzione, alla base del calcolo della rendita, si rivaluta annualmente a norma dell’articolo 11 del d.lgs 38/2000. Ai superstiti di lavoratori deceduti a decorrere dal 1° gennaio 2014, spetta una rendita calcolata sulla base della retribuzione massima convenzionale del settore industria. "@it ;
+    rdfs:comment "Ai sensi dell'art.85 del Testo Unico, se l'infortunio o la malattia professionale hanno per conseguenza la morte, spetta, a favore dei superstiti del lavoratore deceduto, a decorrere dal giorno successivo alla morte del dante causa, una prestazione in rendita. La rendita ai superstiti viene calcolata moltiplicando la retribuzione del lavoratore deceduto per specifiche aliquote differenziate per tipo di familiare avente diritto. La retribuzione, alla base del calcolo della rendita, si rivaluta annualmente a norma dell'articolo 11 del d.lgs 38/2000. Ai superstiti di lavoratori deceduti a decorrere dal 1° gennaio 2014, spetta una rendita calcolata sulla base della retribuzione massima convenzionale del settore industria. "@it ;
     owl:versionInfo "Tipo Prestazione Economica"^^xsd:string .
 
 inail:RenditaDiInabilitaPermanente a owl:Class ;
@@ -3537,7 +3537,7 @@ inail:Riapertura a owl:Class ;
             owl:onProperty inail:tipoRiapertura ;
             owl:someValuesFrom rdfs:Literal ] ;
     rdfs:label "Riapertura"@it ;
-    rdfs:comment "Una trattazione amministrativa giunge alla fine del suo iter burocratico ad una definizione e dall’esito della definizione scaturisce un provvedimento. La trattazione definita può essere sottoposta a riapertura e successiva ridefinizione. La riapertura viene effettuata sempre per volere del soggetto coinvolto nell’evento lesivo. Da una riapertura può scaturire un contenzioso, così come invece può essere risolta in ambito amministrativo"@it .
+    rdfs:comment "Una trattazione amministrativa giunge alla fine del suo iter burocratico ad una definizione e dall'esito della definizione scaturisce un provvedimento. La trattazione definita può essere sottoposta a riapertura e successiva ridefinizione. La riapertura viene effettuata sempre per volere del soggetto coinvolto nell'evento lesivo. Da una riapertura può scaturire un contenzioso, così come invece può essere risolta in ambito amministrativo"@it .
 
 inail:RiaperturaDefinita a owl:Class ;
     rdfs:label "Riapertura Definita"@it ;
@@ -3586,7 +3586,7 @@ inail:RimborsoSpese a owl:Class ;
             owl:onProperty inail:tipoSpesaAccessoriaRimborsoSpese ;
             owl:someValuesFrom rdfs:Literal ] ;
     rdfs:label "Rimborso Spese"@it ;
-    rdfs:comment "Spese legate alle indennità giornaliere, corrisposte ai lavoratori in caso di impossibilità temporanea di svolgere l’attività lavorativa per più di tre giorni (inabilità temporanea assoluta)"@it .
+    rdfs:comment "Spese legate alle indennità giornaliere, corrisposte ai lavoratori in caso di impossibilità temporanea di svolgere l'attività lavorativa per più di tre giorni (inabilità temporanea assoluta)"@it .
 
 inail:Rivalsa a owl:Class ;
     owl:equivalentClass [ a owl:Restriction ;
@@ -3626,7 +3626,7 @@ inail:Rivalsa a owl:Class ;
             owl:onProperty [ owl:inverseOf inail:spesaSostenutaPerRivalsaRelativaA ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Rivalsa"@it ;
-    rdfs:comment "Le rivalse sono azioni di recupero intraprese dall’Istituto per le prestazioni erogate ogni volta che nelle cause che hanno determinato l’evento, sia accertata una responsabilità di uno più soggetti, estranei o meno all’assicurazione. Le azioni di rivalsa sono: il regresso (regolato dagli artt. 10 e 11 del T.U.) rivolto al datore di lavoro, se sussiste la responsabilità, e la surroga (regolata dall’art. 1916 del Codice Civile) intrapresa in caso di responsabilità posta a carico di un terzo estraneo al rapporto assicurativo."@it .
+    rdfs:comment "Le rivalse sono azioni di recupero intraprese dall'Istituto per le prestazioni erogate ogni volta che nelle cause che hanno determinato l'evento, sia accertata una responsabilità di uno più soggetti, estranei o meno all'assicurazione. Le azioni di rivalsa sono: il regresso (regolato dagli artt. 10 e 11 del T.U.) rivolto al datore di lavoro, se sussiste la responsabilità, e la surroga (regolata dall'art. 1916 del Codice Civile) intrapresa in caso di responsabilità posta a carico di un terzo estraneo al rapporto assicurativo."@it .
 
 inail:SedeINAIL a owl:Class ;
     owl:equivalentClass [ a owl:Restriction ;
@@ -3675,7 +3675,7 @@ inail:SettoreAttivita a owl:Class ;
 inail:Silicosi a owl:Class ;
     rdfs:label "Silicosi"@it ;
     rdfs:subClassOf inail:MalattiaProfessionale ;
-    rdfs:comment "Si tratta di una patologia irreversibile, invalidante e incurabile dovuta all’accumulo nel polmone (pneumoconiosi) di polveri di Slc respirabili, ossia polveri con particelle di dimensioni inferiori a 10 micrometri. Una polvere aerodispersa viene considerata silicotigena se contiene almeno l’1% in peso di Slc."@it .
+    rdfs:comment "Si tratta di una patologia irreversibile, invalidante e incurabile dovuta all'accumulo nel polmone (pneumoconiosi) di polveri di Slc respirabili, ossia polveri con particelle di dimensioni inferiori a 10 micrometri. Una polvere aerodispersa viene considerata silicotigena se contiene almeno l'1% in peso di Slc."@it .
 
 inail:Soggetto a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
@@ -3760,7 +3760,7 @@ inail:SpesaSostenutaPerRivalsa a owl:Class ;
             owl:onProperty inail:tipoSpesaRivalsa ;
             owl:someValuesFrom rdfs:Literal ] ;
     rdfs:label "Spesa Sostenuta  Per Rivalsa"@it ;
-    rdfs:comment "Spese associate ad azioni di rivalsa dell’Istituto (regresso o surroga), contro i responsabili in caso di infortunio o malattia professionale."@it .
+    rdfs:comment "Spese associate ad azioni di rivalsa dell'Istituto (regresso o surroga), contro i responsabili in caso di infortunio o malattia professionale."@it .
 
 inail:StatoDiAzienda a owl:Class ;
     rdfs:label "Stato Di  Azienda"@it ;
@@ -4030,7 +4030,7 @@ inail:TipoPratica a owl:Class ;
             owl:onProperty [ owl:inverseOf inail:eventoHaTipoPratica ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Tipo Pratica"@it ;
-    rdfs:comment "Indica se la pratica è stata aperta a causa di una  denuncia o di una comunicazione di infortunio. Si parla di denuncia  nel caso in cui l’infortunio sul lavoro preveda un’assenza dal lavoro superiore ai tre giorni."@it .
+    rdfs:comment "Indica se la pratica è stata aperta a causa di una  denuncia o di una comunicazione di infortunio. Si parla di denuncia  nel caso in cui l'infortunio sul lavoro preveda un'assenza dal lavoro superiore ai tre giorni."@it .
 
 inail:TipoProtesi a owl:Class ;
     owl:equivalentClass [ a owl:Restriction ;
@@ -4133,7 +4133,7 @@ inail:TipoTrattazione a owl:Class ;
             owl:onProperty [ owl:inverseOf inail:riaperturaRelativaATipoTrattazione ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Tipo Trattazione"@it ;
-    rdfs:comment "Tipologie delle trattazioni che a valle degli esiti, portano a definire il grado di invalidità, la definizione dell’indennizzo e della Prestazione che viene erogata agli aventi diritto"@it .
+    rdfs:comment "Tipologie delle trattazioni che a valle degli esiti, portano a definire il grado di invalidità, la definizione dell'indennizzo e della Prestazione che viene erogata agli aventi diritto"@it .
 
 inail:Trattazione a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
@@ -4180,7 +4180,7 @@ inail:Trattazione a owl:Class ;
             owl:onProperty inail:trattazioneRelativaAEvento ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Trattazione"@it ;
-    rdfs:comment "Sono le «evoluzioni» delle pratiche di infortunio o malattia professionale. Dagli esiti delle varie trattazioni si definisce il grado di invalidità, la definizione dell’indennizzo e della Prestazione che viene erogata agli aventi diritto"@it .
+    rdfs:comment "Sono le «evoluzioni» delle pratiche di infortunio o malattia professionale. Dagli esiti delle varie trattazioni si definisce il grado di invalidità, la definizione dell'indennizzo e della Prestazione che viene erogata agli aventi diritto"@it .
 
 inail:TrattazioneAperta a owl:Class ;
     rdfs:label "Trattazione Aperta"@it ;
