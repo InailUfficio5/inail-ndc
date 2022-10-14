@@ -72,12 +72,15 @@ components:
         data_proposta_pagamento:
           type: string
           format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
         data_inizio_trattazione:
           type: string
           format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
         data_liquidazione_indennizzo:
           type: string
           format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
         giorni_inabilita_temporanea:
           type: integer
           format: int64

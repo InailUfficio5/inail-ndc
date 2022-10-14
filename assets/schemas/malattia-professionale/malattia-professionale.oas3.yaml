@@ -18,7 +18,7 @@ info:
     È ammesso, tuttavia, il concorso di cause extraprofessionali, purché queste non interrompano il nesso causale in quanto capaci di produrre da sole l'infermità.
     Per le malattie professionali, quindi, non basta l'occasione di lavoro come per gli infortuni, cioè un rapporto anche mediato o indiretto con il rischio lavorativo,
     ma deve esistere un rapporto causale, o concausale, diretto tra il rischio professionale e la malattia.
-    Il rischio può essere provocato dalla lavorazione che l'assicurato svolge, oppure dall'’'ambiente in cui la lavorazione stessa si svolge (cosiddetto "rischio ambientale").
+    Il rischio può essere provocato dalla lavorazione che l'assicurato svolge, oppure dall'''ambiente in cui la lavorazione stessa si svolge (cosiddetto "rischio ambientale").
 
     La metadatazione semantica degli schemi si basa sul documento
     [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html)
@@ -32,7 +32,7 @@ components:
       type: string
       description: Campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità.
         http://dati.inail.it/ontology/idMalattiaProfessionale
-      example: "s_cod_caso: 111000000"
+      example: "111000000"
       maxLength: 50
       minLength: 1
     MalattiaProfessionale:
@@ -75,8 +75,9 @@ components:
           maxLength: 50
           type: string
         data_riferimento_malattia:
-          format: date
           type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
         importo_indennizzo:
           type: number
           format: double
@@ -102,7 +103,7 @@ components:
           items:
             $ref: "#/components/schemas/Tecnopatico"
       example:
-        id_malattia: "s_cod_caso: 111000000"
+        id_malattia: "111000000"
         esito_riconoscimento: "riconosciuta"
         data_riferimento_malattia: "2015-04-14"
         importo_indennizzo: 0.00
@@ -116,7 +117,7 @@ components:
           descrizione_inabilita: "003"
           percentuale_inabilita: 3
         malattia_accaduta_a_tecnopatico:
-          codice_soggetto_evento_lesivo: 1234
+          codice_soggetto_evento_lesivo: 12345678
           eta_all_accadimento: 23
 
     GradoDiInabilita:
@@ -150,7 +151,7 @@ components:
       format: int64
       description: Campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità.
         Associato a http://dati.inail.it/ontology/codiceSoggettoEventoLesivo.
-      example: 1234
+      example: 12345678
 
     Tecnopatico:
       type: object
@@ -172,5 +173,5 @@ components:
           type: integer
           format: int32
       example:
-        codice_soggetto_evento_lesivo: 1234
+        codice_soggetto_evento_lesivo: 12345678
         eta_all_accadimento: 23

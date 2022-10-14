@@ -28,7 +28,7 @@ components:
       type: string
       description: Campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità.
         http://dati.inail.it/ontology/idInfortunio
-      example: "s_cod_caso: 111000000"
+      example: "111000000"
       maxLength: 50
       minLength: 1
     Infortunio:
@@ -58,8 +58,9 @@ components:
         id_infortunio:
           $ref: "#/components/schemas/IdInfortunio"
         data_riferimento_infortunio:
-          format: date
           type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
         tipo_infortunio:
           maxLength: 255
           type: string
@@ -72,7 +73,7 @@ components:
           items:
             $ref: "#/components/schemas/Infortunato"
       example:
-        id_infortunio: "s_cod_caso: 111000000"
+        id_infortunio: "111000000"
         data_riferimento_infortunio: "2022-08-25"
         tipo_infortunio: "In itinere con mezzo di trasporto"
         infortunio_accaduto_in_tipoLuogo:
@@ -117,7 +118,7 @@ components:
       description: Campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità.
         http://dati.inail.it/ontology/categoriaTipoLuogo
       example: "INF01"
-      maxLength: 16
+      maxLength: 100
       minLength: 1
 
     TipoLuogoAccadimento:
