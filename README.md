@@ -17,12 +17,18 @@ I file presenti in questo repository sono organizzati secondo la seguente albera
 ├─ assets/controlled-vocabularies/
 │  └─ ...
 ├─ assets/schemas/
+│  ├─ inabilita-temporanea
+│  │  └─ inabilita-temporanea.oas3.yaml
 │  ├─ indennizzo
-|  |  └─ indennizzo.oas3.yaml
+│  │  └─ indennizzo.oas3.yaml
 │  ├─ infortunio
-|  |  └─ infortunio.oas3.yaml
-│  └─ malattia-professionale
-|     └─ malattia-profesisonale.oas3.yaml
+│  │  └─ infortunio.oas3.yaml
+│  ├─ malattia-professionale
+│  │  └─ malattia-profesisonale.oas3.yaml
+│  ├─ riapertura-trattazione
+│  │  └─ riapertura-trattazione.oas3.yaml
+│  └─ trattazione
+│     └─ trattazione.oas3.yaml
 ├─ README.md
 └─ publiccode.yaml
 ```
