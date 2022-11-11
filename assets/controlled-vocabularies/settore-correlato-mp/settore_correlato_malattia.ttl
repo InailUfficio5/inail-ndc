@@ -3,32 +3,36 @@
 @prefix cov: <https://w3id.org/italia/onto/COV> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix inailvoc: <http://dati.inail.it/opendata/vocabolari/> .
 @prefix ndc: <https://w3id.org/italia/onto/NDC/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix settcorr: <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix subsettcorr: <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/> .
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 ### Annotations
 
 <http://dati.inail.it/data/Organization/inail> a cov:Organization ;
-    rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
     cov:IPAcode "inail" ;
     cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
-    cov:orgAcronym "inail" .
+    cov:orgAcronym "inail" ;
+    skos:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> a adms:Asset,
+inailvoc:settore_correlato_malattia a adms:Asset,
         dcat:Dataset,
         skos:ConceptScheme ;
-    rdfs:label "This is the controlled vocabulary of disease related sectors and subsectors adopted by INAIL classification"@en,
+    rdfs:label "Controlled vocabulary of disease related sectors and subsectors adopted by INAIL"@en,
         "Vocabolario Controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it ;
     skos:prefLabel "Vocabolario Controllato sulla classificazione del settore correlato malattia adottata dall'INAIL"@it ;
     rdfs:comment "Grouping of sectors and subsectors of CNEL employment contracts."@en,
         "Raggruppamento settori e sottosettori contratti di lavoro CNEL."@it ;
     owl:versionInfo "0.2" ;
-    rdfs:isDefinedBy <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    rdfs:isDefinedBy inailvoc:settore_correlato_malattia ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:contactPoint <https://www.inail.it> ;
     dcat:distribution <https://w3id.org/italia/data/distribution/PS-RDF-Turtle> ;
     dcat:keyword "agricoltura"@it,
         "agriculture"@en,
@@ -55,588 +59,600 @@
     dct:creator <http://dati.inail.it/data/Organization/inail> ;
     dct:description "Grouping of sectors and subsectors of CNEL employment contracts."@en,
         "Raggruppamento settori e sottosettori contratti di lavoro CNEL."@it ;
-    dct:identifier <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    dct:identifier "http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia" ;
     dct:issued "2022-07-22"^^xsd:date ;
-    dct:language <http://publications.europa.eu/resource/authority/language/IT> ;
-    dct:modified "2022-08-29"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2022-10-01"^^xsd:date ;
     dct:publisher <http://dati.inail.it/data/Organization/inail> ;
+    dct:relation inailvoc:gestione,
+        inailvoc:gestione_tariffaria,
+        inailvoc:grande_gruppo_tariffario,
+        inailvoc:mansione,
+        inailvoc:settore_attivita,
+        inailvoc:tipo_lavoratore,
+        inailvoc:tipo_lavoro ;
     dct:rightsHolder <http://dati.inail.it/data/Organization/inail> ;
     dct:title "Classification of disease related sectors and subsectors adopted by INAIL Controlled Vocabulary"@en,
         "Vocabolario Controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it ;
     dct:type <http://purl.org/adms/assettype/Taxonomy> ;
     ndc:keyConcept "Settore Malattia" ;
+    skos:hasTopConcept settcorr:1,
+        settcorr:2,
+        settcorr:3,
+        settcorr:4,
+        settcorr:5 ;
     xkos:numberOfLevels "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/1> a skos:Concept ;
-    rdfs:label "agricoltura e pesca"@it ;
-    skos:prefLabel "agricoltura e pesca"@it ;
+settcorr:1 a skos:Concept ;
+    skos:prefLabel "Agricoltura e pesca"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "1" ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
-    skos:narrower <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/11>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/12>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/13>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/14>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/15>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/16>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/17> ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Agricoltura e pesca"@it ;
+    skos:narrower subsettcorr:11,
+        subsettcorr:12,
+        subsettcorr:13,
+        subsettcorr:14,
+        subsettcorr:15,
+        subsettcorr:16,
+        subsettcorr:17 ;
     skos:notation "1" ;
     xkos:depth "1" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/2> a skos:Concept ;
-    rdfs:label "industria"@it ;
-    skos:prefLabel "industria"@it ;
+settcorr:2 a skos:Concept ;
+    skos:prefLabel "Industria"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "2" ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
-    skos:narrower <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/18>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/19>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/20>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/21>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/22>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/23>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/24>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/25>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/26>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/27>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/28>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/29>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/30>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/31> ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Industria"@it ;
+    skos:narrower subsettcorr:18,
+        subsettcorr:19,
+        subsettcorr:20,
+        subsettcorr:21,
+        subsettcorr:22,
+        subsettcorr:23,
+        subsettcorr:24,
+        subsettcorr:25,
+        subsettcorr:26,
+        subsettcorr:27,
+        subsettcorr:28,
+        subsettcorr:29,
+        subsettcorr:30,
+        subsettcorr:31 ;
     skos:notation "2" ;
     xkos:depth "1" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/3> a skos:Concept ;
-    rdfs:label "servizi"@it ;
-    skos:prefLabel "servizi"@it ;
+settcorr:3 a skos:Concept ;
+    skos:prefLabel "Servizi"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "3" ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
-    skos:narrower <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/32>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/33>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/34>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/35>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/36>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/37>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/38>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/39> ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Servizi"@it ;
+    skos:narrower subsettcorr:32,
+        subsettcorr:33,
+        subsettcorr:34,
+        subsettcorr:35,
+        subsettcorr:36,
+        subsettcorr:37,
+        subsettcorr:38,
+        subsettcorr:39 ;
     skos:notation "3" ;
     xkos:depth "1" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/4> a skos:Concept ;
-    rdfs:label "artigianato"@it ;
-    skos:prefLabel "artigianato"@it ;
+settcorr:4 a skos:Concept ;
+    skos:prefLabel "Artigianato"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "4" ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
-    skos:narrower <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/40>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/41>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/42>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/43>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/44>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/45>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/46>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/47>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/48>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/49>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/50>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/51>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/58> ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Artigianato"@it ;
+    skos:narrower subsettcorr:40,
+        subsettcorr:41,
+        subsettcorr:42,
+        subsettcorr:43,
+        subsettcorr:44,
+        subsettcorr:45,
+        subsettcorr:46,
+        subsettcorr:47,
+        subsettcorr:48,
+        subsettcorr:49,
+        subsettcorr:50,
+        subsettcorr:51,
+        subsettcorr:58 ;
     skos:notation "4" ;
     xkos:depth "1" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/5> a skos:Concept ;
-    rdfs:label "pubblica amministrazione"@it ;
-    skos:prefLabel "pubblica amministrazione"@it ;
+settcorr:5 a skos:Concept ;
+    skos:prefLabel "Pubblica amministrazione"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "5" ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
-    skos:narrower <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/52>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/53>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/54>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/55>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/56>,
-        <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/57> ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Pubblica amministrazione"@it ;
+    skos:narrower subsettcorr:52,
+        subsettcorr:53,
+        subsettcorr:54,
+        subsettcorr:55,
+        subsettcorr:56,
+        subsettcorr:57 ;
     skos:notation "5" ;
     xkos:depth "1" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/11> a skos:Concept ;
-    rdfs:label "pesca - piscicoltura"@it ;
-    skos:prefLabel "pesca - piscicoltura"@it ;
+subsettcorr:11 a skos:Concept ;
+    skos:prefLabel "Pesca - piscicoltura"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "11" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/1> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:1 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Pesca - piscicoltura"@it ;
     skos:notation "11" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/12> a skos:Concept ;
-    rdfs:label "allevamento"@it ;
-    skos:prefLabel "allevamento"@it ;
+subsettcorr:12 a skos:Concept ;
+    skos:prefLabel "Allevamento"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "12" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/1> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:1 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Allevamento"@it ;
     skos:notation "12" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/13> a skos:Concept ;
-    rdfs:label "coltivazioni di seminativi"@it ;
-    skos:prefLabel "coltivazioni di seminativi"@it ;
+subsettcorr:13 a skos:Concept ;
+    skos:prefLabel "Coltivazioni di seminativi"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "13" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/1> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:1 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Coltivazioni di seminativi"@it ;
     skos:notation "13" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/14> a skos:Concept ;
-    rdfs:label "orticoltura, floricoltura"@it ;
-    skos:prefLabel "orticoltura, floricoltura"@it ;
+subsettcorr:14 a skos:Concept ;
+    skos:prefLabel "Orticoltura, floricoltura"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "14" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/1> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:1 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Orticoltura, floricoltura"@it ;
     skos:notation "14" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/15> a skos:Concept ;
-    rdfs:label "frutticoltura"@it ;
-    skos:prefLabel "frutticoltura"@it ;
+subsettcorr:15 a skos:Concept ;
+    skos:prefLabel "Frutticoltura"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "15" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/1> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:1 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Frutticoltura"@it ;
     skos:notation "15" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/16> a skos:Concept ;
-    rdfs:label "silvicoltura"@it ;
-    skos:prefLabel "silvicoltura"@it ;
+subsettcorr:16 a skos:Concept ;
+    skos:prefLabel "Silvicoltura"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "16" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/1> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:1 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Silvicoltura"@it ;
     skos:notation "16" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/17> a skos:Concept ;
-    rdfs:label "altre coltivazioni agricole"@it ;
-    skos:prefLabel "altre coltivazioni agricole"@it ;
+subsettcorr:17 a skos:Concept ;
+    skos:prefLabel "Altre coltivazioni agricole"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "17" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/1> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:1 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Altre coltivazioni agricole"@it ;
     skos:notation "17" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/18> a skos:Concept ;
-    rdfs:label "mineraria"@it ;
-    skos:prefLabel "mineraria"@it ;
+subsettcorr:18 a skos:Concept ;
+    skos:prefLabel "Mineraria"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "18" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/2> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Mineraria"@it ;
     skos:notation "18" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/19> a skos:Concept ;
-    rdfs:label "alimentare"@it ;
-    skos:prefLabel "alimentare"@it ;
+subsettcorr:19 a skos:Concept ;
+    skos:prefLabel "Alimentare"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "19" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/2> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Alimentare"@it ;
     skos:notation "19" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/20> a skos:Concept ;
-    rdfs:label "tessile e abbigliamento"@it ;
-    skos:prefLabel "tessile e abbigliamento"@it ;
+subsettcorr:20 a skos:Concept ;
+    skos:prefLabel "Tessile e abbigliamento"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "20" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/2> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Tessile e abbigliamento"@it ;
     skos:notation "20" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/21> a skos:Concept ;
-    rdfs:label "conciaria"@it ;
-    skos:prefLabel "conciaria"@it ;
+subsettcorr:21 a skos:Concept ;
+    skos:prefLabel "Conciaria"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "21" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/2> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Conciaria"@it ;
     skos:notation "21" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/22> a skos:Concept ;
-    rdfs:label "legno"@it ;
-    skos:prefLabel "legno"@it ;
+subsettcorr:22 a skos:Concept ;
+    skos:prefLabel "Legno"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "22" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/2> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Legno"@it ;
     skos:notation "22" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/23> a skos:Concept ;
-    rdfs:label "carta"@it ;
-    skos:prefLabel "carta"@it ;
+subsettcorr:23 a skos:Concept ;
+    skos:prefLabel "Carta"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "23" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/2> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Carta"@it ;
     skos:notation "23" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/24> a skos:Concept ;
-    rdfs:label "petrolchimica"@it ;
-    skos:prefLabel "petrolchimica"@it ;
+subsettcorr:24 a skos:Concept ;
+    skos:prefLabel "Petrolchimica"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "24" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/2> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Petrolchimica"@it ;
     skos:notation "24" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/25> a skos:Concept ;
-    rdfs:label "chimica"@it ;
-    skos:prefLabel "chimica"@it ;
+subsettcorr:25 a skos:Concept ;
+    skos:prefLabel "Chimica"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "25" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/2> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Chimica"@it ;
     skos:notation "25" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/26> a skos:Concept ;
-    rdfs:label "gomma e plastica"@it ;
-    skos:prefLabel "gomma e plastica"@it ;
+subsettcorr:26 a skos:Concept ;
+    skos:prefLabel "Gomma e plastica"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "26" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/2> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Gomma e plastica"@it ;
     skos:notation "26" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/27> a skos:Concept ;
-    rdfs:label "lav. minerali non metalliferi (vetro, cemento, calce e pietre ornamentali)"@it ;
-    skos:prefLabel "lav. minerali non metalliferi (vetro, cemento, calce e pietre ornamentali)"@it ;
+subsettcorr:27 a skos:Concept ;
+    skos:prefLabel "Lav. minerali non metalliferi (vetro, cemento, calce e pietre ornamentali)"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "27" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/2> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Lav. minerali non metalliferi (vetro, cemento, calce e pietre ornamentali)"@it ;
     skos:notation "27" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/28> a skos:Concept ;
-    rdfs:label "metalmeccanica (metallurgia,metalmeccanica, macchine, apparecchi e strumenti)"@it ;
-    skos:prefLabel "metalmeccanica (metallurgia,metalmeccanica, macchine, apparecchi e strumenti)"@it ;
+subsettcorr:28 a skos:Concept ;
+    skos:prefLabel "Metalmeccanica (metallurgia,metalmeccanica, macchine, apparecchi e strumenti)"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "28" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/2> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Metalmeccanica (metallurgia,metalmeccanica, macchine, apparecchi e strumenti)"@it ;
     skos:notation "28" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/29> a skos:Concept ;
-    rdfs:label "altre manifatturiere (gioielleria e oreficeria, strumenti musicali, ecc.)"@it ;
-    skos:prefLabel "altre manifatturiere (gioielleria e oreficeria, strumenti musicali, ecc.)"@it ;
+subsettcorr:29 a skos:Concept ;
+    skos:prefLabel "Altre manifatturiere (gioielleria e oreficeria, strumenti musicali, ecc.)"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "29" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/2> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Altre manifatturiere (gioielleria e oreficeria, strumenti musicali, ecc.)"@it ;
     skos:notation "29" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/30> a skos:Concept ;
-    rdfs:label "costruzioni (edilizia e installazione/manutenzione di impianti elettrici, idraulici e termici)"@it ;
-    skos:prefLabel "costruzioni (edilizia e installazione/manutenzione di impianti elettrici, idraulici e termici)"@it ;
+subsettcorr:30 a skos:Concept ;
+    skos:prefLabel "Costruzioni (edilizia e installazione/manutenzione di impianti elettrici, idraulici e termici)"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "30" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/2> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Costruzioni (edilizia e installazione/manutenzione di impianti elettrici, idraulici e termici)"@it ;
     skos:notation "30" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/31> a skos:Concept ;
-    rdfs:label "elettricita', gas e acqua"@it ;
-    skos:prefLabel "elettricita', gas e acqua"@it ;
+subsettcorr:31 a skos:Concept ;
+    skos:prefLabel "Elettricita', gas e acqua"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "31" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/2> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Elettricita', gas e acqua"@it ;
     skos:notation "31" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/32> a skos:Concept ;
-    rdfs:label "commercio"@it ;
-    skos:prefLabel "commercio"@it ;
+subsettcorr:32 a skos:Concept ;
+    skos:prefLabel "Commercio"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "32" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:3 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Commercio"@it ;
     skos:notation "32" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/33> a skos:Concept ;
-    rdfs:label "alberghi e ristoranti"@it ;
-    skos:prefLabel "alberghi e ristoranti"@it ;
+subsettcorr:33 a skos:Concept ;
+    skos:prefLabel "Alberghi e ristoranti"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "33" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:3 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Alberghi e ristoranti"@it ;
     skos:notation "33" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/34> a skos:Concept ;
-    rdfs:label "trasporti e comunicazioni"@it ;
-    skos:prefLabel "trasporti e comunicazioni"@it ;
+subsettcorr:34 a skos:Concept ;
+    skos:prefLabel "Trasporti e comunicazioni"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "34" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:3 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Trasporti e comunicazioni"@it ;
     skos:notation "34" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/35> a skos:Concept ;
-    rdfs:label "sanita' privata e servizi sociali privati"@it ;
-    skos:prefLabel "sanita' privata e servizi sociali privati"@it ;
+subsettcorr:35 a skos:Concept ;
+    skos:prefLabel "Sanita' privata e servizi sociali privati"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "35" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:3 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Sanita' privata e servizi sociali privati"@it ;
     skos:notation "35" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/36> a skos:Concept ;
-    rdfs:label "servizi di pulizia e disinfestazione."@it ;
-    skos:prefLabel "servizi di pulizia e disinfestazione."@it ;
+subsettcorr:36 a skos:Concept ;
+    skos:prefLabel "Servizi di pulizia e disinfestazione."@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "36" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:3 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Servizi di pulizia e disinfestazione."@it ;
     skos:notation "36" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/37> a skos:Concept ;
-    rdfs:label "attivita' immobiliari e professionali (intemediazione finanziaria,informatica, noleggio, vigilanza, pubblicita', ecc.)"@it ;
-    skos:prefLabel "attivita' immobiliari e professionali (intemediazione finanziaria,informatica, noleggio, vigilanza, pubblicita', ecc.)"@it ;
+subsettcorr:37 a skos:Concept ;
+    skos:prefLabel "Attivita' immobiliari e professionali (intemediazione finanziaria,informatica, noleggio, vigilanza, pubblicita', ecc.)"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "37" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:3 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Attivita' immobiliari e professionali (intemediazione finanziaria,informatica, noleggio, vigilanza, pubblicita', ecc.)"@it ;
     skos:notation "37" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/38> a skos:Concept ;
-    rdfs:label "istruzione privata"@it ;
-    skos:prefLabel "istruzione privata"@it ;
+subsettcorr:38 a skos:Concept ;
+    skos:prefLabel "Istruzione privata"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "38" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:3 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Istruzione privata"@it ;
     skos:notation "38" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/39> a skos:Concept ;
-    rdfs:label "altri servizi (smaltimento rifiuti, associazioni culturali, sportive, ecc.)"@it ;
-    skos:prefLabel "altri servizi (smaltimento rifiuti, associazioni culturali, sportive, ecc.)"@it ;
+subsettcorr:39 a skos:Concept ;
+    skos:prefLabel "Altri servizi (smaltimento rifiuti, associazioni culturali, sportive, ecc.)"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "39" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:3 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Altri servizi (smaltimento rifiuti, associazioni culturali, sportive, ecc.)"@it ;
     skos:notation "39" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/40> a skos:Concept ;
-    rdfs:label "alimentare"@it ;
-    skos:prefLabel "alimentare"@it ;
+subsettcorr:40 a skos:Concept ;
+    skos:prefLabel "Alimentare"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "40" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/4> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:4 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Alimentare"@it ;
     skos:notation "40" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/41> a skos:Concept ;
-    rdfs:label "tessile e abbigliamento"@it ;
-    skos:prefLabel "tessile e abbigliamento"@it ;
+subsettcorr:41 a skos:Concept ;
+    skos:prefLabel "Tessile e abbigliamento"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "41" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/4> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:4 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Tessile e abbigliamento"@it ;
     skos:notation "41" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/42> a skos:Concept ;
-    rdfs:label "conciaria"@it ;
-    skos:prefLabel "conciaria"@it ;
+subsettcorr:42 a skos:Concept ;
+    skos:prefLabel "Conciaria"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "42" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/4> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:4 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Conciaria"@it ;
     skos:notation "42" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/43> a skos:Concept ;
-    rdfs:label "legno"@it ;
-    skos:prefLabel "legno"@it ;
+subsettcorr:43 a skos:Concept ;
+    skos:prefLabel "Legno"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "43" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/4> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:4 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Legno"@it ;
     skos:notation "43" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/44> a skos:Concept ;
-    rdfs:label "carta"@it ;
-    skos:prefLabel "carta"@it ;
+subsettcorr:44 a skos:Concept ;
+    skos:prefLabel "Carta"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "44" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/4> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:4 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Carta"@it ;
     skos:notation "44" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/45> a skos:Concept ;
-    rdfs:label "chimica"@it ;
-    skos:prefLabel "chimica"@it ;
+subsettcorr:45 a skos:Concept ;
+    skos:prefLabel "Chimica"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "45" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/4> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:4 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Chimica"@it ;
     skos:notation "45" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/46> a skos:Concept ;
-    rdfs:label "gomma e plastica"@it ;
-    skos:prefLabel "gomma e plastica"@it ;
+subsettcorr:46 a skos:Concept ;
+    skos:prefLabel "Gomma e plastica"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "46" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/4> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:4 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Gomma e plastica"@it ;
     skos:notation "46" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/47> a skos:Concept ;
-    rdfs:label "lav. minerali non metalliferi (vetro, cemento, calce e pietre ornamentali)"@it ;
-    skos:prefLabel "lav. minerali non metalliferi (vetro, cemento, calce e pietre ornamentali)"@it ;
+subsettcorr:47 a skos:Concept ;
+    skos:prefLabel "Lav. minerali non metalliferi (vetro, cemento, calce e pietre ornamentali)"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "47" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/4> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:4 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Lav. minerali non metalliferi (vetro, cemento, calce e pietre ornamentali)"@it ;
     skos:notation "47" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/48> a skos:Concept ;
-    rdfs:label "metalmeccanica (metallurgia,metalmeccanica, macchine, apparecchi e strumenti)"@it ;
-    skos:prefLabel "metalmeccanica (metallurgia,metalmeccanica, macchine, apparecchi e strumenti)"@it ;
+subsettcorr:48 a skos:Concept ;
+    skos:prefLabel "Metalmeccanica (metallurgia,metalmeccanica, macchine, apparecchi e strumenti)"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "48" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/4> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:4 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Metalmeccanica (metallurgia,metalmeccanica, macchine, apparecchi e strumenti)"@it ;
     skos:notation "48" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/49> a skos:Concept ;
-    rdfs:label "altre manifatturiere (gioielleria e oreficeria, strumenti musicali, ecc.)"@it ;
-    skos:prefLabel "altre manifatturiere (gioielleria e oreficeria, strumenti musicali, ecc.)"@it ;
+subsettcorr:49 a skos:Concept ;
+    skos:prefLabel "Altre manifatturiere (gioielleria e oreficeria, strumenti musicali, ecc.)"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "49" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/4> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:4 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Altre manifatturiere (gioielleria e oreficeria, strumenti musicali, ecc.)"@it ;
     skos:notation "49" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/50> a skos:Concept ;
-    rdfs:label "costruzioni (edilizia e installazione/manutenzione di impianti elettrici, idraulici e termici)"@it ;
-    skos:prefLabel "costruzioni (edilizia e installazione/manutenzione di impianti elettrici, idraulici e termici)"@it ;
+subsettcorr:50 a skos:Concept ;
+    skos:prefLabel "Costruzioni (edilizia e installazione/manutenzione di impianti elettrici, idraulici e termici)"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "50" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/4> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:4 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Costruzioni (edilizia e installazione/manutenzione di impianti elettrici, idraulici e termici)"@it ;
     skos:notation "50" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/51> a skos:Concept ;
-    rdfs:label "elettricita', gas e acqua"@it ;
-    skos:prefLabel "elettricita', gas e acqua"@it ;
+subsettcorr:51 a skos:Concept ;
+    skos:prefLabel "Elettricita', gas e acqua"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "51" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/4> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:4 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Elettricita', gas e acqua"@it ;
     skos:notation "51" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/52> a skos:Concept ;
-    rdfs:label "ministeri (istruzione pubblica, salute, difesa, ecc.)"@it ;
-    skos:prefLabel "ministeri (istruzione pubblica, salute, difesa, ecc.)"@it ;
+subsettcorr:52 a skos:Concept ;
+    skos:prefLabel "Ministeri (istruzione pubblica, salute, difesa, ecc.)"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "52" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/5> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:5 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Ministeri (istruzione pubblica, salute, difesa, ecc.)"@it ;
     skos:notation "52" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/53> a skos:Concept ;
-    rdfs:label "universita' e istituti di ricerca"@it ;
+subsettcorr:53 a skos:Concept ;
     skos:prefLabel "universita' e istituti di ricerca"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "53" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/5> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:5 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "universita' e istituti di ricerca"@it ;
     skos:notation "53" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/54> a skos:Concept ;
-    rdfs:label "parastato"@it ;
-    skos:prefLabel "parastato"@it ;
+subsettcorr:54 a skos:Concept ;
+    skos:prefLabel "Parastato"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "54" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/5> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:5 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Parastato"@it ;
     skos:notation "54" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/55> a skos:Concept ;
-    rdfs:label "istituti/ organismi regionali"@it ;
-    skos:prefLabel "istituti/ organismi regionali"@it ;
+subsettcorr:55 a skos:Concept ;
+    skos:prefLabel "Istituti/ organismi regionali"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "55" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/5> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:5 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Istituti/ organismi regionali"@it ;
     skos:notation "55" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/56> a skos:Concept ;
-    rdfs:label "istituti/ organismi provinciali"@it ;
-    skos:prefLabel "istituti/ organismi provinciali"@it ;
+subsettcorr:56 a skos:Concept ;
+    skos:prefLabel "Istituti/ organismi provinciali"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "56" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/5> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:5 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Istituti/ organismi provinciali"@it ;
     skos:notation "56" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/57> a skos:Concept ;
-    rdfs:label "istituti/ organismi comunali"@it ;
-    skos:prefLabel "istituti/ organismi comunali"@it ;
+subsettcorr:57 a skos:Concept ;
+    skos:prefLabel "Istituti/ organismi comunali"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "57" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/5> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:5 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Istituti/ organismi comunali"@it ;
     skos:notation "57" ;
     xkos:depth "2" .
 
-<http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/sub_settore/58> a skos:Concept ;
-    rdfs:label "petrolchimica"@it ;
-    skos:prefLabel "petrolchimica"@it ;
+subsettcorr:58 a skos:Concept ;
+    skos:prefLabel "Petrolchimica"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "58" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia/settore/4> ;
-    skos:inScheme <http://dati.inail.it/opendata/vocabolari/settore_correlato_malattia> ;
+    skos:broader settcorr:4 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:label "Petrolchimica"@it ;
     skos:notation "58" ;
     xkos:depth "2" .
 

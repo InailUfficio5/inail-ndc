@@ -4,6 +4,10 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix grado1: <http://dati.inail.it/opendata/vocabolari/inabilita/grado1/> .
+@prefix grado2: <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/> .
+@prefix grado3: <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/> .
+@prefix inailvoc: <http://dati.inail.it/opendata/vocabolari/> .
 @prefix ndc: <https://w3id.org/italia/onto/NDC/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -13,32 +17,1278 @@
 
 ### Annotations
 
+grado1:0 a skos:Concept ;
+    skos:prefLabel "a zero"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "0" ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "a zero"@it ;
+    skos:notation "0" ;
+    xkos:depth "1" .
+
+grado1:1 a skos:Concept ;
+    skos:prefLabel "da 01 a 10"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "1" ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "da 01 a 10"@it ;
+    skos:narrower grado2:1.1 ;
+    skos:notation "1" ;
+    xkos:depth "1" .
+
+grado1:2 a skos:Concept ;
+    skos:prefLabel "da 11 a 15"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "2" ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "da 11 a 15"@it ;
+    skos:narrower grado2:2.2 ;
+    skos:notation "2" ;
+    xkos:depth "1" .
+
+grado1:3 a skos:Concept ;
+    skos:prefLabel "da 16 a 79"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "3" ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "da 16 a 79"@it ;
+    skos:narrower grado2:3.3,
+        grado2:3.4,
+        grado2:3.5,
+        grado2:3.6,
+        grado2:3.7 ;
+    skos:notation "3" ;
+    xkos:depth "1" .
+
+grado1:4 a skos:Concept ;
+    skos:prefLabel "da 80 a 100"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "4" ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "da 80 a 100"@it ;
+    skos:narrower grado2:4.8 ;
+    skos:notation "4" ;
+    xkos:depth "1" .
+
+grado2:1.1 a skos:Concept ;
+    skos:prefLabel "da 01 a 10"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.1" ;
+    skos:broader grado1:1 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "da 01 a 10"@it ;
+    skos:narrower grado3:1.1.1,
+        grado3:1.1.2,
+        grado3:1.1.3,
+        grado3:1.1.4,
+        grado3:1.1.5,
+        grado3:1.1.6,
+        grado3:1.1.7,
+        grado3:1.1.8,
+        grado3:1.1.9,
+        grado3:1.1.10 ;
+    skos:notation "1.1" ;
+    xkos:depth "2" .
+
+grado2:2.2 a skos:Concept ;
+    skos:prefLabel "da 11 a 15"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.2" ;
+    skos:broader grado1:2 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "da 11 a 15"@it ;
+    skos:narrower grado3:2.2.11,
+        grado3:2.2.12,
+        grado3:2.2.13,
+        grado3:2.2.14,
+        grado3:2.2.15 ;
+    skos:notation "2.2" ;
+    xkos:depth "2" .
+
+grado2:3.3 a skos:Concept ;
+    skos:prefLabel "da 16 a 29"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.3" ;
+    skos:broader grado1:3 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "da 16 a 29"@it ;
+    skos:narrower grado3:3.3.16,
+        grado3:3.3.17,
+        grado3:3.3.18,
+        grado3:3.3.19,
+        grado3:3.3.20,
+        grado3:3.3.21,
+        grado3:3.3.22,
+        grado3:3.3.23,
+        grado3:3.3.24,
+        grado3:3.3.25,
+        grado3:3.3.26,
+        grado3:3.3.27,
+        grado3:3.3.28,
+        grado3:3.3.29 ;
+    skos:notation "3.3" ;
+    xkos:depth "2" .
+
+grado2:3.4 a skos:Concept ;
+    skos:prefLabel "da 30 a 32"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.4" ;
+    skos:broader grado1:3 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "da 30 a 32"@it ;
+    skos:narrower grado3:3.4.30,
+        grado3:3.4.31,
+        grado3:3.4.32 ;
+    skos:notation "3.4" ;
+    xkos:depth "2" .
+
+grado2:3.5 a skos:Concept ;
+    skos:prefLabel "da 33 a 39"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.5" ;
+    skos:broader grado1:3 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "da 33 a 39"@it ;
+    skos:narrower grado3:3.5.33,
+        grado3:3.5.34,
+        grado3:3.5.35,
+        grado3:3.5.36,
+        grado3:3.5.37,
+        grado3:3.5.38,
+        grado3:3.5.39 ;
+    skos:notation "3.5" ;
+    xkos:depth "2" .
+
+grado2:3.6 a skos:Concept ;
+    skos:prefLabel "da 40 a 49"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.6" ;
+    skos:broader grado1:3 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "da 40 a 49"@it ;
+    skos:narrower grado3:3.6.40,
+        grado3:3.6.41,
+        grado3:3.6.42,
+        grado3:3.6.43,
+        grado3:3.6.44,
+        grado3:3.6.45,
+        grado3:3.6.46,
+        grado3:3.6.47,
+        grado3:3.6.48,
+        grado3:3.6.49 ;
+    skos:notation "3.6" ;
+    xkos:depth "2" .
+
+grado2:3.7 a skos:Concept ;
+    skos:prefLabel "da 50 a 79"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.7" ;
+    skos:broader grado1:3 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "da 50 a 79"@it ;
+    skos:narrower grado3:3.7.50,
+        grado3:3.7.51,
+        grado3:3.7.52,
+        grado3:3.7.53,
+        grado3:3.7.54,
+        grado3:3.7.55,
+        grado3:3.7.56,
+        grado3:3.7.57,
+        grado3:3.7.58,
+        grado3:3.7.59,
+        grado3:3.7.60,
+        grado3:3.7.61,
+        grado3:3.7.62,
+        grado3:3.7.63,
+        grado3:3.7.64,
+        grado3:3.7.65,
+        grado3:3.7.66,
+        grado3:3.7.67,
+        grado3:3.7.68,
+        grado3:3.7.69,
+        grado3:3.7.70,
+        grado3:3.7.71,
+        grado3:3.7.72,
+        grado3:3.7.73,
+        grado3:3.7.74,
+        grado3:3.7.75,
+        grado3:3.7.76,
+        grado3:3.7.77,
+        grado3:3.7.78,
+        grado3:3.7.79 ;
+    skos:notation "3.7" ;
+    xkos:depth "2" .
+
+grado2:4.8 a skos:Concept ;
+    skos:prefLabel "da 80 a 100"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.8" ;
+    skos:broader grado1:4 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "da 80 a 100"@it ;
+    skos:narrower grado3:4.8.80,
+        grado3:4.8.81,
+        grado3:4.8.82,
+        grado3:4.8.83,
+        grado3:4.8.84,
+        grado3:4.8.85,
+        grado3:4.8.86,
+        grado3:4.8.87,
+        grado3:4.8.88,
+        grado3:4.8.89,
+        grado3:4.8.90,
+        grado3:4.8.91,
+        grado3:4.8.92,
+        grado3:4.8.93,
+        grado3:4.8.94,
+        grado3:4.8.95,
+        grado3:4.8.96,
+        grado3:4.8.97,
+        grado3:4.8.98,
+        grado3:4.8.99,
+        grado3:4.8.100 ;
+    skos:notation "4.8" ;
+    xkos:depth "2" .
+
+grado3:1.1.1 a skos:Concept ;
+    skos:prefLabel "001"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "1.1.1" ;
+    skos:broader grado2:1.1 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "001"@it ;
+    skos:notation "1.1.1" ;
+    xkos:depth "3" .
+
+grado3:1.1.2 a skos:Concept ;
+    skos:prefLabel "002"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "1.1.2" ;
+    skos:broader grado2:1.1 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "002"@it ;
+    skos:notation "1.1.2" ;
+    xkos:depth "3" .
+
+grado3:1.1.3 a skos:Concept ;
+    skos:prefLabel "003"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "1.1.3" ;
+    skos:broader grado2:1.1 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "003"@it ;
+    skos:notation "1.1.3" ;
+    xkos:depth "3" .
+
+grado3:1.1.4 a skos:Concept ;
+    skos:prefLabel "004"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "1.1.4" ;
+    skos:broader grado2:1.1 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "004"@it ;
+    skos:notation "1.1.4" ;
+    xkos:depth "3" .
+
+grado3:1.1.5 a skos:Concept ;
+    skos:prefLabel "005"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "1.1.5" ;
+    skos:broader grado2:1.1 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "005"@it ;
+    skos:notation "1.1.5" ;
+    xkos:depth "3" .
+
+grado3:1.1.6 a skos:Concept ;
+    skos:prefLabel "006"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "1.1.6" ;
+    skos:broader grado2:1.1 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "006"@it ;
+    skos:notation "1.1.6" ;
+    xkos:depth "3" .
+
+grado3:1.1.7 a skos:Concept ;
+    skos:prefLabel "007"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "1.1.7" ;
+    skos:broader grado2:1.1 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "007"@it ;
+    skos:notation "1.1.7" ;
+    xkos:depth "3" .
+
+grado3:1.1.8 a skos:Concept ;
+    skos:prefLabel "008"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "1.1.8" ;
+    skos:broader grado2:1.1 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "008"@it ;
+    skos:notation "1.1.8" ;
+    xkos:depth "3" .
+
+grado3:1.1.9 a skos:Concept ;
+    skos:prefLabel "009"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "1.1.9" ;
+    skos:broader grado2:1.1 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "009"@it ;
+    skos:notation "1.1.9" ;
+    xkos:depth "3" .
+
+grado3:1.1.10 a skos:Concept ;
+    skos:prefLabel "010"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "1.1.10" ;
+    skos:broader grado2:1.1 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "010"@it ;
+    skos:notation "1.1.10" ;
+    xkos:depth "3" .
+
+grado3:2.2.11 a skos:Concept ;
+    skos:prefLabel "011"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "2.2.11" ;
+    skos:broader grado2:2.2 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "011"@it ;
+    skos:notation "2.2.11" ;
+    xkos:depth "3" .
+
+grado3:2.2.12 a skos:Concept ;
+    skos:prefLabel "012"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "2.2.12" ;
+    skos:broader grado2:2.2 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "012"@it ;
+    skos:notation "2.2.12" ;
+    xkos:depth "3" .
+
+grado3:2.2.13 a skos:Concept ;
+    skos:prefLabel "013"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "2.2.13" ;
+    skos:broader grado2:2.2 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "013"@it ;
+    skos:notation "2.2.13" ;
+    xkos:depth "3" .
+
+grado3:2.2.14 a skos:Concept ;
+    skos:prefLabel "014"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "2.2.14" ;
+    skos:broader grado2:2.2 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "014"@it ;
+    skos:notation "2.2.14" ;
+    xkos:depth "3" .
+
+grado3:2.2.15 a skos:Concept ;
+    skos:prefLabel "015"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "2.2.15" ;
+    skos:broader grado2:2.2 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "015"@it ;
+    skos:notation "2.2.15" ;
+    xkos:depth "3" .
+
+grado3:3.3.16 a skos:Concept ;
+    skos:prefLabel "016"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.3.16" ;
+    skos:broader grado2:3.3 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "016"@it ;
+    skos:notation "3.3.16" ;
+    xkos:depth "3" .
+
+grado3:3.3.17 a skos:Concept ;
+    skos:prefLabel "017"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.3.17" ;
+    skos:broader grado2:3.3 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "017"@it ;
+    skos:notation "3.3.17" ;
+    xkos:depth "3" .
+
+grado3:3.3.18 a skos:Concept ;
+    skos:prefLabel "018"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.3.18" ;
+    skos:broader grado2:3.3 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "018"@it ;
+    skos:notation "3.3.18" ;
+    xkos:depth "3" .
+
+grado3:3.3.19 a skos:Concept ;
+    skos:prefLabel "019"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.3.19" ;
+    skos:broader grado2:3.3 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "019"@it ;
+    skos:notation "3.3.19" ;
+    xkos:depth "3" .
+
+grado3:3.3.20 a skos:Concept ;
+    skos:prefLabel "020"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.3.20" ;
+    skos:broader grado2:3.3 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "020"@it ;
+    skos:notation "3.3.20" ;
+    xkos:depth "3" .
+
+grado3:3.3.21 a skos:Concept ;
+    skos:prefLabel "021"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.3.21" ;
+    skos:broader grado2:3.3 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "021"@it ;
+    skos:notation "3.3.21" ;
+    xkos:depth "3" .
+
+grado3:3.3.22 a skos:Concept ;
+    skos:prefLabel "022"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.3.22" ;
+    skos:broader grado2:3.3 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "022"@it ;
+    skos:notation "3.3.22" ;
+    xkos:depth "3" .
+
+grado3:3.3.23 a skos:Concept ;
+    skos:prefLabel "023"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.3.23" ;
+    skos:broader grado2:3.3 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "023"@it ;
+    skos:notation "3.3.23" ;
+    xkos:depth "3" .
+
+grado3:3.3.24 a skos:Concept ;
+    skos:prefLabel "024"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.3.24" ;
+    skos:broader grado2:3.3 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "024"@it ;
+    skos:notation "3.3.24" ;
+    xkos:depth "3" .
+
+grado3:3.3.25 a skos:Concept ;
+    skos:prefLabel "025"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.3.25" ;
+    skos:broader grado2:3.3 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "025"@it ;
+    skos:notation "3.3.25" ;
+    xkos:depth "3" .
+
+grado3:3.3.26 a skos:Concept ;
+    skos:prefLabel "026"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.3.26" ;
+    skos:broader grado2:3.3 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "026"@it ;
+    skos:notation "3.3.26" ;
+    xkos:depth "3" .
+
+grado3:3.3.27 a skos:Concept ;
+    skos:prefLabel "027"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.3.27" ;
+    skos:broader grado2:3.3 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "027"@it ;
+    skos:notation "3.3.27" ;
+    xkos:depth "3" .
+
+grado3:3.3.28 a skos:Concept ;
+    skos:prefLabel "028"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.3.28" ;
+    skos:broader grado2:3.3 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "028"@it ;
+    skos:notation "3.3.28" ;
+    xkos:depth "3" .
+
+grado3:3.3.29 a skos:Concept ;
+    skos:prefLabel "029"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.3.29" ;
+    skos:broader grado2:3.3 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "029"@it ;
+    skos:notation "3.3.29" ;
+    xkos:depth "3" .
+
+grado3:3.4.30 a skos:Concept ;
+    skos:prefLabel "030"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.4.30" ;
+    skos:broader grado2:3.4 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "030"@it ;
+    skos:notation "3.4.30" ;
+    xkos:depth "3" .
+
+grado3:3.4.31 a skos:Concept ;
+    skos:prefLabel "031"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.4.31" ;
+    skos:broader grado2:3.4 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "031"@it ;
+    skos:notation "3.4.31" ;
+    xkos:depth "3" .
+
+grado3:3.4.32 a skos:Concept ;
+    skos:prefLabel "032"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.4.32" ;
+    skos:broader grado2:3.4 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "032"@it ;
+    skos:notation "3.4.32" ;
+    xkos:depth "3" .
+
+grado3:3.5.33 a skos:Concept ;
+    skos:prefLabel "033"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.5.33" ;
+    skos:broader grado2:3.5 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "033"@it ;
+    skos:notation "3.5.33" ;
+    xkos:depth "3" .
+
+grado3:3.5.34 a skos:Concept ;
+    skos:prefLabel "034"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.5.34" ;
+    skos:broader grado2:3.5 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "034"@it ;
+    skos:notation "3.5.34" ;
+    xkos:depth "3" .
+
+grado3:3.5.35 a skos:Concept ;
+    skos:prefLabel "035"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.5.35" ;
+    skos:broader grado2:3.5 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "035"@it ;
+    skos:notation "3.5.35" ;
+    xkos:depth "3" .
+
+grado3:3.5.36 a skos:Concept ;
+    skos:prefLabel "036"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.5.36" ;
+    skos:broader grado2:3.5 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "036"@it ;
+    skos:notation "3.5.36" ;
+    xkos:depth "3" .
+
+grado3:3.5.37 a skos:Concept ;
+    skos:prefLabel "037"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.5.37" ;
+    skos:broader grado2:3.5 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "037"@it ;
+    skos:notation "3.5.37" ;
+    xkos:depth "3" .
+
+grado3:3.5.38 a skos:Concept ;
+    skos:prefLabel "038"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.5.38" ;
+    skos:broader grado2:3.5 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "038"@it ;
+    skos:notation "3.5.38" ;
+    xkos:depth "3" .
+
+grado3:3.5.39 a skos:Concept ;
+    skos:prefLabel "039"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.5.39" ;
+    skos:broader grado2:3.5 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "039"@it ;
+    skos:notation "3.5.39" ;
+    xkos:depth "3" .
+
+grado3:3.6.40 a skos:Concept ;
+    skos:prefLabel "040"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.6.40" ;
+    skos:broader grado2:3.6 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "040"@it ;
+    skos:notation "3.6.40" ;
+    xkos:depth "3" .
+
+grado3:3.6.41 a skos:Concept ;
+    skos:prefLabel "041"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.6.41" ;
+    skos:broader grado2:3.6 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "041"@it ;
+    skos:notation "3.6.41" ;
+    xkos:depth "3" .
+
+grado3:3.6.42 a skos:Concept ;
+    skos:prefLabel "042"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.6.42" ;
+    skos:broader grado2:3.6 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "042"@it ;
+    skos:notation "3.6.42" ;
+    xkos:depth "3" .
+
+grado3:3.6.43 a skos:Concept ;
+    skos:prefLabel "043"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.6.43" ;
+    skos:broader grado2:3.6 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "043"@it ;
+    skos:notation "3.6.43" ;
+    xkos:depth "3" .
+
+grado3:3.6.44 a skos:Concept ;
+    skos:prefLabel "044"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.6.44" ;
+    skos:broader grado2:3.6 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "044"@it ;
+    skos:notation "3.6.44" ;
+    xkos:depth "3" .
+
+grado3:3.6.45 a skos:Concept ;
+    skos:prefLabel "045"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.6.45" ;
+    skos:broader grado2:3.6 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "045"@it ;
+    skos:notation "3.6.45" ;
+    xkos:depth "3" .
+
+grado3:3.6.46 a skos:Concept ;
+    skos:prefLabel "046"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.6.46" ;
+    skos:broader grado2:3.6 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "046"@it ;
+    skos:notation "3.6.46" ;
+    xkos:depth "3" .
+
+grado3:3.6.47 a skos:Concept ;
+    skos:prefLabel "047"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.6.47" ;
+    skos:broader grado2:3.6 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "047"@it ;
+    skos:notation "3.6.47" ;
+    xkos:depth "3" .
+
+grado3:3.6.48 a skos:Concept ;
+    skos:prefLabel "048"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.6.48" ;
+    skos:broader grado2:3.6 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "048"@it ;
+    skos:notation "3.6.48" ;
+    xkos:depth "3" .
+
+grado3:3.6.49 a skos:Concept ;
+    skos:prefLabel "049"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.6.49" ;
+    skos:broader grado2:3.6 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "049"@it ;
+    skos:notation "3.6.49" ;
+    xkos:depth "3" .
+
+grado3:3.7.50 a skos:Concept ;
+    skos:prefLabel "050"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.50" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "050"@it ;
+    skos:notation "3.7.50" ;
+    xkos:depth "3" .
+
+grado3:3.7.51 a skos:Concept ;
+    skos:prefLabel "051"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.51" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "051"@it ;
+    skos:notation "3.7.51" ;
+    xkos:depth "3" .
+
+grado3:3.7.52 a skos:Concept ;
+    skos:prefLabel "052"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.52" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "052"@it ;
+    skos:notation "3.7.52" ;
+    xkos:depth "3" .
+
+grado3:3.7.53 a skos:Concept ;
+    skos:prefLabel "053"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.53" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "053"@it ;
+    skos:notation "3.7.53" ;
+    xkos:depth "3" .
+
+grado3:3.7.54 a skos:Concept ;
+    skos:prefLabel "054"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.54" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "054"@it ;
+    skos:notation "3.7.54" ;
+    xkos:depth "3" .
+
+grado3:3.7.55 a skos:Concept ;
+    skos:prefLabel "055"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.55" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "055"@it ;
+    skos:notation "3.7.55" ;
+    xkos:depth "3" .
+
+grado3:3.7.56 a skos:Concept ;
+    skos:prefLabel "056"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.56" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "056"@it ;
+    skos:notation "3.7.56" ;
+    xkos:depth "3" .
+
+grado3:3.7.57 a skos:Concept ;
+    skos:prefLabel "057"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.57" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "057"@it ;
+    skos:notation "3.7.57" ;
+    xkos:depth "3" .
+
+grado3:3.7.58 a skos:Concept ;
+    skos:prefLabel "058"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.58" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "058"@it ;
+    skos:notation "3.7.58" ;
+    xkos:depth "3" .
+
+grado3:3.7.59 a skos:Concept ;
+    skos:prefLabel "059"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.59" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "059"@it ;
+    skos:notation "3.7.59" ;
+    xkos:depth "3" .
+
+grado3:3.7.60 a skos:Concept ;
+    skos:prefLabel "060"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.60" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "060"@it ;
+    skos:notation "3.7.60" ;
+    xkos:depth "3" .
+
+grado3:3.7.61 a skos:Concept ;
+    skos:prefLabel "061"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.61" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "061"@it ;
+    skos:notation "3.7.61" ;
+    xkos:depth "3" .
+
+grado3:3.7.62 a skos:Concept ;
+    skos:prefLabel "062"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.62" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "062"@it ;
+    skos:notation "3.7.62" ;
+    xkos:depth "3" .
+
+grado3:3.7.63 a skos:Concept ;
+    skos:prefLabel "063"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.63" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "063"@it ;
+    skos:notation "3.7.63" ;
+    xkos:depth "3" .
+
+grado3:3.7.64 a skos:Concept ;
+    skos:prefLabel "064"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.64" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "064"@it ;
+    skos:notation "3.7.64" ;
+    xkos:depth "3" .
+
+grado3:3.7.65 a skos:Concept ;
+    skos:prefLabel "065"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.65" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "065"@it ;
+    skos:notation "3.7.65" ;
+    xkos:depth "3" .
+
+grado3:3.7.66 a skos:Concept ;
+    skos:prefLabel "066"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.66" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "066"@it ;
+    skos:notation "3.7.66" ;
+    xkos:depth "3" .
+
+grado3:3.7.67 a skos:Concept ;
+    skos:prefLabel "067"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.67" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "067"@it ;
+    skos:notation "3.7.67" ;
+    xkos:depth "3" .
+
+grado3:3.7.68 a skos:Concept ;
+    skos:prefLabel "068"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.68" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "068"@it ;
+    skos:notation "3.7.68" ;
+    xkos:depth "3" .
+
+grado3:3.7.69 a skos:Concept ;
+    skos:prefLabel "069"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.69" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "069"@it ;
+    skos:notation "3.7.69" ;
+    xkos:depth "3" .
+
+grado3:3.7.70 a skos:Concept ;
+    skos:prefLabel "070"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.70" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "070"@it ;
+    skos:notation "3.7.70" ;
+    xkos:depth "3" .
+
+grado3:3.7.71 a skos:Concept ;
+    skos:prefLabel "071"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.71" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "071"@it ;
+    skos:notation "3.7.71" ;
+    xkos:depth "3" .
+
+grado3:3.7.72 a skos:Concept ;
+    skos:prefLabel "072"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.72" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "072"@it ;
+    skos:notation "3.7.72" ;
+    xkos:depth "3" .
+
+grado3:3.7.73 a skos:Concept ;
+    skos:prefLabel "073"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.73" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "073"@it ;
+    skos:notation "3.7.73" ;
+    xkos:depth "3" .
+
+grado3:3.7.74 a skos:Concept ;
+    skos:prefLabel "074"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.74" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "074"@it ;
+    skos:notation "3.7.74" ;
+    xkos:depth "3" .
+
+grado3:3.7.75 a skos:Concept ;
+    skos:prefLabel "075"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.75" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "075"@it ;
+    skos:notation "3.7.75" ;
+    xkos:depth "3" .
+
+grado3:3.7.76 a skos:Concept ;
+    skos:prefLabel "076"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.76" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "076"@it ;
+    skos:notation "3.7.76" ;
+    xkos:depth "3" .
+
+grado3:3.7.77 a skos:Concept ;
+    skos:prefLabel "077"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.77" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "077"@it ;
+    skos:notation "3.7.77" ;
+    xkos:depth "3" .
+
+grado3:3.7.78 a skos:Concept ;
+    skos:prefLabel "078"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.78" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "078"@it ;
+    skos:notation "3.7.78" ;
+    xkos:depth "3" .
+
+grado3:3.7.79 a skos:Concept ;
+    skos:prefLabel "079"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "3.7.79" ;
+    skos:broader grado2:3.7 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "079"@it ;
+    skos:notation "3.7.79" ;
+    xkos:depth "3" .
+
+grado3:4.8.80 a skos:Concept ;
+    skos:prefLabel "080"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "4.8.80" ;
+    skos:broader grado2:4.8 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "080"@it ;
+    skos:notation "4.8.80" ;
+    xkos:depth "3" .
+
+grado3:4.8.81 a skos:Concept ;
+    skos:prefLabel "081"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "4.8.81" ;
+    skos:broader grado2:4.8 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "081"@it ;
+    skos:notation "4.8.81" ;
+    xkos:depth "3" .
+
+grado3:4.8.82 a skos:Concept ;
+    skos:prefLabel "082"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "4.8.82" ;
+    skos:broader grado2:4.8 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "082"@it ;
+    skos:notation "4.8.82" ;
+    xkos:depth "3" .
+
+grado3:4.8.83 a skos:Concept ;
+    skos:prefLabel "083"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "4.8.83" ;
+    skos:broader grado2:4.8 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "083"@it ;
+    skos:notation "4.8.83" ;
+    xkos:depth "3" .
+
+grado3:4.8.84 a skos:Concept ;
+    skos:prefLabel "084"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "4.8.84" ;
+    skos:broader grado2:4.8 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "084"@it ;
+    skos:notation "4.8.84" ;
+    xkos:depth "3" .
+
+grado3:4.8.85 a skos:Concept ;
+    skos:prefLabel "085"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "4.8.85" ;
+    skos:broader grado2:4.8 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "085"@it ;
+    skos:notation "4.8.85" ;
+    xkos:depth "3" .
+
+grado3:4.8.86 a skos:Concept ;
+    skos:prefLabel "086"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "4.8.86" ;
+    skos:broader grado2:4.8 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "086"@it ;
+    skos:notation "4.8.86" ;
+    xkos:depth "3" .
+
+grado3:4.8.87 a skos:Concept ;
+    skos:prefLabel "087"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "4.8.87" ;
+    skos:broader grado2:4.8 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "087"@it ;
+    skos:notation "4.8.87" ;
+    xkos:depth "3" .
+
+grado3:4.8.88 a skos:Concept ;
+    skos:prefLabel "088"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "4.8.88" ;
+    skos:broader grado2:4.8 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "088"@it ;
+    skos:notation "4.8.88" ;
+    xkos:depth "3" .
+
+grado3:4.8.89 a skos:Concept ;
+    skos:prefLabel "089"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "4.8.89" ;
+    skos:broader grado2:4.8 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "089"@it ;
+    skos:notation "4.8.89" ;
+    xkos:depth "3" .
+
+grado3:4.8.90 a skos:Concept ;
+    skos:prefLabel "090"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "4.8.90" ;
+    skos:broader grado2:4.8 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "090"@it ;
+    skos:notation "4.8.90" ;
+    xkos:depth "3" .
+
+grado3:4.8.91 a skos:Concept ;
+    skos:prefLabel "091"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "4.8.91" ;
+    skos:broader grado2:4.8 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "091"@it ;
+    skos:notation "4.8.91" ;
+    xkos:depth "3" .
+
+grado3:4.8.92 a skos:Concept ;
+    skos:prefLabel "092"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "4.8.92" ;
+    skos:broader grado2:4.8 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "092"@it ;
+    skos:notation "4.8.92" ;
+    xkos:depth "3" .
+
+grado3:4.8.93 a skos:Concept ;
+    skos:prefLabel "093"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "4.8.93" ;
+    skos:broader grado2:4.8 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "093"@it ;
+    skos:notation "4.8.93" ;
+    xkos:depth "3" .
+
+grado3:4.8.94 a skos:Concept ;
+    skos:prefLabel "094"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "4.8.94" ;
+    skos:broader grado2:4.8 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "094"@it ;
+    skos:notation "4.8.94" ;
+    xkos:depth "3" .
+
+grado3:4.8.95 a skos:Concept ;
+    skos:prefLabel "095"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "4.8.95" ;
+    skos:broader grado2:4.8 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "095"@it ;
+    skos:notation "4.8.95" ;
+    xkos:depth "3" .
+
+grado3:4.8.96 a skos:Concept ;
+    skos:prefLabel "096"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "4.8.96" ;
+    skos:broader grado2:4.8 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "096"@it ;
+    skos:notation "4.8.96" ;
+    xkos:depth "3" .
+
+grado3:4.8.97 a skos:Concept ;
+    skos:prefLabel "097"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "4.8.97" ;
+    skos:broader grado2:4.8 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "097"@it ;
+    skos:notation "4.8.97" ;
+    xkos:depth "3" .
+
+grado3:4.8.98 a skos:Concept ;
+    skos:prefLabel "098"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "4.8.98" ;
+    skos:broader grado2:4.8 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "098"@it ;
+    skos:notation "4.8.98" ;
+    xkos:depth "3" .
+
+grado3:4.8.99 a skos:Concept ;
+    skos:prefLabel "099"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "4.8.99" ;
+    skos:broader grado2:4.8 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "099"@it ;
+    skos:notation "4.8.99" ;
+    xkos:depth "3" .
+
+grado3:4.8.100 a skos:Concept ;
+    skos:prefLabel "100"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "4.8.100" ;
+    skos:broader grado2:4.8 ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "100"@it ;
+    skos:notation "4.8.100" ;
+    xkos:depth "3" .
+
 <http://dati.inail.it/data/Organization/inail> a cov:Organization ;
     rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
     cov:IPAcode "inail" ;
     cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
     cov:orgAcronym "inail" .
 
-<http://dati.inail.it/opendata/vocabolari/inabilita> a adms:Asset,
+<http://dati.inail.it/opendata/vocabolari/inabilita/grado1/-2> a skos:Concept ;
+    skos:prefLabel "Grado superiore a 100"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "-2" ;
+    skos:inScheme inailvoc:inabilita ;
+    skos:label "Grado superiore a 100"@it ;
+    skos:notation "-2" ;
+    xkos:depth "1" .
+
+inailvoc:inabilita a adms:Asset,
         dcatapit:Dataset,
         skos:ConceptScheme ;
-    rdfs:label "Controlled vocabulary on the classification of the degree of inability"@en,
-        "Vocabolario Controllato sulla classificazione del grado di inabilità "@it ;
-    skos:prefLabel "Vocabolario Controllato sulla classificazione del grado di inabilità"@it ;
+    rdfs:label "Controlled vocabulary on the classification of the degree of inability adopted by INAIL"@en,
+        "Vocabolario Controllato sulla classificazione del grado di inabilità adottata dall'INAIL "@it ;
+    skos:prefLabel "Vocabolario Controllato sulla classificazione del grado di inabilità adottata dall'INAIL"@it ;
     rdfs:comment "Classification of the degree of inability into groups"@en,
         "Classificazione del grado di inabilità in fasce"@it ;
-    owl:versionInfo "0.1" ;
-    rdfs:isDefinedBy <http://dati.inail.it/opendata/vocabolari/inabilita> ;
+    owl:versionInfo "0.2" ;
+    rdfs:isDefinedBy inailvoc:inabilita ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:contactPoint <https://www.inail.it> ;
     dcat:distribution <https://w3id.org/italia/data/distribution/PS-RDF-Turtle> ;
     dcat:keyword "disease"@en,
         "inability"@en,
         "inabilità"@it,
         "inail"@it,
         "infortunio"@it,
+        "infortunio sul lavoro"@it,
         "injury"@en,
         "malattia professionale"@it,
-        "occupational disease"@en ;
+        "occupational disease"@en,
+        "occupational injury"@en,
+        "work accident"@en ;
     dcat:theme <http://eurovoc.europa.eu/825>,
         <http://eurovoc.europa.eu/1334>,
         <http://eurovoc.europa.eu/1761>,
@@ -48,1280 +1298,25 @@
     dct:creator <http://dati.inail.it/data/Organization/inail> ;
     dct:description "Classification of the degree of inability into groups"@en,
         "Classificazione del grado di inabilità in fasce"@it ;
-    dct:identifier <http://dati.inail.it/opendata/vocabolari/inabilita> ;
+    dct:identifier "http://dati.inail.it/opendata/vocabolari/inabilita" ;
     dct:issued "2022-09-06"^^xsd:date ;
-    dct:language <http://publications.europa.eu/resource/authority/language/IT> ;
-    dct:modified "2022-09-06"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2022-10-01"^^xsd:date ;
     dct:publisher <http://dati.inail.it/data/Organization/inail> ;
+    dct:relation inailvoc:classe_menomazione,
+        inailvoc:tipo_indennizzo,
+        inailvoc:tipo_trattazione ;
     dct:rightsHolder <http://dati.inail.it/data/Organization/inail> ;
-    dct:title "Controlled vocabulary on the classification of the degree of inability"@en,
-        "Vocabolario Controllato sulla classificazione del grado di inabilità"@it ;
+    dct:title "Controlled vocabulary on the classification of the degree of inability adopted by INAIL"@en,
+        "Vocabolario Controllato sulla classificazione del grado di inabilità adottata dall'INAIL"@it ;
     dct:type <http://purl.org/adms/assettype/Taxonomy> ;
     ndc:keyConcept "Inabilità" ;
+    skos:hasTopConcept grado1:0,
+        grado1:1,
+        grado1:2,
+        grado1:3,
+        grado1:4,
+        <http://dati.inail.it/opendata/vocabolari/inabilita/grado1/-2> ;
     xkos:numberOfLevels "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado1/0> a skos:Concept ;
-    skos:prefLabel "a zero"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "0" ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "a zero"@it ;
-    skos:narrower <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/0> ;
-    skos:notation "0" ;
-    xkos:depth "1" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado1/1> a skos:Concept ;
-    skos:prefLabel "da 01 a 10"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "1" ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "da 01 a 10"@it ;
-    skos:narrower <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/1> ;
-    skos:notation "1" ;
-    xkos:depth "1" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado1/2> a skos:Concept ;
-    skos:prefLabel "da 11 a 15"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "2" ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "da 11 a 15"@it ;
-    skos:narrower <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/2> ;
-    skos:notation "2" ;
-    xkos:depth "1" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado1/3> a skos:Concept ;
-    skos:prefLabel "da 16 a 79"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "3" ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "da 16 a 79"@it ;
-    skos:narrower <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/3>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/4>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/5>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/6>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:notation "3" ;
-    xkos:depth "1" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado1/4> a skos:Concept ;
-    skos:prefLabel "da 80 a 100"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "4" ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "da 80 a 100"@it ;
-    skos:narrower <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/8> ;
-    skos:notation "4" ;
-    xkos:depth "1" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado1/-2> a skos:Concept ;
-    skos:prefLabel "Grado superiore a 100"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "-2" ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "Grado superiore a 100"@it ;
-    skos:notation "-2" ;
-    xkos:depth "1" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado2/0> a skos:Concept ;
-    skos:prefLabel "a zero"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "0" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado1/0> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "a zero"@it ;
-    skos:narrower <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/0> ;
-    skos:notation "0" ;
-    xkos:depth "2" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado2/1> a skos:Concept ;
-    skos:prefLabel "da 01 a 10"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "1" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado1/1> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "da 01 a 10"@it ;
-    skos:narrower <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/1>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/2>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/3>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/4>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/5>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/6>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/7>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/8>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/9>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/10> ;
-    skos:notation "1" ;
-    xkos:depth "2" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado2/2> a skos:Concept ;
-    skos:prefLabel "da 11 a 15"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "2" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado1/2> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "da 11 a 15"@it ;
-    skos:narrower <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/11>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/12>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/13>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/14>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/15> ;
-    skos:notation "2" ;
-    xkos:depth "2" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado2/3> a skos:Concept ;
-    skos:prefLabel "da 16 a 29"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "3" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado1/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "da 16 a 29"@it ;
-    skos:narrower <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/16>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/17>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/18>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/19>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/20>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/21>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/22>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/23>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/24>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/25>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/26>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/27>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/28>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/29> ;
-    skos:notation "3" ;
-    xkos:depth "2" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado2/4> a skos:Concept ;
-    skos:prefLabel "da 30 a 32"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "4" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado1/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "da 30 a 32"@it ;
-    skos:narrower <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/30>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/31>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/32> ;
-    skos:notation "4" ;
-    xkos:depth "2" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado2/5> a skos:Concept ;
-    skos:prefLabel "da 33 a 39"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "5" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado1/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "da 33 a 39"@it ;
-    skos:narrower <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/33>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/34>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/35>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/36>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/37>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/38>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/39> ;
-    skos:notation "5" ;
-    xkos:depth "2" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado2/6> a skos:Concept ;
-    skos:prefLabel "da 40 a 49"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "6" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado1/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "da 40 a 49"@it ;
-    skos:narrower <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/40>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/41>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/42>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/43>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/44>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/45>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/46>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/47>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/48>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/49> ;
-    skos:notation "6" ;
-    xkos:depth "2" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> a skos:Concept ;
-    skos:prefLabel "da 50 a 79"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "7" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado1/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "da 50 a 79"@it ;
-    skos:narrower <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/50>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/51>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/52>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/53>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/54>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/55>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/56>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/57>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/58>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/59>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/60>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/61>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/62>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/63>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/64>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/65>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/66>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/67>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/68>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/69>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/70>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/71>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/72>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/73>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/74>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/75>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/76>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/77>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/78>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/79> ;
-    skos:notation "7" ;
-    xkos:depth "2" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado2/8> a skos:Concept ;
-    skos:prefLabel "da 80 a 100"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "8" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado1/4> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "da 80 a 100"@it ;
-    skos:narrower <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/80>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/81>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/82>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/83>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/84>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/85>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/86>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/87>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/88>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/89>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/90>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/91>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/92>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/93>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/94>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/95>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/96>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/97>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/98>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/99>,
-        <http://dati.inail.it/opendata/vocabolari/inabilita/grado3/100> ;
-    skos:notation "8" ;
-    xkos:depth "2" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/0> a skos:Concept ;
-    skos:prefLabel "000"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "0" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/0> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "000"@it ;
-    skos:notation "0" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/1> a skos:Concept ;
-    skos:prefLabel "001"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "1" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/1> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "001"@it ;
-    skos:notation "1" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/2> a skos:Concept ;
-    skos:prefLabel "002"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "2" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/1> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "002"@it ;
-    skos:notation "2" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/3> a skos:Concept ;
-    skos:prefLabel "003"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/1> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "003"@it ;
-    skos:notation "3" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/4> a skos:Concept ;
-    skos:prefLabel "004"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "4" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/1> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "004"@it ;
-    skos:notation "4" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/5> a skos:Concept ;
-    skos:prefLabel "005"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "5" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/1> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "005"@it ;
-    skos:notation "5" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/6> a skos:Concept ;
-    skos:prefLabel "006"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "6" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/1> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "006"@it ;
-    skos:notation "6" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/7> a skos:Concept ;
-    skos:prefLabel "007"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "7" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/1> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "007"@it ;
-    skos:notation "7" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/8> a skos:Concept ;
-    skos:prefLabel "008"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "8" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/1> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "008"@it ;
-    skos:notation "8" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/9> a skos:Concept ;
-    skos:prefLabel "009"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "9" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/1> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "009"@it ;
-    skos:notation "9" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/10> a skos:Concept ;
-    skos:prefLabel "010"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "10" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/1> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "010"@it ;
-    skos:notation "10" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/11> a skos:Concept ;
-    skos:prefLabel "011"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "11" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/2> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "011"@it ;
-    skos:notation "11" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/12> a skos:Concept ;
-    skos:prefLabel "012"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "12" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/2> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "012"@it ;
-    skos:notation "12" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/13> a skos:Concept ;
-    skos:prefLabel "013"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "13" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/2> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "013"@it ;
-    skos:notation "13" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/14> a skos:Concept ;
-    skos:prefLabel "014"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "14" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/2> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "014"@it ;
-    skos:notation "14" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/15> a skos:Concept ;
-    skos:prefLabel "015"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "15" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/2> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "015"@it ;
-    skos:notation "15" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/16> a skos:Concept ;
-    skos:prefLabel "016"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "16" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "016"@it ;
-    skos:notation "16" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/17> a skos:Concept ;
-    skos:prefLabel "017"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "17" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "017"@it ;
-    skos:notation "17" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/18> a skos:Concept ;
-    skos:prefLabel "018"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "18" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "018"@it ;
-    skos:notation "18" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/19> a skos:Concept ;
-    skos:prefLabel "019"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "19" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "019"@it ;
-    skos:notation "19" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/20> a skos:Concept ;
-    skos:prefLabel "020"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "20" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "020"@it ;
-    skos:notation "20" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/21> a skos:Concept ;
-    skos:prefLabel "021"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "21" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "021"@it ;
-    skos:notation "21" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/22> a skos:Concept ;
-    skos:prefLabel "022"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "22" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "022"@it ;
-    skos:notation "22" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/23> a skos:Concept ;
-    skos:prefLabel "023"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "23" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "023"@it ;
-    skos:notation "23" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/24> a skos:Concept ;
-    skos:prefLabel "024"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "24" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "024"@it ;
-    skos:notation "24" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/25> a skos:Concept ;
-    skos:prefLabel "025"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "25" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "025"@it ;
-    skos:notation "25" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/26> a skos:Concept ;
-    skos:prefLabel "026"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "26" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "026"@it ;
-    skos:notation "26" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/27> a skos:Concept ;
-    skos:prefLabel "027"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "27" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "027"@it ;
-    skos:notation "27" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/28> a skos:Concept ;
-    skos:prefLabel "028"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "28" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "028"@it ;
-    skos:notation "28" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/29> a skos:Concept ;
-    skos:prefLabel "029"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "29" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/3> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "029"@it ;
-    skos:notation "29" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/30> a skos:Concept ;
-    skos:prefLabel "030"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "30" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/4> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "030"@it ;
-    skos:notation "30" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/31> a skos:Concept ;
-    skos:prefLabel "031"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "31" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/4> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "031"@it ;
-    skos:notation "31" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/32> a skos:Concept ;
-    skos:prefLabel "032"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "32" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/4> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "032"@it ;
-    skos:notation "32" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/33> a skos:Concept ;
-    skos:prefLabel "033"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "33" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/5> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "033"@it ;
-    skos:notation "33" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/34> a skos:Concept ;
-    skos:prefLabel "034"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "34" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/5> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "034"@it ;
-    skos:notation "34" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/35> a skos:Concept ;
-    skos:prefLabel "035"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "35" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/5> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "035"@it ;
-    skos:notation "35" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/36> a skos:Concept ;
-    skos:prefLabel "036"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "36" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/5> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "036"@it ;
-    skos:notation "36" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/37> a skos:Concept ;
-    skos:prefLabel "037"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "37" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/5> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "037"@it ;
-    skos:notation "37" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/38> a skos:Concept ;
-    skos:prefLabel "038"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "38" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/5> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "038"@it ;
-    skos:notation "38" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/39> a skos:Concept ;
-    skos:prefLabel "039"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "39" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/5> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "039"@it ;
-    skos:notation "39" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/40> a skos:Concept ;
-    skos:prefLabel "040"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "40" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/6> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "040"@it ;
-    skos:notation "40" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/41> a skos:Concept ;
-    skos:prefLabel "041"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "41" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/6> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "041"@it ;
-    skos:notation "41" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/42> a skos:Concept ;
-    skos:prefLabel "042"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "42" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/6> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "042"@it ;
-    skos:notation "42" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/43> a skos:Concept ;
-    skos:prefLabel "043"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "43" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/6> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "043"@it ;
-    skos:notation "43" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/44> a skos:Concept ;
-    skos:prefLabel "044"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "44" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/6> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "044"@it ;
-    skos:notation "44" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/45> a skos:Concept ;
-    skos:prefLabel "045"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "45" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/6> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "045"@it ;
-    skos:notation "45" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/46> a skos:Concept ;
-    skos:prefLabel "046"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "46" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/6> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "046"@it ;
-    skos:notation "46" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/47> a skos:Concept ;
-    skos:prefLabel "047"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "47" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/6> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "047"@it ;
-    skos:notation "47" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/48> a skos:Concept ;
-    skos:prefLabel "048"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "48" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/6> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "048"@it ;
-    skos:notation "48" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/49> a skos:Concept ;
-    skos:prefLabel "049"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "49" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/6> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "049"@it ;
-    skos:notation "49" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/50> a skos:Concept ;
-    skos:prefLabel "050"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "50" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "050"@it ;
-    skos:notation "50" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/51> a skos:Concept ;
-    skos:prefLabel "051"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "51" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "051"@it ;
-    skos:notation "51" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/52> a skos:Concept ;
-    skos:prefLabel "052"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "52" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "052"@it ;
-    skos:notation "52" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/53> a skos:Concept ;
-    skos:prefLabel "053"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "53" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "053"@it ;
-    skos:notation "53" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/54> a skos:Concept ;
-    skos:prefLabel "054"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "54" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "054"@it ;
-    skos:notation "54" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/55> a skos:Concept ;
-    skos:prefLabel "055"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "55" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "055"@it ;
-    skos:notation "55" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/56> a skos:Concept ;
-    skos:prefLabel "056"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "56" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "056"@it ;
-    skos:notation "56" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/57> a skos:Concept ;
-    skos:prefLabel "057"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "57" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "057"@it ;
-    skos:notation "57" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/58> a skos:Concept ;
-    skos:prefLabel "058"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "58" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "058"@it ;
-    skos:notation "58" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/59> a skos:Concept ;
-    skos:prefLabel "059"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "59" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "059"@it ;
-    skos:notation "59" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/60> a skos:Concept ;
-    skos:prefLabel "060"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "60" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "060"@it ;
-    skos:notation "60" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/61> a skos:Concept ;
-    skos:prefLabel "061"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "61" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "061"@it ;
-    skos:notation "61" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/62> a skos:Concept ;
-    skos:prefLabel "062"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "62" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "062"@it ;
-    skos:notation "62" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/63> a skos:Concept ;
-    skos:prefLabel "063"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "63" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "063"@it ;
-    skos:notation "63" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/64> a skos:Concept ;
-    skos:prefLabel "064"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "64" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "064"@it ;
-    skos:notation "64" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/65> a skos:Concept ;
-    skos:prefLabel "065"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "65" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "065"@it ;
-    skos:notation "65" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/66> a skos:Concept ;
-    skos:prefLabel "066"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "66" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "066"@it ;
-    skos:notation "66" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/67> a skos:Concept ;
-    skos:prefLabel "067"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "67" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "067"@it ;
-    skos:notation "67" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/68> a skos:Concept ;
-    skos:prefLabel "068"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "68" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "068"@it ;
-    skos:notation "68" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/69> a skos:Concept ;
-    skos:prefLabel "069"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "69" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "069"@it ;
-    skos:notation "69" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/70> a skos:Concept ;
-    skos:prefLabel "070"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "70" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "070"@it ;
-    skos:notation "70" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/71> a skos:Concept ;
-    skos:prefLabel "071"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "71" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "071"@it ;
-    skos:notation "71" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/72> a skos:Concept ;
-    skos:prefLabel "072"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "72" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "072"@it ;
-    skos:notation "72" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/73> a skos:Concept ;
-    skos:prefLabel "073"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "73" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "073"@it ;
-    skos:notation "73" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/74> a skos:Concept ;
-    skos:prefLabel "074"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "74" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "074"@it ;
-    skos:notation "74" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/75> a skos:Concept ;
-    skos:prefLabel "075"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "75" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "075"@it ;
-    skos:notation "75" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/76> a skos:Concept ;
-    skos:prefLabel "076"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "76" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "076"@it ;
-    skos:notation "76" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/77> a skos:Concept ;
-    skos:prefLabel "077"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "77" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "077"@it ;
-    skos:notation "77" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/78> a skos:Concept ;
-    skos:prefLabel "078"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "78" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "078"@it ;
-    skos:notation "78" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/79> a skos:Concept ;
-    skos:prefLabel "079"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "79" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/7> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "079"@it ;
-    skos:notation "79" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/80> a skos:Concept ;
-    skos:prefLabel "080"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "80" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/8> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "080"@it ;
-    skos:notation "80" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/81> a skos:Concept ;
-    skos:prefLabel "081"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "81" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/8> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "081"@it ;
-    skos:notation "81" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/82> a skos:Concept ;
-    skos:prefLabel "082"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "82" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/8> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "082"@it ;
-    skos:notation "82" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/83> a skos:Concept ;
-    skos:prefLabel "083"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "83" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/8> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "083"@it ;
-    skos:notation "83" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/84> a skos:Concept ;
-    skos:prefLabel "084"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "84" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/8> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "084"@it ;
-    skos:notation "84" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/85> a skos:Concept ;
-    skos:prefLabel "085"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "85" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/8> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "085"@it ;
-    skos:notation "85" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/86> a skos:Concept ;
-    skos:prefLabel "086"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "86" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/8> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "086"@it ;
-    skos:notation "86" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/87> a skos:Concept ;
-    skos:prefLabel "087"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "87" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/8> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "087"@it ;
-    skos:notation "87" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/88> a skos:Concept ;
-    skos:prefLabel "088"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "88" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/8> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "088"@it ;
-    skos:notation "88" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/89> a skos:Concept ;
-    skos:prefLabel "089"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "89" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/8> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "089"@it ;
-    skos:notation "89" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/90> a skos:Concept ;
-    skos:prefLabel "090"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "90" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/8> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "090"@it ;
-    skos:notation "90" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/91> a skos:Concept ;
-    skos:prefLabel "091"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "91" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/8> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "091"@it ;
-    skos:notation "91" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/92> a skos:Concept ;
-    skos:prefLabel "092"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "92" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/8> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "092"@it ;
-    skos:notation "92" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/93> a skos:Concept ;
-    skos:prefLabel "093"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "93" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/8> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "093"@it ;
-    skos:notation "93" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/94> a skos:Concept ;
-    skos:prefLabel "094"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "94" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/8> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "094"@it ;
-    skos:notation "94" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/95> a skos:Concept ;
-    skos:prefLabel "095"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "95" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/8> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "095"@it ;
-    skos:notation "95" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/96> a skos:Concept ;
-    skos:prefLabel "096"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "96" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/8> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "096"@it ;
-    skos:notation "96" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/97> a skos:Concept ;
-    skos:prefLabel "097"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "97" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/8> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "097"@it ;
-    skos:notation "97" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/98> a skos:Concept ;
-    skos:prefLabel "098"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "98" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/8> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "098"@it ;
-    skos:notation "98" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/99> a skos:Concept ;
-    skos:prefLabel "099"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "99" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/8> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "099"@it ;
-    skos:notation "99" ;
-    xkos:depth "3" .
-
-<http://dati.inail.it/opendata/vocabolari/inabilita/grado3/100> a skos:Concept ;
-    skos:prefLabel "100"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "100" ;
-    skos:broader <http://dati.inail.it/opendata/vocabolari/inabilita/grado2/8> ;
-    skos:inScheme <http://dati.inail.it/opendata/inabilita> ;
-    skos:label "100"@it ;
-    skos:notation "100" ;
-    xkos:depth "3" .
 
 ### Serialized using the ttlser deterministic serializer v1.2.0

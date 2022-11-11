@@ -11,12 +11,25 @@ repos:
     rev: v4.3.0
     hooks:
     -   id: trailing-whitespace
-    -   id: end-of-file-fixer
+    # -   id: end-of-file-fixer
     -   id: check-yaml
         args: [--allow-multiple-documents]
     -   id: check-added-large-files
         args:
         - "--maxkb=4000"
+    # -   id: check-json
+    #     files: '^assets\/controlled-vocabularies\/.*\.json'
+    # -   id: pretty-format-json
+    #     args:
+    #     - "--autofix"
+    #     - "--no-sort-keys"
+    #     files: '^assets\/controlled-vocabularies\/.*\.json'
+    # -   id: pretty-format-json-ld
+    #     args:
+    #     - "--autofix"
+    #     - "--no-sort-keys"
+    #     name: pretty format json-ld
+    #     files: '^assets\/controlled-vocabularies\/.*\.jsonld'
 # - repo: https://github.com/myint/autoflake
 #   rev: v1.4
 #   hooks:
@@ -29,39 +42,39 @@ repos:
 #     rev: 22.6.0
 #     hooks:
 #     -   id: black
-# - repo: https://github.com/pycqa/isort
-#   rev: 5.10.1
-#   hooks:
-#     - id: isort
-#       name: isort (python)
-#       # Use black profile for isort to avoid conflicts
-#       #   see https://github.com/PyCQA/isort/issues/1518
-#       args: ["--profile", "black"]
-#     - id: isort
-#       name: isort (cython)
-#       types: [cython]
-#     - id: isort
-#       name: isort (pyi)
-#       types: [pyi]
-# - repo: https://gitlab.com/pycqa/flake8
-#   rev: 3.9.2
-#   hooks:
-#   - id: flake8
-# - repo: https://github.com/PyCQA/bandit
-#   rev: 1.7.4
-#   hooks:
-#     - id: bandit
-#       name: bandit
-#       args: ["-c", ".bandit.yaml"]
-#       description: 'Bandit is a tool for finding common security issues in Python code'
-#       entry: bandit
-#       language: python
-#       language_version: python3
-#       types: [python]
-# - repo: https://github.com/Lucas-C/pre-commit-hooks-safety
-#   rev: v1.3.0
-#   hooks:
-#     - id: python-safety-dependencies-check
+- repo: https://github.com/pycqa/isort
+  rev: 5.10.1
+  hooks:
+    - id: isort
+      name: isort (python)
+      # Use black profile for isort to avoid conflicts
+      #   see https://github.com/PyCQA/isort/issues/1518
+      args: ["--profile", "black"]
+    - id: isort
+      name: isort (cython)
+      types: [cython]
+    - id: isort
+      name: isort (pyi)
+      types: [pyi]
+- repo: https://gitlab.com/pycqa/flake8
+  rev: 3.9.2
+  hooks:
+  - id: flake8
+- repo: https://github.com/PyCQA/bandit
+  rev: 1.7.4
+  hooks:
+    - id: bandit
+      name: bandit
+      args: ["-c", ".bandit.yaml"]
+      description: 'Bandit is a tool for finding common security issues in Python code'
+      entry: bandit
+      language: python
+      language_version: python3
+      types: [python]
+- repo: https://github.com/Lucas-C/pre-commit-hooks-safety
+  rev: v1.3.0
+  hooks:
+    - id: python-safety-dependencies-check
 
 #
 # Semantic checks.
@@ -69,16 +82,18 @@ repos:
 - repo: https://github.com/teamdigitale/json-semantic-playground
   rev: c10c5879438de0d321d6591ec88ace95e042e9d2
   hooks:
-  - id: validate-csv
-    files: >-
-      ^assets\/controlled-vocabularies\/.*\.csv
+  # - id: validate-csv
+  #   files: >-
+  #     ^assets\/controlled-vocabularies\/.*\.csv
   - id: validate-oas-schema
     files: >-
       ^assets\/schemas\/.*.oas3.yaml
   - id: validate-turtle
+    name: Validate ontologies
     files: >-
       ^assets\/ontologies\/[^\/]+\/.*\.ttl
   - id: validate-turtle
+    name: Validate controlled vocabularies
     files: >-
       ^assets\/controlled-vocabularies\/.*\.ttl
   - id: validate-directory-versioning
@@ -91,7 +106,7 @@ repos:
 - repo: local
   hooks:
   - id: ttlfmt
-    name: Run ttlfmt
+    name: Serialize turtle files
     entry: ttlfmt
     files: >-
       ^assets/.*\.ttl
@@ -102,3 +117,42 @@ repos:
     - rdflib
     - ttlser
     - ttlser[ttlfmt]
+  - id: check-json-ld
+    name: check json-ld
+    entry: python scripts/check_json.py
+    files: '^assets\/controlled-vocabularies\/.*\.jsonld'
+    language: python
+    additional_dependencies:
+    - typing
+  - id: pretty-format-json-ld
+    name: pretty format json-ld
+    entry: python scripts/pretty_format_json.py
+    args:
+    - "--autofix"
+    - "--no-sort-keys"
+    files: '^assets\/controlled-vocabularies\/.*\.jsonld'
+    language: python
+    additional_dependencies:
+    - typing
+  - id: csvseparator
+    name: Check csv separator
+    entry: python scripts/fix-csv-separator.py
+    files: >-
+      ^assets\/controlled-vocabularies\/.*\.csv
+    language: python
+    additional_dependencies:
+    - pandas
+    types:
+    - file
+  # - id: skostocsv
+  #   name: Generate csv from vocabularies
+  #   entry: python scripts/create_csv_json.py
+  #   files: >-
+  #     ^assets\/controlled-vocabularies\/.*\.ttl
+  #   language: python
+  #   additional_dependencies:
+  #   - pandas
+  #   - pyld
+  #   - rdflib
+  #   types:
+  #   - file

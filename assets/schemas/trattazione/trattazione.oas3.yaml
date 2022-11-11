@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
-  title: Schema della trattazione di un evento lesivo
-  version: 202210.04.00
+  title: Schema della Trattazione
+  version: 202211.10.00
   x-summary: Schema della trattazione di un evento lesivo compatibile con l'ontologia INAIL.
   license:
     name: CC BY 4.0
@@ -12,8 +12,7 @@ info:
     email: b.marino@almawave.it
    # url:
   description: |-
-    La trattazione è l'«evoluzione» della pratica di infortunio o malattia professionale.
-    Dagli esiti delle varie trattazioni si definisce il grado di invalidità, la definizione dell'indennizzo e della Prestazione che viene erogata agli aventi diritto.
+   La trattazione identifica le diverse fasi della pratica di infortunio o di malattia professionale. Dagli esiti delle varie trattazioni si definisce il grado di invalidità, l’indennizzo e la prestazione che viene erogata agli aventi diritto.
 
     La metadatazione semantica degli schemi si basa sul documento
     [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html)
@@ -23,21 +22,33 @@ servers: []
 tags: []
 components:
   schemas:
+    EsitoDefinizione:
+      $ref: "https://github.com/InailUfficio5/inail-ndc/tree/main/assets/schemas/esito-definizione/esito-definizione.oas3.yaml#/components/schemas/EsitoDefinizione"
+    MalattiaProfessionale:
+      $ref: "https://github.com/InailUfficio5/inail-ndc/tree/main/assets/schemas/malattia-professionale/malattia-professionale.oas3.yaml#/components/schemas/MalattiaProfessionale"
+    Infortunio:
+      $ref: "https://github.com/InailUfficio5/inail-ndc/tree/main/assets/schemas/infortunio/infortunio.oas3.yaml#/components/schemas/Infortunio"
+    TipoIndennizzo:
+      $ref: "https://github.com/InailUfficio5/inail-ndc/tree/main/assets/schemas/tipo-indennizzo/tipo-indennizzo.oas3.yaml#/components/schemas/TipoIndennizzo"
+    TipoTrattazione:
+      $ref: "https://github.com/InailUfficio5/inail-ndc/tree/main/assets/schemas/tipo-trattazione/tipo-trattazione.oas3.yaml#/components/schemas/TipoTrattazione"
+
     IdTrattazione:
       type: string
-      description: Campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità.
-        http://dati.inail.it/ontology/idTrattazione
-      example: "111000000"
+      description:
+          Campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità.
+          Associato a https://w3id.org/italia/onto/WorkAccident/idTrattazione.
+      example: '111000000'
       maxLength: 50
       minLength: 1
     Trattazione:
       type: object
-      x-jsonld-type: http://dati.inail.it/ontology/Trattazione
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/Trattazione
       # This custom property defines the associated json-ld
       #   context that can be used to semantically describe
       #   the instances.
       x-jsonld-context:
-        "@vocab": "http://dati.inail.it/ontology/"
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
         id_trattazione: idTrattazione
         data_inizio_trattazione: dataInizioTrattazione
         data_fine_trattazione: dataFineTrattazione
@@ -54,10 +65,14 @@ components:
           "@id": trattazioneHaTipoIndennizzo
         trattazione_tipo_trattazione:
           "@id": haTipoTrattazione
+        trattazione_relativa_a_mp:
+          "@id": trattazioneRelativaAEvento
+        trattazione_relativa_a_inf:
+          "@id": trattazioneRelativaAEvento
       additionalProperties: true
       description:
-          Questo schema rappresenta una trattazione di un evento lesivo.
-          ed è associato ad  http://dati.inail.it/ontology/Riapertura
+          Questo schema rappresenta la trattazione di un evento lesivo
+          ed è associato a https://w3id.org/italia/onto/WorkAccident/Trattazione.
       required:
       - id_trattazione
       - data_inizio_trattazione
@@ -110,80 +125,50 @@ components:
           type: object
           items:
             $ref: "#/components/schemas/TipoTrattazione"
+        trattazione_relativa_a_mp:
+          type: object
+          items:
+            $ref: "#/components/schemas/MalattiaProfessionale"
+        trattazione_relativa_a_inf:
+          type: object
+          items:
+            $ref: "#/components/schemas/Infortunio"
       example:
-        id_trattazione: "111000000"
-        data_inizio_trattazione: "2016-05-15"
-        data_fine_trattazione: "2016-06-20"
-        data_istruttoria_trattazione: "2016-05-16"
+        id_trattazione: '111000000'
+        data_inizio_trattazione: '2016-05-15'
+        data_fine_trattazione: '2016-06-20'
+        data_istruttoria_trattazione: '2016-05-16'
         giorni_definizione_trattazione: 5
-        qualifica_professionale: "Non definito"
-        tipo_istruttoria_sanitaria: ""
-        tipo_istruttoria_amministrativa: ""
+        qualifica_professionale: 'Non definito'
+        tipo_istruttoria_sanitaria: 'Non definito'
+        tipo_istruttoria_amministrativa: 'Non definito'
         trattazione_esito:
-          codice_esito_definizione: "CO"
-          descrizione_esito_definizione: "Comunicazione istruttoria"
-          codice_classificazione_esito_definizione: "I"
-          descrizione_classificazione_esito_definizione: "Istruttoria"
+          - $ref: "#/components/schemas/EsitoDefinizione/example"
         trattazione_decisione_istruttoria:
-          codice_decisione_istruttoria: "AI"
-          descrizione_decisione_istruttoria: "Accolta INPS"
-          esito_decisione_istruttoria: "Negativo"
+          codice_decisione_istruttoria: 'AI'
+          descrizione_decisione_istruttoria: 'Accolta INPS'
+          esito_decisione_istruttoria: 'Negativo'
         trattazione_tipo_indennizzo:
-          codice_tipo_indennizzo: "APP"
-          descrizione_tipo_indennizzo: "Accertamento postumi provvisorio"
-          definizione_tipo_indennizzo: "Positivo"
+          - $ref: "#/components/schemas/TipoIndennizzo/example"
         trattazione_tipo_trattazione:
-          codice_tipo_trattazione: "AC"
-          indicatore_tipo_trattazione: "E"
-          descrizione_tipo_trattazione: "Assegno continuativo mensile"
-
-    EsitoDefinizione: #link con altri schema
-      type: object
-      x-jsonld-type: http://dati.inail.it/ontology/EsitoDefinizione
-      x-jsonld-context:
-        "@vocab": "http://dati.inail.it/ontology/"
-        codice_esito_definizione: codiceEsitoDefinizione
-        descrizione_esito_definizione: descrizioneEsitoDefinizione
-        codice_classificazione_esito_definizione: codiceClassificazioneEsitoDefinizione
-        descrizione_classificazione_esito_definizione: descrizioneClassificazioneEsitoDefinizione
-      additionalProperties: true
-      description:
-          Questo schema rappresenta l'esito definizione, ovvero la situazione amministrativa del caso.
-      required:
-      - codice_esito_definizione
-      - descrizione_esito_definizione
-      - codice_classificazione_esito_definizione
-      - descrizione_classificazione_esito_definizione
-      properties:
-        codice_esito_definizione:
-          type: string
-          maxLength: 20
-        descrizione_esito_definizione:
-          type: string
-          maxLength: 255
-        codice_classificazione_esito_definizione:
-          type: string
-          maxLength: 20
-        descrizione_classificazione_esito_definizione:
-          type: string
-          maxLength: 255
-      example:
-        codice_esito_definizione: "CO"
-        descrizione_esito_definizione: "Comunicazione istruttoria"
-        codice_classificazione_esito_definizione: "I"
-        descrizione_classificazione_esito_definizione: "Istruttoria"
+          - $ref: "#/components/schemas/TipoTrattazione/example"
+        trattazione_relativa_a_mp:
+          - $ref: "#/components/schemas/MalattiaProfessionale/example"
+        trattazione_relativa_a_inf:
+          - $ref: "#/components/schemas/Infortunio/example"
 
     TipoDefinizioneDecisioneIstruttoria:
       type: object
-      x-jsonld-type: http://dati.inail.it/ontology/TipoDefinizioneDecisioneIstruttoria
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/TipoDefinizioneDecisioneIstruttoria
       x-jsonld-context:
-        "@vocab": "http://dati.inail.it/ontology/"
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
         codice_decisione_istruttoria: codiceTipoDefinizioneDecisioneIstruttoria
         descrizione_decisione_istruttoria: descrizioneTipoDefinizioneDecisioneIstruttoria
         esito_decisione_istruttoria: esitoDecisioneIstruttoria
       additionalProperties: true
       description:
-          Questo schema rappresenta il tipo definizione decisione istruttoria relativo alla trattazione.
+         Questo schema rappresenta il tipo definizione decisione istruttoria relativo alla trattazione
+          ed è associato a https://w3id.org/italia/onto/WorkAccident/TipoDefinizioneDecisioneIstruttoria.
       required:
       - codice_decisione_istruttoria
       - descrizione_decisione_istruttoria
@@ -199,66 +184,6 @@ components:
           type: string
           maxLength: 50
       example:
-        codice_decisione_istruttoria: "AI"
-        descrizione_decisione_istruttoria: "Accolta INPS"
-        esito_decisione_istruttoria: "Negativo"
-
-    TipoIndennizzo:    #link con altri schema
-      type: object
-      x-jsonld-type: http://dati.inail.it/ontology/TipoIndennizzo
-      x-jsonld-context:
-        "@vocab": "http://dati.inail.it/ontology/"
-        codice_tipo_indennizzo:
-        descrizione_tipo_indennizzo:
-        definizione_tipo_indennizzo:
-      additionalProperties: true
-      description:
-          Questo schema rappresenta il tipo di indennizzo relativo alla trattazione.
-      required:
-      - codice_tipo_indennizzo
-      - descrizione_tipo_indennizzo
-      - definizione_tipo_indennizzo
-      properties:
-        codice_tipo_indennizzo:
-            type: string
-            maxLength: 20
-        descrizione_tipo_indennizzo:
-          type: string
-          maxLength: 50
-        definizione_tipo_indennizzo:
-          type: string
-          maxLength: 255
-      example:
-        codice_tipo_indennizzo: "APP"
-        descrizione_tipo_indennizzo: "Accertamento postumi provvisorio"
-        definizione_tipo_indennizzo: "Positivo"
-
-    TipoTrattazione: #link con altri schema
-      type: object
-      x-jsonld-type: http://dati.inail.it/ontology/TipoTrattazione
-      x-jsonld-context:
-        "@vocab": "http://dati.inail.it/ontology/"
-        codice_tipo_trattazione: codiceTipoTrattazione
-        indicatore_tipo_trattazione: indicatoreTipoTrattazione
-        descrizione_tipo_trattazione: descrizioneTipoTrattazione
-      additionalProperties: true
-      description:
-          Questo schema rappresenta il tipo di trattazione relativo all'inabilità temporanea.
-      required:
-      - codice_tipo_trattazione
-      - indicatore_tipo_trattazione
-      - descrizione_tipo_trattazione
-      properties:
-        codice_tipo_trattazione:
-          type: string
-          maxLength: 20
-        indicatore_tipo_trattazione:
-          type: string
-          maxLength: 50
-        descrizione_tipo_trattazione:
-          type: string
-          maxLength: 255
-      example:
-        codice_tipo_trattazione: "AC"
-        indicatore_tipo_trattazione: "E"
-        descrizione_tipo_trattazione: "Assegno continuativo mensile"
+        codice_decisione_istruttoria: 'AI'
+        descrizione_decisione_istruttoria: 'Accolta INPS'
+        esito_decisione_istruttoria: 'Negativo'
