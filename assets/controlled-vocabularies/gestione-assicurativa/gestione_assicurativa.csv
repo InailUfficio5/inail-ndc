@@ -1,0 +1,23 @@
+url,id,parent,label_it,level
+http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/codice/A.AA,A.A,http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/A,Autonomi Artigiani,2
+http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/codice/DI,DI,http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/O,Dipendenti,2
+http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/codice/S.1,S.1,http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/S,Facchini,2
+http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/codice/S.2,S.2,http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/S,Ippotrasportatori,2
+http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/codice/S.3,S.3,http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/S,Pescatori,2
+http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/codice/S.4,S.4,http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/S,Frantoi,2
+http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/codice/S.5,S.5,http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/S,Apparecchi RX,2
+http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/codice/S.6,S.6,http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/S,Sost. Radioattive,2
+http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/codice/S.7,S.7,http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/S,Scuole,2
+http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/codice/S.8,S.8,http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/S,Prove d'arte e TcP,2
+http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/A,A,,Artigiani,1
+http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/AG,AG,,Autonomi Agricoltura,1
+http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/CA,CA,,Casalinghe,1
+http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/CB,CB,,Colf e badanti,1
+http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/DA,DA,,Dipendenti Agricoltura,1
+http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/IN,IN,,Interinale,1
+http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/O,O,,Ordinarie,1
+http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/S,S,,Speciali,1
+http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/S0,S0,,Volontari,1
+http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/S9,S9,,Navigazione,1
+http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/SA,SA,,Allievi IeFP,1
+http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/SR,SR,,Assicurati PUC,1

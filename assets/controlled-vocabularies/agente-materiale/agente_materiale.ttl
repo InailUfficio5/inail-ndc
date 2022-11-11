@@ -1,0 +1,722 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix agentem: <http://dati.inail.it/opendata/vocabolari/agente_materiale/agente/> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix cov: <https://w3id.org/italia/onto/COV> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix grupagentem: <http://dati.inail.it/opendata/vocabolari/agente_materiale/gruppo/> .
+@prefix inailvoc: <http://dati.inail.it/opendata/vocabolari/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Annotations
+
+agentem:0.0 a skos:Concept ;
+    skos:prefLabel "Macchine motrici"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "0.0" ;
+    skos:broader grupagentem:0 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Macchine motrici"@it ;
+    skos:notation "0.0" ;
+    xkos:depth "2" .
+
+agentem:0.1 a skos:Concept ;
+    skos:prefLabel "Macchine generatrici"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "0.1" ;
+    skos:broader grupagentem:0 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Macchine generatrici"@it ;
+    skos:notation "0.1" ;
+    xkos:depth "2" .
+
+agentem:0.2 a skos:Concept ;
+    skos:prefLabel "Macchine operatrici non utensili"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "0.2" ;
+    skos:broader grupagentem:0 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Macchine operatrici non utensili"@it ;
+    skos:notation "0.2" ;
+    xkos:depth "2" .
+
+agentem:0.3 a skos:Concept ;
+    skos:prefLabel "Macchine trasformatrici e convertitrici"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "0.3" ;
+    skos:broader grupagentem:0 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Macchine trasformatrici e convertitrici"@it ;
+    skos:notation "0.3" ;
+    xkos:depth "2" .
+
+agentem:0.4 a skos:Concept ;
+    skos:prefLabel "Macchine utensili"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "0.4" ;
+    skos:broader grupagentem:0 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Macchine utensili"@it ;
+    skos:notation "0.4" ;
+    xkos:depth "2" .
+
+agentem:1.0 a skos:Concept ;
+    skos:prefLabel "Mezzi di sollevamento e/o stoccaggio e/o smistamento materiali"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.0" ;
+    skos:broader grupagentem:1 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Mezzi di sollevamento e/o stoccaggio e/o smistamento materiali"@it ;
+    skos:notation "1.0" ;
+    xkos:depth "2" .
+
+agentem:1.1 a skos:Concept ;
+    skos:prefLabel "Mezzi di trasporto terrestre non su rotaia"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.1" ;
+    skos:broader grupagentem:1 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Mezzi di trasporto terrestre non su rotaia"@it ;
+    skos:notation "1.1" ;
+    xkos:depth "2" .
+
+agentem:1.2 a skos:Concept ;
+    skos:prefLabel "Mezzi di trasporto su rotaia"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.2" ;
+    skos:broader grupagentem:1 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Mezzi di trasporto su rotaia"@it ;
+    skos:notation "1.2" ;
+    xkos:depth "2" .
+
+agentem:1.3 a skos:Concept ;
+    skos:prefLabel "Mezzi di trasporto aereo"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.3" ;
+    skos:broader grupagentem:1 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Mezzi di trasporto aereo"@it ;
+    skos:notation "1.3" ;
+    xkos:depth "2" .
+
+agentem:1.4 a skos:Concept ;
+    skos:prefLabel "Mezzi di trasporto per via acqua"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.4" ;
+    skos:broader grupagentem:1 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Mezzi di trasporto per via acqua"@it ;
+    skos:notation "1.4" ;
+    xkos:depth "2" .
+
+agentem:1.5 a skos:Concept ;
+    skos:prefLabel "Mezzi di trasporto su fune"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.5" ;
+    skos:broader grupagentem:1 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Mezzi di trasporto su fune"@it ;
+    skos:notation "1.5" ;
+    xkos:depth "2" .
+
+agentem:2.0 a skos:Concept ;
+    skos:prefLabel "Impianti di distribuzione di vapore"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.0" ;
+    skos:broader grupagentem:2 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Impianti di distribuzione di vapore"@it ;
+    skos:notation "2.0" ;
+    xkos:depth "2" .
+
+agentem:2.1 a skos:Concept ;
+    skos:prefLabel "Impianti di distribuzione di liquidi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.1" ;
+    skos:broader grupagentem:2 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Impianti di distribuzione di liquidi"@it ;
+    skos:notation "2.1" ;
+    xkos:depth "2" .
+
+agentem:2.2 a skos:Concept ;
+    skos:prefLabel "Impianti di distribuzione di elettricità"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.2" ;
+    skos:broader grupagentem:2 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Impianti di distribuzione di elettricità"@it ;
+    skos:notation "2.2" ;
+    xkos:depth "2" .
+
+agentem:2.3 a skos:Concept ;
+    skos:prefLabel "Impianti di distribuzione di gas"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.3" ;
+    skos:broader grupagentem:2 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Impianti di distribuzione di gas"@it ;
+    skos:notation "2.3" ;
+    xkos:depth "2" .
+
+agentem:2.5 a skos:Concept ;
+    skos:prefLabel "Impianti di distribuzione di materiali solidi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.5" ;
+    skos:broader grupagentem:2 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Impianti di distribuzione di materiali solidi"@it ;
+    skos:notation "2.5" ;
+    xkos:depth "2" .
+
+agentem:3.0 a skos:Concept ;
+    skos:prefLabel "Attrezzi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.0" ;
+    skos:broader grupagentem:3 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Attrezzi"@it ;
+    skos:notation "3.0" ;
+    xkos:depth "2" .
+
+agentem:3.1 a skos:Concept ;
+    skos:prefLabel "Utensili"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.1" ;
+    skos:broader grupagentem:3 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Utensili"@it ;
+    skos:notation "3.1" ;
+    xkos:depth "2" .
+
+agentem:3.2 a skos:Concept ;
+    skos:prefLabel "Attrezzature"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.2" ;
+    skos:broader grupagentem:3 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Attrezzature"@it ;
+    skos:notation "3.2" ;
+    xkos:depth "2" .
+
+agentem:3.3 a skos:Concept ;
+    skos:prefLabel "Apparecchiature"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.3" ;
+    skos:broader grupagentem:3 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Apparecchiature"@it ;
+    skos:notation "3.3" ;
+    xkos:depth "2" .
+
+agentem:4.0 a skos:Concept ;
+    skos:prefLabel "Esplosivi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.0" ;
+    skos:broader grupagentem:4 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Esplosivi"@it ;
+    skos:notation "4.0" ;
+    xkos:depth "2" .
+
+agentem:4.1 a skos:Concept ;
+    skos:prefLabel "Polveri"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.1" ;
+    skos:broader grupagentem:4 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Polveri"@it ;
+    skos:notation "4.1" ;
+    xkos:depth "2" .
+
+agentem:4.2 a skos:Concept ;
+    skos:prefLabel "Gas, vapori, fumi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.2" ;
+    skos:broader grupagentem:4 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Gas, vapori, fumi"@it ;
+    skos:notation "4.2" ;
+    xkos:depth "2" .
+
+agentem:4.3 a skos:Concept ;
+    skos:prefLabel "Materiali liquidi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.3" ;
+    skos:broader grupagentem:4 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Materiali liquidi"@it ;
+    skos:notation "4.3" ;
+    xkos:depth "2" .
+
+agentem:4.4 a skos:Concept ;
+    skos:prefLabel "Materiali solidi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.4" ;
+    skos:broader grupagentem:4 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Materiali solidi"@it ;
+    skos:notation "4.4" ;
+    xkos:depth "2" .
+
+agentem:4.5 a skos:Concept ;
+    skos:prefLabel "Plastici"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.5" ;
+    skos:broader grupagentem:4 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Plastici"@it ;
+    skos:notation "4.5" ;
+    xkos:depth "2" .
+
+agentem:4.6 a skos:Concept ;
+    skos:prefLabel "Radiazioni, scariche elettriche"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.6" ;
+    skos:broader grupagentem:4 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Radiazioni, scariche elettriche"@it ;
+    skos:notation "4.6" ;
+    xkos:depth "2" .
+
+agentem:4.7 a skos:Concept ;
+    skos:prefLabel "Fuoco"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.7" ;
+    skos:broader grupagentem:4 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Fuoco"@it ;
+    skos:notation "4.7" ;
+    xkos:depth "2" .
+
+agentem:4.8 a skos:Concept ;
+    skos:prefLabel "Frammenti, particelle, schegge, scorte, detriti"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.8" ;
+    skos:broader grupagentem:4 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Frammenti, particelle, schegge, scorte, detriti"@it ;
+    skos:notation "4.8" ;
+    xkos:depth "2" .
+
+agentem:4.9 a skos:Concept ;
+    skos:prefLabel "Schizzi, spruzzi, gocce, metallo fuso"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.9" ;
+    skos:broader grupagentem:4 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Schizzi, spruzzi, gocce, metallo fuso"@it ;
+    skos:notation "4.9" ;
+    xkos:depth "2" .
+
+agentem:5.0 a skos:Concept ;
+    skos:prefLabel "Agenti atmosferici"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.0" ;
+    skos:broader grupagentem:5 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Agenti atmosferici"@it ;
+    skos:notation "5.0" ;
+    xkos:depth "2" .
+
+agentem:5.1 a skos:Concept ;
+    skos:prefLabel "Superfici di lavoro e transito"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.1" ;
+    skos:broader grupagentem:5 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Superfici di lavoro e transito"@it ;
+    skos:notation "5.1" ;
+    xkos:depth "2" .
+
+agentem:5.2 a skos:Concept ;
+    skos:prefLabel "Scale e passerelle"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.2" ;
+    skos:broader grupagentem:5 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Scale e passerelle"@it ;
+    skos:notation "5.2" ;
+    xkos:depth "2" .
+
+agentem:5.3 a skos:Concept ;
+    skos:prefLabel "Aperture nel pavimento o nelle pareti"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.3" ;
+    skos:broader grupagentem:5 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Aperture nel pavimento o nelle pareti"@it ;
+    skos:notation "5.3" ;
+    xkos:depth "2" .
+
+agentem:5.4 a skos:Concept ;
+    skos:prefLabel "Parti costitutive di edifici"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.4" ;
+    skos:broader grupagentem:5 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Parti costitutive di edifici"@it ;
+    skos:notation "5.4" ;
+    xkos:depth "2" .
+
+agentem:5.5 a skos:Concept ;
+    skos:prefLabel "Infissi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.5" ;
+    skos:broader grupagentem:5 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Infissi"@it ;
+    skos:notation "5.5" ;
+    xkos:depth "2" .
+
+agentem:5.6 a skos:Concept ;
+    skos:prefLabel "Arredi e impianti fissi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.6" ;
+    skos:broader grupagentem:5 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Arredi e impianti fissi"@it ;
+    skos:notation "5.6" ;
+    xkos:depth "2" .
+
+agentem:6.0 a skos:Concept ;
+    skos:prefLabel "Persone"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.0" ;
+    skos:broader grupagentem:6 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Persone"@it ;
+    skos:notation "6.0" ;
+    xkos:depth "2" .
+
+agentem:6.1 a skos:Concept ;
+    skos:prefLabel "Animali"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.1" ;
+    skos:broader grupagentem:6 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Animali"@it ;
+    skos:notation "6.1" ;
+    xkos:depth "2" .
+
+agentem:6.2 a skos:Concept ;
+    skos:prefLabel "Vegetali"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.2" ;
+    skos:broader grupagentem:6 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Vegetali"@it ;
+    skos:notation "6.2" ;
+    xkos:depth "2" .
+
+agentem:7.0 a skos:Concept ;
+    skos:prefLabel "Serbatoi per liquidi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "7.0" ;
+    skos:broader grupagentem:7 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Serbatoi per liquidi"@it ;
+    skos:notation "7.0" ;
+    xkos:depth "2" .
+
+agentem:7.1 a skos:Concept ;
+    skos:prefLabel "Serbatoi per gas"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "7.1" ;
+    skos:broader grupagentem:7 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Serbatoi per gas"@it ;
+    skos:notation "7.1" ;
+    xkos:depth "2" .
+
+agentem:7.2 a skos:Concept ;
+    skos:prefLabel "Silos"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "7.2" ;
+    skos:broader grupagentem:7 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Silos"@it ;
+    skos:notation "7.2" ;
+    xkos:depth "2" .
+
+agentem:7.3 a skos:Concept ;
+    skos:prefLabel "Bombole"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "7.3" ;
+    skos:broader grupagentem:7 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Bombole"@it ;
+    skos:notation "7.3" ;
+    xkos:depth "2" .
+
+agentem:7.4 a skos:Concept ;
+    skos:prefLabel "Contenitori"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "7.4" ;
+    skos:broader grupagentem:7 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Contenitori"@it ;
+    skos:notation "7.4" ;
+    xkos:depth "2" .
+
+agentem:8.0 a skos:Concept ;
+    skos:prefLabel "Parti meccaniche"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "8.0" ;
+    skos:broader grupagentem:8 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Parti meccaniche"@it ;
+    skos:notation "8.0" ;
+    xkos:depth "2" .
+
+agentem:8.1 a skos:Concept ;
+    skos:prefLabel "Parti elettriche"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "8.1" ;
+    skos:broader grupagentem:8 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Parti elettriche"@it ;
+    skos:notation "8.1" ;
+    xkos:depth "2" .
+
+agentem:8.2 a skos:Concept ;
+    skos:prefLabel "Parti pneumatiche"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "8.2" ;
+    skos:broader grupagentem:8 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Parti pneumatiche"@it ;
+    skos:notation "8.2" ;
+    xkos:depth "2" .
+
+agentem:8.3 a skos:Concept ;
+    skos:prefLabel "Parti oleodinamiche"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "8.3" ;
+    skos:broader grupagentem:8 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Parti oleodinamiche"@it ;
+    skos:notation "8.3" ;
+    xkos:depth "2" .
+
+agentem:8.4 a skos:Concept ;
+    skos:prefLabel "Parti termiche"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "8.4" ;
+    skos:broader grupagentem:8 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Parti termiche"@it ;
+    skos:notation "8.4" ;
+    xkos:depth "2" .
+
+agentem:8.5 a skos:Concept ;
+    skos:prefLabel "Parti non altrove specificate"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "8.5" ;
+    skos:broader grupagentem:8 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Parti non altrove specificate"@it ;
+    skos:notation "8.5" ;
+    xkos:depth "2" .
+
+grupagentem:0 a skos:Concept ;
+    skos:prefLabel "Macchine"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "0" ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Macchine"@it ;
+    skos:narrower agentem:0.0,
+        agentem:0.1,
+        agentem:0.2,
+        agentem:0.3,
+        agentem:0.4 ;
+    skos:notation "0" ;
+    xkos:depth "1" .
+
+grupagentem:1 a skos:Concept ;
+    skos:prefLabel "Mezzi di sollevamento e trasporto"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "1" ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Mezzi di sollevamento e trasporto"@it ;
+    skos:narrower agentem:1.0,
+        agentem:1.1,
+        agentem:1.2,
+        agentem:1.3,
+        agentem:1.4,
+        agentem:1.5 ;
+    skos:notation "1" ;
+    xkos:depth "1" .
+
+grupagentem:2 a skos:Concept ;
+    skos:prefLabel "Impianti di distribuzione"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "2" ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Impianti di distribuzione"@it ;
+    skos:narrower agentem:2.0,
+        agentem:2.1,
+        agentem:2.2,
+        agentem:2.3,
+        agentem:2.5 ;
+    skos:notation "2" ;
+    xkos:depth "1" .
+
+grupagentem:3 a skos:Concept ;
+    skos:prefLabel "Attrezzature, apparecchiature, attrezzi e utensili"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "3" ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Attrezzature, apparecchiature, attrezzi e utensili"@it ;
+    skos:narrower agentem:3.0,
+        agentem:3.1,
+        agentem:3.2,
+        agentem:3.3 ;
+    skos:notation "3" ;
+    xkos:depth "1" .
+
+grupagentem:4 a skos:Concept ;
+    skos:prefLabel "Materiali, sostanze, radiazioni"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "4" ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Materiali, sostanze, radiazioni"@it ;
+    skos:narrower agentem:4.0,
+        agentem:4.1,
+        agentem:4.2,
+        agentem:4.3,
+        agentem:4.4,
+        agentem:4.5,
+        agentem:4.6,
+        agentem:4.7,
+        agentem:4.8,
+        agentem:4.9 ;
+    skos:notation "4" ;
+    xkos:depth "1" .
+
+grupagentem:5 a skos:Concept ;
+    skos:prefLabel "Ambienti di lavoro"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "5" ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Ambienti di lavoro"@it ;
+    skos:narrower agentem:5.0,
+        agentem:5.1,
+        agentem:5.2,
+        agentem:5.3,
+        agentem:5.4,
+        agentem:5.5,
+        agentem:5.6 ;
+    skos:notation "5" ;
+    xkos:depth "1" .
+
+grupagentem:6 a skos:Concept ;
+    skos:prefLabel "Persone, animali e vegetali"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "6" ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Persone, animali e vegetali"@it ;
+    skos:narrower agentem:6.0,
+        agentem:6.1,
+        agentem:6.2 ;
+    skos:notation "6" ;
+    xkos:depth "1" .
+
+grupagentem:7 a skos:Concept ;
+    skos:prefLabel "Recipienti e contenitori"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "7" ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Recipienti e contenitori"@it ;
+    skos:narrower agentem:7.0,
+        agentem:7.1,
+        agentem:7.2,
+        agentem:7.3,
+        agentem:7.4 ;
+    skos:notation "7" ;
+    xkos:depth "1" .
+
+grupagentem:8 a skos:Concept ;
+    skos:prefLabel "Parti di macchine, mezzi di sollevamento e trasporto"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "8" ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:label "Parti di macchine, mezzi di sollevamento e trasporto"@it ;
+    skos:narrower agentem:8.0,
+        agentem:8.1,
+        agentem:8.2,
+        agentem:8.3,
+        agentem:8.4,
+        agentem:8.5 ;
+    skos:notation "8" ;
+    xkos:depth "1" .
+
+<http://dati.inail.it/data/Organization/inail> a cov:Organization ;
+    rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
+    cov:IPAcode "inail" ;
+    cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
+    cov:orgAcronym "inail" .
+
+inailvoc:agente_materiale a adms:Asset,
+        dcatapit:Dataset,
+        skos:ConceptScheme ;
+    rdfs:label "Classification of material agents adopted by INAIL Controlled Vocabulary"@en,
+        "Vocabolario Controllato sulla classificazione degli agenti materiali adottata dall'INAIL"@it ;
+    skos:prefLabel "Vocabolario Controllato sulla classificazione degli agenti materiali adottata dall'INAIL"@it ;
+    rdfs:comment "Questo è il vocabolario controllato della classificazione degli agenti materiali adottata dall'INAIL"@it,
+        "This is the controlled vocabulary of the material agents adopted by INAIL classification."@en ;
+    owl:versionInfo "0.2" ;
+    rdfs:isDefinedBy inailvoc:agente_materiale ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:contactPoint <https://www.inail.it> ;
+    dcat:distribution <https://w3id.org/italia/data/distribution/PS-RDF-Turtle> ;
+    dcat:keyword "agente materiale"@it,
+        "inail"@it,
+        "infortunio"@it,
+        "malattie professionali"@it,
+        "mortalità professionale"@it,
+        "occupational disease"@en,
+        "occupational injury"@en,
+        "occupational safety"@en,
+        "occupationale mortality"@en,
+        "sicurezza sul lavoro"@it ;
+    dcat:theme <http://eurovoc.europa.eu/825>,
+        <http://eurovoc.europa.eu/1761>,
+        <http://eurovoc.europa.eu/1993>,
+        <http://publications.europa.eu/resource/authority/data-theme/HEAL> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dct:creator <http://dati.inail.it/data/Organization/inail> ;
+    dct:description "Questo è il vocabolario controllato della classificazione degli agenti materiali adottata dall'INAIL"@it,
+        "This is the controlled vocabulary of the material agents adopted by INAIL classification."@en ;
+    dct:identifier "http://dati.inail.it/opendata/vocabolari/agente_materiale" ;
+    dct:issued "2022-07-26"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2022-09-30"^^xsd:date ;
+    dct:publisher <http://dati.inail.it/data/Organization/inail> ;
+    dct:relation inailvoc:agente_causale,
+        inailvoc:tipo_contatto ;
+    dct:rightsHolder <http://dati.inail.it/data/Organization/inail> ;
+    dct:title "Classification of material agents adopted by INAIL Controlled Vocabulary"@en,
+        "Vocabolario Controllato sulla classificazione degli agenti materiali adottata dall'INAIL"@it ;
+    dct:type <http://purl.org/adms/assettype/Taxonomy> ;
+    ndc:keyConcept "Agente Materiale" ;
+    skos:hasTopConcept grupagentem:0,
+        grupagentem:1,
+        grupagentem:2,
+        grupagentem:3,
+        grupagentem:4,
+        grupagentem:5,
+        grupagentem:6,
+        grupagentem:7,
+        grupagentem:8 ;
+    xkos:numberOfLevels "2" .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

@@ -1,0 +1,60 @@
+openapi: 3.0.3
+info:
+  title: Schema del Tipo Trattazione
+  version: 202211.10.00
+  x-summary: Schema del tipo di trattazione di un evento lesivo compatibile con l'ontologia INAIL.
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  termsOfService: https://creativecommons.org/licenses/by/4.0/
+  contact:
+    name: Bruno Marino
+    email: b.marino@almawave.it
+   # url:
+  description: |-
+   Classificazione delle trattazioni che, a seguito dell'istruttoria, determinano  il periodo di inabilità assoluta al lavoro, il grado di invalidità/menomazione, l’indennizzo e la prestazione che viene erogata agli aventi diritto.
+
+    La metadatazione semantica degli schemi si basa sul documento
+    [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html)
+    che introduce le keyword x-jsonld-type e x-jsonld-context.
+paths: {}
+servers: []
+tags: []
+components:
+  schemas:
+    IdTipoTrattazione:
+      type: string
+      description:
+          Campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità.
+          Associato a https://w3id.org/italia/onto/WorkAccident/codiceTipoTrattazione.
+      example: 'AC'
+      maxLength: 20
+    TipoTrattazione:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/TipoTrattazione
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        codice_tipo_trattazione: codiceTipoTrattazione
+        indicatore_tipo_trattazione: indicatoreTipoTrattazione
+        descrizione_tipo_trattazione: descrizioneTipoTrattazione
+      additionalProperties: true
+      description:
+          Questo schema rappresenta il tipo di trattazione relativo ad un evento lesivo
+          ed è associato a https://w3id.org/italia/onto/WorkAccident/TipoTrattazione.
+      required:
+      - codice_tipo_trattazione
+      - indicatore_tipo_trattazione
+      - descrizione_tipo_trattazione
+      properties:
+        codice_tipo_trattazione:
+           $ref: "#/components/schemas/IdTipoTrattazione"
+        indicatore_tipo_trattazione:
+          type: string
+          maxLength: 50
+        descrizione_tipo_trattazione:
+          type: string
+          maxLength: 255
+      example:
+        codice_tipo_trattazione: 'AC'
+        indicatore_tipo_trattazione: 'E'
+        descrizione_tipo_trattazione: 'Assegno continuativo mensile'

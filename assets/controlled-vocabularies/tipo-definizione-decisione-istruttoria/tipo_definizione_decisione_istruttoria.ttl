@@ -1,0 +1,220 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix cov: <https://w3id.org/italia/onto/COV> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix decistrcod: <http://dati.inail.it/opendata/vocabolari/tipo_def_dec_istr/codice/> .
+@prefix inailvoc: <http://dati.inail.it/opendata/vocabolari/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Annotations
+
+decistrcod:AI a skos:Concept ;
+    skos:prefLabel "Accolta inps"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "AI" ;
+    skos:inScheme inailvoc:tipo_def_dec_istr ;
+    skos:label "Accolta inps"@it ;
+    skos:notation "AI" ;
+    xkos:depth "1" .
+
+decistrcod:AS a skos:Concept ;
+    skos:prefLabel "Caso altra sede"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "AS" ;
+    skos:inScheme inailvoc:tipo_def_dec_istr ;
+    skos:label "Caso altra sede"@it ;
+    skos:notation "AS" ;
+    xkos:depth "1" .
+
+decistrcod:CO a skos:Concept ;
+    skos:prefLabel "Comunicazione infortunio"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "CO" ;
+    skos:inScheme inailvoc:tipo_def_dec_istr ;
+    skos:label "Comunicazione infortunio"@it ;
+    skos:notation "CO" ;
+    xkos:depth "1" .
+
+decistrcod:FE a skos:Concept ;
+    skos:prefLabel "Fondo erogato"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "FE" ;
+    skos:inScheme inailvoc:tipo_def_dec_istr ;
+    skos:label "Fondo erogato"@it ;
+    skos:notation "FE" ;
+    xkos:depth "1" .
+
+decistrcod:FR a skos:Concept ;
+    skos:prefLabel "Franchigia"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "FR" ;
+    skos:inScheme inailvoc:tipo_def_dec_istr ;
+    skos:label "Franchigia"@it ;
+    skos:notation "FR" ;
+    xkos:depth "1" .
+
+decistrcod:MC a skos:Concept ;
+    skos:prefLabel "Morte con superstiti"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "MC" ;
+    skos:inScheme inailvoc:tipo_def_dec_istr ;
+    skos:label "Morte con superstiti"@it ;
+    skos:notation "MC" ;
+    xkos:depth "1" .
+
+decistrcod:MM a skos:Concept ;
+    skos:prefLabel "Intervento eliminato"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "MM" ;
+    skos:inScheme inailvoc:tipo_def_dec_istr ;
+    skos:label "Intervento eliminato"@it ;
+    skos:notation "MM" ;
+    xkos:depth "1" .
+
+decistrcod:MS a skos:Concept ;
+    skos:prefLabel "Morte senza superstiti"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "MS" ;
+    skos:inScheme inailvoc:tipo_def_dec_istr ;
+    skos:label "Morte senza superstiti"@it ;
+    skos:notation "MS" ;
+    xkos:depth "1" .
+
+decistrcod:NE a skos:Concept ;
+    skos:prefLabel "Negativa"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "NE" ;
+    skos:inScheme inailvoc:tipo_def_dec_istr ;
+    skos:label "Negativa"@it ;
+    skos:notation "NE" ;
+    xkos:depth "1" .
+
+decistrcod:NN a skos:Concept ;
+    skos:prefLabel "Sistemazione automatica"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "NN" ;
+    skos:inScheme inailvoc:tipo_def_dec_istr ;
+    skos:label "Sistemazione automatica"@it ;
+    skos:notation "NN" ;
+    xkos:depth "1" .
+
+decistrcod:NO a skos:Concept ;
+    skos:prefLabel "Negativa"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "NO" ;
+    skos:inScheme inailvoc:tipo_def_dec_istr ;
+    skos:label "Negativa"@it ;
+    skos:notation "NO" ;
+    xkos:depth "1" .
+
+decistrcod:PE a skos:Concept ;
+    skos:prefLabel "Permanente"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "PE" ;
+    skos:inScheme inailvoc:tipo_def_dec_istr ;
+    skos:label "Permanente"@it ;
+    skos:notation "PE" ;
+    xkos:depth "1" .
+
+decistrcod:PO a skos:Concept ;
+    skos:prefLabel "Positiva"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "PO" ;
+    skos:inScheme inailvoc:tipo_def_dec_istr ;
+    skos:label "Positiva"@it ;
+    skos:notation "PO" ;
+    xkos:depth "1" .
+
+decistrcod:RS a skos:Concept ;
+    skos:prefLabel "Regolare senza indenizzo"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "RS" ;
+    skos:inScheme inailvoc:tipo_def_dec_istr ;
+    skos:label "Regolare senza indenizzo"@it ;
+    skos:notation "RS" ;
+    xkos:depth "1" .
+
+decistrcod:TE a skos:Concept ;
+    skos:prefLabel "Temporanea"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "TE" ;
+    skos:inScheme inailvoc:tipo_def_dec_istr ;
+    skos:label "Temporanea"@it ;
+    skos:notation "TE" ;
+    xkos:depth "1" .
+
+<http://dati.inail.it/data/Organization/inail> a cov:Organization ;
+    rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
+    cov:IPAcode "inail" ;
+    cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
+    cov:orgAcronym "inail" .
+
+<http://dati.inail.it/opendata/vocabolari/tipo_def_dec_istr/codice/-2> a skos:Concept ;
+    skos:prefLabel "Aperta"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "-2" ;
+    skos:inScheme inailvoc:tipo_def_dec_istr ;
+    skos:label "Aperta"@it ;
+    skos:notation "-2" ;
+    xkos:depth "1" .
+
+inailvoc:tipo_def_dec_istr a adms:Asset,
+        dcatapit:Dataset,
+        skos:ConceptScheme ;
+    rdfs:label ""@en,
+        ""@it ;
+    skos:prefLabel ""@it ;
+    rdfs:comment ""@en,
+        ""@it ;
+    owl:versionInfo "0.2" ;
+    rdfs:isDefinedBy inailvoc:tipo_def_dec_istr ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:contactPoint <https://www.inail.it> ;
+    dcat:distribution <https://w3id.org/italia/data/distribution/PS-RDF-Turtle> ;
+    dcat:keyword "disease"@en,
+        "inail"@it,
+        "malattia"@it,
+        "malattie"@it ;
+    dcat:theme <file:///C:/Users/E.Alessio/Documents/GIT/ndc-feed/assets/controlled-vocabularies/tipo-definizione-decisione-istruttoria/tipo_definizione_decisione_istruttoria.ttl> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dct:creator <http://dati.inail.it/data/Organization/inail> ;
+    dct:description ""@en,
+        ""@it ;
+    dct:identifier "http://dati.inail.it/opendata/vocabolari/tipo_def_dec_istr" ;
+    dct:issued "2022-09-07"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2022-10-03"^^xsd:date ;
+    dct:publisher <http://dati.inail.it/data/Organization/inail> ;
+    dct:relation inailvoc:decisione_istruttoria_esito_mortale ;
+    dct:rightsHolder <http://dati.inail.it/data/Organization/inail> ;
+    dct:title ""@en,
+        ""@it ;
+    dct:type <http://purl.org/adms/assettype/Taxonomy> ;
+    ndc:keyConcept "Definizione Decisione Istruttoria" ;
+    skos:hasTopConcept decistrcod:AI,
+        decistrcod:AS,
+        decistrcod:CO,
+        decistrcod:FE,
+        decistrcod:FR,
+        decistrcod:MC,
+        decistrcod:MM,
+        decistrcod:MS,
+        decistrcod:NE,
+        decistrcod:NN,
+        decistrcod:NO,
+        decistrcod:PE,
+        decistrcod:PO,
+        decistrcod:RS,
+        decistrcod:TE,
+        <http://dati.inail.it/opendata/vocabolari/tipo_def_dec_istr/codice/-2> ;
+    xkos:numberOfLevels "1" .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

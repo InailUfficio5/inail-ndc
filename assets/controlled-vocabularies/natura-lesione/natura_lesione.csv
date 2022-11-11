@@ -1,0 +1,10 @@
+url,id,label_it,level
+http://dati.inail.it/opendata/vocabolari/natura_lesione/codice/1,1,Ferita,1
+http://dati.inail.it/opendata/vocabolari/natura_lesione/codice/2,2,Contusione,1
+http://dati.inail.it/opendata/vocabolari/natura_lesione/codice/3,3,"Lussazione, distorsione, distrazione",1
+http://dati.inail.it/opendata/vocabolari/natura_lesione/codice/4,4,Frattura,1
+http://dati.inail.it/opendata/vocabolari/natura_lesione/codice/5,5,Perdita anatomica,1
+http://dati.inail.it/opendata/vocabolari/natura_lesione/codice/6,6,Lesioni da agenti infettivi e parassitari,1
+http://dati.inail.it/opendata/vocabolari/natura_lesione/codice/7,7,Lesioni da altri agenti,1
+http://dati.inail.it/opendata/vocabolari/natura_lesione/codice/8,8,Corpi estranei,1
+http://dati.inail.it/opendata/vocabolari/natura_lesione/codice/9,9,Lesioni da sforzo,1

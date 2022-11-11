@@ -1,0 +1,5 @@
+url,id,label_it,level
+http://dati.inail.it/opendata/vocabolari/gestione_tariffaria/codice/1,1,Industria,1
+http://dati.inail.it/opendata/vocabolari/gestione_tariffaria/codice/2,2,Artigianato,1
+http://dati.inail.it/opendata/vocabolari/gestione_tariffaria/codice/3,3,Terziario,1
+http://dati.inail.it/opendata/vocabolari/gestione_tariffaria/codice/4,4,Altre attività,1

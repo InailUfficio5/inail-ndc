@@ -1,0 +1,177 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix cov: <https://w3id.org/italia/onto/COV> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix decistr: <http://dati.inail.it/opendata/vocabolari/decisione_istruttoria_esito_mortale/codice/> .
+@prefix inailvoc: <http://dati.inail.it/opendata/vocabolari/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Annotations
+
+decistr:15 a skos:Concept ;
+    skos:prefLabel "Esiti mortali nei termini con superstiti"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "15" ;
+    skos:inScheme inailvoc:decisione_istruttoria_esito_mortale ;
+    skos:label "Esiti mortali nei termini con superstiti"@it ;
+    skos:notation "15" ;
+    xkos:depth "1" .
+
+decistr:16 a skos:Concept ;
+    skos:prefLabel "Esiti mortali nei termini senza superstiti"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "16" ;
+    skos:inScheme inailvoc:decisione_istruttoria_esito_mortale ;
+    skos:label "Esiti mortali nei termini senza superstiti"@it ;
+    skos:notation "16" ;
+    xkos:depth "1" .
+
+decistr:17 a skos:Concept ;
+    skos:prefLabel "Morte con superstiti itinere"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "17" ;
+    skos:inScheme inailvoc:decisione_istruttoria_esito_mortale ;
+    skos:label "Morte con superstiti itinere"@it ;
+    skos:notation "17" ;
+    xkos:depth "1" .
+
+decistr:18 a skos:Concept ;
+    skos:prefLabel "Morte senza superstiti itinere"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "18" ;
+    skos:inScheme inailvoc:decisione_istruttoria_esito_mortale ;
+    skos:label "Morte senza superstiti itinere"@it ;
+    skos:notation "18" ;
+    xkos:depth "1" .
+
+decistr:21 a skos:Concept ;
+    skos:prefLabel "Difetto occasione di lavoro"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "21" ;
+    skos:inScheme inailvoc:decisione_istruttoria_esito_mortale ;
+    skos:label "Difetto occasione di lavoro"@it ;
+    skos:notation "21" ;
+    xkos:depth "1" .
+
+decistr:22 a skos:Concept ;
+    rdfs:label "Difetto in itinere"@it ;
+    skos:prefLabel "Difetto in itinere"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "22" ;
+    skos:depth "1" ;
+    skos:inScheme inailvoc:decisione_istruttoria_esito_mortale ;
+    skos:notation "22" .
+
+decistr:24 a skos:Concept ;
+    skos:prefLabel "Persona non tutelata"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "24" ;
+    skos:inScheme inailvoc:decisione_istruttoria_esito_mortale ;
+    skos:label "Persona non tutelata"@it ;
+    skos:notation "24" ;
+    xkos:depth "1" .
+
+decistr:27 a skos:Concept ;
+    skos:prefLabel "Attività non tutelata"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "27" ;
+    skos:inScheme inailvoc:decisione_istruttoria_esito_mortale ;
+    skos:label "Attività non tutelata"@it ;
+    skos:notation "27" ;
+    xkos:depth "1" .
+
+decistr:28 a skos:Concept ;
+    skos:prefLabel "Carenza di documentazione valida"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "28" ;
+    skos:inScheme inailvoc:decisione_istruttoria_esito_mortale ;
+    skos:label "Carenza di documentazione valida"@it ;
+    skos:notation "28" ;
+    xkos:depth "1" .
+
+decistr:244 a skos:Concept ;
+    skos:prefLabel "Morte non riconducibile all'evento"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "244" ;
+    skos:inScheme inailvoc:decisione_istruttoria_esito_mortale ;
+    skos:label "Morte non riconducibile all'evento"@it ;
+    skos:notation "244" ;
+    xkos:depth "1" .
+
+decistr:300 a skos:Concept ;
+    skos:prefLabel "Altre cause di negatività"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "300" ;
+    skos:inScheme inailvoc:decisione_istruttoria_esito_mortale ;
+    skos:label "Altre cause di negatività"@it ;
+    skos:notation "300" ;
+    xkos:depth "1" .
+
+<http://dati.inail.it/data/Organization/inail> a cov:Organization ;
+    rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
+    cov:IPAcode "inail" ;
+    cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
+    cov:orgAcronym "inail" .
+
+inailvoc:decisione_istruttoria_esito_mortale a adms:Asset,
+        dcat:Dataset,
+        skos:ConceptScheme ;
+    rdfs:label "This is the controlled vocabulary of the investigation of the fatal outcome adopted by INAIL classification"@en,
+        "Vocabolario Controllato sulla classificazione dell' istruttoria dell'esito mortale adottata dall'INAIL"@it ;
+    skos:prefLabel "Vocabolario Controllato sulla classificazione dell' istruttoria esito mortale adottata dall'INAIL"@it ;
+    rdfs:comment "Controlled vocabulary that identifies the type of investigation in the event of a fatal outcome"@en,
+        "Vocabolario controllato che identifica la tipologia di decisione istruttoria in caso di esito mortale"@it ;
+    owl:versionInfo "0.2" ;
+    rdfs:isDefinedBy inailvoc:decisione_istruttoria_esito_mortale ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:contactPoint <https://www.inail.it> ;
+    dcat:distribution <https://w3id.org/italia/data/distribution/PS-RDF-Turtle> ;
+    dcat:keyword "health"@en,
+        "inail"@it,
+        "infortunio"@it,
+        "injury"@en,
+        "malattia professionale"@it,
+        "mortality"@en,
+        "mortalità"@it,
+        "occupational disease"@en,
+        "superstite"@it,
+        "survivor"@en ;
+    dcat:theme <http://eurovoc.europa.eu/825>,
+        <http://eurovoc.europa.eu/1761>,
+        <http://eurovoc.europa.eu/5291> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dct:creator <http://dati.inail.it/data/Organization/inail> ;
+    dct:description "Controlled vocabulary that identifies the type of investigation in the event of a fatal outcome"@en,
+        "Vocabolario controllato che identifica la tipologia di decisione istruttoria in caso di esito mortale"@it ;
+    dct:identifier "http://dati.inail.it/opendata/vocabolari/decisione_istruttoria_esito_mortale" ;
+    dct:issued "2022-07-22"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/IT> ;
+    dct:modified "2022-10-12"^^xsd:date ;
+    dct:publisher <http://dati.inail.it/data/Organization/inail> ;
+    dct:relation inailvoc:tipo_def_dec_istr ;
+    dct:rightsHolder <http://dati.inail.it/data/Organization/inail> ;
+    dct:title "Classification of the investigation of the fatal outcome adopted by INAIL Controlled Vocabulary"@en,
+        "Vocabolario Controllato sulla classificazione dell' istruttoria dell'esito mortale adottata dall'INAIL"@it ;
+    dct:type <http://purl.org/adms/assettype/Taxonomy> ;
+    ndc:keyConcept "Decisione istruttoria esito mortale" ;
+    skos:hasTopConcept decistr:15,
+        decistr:16,
+        decistr:17,
+        decistr:18,
+        decistr:21,
+        decistr:22,
+        decistr:24,
+        decistr:27,
+        decistr:28,
+        decistr:244,
+        decistr:300 ;
+    xkos:numberOfLevels "1" .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

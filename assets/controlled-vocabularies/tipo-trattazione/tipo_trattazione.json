@@ -1,0 +1,156 @@
+[
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/AC",
+    "@type": "skos:Concept",
+    "id": "AC",
+    "label_it": "Assegno continuativo mensile",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/AI",
+    "@type": "skos:Concept",
+    "id": "AI",
+    "label_it": "Assegno incollocabilit\u00e0",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/AP",
+    "@type": "skos:Concept",
+    "id": "AP",
+    "label_it": "Assegno personale continuativo",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/BA",
+    "@type": "skos:Concept",
+    "id": "BA",
+    "label_it": "Base",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/CC",
+    "@type": "skos:Concept",
+    "id": "CC",
+    "label_it": "Richiesta concessione cure termali",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/CO",
+    "@type": "skos:Concept",
+    "id": "CO",
+    "label_it": "Comunicazione infortunio",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/CP",
+    "@type": "skos:Concept",
+    "id": "CP",
+    "label_it": "Richiesta concessione protesi",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/CT",
+    "@type": "skos:Concept",
+    "id": "CT",
+    "label_it": "Cure termali",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/EM",
+    "@type": "skos:Concept",
+    "id": "EM",
+    "label_it": "Esiti mortali",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/FO",
+    "@type": "skos:Concept",
+    "id": "FO",
+    "label_it": "Fondo speciale",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/IF",
+    "@type": "skos:Concept",
+    "id": "IF",
+    "label_it": "Richiesta riconoscimento invalidita' familiare",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/IN",
+    "@type": "skos:Concept",
+    "id": "IN",
+    "label_it": "I.N.P.S.",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/IS",
+    "@type": "skos:Concept",
+    "id": "IS",
+    "label_it": "Richiesta riconoscimento invalidita' superstiti",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/LC",
+    "@type": "skos:Concept",
+    "id": "LC",
+    "label_it": "Liquidazione in capitale",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/PR",
+    "@type": "skos:Concept",
+    "id": "PR",
+    "label_it": "Protesi",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/RA",
+    "@type": "skos:Concept",
+    "id": "RA",
+    "label_it": "Richiesta riconoscimento A.P.C.",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/RC",
+    "@type": "skos:Concept",
+    "id": "RC",
+    "label_it": "Richiesta riconoscimento A.I.",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/RG",
+    "@type": "skos:Concept",
+    "id": "RG",
+    "label_it": "Revisione grado",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/RI",
+    "@type": "skos:Concept",
+    "id": "RI",
+    "label_it": "Ricaduta",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/RM",
+    "@type": "skos:Concept",
+    "id": "RM",
+    "label_it": "Richiesta riconoscimento morte",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/RP",
+    "@type": "skos:Concept",
+    "id": "RP",
+    "label_it": "Rendita di passaggio",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/SA",
+    "@type": "skos:Concept",
+    "id": "SA",
+    "label_it": "Domanda silicosi/asbestosi",
+    "level": "1"
+  }
+]

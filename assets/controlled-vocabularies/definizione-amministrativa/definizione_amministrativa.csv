@@ -1,0 +1,5 @@
+url,id,label_it,level
+http://dati.inail.it/opendata/vocabolari/definizione_amministrativa/codice/F,F,Franchigia,1
+http://dati.inail.it/opendata/vocabolari/definizione_amministrativa/codice/I,I,In istruttoria,1
+http://dati.inail.it/opendata/vocabolari/definizione_amministrativa/codice/N,N,Negativo,1
+http://dati.inail.it/opendata/vocabolari/definizione_amministrativa/codice/P,P,Positivo,1

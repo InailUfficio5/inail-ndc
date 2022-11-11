@@ -1,0 +1,72 @@
+[
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/settore_attivita/settore/codice/0",
+    "@type": "skos:Concept",
+    "id": "0",
+    "label_it": "Poste e telecomunicazioni",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/settore_attivita/settore/codice/1",
+    "@type": "skos:Concept",
+    "id": "1",
+    "label_it": "Industria",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/settore_attivita/settore/codice/2",
+    "@type": "skos:Concept",
+    "id": "2",
+    "label_it": "Industria-Artigianato",
+    "level": "2"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/settore_attivita/settore/codice/3",
+    "@type": "skos:Concept",
+    "id": "3",
+    "label_it": "Industria-Terziario",
+    "level": "2"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/settore_attivita/settore/codice/4",
+    "@type": "skos:Concept",
+    "id": "4",
+    "label_it": "Industria-Altri",
+    "level": "2"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/settore_attivita/settore/codice/5",
+    "@type": "skos:Concept",
+    "id": "5",
+    "label_it": "Industria-Speciale",
+    "level": "2"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/settore_attivita/settore/codice/6",
+    "@type": "skos:Concept",
+    "id": "6",
+    "label_it": "Agricoltura",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/settore_attivita/settore/codice/7",
+    "@type": "skos:Concept",
+    "id": "7",
+    "label_it": "Conto stato",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/settore_attivita/settore/codice/8",
+    "@type": "skos:Concept",
+    "id": "8",
+    "label_it": "Domestici",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/settore_attivita/settore/codice/9",
+    "@type": "skos:Concept",
+    "id": "9",
+    "label_it": "Casalinghe",
+    "level": "1"
+  }
+]

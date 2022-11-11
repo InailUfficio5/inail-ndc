@@ -1,0 +1,415 @@
+url,id,parent,label_it,level
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.1,1.1,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Colera,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.10,1.10,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Altre forme di tubercolosi dell'apparato respiratorio,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.11,1.11,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Altre localizzazioni e postumi tubercolari,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.12,1.12,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Carbonchio,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.13,1.13,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Brucellosi,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.14,1.14,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Difterite,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.15,1.15,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Pertosse,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.16,1.16,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Scarlattina,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.17,1.17,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Angina streptococcica,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.18,1.18,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Eresipela,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.19,1.19,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Infezione meningococcica,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.2,1.2,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Febbre tifoide e febbre paratifoide,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.20,1.20,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Tetano,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.21,1.21,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Setticemia,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.22,1.22,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Poliomelite anteriore acuta;suoi postumi,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.23,1.23,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Varicella ed altre malattie virali esantematiche,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.24,1.24,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Herpes zoster,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.25,1.25,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Morbillo,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.26,1.26,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Rosolia,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.27,1.27,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Epatite virale A,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.28,1.28,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Epatite virale B,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.29,1.29,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Parotite epidemica,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.3,1.3,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Altre infezioni da salmonelle,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.30,1.30,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Mononucleosi infettiva,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.31,1.31,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Tracoma,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.32,1.32,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Altre congiuntiviti da virus e clamidie,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.33,1.33,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Malaria,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.34,1.34,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Sifilide congenita,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.35,1.35,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Sifilide recente sintomatica e latente,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.36,1.36,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Sifilide nervosa,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.37,1.37,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Tutte le altre forme di sifilide,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.38,1.38,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Infezione gonococcica,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.39,1.39,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Leptospirosi ed altre infezione da spirochete,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.4,1.4,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Shigellosi,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.40,1.40,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Micosi,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.41,1.41,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Echinococcosi,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.42,1.42,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Anchilostomiasi e necaforiosi,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.43,1.43,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Altre e non specifiche elmintiasi,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.44,1.44,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Toxoplasmosi,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.45,1.45,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Altre malattie infettive e parassitarie,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.46,1.46,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,"Epatite virale non-A, non-B",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.5,1.5,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Tossinfezioni alimentari batteriche,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.6,1.6,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Amebiasi ed altre enteropatie protozoarie,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.7,1.7,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Enteriti da altri microrganismi specifici e malattie diarroiche,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.8,1.8,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Tubercolosi polmonare,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/1.9,1.9,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,Pleurite specificata come tubercolare,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.301,10.301,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,Glomerulo-nefrite acuta,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.302,10.302,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,Sindrome nefrosica,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.303,10.303,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,G. Nefrite cronica e nefropatie non specificate come acute o croniche,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.304,10.304,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,Insufficienza renale acuta,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.305,10.305,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,Insufficienza renale cronica,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.306,10.306,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,Sclerosi renale non specificata,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.307,10.307,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,Infezioni renali,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.308,10.308,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,Idronefrosi,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.309,10.309,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,Calcolosi dell'apparato urinario,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.310,10.310,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,Altre malattie del rene e dell'uretere,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.311,10.311,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,Cistite,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.312,10.312,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,Altre malattie delle vie urinarie,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.313,10.313,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,Iperplasia della prostata,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.314,10.314,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,Orchite ed epididimite,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.315,10.315,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,Altre malattie degli organi genitali dell'uomo,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.316,10.316,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,Sterilità dell'uomo,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.317,10.317,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,Displasie mammarie benigne,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.318,10.318,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,Altre malattie della mammella,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.319,10.319,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,Affezioni infiammatorie del corpo dell'utero e degli annessi,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.320,10.320,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,"Affezioni infiammatorie del collo dell'utero, della vagina e vulva",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.321,10.321,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,Endometriosi,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.322,10.322,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,Prolasso utero-vaginale,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.323,10.323,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,"Lesioni non infiammatorie dell'ovaio, della Tromba di Falloppio e del legamento largo",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.324,10.324,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,Altre affezioni dell'utero,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.325,10.325,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,"Lesioni non infiammatorie della vagina, vulva e perineo",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.326,10.326,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,Dolori ed altri sintomi in relazione con gli organi genitali femminili,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.327,10.327,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,Turbe mestruali ed altre emorragie anormali degli organi genitali femminili,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.328,10.328,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,Turbe della menopausa e della post-menopausa,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.329,10.329,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,Sterilità della donna,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/10.330,10.330,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,Altre affezioni degli organi genitali femminili,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/11.335,11.335,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/11,Mola idatiforme,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/11.336,11.336,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/11,Gravidanza ectopica,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/11.337,11.337,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/11,Aborto,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/11.338,11.338,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/11,Complicanze di aborto e di gravidanza ectopica e molare,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/11.339,11.339,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/11,Emorragie in gravidanza,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/11.340,11.340,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/11,Placenta previa,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/11.341,11.341,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/11,"Ipertensione in gravidanza, parto e puerperio",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/11.342,11.342,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/11,Eclampsia,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/11.343,11.343,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/11,Iperemesi gravidica,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/11.344,11.344,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/11,"Malattie infettive e parassitarie materne complicanti gravidanza, parto, puerperio",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/11.345,11.345,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/11,"Altre affezioni materne complicanti gravidanza, parto e puerperio",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/11.346,11.346,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/11,Gravidanza multipla,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/11.347,11.347,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/11,"Posizione e presentazione anomala del feto, disproporzione, anomalie dei tessuti molli del bacino e degli organi pelvici",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/11.348,11.348,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/11,Anomalie fetali iatrogene. Poliidramnios e altri problemi concernenti feto e annessi ovulari,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/11.349,11.349,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/11,Distocie meccaniche e dinamiche,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/11.350,11.350,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/11,Traumi perineali e vulvari in corso di parto. Altri traumi ostetrici,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/11.351,11.351,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/11,Emorragie del post-partum ed altre complicazioni del travaglio e del parto,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/11.352,11.352,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/11,Infezioni puerperali; embolia polmonare ostetrica,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/11.353,11.353,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/11,Complicazioni venose puerperali; altre e non precisate complicazioni,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/11.354,11.354,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/11,Mastiti ed altre affezioni mammarie in corso d'allattamento. Disturbi della lattazione,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/12.359,12.359,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/12,Foruncolo e antrace,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/12.360,12.360,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/12,"Flemmone delle dita, della mano e del piede",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/12.361,12.361,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/12,Altre flemmoni ed ascessi,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/12.362,12.362,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/12,Altre infezioni locali della pelle e del tessuto cellulare sottocutaneo,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/12.363,12.363,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/12,"Dermatosi eritemato-squamose, eczemi infantili",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/12.364,12.364,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/12,Dermatite da contatto ed altri eczemi,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/12.365,12.365,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/12,Dermatite da ingestione di sostanze,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/12.366,12.366,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/12,Dermatosi vescicolo-bollose,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/12.367,12.367,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/12,Affezioni eritematose,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/12.368,12.368,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/12,Psoriasi e turbe similari,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/12.369,12.369,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/12,"Lichen, prurito ed affezioni correlate",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/12.370,12.370,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/12,Callo e callosità,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/12.371,12.371,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/12,Malattie delle ghiandole sudoripare e sebacee,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/12.372,12.372,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/12,Orticaria,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/12.373,12.373,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/12,Altre malattie della cute e del tessuto cellulare sottocutaneo,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/13.378,13.378,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/13,Malattie diffuse del tessuto connettivo,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/13.379,13.379,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/13,Artriti infettive ed artropatie associate ad infezioni,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/13.380,13.380,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/13,Artropatie associate ad altre affezioni,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/13.381,13.381,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/13,Artrite reumatoide ed altre poliartriti croniche,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/13.382,13.382,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/13,Artrosi ed affezioni correlate,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/13.383,13.383,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/13,Lesioni articolari nel ginocchio,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/13.384,13.384,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/13,Altre lesioni e manifestazioni articolari,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/13.385,13.385,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/13,Spondilite anchilosante,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/13.386,13.386,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/13,Affezione dei dischi intervertebrali,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/13.387,13.387,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/13,"Malattie dei tendini ed affezioni delle sinoviali, tendini e borse",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/13.388,13.388,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/13,"Affezioni dei muscoli, legamenti, aponeurosi e tessuti molli",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/13.389,13.389,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/13,"Osteomielite, periostite ed altre infezioni riguardanti le ossa",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/13.390,13.390,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/13,Osteocondropatie,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/13.391,13.391,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/13,Piede piatto e deformazioni acquisite delle dita del piede,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/13.392,13.392,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/13,Deviazioni della colonna vertebrale,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/13.393,13.393,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/13,Altre affezioni osteo-muscolari,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/14.398,14.398,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/14,Malformazioni congenite del cuore,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/14.399,14.399,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/14,Altre malformazioni congenite dell'apparato circolatorio,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/14.400,14.400,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/14,Anomalie congenite sistema nervoso ed organi del senso,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/14.401,14.401,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/14,Anomalie congenite apparato digerente,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/14.402,14.402,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/14,Malformazioni congenite delle ossa e articolazioni,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/14.403,14.403,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/14,Altre anomalie e malformazioni,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/14.404,14.404,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/14,Aberrazioni cromosomiche,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/15.409,15.409,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/15,Affezioni fetali o neonatali di origine materna senza rapporto con la gravidanza,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/15.410,15.410,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/15,Affezioni fetali o neonatali da complicanze della gravidanza e del parto,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/15.411,15.411,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/15,Immaturità in neonato pre o a termine,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/15.412,15.412,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/15,Neonato macrosomico a termine e post-termine,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/15.413,15.413,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/15,TRAUMATISMI OSTETRICI,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/15.414,15.414,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/15,"Ipossia endo-uterina, asfissia alla nascita, affezioni respiratorie del feto e neonato",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/15.415,15.415,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/15,Infezioni specifiche perinatali,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/15.416,15.416,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/15,Emorragia fetale e neonatale,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/15.417,15.417,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/15,"Malattia emolitica del feto, del neonato dovuta ad iso-immunizzazione e altri itteri perinatali",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/15.418,15.418,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/15,Altre affezioni perinatali,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/16.423,16.423,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/16,Sintomi relativi ad apparati ed organi,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/16.424,16.424,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/16,Senilità,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/16.425,16.425,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/16,Altre cause mal definite o sconosciute di morbosità,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.430,17.430,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,Fratture del cranio,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.431,17.431,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,Fratture della colonna vertebrale,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.432,17.432,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,"Fratture delle costole, oltre a mal definite fratture del tronco",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.433,17.433,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,Fratture del bacino,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.434,17.434,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,Fratture degli arti superiori,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.435,17.435,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,Fratture degli arti inferiori e fratture di ossa non specificate,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.436,17.436,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,Lussazioni senza frattura,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.437,17.437,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,Distorsioni e distrazioni delle articolazioni e dei muscoli adiacenti,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.438,17.438,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,Traumatismi della testa (escluse le fratture del cranio),2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.439,17.439,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,"Lesioni traumatiche interne del torace, dell'addome e del bacino",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.440,17.440,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,Ferite e lacero-contusioni,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.441,17.441,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,Traumatismi superficiali,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.442,17.442,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,Contusioni e schiacciamenti senza soluzioni di continuo dei tegumenti,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.443,17.443,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,Lesioni da corpo estraneo penetrato in un orificio naturale,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.444,17.444,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,Ustioni,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.445,17.445,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,"Intossicazioni da droghe, medicamenti e prodotti biologici",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.446,17.446,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,Effetti tossici dell'alcool,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.447,17.447,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,"Effetti tossici del petrolio, suoi derivati",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.448,17.448,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,"Effetti tossici del piombo, suoi composti ed altri metalli",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.449,17.449,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,"Effetti tossici di gas, fumi e vapori",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.450,17.450,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,"Effetti tossici di alimenti nocivi (funghi, frutti di mare ecc.)",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.451,17.451,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,Effetti tossici di sostanze prive di proprietà medicamentosa allo stato puro,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.452,17.452,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,"Effetti nocivi di radiazioni ionizzanti, lasers ed isotopi radioattivi",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.453,17.453,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,Effetti nocivi di altri tipi di radiazioni,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.454,17.454,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,Traumatismi dei nervi e del midollo spinale,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.455,17.455,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,Altre lesioni dovute a cause accidentali,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/17.456,17.456,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,Complicanze dovute ad intervento chirurgico e cure mediche non comprese altrove,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.50,2.50,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumore maligno delle labbra,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.51,2.51,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumore maligno della lingua,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.52,2.52,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Altri tumori maligni della cavità buccale e del faringe,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.53,2.53,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumore maligno dell'esofago,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.54,2.54,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumore maligno dello stomaco,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.55,2.55,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumore maligno dell'intestino eccetto il retto,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.56,2.56,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,"Tumore maligno del retto, giunzione sigmoidea ed ano",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.57,2.57,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumore maligno del fegato e delle vie biliari,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.58,2.58,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumore maligno del pancreas,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.59,2.59,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Altri tumori maligni dell'apparato digerente e del peritoneteo e del tessuto retroperitoneale,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.60,2.60,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,"Tumore maligno delle cavità nasali, orecchio medio e seni annessi",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.61,2.61,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumore maligno del laringe,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.62,2.62,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,"Tumore maligno della trachea, dei bronchi, del polmone non specificato come secondario",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.63,2.63,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumore maligno della pleura,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.64,2.64,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumori maligni di altri e non specificati organi dell'apparato respiratorio e di organi toracici,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.65,2.65,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumori maligni delle ossa e dei tessuti connetivo e muscolare,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.66,2.66,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Melanoma maligno della pelle,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.67,2.67,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Altri tumori maligni della pelle,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.68,2.68,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumore maligno della mammella,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.69,2.69,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumore maligno del collo dell'utero,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.70,2.70,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumore maligno del corpo dell'utero,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.71,2.71,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Altri e non specificati tumori maligni dell'utero: tumori maligni della placenta,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.72,2.72,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,"Tumore maligno dell'ovaio, e degli altri annessi uterini",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.73,2.73,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumore maligno degli altri o non specificati organi genitali femminili,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.74,2.74,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumore maligno della prostata,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.75,2.75,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumore maligno del testicolo,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.76,2.76,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumore maligno del pene e altri organi genitali maschili,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.77,2.77,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumore maligno della vescica,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.78,2.78,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumore maligno del rene e altri non specificati organi dell'apparato urinario,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.79,2.79,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumori maligni dell'occhio,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.80,2.80,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumore maligno del cervello e delle altre parti del sistema nervoso,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.81,2.81,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumore maligno della tiroide,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.82,2.82,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumori maligni delle altre ghiandole endocrine e strutture affini,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.83,2.83,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Altre o non specificate localizzazioni di tumori maligni: tumori maligni secondari,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.84,2.84,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,"Linfosarcoma, reticolosarcoma, mieloma multiplo, tumori immunoproliferativi, altri tumori maligni del tessuso linfatico ed istiocitico",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.85,2.85,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Malattia di Hodgking,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.86,2.86,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Leucemia linfatica,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.87,2.87,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Leucemia mieloide,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.88,2.88,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Luecemia monocitica; altre leucemie precisate e non,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.89,2.89,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumore benigno delle ossa e della cartilagine articolare,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.90,2.90,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumore benigno della pelle,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.91,2.91,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumore benigno della mammella,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.92,2.92,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumore benigno dell'utero,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.93,2.93,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,Tumore benigno di altri o non specificati organi,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/2.94,2.94,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,"Carcinomi in situ dei vari apparati, tumori ad evoluzione imprevedibile",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/3.100,3.100,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/3,Tireotossicosi con o senza gozzo,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/3.101,3.101,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/3,Tiroidi ed altre malattie della tiroide,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/3.102,3.102,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/3,Diabete mellito,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/3.103,3.103,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/3,Disfunzione ovarica,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/3.104,3.104,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/3,Malattie delle ghiandole surrenali,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/3.105,3.105,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/3,Disturbi ipotalamo - ipofisari,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/3.106,3.106,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/3,Altre malattie delle ghiandole endocrine e turbe plurighiandolari,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/3.107,3.107,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/3,Avitaminosi e stati di carenza,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/3.108,3.108,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/3,"Anomalie del metabolismo e della eliminazione degli aminoacidi, glucidi e lipidi. Disprotidemie",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/3.109,3.109,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/3,Gotta,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/3.110,3.110,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/3,Disturbi del metabolismo idro-elettrolitico e dell'equilibrio acido-base,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/3.111,3.111,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/3,Fibrosi cistica ed altri e non precisati disturbi metabolici,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/3.112,3.112,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/3,Obesità e disturbi per eccesso di assunzione,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/3.113,3.113,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/3,Disturbi immunitari,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/3.99,3.99,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/3,Gozzo senza segni di ipertiroidismo. Ipotiroidismo congenito ed acquisito,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/4.118,4.118,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/4,Anemia da carenza di ferro,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/4.119,4.119,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/4,Anemie da carenza degli altri fattori emopoietici,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/4.120,4.120,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/4,Anemia dovuta a deficit di glucosio-6-fosfato deidrogenasi,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/4.121,4.121,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/4,Talassemie,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/4.122,4.122,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/4,Altre anemie emolitiche ereditarie,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/4.123,4.123,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/4,Anemie emolitiche acquisite,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/4.124,4.124,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/4,"Anemie aplastiche, altre e di tipo non precisato",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/4.125,4.125,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/4,Anomalie della coagulazione,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/4.126,4.126,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/4,Porpora ed altre affezioni emorragiche trombocitopeniche,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/4.127,4.127,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/4,Malattie dei leucociti,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/4.128,4.128,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/4,Altre malattie del sangue e degli organi emopoietici,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/5.133,5.133,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/5,Stati psicotici organici senili e presenili,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/5.134,5.134,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/5,Psicosi alcooliche,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/5.135,5.135,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/5,Psicosi da droghe,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/5.136,5.136,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/5,Psicosi schizofreniche,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/5.137,5.137,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/5,Altre forme psicotiche,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/5.138,5.138,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/5,Sindromi neurotiche - Disturbi della personalità - Turbe e deviazioni sessuali,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/5.139,5.139,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/5,Alcoolismo,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/5.140,5.140,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/5,Dipendenza da droghe ed abuso di droghe da non dipendenti (persone),2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/5.141,5.141,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/5,Affezioni psicosomatiche,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/5.142,5.142,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/5,Sintomi o disturbi non classificati altrove,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/5.143,5.143,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/5,Ritardi specifici e turbe affettive nell'infanzia e nella adolescenza,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/5.144,5.144,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/5,Disturbo dell'adattamento cronico,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/5.145,5.145,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/5,Disturbo post traumatico da stress cronico,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.148,6.148,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Meningiti,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.149,6.149,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Malattia di Parkinson,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.150,6.150,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Sclerosi a placche,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.151,6.151,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Epilessia,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.152,6.152,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Altre malattie del sistema nervoso centrale,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.153,6.153,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Malattie del nervo trigemino,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.154,6.154,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Malattie del nervo facciale,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.155,6.155,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Altre neuropatie periferiche,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.156,6.156,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Neuropatie tossiche da composti chimici di uso agricolo,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.157,6.157,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Neuropatie tossiche da sostanze solide e liquide,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.158,6.158,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Altre neuropatie infiammatorie e tossiche,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.159,6.159,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Distrofie muscolari e miopatie,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.160,6.160,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Affezioni del globo oculare,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.161,6.161,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Distacco retinico ed altre anomalie retiniche,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.162,6.162,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,"Malattie della coroide, iride e corpi ciliari",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.163,6.163,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Glaucoma,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.164,6.164,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Cataratta,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.165,6.165,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Vizi di rifrazione e disturbi della accomodazione,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.166,6.166,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Disturbi della visione,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.167,6.167,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Diminuzione del visus,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.168,6.168,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Cecità,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.169,6.169,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,"Cheratite, opacità ed altre affezioni corneali",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.170,6.170,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Affezioni della congiuntiva,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.171,6.171,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Affezioni della palpebra,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.172,6.172,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Affezioni apparato lacrimale,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.173,6.173,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Affezioni dell'orbita,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.174,6.174,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Affezioni nervo e vie ottiche,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.175,6.175,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Strabismo e disturbi della motilità oculare,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.176,6.176,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Otiti medie suppurative e non; affezioni della Tromba di Eustachio,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.177,6.177,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Mastoidite ed affezioni collegate,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.178,6.178,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Sindromi labirintiche ed altri disturbi vestibolari,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.179,6.179,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Otospongiosi,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.180,6.180,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Ipoacusia,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.181,6.181,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Sordità,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/6.182,6.182,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,Malattie dell'orecchio esterno. Altre affezioni dell'orecchio,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.187,7.187,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Reumatismo articolare acuto senza menzione di complicazioni cardiache,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.188,7.188,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Reumatismo articolare acuto con complicazioni cardiache,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.189,7.189,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Corea reumatica,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.190,7.190,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Malattie della valvola mitralica,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.191,7.191,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Malattie della valvola aortica,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.192,7.192,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Altre cardiopatie di origine reumatica,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.193,7.193,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,"Ipertensione essenziale maligna, benigna, senza precisazione",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.194,7.194,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Ipertensione con cardiopatie o nefropatie,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.195,7.195,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,"Ipertensione secondaria maligna, benigna, senza precisazione",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.196,7.196,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Infarto acuto del miocardio,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.197,7.197,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Angina pectoris,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.198,7.198,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Altre cardiopatie ischemiche,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.199,7.199,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Cuore polmonare cronico,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.200,7.200,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Embolia polmonare,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.201,7.201,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Altre malattie della circolazione polmonare,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.202,7.202,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Pericardite acuta,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.203,7.203,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Endocardite acuta e subacuta non specificata come reumatica,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.204,7.204,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Altre malattie dell'endocardio,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.205,7.205,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Miocardite acuta,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.206,7.206,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Cardiomiopatie,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.207,7.207,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Insufficienza cardiaca,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.208,7.208,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Turbe della conduzione e disordini del ritmo cardiaco,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.209,7.209,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Altre insufficienze del miocardio,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.210,7.210,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Altre malattie di cuore,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.211,7.211,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Emorragia cerebrale,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.212,7.212,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Embolia e trombosi cerebrale,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.213,7.213,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Occlusione e stenosi arterie precerebrali,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.214,7.214,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Altre cerebropatie vascolari,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.215,7.215,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Aterosclerosi,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.216,7.216,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Aneurisma dell'aorta,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.217,7.217,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Embolia e trombosi arteriosa,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.218,7.218,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Panarterite nodosa e malattie collegate,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.219,7.219,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Sindrome di Raynaud,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.220,7.220,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Tromboangioite obliterante (m. di Burger),2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.221,7.221,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Altre malattie delle arterie e delle arteriole,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.222,7.222,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Malattie dei capillari,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.223,7.223,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Flebite e tromboflebite,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.224,7.224,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Embolia e trombosi venosa,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.225,7.225,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Varici degli arti inferiori,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.226,7.226,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Emorroidi,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.227,7.227,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Varici d'altre sedi,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.228,7.228,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Malattie non infettive dei vasi linfatici,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.229,7.229,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Ipotensione,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/7.230,7.230,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,Altre malattie del sistema circolatorio,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.235,8.235,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Infezioni acute delle vie respiratorie superiori (eccetto sinusite e tonsillite acute),2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.236,8.236,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Sinusite acuta,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.237,8.237,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Tonsillite acuta,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.238,8.238,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Bronchite e bronchiolite acuta,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.239,8.239,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Affezioni croniche del rinofaringe e dei seni paranasali,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.240,8.240,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Affezioni croniche delle tonsille e delle adenoidi,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.241,8.241,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Polmonite da virus,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.242,8.242,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Polmonite batterica,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.243,8.243,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Polmonite micotica,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.244,8.244,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Polmonite da altri microorganismi,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.245,8.245,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Broncopolmonite,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.246,8.246,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Influenza,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.247,8.247,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Bronchite cronica,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.248,8.248,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Enfisema,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.249,8.249,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Asma,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.250,8.250,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Bronchiectasie,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.251,8.251,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Pneumoconiosi in operai di miniere di carbone,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.252,8.252,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Asbestosi,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.253,8.253,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Pneumoconiosi da silice,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.254,8.254,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Pneumoconiosi da altre polveri inorganiche,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.255,8.255,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Pneumopatie da altre polveri,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.256,8.256,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Pneumoconiosi non precisate,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.257,8.257,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Affezioni respiratorie da inalazioni di fumi e vapori,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.258,8.258,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Polmonite da sostanze solide e liquide,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.259,8.259,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Empiema e pleuriti,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.260,8.260,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Ascesso polmonare e mediastinico,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.261,8.261,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Altre malattie polmonari,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.262,8.262,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Altre malattie dell'apparato respiratorio,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.263,8.263,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,Pneumoconiosi da silicati,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/8.264,8.264,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,"Placche pleuriche, ispessimenti pleurici",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.267,9.267,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Malattie dei denti e delle strutture di sostegno dei denti,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.268,9.268,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Malattie della cavità buccale (escluse le malattie dei denti e delle strutture di sostegno dei denti),2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.269,9.269,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Malattie dell'esofago,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.270,9.270,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Ulcera dello stomaco,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.271,9.271,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Ulcera del duodeno,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.272,9.272,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Ulcera digestiva in sede non specificata,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.273,9.273,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Ulcera gastro digiunale,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.274,9.274,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Gastrite e duodenite,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.275,9.275,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Turbe funzionali dello stomaco,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.276,9.276,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Altre malattie dello stomaco e del duodeno,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.277,9.277,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Appendicite acuta,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.278,9.278,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Altre malattie dell'appendice,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.279,9.279,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Ernie addominali senza complicazioni,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.280,9.280,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Ernie addominali complicate,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.281,9.281,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Enterite regionale,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.282,9.282,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Rettocolite idiopatica,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.283,9.283,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Altre gastro-enteriti e coliti non infettive,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.284,9.284,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Occlusione intestinale senza menzione d'ernia,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.285,9.285,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Diverticoli ed altre turbe funzionali dell'apparato digerente,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.286,9.286,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Ragadi e fistole anali; ascessi anorettali,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.287,9.287,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Peritonite,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.288,9.288,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Altre malattie dell'intestino e del peritoneo,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.289,9.289,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Epatiti croniche,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.290,9.290,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Epatopatia alcoolica,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.291,9.291,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Cirrosi epatica,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.292,9.292,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Litiasi biliare,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.293,9.293,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Colecistiti ed angiocoliti senza menzione di calcolosi,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.294,9.294,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,"Altre malattie del fegato, colecisti e delle vie biliari",2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.295,9.295,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Malattie del pancreas,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/malattia/9.296,9.296,http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,Malassorbimento intestinale,2
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/1,1,,Malattie infettive e parassitarie,1
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/10,10,,Malattie dell'apparato genito-urinario,1
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/11,11,,"Parto e complicazioni della gravidanza, parto e puerperio",1
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/12,12,,Malattie della cute e del tessuto sottocutaneo,1
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/13,13,,"Malattie del sistema osteo-articolare, dei muscoli e del tessuto connettivo",1
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/14,14,,Malformazioni congenite,1
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/15,15,,Alcune cause di morbosita' perinatale,1
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/16,16,,"Sintomi, segni e stati morbosi mal definiti",1
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/17,17,,"Accidenti, avvelenamenti e traumatismi",1
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/2,2,,Tumori,1
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/3,3,,"Malattie endocrine, della nutrizione, del metabolismo e disturbi immunitari",1
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/4,4,,Malattie del sangue e degli organi emopoietici,1
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/5,5,,Disturbi psichici,1
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/6,6,,Malattie del sistema nervoso e degli organi di senso,1
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/7,7,,Malattie del sistema circolatorio,1
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/8,8,,Malattie dell'apparato respiratorio,1
+http://dati.inail.it/opendata/vocabolari/tipo_malattia/settore/9,9,,Malattie dell'apparato digerente,1

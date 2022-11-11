@@ -1,0 +1,692 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix cov: <https://w3id.org/italia/onto/COV> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix devcod: <http://dati.inail.it/opendata/vocabolari/deviazione/codice/> .
+@prefix devgrup: <http://dati.inail.it/opendata/vocabolari/deviazione/gruppo/> .
+@prefix inailvoc: <http://dati.inail.it/opendata/vocabolari/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Annotations
+
+devcod:1.0 a skos:Concept ;
+    skos:prefLabel "Deviazione per problema elettrico, esplosione, incendio - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.0" ;
+    skos:broader devgrup:1 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Deviazione per problema elettrico, esplosione, incendio - non precisato"@it ;
+    skos:notation "1.0" ;
+    xkos:depth "2" .
+
+devcod:1.1 a skos:Concept ;
+    skos:prefLabel "Problema elettrico causato da un guasto all'impianto -  contatto indiretto"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.1" ;
+    skos:broader devgrup:1 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Problema elettrico causato da un guasto all'impianto -  contatto indiretto"@it ;
+    skos:notation "1.1" ;
+    xkos:depth "2" .
+
+devcod:1.2 a skos:Concept ;
+    skos:prefLabel "Problema elettrico -  contatto diretto"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.2" ;
+    skos:broader devgrup:1 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Problema elettrico -  contatto diretto"@it ;
+    skos:notation "1.2" ;
+    xkos:depth "2" .
+
+devcod:1.3 a skos:Concept ;
+    skos:prefLabel "Esplosione"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.3" ;
+    skos:broader devgrup:1 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Esplosione"@it ;
+    skos:notation "1.3" ;
+    xkos:depth "2" .
+
+devcod:1.4 a skos:Concept ;
+    skos:prefLabel "Incendio"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.4" ;
+    skos:broader devgrup:1 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Incendio"@it ;
+    skos:notation "1.4" ;
+    xkos:depth "2" .
+
+devcod:1.9 a skos:Concept ;
+    skos:prefLabel "Altra deviazione conosciuta del gruppo 10 non indicata qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.9" ;
+    skos:broader devgrup:1 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Altra deviazione conosciuta del gruppo 10 non indicata qui sopra"@it ;
+    skos:notation "1.9" ;
+    xkos:depth "2" .
+
+devcod:2.0 a skos:Concept ;
+    skos:prefLabel "Deviazione dovuta a traboccamento, rovesciamento, perdita, fuoruscita, vaporizzazione, emanazione - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.0" ;
+    skos:broader devgrup:2 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Deviazione dovuta a traboccamento, rovesciamento, perdita, fuoruscita, vaporizzazione, emanazione - non precisato"@it ;
+    skos:notation "2.0" ;
+    xkos:depth "2" .
+
+devcod:2.1 a skos:Concept ;
+    skos:prefLabel "Allo stato solido - traboccamento, rovesciamento"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.1" ;
+    skos:broader devgrup:2 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Allo stato solido - traboccamento, rovesciamento"@it ;
+    skos:notation "2.1" ;
+    xkos:depth "2" .
+
+devcod:2.2 a skos:Concept ;
+    skos:prefLabel "Allo stato liquido - perdita, trasudo, fuoruscita, spruzzo, aspersione"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.2" ;
+    skos:broader devgrup:2 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Allo stato liquido - perdita, trasudo, fuoruscita, spruzzo, aspersione"@it ;
+    skos:notation "2.2" ;
+    xkos:depth "2" .
+
+devcod:2.3 a skos:Concept ;
+    skos:prefLabel "Allo stato gassoso - vaporizzazione, formazione di aerosol, formazione di gas"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.3" ;
+    skos:broader devgrup:2 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Allo stato gassoso - vaporizzazione, formazione di aerosol, formazione di gas"@it ;
+    skos:notation "2.3" ;
+    xkos:depth "2" .
+
+devcod:2.4 a skos:Concept ;
+    skos:prefLabel "Polverosità - generazione di fumi, emissione di polveri, particelle"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.4" ;
+    skos:broader devgrup:2 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Polverosità - generazione di fumi, emissione di polveri, particelle"@it ;
+    skos:notation "2.4" ;
+    xkos:depth "2" .
+
+devcod:2.9 a skos:Concept ;
+    skos:prefLabel "Altra deviazione conosciuta del gruppo 20 non indicata qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.9" ;
+    skos:broader devgrup:2 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Altra deviazione conosciuta del gruppo 20 non indicata qui sopra"@it ;
+    skos:notation "2.9" ;
+    xkos:depth "2" .
+
+devcod:3.0 a skos:Concept ;
+    skos:prefLabel "Rottura, frattura, deformazione, scivolamento, caduta, crollo dell'agente materiale - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.0" ;
+    skos:broader devgrup:3 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Rottura, frattura, deformazione, scivolamento, caduta, crollo dell'agente materiale - non precisato"@it ;
+    skos:notation "3.0" ;
+    xkos:depth "2" .
+
+devcod:3.1 a skos:Concept ;
+    skos:prefLabel "Rottura di materiale, alle giunzioni, alle connessioni"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.1" ;
+    skos:broader devgrup:3 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Rottura di materiale, alle giunzioni, alle connessioni"@it ;
+    skos:notation "3.1" ;
+    xkos:depth "2" .
+
+devcod:3.2 a skos:Concept ;
+    skos:prefLabel "Rottura, esplosione con produzione di schegge (legno, vetro, metallo, pietra, plastica, altro)"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.2" ;
+    skos:broader devgrup:3 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Rottura, esplosione con produzione di schegge (legno, vetro, metallo, pietra, plastica, altro)"@it ;
+    skos:notation "3.2" ;
+    xkos:depth "2" .
+
+devcod:3.3 a skos:Concept ;
+    skos:prefLabel "Scivolamento, caduta, crollo di agente materiale posto al di sopra (che cade sulla vittima)"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.3" ;
+    skos:broader devgrup:3 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Scivolamento, caduta, crollo di agente materiale posto al di sopra (che cade sulla vittima)"@it ;
+    skos:notation "3.3" ;
+    xkos:depth "2" .
+
+devcod:3.4 a skos:Concept ;
+    skos:prefLabel "Scivolamento, caduta, crollo di agente materiale posto al di sotto (che trascina la vittima)"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.4" ;
+    skos:broader devgrup:3 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Scivolamento, caduta, crollo di agente materiale posto al di sotto (che trascina la vittima)"@it ;
+    skos:notation "3.4" ;
+    xkos:depth "2" .
+
+devcod:3.5 a skos:Concept ;
+    skos:prefLabel "Scivolamento, caduta, crollo di un agente materiale  allo stesso livello"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.5" ;
+    skos:broader devgrup:3 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Scivolamento, caduta, crollo di un agente materiale  allo stesso livello"@it ;
+    skos:notation "3.5" ;
+    xkos:depth "2" .
+
+devcod:3.9 a skos:Concept ;
+    skos:prefLabel "Altra deviazione conosciuta del gruppo 30 non indicata qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.9" ;
+    skos:broader devgrup:3 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Altra deviazione conosciuta del gruppo 30 non indicata qui sopra"@it ;
+    skos:notation "3.9" ;
+    xkos:depth "2" .
+
+devcod:4.0 a skos:Concept ;
+    skos:prefLabel "Perdita di controllo totale o parziale di una macchina, di un mezzo di trasporto/attrezzatura dimovimentazione, di un utensile a mano o oggetto, di un animale - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.0" ;
+    skos:broader devgrup:4 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Perdita di controllo totale o parziale di una macchina, di un mezzo di trasporto/attrezzatura dimovimentazione, di un utensile a mano o oggetto, di un animale - non precisato"@it ;
+    skos:notation "4.0" ;
+    xkos:depth "2" .
+
+devcod:4.1 a skos:Concept ;
+    skos:prefLabel "Perdita di controllo totale o parziale di macchina (ivi compreso l'avviamento intempestivo) nonche' del materiale lavorato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.1" ;
+    skos:broader devgrup:4 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Perdita di controllo totale o parziale di macchina (ivi compreso l'avviamento intempestivo) nonche' del materiale lavorato"@it ;
+    skos:notation "4.1" ;
+    xkos:depth "2" .
+
+devcod:4.2 a skos:Concept ;
+    skos:prefLabel "Perdita di controllo totale o parziale di mezzo di trasporto/di attrezzatura di movimentazione (motorizzato o no)"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.2" ;
+    skos:broader devgrup:4 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Perdita di controllo totale o parziale di mezzo di trasporto/di attrezzatura di movimentazione (motorizzato o no)"@it ;
+    skos:notation "4.2" ;
+    xkos:depth "2" .
+
+devcod:4.3 a skos:Concept ;
+    skos:prefLabel "Perdita di controllo totale o parziale di utensile a mano (motorizzato o no) nonche' del materiale lavorato dall'utensile"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.3" ;
+    skos:broader devgrup:4 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Perdita di controllo totale o parziale di utensile a mano (motorizzato o no) nonche' del materiale lavorato dall'utensile"@it ;
+    skos:notation "4.3" ;
+    xkos:depth "2" .
+
+devcod:4.4 a skos:Concept ;
+    skos:prefLabel "Perdita di controllo totale o parziale di oggetto (portato, spostato, movimentato, ecc.)"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.4" ;
+    skos:broader devgrup:4 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Perdita di controllo totale o parziale di oggetto (portato, spostato, movimentato, ecc.)"@it ;
+    skos:notation "4.4" ;
+    xkos:depth "2" .
+
+devcod:4.5 a skos:Concept ;
+    skos:prefLabel "Perdita di controllo totale o parziale di animale"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.5" ;
+    skos:broader devgrup:4 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Perdita di controllo totale o parziale di animale"@it ;
+    skos:notation "4.5" ;
+    xkos:depth "2" .
+
+devcod:4.9 a skos:Concept ;
+    skos:prefLabel "Altra deviazione conosciuta del gruppo 40 non indicata qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.9" ;
+    skos:broader devgrup:4 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Altra deviazione conosciuta del gruppo 40 non indicata qui sopra"@it ;
+    skos:notation "4.9" ;
+    xkos:depth "2" .
+
+devcod:5.0 a skos:Concept ;
+    skos:prefLabel "Scivolamento o inciampamento  con caduta di persona  non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.0" ;
+    skos:broader devgrup:5 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Scivolamento o inciampamento  con caduta di persona  non precisato"@it ;
+    skos:notation "5.0" ;
+    xkos:depth "2" .
+
+devcod:5.1 a skos:Concept ;
+    skos:prefLabel "Caduta di persona dall'alto"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.1" ;
+    skos:broader devgrup:5 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Caduta di persona dall'alto"@it ;
+    skos:notation "5.1" ;
+    xkos:depth "2" .
+
+devcod:5.2 a skos:Concept ;
+    skos:prefLabel "Scivolamento o inciampamento  con caduta di persona  allo stesso livello"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.2" ;
+    skos:broader devgrup:5 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Scivolamento o inciampamento  con caduta di persona  allo stesso livello"@it ;
+    skos:notation "5.2" ;
+    xkos:depth "2" .
+
+devcod:5.9 a skos:Concept ;
+    skos:prefLabel "Altra deviazione conosciuta del gruppo 50 non indicata qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.9" ;
+    skos:broader devgrup:5 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Altra deviazione conosciuta del gruppo 50 non indicata qui sopra"@it ;
+    skos:notation "5.9" ;
+    xkos:depth "2" .
+
+devcod:6.0 a skos:Concept ;
+    skos:prefLabel "Movimento del corpo senza sforzo fisico (che porta generalmente a una lesione esterna) - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.0" ;
+    skos:broader devgrup:6 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Movimento del corpo senza sforzo fisico (che porta generalmente a una lesione esterna) - non precisato"@it ;
+    skos:notation "6.0" ;
+    xkos:depth "2" .
+
+devcod:6.1 a skos:Concept ;
+    skos:prefLabel "Camminare su un oggetto tagliente"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.1" ;
+    skos:broader devgrup:6 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Camminare su un oggetto tagliente"@it ;
+    skos:notation "6.1" ;
+    xkos:depth "2" .
+
+devcod:6.2 a skos:Concept ;
+    skos:prefLabel "Inginocchiarsi, sedersi, appoggiarsi contro"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.2" ;
+    skos:broader devgrup:6 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Inginocchiarsi, sedersi, appoggiarsi contro"@it ;
+    skos:notation "6.2" ;
+    xkos:depth "2" .
+
+devcod:6.3 a skos:Concept ;
+    skos:prefLabel "Essere afferrato, trascinato da qualcosa o dal proprio slancio"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.3" ;
+    skos:broader devgrup:6 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Essere afferrato, trascinato da qualcosa o dal proprio slancio"@it ;
+    skos:notation "6.3" ;
+    xkos:depth "2" .
+
+devcod:6.4 a skos:Concept ;
+    skos:prefLabel "Movimenti scoordinati, gesti intempestivi, inopportuni"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.4" ;
+    skos:broader devgrup:6 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Movimenti scoordinati, gesti intempestivi, inopportuni"@it ;
+    skos:notation "6.4" ;
+    xkos:depth "2" .
+
+devcod:6.9 a skos:Concept ;
+    skos:prefLabel "Altra deviazione conosciuta del gruppo 60 non indicata qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.9" ;
+    skos:broader devgrup:6 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Altra deviazione conosciuta del gruppo 60 non indicata qui sopra"@it ;
+    skos:notation "6.9" ;
+    xkos:depth "2" .
+
+devcod:7.0 a skos:Concept ;
+    skos:prefLabel "Movimento del corpo sotto sforzo fisico (che porta generalmente ad una lesione interna) - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "7.0" ;
+    skos:broader devgrup:7 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Movimento del corpo sotto sforzo fisico (che porta generalmente ad una lesione interna) - non precisato"@it ;
+    skos:notation "7.0" ;
+    xkos:depth "2" .
+
+devcod:7.1 a skos:Concept ;
+    skos:prefLabel "Sollevando, portando, alzandosi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "7.1" ;
+    skos:broader devgrup:7 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Sollevando, portando, alzandosi"@it ;
+    skos:notation "7.1" ;
+    xkos:depth "2" .
+
+devcod:7.2 a skos:Concept ;
+    skos:prefLabel "Spingendo, tirando"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "7.2" ;
+    skos:broader devgrup:7 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Spingendo, tirando"@it ;
+    skos:notation "7.2" ;
+    xkos:depth "2" .
+
+devcod:7.3 a skos:Concept ;
+    skos:prefLabel "Depositando, abbassandosi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "7.3" ;
+    skos:broader devgrup:7 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Depositando, abbassandosi"@it ;
+    skos:notation "7.3" ;
+    xkos:depth "2" .
+
+devcod:7.4 a skos:Concept ;
+    skos:prefLabel "Torsione, rotazione, girandosi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "7.4" ;
+    skos:broader devgrup:7 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Torsione, rotazione, girandosi"@it ;
+    skos:notation "7.4" ;
+    xkos:depth "2" .
+
+devcod:7.5 a skos:Concept ;
+    skos:prefLabel "Passo falso, torsione di gamba o caviglia, scivolamento senza caduta"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "7.5" ;
+    skos:broader devgrup:7 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Passo falso, torsione di gamba o caviglia, scivolamento senza caduta"@it ;
+    skos:notation "7.5" ;
+    xkos:depth "2" .
+
+devcod:7.9 a skos:Concept ;
+    skos:prefLabel "Altra deviazione conosciuta del gruppo 70 non indicata qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "7.9" ;
+    skos:broader devgrup:7 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Altra deviazione conosciuta del gruppo 70 non indicata qui sopra"@it ;
+    skos:notation "7.9" ;
+    xkos:depth "2" .
+
+devcod:8.0 a skos:Concept ;
+    skos:prefLabel "Sorpresa, sbigottimento, violenza, aggressione, minaccia, presenza, - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "8.0" ;
+    skos:broader devgrup:8 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Sorpresa, sbigottimento, violenza, aggressione, minaccia, presenza, - non precisato"@it ;
+    skos:notation "8.0" ;
+    xkos:depth "2" .
+
+devcod:8.1 a skos:Concept ;
+    skos:prefLabel "Sorpresa, sbigottimento"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "8.1" ;
+    skos:broader devgrup:8 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Sorpresa, sbigottimento"@it ;
+    skos:notation "8.1" ;
+    xkos:depth "2" .
+
+devcod:8.2 a skos:Concept ;
+    skos:prefLabel "Violenza, aggressione, minaccia ? tra dipendenti dell'impresa"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "8.2" ;
+    skos:broader devgrup:8 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Violenza, aggressione, minaccia ? tra dipendenti dell'impresa"@it ;
+    skos:notation "8.2" ;
+    xkos:depth "2" .
+
+devcod:8.3 a skos:Concept ;
+    skos:prefLabel "Violenza, aggressione, minaccia - proveniente da persone esterne all'impresa verso le vittime nel quadro della loro funzione (rapina in banca, aggressione ad autisti di autobus, ecc.)"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "8.3" ;
+    skos:broader devgrup:8 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Violenza, aggressione, minaccia - proveniente da persone esterne all'impresa verso le vittime nel quadro della loro funzione (rapina in banca, aggressione ad autisti di autobus, ecc.)"@it ;
+    skos:notation "8.3" ;
+    xkos:depth "2" .
+
+devcod:8.4 a skos:Concept ;
+    skos:prefLabel "Aggressione, calca, violenza da parte di animali"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "8.4" ;
+    skos:broader devgrup:8 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Aggressione, calca, violenza da parte di animali"@it ;
+    skos:notation "8.4" ;
+    xkos:depth "2" .
+
+devcod:8.5 a skos:Concept ;
+    skos:prefLabel "Presenza della vittima o di un terzo che crea di per se' stesso un pericolo per la vittima/per se' stesso e se del caso per altri"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "8.5" ;
+    skos:broader devgrup:8 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Presenza della vittima o di un terzo che crea di per se' stesso un pericolo per la vittima/per se' stesso e se del caso per altri"@it ;
+    skos:notation "8.5" ;
+    xkos:depth "2" .
+
+devcod:8.9 a skos:Concept ;
+    skos:prefLabel "Altra deviazione conosciuta del gruppo 80 non indicata qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "8.9" ;
+    skos:broader devgrup:8 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Altra deviazione conosciuta del gruppo 80 non indicata qui sopra"@it ;
+    skos:notation "8.9" ;
+    xkos:depth "2" .
+
+devgrup:1 a skos:Concept ;
+    skos:prefLabel "Deviazione per problema elettrico, esplosione, incendio"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "1" ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Deviazione per problema elettrico, esplosione, incendio"@it ;
+    skos:narrower devcod:1.0,
+        devcod:1.1,
+        devcod:1.2,
+        devcod:1.3,
+        devcod:1.4,
+        devcod:1.9 ;
+    skos:notation "1" ;
+    xkos:depth "1" .
+
+devgrup:2 a skos:Concept ;
+    skos:prefLabel "Deviazione dovuta a traboccamento, rovesciamento, perdita, fuoruscita, vaporizzazione, emanazione "@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "2" ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Deviazione dovuta a traboccamento, rovesciamento, perdita, fuoruscita, vaporizzazione, emanazione "@it ;
+    skos:narrower devcod:2.0,
+        devcod:2.1,
+        devcod:2.2,
+        devcod:2.3,
+        devcod:2.4,
+        devcod:2.9 ;
+    skos:notation "2" ;
+    xkos:depth "1" .
+
+devgrup:3 a skos:Concept ;
+    skos:prefLabel "Rottura, frattura, deformazione, scivolamento, caduta, crollo dell'agente materiale "@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "3" ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Rottura, frattura, deformazione, scivolamento, caduta, crollo dell'agente materiale "@it ;
+    skos:narrower devcod:3.0,
+        devcod:3.1,
+        devcod:3.2,
+        devcod:3.3,
+        devcod:3.4,
+        devcod:3.5,
+        devcod:3.9 ;
+    skos:notation "3" ;
+    xkos:depth "1" .
+
+devgrup:4 a skos:Concept ;
+    skos:prefLabel "Perdita di controllo totale o parziale di una macchina, di un mezzo di trasporto/attrezzatura di movimentazione, di un utensile a mano o oggetto, di un animale "@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "4" ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Perdita di controllo totale o parziale di una macchina, di un mezzo di trasporto/attrezzatura di movimentazione, di un utensile a mano o oggetto, di un animale "@it ;
+    skos:narrower devcod:4.0,
+        devcod:4.1,
+        devcod:4.2,
+        devcod:4.3,
+        devcod:4.4,
+        devcod:4.5,
+        devcod:4.9 ;
+    skos:notation "4" ;
+    xkos:depth "1" .
+
+devgrup:5 a skos:Concept ;
+    skos:prefLabel "Scivolamento o inciampamento con caduta di persona "@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "5" ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Scivolamento o inciampamento con caduta di persona "@it ;
+    skos:narrower devcod:5.0,
+        devcod:5.1,
+        devcod:5.2,
+        devcod:5.9 ;
+    skos:notation "5" ;
+    xkos:depth "1" .
+
+devgrup:6 a skos:Concept ;
+    skos:prefLabel "Movimento del corpo senza sforzo fisico (che porta generalmente a una lesione esterna)"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "6" ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Movimento del corpo senza sforzo fisico (che porta generalmente a una lesione esterna)"@it ;
+    skos:narrower devcod:6.0,
+        devcod:6.1,
+        devcod:6.2,
+        devcod:6.3,
+        devcod:6.4,
+        devcod:6.9 ;
+    skos:notation "6" ;
+    xkos:depth "1" .
+
+devgrup:7 a skos:Concept ;
+    skos:prefLabel "Movimento del corpo sotto sforzo fisico (che porta generalmente ad una lesione interna)"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "7" ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Movimento del corpo sotto sforzo fisico (che porta generalmente ad una lesione interna)"@it ;
+    skos:narrower devcod:7.0,
+        devcod:7.1,
+        devcod:7.2,
+        devcod:7.3,
+        devcod:7.4,
+        devcod:7.5,
+        devcod:7.9 ;
+    skos:notation "7" ;
+    xkos:depth "1" .
+
+devgrup:8 a skos:Concept ;
+    skos:prefLabel "Sorpresa, sbigottimento, violenza, aggressione, minaccia, presenza"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "8" ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:label "Sorpresa, sbigottimento, violenza, aggressione, minaccia, presenza"@it ;
+    skos:narrower devcod:8.0,
+        devcod:8.1,
+        devcod:8.2,
+        devcod:8.3,
+        devcod:8.4,
+        devcod:8.5,
+        devcod:8.9 ;
+    skos:notation "8" ;
+    xkos:depth "1" .
+
+<http://dati.inail.it/data/Organization/inail> a cov:Organization ;
+    rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
+    cov:IPAcode "inail" ;
+    cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
+    cov:orgAcronym "inail" .
+
+inailvoc:deviazione a adms:Asset,
+        dcatapit:Dataset,
+        skos:ConceptScheme ;
+    rdfs:label "Controlled vocabulary on the type of deviation adopted by INAIL"@en,
+        "Vocabolario Controllato sul tipo di deviazione adottato dall'INAIL"@it ;
+    skos:prefLabel "Vocabolario Controllato sul tipo di deviazione adottato dall'INAIL"@it ;
+    rdfs:comment ""@en,
+        ""@it ;
+    owl:versionInfo "0.2" ;
+    rdfs:isDefinedBy inailvoc:deviazione ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:contactPoint <https://www.inail.it> ;
+    dcat:distribution <https://w3id.org/italia/data/distribution/PS-RDF-Turtle> ;
+    dcat:keyword "deviation"@en,
+        "deviazione"@it,
+        "inail"@it,
+        "infortunio"@it,
+        "occupational injury"@en ;
+    dcat:theme <file:///C:/Users/E.Alessio/Documents/GIT/ndc-feed/assets/controlled-vocabularies/tipo-deviazione/tipo_deviazione.ttl>,
+        <http://eurovoc.europa.eu/825> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dct:creator <http://dati.inail.it/data/Organization/inail> ;
+    dct:description ""@en,
+        ""@it ;
+    dct:identifier "http://dati.inail.it/opendata/vocabolari/deviazione" ;
+    dct:issued "2022-09-06"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2022-09-30"^^xsd:date ;
+    dct:publisher <http://dati.inail.it/data/Organization/inail> ;
+    dct:rightsHolder <http://dati.inail.it/data/Organization/inail> ;
+    dct:title "Controlled vocabulary on the type of deviation adopted by INAIL"@en,
+        "Vocabolario Controllato sul tipo di deviazione adottato dall'INAIL"@it ;
+    dct:type <http://purl.org/adms/assettype/Taxonomy> ;
+    ndc:keyConcept "Tipo Deviazione" ;
+    skos:hasTopConcept devgrup:1,
+        devgrup:2,
+        devgrup:3,
+        devgrup:4,
+        devgrup:5,
+        devgrup:6,
+        devgrup:7,
+        devgrup:8 ;
+    xkos:numberOfLevels "2" .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

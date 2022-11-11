@@ -1,0 +1,333 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix cov: <https://w3id.org/italia/onto/COV> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix inailvoc: <http://dati.inail.it/opendata/vocabolari/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tipolavcod: <http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Annotations
+
+<http://dati.inail.it/data/Organization/inail> a cov:Organization ;
+    rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
+    cov:IPAcode "inail" ;
+    cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
+    cov:orgAcronym "inail" .
+
+inailvoc:tipo_lavoratore a adms:Asset,
+        dcatapit:Dataset,
+        skos:ConceptScheme ;
+    rdfs:label "Controlled vocabulary on the classification of the type of worker adopted by INAIL"@en,
+        "Vocabolario controllato sulla classificazione del tipo di lavoratore adottata dall'INAIL"@it ;
+    skos:prefLabel "Vocabolario controllato sulla classificazione del tipo di lavoratore adottata dall'INAIL"@it ;
+    rdfs:comment "Macrogruppo lavorativo di appartenenza del lavoratore valido per tutti i contratti CNEL. Es: Dipendente, Apprendista, Autonomo, Parasubordinato, etc.."@it,
+        "Work macrogroup to which the worker belongs valid for all CNEL contracts. Ex: Employee, Apprentice, Self-employed, Parasubordinate, etc."@en ;
+    owl:versionInfo "0.2" ;
+    rdfs:isDefinedBy inailvoc:tipo_lavoratore ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:contactPoint <https://www.inail.it> ;
+    dcat:distribution <https://w3id.org/italia/data/distribution/PS-RDF-Turtle> ;
+    dcat:keyword "cnel"@it,
+        "figura professionale"@it,
+        "job"@en,
+        "lavoratore"@it,
+        "lavoro"@it,
+        "professional figure"@en,
+        "work"@en,
+        "worker"@en ;
+    dcat:theme <http://eurovoc.europa.eu/166>,
+        <http://eurovoc.europa.eu/414>,
+        <http://eurovoc.europa.eu/4543>,
+        <http://publications.europa.eu/resource/authority/subject-matter/EMPL> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dct:creator <http://dati.inail.it/data/Organization/inail> ;
+    dct:description "Macrogruppo lavorativo di appartenenza del lavoratore valido per tutti i contratti CNEL. Es: Dipendente, Apprendista, Autonomo, Parasubordinato, etc.."@it,
+        "Work macrogroup to which the worker belongs valid for all CNEL contracts. Ex: Employee, Apprentice, Self-employed, Parasubordinate, etc."@en ;
+    dct:identifier "http://dati.inail.it/opendata/vocabolari/tipo_lavoratore" ;
+    dct:issued "2022-09-07"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2022-10-03"^^xsd:date ;
+    dct:publisher <http://dati.inail.it/data/Organization/inail> ;
+    dct:relation inailvoc:gestione_assicurativa,
+        inailvoc:gestione_tariffaria,
+        inailvoc:grande_gruppo_tariffario,
+        inailvoc:mansione,
+        inailvoc:settore_attivita,
+        inailvoc:settore_correlato_malattia,
+        inailvoc:tipo_lavoro ;
+    dct:rightsHolder <http://dati.inail.it/data/Organization/inail> ;
+    dct:title "Controlled vocabulary on the classification of the type of worker adopted by INAIL"@en,
+        "Vocabolario controllato sulla classificazione del tipo di lavoratore adottata dall'INAIL"@it ;
+    dct:type <http://purl.org/adms/assettype/Taxonomy> ;
+    ndc:keyConcept "Tipo Lavoratore" ;
+    skos:hasTopConcept tipolavcod:A,
+        tipolavcod:AA,
+        tipolavcod:BB,
+        tipolavcod:D,
+        tipolavcod:E,
+        tipolavcod:G,
+        tipolavcod:H,
+        tipolavcod:I,
+        tipolavcod:J,
+        tipolavcod:K,
+        tipolavcod:L,
+        tipolavcod:LL,
+        tipolavcod:M,
+        tipolavcod:N,
+        tipolavcod:NN,
+        tipolavcod:O,
+        tipolavcod:P,
+        tipolavcod:Q,
+        tipolavcod:R,
+        tipolavcod:S,
+        tipolavcod:T,
+        tipolavcod:U,
+        tipolavcod:V,
+        tipolavcod:W,
+        tipolavcod:X,
+        tipolavcod:Z ;
+    xkos:numberOfLevels "1" .
+
+tipolavcod:A a skos:Concept ;
+    skos:prefLabel "Dipendente"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "A" ;
+    skos:inScheme inailvoc:tipo_lavoratore ;
+    skos:label "Dipendente"@it ;
+    skos:notation "A" ;
+    xkos:depth "1" .
+
+tipolavcod:AA a skos:Concept ;
+    skos:prefLabel "Dipendente o assimilato"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "AA" ;
+    skos:inScheme inailvoc:tipo_lavoratore ;
+    skos:label "Dipendente o assimilato"@it ;
+    skos:notation "AA" ;
+    xkos:depth "1" .
+
+tipolavcod:BB a skos:Concept ;
+    skos:prefLabel "Allievo/istruttore corsi qualificazione prof.le"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "BB" ;
+    skos:inScheme inailvoc:tipo_lavoratore ;
+    skos:label "Allievo/istruttore corsi qualificazione prof.le"@it ;
+    skos:notation "BB" ;
+    xkos:depth "1" .
+
+tipolavcod:D a skos:Concept ;
+    skos:prefLabel "Coadiuvante familiare"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "D" ;
+    skos:inScheme inailvoc:tipo_lavoratore ;
+    skos:label "Coadiuvante familiare"@it ;
+    skos:notation "D" ;
+    xkos:depth "1" .
+
+tipolavcod:E a skos:Concept ;
+    skos:prefLabel "Socio"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "E" ;
+    skos:inScheme inailvoc:tipo_lavoratore ;
+    skos:label "Socio"@it ;
+    skos:notation "E" ;
+    xkos:depth "1" .
+
+tipolavcod:G a skos:Concept ;
+    skos:prefLabel "Lavoratore interinale (o a scopo di somministrazione)"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "G" ;
+    skos:inScheme inailvoc:tipo_lavoratore ;
+    skos:label "Lavoratore interinale (o a scopo di somministrazione)"@it ;
+    skos:notation "G" ;
+    xkos:depth "1" .
+
+tipolavcod:H a skos:Concept ;
+    skos:prefLabel "Tirocinante"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "H" ;
+    skos:inScheme inailvoc:tipo_lavoratore ;
+    skos:label "Tirocinante"@it ;
+    skos:notation "H" ;
+    xkos:depth "1" .
+
+tipolavcod:I a skos:Concept ;
+    skos:prefLabel "Apprendista"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "I" ;
+    skos:inScheme inailvoc:tipo_lavoratore ;
+    skos:label "Apprendista"@it ;
+    skos:notation "I" ;
+    xkos:depth "1" .
+
+tipolavcod:J a skos:Concept ;
+    skos:prefLabel "Lavoratore detenuto addetto ai lavori"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "J" ;
+    skos:inScheme inailvoc:tipo_lavoratore ;
+    skos:label "Lavoratore detenuto addetto ai lavori"@it ;
+    skos:notation "J" ;
+    xkos:depth "1" .
+
+tipolavcod:K a skos:Concept ;
+    skos:prefLabel "Lavoratore ricoverato in case di cura,ospedali e strutture assimilate"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "K" ;
+    skos:inScheme inailvoc:tipo_lavoratore ;
+    skos:label "Lavoratore ricoverato in case di cura,ospedali e strutture assimilate"@it ;
+    skos:notation "K" ;
+    xkos:depth "1" .
+
+tipolavcod:L a skos:Concept ;
+    skos:prefLabel "Autonomo"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "L" ;
+    skos:inScheme inailvoc:tipo_lavoratore ;
+    skos:label "Autonomo"@it ;
+    skos:notation "L" ;
+    xkos:depth "1" .
+
+tipolavcod:LL a skos:Concept ;
+    skos:prefLabel "Autonomo o assimilato"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "LL" ;
+    skos:inScheme inailvoc:tipo_lavoratore ;
+    skos:label "Autonomo o assimilato"@it ;
+    skos:notation "LL" ;
+    xkos:depth "1" .
+
+tipolavcod:M a skos:Concept ;
+    skos:prefLabel "Associato in partecipazione"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "M" ;
+    skos:inScheme inailvoc:tipo_lavoratore ;
+    skos:label "Associato in partecipazione"@it ;
+    skos:notation "M" ;
+    xkos:depth "1" .
+
+tipolavcod:N a skos:Concept ;
+    skos:prefLabel "Parasubordinato a progetto/ collaborazione coordinata e continuativa"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "N" ;
+    skos:inScheme inailvoc:tipo_lavoratore ;
+    skos:label "Parasubordinato a progetto/ collaborazione coordinata e continuativa"@it ;
+    skos:notation "N" ;
+    xkos:depth "1" .
+
+tipolavcod:NN a skos:Concept ;
+    skos:prefLabel "Parasubordinato"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "NN" ;
+    skos:inScheme inailvoc:tipo_lavoratore ;
+    skos:label "Parasubordinato"@it ;
+    skos:notation "NN" ;
+    xkos:depth "1" .
+
+tipolavcod:O a skos:Concept ;
+    skos:prefLabel "Parasubordinato occasionale"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "O" ;
+    skos:inScheme inailvoc:tipo_lavoratore ;
+    skos:label "Parasubordinato occasionale"@it ;
+    skos:notation "O" ;
+    xkos:depth "1" .
+
+tipolavcod:P a skos:Concept ;
+    skos:prefLabel "Lavoratore occasionale di tipo accessorio"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "P" ;
+    skos:inScheme inailvoc:tipo_lavoratore ;
+    skos:label "Lavoratore occasionale di tipo accessorio"@it ;
+    skos:notation "P" ;
+    xkos:depth "1" .
+
+tipolavcod:Q a skos:Concept ;
+    skos:prefLabel "Lavoratore per sostituzione"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "Q" ;
+    skos:inScheme inailvoc:tipo_lavoratore ;
+    skos:label "Lavoratore per sostituzione"@it ;
+    skos:notation "Q" ;
+    xkos:depth "1" .
+
+tipolavcod:R a skos:Concept ;
+    skos:prefLabel "Lavoratore con contratto di formazione lavoro (solo pubblica amministrazione)"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "R" ;
+    skos:inScheme inailvoc:tipo_lavoratore ;
+    skos:label "Lavoratore con contratto di formazione lavoro (solo pubblica amministrazione)"@it ;
+    skos:notation "R" ;
+    xkos:depth "1" .
+
+tipolavcod:S a skos:Concept ;
+    skos:prefLabel "Lavoratore con contratto di inserimento lavorativo"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "S" ;
+    skos:inScheme inailvoc:tipo_lavoratore ;
+    skos:label "Lavoratore con contratto di inserimento lavorativo"@it ;
+    skos:notation "S" ;
+    xkos:depth "1" .
+
+tipolavcod:T a skos:Concept ;
+    skos:prefLabel "Lavoratore domestico"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "T" ;
+    skos:inScheme inailvoc:tipo_lavoratore ;
+    skos:label "Lavoratore domestico"@it ;
+    skos:notation "T" ;
+    xkos:depth "1" .
+
+tipolavcod:U a skos:Concept ;
+    skos:prefLabel "Lavoratore intermittente"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "U" ;
+    skos:inScheme inailvoc:tipo_lavoratore ;
+    skos:label "Lavoratore intermittente"@it ;
+    skos:notation "U" ;
+    xkos:depth "1" .
+
+tipolavcod:V a skos:Concept ;
+    skos:prefLabel "Lavoratore con contratto ripartito"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "V" ;
+    skos:inScheme inailvoc:tipo_lavoratore ;
+    skos:label "Lavoratore con contratto ripartito"@it ;
+    skos:notation "V" ;
+    xkos:depth "1" .
+
+tipolavcod:W a skos:Concept ;
+    skos:prefLabel "Lavoratore a domicilio"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "W" ;
+    skos:inScheme inailvoc:tipo_lavoratore ;
+    skos:label "Lavoratore a domicilio"@it ;
+    skos:notation "W" ;
+    xkos:depth "1" .
+
+tipolavcod:X a skos:Concept ;
+    skos:prefLabel "Lavoratore socialmente utile (lsu - asu)"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "X" ;
+    skos:inScheme inailvoc:tipo_lavoratore ;
+    skos:label "Lavoratore socialmente utile (lsu - asu)"@it ;
+    skos:notation "X" ;
+    xkos:depth "1" .
+
+tipolavcod:Z a skos:Concept ;
+    skos:prefLabel "Lavoratore con contratto di agenzia"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "Z" ;
+    skos:inScheme inailvoc:tipo_lavoratore ;
+    skos:label "Lavoratore con contratto di agenzia"@it ;
+    skos:notation "Z" ;
+    xkos:depth "1" .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

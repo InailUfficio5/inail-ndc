@@ -1,0 +1,16 @@
+url,id,label_it,level
+http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/AN,AN,Annullato,1
+http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/APP,APP,Accertamento postumi provvisorio,1
+http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/AS,AS,Altra sede,1
+http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/CA,CA,In capitale,1
+http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/CO,CO,Comunicazioni obbligatorie inf.,1
+http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/FR,FR,Franchigia,1
+http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/IS,IS,Istruttoria,1
+http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/MC,MC,Morte con superstiti,1
+http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/MS,MS,Morte senza superstiti,1
+http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/NE,NE,Nessuno,1
+http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/RD,RD,In rendita diretta,1
+http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/RP,RP,Regolare s/ind. con acc.to provvisorio,1
+http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/RS,RS,In rendita ai superstiti,1
+http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/TE,TE,In temporanea,1
+http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/TP,TP,Temporanea con acc.to provvisorio,1

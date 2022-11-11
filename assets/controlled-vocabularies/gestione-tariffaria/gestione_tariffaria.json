@@ -1,0 +1,30 @@
+[
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/gestione_tariffaria/codice/1",
+    "@type": "skos:Concept",
+    "id": "1",
+    "label_it": "Industria",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/gestione_tariffaria/codice/2",
+    "@type": "skos:Concept",
+    "id": "2",
+    "label_it": "Artigianato",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/gestione_tariffaria/codice/3",
+    "@type": "skos:Concept",
+    "id": "3",
+    "label_it": "Terziario",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/gestione_tariffaria/codice/4",
+    "@type": "skos:Concept",
+    "id": "4",
+    "label_it": "Altre attivit\u00e0",
+    "level": "1"
+  }
+]

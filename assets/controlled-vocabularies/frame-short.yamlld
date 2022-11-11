@@ -1,0 +1,92 @@
+---
+_meta:
+  label: short
+  description: |-
+    A framing context for a short version
+    of the table.
+  schema:
+    CountryShort:
+      type: object
+      required:
+      - url
+      - id
+      - label_it
+
+      properties:
+        url:
+          type: string
+        id:
+          type: string
+        parent:
+          type: string
+        # parent:
+        #   type: object
+        #   properties:
+        #     url:
+        #       type: string
+        #     id:
+        #       type: string
+        level:
+          type: integer
+          format: int32
+        # deprecated:
+        #   type: boolean
+        label_it:
+          type: string
+        label_en:
+           type: string
+# Always embed external references.
+"@embed": "@never"
+"@omitDefault": true
+# Matching on type works.
+"@type":
+- "skos:Concept"
+"@explicit": true
+# Matching on properties
+# doesn't work https://www.w3.org/TR/json-ld11-framing/#matching-on-properties
+id: {}
+parent:
+  "@omitDefault": true
+  "@explicit": true
+  "@embed": "@never"
+# parent: { id: {}, "@omitDefault": true, "@explicit": true, "@embed": "@once" }
+level: {}
+label_it: {}
+
+# Matching on language tags and rendering
+#  using projected fields.
+skos:prefLabel:
+  "@language": ["en", "it"]
+  "@value": {}
+
+# Use context.
+"@context":
+  #"@vocab": "http://www.w3.org/2004/02/skos/core#"
+  # Namespaces.
+  # "@vocab": http://publications.europa.eu/ontology/authority/
+  dct: http://purl.org/dc/terms/
+  skos: http://www.w3.org/2004/02/skos/core#
+  clvapit: https://w3id.org/italia/onto/CLV/
+
+  # Fields.
+  id:
+    "@id": dct:identifier
+  url: "@id"
+  # parent:
+  #    "@id": skos:broader
+  parent:
+    "@id": skos:broader
+    "@type": "@id"
+    #"@type": "@vocab"
+    # "@type": skos:Concept
+    # "@value": dct:identifier
+  level:
+    "@id": clvapit:hasRankOrder
+  #deprecated: {}
+  #Localize labels. Order is relevant.
+  label_it:
+    "@id": skos:prefLabel
+    "@language": it
+  label_en:
+    "@id": skos:prefLabel
+    "@language": en

@@ -1,0 +1,107 @@
+[
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/AN",
+    "@type": "skos:Concept",
+    "id": "AN",
+    "label_it": "Annullato",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/APP",
+    "@type": "skos:Concept",
+    "id": "APP",
+    "label_it": "Accertamento postumi provvisorio",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/AS",
+    "@type": "skos:Concept",
+    "id": "AS",
+    "label_it": "Altra sede",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/CA",
+    "@type": "skos:Concept",
+    "id": "CA",
+    "label_it": "In capitale",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/CO",
+    "@type": "skos:Concept",
+    "id": "CO",
+    "label_it": "Comunicazioni obbligatorie inf.",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/FR",
+    "@type": "skos:Concept",
+    "id": "FR",
+    "label_it": "Franchigia",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/IS",
+    "@type": "skos:Concept",
+    "id": "IS",
+    "label_it": "Istruttoria",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/MC",
+    "@type": "skos:Concept",
+    "id": "MC",
+    "label_it": "Morte con superstiti",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/MS",
+    "@type": "skos:Concept",
+    "id": "MS",
+    "label_it": "Morte senza superstiti",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/NE",
+    "@type": "skos:Concept",
+    "id": "NE",
+    "label_it": "Nessuno",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/RD",
+    "@type": "skos:Concept",
+    "id": "RD",
+    "label_it": "In rendita diretta",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/RP",
+    "@type": "skos:Concept",
+    "id": "RP",
+    "label_it": "Regolare s/ind. con acc.to provvisorio",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/RS",
+    "@type": "skos:Concept",
+    "id": "RS",
+    "label_it": "In rendita ai superstiti",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/TE",
+    "@type": "skos:Concept",
+    "id": "TE",
+    "label_it": "In temporanea",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/TP",
+    "@type": "skos:Concept",
+    "id": "TP",
+    "label_it": "Temporanea con acc.to provvisorio",
+    "level": "1"
+  }
+]

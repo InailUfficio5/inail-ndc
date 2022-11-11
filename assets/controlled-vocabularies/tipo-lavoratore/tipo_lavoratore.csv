@@ -1,0 +1,27 @@
+url,id,label_it,level
+http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/A,A,Dipendente,1
+http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/AA,AA,Dipendente o assimilato,1
+http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/BB,BB,Allievo/istruttore corsi qualificazione prof.le,1
+http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/D,D,Coadiuvante familiare,1
+http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/E,E,Socio,1
+http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/G,G,Lavoratore interinale (o a scopo di somministrazione),1
+http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/H,H,Tirocinante,1
+http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/I,I,Apprendista,1
+http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/J,J,Lavoratore detenuto addetto ai lavori,1
+http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/K,K,"Lavoratore ricoverato in case di cura,ospedali e strutture assimilate",1
+http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/L,L,Autonomo,1
+http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/LL,LL,Autonomo o assimilato,1
+http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/M,M,Associato in partecipazione,1
+http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/N,N,Parasubordinato a progetto/ collaborazione coordinata e continuativa,1
+http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/NN,NN,Parasubordinato,1
+http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/O,O,Parasubordinato occasionale,1
+http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/P,P,Lavoratore occasionale di tipo accessorio,1
+http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/Q,Q,Lavoratore per sostituzione,1
+http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/R,R,Lavoratore con contratto di formazione lavoro (solo pubblica amministrazione),1
+http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/S,S,Lavoratore con contratto di inserimento lavorativo,1
+http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/T,T,Lavoratore domestico,1
+http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/U,U,Lavoratore intermittente,1
+http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/V,V,Lavoratore con contratto ripartito,1
+http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/W,W,Lavoratore a domicilio,1
+http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/X,X,Lavoratore socialmente utile (lsu - asu),1
+http://dati.inail.it/opendata/vocabolari/tipo_lavoratore/codice/Z,Z,Lavoratore con contratto di agenzia,1

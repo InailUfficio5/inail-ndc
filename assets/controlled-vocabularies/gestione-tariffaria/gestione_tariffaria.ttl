@@ -1,0 +1,114 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix cov: <https://w3id.org/italia/onto/COV> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix gestionetariff: <http://dati.inail.it/opendata/vocabolari/gestione_tariffaria/codice/> .
+@prefix inailvoc: <http://dati.inail.it/opendata/vocabolari/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Annotations
+
+gestionetariff:1 a skos:Concept ;
+    skos:prefLabel "Industria"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "1" ;
+    skos:inScheme inailvoc:gestione_tariffaria ;
+    skos:label "Industria"@it ;
+    skos:notation "1" ;
+    xkos:depth "1" .
+
+gestionetariff:2 a skos:Concept ;
+    skos:prefLabel "Artigianato"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "2" ;
+    skos:inScheme inailvoc:gestione_tariffaria ;
+    skos:label "Artigianato"@it ;
+    skos:notation "2" ;
+    xkos:depth "1" .
+
+gestionetariff:3 a skos:Concept ;
+    skos:prefLabel "Terziario"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "3" ;
+    skos:inScheme inailvoc:gestione_tariffaria ;
+    skos:label "Terziario"@it ;
+    skos:notation "3" ;
+    xkos:depth "1" .
+
+gestionetariff:4 a skos:Concept ;
+    skos:prefLabel "Altre attività"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "4" ;
+    skos:inScheme inailvoc:gestione_tariffaria ;
+    skos:label "Altre attività"@it ;
+    skos:notation "4" ;
+    xkos:depth "1" .
+
+<http://dati.inail.it/data/Organization/inail> a cov:Organization ;
+    rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
+    cov:IPAcode "inail" ;
+    cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
+    cov:orgAcronym "inail" .
+
+inailvoc:gestione_tariffaria a adms:Asset,
+        adms:Dataset,
+        skos:ConceptScheme ;
+    rdfs:label "This is the controlled vocabulary of sectors of economic activity adopted by INAIL classification"@en,
+        "Vocabolario Controllato sulla classificazione dei settori di attività economica adottata dall'INAIL"@it ;
+    skos:prefLabel "Vocabolario Controllato sulla classificazione dei settori di attività economica adottata dall'INAIL"@it ;
+    rdfs:comment "Classificazione in due livelli dei Settori Attività Economica. Il secondo livello elenca i vari settori. Il primo livello, il macro settore, raggruppa ove possibile i livelli precedenti."@it,
+        "Two-level classification of the Economic Activity Sectors.The second level lists the various sectors. The first level groups together the previous levels where possible."@en ;
+    owl:versionInfo "0.2" ;
+    rdfs:isDefinedBy inailvoc:gestione_tariffaria ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:contactPoint <https://www.inail.it> ;
+    dcat:distribution <https://w3id.org/italia/data/distribution/PS-RDF-Turtle> ;
+    dcat:keyword "artigianato"@it,
+        "craftsmanship"@en,
+        "inail"@it,
+        "industria"@it,
+        "industry"@en,
+        "sector"@en,
+        "settore"@it,
+        "tertiary"@en,
+        "terziario"@it ;
+    dcat:theme <http://eurovoc.europa.eu/825>,
+        <http://eurovoc.europa.eu/1761>,
+        <http://eurovoc.europa.eu/2784>,
+        <http://eurovoc.europa.eu/4021>,
+        <http://publications.europa.eu/resource/authority/subject-matter/INDU> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dct:creator <http://dati.inail.it/data/Organization/inail> ;
+    dct:description "Classificazione in due livelli dei Settori Attività Economica. Il secondo livello elenca i vari settori. Il primo livello, il macro settore, raggruppa ove possibile i livelli precedenti."@it,
+        "Two-level classification of the Economic Activity Sectors. The second level lists the various sectors. The first level groups together the previous levels where possible."@en ;
+    dct:identifier "http://dati.inail.it/opendata/vocabolari/gestione_tariffaria" ;
+    dct:issued "2022-07-22"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/IT> ;
+    dct:modified "2022-08-29"^^xsd:date ;
+    dct:publisher <http://dati.inail.it/data/Organization/inail> ;
+    dct:relation inailvoc:gestione,
+        inailvoc:grande_gruppo_tariffario,
+        inailvoc:mansione,
+        inailvoc:settore_attivita,
+        inailvoc:settore_correlato_malattia,
+        inailvoc:tipo_lavoratore,
+        inailvoc:tipo_lavoro ;
+    dct:rightsHolder <http://dati.inail.it/data/Organization/inail> ;
+    dct:title "Classification of sectors of economic activity adopted by INAIL Controlled Vocabulary"@en,
+        "Vocabolario Controllato sulla classificazione dei settori di attività economica adottata dall'INAIL"@it ;
+    dct:type <http://purl.org/adms/assettype/Taxonomy> ;
+    ndc:keyConcept "Gestione Tariffaria" ;
+    skos:hasTopConcept gestionetariff:1,
+        gestionetariff:2,
+        gestionetariff:3,
+        gestionetariff:4 ;
+    xkos:numberOfLevels "1" .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

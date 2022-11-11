@@ -1,0 +1,166 @@
+[
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/codice/A.AA",
+    "@type": "skos:Concept",
+    "id": "A.A",
+    "parent": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/A",
+    "label_it": "Autonomi Artigiani",
+    "level": "2"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/codice/DI",
+    "@type": "skos:Concept",
+    "id": "DI",
+    "parent": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/O",
+    "label_it": "Dipendenti",
+    "level": "2"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/codice/S.1",
+    "@type": "skos:Concept",
+    "id": "S.1",
+    "parent": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/S",
+    "label_it": "Facchini",
+    "level": "2"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/codice/S.2",
+    "@type": "skos:Concept",
+    "id": "S.2",
+    "parent": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/S",
+    "label_it": "Ippotrasportatori",
+    "level": "2"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/codice/S.3",
+    "@type": "skos:Concept",
+    "id": "S.3",
+    "parent": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/S",
+    "label_it": "Pescatori",
+    "level": "2"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/codice/S.4",
+    "@type": "skos:Concept",
+    "id": "S.4",
+    "parent": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/S",
+    "label_it": "Frantoi",
+    "level": "2"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/codice/S.5",
+    "@type": "skos:Concept",
+    "id": "S.5",
+    "parent": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/S",
+    "label_it": "Apparecchi RX",
+    "level": "2"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/codice/S.6",
+    "@type": "skos:Concept",
+    "id": "S.6",
+    "parent": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/S",
+    "label_it": "Sost. Radioattive",
+    "level": "2"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/codice/S.7",
+    "@type": "skos:Concept",
+    "id": "S.7",
+    "parent": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/S",
+    "label_it": "Scuole",
+    "level": "2"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/codice/S.8",
+    "@type": "skos:Concept",
+    "id": "S.8",
+    "parent": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/S",
+    "label_it": "Prove d'arte e TcP",
+    "level": "2"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/A",
+    "@type": "skos:Concept",
+    "id": "A",
+    "label_it": "Artigiani",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/AG",
+    "@type": "skos:Concept",
+    "id": "AG",
+    "label_it": "Autonomi Agricoltura",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/CA",
+    "@type": "skos:Concept",
+    "id": "CA",
+    "label_it": "Casalinghe",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/CB",
+    "@type": "skos:Concept",
+    "id": "CB",
+    "label_it": "Colf e badanti",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/DA",
+    "@type": "skos:Concept",
+    "id": "DA",
+    "label_it": "Dipendenti Agricoltura",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/IN",
+    "@type": "skos:Concept",
+    "id": "IN",
+    "label_it": "Interinale",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/O",
+    "@type": "skos:Concept",
+    "id": "O",
+    "label_it": "Ordinarie",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/S",
+    "@type": "skos:Concept",
+    "id": "S",
+    "label_it": "Speciali",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/S0",
+    "@type": "skos:Concept",
+    "id": "S0",
+    "label_it": "Volontari",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/S9",
+    "@type": "skos:Concept",
+    "id": "S9",
+    "label_it": "Navigazione",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/SA",
+    "@type": "skos:Concept",
+    "id": "SA",
+    "label_it": "Allievi IeFP",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/SR",
+    "@type": "skos:Concept",
+    "id": "SR",
+    "label_it": "Assicurati PUC",
+    "level": "1"
+  }
+]

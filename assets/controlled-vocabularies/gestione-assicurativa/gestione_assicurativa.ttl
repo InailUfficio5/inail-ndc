@@ -1,0 +1,298 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix cov: <https://w3id.org/italia/onto/COV> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix gestasscod: <http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/codice/> .
+@prefix gestassgrup: <http://dati.inail.it/opendata/vocabolari/gestione_assicurativa/gruppo/> .
+@prefix inailvoc: <http://dati.inail.it/opendata/vocabolari/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Annotations
+
+gestasscod:A.AA a skos:Concept ;
+    skos:prefLabel "Autonomi Artigiani"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "A.A" ;
+    skos:broader gestassgrup:A ;
+    skos:inScheme inailvoc:gestione_assicurativa ;
+    skos:label "Autonomi Artigiani"@it ;
+    skos:notation "A.A" ;
+    xkos:depth "2" .
+
+gestasscod:DI a skos:Concept ;
+    skos:prefLabel "Dipendenti"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "DI" ;
+    skos:broader gestassgrup:O ;
+    skos:inScheme inailvoc:gestione_assicurativa ;
+    skos:label "Dipendenti"@it ;
+    skos:notation "DI" ;
+    xkos:depth "2" .
+
+gestasscod:S.1 a skos:Concept ;
+    skos:prefLabel "Facchini"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "S.1" ;
+    skos:broader gestassgrup:S ;
+    skos:inScheme inailvoc:gestione_assicurativa ;
+    skos:label "Facchini"@it ;
+    skos:notation "S.1" ;
+    xkos:depth "2" .
+
+gestasscod:S.2 a skos:Concept ;
+    skos:prefLabel "Ippotrasportatori"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "S.2" ;
+    skos:broader gestassgrup:S ;
+    skos:inScheme inailvoc:gestione_assicurativa ;
+    skos:label "Ippotrasportatori"@it ;
+    skos:notation "S.2" ;
+    xkos:depth "2" .
+
+gestasscod:S.3 a skos:Concept ;
+    skos:prefLabel "Pescatori"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "S.3" ;
+    skos:broader gestassgrup:S ;
+    skos:inScheme inailvoc:gestione_assicurativa ;
+    skos:label "Pescatori"@it ;
+    skos:notation "S.3" ;
+    xkos:depth "2" .
+
+gestasscod:S.4 a skos:Concept ;
+    skos:prefLabel "Frantoi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "S.4" ;
+    skos:broader gestassgrup:S ;
+    skos:inScheme inailvoc:gestione_assicurativa ;
+    skos:label "Frantoi"@it ;
+    skos:notation "S.4" ;
+    xkos:depth "2" .
+
+gestasscod:S.5 a skos:Concept ;
+    skos:prefLabel "Apparecchi RX"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "S.5" ;
+    skos:broader gestassgrup:S ;
+    skos:inScheme inailvoc:gestione_assicurativa ;
+    skos:label "Apparecchi RX"@it ;
+    skos:notation "S.5" ;
+    xkos:depth "2" .
+
+gestasscod:S.6 a skos:Concept ;
+    skos:prefLabel "Sost. Radioattive"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "S.6" ;
+    skos:broader gestassgrup:S ;
+    skos:inScheme inailvoc:gestione_assicurativa ;
+    skos:label "Sost. Radioattive"@it ;
+    skos:notation "S.6" ;
+    xkos:depth "2" .
+
+gestasscod:S.7 a skos:Concept ;
+    skos:prefLabel "Scuole"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "S.7" ;
+    skos:broader gestassgrup:S ;
+    skos:inScheme inailvoc:gestione_assicurativa ;
+    skos:label "Scuole"@it ;
+    skos:notation "S.7" ;
+    xkos:depth "2" .
+
+gestasscod:S.8 a skos:Concept ;
+    skos:prefLabel "Prove d'arte e TcP"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "S.8" ;
+    skos:broader gestassgrup:S ;
+    skos:inScheme inailvoc:gestione_assicurativa ;
+    skos:label "Prove d'arte e TcP"@it ;
+    skos:notation "S.8" ;
+    xkos:depth "2" .
+
+gestassgrup:A a skos:Concept ;
+    skos:prefLabel "Artigiani"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "A" ;
+    skos:inScheme inailvoc:gestione_assicurativa ;
+    skos:label "Artigiani"@it ;
+    skos:narrower gestasscod:A.AA ;
+    skos:notation "A" ;
+    xkos:depth "1" .
+
+gestassgrup:AG a skos:Concept ;
+    skos:prefLabel "Autonomi Agricoltura"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "AG" ;
+    skos:inScheme inailvoc:gestione_assicurativa ;
+    skos:label "Autonomi Agricoltura"@it ;
+    skos:notation "AG" ;
+    xkos:depth "1" .
+
+gestassgrup:CA a skos:Concept ;
+    skos:prefLabel "Casalinghe"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "CA" ;
+    skos:inScheme inailvoc:gestione_assicurativa ;
+    skos:label "Casalinghe"@it ;
+    skos:notation "CA" ;
+    xkos:depth "1" .
+
+gestassgrup:CB a skos:Concept ;
+    skos:prefLabel "Colf e badanti"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "CB" ;
+    skos:inScheme inailvoc:gestione_assicurativa ;
+    skos:label "Colf e badanti"@it ;
+    skos:notation "CB" ;
+    xkos:depth "1" .
+
+gestassgrup:DA a skos:Concept ;
+    skos:prefLabel "Dipendenti Agricoltura"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "DA" ;
+    skos:inScheme inailvoc:gestione_assicurativa ;
+    skos:label "Dipendenti Agricoltura"@it ;
+    skos:notation "DA" ;
+    xkos:depth "1" .
+
+gestassgrup:IN a skos:Concept ;
+    skos:prefLabel "Interinale"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "IN" ;
+    skos:inScheme inailvoc:gestione_assicurativa ;
+    skos:label "Interinale"@it ;
+    skos:notation "IN" ;
+    xkos:depth "1" .
+
+gestassgrup:O a skos:Concept ;
+    skos:prefLabel "Ordinarie"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "O" ;
+    skos:inScheme inailvoc:gestione_assicurativa ;
+    skos:label "Ordinarie"@it ;
+    skos:narrower gestasscod:DI ;
+    skos:notation "O" ;
+    xkos:depth "1" .
+
+gestassgrup:S a skos:Concept ;
+    skos:prefLabel "Speciali"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "S" ;
+    skos:inScheme inailvoc:gestione_assicurativa ;
+    skos:label "Speciali"@it ;
+    skos:narrower gestasscod:S.1,
+        gestasscod:S.2,
+        gestasscod:S.3,
+        gestasscod:S.4,
+        gestasscod:S.5,
+        gestasscod:S.6,
+        gestasscod:S.7,
+        gestasscod:S.8 ;
+    skos:notation "S" ;
+    xkos:depth "1" .
+
+gestassgrup:S0 a skos:Concept ;
+    skos:prefLabel "Volontari"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "S0" ;
+    skos:inScheme inailvoc:gestione_assicurativa ;
+    skos:label "Volontari"@it ;
+    skos:notation "S0" ;
+    xkos:depth "1" .
+
+gestassgrup:S9 a skos:Concept ;
+    skos:prefLabel "Navigazione"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "S9" ;
+    skos:inScheme inailvoc:gestione_assicurativa ;
+    skos:label "Navigazione"@it ;
+    skos:notation "S9" ;
+    xkos:depth "1" .
+
+gestassgrup:SA a skos:Concept ;
+    skos:prefLabel "Allievi IeFP"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "SA" ;
+    skos:inScheme inailvoc:gestione_assicurativa ;
+    skos:label "Allievi IeFP"@it ;
+    skos:notation "SA" ;
+    xkos:depth "1" .
+
+gestassgrup:SR a skos:Concept ;
+    skos:prefLabel "Assicurati PUC"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "SR" ;
+    skos:inScheme inailvoc:gestione_assicurativa ;
+    skos:label "Assicurati PUC"@it ;
+    skos:notation "SR" ;
+    xkos:depth "1" .
+
+<http://dati.inail.it/data/Organization/inail> a cov:Organization ;
+    rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
+    cov:IPAcode "inail" ;
+    cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
+    cov:orgAcronym "inail" .
+
+inailvoc:gestione_assicurativa a adms:Asset,
+        dcatapit:Dataset,
+        skos:ConceptScheme ;
+    rdfs:label "Controlled vocabulary on the insurance management adopted by INAIL"@en,
+        "Vocabolario Controllato sulla gestione assicurativa adottato dall'INAIL"@it ;
+    skos:prefLabel "Vocabolario Controllato sulla gestione assicurativa adottato dall'INAIL"@it ;
+    rdfs:comment "insurance management is the entity that highlights the management in which the insured activity is framed"@en,
+        "La gestione assicurativa è l'entità che evidenzia in quale gestione è stata inquadrata l'attività assicurata"@it ;
+    owl:versionInfo "0.2" ;
+    rdfs:isDefinedBy inailvoc:gestione_assicurativa ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:contactPoint <https://www.inail.it> ;
+    dcat:distribution <https://w3id.org/italia/data/distribution/PS-RDF-Turtle> ;
+    dcat:keyword "gestione assicurativa",
+        "inail"@it,
+        "infortunio"@it,
+        "insurance management"@en,
+        "malattia professionale"@it,
+        "occupational disease"@en,
+        "occupational injury"@en ;
+    dcat:theme <http://eurovoc.europa.eu/825>,
+        <http://eurovoc.europa.eu/1761>,
+        <http://eurovoc.europa.eu/3151> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dct:creator <http://dati.inail.it/data/Organization/inail> ;
+    dct:description "insurance management is the entity that highlights the management in which the insured activity is framed"@en,
+        "La gestione assicurativa è l'entità che evidenzia in quale gestione è stata inquadrata l'attività assicurata"@it ;
+    dct:identifier "http://dati.inail.it/opendata/vocabolari/gestione_assicurativa" ;
+    dct:issued "2022-09-06"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2022-09-29"^^xsd:date ;
+    dct:publisher <http://dati.inail.it/data/Organization/inail> ;
+    dct:relation inailvoc:mansione,
+        inailvoc:tipo_lavoratore,
+        inailvoc:tipo_lavoro ;
+    dct:rightsHolder <http://dati.inail.it/data/Organization/inail> ;
+    dct:title "Controlled vocabulary on the insurance management adopted by INAIL"@en,
+        "Vocabolario Controllato sulla gestione assicurativa adottato dall'INAIL"@it ;
+    dct:type <http://purl.org/adms/assettype/Taxonomy> ;
+    ndc:keyConcept "Gestione Assicurativa" ;
+    skos:hasTopConcept gestassgrup:A,
+        gestassgrup:AG,
+        gestassgrup:CA,
+        gestassgrup:CB,
+        gestassgrup:DA,
+        gestassgrup:IN,
+        gestassgrup:O,
+        gestassgrup:S,
+        gestassgrup:S0,
+        gestassgrup:S9,
+        gestassgrup:SA,
+        gestassgrup:SR ;
+    xkos:numberOfLevels "2" .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

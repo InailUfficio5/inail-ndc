@@ -1,0 +1,217 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix cov: <https://w3id.org/italia/onto/COV> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix inailvoc: <http://dati.inail.it/opendata/vocabolari/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tipoindcod: <http://dati.inail.it/opendata/vocabolari/tipo_indennizzo/codice/> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Annotations
+
+<http://dati.inail.it/data/Organization/inail> a cov:Organization ;
+    rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
+    cov:IPAcode "inail" ;
+    cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
+    cov:orgAcronym "inail" .
+
+inailvoc:tipo_indennizzo a adms:Asset,
+        dcatapit:Dataset,
+        skos:ConceptScheme ;
+    rdfs:label "Controlled vocabulary on the type of indemnity adopted by INAIL"@en,
+        "Vocabolario controllato sulla tipologia di indennizzo adottato dall'INAIL"@it ;
+    skos:prefLabel "Vocabolario controllato sulla tipologia di indennizzo adottato dall'INAIL"@it ;
+    rdfs:comment "Classification of the type of indemnity paid, established on the basis of the degree of impairment: less than 6% no compensation for biological damage; from 6% to 15% compensation for biological damage in capital; from 16% to 100% compensation for biological damage in annuity."@en,
+        "Classificazione della tipologia di indennizzo erogata, stabilita in base al grado di menomazione: inferiore al 6% nessun indennizzo per danno biologico; dal 6% al 15% indennizzo del danno biologico in capitale; dal 16% al 100% indennizzo del danno biologico in rendita."@it ;
+    owl:versionInfo "0.2" ;
+    rdfs:isDefinedBy inailvoc:tipo_indennizzo ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:contactPoint <https://www.inail.it> ;
+    dcat:distribution <https://w3id.org/italia/data/distribution/PS-RDF-Turtle> ;
+    dcat:keyword "inail"@it,
+        "indemnity"@en,
+        "indennizzo"@it,
+        "infortunio"@it,
+        "injury"@en,
+        "malattia professionale"@it,
+        "occupational disease"@en ;
+    dcat:theme <http://eurovoc.europa.eu/825>,
+        <http://eurovoc.europa.eu/1339>,
+        <http://eurovoc.europa.eu/1761> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dct:creator <http://dati.inail.it/data/Organization/inail> ;
+    dct:description "Classification of the type of indemnity paid, established on the basis of the degree of impairment: less than 6% no compensation for biological damage; from 6% to 15% compensation for biological damage in capital; from 16% to 100% compensation for biological damage in annuity."@en,
+        "Classificazione della tipologia di indennizzo erogata, stabilita in base al grado di menomazione: inferiore al 6% nessun indennizzo per danno biologico; dal 6% al 15% indennizzo del danno biologico in capitale; dal 16% al 100% indennizzo del danno biologico in rendita."@it ;
+    dct:identifier "http://dati.inail.it/opendata/vocabolari/tipo_indennizzo" ;
+    dct:issued "2022-09-07"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2022-10-03"^^xsd:date ;
+    dct:publisher <http://dati.inail.it/data/Organization/inail> ;
+    dct:relation inailvoc:classe_menomazione,
+        inailvoc:inabilita,
+        inailvoc:tipo_trattazione ;
+    dct:rightsHolder <http://dati.inail.it/data/Organization/inail> ;
+    dct:title "Controlled vocabulary on the type of indemnity adopted by INAIL"@en,
+        "Vocabolario controllato sulla tipologia di indennizzo adottato dall'INAIL"@it ;
+    dct:type <http://purl.org/adms/assettype/Taxonomy> ;
+    ndc:keyConcept "Tipo Indennizzo" ;
+    skos:hasTopConcept tipoindcod:AN,
+        tipoindcod:APP,
+        tipoindcod:AS,
+        tipoindcod:CA,
+        tipoindcod:CO,
+        tipoindcod:FR,
+        tipoindcod:IS,
+        tipoindcod:MC,
+        tipoindcod:MS,
+        tipoindcod:NE,
+        tipoindcod:RD,
+        tipoindcod:RP,
+        tipoindcod:RS,
+        tipoindcod:TE,
+        tipoindcod:TP ;
+    xkos:numberOfLevels "1" .
+
+tipoindcod:AN a skos:Concept ;
+    skos:prefLabel "Annullato"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "AN" ;
+    skos:inScheme inailvoc:tipo_indennizzo ;
+    skos:label "Annullato"@it ;
+    skos:notation "AN" ;
+    xkos:depth "1" .
+
+tipoindcod:APP a skos:Concept ;
+    skos:prefLabel "Accertamento postumi provvisorio"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "APP" ;
+    skos:inScheme inailvoc:tipo_indennizzo ;
+    skos:label "Accertamento postumi provvisorio"@it ;
+    skos:notation "APP" ;
+    xkos:depth "1" .
+
+tipoindcod:AS a skos:Concept ;
+    skos:prefLabel "Altra sede"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "AS" ;
+    skos:inScheme inailvoc:tipo_indennizzo ;
+    skos:label "Altra sede"@it ;
+    skos:notation "AS" ;
+    xkos:depth "1" .
+
+tipoindcod:CA a skos:Concept ;
+    skos:prefLabel "In capitale"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "CA" ;
+    skos:inScheme inailvoc:tipo_indennizzo ;
+    skos:label "In capitale"@it ;
+    skos:notation "CA" ;
+    xkos:depth "1" .
+
+tipoindcod:CO a skos:Concept ;
+    skos:prefLabel "Comunicazioni obbligatorie inf."@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "CO" ;
+    skos:inScheme inailvoc:tipo_indennizzo ;
+    skos:label "Comunicazioni obbligatorie inf."@it ;
+    skos:notation "CO" ;
+    xkos:depth "1" .
+
+tipoindcod:FR a skos:Concept ;
+    skos:prefLabel "Franchigia"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "FR" ;
+    skos:inScheme inailvoc:tipo_indennizzo ;
+    skos:label "Franchigia"@it ;
+    skos:notation "FR" ;
+    xkos:depth "1" .
+
+tipoindcod:IS a skos:Concept ;
+    skos:prefLabel "Istruttoria"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "IS" ;
+    skos:inScheme inailvoc:tipo_indennizzo ;
+    skos:label "Istruttoria"@it ;
+    skos:notation "IS" ;
+    xkos:depth "1" .
+
+tipoindcod:MC a skos:Concept ;
+    skos:prefLabel "Morte con superstiti"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "MC" ;
+    skos:inScheme inailvoc:tipo_indennizzo ;
+    skos:label "Morte con superstiti"@it ;
+    skos:notation "MC" ;
+    xkos:depth "1" .
+
+tipoindcod:MS a skos:Concept ;
+    skos:prefLabel "Morte senza superstiti"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "MS" ;
+    skos:inScheme inailvoc:tipo_indennizzo ;
+    skos:label "Morte senza superstiti"@it ;
+    skos:notation "MS" ;
+    xkos:depth "1" .
+
+tipoindcod:NE a skos:Concept ;
+    skos:prefLabel "Nessuno"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "NE" ;
+    skos:inScheme inailvoc:tipo_indennizzo ;
+    skos:label "Nessuno"@it ;
+    skos:notation "NE" ;
+    xkos:depth "1" .
+
+tipoindcod:RD a skos:Concept ;
+    skos:prefLabel "In rendita diretta"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "RD" ;
+    skos:inScheme inailvoc:tipo_indennizzo ;
+    skos:label "In rendita diretta"@it ;
+    skos:notation "RD" ;
+    xkos:depth "1" .
+
+tipoindcod:RP a skos:Concept ;
+    skos:prefLabel "Regolare s/ind. con acc.to provvisorio"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "RP" ;
+    skos:inScheme inailvoc:tipo_indennizzo ;
+    skos:label "Regolare s/ind. con acc.to provvisorio"@it ;
+    skos:notation "RP" ;
+    xkos:depth "1" .
+
+tipoindcod:RS a skos:Concept ;
+    skos:prefLabel "In rendita ai superstiti"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "RS" ;
+    skos:inScheme inailvoc:tipo_indennizzo ;
+    skos:label "In rendita ai superstiti"@it ;
+    skos:notation "RS" ;
+    xkos:depth "1" .
+
+tipoindcod:TE a skos:Concept ;
+    skos:prefLabel "In temporanea"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "TE" ;
+    skos:inScheme inailvoc:tipo_indennizzo ;
+    skos:label "In temporanea"@it ;
+    skos:notation "TE" ;
+    xkos:depth "1" .
+
+tipoindcod:TP a skos:Concept ;
+    skos:prefLabel "Temporanea con acc.to provvisorio"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "TP" ;
+    skos:inScheme inailvoc:tipo_indennizzo ;
+    skos:label "Temporanea con acc.to provvisorio"@it ;
+    skos:notation "TP" ;
+    xkos:depth "1" .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

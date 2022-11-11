@@ -1,0 +1,552 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix codattfis: <http://dati.inail.it/opendata/vocabolari/attivita_fisica/codice/> .
+@prefix cov: <https://w3id.org/italia/onto/COV> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix grupattfis: <http://dati.inail.it/opendata/vocabolari/attivita_fisica/gruppo/> .
+@prefix inailvoc: <http://dati.inail.it/opendata/vocabolari/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Annotations
+
+codattfis:1.0 a skos:Concept ;
+    skos:prefLabel "Operazioni di macchina - non precisata"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.0" ;
+    skos:broader grupattfis:1 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Operazioni di macchina - non precisata"@it ;
+    skos:notation "1.0" ;
+    xkos:depth "2" .
+
+codattfis:1.1 a skos:Concept ;
+    skos:prefLabel "Avviare la macchina, arrestare la macchina"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.1" ;
+    skos:broader grupattfis:1 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Avviare la macchina, arrestare la macchina"@it ;
+    skos:notation "1.1" ;
+    xkos:depth "2" .
+
+codattfis:1.2 a skos:Concept ;
+    skos:prefLabel "Alimentare la macchina, disalimentare la macchina"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.2" ;
+    skos:broader grupattfis:1 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Alimentare la macchina, disalimentare la macchina"@it ;
+    skos:notation "1.2" ;
+    xkos:depth "2" .
+
+codattfis:1.3 a skos:Concept ;
+    skos:prefLabel "Sorvegliare, far funzionare la macchina"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.3" ;
+    skos:broader grupattfis:1 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Sorvegliare, far funzionare la macchina"@it ;
+    skos:notation "1.3" ;
+    xkos:depth "2" .
+
+codattfis:1.9 a skos:Concept ;
+    skos:prefLabel "Altra attività fisica specifica conosciuta del gruppo 10 non indicata qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.9" ;
+    skos:broader grupattfis:1 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Altra attività fisica specifica conosciuta del gruppo 10 non indicata qui sopra"@it ;
+    skos:notation "1.9" ;
+    xkos:depth "2" .
+
+codattfis:2.0 a skos:Concept ;
+    skos:prefLabel "Lavoro con utensili a mano - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.0" ;
+    skos:broader grupattfis:2 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Lavoro con utensili a mano - non precisato"@it ;
+    skos:notation "2.0" ;
+    xkos:depth "2" .
+
+codattfis:2.1 a skos:Concept ;
+    skos:prefLabel "Lavorare con utensili a mano manuali"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.1" ;
+    skos:broader grupattfis:2 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Lavorare con utensili a mano manuali"@it ;
+    skos:notation "2.1" ;
+    xkos:depth "2" .
+
+codattfis:2.2 a skos:Concept ;
+    skos:prefLabel "Lavorare con utensili a mano motorizzati"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.2" ;
+    skos:broader grupattfis:2 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Lavorare con utensili a mano motorizzati"@it ;
+    skos:notation "2.2" ;
+    xkos:depth "2" .
+
+codattfis:2.9 a skos:Concept ;
+    skos:prefLabel "Altra attività fisica specifica conosciuta del gruppo 20 non indicata qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.9" ;
+    skos:broader grupattfis:2 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Altra attività fisica specifica conosciuta del gruppo 20 non indicata qui sopra"@it ;
+    skos:notation "2.9" ;
+    xkos:depth "2" .
+
+codattfis:3.0 a skos:Concept ;
+    skos:prefLabel "Alla guida, a bordo di un mezzo di trasporto/attrezzatura di movimentazione - non precisato,"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.0" ;
+    skos:broader grupattfis:3 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Alla guida, a bordo di un mezzo di trasporto/attrezzatura di movimentazione - non precisato,"@it ;
+    skos:notation "3.0" ;
+    xkos:depth "2" .
+
+codattfis:3.1 a skos:Concept ;
+    skos:prefLabel "Condurre un mezzo di trasporto o un'attrezzatura di movimentazione - mobile e  motorizzato/a"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.1" ;
+    skos:broader grupattfis:3 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Condurre un mezzo di trasporto o un'attrezzatura di movimentazione - mobile e  motorizzato/a"@it ;
+    skos:notation "3.1" ;
+    xkos:depth "2" .
+
+codattfis:3.2 a skos:Concept ;
+    skos:prefLabel "Condurre un mezzo di trasporto o un'attrezzatura di movimentazione - mobile e non motorizzato/a"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.2" ;
+    skos:broader grupattfis:3 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Condurre un mezzo di trasporto o un'attrezzatura di movimentazione - mobile e non motorizzato/a"@it ;
+    skos:notation "3.2" ;
+    xkos:depth "2" .
+
+codattfis:3.3 a skos:Concept ;
+    skos:prefLabel "Essere passeggero a bordo d'un mezzo di  trasporto"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.3" ;
+    skos:broader grupattfis:3 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Essere passeggero a bordo d'un mezzo di  trasporto"@it ;
+    skos:notation "3.3" ;
+    xkos:depth "2" .
+
+codattfis:3.9 a skos:Concept ;
+    skos:prefLabel "Altra attività fisica specifica conosciuta del gruppo 30 non indicata qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.9" ;
+    skos:broader grupattfis:3 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Altra attività fisica specifica conosciuta del gruppo 30 non indicata qui sopra"@it ;
+    skos:notation "3.9" ;
+    xkos:depth "2" .
+
+codattfis:4.0 a skos:Concept ;
+    skos:prefLabel "Manipolazione di oggetti ? non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.0" ;
+    skos:broader grupattfis:4 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Manipolazione di oggetti ? non precisato"@it ;
+    skos:notation "4.0" ;
+    xkos:depth "2" .
+
+codattfis:4.1 a skos:Concept ;
+    skos:prefLabel "Prendere in mano, afferrare, strappare, tenere in mano, deporre - su un piano orizzontale"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.1" ;
+    skos:broader grupattfis:4 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Prendere in mano, afferrare, strappare, tenere in mano, deporre - su un piano orizzontale"@it ;
+    skos:notation "4.1" ;
+    xkos:depth "2" .
+
+codattfis:4.2 a skos:Concept ;
+    skos:prefLabel "Legare, allacciare, sciogliere, disfare, stringere, avvitare, svitare, girare"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.2" ;
+    skos:broader grupattfis:4 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Legare, allacciare, sciogliere, disfare, stringere, avvitare, svitare, girare"@it ;
+    skos:notation "4.2" ;
+    xkos:depth "2" .
+
+codattfis:4.3 a skos:Concept ;
+    skos:prefLabel "Fissare a, appendere, alzare, istallare - su un piano verticale"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.3" ;
+    skos:broader grupattfis:4 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Fissare a, appendere, alzare, istallare - su un piano verticale"@it ;
+    skos:notation "4.3" ;
+    xkos:depth "2" .
+
+codattfis:4.4 a skos:Concept ;
+    skos:prefLabel "Lanciare, proiettare lontano"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.4" ;
+    skos:broader grupattfis:4 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Lanciare, proiettare lontano"@it ;
+    skos:notation "4.4" ;
+    xkos:depth "2" .
+
+codattfis:4.5 a skos:Concept ;
+    skos:prefLabel "Aprire, chiudere (cassa, imballaggio, pacco)"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.5" ;
+    skos:broader grupattfis:4 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Aprire, chiudere (cassa, imballaggio, pacco)"@it ;
+    skos:notation "4.5" ;
+    xkos:depth "2" .
+
+codattfis:4.6 a skos:Concept ;
+    skos:prefLabel "Spargere, versare in, riempire, annaffiare, vuotare, prosciugare"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.6" ;
+    skos:broader grupattfis:4 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Spargere, versare in, riempire, annaffiare, vuotare, prosciugare"@it ;
+    skos:notation "4.6" ;
+    xkos:depth "2" .
+
+codattfis:4.7 a skos:Concept ;
+    skos:prefLabel "Tirare (ad es. un cassetto), spingere (la porta di un capannone, di un ufficio, d'un armadio)"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.7" ;
+    skos:broader grupattfis:4 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Tirare (ad es. un cassetto), spingere (la porta di un capannone, di un ufficio, d'un armadio)"@it ;
+    skos:notation "4.7" ;
+    xkos:depth "2" .
+
+codattfis:4.9 a skos:Concept ;
+    skos:prefLabel "Altra attività fisica specifica conosciuta del gruppo 40 non indicata qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.9" ;
+    skos:broader grupattfis:4 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Altra attività fisica specifica conosciuta del gruppo 40 non indicata qui sopra"@it ;
+    skos:notation "4.9" ;
+    xkos:depth "2" .
+
+codattfis:5.0 a skos:Concept ;
+    skos:prefLabel "Trasporto manuale - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.0" ;
+    skos:broader grupattfis:5 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Trasporto manuale - non precisato"@it ;
+    skos:notation "5.0" ;
+    xkos:depth "2" .
+
+codattfis:5.1 a skos:Concept ;
+    skos:prefLabel "Trasporto verticale, sollevare, alzare, portare in basso un oggetto"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.1" ;
+    skos:broader grupattfis:5 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Trasporto verticale, sollevare, alzare, portare in basso un oggetto"@it ;
+    skos:notation "5.1" ;
+    xkos:depth "2" .
+
+codattfis:5.2 a skos:Concept ;
+    skos:prefLabel "Trasporto orizzontale: tirare, spingere, rotolare un oggetto"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.2" ;
+    skos:broader grupattfis:5 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Trasporto orizzontale: tirare, spingere, rotolare un oggetto"@it ;
+    skos:notation "5.2" ;
+    xkos:depth "2" .
+
+codattfis:5.3 a skos:Concept ;
+    skos:prefLabel "Trasporto a mano di carichi (portare)"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.3" ;
+    skos:broader grupattfis:5 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Trasporto a mano di carichi (portare)"@it ;
+    skos:notation "5.3" ;
+    xkos:depth "2" .
+
+codattfis:5.9 a skos:Concept ;
+    skos:prefLabel "Altra attività fisica specifica conosciuta del gruppo 50 non indicata qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.9" ;
+    skos:broader grupattfis:5 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Altra attività fisica specifica conosciuta del gruppo 50 non indicata qui sopra"@it ;
+    skos:notation "5.9" ;
+    xkos:depth "2" .
+
+codattfis:6.0 a skos:Concept ;
+    skos:prefLabel "Movimenti - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.0" ;
+    skos:broader grupattfis:6 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Movimenti - non precisato"@it ;
+    skos:notation "6.0" ;
+    xkos:depth "2" .
+
+codattfis:6.1 a skos:Concept ;
+    skos:prefLabel "Camminare, correre, salire, scendere, ecc"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.1" ;
+    skos:broader grupattfis:6 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Camminare, correre, salire, scendere, ecc"@it ;
+    skos:notation "6.1" ;
+    xkos:depth "2" .
+
+codattfis:6.2 a skos:Concept ;
+    skos:prefLabel "Entrare, uscire"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.2" ;
+    skos:broader grupattfis:6 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Entrare, uscire"@it ;
+    skos:notation "6.2" ;
+    xkos:depth "2" .
+
+codattfis:6.3 a skos:Concept ;
+    skos:prefLabel "Saltare, slanciarsi, ecc."@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.3" ;
+    skos:broader grupattfis:6 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Saltare, slanciarsi, ecc."@it ;
+    skos:notation "6.3" ;
+    xkos:depth "2" .
+
+codattfis:6.4 a skos:Concept ;
+    skos:prefLabel "Strisciare, arrampicarsi, ecc."@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.4" ;
+    skos:broader grupattfis:6 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Strisciare, arrampicarsi, ecc."@it ;
+    skos:notation "6.4" ;
+    xkos:depth "2" .
+
+codattfis:6.5 a skos:Concept ;
+    skos:prefLabel "Alzarsi in piedi, sedersi, ecc."@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.5" ;
+    skos:broader grupattfis:6 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Alzarsi in piedi, sedersi, ecc."@it ;
+    skos:notation "6.5" ;
+    xkos:depth "2" .
+
+codattfis:6.6 a skos:Concept ;
+    skos:prefLabel "Nuotare, tuffarsi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.6" ;
+    skos:broader grupattfis:6 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Nuotare, tuffarsi"@it ;
+    skos:notation "6.6" ;
+    xkos:depth "2" .
+
+codattfis:6.7 a skos:Concept ;
+    skos:prefLabel "Fare movimenti sul posto"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.7" ;
+    skos:broader grupattfis:6 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Fare movimenti sul posto"@it ;
+    skos:notation "6.7" ;
+    xkos:depth "2" .
+
+codattfis:6.9 a skos:Concept ;
+    skos:prefLabel "Altra attività fisica specifica conosciuta del gruppo 60 non indicata qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.9" ;
+    skos:broader grupattfis:6 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Altra attività fisica specifica conosciuta del gruppo 60 non indicata qui sopra"@it ;
+    skos:notation "6.9" ;
+    xkos:depth "2" .
+
+codattfis:7.0 a skos:Concept ;
+    skos:prefLabel "Presenza - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "7.0" ;
+    skos:broader grupattfis:7 ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Presenza - non precisato"@it ;
+    skos:notation "7.0" ;
+    xkos:depth "2" .
+
+grupattfis:1 a skos:Concept ;
+    skos:prefLabel "Operazioni di macchina"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "1" ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Operazioni di macchina"@it ;
+    skos:narrower codattfis:1.0,
+        codattfis:1.1,
+        codattfis:1.2,
+        codattfis:1.3,
+        codattfis:1.9 ;
+    skos:notation "1" ;
+    xkos:depth "1" .
+
+grupattfis:2 a skos:Concept ;
+    skos:prefLabel "Lavoro con utensili a mano"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "2" ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Lavoro con utensili a mano"@it ;
+    skos:narrower codattfis:2.0,
+        codattfis:2.1,
+        codattfis:2.2,
+        codattfis:2.9 ;
+    skos:notation "2" ;
+    xkos:depth "1" .
+
+grupattfis:3 a skos:Concept ;
+    skos:prefLabel "Alla guida, a bordo di un mezzo di trasporto/attrezzatura di movimentazione"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "3" ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Alla guida, a bordo di un mezzo di trasporto/attrezzatura di movimentazione"@it ;
+    skos:narrower codattfis:3.0,
+        codattfis:3.1,
+        codattfis:3.2,
+        codattfis:3.3,
+        codattfis:3.9 ;
+    skos:notation "3" ;
+    xkos:depth "1" .
+
+grupattfis:4 a skos:Concept ;
+    skos:prefLabel "Manipolazione di oggetti"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "4" ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Manipolazione di oggetti"@it ;
+    skos:narrower codattfis:4.0,
+        codattfis:4.1,
+        codattfis:4.2,
+        codattfis:4.3,
+        codattfis:4.4,
+        codattfis:4.5,
+        codattfis:4.6,
+        codattfis:4.7,
+        codattfis:4.9 ;
+    skos:notation "4" ;
+    xkos:depth "1" .
+
+grupattfis:5 a skos:Concept ;
+    skos:prefLabel "Trasporto manuale"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "5" ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Trasporto manuale"@it ;
+    skos:narrower codattfis:5.0,
+        codattfis:5.1,
+        codattfis:5.2,
+        codattfis:5.3,
+        codattfis:5.9 ;
+    skos:notation "5" ;
+    xkos:depth "1" .
+
+grupattfis:6 a skos:Concept ;
+    skos:prefLabel "Movimenti"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "6" ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Movimenti"@it ;
+    skos:narrower codattfis:6.0,
+        codattfis:6.1,
+        codattfis:6.2,
+        codattfis:6.3,
+        codattfis:6.4,
+        codattfis:6.5,
+        codattfis:6.6,
+        codattfis:6.7,
+        codattfis:6.9 ;
+    skos:notation "6" ;
+    xkos:depth "1" .
+
+grupattfis:7 a skos:Concept ;
+    skos:prefLabel "Presenza"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "7" ;
+    skos:inScheme inailvoc:attivita_fisica ;
+    skos:label "Presenza"@it ;
+    skos:narrower codattfis:7.0 ;
+    skos:notation "7" ;
+    xkos:depth "1" .
+
+<http://dati.inail.it/data/Organization/inail> a cov:Organization ;
+    rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
+    cov:IPAcode "inail" ;
+    cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
+    cov:orgAcronym "inail" .
+
+inailvoc:attivita_fisica a adms:Asset,
+        dcatapit:Dataset,
+        skos:ConceptScheme ;
+    rdfs:label "Controlled vocabulary on types of physical activity adopted by INAIL"@en,
+        "Vocabolario Controllato sulle tipologie di attività fisica adottate dall'INAIL"@it ;
+    skos:prefLabel "Vocabolario Controllato sulle tipologie di attività fisica adottate dall'INAIL"@it ;
+    rdfs:comment "Classificazione a due livelli dell'attività svolta al momento dell'evento lesivo"@it,
+        "Two-level classification of the activity carried out at the time of the harmful event"@en ;
+    owl:versionInfo "0.2" ;
+    rdfs:isDefinedBy inailvoc:attivita_fisica ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:contactPoint <https://www.inail.it> ;
+    dcat:distribution <https://w3id.org/italia/data/distribution/PS-RDF-Turtle> ;
+    dcat:keyword "attività fisica"@it,
+        "inail"@it,
+        "infortunio"@it,
+        "occupational injury"@en,
+        "physical activity"@en ;
+    dcat:theme <http://eurovoc.europa.eu/825>,
+        <http://eurovoc.europa.eu/1718>,
+        <http://eurovoc.europa.eu/2015>,
+        <http://eurovoc.europa.eu/4543> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dct:creator <http://dati.inail.it/data/Organization/inail> ;
+    dct:description "Classificazione a due livelli dell'attività svolta al momento dell'evento lesivo"@it,
+        "Two-level classification of the activity carried out at the time of the harmful event"@en ;
+    dct:identifier "http://dati.inail.it/opendata/vocabolari/attivita_fisica" ;
+    dct:issued "2022-09-06"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2022-09-30"^^xsd:date ;
+    dct:publisher <http://dati.inail.it/data/Organization/inail> ;
+    dct:rightsHolder <http://dati.inail.it/data/Organization/inail> ;
+    dct:title "Controlled vocabulary on types of physical activity adopted by INAIL"@en,
+        "Vocabolario Controllato sulle tipologie di attività fisica adottate dall'INAIL"@it ;
+    dct:type <http://purl.org/adms/assettype/Taxonomy> ;
+    ndc:keyConcept "Tipo Attività fisica" ;
+    skos:hasTopConcep grupattfis:1,
+        grupattfis:2,
+        grupattfis:3,
+        grupattfis:4,
+        grupattfis:5,
+        grupattfis:6,
+        grupattfis:7 ;
+    xkos:numberOfLevels "2" .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

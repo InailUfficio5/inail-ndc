@@ -1,0 +1,41 @@
+name: tipo_indennizzo
+resources:
+- dialect:
+    keyed: true
+  format: inline
+  hashing: md5
+  name: tipo_indennizzo
+  path: tipo_indennizzo.csv
+  profile: tabular-data-resource
+  schema:
+    fields:
+    - name: url
+      type: string
+    - name: '@type'
+      type: string
+    - name: id
+      type: string
+    - name: label_it
+      type: string
+    - name: level
+      type: integer
+    x-jsonld-context:
+      clvapit: https://w3id.org/italia/onto/CLV/
+      dct: http://purl.org/dc/terms/
+      id:
+        '@id': dct:identifier
+      label_en:
+        '@id': skos:prefLabel
+        '@language': en
+      label_it:
+        '@id': skos:prefLabel
+        '@language': it
+      level:
+        '@id': clvapit:hasRankOrder
+      parent:
+        '@id': skos:broader
+        '@type': '@id'
+      skos: http://www.w3.org/2004/02/skos/core#
+      url: '@id'
+    x-jsonld-type: skos:Concept
+  scheme: ''

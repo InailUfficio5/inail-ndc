@@ -1,0 +1,527 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix cov: <https://w3id.org/italia/onto/COV> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix inailvoc: <http://dati.inail.it/opendata/vocabolari/> .
+@prefix lavcod: <http://dati.inail.it/opendata/vocabolari/tipo_lavoro/codice/> .
+@prefix lavgrup: <http://dati.inail.it/opendata/vocabolari/tipo_lavoro/gruppo/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Annotations
+
+<http://dati.inail.it/data/Organization/inail> a cov:Organization ;
+    rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
+    cov:IPAcode "inail" ;
+    cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
+    cov:orgAcronym "inail" .
+
+inailvoc:tipo_lavoro a adms:Asset,
+        dcatapit:Dataset,
+        skos:ConceptScheme ;
+    rdfs:label "Controlled vocabulary on the classification of types of work adopted by INAIL"@en,
+        "Vocabolario Controllato sulla classificazione delle tipologie di lavoro adottata dall'INAIL"@it ;
+    skos:prefLabel "Vocabolario Controllato sulla classificazione delle tipologie di lavoro adottata dall'INAIL"@it ;
+    rdfs:comment "Classification of the types of work performed by the technopathic / injured person"@en,
+        "Classificazione delle tipologie di lavoro svolte dal tecnopatico/infortunato"@it ;
+    owl:versionInfo "0.2" ;
+    rdfs:isDefinedBy inailvoc:tipo_lavoro ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:contactPoint <https://www.inail.it> ;
+    dcat:distribution <https://w3id.org/italia/data/distribution/PS-RDF-Turtle> ;
+    dcat:keyword "inail"@it,
+        "infortunio"@it,
+        "injured"@en,
+        "inofrtunato"@it,
+        "lavoro"@it,
+        "occupational injury"@en,
+        "work"@en ;
+    dcat:theme <http://eurovoc.europa.eu/825>,
+        <http://eurovoc.europa.eu/4543> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dct:creator <http://dati.inail.it/data/Organization/inail> ;
+    dct:description "Classification of the types of work performed by the technopathic / injured person"@en,
+        "Classificazione delle tipologie di lavoro svolte dal tecnopatico/infortunato"@it ;
+    dct:identifier "http://dati.inail.it/opendata/vocabolari/tipo_lavoro" ;
+    dct:issued "2022-09-06"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2022-09-30"^^xsd:date ;
+    dct:publisher <http://dati.inail.it/data/Organization/inail> ;
+    dct:relation inailvoc:gestione,
+        inailvoc:gestione_assicurativa,
+        inailvoc:gestione_tariffaria,
+        inailvoc:grande_gruppo_tariffario,
+        inailvoc:mansione,
+        inailvoc:settore_attivita,
+        inailvoc:settore_correlato_malattia,
+        inailvoc:tipo_lavoratore ;
+    dct:rightsHolder <http://dati.inail.it/data/Organization/inail> ;
+    dct:title "Controlled vocabulary on the classification of types of work adopted by INAIL"@en,
+        "Vocabolario Controllato sulla classificazione delle tipologie di lavoro adottata dall'INAIL"@it ;
+    dct:type <http://purl.org/adms/assettype/Taxonomy> ;
+    ndc:keyConcept "Tipo Lavoro" ;
+    skos:hasTopConcept lavgrup:1,
+        lavgrup:2,
+        lavgrup:3,
+        lavgrup:4,
+        lavgrup:5,
+        lavgrup:6,
+        lavgrup:9 ;
+    xkos:numberOfLevels "2" .
+
+lavcod:1.0 a skos:Concept ;
+    skos:prefLabel "Produzione, trasformazione, trattamento, magazzinaggio - di ogni tipo - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.0" ;
+    skos:broader lavgrup:1 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Produzione, trasformazione, trattamento, magazzinaggio - di ogni tipo - non precisato"@it ;
+    skos:notation "1.0" ;
+    xkos:depth "2" .
+
+lavcod:1.1 a skos:Concept ;
+    skos:prefLabel "Produzione, trasformazione, trattamento - di ogni tipo"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.1" ;
+    skos:broader lavgrup:1 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Produzione, trasformazione, trattamento - di ogni tipo"@it ;
+    skos:notation "1.1" ;
+    xkos:depth "2" .
+
+lavcod:1.2 a skos:Concept ;
+    skos:prefLabel "Magazzinaggio - di ogni tipo"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.2" ;
+    skos:broader lavgrup:1 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Magazzinaggio - di ogni tipo"@it ;
+    skos:notation "1.2" ;
+    xkos:depth "2" .
+
+lavcod:1.9 a skos:Concept ;
+    skos:prefLabel "Altro tipo di lavoro conosciuto del gruppo 10 non indicato qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.9" ;
+    skos:broader lavgrup:1 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Altro tipo di lavoro conosciuto del gruppo 10 non indicato qui sopra"@it ;
+    skos:notation "1.9" ;
+    xkos:depth "2" .
+
+lavcod:2.0 a skos:Concept ;
+    skos:prefLabel "Sterro, costruzione, manutenzione e demolizione edili - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.0" ;
+    skos:broader lavgrup:2 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Sterro, costruzione, manutenzione e demolizione edili - non precisato"@it ;
+    skos:notation "2.0" ;
+    xkos:depth "2" .
+
+lavcod:2.1 a skos:Concept ;
+    skos:prefLabel "Sterro"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.1" ;
+    skos:broader lavgrup:2 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Sterro"@it ;
+    skos:notation "2.1" ;
+    xkos:depth "2" .
+
+lavcod:2.2 a skos:Concept ;
+    skos:prefLabel "Edilizia (costruzione)"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.2" ;
+    skos:broader lavgrup:2 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Edilizia (costruzione)"@it ;
+    skos:notation "2.2" ;
+    xkos:depth "2" .
+
+lavcod:2.3 a skos:Concept ;
+    skos:prefLabel "Genio civile, infrastrutture, strade, ponti, dighe, porti (costruzione)"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.3" ;
+    skos:broader lavgrup:2 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Genio civile, infrastrutture, strade, ponti, dighe, porti (costruzione)"@it ;
+    skos:notation "2.3" ;
+    xkos:depth "2" .
+
+lavcod:2.4 a skos:Concept ;
+    skos:prefLabel "Restauro, riparazione, ampliamento - di ogni tipo"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.4" ;
+    skos:broader lavgrup:2 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Restauro, riparazione, ampliamento - di ogni tipo"@it ;
+    skos:notation "2.4" ;
+    xkos:depth "2" .
+
+lavcod:2.5 a skos:Concept ;
+    skos:prefLabel "Demolizione - di ogni tipo"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.5" ;
+    skos:broader lavgrup:2 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Demolizione - di ogni tipo"@it ;
+    skos:notation "2.5" ;
+    xkos:depth "2" .
+
+lavcod:2.9 a skos:Concept ;
+    skos:prefLabel "Altro tipo di lavoro conosciuto del gruppo 20 non indicato qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.9" ;
+    skos:broader lavgrup:2 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Altro tipo di lavoro conosciuto del gruppo 20 non indicato qui sopra"@it ;
+    skos:notation "2.9" ;
+    xkos:depth "2" .
+
+lavcod:3.0 a skos:Concept ;
+    skos:prefLabel "Attivita' di tipo agricolo, forestale,  ittico, con l'uso di animali vivi - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.0" ;
+    skos:broader lavgrup:3 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Attivita' di tipo agricolo, forestale,  ittico, con l'uso di animali vivi - non precisato"@it ;
+    skos:notation "3.0" ;
+    xkos:depth "2" .
+
+lavcod:3.1 a skos:Concept ;
+    skos:prefLabel "Lavoro di tipo agricolo, trattamento del terreno"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.1" ;
+    skos:broader lavgrup:3 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Lavoro di tipo agricolo, trattamento del terreno"@it ;
+    skos:notation "3.1" ;
+    xkos:depth "2" .
+
+lavcod:3.2 a skos:Concept ;
+    skos:prefLabel "Lavoro di tipo agricolo, coltura dei vegetali"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.2" ;
+    skos:broader lavgrup:3 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Lavoro di tipo agricolo, coltura dei vegetali"@it ;
+    skos:notation "3.2" ;
+    xkos:depth "2" .
+
+lavcod:3.3 a skos:Concept ;
+    skos:prefLabel "Lavoro di tipo agricolo che comporti l'allevamento o l'uso di animali vivi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.3" ;
+    skos:broader lavgrup:3 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Lavoro di tipo agricolo che comporti l'allevamento o l'uso di animali vivi"@it ;
+    skos:notation "3.3" ;
+    xkos:depth "2" .
+
+lavcod:3.4 a skos:Concept ;
+    skos:prefLabel "Lavoro di tipo forestale"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.4" ;
+    skos:broader lavgrup:3 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Lavoro di tipo forestale"@it ;
+    skos:notation "3.4" ;
+    xkos:depth "2" .
+
+lavcod:3.5 a skos:Concept ;
+    skos:prefLabel "Lavoro di tipo ittico, pesca"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.5" ;
+    skos:broader lavgrup:3 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Lavoro di tipo ittico, pesca"@it ;
+    skos:notation "3.5" ;
+    xkos:depth "2" .
+
+lavcod:3.9 a skos:Concept ;
+    skos:prefLabel "Altro tipo di lavoro conosciuto del gruppo 30 non indicato qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.9" ;
+    skos:broader lavgrup:3 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Altro tipo di lavoro conosciuto del gruppo 30 non indicato qui sopra"@it ;
+    skos:notation "3.9" ;
+    xkos:depth "2" .
+
+lavcod:4.0 a skos:Concept ;
+    skos:prefLabel "Attivita' di servizio all'impresa e/o alla persona umana; lavoro intellettuale - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.0" ;
+    skos:broader lavgrup:4 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Attivita' di servizio all'impresa e/o alla persona umana; lavoro intellettuale - non precisato"@it ;
+    skos:notation "4.0" ;
+    xkos:depth "2" .
+
+lavcod:4.1 a skos:Concept ;
+    skos:prefLabel "Attività di servizio, cura, assistenza alla persona umana"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.1" ;
+    skos:broader lavgrup:4 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Attività di servizio, cura, assistenza alla persona umana"@it ;
+    skos:notation "4.1" ;
+    xkos:depth "2" .
+
+lavcod:4.2 a skos:Concept ;
+    skos:prefLabel "Attivita' intellettuale - insegnamento, formazione, trattamento dell'informazione, lavoro d'ufficio,attivita' di organizzazione, di gestione"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.2" ;
+    skos:broader lavgrup:4 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Attivita' intellettuale - insegnamento, formazione, trattamento dell'informazione, lavoro d'ufficio,attivita' di organizzazione, di gestione"@it ;
+    skos:notation "4.2" ;
+    xkos:depth "2" .
+
+lavcod:4.3 a skos:Concept ;
+    skos:prefLabel "Attività commerciale: acquisto, vendita, attività ad esse complementari"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.3" ;
+    skos:broader lavgrup:4 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Attività commerciale: acquisto, vendita, attività ad esse complementari"@it ;
+    skos:notation "4.3" ;
+    xkos:depth "2" .
+
+lavcod:4.9 a skos:Concept ;
+    skos:prefLabel "Altro tipo di lavoro conosciuto del gruppo 40 non indicato qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.9" ;
+    skos:broader lavgrup:4 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Altro tipo di lavoro conosciuto del gruppo 40 non indicato qui sopra"@it ;
+    skos:notation "4.9" ;
+    xkos:depth "2" .
+
+lavcod:5.0 a skos:Concept ;
+    skos:prefLabel "Attività complementari a quelle espresse dai gruppi 10, 20, 30, 40 - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.0" ;
+    skos:broader lavgrup:5 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Attività complementari a quelle espresse dai gruppi 10, 20, 30, 40 - non precisato"@it ;
+    skos:notation "5.0" ;
+    xkos:depth "2" .
+
+lavcod:5.1 a skos:Concept ;
+    skos:prefLabel "Installazione, preparazione, montaggio, smontaggio"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.1" ;
+    skos:broader lavgrup:5 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Installazione, preparazione, montaggio, smontaggio"@it ;
+    skos:notation "5.1" ;
+    xkos:depth "2" .
+
+lavcod:5.2 a skos:Concept ;
+    skos:prefLabel "Manutenzione, riparazione,  registrazione, messa a punto"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.2" ;
+    skos:broader lavgrup:5 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Manutenzione, riparazione,  registrazione, messa a punto"@it ;
+    skos:notation "5.2" ;
+    xkos:depth "2" .
+
+lavcod:5.3 a skos:Concept ;
+    skos:prefLabel "Pulizia di locali, di macchine - industriale o manuale"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.3" ;
+    skos:broader lavgrup:5 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Pulizia di locali, di macchine - industriale o manuale"@it ;
+    skos:notation "5.3" ;
+    xkos:depth "2" .
+
+lavcod:5.4 a skos:Concept ;
+    skos:prefLabel "Gestione dei rifiuti, raccolta e trattamento dei rifiuti di ogni tipo"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.4" ;
+    skos:broader lavgrup:5 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Gestione dei rifiuti, raccolta e trattamento dei rifiuti di ogni tipo"@it ;
+    skos:notation "5.4" ;
+    xkos:depth "2" .
+
+lavcod:5.5 a skos:Concept ;
+    skos:prefLabel "Sorveglianza, ispezione - di processi di fabbricazione, di locali, di mezzi di trasporto, di attrezzature - con o senza materiale di controllo"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.5" ;
+    skos:broader lavgrup:5 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Sorveglianza, ispezione - di processi di fabbricazione, di locali, di mezzi di trasporto, di attrezzature - con o senza materiale di controllo"@it ;
+    skos:notation "5.5" ;
+    xkos:depth "2" .
+
+lavcod:5.9 a skos:Concept ;
+    skos:prefLabel "Altro tipo di  lavoro conosciuto del gruppo 50 non indicato qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.9" ;
+    skos:broader lavgrup:5 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Altro tipo di  lavoro conosciuto del gruppo 50 non indicato qui sopra"@it ;
+    skos:notation "5.9" ;
+    xkos:depth "2" .
+
+lavcod:6.0 a skos:Concept ;
+    skos:prefLabel "Circolazione, attività sportiva, attività artistica - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.0" ;
+    skos:broader lavgrup:6 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Circolazione, attività sportiva, attività artistica - non precisato"@it ;
+    skos:notation "6.0" ;
+    xkos:depth "2" .
+
+lavcod:6.1 a skos:Concept ;
+    skos:prefLabel "Circolazione, con o senza mezzi di trasporto"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.1" ;
+    skos:broader lavgrup:6 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Circolazione, con o senza mezzi di trasporto"@it ;
+    skos:notation "6.1" ;
+    xkos:depth "2" .
+
+lavcod:6.2 a skos:Concept ;
+    skos:prefLabel "Attività sportiva, attività artistica"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.2" ;
+    skos:broader lavgrup:6 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Attività sportiva, attività artistica"@it ;
+    skos:notation "6.2" ;
+    xkos:depth "2" .
+
+lavcod:6.9 a skos:Concept ;
+    skos:prefLabel "Altro tipo di lavoro conosciuto del gruppo 60 non indicato qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.9" ;
+    skos:broader lavgrup:6 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Altro tipo di lavoro conosciuto del gruppo 60 non indicato qui sopra"@it ;
+    skos:notation "6.9" ;
+    xkos:depth "2" .
+
+lavcod:9.9 a skos:Concept ;
+    skos:prefLabel "Altro tipo di lavoro non indicato in questa nomenclatura"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "9.9" ;
+    skos:broader lavgrup:9 ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Altro tipo di lavoro non indicato in questa nomenclatura"@it ;
+    skos:notation "9.9" ;
+    xkos:depth "2" .
+
+lavgrup:1 a skos:Concept ;
+    skos:prefLabel "Produzione, trasformazione, trattamento, magazzinaggio - di ogni tipo"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "1" ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Produzione, trasformazione, trattamento, magazzinaggio - di ogni tipo"@it ;
+    skos:narrower lavcod:1.0,
+        lavcod:1.1,
+        lavcod:1.2,
+        lavcod:1.9 ;
+    skos:notation "1" ;
+    xkos:depth "1" .
+
+lavgrup:2 a skos:Concept ;
+    skos:prefLabel "Sterro, costruzione, manutenzione e demolizione edili"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "2" ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Sterro, costruzione, manutenzione e demolizione edili"@it ;
+    skos:narrower lavcod:2.0,
+        lavcod:2.1,
+        lavcod:2.2,
+        lavcod:2.3,
+        lavcod:2.4,
+        lavcod:2.5,
+        lavcod:2.9 ;
+    skos:notation "2" ;
+    xkos:depth "1" .
+
+lavgrup:3 a skos:Concept ;
+    skos:prefLabel "Attivita' di tipo agricolo, forestale,  ittico, con l'uso di animali vivi"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "3" ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Attivita' di tipo agricolo, forestale,  ittico, con l'uso di animali vivi "@it ;
+    skos:narrower lavcod:3.0,
+        lavcod:3.1,
+        lavcod:3.2,
+        lavcod:3.3,
+        lavcod:3.4,
+        lavcod:3.5,
+        lavcod:3.9 ;
+    skos:notation "3" ;
+    xkos:depth "1" .
+
+lavgrup:4 a skos:Concept ;
+    skos:prefLabel "Attivita' di servizio all'impresa e/o alla persona umana; lavoro intellettuale"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "4" ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Attivita' di servizio all'impresa e/o alla persona umana; lavoro intellettuale"@it ;
+    skos:narrower lavcod:4.0,
+        lavcod:4.1,
+        lavcod:4.2,
+        lavcod:4.3,
+        lavcod:4.9 ;
+    skos:notation "4" ;
+    xkos:depth "1" .
+
+lavgrup:5 a skos:Concept ;
+    skos:prefLabel "Attività complementari a quelle espresse dai gruppi 10, 20, 30, 40"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "5" ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Attività complementari a quelle espresse dai gruppi 10, 20, 30, 40"@it ;
+    skos:narrower lavcod:5.0,
+        lavcod:5.1,
+        lavcod:5.2,
+        lavcod:5.3,
+        lavcod:5.4,
+        lavcod:5.5,
+        lavcod:5.9 ;
+    skos:notation "5" ;
+    xkos:depth "1" .
+
+lavgrup:6 a skos:Concept ;
+    skos:prefLabel "Circolazione, attività sportiva, attività artistica"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "6" ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Circolazione, attività sportiva, attività artistica"@it ;
+    skos:narrower lavcod:6.0,
+        lavcod:6.1,
+        lavcod:6.2,
+        lavcod:6.9 ;
+    skos:notation "6" ;
+    xkos:depth "1" .
+
+lavgrup:9 a skos:Concept ;
+    skos:prefLabel "Altro tipo di lavoro non indicato in questa nomenclatura"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "9" ;
+    skos:inScheme inailvoc:tipo_lavoro ;
+    skos:label "Altro tipo di lavoro non indicato in questa nomenclatura"@it ;
+    skos:narrower lavcod:9.9 ;
+    skos:notation "9" ;
+    xkos:depth "1" .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

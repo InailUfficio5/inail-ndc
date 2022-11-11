@@ -1,0 +1,23 @@
+url,id,label_it,level
+http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/AC,AC,Assegno continuativo mensile,1
+http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/AI,AI,Assegno incollocabilità,1
+http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/AP,AP,Assegno personale continuativo,1
+http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/BA,BA,Base,1
+http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/CC,CC,Richiesta concessione cure termali,1
+http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/CO,CO,Comunicazione infortunio,1
+http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/CP,CP,Richiesta concessione protesi,1
+http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/CT,CT,Cure termali,1
+http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/EM,EM,Esiti mortali,1
+http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/FO,FO,Fondo speciale,1
+http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/IF,IF,Richiesta riconoscimento invalidita' familiare,1
+http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/IN,IN,I.N.P.S.,1
+http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/IS,IS,Richiesta riconoscimento invalidita' superstiti,1
+http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/LC,LC,Liquidazione in capitale,1
+http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/PR,PR,Protesi,1
+http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/RA,RA,Richiesta riconoscimento A.P.C.,1
+http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/RC,RC,Richiesta riconoscimento A.I.,1
+http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/RG,RG,Revisione grado,1
+http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/RI,RI,Ricaduta,1
+http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/RM,RM,Richiesta riconoscimento morte,1
+http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/RP,RP,Rendita di passaggio,1
+http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/SA,SA,Domanda silicosi/asbestosi,1

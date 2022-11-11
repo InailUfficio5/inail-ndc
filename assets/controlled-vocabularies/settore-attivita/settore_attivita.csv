@@ -1,0 +1,11 @@
+url,id,label_it,level
+http://dati.inail.it/opendata/vocabolari/settore_attivita/settore/codice/0,0,Poste e telecomunicazioni,1
+http://dati.inail.it/opendata/vocabolari/settore_attivita/settore/codice/1,1,Industria,1
+http://dati.inail.it/opendata/vocabolari/settore_attivita/settore/codice/2,2,Industria-Artigianato,2
+http://dati.inail.it/opendata/vocabolari/settore_attivita/settore/codice/3,3,Industria-Terziario,2
+http://dati.inail.it/opendata/vocabolari/settore_attivita/settore/codice/4,4,Industria-Altri,2
+http://dati.inail.it/opendata/vocabolari/settore_attivita/settore/codice/5,5,Industria-Speciale,2
+http://dati.inail.it/opendata/vocabolari/settore_attivita/settore/codice/6,6,Agricoltura,1
+http://dati.inail.it/opendata/vocabolari/settore_attivita/settore/codice/7,7,Conto stato,1
+http://dati.inail.it/opendata/vocabolari/settore_attivita/settore/codice/8,8,Domestici,1
+http://dati.inail.it/opendata/vocabolari/settore_attivita/settore/codice/9,9,Casalinghe,1

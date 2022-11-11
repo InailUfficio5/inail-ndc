@@ -1,0 +1,1067 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix areales: <http://dati.inail.it/opendata/vocabolari/sede_lesione/macro_area/> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix cov: <https://w3id.org/italia/onto/COV> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix inailvoc: <http://dati.inail.it/opendata/vocabolari/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix parteles: <http://dati.inail.it/opendata/vocabolari/sede_lesione/parte_corpo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix zonales: <http://dati.inail.it/opendata/vocabolari/sede_lesione/zona/> .
+
+### Annotations
+
+areales:1 a skos:Concept ;
+    skos:prefLabel "Testa"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "1" ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Testa"@it ;
+    skos:narrower zonales:1.1,
+        zonales:1.2,
+        zonales:1.3,
+        zonales:1.4 ;
+    skos:notation "1" ;
+    xkos:depth "1" .
+
+areales:2 a skos:Concept ;
+    skos:prefLabel "Torace e organi interni"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "2" ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Torace e organi interni"@it ;
+    skos:narrower zonales:2.5,
+        zonales:2.6,
+        zonales:2.7 ;
+    skos:notation "2" ;
+    xkos:depth "1" .
+
+areales:3 a skos:Concept ;
+    skos:prefLabel "Colonna vertebrale"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "3" ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Colonna vertebrale"@it ;
+    skos:narrower zonales:3.8 ;
+    skos:notation "3" ;
+    xkos:depth "1" .
+
+areales:4 a skos:Concept ;
+    skos:prefLabel "Arti superiori"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "4" ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Arti superiori"@it ;
+    skos:narrower zonales:4.9,
+        zonales:4.10,
+        zonales:4.11,
+        zonales:4.12 ;
+    skos:notation "4" ;
+    xkos:depth "1" .
+
+areales:5 a skos:Concept ;
+    skos:prefLabel "Arti inferiori"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "5" ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Arti inferiori"@it ;
+    skos:narrower zonales:5.13,
+        zonales:5.14,
+        zonales:5.15,
+        zonales:5.16,
+        zonales:5.17,
+        zonales:5.18,
+        zonales:5.19,
+        zonales:5.20 ;
+    skos:notation "5" ;
+    xkos:depth "1" .
+
+<http://dati.inail.it/data/Organization/inail> a cov:Organization ;
+    rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
+    cov:IPAcode "inail" ;
+    cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
+    cov:orgAcronym "inail" .
+
+inailvoc:sede_lesione a adms:Asset,
+        dcatapit:Dataset,
+        skos:ConceptScheme ;
+    rdfs:label "Controlled vocabulary of the site of injuries adopted by INAIL"@en,
+        "Vocabolario controllato della sede delle lesioni adottata da INAIL"@it ;
+    skos:prefLabel "Vocabolario controllato della sede delle lesioni adottata da INAIL"@it ;
+    rdfs:comment "Classification of the parts of the body where the lesion is located"@en,
+        "Classificazione delle parti del corpo sede della lesione"@it ;
+    owl:versionInfo "0.2" ;
+    rdfs:isDefinedBy inailvoc:sede_lesione ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:contactPoint <https://www.inail.it> ;
+    dcat:distribution <https://w3id.org/italia/data/distribution/PS-RDF-Turtle> ;
+    dcat:keyword "inail"@it,
+        "infortunio"@it,
+        "malattia professionale"@it,
+        "occupational disease"@en,
+        "occupational injury"@en,
+        "parti del corpo"@it,
+        "parts of the body "@en,
+        "person"@en,
+        "persona"@it ;
+    dcat:theme <http://eurovoc.europa.eu/825>,
+        <http://eurovoc.europa.eu/1761>,
+        <http://eurovoc.europa.eu/1859>,
+        <http://eurovoc.europa.eu/2338>,
+        <http://eurovoc.europa.eu/5939> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dct:creator <http://dati.inail.it/data/Organization/inail> ;
+    dct:description "Classification of the parts of the body where the lesion is located"@en,
+        "Classificazione delle parti del corpo sede della lesione"@it ;
+    dct:identifier "http://dati.inail.it/opendata/vocabolari/sede_lesione" ;
+    dct:issued "2022-09-06"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2022-10-01"^^xsd:date ;
+    dct:publisher <http://dati.inail.it/data/Organization/inail> ;
+    dct:relation inailvoc:natura_lesione ;
+    dct:rightsHolder <http://dati.inail.it/data/Organization/inail> ;
+    dct:title "Controlled vocabulary of the site of injuries adopted by INAIL"@en,
+        "Vocabolario controllato della sede delle lesioni adottata da INAIL"@it ;
+    dct:type <http://purl.org/adms/assettype/Taxonomy> ;
+    ndc:keyConcept "Sede lesione" ;
+    skos:hasTopConcept areales:1,
+        areales:2,
+        areales:3,
+        areales:4,
+        areales:5 ;
+    xkos:numberOfLevels "3" .
+
+parteles:11 a skos:Concept ;
+    skos:prefLabel "Cranio"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "11" ;
+    skos:broader zonales:1.1 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Cranio"@it ;
+    skos:notation "11" ;
+    xkos:depth "3" .
+
+parteles:12 a skos:Concept ;
+    skos:prefLabel "Encefalo"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "12" ;
+    skos:broader zonales:1.1 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Encefalo"@it ;
+    skos:notation "12" ;
+    xkos:depth "3" .
+
+parteles:13 a skos:Concept ;
+    skos:prefLabel "Naso"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "13" ;
+    skos:broader zonales:1.3 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Naso"@it ;
+    skos:notation "13" ;
+    xkos:depth "3" .
+
+parteles:14 a skos:Concept ;
+    skos:prefLabel "Bocca"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "14" ;
+    skos:broader zonales:1.3 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Bocca"@it ;
+    skos:notation "14" ;
+    xkos:depth "3" .
+
+parteles:15 a skos:Concept ;
+    skos:prefLabel "Faccia"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "15" ;
+    skos:broader zonales:1.3 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Faccia"@it ;
+    skos:notation "15" ;
+    xkos:depth "3" .
+
+parteles:16 a skos:Concept ;
+    skos:prefLabel "Collo"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "16" ;
+    skos:broader zonales:1.4 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Collo"@it ;
+    skos:notation "16" ;
+    xkos:depth "3" .
+
+parteles:17 a skos:Concept ;
+    skos:prefLabel "Cuore e organi mediastino"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "17" ;
+    skos:broader zonales:2.7 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Cuore e organi mediastino"@it ;
+    skos:notation "17" ;
+    xkos:depth "3" .
+
+parteles:18 a skos:Concept ;
+    skos:prefLabel "Fegato"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "18" ;
+    skos:broader zonales:2.7 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Fegato"@it ;
+    skos:notation "18" ;
+    xkos:depth "3" .
+
+parteles:19 a skos:Concept ;
+    skos:prefLabel "Milza"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "19" ;
+    skos:broader zonales:2.7 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Milza"@it ;
+    skos:notation "19" ;
+    xkos:depth "3" .
+
+parteles:20 a skos:Concept ;
+    skos:prefLabel "Stomaco e organi intestinali"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "20" ;
+    skos:broader zonales:2.7 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Stomaco e organi intestinali"@it ;
+    skos:notation "20" ;
+    xkos:depth "3" .
+
+parteles:21 a skos:Concept ;
+    skos:prefLabel "Organi urigenitali"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "21" ;
+    skos:broader zonales:2.7 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Organi urigenitali"@it ;
+    skos:notation "21" ;
+    xkos:depth "3" .
+
+parteles:22 a skos:Concept ;
+    skos:prefLabel "Parete addominale"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "22" ;
+    skos:broader zonales:2.6 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Parete addominale"@it ;
+    skos:notation "22" ;
+    xkos:depth "3" .
+
+parteles:23 a skos:Concept ;
+    skos:prefLabel "Colonna vertebr./cervicale"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "23" ;
+    skos:broader zonales:3.8 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Colonna vertebr./cervicale"@it ;
+    skos:notation "23" ;
+    xkos:depth "3" .
+
+parteles:24 a skos:Concept ;
+    skos:prefLabel "Colonna vertebr./toracica"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "24" ;
+    skos:broader zonales:3.8 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Colonna vertebr./toracica"@it ;
+    skos:notation "24" ;
+    xkos:depth "3" .
+
+parteles:25 a skos:Concept ;
+    skos:prefLabel "Colonna vertebr./lombare"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "25" ;
+    skos:broader zonales:3.8 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Colonna vertebr./lombare"@it ;
+    skos:notation "25" ;
+    xkos:depth "3" .
+
+parteles:26 a skos:Concept ;
+    skos:prefLabel "Col.vertebr./sacro e coccige"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "26" ;
+    skos:broader zonales:3.8 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Col.vertebr./sacro e coccige"@it ;
+    skos:notation "26" ;
+    xkos:depth "3" .
+
+parteles:27 a skos:Concept ;
+    skos:prefLabel "Col.vert-midollo/cervicale"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "27" ;
+    skos:broader zonales:3.8 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Col.vert-midollo/cervicale"@it ;
+    skos:notation "27" ;
+    xkos:depth "3" .
+
+parteles:28 a skos:Concept ;
+    skos:prefLabel "Col.vert-midollo/toracica"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "28" ;
+    skos:broader zonales:3.8 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Col.vert-midollo/toracica"@it ;
+    skos:notation "28" ;
+    xkos:depth "3" .
+
+parteles:29 a skos:Concept ;
+    skos:prefLabel "Col.vert-midollo/lombare"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "29" ;
+    skos:broader zonales:3.8 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Col.vert-midollo/lombare"@it ;
+    skos:notation "29" ;
+    xkos:depth "3" .
+
+parteles:30 a skos:Concept ;
+    skos:prefLabel "Col.vert-midollo/sacro-coccige"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "30" ;
+    skos:broader zonales:3.8 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Col.vert-midollo/sacro-coccige"@it ;
+    skos:notation "30" ;
+    xkos:depth "3" .
+
+parteles:31 a skos:Concept ;
+    skos:prefLabel "Occhio sinistro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "31" ;
+    skos:broader zonales:1.2 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Occhio sinistro"@it ;
+    skos:notation "31" ;
+    xkos:depth "3" .
+
+parteles:32 a skos:Concept ;
+    skos:prefLabel "Occhio destro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "32" ;
+    skos:broader zonales:1.2 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Occhio destro"@it ;
+    skos:notation "32" ;
+    xkos:depth "3" .
+
+parteles:33 a skos:Concept ;
+    skos:prefLabel "Orecchio sinistro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "33" ;
+    skos:broader zonales:1.3 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Orecchio sinistro"@it ;
+    skos:notation "33" ;
+    xkos:depth "3" .
+
+parteles:34 a skos:Concept ;
+    skos:prefLabel "Orecchio destro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "34" ;
+    skos:broader zonales:1.3 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Orecchio destro"@it ;
+    skos:notation "34" ;
+    xkos:depth "3" .
+
+parteles:35 a skos:Concept ;
+    skos:prefLabel "Cingolo toracico sinistro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "35" ;
+    skos:broader zonales:2.5 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Cingolo toracico sinistro"@it ;
+    skos:notation "35" ;
+    xkos:depth "3" .
+
+parteles:36 a skos:Concept ;
+    skos:prefLabel "Cingolo toracico destro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "36" ;
+    skos:broader zonales:2.5 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Cingolo toracico destro"@it ;
+    skos:notation "36" ;
+    xkos:depth "3" .
+
+parteles:37 a skos:Concept ;
+    skos:prefLabel "Polmone sinistro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "37" ;
+    skos:broader zonales:2.7 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Polmone sinistro"@it ;
+    skos:notation "37" ;
+    xkos:depth "3" .
+
+parteles:38 a skos:Concept ;
+    skos:prefLabel "Polmone destro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "38" ;
+    skos:broader zonales:2.7 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Polmone destro"@it ;
+    skos:notation "38" ;
+    xkos:depth "3" .
+
+parteles:39 a skos:Concept ;
+    skos:prefLabel "Parete toracica sinistra"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "39" ;
+    skos:broader zonales:2.6 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Parete toracica sinistra"@it ;
+    skos:notation "39" ;
+    xkos:depth "3" .
+
+parteles:40 a skos:Concept ;
+    skos:prefLabel "Parete toracica destra"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "40" ;
+    skos:broader zonales:2.6 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Parete toracica destra"@it ;
+    skos:notation "40" ;
+    xkos:depth "3" .
+
+parteles:41 a skos:Concept ;
+    skos:prefLabel "Braccio sinistro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "41" ;
+    skos:broader zonales:4.9 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Braccio sinistro"@it ;
+    skos:notation "41" ;
+    xkos:depth "3" .
+
+parteles:42 a skos:Concept ;
+    skos:prefLabel "Braccio destro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "42" ;
+    skos:broader zonales:4.9 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Braccio destro"@it ;
+    skos:notation "42" ;
+    xkos:depth "3" .
+
+parteles:43 a skos:Concept ;
+    skos:prefLabel "Gomito sinistro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "43" ;
+    skos:broader zonales:4.10 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Gomito sinistro"@it ;
+    skos:notation "43" ;
+    xkos:depth "3" .
+
+parteles:44 a skos:Concept ;
+    skos:prefLabel "Gomito destro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "44" ;
+    skos:broader zonales:4.10 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Gomito destro"@it ;
+    skos:notation "44" ;
+    xkos:depth "3" .
+
+parteles:45 a skos:Concept ;
+    skos:prefLabel "Avambraccio sinistro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "45" ;
+    skos:broader zonales:4.9 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Avambraccio sinistro"@it ;
+    skos:notation "45" ;
+    xkos:depth "3" .
+
+parteles:46 a skos:Concept ;
+    skos:prefLabel "Avambraccio destro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "46" ;
+    skos:broader zonales:4.9 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Avambraccio destro"@it ;
+    skos:notation "46" ;
+    xkos:depth "3" .
+
+parteles:47 a skos:Concept ;
+    skos:prefLabel "Polso sinistro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "47" ;
+    skos:broader zonales:4.11 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Polso sinistro"@it ;
+    skos:notation "47" ;
+    xkos:depth "3" .
+
+parteles:48 a skos:Concept ;
+    skos:prefLabel "Polso destro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "48" ;
+    skos:broader zonales:4.11 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Polso destro"@it ;
+    skos:notation "48" ;
+    xkos:depth "3" .
+
+parteles:49 a skos:Concept ;
+    skos:prefLabel "Mano sinistra"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "49" ;
+    skos:broader zonales:4.12 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Mano sinistra"@it ;
+    skos:notation "49" ;
+    xkos:depth "3" .
+
+parteles:50 a skos:Concept ;
+    skos:prefLabel "Mano destra"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "50" ;
+    skos:broader zonales:4.12 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Mano destra"@it ;
+    skos:notation "50" ;
+    xkos:depth "3" .
+
+parteles:51 a skos:Concept ;
+    skos:prefLabel "Pollice sinistro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "51" ;
+    skos:broader zonales:4.12 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Pollice sinistro"@it ;
+    skos:notation "51" ;
+    xkos:depth "3" .
+
+parteles:52 a skos:Concept ;
+    skos:prefLabel "Pollice destro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "52" ;
+    skos:broader zonales:4.12 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Pollice destro"@it ;
+    skos:notation "52" ;
+    xkos:depth "3" .
+
+parteles:53 a skos:Concept ;
+    skos:prefLabel "Indice sinistro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "53" ;
+    skos:broader zonales:4.12 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Indice sinistro"@it ;
+    skos:notation "53" ;
+    xkos:depth "3" .
+
+parteles:54 a skos:Concept ;
+    skos:prefLabel "Indice destro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "54" ;
+    skos:broader zonales:4.12 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Indice destro"@it ;
+    skos:notation "54" ;
+    xkos:depth "3" .
+
+parteles:55 a skos:Concept ;
+    skos:prefLabel "Medio sinistro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "55" ;
+    skos:broader zonales:4.12 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Medio sinistro"@it ;
+    skos:notation "55" ;
+    xkos:depth "3" .
+
+parteles:56 a skos:Concept ;
+    skos:prefLabel "Medio destro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "56" ;
+    skos:broader zonales:4.12 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Medio destro"@it ;
+    skos:notation "56" ;
+    xkos:depth "3" .
+
+parteles:57 a skos:Concept ;
+    skos:prefLabel "Anulare sinistro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "57" ;
+    skos:broader zonales:4.12 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Anulare sinistro"@it ;
+    skos:notation "57" ;
+    xkos:depth "3" .
+
+parteles:58 a skos:Concept ;
+    skos:prefLabel "Anulare destro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "58" ;
+    skos:broader zonales:4.12 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Anulare destro"@it ;
+    skos:notation "58" ;
+    xkos:depth "3" .
+
+parteles:59 a skos:Concept ;
+    skos:prefLabel "Mignolo sinistro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "59" ;
+    skos:broader zonales:4.12 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Mignolo sinistro"@it ;
+    skos:notation "59" ;
+    xkos:depth "3" .
+
+parteles:60 a skos:Concept ;
+    skos:prefLabel "Mignolo destro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "60" ;
+    skos:broader zonales:4.12 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Mignolo destro"@it ;
+    skos:notation "60" ;
+    xkos:depth "3" .
+
+parteles:61 a skos:Concept ;
+    skos:prefLabel "Cingolo pelvico sinistro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "61" ;
+    skos:broader zonales:5.13 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Cingolo pelvico sinistro"@it ;
+    skos:notation "61" ;
+    xkos:depth "3" .
+
+parteles:62 a skos:Concept ;
+    skos:prefLabel "Cingolo pelvico destro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "62" ;
+    skos:broader zonales:5.13 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Cingolo pelvico destro"@it ;
+    skos:notation "62" ;
+    xkos:depth "3" .
+
+parteles:63 a skos:Concept ;
+    skos:prefLabel "Coscia sinistra"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "63" ;
+    skos:broader zonales:5.14 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Coscia sinistra"@it ;
+    skos:notation "63" ;
+    xkos:depth "3" .
+
+parteles:64 a skos:Concept ;
+    skos:prefLabel "Coscia destra"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "64" ;
+    skos:broader zonales:5.14 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Coscia destra"@it ;
+    skos:notation "64" ;
+    xkos:depth "3" .
+
+parteles:65 a skos:Concept ;
+    skos:prefLabel "Ginocchio sinistro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "65" ;
+    skos:broader zonales:5.15 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Ginocchio sinistro"@it ;
+    skos:notation "65" ;
+    xkos:depth "3" .
+
+parteles:66 a skos:Concept ;
+    skos:prefLabel "Ginocchio destro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "66" ;
+    skos:broader zonales:5.15 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Ginocchio destro"@it ;
+    skos:notation "66" ;
+    xkos:depth "3" .
+
+parteles:67 a skos:Concept ;
+    skos:prefLabel "Gamba sinistra"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "67" ;
+    skos:broader zonales:5.16 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Gamba sinistra"@it ;
+    skos:notation "67" ;
+    xkos:depth "3" .
+
+parteles:68 a skos:Concept ;
+    skos:prefLabel "Gamba destra"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "68" ;
+    skos:broader zonales:5.16 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Gamba destra"@it ;
+    skos:notation "68" ;
+    xkos:depth "3" .
+
+parteles:69 a skos:Concept ;
+    skos:prefLabel "Caviglia sinistra"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "69" ;
+    skos:broader zonales:5.17 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Caviglia sinistra"@it ;
+    skos:notation "69" ;
+    xkos:depth "3" .
+
+parteles:70 a skos:Concept ;
+    skos:prefLabel "Caviglia destra"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "70" ;
+    skos:broader zonales:5.17 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Caviglia destra"@it ;
+    skos:notation "70" ;
+    xkos:depth "3" .
+
+parteles:71 a skos:Concept ;
+    skos:prefLabel "Piede sinistro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "71" ;
+    skos:broader zonales:5.18 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Piede sinistro"@it ;
+    skos:notation "71" ;
+    xkos:depth "3" .
+
+parteles:72 a skos:Concept ;
+    skos:prefLabel "Piede destro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "72" ;
+    skos:broader zonales:5.18 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Piede destro"@it ;
+    skos:notation "72" ;
+    xkos:depth "3" .
+
+parteles:73 a skos:Concept ;
+    skos:prefLabel "Alluce sinistro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "73" ;
+    skos:broader zonales:5.19 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Alluce sinistro"@it ;
+    skos:notation "73" ;
+    xkos:depth "3" .
+
+parteles:74 a skos:Concept ;
+    skos:prefLabel "Alluce destro"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "74" ;
+    skos:broader zonales:5.19 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Alluce destro"@it ;
+    skos:notation "74" ;
+    xkos:depth "3" .
+
+parteles:75 a skos:Concept ;
+    skos:prefLabel "Altre dita sinistre"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "75" ;
+    skos:broader zonales:5.20 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Altre dita sinistre"@it ;
+    skos:notation "75" ;
+    xkos:depth "3" .
+
+parteles:76 a skos:Concept ;
+    skos:prefLabel "Altre dita destre"@it ;
+    clvapit:hasRankOrder "3" ;
+    dct:identifier "76" ;
+    skos:broader zonales:5.20 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Altre dita destre"@it ;
+    skos:notation "76" ;
+    xkos:depth "3" .
+
+zonales:1.1 a skos:Concept ;
+    skos:prefLabel "Cranio"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.1" ;
+    skos:broader areales:1 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Cranio"@it ;
+    skos:narrower parteles:11,
+        parteles:12 ;
+    skos:notation "1.1" ;
+    xkos:depth "2" .
+
+zonales:1.2 a skos:Concept ;
+    skos:prefLabel "Occhi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.2" ;
+    skos:broader areales:1 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Occhi"@it ;
+    skos:narrower parteles:31,
+        parteles:32 ;
+    skos:notation "1.2" ;
+    xkos:depth "2" .
+
+zonales:1.3 a skos:Concept ;
+    skos:prefLabel "Faccia"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.3" ;
+    skos:broader areales:1 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Faccia"@it ;
+    skos:narrower parteles:13,
+        parteles:14,
+        parteles:15,
+        parteles:33,
+        parteles:34 ;
+    skos:notation "1.3" ;
+    xkos:depth "2" .
+
+zonales:1.4 a skos:Concept ;
+    skos:prefLabel "Collo"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.4" ;
+    skos:broader areales:1 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Collo"@it ;
+    skos:narrower parteles:16 ;
+    skos:notation "1.4" ;
+    xkos:depth "2" .
+
+zonales:2.5 a skos:Concept ;
+    skos:prefLabel "Cingolo toracico"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.5" ;
+    skos:broader areales:2 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Cingolo toracico"@it ;
+    skos:narrower parteles:35,
+        parteles:36 ;
+    skos:notation "2.5" ;
+    xkos:depth "2" .
+
+zonales:2.6 a skos:Concept ;
+    skos:prefLabel "Parete toracica"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.6" ;
+    skos:broader areales:2 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Parete toracica"@it ;
+    skos:narrower parteles:22,
+        parteles:39,
+        parteles:40 ;
+    skos:notation "2.6" ;
+    xkos:depth "2" .
+
+zonales:2.7 a skos:Concept ;
+    skos:prefLabel "Organi interni"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.7" ;
+    skos:broader areales:2 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Organi interni"@it ;
+    skos:narrower parteles:17,
+        parteles:18,
+        parteles:19,
+        parteles:20,
+        parteles:21,
+        parteles:37,
+        parteles:38 ;
+    skos:notation "2.7" ;
+    xkos:depth "2" .
+
+zonales:3.8 a skos:Concept ;
+    skos:prefLabel "Colonna vertebrale"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.8" ;
+    skos:broader areales:3 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Colonna vertebrale"@it ;
+    skos:narrower parteles:23,
+        parteles:24,
+        parteles:25,
+        parteles:26,
+        parteles:27,
+        parteles:28,
+        parteles:29,
+        parteles:30 ;
+    skos:notation "3.8" ;
+    xkos:depth "2" .
+
+zonales:4.9 a skos:Concept ;
+    skos:prefLabel "Braccio,avambraccio"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.9" ;
+    skos:broader areales:4 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Braccio,avambraccio"@it ;
+    skos:narrower parteles:41,
+        parteles:42,
+        parteles:45,
+        parteles:46 ;
+    skos:notation "4.9" ;
+    xkos:depth "2" .
+
+zonales:4.10 a skos:Concept ;
+    skos:prefLabel "Gomito"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.10" ;
+    skos:broader areales:4 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Gomito"@it ;
+    skos:narrower parteles:43,
+        parteles:44 ;
+    skos:notation "4.10" ;
+    xkos:depth "2" .
+
+zonales:4.11 a skos:Concept ;
+    skos:prefLabel "Polso"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.11" ;
+    skos:broader areales:4 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Polso"@it ;
+    skos:narrower parteles:47,
+        parteles:48 ;
+    skos:notation "4.11" ;
+    xkos:depth "2" .
+
+zonales:4.12 a skos:Concept ;
+    skos:prefLabel "Mano"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.12" ;
+    skos:broader areales:4 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Mano"@it ;
+    skos:narrower parteles:49,
+        parteles:50,
+        parteles:51,
+        parteles:52,
+        parteles:53,
+        parteles:54,
+        parteles:55,
+        parteles:56,
+        parteles:57,
+        parteles:58,
+        parteles:59,
+        parteles:60 ;
+    skos:notation "4.12" ;
+    xkos:depth "2" .
+
+zonales:5.13 a skos:Concept ;
+    skos:prefLabel "Cingolo pelvico"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.13" ;
+    skos:broader areales:5 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Cingolo pelvico"@it ;
+    skos:narrower parteles:61,
+        parteles:62 ;
+    skos:notation "5.13" ;
+    xkos:depth "2" .
+
+zonales:5.14 a skos:Concept ;
+    skos:prefLabel "Coscia"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.14" ;
+    skos:broader areales:5 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Coscia"@it ;
+    skos:narrower parteles:63,
+        parteles:64 ;
+    skos:notation "5.14" ;
+    xkos:depth "2" .
+
+zonales:5.15 a skos:Concept ;
+    skos:prefLabel "Ginocchio"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.15" ;
+    skos:broader areales:5 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Ginocchio"@it ;
+    skos:narrower parteles:65,
+        parteles:66 ;
+    skos:notation "5.15" ;
+    xkos:depth "2" .
+
+zonales:5.16 a skos:Concept ;
+    skos:prefLabel "Gamba"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.16" ;
+    skos:broader areales:5 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Gamba"@it ;
+    skos:narrower parteles:67,
+        parteles:68 ;
+    skos:notation "5.16" ;
+    xkos:depth "2" .
+
+zonales:5.17 a skos:Concept ;
+    skos:prefLabel "Caviglia"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.17" ;
+    skos:broader areales:5 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Caviglia"@it ;
+    skos:narrower parteles:69,
+        parteles:70 ;
+    skos:notation "5.17" ;
+    xkos:depth "2" .
+
+zonales:5.18 a skos:Concept ;
+    skos:prefLabel "Piede"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.18" ;
+    skos:broader areales:5 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Piede"@it ;
+    skos:narrower parteles:71,
+        parteles:72 ;
+    skos:notation "5.18" ;
+    xkos:depth "2" .
+
+zonales:5.19 a skos:Concept ;
+    skos:prefLabel "Alluce"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.19" ;
+    skos:broader areales:5 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Alluce"@it ;
+    skos:narrower parteles:73,
+        parteles:74 ;
+    skos:notation "5.19" ;
+    xkos:depth "2" .
+
+zonales:5.20 a skos:Concept ;
+    skos:prefLabel "Altre dita"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.20" ;
+    skos:broader areales:5 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:label "Altre dita"@it ;
+    skos:narrower parteles:75,
+        parteles:76 ;
+    skos:notation "5.20" ;
+    xkos:depth "2" .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

@@ -1,0 +1,30 @@
+[
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/definizione_amministrativa/codice/F",
+    "@type": "skos:Concept",
+    "id": "F",
+    "label_it": "Franchigia",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/definizione_amministrativa/codice/I",
+    "@type": "skos:Concept",
+    "id": "I",
+    "label_it": "In istruttoria",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/definizione_amministrativa/codice/N",
+    "@type": "skos:Concept",
+    "id": "N",
+    "label_it": "Negativo",
+    "level": "1"
+  },
+  {
+    "url": "http://dati.inail.it/opendata/vocabolari/definizione_amministrativa/codice/P",
+    "@type": "skos:Concept",
+    "id": "P",
+    "label_it": "Positivo",
+    "level": "1"
+  }
+]

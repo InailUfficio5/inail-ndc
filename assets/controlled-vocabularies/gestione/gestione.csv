@@ -1,0 +1,4 @@
+url,id,label_it,level
+http://dati.inail.it/opendata/vocabolari/gestione/codice/A,A,Agricoltura,1
+http://dati.inail.it/opendata/vocabolari/gestione/codice/I,I,Industria e servizi,1
+http://dati.inail.it/opendata/vocabolari/gestione/codice/S,S,Per conto dello Stato,1
