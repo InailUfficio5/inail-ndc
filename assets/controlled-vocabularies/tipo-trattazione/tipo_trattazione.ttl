@@ -1,21 +1,58 @@
 @prefix adms: <http://www.w3.org/ns/adms#> .
 @prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
-@prefix cov: <https://w3id.org/italia/onto/COV> .
+@prefix cov: <https://w3id.org/italia/onto/COV/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix inailvoc: <http://dati.inail.it/opendata/vocabolari/> .
+@prefix inail: <https://w3id.org/italia/onto/WorkAccident/> .
+@prefix inailvoc: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/> .
 @prefix ndc: <https://w3id.org/italia/onto/NDC/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix trattcod: <http://dati.inail.it/opendata/vocabolari/tipo_trattazione/codice/> .
+@prefix trattcod: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_trattazione/codice/> .
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 ### Annotations
 
-<http://dati.inail.it/data/Organization/inail> a cov:Organization ;
+<https://w3id.org/italia/data/distribution/TTR_CSV> a dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-trattazione> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-trattazione/tipo_trattazione.csv> ;
+    dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla tipologia di trattazione adottata dall'INAIL"@it,
+        "This is the distribution in CSV of the type of treatment adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "CSV distribution of the type definition of the type of treatment adopted by INAIL controlled vocabulary"@en,
+        "Distribuzione CSV del vocabolario controllato sulla tipologia di trattazione adottata dall'INAIL"@it .
+
+<https://w3id.org/italia/data/distribution/TTR_JSON_LD> a dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-trattazione> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-trattazione/tipo_trattazione.json> ;
+    dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla tipologia di trattazione adottata dall'INAIL"@it,
+        "This is the distribution in JSON_LD of the type definition of the type of treatment adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione JSON_LD del vocabolario controllato sulla tipologia di trattazione adottata dall'INAIL"@it,
+        "JSON_LD distribution of the type definition of the type of treatment adopted by INAIL controlled vocabulary"@en .
+
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
+        dct:Standard ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dct:identifier "SKOS" ;
+    dct:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/data/WorkAccident/distribution/TTR_RDF_TURTLE> a dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-trattazione> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-trattazione/tipo_trattazione.ttl> ;
+    dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla tipologia di trattazione adottata dall'INAIL"@it,
+        "This is the distribution in RDF/turtle of the type of treatment adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione RDF/Turtle del vocabolario controllato sulla tipologia di trattazione adottata dall'INAIL"@it,
+        "RDF/Turtle distribution of the type of treatment adopted by INAIL controlled vocabulary"@en .
+
+<https://w3id.org/italia/data/WorkAccident/Organization/inail> a cov:Organization ;
     rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
     cov:IPAcode "inail" ;
     cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
@@ -27,13 +64,15 @@ inailvoc:tipo_trattazione a adms:Asset,
     rdfs:label "Controlled vocabulary on the type of treatment adopted by INAIL"@en,
         "Vocabolario Controllato sulla tipologia di trattazione adottata dall'INAIL"@it ;
     skos:prefLabel "Vocabolario Controllato sulla tipologia di trattazione adottata dall'INAIL"@it ;
-    rdfs:comment "Tipologie delle trattazioni che a valle degli esiti, portano a definire il grado di invalidità, la definizione dell’indennizzo e della prestazione che viene erogata agli aventi diritto"@it,
-        "Types of treatmen that, after the results, lead to the definition of the degree of disability, the definition of the indemnity and the service that is provided to the entitled people"@en ;
+    rdfs:comment "Tipologie delle trattazioni che, a seguito dell'istruttoria, determinano il periodo di inabilità assoluta al lavoro, il grado di invalidità/menomazione, l’indennizzo e la prestazione che viene erogata agli aventi diritto."@it,
+        "Types of processing that, as a result of the investigation, determine the period of absolute inability to work, degree of inability/disability, compensation and the benefit that is provided to the eligible "@en ;
     owl:versionInfo "0.2" ;
     rdfs:isDefinedBy inailvoc:tipo_trattazione ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://www.inail.it> ;
-    dcat:distribution <https://w3id.org/italia/data/distribution/PS-RDF-Turtle> ;
+    dcat:distribution <https://w3id.org/italia/data/distribution/TTR_CSV>,
+        <https://w3id.org/italia/data/distribution/TTR_JSON_LD>,
+        <https://w3id.org/italia/data/WorkAccident/distribution/TTR_RDF_TURTLE> ;
     dcat:keyword "inail"@it,
         "infortunio"@it,
         "malattia professionale"@it,
@@ -48,21 +87,21 @@ inailvoc:tipo_trattazione a adms:Asset,
         <http://eurovoc.europa.eu/1761> ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
     dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
-    dct:creator <http://dati.inail.it/data/Organization/inail> ;
-    dct:description "Tipologie delle trattazioni che a valle degli esiti, portano a definire il grado di invalidità, la definizione dell’indennizzo e della prestazione che viene erogata agli aventi diritto"@it,
-        "Types of treatmen that, after the results, lead to the definition of the degree of disability, the definition of the indemnity and the service that is provided to the entitled people"@en ;
-    dct:identifier "http://dati.inail.it/opendata/vocabolari/tipo_trattazione" ;
+    dct:creator <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
+    dct:description "Tipologie delle trattazioni che, a seguito dell'istruttoria, determinano il periodo di inabilità assoluta al lavoro, il grado di invalidità/menomazione, l’indennizzo e la prestazione che viene erogata agli aventi diritto."@it,
+        "Types of processing that, as a result of the investigation, determine the period of absolute inability to work, degree of inability/disability, compensation and the benefit that is provided to the eligible"@en ;
+    dct:identifier "https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_trattazione" ;
     dct:issued "2022-09-06"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-    dct:modified "2022-09-30"^^xsd:date ;
-    dct:publisher <http://dati.inail.it/data/Organization/inail> ;
+    dct:modified "2022-11-17"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
     dct:relation inailvoc:classe_menomazione,
         inailvoc:inabilita,
         inailvoc:tipo_indennizzo ;
-    dct:rightsHolder <http://dati.inail.it/data/Organization/inail> ;
+    dct:rightsHolder <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
     dct:title "Controlled vocabulary on the type of treatment adopted by INAIL"@en,
         "Vocabolario Controllato sulla tipologia di trattazione adottata dall'INAIL"@it ;
-    dct:type <http://purl.org/adms/assettype/Taxonomy> ;
+    dct:type <http://purl.org/adms/assettype/CodeList> ;
     ndc:keyConcept "Tipo Trattazione" ;
     skos:hasTopConcept trattcod:AC,
         trattcod:AI,
@@ -88,202 +127,224 @@ inailvoc:tipo_trattazione a adms:Asset,
         trattcod:SA ;
     xkos:numberOfLevels "1" .
 
-trattcod:AC a skos:Concept ;
+trattcod:AC a inail:TipoTrattazione,
+        skos:Concept ;
+    rdfs:label "Assegno continuativo mensile"@it ;
     skos:prefLabel "Assegno continuativo mensile"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "AC" ;
     skos:inScheme inailvoc:tipo_trattazione ;
-    skos:label "Assegno continuativo mensile"@it ;
     skos:notation "AC" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-trattcod:AI a skos:Concept ;
+trattcod:AI a inail:TipoTrattazione,
+        skos:Concept ;
+    rdfs:label "Assegno incollocabilità"@it ;
     skos:prefLabel "Assegno incollocabilità"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "AI" ;
     skos:inScheme inailvoc:tipo_trattazione ;
-    skos:label "Assegno incollocabilità"@it ;
     skos:notation "AI" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-trattcod:AP a skos:Concept ;
+trattcod:AP a inail:TipoTrattazione,
+        skos:Concept ;
+    rdfs:label "Assegno personale continuativo"@it ;
     skos:prefLabel "Assegno personale continuativo"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "AP" ;
     skos:inScheme inailvoc:tipo_trattazione ;
-    skos:label "Assegno personale continuativo"@it ;
     skos:notation "AP" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-trattcod:BA a skos:Concept ;
+trattcod:BA a inail:TipoTrattazione,
+        skos:Concept ;
+    rdfs:label "Base"@it ;
     skos:prefLabel "Base"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "BA" ;
     skos:inScheme inailvoc:tipo_trattazione ;
-    skos:label "Base"@it ;
     skos:notation "BA" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-trattcod:CC a skos:Concept ;
+trattcod:CC a inail:TipoTrattazione,
+        skos:Concept ;
+    rdfs:label "Richiesta concessione cure termali"@it ;
     skos:prefLabel "Richiesta concessione cure termali"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "CC" ;
     skos:inScheme inailvoc:tipo_trattazione ;
-    skos:label "Richiesta concessione cure termali"@it ;
     skos:notation "CC" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-trattcod:CO a skos:Concept ;
+trattcod:CO a inail:TipoTrattazione,
+        skos:Concept ;
+    rdfs:label "Comunicazione infortunio"@it ;
     skos:prefLabel "Comunicazione infortunio"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "CO" ;
     skos:inScheme inailvoc:tipo_trattazione ;
-    skos:label "Comunicazione infortunio"@it ;
     skos:notation "CO" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-trattcod:CP a skos:Concept ;
+trattcod:CP a inail:TipoTrattazione,
+        skos:Concept ;
+    rdfs:label "Richiesta concessione protesi"@it ;
     skos:prefLabel "Richiesta concessione protesi"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "CP" ;
     skos:inScheme inailvoc:tipo_trattazione ;
-    skos:label "Richiesta concessione protesi"@it ;
     skos:notation "CP" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-trattcod:CT a skos:Concept ;
+trattcod:CT a inail:TipoTrattazione,
+        skos:Concept ;
+    rdfs:label "Cure termali"@it ;
     skos:prefLabel "Cure termali"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "CT" ;
     skos:inScheme inailvoc:tipo_trattazione ;
-    skos:label "Cure termali"@it ;
     skos:notation "CT" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-trattcod:EM a skos:Concept ;
+trattcod:EM a inail:TipoTrattazione,
+        skos:Concept ;
+    rdfs:label "Esiti mortali"@it ;
     skos:prefLabel "Esiti mortali"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "EM" ;
     skos:inScheme inailvoc:tipo_trattazione ;
-    skos:label "Esiti mortali"@it ;
     skos:notation "EM" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-trattcod:FO a skos:Concept ;
+trattcod:FO a inail:TipoTrattazione,
+        skos:Concept ;
+    rdfs:label "Fondo speciale"@it ;
     skos:prefLabel "Fondo speciale"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "FO" ;
     skos:inScheme inailvoc:tipo_trattazione ;
-    skos:label "Fondo speciale"@it ;
     skos:notation "FO" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-trattcod:IF a skos:Concept ;
+trattcod:IF a inail:TipoTrattazione,
+        skos:Concept ;
+    rdfs:label "Richiesta riconoscimento invalidita' familiare"@it ;
     skos:prefLabel "Richiesta riconoscimento invalidita' familiare"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "IF" ;
     skos:inScheme inailvoc:tipo_trattazione ;
-    skos:label "Richiesta riconoscimento invalidita' familiare"@it ;
     skos:notation "IF" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-trattcod:IN a skos:Concept ;
+trattcod:IN a inail:TipoTrattazione,
+        skos:Concept ;
+    rdfs:label "I.N.P.S."@it ;
     skos:prefLabel "I.N.P.S."@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "IN" ;
     skos:inScheme inailvoc:tipo_trattazione ;
-    skos:label "I.N.P.S."@it ;
     skos:notation "IN" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-trattcod:IS a skos:Concept ;
+trattcod:IS a inail:TipoTrattazione,
+        skos:Concept ;
+    rdfs:label "Richiesta riconoscimento invalidita' superstiti"@it ;
     skos:prefLabel "Richiesta riconoscimento invalidita' superstiti"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "IS" ;
     skos:inScheme inailvoc:tipo_trattazione ;
-    skos:label "Richiesta riconoscimento invalidita' superstiti"@it ;
     skos:notation "IS" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-trattcod:LC a skos:Concept ;
+trattcod:LC a inail:TipoTrattazione,
+        skos:Concept ;
+    rdfs:label "Liquidazione in capitale"@it ;
     skos:prefLabel "Liquidazione in capitale"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "LC" ;
     skos:inScheme inailvoc:tipo_trattazione ;
-    skos:label "Liquidazione in capitale"@it ;
     skos:notation "LC" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-trattcod:PR a skos:Concept ;
+trattcod:PR a inail:TipoTrattazione,
+        skos:Concept ;
+    rdfs:label "Protesi"@it ;
     skos:prefLabel "Protesi"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "PR" ;
     skos:inScheme inailvoc:tipo_trattazione ;
-    skos:label "Protesi"@it ;
     skos:notation "PR" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-trattcod:RA a skos:Concept ;
+trattcod:RA a inail:TipoTrattazione,
+        skos:Concept ;
+    rdfs:label "Richiesta riconoscimento A.P.C."@it ;
     skos:prefLabel "Richiesta riconoscimento A.P.C."@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "RA" ;
     skos:inScheme inailvoc:tipo_trattazione ;
-    skos:label "Richiesta riconoscimento A.P.C."@it ;
     skos:notation "RA" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-trattcod:RC a skos:Concept ;
+trattcod:RC a inail:TipoTrattazione,
+        skos:Concept ;
+    rdfs:label "Richiesta riconoscimento A.I."@it ;
     skos:prefLabel "Richiesta riconoscimento A.I."@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "RC" ;
     skos:inScheme inailvoc:tipo_trattazione ;
-    skos:label "Richiesta riconoscimento A.I."@it ;
     skos:notation "RC" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-trattcod:RG a skos:Concept ;
+trattcod:RG a inail:TipoTrattazione,
+        skos:Concept ;
+    rdfs:label "Revisione grado"@it ;
     skos:prefLabel "Revisione grado"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "RG" ;
     skos:inScheme inailvoc:tipo_trattazione ;
-    skos:label "Revisione grado"@it ;
     skos:notation "RG" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-trattcod:RI a skos:Concept ;
+trattcod:RI a inail:TipoTrattazione,
+        skos:Concept ;
+    rdfs:label "Ricaduta"@it ;
     skos:prefLabel "Ricaduta"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "RI" ;
     skos:inScheme inailvoc:tipo_trattazione ;
-    skos:label "Ricaduta"@it ;
     skos:notation "RI" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-trattcod:RM a skos:Concept ;
+trattcod:RM a inail:TipoTrattazione,
+        skos:Concept ;
+    rdfs:label "Richiesta riconoscimento morte"@it ;
     skos:prefLabel "Richiesta riconoscimento morte"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "RM" ;
     skos:inScheme inailvoc:tipo_trattazione ;
-    skos:label "Richiesta riconoscimento morte"@it ;
     skos:notation "RM" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-trattcod:RP a skos:Concept ;
+trattcod:RP a inail:TipoTrattazione,
+        skos:Concept ;
+    rdfs:label "Rendita di passaggio"@it ;
     skos:prefLabel "Rendita di passaggio"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "RP" ;
     skos:inScheme inailvoc:tipo_trattazione ;
-    skos:label "Rendita di passaggio"@it ;
     skos:notation "RP" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-trattcod:SA a skos:Concept ;
+trattcod:SA a inail:TipoTrattazione,
+        skos:Concept ;
+    rdfs:label "Domanda silicosi/asbestosi"@it ;
     skos:prefLabel "Domanda silicosi/asbestosi"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "SA" ;
     skos:inScheme inailvoc:tipo_trattazione ;
-    skos:label "Domanda silicosi/asbestosi"@it ;
     skos:notation "SA" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
 ### Serialized using the ttlser deterministic serializer v1.2.0

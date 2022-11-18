@@ -1,11 +1,12 @@
 @prefix adms: <http://www.w3.org/ns/adms#> .
 @prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
-@prefix cov: <https://w3id.org/italia/onto/COV> .
+@prefix cov: <https://w3id.org/italia/onto/COV/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix inailvoc: <http://dati.inail.it/opendata/vocabolari/> .
-@prefix natlescod: <http://dati.inail.it/opendata/vocabolari/natura_lesione/codice/> .
+@prefix inail: <https://w3id.org/italia/onto/WorkAccident/> .
+@prefix inailvoc: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/> .
+@prefix natlescod: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/natura_lesione/codice/> .
 @prefix ndc: <https://w3id.org/italia/onto/NDC/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -15,7 +16,43 @@
 
 ### Annotations
 
-<http://dati.inail.it/data/Organization/inail> a cov:Organization ;
+<https://w3id.org/italia/data/distribution/NL_CSV> a dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/natura-lesione> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/natura-lesione/natura_lesione.csv> ;
+    dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classificazione della natura della lesione adottata dall'INAIL"@it,
+        "This is the distribution in CSV of the classification of nature wound adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "CSV distribution of the classification of nature wound adopted by INAIL controlled vocabulary"@en,
+        "Distribuzione CSV del vocabolario controllato sulla classificazione della natura della lesione adottata dall'INAIL"@it .
+
+<https://w3id.org/italia/data/distribution/NL_JSON_LD> a dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/natura-lesione> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/natura-lesione/natura_lesione.json> ;
+    dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla classificazione della natura della lesione adottata dall'INAIL"@it,
+        "This is the distribution in JSON_LD of the classification of nature wound adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione JSON_LD del vocabolario controllato sulla classificazione della natura della lesione adottata dall'INAIL"@it,
+        "JSON_LD distribution of the classification of nature wound adopted by INAIL controlled vocabulary"@en .
+
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
+        dct:Standard ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dct:identifier "SKOS" ;
+    dct:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/data/WorkAccident/distribution/NL_RDF_TURTLE> a dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/natura-lesione> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/natura-lesione/natura_lesione.ttl> ;
+    dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla classificazione della natura della lesione adottata dall'INAIL"@it,
+        "This is the distribution in RDF/turtle of the classification of nature wound adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione RDF/Turtle del vocabolario controllato sulla classificazione della natura della lesione adottata dall'INAIL"@it,
+        "RDF/Turtle distribution of the classification of nature wound adopted by INAIL controlled vocabulary"@en .
+
+<https://w3id.org/italia/data/WorkAccident/Organization/inail> a cov:Organization ;
     rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
     cov:IPAcode "inail" ;
     cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
@@ -28,12 +65,14 @@ inailvoc:natura_lesione a adms:Asset,
         "Vocabolario controllato sulla classificazione della natura della lesione adottata dall'INAIL"@it ;
     skos:prefLabel "Vocabolario controllato sulla classificazione della natura della lesione adottata dall'INAIL"@it ;
     rdfs:comment "Tipologia della lesione causata da un evento lesivo e classificata in 10 categorie"@it,
-        "Type of injury caused by an injurious event and classified into 10 categories."@en ;
+        "Type of injury caused by a work accident and classified into 10 categories."@en ;
     owl:versionInfo "0.2" ;
     rdfs:isDefinedBy inailvoc:natura_lesione ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://www.inail.it> ;
-    dcat:distribution <https://w3id.org/italia/data/distribution/PS-RDF-Turtle> ;
+    dcat:distribution <https://w3id.org/italia/data/distribution/NL_CSV>,
+        <https://w3id.org/italia/data/distribution/NL_JSON_LD>,
+        <https://w3id.org/italia/data/WorkAccident/distribution/NL_RDF_TURTLE> ;
     dcat:keyword "inail"@it,
         "infortunio"@it,
         "injury"@en,
@@ -47,19 +86,19 @@ inailvoc:natura_lesione a adms:Asset,
         <http://eurovoc.europa.eu/5939> ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
     dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
-    dct:creator <http://dati.inail.it/data/Organization/inail> ;
+    dct:creator <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
     dct:description "Tipologia della lesione causata da un evento lesivo e classificata in 10 categorie."@it,
-        "Type of injury caused by an injurious event and classified into 10 categories."@en ;
-    dct:identifier "http://dati.inail.it/opendata/vocabolari/natura_lesione" ;
+        "Type of injury caused by a work accident and classified into 10 categories."@en ;
+    dct:identifier "https://w3id.org/italia/controlled-vocabulary/WorkAccident/natura_lesione" ;
     dct:issued "2022-09-07"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-    dct:modified "2022-10-03"^^xsd:date ;
-    dct:publisher <http://dati.inail.it/data/Organization/inail> ;
+    dct:modified "2022-11-17"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
     dct:relation inailvoc:sede_lesione ;
-    dct:rightsHolder <http://dati.inail.it/data/Organization/inail> ;
+    dct:rightsHolder <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
     dct:title "Controlled vocabulary on the classification of nature of the wound adopted by INAIL"@en,
         "Vocabolario controllato sulla classificazione della natura della lesione adottata dall'INAIL"@it ;
-    dct:type <http://purl.org/adms/assettype/Taxonomy> ;
+    dct:type <http://purl.org/adms/assettype/CodeList> ;
     ndc:keyConcept "Natura Lesione" ;
     skos:hasTopConcept natlescod:1,
         natlescod:2,
@@ -72,85 +111,94 @@ inailvoc:natura_lesione a adms:Asset,
         natlescod:9 ;
     xkos:numberOfLevels "1" .
 
-natlescod:1 a skos:Concept ;
+natlescod:1 a inail:NaturaLesione,
+        skos:Concept ;
+    rdfs:label "Ferita"@it ;
     skos:prefLabel "Ferita"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "1" ;
     skos:inScheme inailvoc:natura_lesione ;
-    skos:label "Ferita"@it ;
     skos:notation "1" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-natlescod:2 a skos:Concept ;
+natlescod:2 a inail:NaturaLesione,
+        skos:Concept ;
+    rdfs:label "Contusione"@it ;
     skos:prefLabel "Contusione"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "2" ;
     skos:inScheme inailvoc:natura_lesione ;
-    skos:label "Contusione"@it ;
     skos:notation "2" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-natlescod:3 a skos:Concept ;
+natlescod:3 a inail:NaturaLesione,
+        skos:Concept ;
+    rdfs:label "Lussazione, distorsione, distrazione"@it ;
     skos:prefLabel "Lussazione, distorsione, distrazione"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "3" ;
     skos:inScheme inailvoc:natura_lesione ;
-    skos:label "Lussazione, distorsione, distrazione"@it ;
     skos:notation "3" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-natlescod:4 a skos:Concept ;
+natlescod:4 a inail:NaturaLesione,
+        skos:Concept ;
+    rdfs:label "Frattura"@it ;
     skos:prefLabel "Frattura"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "4" ;
     skos:inScheme inailvoc:natura_lesione ;
-    skos:label "Frattura"@it ;
     skos:notation "4" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-natlescod:5 a skos:Concept ;
+natlescod:5 a inail:NaturaLesione,
+        skos:Concept ;
+    rdfs:label "Perdita anatomica"@it ;
     skos:prefLabel "Perdita anatomica"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "5" ;
     skos:inScheme inailvoc:natura_lesione ;
-    skos:label "Perdita anatomica"@it ;
     skos:notation "5" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-natlescod:6 a skos:Concept ;
+natlescod:6 a inail:NaturaLesione,
+        skos:Concept ;
+    rdfs:label "Lesioni da agenti infettivi e parassitari"@it ;
     skos:prefLabel "Lesioni da agenti infettivi e parassitari"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "6" ;
     skos:inScheme inailvoc:natura_lesione ;
-    skos:label "Lesioni da agenti infettivi e parassitari"@it ;
     skos:notation "6" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-natlescod:7 a skos:Concept ;
+natlescod:7 a inail:NaturaLesione,
+        skos:Concept ;
+    rdfs:label "Lesioni da altri agenti"@it ;
     skos:prefLabel "Lesioni da altri agenti"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "7" ;
     skos:inScheme inailvoc:natura_lesione ;
-    skos:label "Lesioni da altri agenti"@it ;
     skos:notation "7" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-natlescod:8 a skos:Concept ;
+natlescod:8 a inail:NaturaLesione,
+        skos:Concept ;
+    rdfs:label "Corpi estranei"@it ;
     skos:prefLabel "Corpi estranei"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "8" ;
     skos:inScheme inailvoc:natura_lesione ;
-    skos:label "Corpi estranei"@it ;
     skos:notation "8" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-natlescod:9 a skos:Concept ;
+natlescod:9 a inail:NaturaLesione,
+        skos:Concept ;
+    rdfs:label "Lesioni da sforzo"@it ;
     skos:prefLabel "Lesioni da sforzo"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "9" ;
     skos:inScheme inailvoc:natura_lesione ;
-    skos:label "Lesioni da sforzo"@it ;
     skos:notation "9" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
 ### Serialized using the ttlser deterministic serializer v1.2.0

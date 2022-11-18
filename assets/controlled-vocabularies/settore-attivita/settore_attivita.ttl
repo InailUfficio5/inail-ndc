@@ -1,21 +1,58 @@
 @prefix adms: <http://www.w3.org/ns/adms#> .
 @prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
-@prefix cov: <https://w3id.org/italia/onto/COV> .
+@prefix cov: <https://w3id.org/italia/onto/COV/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix inailvoc: <http://dati.inail.it/opendata/vocabolari/> .
+@prefix inail: <https://w3id.org/italia/onto/WorkAccident/> .
+@prefix inailvoc: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/> .
 @prefix ndc: <https://w3id.org/italia/onto/NDC/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix settatt: <http://dati.inail.it/opendata/vocabolari/settore_attivita/settore/codice/> .
+@prefix settatt: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/settore_attivita/codice/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 ### Annotations
 
-<http://dati.inail.it/data/Organization/inail> a cov:Organization ;
+<https://w3id.org/italia/data/distribution/SA_CSV> a dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/settore-attivita> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/settore-attivita/settore_attivita.csv> ;
+    dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classificazione dei settori di attività economica adottata dall'INAIL"@it,
+        "This is the distribution in CSV of the classification of business sectors adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "CSV distribution of the classification of business sectors adopted by INAIL controlled vocabulary"@en,
+        "Distribuzione CSV del vocabolario controllato sulla classificazione dei settori di attività economica adottata dall'INAIL"@it .
+
+<https://w3id.org/italia/data/distribution/SA_JSON_LD> a dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/settore-attivita> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/settore-attivita/settore_attivita.json> ;
+    dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla classificazione dei settori di attività economica adottata dall'INAIL"@it,
+        "This is the distribution in JSON_LD of the classification of business sectors adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione JSON_LD del vocabolario controllato sulla classificazione dei settori di attività economica adottata dall'INAIL"@it,
+        "JSON_LD distribution of the classification of business sectors adopted by INAIL controlled vocabulary"@en .
+
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
+        dct:Standard ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dct:identifier "SKOS" ;
+    dct:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/data/WorkAccident/distribution/SA_RDF_TURTLE> a dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/settore-attivita> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/settore-attivita/settore_attivita.ttl> ;
+    dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla classificazione dei settori di attività economica adottata dall'INAIL"@it,
+        "This is the distribution in RDF/turtle of the classification of business sectors adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione RDF/Turtle del vocabolario controllato sulla classificazione dei settori di attività economica adottata dall'INAIL"@it,
+        "RDF/Turtle distribution of the classification of business sectors adopted by INAIL controlled vocabulary"@en .
+
+<https://w3id.org/italia/data/WorkAccident/Organization/inail> a cov:Organization ;
     rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
     cov:IPAcode "inail" ;
     cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
@@ -24,23 +61,30 @@
 inailvoc:settore_attivita a adms:Asset,
         dcatapit:Dataset,
         skos:ConceptScheme ;
-    rdfs:label "Controlled vocabulary on the classification of Economic Activity Sectors adopted by INAIL"@en,
-        "Vocabolario Controllato sulla classificazione dei Settori di Attività Economica adottata dall'INAIL"@it ;
-    skos:prefLabel "Vocabolario Controllato sulla classificazione dei Settori di Attività Economica adottata dall'INAIL"@it ;
-    rdfs:comment "Classificazione in due livelli dei Settori di Attività Economica. Il secondo livello elenca i vari settori. Il primo livello, il macro settore, raggruppa ove possibile i livelli precedenti."@it,
-        "Two-level classification of the Economic Activity Sectors. The second level lists the various sectors. The first level, the macro sector, groups together the previous levels where possible"@en ;
+    rdfs:label "Controlled vocabulary on the classification of business sectors adopted by INAIL"@en,
+        "Vocabolario Controllato sulla classificazione dei settori di attività economica adottata dall'INAIL"@it ;
+    skos:prefLabel "Vocabolario Controllato sulla classificazione dei settori di attività economica adottata dall'INAIL"@it ;
+    rdfs:comment "Classificazione in due livelli dei settori di attività economica. Il secondo livello elenca i vari settori. Il primo livello, il macro settore, raggruppa ove possibile i livelli precedenti."@it,
+        "Two-level classification of business sectors. The second level lists the various sectors. The first level, the macro sector, groups together the previous levels where possible"@en ;
     owl:versionInfo "0.2" ;
     rdfs:isDefinedBy inailvoc:settore_attivita ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://www.inail.it> ;
-    dcat:distribution <https://w3id.org/italia/data/distribution/PS-RDF-Turtle> ;
-    dcat:keyword "economic activity sectors"@en,
+    dcat:distribution <https://w3id.org/italia/data/distribution/SA_CSV>,
+        <https://w3id.org/italia/data/distribution/SA_JSON_LD>,
+        <https://w3id.org/italia/data/WorkAccident/distribution/SA_RDF_TURTLE> ;
+    dcat:keyword "artigianato"@it,
+        "craftsmanship"@en,
+        "economic activity sectors"@en,
         "inail"@it,
+        "industry"@en,
         "job"@en,
         "lavoro"@it,
         "sector"@en,
         "settore"@it,
-        "settore attività economica"@it ;
+        "settore attività economica"@it,
+        "tertiary"@en,
+        "terziario"@it ;
     dcat:theme <http://eurovoc.europa.eu/3619>,
         <http://eurovoc.europa.eu/4006>,
         <http://eurovoc.europa.eu/4021>,
@@ -48,25 +92,24 @@ inailvoc:settore_attivita a adms:Asset,
         <http://publications.europa.eu/resource/authority/subject-matter/INDU> ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
     dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
-    dct:creator <http://dati.inail.it/data/Organization/inail> ;
-    dct:description "Classificazione in due livelli dei Settori di Attività Economica. Il secondo livello elenca i vari settori. Il primo livello, il macro settore, raggruppa ove possibile i livelli precedenti."@it,
-        "Two-level classification of the Economic Activity Sectors. The second level lists the various sectors. The first level, the macro sector, groups together the previous levels where possible"@en ;
-    dct:identifier "http://dati.inail.it/opendata/vocabolari/settore_attivita" ;
+    dct:creator <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
+    dct:description "Classificazione in due livelli dei settori di attività economica. Il secondo livello elenca i vari settori. Il primo livello, il macro settore, raggruppa ove possibile i livelli precedenti."@it,
+        "Two-level classification of business sectors. The second level lists the various sectors. The first level, the macro sector, groups together the previous levels where possible"@en ;
+    dct:identifier "https://w3id.org/italia/controlled-vocabulary/WorkAccident/settore_attivita" ;
     dct:issued "2022-09-29"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-    dct:modified "2022-10-05"^^xsd:date ;
-    dct:publisher <http://dati.inail.it/data/Organization/inail> ;
+    dct:modified "2022-11-17"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
     dct:relation inailvoc:gestione,
-        inailvoc:gestione_tariffaria,
         inailvoc:grande_gruppo_tariffario,
         inailvoc:mansione,
         inailvoc:settore_correlato_malattia,
         inailvoc:tipo_lavoratore,
         inailvoc:tipo_lavoro ;
-    dct:rightsHolder <http://dati.inail.it/data/Organization/inail> ;
-    dct:title "Controlled vocabulary on the classification of Economic Activity Sectors adopted by INAIL"@en,
-        "Vocabolario Controllato sulla classificazione dei Settori di Attività Economica adottata dall'INAIL"@it ;
-    dct:type <http://purl.org/adms/assettype/Taxonomy> ;
+    dct:rightsHolder <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
+    dct:title "Controlled vocabulary on the classification of business sectors adopted by INAIL"@en,
+        "Vocabolario Controllato sulla classificazione dei settori di attività economica adottata dall'INAIL"@it ;
+    dct:type <http://purl.org/adms/assettype/CodeList> ;
     ndc:keyConcept "Settore attività" ;
     skos:hasTopConcept settatt:0,
         settatt:1,
@@ -80,94 +123,104 @@ inailvoc:settore_attivita a adms:Asset,
         settatt:9 ;
     xkos:numberOfLevels "1" .
 
-settatt:0 a skos:Concept ;
+settatt:0 a inail:SettoreAttivita,
+        skos:Concept ;
+    rdfs:label "Poste e telecomunicazioni"@it ;
     skos:prefLabel "Poste e telecomunicazioni"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "0" ;
     skos:inScheme inailvoc:settore_attivita ;
-    skos:label "Poste e telecomunicazioni"@it ;
     skos:notation "0" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-settatt:1 a skos:Concept ;
+settatt:1 a inail:SettoreAttivita,
+        skos:Concept ;
+    rdfs:label "Industria"@it ;
     skos:prefLabel "Industria"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "1" ;
     skos:inScheme inailvoc:settore_attivita ;
-    skos:label "Industria"@it ;
     skos:notation "1" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-settatt:2 a skos:Concept ;
-    skos:prefLabel "Industria-Artigianato"@it ;
+settatt:2 a inail:SettoreAttivita,
+        skos:Concept ;
+    rdfs:label "Artigianato"@it ;
+    skos:prefLabel "Artigianato"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "2" ;
     skos:inScheme inailvoc:settore_attivita ;
-    skos:label "Industria-Artigianato"@it ;
     skos:notation "2" ;
-    xkos:depth "2" .
+    xkos:depth 2 .
 
-settatt:3 a skos:Concept ;
+settatt:3 a inail:SettoreAttivita,
+        skos:Concept ;
+    rdfs:label "Industria-Terziario"@it ;
     skos:prefLabel "Industria-Terziario"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "3" ;
     skos:inScheme inailvoc:settore_attivita ;
-    skos:label "Industria-Terziario"@it ;
     skos:notation "3" ;
-    xkos:depth "2" .
+    xkos:depth 2 .
 
-settatt:4 a skos:Concept ;
-    skos:prefLabel "Industria-Altri"@it ;
+settatt:4 a inail:SettoreAttivita,
+        skos:Concept ;
+    rdfs:label "Altre attività"@it ;
+    skos:prefLabel "Altre attività"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "4" ;
     skos:inScheme inailvoc:settore_attivita ;
-    skos:label "Industria-Altri"@it ;
     skos:notation "4" ;
-    xkos:depth "2" .
+    xkos:depth 2 .
 
-settatt:5 a skos:Concept ;
+settatt:5 a inail:SettoreAttivita,
+        skos:Concept ;
+    rdfs:label "Industria-Speciale"@it ;
     skos:prefLabel "Industria-Speciale"@it ;
     clvapit:hasRankOrder "2" ;
     dct:identifier "5" ;
     skos:inScheme inailvoc:settore_attivita ;
-    skos:label "Industria-Speciale"@it ;
     skos:notation "5" ;
-    xkos:depth "2" .
+    xkos:depth 2 .
 
-settatt:6 a skos:Concept ;
+settatt:6 a inail:SettoreAttivita,
+        skos:Concept ;
+    rdfs:label "Agricoltura"@it ;
     skos:prefLabel "Agricoltura"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "6" ;
     skos:inScheme inailvoc:settore_attivita ;
-    skos:label "Agricoltura"@it ;
     skos:notation "6" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-settatt:7 a skos:Concept ;
+settatt:7 a inail:SettoreAttivita,
+        skos:Concept ;
+    rdfs:label "Conto stato"@it ;
     skos:prefLabel "Conto stato"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "7" ;
     skos:inScheme inailvoc:settore_attivita ;
-    skos:label "Conto stato"@it ;
     skos:notation "7" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-settatt:8 a skos:Concept ;
+settatt:8 a inail:SettoreAttivita,
+        skos:Concept ;
+    rdfs:label "Domestici"@it ;
     skos:prefLabel "Domestici"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "8" ;
     skos:inScheme inailvoc:settore_attivita ;
-    skos:label "Domestici"@it ;
     skos:notation "8" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-settatt:9 a skos:Concept ;
+settatt:9 a inail:SettoreAttivita,
+        skos:Concept ;
+    rdfs:label "Casalinghe"@it ;
     skos:prefLabel "Casalinghe"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "9" ;
     skos:inScheme inailvoc:settore_attivita ;
-    skos:label "Casalinghe"@it ;
     skos:notation "9" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
 ### Serialized using the ttlser deterministic serializer v1.2.0

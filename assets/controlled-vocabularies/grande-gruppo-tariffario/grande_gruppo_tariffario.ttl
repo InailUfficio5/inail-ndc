@@ -1,10 +1,12 @@
 @prefix adms: <http://www.w3.org/ns/adms#> .
 @prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
-@prefix cov: <https://w3id.org/italia/onto/COV> .
+@prefix cov: <https://w3id.org/italia/onto/COV/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix ggtariff: <http://dati.inail.it/opendata/vocabolari/grande_gruppo_tariffario/codice/> .
-@prefix inailvoc: <http://dati.inail.it/opendata/vocabolari/> .
+@prefix ggtariff: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/grande_gruppo_tariffario/codice/> .
+@prefix inail: <https://w3id.org/italia/onto/WorkAccident/> .
+@prefix inailvoc: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/> .
 @prefix ndc: <https://w3id.org/italia/onto/NDC/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -14,97 +16,143 @@
 
 ### Annotations
 
-ggtariff:0 a skos:Concept ;
+ggtariff:0 a inail:GrandeGruppoVoceDiTariffa,
+        skos:Concept ;
+    rdfs:label "GG0 Attività varie"@it ;
     skos:prefLabel "GG0 Attività varie"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "0" ;
     skos:inScheme inailvoc:grande_gruppo_tariffario ;
-    skos:label "GG0 Attività varie"@it ;
     skos:notation "0" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-ggtariff:1 a skos:Concept ;
+ggtariff:1 a inail:GrandeGruppoVoceDiTariffa,
+        skos:Concept ;
+    rdfs:label "GG1 Lav. agricole e alimenti"@it ;
     skos:prefLabel "GG1 Lav. agricole e alimenti"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "1" ;
     skos:inScheme inailvoc:grande_gruppo_tariffario ;
-    skos:label "GG1 Lav. agricole e alimenti"@it ;
     skos:notation "1" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-ggtariff:2 a skos:Concept ;
+ggtariff:2 a inail:GrandeGruppoVoceDiTariffa,
+        skos:Concept ;
+    rdfs:label "GG2 Chimica, carta e cuoi"@it ;
     skos:prefLabel "GG2 Chimica, carta e cuoi"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "2" ;
     skos:inScheme inailvoc:grande_gruppo_tariffario ;
-    skos:label "GG2 Chimica, carta e cuoi"@it ;
     skos:notation "2" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-ggtariff:3 a skos:Concept ;
+ggtariff:3 a inail:GrandeGruppoVoceDiTariffa,
+        skos:Concept ;
+    rdfs:label "GG3 Costruzioni e impianti"@it ;
     skos:prefLabel "GG3 Costruzioni e impianti"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "3" ;
     skos:inScheme inailvoc:grande_gruppo_tariffario ;
-    skos:label "GG3 Costruzioni e impianti"@it ;
     skos:notation "3" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-ggtariff:4 a skos:Concept ;
+ggtariff:4 a inail:GrandeGruppoVoceDiTariffa,
+        skos:Concept ;
+    rdfs:label "GG4 Energia e comunicazioni"@it ;
     skos:prefLabel "GG4 Energia e comunicazioni"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "4" ;
     skos:inScheme inailvoc:grande_gruppo_tariffario ;
-    skos:label "GG4 Energia e comunicazioni"@it ;
     skos:notation "4" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-ggtariff:5 a skos:Concept ;
+ggtariff:5 a inail:GrandeGruppoVoceDiTariffa,
+        skos:Concept ;
+    rdfs:label "GG5 Legno e affini"@it ;
     skos:prefLabel "GG5 Legno e affini"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "5" ;
     skos:inScheme inailvoc:grande_gruppo_tariffario ;
-    skos:label "GG5 Legno e affini"@it ;
     skos:notation "5" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-ggtariff:6 a skos:Concept ;
+ggtariff:6 a inail:GrandeGruppoVoceDiTariffa,
+        skos:Concept ;
+    rdfs:label "GG6 Metalli e macchinari"@it ;
     skos:prefLabel "GG6 Metalli e macchinari"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "6" ;
     skos:inScheme inailvoc:grande_gruppo_tariffario ;
-    skos:label "GG6 Metalli e macchinari"@it ;
     skos:notation "6" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-ggtariff:7 a skos:Concept ;
+ggtariff:7 a inail:GrandeGruppoVoceDiTariffa,
+        skos:Concept ;
+    rdfs:label "GG7 Mineraria, rocce e vetro"@it ;
     skos:prefLabel "GG7 Mineraria, rocce e vetro"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "7" ;
     skos:inScheme inailvoc:grande_gruppo_tariffario ;
-    skos:label "GG7 Mineraria, rocce e vetro"@it ;
     skos:notation "7" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-ggtariff:8 a skos:Concept ;
+ggtariff:8 a inail:GrandeGruppoVoceDiTariffa,
+        skos:Concept ;
+    rdfs:label "GG8 Tessile e confezioni"@it ;
     skos:prefLabel "GG8 Tessile e confezioni"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "8" ;
     skos:inScheme inailvoc:grande_gruppo_tariffario ;
-    skos:label "GG8 Tessile e confezioni"@it ;
     skos:notation "8" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-ggtariff:9 a skos:Concept ;
+ggtariff:9 a inail:GrandeGruppoVoceDiTariffa,
+        skos:Concept ;
+    rdfs:label "GG9 Trasporti e magazzini"@it ;
     skos:prefLabel "GG9 Trasporti e magazzini"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "9" ;
     skos:inScheme inailvoc:grande_gruppo_tariffario ;
-    skos:label "GG9 Trasporti e magazzini"@it ;
     skos:notation "9" ;
-    xkos:depth "1" .
+    xkos:depth 1 .
 
-<http://dati.inail.it/data/Organization/inail> a cov:Organization ;
+<https://w3id.org/italia/data/distribution/GGT_CSV> a dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/grande-gruppo-tariffario> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/grande-gruppo-tariffario/grande_gruppo_tariffario.csv> ;
+    dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classificazione del grande gruppo tariffario adottata dall'INAIL"@it,
+        "This is the distribution in CSV of the classification of the large tariff group adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "CSV distribution of the classification of the large tariff group adopted by INAIL controlled vocabulary"@en,
+        "Distribuzione CSV del vocabolario controllato sulla classificazione del grande gruppo tariffario adottata dall'INAIL"@it .
+
+<https://w3id.org/italia/data/distribution/GGT_JSON_LD> a dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/grande-gruppo-tariffario> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/grande-gruppo-tariffario/grande_gruppo_tariffario.json> ;
+    dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla classificazione del grande gruppo tariffario adottata dall'INAIL"@it,
+        "This is the distribution in JSON_LD of the classification of the large tariff group adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione JSON_LD del vocabolario controllato sulla classificazione del grande gruppo tariffario adottata dall'INAIL"@it,
+        "JSON_LD distribution of the classification of the large tariff group adopted by INAIL controlled vocabulary"@en .
+
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
+        dct:Standard ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dct:identifier "SKOS" ;
+    dct:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/data/WorkAccident/distribution/GGT_RDF_TURTLE> a dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/grande-gruppo-tariffario> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/grande-gruppo-tariffario/grande_gruppo_tariffario.ttl> ;
+    dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla classificazione del grande gruppo tariffario adottata dall'INAIL"@it,
+        "This is the distribution in RDF/turtle of the classification of the large tariff group adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione RDF/Turtle del vocabolario controllato sulla classificazione del grande gruppo tariffario adottata dall'INAIL"@it,
+        "RDF/Turtle distribution of the classification of the large tariff group adopted by INAIL controlled vocabulary"@en .
+
+<https://w3id.org/italia/data/WorkAccident/Organization/inail> a cov:Organization ;
     rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
     cov:IPAcode "inail" ;
     cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
@@ -113,16 +161,18 @@ ggtariff:9 a skos:Concept ;
 inailvoc:grande_gruppo_tariffario a adms:Asset,
         dcat:Dataset,
         skos:ConceptScheme ;
-    rdfs:label "This is the controlled vocabulary of the large fare group adopted by INAIL classification"@en,
+    rdfs:label "This is the controlled vocabulary of the large tariff group adopted by INAIL classification"@en,
         "Vocabolario Controllato sulla classificazione del grande gruppo tariffario adottata dall'INAIL"@it ;
     skos:prefLabel "Vocabolario Controllato sulla classificazione del grande gruppo tariffario adottata dall'INAIL"@it ;
-    rdfs:comment "Classification of INAIL framework of work activities for the estimate of the risk of the work performed - Great group"@en,
-        "Classificazione degli inquadramenti INAIL delle attività lavorative per il calcolo del  rischio delle lavorazioni eseguite - Grande gruppo."@it ;
+    rdfs:comment "Grande gruppo di attività riferite ad una stessa gestione tariffaria; ogni grande gruppo raccoglie un insieme di lavorazioni che appartengono a comparti produttivi omogenei"@it,
+        "Large group of activities referring to the same tariff management; each large group brings together a set of processing that belong to homogeneous production sectors"@en ;
     owl:versionInfo "0.2" ;
     rdfs:isDefinedBy inailvoc:grande_gruppo_tariffario ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://www.inail.it> ;
-    dcat:distribution <https://w3id.org/italia/data/distribution/PS-RDF-Turtle> ;
+    dcat:distribution <https://w3id.org/italia/data/distribution/GGT_CSV>,
+        <https://w3id.org/italia/data/distribution/GGT_JSON_LD>,
+        <https://w3id.org/italia/data/WorkAccident/distribution/GGT_RDF_TURTLE> ;
     dcat:keyword "alimento"@it,
         "building"@en,
         "chemistry"@en,
@@ -143,25 +193,24 @@ inailvoc:grande_gruppo_tariffario a adms:Asset,
         <http://publications.europa.eu/resource/authority/data-theme/TRAN> ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
     dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
-    dct:creator <http://dati.inail.it/data/Organization/inail> ;
-    dct:description "Classification of INAIL framework of work activities for the estimate of the risk of the work performed - Great group"@en,
-        "Classificazione degli inquadramenti INAIL delle attività lavorative per il calcolo del rischio delle lavorazioni eseguite - Grande gruppo"@it ;
-    dct:identifier "http://dati.inail.it/opendata/vocabolari/grande_gruppo_tariffario" ;
+    dct:creator <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
+    dct:description "Grande gruppo di attività riferite ad una stessa gestione tariffaria; ogni grande gruppo raccoglie un insieme di lavorazioni che appartengono a comparti produttivi omogenei"@it,
+        "Large group of activities referring to the same tariff management; each large group brings together a set of processing that belong to homogeneous production sectors"@en ;
+    dct:identifier "https://w3id.org/italia/controlled-vocabulary/WorkAccident/grande_gruppo_tariffario" ;
     dct:issued "2022-07-22"^^xsd:date ;
-    dct:language <http://publications.europa.eu/resource/authority/language/IT> ;
-    dct:modified "2022-08-29"^^xsd:date ;
-    dct:publisher <http://dati.inail.it/data/Organization/inail> ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2022-11-17"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
     dct:relation inailvoc:gestione,
-        inailvoc:gestione_tariffaria,
         inailvoc:mansione,
         inailvoc:settore_attivita,
         inailvoc:settore_correlato_malattia,
         inailvoc:tipo_lavoratore,
         inailvoc:tipo_lavoro ;
-    dct:rightsHolder <http://dati.inail.it/data/Organization/inail> ;
-    dct:title "Classification of the large fare group adopted by INAIL Controlled Vocabulary"@en,
+    dct:rightsHolder <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
+    dct:title "Classification of the large tariff group adopted by INAIL controlled vocabulary"@en,
         "Vocabolario Controllato sulla classificazione del grande gruppo tariffario adottata dall'INAIL"@it ;
-    dct:type <http://purl.org/adms/assettype/Taxonomy> ;
+    dct:type <http://purl.org/adms/assettype/CodeList> ;
     ndc:keyConcept "Grande Gruppo Tariffario" ;
     skos:hasTopConcept ggtariff:0,
         ggtariff:1,
