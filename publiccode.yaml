@@ -2,21 +2,21 @@ publiccodeYmlVersion: "0.2"
 
 name: inail-ndc
 url: "https://github.com/InailUfficio5/inail-ndc"
-softwareVersion: "1.0"    # Optional
-releaseDate: "2022-11-01"
+softwareVersion: "1.0"
+releaseDate: "2022-11-30"
 platforms:
   - web
 
 categories:
   - data-analytics
 
-developmentStatus: development
+developmentStatus: stable
 
 softwareType: "configurationFiles"
 
 description:
   it:
-    localisedName: ndc-feed   # Optional
+    localisedName: ndc
     genericName: Repository INAIL per NDC
     shortDescription: >
           Repository INAIL per l'alimentazione
@@ -37,9 +37,10 @@ description:
 legal:
   license: CC BY 4.0
 maintenance:
+  type: internal
   contacts:
-    email: info@almawave.it
-    name: Almawave SPA
+    email: a.depaoli@inail.it
+    name: Anna Maria De Paoli
 it:
   riuso:
     codiceIPA: inail
