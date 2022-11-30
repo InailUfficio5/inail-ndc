@@ -17,7 +17,13 @@
 
 ### Annotations
 
-<https://w3id.org/italia/data/distribution/TLA_CSV> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
+        dct:Standard ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dct:identifier "SKOS" ;
+    dct:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/data/WorkAccident/distribution/TLA_CSV> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-luogo-accadimento> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-luogo-accadimento/tipo_luogo_accadimento.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla tipologia dei luoghi di accadimento adottata dall'INAIL"@it,
@@ -27,7 +33,7 @@
     dct:title "CSV distribution of type of happening place adopted by INAIL controlled vocabulary"@en,
         "Distribuzione CSV del vocabolario controllato sulla tipologia dei luoghi di accadimento adottata dall'INAIL"@it .
 
-<https://w3id.org/italia/data/distribution/TLA_JSON_LD> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/WorkAccident/distribution/TLA_JSON_LD> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-luogo-accadimento> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-luogo-accadimento/tipo_luogo_accadimento.json> ;
     dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla tipologia dei luoghi di accadimento adottata dall'INAIL"@it,
@@ -36,12 +42,6 @@
     dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
     dct:title "Distribuzione JSON_LD del vocabolario controllato sulla tipologia dei luoghi di accadimento adottata dall'INAIL"@it,
         "JSON_LD distribution of type of happening place adopted by INAIL controlled vocabulary"@en .
-
-<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
-        dct:Standard ;
-    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
-    dct:identifier "SKOS" ;
-    dct:title "Simple Knowledge Organization System - SKOS" .
 
 <https://w3id.org/italia/data/WorkAccident/distribution/TLA_RDF_TURTLE> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-luogo-accadimento> ;
@@ -71,8 +71,8 @@ inailvoc:luogo_accadimento a adms:Asset,
     rdfs:isDefinedBy inailvoc:luogo_accadimento ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://www.inail.it> ;
-    dcat:distribution <https://w3id.org/italia/data/distribution/TLA_CSV>,
-        <https://w3id.org/italia/data/distribution/TLA_JSON_LD>,
+    dcat:distribution <https://w3id.org/italia/data/WorkAccident/distribution/TLA_CSV>,
+        <https://w3id.org/italia/data/WorkAccident/distribution/TLA_JSON_LD>,
         <https://w3id.org/italia/data/WorkAccident/distribution/TLA_RDF_TURTLE> ;
     dcat:keyword "inail"@it,
         "infortunio"@it,

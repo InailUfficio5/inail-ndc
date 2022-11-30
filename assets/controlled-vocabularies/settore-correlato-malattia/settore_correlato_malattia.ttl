@@ -17,7 +17,13 @@
 
 ### Annotations
 
-<https://w3id.org/italia/data/distribution/SM_CSV> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
+        dct:Standard ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dct:identifier "SKOS" ;
+    dct:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/data/WorkAccident/distribution/SM_CSV> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/settore-correlato-malattia> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/settore-correlato-malattia/settore_correlato_malattia.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it,
@@ -27,7 +33,7 @@
     dct:title "CSV distribution of disease related sectors and subsectors adopted by INAILcontrolled vocabulary"@en,
         "Distribuzione CSV del vocabolario controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it .
 
-<https://w3id.org/italia/data/distribution/SM_JSON_LD> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/WorkAccident/distribution/SM_JSON_LD> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/settore-correlato-malattia> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/settore-correlato-malattia/settore_correlato_malattia.json> ;
     dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it,
@@ -36,12 +42,6 @@
     dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
     dct:title "Distribuzione JSON_LD del vocabolario controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it,
         "JSON_LD distribution of disease related sectors and subsectors adopted by INAIL controlled vocabulary"@en .
-
-<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
-        dct:Standard ;
-    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
-    dct:identifier "SKOS" ;
-    dct:title "Simple Knowledge Organization System - SKOS" .
 
 <https://w3id.org/italia/data/WorkAccident/distribution/SM_RDF_TURTLE> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/settore-correlato-malattia> ;
@@ -71,8 +71,8 @@ inailvoc:settore_correlato_malattia a adms:Asset,
     rdfs:isDefinedBy inailvoc:settore_correlato_malattia ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://www.inail.it> ;
-    dcat:distribution <https://w3id.org/italia/data/distribution/SM_CSV>,
-        <https://w3id.org/italia/data/distribution/SM_JSON_LD>,
+    dcat:distribution <https://w3id.org/italia/data/WorkAccident/distribution/SM_CSV>,
+        <https://w3id.org/italia/data/WorkAccident/distribution/SM_JSON_LD>,
         <https://w3id.org/italia/data/WorkAccident/distribution/SM_RDF_TURTLE> ;
     dcat:keyword "agricoltura"@it,
         "agriculture"@en,
@@ -88,8 +88,7 @@ inailvoc:settore_correlato_malattia a adms:Asset,
         "public administration"@en,
         "service"@en,
         "servizi"@it ;
-    dcat:theme <http://data.europa.eu/8mn/euroscivoc/91dbf78e-ec96-4fc8-9ba3-706d26b85a15>,
-        <http://eurovoc.europa.eu/77>,
+    dcat:theme <http://eurovoc.europa.eu/77>,
         <http://eurovoc.europa.eu/825>,
         <http://eurovoc.europa.eu/1761>,
         <http://eurovoc.europa.eu/2784>,

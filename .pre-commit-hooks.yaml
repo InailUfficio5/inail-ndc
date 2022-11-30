@@ -1,0 +1,13 @@
+#
+# Define running hooks.
+#
+- id: skostocsv
+  name: Generate CSV from vocabularies
+  entry: python scripts/create_csv_json.py
+  files: >-
+    ^assets\/controlled-vocabularies\/.*\.ttl
+  language: python
+  additional_dependencies:
+  - pandas
+  types:
+  - file

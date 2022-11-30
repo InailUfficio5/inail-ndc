@@ -697,17 +697,23 @@ devgrup:8 a inail:TipoDeviazione,
     skos:notation "8" ;
     xkos:depth 1 .
 
-<https://w3id.org/italia/data/distribution/TDV_CSV> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
+        dct:Standard ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dct:identifier "SKOS" ;
+    dct:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/data/WorkAccident/distribution/TDV_CSV> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-deviazione> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-deviazione/tipo_deviazione.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sul tipo di deviazione adottato dall'INAIL"@it,
-        "This is the distribution in CSV of the type definition of the investigation decision adopted by INAIL controlled vocabulary"@en ;
+        "This is the distribution in CSV of the type of deviation adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
     dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    dct:title "CSV distribution of the type definition of the investigation decision adopted by INAIL controlled vocabulary"@en,
+    dct:title "CSV distribution of the type of deviation adopted by INAIL controlled vocabulary"@en,
         "Distribuzione CSV del vocabolario controllato sul tipo di deviazione adottato dall'INAIL"@it .
 
-<https://w3id.org/italia/data/distribution/TDV_JSON_LD> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/WorkAccident/distribution/TDV_JSON_LD> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-deviazione> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-deviazione/tipo_deviazione.json> ;
     dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sul tipo di deviazione adottato dall'INAIL"@it,
@@ -716,12 +722,6 @@ devgrup:8 a inail:TipoDeviazione,
     dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
     dct:title "Distribuzione JSON_LD del vocabolario controllato sul tipo di deviazione adottato dall'INAIL"@it,
         "JSON_LD distribution of the type of deviation adopted by INAIL controlled vocabulary"@en .
-
-<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
-        dct:Standard ;
-    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
-    dct:identifier "SKOS" ;
-    dct:title "Simple Knowledge Organization System - SKOS" .
 
 <https://w3id.org/italia/data/WorkAccident/distribution/TDV_RDF_TURTLE> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-deviazione> ;
@@ -746,13 +746,13 @@ inailvoc:deviazione a adms:Asset,
         "Vocabolario Controllato sul tipo di deviazione adottato dall'INAIL"@it ;
     skos:prefLabel "Vocabolario Controllato sul tipo di deviazione adottato dall'INAIL"@it ;
     rdfs:comment "Last event, deviating from the norm, that led to the occupational injury. It represents the description of an unexpected event and consists of what causes the occupational injury. If there is a concatenated sequence of events, the last in the chain, i.e., the deviation temporally closest to the injurious contact, is recorded "@en,
-        "Ultimo evento, deviante rispetto alla norma, che ha portato all’infortunio. Rappresenta la descrizione di un evento anomalo e consiste in ciò che provoca l'infortunio. Se esiste una sequenza concatenata di eventi, viene registrato l'ultimo della catena, cioè la deviazione temporalmente più prossima al contatto lesivo."@it ;
+        "Ultimo evento, deviante rispetto alla norma, che ha portato all'infortunio. Rappresenta la descrizione di un evento anomalo e consiste in ciò che provoca l'infortunio. Se esiste una sequenza concatenata di eventi, viene registrato l'ultimo della catena, cioè la deviazione temporalmente più prossima al contatto lesivo."@it ;
     owl:versionInfo "0.2" ;
     rdfs:isDefinedBy inailvoc:deviazione ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://www.inail.it> ;
-    dcat:distribution <https://w3id.org/italia/data/distribution/TDV_CSV>,
-        <https://w3id.org/italia/data/distribution/TDV_JSON_LD>,
+    dcat:distribution <https://w3id.org/italia/data/WorkAccident/distribution/TDV_CSV>,
+        <https://w3id.org/italia/data/WorkAccident/distribution/TDV_JSON_LD>,
         <https://w3id.org/italia/data/WorkAccident/distribution/TDV_RDF_TURTLE> ;
     dcat:keyword "deviation"@en,
         "deviazione"@it,
@@ -766,7 +766,7 @@ inailvoc:deviazione a adms:Asset,
     dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
     dct:creator <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
     dct:description "Last event, deviating from the norm, that led to the occupational injury. It represents the description of an unexpected event and consists of what causes the occupational injury. If there is a concatenated sequence of events, the last in the chain, i.e., the deviation temporally closest to the injurious contact, is recorded "@en,
-        "Ultimo evento, deviante rispetto alla norma, che ha portato all’infortunio. Rappresenta la descrizione di un evento anomalo e consiste in ciò che provoca l'infortunio. Se esiste una sequenza concatenata di eventi, viene registrato l'ultimo della catena, cioè la deviazione temporalmente più prossima al contatto lesivo."@it ;
+        "Ultimo evento, deviante rispetto alla norma, che ha portato all'infortunio. Rappresenta la descrizione di un evento anomalo e consiste in ciò che provoca l'infortunio. Se esiste una sequenza concatenata di eventi, viene registrato l'ultimo della catena, cioè la deviazione temporalmente più prossima al contatto lesivo."@it ;
     dct:identifier "https://w3id.org/italia/controlled-vocabulary/WorkAccident/deviazione" ;
     dct:issued "2022-09-06"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;

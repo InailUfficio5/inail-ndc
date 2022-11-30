@@ -40,7 +40,12 @@ _meta:
 "@omitDefault": true
 # Matching on type works.
 "@type":
-- "skos:Concept"
+  - "skos:Concept"
+# "@type":
+#   "@value": skos:Concept
+#   "@omitDefault": true
+#   "@explicit": true
+#   "@embed": "@never"
 "@explicit": true
 # Matching on properties
 # doesn't work https://www.w3.org/TR/json-ld11-framing/#matching-on-properties
@@ -51,7 +56,9 @@ parent:
   "@embed": "@never"
 # parent: { id: {}, "@omitDefault": true, "@explicit": true, "@embed": "@once" }
 level: {}
-label_it: {}
+# label_it: {}
+# label_en: {}
+
 
 # Matching on language tags and rendering
 #  using projected fields.
@@ -72,14 +79,9 @@ skos:prefLabel:
   id:
     "@id": dct:identifier
   url: "@id"
-  # parent:
-  #    "@id": skos:broader
   parent:
     "@id": skos:broader
     "@type": "@id"
-    #"@type": "@vocab"
-    # "@type": skos:Concept
-    # "@value": dct:identifier
   level:
     "@id": clvapit:hasRankOrder
   #deprecated: {}

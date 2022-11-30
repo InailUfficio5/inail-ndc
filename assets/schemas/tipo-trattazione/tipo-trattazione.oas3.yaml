@@ -12,7 +12,7 @@ info:
     email: b.marino@almawave.it
    # url:
   description: |-
-   Classificazione delle trattazioni che, a seguito dell'istruttoria, determinano  il periodo di inabilità assoluta al lavoro, il grado di invalidità/menomazione, l’indennizzo e la prestazione che viene erogata agli aventi diritto.
+   Classificazione delle trattazioni che, a seguito dell'istruttoria, determinano  il periodo di inabilità assoluta al lavoro, il grado di invalidità/menomazione, l'indennizzo e la prestazione che viene erogata agli aventi diritto.
 
     La metadatazione semantica degli schemi si basa sul documento
     [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html)

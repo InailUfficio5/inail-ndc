@@ -35066,7 +35066,13 @@ group:ND.ND a inail:AgenteCausale,
     skos:notation "ND.ND" ;
     xkos:depth 2 .
 
-<https://w3id.org/italia/data/distribution/AC_CSV> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
+        dct:Standard ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dct:identifier "SKOS" ;
+    dct:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/data/WorkAccident/distribution/AC_CSV> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/agente-causale> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/agente-causale/agente_causale.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classificazione degli agenti causali adottata dall'INAIL"@it,
@@ -35076,7 +35082,7 @@ group:ND.ND a inail:AgenteCausale,
     dct:title "CSV distribution of the classification of causal agents adopted by INAIL controlled vocabulary"@en,
         "Distribuzione CSV del vocabolario controllato sulla classificazione degli agenti causali adottata dall'INAIL"@it .
 
-<https://w3id.org/italia/data/distribution/AC_JSON_LD> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/WorkAccident/distribution/AC_JSON_LD> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/agente-causale> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/agente-causale/agente_causale.json> ;
     dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla classificazione degli agenti causali adottata dall'INAIL"@it,
@@ -35085,12 +35091,6 @@ group:ND.ND a inail:AgenteCausale,
     dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
     dct:title "Distribuzione JSON_LD del vocabolario controllato sulla classificazione degli agenti causali adottata dall'INAIL"@it,
         "JSON_LD distribution of the classification of causal agents adopted by INAIL controlled vocabulary"@en .
-
-<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
-        dct:Standard ;
-    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
-    dct:identifier "SKOS" ;
-    dct:title "Simple Knowledge Organization System - SKOS" .
 
 <https://w3id.org/italia/data/WorkAccident/distribution/AC_RDF_TURTLE> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/agente-causale> ;
@@ -35116,12 +35116,12 @@ inailvoc:agente_causale a adms:Asset,
     skos:prefLabel "Vocabolario Controllato sulla classificazione degli agenti causali adottata dall'INAIL"@it ;
     rdfs:comment "Decodifica dell'agente, lavorazione, o esposizione che puo' essere causa o concausa di malattia"@it,
         "Decoding of the agent, processing, or aspect that can cause or contribute to disease"@en ;
-    owl:versionInfo "0.1" ;
+    owl:versionInfo "0.2" ;
     rdfs:isDefinedBy inailvoc:agente_causale ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://www.inail.it> ;
-    dcat:distribution <https://w3id.org/italia/data/distribution/AC_CSV>,
-        <https://w3id.org/italia/data/distribution/AC_JSON_LD>,
+    dcat:distribution <https://w3id.org/italia/data/WorkAccident/distribution/AC_CSV>,
+        <https://w3id.org/italia/data/WorkAccident/distribution/AC_JSON_LD>,
         <https://w3id.org/italia/data/WorkAccident/distribution/AC_RDF_TURTLE> ;
     dcat:keyword "agente causale"@it,
         "chemical product"@en,
@@ -35144,7 +35144,7 @@ inailvoc:agente_causale a adms:Asset,
     dct:identifier "https://w3id.org/italia/controlled-vocabulary/WorkAccident/agente_causale" ;
     dct:issued "2022-09-06"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-    dct:modified "2022-11-17"^^xsd:date ;
+    dct:modified "2022-11-24"^^xsd:date ;
     dct:publisher <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
     dct:relation inailvoc:agente_materiale,
         inailvoc:deviazione,

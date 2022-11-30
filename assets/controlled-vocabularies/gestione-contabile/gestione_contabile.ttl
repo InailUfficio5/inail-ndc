@@ -46,7 +46,13 @@ gestione:S a inail:GestioneContabile,
     skos:notation "S" ;
     xkos:depth 1 .
 
-<https://w3id.org/italia/data/distribution/GC_CSV> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
+        dct:Standard ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dct:identifier "SKOS" ;
+    dct:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/data/WorkAccident/distribution/GC_CSV> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/gestione-contabile> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/gestione-contabile/gestione_contabile.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla gestione contabile adottata dall'INAIL"@it,
@@ -56,7 +62,7 @@ gestione:S a inail:GestioneContabile,
     dct:title "CSV distribution of the accounting management adopted by INAIL controlled vocabulary"@en,
         "Distribuzione CSV del vocabolario controllato sulla gestione contabile adottata dall'INAIL"@it .
 
-<https://w3id.org/italia/data/distribution/GC_JSON_LD> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/WorkAccident/distribution/GC_JSON_LD> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/gestione-contabile> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/gestione-contabile/gestione_contabile.json> ;
     dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla gestione contabile adottata dall'INAIL"@it,
@@ -65,12 +71,6 @@ gestione:S a inail:GestioneContabile,
     dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
     dct:title "Distribuzione JSON_LD del vocabolario controllato sulla gestione contabile adottata dall'INAIL"@it,
         "JSON_LD distribution of the accounting management adopted by INAIL controlled vocabulary"@en .
-
-<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
-        dct:Standard ;
-    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
-    dct:identifier "SKOS" ;
-    dct:title "Simple Knowledge Organization System - SKOS" .
 
 <https://w3id.org/italia/data/WorkAccident/distribution/GC_RDF_TURTLE> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/gestione-contabile> ;
@@ -95,13 +95,13 @@ inailvoc:gestione a adms:Asset,
         "Vocabolario Controllato sulla classificazione della gestione contabile adottata dall'INAIL"@it ;
     skos:prefLabel "Vocabolario Controllato sulla classificazione della gestione adottata dall'INAIL"@it ;
     rdfs:comment "Classification system of the work accident for the purposes of accounting attribution to the expense items"@en,
-        "Sistema di classificazione dell’evento lesivo ai fini della imputazione contabile ai capitoli di spesa"@it ;
+        "Sistema di classificazione dell'evento lesivo ai fini della imputazione contabile ai capitoli di spesa"@it ;
     owl:versionInfo "0.2" ;
     rdfs:isDefinedBy inailvoc:gestione ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://www.inail.it> ;
-    dcat:distribution <https://w3id.org/italia/data/distribution/GC_CSV>,
-        <https://w3id.org/italia/data/distribution/GC_JSON_LD>,
+    dcat:distribution <https://w3id.org/italia/data/WorkAccident/distribution/GC_CSV>,
+        <https://w3id.org/italia/data/WorkAccident/distribution/GC_JSON_LD>,
         <https://w3id.org/italia/data/WorkAccident/distribution/GC_RDF_TURTLE> ;
     dcat:keyword "agricoltura"@it,
         "agriculture"@en,
@@ -121,7 +121,7 @@ inailvoc:gestione a adms:Asset,
     dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
     dct:creator <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
     dct:description "Classification system of the work accident for the purposes of accounting attribution to the expense items"@en,
-        "Sistema di classificazione dell’evento lesivo ai fini della imputazione contabile ai capitoli di spesa"@it ;
+        "Sistema di classificazione dell'evento lesivo ai fini della imputazione contabile ai capitoli di spesa"@it ;
     dct:identifier "https://w3id.org/italia/controlled-vocabulary/WorkAccident/gestione" ;
     dct:issued "2022-07-22"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;

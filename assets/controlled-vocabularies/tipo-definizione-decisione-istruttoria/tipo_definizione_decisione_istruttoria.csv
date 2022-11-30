@@ -1,0 +1,17 @@
+url,id,label_it,level
+https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_def_dec_istr/codice/-2,-2,Aperta,1
+https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_def_dec_istr/codice/AI,AI,Accolta inps,1
+https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_def_dec_istr/codice/AS,AS,Caso altra sede,1
+https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_def_dec_istr/codice/CO,CO,Comunicazione infortunio,1
+https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_def_dec_istr/codice/FE,FE,Fondo erogato,1
+https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_def_dec_istr/codice/FR,FR,Franchigia,1
+https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_def_dec_istr/codice/MC,MC,Morte con superstiti,1
+https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_def_dec_istr/codice/MM,MM,Intervento eliminato,1
+https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_def_dec_istr/codice/MS,MS,Morte senza superstiti,1
+https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_def_dec_istr/codice/NE,NE,Negativa,1
+https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_def_dec_istr/codice/NN,NN,Sistemazione automatica,1
+https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_def_dec_istr/codice/NO,NO,Negativa,1
+https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_def_dec_istr/codice/PE,PE,Permanente,1
+https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_def_dec_istr/codice/PO,PO,Positiva,1
+https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_def_dec_istr/codice/RS,RS,Regolare senza indenizzo,1
+https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_def_dec_istr/codice/TE,TE,Temporanea,1

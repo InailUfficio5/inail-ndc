@@ -1,0 +1,46 @@
+[
+  {
+    "url": "https://w3id.org/italia/controlled-vocabulary/WorkAccident/definizione_amministrativa/codice/F",
+    "@type": [
+      "https://w3id.org/italia/onto/WorkAccident/definizioneAmministrativaInfortunio",
+      "https://w3id.org/italia/onto/WorkAccident/definizioneAmministrativaMalattiaProfessionale",
+      "skos:Concept"
+    ],
+    "id": "F",
+    "label_it": "Franchigia",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/controlled-vocabulary/WorkAccident/definizione_amministrativa/codice/I",
+    "@type": [
+      "https://w3id.org/italia/onto/WorkAccident/definizioneAmministrativaInfortunio",
+      "https://w3id.org/italia/onto/WorkAccident/definizioneAmministrativaMalattiaProfessionale",
+      "skos:Concept"
+    ],
+    "id": "I",
+    "label_it": "In istruttoria",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/controlled-vocabulary/WorkAccident/definizione_amministrativa/codice/N",
+    "@type": [
+      "https://w3id.org/italia/onto/WorkAccident/definizioneAmministrativaInfortunio",
+      "https://w3id.org/italia/onto/WorkAccident/definizioneAmministrativaMalattiaProfessionale",
+      "skos:Concept"
+    ],
+    "id": "N",
+    "label_it": "Negativo",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/controlled-vocabulary/WorkAccident/definizione_amministrativa/codice/P",
+    "@type": [
+      "https://w3id.org/italia/onto/WorkAccident/definizioneAmministrativaInfortunio",
+      "https://w3id.org/italia/onto/WorkAccident/definizioneAmministrativaMalattiaProfessionale",
+      "skos:Concept"
+    ],
+    "id": "P",
+    "label_it": "Positivo",
+    "level": "1"
+  }
+]

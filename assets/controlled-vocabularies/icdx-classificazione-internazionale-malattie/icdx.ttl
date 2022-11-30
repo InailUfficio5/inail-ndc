@@ -18,7 +18,13 @@
 
 ### Annotations
 
-<https://w3id.org/italia/data/distribution/ICDX_CSV> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
+        dct:Standard ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dct:identifier "SKOS" ;
+    dct:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/data/WorkAccident/distribution/ICDX_CSV> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/icdx-classificazione-internazionale-malattie> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/icdx-classificazione-internazionale-malattie/icdx.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla Classificazione Internazionale delle Malattie decima edizione"@it,
@@ -28,7 +34,7 @@
     dct:title "CSV distribution of International Statistical Classification of Diseases and Related Health Problems 10th Revision"@en,
         "Distribuzione CSV del vocabolario controllato sulla Classificazione Internazionale delle Malattie decima edizione"@it .
 
-<https://w3id.org/italia/data/distribution/ICDX_JSON_LD> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/WorkAccident/distribution/ICDX_JSON_LD> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/icdx-classificazione-internazionale-malattie> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/icdx-classificazione-internazionale-malattie/icdx.json> ;
     dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla Classificazione Internazionale delle Malattie decima edizione"@it,
@@ -37,12 +43,6 @@
     dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
     dct:title "Distribuzione JSON_LD del vocabolario controllato sulla Classificazione Internazionale delle Malattie decima edizione"@it,
         "JSON_LD distribution of International Statistical Classification of Diseases and Related Health Problems 10th Revision"@en .
-
-<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
-        dct:Standard ;
-    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
-    dct:identifier "SKOS" ;
-    dct:title "Simple Knowledge Organization System - SKOS" .
 
 <https://w3id.org/italia/data/WorkAccident/distribution/ICDX_RDF_TURTLE> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/icdx-classificazione-internazionale-malattie> ;
@@ -10532,8 +10532,8 @@ inailvoc:classificazione_ICDX a adms:Asset,
     rdfs:isDefinedBy inailvoc:classificazione_ICDX ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://www.inail.it> ;
-    dcat:distribution <https://w3id.org/italia/data/distribution/ICDX_CSV>,
-        <https://w3id.org/italia/data/distribution/ICDX_JSON_LD>,
+    dcat:distribution <https://w3id.org/italia/data/WorkAccident/distribution/ICDX_CSV>,
+        <https://w3id.org/italia/data/WorkAccident/distribution/ICDX_JSON_LD>,
         <https://w3id.org/italia/data/WorkAccident/distribution/ICDX_RDF_TURTLE> ;
     dcat:keyword "classifizione internazionale delle malattie"@it,
         "classifizione malattie"@it,

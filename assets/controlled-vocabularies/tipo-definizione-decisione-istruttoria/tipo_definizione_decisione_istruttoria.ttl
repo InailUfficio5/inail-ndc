@@ -161,9 +161,15 @@ decistrcod:TE a skos:Concept ;
     skos:notation "-2" ;
     xkos:depth 1 .
 
-<https://w3id.org/italia/data/distribution/TDDI_CSV> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
+        dct:Standard ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dct:identifier "SKOS" ;
+    dct:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/data/WorkAccident/distribution/TDDI_CSV> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-definizione-decisione-istruttoria> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-definizione-decisione-istruttoria/tipo_definizione_decisione_istruttoria.> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-definizione-decisione-istruttoria/tipo_definizione_decisione_istruttoria.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sul tipo definizione decisione dell'istruttoria adottato dall'INAIL"@it,
         "This is the distribution in CSV of the type definition of the investigation decision adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
@@ -171,21 +177,15 @@ decistrcod:TE a skos:Concept ;
     dct:title "CSV distribution of the type definition of the investigation decision adopted by INAIL controlled vocabulary"@en,
         "Distribuzione CSV del vocabolario controllato sul tipo definizione decisione dell'istruttoria adottato dall'INAIL"@it .
 
-<https://w3id.org/italia/data/distribution/TDDI_JSON_LD> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/WorkAccident/distribution/TDDI_JSON_LD> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-definizione-decisione-istruttoria> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-definizione-decisione-istruttoria/tipo_definizione_decisione_istruttoria.> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-definizione-decisione-istruttoria/tipo_definizione_decisione_istruttoria.json> ;
     dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sul tipo definizione decisione dell'istruttoria adottato dall'INAIL"@it,
         "This is the distribution in JSON_LD of the type definition of the investigation decision adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
     dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
     dct:title "Distribuzione JSON_LD del vocabolario controllato sul tipo definizione decisione dell'istruttoria adottato dall'INAIL"@it,
         "JSON_LD distribution of the type definition of the investigation decision adopted by INAIL controlled vocabulary"@en .
-
-<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
-        dct:Standard ;
-    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
-    dct:identifier "SKOS" ;
-    dct:title "Simple Knowledge Organization System - SKOS" .
 
 <https://w3id.org/italia/data/WorkAccident/distribution/TDDI_RDF_TURTLE> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-definizione-decisione-istruttoria> ;
@@ -215,8 +215,8 @@ inailvoc:tipo_def_dec_istr a adms:Asset,
     rdfs:isDefinedBy inailvoc:tipo_def_dec_istr ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://www.inail.it> ;
-    dcat:distribution <https://w3id.org/italia/data/distribution/TDDI_CSV>,
-        <https://w3id.org/italia/data/distribution/TDDI_JSON_LD>,
+    dcat:distribution <https://w3id.org/italia/data/WorkAccident/distribution/TDDI_CSV>,
+        <https://w3id.org/italia/data/WorkAccident/distribution/TDDI_JSON_LD>,
         <https://w3id.org/italia/data/WorkAccident/distribution/TDDI_RDF_TURTLE> ;
     dcat:keyword "health"@en,
         "inail"@it,

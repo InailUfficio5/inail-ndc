@@ -1,0 +1,152 @@
+[
+  {
+    "url": "https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_indennizzo/codice/AN",
+    "@type": [
+      "https://w3id.org/italia/onto/WorkAccident/TipoIndennizzo",
+      "skos:Concept"
+    ],
+    "id": "AN",
+    "label_it": "Annullato",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_indennizzo/codice/APP",
+    "@type": [
+      "https://w3id.org/italia/onto/WorkAccident/TipoIndennizzo",
+      "skos:Concept"
+    ],
+    "id": "APP",
+    "label_it": "Accertamento postumi provvisorio",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_indennizzo/codice/AS",
+    "@type": [
+      "https://w3id.org/italia/onto/WorkAccident/TipoIndennizzo",
+      "skos:Concept"
+    ],
+    "id": "AS",
+    "label_it": "Altra sede",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_indennizzo/codice/CA",
+    "@type": [
+      "https://w3id.org/italia/onto/WorkAccident/TipoIndennizzo",
+      "skos:Concept"
+    ],
+    "id": "CA",
+    "label_it": "In capitale",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_indennizzo/codice/CO",
+    "@type": [
+      "https://w3id.org/italia/onto/WorkAccident/TipoIndennizzo",
+      "skos:Concept"
+    ],
+    "id": "CO",
+    "label_it": "Comunicazioni obbligatorie inf.",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_indennizzo/codice/FR",
+    "@type": [
+      "https://w3id.org/italia/onto/WorkAccident/TipoIndennizzo",
+      "skos:Concept"
+    ],
+    "id": "FR",
+    "label_it": "Franchigia",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_indennizzo/codice/IS",
+    "@type": [
+      "https://w3id.org/italia/onto/WorkAccident/TipoIndennizzo",
+      "skos:Concept"
+    ],
+    "id": "IS",
+    "label_it": "Istruttoria",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_indennizzo/codice/MC",
+    "@type": [
+      "https://w3id.org/italia/onto/WorkAccident/TipoIndennizzo",
+      "skos:Concept"
+    ],
+    "id": "MC",
+    "label_it": "Morte con superstiti",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_indennizzo/codice/MS",
+    "@type": [
+      "https://w3id.org/italia/onto/WorkAccident/TipoIndennizzo",
+      "skos:Concept"
+    ],
+    "id": "MS",
+    "label_it": "Morte senza superstiti",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_indennizzo/codice/NE",
+    "@type": [
+      "https://w3id.org/italia/onto/WorkAccident/TipoIndennizzo",
+      "skos:Concept"
+    ],
+    "id": "NE",
+    "label_it": "Nessuno",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_indennizzo/codice/RD",
+    "@type": [
+      "https://w3id.org/italia/onto/WorkAccident/TipoIndennizzo",
+      "skos:Concept"
+    ],
+    "id": "RD",
+    "label_it": "In rendita diretta",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_indennizzo/codice/RP",
+    "@type": [
+      "https://w3id.org/italia/onto/WorkAccident/TipoIndennizzo",
+      "skos:Concept"
+    ],
+    "id": "RP",
+    "label_it": "Regolare s/ind. con acc.to provvisorio",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_indennizzo/codice/RS",
+    "@type": [
+      "https://w3id.org/italia/onto/WorkAccident/TipoIndennizzo",
+      "skos:Concept"
+    ],
+    "id": "RS",
+    "label_it": "In rendita ai superstiti",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_indennizzo/codice/TE",
+    "@type": [
+      "https://w3id.org/italia/onto/WorkAccident/TipoIndennizzo",
+      "skos:Concept"
+    ],
+    "id": "TE",
+    "label_it": "In temporanea",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_indennizzo/codice/TP",
+    "@type": [
+      "https://w3id.org/italia/onto/WorkAccident/TipoIndennizzo",
+      "skos:Concept"
+    ],
+    "id": "TP",
+    "label_it": "Temporanea con acc.to provvisorio",
+    "level": "1"
+  }
+]

@@ -28,7 +28,13 @@
     skos:notation "-2" ;
     xkos:depth 1 .
 
-<https://w3id.org/italia/data/distribution/CM_CSV> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
+        dct:Standard ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dct:identifier "SKOS" ;
+    dct:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/data/WorkAccident/distribution/CM_CSV> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/classe-menomazione> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/classe-menomazione/classe_menomazione.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classe di menomazione adottata dall'INAIL"@it,
@@ -38,7 +44,7 @@
     dct:title "CSV distribution of the disability class adopted by INAIL controlled vocabulary"@en,
         "Distribuzione CSV del vocabolario controllato sulla classe di menomazione adottata dall'INAIL"@it .
 
-<https://w3id.org/italia/data/distribution/CM_JSON_LD> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/WorkAccident/distribution/CM_JSON_LD> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/classe-menomazione> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/classe-menomazione/classe_menomazione.json> ;
     dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla classe di menomazione adottata dall'INAIL"@it,
@@ -47,12 +53,6 @@
     dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
     dct:title "Distribuzione JSON_LD del vocabolario controllato sulla classe di menomazione adottata dall'INAIL"@it,
         "JSON_LD distribution of the disability class adopted by INAIL controlled vocabulary"@en .
-
-<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
-        dct:Standard ;
-    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
-    dct:identifier "SKOS" ;
-    dct:title "Simple Knowledge Organization System - SKOS" .
 
 <https://w3id.org/italia/data/WorkAccident/distribution/CM_RDF_TURTLE> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/classe-menomazione> ;
@@ -82,8 +82,8 @@ inailvoc:classe_menomazione a adms:Asset,
     rdfs:isDefinedBy inailvoc:classe_menomazione ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://www.inail.it> ;
-    dcat:distribution <https://w3id.org/italia/data/distribution/CM_CSV>,
-        <https://w3id.org/italia/data/distribution/CM_JSON_LD>,
+    dcat:distribution <https://w3id.org/italia/data/WorkAccident/distribution/CM_CSV>,
+        <https://w3id.org/italia/data/WorkAccident/distribution/CM_JSON_LD>,
         <https://w3id.org/italia/data/WorkAccident/distribution/CM_RDF_TURTLE> ;
     dcat:keyword "impairment"@en,
         "inail"@it,

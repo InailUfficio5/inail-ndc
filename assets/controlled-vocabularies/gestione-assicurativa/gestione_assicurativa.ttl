@@ -257,7 +257,13 @@ gestassgrup:SR a inail:GestioneAssicurativa,
     skos:notation "SR" ;
     xkos:depth 1 .
 
-<https://w3id.org/italia/data/distribution/GA_CSV> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
+        dct:Standard ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dct:identifier "SKOS" ;
+    dct:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/data/WorkAccident/distribution/GA_CSV> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/gestione-assicurativa> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/gestione-assicurativa/gestione_assicurativa.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla gestione assicurativa adottata dall'INAIL"@it,
@@ -267,7 +273,7 @@ gestassgrup:SR a inail:GestioneAssicurativa,
     dct:title "CSV distribution of the insurance management adopted by INAIL controlled vocabulary"@en,
         "Distribuzione CSV del vocabolario controllato sulla gestione assicurativa adottata dall'INAIL"@it .
 
-<https://w3id.org/italia/data/distribution/GA_JSON_LD> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/WorkAccident/distribution/GA_JSON_LD> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/gestione-assicurativa> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/gestione-assicurativa/gestione_assicurativa.json> ;
     dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla gestione assicurativa adottata dall'INAIL"@it,
@@ -277,17 +283,11 @@ gestassgrup:SR a inail:GestioneAssicurativa,
     dct:title "Distribuzione JSON_LD del vocabolario controllato sulla gestione assicurativa adottata dall'INAIL"@it,
         "JSON_LD distribution of the insurance management adopted by INAIL controlled vocabulary"@en .
 
-<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
-        dct:Standard ;
-    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
-    dct:identifier "SKOS" ;
-    dct:title "Simple Knowledge Organization System - SKOS" .
-
 <https://w3id.org/italia/data/WorkAccident/distribution/GA_RDF_TURTLE> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/gestione-assicurativa> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/gestione-assicurativa/gestione_assicurativa.ttl> ;
     dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla gestione assicurativa adottata dall'INAIL"@it,
-        "This is the distribution in RDF/turtle of the type definition of the investigation decision adopted by INAIL controlled vocabulary"@en ;
+        "This is the distribution in RDF/turtle of the insurance management adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
     dct:title "Distribuzione RDF/Turtle del vocabolario controllato sulla gestione assicurativa adottata dall'INAIL"@it,
@@ -311,8 +311,8 @@ inailvoc:gestione_assicurativa a adms:Asset,
     rdfs:isDefinedBy inailvoc:gestione_assicurativa ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://www.inail.it> ;
-    dcat:distribution <https://w3id.org/italia/data/distribution/GA_CSV>,
-        <https://w3id.org/italia/data/distribution/GA_JSON_LD>,
+    dcat:distribution <https://w3id.org/italia/data/WorkAccident/distribution/GA_CSV>,
+        <https://w3id.org/italia/data/WorkAccident/distribution/GA_JSON_LD>,
         <https://w3id.org/italia/data/WorkAccident/distribution/GA_RDF_TURTLE> ;
     dcat:keyword "gestione assicurativa",
         "inail"@it,

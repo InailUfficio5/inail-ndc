@@ -12,7 +12,7 @@ info:
     email: b.marino@almawave.it
    # url:
   description: |-
-   L’Inail tutela i lavoratori che subiscono un infortunio sul lavoro o contraggono una malattia professionale (tecnopatici) o, in caso di morte, i loro superstiti mediante l'erogazione di prestazioni economiche finalizzate a indennizzare il danno derivante dall'evento lesivo.
+   L'Inail tutela i lavoratori che subiscono un infortunio sul lavoro o contraggono una malattia professionale (tecnopatici) o, in caso di morte, i loro superstiti mediante l'erogazione di prestazioni economiche finalizzate a indennizzare il danno derivante dall'evento lesivo.
    Le prestazioni economiche spettano, di norma, anche se il datore di lavoro non ha versato regolarmente il premio assicurativo.
 
     La metadatazione semantica degli schemi si basa sul documento
@@ -24,9 +24,9 @@ tags: []
 components:
   schemas:
     MalattiaProfessionale:
-      $ref: "https://github.com/InailUfficio5/inail-ndc/tree/main/assets/schemas/malattia-professionale/malattia-professionale.oas3.yaml#/components/schemas/MalattiaProfessionale"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/tree/main/assets/schemas/malattia-professionale/malattia-professionale.oas3.yaml#/components/schemas/MalattiaProfessionale"
     Infortunio:
-      $ref: "https://github.com/InailUfficio5/inail-ndc/tree/main/assets/schemas/infortunio/infortunio.oas3.yaml#/components/schemas/Infortunio"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/tree/main/assets/schemas/infortunio/infortunio.oas3.yaml#/components/schemas/Infortunio"
 
     IdPrestazioneEconomica:
       type: integer

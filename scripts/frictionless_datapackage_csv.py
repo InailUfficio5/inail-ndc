@@ -52,11 +52,18 @@ def to_json(url, src_file):
     frame.pop("_meta")
     json_data = jsonld.frame(data, frame)
     context, graph = json_data["@context"], json_data["@graph"]
-    # graph.drop(columns=["@type"], inplace=True)
+    ## graph.drop(columns=["@type"], inplace=True)
+
     dest_json = src_file.with_suffix(".json")
     dest_json.write_text(json.dumps(graph, indent=2))
-    # df.to_json(dest_json, indent=2)
-    write_datapackage(graph, context, src_file)
+    ## df.to_json(dest_json, indent=2)
+    # out = json.loads(graph)
+    # df = pd.json_normalize(out, meta=[])
+    # df["@type"] = df["@type"][-1]
+    # graph = df.reset_index().to_json(orient='record')
+    #print(graph)
+    ### Uncomment to write datapackage
+    #write_datapackage(graph, context, src_file)
     return url, dest_json
 
 

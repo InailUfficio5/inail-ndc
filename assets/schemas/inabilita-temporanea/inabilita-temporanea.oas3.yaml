@@ -23,15 +23,15 @@ tags: []
 components:
   schemas:
     MalattiaProfessionale:
-      $ref: "https://github.com/InailUfficio5/inail-ndc/tree/main/assets/schemas/malattia-professionale/malattia-professionale.oas3.yaml#/components/schemas/MalattiaProfessionale"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/tree/main/assets/schemas/malattia-professionale/malattia-professionale.oas3.yaml#/components/schemas/MalattiaProfessionale"
     Infortunio:
-      $ref: "https://github.com/InailUfficio5/inail-ndc/tree/main/assets/schemas/infortunio/infortunio.oas3.yaml#/components/schemas/Infortunio"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/tree/main/assets/schemas/infortunio/infortunio.oas3.yaml#/components/schemas/Infortunio"
     TipoTrattazione:
-      $ref: "https://github.com/InailUfficio5/inail-ndc/tree/main/assets/schemas/tipo-trattazione/tipo-trattazione.oas3.yaml#/components/schemas/TipoTrattazione"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/tree/main/assets/schemas/tipo-trattazione/tipo-trattazione.oas3.yaml#/components/schemas/TipoTrattazione"
     Infortunato:
-      $ref: "https://github.com/InailUfficio5/inail-ndc/tree/main/assets/schemas/infortunato/infortunato.oas3.yaml#/components/schemas/Infortunato"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/tree/main/assets/schemas/infortunato/infortunato.oas3.yaml#/components/schemas/Infortunato"
     Tecnopatico:
-      $ref: "https://github.com/InailUfficio5/inail-ndc/tree/main/assets/schemas/tecnopatico/tecnopatico.oas3.yaml#/components/schemas/Tecnopatico"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/tree/main/assets/schemas/tecnopatico/tecnopatico.oas3.yaml#/components/schemas/Tecnopatico"
     IdInabilitaTemporanea:
       type: string
       description:

@@ -1374,7 +1374,13 @@ grado3:4.8.100 a inail:GradoDiInabilita,
     skos:notation "-2" ;
     xkos:depth 1 .
 
-<https://w3id.org/italia/data/distribution/GI_CSV> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
+        dct:Standard ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dct:identifier "SKOS" ;
+    dct:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/data/WorkAccident/distribution/GI_CSV> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/grado-inabilita> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/grado-inabilita/grado_inabilita.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classificazione del grado di inabilità adottata dall'INAIL"@it,
@@ -1384,7 +1390,7 @@ grado3:4.8.100 a inail:GradoDiInabilita,
     dct:title "CSV distribution of the classification of the degree of inability adopted by INAIL controlled vocabulary"@en,
         "Distribuzione CSV del vocabolario controllato sulla classificazione del grado di inabilità adottata dall'INAIL"@it .
 
-<https://w3id.org/italia/data/distribution/GI_JSON_LD> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/WorkAccident/distribution/GI_JSON_LD> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/grado-inabilita> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/grado-inabilita/grado_inabilita.json> ;
     dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla classificazione del grado di inabilità adottata dall'INAIL"@it,
@@ -1393,12 +1399,6 @@ grado3:4.8.100 a inail:GradoDiInabilita,
     dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
     dct:title "Distribuzione JSON_LD del vocabolario controllato sulla classificazione del grado di inabilità adottata dall'INAIL"@it,
         "JSON_LD distribution of the classification of the degree of inability adopted by INAIL controlled vocabulary"@en .
-
-<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
-        dct:Standard ;
-    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
-    dct:identifier "SKOS" ;
-    dct:title "Simple Knowledge Organization System - SKOS" .
 
 <https://w3id.org/italia/data/WorkAccident/distribution/GI_RDF_TURTLE> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/grado-inabilita> ;
@@ -1428,8 +1428,8 @@ inailvoc:inabilita a adms:Asset,
     rdfs:isDefinedBy inailvoc:inabilita ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://www.inail.it> ;
-    dcat:distribution <https://w3id.org/italia/data/distribution/GI_CSV>,
-        <https://w3id.org/italia/data/distribution/GI_JSON_LD>,
+    dcat:distribution <https://w3id.org/italia/data/WorkAccident/distribution/GI_CSV>,
+        <https://w3id.org/italia/data/WorkAccident/distribution/GI_JSON_LD>,
         <https://w3id.org/italia/data/WorkAccident/distribution/GI_RDF_TURTLE> ;
     dcat:keyword "disease"@en,
         "inability"@en,

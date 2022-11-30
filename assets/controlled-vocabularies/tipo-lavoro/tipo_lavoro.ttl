@@ -17,7 +17,13 @@
 
 ### Annotations
 
-<https://w3id.org/italia/data/distribution/TL_CSV> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
+        dct:Standard ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dct:identifier "SKOS" ;
+    dct:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/data/WorkAccident/distribution/TL_CSV> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-lavoro> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-lavoro/tipo_lavoro.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sulle tipologie di lavoro adottate dall'INAIL"@it,
@@ -27,7 +33,7 @@
     dct:title "CSV distribution of types of work adopted by INAIL controlled vocabulary"@en,
         "Distribuzione CSV del vocabolario controllato sulle tipologie di lavoro adottate dall'INAIL"@it .
 
-<https://w3id.org/italia/data/distribution/TL_JSON_LD> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/WorkAccident/distribution/TL_JSON_LD> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-lavoro> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-lavoro/tipo_lavoro.json> ;
     dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulle tipologie di lavoro adottate dall'INAIL"@it,
@@ -36,12 +42,6 @@
     dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
     dct:title "Distribuzione JSON_LD del vocabolario controllato sulle tipologie di lavoro adottate dall'INAIL"@it,
         "JSON_LD distribution of types of work adopted by INAIL controlled vocabulary"@en .
-
-<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
-        dct:Standard ;
-    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
-    dct:identifier "SKOS" ;
-    dct:title "Simple Knowledge Organization System - SKOS" .
 
 <https://w3id.org/italia/data/WorkAccident/distribution/TL_RDF_TURTLE> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-lavoro> ;
@@ -71,8 +71,8 @@ inailvoc:tipo_lavoro a adms:Asset,
     rdfs:isDefinedBy inailvoc:tipo_lavoro ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://www.inail.it> ;
-    dcat:distribution <https://w3id.org/italia/data/distribution/TL_CSV>,
-        <https://w3id.org/italia/data/distribution/TL_JSON_LD>,
+    dcat:distribution <https://w3id.org/italia/data/WorkAccident/distribution/TL_CSV>,
+        <https://w3id.org/italia/data/WorkAccident/distribution/TL_JSON_LD>,
         <https://w3id.org/italia/data/WorkAccident/distribution/TL_RDF_TURTLE> ;
     dcat:keyword "inail"@it,
         "infortunio"@it,

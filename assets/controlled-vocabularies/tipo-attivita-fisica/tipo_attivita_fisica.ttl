@@ -543,17 +543,23 @@ grupattfis:7 a inail:TipoAttivitaFisica,
     skos:notation "7" ;
     xkos:depth 1 .
 
-<https://w3id.org/italia/data/distribution/TAF_CSV> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
+        dct:Standard ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dct:identifier "SKOS" ;
+    dct:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/data/WorkAccident/distribution/TAF_CSV> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-attivita-fisica> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-attivita-fisica/tipo_attivita_fisica.csv> ;
-    dct:description "Questa è la distribuzione CSV del vocabolario controllato sul tipo definizione decisione dell'istruttoria adottata dall'INAIL"@it,
+    dct:description "Questa è la distribuzione CSV del vocabolario controllato sulle tipologie di attività fisica adottate dall'INAIL"@it,
         "This is the distribution in CSV of types of physical activity adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
     dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
     dct:title "CSV distribution types of physical activity adopted by INAIL controlled vocabulary"@en,
-        "Distribuzione CSV del vocabolario controllato sul tipo definizione decisione dell'istruttoria adottata dall'INAIL"@it .
+        "Distribuzione CSV del vocabolario controllato sulle tipologie di attività fisica adottate dall'INAIL"@it .
 
-<https://w3id.org/italia/data/distribution/TAF_JSON_LD> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/WorkAccident/distribution/TAF_JSON_LD> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-attivita-fisica> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-attivita-fisica/tipo_attivita_fisica.json> ;
     dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulle tipologie di attività fisica adottate dall'INAIL"@it,
@@ -562,12 +568,6 @@ grupattfis:7 a inail:TipoAttivitaFisica,
     dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
     dct:title "Distribuzione JSON_LD del vocabolario controllato sulle tipologie di attività fisica adottate dall'INAIL"@it,
         "JSON_LD distribution of types of physical activity adopted by INAIL controlled vocabulary"@en .
-
-<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
-        dct:Standard ;
-    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
-    dct:identifier "SKOS" ;
-    dct:title "Simple Knowledge Organization System - SKOS" .
 
 <https://w3id.org/italia/data/WorkAccident/distribution/TAF_RDF_TURTLE> a dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-attivita-fisica> ;
@@ -597,8 +597,8 @@ inailvoc:attivita_fisica a adms:Asset,
     rdfs:isDefinedBy inailvoc:attivita_fisica ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://www.inail.it> ;
-    dcat:distribution <https://w3id.org/italia/data/distribution/TAF_CSV>,
-        <https://w3id.org/italia/data/distribution/TAF_JSON_LD>,
+    dcat:distribution <https://w3id.org/italia/data/WorkAccident/distribution/TAF_CSV>,
+        <https://w3id.org/italia/data/WorkAccident/distribution/TAF_JSON_LD>,
         <https://w3id.org/italia/data/WorkAccident/distribution/TAF_RDF_TURTLE> ;
     dcat:keyword "attività fisica"@it,
         "inail"@it,

@@ -7,7 +7,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 inail: a owl:Ontology ;
-    owl:versionIRI inail:1.0 .
+    owl:versionIRI inail:1.5 .
 
 ### Object Properties
 
@@ -2404,7 +2404,7 @@ inail:CoefficienteDiAbbatimentoDellaRetribuzione a owl:Class ;
 inail:ComponenteDannoBiologico a owl:Class ;
     rdfs:label "Componente  Danno Biologico"@it ;
     owl:disjointWith inail:ComponentePatrimoniale ;
-    rdfs:comment "È una delle due parti che compongono la rendita di Danno Biologico. Gli importi annui, pubblicati nella “Tabella Indennizzo Danno Biologico – indennizzo in rendita” allegata al d.m. 12 luglio 2000, variano in funzione del grado di menomazione permanente. Gli importi tabellati vanno incrementati per recepire gli adeguamenti straordinari previsti dal dm 27 marzo 2009 (8,68%) e dal dm 14 febbraio 2014 (7,57%) e si rivalutano annualmente a partire dal 1° luglio 2016 a norma della Legge di Stabilità 2016."@it ;
+    rdfs:comment "È una delle due parti che compongono la rendita di Danno Biologico. Gli importi annui, pubblicati nella «Tabella Indennizzo Danno Biologico – indennizzo in rendita» allegata al d.m. 12 luglio 2000, variano in funzione del grado di menomazione permanente. Gli importi tabellati vanno incrementati per recepire gli adeguamenti straordinari previsti dal dm 27 marzo 2009 (8,68%) e dal dm 14 febbraio 2014 (7,57%) e si rivalutano annualmente a partire dal 1° luglio 2016 a norma della Legge di Stabilità 2016."@it ;
     owl:versionInfo "Componente patrimoniale/danno biologico"^^xsd:string ;
     owl:incompatibleWith "true" .
 
@@ -2904,7 +2904,7 @@ inail:IndennizzoGiornalieroPerInabilitaTemporanea a owl:Class ;
 
 inail:IndennizzoInCapitalePerDannoBiologico a owl:Class ;
     rdfs:label "Indennizzo  In Capitale Per  Danno Biologico"@it ;
-    rdfs:comment "Prestazione economica una tantum riconosciuta per gli infortuni e le malattie professionali verificatisi a decorrere dal 25 luglio 2000, per i quali sia accertato un grado di menomazione dell'integrità psicofisica compreso tra il 6% ed il 15%. Per gli eventi fino al 31 dicembre 2018 , gli indennizzi in capitale sono tabellati  in funzione dell'età, del genere dell'infortunato/tecnopatico e del grado di menomazione accertato in sede di valutazione dei postumi permanenti (Tabella allegata al d.m. 12 luglio 2000); per gli eventi a decorrere dal 1° gennaio 2019, gli importi sono invece definiti secondo la “Tabella indennizzo danno biologico in capitale” di cui al d.m. 45 del  23 aprile 2019 indipendentemente dal genere dell'infortunato/tecnopatico."@it ;
+    rdfs:comment "Prestazione economica una tantum riconosciuta per gli infortuni e le malattie professionali verificatisi a decorrere dal 25 luglio 2000, per i quali sia accertato un grado di menomazione dell'integrità psicofisica compreso tra il 6% ed il 15%. Per gli eventi fino al 31 dicembre 2018 , gli indennizzi in capitale sono tabellati  in funzione dell'età, del genere dell'infortunato/tecnopatico e del grado di menomazione accertato in sede di valutazione dei postumi permanenti (Tabella allegata al d.m. 12 luglio 2000); per gli eventi a decorrere dal 1° gennaio 2019, gli importi sono invece definiti secondo la «Tabella indennizzo danno biologico in capitale» di cui al d.m. 45 del  23 aprile 2019 indipendentemente dal genere dell'infortunato/tecnopatico."@it ;
     owl:versionInfo "Tipo Prestazione Economica"^^xsd:string .
 
 inail:Infortunato a owl:Class ;
@@ -3002,7 +3002,7 @@ inail:Infortunio a owl:Class ;
             owl:someValuesFrom rdfs:Literal ] ;
     rdfs:label "Infortunio"@it ;
     owl:disjointWith inail:MalattiaProfessionale ;
-    rdfs:comment "L'Infortunio sul lavoro viene definito quando l'evento scatenante è improvviso e violento e si riscontri il nesso di causalità con il lavoro svolto. L'assicurazione obbligatoria Inail copre ogni evento avvenuto per “causa violenta in occasione di lavoro” dal quale derivi la morte, l'inabilità permanente o l'inabilità assoluta temporanea per più di tre giorni."@it ;
+    rdfs:comment "L'Infortunio sul lavoro viene definito quando l'evento scatenante è improvviso e violento e si riscontri il nesso di causalità con il lavoro svolto. L'assicurazione obbligatoria Inail copre ogni evento avvenuto per «causa violenta in occasione di lavoro» dal quale derivi la morte, l'inabilità permanente o l'inabilità assoluta temporanea per più di tre giorni."@it ;
     owl:versionInfo "Tipo Evento"^^xsd:string .
 
 inail:InfortunioChiuso a owl:Class ;
@@ -3170,7 +3170,7 @@ inail:MalattiaProfessionale a owl:Class ;
             owl:someValuesFrom rdfs:Literal ] ;
     rdfs:label "Malattia  Professionale"@it ;
     rdfs:comment "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1965-06-30;1124~art3 https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1965-06-30;1124~art140 https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1965-06-30;1124~art211 https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2000-02-23;38~art10"^^xsd:anyURI,
-        "La malattia professionale è una patologia la cui causa agisce lentamente e progressivamente sull'organismo (causa diluita e non causa violenta e concentrata nel tempo). La stessa causa deve essere diretta ed efficiente, cioè in grado di produrre l'infermità in modo esclusivo o prevalente: il Testo Unico, infatti, parla di malattie contratte nell'esercizio e a causa delle lavorazioni rischiose. È ammesso, tuttavia, il concorso di cause extraprofessionali, purché queste non interrompano il nesso causale in quanto capaci di produrre da sole l'infermità.Per le malattie professionali, quindi, non basta l'occasione di lavoro come per gli infortuni, cioè un rapporto anche mediato o indiretto con il rischio lavorativo, ma deve esistere un rapporto causale, o concausale, diretto tra il rischio professionale e la malattia.Il rischio può essere provocato dalla lavorazione che l'assicurato svolge, oppure dall'ambiente in cui la lavorazione stessa si svolge (cosiddetto “rischio ambientale”)."@it ;
+        "La malattia professionale è una patologia la cui causa agisce lentamente e progressivamente sull'organismo (causa diluita e non causa violenta e concentrata nel tempo). La stessa causa deve essere diretta ed efficiente, cioè in grado di produrre l'infermità in modo esclusivo o prevalente: il Testo Unico, infatti, parla di malattie contratte nell'esercizio e a causa delle lavorazioni rischiose. È ammesso, tuttavia, il concorso di cause extraprofessionali, purché queste non interrompano il nesso causale in quanto capaci di produrre da sole l'infermità.Per le malattie professionali, quindi, non basta l'occasione di lavoro come per gli infortuni, cioè un rapporto anche mediato o indiretto con il rischio lavorativo, ma deve esistere un rapporto causale, o concausale, diretto tra il rischio professionale e la malattia.Il rischio può essere provocato dalla lavorazione che l'assicurato svolge, oppure dall'ambiente in cui la lavorazione stessa si svolge (cosiddetto «rischio ambientale»)."@it ;
     owl:versionInfo "Tipo Evento"^^xsd:string .
 
 inail:MalattiaProfessionaleConPrognosi a owl:Class ;
@@ -3192,7 +3192,7 @@ inail:MalattiaProfessionaleInDefinizione a owl:Class ;
 inail:MalattiaProfessionaleInFranchigia a owl:Class ;
     rdfs:label "Malattia  Professionale  InFranchigia"@it ;
     rdfs:subClassOf inail:MalattiaProfessionale ;
-    rdfs:comment "Un caso di malattia professionale si dice “ in franchigia” se provoca assenza dal lavoro non superiore ai tre giorni; per il periodo di franchigia l'Inail non corrisponde alcuna prestazione al lavoratore."@it .
+    rdfs:comment "Un caso di malattia professionale si dice « in franchigia» se provoca assenza dal lavoro non superiore ai tre giorni; per il periodo di franchigia l'Inail non corrisponde alcuna prestazione al lavoratore."@it .
 
 inail:MalattiaProfessionaleMortale a owl:Class ;
     rdfs:label "Malattia  Professionale  Mortale"@it ;

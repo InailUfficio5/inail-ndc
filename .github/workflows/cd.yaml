@@ -1,0 +1,41 @@
+name: Continuous Integration
+on:
+  push:
+    paths-ignore:
+    - '*.md'
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+#  schedule:
+#    - cron: '17 3 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: python:3.10
+    env:
+      CI_COMMIT_MESSAGE: Continuous Integration Build Artifacts
+      CI_COMMIT_AUTHOR: Continuous Integration
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: '0'
+
+    - name: Files production
+      run: |-
+        pip3 install -r requirements.txt
+        find ./assets/controlled-vocabularies/ -name "*.csv" -type f -print0 | xargs -0 /bin/rm -f
+        find ./assets/controlled-vocabularies/ -name "*.json" -type f -print0 | xargs -0 /bin/rm -f
+        find ./assets/controlled-vocabularies/ -name "datapackage.yaml" -type f -print0 | xargs -0 /bin/rm -f
+        python ./scripts/frictionless_datapackage_csv.py
+    # Commit and push all changed files.
+    - name: GIT Commit Build Artifacts (coverage, dist, devdist, docs)
+      # Only run on main branch push (e.g. after pull request merge).
+      if: github.event_name == 'push'
+      run: |
+        git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+        git config --global user.email "ci-bot@noreply"
+        git add assets/
+        git diff-index --quiet HEAD || git commit -a -m "${{ env.CI_COMMIT_MESSAGE }}"
+        git push -f

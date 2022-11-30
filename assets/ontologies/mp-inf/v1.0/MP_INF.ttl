@@ -2420,7 +2420,7 @@ inail:Infortunio a owl:Class ;
             owl:someValuesFrom rdfs:Literal ] ;
     rdfs:label "Infortunio"@it ;
     owl:disjointWith inail:MalattiaProfessionale ;
-    rdfs:comment "L'Infortunio sul lavoro viene definito quando l'evento scatenante è improvviso e violento e si riscontri il nesso di causalità con il lavoro svolto. L'assicurazione obbligatoria Inail copre ogni evento avvenuto per “causa violenta in occasione di lavoro” dal quale derivi la morte, l'inabilità permanente o l'inabilità assoluta temporanea per più di tre giorni."@it ;
+    rdfs:comment "L'Infortunio sul lavoro viene definito quando l'evento scatenante è improvviso e violento e si riscontri il nesso di causalità con il lavoro svolto. L'assicurazione obbligatoria Inail copre ogni evento avvenuto per «causa violenta in occasione di lavoro» dal quale derivi la morte, l'inabilità permanente o l'inabilità assoluta temporanea per più di tre giorni."@it ;
     owl:versionInfo "Tipo Evento"^^xsd:string .
 
 inail:InfortunioChiuso a owl:Class ;
@@ -2617,7 +2617,7 @@ inail:MalattiaProfessionale a owl:Class ;
             owl:onProperty inail:tipoDecisioneIstruttoriaSanitariaMalattiaProfessionale ;
             owl:someValuesFrom rdfs:Literal ] ;
     rdfs:label "Malattia Professionale"@it ;
-    rdfs:comment "La malattia professionale è una patologia la cui causa agisce lentamente e progressivamente sull'organismo (causa diluita e non causa violenta e concentrata nel tempo). La stessa causa deve essere diretta ed efficiente, cioè in grado di produrre l'infermità in modo esclusivo o prevalente: il Testo Unico, infatti, parla di malattie contratte nell'esercizio e a causa delle lavorazioni rischiose. È ammesso, tuttavia, il concorso di cause extraprofessionali, purché queste non interrompano il nesso causale in quanto capaci di produrre da sole l'infermità.Per le malattie professionali, quindi, non basta l'occasione di lavoro come per gli infortuni, cioè un rapporto anche mediato o indiretto con il rischio lavorativo, ma deve esistere un rapporto causale, o concausale, diretto tra il rischio professionale e la malattia.Il rischio può essere provocato dalla lavorazione che l'assicurato svolge, oppure dall'ambiente in cui la lavorazione stessa si svolge (cosiddetto “rischio ambientale”)."@it ;
+    rdfs:comment "La malattia professionale è una patologia la cui causa agisce lentamente e progressivamente sull'organismo (causa diluita e non causa violenta e concentrata nel tempo). La stessa causa deve essere diretta ed efficiente, cioè in grado di produrre l'infermità in modo esclusivo o prevalente: il Testo Unico, infatti, parla di malattie contratte nell'esercizio e a causa delle lavorazioni rischiose. È ammesso, tuttavia, il concorso di cause extraprofessionali, purché queste non interrompano il nesso causale in quanto capaci di produrre da sole l'infermità.Per le malattie professionali, quindi, non basta l'occasione di lavoro come per gli infortuni, cioè un rapporto anche mediato o indiretto con il rischio lavorativo, ma deve esistere un rapporto causale, o concausale, diretto tra il rischio professionale e la malattia.Il rischio può essere provocato dalla lavorazione che l'assicurato svolge, oppure dall'ambiente in cui la lavorazione stessa si svolge (cosiddetto «rischio ambientale»)."@it ;
     owl:versionInfo "Tipo Evento"^^xsd:string .
 
 inail:MalattiaProfessionaleConPrognosi a owl:Class ;
@@ -2639,7 +2639,7 @@ inail:MalattiaProfessionaleInDefinizione a owl:Class ;
 inail:MalattiaProfessionaleInFranchigia a owl:Class ;
     rdfs:label "Malattia Professionale InFranchigia"@it ;
     rdfs:subClassOf inail:MalattiaProfessionale ;
-    rdfs:comment "Un caso di malattia professionale si dice “ in franchigia” se provoca assenza dal lavoro non superiore ai tre giorni; per il periodo di franchigia l'Inail non corrisponde alcuna prestazione al lavoratore."@it .
+    rdfs:comment "Un caso di malattia professionale si dice « in franchigia» se provoca assenza dal lavoro non superiore ai tre giorni; per il periodo di franchigia l'Inail non corrisponde alcuna prestazione al lavoratore."@it .
 
 inail:MalattiaProfessionaleMortale a owl:Class ;
     rdfs:label "Malattia Professionale Mortale"@it ;
