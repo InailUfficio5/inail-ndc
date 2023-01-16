@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: Schema del Tipo Indennizzo
-  version: 202211.10.00
+  version: 202301.10.00
   x-summary: Schema del tipo di indennizzo di un evento lesivo compatibile con l'ontologia INAIL.
   license:
     name: CC BY 4.0
@@ -13,7 +13,7 @@ info:
    # url:
   description: |-
    Tipo di indennizzo erogato, stabilito in base al grado di menomazione.
-
+   
     La metadatazione semantica degli schemi si basa sul documento
     [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html)
     che introduce le keyword x-jsonld-type e x-jsonld-context.

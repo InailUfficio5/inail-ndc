@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: Schema della Prestazione Economica
-  version: 202211.10.00
+  version: 202301.10.00
   x-summary: Schema della prestazione economica compatibile con l'ontologia INAIL.
   license:
     name: CC BY 4.0
@@ -24,9 +24,9 @@ tags: []
 components:
   schemas:
     MalattiaProfessionale:
-      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/tree/main/assets/schemas/malattia-professionale/malattia-professionale.oas3.yaml#/components/schemas/MalattiaProfessionale"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/malattia-professionale/malattia-professionale.oas3.yaml#/components/schemas/MalattiaProfessionale"
     Infortunio:
-      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/tree/main/assets/schemas/infortunio/infortunio.oas3.yaml#/components/schemas/Infortunio"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/infortunio/infortunio.oas3.yaml#/components/schemas/Infortunio"
 
     IdPrestazioneEconomica:
       type: integer
@@ -74,6 +74,6 @@ components:
         id_prestazione: 001234567
         importo_prestazione: 377.01
         prestazione_relativa_a_mp:
-          - $ref: "#/components/schemas/MalattiaProfessionale/example"
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/malattia-professionale/malattia-professionale.oas3.yaml#/components/schemas/MalattiaProfessionale/example"
         prestazione_relativa_a_inf:
-          - $ref: "#/components/schemas/Infortunio/example"
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/infortunio/infortunio.oas3.yaml#/components/schemas/Infortunio/example"

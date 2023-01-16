@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: Schema della Riapertura di una Trattazione
-  version: 202211.10.00
+  version: 202301.10.00
   x-summary: Schema della riapertura di una trattazione compatibile con l'ontologia INAIL.
   license:
     name: CC BY 4.0
@@ -12,9 +12,8 @@ info:
     email: b.marino@almawave.it
    # url:
   description: |-
-   La trattazione amministrativa dell'evento lesivo si conclude con una "definizione" e dall'esito della definizione scaturisce un provvedimento.
-   La trattazione può essere, in alcuni casi, riaperta e successivamente ridefinita.
-   La riapertura viene effettuata sempre per volere del soggetto che ha subito l'evento lesivo.
+   La trattazione amministrativa dell'evento lesivo si conclude con una definizione e dall'esito della definizione scaturisce un provvedimento.
+   La trattazione può essere, in alcuni casi, riaperta e successivamente ridefinita. La riapertura viene effettuata sempre per volere del soggetto che ha subito l'evento lesivo.
    Dalla riapertura può scaturire un contenzioso giudiziario, ma può essere risolta anche in ambito amministrativo con lo strumento dell'opposizione.
 
     La metadatazione semantica degli schemi si basa sul documento
@@ -26,13 +25,13 @@ tags: []
 components:
   schemas:
     EsitoDefinizione:
-      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/tree/main/assets/schemas/esito-definizione/esito-definizione.oas3.yaml#/components/schemas/EsitoDefinizione"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/esito-definizione/esito-definizione.oas3.yaml#/components/schemas/EsitoDefinizione"
     MalattiaProfessionale:
-      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/tree/main/assets/schemas/malattia-professionale/malattia-professionale.oas3.yaml#/components/schemas/MalattiaProfessionale"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/malattia-professionale/malattia-professionale.oas3.yaml#/components/schemas/MalattiaProfessionale"
     Infortunio:
-      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/tree/main/assets/schemas/infortunio/infortunio.oas3.yaml#/components/schemas/Infortunio"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/infortunio/infortunio.oas3.yaml#/components/schemas/Infortunio"
     TipoTrattazione:
-      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/tree/main/assets/schemas/tipo-trattazione/tipo-trattazione.oas3.yaml#/components/schemas/TipoTrattazione"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tipo-trattazione/tipo-trattazione.oas3.yaml#/components/schemas/TipoTrattazione"
 
     IdRiapertura:
       type: string
@@ -151,12 +150,12 @@ components:
         tipo_conclusione_riapertura: 'Non definito'
         tipo_conclusione_precedente: 'Non definito'
         riapertura_esito:
-          - $ref: "#/components/schemas/EsitoDefinizione/example"
+          - $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/esito-definizione/esito-definizione.oas3.yaml#/components/schemas/EsitoDefinizione/example"
         riapertura_esito_trattazione:
-          - $ref: "#/components/schemas/EsitoDefinizione/example"
+          - $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/esito-definizione/esito-definizione.oas3.yaml#/components/schemas/EsitoDefinizione/example"
         riapertura_tipo_trattazione:
-          - $ref: "#/components/schemas/TipoTrattazione/example"
+          - $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tipo-trattazione/tipo-trattazione.oas3.yaml#/components/schemas/TipoTrattazione/example"
         riapertura_relativa_a_mp:
-          - $ref: "#/components/schemas/MalattiaProfessionale/example"
+          - $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/malattia-professionale/malattia-professionale.oas3.yaml#/components/schemas/MalattiaProfessionale/example"
         riapertura_relativa_a_inf:
-          - $ref: "#/components/schemas/Infortunio/example"
+          - $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/infortunio/infortunio.oas3.yaml#/components/schemas/Infortunio/example"

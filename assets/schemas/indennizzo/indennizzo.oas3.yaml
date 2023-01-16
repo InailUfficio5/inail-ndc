@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: Schema dell'Indennizzo
-  version: 202211.10.00
+  version: 202301.10.00
   x-summary: Schema dell'indennizzo corrisposto dall'INAIL alla persona.
   license:
     name: CC BY 4.0
@@ -11,7 +11,7 @@ info:
     name: Bruno Marino
     email: b.marino@almawave.it
    # url:
-  description: |-
+  description: |- 
    L'indennizzo è una prestazione economica che l'Inail corrisponde ad infortunati e tecnopatici nell'ambito del sistema assicurativo.
    Le tipologie principali di indennizzo sono l'indennità per inabilità temporanea assoluta al lavoro, l'indennizzo in capitale una tantum per menomazioni permanenti di grado compreso tra 6 e il 15%,
    la rendita diretta per menomazioni permanenti di grado compreso tra 16 e il 100%, la rendita a superstiti nel caso di morte riconducibile ad infortunio sul lavoro o malattia professionale.
@@ -25,7 +25,7 @@ tags: []
 components:
   schemas:
     InabilitaTemporanea:
-      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/tree/main/assets/schemas/inabilita-temporanea/inabilita-temporanea.oas3.yaml#/components/schemas/InabilitaTemporanea"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/inabilita-temporanea/inabilita-temporanea.oas3.yaml#/components/schemas/InabilitaTemporanea"
     IdIndennizzo:
       type: string
       description:
@@ -104,4 +104,4 @@ components:
         data_liquidazione_indennizzo: "2020-11-12"
         giorni_inabilita_temporanea: 10
         indennizzo_giornaliero_ha_inabilita:
-          - $ref: "#/components/schemas/InabilitaTemporanea/example"
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/inabilita-temporanea/inabilita-temporanea.oas3.yaml#/components/schemas/InabilitaTemporanea/example"
