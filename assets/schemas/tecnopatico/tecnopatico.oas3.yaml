@@ -13,7 +13,7 @@ info:
    # url:
   description: |-
    Il tecnopatico è qualsiasi lavoratore affetto da malattia professionale.
-   
+
     La metadatazione semantica degli schemi si basa sul documento
     [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html)
     che introduce le keyword x-jsonld-type e x-jsonld-context.

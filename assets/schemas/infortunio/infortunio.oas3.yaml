@@ -14,7 +14,7 @@ info:
   description: |-
    L'infortunio sul lavoro è ogni lesione originata, in occasione di lavoro, da causa violenta che determini la morte della persona o ne menomi parzialmente o totalmente la capacità lavorativa in via temporanea o permanente.
    Gli elementi integranti l'infortunio sul lavoro sono la lesione, la causa violenta, l'occasione di lavoro.
-    
+
     La metadatazione semantica degli schemi si basa sul documento
     [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html)
     che introduce le keyword x-jsonld-type e x-jsonld-context.

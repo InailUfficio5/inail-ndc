@@ -13,7 +13,7 @@ info:
    # url:
   description: |-
    Per infortunato sul lavoro si intende ogni lavoratore con una lesione originata, in occasione di lavoro, da causa violenta che determini la morte della persona o che comprometta parzialmente o totalmente la capacità lavorativa.
-   
+
     La metadatazione semantica degli schemi si basa sul documento
     [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html)
     che introduce le keyword x-jsonld-type e x-jsonld-context.

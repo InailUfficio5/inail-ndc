@@ -13,7 +13,7 @@ info:
    # url:
   description: |-
    La trattazione identifica le diverse fasi della pratica di infortunio o di malattia professionale. Dagli esiti delle varie trattazioni si definisce il grado di invalidità, l'indennizzo e la prestazione che viene erogata agli aventi diritto.
-   
+
     La metadatazione semantica degli schemi si basa sul documento
     [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html)
     che introduce le keyword x-jsonld-type e x-jsonld-context.
