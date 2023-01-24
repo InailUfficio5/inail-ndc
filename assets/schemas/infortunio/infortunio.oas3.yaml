@@ -13,11 +13,7 @@ info:
    # url:
   description: |-
    L'infortunio sul lavoro è ogni lesione originata, in occasione di lavoro, da causa violenta che determini la morte della persona o ne menomi parzialmente o totalmente la capacità lavorativa in via temporanea o permanente.
-   Gli elementi integranti l'infortunio sul lavoro sono la lesione, la causa violenta, l'occasione di lavoro.
-
-    La metadatazione semantica degli schemi si basa sul documento
-    [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html)
-    che introduce le keyword x-jsonld-type e x-jsonld-context.
+   Gli elementi integranti l'infortunio sul lavoro sono la lesione, la causa violenta, l'occasione di lavoro. La metadatazione semantica degli schemi si basa sul documento [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html) che introduce le keyword x-jsonld-type e x-jsonld-context.
 paths: {}
 servers: []
 tags: []
@@ -80,8 +76,8 @@ components:
           "@id": eventoTrattatoDaSedeINAIL
         infortunio_coinvolge_pat:
           "@id": eventoCoinvolgePAT
-        infortunio_coinvolge_azienda:
-          "@id": eventoCoinvolgeAzienda
+        infortunio_coinvolge_soggetto_assicurante:
+          "@id": eventoCoinvolgeSoggettoAssicurante
         infortunio_ha_settore_attivita:
           "@id": eventoHaSettoreAttivita
         infortunio_relativo_a_gestione_assicurativa:
@@ -225,10 +221,10 @@ components:
           type: object
           items:
             $ref: "#/components/schemas/PosizioneAssicurativaTerritoriale"
-        infortunio_coinvolge_azienda:
+        infortunio_coinvolge_soggetto_assicurante:
           type: object
           items:
-            $ref: "#/components/schemas/Azienda"
+            $ref: "#/components/schemas/SoggettoAssicurante"
         infortunio_ha_settore_attivita:
           type: object
           items:
@@ -356,8 +352,8 @@ components:
           indirizzo_struttura: 'Via Roma 27'
         infortunio_coinvolge_pat:
           codice_pat: 65014298
-        infortunio_coinvolge_azienda:
-          codice_azienda: 47365918
+        infortunio_coinvolge_soggetto_assicurante:
+          codice_soggetto_assicurante: 47365918
         infortunio_ha_settore_attivita:
           codice_tipo_settore_attivita: 2
           descrizione_tipo_settore_attivita: 'Artigianato'
@@ -619,23 +615,23 @@ components:
       example:
         codice_pat: 65014298
 
-    Azienda:
+    SoggettoAssicurante:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/Azienda
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/SoggettoAssicurante
       x-jsonld-context:
         "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
-        codice_azienda: codiceAzienda
+        codice_soggetto_assicurante: codiceSoggettoAssicurante
       additionalProperties: true
       description:
-          Questo schema rappresenta un'azienda ed è associato a https://w3id.org/italia/onto/WorkAccident/Azienda.
+          Questo schema rappresenta un soggetto assicurante ed è associato a https://w3id.org/italia/onto/WorkAccident/SoggettoAssicurante.
       required:
-      - codice_azienda
+      - codice_soggetto_assicurante
       properties:
-        codice_azienda:
+        codice_soggetto_assicurante:
           type: integer
           format: int64
       example:
-        codice_azienda: 47365918
+        codice_soggetto_assicurante: 47365918
 
     SettoreAttivita:
       type: object
