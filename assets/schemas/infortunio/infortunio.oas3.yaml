@@ -1,0 +1,1269 @@
+openapi: 3.0.3
+info:
+  title: Schema dell'Infortunio
+  version: 202310.10.00
+  x-summary: Schema dell'infortunio compatibile con l'ontologia INAIL.
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  termsOfService: https://creativecommons.org/licenses/by/4.0/
+  contact:
+    name: Anna Maria De Paoli
+    email: a.depaoli@inail.it
+   # url:
+  description: |-
+   L'infortunio sul lavoro è ogni lesione originata, in occasione di lavoro, da causa violenta che determini la morte della persona o ne menomi parzialmente o totalmente la capacità lavorativa in via temporanea o permanente.
+   Gli elementi integranti l'infortunio sul lavoro sono la lesione, la causa violenta, l'occasione di lavoro. La metadatazione semantica degli schemi si basa sul documento [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html) che introduce le keyword x-jsonld-type e x-jsonld-context.
+paths: {}
+servers: []
+tags: []
+components:
+  schemas:
+    EsitoDefinizione:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/esito-definizione/esito-definizione.oas3.yaml#/components/schemas/EsitoDefinizione"
+    TipoIndennizzo:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tipo-indennizzo/tipo-indennizzo.oas3.yaml#/components/schemas/TipoIndennizzo"
+    TipoTrattazione:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tipo-trattazione/tipo-trattazione.oas3.yaml#/components/schemas/TipoTrattazione"
+    Infortunato:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/infortunato/infortunato.oas3.yaml#/components/schemas/Infortunato"
+
+    IdInfortunio:
+      type: string
+      description:
+        Campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità.
+        Associato a https://w3id.org/italia/onto/WorkAccident/idInfortunio.
+      example: '111000000'
+      maxLength: 50
+      minLength: 1
+
+    Infortunio:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/Infortunio
+      # This custom property defines the associated json-ld
+      #   context that can be used to semantically describe
+      #   the instances.
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        id_infortunio: idInfortunio
+        tipo_infortunio: tipoInfortunio
+        modalita_infortunio_mezzo_trasporto: modalitaInfortunioMezzoDiTrasporto
+        infortunio_in_sede_lavoro: infortunioInSedeDiLavoro
+        data_riferimento_infortunio: dataRiferimentoInfortunio
+        data_apertura_infortunio: dataAperturaEventoLesivo
+        data_decesso_infortunio: dataDecessoEventoLesivo
+        data_definizione_infortunio: dataDefinizioneEventoLesivo
+        data_protocollazione_infortunio: dataProtocollazioneEventoLesivo
+        data_esito_definizione_infortunio: dataEsitoDefinizioneEventoLesivo
+        data_infortunio: dataEventoLesivo
+        flag_positivo_negativo_infortunio: flagEventoLesivoPositivoNegativo
+        descrizione_flag_positivo_negativo_infortunio: descrizioneFlagEventoLesivoPositivoNegativo
+        infortunio_accaduto_a_infortunato:
+          "@id": infortunioAccadutoAInfortunato
+        infortunio_grado_inabilita_assunto:
+          "@id": infortunioHaGradoDiInabilitaAssunto
+        infortunio_grado_inabilita_attuale:
+          "@id": infortunioHaGradoDiInabilitaAttuale
+        infortunio_accaduto_in_tipoLuogo:
+          "@id": infortunioAccadutoInTipoLuogo
+        infortunio_ha_tipo_attivita_fisica:
+          "@id": infortunioHaTipoAttivitaFisica
+        infortunioHaTipoContatto:
+          "@id": infortunioHaTipoContatto
+        infortunioHaTipoDeviazione:
+          "@id": infortunioHaTipoDeviazione
+        infortunio_trattato_da_sede_INAIL:
+          "@id": eventoTrattatoDaSedeINAIL
+        infortunio_coinvolge_pat:
+          "@id": eventoCoinvolgePAT
+        infortunio_coinvolge_soggetto_assicurante:
+          "@id": eventoCoinvolgeSoggettoAssicurante
+        infortunio_ha_settore_attivita:
+          "@id": eventoHaSettoreAttivita
+        infortunio_relativo_a_gestione_assicurativa:
+          "@id": eventoRelativoAGestioneAssicurativa
+        infortunio_ha_voce_di_tariffa:
+          "@id": eventoHaVoceDiTariffa
+        infortunio_ha_esito_definizione:
+           "@id": eventoHaEsitoDefinizione
+        infortunio_ha_tipo_indennizzo:
+           "@id": eventoHaTipoIndennizzo
+        infortunio_ha_natura_lesione:
+           "@id": eventoHaNaturaLesione
+        infortunio_ha_sede_lesione:
+           "@id": haSedeLesione
+        infortunio_ha_gestione_contabile:
+           "@id": haGestioneContabile
+        infortunio_ha_fascia_periodo_morte:
+           "@id": haFasciaPeriodoMorte
+        infortunio_ha_definizione_morte:
+           "@id": eventoHaDefinizioneMorte
+        infortunio_ha_qualifica_assicurativa:
+           "@id": haQualificaAssicurativa
+        infortunio_ha_agente_materiale:
+           "@id": haAgenteMateriale
+        infortunio_ha_classificazione_cnel:
+           "@id": haClassificazioneContrattoCNEL
+        infortunio_ha_classificazione_fascia_eta:
+           "@id": haClassificazioneFasciaEta
+        infortunio_ha_classificazione_cause_esterne:
+           "@id": haClassificazioneCauseEsterne
+        infortunio_ha_agente_causale:
+           "@id": haAgenteCausale
+        infortunio_ha_tipo_trattazione:
+           "@id": eventoHaTipoTrattazione
+        infortunio_ha_tipo_pratica:
+           "@id": eventoHaTipoPratica
+        infortunio_ha_tipo_lavoratore:
+           "@id": eventoHaTipoLavoratore
+        infortunio_relativo_a_mansione:
+           "@id": eventoRelativoAMansione
+        infortunio_ha_grado_di_menomazione:
+           "@id": eventoHaGradoDiMenomazione
+        infortunio_ha_decodifica_istruttoria_morte:
+           "@id": eventoHaDecodificaIstruttoriaMorte
+      additionalProperties: true
+      description:
+         Questo schema rappresenta un infortunio ed è associato ad https://w3id.org/italia/onto/WorkAccident/Infortunio.
+      required:
+      - tipo_infortunio
+      - data_riferimento_infortunio
+      - id_infortunio
+      - modalita_infortunio_mezzo_trasporto
+      - infortunio_in_sede_lavoro
+      - data_apertura_infortunio
+      - data_decesso_infortunio
+      - data_definizione_infortunio
+      - data_protocollazione_infortunio
+      - data_esito_definizione_infortunio
+      - data_infortunio
+      - flag_positivo_negativo_infortunio
+      - descrizione_flag_positivo_negativo_infortunio
+      properties:
+        id_infortunio:
+          $ref: "#/components/schemas/IdInfortunio"
+        data_riferimento_infortunio:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        tipo_infortunio:
+          type: string
+          maxLength: 255
+        modalita_infortunio_mezzo_trasporto:
+          type: string
+          maxLength: 255
+        infortunio_in_sede_lavoro:
+          type: string
+          maxLength: 255
+        data_apertura_infortunio:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        data_decesso_infortunio:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        data_definizione_infortunio:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        data_protocollazione_infortunio:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        data_esito_definizione_infortunio:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        data_infortunio:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        flag_positivo_negativo_infortunio:
+          type: string
+          maxLength: 20
+        descrizione_flag_positivo_negativo_infortunio:
+          type: string
+          maxLength: 50
+        infortunio_accaduto_a_infortunato:
+          type: object
+          items:
+            $ref: "#/components/schemas/Infortunato"
+        infortunio_grado_inabilita_assunto:
+          type: object
+          items:
+            $ref: "#/components/schemas/GradoDiInabilita"
+        infortunio_grado_inabilita_attuale:
+          type: object
+          items:
+            $ref: "#/components/schemas/GradoDiInabilita"
+        infortunio_accaduto_in_tipoLuogo:
+          type: object
+          items:
+            $ref: "#/components/schemas/TipoLuogoAccadimento"
+        infortunio_ha_tipo_attivita_fisica:
+          type: object
+          items:
+            $ref: "#/components/schemas/TipoAttivitaFisica"
+        infortunioHaTipoContatto:
+          type: object
+          items:
+            $ref: "#/components/schemas/TipoContatto"
+        infortunioHaTipoDeviazione:
+          type: object
+          items:
+            $ref: "#/components/schemas/TipoDeviazione"
+        infortunio_trattato_da_sede_inail:
+          type: object
+          items:
+            $ref: "#/components/schemas/SedeInail"
+        infortunio_coinvolge_pat:
+          type: object
+          items:
+            $ref: "#/components/schemas/PosizioneAssicurativaTerritoriale"
+        infortunio_coinvolge_soggetto_assicurante:
+          type: object
+          items:
+            $ref: "#/components/schemas/SoggettoAssicurante"
+        infortunio_ha_settore_attivita:
+          type: object
+          items:
+            $ref: "#/components/schemas/SettoreAttivita"
+        infortunio_relativo_a_gestione_assicurativa:
+          type: object
+          items:
+            $ref: "#/components/schemas/GestioneAssicurativa"
+        infortunio_ha_voce_di_tariffa:
+          type: object
+          items:
+            $ref: "#/components/schemas/VoceDiTariffa"
+        infortunio_ha_esito_definizione:
+          type: object
+          items:
+            $ref: "#/components/schemas/EsitoDefinizione"
+        infortunio_ha_tipo_indennizzo:
+          type: object
+          items:
+            $ref: "#/components/schemas/TipoIndennizzo"
+        infortunio_ha_natura_lesione:
+          type: object
+          items:
+            $ref: "#/components/schemas/NaturaLesione"
+        infortunio_ha_sede_lesione:
+          type: object
+          items:
+            $ref: "#/components/schemas/SedeLesione"
+        infortunio_ha_gestione_contabile:
+          type: object
+          items:
+            $ref: "#/components/schemas/GestioneContabile"
+        infortunio_ha_fascia_periodo_morte:
+          type: object
+          items:
+            $ref: "#/components/schemas/FasciaPeriodoMorte"
+        infortunio_ha_definizione_morte:
+          type: object
+          items:
+            $ref: "#/components/schemas/DefinizioneMorte"
+        infortunio_ha_qualifica_assicurativa:
+          type: object
+          items:
+            $ref: "#/components/schemas/QualificaAssicurativa"
+        infortunio_ha_agente_materiale:
+          type: object
+          items:
+            $ref: "#/components/schemas/AgenteMateriale"
+        infortunio_ha_classificazione_cnel:
+          type: object
+          items:
+            $ref: "#/components/schemas/ClassificazioneContrattoCnel"
+        infortunio_ha_classificazione_fascia_eta:
+          type: object
+          items:
+            $ref: "#/components/schemas/ClassificazioneFasciaEta"
+        infortunio_ha_classificazione_cause_esterne:
+          type: object
+          items:
+            $ref: "#/components/schemas/ClassificazioneCauseEsterne"
+        infortunio_ha_agente_causale:
+          type: object
+          items:
+            $ref: "#/components/schemas/AgenteCausale"
+        infortunio_ha_tipo_trattazione:
+          type: object
+          items:
+            $ref: "#/components/schemas/TipoTrattazione"
+        infortunio_ha_tipo_pratica:
+          type: object
+          items:
+            $ref: "#/components/schemas/TipoPratica"
+        infortunio_ha_tipo_lavoratore:
+          type: object
+          items:
+            $ref: "#/components/schemas/TipoLavoratore"
+        infortunio_relativo_a_mansione:
+          type: object
+          items:
+            $ref: "#/components/schemas/Mansione"
+        infortunio_ha_grado_di_menomazione:
+          type: object
+          items:
+            $ref: "#/components/schemas/GradoDiMenomazione"
+        infortunio_ha_decodifica_istruttoria_morte:
+          type: object
+          items:
+            $ref: "#/components/schemas/DecodificaIstruttoriaMorte"
+      example:
+        id_infortunio: '111000000'
+        data_riferimento_infortunio: '2022-08-25'
+        tipo_infortunio: 'In itinere con mezzo di trasporto'
+        modalita_infortunio_mezzo_trasporto: 'Infortunio causato da mezzo di trasporto'
+        infortunio_in_sede_lavoro: 'Caso avvenuto in itinere'
+        data_apertura_infortunio: '2021-04-23'
+        data_decesso_infortunio: '2019-11-04'
+        data_definizione_infortunio: '2015-04-23'
+        data_protocollazione_infortunio: '2014-08-03'
+        data_esito_definizione_infortunio: '2015-04-23'
+        data_infortunio: '2014-08-02'
+        flag_positivo_negativo_infortunio: 'N'
+        descrizione_flag_positivo_negativo_infortunio: 'Negativo'
+        infortunio_accaduto_a_infortunato:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/infortunato/infortunato.oas3.yaml#/components/schemas/Infortunato/example"
+        infortunio_grado_inabilita_assunto:
+          descrizione_inabilita: "003"
+          percentuale_inabilita: 3
+        infortunio_grado_inabilita_attuale:
+          descrizione_inabilita: "003"
+          percentuale_inabilita: 3
+        infortunio_accaduto_in_tipoLuogo:
+          categoria_tipo_luogo: 'Cantiere di costruzione, cava, miniera a cielo aperto - non precisato'
+          descrizione_tipo_luogo: 'Cantiere, fabbricato in costruzione'
+        infortunio_ha_tipo_attivita_fisica:
+          categoria_attivita_fisica: 'Lavoro con utensili a mano - non precisato'
+          descrizione_attivita_fisica: 'Lavorare con utensili a mano manuali'
+        infortunioHaTipoContatto:
+          categoria_tipo_contatto: 'Contatto con agente materiale tagliente, appuntito, duro, abrasivo non precisato'
+          descrizione_tipo_contatto: 'Contatto con agente materiale tagliente (coltello/lama)'
+        infortunioHaTipoDeviazione:
+          categoria_tipo_deviazione: 'Movimento del corpo senza sforzo fisico (che porta generalmente a una lesione esterna) - non precisato'
+          descrizione_tipo_deviazione: 'Movimenti scoordinati, gesti intempestivi, inopportuni'
+        infortunio_trattato_da_sede_inail:
+          codice_struttura: 12134
+          indirizzo_struttura: 'Via Roma 27'
+        infortunio_coinvolge_pat:
+          codice_pat: 65014298
+        infortunio_coinvolge_soggetto_assicurante:
+          codice_soggetto_assicurante: 47365918
+        infortunio_ha_settore_attivita:
+          codice_tipo_settore_attivita: 2
+          descrizione_tipo_settore_attivita: 'Artigianato'
+        infortunio_relativo_a_gestione_assicurativa:
+          gruppo_gestione_assicurativa: 'Ordinarie'
+          tipo_gestione_assicurativa: 'Dipendenti'
+        infortunio_ha_voce_di_tariffa:
+          codice_voce_tariffa: 2707
+          descrizione_voce_tariffa: '2707 - Uffici scolastici regionali - scuole del primo ciclo'
+          codice_settore_attivita: 7
+          descrizione_settore_attivita: '7 - Conto stato'
+        infortunio_ha_esito_definizione:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/esito-definizione/esito-definizione.oas3.yaml#/components/schemas/EsitoDefinizione/example"
+        infortunio_ha_tipo_indennizzo:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tipo-indennizzo/tipo-indennizzo.oas3.yaml#/components/schemas/TipoIndennizzo/example"
+        infortunio_ha_natura_lesione:
+          descrizione_natura_lesione: 'Lussazione, distorsione, distrazione'
+        infortunio_ha_sede_lesione:
+          area_sede_lesione: 'Cingolo toracico'
+          macroarea_sede_lesione: 'Torace e organi interni'
+          descrizione_sede_lesione: 'Cingolo toracico destro'
+        infortunio_ha_gestione_contabile:
+          codice_tipo_gestione_contabile: 'S'
+          descrizione_tipo_gestione_contabile: 'Conto stato'
+          descrizione_gestione_contabile: 'Infortuni dipendenti dello stato'
+          codice_gestione_contabile_aggr: 3
+          descrizione_gestione_contabile_aggr: '3 - Conto stato dipendenti'
+        infortunio_ha_fascia_periodo_morte:
+          descrizione_fascia: 'Da 16 a 30 gg'
+          limite_inferiore: 16
+          limite_superiore: 30
+        infortunio_ha_definizione_morte:
+          codice_definizione_morte: 'AC'
+          descrizione_classificazione_morte: 'Accolta'
+        infortunio_ha_qualifica_assicurativa:
+          codice_qualifica_assicurativa: '12A'
+          descrizione_qualifica_assicurativa: 'Socio di cooperativa agricola'
+          gestione_qualifica_assicurativa: 'Agricoltura'
+          tipo_lavoratore_qualifica_assicurativa: 'Cooperative'
+        infortunio_ha_agente_materiale:
+          codice_agente_materiale: 10
+          descrizione_agente_materiale: 'Sollevamento e/o stoccaggio e/o smistamento materiali'
+          codice_gruppo_agente_materiale: 1
+          descrizione_gruppo_agente_materiale: 'Mezzi di sollevamento e trasporto'
+        infortunio_ha_classificazione_cnel:
+          codice_classificazione_cnel: 'A'
+          descrizione_classificazione cnel: 'Sistemazioni idraulico forestali'
+          categoria_classificazione_cnel: 'A181'
+          settore_classificazione_cnel: 'Agricoltura'
+        infortunio_ha_classificazione_fascia_eta:
+          classificazione_eta_1: 'Da 56 a 60 anni'
+          classificazione_eta_2: 'Da 55 a 59 anni'
+          classificazione_eta_3: 'Da 50 a 64 anni'
+        infortunio_ha_classificazione_cause_esterne:
+          codice_cause_esterne: 801
+          descrizione_cause_estere: 'Frattura della base del cranio'
+          sotto_settore_cause_esterne: 'Fratture del cranio, della colonna vertebrale e del tronco'
+          settore_cause_esterne: 'Accidenti, avvelenamenti e traumatismi secondo la natura della lesione'
+        infortunio_ha_agente_causale:
+          codice_agente_causale: 60110402
+          descrizione_agente_causale: 'Silice cristallizzata cristobalite'
+          codice_gruppo_agente_causale: 1
+          descrizione_gruppo_agente_causale: 'Polveri'
+        infortunio_ha_tipo_trattazione:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tipo-trattazione/tipo-trattazione.oas3.yaml#/components/schemas/TipoTrattazione/example"
+        infortunio_ha_tipo_pratica:
+          codice_tipo_pratica: 'D'
+          descrizione_tipo_pratica: 'Denuncia'
+        infortunio_ha_tipo_lavoratore:
+          codice_tipo_lavoratore: 'E'
+          descrizione_tipo_lavoratore: 'Socio'
+        infortunio_relativo_a_mansione:
+          codice_mansione_l1: '2'
+          descrizione_mansione_l1: 'Professioni intellettuali, scientifiche e di elevata specializzazione'
+          codice_mansione_l2: '2.6'
+          descrizione_mansione_l2: 'Specialisti della formazione e della ricerca'
+          codice_mansione_l3: '2.6.3'
+          descrizione_mansione_l3: 'Professori di scuola secondaria, post'
+          codice_mansione_l4: '2.6.3.2'
+          descrizione_mansione_l4: 'Professori di scuola secondaria superiore'
+          codice_mansione_l5: '2.6.3.2.6'
+          descrizione_mansione_l5: 'Professori di scienze giuridiche, economiche e sociali nella scuola secondaria superiore'
+          codice_mansione_l6: '2.6.3.2.6.1'
+          descrizione_mansione_l6: 'docente di economia'
+        infortunio_ha_grado_di_menomazione:
+          percentuale_grado_menomazione: 8
+          descrizione_grado_menomazione: '008'
+        infortunio_ha_decodifica_istruttoria_morte:
+          codice_decodifica_istruttoria_morte: '005'
+          descrizione_decodifica_istruttoria_morte: 'Istruttoria Incompleta. Pratica ad esame medico'
+
+    GradoDiInabilita:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/GradoDiInabilita
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        descrizione_inabilita: descrizioneGradoDiInabilita
+        percentuale_inabilita: percentualeGradoDiInabilita
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la percentuale con cui si misura il livello di perdita della capacità lavorativa complessiva in conseguenza di infortunio sul lavoro o di malattia professionale in regime Testo Unico.
+          Lo schema è associato a https://w3id.org/italia/onto/WorkAccident/GradoDiInabilita.
+      required:
+      - descrizione_inabilita
+      - percentuale_inabilita
+      properties:
+        descrizione_inabilita:
+          type: string
+          maxLength: 10
+        percentuale_inabilita:
+          type: integer
+          format: int32
+          minimum: 0
+          maximum: 100
+      example:
+        descrizione_inabilita: '003'
+        percentuale_inabilita: 3
+
+    TipoLuogoAccadimento:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/TipoLuogoAccadimento
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        categoria_tipo_luogo: categoriaTipoLuogo
+        descrizione_tipo_luogo: descrizioneTipoLuogo
+      additionalProperties: true
+      description:
+          Questo schema rappresenta il luogo in cui è avvenuto un evento lesivo
+          ed è associato a https://w3id.org/italia/onto/WorkAccident/TipoLuogoAccadimento.
+      required:
+      - descrizione_tipo_luogo
+      - categoria_tipo_luogo
+      properties:
+        categoria_tipo_luogo:
+          type: string
+          maxLength: 255
+        descrizione_tipo_luogo:
+          type: string
+          maxLength: 255
+      example:
+        categoria_tipo_luogo: 'Cantiere di costruzione, cava, miniera a cielo aperto - non precisato'
+        descrizione_tipo_luogo: 'Cantiere, fabbricato in costruzione'
+
+    TipoAttivitaFisica:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/TipoAttivitaFisica
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        categoria_attivita_fisica: categoriaAttivitaFisica
+        descrizione_attivita_fisica : descrizioneAttivitaFisica
+      additionalProperties: true
+      description:
+          Questo schema rappresenta Questo schema rappresenta il tipo di attività fisica svolta al momento dell'evento lesivo
+          ed è associato a https://w3id.org/italia/onto/WorkAccident/TipoAttivitaFisica.
+      required:
+      - categoria_attivita_fisica
+      - descrizione_attivita_fisica
+      properties:
+        categoria_attivita_fisica:
+          type: string
+          maxLength: 255
+        descrizione_attivita_fisica:
+          type: string
+          maxLength: 255
+      example:
+        categoria_attivita_fisica: 'Lavoro con utensili a mano - non precisato'
+        descrizione_attivita_fisica: 'Lavorare con utensili a mano manuali'
+
+    TipoContatto:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/TipoContatto
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        categoria_tipo_contatto:
+        descrizione_tipo_contatto:
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la sostanza e la tipologia di contatto con la stessa, che causa l'evento lesivo
+          ed è associato a https://w3id.org/italia/onto/WorkAccident/TipoContatto.
+      required:
+      - categoria_tipo_contatto
+      - descrizione_tipo_contatto
+      properties:
+        categoria_tipo_contatto:
+          type: string
+          maxLength: 255
+        descrizione_tipo_contatto:
+          type: string
+          maxLength: 255
+      example:
+        categoria_tipo_contatto: 'Contatto con agente materiale tagliente, appuntito, duro, abrasivo non precisato'
+        descrizione_tipo_contatto: 'Contatto con agente materiale tagliente (coltello/lama)'
+
+    TipoDeviazione:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/TipoDeviazione
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        categoria_tipo_deviazione:
+        descrizione_tipo_deviazione:
+      additionalProperties: true
+      description:
+          Questo schema rappresenta l'ultimo evento, deviante rispetto alla norma, che ha portato all'infortunio.
+          Rappresenta la descrizione di un evento anomalo e consiste in ciò che provoca l'infortunio ed è associato a https://w3id.org/italia/onto/WorkAccident/TipoDeviazione.
+      required:
+      - categoria_tipo_deviazione
+      - descrizione_tipo_deviazione
+      properties:
+        categoria_tipo_deviazione:
+          type: string
+          maxLength: 255
+        descrizione_tipo_deviazione:
+          type: string
+          maxLength: 255
+      example:
+        categoria_tipo_deviazione: 'Movimento del corpo senza sforzo fisico (che porta generalmente a una lesione esterna) - non precisato'
+        descrizione_tipo_deviazione: 'Movimenti scoordinati, gesti intempestivi, inopportuni'
+
+    SedeInail:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/SedeINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        codice_struttura: codiceStrutturaINAIL
+        indirizzo_struttura: indirizzoStrutturaINAIL
+      additionalProperties: true
+      description:
+          Questo schema rappresenta una sede INAIL ed è associato a https://w3id.org/italia/onto/WorkAccident/SedeINAIL.
+      required:
+      - codice_struttura
+      - indirizzo_struttura
+      properties:
+        codice_struttura:
+          type: integer
+          format: int64
+        indirizzo_struttura:
+          type: string
+          maxLength: 250
+      example:
+        codice_struttura: 12134
+        indirizzo_struttura: 'Via Roma 27'
+
+    PosizioneAssicurativaTerritoriale:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/PosizioneAssicurativaTerritoriale
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        codice_pat: codicePAT
+      additionalProperties: true
+      description:
+          La PAT (posizione assicurativa territoriale) indica la sede di lavoro che coincide con l'unità produttiva rilevante ai fini degli adempimenti assicurativi.
+          Lo schema è associato a https://w3id.org/italia/onto/WorkAccident/PosizioneAssicurativaTerritoriale.
+      required:
+      - codice_pat
+      properties:
+        codice_pat:
+          type: integer
+          format: int64
+      example:
+        codice_pat: 65014298
+
+    SoggettoAssicurante:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/SoggettoAssicurante
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        codice_soggetto_assicurante: codiceSoggettoAssicurante
+      additionalProperties: true
+      description:
+          Questo schema rappresenta un soggetto assicurante ed è associato a https://w3id.org/italia/onto/WorkAccident/SoggettoAssicurante.
+      required:
+      - codice_soggetto_assicurante
+      properties:
+        codice_soggetto_assicurante:
+          type: integer
+          format: int64
+      example:
+        codice_soggetto_assicurante: 47365918
+
+    SettoreAttivita:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/SettoreAttivita
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        codice_tipo_settore_attivita: codiceTipoSettoreAttivita
+        descrizione_tipo_settore_attivita: descrizioneTipoSettoreAttivita
+      additionalProperties: true
+      description:
+          Questo schema rappresenta il settore di attività economica ed è associato a https://w3id.org/italia/onto/WorkAccident/SettoreAttivita.
+      required:
+      - codice_tipo_settore_attivita
+      - descrizione_tipo_settore_attivita
+      properties:
+        codice_settore_attivita:
+          type: integer
+          format: int32
+        descrizione_settore_attivita:
+          type: string
+          maxLength: 50
+      example:
+        codice_tipo_settore_attivita: 2
+        descrizione_tipo_settore_attivita: 'Artigianato'
+
+    GestioneAssicurativa:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/GestioneAssicurativa
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        gruppo_gestione_assicurativa: gruppoGestioneAssicurativa
+        tipo_gestione_assicurativa: tipoGestioneAssicurativa
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la categoria che evidenzia in quale gestione/settore è stata inquadrata l'attività assicurata.
+          Lo schema è associato a https://w3id.org/italia/onto/WorkAccident/GestioneAssicurativa.
+      required:
+      - gruppo_gestione_assicurativa
+      - tipo_gestione_assicurativa
+      properties:
+        gruppo_gestione_assicurativa:
+          type: string
+          maxLength: 255
+        tipo_gestione_assicurativa:
+          type: string
+          maxLength: 255
+      example:
+        gruppo_gestione_assicurativa: 'Ordinarie'
+        tipo_gestione_assicurativa: 'Dipendenti'
+
+    VoceDiTariffa:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/VoceDiTariffa
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        codice_voce_tariffa: codiceVoceDiTariffa
+        descrizione_voce_tariffa: descrizioneVoceDiTariffa
+        codice_settore_attivita: codiceSettoreAttivita
+        descrizione_settore_attivita: descrizioneSettoreAttivita
+      additionalProperties: true
+      description:
+          Le Tariffe rappresentano un elenco di lavorazioni che servono a classificare l'attività di un'azienda ai fini assicurativi;
+          la voce di tariffa ricomprende le lavorazioni produttive od operative, considerate come complesso unitario e ne definisce la rischiosità;
+          Lo schema è associato a https://w3id.org/italia/onto/WorkAccident/VoceDiTariffa.
+      required:
+      - codice_voce_tariffa
+      - descrizione_voce_tariffa
+      - codice_settore_attivita
+      - descrizione_settore_attivita
+      properties:
+        codice_voce_tariffa:
+          type: integer
+          format: int64
+        descrizione_voce_tariffa:
+          type: string
+          maxLength: 255
+        codice_settore_attivita:
+          type: integer
+          format: int32
+        descrizione_settore_attivita:
+          type: string
+          maxLength: 255
+      example:
+        codice_voce_tariffa: 2707
+        descrizione_voce_tariffa: '2707 - Uffici scolastici regionali - scuole del primo ciclo'
+        codice_settore_attivita: 7
+        descrizione_settore_attivita: '7 - Conto stato'
+
+    NaturaLesione:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/NaturaLesione
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        descrizione_natura_lesione:
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la natura della lesione ed è associato a https://w3id.org/italia/onto/WorkAccident/NaturaLesione.
+      required:
+      - descrizione_natura_lesione
+      properties:
+        descrizione_natura_lesione:
+          type: string
+          maxLength: 255
+      example:
+        descrizione_natura_lesione: 'Lussazione, distorsione, distrazione'
+
+    SedeLesione:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/SedeLesione
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        area_sede_lesione:
+        macroarea_sede_lesione:
+        descrizione_sede_lesione:
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la classificazione della sede delle lesioni adottata da Inail ed è
+          associato a https://w3id.org/italia/onto/WorkAccident/SedeLesione.
+      required:
+      - area_sede_lesione
+      - macroarea_sede_lesione
+      - descrizione_sede_lesione
+      properties:
+        area_sede_lesione:
+          type: string
+          maxLength: 255
+        macroarea_sede_lesione:
+          type: string
+          maxLength: 255
+        descrizione_natura_lesione:
+          type: string
+          maxLength: 255
+      example:
+        area_sede_lesione: 'Cingolo toracico'
+        macroarea_sede_lesione: 'Torace e organi interni'
+        descrizione_sede_lesione: 'Cingolo toracico destro'
+
+    GestioneContabile:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/GestioneContabile
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        codice_tipo_gestione_contabile: codiceTipoGestioneContabile
+        descrizione_tipo_gestione_contabile: descrizioneTipoGestioneContabile
+        descrizione_gestione_contabile: descrizioneGestioneContabile
+        codice_gestione_contabile_aggr: codiceGestioneContabileAggregata
+        descrizione_gestione_contabile_aggr: descrizioneGestioneContabileAggregata
+      additionalProperties: true
+      description:
+          Questo schema rappresenta il sistema di classificazione dell'evento
+          lesivo ai fini della imputazione contabile ai capitoli di spesa,
+          ed è associato a https://w3id.org/italia/onto/WorkAccident/GestioneContabile.
+      required:
+      - codice_tipo_gestione_contabile
+      - descrizione_tipo_gestione_contabile
+      - descrizione_gestione_contabile
+      - codice_gestione_contabile_aggr
+      - descrizione_gestione_contabile_aggr
+      properties:
+        codice_tipo_gestione_contabile:
+          type: string
+          maxLength: 50
+        descrizione_tipo_gestione_contabile:
+          type: string
+          maxLength: 255
+        descrizione_gestione_contabile:
+          type: string
+          maxLength: 255
+        codice_gestione_contabile_aggr:
+          type: integer
+          format: int32
+        descrizione_gestione_contabile_aggr:
+          type: string
+          maxLength: 255
+      example:
+        codice_tipo_gestione_contabile: 'S'
+        descrizione_tipo_gestione_contabile: 'Conto stato'
+        descrizione_gestione_contabile: 'Infortuni dipendenti dello stato'
+        codice_gestione_contabile_aggr: 3
+        descrizione_gestione_contabile_aggr: '3 - Conto stato dipendenti'
+
+    FasciaPeriodoMorte:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/FasciaPeriodoMorte
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        descrizione_fascia: descrizioneFasciaPeriodoMorte
+        limite_inferiore: limiteInferioreFasciaPeriodoMorte
+        limite_superiore: limiteSuperioreFasciaPeriodoMorte
+      additionalProperties: true
+      description:
+          Questo schema rappresenta il numero di giorni trascorsi tra l'evento lesivo
+          e il decesso oppure se la morte è avvenuta sul colpo ed è associato a https://w3id.org/italia/onto/WorkAccident/FasciaPeriodoMorte.
+      required:
+      - descrizione_fascia
+      - limite_inferiore
+      - limite_superiore
+      properties:
+        descrizione_fascia:
+          type: string
+          maxLength: 50
+        limite_inferiore:
+          type: integer
+          format: int32
+        limite_superiore:
+          type: integer
+          format: int32
+      example:
+        descrizione_fascia: 'Da 16 a 30 gg'
+        limite_inferiore: 16
+        limite_superiore: 30
+
+    DefinizioneMorte:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/DefinizioneMorte
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        codice_definizione_morte: codiceDefinizioneMorte
+        descrizione_classificazione_morte: descrizioneClassificazioneMorte
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la definizione morte, ovvero la cessazione delle funzioni vitali negli organismi viventi e nell'uomo.
+          Viene in rilievo quando sia riconducibile ad un infortunio sul lavoro o ad una malattia professionali, nonché quando interessi persone che percepiscono prestazioni economiche o considerate ai fini del calcolo dell'importo della rendita diretta.
+          Lo schema è associato a https://w3id.org/italia/onto/WorkAccident/DefinizioneMorte.
+      required:
+      - codice_definizione_morte
+      - descrizione_classificazione_morte
+      properties:
+        codice_definizione_morte:
+          type: string
+          maxLength: 50
+        descrizione_classificazione_morte:
+          type: string
+          maxLength: 50
+      example:
+        codice_definizione_morte: 'AC'
+        descrizione_classificazione_morte: 'Accolta'
+
+    QualificaAssicurativa:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/QualificaAssicurativa
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        codice_qualifica_assicurativa: codiceQualificaAssicurativa
+        descrizione_qualifica_assicurativa: descrizioneQualificaAssicurativa
+        gestione_qualifica_assicurativa: gestioneQualificaAssicurativa
+        tipo_lavoratore_qualifica_assicurativa: tipoLavoratoreQualificaAssicurativa
+      additionalProperties: true
+      description:
+          Questo schema rappresenta l'anagrafica della tipologia di qualifica assicurativa ed è associato a https://w3id.org/italia/onto/WorkAccident/QualificaAssicurativa.
+          La qualifica assicurativa nasce dalla concatenazione del tipo di gestione e la qualifica professionale.
+      required:
+      - codice_qualifica_assicurativa
+      - descrizione_qualifica_assicurativa
+      - gestione_qualifica_assicurativa
+      - tipo_lavoratore_qualifica_assicurativa
+      properties:
+        codice_qualifica_assicurativa:
+          type: string
+          maxLength: 50
+        descrizione_qualifica_assicurativa:
+          type: string
+          maxLength: 255
+        gestione_qualifica_assicurativa:
+          type: string
+          maxLength: 255
+        tipo_lavoratore_qualifica_assicurativa:
+          type: string
+          maxLength: 255
+      example:
+        codice_qualifica_assicurativa: '12A'
+        descrizione_qualifica_assicurativa: 'Socio di cooperativa agricola'
+        gestione_qualifica_assicurativa: 'Agricoltura'
+        tipo_lavoratore_qualifica_assicurativa: 'Cooperative'
+
+    AgenteMateriale:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/AgenteMateriale
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        codice_agente_materiale: codiceAgenteMateriale
+        descrizione_agente_materiale: descrizioneAgenteMateriale
+        codice_gruppo_agente_materiale: codiceGruppoAgenteMatreriale
+        descrizione_gruppo_agente_materiale: descrizioneGruppoAgenteMatreriale
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la classificazione degli agenti materiali adottata dall'INAIL ed è associato a https://w3id.org/italia/onto/WorkAccident/AgenteMateriale.
+      required:
+      - codice_agente_materiale
+      - descrizione_agente_materiale
+      - codice_gruppo_agente_materiale
+      - descrizione_gruppo_agente_materiale
+      properties:
+        codice_agente_materiale:
+          type: integer
+          format: int32
+        descrizione_agente_materiale:
+          type: string
+          maxLength: 255
+        codice_gruppo_agente_materiale:
+          type: integer
+          format: int32
+        descrizione_gruppo_agente_materiale:
+          type: string
+          maxLength: 255
+      example:
+        codice_agente_materiale: 10
+        descrizione_agente_materiale: 'Sollevamento e/o stoccaggio e/o smistamento materiali'
+        codice_gruppo_agente_materiale: 1
+        descrizione_gruppo_agente_materiale: 'Mezzi di sollevamento e trasporto'
+
+    ClassificazioneContrattoCnel:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/ClassificazioneContrattoCNEL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        codice_classificazione_cnel: codiceClassificazioneCNEL
+        descrizione_classificazione cnel: descrizioneClassificazioneCNEL
+        categoria_classificazione_cnel: categoriaClassificazioneCNEL
+        settore_classificazione_cnel: settoreClassificazioneCNEL
+      additionalProperties: true
+      description:
+          Il contratto collettivo nazionale di lavoro (CCNL), è il contratto di lavoro stipulato dalle organizzazioni rappresentanti degli interessi dei datori di lavoro e dalle associazioni rappresentanti dei lavoratori.
+          Lo schema è associato a https://w3id.org/italia/onto/WorkAccident/ClassificazioneContrattoCNEL.
+      required:
+      - codice_classificazione_cnel
+      - descrizione_classificazione cnel
+      - categoria_classificazione_cnel
+      - settore_classificazione_cnel
+      properties:
+        codice_classificazione_cnel:
+          type: string
+          maxLength: 50
+        descrizione_classificazione cnel:
+          type: string
+          maxLength: 255
+        categoria_classificazione_cnel:
+          type: string
+          maxLength: 50
+        settore_classificazione_cnel:
+          type: string
+          maxLength: 255
+      example:
+        codice_classificazione_cnel: 'A'
+        descrizione_classificazione cnel: 'Sistemazioni idraulico forestali'
+        categoria_classificazione_cnel: 'A181'
+        settore_classificazione_cnel: 'Agricoltura'
+
+    ClassificazioneFasciaEta:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/ClassificazioneFasciaEta
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        classificazione_eta_1: classificazioneEtaFascia1
+        classificazione_eta_2: classificazioneEtaFascia2
+        classificazione_eta_3: classificazioneEtaFascia3
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la classificazione delle fasce d'età ed è associato a https://w3id.org/italia/onto/WorkAccident/ClassificazioneFasciaEta.
+      required:
+      - classificazione_eta_1
+      - classificazione_eta_2
+      - classificazione_eta_3
+      properties:
+        classificazione_eta_1:
+          type: string
+          maxLength: 50
+        classificazione_eta_2:
+          type: string
+          maxLength: 50
+        classificazione_eta_3:
+          type: string
+          maxLength: 50
+      example:
+        classificazione_eta_1: 'Da 56 a 60 anni'
+        classificazione_eta_2: 'Da 55 a 59 anni'
+        classificazione_eta_3: 'Da 50 a 64 anni'
+
+    ClassificazioneCauseEsterne:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/ClassificazioneCauseEsterne
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        codice_cause_esterne: codiceClassificazioneCauseEsterne
+        descrizione_cause_estere: descrizioneClassificazioneCauseEsterne
+        sotto_settore_cause_esterne: sottoSettoreClassificazioneCauseEsterne
+        settore_cause_esterne: settoreClassificazioneCauseEsterne
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la classificazione supplementare delle cause esterne
+          di traumatismo ed avvelenamento ed è associato a https://w3id.org/italia/onto/WorkAccident/ClassificazioneCauseEsterne.
+      required:
+      - codice_cause_esterne
+      - descrizione_cause_estere
+      - sotto_settore_cause_esterne
+      - settore_cause_esterne
+      properties:
+        codice_cause_esterne:
+          type: integer
+          format: int64
+        descrizione_cause_estere:
+          type: string
+          maxLength: 255
+        sotto_settore_cause_esterne:
+          type: string
+          maxLength: 255
+        settore_cause_esterne:
+          type: string
+          maxLength: 255
+      example:
+        codice_cause_esterne: 801
+        descrizione_cause_estere: 'Frattura della base del cranio'
+        sotto_settore_cause_esterne: 'Fratture del cranio, della colonna vertebrale e del tronco'
+        settore_cause_esterne: 'Accidenti, avvelenamenti e traumatismi secondo la natura della lesione'
+
+    AgenteCausale:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/AgenteCausale
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        codice_agente_causale: codiceAgenteCausale
+        descrizione_agente_causale: descrizioneAgenteCausale
+        codice_gruppo_agente_causale: codiceGruppoAgenteCausale
+        descrizione_gruppo_agente_causale: descrizioneGruppoAgenteCausale
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la decodifica dell'agente, della lavorazione o dell'esposizione che può essere causa o concausa di malattia professionale
+          ed è associato a https://w3id.org/italia/onto/WorkAccident/AgenteCausale.
+      required:
+      - codice_agente_causale
+      - descrizione_agente_causale
+      - codice_gruppo_agente_causale
+      - descrizione_gruppo_agente_causale
+      properties:
+        codice_agente_causale:
+          type: integer
+          format: int64
+        descrizione_agente_causale:
+          type: string
+          maxLength: 255
+        codice_gruppo_agente_causale:
+          type: integer
+          format: int32
+        descrizione_gruppo_agente_causale:
+          type: string
+          maxLength: 255
+      example:
+        codice_agente_causale: 60110402
+        descrizione_agente_causale: 'Silice cristallizzata cristobalite'
+        codice_gruppo_agente_causale: 1
+        descrizione_gruppo_agente_causale: 'Polveri'
+
+    TipoPratica:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/TipoPratica
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        codice_tipo_pratica: codiceTipoPratica
+        descrizione_tipo_pratica: descrizioneTipoPratica
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la classificazione di una pratica in funzione del tipo
+          di segnalazione (denuncia o comunicazione) ed è associato a https://w3id.org/italia/onto/WorkAccident/TipoPratica.
+      required:
+      - codice_tipo_pratica
+      - descrizione_tipo_pratica
+      properties:
+        codice_tipo_pratica:
+          type: string
+          maxLength: 50
+        descrizione_tipo_pratica:
+          type: string
+          maxLength: 255
+      example:
+        codice_tipo_pratica: 'D'
+        descrizione_tipo_pratica: 'Denuncia'
+
+    TipoLavoratore:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/TipoLavoratore
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        codice_tipo_lavoratore: codiceTipoLavoratore
+        descrizione_tipo_lavoratore: descrizioneTipoLavoratore
+      additionalProperties: true
+      description:
+          Questo schema rappresenta l'elenco delle tipologie di lavoratore riferite alla tipologia di datore di lavoro dei settori industria, artigianato, servizi e Pubbliche Amministrazioni titolari di P.A.T.
+          Lo schema è associato a https://w3id.org/italia/onto/WorkAccident/TipoLavoratore.
+      required:
+      - codice_tipo_lavoratore
+      - descrizione_tipo_lavoratore
+      properties:
+        codice_tipo_lavoratore:
+          type: string
+          maxLength: 50
+        descrizione_tipo_lavoratore:
+          type: string
+          maxLength: 255
+      example:
+        codice_tipo_lavoratore: 'E'
+        descrizione_tipo_lavoratore: 'Socio'
+
+    Mansione:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/Mansione
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        codice_mansione_l1: codiceMansioneLivello1
+        descrizione_mansione_l1: descrizioneMansioneLivello1
+        codice_mansione_l2: codiceMansioneLivello2
+        descrizione_mansione_l2: descrizioneMansioneLivello2
+        codice_mansione_l3: codiceMansioneLivello3
+        descrizione_mansione_l3: descrizioneMansioneLivello3
+        codice_mansione_l4: codiceMansioneLivello4
+        descrizione_mansione_l4: descrizioneMansioneLivello4
+        codice_mansione_l5: codiceMansioneLivello5
+        descrizione_mansione_l5: descrizioneMansioneLivello5
+        codice_mansione_l6: codiceMansioneLivello6
+        descrizione_mansione_l6: descrizioneMansioneLivello6
+      additionalProperties: true
+      description:
+          Il mansionario Inail è realizzato in un'ottica di analisi del rischio e individua le singole professioni.
+          Lo schema è associato a https://w3id.org/italia/onto/WorkAccident/Mansione.
+      required:
+      - codice_mansione_l1
+      - descrizione_mansione_l1
+      - codice_mansione_l2
+      - descrizione_mansione_l2
+      - codice_mansione_l3
+      - descrizione_mansione_l3
+      - codice_mansione_l4
+      - descrizione_mansione_l4
+      - codice_mansione_l5
+      - descrizione_mansione_l5
+      - codice_mansione_l6
+      - descrizione_mansione_l6
+      properties:
+        codice_mansione_l1:
+          type: string
+          maxLength: 50
+        descrizione_mansione_l1:
+          type: string
+          maxLength: 255
+        codice_mansione_l2:
+          type: string
+          maxLength: 50
+        descrizione_mansione_l2:
+          type: string
+          maxLength: 255
+        codice_mansione_l3:
+          type: string
+          maxLength: 50
+        descrizione_mansione_l3:
+          type: string
+          maxLength: 255
+        codice_mansione_l4:
+          type: string
+          maxLength: 50
+        descrizione_mansione_l4:
+          type: string
+          maxLength: 255
+        codice_mansione_l5:
+          type: string
+          maxLength: 50
+        descrizione_mansione_l5:
+          type: string
+          maxLength: 255
+        codice_mansione_l6:
+          type: string
+          maxLength: 50
+        descrizione_mansione_l6:
+          type: string
+          maxLength: 255
+      example:
+        codice_mansione_l1: '2'
+        descrizione_mansione_l1: 'Professioni intellettuali, scientifiche e di elevata specializzazione'
+        codice_mansione_l2: '2.6'
+        descrizione_mansione_l2: 'Specialisti della formazione e della ricerca'
+        codice_mansione_l3: '2.6.3'
+        descrizione_mansione_l3: 'Professori di scuola secondaria, post'
+        codice_mansione_l4: '2.6.3.2'
+        descrizione_mansione_l4: 'Professori di scuola secondaria superiore'
+        codice_mansione_l5: '2.6.3.2.6'
+        descrizione_mansione_l5: 'Professori di scienze giuridiche, economiche e sociali nella scuola secondaria superiore'
+        codice_mansione_l6: '2.6.3.2.6.1'
+        descrizione_mansione_l6: 'docente di economia'
+
+    GradoDiMenomazione:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/GradoDiMenomazione
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        percentuale_grado_menomazione: percentualeGradoDiMenomazione
+        descrizione_grado_menomazione: descrizioneGradoDiMenomazione
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la percentuale con cui si misura il livello di menomazione dell'integrità psicofisica complessiva in conseguenza di infortunio o malattia professionale in regime di danno biologico.
+          Lo schema è associato a https://w3id.org/italia/onto/WorkAccident/GradoDiMenomazione.
+      required:
+      - percentuale_grado_menomazione
+      - descrizione_grado_menomazione
+      properties:
+        percentuale_grado_menomazione:
+          type: integer
+          format: int32
+        descrizione_grado_menomazione:
+          type: string
+          maxLength: 50
+      example:
+        percentuale_grado_menomazione: 8
+        descrizione_grado_menomazione: '008'
+
+    DecodificaIstruttoriaMorte:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/DecodificaIstruttoriaMorte
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        codice_decodifica_istruttoria_morte: codiceDecodificaIstruttoriaMorte
+        descrizione_decodifica_istruttoria_morte: descrizioneDecodificaIstruttoriaMorte
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la decodifica istruttoria morte ed è associato a https://w3id.org/italia/onto/WorkAccident/DecodificaIstruttoriaMorte.
+      required:
+      - codice_decodifica_istruttoria_morte
+      - descrizione_decodifica_istruttoria_morte
+      properties:
+        codice_decodifica_istruttoria_morte:
+          type: string
+          maxLength: 50
+        descrizione_decodifica_istruttoria_morte:
+          type: string
+          maxLength: 255
+      example:
+        codice_decodifica_istruttoria_morte: '005'
+        descrizione_decodifica_istruttoria_morte: 'Istruttoria Incompleta. Pratica ad esame medico'
