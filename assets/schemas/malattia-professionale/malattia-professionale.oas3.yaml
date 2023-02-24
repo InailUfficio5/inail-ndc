@@ -8,15 +8,11 @@ info:
     url: https://creativecommons.org/licenses/by/4.0/
   termsOfService: https://creativecommons.org/licenses/by/4.0/
   contact:
-    name: Bruno Marino
-    email: b.marino@almawave.it
+    name: Anna Maria De Paoli
+    email: a.depaoli@inail.it
    # url:
   description: |-
-   La malattia professionale è una patologia la cui causa agisce lentamente e progressivamente sull'organismo (causa diluita e non causa violenta e concentrata nel tempo). La stessa causa deve essere diretta ed efficiente, cioè in grado di produrre l'infermità in modo esclusivo o prevalente. Il Testo Unico n 1124/1965, infatti, parla di malattie contratte nell'esercizio e a causa delle lavorazioni rischiose. È ammesso, tuttavia, il concorso di cause extraprofessionali, purché queste non interrompano il nesso causale in quanto capaci di produrre da sole l'infermità. Per le malattie professionali, quindi, non basta l'occasione di lavoro come per gli infortuni, cioè un rapporto anche mediato o indiretto con il rischio lavorativo, ma deve esistere un rapporto causale o concausale diretto tra il rischio professionale e la malattia. Il rischio può essere provocato dalla lavorazione che l'assicurato svolge oppure dall'ambiente in cui la lavorazione stessa si svolge (cosiddetto «rischio ambientale»).
-
-    La metadatazione semantica degli schemi si basa sul documento
-    [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html)
-    che introduce le keyword x-jsonld-type e x-jsonld-context.
+   La malattia professionale è una patologia la cui causa agisce lentamente e progressivamente sull'organismo (causa diluita e non causa violenta e concentrata nel tempo). La stessa causa deve essere diretta ed efficiente, cioè in grado di produrre l'infermità in modo esclusivo o prevalente. Il Testo Unico n 1124/1965, infatti, parla di malattie contratte nell'esercizio e a causa delle lavorazioni rischiose. È ammesso, tuttavia, il concorso di cause extraprofessionali, purché queste non interrompano il nesso causale in quanto capaci di produrre da sole l'infermità. Per le malattie professionali, quindi, non basta l'occasione di lavoro come per gli infortuni, cioè un rapporto anche mediato o indiretto con il rischio lavorativo, ma deve esistere un rapporto causale o concausale diretto tra il rischio professionale e la malattia. Il rischio può essere provocato dalla lavorazione che l'assicurato svolge oppure dall'ambiente in cui la lavorazione stessa si svolge (cosiddetto «rischio ambientale»). La metadatazione semantica degli schemi si basa sul documento [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html) che introduce le keyword x-jsonld-type e x-jsonld-context.
 paths: {}
 servers: []
 tags: []
@@ -30,7 +26,6 @@ components:
       $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tipo-trattazione/tipo-trattazione.oas3.yaml#/components/schemas/TipoTrattazione"
     Tecnopatico:
       $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tecnopatico/tecnopatico.oas3.yaml#/components/schemas/Tecnopatico"
-
 
     IdMalattiaProfessionale:
       type: string
@@ -81,8 +76,8 @@ components:
           "@id": eventoTrattatoDaSedeINAIL
         malattia_coinvolge_pat:
           "@id": eventoCoinvolgePAT
-        malattia_coinvolge_azienda:
-          "@id": eventoCoinvolgeAzienda
+        malattia_coinvolge_soggetto_assicurante:
+          "@id": eventoCoinvolgeSoggettoAssicurante
         malattia_ha_settore_attivita:
           "@id": eventoHaSettoreAttivita
         malattia_relativo_a_gestione_assicurativa:
@@ -235,10 +230,10 @@ components:
           type: object
           items:
             $ref: "#/components/schemas/PosizioneAssicurativaTerritoriale"
-        malattia_coinvolge_azienda:
+        malattia_coinvolge_soggetto_assicurante:
           type: object
           items:
-            $ref: "#/components/schemas/Azienda"
+            $ref: "#/components/schemas/SoggettoAssicurante"
         malattia_ha_settore_attivita:
           type: object
           items:
@@ -366,8 +361,8 @@ components:
           indirizzo_struttura: 'Via Roma 27'
         malattia_coinvolge_pat:
           codice_pat: 96742512
-        malattia_coinvolge_azienda:
-          codice_azienda: 47365918
+        malattia_coinvolge_soggetto_assicurante:
+          codice_soggetto_assicurante: 47365918
         malattia_ha_settore_attivita:
           codice_tipo_settore_attivita: 2
           descrizione_tipo_settore_attivita: 'Artigianato'
@@ -529,23 +524,23 @@ components:
       example:
         codice_pat: 65014298
 
-    Azienda:
+    SoggettoAssicurante:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/Azienda
+      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/SoggettoAssicurante
       x-jsonld-context:
         "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
-        codice_azienda: codiceAzienda
+        codice_soggetto_assicurante: codiceSoggettoAssicurante
       additionalProperties: true
       description:
-          Questo schema rappresenta un'azienda ed è associato a https://w3id.org/italia/onto/WorkAccident/Azienda.
+          Questo schema rappresenta un soggetto assicurante ed è associato a https://w3id.org/italia/onto/WorkAccident/SoggettoAssicurante.
       required:
-      - codice_azienda
+      - codice_soggetto_assicurante
       properties:
-        codice_azienda:
+        codice_soggetto_assicurante:
           type: integer
           format: int64
       example:
-        codice_azienda: 47365918
+        codice_soggetto_assicurante: 47365918
 
     SettoreAttivita:
       type: object

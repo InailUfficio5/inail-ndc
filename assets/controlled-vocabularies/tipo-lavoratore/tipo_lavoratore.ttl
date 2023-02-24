@@ -1,18 +1,28 @@
 @prefix adms: <http://www.w3.org/ns/adms#> .
 @prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
-@prefix cov: <https://w3id.org/italia/onto/COV/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix inail: <https://w3id.org/italia/onto/WorkAccident/> .
-@prefix inailvoc: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAILService: <https://w3id.org/italia/onto/work-accident/ised/adm_serv/> .
+@prefix inailvoc: <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/> .
 @prefix ndc: <https://w3id.org/italia/onto/NDC/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix tipolavcod: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_lavoratore/codice/> .
+@prefix tipolavoratore: <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoratore/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Individuals
+
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/ufficioV> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
 
 ### Annotations
 
@@ -22,7 +32,8 @@
     dct:identifier "SKOS" ;
     dct:title "Simple Knowledge Organization System - SKOS" .
 
-<https://w3id.org/italia/data/WorkAccident/distribution/TLV_CSV> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TLV_CSV> a dcat:Distribution,
+        dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-lavoratore> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-lavoratore/tipo_lavoratore.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classificazione del tipo di lavoratore adottata dall'INAIL"@it,
@@ -32,7 +43,8 @@
     dct:title "CSV distribution of the classification of type of worker adopted by INAIL controlled vocabulary"@en,
         "Distribuzione CSV del vocabolario controllato sulla classificazione del tipo di lavoratore adottata dall'INAIL"@it .
 
-<https://w3id.org/italia/data/WorkAccident/distribution/TLV_JSON_LD> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TLV_JSON_LD> a dcat:Distribution,
+        dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-lavoratore> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-lavoratore/tipo_lavoratore.json> ;
     dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla classificazione del tipo di lavoratore adottata dall'INAIL"@it,
@@ -42,7 +54,8 @@
     dct:title "Distribuzione JSON_LD del vocabolario controllato sulla classificazione del tipo di lavoratore adottata dall'INAIL"@it,
         "JSON_LD distribution of the classification of type of worker adopted by INAIL controlled vocabulary"@en .
 
-<https://w3id.org/italia/data/WorkAccident/distribution/TLV_RDF_TURTLE> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TLV_RDF_TURTLE> a dcat:Distribution,
+        dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-lavoratore> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-lavoratore/tipo_lavoratore.ttl> ;
     dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla classificazione del tipo di lavoratore adottata dall'INAIL"@it,
@@ -52,11 +65,11 @@
     dct:title "Distribuzione RDF/Turtle del vocabolario controllato sulla classificazione del tipo di lavoratore adottata dall'INAIL"@it,
         "RDF/Turtle distribution of the classification of type of worker adopted by INAIL controlled vocabulary"@en .
 
-<https://w3id.org/italia/data/WorkAccident/Organization/inail> a cov:Organization ;
-    rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
-    cov:IPAcode "inail" ;
-    cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
-    cov:orgAcronym "inail" .
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> a dcatapit:Agent,
+        foaf:Agent ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
 
 inailvoc:tipo_lavoratore a adms:Asset,
         dcatapit:Dataset,
@@ -66,13 +79,13 @@ inailvoc:tipo_lavoratore a adms:Asset,
     skos:prefLabel "Vocabolario controllato sulla classificazione del tipo di lavoratore adottata dall'INAIL"@it ;
     rdfs:comment "Elenco delle tipologie di lavoratore riferite alla tipologia di datore di lavoro dei settori industria, artigianato, servizi e Pubbliche Amministrazioni titolari di P.A.T."@it,
         "List of worker types referred to the type of employer in the sectors of industry, handicrafts, services and public administrations holding P.A.T"@en ;
-    owl:versionInfo "0.2" ;
+    owl:versionInfo "0.3" ;
     rdfs:isDefinedBy inailvoc:tipo_lavoratore ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
-    dcat:contactPoint <https://www.inail.it> ;
-    dcat:distribution <https://w3id.org/italia/data/WorkAccident/distribution/TLV_CSV>,
-        <https://w3id.org/italia/data/WorkAccident/distribution/TLV_JSON_LD>,
-        <https://w3id.org/italia/data/WorkAccident/distribution/TLV_RDF_TURTLE> ;
+    dcat:contactPoint <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/ufficioV> ;
+    dcat:distribution <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TLV_CSV>,
+        <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TLV_JSON_LD>,
+        <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TLV_RDF_TURTLE> ;
     dcat:keyword "cnel"@it,
         "figura professionale"@it,
         "job"@en,
@@ -81,60 +94,61 @@ inailvoc:tipo_lavoratore a adms:Asset,
         "professional figure"@en,
         "work"@en,
         "worker"@en ;
-    dcat:theme <http://eurovoc.europa.eu/166>,
-        <http://eurovoc.europa.eu/414>,
-        <http://eurovoc.europa.eu/4543>,
-        <http://publications.europa.eu/resource/authority/subject-matter/EMPL> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
     dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
-    dct:creator <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
+    dct:creator <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
     dct:description "Elenco delle tipologie di lavoratore riferite alla tipologia di datore di lavoro dei settori industria, artigianato, servizi e Pubbliche Amministrazioni titolari di P.A.T."@it,
         "List of worker types referred to the type of employer in the sectors of industry, handicrafts, services and public administrations holding P.A.T"@en ;
-    dct:identifier "https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_lavoratore" ;
+    dct:identifier "https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoratore" ;
     dct:issued "2022-09-07"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-    dct:modified "2022-11-17"^^xsd:date ;
-    dct:publisher <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
+    dct:modified "2023-02-13"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
     dct:relation inailvoc:gestione_assicurativa,
         inailvoc:grande_gruppo_tariffario,
         inailvoc:mansione,
-        inailvoc:settore_attivita,
         inailvoc:settore_correlato_malattia,
         inailvoc:tipo_lavoro ;
-    dct:rightsHolder <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
+    dct:rightsHolder <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
+    dct:subject <http://eurovoc.europa.eu/166>,
+        <http://eurovoc.europa.eu/414>,
+        <http://eurovoc.europa.eu/825>,
+        <http://eurovoc.europa.eu/1761>,
+        <http://eurovoc.europa.eu/4543> ;
     dct:title "Controlled vocabulary on the classification of the type of worker adopted by INAIL"@en,
         "Vocabolario controllato sulla classificazione del tipo di lavoratore adottata dall'INAIL"@it ;
     dct:type <http://purl.org/adms/assettype/CodeList> ;
-    ndc:keyConcept "Tipo Lavoratore" ;
-    skos:hasTopConcept tipolavcod:A,
-        tipolavcod:AA,
-        tipolavcod:BB,
-        tipolavcod:D,
-        tipolavcod:E,
-        tipolavcod:G,
-        tipolavcod:H,
-        tipolavcod:I,
-        tipolavcod:J,
-        tipolavcod:K,
-        tipolavcod:L,
-        tipolavcod:LL,
-        tipolavcod:M,
-        tipolavcod:N,
-        tipolavcod:NN,
-        tipolavcod:O,
-        tipolavcod:P,
-        tipolavcod:Q,
-        tipolavcod:R,
-        tipolavcod:S,
-        tipolavcod:T,
-        tipolavcod:U,
-        tipolavcod:V,
-        tipolavcod:W,
-        tipolavcod:X,
-        tipolavcod:Z ;
+    ndc:keyConcept "tipo_lavoratore" ;
+    skos:hasTopConcept tipolavoratore:A,
+        tipolavoratore:AA,
+        tipolavoratore:BB,
+        tipolavoratore:D,
+        tipolavoratore:E,
+        tipolavoratore:G,
+        tipolavoratore:H,
+        tipolavoratore:I,
+        tipolavoratore:J,
+        tipolavoratore:K,
+        tipolavoratore:L,
+        tipolavoratore:LL,
+        tipolavoratore:M,
+        tipolavoratore:N,
+        tipolavoratore:NN,
+        tipolavoratore:O,
+        tipolavoratore:P,
+        tipolavoratore:Q,
+        tipolavoratore:R,
+        tipolavoratore:S,
+        tipolavoratore:T,
+        tipolavoratore:U,
+        tipolavoratore:V,
+        tipolavoratore:W,
+        tipolavoratore:X,
+        tipolavoratore:Z ;
     xkos:numberOfLevels "1" .
 
-tipolavcod:A a inail:TipoLavoratore,
+tipolavoratore:A a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Dipendente"@it ;
     skos:prefLabel "Dipendente"@it ;
@@ -144,7 +158,7 @@ tipolavcod:A a inail:TipoLavoratore,
     skos:notation "A" ;
     xkos:depth 1 .
 
-tipolavcod:AA a inail:TipoLavoratore,
+tipolavoratore:AA a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Dipendente o assimilato"@it ;
     skos:prefLabel "Dipendente o assimilato"@it ;
@@ -154,7 +168,7 @@ tipolavcod:AA a inail:TipoLavoratore,
     skos:notation "AA" ;
     xkos:depth 1 .
 
-tipolavcod:BB a inail:TipoLavoratore,
+tipolavoratore:BB a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Allievo/istruttore corsi qualificazione prof.le"@it ;
     skos:prefLabel "Allievo/istruttore corsi qualificazione prof.le"@it ;
@@ -164,7 +178,7 @@ tipolavcod:BB a inail:TipoLavoratore,
     skos:notation "BB" ;
     xkos:depth 1 .
 
-tipolavcod:D a inail:TipoLavoratore,
+tipolavoratore:D a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Coadiuvante familiare"@it ;
     skos:prefLabel "Coadiuvante familiare"@it ;
@@ -174,7 +188,7 @@ tipolavcod:D a inail:TipoLavoratore,
     skos:notation "D" ;
     xkos:depth 1 .
 
-tipolavcod:E a inail:TipoLavoratore,
+tipolavoratore:E a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Socio"@it ;
     skos:prefLabel "Socio"@it ;
@@ -184,7 +198,7 @@ tipolavcod:E a inail:TipoLavoratore,
     skos:notation "E" ;
     xkos:depth 1 .
 
-tipolavcod:G a inail:TipoLavoratore,
+tipolavoratore:G a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Lavoratore interinale (o a scopo di somministrazione)"@it ;
     skos:prefLabel "Lavoratore interinale (o a scopo di somministrazione)"@it ;
@@ -194,7 +208,7 @@ tipolavcod:G a inail:TipoLavoratore,
     skos:notation "G" ;
     xkos:depth 1 .
 
-tipolavcod:H a inail:TipoLavoratore,
+tipolavoratore:H a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Tirocinante"@it ;
     skos:prefLabel "Tirocinante"@it ;
@@ -204,7 +218,7 @@ tipolavcod:H a inail:TipoLavoratore,
     skos:notation "H" ;
     xkos:depth 1 .
 
-tipolavcod:I a inail:TipoLavoratore,
+tipolavoratore:I a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Apprendista"@it ;
     skos:prefLabel "Apprendista"@it ;
@@ -214,7 +228,7 @@ tipolavcod:I a inail:TipoLavoratore,
     skos:notation "I" ;
     xkos:depth 1 .
 
-tipolavcod:J a inail:TipoLavoratore,
+tipolavoratore:J a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Lavoratore detenuto addetto ai lavori"@it ;
     skos:prefLabel "Lavoratore detenuto addetto ai lavori"@it ;
@@ -224,7 +238,7 @@ tipolavcod:J a inail:TipoLavoratore,
     skos:notation "J" ;
     xkos:depth 1 .
 
-tipolavcod:K a inail:TipoLavoratore,
+tipolavoratore:K a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Lavoratore ricoverato in case di cura,ospedali e strutture assimilate"@it ;
     skos:prefLabel "Lavoratore ricoverato in case di cura,ospedali e strutture assimilate"@it ;
@@ -234,7 +248,7 @@ tipolavcod:K a inail:TipoLavoratore,
     skos:notation "K" ;
     xkos:depth 1 .
 
-tipolavcod:L a inail:TipoLavoratore,
+tipolavoratore:L a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Autonomo"@it ;
     skos:prefLabel "Autonomo"@it ;
@@ -244,7 +258,7 @@ tipolavcod:L a inail:TipoLavoratore,
     skos:notation "L" ;
     xkos:depth 1 .
 
-tipolavcod:LL a inail:TipoLavoratore,
+tipolavoratore:LL a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Autonomo o assimilato"@it ;
     skos:prefLabel "Autonomo o assimilato"@it ;
@@ -254,7 +268,7 @@ tipolavcod:LL a inail:TipoLavoratore,
     skos:notation "LL" ;
     xkos:depth 1 .
 
-tipolavcod:M a inail:TipoLavoratore,
+tipolavoratore:M a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Associato in partecipazione"@it ;
     skos:prefLabel "Associato in partecipazione"@it ;
@@ -264,7 +278,7 @@ tipolavcod:M a inail:TipoLavoratore,
     skos:notation "M" ;
     xkos:depth 1 .
 
-tipolavcod:N a inail:TipoLavoratore,
+tipolavoratore:N a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Parasubordinato a progetto/ collaborazione coordinata e continuativa"@it ;
     skos:prefLabel "Parasubordinato a progetto/ collaborazione coordinata e continuativa"@it ;
@@ -274,7 +288,7 @@ tipolavcod:N a inail:TipoLavoratore,
     skos:notation "N" ;
     xkos:depth 1 .
 
-tipolavcod:NN a inail:TipoLavoratore,
+tipolavoratore:NN a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Parasubordinato"@it ;
     skos:prefLabel "Parasubordinato"@it ;
@@ -284,7 +298,7 @@ tipolavcod:NN a inail:TipoLavoratore,
     skos:notation "NN" ;
     xkos:depth 1 .
 
-tipolavcod:O a inail:TipoLavoratore,
+tipolavoratore:O a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Parasubordinato occasionale"@it ;
     skos:prefLabel "Parasubordinato occasionale"@it ;
@@ -294,7 +308,7 @@ tipolavcod:O a inail:TipoLavoratore,
     skos:notation "O" ;
     xkos:depth 1 .
 
-tipolavcod:P a inail:TipoLavoratore,
+tipolavoratore:P a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Lavoratore occasionale di tipo accessorio"@it ;
     skos:prefLabel "Lavoratore occasionale di tipo accessorio"@it ;
@@ -304,7 +318,7 @@ tipolavcod:P a inail:TipoLavoratore,
     skos:notation "P" ;
     xkos:depth 1 .
 
-tipolavcod:Q a inail:TipoLavoratore,
+tipolavoratore:Q a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Lavoratore per sostituzione"@it ;
     skos:prefLabel "Lavoratore per sostituzione"@it ;
@@ -314,7 +328,7 @@ tipolavcod:Q a inail:TipoLavoratore,
     skos:notation "Q" ;
     xkos:depth 1 .
 
-tipolavcod:R a inail:TipoLavoratore,
+tipolavoratore:R a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Lavoratore con contratto di formazione lavoro (solo pubblica amministrazione)"@it ;
     skos:prefLabel "Lavoratore con contratto di formazione lavoro (solo pubblica amministrazione)"@it ;
@@ -324,7 +338,7 @@ tipolavcod:R a inail:TipoLavoratore,
     skos:notation "R" ;
     xkos:depth 1 .
 
-tipolavcod:S a inail:TipoLavoratore,
+tipolavoratore:S a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Lavoratore con contratto di inserimento lavorativo"@it ;
     skos:prefLabel "Lavoratore con contratto di inserimento lavorativo"@it ;
@@ -334,7 +348,7 @@ tipolavcod:S a inail:TipoLavoratore,
     skos:notation "S" ;
     xkos:depth 1 .
 
-tipolavcod:T a inail:TipoLavoratore,
+tipolavoratore:T a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Lavoratore domestico"@it ;
     skos:prefLabel "Lavoratore domestico"@it ;
@@ -344,7 +358,7 @@ tipolavcod:T a inail:TipoLavoratore,
     skos:notation "T" ;
     xkos:depth 1 .
 
-tipolavcod:U a inail:TipoLavoratore,
+tipolavoratore:U a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Lavoratore intermittente"@it ;
     skos:prefLabel "Lavoratore intermittente"@it ;
@@ -354,7 +368,7 @@ tipolavcod:U a inail:TipoLavoratore,
     skos:notation "U" ;
     xkos:depth 1 .
 
-tipolavcod:V a inail:TipoLavoratore,
+tipolavoratore:V a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Lavoratore con contratto ripartito"@it ;
     skos:prefLabel "Lavoratore con contratto ripartito"@it ;
@@ -364,7 +378,7 @@ tipolavcod:V a inail:TipoLavoratore,
     skos:notation "V" ;
     xkos:depth 1 .
 
-tipolavcod:W a inail:TipoLavoratore,
+tipolavoratore:W a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Lavoratore a domicilio"@it ;
     skos:prefLabel "Lavoratore a domicilio"@it ;
@@ -374,7 +388,7 @@ tipolavcod:W a inail:TipoLavoratore,
     skos:notation "W" ;
     xkos:depth 1 .
 
-tipolavcod:X a inail:TipoLavoratore,
+tipolavoratore:X a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Lavoratore socialmente utile (lsu - asu)"@it ;
     skos:prefLabel "Lavoratore socialmente utile (lsu - asu)"@it ;
@@ -384,7 +398,7 @@ tipolavcod:X a inail:TipoLavoratore,
     skos:notation "X" ;
     xkos:depth 1 .
 
-tipolavcod:Z a inail:TipoLavoratore,
+tipolavoratore:Z a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Lavoratore con contratto di agenzia"@it ;
     skos:prefLabel "Lavoratore con contratto di agenzia"@it ;

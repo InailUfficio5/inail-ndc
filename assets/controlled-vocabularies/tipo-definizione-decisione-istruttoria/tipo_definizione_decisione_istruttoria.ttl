@@ -1,163 +1,38 @@
 @prefix adms: <http://www.w3.org/ns/adms#> .
 @prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
-@prefix cov: <https://w3id.org/italia/onto/COV/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix decistrcod: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_def_dec_istr/codice/> .
-@prefix inail: <https://w3id.org/italia/onto/WorkAccident/> .
-@prefix inailvoc: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAILService: <https://w3id.org/italia/onto/work-accident/ised/adm_serv/> .
+@prefix inailvoc: <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/> .
 @prefix ndc: <https://w3id.org/italia/onto/NDC/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tipdefdecistr: <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_definizione_decisione_istruttoria/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+### Individuals
+
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/ufficioV> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
 ### Annotations
 
-decistrcod:AI a inail:TipoDefinizioneDecisioneIstruttoria,
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_definizione_decisione_istruttoria/-2> a INAILService:TipoDefinizioneDecisioneIstruttoriaINAIL,
         skos:Concept ;
-    rdfs:label "Accolta inps"@it ;
-    skos:prefLabel "Accolta inps"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "AI" ;
-    skos:inScheme inailvoc:tipo_def_dec_istr ;
-    skos:notation "AI" ;
-    xkos:depth 1 .
-
-decistrcod:AS a skos:Concept ;
-    rdfs:label "Caso altra sede"@it ;
-    skos:prefLabel "Caso altra sede"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "AS" ;
-    skos:inScheme inailvoc:tipo_def_dec_istr ;
-    skos:notation "AS" ;
-    xkos:depth 1 .
-
-decistrcod:CO a skos:Concept ;
-    rdfs:label "Comunicazione infortunio"@it ;
-    skos:prefLabel "Comunicazione infortunio"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "CO" ;
-    skos:inScheme inailvoc:tipo_def_dec_istr ;
-    skos:notation "CO" ;
-    xkos:depth 1 .
-
-decistrcod:FE a skos:Concept ;
-    rdfs:label "Fondo erogato"@it ;
-    skos:prefLabel "Fondo erogato"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "FE" ;
-    skos:inScheme inailvoc:tipo_def_dec_istr ;
-    skos:notation "FE" ;
-    xkos:depth 1 .
-
-decistrcod:FR a skos:Concept ;
-    rdfs:label "Franchigia"@it ;
-    skos:prefLabel "Franchigia"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "FR" ;
-    skos:inScheme inailvoc:tipo_def_dec_istr ;
-    skos:notation "FR" ;
-    xkos:depth 1 .
-
-decistrcod:MC a skos:Concept ;
-    rdfs:label "Morte con superstiti"@it ;
-    skos:prefLabel "Morte con superstiti"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "MC" ;
-    skos:inScheme inailvoc:tipo_def_dec_istr ;
-    skos:notation "MC" ;
-    xkos:depth 1 .
-
-decistrcod:MM a skos:Concept ;
-    rdfs:label "Intervento eliminato"@it ;
-    skos:prefLabel "Intervento eliminato"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "MM" ;
-    skos:inScheme inailvoc:tipo_def_dec_istr ;
-    skos:notation "MM" ;
-    xkos:depth 1 .
-
-decistrcod:MS a skos:Concept ;
-    rdfs:label "Morte senza superstiti"@it ;
-    skos:prefLabel "Morte senza superstiti"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "MS" ;
-    skos:inScheme inailvoc:tipo_def_dec_istr ;
-    skos:notation "MS" ;
-    xkos:depth 1 .
-
-decistrcod:NE a skos:Concept ;
-    rdfs:label "Negativa"@it ;
-    skos:prefLabel "Negativa"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "NE" ;
-    skos:inScheme inailvoc:tipo_def_dec_istr ;
-    skos:notation "NE" ;
-    xkos:depth 1 .
-
-decistrcod:NN a skos:Concept ;
-    rdfs:label "Sistemazione automatica"@it ;
-    skos:prefLabel "Sistemazione automatica"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "NN" ;
-    skos:inScheme inailvoc:tipo_def_dec_istr ;
-    skos:notation "NN" ;
-    xkos:depth 1 .
-
-decistrcod:NO a skos:Concept ;
-    rdfs:label "Negativa"@it ;
-    skos:prefLabel "Negativa"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "NO" ;
-    skos:inScheme inailvoc:tipo_def_dec_istr ;
-    skos:notation "NO" ;
-    xkos:depth 1 .
-
-decistrcod:PE a skos:Concept ;
-    rdfs:label "Permanente"@it ;
-    skos:prefLabel "Permanente"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "PE" ;
-    skos:inScheme inailvoc:tipo_def_dec_istr ;
-    skos:notation "PE" ;
-    xkos:depth 1 .
-
-decistrcod:PO a skos:Concept ;
-    rdfs:label "Positiva"@it ;
-    skos:prefLabel "Positiva"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "PO" ;
-    skos:inScheme inailvoc:tipo_def_dec_istr ;
-    skos:notation "PO" ;
-    xkos:depth 1 .
-
-decistrcod:RS a skos:Concept ;
-    rdfs:label "Regolare senza indenizzo"@it ;
-    skos:prefLabel "Regolare senza indenizzo"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "RS" ;
-    skos:inScheme inailvoc:tipo_def_dec_istr ;
-    skos:notation "RS" ;
-    xkos:depth 1 .
-
-decistrcod:TE a skos:Concept ;
-    rdfs:label "Temporanea"@it ;
-    skos:prefLabel "Temporanea"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "TE" ;
-    skos:inScheme inailvoc:tipo_def_dec_istr ;
-    skos:notation "TE" ;
-    xkos:depth 1 .
-
-<https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_def_dec_istr/codice/-2> a skos:Concept ;
     rdfs:label "Aperta"@it ;
     skos:prefLabel "Aperta"@it ;
     clvapit:hasRankOrder "1" ;
     dct:identifier "-2" ;
-    skos:inScheme inailvoc:tipo_def_dec_istr ;
+    skos:inScheme inailvoc:tipo_definizione_decisione_istruttoria ;
     skos:notation "-2" ;
     xkos:depth 1 .
 
@@ -167,7 +42,8 @@ decistrcod:TE a skos:Concept ;
     dct:identifier "SKOS" ;
     dct:title "Simple Knowledge Organization System - SKOS" .
 
-<https://w3id.org/italia/data/WorkAccident/distribution/TDDI_CSV> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TDDI_CSV> a dcat:Distribution,
+        dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-definizione-decisione-istruttoria> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-definizione-decisione-istruttoria/tipo_definizione_decisione_istruttoria.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sul tipo definizione decisione dell'istruttoria adottato dall'INAIL"@it,
@@ -177,7 +53,8 @@ decistrcod:TE a skos:Concept ;
     dct:title "CSV distribution of the type definition of the investigation decision adopted by INAIL controlled vocabulary"@en,
         "Distribuzione CSV del vocabolario controllato sul tipo definizione decisione dell'istruttoria adottato dall'INAIL"@it .
 
-<https://w3id.org/italia/data/WorkAccident/distribution/TDDI_JSON_LD> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TDDI_JSON_LD> a dcat:Distribution,
+        dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-definizione-decisione-istruttoria> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-definizione-decisione-istruttoria/tipo_definizione_decisione_istruttoria.json> ;
     dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sul tipo definizione decisione dell'istruttoria adottato dall'INAIL"@it,
@@ -187,7 +64,8 @@ decistrcod:TE a skos:Concept ;
     dct:title "Distribuzione JSON_LD del vocabolario controllato sul tipo definizione decisione dell'istruttoria adottato dall'INAIL"@it,
         "JSON_LD distribution of the type definition of the investigation decision adopted by INAIL controlled vocabulary"@en .
 
-<https://w3id.org/italia/data/WorkAccident/distribution/TDDI_RDF_TURTLE> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TDDI_RDF_TURTLE> a dcat:Distribution,
+        dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-definizione-decisione-istruttoria> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-definizione-decisione-istruttoria/tipo_definizione_decisione_istruttoria.ttl> ;
     dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sul tipo definizione decisione dell'istruttoria adottato dall'INAIL"@it,
@@ -197,13 +75,13 @@ decistrcod:TE a skos:Concept ;
     dct:title "Distribuzione RDF/Turtle del vocabolario controllato sul tipo definizione decisione dell'istruttoria adottato dall'INAIL"@it,
         "RDF/Turtle distribution of the type definition of the investigation decision adopted by INAIL controlled vocabulary"@en .
 
-<https://w3id.org/italia/data/WorkAccident/Organization/inail> a cov:Organization ;
-    rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
-    cov:IPAcode "inail" ;
-    cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
-    cov:orgAcronym "inail" .
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> a dcatapit:Agent,
+        foaf:Agent ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
 
-inailvoc:tipo_def_dec_istr a adms:Asset,
+inailvoc:tipo_definizione_decisione_istruttoria a adms:Asset,
         dcatapit:Dataset,
         skos:ConceptScheme ;
     rdfs:label "Controlled vocabulary on the type definition of the investigation decision adopted by INAIL"@en,
@@ -211,15 +89,14 @@ inailvoc:tipo_def_dec_istr a adms:Asset,
     skos:prefLabel "Vocabolario Controllato sul tipo definizione decisione dell'istruttoria adottato dall'INAIL"@it ;
     rdfs:comment "Description of the definition of the treatment or reopening of the occupational injury or occupational disease"@en,
         "Descrizione della definizione della trattazione o della riapertura della pratica di infortunio o malattia professionale."@it ;
-    owl:versionInfo "0.2" ;
-    rdfs:isDefinedBy inailvoc:tipo_def_dec_istr ;
+    owl:versionInfo "0.3" ;
+    rdfs:isDefinedBy inailvoc:tipo_definizione_decisione_istruttoria ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
-    dcat:contactPoint <https://www.inail.it> ;
-    dcat:distribution <https://w3id.org/italia/data/WorkAccident/distribution/TDDI_CSV>,
-        <https://w3id.org/italia/data/WorkAccident/distribution/TDDI_JSON_LD>,
-        <https://w3id.org/italia/data/WorkAccident/distribution/TDDI_RDF_TURTLE> ;
-    dcat:keyword "health"@en,
-        "inail"@it,
+    dcat:contactPoint <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/ufficioV> ;
+    dcat:distribution <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TDDI_CSV>,
+        <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TDDI_JSON_LD>,
+        <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TDDI_RDF_TURTLE> ;
+    dcat:keyword "inail"@it,
         "infortunio"@it,
         "malattia professionale"@it,
         "mortality"@en,
@@ -228,43 +105,193 @@ inailvoc:tipo_def_dec_istr a adms:Asset,
         "occupational injury"@en,
         "superstite"@it,
         "survivor"@en ;
-    dcat:theme <http://eurovoc.europa.eu/825>,
-        <http://eurovoc.europa.eu/1761>,
-        <http://eurovoc.europa.eu/5291>,
-        <http://publications.europa.eu/resource/authority/planned-availability/TEMPORARY> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
     dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
-    dct:creator <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
+    dct:creator <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
     dct:description "Description of the definition of the treatment or reopening of the occupational injury or occupational disease"@en,
         "Descrizione della definizione della trattazione o della riapertura della pratica di infortunio o malattia professionale."@it ;
-    dct:identifier "https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_def_dec_istr" ;
+    dct:identifier "https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_definizione_decisione_istruttoria" ;
     dct:issued "2022-09-07"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-    dct:modified "2022-11-17"^^xsd:date ;
-    dct:publisher <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
+    dct:modified "2023-02-13"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
     dct:relation inailvoc:decisione_istruttoria_esito_mortale,
         inailvoc:definizione_amministrativa ;
-    dct:rightsHolder <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
+    dct:rightsHolder <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
+    dct:subject <http://eurovoc.europa.eu/825>,
+        <http://eurovoc.europa.eu/1761>,
+        <http://eurovoc.europa.eu/5291> ;
     dct:title "Controlled vocabulary on the type definition of the investigation decision adopted by INAIL"@en,
         "Vocabolario Controllato sul tipo definizione decisione dell'istruttoria adottato dall'INAIL"@it ;
     dct:type <http://purl.org/adms/assettype/CodeList> ;
-    ndc:keyConcept "Definizione Decisione Istruttoria" ;
-    skos:hasTopConcept decistrcod:AI,
-        decistrcod:AS,
-        decistrcod:CO,
-        decistrcod:FE,
-        decistrcod:FR,
-        decistrcod:MC,
-        decistrcod:MM,
-        decistrcod:MS,
-        decistrcod:NE,
-        decistrcod:NN,
-        decistrcod:NO,
-        decistrcod:PE,
-        decistrcod:PO,
-        decistrcod:RS,
-        decistrcod:TE,
-        <https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_def_dec_istr/codice/-2> ;
+    ndc:keyConcept "tipo_definizione_decisione_istruttoria" ;
+    skos:hasTopConcept <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_definizione_decisione_istruttoria/-2>,
+        tipdefdecistr:AI,
+        tipdefdecistr:AS,
+        tipdefdecistr:CO,
+        tipdefdecistr:FE,
+        tipdefdecistr:FR,
+        tipdefdecistr:MC,
+        tipdefdecistr:MM,
+        tipdefdecistr:MS,
+        tipdefdecistr:NE,
+        tipdefdecistr:NN,
+        tipdefdecistr:NO,
+        tipdefdecistr:PE,
+        tipdefdecistr:PO,
+        tipdefdecistr:RS,
+        tipdefdecistr:TE ;
     xkos:numberOfLevels "1" .
+
+tipdefdecistr:AI a INAILService:TipoDefinizioneDecisioneIstruttoriaINAIL,
+        skos:Concept ;
+    rdfs:label "Accolta inps"@it ;
+    skos:prefLabel "Accolta inps"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "AI" ;
+    skos:inScheme inailvoc:tipo_definizione_decisione_istruttoria ;
+    skos:notation "AI" ;
+    xkos:depth 1 .
+
+tipdefdecistr:AS a INAILService:TipoDefinizioneDecisioneIstruttoriaINAIL,
+        skos:Concept ;
+    rdfs:label "Caso altra sede"@it ;
+    skos:prefLabel "Caso altra sede"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "AS" ;
+    skos:inScheme inailvoc:tipo_definizione_decisione_istruttoria ;
+    skos:notation "AS" ;
+    xkos:depth 1 .
+
+tipdefdecistr:CO a INAILService:TipoDefinizioneDecisioneIstruttoriaINAIL,
+        skos:Concept ;
+    rdfs:label "Comunicazione infortunio"@it ;
+    skos:prefLabel "Comunicazione infortunio"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "CO" ;
+    skos:inScheme inailvoc:tipo_definizione_decisione_istruttoria ;
+    skos:notation "CO" ;
+    xkos:depth 1 .
+
+tipdefdecistr:FE a INAILService:TipoDefinizioneDecisioneIstruttoriaINAIL,
+        skos:Concept ;
+    rdfs:label "Fondo erogato"@it ;
+    skos:prefLabel "Fondo erogato"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "FE" ;
+    skos:inScheme inailvoc:tipo_definizione_decisione_istruttoria ;
+    skos:notation "FE" ;
+    xkos:depth 1 .
+
+tipdefdecistr:FR a INAILService:TipoDefinizioneDecisioneIstruttoriaINAIL,
+        skos:Concept ;
+    rdfs:label "Franchigia"@it ;
+    skos:prefLabel "Franchigia"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "FR" ;
+    skos:inScheme inailvoc:tipo_definizione_decisione_istruttoria ;
+    skos:notation "FR" ;
+    xkos:depth 1 .
+
+tipdefdecistr:MC a INAILService:TipoDefinizioneDecisioneIstruttoriaINAIL,
+        skos:Concept ;
+    rdfs:label "Morte con superstiti"@it ;
+    skos:prefLabel "Morte con superstiti"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "MC" ;
+    skos:inScheme inailvoc:tipo_definizione_decisione_istruttoria ;
+    skos:notation "MC" ;
+    xkos:depth 1 .
+
+tipdefdecistr:MM a INAILService:TipoDefinizioneDecisioneIstruttoriaINAIL,
+        skos:Concept ;
+    rdfs:label "Intervento eliminato"@it ;
+    skos:prefLabel "Intervento eliminato"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "MM" ;
+    skos:inScheme inailvoc:tipo_definizione_decisione_istruttoria ;
+    skos:notation "MM" ;
+    xkos:depth 1 .
+
+tipdefdecistr:MS a INAILService:TipoDefinizioneDecisioneIstruttoriaINAIL,
+        skos:Concept ;
+    rdfs:label "Morte senza superstiti"@it ;
+    skos:prefLabel "Morte senza superstiti"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "MS" ;
+    skos:inScheme inailvoc:tipo_definizione_decisione_istruttoria ;
+    skos:notation "MS" ;
+    xkos:depth 1 .
+
+tipdefdecistr:NE a INAILService:TipoDefinizioneDecisioneIstruttoriaINAIL,
+        skos:Concept ;
+    rdfs:label "Negativa"@it ;
+    skos:prefLabel "Negativa"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "NE" ;
+    skos:inScheme inailvoc:tipo_definizione_decisione_istruttoria ;
+    skos:notation "NE" ;
+    xkos:depth 1 .
+
+tipdefdecistr:NN a INAILService:TipoDefinizioneDecisioneIstruttoriaINAIL,
+        skos:Concept ;
+    rdfs:label "Sistemazione automatica"@it ;
+    skos:prefLabel "Sistemazione automatica"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "NN" ;
+    skos:inScheme inailvoc:tipo_definizione_decisione_istruttoria ;
+    skos:notation "NN" ;
+    xkos:depth 1 .
+
+tipdefdecistr:NO a INAILService:TipoDefinizioneDecisioneIstruttoriaINAIL,
+        skos:Concept ;
+    rdfs:label "Negativa"@it ;
+    skos:prefLabel "Negativa"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "NO" ;
+    skos:inScheme inailvoc:tipo_definizione_decisione_istruttoria ;
+    skos:notation "NO" ;
+    xkos:depth 1 .
+
+tipdefdecistr:PE a INAILService:TipoDefinizioneDecisioneIstruttoriaINAIL,
+        skos:Concept ;
+    rdfs:label "Permanente"@it ;
+    skos:prefLabel "Permanente"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "PE" ;
+    skos:inScheme inailvoc:tipo_definizione_decisione_istruttoria ;
+    skos:notation "PE" ;
+    xkos:depth 1 .
+
+tipdefdecistr:PO a INAILService:TipoDefinizioneDecisioneIstruttoriaINAIL,
+        skos:Concept ;
+    rdfs:label "Positiva"@it ;
+    skos:prefLabel "Positiva"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "PO" ;
+    skos:inScheme inailvoc:tipo_definizione_decisione_istruttoria ;
+    skos:notation "PO" ;
+    xkos:depth 1 .
+
+tipdefdecistr:RS a INAILService:TipoDefinizioneDecisioneIstruttoriaINAIL,
+        skos:Concept ;
+    rdfs:label "Regolare senza indenizzo"@it ;
+    skos:prefLabel "Regolare senza indenizzo"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "RS" ;
+    skos:inScheme inailvoc:tipo_definizione_decisione_istruttoria ;
+    skos:notation "RS" ;
+    xkos:depth 1 .
+
+tipdefdecistr:TE a INAILService:TipoDefinizioneDecisioneIstruttoriaINAIL,
+        skos:Concept ;
+    rdfs:label "Temporanea"@it ;
+    skos:prefLabel "Temporanea"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "TE" ;
+    skos:inScheme inailvoc:tipo_definizione_decisione_istruttoria ;
+    skos:notation "TE" ;
+    xkos:depth 1 .
 
 ### Serialized using the ttlser deterministic serializer v1.2.0

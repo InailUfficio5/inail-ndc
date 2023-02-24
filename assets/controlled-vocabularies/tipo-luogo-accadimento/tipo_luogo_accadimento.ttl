@@ -1,19 +1,29 @@
 @prefix adms: <http://www.w3.org/ns/adms#> .
 @prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
-@prefix cov: <https://w3id.org/italia/onto/COV/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix inail: <https://w3id.org/italia/onto/WorkAccident/> .
-@prefix inailvoc: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/> .
-@prefix luogocod: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/luogo_accadimento/codice/> .
-@prefix luogogrup: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/luogo_accadimento/gruppo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAILService: <https://w3id.org/italia/onto/work-accident/ised/adm_serv/> .
+@prefix inailvoc: <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/> .
+@prefix luogocod: <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/luogo_accadimento/concetto/> .
+@prefix luogogrup: <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/luogo_accadimento/gruppo/> .
 @prefix ndc: <https://w3id.org/italia/onto/NDC/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Individuals
+
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/ufficioV> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
 
 ### Annotations
 
@@ -23,7 +33,8 @@
     dct:identifier "SKOS" ;
     dct:title "Simple Knowledge Organization System - SKOS" .
 
-<https://w3id.org/italia/data/WorkAccident/distribution/TLA_CSV> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TLA_CSV> a dcat:Distribution,
+        dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-luogo-accadimento> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-luogo-accadimento/tipo_luogo_accadimento.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla tipologia dei luoghi di accadimento adottata dall'INAIL"@it,
@@ -33,7 +44,8 @@
     dct:title "CSV distribution of type of happening place adopted by INAIL controlled vocabulary"@en,
         "Distribuzione CSV del vocabolario controllato sulla tipologia dei luoghi di accadimento adottata dall'INAIL"@it .
 
-<https://w3id.org/italia/data/WorkAccident/distribution/TLA_JSON_LD> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TLA_JSON_LD> a dcat:Distribution,
+        dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-luogo-accadimento> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-luogo-accadimento/tipo_luogo_accadimento.json> ;
     dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla tipologia dei luoghi di accadimento adottata dall'INAIL"@it,
@@ -43,7 +55,8 @@
     dct:title "Distribuzione JSON_LD del vocabolario controllato sulla tipologia dei luoghi di accadimento adottata dall'INAIL"@it,
         "JSON_LD distribution of type of happening place adopted by INAIL controlled vocabulary"@en .
 
-<https://w3id.org/italia/data/WorkAccident/distribution/TLA_RDF_TURTLE> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TLA_RDF_TURTLE> a dcat:Distribution,
+        dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-luogo-accadimento> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-luogo-accadimento/tipo_luogo_accadimento.ttl> ;
     dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla tipologia dei luoghi di accadimento adottata dall'INAIL"@it,
@@ -53,11 +66,11 @@
     dct:title "Distribuzione RDF/Turtle del vocabolario controllato sulla tipologia dei luoghi di accadimento adottata dall'INAIL"@it,
         "RDF/Turtle distribution of type of happening place adopted by INAIL controlled vocabulary"@en .
 
-<https://w3id.org/italia/data/WorkAccident/Organization/inail> a cov:Organization ;
-    rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
-    cov:IPAcode "inail" ;
-    cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
-    cov:orgAcronym "inail" .
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> a dcatapit:Agent,
+        foaf:Agent ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
 
 inailvoc:luogo_accadimento a adms:Asset,
         dcatapit:Dataset,
@@ -67,40 +80,39 @@ inailvoc:luogo_accadimento a adms:Asset,
     skos:prefLabel "Vocabolario Controllato sulla tipologia dei luoghi di accadimento adottata dall'INAIL"@it ;
     rdfs:comment "Classification of places where the work accident happened "@en,
         "Classificazione dei luoghi in cui è avvenuto l'evento lesivo"@it ;
-    owl:versionInfo "0.2" ;
+    owl:versionInfo "0.3" ;
     rdfs:isDefinedBy inailvoc:luogo_accadimento ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
-    dcat:contactPoint <https://www.inail.it> ;
-    dcat:distribution <https://w3id.org/italia/data/WorkAccident/distribution/TLA_CSV>,
-        <https://w3id.org/italia/data/WorkAccident/distribution/TLA_JSON_LD>,
-        <https://w3id.org/italia/data/WorkAccident/distribution/TLA_RDF_TURTLE> ;
+    dcat:contactPoint <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/ufficioV> ;
+    dcat:distribution <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TLA_CSV>,
+        <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TLA_JSON_LD>,
+        <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TLA_RDF_TURTLE> ;
     dcat:keyword "inail"@it,
         "infortunio"@it,
         "injury"@en,
         "luogo di lavoro"@it,
         "occupational injury"@en,
         "workplace"@en ;
-    dcat:theme <http://eurovoc.europa.eu/825>,
-        <http://eurovoc.europa.eu/1653>,
-        <http://eurovoc.europa.eu/3940>,
-        <http://publications.europa.eu/resource/authority/organization-type/OFFICE> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
     dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
-    dct:creator <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
+    dct:creator <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
     dct:description "Classification of places where the work accident happened "@en,
         "Classificazione dei luoghi in cui è avvenuto l'evento lesivo"@it ;
-    dct:identifier "https://w3id.org/italia/controlled-vocabulary/WorkAccident/luogo_accadimento" ;
+    dct:identifier "https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/luogo_accadimento" ;
     dct:issued "2022-09-06"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-    dct:modified "2022-11-17"^^xsd:date ;
-    dct:publisher <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
+    dct:modified "2023-02-13"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
     dct:relation inailvoc:mansione,
         inailvoc:tipo_lavoro ;
-    dct:rightsHolder <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
+    dct:rightsHolder <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
+    dct:subject <http://eurovoc.europa.eu/825>,
+        <http://eurovoc.europa.eu/1653> ;
     dct:title "Classification of type of happening place adopted by INAIL Controlled Vocabulary"@en,
         "Vocabolario Controllato sulla tipologia dei luoghi di accadimento adottata dall'INAIL"@it ;
     dct:type <http://purl.org/adms/assettype/CodeList> ;
-    ndc:keyConcept "Luogo Accadimento" ;
+    ndc:keyConcept "luogo_accadimento" ;
     skos:hasTopConcept luogogrup:01,
         luogogrup:02,
         luogogrup:03,
@@ -115,7 +127,7 @@ inailvoc:luogo_accadimento a adms:Asset,
         luogogrup:12 ;
     xkos:numberOfLevels "2" .
 
-luogocod:01.0 a inail:TipoLuogoAccadimento,
+luogocod:01.0 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Sito industriale - non precisato"@it ;
     skos:prefLabel "Sito industriale - non precisato"@it ;
@@ -126,7 +138,7 @@ luogocod:01.0 a inail:TipoLuogoAccadimento,
     skos:notation "01.0" ;
     xkos:depth 2 .
 
-luogocod:01.1 a inail:TipoLuogoAccadimento,
+luogocod:01.1 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Luogo di produzione, officina, laboratorio"@it ;
     skos:prefLabel "Luogo di produzione, officina, laboratorio"@it ;
@@ -137,7 +149,7 @@ luogocod:01.1 a inail:TipoLuogoAccadimento,
     skos:notation "01.1" ;
     xkos:depth 2 .
 
-luogocod:01.2 a inail:TipoLuogoAccadimento,
+luogocod:01.2 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Area destinata ad operazioni di manutenzione o riparazione"@it ;
     skos:prefLabel "Area destinata ad operazioni di manutenzione o riparazione"@it ;
@@ -148,7 +160,7 @@ luogocod:01.2 a inail:TipoLuogoAccadimento,
     skos:notation "01.2" ;
     xkos:depth 2 .
 
-luogocod:01.3 a inail:TipoLuogoAccadimento,
+luogocod:01.3 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Luogo dedicato principalmente al magazzinaggio, al carico, allo scarico"@it ;
     skos:prefLabel "Luogo dedicato principalmente al magazzinaggio, al carico, allo scarico"@it ;
@@ -159,7 +171,7 @@ luogocod:01.3 a inail:TipoLuogoAccadimento,
     skos:notation "01.3" ;
     xkos:depth 2 .
 
-luogocod:01.9 a inail:TipoLuogoAccadimento,
+luogocod:01.9 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Altro tipo di luogo conosciuto del gruppo 010 non indicato qui sopra"@it ;
     skos:prefLabel "Altro tipo di luogo conosciuto del gruppo 010 non indicato qui sopra"@it ;
@@ -170,7 +182,7 @@ luogocod:01.9 a inail:TipoLuogoAccadimento,
     skos:notation "01.9" ;
     xkos:depth 2 .
 
-luogocod:02.0 a inail:TipoLuogoAccadimento,
+luogocod:02.0 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Cantiere di costruzione, cava, miniera a cielo aperto - non precisato"@it ;
     skos:prefLabel "Cantiere di costruzione, cava, miniera a cielo aperto - non precisato"@it ;
@@ -181,7 +193,7 @@ luogocod:02.0 a inail:TipoLuogoAccadimento,
     skos:notation "02.0" ;
     xkos:depth 2 .
 
-luogocod:02.1 a inail:TipoLuogoAccadimento,
+luogocod:02.1 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Cantiere, fabbricato in costruzione"@it ;
     skos:prefLabel "Cantiere, fabbricato in costruzione"@it ;
@@ -192,7 +204,7 @@ luogocod:02.1 a inail:TipoLuogoAccadimento,
     skos:notation "02.1" ;
     xkos:depth 2 .
 
-luogocod:02.2 a inail:TipoLuogoAccadimento,
+luogocod:02.2 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Cantiere, fabbricato in demolizione, restauro, manutenzione"@it ;
     skos:prefLabel "Cantiere, fabbricato in demolizione, restauro, manutenzione"@it ;
@@ -203,7 +215,7 @@ luogocod:02.2 a inail:TipoLuogoAccadimento,
     skos:notation "02.2" ;
     xkos:depth 2 .
 
-luogocod:02.3 a inail:TipoLuogoAccadimento,
+luogocod:02.3 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Cava, miniera a cielo aperto, scavo, trincea (comprese le miniere a cielo aperto e le cave in sfruttamento)"@it ;
     skos:prefLabel "Cava, miniera a cielo aperto, scavo, trincea (comprese le miniere a cielo aperto e le cave in sfruttamento)"@it ;
@@ -214,7 +226,7 @@ luogocod:02.3 a inail:TipoLuogoAccadimento,
     skos:notation "02.3" ;
     xkos:depth 2 .
 
-luogocod:02.4 a inail:TipoLuogoAccadimento,
+luogocod:02.4 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Cantiere sotterraneo"@it ;
     skos:prefLabel "Cantiere sotterraneo"@it ;
@@ -225,7 +237,7 @@ luogocod:02.4 a inail:TipoLuogoAccadimento,
     skos:notation "02.4" ;
     xkos:depth 2 .
 
-luogocod:02.5 a inail:TipoLuogoAccadimento,
+luogocod:02.5 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Cantiere sull'acqua"@it ;
     skos:prefLabel "Cantiere sull'acqua"@it ;
@@ -236,7 +248,7 @@ luogocod:02.5 a inail:TipoLuogoAccadimento,
     skos:notation "02.5" ;
     xkos:depth 2 .
 
-luogocod:02.6 a inail:TipoLuogoAccadimento,
+luogocod:02.6 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Cantiere in ambiente iperbarico"@it ;
     skos:prefLabel "Cantiere in ambiente iperbarico"@it ;
@@ -247,7 +259,7 @@ luogocod:02.6 a inail:TipoLuogoAccadimento,
     skos:notation "02.6" ;
     xkos:depth 2 .
 
-luogocod:02.9 a inail:TipoLuogoAccadimento,
+luogocod:02.9 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Altro tipo di luogo conosciuto del gruppo 020 non indicato qui sopra"@it ;
     skos:prefLabel "Altro tipo di luogo conosciuto del gruppo 020 non indicato qui sopra"@it ;
@@ -258,7 +270,7 @@ luogocod:02.9 a inail:TipoLuogoAccadimento,
     skos:notation "02.9" ;
     xkos:depth 2 .
 
-luogocod:03.0 a inail:TipoLuogoAccadimento,
+luogocod:03.0 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Luogo per l'agricoltura, l'allevamento, forestale, ittico ?non precisato"@it ;
     skos:prefLabel "Luogo per l'agricoltura, l'allevamento, forestale, ittico ?non precisato"@it ;
@@ -269,7 +281,7 @@ luogocod:03.0 a inail:TipoLuogoAccadimento,
     skos:notation "03.0" ;
     xkos:depth 2 .
 
-luogocod:03.1 a inail:TipoLuogoAccadimento,
+luogocod:03.1 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Luogo di allevamento"@it ;
     skos:prefLabel "Luogo di allevamento"@it ;
@@ -280,7 +292,7 @@ luogocod:03.1 a inail:TipoLuogoAccadimento,
     skos:notation "03.1" ;
     xkos:depth 2 .
 
-luogocod:03.2 a inail:TipoLuogoAccadimento,
+luogocod:03.2 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Luogo agricolo - coltura del suolo"@it ;
     skos:prefLabel "Luogo agricolo - coltura del suolo"@it ;
@@ -291,7 +303,7 @@ luogocod:03.2 a inail:TipoLuogoAccadimento,
     skos:notation "03.2" ;
     xkos:depth 2 .
 
-luogocod:03.3 a inail:TipoLuogoAccadimento,
+luogocod:03.3 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Luogo agricolo - coltura su albero, arbusto"@it ;
     skos:prefLabel "Luogo agricolo - coltura su albero, arbusto"@it ;
@@ -302,7 +314,7 @@ luogocod:03.3 a inail:TipoLuogoAccadimento,
     skos:notation "03.3" ;
     xkos:depth 2 .
 
-luogocod:03.4 a inail:TipoLuogoAccadimento,
+luogocod:03.4 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Zona di attività forestale"@it ;
     skos:prefLabel "Zona di attività forestale"@it ;
@@ -313,7 +325,7 @@ luogocod:03.4 a inail:TipoLuogoAccadimento,
     skos:notation "03.4" ;
     xkos:depth 2 .
 
-luogocod:03.5 a inail:TipoLuogoAccadimento,
+luogocod:03.5 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Zona di attività ittica, pesca, acquacultura (non a bordo di un'imbarcazione)"@it ;
     skos:prefLabel "Zona di attività ittica, pesca, acquacultura (non a bordo di un'imbarcazione)"@it ;
@@ -324,7 +336,7 @@ luogocod:03.5 a inail:TipoLuogoAccadimento,
     skos:notation "03.5" ;
     xkos:depth 2 .
 
-luogocod:03.6 a inail:TipoLuogoAccadimento,
+luogocod:03.6 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Giardino, parco, giardino botanico, parco zoologico"@it ;
     skos:prefLabel "Giardino, parco, giardino botanico, parco zoologico"@it ;
@@ -335,7 +347,7 @@ luogocod:03.6 a inail:TipoLuogoAccadimento,
     skos:notation "03.6" ;
     xkos:depth 2 .
 
-luogocod:03.9 a inail:TipoLuogoAccadimento,
+luogocod:03.9 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Altro tipo di luogo conosciuto del gruppo 030 non indicato qui sopra"@it ;
     skos:prefLabel "Altro tipo di luogo conosciuto del gruppo 030 non indicato qui sopra"@it ;
@@ -346,7 +358,7 @@ luogocod:03.9 a inail:TipoLuogoAccadimento,
     skos:notation "03.9" ;
     xkos:depth 2 .
 
-luogocod:04.0 a inail:TipoLuogoAccadimento,
+luogocod:04.0 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Luogo di attività terziaria, ufficio, luogo di svago, varie - non precisato"@it ;
     skos:prefLabel "Luogo di attività terziaria, ufficio, luogo di svago, varie - non precisato"@it ;
@@ -357,7 +369,7 @@ luogocod:04.0 a inail:TipoLuogoAccadimento,
     skos:notation "04.0" ;
     xkos:depth 2 .
 
-luogocod:04.1 a inail:TipoLuogoAccadimento,
+luogocod:04.1 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Ufficio, sala di riunione, biblioteca, ecc."@it ;
     skos:prefLabel "Ufficio, sala di riunione, biblioteca, ecc."@it ;
@@ -368,7 +380,7 @@ luogocod:04.1 a inail:TipoLuogoAccadimento,
     skos:notation "04.1" ;
     xkos:depth 2 .
 
-luogocod:04.2 a inail:TipoLuogoAccadimento,
+luogocod:04.2 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Istituto di insegnamento, scuola d'ogni ordine e grado"@it ;
     skos:prefLabel "Istituto di insegnamento, scuola d'ogni ordine e grado"@it ;
@@ -379,7 +391,7 @@ luogocod:04.2 a inail:TipoLuogoAccadimento,
     skos:notation "04.2" ;
     xkos:depth 2 .
 
-luogocod:04.3 a inail:TipoLuogoAccadimento,
+luogocod:04.3 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Luogo di vendita, piccolo o grande (compresa la vendita ambulante)"@it ;
     skos:prefLabel "Luogo di vendita, piccolo o grande (compresa la vendita ambulante)"@it ;
@@ -390,7 +402,7 @@ luogocod:04.3 a inail:TipoLuogoAccadimento,
     skos:notation "04.3" ;
     xkos:depth 2 .
 
-luogocod:04.4 a inail:TipoLuogoAccadimento,
+luogocod:04.4 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Ristorante, albergo, pensione, luogo di svago (compresi musei, luoghi di spettacolo, fiere, ecc.)"@it ;
     skos:prefLabel "Ristorante, albergo, pensione, luogo di svago (compresi musei, luoghi di spettacolo, fiere, ecc.)"@it ;
@@ -401,7 +413,7 @@ luogocod:04.4 a inail:TipoLuogoAccadimento,
     skos:notation "04.4" ;
     xkos:depth 2 .
 
-luogocod:04.9 a inail:TipoLuogoAccadimento,
+luogocod:04.9 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Altro tipo di luogo conosciuto del gruppo 040 non indicato qui sopra"@it ;
     skos:prefLabel "Altro tipo di luogo conosciuto del gruppo 040 non indicato qui sopra"@it ;
@@ -412,7 +424,7 @@ luogocod:04.9 a inail:TipoLuogoAccadimento,
     skos:notation "04.9" ;
     xkos:depth 2 .
 
-luogocod:05.0 a inail:TipoLuogoAccadimento,
+luogocod:05.0 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Luogo di cura - non precisato"@it ;
     skos:prefLabel "Luogo di cura - non precisato"@it ;
@@ -423,7 +435,7 @@ luogocod:05.0 a inail:TipoLuogoAccadimento,
     skos:notation "05.0" ;
     xkos:depth 2 .
 
-luogocod:05.1 a inail:TipoLuogoAccadimento,
+luogocod:05.1 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Luogo di cura, clinica, ospedale, nurseries"@it ;
     skos:prefLabel "Luogo di cura, clinica, ospedale, nurseries"@it ;
@@ -434,7 +446,7 @@ luogocod:05.1 a inail:TipoLuogoAccadimento,
     skos:notation "05.1" ;
     xkos:depth 2 .
 
-luogocod:05.9 a inail:TipoLuogoAccadimento,
+luogocod:05.9 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Altro tipo di luogo conosciuto del gruppo 050 non indicato qui sopra"@it ;
     skos:prefLabel "Altro tipo di luogo conosciuto del gruppo 050 non indicato qui sopra"@it ;
@@ -445,7 +457,7 @@ luogocod:05.9 a inail:TipoLuogoAccadimento,
     skos:notation "05.9" ;
     xkos:depth 2 .
 
-luogocod:06.0 a inail:TipoLuogoAccadimento,
+luogocod:06.0 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Luogo pubblico - non precisato"@it ;
     skos:prefLabel "Luogo pubblico - non precisato"@it ;
@@ -456,7 +468,7 @@ luogocod:06.0 a inail:TipoLuogoAccadimento,
     skos:notation "06.0" ;
     xkos:depth 2 .
 
-luogocod:06.1 a inail:TipoLuogoAccadimento,
+luogocod:06.1 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Luogo aperto in permanenza al transito del pubblico (via d'accesso, di circolazione, zona di stazionamento, sala d¿attesa in stazione/aerostazione, ecc.)"@it ;
     skos:prefLabel "Luogo aperto in permanenza al transito del pubblico (via d'accesso, di circolazione, zona di stazionamento, sala d¿attesa in stazione/aerostazione, ecc.)"@it ;
@@ -467,7 +479,7 @@ luogocod:06.1 a inail:TipoLuogoAccadimento,
     skos:notation "06.1" ;
     xkos:depth 2 .
 
-luogocod:06.2 a inail:TipoLuogoAccadimento,
+luogocod:06.2 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Mezzo di trasporto terrestre, strada/rotaia, privato/pubblico (treno, bus, automobile, ecc.)"@it ;
     skos:prefLabel "Mezzo di trasporto terrestre, strada/rotaia, privato/pubblico (treno, bus, automobile, ecc.)"@it ;
@@ -478,7 +490,7 @@ luogocod:06.2 a inail:TipoLuogoAccadimento,
     skos:notation "06.2" ;
     xkos:depth 2 .
 
-luogocod:06.3 a inail:TipoLuogoAccadimento,
+luogocod:06.3 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Zona connessa ai luoghi pubblici ad accesso riservato al personale autorizzato: ferrovia, pista d'aeroporto, corsia d'emergenza d'autostrada"@it ;
     skos:prefLabel "Zona connessa ai luoghi pubblici ad accesso riservato al personale autorizzato: ferrovia, pista d'aeroporto, corsia d'emergenza d'autostrada"@it ;
@@ -489,7 +501,7 @@ luogocod:06.3 a inail:TipoLuogoAccadimento,
     skos:notation "06.3" ;
     xkos:depth 2 .
 
-luogocod:06.9 a inail:TipoLuogoAccadimento,
+luogocod:06.9 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Altro tipo di luogo conosciuto del gruppo 060 non indicato qui sopra"@it ;
     skos:prefLabel "Altro tipo di luogo conosciuto del gruppo 060 non indicato qui sopra"@it ;
@@ -500,7 +512,7 @@ luogocod:06.9 a inail:TipoLuogoAccadimento,
     skos:notation "06.9" ;
     xkos:depth 2 .
 
-luogocod:07.0 a inail:TipoLuogoAccadimento,
+luogocod:07.0 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Domicilio - non precisato"@it ;
     skos:prefLabel "Domicilio - non precisato"@it ;
@@ -511,7 +523,7 @@ luogocod:07.0 a inail:TipoLuogoAccadimento,
     skos:notation "07.0" ;
     xkos:depth 2 .
 
-luogocod:07.1 a inail:TipoLuogoAccadimento,
+luogocod:07.1 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Domicilio privato"@it ;
     skos:prefLabel "Domicilio privato"@it ;
@@ -522,7 +534,7 @@ luogocod:07.1 a inail:TipoLuogoAccadimento,
     skos:notation "07.1" ;
     xkos:depth 2 .
 
-luogocod:07.2 a inail:TipoLuogoAccadimento,
+luogocod:07.2 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Parti comuni, locali di servizio, giardino attinente la proprietà privata"@it ;
     skos:prefLabel "Parti comuni, locali di servizio, giardino attinente la proprietà privata"@it ;
@@ -533,7 +545,7 @@ luogocod:07.2 a inail:TipoLuogoAccadimento,
     skos:notation "07.2" ;
     xkos:depth 2 .
 
-luogocod:07.9 a inail:TipoLuogoAccadimento,
+luogocod:07.9 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Altro tipo di luogo conosciuto del gruppo 070 non indicato qui sopra"@it ;
     skos:prefLabel "Altro tipo di luogo conosciuto del gruppo 070 non indicato qui sopra"@it ;
@@ -544,7 +556,7 @@ luogocod:07.9 a inail:TipoLuogoAccadimento,
     skos:notation "07.9" ;
     xkos:depth 2 .
 
-luogocod:08.0 a inail:TipoLuogoAccadimento,
+luogocod:08.0 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Luogo d'attività sportiva - non precisato"@it ;
     skos:prefLabel "Luogo d'attività sportiva - non precisato"@it ;
@@ -555,7 +567,7 @@ luogocod:08.0 a inail:TipoLuogoAccadimento,
     skos:notation "08.0" ;
     xkos:depth 2 .
 
-luogocod:08.1 a inail:TipoLuogoAccadimento,
+luogocod:08.1 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "All'interno - sala per attività sportiva, palestra, piscina coperta"@it ;
     skos:prefLabel "All'interno - sala per attività sportiva, palestra, piscina coperta"@it ;
@@ -566,7 +578,7 @@ luogocod:08.1 a inail:TipoLuogoAccadimento,
     skos:notation "08.1" ;
     xkos:depth 2 .
 
-luogocod:08.2 a inail:TipoLuogoAccadimento,
+luogocod:08.2 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "All'esterno - campo sportivo, piscina, pista di sci"@it ;
     skos:prefLabel "All'esterno - campo sportivo, piscina, pista di sci"@it ;
@@ -577,7 +589,7 @@ luogocod:08.2 a inail:TipoLuogoAccadimento,
     skos:notation "08.2" ;
     xkos:depth 2 .
 
-luogocod:08.9 a inail:TipoLuogoAccadimento,
+luogocod:08.9 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Altro tipo di luogo conosciuto del gruppo 080 non indicato qui sopra"@it ;
     skos:prefLabel "Altro tipo di luogo conosciuto del gruppo 080 non indicato qui sopra"@it ;
@@ -588,7 +600,7 @@ luogocod:08.9 a inail:TipoLuogoAccadimento,
     skos:notation "08.9" ;
     xkos:depth 2 .
 
-luogocod:09.0 a inail:TipoLuogoAccadimento,
+luogocod:09.0 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Per aria, in alto (cantieri esclusi) non precisato"@it ;
     skos:prefLabel "Per aria, in alto (cantieri esclusi) non precisato"@it ;
@@ -599,7 +611,7 @@ luogocod:09.0 a inail:TipoLuogoAccadimento,
     skos:notation "09.0" ;
     xkos:depth 2 .
 
-luogocod:09.1 a inail:TipoLuogoAccadimento,
+luogocod:09.1 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "In alto - su un piano fisso (tetto, terrazza, ecc.)"@it ;
     skos:prefLabel "In alto - su un piano fisso (tetto, terrazza, ecc.)"@it ;
@@ -610,7 +622,7 @@ luogocod:09.1 a inail:TipoLuogoAccadimento,
     skos:notation "09.1" ;
     xkos:depth 2 .
 
-luogocod:09.2 a inail:TipoLuogoAccadimento,
+luogocod:09.2 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "In alto - palo, pilone, piattaforma sospesa"@it ;
     skos:prefLabel "In alto - palo, pilone, piattaforma sospesa"@it ;
@@ -621,7 +633,7 @@ luogocod:09.2 a inail:TipoLuogoAccadimento,
     skos:notation "09.2" ;
     xkos:depth 2 .
 
-luogocod:09.3 a inail:TipoLuogoAccadimento,
+luogocod:09.3 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Per aria, a bordo di un aeromobile, ecc."@it ;
     skos:prefLabel "Per aria, a bordo di un aeromobile, ecc."@it ;
@@ -632,7 +644,7 @@ luogocod:09.3 a inail:TipoLuogoAccadimento,
     skos:notation "09.3" ;
     xkos:depth 2 .
 
-luogocod:09.9 a inail:TipoLuogoAccadimento,
+luogocod:09.9 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Altro tipo di luogo conosciuto del gruppo 090, cantieri esclusi, non indicato qui sopra"@it ;
     skos:prefLabel "Altro tipo di luogo conosciuto del gruppo 090, cantieri esclusi, non indicato qui sopra"@it ;
@@ -643,7 +655,7 @@ luogocod:09.9 a inail:TipoLuogoAccadimento,
     skos:notation "09.9" ;
     xkos:depth 2 .
 
-luogocod:10.0 a inail:TipoLuogoAccadimento,
+luogocod:10.0 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Ambiente sotterraneo (cantieri esclusi) - non precisato"@it ;
     skos:prefLabel "Ambiente sotterraneo (cantieri esclusi) - non precisato"@it ;
@@ -654,7 +666,7 @@ luogocod:10.0 a inail:TipoLuogoAccadimento,
     skos:notation "10.0" ;
     xkos:depth 2 .
 
-luogocod:10.1 a inail:TipoLuogoAccadimento,
+luogocod:10.1 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Sotterraneo, tunnel (strada, treno, metropolitana, ecc.)"@it ;
     skos:prefLabel "Sotterraneo, tunnel (strada, treno, metropolitana, ecc.)"@it ;
@@ -665,7 +677,7 @@ luogocod:10.1 a inail:TipoLuogoAccadimento,
     skos:notation "10.1" ;
     xkos:depth 2 .
 
-luogocod:10.2 a inail:TipoLuogoAccadimento,
+luogocod:10.2 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Sotterraneo - miniera"@it ;
     skos:prefLabel "Sotterraneo - miniera"@it ;
@@ -676,7 +688,7 @@ luogocod:10.2 a inail:TipoLuogoAccadimento,
     skos:notation "10.2" ;
     xkos:depth 2 .
 
-luogocod:10.3 a inail:TipoLuogoAccadimento,
+luogocod:10.3 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Sotterraneo - impianti fognari"@it ;
     skos:prefLabel "Sotterraneo - impianti fognari"@it ;
@@ -687,7 +699,7 @@ luogocod:10.3 a inail:TipoLuogoAccadimento,
     skos:notation "10.3" ;
     xkos:depth 2 .
 
-luogocod:10.9 a inail:TipoLuogoAccadimento,
+luogocod:10.9 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Altro tipo di luogo conosciuto del gruppo 100, cantieri esclusi, non indicato qui sopra"@it ;
     skos:prefLabel "Altro tipo di luogo conosciuto del gruppo 100, cantieri esclusi, non indicato qui sopra"@it ;
@@ -698,7 +710,7 @@ luogocod:10.9 a inail:TipoLuogoAccadimento,
     skos:notation "10.9" ;
     xkos:depth 2 .
 
-luogocod:11.0 a inail:TipoLuogoAccadimento,
+luogocod:11.0 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Sull'acqua (cantieri esclusi) -  non precisato"@it ;
     skos:prefLabel "Sull'acqua (cantieri esclusi) -  non precisato"@it ;
@@ -709,7 +721,7 @@ luogocod:11.0 a inail:TipoLuogoAccadimento,
     skos:notation "11.0" ;
     xkos:depth 2 .
 
-luogocod:11.1 a inail:TipoLuogoAccadimento,
+luogocod:11.1 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Mare o oceano - a bordo di ogni tipo di imbarcazione, battello, chiatta, piattaforma"@it ;
     skos:prefLabel "Mare o oceano - a bordo di ogni tipo di imbarcazione, battello, chiatta, piattaforma"@it ;
@@ -720,7 +732,7 @@ luogocod:11.1 a inail:TipoLuogoAccadimento,
     skos:notation "11.1" ;
     xkos:depth 2 .
 
-luogocod:11.2 a inail:TipoLuogoAccadimento,
+luogocod:11.2 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Lago, fiume, porto - a bordo di ogni tipo di imbarcazione, battello, chiatta, piattaforma"@it ;
     skos:prefLabel "Lago, fiume, porto - a bordo di ogni tipo di imbarcazione, battello, chiatta, piattaforma"@it ;
@@ -731,7 +743,7 @@ luogocod:11.2 a inail:TipoLuogoAccadimento,
     skos:notation "11.2" ;
     xkos:depth 2 .
 
-luogocod:11.9 a inail:TipoLuogoAccadimento,
+luogocod:11.9 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Altro tipo di luogo conosciuto del gruppo 110, cantieri esclusi, non indicato qui sopra"@it ;
     skos:prefLabel "Altro tipo di luogo conosciuto del gruppo 110, cantieri esclusi, non indicato qui sopra"@it ;
@@ -742,7 +754,7 @@ luogocod:11.9 a inail:TipoLuogoAccadimento,
     skos:notation "11.9" ;
     xkos:depth 2 .
 
-luogocod:12.0 a inail:TipoLuogoAccadimento,
+luogocod:12.0 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Ambiente iperbarico (cantieri esclusi) - non precisato"@it ;
     skos:prefLabel "Ambiente iperbarico (cantieri esclusi) - non precisato"@it ;
@@ -753,7 +765,7 @@ luogocod:12.0 a inail:TipoLuogoAccadimento,
     skos:notation "12.0" ;
     xkos:depth 2 .
 
-luogocod:12.1 a inail:TipoLuogoAccadimento,
+luogocod:12.1 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Ambiente iperbarico - sott'acqua (immerso)"@it ;
     skos:prefLabel "Ambiente iperbarico - sott'acqua (immerso)"@it ;
@@ -764,7 +776,7 @@ luogocod:12.1 a inail:TipoLuogoAccadimento,
     skos:notation "12.1" ;
     xkos:depth 2 .
 
-luogocod:12.2 a inail:TipoLuogoAccadimento,
+luogocod:12.2 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Ambiente iperbarico - cassoni"@it ;
     skos:prefLabel "Ambiente iperbarico - cassoni"@it ;
@@ -775,7 +787,7 @@ luogocod:12.2 a inail:TipoLuogoAccadimento,
     skos:notation "12.2" ;
     xkos:depth 2 .
 
-luogocod:12.9 a inail:TipoLuogoAccadimento,
+luogocod:12.9 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Altro tipo di luogo conosciuto del gruppo 120, cantieri esclusi, non indicato qui sopra"@it ;
     skos:prefLabel "Altro tipo di luogo conosciuto del gruppo 120, cantieri esclusi, non indicato qui sopra"@it ;
@@ -786,7 +798,7 @@ luogocod:12.9 a inail:TipoLuogoAccadimento,
     skos:notation "12.9" ;
     xkos:depth 2 .
 
-luogogrup:01 a inail:TipoLuogoAccadimento,
+luogogrup:01 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Sito industriale"@it ;
     skos:prefLabel "Sito industriale"@it ;
@@ -801,7 +813,7 @@ luogogrup:01 a inail:TipoLuogoAccadimento,
     skos:notation "01" ;
     xkos:depth 1 .
 
-luogogrup:02 a inail:TipoLuogoAccadimento,
+luogogrup:02 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Cantiere di costruzione, cava, miniera a cielo aperto"@it ;
     skos:prefLabel "Cantiere di costruzione, cava, miniera a cielo aperto"@it ;
@@ -819,7 +831,7 @@ luogogrup:02 a inail:TipoLuogoAccadimento,
     skos:notation "02" ;
     xkos:depth 1 .
 
-luogogrup:03 a inail:TipoLuogoAccadimento,
+luogogrup:03 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Luogo per l'agricoltura, l'allevamento, forestale, ittico"@it ;
     skos:prefLabel "Luogo per l'agricoltura, l'allevamento, forestale, ittico"@it ;
@@ -837,7 +849,7 @@ luogogrup:03 a inail:TipoLuogoAccadimento,
     skos:notation "03" ;
     xkos:depth 1 .
 
-luogogrup:04 a inail:TipoLuogoAccadimento,
+luogogrup:04 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Luogo di attività terziaria, ufficio, luogo di svago, varie"@it ;
     skos:prefLabel "Luogo di attività terziaria, ufficio, luogo di svago, varie"@it ;
@@ -853,7 +865,7 @@ luogogrup:04 a inail:TipoLuogoAccadimento,
     skos:notation "04" ;
     xkos:depth 1 .
 
-luogogrup:05 a inail:TipoLuogoAccadimento,
+luogogrup:05 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Luogo di cura"@it ;
     skos:prefLabel "Luogo di cura"@it ;
@@ -866,7 +878,7 @@ luogogrup:05 a inail:TipoLuogoAccadimento,
     skos:notation "05" ;
     xkos:depth 1 .
 
-luogogrup:06 a inail:TipoLuogoAccadimento,
+luogogrup:06 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Luogo pubblico"@it ;
     skos:prefLabel "Luogo pubblico"@it ;
@@ -881,7 +893,7 @@ luogogrup:06 a inail:TipoLuogoAccadimento,
     skos:notation "06" ;
     xkos:depth 1 .
 
-luogogrup:07 a inail:TipoLuogoAccadimento,
+luogogrup:07 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Domicilio"@it ;
     skos:prefLabel "Domicilio"@it ;
@@ -895,7 +907,7 @@ luogogrup:07 a inail:TipoLuogoAccadimento,
     skos:notation "07" ;
     xkos:depth 1 .
 
-luogogrup:08 a inail:TipoLuogoAccadimento,
+luogogrup:08 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Luogo d'attività sportiva"@it ;
     skos:prefLabel "Luogo d'attività sportiva"@it ;
@@ -909,7 +921,7 @@ luogogrup:08 a inail:TipoLuogoAccadimento,
     skos:notation "08" ;
     xkos:depth 1 .
 
-luogogrup:09 a inail:TipoLuogoAccadimento,
+luogogrup:09 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Per aria, in alto (cantieri esclusi)"@it ;
     skos:prefLabel "Per aria, in alto (cantieri esclusi)"@it ;
@@ -924,7 +936,7 @@ luogogrup:09 a inail:TipoLuogoAccadimento,
     skos:notation "09" ;
     xkos:depth 1 .
 
-luogogrup:10 a inail:TipoLuogoAccadimento,
+luogogrup:10 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Ambiente sotterraneo (cantieri esclusi)"@it ;
     skos:prefLabel "Ambiente sotterraneo (cantieri esclusi)"@it ;
@@ -939,7 +951,7 @@ luogogrup:10 a inail:TipoLuogoAccadimento,
     skos:notation "10" ;
     xkos:depth 1 .
 
-luogogrup:11 a inail:TipoLuogoAccadimento,
+luogogrup:11 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Sull'acqua (cantieri esclusi)"@it ;
     skos:prefLabel "Sull'acqua (cantieri esclusi)"@it ;
@@ -953,7 +965,7 @@ luogogrup:11 a inail:TipoLuogoAccadimento,
     skos:notation "11" ;
     xkos:depth 1 .
 
-luogogrup:12 a inail:TipoLuogoAccadimento,
+luogogrup:12 a INAILService:TipoLuogoAccadimentoINAIL,
         skos:Concept ;
     rdfs:label "Ambiente iperbarico (cantieri esclusi)"@it ;
     skos:prefLabel "Ambiente iperbarico (cantieri esclusi)"@it ;

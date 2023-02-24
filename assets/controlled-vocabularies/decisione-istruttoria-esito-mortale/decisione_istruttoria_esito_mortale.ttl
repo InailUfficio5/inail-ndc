@@ -1,22 +1,32 @@
 @prefix adms: <http://www.w3.org/ns/adms#> .
 @prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
-@prefix cov: <https://w3id.org/italia/onto/COV/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix decistr: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/decisione_istruttoria_esito_mortale/codice/> .
-@prefix inail: <https://w3id.org/italia/onto/WorkAccident/> .
-@prefix inailvoc: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/> .
+@prefix decistresmort: <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/decisione_istruttoria_esito_mortale/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAILService: <https://w3id.org/italia/onto/work-accident/ised/adm_serv/> .
+@prefix inailvoc: <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/> .
 @prefix ndc: <https://w3id.org/italia/onto/NDC/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+### Individuals
+
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/ufficioV> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
 ### Annotations
 
-decistr:15 a inail:TipoDecisioneIstruttoriaEsitoMortale,
+decistresmort:15 a INAILService:TipoDecisioneIstruttoriaEsitoMortaleINAIL,
         skos:Concept ;
     rdfs:label "Esiti mortali nei termini con superstiti"@it ;
     skos:prefLabel "Esiti mortali nei termini con superstiti"@it ;
@@ -26,7 +36,7 @@ decistr:15 a inail:TipoDecisioneIstruttoriaEsitoMortale,
     skos:notation "15" ;
     xkos:depth 1 .
 
-decistr:16 a inail:TipoDecisioneIstruttoriaEsitoMortale,
+decistresmort:16 a INAILService:TipoDecisioneIstruttoriaEsitoMortaleINAIL,
         skos:Concept ;
     rdfs:label "Esiti mortali nei termini senza superstiti"@it ;
     skos:prefLabel "Esiti mortali nei termini senza superstiti"@it ;
@@ -36,7 +46,7 @@ decistr:16 a inail:TipoDecisioneIstruttoriaEsitoMortale,
     skos:notation "16" ;
     xkos:depth 1 .
 
-decistr:17 a inail:TipoDecisioneIstruttoriaEsitoMortale,
+decistresmort:17 a INAILService:TipoDecisioneIstruttoriaEsitoMortaleINAIL,
         skos:Concept ;
     rdfs:label "Morte con superstiti itinere"@it ;
     skos:prefLabel "Morte con superstiti itinere"@it ;
@@ -46,7 +56,7 @@ decistr:17 a inail:TipoDecisioneIstruttoriaEsitoMortale,
     skos:notation "17" ;
     xkos:depth 1 .
 
-decistr:18 a inail:TipoDecisioneIstruttoriaEsitoMortale,
+decistresmort:18 a INAILService:TipoDecisioneIstruttoriaEsitoMortaleINAIL,
         skos:Concept ;
     rdfs:label "Morte senza superstiti itinere"@it ;
     skos:prefLabel "Morte senza superstiti itinere"@it ;
@@ -56,7 +66,7 @@ decistr:18 a inail:TipoDecisioneIstruttoriaEsitoMortale,
     skos:notation "18" ;
     xkos:depth 1 .
 
-decistr:21 a inail:TipoDecisioneIstruttoriaEsitoMortale,
+decistresmort:21 a INAILService:TipoDecisioneIstruttoriaEsitoMortaleINAIL,
         skos:Concept ;
     rdfs:label "Difetto occasione di lavoro"@it ;
     skos:prefLabel "Difetto occasione di lavoro"@it ;
@@ -66,7 +76,7 @@ decistr:21 a inail:TipoDecisioneIstruttoriaEsitoMortale,
     skos:notation "21" ;
     xkos:depth 1 .
 
-decistr:22 a inail:TipoDecisioneIstruttoriaEsitoMortale,
+decistresmort:22 a INAILService:TipoDecisioneIstruttoriaEsitoMortaleINAIL,
         skos:Concept ;
     rdfs:label "Difetto in itinere"@it ;
     skos:prefLabel "Difetto in itinere"@it ;
@@ -76,7 +86,7 @@ decistr:22 a inail:TipoDecisioneIstruttoriaEsitoMortale,
     skos:inScheme inailvoc:decisione_istruttoria_esito_mortale ;
     skos:notation "22" .
 
-decistr:24 a inail:TipoDecisioneIstruttoriaEsitoMortale,
+decistresmort:24 a INAILService:TipoDecisioneIstruttoriaEsitoMortaleINAIL,
         skos:Concept ;
     rdfs:label "Persona non tutelata"@it ;
     skos:prefLabel "Persona non tutelata"@it ;
@@ -86,7 +96,7 @@ decistr:24 a inail:TipoDecisioneIstruttoriaEsitoMortale,
     skos:notation "24" ;
     xkos:depth 1 .
 
-decistr:27 a inail:TipoDecisioneIstruttoriaEsitoMortale,
+decistresmort:27 a INAILService:TipoDecisioneIstruttoriaEsitoMortaleINAIL,
         skos:Concept ;
     rdfs:label "Attività non tutelata"@it ;
     skos:prefLabel "Attività non tutelata"@it ;
@@ -96,7 +106,7 @@ decistr:27 a inail:TipoDecisioneIstruttoriaEsitoMortale,
     skos:notation "27" ;
     xkos:depth 1 .
 
-decistr:28 a inail:TipoDecisioneIstruttoriaEsitoMortale,
+decistresmort:28 a INAILService:TipoDecisioneIstruttoriaEsitoMortaleINAIL,
         skos:Concept ;
     rdfs:label "Carenza di documentazione valida"@it ;
     skos:prefLabel "Carenza di documentazione valida"@it ;
@@ -106,7 +116,7 @@ decistr:28 a inail:TipoDecisioneIstruttoriaEsitoMortale,
     skos:notation "28" ;
     xkos:depth 1 .
 
-decistr:244 a inail:TipoDecisioneIstruttoriaEsitoMortale,
+decistresmort:244 a INAILService:TipoDecisioneIstruttoriaEsitoMortaleINAIL,
         skos:Concept ;
     rdfs:label "Morte non riconducibile all'evento"@it ;
     skos:prefLabel "Morte non riconducibile all'evento"@it ;
@@ -116,7 +126,7 @@ decistr:244 a inail:TipoDecisioneIstruttoriaEsitoMortale,
     skos:notation "244" ;
     xkos:depth 1 .
 
-decistr:300 a inail:TipoDecisioneIstruttoriaEsitoMortale,
+decistresmort:300 a INAILService:TipoDecisioneIstruttoriaEsitoMortaleINAIL,
         skos:Concept ;
     rdfs:label "Altre cause di negatività"@it ;
     skos:prefLabel "Altre cause di negatività"@it ;
@@ -132,7 +142,8 @@ decistr:300 a inail:TipoDecisioneIstruttoriaEsitoMortale,
     dct:identifier "SKOS" ;
     dct:title "Simple Knowledge Organization System - SKOS" .
 
-<https://w3id.org/italia/data/WorkAccident/distribution/DIEM_CSV> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/DIEM_CSV> a dcat:Distribution,
+        dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/decisione-istruttoria-esito-mortale> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/decisione-istruttoria-esito-mortale/decisione_istruttoria_esito_mortale.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classificazione dell'istruttoria dell'esito mortale adottata dall'INAIL"@it,
@@ -142,7 +153,8 @@ decistr:300 a inail:TipoDecisioneIstruttoriaEsitoMortale,
     dct:title "CSV distribution of the investigation of the fatal outcome adopted by INAIL controlled vocabulary"@en,
         "Distribuzione CSV del vocabolario controllato sulla classificazione dell'istruttoria dell'esito mortale adottata dall'INAIL"@it .
 
-<https://w3id.org/italia/data/WorkAccident/distribution/DIEM_JSON_LD> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/DIEM_JSON_LD> a dcat:Distribution,
+        dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/decisione-istruttoria-esito-mortale> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/decisione-istruttoria-esito-mortale/decisione_istruttoria_esito_mortale.json> ;
     dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla classificazione dell'istruttoria dell'esito mortale adottata dall'INAIL"@it,
@@ -152,7 +164,8 @@ decistr:300 a inail:TipoDecisioneIstruttoriaEsitoMortale,
     dct:title "Distribuzione JSON_LD del vocabolario controllato sulla classificazione dell'istruttoria dell'esito mortale adottata dall'INAIL"@it,
         "JSON_LD distribution of the investigation of the fatal outcome adopted by INAIL controlled vocabulary"@en .
 
-<https://w3id.org/italia/data/WorkAccident/distribution/DIEM_RDF_TURTLE> a dcatapit:Distribution ;
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/DIEM_RDF_TURTLE> a dcat:Distribution,
+        dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/decisione-istruttoria-esito-mortale> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/decisione-istruttoria-esito-mortale/decisione_istruttoria_esito_mortale.ttl> ;
     dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla classificazione dell'istruttoria dell'esito mortale adottata dall'INAIL"@it,
@@ -162,11 +175,11 @@ decistr:300 a inail:TipoDecisioneIstruttoriaEsitoMortale,
     dct:title "Distribuzione RDF/Turtle del vocabolario controllato sulla classificazione dell'istruttoria dell'esito mortale adottata dall'INAIL"@it,
         "RDF/Turtle distribution of the investigation of the fatal outcome adopted by INAIL controlled vocabulary"@en .
 
-<https://w3id.org/italia/data/WorkAccident/Organization/inail> a cov:Organization ;
-    rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
-    cov:IPAcode "inail" ;
-    cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
-    cov:orgAcronym "inail" .
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> a dcatapit:Agent,
+        foaf:Agent ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
 
 inailvoc:decisione_istruttoria_esito_mortale a adms:Asset,
         dcat:Dataset,
@@ -176,13 +189,13 @@ inailvoc:decisione_istruttoria_esito_mortale a adms:Asset,
     skos:prefLabel "Vocabolario Controllato sulla classificazione dell'istruttoria esito mortale adottata dall'INAIL"@it ;
     rdfs:comment "Controlled vocabulary that identifies the type of investigation in the event of a fatal outcome"@en,
         "Vocabolario controllato che identifica la tipologia di decisione istruttoria in caso di esito mortale"@it ;
-    owl:versionInfo "0.2" ;
+    owl:versionInfo "0.3" ;
     rdfs:isDefinedBy inailvoc:decisione_istruttoria_esito_mortale ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
-    dcat:contactPoint <https://www.inail.it> ;
-    dcat:distribution <https://w3id.org/italia/data/WorkAccident/distribution/DIEM_CSV>,
-        <https://w3id.org/italia/data/WorkAccident/distribution/DIEM_JSON_LD>,
-        <https://w3id.org/italia/data/WorkAccident/distribution/DIEM_RDF_TURTLE> ;
+    dcat:contactPoint <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/ufficioV> ;
+    dcat:distribution <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/DIEM_CSV>,
+        <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/DIEM_JSON_LD>,
+        <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/DIEM_RDF_TURTLE> ;
     dcat:keyword "health"@en,
         "inail"@it,
         "infortunio"@it,
@@ -193,36 +206,37 @@ inailvoc:decisione_istruttoria_esito_mortale a adms:Asset,
         "occupational injury"@en,
         "superstite"@it,
         "survivor"@en ;
-    dcat:theme <http://eurovoc.europa.eu/825>,
-        <http://eurovoc.europa.eu/1761>,
-        <http://eurovoc.europa.eu/5291> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
     dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
-    dct:creator <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
+    dct:creator <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
     dct:description "Controlled vocabulary that identifies the type of investigation in the event of a fatal outcome"@en,
         "Vocabolario controllato che identifica la tipologia di decisione istruttoria in caso di esito mortale"@it ;
-    dct:identifier "https://w3id.org/italia/controlled-vocabulary/WorkAccident/decisione_istruttoria_esito_mortale" ;
+    dct:identifier "https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/decisione_istruttoria_esito_mortale" ;
     dct:issued "2022-07-22"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-    dct:modified "2022-11-17"^^xsd:date ;
-    dct:publisher <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
-    dct:relation inailvoc:tipo_def_dec_istr ;
-    dct:rightsHolder <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
+    dct:modified "2023-02-13"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
+    dct:relation inailvoc:tipo_definizione_decisione_istruttoria ;
+    dct:rightsHolder <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
+    dct:subject <http://eurovoc.europa.eu/825>,
+        <http://eurovoc.europa.eu/1761>,
+        <http://eurovoc.europa.eu/5291> ;
     dct:title "Classification of the investigation of the fatal outcome adopted by INAIL controlled vocabulary"@en,
         "Vocabolario Controllato sulla classificazione dell'istruttoria dell'esito mortale adottata dall'INAIL"@it ;
     dct:type <http://purl.org/adms/assettype/CodeList> ;
-    ndc:keyConcept "Decisione istruttoria esito mortale" ;
-    skos:hasTopConcept decistr:15,
-        decistr:16,
-        decistr:17,
-        decistr:18,
-        decistr:21,
-        decistr:22,
-        decistr:24,
-        decistr:27,
-        decistr:28,
-        decistr:244,
-        decistr:300 ;
+    ndc:keyConcept "decisione_istruttoria_esito_mortale" ;
+    skos:hasTopConcept decistresmort:15,
+        decistresmort:16,
+        decistresmort:17,
+        decistresmort:18,
+        decistresmort:21,
+        decistresmort:22,
+        decistresmort:24,
+        decistresmort:27,
+        decistresmort:28,
+        decistresmort:244,
+        decistresmort:300 ;
     xkos:numberOfLevels "1" .
 
 ### Serialized using the ttlser deterministic serializer v1.2.0
