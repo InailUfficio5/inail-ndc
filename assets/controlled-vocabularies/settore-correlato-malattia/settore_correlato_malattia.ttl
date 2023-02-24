@@ -1,750 +1,736 @@
-@prefix adms: <http://www.w3.org/ns/adms#> .
-@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
-@prefix cov: <https://w3id.org/italia/onto/COV/> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix inail: <https://w3id.org/italia/onto/WorkAccident/> .
-@prefix inailvoc: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/> .
-@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix settcorr: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/settore_correlato_malattia/settore/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix subsettcorr: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/settore_correlato_malattia/sub_settore/> .
-@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:          <http://purl.org/dc/terms/> .
+@prefix adms:         <http://www.w3.org/ns/adms#> .
+@prefix rdfs:         <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:          <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:          <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc:           <http://purl.org/dc/elements/1.1/> .
+@prefix skos:         <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf:         <http://xmlns.com/foaf/0.1/> .
+@prefix xkos:         <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix clvapit:      <https://w3id.org/italia/onto/CLV/> .
+@prefix dcat:         <http://www.w3.org/ns/dcat#> .
+@prefix vcard:        <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcatapit:     <http://dati.gov.it/onto/dcatapit#> .
+@prefix xsd:          <http://www.w3.org/2001/XMLSchema#> .
+@prefix ndc:          <https://w3id.org/italia/onto/NDC/> .
+@prefix cov:          <https://w3id.org/italia/onto/COV/> .
+@prefix INAILService: <https://w3id.org/italia/onto/work-accident/ised/adm_serv/> .
+@prefix inailvoc:     <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/> .
+@prefix settcorr:     <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/> .
+@prefix subsettcorr:  <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/> .
 
-### Annotations
 
-<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
-        dct:Standard ;
-    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
-    dct:identifier "SKOS" ;
-    dct:title "Simple Knowledge Organization System - SKOS" .
+#Metadata DCAT-AP_IT for the controlled vocabulary
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia>
+      a       adms:Asset, dcat:Dataset, skos:ConceptScheme ;
+      dct:title "Vocabolario Controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it , "Classification of disease related sectors and subsectors adopted by INAIL Controlled Vocabulary"@en ;	
+      dct:description "Raggruppamento settori e sottosettori contratti di lavoro CNEL."@it , "Grouping of sectors and subsectors of CNEL employment contracts."@en ;	
+      rdfs:comment "Raggruppamento settori e sottosettori contratti di lavoro CNEL."@it , "Grouping of sectors and subsectors of CNEL employment contracts."@en ; 
+      rdfs:label "Vocabolario Controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it , "Controlled vocabulary of disease related sectors and subsectors adopted by INAIL"@en ;
+      skos:prefLabel "Vocabolario Controllato sulla classificazione del settore correlato malattia adottata dall'INAIL"@it ;
+      dct:type <http://purl.org/adms/assettype/CodeList> ;
+      xkos:numberOfLevels "2" ;
+      ndc:keyConcept "settore_correlato_malattia" ;
+	  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+      dct:identifier "https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia" ;
+      dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI>, <http://publications.europa.eu/resource/authority/data-theme/AGRI>, <http://publications.europa.eu/resource/authority/data-theme/ECON>, <http://publications.europa.eu/resource/authority/data-theme/EDUC>, <http://publications.europa.eu/resource/authority/data-theme/ENER> ;
+      dct:subject <http://eurovoc.europa.eu/2784>, <http://eurovoc.europa.eu/1761>, <http://eurovoc.europa.eu/77>, <http://eurovoc.europa.eu/100250>, <http://eurovoc.europa.eu/100276>, <http://eurovoc.europa.eu/100269>, <http://eurovoc.europa.eu/100274>, <http://eurovoc.europa.eu/100275>, <http://eurovoc.europa.eu/100270>, <http://eurovoc.europa.eu/100266>, <http://eurovoc.europa.eu/100217> ;  
+      dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+      dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+      rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+      dcat:keyword "pesca"@it , "agricoltura"@it , "cnel"@it ,  "servizi"@it, "pubblica amministrazione"@it , "artigianato"@it, "malattia professionale"@it , "industry"@en , "agriculture"@en , "fishing"@en , "service"@en , "public administration"@en , "craftsmanship"@en, "occupational disease"@en ;
+      dct:issued "2022-07-22"^^xsd:date ;
+      dct:modified "2023-02-13"^^xsd:date ;
+      owl:versionInfo "0.3" ;
+	  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+      dct:creator <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
+      dct:publisher <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
+      dct:relation <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/mansione>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoratore>,
+	               <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/grande_gruppo_tariffario>;
+      dct:rightsHolder <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
+      dcat:contactPoint <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/ufficioV> ;
+      dcat:distribution <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/SM_RDF_TURTLE>, <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/SM_JSON_LD>, <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/SM_CSV>;
+	  skos:hasTopConcept <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/1>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/2>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/3>, 
+	                     <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/4>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/5>.
 
-<https://w3id.org/italia/data/WorkAccident/distribution/SM_CSV> a dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/settore-correlato-malattia> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/settore-correlato-malattia/settore_correlato_malattia.csv> ;
-    dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it,
-        "This is the distribution in CSV of disease related sectors and subsectors adopted by INAIL controlled vocabulary"@en ;
-    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
-    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    dct:title "CSV distribution of disease related sectors and subsectors adopted by INAILcontrolled vocabulary"@en,
-        "Distribuzione CSV del vocabolario controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it .
+#######################################################################################################
+#                                   INAIL and standard                                                #
+#######################################################################################################
 
-<https://w3id.org/italia/data/WorkAccident/distribution/SM_JSON_LD> a dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/settore-correlato-malattia> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/settore-correlato-malattia/settore_correlato_malattia.json> ;
-    dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it,
-        "This is the distribution in JSON_LD of disease related sectors and subsectors adopted by INAIL controlled vocabulary"@en ;
-    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
-    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    dct:title "Distribuzione JSON_LD del vocabolario controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it,
-        "JSON_LD distribution of disease related sectors and subsectors adopted by INAIL controlled vocabulary"@en .
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail>
+a   dcatapit:Agent , foaf:Agent ;
+      dct:identifier "inail" ;
+      foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it ,
+                "National Institute for Insurance against Accidents at Work"@en .
 
-<https://w3id.org/italia/data/WorkAccident/distribution/SM_RDF_TURTLE> a dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/settore-correlato-malattia> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/settore-correlato-malattia/settore_correlato_malattia.ttl> ;
-    dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it,
-        "This is the distribution in RDF/turtle of disease related sectors and subsectors adopted by INAIL controlled vocabulary"@en ;
-    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    dct:title "Distribuzione RDF/Turtle del vocabolario controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it,
-        "RDF/Turtle distribution of disease related sectors and subsectors adopted by INAIL controlled vocabulary"@en .
+<https://w3id.org/italia/data/standard/SKOS>
+a   dcatapit:Standard, dct:Standard ;
+      dct:identifier "SKOS" ;
+      dct:title "Simple Knowledge Organization System - SKOS" ;
+      dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
 
-<https://w3id.org/italia/data/WorkAccident/Organization/inail> a cov:Organization ;
-    rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
-    cov:IPAcode "inail" ;
-    cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
-    cov:orgAcronym "inail" .
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/SM_RDF_TURTLE>
+a   dcatapit:Distribution, dcat:Distribution ;
+      dct:title	"Distribuzione RDF/Turtle del vocabolario controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it, "RDF/Turtle distribution of disease related sectors and subsectors adopted by INAIL controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it, "This is the distribution in RDF/turtle of disease related sectors and subsectors adopted by INAIL controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/settore-correlato-malattia/settore_correlato_malattia.ttl> ;  
+      dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/settore-correlato-malattia> .	  
 
-inailvoc:settore_correlato_malattia a adms:Asset,
-        dcat:Dataset,
-        skos:ConceptScheme ;
-    rdfs:label "Controlled vocabulary of disease related sectors and subsectors adopted by INAIL"@en,
-        "Vocabolario Controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it ;
-    skos:prefLabel "Vocabolario Controllato sulla classificazione del settore correlato malattia adottata dall'INAIL"@it ;
-    rdfs:comment "Grouping of sectors and subsectors of CNEL employment contracts."@en,
-        "Raggruppamento settori e sottosettori contratti di lavoro CNEL."@it ;
-    owl:versionInfo "0.2" ;
-    rdfs:isDefinedBy inailvoc:settore_correlato_malattia ;
-    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
-    dcat:contactPoint <https://www.inail.it> ;
-    dcat:distribution <https://w3id.org/italia/data/WorkAccident/distribution/SM_CSV>,
-        <https://w3id.org/italia/data/WorkAccident/distribution/SM_JSON_LD>,
-        <https://w3id.org/italia/data/WorkAccident/distribution/SM_RDF_TURTLE> ;
-    dcat:keyword "agricoltura"@it,
-        "agriculture"@en,
-        "artigianato"@it,
-        "cnel"@it,
-        "craftsmanship"@en,
-        "fishing"@en,
-        "industry"@en,
-        "malattia professionale"@it,
-        "occupational disease"@en,
-        "pesca"@it,
-        "pubblica amministrazione"@it,
-        "public administration"@en,
-        "service"@en,
-        "servizi"@it ;
-    dcat:theme <http://eurovoc.europa.eu/77>,
-        <http://eurovoc.europa.eu/825>,
-        <http://eurovoc.europa.eu/1761>,
-        <http://eurovoc.europa.eu/2784>,
-        <http://publications.europa.eu/resource/authority/subject-matter/INDU> ;
-    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
-    dct:creator <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
-    dct:description "Grouping of sectors and subsectors of CNEL employment contracts."@en,
-        "Raggruppamento settori e sottosettori contratti di lavoro CNEL."@it ;
-    dct:identifier "https://w3id.org/italia/controlled-vocabulary/WorkAccident/settore_correlato_malattia" ;
-    dct:issued "2022-07-22"^^xsd:date ;
-    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-    dct:modified "2022-11-17"^^xsd:date ;
-    dct:publisher <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
-    dct:relation inailvoc:gestione,
-        inailvoc:grande_gruppo_tariffario,
-        inailvoc:mansione,
-        inailvoc:settore_attivita,
-        inailvoc:tipo_lavoratore,
-        inailvoc:tipo_lavoro ;
-    dct:rightsHolder <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
-    dct:title "Classification of disease related sectors and subsectors adopted by INAIL Controlled Vocabulary"@en,
-        "Vocabolario Controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it ;
-    dct:type <http://purl.org/adms/assettype/CodeList> ;
-    ndc:keyConcept "Settore Malattia" ;
-    skos:hasTopConcept settcorr:1,
-        settcorr:2,
-        settcorr:3,
-        settcorr:4,
-        settcorr:5 ;
-    xkos:numberOfLevels "2" .
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/SM_JSON_LD>
+a   dcatapit:Distribution, dcat:Distribution ;
+      dct:title "Distribuzione JSON_LD del vocabolario controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it , "JSON_LD distribution of disease related sectors and subsectors adopted by INAIL controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it , "This is the distribution in JSON_LD of disease related sectors and subsectors adopted by INAIL controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/settore-correlato-malattia/settore_correlato_malattia.json> ; 
+      dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/settore-correlato-malattia> . 
 
-settcorr:1 a inail:settoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Agricoltura e pesca"@it ;
-    skos:prefLabel "Agricoltura e pesca"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "1" ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:narrower subsettcorr:11,
-        subsettcorr:12,
-        subsettcorr:13,
-        subsettcorr:14,
-        subsettcorr:15,
-        subsettcorr:16,
-        subsettcorr:17 ;
-    skos:notation "1" ;
-    xkos:depth 1 .
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/SM_CSV>
+a	dcatapit:Distribution, dcat:Distribution ;
+      dct:title	"Distribuzione CSV del vocabolario controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it , "CSV distribution of disease related sectors and subsectors adopted by INAILcontrolled vocabulary"@en ;
+      dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it , "This is the distribution in CSV of disease related sectors and subsectors adopted by INAIL controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/settore-correlato-malattia/settore_correlato_malattia.csv> ; 
+      dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/settore-correlato-malattia> .	
 
-settcorr:2 a inail:settoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Industria"@it ;
-    skos:prefLabel "Industria"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "2" ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:narrower subsettcorr:18,
-        subsettcorr:19,
-        subsettcorr:20,
-        subsettcorr:21,
-        subsettcorr:22,
-        subsettcorr:23,
-        subsettcorr:24,
-        subsettcorr:25,
-        subsettcorr:26,
-        subsettcorr:27,
-        subsettcorr:28,
-        subsettcorr:29,
-        subsettcorr:30,
-        subsettcorr:31 ;
-    skos:notation "2" ;
-    xkos:depth 1 .
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/ufficioV> 
+a   owl:NamedIndividual, dcatapit:Organization, vcard:Kind, vcard:Organization ;
+      vcard:fn "INAIL Ufficio V - D.C.O.D";
+      vcard:hasEmail <mailto:dcod@inail.it> .
+	  
+#######################################################################################################
+#                         Definition of the controlled vocabulary - First level                       #
+####################################################################################################### 
 
-settcorr:3 a inail:settoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Servizi"@it ;
-    skos:prefLabel "Servizi"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "3" ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:narrower subsettcorr:32,
-        subsettcorr:33,
-        subsettcorr:34,
-        subsettcorr:35,
-        subsettcorr:36,
-        subsettcorr:37,
-        subsettcorr:38,
-        subsettcorr:39 ;
-    skos:notation "3" ;
-    xkos:depth 1 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/1>
+a    skos:Concept, INAILService:settoreCorrelatoMalattiaProfessionale ; 
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/11> , 
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/12> ,
+                      <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/13> ,
+					  <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/14> , 					  
+					  <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/15> ,                      		
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/16> , 					   
+					  <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/17> ; 
+        skos:notation "1" ;
+        dct:identifier "1" ;
+        clvapit:hasRankOrder "1" ;
+        xkos:depth 1 ;
+        rdfs:label "Agricoltura e pesca"@it ;  
+        skos:prefLabel "Agricoltura e pesca"@it .
 
-settcorr:4 a inail:settoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Artigianato"@it ;
-    skos:prefLabel "Artigianato"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "4" ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:narrower subsettcorr:40,
-        subsettcorr:41,
-        subsettcorr:42,
-        subsettcorr:43,
-        subsettcorr:44,
-        subsettcorr:45,
-        subsettcorr:46,
-        subsettcorr:47,
-        subsettcorr:48,
-        subsettcorr:49,
-        subsettcorr:50,
-        subsettcorr:51,
-        subsettcorr:58 ;
-    skos:notation "4" ;
-    xkos:depth 1 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/2>
+a    skos:Concept, INAILService:settoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/18> ,  
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/19> , 		
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/20> ,	
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/21> ,
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/22> ,
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/23> ,
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/24> ,	
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/25> ,		
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/26> ,
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/27> , 
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/28> ,
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/29> , 		
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/30> , 
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/31> ;  
+        skos:notation "2" ;
+        dct:identifier "2" ;
+        clvapit:hasRankOrder "1" ;		
+        xkos:depth 1 ;		 
+        rdfs:label "Industria"@it ;
+        skos:prefLabel "Industria"@it .
 
-settcorr:5 a inail:settoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Pubblica amministrazione"@it ;
-    skos:prefLabel "Pubblica amministrazione"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "5" ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:narrower subsettcorr:52,
-        subsettcorr:53,
-        subsettcorr:54,
-        subsettcorr:55,
-        subsettcorr:56,
-        subsettcorr:57 ;
-    skos:notation "5" ;
-    xkos:depth 1 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/3>
+a    skos:Concept, INAILService:settoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/32> ,
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/33> ,
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/34> ,
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/35> ,
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/36> ,
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/37> , 
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/38> , 
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/39> ; 
+        skos:notation "3" ;
+        dct:identifier "3" ;		
+        clvapit:hasRankOrder "1" ;
+        xkos:depth 1 ;
+        rdfs:label "Servizi"@it ;    
+        skos:prefLabel "Servizi"@it .
 
-subsettcorr:11 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Pesca - piscicoltura"@it ;
-    skos:prefLabel "Pesca - piscicoltura"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "11" ;
-    skos:broader settcorr:1 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "11" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/4>
+a    skos:Concept, INAILService:settoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/40> ,		
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/41> ,
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/42> ,
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/43> ,
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/44> ,
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/45> ,
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/46> ,
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/47> ,	
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/48> ,
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/49> ,
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/50> ,		
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/51> , 
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/58> ; 
+        skos:notation "4" ;
+        dct:identifier "4" ;
+        clvapit:hasRankOrder "1" ;
+        xkos:depth 1 ;		
+        rdfs:label "Artigianato"@it ;
+        skos:prefLabel "Artigianato"@it .   
 
-subsettcorr:12 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Allevamento"@it ;
-    skos:prefLabel "Allevamento"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "12" ;
-    skos:broader settcorr:1 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "12" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/5>
+a    skos:Concept, INAILService:settoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/52> ,
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/53> , 
+ 		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/54> ,
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/55> , 		
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/56> ,		
+		              <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/57> ; 
+        skos:notation "5" ;
+        dct:identifier "5" ;
+        clvapit:hasRankOrder "1" ;
+        xkos:depth 1 ;
+        rdfs:label "Pubblica amministrazione"@it ;
+        skos:prefLabel "Pubblica amministrazione"@it .
 
-subsettcorr:13 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Coltivazioni di seminativi"@it ;
-    skos:prefLabel "Coltivazioni di seminativi"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "13" ;
-    skos:broader settcorr:1 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "13" ;
-    xkos:depth 2 .
+#######################################################################################################
+#                                              Second level                                           #
+#######################################################################################################
 
-subsettcorr:14 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Orticoltura, floricoltura"@it ;
-    skos:prefLabel "Orticoltura, floricoltura"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "14" ;
-    skos:broader settcorr:1 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "14" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/11>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/1> ;		
+        skos:notation "11" ;
+        dct:identifier "11" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Pesca - piscicoltura"@it ;
+        skos:prefLabel "Pesca - piscicoltura"@it .
 
-subsettcorr:15 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Frutticoltura"@it ;
-    skos:prefLabel "Frutticoltura"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "15" ;
-    skos:broader settcorr:1 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "15" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/12>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/1> ;
+        skos:notation "12" ;
+        dct:identifier "12" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Allevamento"@it ;
+        skos:prefLabel "Allevamento"@it .
 
-subsettcorr:16 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Silvicoltura"@it ;
-    skos:prefLabel "Silvicoltura"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "16" ;
-    skos:broader settcorr:1 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "16" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/13>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/1> ;
+        skos:notation "13" ;
+        dct:identifier "13" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Coltivazioni di seminativi"@it ;
+        skos:prefLabel "Coltivazioni di seminativi"@it .
 
-subsettcorr:17 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Altre coltivazioni agricole"@it ;
-    skos:prefLabel "Altre coltivazioni agricole"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "17" ;
-    skos:broader settcorr:1 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "17" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/14>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/1> ;
+        skos:notation "14" ;
+        dct:identifier "14" ;		
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Orticoltura, floricoltura"@it ;
+        skos:prefLabel "Orticoltura, floricoltura"@it .
 
-subsettcorr:18 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Mineraria"@it ;
-    skos:prefLabel "Mineraria"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "18" ;
-    skos:broader settcorr:2 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "18" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/15>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/1> ;
+        skos:notation "15" ;
+		dct:identifier "15" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Frutticoltura"@it ;
+        skos:prefLabel "Frutticoltura"@it .
 
-subsettcorr:19 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Alimentare"@it ;
-    skos:prefLabel "Alimentare"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "19" ;
-    skos:broader settcorr:2 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "19" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/16>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/1> ;
+        skos:notation "16" ;
+        dct:identifier "16" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Silvicoltura"@it ;
+        skos:prefLabel "Silvicoltura"@it .
 
-subsettcorr:20 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Tessile e abbigliamento"@it ;
-    skos:prefLabel "Tessile e abbigliamento"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "20" ;
-    skos:broader settcorr:2 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "20" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/17>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/1> ;
+        skos:notation "17" ;
+        dct:identifier "17" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Altre coltivazioni agricole"@it ;
+        skos:prefLabel "Altre coltivazioni agricole"@it .
 
-subsettcorr:21 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Conciaria"@it ;
-    skos:prefLabel "Conciaria"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "21" ;
-    skos:broader settcorr:2 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "21" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/18>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/2> ;
+        skos:notation "18" ;
+        dct:identifier "18" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Mineraria"@it ;
+        skos:prefLabel "Mineraria"@it .
 
-subsettcorr:22 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Legno"@it ;
-    skos:prefLabel "Legno"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "22" ;
-    skos:broader settcorr:2 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "22" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/19>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/2> ;
+        skos:notation "19" ;
+        dct:identifier "19" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Alimentare"@it ;
+        skos:prefLabel "Alimentare"@it .
 
-subsettcorr:23 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Carta"@it ;
-    skos:prefLabel "Carta"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "23" ;
-    skos:broader settcorr:2 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "23" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/20>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/2> ;
+        skos:notation "20" ;
+        dct:identifier "20" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Tessile e abbigliamento"@it ;
+        skos:prefLabel "Tessile e abbigliamento"@it .
 
-subsettcorr:24 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Petrolchimica"@it ;
-    skos:prefLabel "Petrolchimica"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "24" ;
-    skos:broader settcorr:2 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "24" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/21>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/2> ;
+        skos:notation "21" ;
+        dct:identifier "21" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Conciaria"@it ;
+        skos:prefLabel "Conciaria"@it .
 
-subsettcorr:25 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Chimica"@it ;
-    skos:prefLabel "Chimica"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "25" ;
-    skos:broader settcorr:2 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "25" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/22>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/2> ;
+        skos:notation "22" ;
+        dct:identifier "22" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Legno"@it ;
+        skos:prefLabel "Legno"@it .
 
-subsettcorr:26 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Gomma e plastica"@it ;
-    skos:prefLabel "Gomma e plastica"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "26" ;
-    skos:broader settcorr:2 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "26" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/23>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/2> ;
+        skos:notation "23" ;
+		dct:identifier "23" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Carta"@it ;
+        skos:prefLabel "Carta"@it .
 
-subsettcorr:27 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Lav. minerali non metalliferi (vetro, cemento, calce e pietre ornamentali)"@it ;
-    skos:prefLabel "Lav. minerali non metalliferi (vetro, cemento, calce e pietre ornamentali)"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "27" ;
-    skos:broader settcorr:2 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "27" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/24>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/2> ;
+        skos:notation "24" ;
+        dct:identifier "24" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Petrolchimica"@it ;
+        skos:prefLabel "Petrolchimica"@it .
 
-subsettcorr:28 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Metalmeccanica (metallurgia,metalmeccanica, macchine, apparecchi e strumenti)"@it ;
-    skos:prefLabel "Metalmeccanica (metallurgia,metalmeccanica, macchine, apparecchi e strumenti)"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "28" ;
-    skos:broader settcorr:2 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "28" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/25>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/2> ;
+        skos:notation "25" ;
+        dct:identifier "25" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Chimica"@it ;
+        skos:prefLabel "Chimica"@it .
 
-subsettcorr:29 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Altre manifatturiere (gioielleria e oreficeria, strumenti musicali, ecc.)"@it ;
-    skos:prefLabel "Altre manifatturiere (gioielleria e oreficeria, strumenti musicali, ecc.)"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "29" ;
-    skos:broader settcorr:2 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "29" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/26>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/2> ;
+        skos:notation "26" ;
+        dct:identifier "26" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Gomma e plastica"@it ;
+        skos:prefLabel "Gomma e plastica"@it .
 
-subsettcorr:30 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Costruzioni (edilizia e installazione/manutenzione di impianti elettrici, idraulici e termici)"@it ;
-    skos:prefLabel "Costruzioni (edilizia e installazione/manutenzione di impianti elettrici, idraulici e termici)"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "30" ;
-    skos:broader settcorr:2 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "30" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/27>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/2> ;
+        skos:notation "27" ;
+        dct:identifier "27" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Lav. minerali non metalliferi (vetro, cemento, calce e pietre ornamentali)"@it ;
+        skos:prefLabel "Lav. minerali non metalliferi (vetro, cemento, calce e pietre ornamentali)"@it .
+	
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/28>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/2> ;
+        skos:notation "28" ;
+        dct:identifier "28" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Metalmeccanica (metallurgia,metalmeccanica, macchine, apparecchi e strumenti)"@it ;
+        skos:prefLabel "Metalmeccanica (metallurgia,metalmeccanica, macchine, apparecchi e strumenti)"@it .
 
-subsettcorr:31 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Elettricita', gas e acqua"@it ;
-    skos:prefLabel "Elettricita', gas e acqua"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "31" ;
-    skos:broader settcorr:2 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "31" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/29>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/2> ;
+        skos:notation "29" ;
+        dct:identifier "29" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Altre manifatturiere (gioielleria e oreficeria, strumenti musicali, ecc.)"@it ;
+        skos:prefLabel "Altre manifatturiere (gioielleria e oreficeria, strumenti musicali, ecc.)"@it .
 
-subsettcorr:32 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Commercio"@it ;
-    skos:prefLabel "Commercio"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "32" ;
-    skos:broader settcorr:3 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "32" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/30>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/2> ;
+        skos:notation "30" ;
+        dct:identifier "30" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Costruzioni (edilizia e installazione/manutenzione di impianti elettrici, idraulici e termici)"@it ;
+        skos:prefLabel "Costruzioni (edilizia e installazione/manutenzione di impianti elettrici, idraulici e termici)"@it .
 
-subsettcorr:33 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Alberghi e ristoranti"@it ;
-    skos:prefLabel "Alberghi e ristoranti"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "33" ;
-    skos:broader settcorr:3 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "33" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/31>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/2> ;
+        skos:notation "31" ;
+        dct:identifier "31" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Elettricita', gas e acqua"@it ;
+        skos:prefLabel "Elettricita', gas e acqua"@it .
 
-subsettcorr:34 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Trasporti e comunicazioni"@it ;
-    skos:prefLabel "Trasporti e comunicazioni"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "34" ;
-    skos:broader settcorr:3 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "34" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/32>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/3> ;
+        skos:notation "32" ;
+        dct:identifier "32" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Commercio"@it ;
+        skos:prefLabel "Commercio"@it .
 
-subsettcorr:35 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Sanita' privata e servizi sociali privati"@it ;
-    skos:prefLabel "Sanita' privata e servizi sociali privati"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "35" ;
-    skos:broader settcorr:3 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "35" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/33>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/3> ;
+        skos:notation "33" ;
+        dct:identifier "33" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Alberghi e ristoranti"@it ;
+        skos:prefLabel "Alberghi e ristoranti"@it .
 
-subsettcorr:36 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Servizi di pulizia e disinfestazione."@it ;
-    skos:prefLabel "Servizi di pulizia e disinfestazione."@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "36" ;
-    skos:broader settcorr:3 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "36" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/34>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/3> ;
+        skos:notation "34" ;
+        dct:identifier "34" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Trasporti e comunicazioni"@it ;
+        skos:prefLabel "Trasporti e comunicazioni"@it .
 
-subsettcorr:37 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Attivita' immobiliari e professionali (intemediazione finanziaria,informatica, noleggio, vigilanza, pubblicita', ecc.)"@it ;
-    skos:prefLabel "Attivita' immobiliari e professionali (intemediazione finanziaria,informatica, noleggio, vigilanza, pubblicita', ecc.)"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "37" ;
-    skos:broader settcorr:3 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "37" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/35>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/3> ;
+        skos:notation "35" ;
+		dct:identifier "35" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Sanita' privata e servizi sociali privati"@it ;
+        skos:prefLabel "Sanita' privata e servizi sociali privati"@it .
 
-subsettcorr:38 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Istruzione privata"@it ;
-    skos:prefLabel "Istruzione privata"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "38" ;
-    skos:broader settcorr:3 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "38" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/36>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/3> ;
+        skos:notation "36" ;
+		dct:identifier "36" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Servizi di pulizia e disinfestazione."@it ;
+        skos:prefLabel "Servizi di pulizia e disinfestazione."@it .
 
-subsettcorr:39 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Altri servizi (smaltimento rifiuti, associazioni culturali, sportive, ecc.)"@it ;
-    skos:prefLabel "Altri servizi (smaltimento rifiuti, associazioni culturali, sportive, ecc.)"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "39" ;
-    skos:broader settcorr:3 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "39" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/37>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/3> ;
+        skos:notation "37" ;
+        dct:identifier "37" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Attivita' immobiliari e professionali (intemediazione finanziaria,informatica, noleggio, vigilanza, pubblicita', ecc.)"@it ;
+        skos:prefLabel "Attivita' immobiliari e professionali (intemediazione finanziaria,informatica, noleggio, vigilanza, pubblicita', ecc.)"@it .
 
-subsettcorr:40 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Alimentare"@it ;
-    skos:prefLabel "Alimentare"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "40" ;
-    skos:broader settcorr:4 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "40" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/38>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/3> ;
+        skos:notation "38" ;
+        dct:identifier "38" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Istruzione privata"@it ;
+        skos:prefLabel "Istruzione privata"@it .
 
-subsettcorr:41 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Tessile e abbigliamento"@it ;
-    skos:prefLabel "Tessile e abbigliamento"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "41" ;
-    skos:broader settcorr:4 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "41" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/39>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/3> ;
+        skos:notation "39" ;
+        dct:identifier "39" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Altri servizi (smaltimento rifiuti, associazioni culturali, sportive, ecc.)"@it ;
+        skos:prefLabel "Altri servizi (smaltimento rifiuti, associazioni culturali, sportive, ecc.)"@it .
 
-subsettcorr:42 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Conciaria"@it ;
-    skos:prefLabel "Conciaria"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "42" ;
-    skos:broader settcorr:4 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "42" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/40>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/4> ;
+        skos:notation "40" ;
+        dct:identifier "40" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Alimentare"@it ;
+        skos:prefLabel "Alimentare"@it .
 
-subsettcorr:43 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Legno"@it ;
-    skos:prefLabel "Legno"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "43" ;
-    skos:broader settcorr:4 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "43" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/41>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/4> ;
+        skos:notation "41" ;
+        dct:identifier "41" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Tessile e abbigliamento"@it ;
+        skos:prefLabel "Tessile e abbigliamento"@it .
 
-subsettcorr:44 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Carta"@it ;
-    skos:prefLabel "Carta"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "44" ;
-    skos:broader settcorr:4 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "44" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/42>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/4> ;
+        skos:notation "42" ;
+        dct:identifier "42" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Conciaria"@it ;
+        skos:prefLabel "Conciaria"@it .
 
-subsettcorr:45 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Chimica"@it ;
-    skos:prefLabel "Chimica"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "45" ;
-    skos:broader settcorr:4 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "45" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/43>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/4> ;
+        skos:notation "43" ;
+        dct:identifier "43" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Legno"@it ;
+        skos:prefLabel "Legno"@it .
 
-subsettcorr:46 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Gomma e plastica"@it ;
-    skos:prefLabel "Gomma e plastica"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "46" ;
-    skos:broader settcorr:4 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "46" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/44>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/4> ;
+        skos:notation "44" ;
+        dct:identifier "44" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Carta"@it ;
+        skos:prefLabel "Carta"@it .
 
-subsettcorr:47 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Lav. minerali non metalliferi (vetro, cemento, calce e pietre ornamentali)"@it ;
-    skos:prefLabel "Lav. minerali non metalliferi (vetro, cemento, calce e pietre ornamentali)"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "47" ;
-    skos:broader settcorr:4 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "47" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/45>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/4> ;
+        skos:notation "45" ;
+        dct:identifier "45" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Chimica"@it ;
+        skos:prefLabel "Chimica"@it .
 
-subsettcorr:48 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Metalmeccanica (metallurgia,metalmeccanica, macchine, apparecchi e strumenti)"@it ;
-    skos:prefLabel "Metalmeccanica (metallurgia,metalmeccanica, macchine, apparecchi e strumenti)"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "48" ;
-    skos:broader settcorr:4 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "48" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/46>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/4> ;
+        skos:notation "46" ;
+        dct:identifier "46" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Gomma e plastica"@it ;
+        skos:prefLabel "Gomma e plastica"@it .
 
-subsettcorr:49 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Altre manifatturiere (gioielleria e oreficeria, strumenti musicali, ecc.)"@it ;
-    skos:prefLabel "Altre manifatturiere (gioielleria e oreficeria, strumenti musicali, ecc.)"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "49" ;
-    skos:broader settcorr:4 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "49" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/47>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/4> ;
+        skos:notation "47" ;
+        dct:identifier "47" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Lav. minerali non metalliferi (vetro, cemento, calce e pietre ornamentali)"@it ;
+        skos:prefLabel "Lav. minerali non metalliferi (vetro, cemento, calce e pietre ornamentali)"@it .
 
-subsettcorr:50 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Costruzioni (edilizia e installazione/manutenzione di impianti elettrici, idraulici e termici)"@it ;
-    skos:prefLabel "Costruzioni (edilizia e installazione/manutenzione di impianti elettrici, idraulici e termici)"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "50" ;
-    skos:broader settcorr:4 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "50" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/48>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/4> ;
+        skos:notation "48" ;
+        dct:identifier "48" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Metalmeccanica (metallurgia,metalmeccanica, macchine, apparecchi e strumenti)"@it ;
+        skos:prefLabel "Metalmeccanica (metallurgia,metalmeccanica, macchine, apparecchi e strumenti)"@it .
 
-subsettcorr:51 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Elettricita', gas e acqua"@it ;
-    skos:prefLabel "Elettricita', gas e acqua"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "51" ;
-    skos:broader settcorr:4 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "51" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/49>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/4> ;
+        skos:notation "49" ;
+        dct:identifier "49" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Altre manifatturiere (gioielleria e oreficeria, strumenti musicali, ecc.)"@it ;
+        skos:prefLabel "Altre manifatturiere (gioielleria e oreficeria, strumenti musicali, ecc.)"@it .
 
-subsettcorr:52 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Ministeri (istruzione pubblica, salute, difesa, ecc.)"@it ;
-    skos:prefLabel "Ministeri (istruzione pubblica, salute, difesa, ecc.)"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "52" ;
-    skos:broader settcorr:5 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "52" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/50>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/4> ;
+        skos:notation "50" ;
+        dct:identifier "50" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;		
+        rdfs:label "Costruzioni (edilizia e installazione/manutenzione di impianti elettrici, idraulici e termici)"@it ;
+        skos:prefLabel "Costruzioni (edilizia e installazione/manutenzione di impianti elettrici, idraulici e termici)"@it .
 
-subsettcorr:53 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "universita' e istituti di ricerca"@it ;
-    skos:prefLabel "universita' e istituti di ricerca"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "53" ;
-    skos:broader settcorr:5 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "53" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/51>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/4> ;
+        skos:notation "51" ;
+        dct:identifier "51" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Elettricita', gas e acqua"@it ;
+        skos:prefLabel "Elettricita', gas e acqua"@it .
 
-subsettcorr:54 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Parastato"@it ;
-    skos:prefLabel "Parastato"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "54" ;
-    skos:broader settcorr:5 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "54" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/58>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/4> ;
+        skos:notation "58" ;
+        dct:identifier "58" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Petrolchimica"@it ;
+        skos:prefLabel "Petrolchimica"@it .
 
-subsettcorr:55 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Istituti/ organismi regionali"@it ;
-    skos:prefLabel "Istituti/ organismi regionali"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "55" ;
-    skos:broader settcorr:5 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "55" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/52>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/5> ;
+        skos:notation "52" ;
+        dct:identifier "52" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Ministeri (istruzione pubblica, salute, difesa, ecc.)"@it ;
+        skos:prefLabel "Ministeri (istruzione pubblica, salute, difesa, ecc.)"@it .
 
-subsettcorr:56 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Istituti/ organismi provinciali"@it ;
-    skos:prefLabel "Istituti/ organismi provinciali"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "56" ;
-    skos:broader settcorr:5 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "56" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/53>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/5> ;
+        skos:notation "53" ;
+        dct:identifier "53" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "universita' e istituti di ricerca"@it ;
+        skos:prefLabel "universita' e istituti di ricerca"@it .
 
-subsettcorr:57 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Istituti/ organismi comunali"@it ;
-    skos:prefLabel "Istituti/ organismi comunali"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "57" ;
-    skos:broader settcorr:5 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "57" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/54>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/5> ;
+        skos:notation "54" ;
+        dct:identifier "54" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Parastato"@it ;
+        skos:prefLabel "Parastato"@it .
 
-subsettcorr:58 a inail:subsettoreCorrelatoMalattiaProfessionale,
-        skos:Concept ;
-    rdfs:label "Petrolchimica"@it ;
-    skos:prefLabel "Petrolchimica"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "58" ;
-    skos:broader settcorr:4 ;
-    skos:inScheme inailvoc:settore_correlato_malattia ;
-    skos:notation "58" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/55>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/5> ;
+        skos:notation "55" ;
+        dct:identifier "55" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Istituti/ organismi regionali"@it ;
+        skos:prefLabel "Istituti/ organismi regionali"@it .
 
-### Serialized using the ttlser deterministic serializer v1.2.0
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/56>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/5> ;
+        skos:notation "56" ;
+        dct:identifier "56" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Istituti/ organismi provinciali"@it ;
+        skos:prefLabel "Istituti/ organismi provinciali"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/sub_settore/57>
+a    skos:Concept, INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+        skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia> ;
+        skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia/settore/5> ;
+        skos:notation "57" ;
+        dct:identifier "57" ;
+        clvapit:hasRankOrder "2" ;
+        xkos:depth 2 ;
+        rdfs:label "Istituti/ organismi comunali"@it ;
+        skos:prefLabel "Istituti/ organismi comunali"@it .

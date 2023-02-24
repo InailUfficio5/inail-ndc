@@ -1,638 +1,641 @@
-@prefix adms: <http://www.w3.org/ns/adms#> .
-@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
-@prefix codattfis: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/attivita_fisica/codice/> .
-@prefix cov: <https://w3id.org/italia/onto/COV/> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix grupattfis: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/attivita_fisica/gruppo/> .
-@prefix inail: <https://w3id.org/italia/onto/WorkAccident/> .
-@prefix inailvoc: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/> .
-@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:             <http://purl.org/dc/terms/> .
+@prefix adms:            <http://www.w3.org/ns/adms#> .
+@prefix rdfs:            <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:             <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:             <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc:              <http://purl.org/dc/elements/1.1/> .
+@prefix skos:            <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf:            <http://xmlns.com/foaf/0.1/> .
+@prefix xkos:            <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix clvapit:         <https://w3id.org/italia/onto/CLV/> .
+@prefix dcat:            <http://www.w3.org/ns/dcat#> .
+@prefix vcard:           <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcatapit:        <http://dati.gov.it/onto/dcatapit#> .
+@prefix xsd:             <http://www.w3.org/2001/XMLSchema#> .
+@prefix ndc:             <https://w3id.org/italia/onto/NDC/> .
+@prefix cov:             <https://w3id.org/italia/onto/COV/> .
+@prefix INAILService:    <https://w3id.org/italia/onto/work-accident/ised/adm_serv/> .
+@prefix inailvoc:        <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/> .
+@prefix grupattivfisica: <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/> .
+@prefix codattivfisica:  <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/> .
 
-### Annotations
 
-codattfis:1.0 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Operazioni di macchina - non precisata"@it ;
-    skos:prefLabel "Operazioni di macchina - non precisata"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "1.0" ;
-    skos:broader grupattfis:1 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "1.0" ;
-    xkos:depth 2 .
+#Metadata DCAT-AP_IT for the controlled vocabulary
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>
+      a       skos:ConceptScheme , adms:Asset , dcatapit:Dataset  ;
+      dct:title "Vocabolario Controllato sulle tipologie di attività fisica adottate dall'INAIL"@it , "Controlled vocabulary on types of physical activity adopted by INAIL"@en ;
+      dct:description "Classificazione a due livelli dell'attività svolta al momento dell'evento lesivo"@it, "Two-level classification of the activity carried out at the time of work accident"@en ; 
+      rdfs:comment "Classificazione a due livelli dell'attività svolta al momento dell'evento lesivo"@it, "Two-level classification of the activity carried out at the time of work accident"@en ;
+      rdfs:label "Vocabolario Controllato sulle tipologie di attività fisica adottate dall'INAIL"@it  , "Controlled vocabulary on types of physical activity adopted by INAIL"@en ;
+      skos:prefLabel "Vocabolario Controllato sulle tipologie di attività fisica adottate dall'INAIL"@it ;
+	  dct:type <http://purl.org/adms/assettype/CodeList> ;
+	  xkos:numberOfLevels "2"; 
+      ndc:keyConcept "attivita_fisica" ;
+      adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+      dct:identifier "https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica";
+      dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI>, <http://publications.europa.eu/resource/authority/data-theme/TRAN>;
+      dct:subject <http://eurovoc.europa.eu/825>,  <http://eurovoc.europa.eu/4543>, <http://eurovoc.europa.eu/2015>;                 
+      dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+      dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+      rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica> ;
+      dcat:keyword "inail"@it , "infortunio"@it , "attività fisica"@it, "occupational injury"@en, "physical activity"@en ;
+      dct:issued "2022-09-06"^^xsd:date ;
+      dct:modified "2023-02-13"^^xsd:date ;
+      owl:versionInfo "0.3" ;
+      dct:accrualPeriodicity  <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+      dct:creator <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
+      dct:publisher <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
+      dct:relation <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/mansione>;
+      dct:rightsHolder <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
+      dcat:contactPoint <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/ufficioV> ;
+      dcat:distribution <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TAF_RDF_TURTLE>, <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TAF_JSON_LD>, <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TAF_CSV> ;  
+      skos:hasTopConcept <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/1>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/2>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/3>,
+                        <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/4>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/5>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/6>,
+						<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/7> .
 
-codattfis:1.1 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Avviare la macchina, arrestare la macchina"@it ;
-    skos:prefLabel "Avviare la macchina, arrestare la macchina"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "1.1" ;
-    skos:broader grupattfis:1 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "1.1" ;
-    xkos:depth 2 .
 
-codattfis:1.2 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Alimentare la macchina, disalimentare la macchina"@it ;
-    skos:prefLabel "Alimentare la macchina, disalimentare la macchina"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "1.2" ;
-    skos:broader grupattfis:1 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "1.2" ;
-    xkos:depth 2 .
+#######################################################################################################
+#                                   INAIL and standard                                                #
+#######################################################################################################
 
-codattfis:1.3 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Sorvegliare, far funzionare la macchina"@it ;
-    skos:prefLabel "Sorvegliare, far funzionare la macchina"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "1.3" ;
-    skos:broader grupattfis:1 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "1.3" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail>
+a   dcatapit:Agent , foaf:Agent ;
+      dct:identifier "inail" ;
+      foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it ,
+                "National Institute for Insurance against Accidents at Work"@en .
 
-codattfis:1.9 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Altra attività fisica specifica conosciuta del gruppo 10 non indicata qui sopra"@it ;
-    skos:prefLabel "Altra attività fisica specifica conosciuta del gruppo 10 non indicata qui sopra"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "1.9" ;
-    skos:broader grupattfis:1 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "1.9" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/data/standard/SKOS>
+a   dcatapit:Standard, dct:Standard ;
+      dct:identifier "SKOS" ;
+      dct:title "Simple Knowledge Organization System - SKOS" ;
+      dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
 
-codattfis:2.0 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Lavoro con utensili a mano - non precisato"@it ;
-    skos:prefLabel "Lavoro con utensili a mano - non precisato"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "2.0" ;
-    skos:broader grupattfis:2 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "2.0" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TAF_RDF_TURTLE>
+a   dcatapit:Distribution, dcat:Distribution ;
+      dct:title	"Distribuzione RDF/Turtle del vocabolario controllato sulle tipologie di attività fisica adottate dall'INAIL"@it, "RDF/Turtle distribution of types of physical activity adopted by INAIL controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulle tipologie di attività fisica adottate dall'INAIL"@it, "This is the distribution in RDF/turtle of types of physical activity adopted by INAIL controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-attivita-fisica/tipo_attivita_fisica.ttl> ;  
+      dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-attivita-fisica> .	  
 
-codattfis:2.1 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Lavorare con utensili a mano manuali"@it ;
-    skos:prefLabel "Lavorare con utensili a mano manuali"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "2.1" ;
-    skos:broader grupattfis:2 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "2.1" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TAF_JSON_LD>
+a   dcatapit:Distribution, dcat:Distribution ;
+      dct:title "Distribuzione JSON_LD del vocabolario controllato sulle tipologie di attività fisica adottate dall'INAIL"@it , "JSON_LD distribution of types of physical activity adopted by INAIL controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulle tipologie di attività fisica adottate dall'INAIL"@it , "This is the distribution in JSON_LD of types of physical activity adopted by INAIL controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-attivita-fisica/tipo_attivita_fisica.json> ; 
+      dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-attivita-fisica> . 
 
-codattfis:2.2 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Lavorare con utensili a mano motorizzati"@it ;
-    skos:prefLabel "Lavorare con utensili a mano motorizzati"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "2.2" ;
-    skos:broader grupattfis:2 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "2.2" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TAF_CSV>
+a	dcatapit:Distribution, dcat:Distribution ;
+      dct:title	"Distribuzione CSV del vocabolario controllato sulle tipologie di attività fisica adottate dall'INAIL"@it , "CSV distribution types of physical activity adopted by INAIL controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione CSV del vocabolario controllato sulle tipologie di attività fisica adottate dall'INAIL"@it , "This is the distribution in CSV of types of physical activity adopted by INAIL controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-attivita-fisica/tipo_attivita_fisica.csv> ; 
+      dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-attivita-fisica> .	
 
-codattfis:2.9 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Altra attività fisica specifica conosciuta del gruppo 20 non indicata qui sopra"@it ;
-    skos:prefLabel "Altra attività fisica specifica conosciuta del gruppo 20 non indicata qui sopra"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "2.9" ;
-    skos:broader grupattfis:2 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "2.9" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/ufficioV> 
+a   owl:NamedIndividual, dcatapit:Organization, vcard:Kind, vcard:Organization ;
+      vcard:fn "INAIL Ufficio V - D.C.O.D";
+      vcard:hasEmail <mailto:dcod@inail.it> .
+      	
+#######################################################################################################
+#                         Definition of the controlled vocabulary - First level                       #
+#######################################################################################################
 
-codattfis:3.0 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Alla guida, a bordo di un mezzo di trasporto/attrezzatura di movimentazione - non precisato,"@it ;
-    skos:prefLabel "Alla guida, a bordo di un mezzo di trasporto/attrezzatura di movimentazione - non precisato,"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "3.0" ;
-    skos:broader grupattfis:3 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "3.0" ;
-    xkos:depth 2 .
 
-codattfis:3.1 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Condurre un mezzo di trasporto o un'attrezzatura di movimentazione - mobile e  motorizzato/a"@it ;
-    skos:prefLabel "Condurre un mezzo di trasporto o un'attrezzatura di movimentazione - mobile e  motorizzato/a"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "3.1" ;
-    skos:broader grupattfis:3 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "3.1" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/1>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/1.0>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/1.1>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/1.2>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/1.3>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/1.9>;	  
+      skos:notation "1" ;
+      dct:identifier "1" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Operazioni di macchina"@it ;
+      skos:prefLabel "Operazioni di macchina"@it.
 
-codattfis:3.2 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Condurre un mezzo di trasporto o un'attrezzatura di movimentazione - mobile e non motorizzato/a"@it ;
-    skos:prefLabel "Condurre un mezzo di trasporto o un'attrezzatura di movimentazione - mobile e non motorizzato/a"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "3.2" ;
-    skos:broader grupattfis:3 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "3.2" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/2>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/2.0>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/2.1>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/2.2>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/2.9>;	  
+      skos:notation "2" ;
+      dct:identifier "2" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Lavoro con utensili a mano"@it ;
+      skos:prefLabel "Lavoro con utensili a mano"@it.
 
-codattfis:3.3 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Essere passeggero a bordo d'un mezzo di  trasporto"@it ;
-    skos:prefLabel "Essere passeggero a bordo d'un mezzo di  trasporto"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "3.3" ;
-    skos:broader grupattfis:3 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "3.3" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/3>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/3.0>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/3.1>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/3.2>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/3.3>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/3.9>;	  
+      skos:notation "3" ;
+      dct:identifier "3" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Alla guida, a bordo di un mezzo di trasporto/attrezzatura di movimentazione"@it ;
+      skos:prefLabel "Alla guida, a bordo di un mezzo di trasporto/attrezzatura di movimentazione"@it.
 
-codattfis:3.9 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Altra attività fisica specifica conosciuta del gruppo 30 non indicata qui sopra"@it ;
-    skos:prefLabel "Altra attività fisica specifica conosciuta del gruppo 30 non indicata qui sopra"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "3.9" ;
-    skos:broader grupattfis:3 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "3.9" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/4>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/4.0>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/4.1>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/4.2>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/4.3>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/4.4>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/4.5>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/4.6>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/4.7>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/4.9>;	  
+      skos:notation "4" ;
+      dct:identifier "4" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Manipolazione di oggetti"@it ;
+      skos:prefLabel "Manipolazione di oggetti"@it.
 
-codattfis:4.0 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Manipolazione di oggetti ? non precisato"@it ;
-    skos:prefLabel "Manipolazione di oggetti ? non precisato"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "4.0" ;
-    skos:broader grupattfis:4 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "4.0" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/5>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/5.0>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/5.1>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/5.2>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/5.3>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/5.9>;	  
+      skos:notation "5" ;
+      dct:identifier "5" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Trasporto manuale"@it ;
+      skos:prefLabel "Trasporto manuale"@it.
 
-codattfis:4.1 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Prendere in mano, afferrare, strappare, tenere in mano, deporre - su un piano orizzontale"@it ;
-    skos:prefLabel "Prendere in mano, afferrare, strappare, tenere in mano, deporre - su un piano orizzontale"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "4.1" ;
-    skos:broader grupattfis:4 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "4.1" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/6>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/6.0>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/6.1>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/6.2>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/6.3>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/6.4>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/6.5>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/6.6>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/6.7>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/6.9>;	  
+      skos:notation "6" ;
+      dct:identifier "6" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Movimenti"@it ;
+      skos:prefLabel "Movimenti"@it.
 
-codattfis:4.2 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Legare, allacciare, sciogliere, disfare, stringere, avvitare, svitare, girare"@it ;
-    skos:prefLabel "Legare, allacciare, sciogliere, disfare, stringere, avvitare, svitare, girare"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "4.2" ;
-    skos:broader grupattfis:4 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "4.2" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/7>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/7.0>;
+      skos:notation "7" ;
+      dct:identifier "7" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Presenza"@it ;
+      skos:prefLabel "Presenza"@it.
 
-codattfis:4.3 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Fissare a, appendere, alzare, istallare - su un piano verticale"@it ;
-    skos:prefLabel "Fissare a, appendere, alzare, istallare - su un piano verticale"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "4.3" ;
-    skos:broader grupattfis:4 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "4.3" ;
-    xkos:depth 2 .
 
-codattfis:4.4 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Lanciare, proiettare lontano"@it ;
-    skos:prefLabel "Lanciare, proiettare lontano"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "4.4" ;
-    skos:broader grupattfis:4 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "4.4" ;
-    xkos:depth 2 .
+#######################################################################################################
+#                                            Second level                                             #
+#######################################################################################################
 
-codattfis:4.5 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Aprire, chiudere (cassa, imballaggio, pacco)"@it ;
-    skos:prefLabel "Aprire, chiudere (cassa, imballaggio, pacco)"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "4.5" ;
-    skos:broader grupattfis:4 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "4.5" ;
-    xkos:depth 2 .
 
-codattfis:4.6 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Spargere, versare in, riempire, annaffiare, vuotare, prosciugare"@it ;
-    skos:prefLabel "Spargere, versare in, riempire, annaffiare, vuotare, prosciugare"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "4.6" ;
-    skos:broader grupattfis:4 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "4.6" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/1.0>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/1>;
+      skos:notation "1.0" ;
+      dct:identifier "1.0" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Operazioni di macchina - non precisata"@it ;
+      skos:prefLabel "Operazioni di macchina - non precisata"@it.
 
-codattfis:4.7 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Tirare (ad es. un cassetto), spingere (la porta di un capannone, di un ufficio, d'un armadio)"@it ;
-    skos:prefLabel "Tirare (ad es. un cassetto), spingere (la porta di un capannone, di un ufficio, d'un armadio)"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "4.7" ;
-    skos:broader grupattfis:4 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "4.7" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/1.1>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/1>;
+      skos:notation "1.1" ;
+      dct:identifier "1.1" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Avviare la macchina, arrestare la macchina"@it ;
+      skos:prefLabel "Avviare la macchina, arrestare la macchina"@it.
 
-codattfis:4.9 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Altra attività fisica specifica conosciuta del gruppo 40 non indicata qui sopra"@it ;
-    skos:prefLabel "Altra attività fisica specifica conosciuta del gruppo 40 non indicata qui sopra"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "4.9" ;
-    skos:broader grupattfis:4 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "4.9" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/1.2>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/1>;
+      skos:notation "1.2" ;
+      dct:identifier "1.2" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Alimentare la macchina, disalimentare la macchina"@it ;
+      skos:prefLabel "Alimentare la macchina, disalimentare la macchina"@it.
 
-codattfis:5.0 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Trasporto manuale - non precisato"@it ;
-    skos:prefLabel "Trasporto manuale - non precisato"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "5.0" ;
-    skos:broader grupattfis:5 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "5.0" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/1.3>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/1>;
+      skos:notation "1.3" ;
+      dct:identifier "1.3" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Sorvegliare, far funzionare la macchina"@it ;
+      skos:prefLabel "Sorvegliare, far funzionare la macchina"@it.
 
-codattfis:5.1 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Trasporto verticale, sollevare, alzare, portare in basso un oggetto"@it ;
-    skos:prefLabel "Trasporto verticale, sollevare, alzare, portare in basso un oggetto"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "5.1" ;
-    skos:broader grupattfis:5 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "5.1" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/1.9>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/1>;
+      skos:notation "1.9" ;
+      dct:identifier "1.9" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Altra attività fisica specifica conosciuta del gruppo 10 non indicata qui sopra"@it ;
+      skos:prefLabel "Altra attività fisica specifica conosciuta del gruppo 10 non indicata qui sopra"@it.
 
-codattfis:5.2 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Trasporto orizzontale: tirare, spingere, rotolare un oggetto"@it ;
-    skos:prefLabel "Trasporto orizzontale: tirare, spingere, rotolare un oggetto"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "5.2" ;
-    skos:broader grupattfis:5 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "5.2" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/2.0>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/2>;
+      skos:notation "2.0" ;
+      dct:identifier "2.0" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Lavoro con utensili a mano - non precisato"@it ;
+      skos:prefLabel "Lavoro con utensili a mano - non precisato"@it.
 
-codattfis:5.3 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Trasporto a mano di carichi (portare)"@it ;
-    skos:prefLabel "Trasporto a mano di carichi (portare)"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "5.3" ;
-    skos:broader grupattfis:5 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "5.3" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/2.1>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/2>;
+      skos:notation "2.1" ;
+      dct:identifier "2.1" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Lavorare con utensili a mano manuali"@it ;
+      skos:prefLabel "Lavorare con utensili a mano manuali"@it.
 
-codattfis:5.9 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Altra attività fisica specifica conosciuta del gruppo 50 non indicata qui sopra"@it ;
-    skos:prefLabel "Altra attività fisica specifica conosciuta del gruppo 50 non indicata qui sopra"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "5.9" ;
-    skos:broader grupattfis:5 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "5.9" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/2.2>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/2>;
+      skos:notation "2.2" ;
+      dct:identifier "2.2" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Lavorare con utensili a mano motorizzati"@it ;
+      skos:prefLabel "Lavorare con utensili a mano motorizzati"@it.
 
-codattfis:6.0 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Movimenti - non precisato"@it ;
-    skos:prefLabel "Movimenti - non precisato"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "6.0" ;
-    skos:broader grupattfis:6 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "6.0" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/2.9>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/2>;
+      skos:notation "2.9" ;
+      dct:identifier "2.9" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Altra attività fisica specifica conosciuta del gruppo 20 non indicata qui sopra"@it ;
+      skos:prefLabel "Altra attività fisica specifica conosciuta del gruppo 20 non indicata qui sopra"@it.
 
-codattfis:6.1 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Camminare, correre, salire, scendere, ecc"@it ;
-    skos:prefLabel "Camminare, correre, salire, scendere, ecc"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "6.1" ;
-    skos:broader grupattfis:6 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "6.1" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/3.0>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/3>;
+      skos:notation "3.0" ;
+      dct:identifier "3.0" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Alla guida, a bordo di un mezzo di trasporto/attrezzatura di movimentazione - non precisato,"@it ;
+      skos:prefLabel "Alla guida, a bordo di un mezzo di trasporto/attrezzatura di movimentazione - non precisato,"@it.
 
-codattfis:6.2 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Entrare, uscire"@it ;
-    skos:prefLabel "Entrare, uscire"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "6.2" ;
-    skos:broader grupattfis:6 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "6.2" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/3.1>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/3>;
+      skos:notation "3.1" ;
+      dct:identifier "3.1" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Condurre un mezzo di trasporto o un'attrezzatura di movimentazione - mobile e  motorizzato/a"@it ;
+      skos:prefLabel "Condurre un mezzo di trasporto o un'attrezzatura di movimentazione - mobile e  motorizzato/a"@it.
 
-codattfis:6.3 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Saltare, slanciarsi, ecc."@it ;
-    skos:prefLabel "Saltare, slanciarsi, ecc."@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "6.3" ;
-    skos:broader grupattfis:6 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "6.3" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/3.2>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/3>;
+      skos:notation "3.2" ;
+      dct:identifier "3.2" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Condurre un mezzo di trasporto o un'attrezzatura di movimentazione - mobile e non motorizzato/a"@it ;
+      skos:prefLabel "Condurre un mezzo di trasporto o un'attrezzatura di movimentazione - mobile e non motorizzato/a"@it.
 
-codattfis:6.4 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Strisciare, arrampicarsi, ecc."@it ;
-    skos:prefLabel "Strisciare, arrampicarsi, ecc."@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "6.4" ;
-    skos:broader grupattfis:6 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "6.4" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/3.3>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/3>;
+      skos:notation "3.3" ;
+      dct:identifier "3.3" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Essere passeggero a bordo d'un mezzo di  trasporto"@it ;
+      skos:prefLabel "Essere passeggero a bordo d'un mezzo di  trasporto"@it.
 
-codattfis:6.5 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Alzarsi in piedi, sedersi, ecc."@it ;
-    skos:prefLabel "Alzarsi in piedi, sedersi, ecc."@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "6.5" ;
-    skos:broader grupattfis:6 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "6.5" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/3.9>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/3>;
+      skos:notation "3.9" ;
+      dct:identifier "3.9" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Altra attività fisica specifica conosciuta del gruppo 30 non indicata qui sopra"@it ;
+      skos:prefLabel "Altra attività fisica specifica conosciuta del gruppo 30 non indicata qui sopra"@it.
 
-codattfis:6.6 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Nuotare, tuffarsi"@it ;
-    skos:prefLabel "Nuotare, tuffarsi"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "6.6" ;
-    skos:broader grupattfis:6 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "6.6" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/4.0>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/4>;
+      skos:notation "4.0" ;
+      dct:identifier "4.0" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Manipolazione di oggetti ? non precisato"@it ;
+      skos:prefLabel "Manipolazione di oggetti ? non precisato"@it.
 
-codattfis:6.7 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Fare movimenti sul posto"@it ;
-    skos:prefLabel "Fare movimenti sul posto"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "6.7" ;
-    skos:broader grupattfis:6 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "6.7" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/4.1>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/4>;
+      skos:notation "4.1" ;
+      dct:identifier "4.1" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Prendere in mano, afferrare, strappare, tenere in mano, deporre - su un piano orizzontale"@it ;
+      skos:prefLabel "Prendere in mano, afferrare, strappare, tenere in mano, deporre - su un piano orizzontale"@it.
 
-codattfis:6.9 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Altra attività fisica specifica conosciuta del gruppo 60 non indicata qui sopra"@it ;
-    skos:prefLabel "Altra attività fisica specifica conosciuta del gruppo 60 non indicata qui sopra"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "6.9" ;
-    skos:broader grupattfis:6 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "6.9" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/4.2>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/4>;
+      skos:notation "4.2" ;
+      dct:identifier "4.2" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Legare, allacciare, sciogliere, disfare, stringere, avvitare, svitare, girare"@it ;
+      skos:prefLabel "Legare, allacciare, sciogliere, disfare, stringere, avvitare, svitare, girare"@it.
 
-codattfis:7.0 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Presenza - non precisato"@it ;
-    skos:prefLabel "Presenza - non precisato"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "7.0" ;
-    skos:broader grupattfis:7 ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:notation "7.0" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/4.3>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/4>;
+      skos:notation "4.3" ;
+      dct:identifier "4.3" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Fissare a, appendere, alzare, istallare - su un piano verticale"@it ;
+      skos:prefLabel "Fissare a, appendere, alzare, istallare - su un piano verticale"@it.
 
-grupattfis:1 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Operazioni di macchina"@it ;
-    skos:prefLabel "Operazioni di macchina"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "1" ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:narrower codattfis:1.0,
-        codattfis:1.1,
-        codattfis:1.2,
-        codattfis:1.3,
-        codattfis:1.9 ;
-    skos:notation "1" ;
-    xkos:depth 1 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/4.4>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/4>;
+      skos:notation "4.4" ;
+      dct:identifier "4.4" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Lanciare, proiettare lontano"@it ;
+      skos:prefLabel "Lanciare, proiettare lontano"@it.
 
-grupattfis:2 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Lavoro con utensili a mano"@it ;
-    skos:prefLabel "Lavoro con utensili a mano"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "2" ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:narrower codattfis:2.0,
-        codattfis:2.1,
-        codattfis:2.2,
-        codattfis:2.9 ;
-    skos:notation "2" ;
-    xkos:depth 1 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/4.5>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/4>;
+      skos:notation "4.5" ;
+      dct:identifier "4.5" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Aprire, chiudere (cassa, imballaggio, pacco)"@it ;
+      skos:prefLabel "Aprire, chiudere (cassa, imballaggio, pacco)"@it.
 
-grupattfis:3 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Alla guida, a bordo di un mezzo di trasporto/attrezzatura di movimentazione"@it ;
-    skos:prefLabel "Alla guida, a bordo di un mezzo di trasporto/attrezzatura di movimentazione"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "3" ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:narrower codattfis:3.0,
-        codattfis:3.1,
-        codattfis:3.2,
-        codattfis:3.3,
-        codattfis:3.9 ;
-    skos:notation "3" ;
-    xkos:depth 1 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/4.6>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/4>;
+      skos:notation "4.6" ;
+      dct:identifier "4.6" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Spargere, versare in, riempire, annaffiare, vuotare, prosciugare"@it ;
+      skos:prefLabel "Spargere, versare in, riempire, annaffiare, vuotare, prosciugare"@it.
 
-grupattfis:4 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Manipolazione di oggetti"@it ;
-    skos:prefLabel "Manipolazione di oggetti"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "4" ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:narrower codattfis:4.0,
-        codattfis:4.1,
-        codattfis:4.2,
-        codattfis:4.3,
-        codattfis:4.4,
-        codattfis:4.5,
-        codattfis:4.6,
-        codattfis:4.7,
-        codattfis:4.9 ;
-    skos:notation "4" ;
-    xkos:depth 1 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/4.7>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/4>;
+      skos:notation "4.7" ;
+      dct:identifier "4.7" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Tirare (ad es. un cassetto), spingere (la porta di un capannone, di un ufficio, d'un armadio)"@it ;
+      skos:prefLabel "Tirare (ad es. un cassetto), spingere (la porta di un capannone, di un ufficio, d'un armadio)"@it.
 
-grupattfis:5 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Trasporto manuale"@it ;
-    skos:prefLabel "Trasporto manuale"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "5" ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:narrower codattfis:5.0,
-        codattfis:5.1,
-        codattfis:5.2,
-        codattfis:5.3,
-        codattfis:5.9 ;
-    skos:notation "5" ;
-    xkos:depth 1 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/4.9>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/4>;
+      skos:notation "4.9" ;
+      dct:identifier "4.9" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Altra attività fisica specifica conosciuta del gruppo 40 non indicata qui sopra"@it ;
+      skos:prefLabel "Altra attività fisica specifica conosciuta del gruppo 40 non indicata qui sopra"@it.
 
-grupattfis:6 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Movimenti"@it ;
-    skos:prefLabel "Movimenti"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "6" ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:narrower codattfis:6.0,
-        codattfis:6.1,
-        codattfis:6.2,
-        codattfis:6.3,
-        codattfis:6.4,
-        codattfis:6.5,
-        codattfis:6.6,
-        codattfis:6.7,
-        codattfis:6.9 ;
-    skos:notation "6" ;
-    xkos:depth 1 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/5.0>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/5>;
+      skos:notation "5.0" ;
+      dct:identifier "5.0" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Trasporto manuale - non precisato"@it ;
+      skos:prefLabel "Trasporto manuale - non precisato"@it.
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/5.1>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/5>;
+      skos:notation "5.1" ;
+      dct:identifier "5.1" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Trasporto verticale, sollevare, alzare, portare in basso un oggetto"@it ;
+      skos:prefLabel "Trasporto verticale, sollevare, alzare, portare in basso un oggetto"@it.
 
-grupattfis:7 a inail:TipoAttivitaFisica,
-        skos:Concept ;
-    rdfs:label "Presenza"@it ;
-    skos:prefLabel "Presenza"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "7" ;
-    skos:inScheme inailvoc:attivita_fisica ;
-    skos:narrower codattfis:7.0 ;
-    skos:notation "7" ;
-    xkos:depth 1 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/5.2>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/5>;
+      skos:notation "5.2" ;
+      dct:identifier "5.2" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Trasporto orizzontale: tirare, spingere, rotolare un oggetto"@it ;
+      skos:prefLabel "Trasporto orizzontale: tirare, spingere, rotolare un oggetto"@it.
 
-<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
-        dct:Standard ;
-    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
-    dct:identifier "SKOS" ;
-    dct:title "Simple Knowledge Organization System - SKOS" .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/5.3>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/5>;
+      skos:notation "5.3" ;
+      dct:identifier "5.3" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Trasporto a mano di carichi (portare)"@it ;
+      skos:prefLabel "Trasporto a mano di carichi (portare)"@it.
 
-<https://w3id.org/italia/data/WorkAccident/distribution/TAF_CSV> a dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-attivita-fisica> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-attivita-fisica/tipo_attivita_fisica.csv> ;
-    dct:description "Questa è la distribuzione CSV del vocabolario controllato sulle tipologie di attività fisica adottate dall'INAIL"@it,
-        "This is the distribution in CSV of types of physical activity adopted by INAIL controlled vocabulary"@en ;
-    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
-    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    dct:title "CSV distribution types of physical activity adopted by INAIL controlled vocabulary"@en,
-        "Distribuzione CSV del vocabolario controllato sulle tipologie di attività fisica adottate dall'INAIL"@it .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/5.9>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/5>;
+      skos:notation "5.9" ;
+      dct:identifier "5.9" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Altra attività fisica specifica conosciuta del gruppo 50 non indicata qui sopra"@it ;
+      skos:prefLabel "Altra attività fisica specifica conosciuta del gruppo 50 non indicata qui sopra"@it.
 
-<https://w3id.org/italia/data/WorkAccident/distribution/TAF_JSON_LD> a dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-attivita-fisica> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-attivita-fisica/tipo_attivita_fisica.json> ;
-    dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulle tipologie di attività fisica adottate dall'INAIL"@it,
-        "This is the distribution in JSON_LD of types of physical activity adopted by INAIL controlled vocabulary"@en ;
-    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
-    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    dct:title "Distribuzione JSON_LD del vocabolario controllato sulle tipologie di attività fisica adottate dall'INAIL"@it,
-        "JSON_LD distribution of types of physical activity adopted by INAIL controlled vocabulary"@en .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/6.0>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/6>;
+      skos:notation "6.0" ;
+      dct:identifier "6.0" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Movimenti - non precisato"@it ;
+      skos:prefLabel "Movimenti - non precisato"@it.
 
-<https://w3id.org/italia/data/WorkAccident/distribution/TAF_RDF_TURTLE> a dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-attivita-fisica> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-attivita-fisica/tipo_attivita_fisica.ttl> ;
-    dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulle tipologie di attività fisica adottate dall'INAIL"@it,
-        "This is the distribution in RDF/turtle of types of physical activity adopted by INAIL controlled vocabulary"@en ;
-    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    dct:title "Distribuzione RDF/Turtle del vocabolario controllato sulle tipologie di attività fisica adottate dall'INAIL"@it,
-        "RDF/Turtle distribution of types of physical activity adopted by INAIL controlled vocabulary"@en .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/6.1>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/6>;
+      skos:notation "6.1" ;
+      dct:identifier "6.1" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Camminare, correre, salire, scendere, ecc"@it ;
+      skos:prefLabel "Camminare, correre, salire, scendere, ecc"@it.
 
-<https://w3id.org/italia/data/WorkAccident/Organization/inail> a cov:Organization ;
-    rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
-    cov:IPAcode "inail" ;
-    cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
-    cov:orgAcronym "inail" .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/6.2>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/6>;
+      skos:notation "6.2" ;
+      dct:identifier "6.2" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Entrare, uscire"@it ;
+      skos:prefLabel "Entrare, uscire"@it.
 
-inailvoc:attivita_fisica a adms:Asset,
-        dcatapit:Dataset,
-        skos:ConceptScheme ;
-    rdfs:label "Controlled vocabulary on types of physical activity adopted by INAIL"@en,
-        "Vocabolario Controllato sulle tipologie di attività fisica adottate dall'INAIL"@it ;
-    skos:prefLabel "Vocabolario Controllato sulle tipologie di attività fisica adottate dall'INAIL"@it ;
-    rdfs:comment "Classificazione a due livelli dell'attività svolta al momento dell'evento lesivo"@it,
-        "Two-level classification of the activity carried out at the time of work accident"@en ;
-    owl:versionInfo "0.2" ;
-    rdfs:isDefinedBy inailvoc:attivita_fisica ;
-    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
-    dcat:contactPoint <https://www.inail.it> ;
-    dcat:distribution <https://w3id.org/italia/data/WorkAccident/distribution/TAF_CSV>,
-        <https://w3id.org/italia/data/WorkAccident/distribution/TAF_JSON_LD>,
-        <https://w3id.org/italia/data/WorkAccident/distribution/TAF_RDF_TURTLE> ;
-    dcat:keyword "attività fisica"@it,
-        "inail"@it,
-        "infortunio"@it,
-        "occupational injury"@en,
-        "physical activity"@en ;
-    dcat:theme <http://eurovoc.europa.eu/825>,
-        <http://eurovoc.europa.eu/1718>,
-        <http://eurovoc.europa.eu/2015>,
-        <http://eurovoc.europa.eu/4543> ;
-    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
-    dct:creator <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
-    dct:description "Classificazione a due livelli dell'attività svolta al momento dell'evento lesivo"@it,
-        "Two-level classification of the activity carried out at the time of work accident"@en ;
-    dct:identifier "https://w3id.org/italia/controlled-vocabulary/WorkAccident/attivita_fisica" ;
-    dct:issued "2022-09-06"^^xsd:date ;
-    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-    dct:modified "2022-11-17"^^xsd:date ;
-    dct:publisher <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
-    dct:relation inailvoc:mansione,
-        inailvoc:tipo_lavoro ;
-    dct:rightsHolder <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
-    dct:title "Controlled vocabulary on types of physical activity adopted by INAIL"@en,
-        "Vocabolario Controllato sulle tipologie di attività fisica adottate dall'INAIL"@it ;
-    dct:type <http://purl.org/adms/assettype/CodeList> ;
-    ndc:keyConcept "Tipo Attività fisica" ;
-    skos:hasTopConcep grupattfis:1,
-        grupattfis:2,
-        grupattfis:3,
-        grupattfis:4,
-        grupattfis:5,
-        grupattfis:6,
-        grupattfis:7 ;
-    xkos:numberOfLevels "2" .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/6.3>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/6>;
+      skos:notation "6.3" ;
+      dct:identifier "6.3" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Saltare, slanciarsi, ecc."@it ;
+      skos:prefLabel "Saltare, slanciarsi, ecc."@it.
 
-### Serialized using the ttlser deterministic serializer v1.2.0
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/6.4>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/6>;
+      skos:notation "6.4" ;
+      dct:identifier "6.4" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Strisciare, arrampicarsi, ecc."@it ;
+      skos:prefLabel "Strisciare, arrampicarsi, ecc."@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/6.5>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/6>;
+      skos:notation "6.5" ;
+      dct:identifier "6.5" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Alzarsi in piedi, sedersi, ecc."@it ;
+      skos:prefLabel "Alzarsi in piedi, sedersi, ecc."@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/6.6>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/6>;
+      skos:notation "6.6" ;
+      dct:identifier "6.6" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Nuotare, tuffarsi"@it ;
+      skos:prefLabel "Nuotare, tuffarsi"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/6.7>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/6>;
+      skos:notation "6.7" ;
+      dct:identifier "6.7" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Fare movimenti sul posto"@it ;
+      skos:prefLabel "Fare movimenti sul posto"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/6.9>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/6>;
+      skos:notation "6.9" ;
+      dct:identifier "6.9" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Altra attività fisica specifica conosciuta del gruppo 60 non indicata qui sopra"@it ;
+      skos:prefLabel "Altra attività fisica specifica conosciuta del gruppo 60 non indicata qui sopra"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/attivita/7.0>
+a  	skos:Concept, INAILService:TipoAttivitaFisicaINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica/gruppo/7>;
+      skos:notation "7.0" ;
+      dct:identifier "7.0" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Presenza - non precisato"@it ;
+      skos:prefLabel "Presenza - non precisato"@it.
+
+

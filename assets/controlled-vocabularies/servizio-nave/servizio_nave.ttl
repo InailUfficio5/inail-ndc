@@ -1,0 +1,598 @@
+@prefix dct:           <http://purl.org/dc/terms/> .
+@prefix adms:          <http://www.w3.org/ns/adms#> .
+@prefix rdfs:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:           <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:           <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc:            <http://purl.org/dc/elements/1.1/> .
+@prefix skos:          <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf:          <http://xmlns.com/foaf/0.1/> .
+@prefix xkos:          <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix clvapit:       <https://w3id.org/italia/onto/CLV/> .
+@prefix dcat:          <http://www.w3.org/ns/dcat#> .
+@prefix vcard:         <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcatapit:      <http://dati.gov.it/onto/dcatapit#> .
+@prefix xsd:           <http://www.w3.org/2001/XMLSchema#> .
+@prefix ndc:           <https://w3id.org/italia/onto/NDC/> .
+@prefix cov:           <https://w3id.org/italia/onto/COV/> .
+@prefix INAILAutoliq:  <https://w3id.org/italia/onto/work-accident/ised/proc21/> .
+@prefix inailvoc:      <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/> .
+@prefix servnave:      <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/> .
+
+
+#Metadata DCAT-AP_IT for the controlled vocabulary
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave> 
+      a       skos:ConceptScheme , adms:Asset , dcatapit:Dataset  ;
+      dct:title "Vocabolario controllato sulla tipologia del servizio di una nave adottata dall'INAIL"@it , "Controlled vocabulary on the typology of ship service adopted by INAIL"@en ;
+      dct:description "Servizio a cui una nave può essere abilitata"@it, "Service to which a ship may be enabled"@en ;
+      rdfs:comment "Servizio a cui una nave può essere abilitata"@it, "Service to which a ship may be enabled"@en ;   
+      rdfs:label "Vocabolario controllato sulla tipologia del servizio di una nave adottata dall'INAIL"@it , "Controlled vocabulary on the typology of ship service adopted by INAIL"@en ;
+      skos:prefLabel "Vocabolario controllato sulla tipologia del servizio di una nave adottata dall'INAIL"@it ;
+      dct:type <http://purl.org/adms/assettype/CodeList> ;
+      xkos:numberOfLevels "1"; 
+      ndc:keyConcept "servizio_nave"; 
+      adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+      dct:identifier "https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave"; 
+      dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN>, <http://publications.europa.eu/resource/authority/data-theme/AGRI> ;
+      dct:subject <http://eurovoc.europa.eu/4827>, <http://eurovoc.europa.eu/4522>, <http://eurovoc.europa.eu/2041>, <http://eurovoc.europa.eu/2304> ;   
+      dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+      dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+      rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave> ; 
+      dcat:keyword "inail"@it , "autoliquidazione"@it, "premio assicurativo"@it, "nave"@it, "servizio nave"@it, "ship"@en, "insurance premium"@en, "ship service"@en ;
+      dct:issued "2022-12-21"^^xsd:date ;
+      dct:modified "2023-02-13"^^xsd:date ; 
+      owl:versionInfo "0.3";
+      dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+      dct:creator <https://w3id.org/italia/data/work-accident/ised/proc21/organization/inail> ;
+      dct:publisher <https://w3id.org/italia/data/work-accident/ised/proc21/organization/inail> ;
+      dct:relation <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/specie_navigazione>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/registro_iscrizione>,
+                   <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave> ; 
+      dct:rightsHolder <https://w3id.org/italia/data/work-accident/ised/proc21/organization/inail> ;
+      dcat:contactPoint <https://w3id.org/italia/data/work-accident/ised/proc21/organization/ufficioV> ;
+      dcat:distribution <https://w3id.org/italia/data/work-accident/ised/proc21/distribution/SN_RDF_TURTLE>, <https://w3id.org/italia/data/work-accident/ised/proc21/distribution/SN_JSON_LD>, <https://w3id.org/italia/data/work-accident/ised/proc21/distribution/SN_CSV> ;
+	  skos:hasTopConcept <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/0>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/1>,
+                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/2>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/3>,
+                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/4>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/5>,
+                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/6>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/7>,
+                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/8>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/9>,
+                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/10>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/11>,
+                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/12>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/13>,
+                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/14>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/15>,
+                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/16>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/17>,
+                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/18>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/19>,
+                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/20>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/21>,
+                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/22>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/23>,
+                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/24>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/25>,
+                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/26>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/28>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/29>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/30>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/31>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/32>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/33>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/34>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/35>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/36>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/37>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/38>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/39>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/40>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/41>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/42>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/43>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/44>,
+						 <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/90>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/91>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/92>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/99>.
+	  
+#######################################################################################################
+#                                   INAIL and standard                                                #
+#######################################################################################################
+
+<https://w3id.org/italia/data/work-accident/ised/proc21/organization/inail>
+a   dcatapit:Agent , foaf:Agent ;
+      dct:identifier "inail" ;
+      foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it ,
+                "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/data/standard/SKOS>
+a   dcatapit:Standard, dct:Standard ;
+      dct:identifier "SKOS" ;
+      dct:title "Simple Knowledge Organization System - SKOS" ;
+      dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
+
+<https://w3id.org/italia/data/work-accident/ised/proc21/distribution/SN_RDF_TURTLE> 
+a   dcatapit:Distribution, dcat:Distribution ;
+      dct:title	"Distribuzione RDF/Turtle del vocabolario controllato sulla tipologia del servizio di una nave adottata dall'INAIL"@it, "RDF/Turtle distribution of the typology of ship service adopted by INAIL controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla tipologia del servizio di una nave adottata dall'INAIL"@it, "This is the distribution in RDF/turtle of typology of ship service adopted by INAIL controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/servizio-nave/servizio_nave.ttl> ;  
+      dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/servizio-nave> .	  
+
+<https://w3id.org/italia/data/work-accident/ised/proc21/distribution/SN_JSON_LD> 
+a   dcatapit:Distribution, dcat:Distribution ;
+      dct:title "Distribuzione JSON_LD del vocabolario controllato sulla tipologia del servizio di una nave adottata dall'INAIL"@it , "JSON_LD distribution of typology of ship service adopted by INAIL controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla tipologia del servizio di una nave adottata dall'INAIL"@it , "This is the distribution in JSON_LD of typology of ship service adopted by INAIL controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/servizio-nave/servizio_nave.json> ; 
+      dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/servizio-nave> .
+
+<https://w3id.org/italia/data/work-accident/ised/proc21/distribution/SN_CSV> 
+a	dcatapit:Distribution, dcat:Distribution ;
+      dct:title	"Distribuzione CSV del vocabolario controllato sulla tipologia del servizio di una nave adottata dall'INAIL"@it , "CSV distribution of typology of ship service adopted by INAIL controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla tipologia del servizio di una nave adottata dall'INAIL"@it , "This is the distribution in CSV of typology of ship service adopted by INAIL controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/servizio-nave/servizio_nave.csv> ; 
+      dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/servizio-nave> .	
+ 
+<https://w3id.org/italia/data/work-accident/ised/proc21/organization/ufficioV> 
+a   owl:NamedIndividual, dcatapit:Organization, vcard:Kind, vcard:Organization ;
+      vcard:fn "INAIL Ufficio V - D.C.O.D";
+      vcard:hasEmail <mailto:dcod@inail.it> . 
+ 
+#######################################################################################################
+#                 Definition of the controlled vocabulary - First level                               #
+#######################################################################################################
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/0>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "0" ;
+      dct:identifier "0" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Da definire"@it ;
+      skos:prefLabel "Da definire"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/1>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "1" ;
+      dct:identifier "1" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Concessionari di bordo"@it ;
+      skos:prefLabel "Concessionari di bordo"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/2>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "2" ;
+      dct:identifier "2" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Prove in mare"@it ;
+      skos:prefLabel "Prove in mare"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/3>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "3" ;
+      dct:identifier "3" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Tecnici ed ispettori"@it ;
+      skos:prefLabel "Tecnici ed ispettori"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/4>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "4" ;
+      dct:identifier "4" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Corsi professionali"@it ;
+      skos:prefLabel "Corsi professionali"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/5>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "5" ;
+      dct:identifier "5" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Allievi nautici"@it ;
+      skos:prefLabel "Allievi nautici"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/6>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "6" ;
+      dct:identifier "6" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Traffico di linea"@it ;
+      skos:prefLabel "Traffico di linea"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/7>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "7" ;
+      dct:identifier "7" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Traghetti"@it ;
+      skos:prefLabel "Traghetti"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/8>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "8" ;
+      dct:identifier "8" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Aliscafi"@it ;
+      skos:prefLabel "Aliscafi"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/9>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "9" ;
+      dct:identifier "9" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Crociera"@it ;
+      skos:prefLabel "Crociera"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/10>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "10" ;
+      dct:identifier "10" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Carico generico"@it ;
+      skos:prefLabel "Carico generico"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/11>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "11" ;
+      dct:identifier "11" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Trasporto containers"@it ;
+      skos:prefLabel "Trasporto containers"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/12>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "12" ;
+      dct:identifier "12" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Cisterna infiammabile"@it ;
+      skos:prefLabel "Cisterna infiammabile"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/13>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "13" ;
+      dct:identifier "13" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Cisterna non infiammabile"@it ;
+      skos:prefLabel "Cisterna non infiammabile"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/14>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "14" ;
+      dct:identifier "14" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Carico estero"@it ;
+      skos:prefLabel "Carico estero"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/15>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "15" ;
+      dct:identifier "15" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Cisterna estera"@it ;
+      skos:prefLabel "Cisterna estera"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/16>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "16" ;
+      dct:identifier "16" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Rimorchio portuale"@it ;
+      skos:prefLabel "Rimorchio portuale"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/17>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "17" ;
+      dct:identifier "17" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Rimorchio alto mare"@it ;
+      skos:prefLabel "Rimorchio alto mare"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/18>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "18" ;
+      dct:identifier "18" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Lavori marittimi"@it ;
+      skos:prefLabel "Lavori marittimi"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/19>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "19" ;
+      dct:identifier "19" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Servizi portuali"@it ;
+      skos:prefLabel "Servizi portuali"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/20>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "20" ;
+      dct:identifier "20" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Antinquinamento"@it ;
+      skos:prefLabel "Antinquinamento"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/21>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "21" ;
+      dct:identifier "21" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Bunkeraggio"@it ;
+      skos:prefLabel "Bunkeraggio"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/22>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "22" ;
+      dct:identifier "22" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Off-shore / appoggio piattaforme"@it ;
+      skos:prefLabel "Off-shore / appoggio piattaforme"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/23>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "23" ;
+      dct:identifier "23" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Pilotine"@it ;
+      skos:prefLabel "Pilotine"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/24>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "24" ;
+      dct:identifier "24" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Ricerca scientifica"@it ;
+      skos:prefLabel "Ricerca scientifica"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/25>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "25" ;
+      dct:identifier "25" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Navi scuola"@it ;
+      skos:prefLabel "Navi scuola"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/26>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "26" ;
+      dct:identifier "26" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Stoccaggio"@it ;
+      skos:prefLabel "Stoccaggio"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/28>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "28" ;
+      dct:identifier "28" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Trasporto merci"@it ;
+      skos:prefLabel "Trasporto merci"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/29>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "29" ;
+      dct:identifier "29" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Trasporto persone"@it ;
+      skos:prefLabel "Trasporto persone"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/30>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "30" ;
+      dct:identifier "30" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Trasporto promiscuo"@it ;
+      skos:prefLabel "Trasporto promiscuo"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/31>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "31" ;
+      dct:identifier "31" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Trasporto lagunare"@it ;
+      skos:prefLabel "Trasporto lagunare"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/32>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "32" ;
+      dct:identifier "32" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Diporto a noleggio"@it ;
+      skos:prefLabel "Diporto a noleggio"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/33>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "33" ;
+      dct:identifier "33" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Pesca per turismo"@it ;
+      skos:prefLabel "Pesca per turismo"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/34>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "34" ;
+      dct:identifier "34" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Pesca costiera"@it ;
+      skos:prefLabel "Pesca costiera"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/35>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "35" ;
+      dct:identifier "35" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Pesca mediterranea"@it ;
+      skos:prefLabel "Pesca mediterranea"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/36>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "36" ;
+      dct:identifier "36" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Pesca oltre gli stretti"@it ;
+      skos:prefLabel "Pesca oltre gli stretti"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/37>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "37" ;
+      dct:identifier "37" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Acquacoltura"@it ;
+      skos:prefLabel "Acquacoltura"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/38>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "38" ;
+      dct:identifier "38" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Tonnara"@it ;
+      skos:prefLabel "Tonnara"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/39>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "39" ;
+      dct:identifier "39" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Diporto"@it ;
+      skos:prefLabel "Diporto"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/40>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "40" ;
+      dct:identifier "40" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Diporto estero"@it ;
+      skos:prefLabel "Diporto estero"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/41>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "41" ;
+      dct:identifier "41" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Assistenza navi in costruzione"@it ;
+      skos:prefLabel "Assistenza navi in costruzione"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/42>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "42" ;
+      dct:identifier "42" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Pesca estera"@it ;
+      skos:prefLabel "Pesca estera"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/43>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "43" ;
+      dct:identifier "43" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riparazione impianti in alto mare"@it ;
+      skos:prefLabel "Riparazione impianti in alto mare"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/44>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "44" ;
+      dct:identifier "44" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Superyacht in R.I."@it ;
+      skos:prefLabel "Superyacht in R.I."@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/90>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "90" ;
+      dct:identifier "90" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Addetti uffici"@it ;
+      skos:prefLabel "Addetti uffici"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/91>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "91" ;
+      dct:identifier "91" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Ferie/riposi compensativi"@it ;
+      skos:prefLabel "Ferie/riposi compensativi"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/92>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "92" ;
+      dct:identifier "92" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Attivita' di volo"@it ;
+      skos:prefLabel "Attivita' di volo"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave/99>
+a  	skos:Concept, INAILAutoliq:ServizioNave ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>;
+      skos:notation "99" ;
+      dct:identifier "99" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Comandata"@it ;
+      skos:prefLabel "Comandata"@it.

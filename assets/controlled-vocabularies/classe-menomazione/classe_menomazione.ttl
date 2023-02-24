@@ -1,1470 +1,1479 @@
-@prefix adms: <http://www.w3.org/ns/adms#> .
-@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
-@prefix cov: <https://w3id.org/italia/onto/COV/> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix inail: <https://w3id.org/italia/onto/WorkAccident/> .
-@prefix inailvoc: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/> .
-@prefix menom1: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/classe_menomazione/fascia1/> .
-@prefix menom2: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/classe_menomazione/fascia2/> .
-@prefix menomgrad: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/classe_menomazione/grado/> .
-@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-### Annotations
-
-<https://w3id.org/italia/controlled-vocabulary/WorkAccident/classe_menomazione/fascia1/-2> a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "Grado superiore a 100"@it ;
-    skos:prefLabel "Grado superiore a 100"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "-2" ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "-2" ;
-    xkos:depth 1 .
-
-<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
-        dct:Standard ;
-    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
-    dct:identifier "SKOS" ;
-    dct:title "Simple Knowledge Organization System - SKOS" .
-
-<https://w3id.org/italia/data/WorkAccident/distribution/CM_CSV> a dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/classe-menomazione> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/classe-menomazione/classe_menomazione.csv> ;
-    dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classe di menomazione adottata dall'INAIL"@it,
-        "This is the distribution in CSV of the disability class adopted by INAIL controlled vocabulary"@en ;
-    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
-    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    dct:title "CSV distribution of the disability class adopted by INAIL controlled vocabulary"@en,
-        "Distribuzione CSV del vocabolario controllato sulla classe di menomazione adottata dall'INAIL"@it .
-
-<https://w3id.org/italia/data/WorkAccident/distribution/CM_JSON_LD> a dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/classe-menomazione> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/classe-menomazione/classe_menomazione.json> ;
-    dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla classe di menomazione adottata dall'INAIL"@it,
-        "This is the distribution in JSON_LD of the disability class adopted by INAIL controlled vocabulary"@en ;
-    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
-    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    dct:title "Distribuzione JSON_LD del vocabolario controllato sulla classe di menomazione adottata dall'INAIL"@it,
-        "JSON_LD distribution of the disability class adopted by INAIL controlled vocabulary"@en .
-
-<https://w3id.org/italia/data/WorkAccident/distribution/CM_RDF_TURTLE> a dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/classe-menomazione> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/classe-menomazione/classe_menomazione.ttl> ;
-    dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla classe di menomazione adottata dall'INAIL"@it,
-        "This is the distribution in RDF/turtle of the disability class adopted by INAIL controlled vocabulary"@en ;
-    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    dct:title "Distribuzione RDF/Turtle del vocabolario controllato sulla classe di menomazione adottata dall'INAIL"@it,
-        "RDF/Turtle distribution of the disability class adopted by INAIL controlled vocabulary"@en .
-
-<https://w3id.org/italia/data/WorkAccident/Organization/inail> a cov:Organization ;
-    rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
-    cov:IPAcode "inail" ;
-    cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
-    cov:orgAcronym "inail" .
-
-inailvoc:classe_menomazione a adms:Asset,
-        dcatapit:Dataset,
-        skos:ConceptScheme ;
-    rdfs:label "Controlled vocabulary on the disability class adopted by INAIL"@en,
-        "Vocabolario Controllato sulla classe di menomazione adottata dall'INAIL"@it ;
-    skos:prefLabel "Vocabolario Controllato sulla classe di menomazione adottata dall'INAIL"@it ;
-    rdfs:comment "Classification with respect to the ranges of variability of the menomation grade. Three classes have been conventionally defined: [1-5%], [6-15%]; [16-100%]"@en,
-        "Classificazione rispetto agli intervalli di variabilità del grado di menomazione. Sono state definite convenzionalmente 3 classi: [1-5%], [6-15%]; [16-100%]"@it ;
-    owl:versionInfo "0.2" ;
-    rdfs:isDefinedBy inailvoc:classe_menomazione ;
-    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
-    dcat:contactPoint <https://www.inail.it> ;
-    dcat:distribution <https://w3id.org/italia/data/WorkAccident/distribution/CM_CSV>,
-        <https://w3id.org/italia/data/WorkAccident/distribution/CM_JSON_LD>,
-        <https://w3id.org/italia/data/WorkAccident/distribution/CM_RDF_TURTLE> ;
-    dcat:keyword "impairment"@en,
-        "inail"@it,
-        "infortunio"@it,
-        "malattia professionale"@it,
-        "menomazione"@it,
-        "occupational disease"@en,
-        "occupational injury"@en ;
-    dcat:theme <http://eurovoc.europa.eu/825>,
-        <http://eurovoc.europa.eu/1761> ;
-    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
-    dct:creator <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
-    dct:description "Classification with respect to the ranges of variability of the menomation grade. Three classes have been conventionally defined: [1-5%], [6-15%]; [16-100%]"@en,
-        "Classificazione rispetto agli intervalli di variabilità del grado di menomazione. Sono state definite convenzionalmente 3 classi: [1-5%], [6-15%]; [16-100%]"@it ;
-    dct:identifier "https://w3id.org/italia/controlled-vocabulary/WorkAccident/classe_menomazione" ;
-    dct:issued "2022-09-06"^^xsd:date ;
-    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-    dct:modified "2022-11-17"^^xsd:date ;
-    dct:publisher <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
-    dct:relation inailvoc:inabilita,
-        inailvoc:tipo_indennizzo,
-        inailvoc:tipo_trattazione ;
-    dct:rightsHolder <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
-    dct:title "Controlled vocabulary on the disability class adopted by INAIL"@en,
-        "Vocabolario Controllato sulla classe di menomazione adottata dall'INAIL"@it ;
-    dct:type <http://purl.org/adms/assettype/CodeList> ;
-    ndc:keyConcept "Fascia Menomazione" ;
-    skos:hasTopConcept <https://w3id.org/italia/controlled-vocabulary/WorkAccident/classe_menomazione/fascia1/-2>,
-        menom1:0,
-        menom1:1,
-        menom1:2,
-        menom1:3 ;
-    xkos:numberOfLevels "3" .
-
-menom1:0 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "A zero"@it ;
-    skos:prefLabel "A zero"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "0" ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "0" ;
-    xkos:depth 1 .
-
-menom1:1 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "Da 01 a 05"@it ;
-    skos:prefLabel "Da 01 a 05"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "1" ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:narrower menom2:1.1 ;
-    skos:notation "1" ;
-    xkos:depth 1 .
-
-menom1:2 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "Da 06 a 15"@it ;
-    skos:prefLabel "Da 06 a 15"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "2" ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:narrower menom2:2.2 ;
-    skos:notation "2" ;
-    xkos:depth 1 .
-
-menom1:3 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "Da 16 a 100"@it ;
-    skos:prefLabel "Da 16 a 100"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "3" ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:narrower menom2:3.3,
-        menom2:3.4,
-        menom2:3.5,
-        menom2:3.6,
-        menom2:3.7,
-        menom2:3.8,
-        menom2:3.9 ;
-    skos:notation "3" ;
-    xkos:depth 1 .
-
-menom2:1.1 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "Da 01 a 05"@it ;
-    skos:prefLabel "Da 01 a 05"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "1.1" ;
-    skos:broader menom1:1 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:narrower menomgrad:1.1.1,
-        menomgrad:1.1.2,
-        menomgrad:1.1.3,
-        menomgrad:1.1.4,
-        menomgrad:1.1.5 ;
-    skos:notation "1.1" ;
-    xkos:depth 2 .
-
-menom2:2.2 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "Da 06 a 15"@it ;
-    skos:prefLabel "Da 06 a 15"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "2.2" ;
-    skos:broader menom1:2 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:narrower menomgrad:2.2.6,
-        menomgrad:2.2.7,
-        menomgrad:2.2.8,
-        menomgrad:2.2.9,
-        menomgrad:2.2.10,
-        menomgrad:2.2.11,
-        menomgrad:2.2.12,
-        menomgrad:2.2.13,
-        menomgrad:2.2.14,
-        menomgrad:2.2.15 ;
-    skos:notation "2.2" ;
-    xkos:depth 2 .
-
-menom2:3.3 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "Da 16 a 20"@it ;
-    skos:prefLabel "Da 16 a 20"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "3.3" ;
-    skos:broader menom1:3 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:narrower menomgrad:3.3.16,
-        menomgrad:3.3.17,
-        menomgrad:3.3.18,
-        menomgrad:3.3.19,
-        menomgrad:3.3.20 ;
-    skos:notation "3.3" ;
-    xkos:depth 2 .
-
-menom2:3.4 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "Da 21 a 25"@it ;
-    skos:prefLabel "Da 21 a 25"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "3.4" ;
-    skos:broader menom1:3 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:narrower menomgrad:3.4.21,
-        menomgrad:3.4.22,
-        menomgrad:3.4.23,
-        menomgrad:3.4.24,
-        menomgrad:3.4.25 ;
-    skos:notation "3.4" ;
-    xkos:depth 2 .
-
-menom2:3.5 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "Da 26 a 35"@it ;
-    skos:prefLabel "Da 26 a 35"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "3.5" ;
-    skos:broader menom1:3 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:narrower menomgrad:3.5.26,
-        menomgrad:3.5.27,
-        menomgrad:3.5.28,
-        menomgrad:3.5.29,
-        menomgrad:3.5.30,
-        menomgrad:3.5.31,
-        menomgrad:3.5.32,
-        menomgrad:3.5.33,
-        menomgrad:3.5.34,
-        menomgrad:3.5.35 ;
-    skos:notation "3.5" ;
-    xkos:depth 2 .
-
-menom2:3.6 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "Da 36 a 50"@it ;
-    skos:prefLabel "Da 36 a 50"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "3.6" ;
-    skos:broader menom1:3 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:narrower menomgrad:3.6.36,
-        menomgrad:3.6.37,
-        menomgrad:3.6.38,
-        menomgrad:3.6.39,
-        menomgrad:3.6.40,
-        menomgrad:3.6.41,
-        menomgrad:3.6.42,
-        menomgrad:3.6.43,
-        menomgrad:3.6.44,
-        menomgrad:3.6.45,
-        menomgrad:3.6.46,
-        menomgrad:3.6.47,
-        menomgrad:3.6.48,
-        menomgrad:3.6.49,
-        menomgrad:3.6.50 ;
-    skos:notation "3.6" ;
-    xkos:depth 2 .
-
-menom2:3.7 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "Da 51 a 70"@it ;
-    skos:prefLabel "Da 51 a 70"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "3.7" ;
-    skos:broader menom1:3 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:narrower menomgrad:3.7.51,
-        menomgrad:3.7.52,
-        menomgrad:3.7.53,
-        menomgrad:3.7.54,
-        menomgrad:3.7.55,
-        menomgrad:3.7.56,
-        menomgrad:3.7.57,
-        menomgrad:3.7.58,
-        menomgrad:3.7.59,
-        menomgrad:3.7.60,
-        menomgrad:3.7.61,
-        menomgrad:3.7.62,
-        menomgrad:3.7.63,
-        menomgrad:3.7.64,
-        menomgrad:3.7.65,
-        menomgrad:3.7.66,
-        menomgrad:3.7.67,
-        menomgrad:3.7.68,
-        menomgrad:3.7.69,
-        menomgrad:3.7.70 ;
-    skos:notation "3.7" ;
-    xkos:depth 2 .
-
-menom2:3.8 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "Da 71 a 85"@it ;
-    skos:prefLabel "Da 71 a 85"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "3.8" ;
-    skos:broader menom1:3 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:narrower menomgrad:3.8.71,
-        menomgrad:3.8.72,
-        menomgrad:3.8.73,
-        menomgrad:3.8.74,
-        menomgrad:3.8.75,
-        menomgrad:3.8.76,
-        menomgrad:3.8.77,
-        menomgrad:3.8.78,
-        menomgrad:3.8.79,
-        menomgrad:3.8.80,
-        menomgrad:3.8.81,
-        menomgrad:3.8.82,
-        menomgrad:3.8.83,
-        menomgrad:3.8.84,
-        menomgrad:3.8.85 ;
-    skos:notation "3.8" ;
-    xkos:depth 2 .
-
-menom2:3.9 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "Da 86 a 100"@it ;
-    skos:prefLabel "Da 86 a 100"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "3.9" ;
-    skos:broader menom1:3 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:narrower menomgrad:3.9.86,
-        menomgrad:3.9.87,
-        menomgrad:3.9.88,
-        menomgrad:3.9.89,
-        menomgrad:3.9.90,
-        menomgrad:3.9.91,
-        menomgrad:3.9.92,
-        menomgrad:3.9.93,
-        menomgrad:3.9.94,
-        menomgrad:3.9.95,
-        menomgrad:3.9.96,
-        menomgrad:3.9.97,
-        menomgrad:3.9.98,
-        menomgrad:3.9.99,
-        menomgrad:3.9.100 ;
-    skos:notation "3.9" ;
-    xkos:depth 2 .
-
-menomgrad:1.1.1 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "001"@it ;
-    skos:prefLabel "001"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "1.1.1" ;
-    skos:broader menom2:1.1 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "1.1.1" ;
-    xkos:depth 3 .
-
-menomgrad:1.1.2 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "002"@it ;
-    skos:prefLabel "002"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "1.1.2" ;
-    skos:broader menom2:1.1 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "1.1.2" ;
-    xkos:depth 3 .
-
-menomgrad:1.1.3 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "003"@it ;
-    skos:prefLabel "003"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "1.1.3" ;
-    skos:broader menom2:1.1 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "1.1.3" ;
-    xkos:depth 3 .
-
-menomgrad:1.1.4 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "004"@it ;
-    skos:prefLabel "004"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "1.1.4" ;
-    skos:broader menom2:1.1 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "1.1.4" ;
-    xkos:depth 3 .
-
-menomgrad:1.1.5 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "005"@it ;
-    skos:prefLabel "005"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "1.1.5" ;
-    skos:broader menom2:1.1 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "1.1.5" ;
-    xkos:depth 3 .
-
-menomgrad:2.2.6 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "006"@it ;
-    skos:prefLabel "006"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "2.2.6" ;
-    skos:broader menom2:2.2 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "2.2.6" ;
-    xkos:depth 3 .
-
-menomgrad:2.2.7 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "007"@it ;
-    skos:prefLabel "007"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "2.2.7" ;
-    skos:broader menom2:2.2 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "2.2.7" ;
-    xkos:depth 3 .
-
-menomgrad:2.2.8 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "008"@it ;
-    skos:prefLabel "008"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "2.2.8" ;
-    skos:broader menom2:2.2 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "2.2.8" ;
-    xkos:depth 3 .
-
-menomgrad:2.2.9 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "009"@it ;
-    skos:prefLabel "009"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "2.2.9" ;
-    skos:broader menom2:2.2 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "2.2.9" ;
-    xkos:depth 3 .
-
-menomgrad:2.2.10 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "010"@it ;
-    skos:prefLabel "010"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "2.2.10" ;
-    skos:broader menom2:2.2 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "2.2.10" ;
-    xkos:depth 3 .
-
-menomgrad:2.2.11 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "011"@it ;
-    skos:prefLabel "011"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "2.2.11" ;
-    skos:broader menom2:2.2 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "2.2.11" ;
-    xkos:depth 3 .
-
-menomgrad:2.2.12 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "012"@it ;
-    skos:prefLabel "012"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "2.2.12" ;
-    skos:broader menom2:2.2 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "2.2.12" ;
-    xkos:depth 3 .
-
-menomgrad:2.2.13 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "013"@it ;
-    skos:prefLabel "013"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "2.2.13" ;
-    skos:broader menom2:2.2 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "2.2.13" ;
-    xkos:depth 3 .
-
-menomgrad:2.2.14 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "014"@it ;
-    skos:prefLabel "014"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "2.2.14" ;
-    skos:broader menom2:2.2 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "2.2.14" ;
-    xkos:depth 3 .
-
-menomgrad:2.2.15 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "015"@it ;
-    skos:prefLabel "015"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "2.2.15" ;
-    skos:broader menom2:2.2 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "2.2.15" ;
-    xkos:depth 3 .
-
-menomgrad:3.3.16 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "016"@it ;
-    skos:prefLabel "016"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.3.16" ;
-    skos:broader menom2:3.3 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.3.16" ;
-    xkos:depth 3 .
-
-menomgrad:3.3.17 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "017"@it ;
-    skos:prefLabel "017"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.3.17" ;
-    skos:broader menom2:3.3 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.3.17" ;
-    xkos:depth 3 .
-
-menomgrad:3.3.18 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "018"@it ;
-    skos:prefLabel "018"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.3.18" ;
-    skos:broader menom2:3.3 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.3.18" ;
-    xkos:depth 3 .
-
-menomgrad:3.3.19 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "019"@it ;
-    skos:prefLabel "019"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.3.19" ;
-    skos:broader menom2:3.3 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.3.19" ;
-    xkos:depth 3 .
-
-menomgrad:3.3.20 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "020"@it ;
-    skos:prefLabel "020"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.3.20" ;
-    skos:broader menom2:3.3 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.3.20" ;
-    xkos:depth 3 .
-
-menomgrad:3.4.21 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "021"@it ;
-    skos:prefLabel "021"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.4.21" ;
-    skos:broader menom2:3.4 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.4.21" ;
-    xkos:depth 3 .
-
-menomgrad:3.4.22 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "022"@it ;
-    skos:prefLabel "022"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.4.22" ;
-    skos:broader menom2:3.4 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.4.22" ;
-    xkos:depth 3 .
-
-menomgrad:3.4.23 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "023"@it ;
-    skos:prefLabel "023"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.4.23" ;
-    skos:broader menom2:3.4 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.4.23" ;
-    xkos:depth 3 .
-
-menomgrad:3.4.24 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "024"@it ;
-    skos:prefLabel "024"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.4.24" ;
-    skos:broader menom2:3.4 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.4.24" ;
-    xkos:depth 3 .
-
-menomgrad:3.4.25 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "025"@it ;
-    skos:prefLabel "025"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.4.25" ;
-    skos:broader menom2:3.4 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.4.25" ;
-    xkos:depth 3 .
-
-menomgrad:3.5.26 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "026"@it ;
-    skos:prefLabel "026"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.5.26" ;
-    skos:broader menom2:3.5 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.5.26" ;
-    xkos:depth 3 .
-
-menomgrad:3.5.27 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "027"@it ;
-    skos:prefLabel "027"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.5.27" ;
-    skos:broader menom2:3.5 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.5.27" ;
-    xkos:depth 3 .
-
-menomgrad:3.5.28 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "028"@it ;
-    skos:prefLabel "028"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.5.28" ;
-    skos:broader menom2:3.5 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.5.28" ;
-    xkos:depth 3 .
-
-menomgrad:3.5.29 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "029"@it ;
-    skos:prefLabel "029"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.5.29" ;
-    skos:broader menom2:3.5 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.5.29" ;
-    xkos:depth 3 .
-
-menomgrad:3.5.30 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "030"@it ;
-    skos:prefLabel "030"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.5.30" ;
-    skos:broader menom2:3.5 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.5.30" ;
-    xkos:depth 3 .
-
-menomgrad:3.5.31 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "031"@it ;
-    skos:prefLabel "031"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.5.31" ;
-    skos:broader menom2:3.5 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.5.31" ;
-    xkos:depth 3 .
-
-menomgrad:3.5.32 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "032"@it ;
-    skos:prefLabel "032"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.5.32" ;
-    skos:broader menom2:3.5 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.5.32" ;
-    xkos:depth 3 .
-
-menomgrad:3.5.33 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "033"@it ;
-    skos:prefLabel "033"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.5.33" ;
-    skos:broader menom2:3.5 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.5.33" ;
-    xkos:depth 3 .
-
-menomgrad:3.5.34 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "034"@it ;
-    skos:prefLabel "034"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.5.34" ;
-    skos:broader menom2:3.5 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.5.34" ;
-    xkos:depth 3 .
-
-menomgrad:3.5.35 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "035"@it ;
-    skos:prefLabel "035"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.5.35" ;
-    skos:broader menom2:3.5 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.5.35" ;
-    xkos:depth 3 .
-
-menomgrad:3.6.36 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "036"@it ;
-    skos:prefLabel "036"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.6.36" ;
-    skos:broader menom2:3.6 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.6.36" ;
-    xkos:depth 3 .
-
-menomgrad:3.6.37 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "037"@it ;
-    skos:prefLabel "037"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.6.37" ;
-    skos:broader menom2:3.6 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.6.37" ;
-    xkos:depth 3 .
-
-menomgrad:3.6.38 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "038"@it ;
-    skos:prefLabel "038"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.6.38" ;
-    skos:broader menom2:3.6 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.6.38" ;
-    xkos:depth 3 .
-
-menomgrad:3.6.39 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "039"@it ;
-    skos:prefLabel "039"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.6.39" ;
-    skos:broader menom2:3.6 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.6.39" ;
-    xkos:depth 3 .
-
-menomgrad:3.6.40 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "040"@it ;
-    skos:prefLabel "040"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.6.40" ;
-    skos:broader menom2:3.6 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.6.40" ;
-    xkos:depth 3 .
-
-menomgrad:3.6.41 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "041"@it ;
-    skos:prefLabel "041"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.6.41" ;
-    skos:broader menom2:3.6 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.6.41" ;
-    xkos:depth 3 .
-
-menomgrad:3.6.42 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "042"@it ;
-    skos:prefLabel "042"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.6.42" ;
-    skos:broader menom2:3.6 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.6.42" ;
-    xkos:depth 3 .
-
-menomgrad:3.6.43 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "043"@it ;
-    skos:prefLabel "043"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.6.43" ;
-    skos:broader menom2:3.6 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.6.43" ;
-    xkos:depth 3 .
-
-menomgrad:3.6.44 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "044"@it ;
-    skos:prefLabel "044"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.6.44" ;
-    skos:broader menom2:3.6 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.6.44" ;
-    xkos:depth 3 .
-
-menomgrad:3.6.45 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "045"@it ;
-    skos:prefLabel "045"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.6.45" ;
-    skos:broader menom2:3.6 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.6.45" ;
-    xkos:depth 3 .
-
-menomgrad:3.6.46 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "046"@it ;
-    skos:prefLabel "046"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.6.46" ;
-    skos:broader menom2:3.6 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.6.46" ;
-    xkos:depth 3 .
-
-menomgrad:3.6.47 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "047"@it ;
-    skos:prefLabel "047"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.6.47" ;
-    skos:broader menom2:3.6 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.6.47" ;
-    xkos:depth 3 .
-
-menomgrad:3.6.48 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "048"@it ;
-    skos:prefLabel "048"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.6.48" ;
-    skos:broader menom2:3.6 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.6.48" ;
-    xkos:depth 3 .
-
-menomgrad:3.6.49 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "049"@it ;
-    skos:prefLabel "049"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.6.49" ;
-    skos:broader menom2:3.6 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.6.49" ;
-    xkos:depth 3 .
-
-menomgrad:3.6.50 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "050"@it ;
-    skos:prefLabel "050"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.6.50" ;
-    skos:broader menom2:3.6 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.6.50" ;
-    xkos:depth 3 .
-
-menomgrad:3.7.51 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "051"@it ;
-    skos:prefLabel "051"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.7.51" ;
-    skos:broader menom2:3.7 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.7.51" ;
-    xkos:depth 3 .
-
-menomgrad:3.7.52 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "052"@it ;
-    skos:prefLabel "052"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.7.52" ;
-    skos:broader menom2:3.7 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.7.52" ;
-    xkos:depth 3 .
-
-menomgrad:3.7.53 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "053"@it ;
-    skos:prefLabel "053"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.7.53" ;
-    skos:broader menom2:3.7 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.7.53" ;
-    xkos:depth 3 .
-
-menomgrad:3.7.54 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "054"@it ;
-    skos:prefLabel "054"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.7.54" ;
-    skos:broader menom2:3.7 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.7.54" ;
-    xkos:depth 3 .
-
-menomgrad:3.7.55 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "055"@it ;
-    skos:prefLabel "055"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.7.55" ;
-    skos:broader menom2:3.7 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.7.55" ;
-    xkos:depth 3 .
-
-menomgrad:3.7.56 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "056"@it ;
-    skos:prefLabel "056"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.7.56" ;
-    skos:broader menom2:3.7 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.7.56" ;
-    xkos:depth 3 .
-
-menomgrad:3.7.57 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "057"@it ;
-    skos:prefLabel "057"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.7.57" ;
-    skos:broader menom2:3.7 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.7.57" ;
-    xkos:depth 3 .
-
-menomgrad:3.7.58 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "058"@it ;
-    skos:prefLabel "058"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.7.58" ;
-    skos:broader menom2:3.7 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.7.58" ;
-    xkos:depth 3 .
-
-menomgrad:3.7.59 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "059"@it ;
-    skos:prefLabel "059"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.7.59" ;
-    skos:broader menom2:3.7 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.7.59" ;
-    xkos:depth 3 .
-
-menomgrad:3.7.60 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "060"@it ;
-    skos:prefLabel "060"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.7.60" ;
-    skos:broader menom2:3.7 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.7.60" ;
-    xkos:depth 3 .
-
-menomgrad:3.7.61 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "061"@it ;
-    skos:prefLabel "061"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.7.61" ;
-    skos:broader menom2:3.7 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.7.61" ;
-    xkos:depth 3 .
-
-menomgrad:3.7.62 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "062"@it ;
-    skos:prefLabel "062"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.7.62" ;
-    skos:broader menom2:3.7 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.7.62" ;
-    xkos:depth 3 .
-
-menomgrad:3.7.63 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "063"@it ;
-    skos:prefLabel "063"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.7.63" ;
-    skos:broader menom2:3.7 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.7.63" ;
-    xkos:depth 3 .
-
-menomgrad:3.7.64 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "064"@it ;
-    skos:prefLabel "064"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.7.64" ;
-    skos:broader menom2:3.7 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.7.64" ;
-    xkos:depth 3 .
-
-menomgrad:3.7.65 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "065"@it ;
-    skos:prefLabel "065"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.7.65" ;
-    skos:broader menom2:3.7 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.7.65" ;
-    xkos:depth 3 .
-
-menomgrad:3.7.66 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "066"@it ;
-    skos:prefLabel "066"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.7.66" ;
-    skos:broader menom2:3.7 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.7.66" ;
-    xkos:depth 3 .
-
-menomgrad:3.7.67 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "067"@it ;
-    skos:prefLabel "067"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.7.67" ;
-    skos:broader menom2:3.7 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.7.67" ;
-    xkos:depth 3 .
-
-menomgrad:3.7.68 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "068"@it ;
-    skos:prefLabel "068"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.7.68" ;
-    skos:broader menom2:3.7 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.7.68" ;
-    xkos:depth 3 .
-
-menomgrad:3.7.69 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "069"@it ;
-    skos:prefLabel "069"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.7.69" ;
-    skos:broader menom2:3.7 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.7.69" ;
-    xkos:depth 3 .
-
-menomgrad:3.7.70 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "070"@it ;
-    skos:prefLabel "070"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.7.70" ;
-    skos:broader menom2:3.7 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.7.70" ;
-    xkos:depth 3 .
-
-menomgrad:3.8.71 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "071"@it ;
-    skos:prefLabel "071"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.8.71" ;
-    skos:broader menom2:3.8 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.8.71" ;
-    xkos:depth 3 .
-
-menomgrad:3.8.72 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "072"@it ;
-    skos:prefLabel "072"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.8.72" ;
-    skos:broader menom2:3.8 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.8.72" ;
-    xkos:depth 3 .
-
-menomgrad:3.8.73 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "073"@it ;
-    skos:prefLabel "073"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.8.73" ;
-    skos:broader menom2:3.8 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.8.73" ;
-    xkos:depth 3 .
-
-menomgrad:3.8.74 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "074"@it ;
-    skos:prefLabel "074"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.8.74" ;
-    skos:broader menom2:3.8 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.8.74" ;
-    xkos:depth 3 .
-
-menomgrad:3.8.75 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "075"@it ;
-    skos:prefLabel "075"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.8.75" ;
-    skos:broader menom2:3.8 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.8.75" ;
-    xkos:depth 3 .
-
-menomgrad:3.8.76 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "076"@it ;
-    skos:prefLabel "076"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.8.76" ;
-    skos:broader menom2:3.8 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.8.76" ;
-    xkos:depth 3 .
-
-menomgrad:3.8.77 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "077"@it ;
-    skos:prefLabel "077"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.8.77" ;
-    skos:broader menom2:3.8 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.8.77" ;
-    xkos:depth 3 .
-
-menomgrad:3.8.78 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "078"@it ;
-    skos:prefLabel "078"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.8.78" ;
-    skos:broader menom2:3.8 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.8.78" ;
-    xkos:depth 3 .
-
-menomgrad:3.8.79 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "079"@it ;
-    skos:prefLabel "079"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.8.79" ;
-    skos:broader menom2:3.8 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.8.79" ;
-    xkos:depth 3 .
-
-menomgrad:3.8.80 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "080"@it ;
-    skos:prefLabel "080"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.8.80" ;
-    skos:broader menom2:3.8 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.8.80" ;
-    xkos:depth 3 .
-
-menomgrad:3.8.81 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "081"@it ;
-    skos:prefLabel "081"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.8.81" ;
-    skos:broader menom2:3.8 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.8.81" ;
-    xkos:depth 3 .
-
-menomgrad:3.8.82 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "082"@it ;
-    skos:prefLabel "082"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.8.82" ;
-    skos:broader menom2:3.8 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.8.82" ;
-    xkos:depth 3 .
-
-menomgrad:3.8.83 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "083"@it ;
-    skos:prefLabel "083"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.8.83" ;
-    skos:broader menom2:3.8 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.8.83" ;
-    xkos:depth 3 .
-
-menomgrad:3.8.84 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "084"@it ;
-    skos:prefLabel "084"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.8.84" ;
-    skos:broader menom2:3.8 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.8.84" ;
-    xkos:depth 3 .
-
-menomgrad:3.8.85 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "085"@it ;
-    skos:prefLabel "085"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.8.85" ;
-    skos:broader menom2:3.8 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.8.85" ;
-    xkos:depth 3 .
-
-menomgrad:3.9.86 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "086"@it ;
-    skos:prefLabel "086"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.9.86" ;
-    skos:broader menom2:3.9 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.9.86" ;
-    xkos:depth 3 .
-
-menomgrad:3.9.87 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "087"@it ;
-    skos:prefLabel "087"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.9.87" ;
-    skos:broader menom2:3.9 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.9.87" ;
-    xkos:depth 3 .
-
-menomgrad:3.9.88 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "088"@it ;
-    skos:prefLabel "088"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.9.88" ;
-    skos:broader menom2:3.9 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.9.88" ;
-    xkos:depth 3 .
-
-menomgrad:3.9.89 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "089"@it ;
-    skos:prefLabel "089"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.9.89" ;
-    skos:broader menom2:3.9 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.9.89" ;
-    xkos:depth 3 .
-
-menomgrad:3.9.90 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "090"@it ;
-    skos:prefLabel "090"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.9.90" ;
-    skos:broader menom2:3.9 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.9.90" ;
-    xkos:depth 3 .
-
-menomgrad:3.9.91 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "091"@it ;
-    skos:prefLabel "091"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.9.91" ;
-    skos:broader menom2:3.9 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.9.91" ;
-    xkos:depth 3 .
-
-menomgrad:3.9.92 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "092"@it ;
-    skos:prefLabel "092"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.9.92" ;
-    skos:broader menom2:3.9 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.9.92" ;
-    xkos:depth 3 .
-
-menomgrad:3.9.93 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "093"@it ;
-    skos:prefLabel "093"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.9.93" ;
-    skos:broader menom2:3.9 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.9.93" ;
-    xkos:depth 3 .
-
-menomgrad:3.9.94 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "094"@it ;
-    skos:prefLabel "094"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.9.94" ;
-    skos:broader menom2:3.9 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.9.94" ;
-    xkos:depth 3 .
-
-menomgrad:3.9.95 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "095"@it ;
-    skos:prefLabel "095"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.9.95" ;
-    skos:broader menom2:3.9 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.9.95" ;
-    xkos:depth 3 .
-
-menomgrad:3.9.96 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "096"@it ;
-    skos:prefLabel "096"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.9.96" ;
-    skos:broader menom2:3.9 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.9.96" ;
-    xkos:depth 3 .
-
-menomgrad:3.9.97 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "097"@it ;
-    skos:prefLabel "097"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.9.97" ;
-    skos:broader menom2:3.9 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.9.97" ;
-    xkos:depth 3 .
-
-menomgrad:3.9.98 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "098"@it ;
-    skos:prefLabel "098"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.9.98" ;
-    skos:broader menom2:3.9 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.9.98" ;
-    xkos:depth 3 .
-
-menomgrad:3.9.99 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "099"@it ;
-    skos:prefLabel "099"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.9.99" ;
-    skos:broader menom2:3.9 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.9.99" ;
-    xkos:depth 3 .
-
-menomgrad:3.9.100 a inail:ClasseMenomazione,
-        skos:Concept ;
-    rdfs:label "100"@it ;
-    skos:prefLabel "100"@it ;
-    clvapit:hasRankOrder "3" ;
-    dct:identifier "3.9.100" ;
-    skos:broader menom2:3.9 ;
-    skos:inScheme inailvoc:classe_menomazione ;
-    skos:notation "3.9.100" ;
-    xkos:depth 3 .
-
-### Serialized using the ttlser deterministic serializer v1.2.0
+@prefix dct:          <http://purl.org/dc/terms/> .
+@prefix adms:         <http://www.w3.org/ns/adms#> .
+@prefix rdfs:         <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:          <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:          <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc:           <http://purl.org/dc/elements/1.1/> .
+@prefix skos:         <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf:         <http://xmlns.com/foaf/0.1/> .
+@prefix xkos:         <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix clvapit:      <https://w3id.org/italia/onto/CLV/> .
+@prefix dcat:         <http://www.w3.org/ns/dcat#> .
+@prefix vcard:        <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcatapit:     <http://dati.gov.it/onto/dcatapit#> .
+@prefix xsd:          <http://www.w3.org/2001/XMLSchema#> .
+@prefix ndc:          <https://w3id.org/italia/onto/NDC/> .
+@prefix cov:          <https://w3id.org/italia/onto/COV/> .
+@prefix INAILService: <https://w3id.org/italia/onto/work-accident/ised/adm_serv/> .
+@prefix inailvoc:     <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/> .
+@prefix menom1:       <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia1/> .
+@prefix menom2:       <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/> .
+@prefix menomgrad:    <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/> .
+
+
+#Metadata DCAT-AP_IT for the controlled vocabulary
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>
+      a       skos:ConceptScheme , adms:Asset , dcatapit:Dataset  ;
+      dct:title "Vocabolario Controllato sulla classe di menomazione adottata dall'INAIL"@it , "Controlled vocabulary on the disability class adopted by INAIL"@en ;
+      dct:description "Classificazione rispetto agli intervalli di variabilità del grado di menomazione. Sono state definite convenzionalmente 3 classi: [1-5%], [6-15%]; [16-100%]"@it, 
+	                  "Classification with respect to the ranges of variability of the menomation grade. Three classes have been conventionally defined: [1-5%], [6-15%]; [16-100%]"@en ;
+      rdfs:comment "Classificazione rispetto agli intervalli di variabilità del grado di menomazione. Sono state definite convenzionalmente 3 classi: [1-5%], [6-15%]; [16-100%]"@it, 
+	               "Classification with respect to the ranges of variability of the menomation grade. Three classes have been conventionally defined: [1-5%], [6-15%]; [16-100%]"@en ;
+      rdfs:label "Vocabolario Controllato sulla classe di menomazione adottata dall'INAIL"@it  , "Controlled vocabulary on the disability class adopted by INAIL"@en ;
+      skos:prefLabel "Vocabolario Controllato sulla classe di menomazione adottata dall'INAIL"@it ;
+	  dct:type <http://purl.org/adms/assettype/CodeList> ;
+	  xkos:numberOfLevels "3"; 
+      ndc:keyConcept "classe_menomazione" ;
+      adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+      dct:identifier "https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione" ;
+      dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI>, <http://publications.europa.eu/resource/authority/data-theme/HEAL>;
+      dct:subject <http://eurovoc.europa.eu/1761>, <http://eurovoc.europa.eu/825>, <http://eurovoc.europa.eu/100215>;
+      dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+      dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+      rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione> ;
+      dcat:keyword "inail"@it , "infortunio"@it , "malattia professionale"@it , "menomazione"@it, "occupational injury"@en, "occupational disease"@en, "impairment"@en ;
+      dct:issued "2022-09-06"^^xsd:date ;
+      dct:modified "2023-02-13"^^xsd:date ;
+      owl:versionInfo "0.3" ;
+      dct:accrualPeriodicity  <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+      dct:creator <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
+      dct:publisher <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
+      dct:relation <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/inabilita>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_trattazione>;  
+      dct:rightsHolder <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
+      dcat:contactPoint <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/ufficioV> ;
+      dcat:distribution <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/CM_RDF_TURTLE>, <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/CM_JSON_LD>, <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/CM_CSV> ;
+      skos:hasTopConcept <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia1/-2>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia1/0>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia1/1>,
+	                     <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia1/2>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia1/3> .
+
+#######################################################################################################
+#                                   INAIL and standard                                                #
+#######################################################################################################
+
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail>
+a   dcatapit:Agent , foaf:Agent ;
+      dct:identifier "inail" ;
+      foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it ,
+                "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/data/standard/SKOS>
+a   dcatapit:Standard, dct:Standard ;
+      dct:identifier "SKOS" ;
+      dct:title "Simple Knowledge Organization System - SKOS" ;
+      dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
+
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/CM_RDF_TURTLE>
+a   dcatapit:Distribution, dcat:Distribution ;
+      dct:title	"Distribuzione RDF/Turtle del vocabolario controllato sulla classe di menomazione adottata dall'INAIL"@it, "RDF/Turtle distribution of the disability class adopted by INAIL controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla classe di menomazione adottata dall'INAIL"@it, "This is the distribution in RDF/turtle of the disability class adopted by INAIL controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/classe-menomazione/classe_menomazione.ttl> ;  
+      dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/classe-menomazione> .	  
+
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/CM_JSON_LD>
+a   dcatapit:Distribution, dcat:Distribution ;
+      dct:title "Distribuzione JSON_LD del vocabolario controllato sulla classe di menomazione adottata dall'INAIL"@it , "JSON_LD distribution of the disability class adopted by INAIL controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla classe di menomazione adottata dall'INAIL"@it , "This is the distribution in JSON_LD of the disability class adopted by INAIL controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/classe-menomazione/classe_menomazione.json> ; 
+      dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/classe-menomazione> . 
+
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/CM_CSV>
+a	dcatapit:Distribution, dcat:Distribution ;
+      dct:title	"Distribuzione CSV del vocabolario controllato sulla classe di menomazione adottata dall'INAIL"@it , "CSV distribution of the disability class adopted by INAIL controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classe di menomazione adottata dall'INAIL"@it , "This is the distribution in CSV of the disability class adopted by INAIL controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/classe-menomazione/classe_menomazione.csv> ; 
+      dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/classe-menomazione> .	
+
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/ufficioV> 
+a   owl:NamedIndividual, dcatapit:Organization, vcard:Kind, vcard:Organization ;
+      vcard:fn "INAIL Ufficio V - D.C.O.D";
+      vcard:hasEmail <mailto:dcod@inail.it> .
+      	
+#######################################################################################################
+#                         Definition of the controlled vocabulary - First level                       #
+#######################################################################################################
+
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia1/-2>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:notation "-2" ;
+      dct:identifier "-2" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Grado superiore a 100"@it ;
+      skos:prefLabel "Grado superiore a 100"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia1/0>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:notation "0" ;
+      dct:identifier "0" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "A zero"@it ;
+      skos:prefLabel "A zero"@it .
+	  
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia1/1>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/1.1>;
+      skos:notation "1" ;
+      dct:identifier "1" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Da 01 a 05"@it ;
+      skos:prefLabel "Da 01 a 05"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia1/2>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/2.2>;
+      skos:notation "2" ;
+      dct:identifier "2" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Da 06 a 15"@it ;
+      skos:prefLabel "Da 06 a 15"@it .
+	  
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia1/3>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.3>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.4>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.5>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.6>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.7>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.8>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.9>;
+      skos:notation "3" ;
+      dct:identifier "3" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Da 16 a 100"@it ;
+      skos:prefLabel "Da 16 a 100"@it .
+	  
+
+#######################################################################################################
+#                                              Second level                                           #
+#######################################################################################################
+
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/1.1>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia1/1> ;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/1.1.1>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/1.1.2>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/1.1.3>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/1.1.4>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/1.1.5>;
+      skos:notation "1.1" ;
+      dct:identifier "1.1" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Da 01 a 05"@it ;
+      skos:prefLabel "Da 01 a 05"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/2.2>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia1/2> ;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/2.2.6>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/2.2.7>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/2.2.8>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/2.2.9>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/2.2.10>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/2.2.11>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/2.2.12>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/2.2.13>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/2.2.14>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/2.2.15>;
+      skos:notation "2.2" ;
+      dct:identifier "2.2" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Da 06 a 15"@it ;
+      skos:prefLabel "Da 06 a 15"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.3>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia1/3> ;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.3.16>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.3.17>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.3.18>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.3.19>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.3.20>;
+      skos:notation "3.3" ;
+      dct:identifier "3.3" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Da 16 a 20"@it ;
+      skos:prefLabel "Da 16 a 20"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.4>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia1/3> ;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.4.21>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.4.22>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.4.23>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.4.24>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.4.25>;
+      skos:notation "3.4" ;
+      dct:identifier "3.4" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Da 21 a 25"@it ;
+      skos:prefLabel "Da 21 a 25"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.5>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia1/3> ;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.5.26>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.5.27>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.5.28>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.5.29>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.5.30>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.5.31>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.5.32>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.5.33>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.5.34>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.5.35>;
+      skos:notation "3.5" ;
+      dct:identifier "3.5" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Da 26 a 35"@it ;
+      skos:prefLabel "Da 26 a 35"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.6>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia1/3> ;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.36>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.37>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.38>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.39>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.40>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.41>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.42>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.43>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.44>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.45>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.46>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.47>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.48>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.49>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.50>;
+      skos:notation "3.6" ;
+      dct:identifier "3.6" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Da 36 a 50"@it ;
+      skos:prefLabel "Da 36 a 50"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.7>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia1/3> ;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.51>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.52>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.53>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.54>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.55>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.56>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.57>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.58>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.59>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.60>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.61>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.62>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.63>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.64>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.65>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.66>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.67>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.68>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.69>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.70>;
+      skos:notation "3.7" ;
+      dct:identifier "3.7" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Da 51 a 70"@it ;
+      skos:prefLabel "Da 51 a 70"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.8>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia1/3> ;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.71>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.72>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.73>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.74>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.75>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.76>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.77>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.78>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.79>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.80>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.81>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.82>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.83>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.84>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.85>;
+      skos:notation "3.8" ;
+      dct:identifier "3.8" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Da 71 a 85"@it ;
+      skos:prefLabel "Da 71 a 85"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.9>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia1/3> ;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.86>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.87>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.88>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.89>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.90>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.91>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.92>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.93>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.94>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.95>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.96>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.97>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.98>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.99>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.100>;
+      skos:notation "3.9" ;
+      dct:identifier "3.9" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Da 86 a 100"@it ;
+      skos:prefLabel "Da 86 a 100"@it.
+
+#######################################################################################################
+#                                              Third level                                            #
+#######################################################################################################
+
+
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/1.1.1>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/1.1>;
+      skos:notation "1.1.1" ;
+      dct:identifier "1.1.1" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "001"@it;
+      skos:prefLabel "001"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/1.1.2>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/1.1>;
+      skos:notation "1.1.2" ;
+      dct:identifier "1.1.2" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "002"@it;
+      skos:prefLabel "002"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/1.1.3>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/1.1>;
+      skos:notation "1.1.3" ;
+      dct:identifier "1.1.3" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "003"@it;
+      skos:prefLabel "003"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/1.1.4>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/1.1>;
+      skos:notation "1.1.4" ;
+      dct:identifier "1.1.4" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "004"@it;
+      skos:prefLabel "004"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/1.1.5>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/1.1>;
+      skos:notation "1.1.5" ;
+      dct:identifier "1.1.5" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "005"@it;
+      skos:prefLabel "005"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/2.2.6>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/2.2>;
+      skos:notation "2.2.6" ;
+      dct:identifier "2.2.6" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "006"@it;
+      skos:prefLabel "006"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/2.2.7>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/2.2>;
+      skos:notation "2.2.7" ;
+      dct:identifier "2.2.7" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "007"@it;
+      skos:prefLabel "007"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/2.2.8>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/2.2>;
+      skos:notation "2.2.8" ;
+      dct:identifier "2.2.8" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "008"@it;
+      skos:prefLabel "008"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/2.2.9>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/2.2>;
+      skos:notation "2.2.9" ;
+      dct:identifier "2.2.9" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "009"@it;
+      skos:prefLabel "009"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/2.2.10>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/2.2>;
+      skos:notation "2.2.10" ;
+      dct:identifier "2.2.10" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "010"@it;
+      skos:prefLabel "010"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/2.2.11>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/2.2>;
+      skos:notation "2.2.11" ;
+      dct:identifier "2.2.11" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "011"@it;
+      skos:prefLabel "011"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/2.2.12>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/2.2>;
+      skos:notation "2.2.12" ;
+      dct:identifier "2.2.12" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "012"@it;
+      skos:prefLabel "012"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/2.2.13>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/2.2>;
+      skos:notation "2.2.13" ;
+      dct:identifier "2.2.13" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "013"@it;
+      skos:prefLabel "013"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/2.2.14>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/2.2>;
+      skos:notation "2.2.14" ;
+      dct:identifier "2.2.14" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "014"@it;
+      skos:prefLabel "014"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/2.2.15>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/2.2>;
+      skos:notation "2.2.15" ;
+      dct:identifier "2.2.15" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "015"@it;
+      skos:prefLabel "015"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.3.16>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.3>;
+      skos:notation "3.3.16" ;
+      dct:identifier "3.3.16" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "016"@it;
+      skos:prefLabel "016"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.3.17>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.3>;
+      skos:notation "3.3.17" ;
+      dct:identifier "3.3.17" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "017"@it;
+      skos:prefLabel "017"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.3.18>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.3>;
+      skos:notation "3.3.18" ;
+      dct:identifier "3.3.18" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "018"@it;
+      skos:prefLabel "018"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.3.19>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.3>;
+      skos:notation "3.3.19" ;
+      dct:identifier "3.3.19" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "019"@it;
+      skos:prefLabel "019"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.3.20>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.3>;
+      skos:notation "3.3.20" ;
+      dct:identifier "3.3.20" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "020"@it;
+      skos:prefLabel "020"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.4.21>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.4>;
+      skos:notation "3.4.21" ;
+      dct:identifier "3.4.21" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "021"@it;
+      skos:prefLabel "021"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.4.22>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.4>;
+      skos:notation "3.4.22" ;
+      dct:identifier "3.4.22" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "022"@it;
+      skos:prefLabel "022"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.4.23>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.4>;
+      skos:notation "3.4.23" ;
+      dct:identifier "3.4.23" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "023"@it;
+      skos:prefLabel "023"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.4.24>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.4>;
+      skos:notation "3.4.24" ;
+      dct:identifier "3.4.24" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "024"@it;
+      skos:prefLabel "024"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.4.25>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.4>;
+      skos:notation "3.4.25" ;
+      dct:identifier "3.4.25" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "025"@it;
+      skos:prefLabel "025"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.5.26>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.5>;
+      skos:notation "3.5.26" ;
+      dct:identifier "3.5.26" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "026"@it;
+      skos:prefLabel "026"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.5.27>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.5>;
+      skos:notation "3.5.27" ;
+      dct:identifier "3.5.27" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "027"@it;
+      skos:prefLabel "027"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.5.28>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.5>;
+      skos:notation "3.5.28" ;
+      dct:identifier "3.5.28" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "028"@it;
+      skos:prefLabel "028"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.5.29>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.5>;
+      skos:notation "3.5.29" ;
+      dct:identifier "3.5.29" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "029"@it;
+      skos:prefLabel "029"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.5.30>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.5>;
+      skos:notation "3.5.30" ;
+      dct:identifier "3.5.30" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "030"@it;
+      skos:prefLabel "030"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.5.31>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.5>;
+      skos:notation "3.5.31" ;
+      dct:identifier "3.5.31" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "031"@it;
+      skos:prefLabel "031"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.5.32>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.5>;
+      skos:notation "3.5.32" ;
+      dct:identifier "3.5.32" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "032"@it;
+      skos:prefLabel "032"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.5.33>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.5>;
+      skos:notation "3.5.33" ;
+      dct:identifier "3.5.33" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "033"@it;
+      skos:prefLabel "033"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.5.34>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.5>;
+      skos:notation "3.5.34" ;
+      dct:identifier "3.5.34" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "034"@it;
+      skos:prefLabel "034"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.5.35>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.5>;
+      skos:notation "3.5.35" ;
+      dct:identifier "3.5.35" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "035"@it;
+      skos:prefLabel "035"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.36>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.6>;
+      skos:notation "3.6.36" ;
+      dct:identifier "3.6.36" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "036"@it;
+      skos:prefLabel "036"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.37>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.6>;
+      skos:notation "3.6.37" ;
+      dct:identifier "3.6.37" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "037"@it;
+      skos:prefLabel "037"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.38>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.6>;
+      skos:notation "3.6.38" ;
+      dct:identifier "3.6.38" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "038"@it;
+      skos:prefLabel "038"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.39>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.6>;
+      skos:notation "3.6.39" ;
+      dct:identifier "3.6.39" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "039"@it;
+      skos:prefLabel "039"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.40>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.6>;
+      skos:notation "3.6.40" ;
+      dct:identifier "3.6.40" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "040"@it;
+      skos:prefLabel "040"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.41>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.6>;
+      skos:notation "3.6.41" ;
+      dct:identifier "3.6.41" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "041"@it;
+      skos:prefLabel "041"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.42>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.6>;
+      skos:notation "3.6.42" ;
+      dct:identifier "3.6.42" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "042"@it;
+      skos:prefLabel "042"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.43>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.6>;
+      skos:notation "3.6.43" ;
+      dct:identifier "3.6.43" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "043"@it;
+      skos:prefLabel "043"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.44>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.6>;
+      skos:notation "3.6.44" ;
+      dct:identifier "3.6.44" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "044"@it;
+      skos:prefLabel "044"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.45>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.6>;
+      skos:notation "3.6.45" ;
+      dct:identifier "3.6.45" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "045"@it;
+      skos:prefLabel "045"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.46>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.6>;
+      skos:notation "3.6.46" ;
+      dct:identifier "3.6.46" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "046"@it;
+      skos:prefLabel "046"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.47>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.6>;
+      skos:notation "3.6.47" ;
+      dct:identifier "3.6.47" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "047"@it;
+      skos:prefLabel "047"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.48>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.6>;
+      skos:notation "3.6.48" ;
+      dct:identifier "3.6.48" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "048"@it;
+      skos:prefLabel "048"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.49>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.6>;
+      skos:notation "3.6.49" ;
+      dct:identifier "3.6.49" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "049"@it;
+      skos:prefLabel "049"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.6.50>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.6>;
+      skos:notation "3.6.50" ;
+      dct:identifier "3.6.50" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "050"@it;
+      skos:prefLabel "050"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.51>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.7>;
+      skos:notation "3.7.51" ;
+      dct:identifier "3.7.51" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "051"@it;
+      skos:prefLabel "051"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.52>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.7>;
+      skos:notation "3.7.52" ;
+      dct:identifier "3.7.52" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "052"@it;
+      skos:prefLabel "052"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.53>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.7>;
+      skos:notation "3.7.53" ;
+      dct:identifier "3.7.53" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "053"@it;
+      skos:prefLabel "053"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.54>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.7>;
+      skos:notation "3.7.54" ;
+      dct:identifier "3.7.54" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "054"@it;
+      skos:prefLabel "054"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.55>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.7>;
+      skos:notation "3.7.55" ;
+      dct:identifier "3.7.55" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "055"@it;
+      skos:prefLabel "055"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.56>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.7>;
+      skos:notation "3.7.56" ;
+      dct:identifier "3.7.56" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "056"@it;
+      skos:prefLabel "056"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.57>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.7>;
+      skos:notation "3.7.57" ;
+      dct:identifier "3.7.57" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "057"@it;
+      skos:prefLabel "057"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.58>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.7>;
+      skos:notation "3.7.58" ;
+      dct:identifier "3.7.58" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "058"@it;
+      skos:prefLabel "058"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.59>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.7>;
+      skos:notation "3.7.59" ;
+      dct:identifier "3.7.59" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "059"@it;
+      skos:prefLabel "059"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.60>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.7>;
+      skos:notation "3.7.60" ;
+      dct:identifier "3.7.60" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "060"@it;
+      skos:prefLabel "060"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.61>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.7>;
+      skos:notation "3.7.61" ;
+      dct:identifier "3.7.61" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "061"@it;
+      skos:prefLabel "061"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.62>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.7>;
+      skos:notation "3.7.62" ;
+      dct:identifier "3.7.62" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "062"@it;
+      skos:prefLabel "062"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.63>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.7>;
+      skos:notation "3.7.63" ;
+      dct:identifier "3.7.63" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "063"@it;
+      skos:prefLabel "063"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.64>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.7>;
+      skos:notation "3.7.64" ;
+      dct:identifier "3.7.64" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "064"@it;
+      skos:prefLabel "064"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.65>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.7>;
+      skos:notation "3.7.65" ;
+      dct:identifier "3.7.65" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "065"@it;
+      skos:prefLabel "065"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.66>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.7>;
+      skos:notation "3.7.66" ;
+      dct:identifier "3.7.66" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "066"@it;
+      skos:prefLabel "066"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.67>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.7>;
+      skos:notation "3.7.67" ;
+      dct:identifier "3.7.67" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "067"@it;
+      skos:prefLabel "067"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.68>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.7>;
+      skos:notation "3.7.68" ;
+      dct:identifier "3.7.68" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "068"@it;
+      skos:prefLabel "068"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.69>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.7>;
+      skos:notation "3.7.69" ;
+      dct:identifier "3.7.69" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "069"@it;
+      skos:prefLabel "069"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.7.70>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.7>;
+      skos:notation "3.7.70" ;
+      dct:identifier "3.7.70" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "070"@it;
+      skos:prefLabel "070"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.71>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.8>;
+      skos:notation "3.8.71" ;
+      dct:identifier "3.8.71" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "071"@it;
+      skos:prefLabel "071"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.72>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.8>;
+      skos:notation "3.8.72" ;
+      dct:identifier "3.8.72" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "072"@it;
+      skos:prefLabel "072"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.73>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.8>;
+      skos:notation "3.8.73" ;
+      dct:identifier "3.8.73" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "073"@it;
+      skos:prefLabel "073"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.74>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.8>;
+      skos:notation "3.8.74" ;
+      dct:identifier "3.8.74" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "074"@it;
+      skos:prefLabel "074"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.75>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.8>;
+      skos:notation "3.8.75" ;
+      dct:identifier "3.8.75" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "075"@it;
+      skos:prefLabel "075"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.76>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.8>;
+      skos:notation "3.8.76" ;
+      dct:identifier "3.8.76" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "076"@it;
+      skos:prefLabel "076"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.77>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.8>;
+      skos:notation "3.8.77" ;
+      dct:identifier "3.8.77" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "077"@it;
+      skos:prefLabel "077"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.78>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.8>;
+      skos:notation "3.8.78" ;
+      dct:identifier "3.8.78" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "078"@it;
+      skos:prefLabel "078"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.79>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.8>;
+      skos:notation "3.8.79" ;
+      dct:identifier "3.8.79" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "079"@it;
+      skos:prefLabel "079"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.80>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.8>;
+      skos:notation "3.8.80" ;
+      dct:identifier "3.8.80" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "080"@it;
+      skos:prefLabel "080"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.81>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.8>;
+      skos:notation "3.8.81" ;
+      dct:identifier "3.8.81" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "081"@it;
+      skos:prefLabel "081"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.82>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.8>;
+      skos:notation "3.8.82" ;
+      dct:identifier "3.8.82" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "082"@it;
+      skos:prefLabel "082"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.83>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.8>;
+      skos:notation "3.8.83" ;
+      dct:identifier "3.8.83" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "083"@it;
+      skos:prefLabel "083"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.84>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.8>;
+      skos:notation "3.8.84" ;
+      dct:identifier "3.8.84" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "084"@it;
+      skos:prefLabel "084"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.8.85>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.8>;
+      skos:notation "3.8.85" ;
+      dct:identifier "3.8.85" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "085"@it;
+      skos:prefLabel "085"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.86>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.9>;
+      skos:notation "3.9.86" ;
+      dct:identifier "3.9.86" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "086"@it;
+      skos:prefLabel "086"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.87>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.9>;
+      skos:notation "3.9.87" ;
+      dct:identifier "3.9.87" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "087"@it;
+      skos:prefLabel "087"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.88>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.9>;
+      skos:notation "3.9.88" ;
+      dct:identifier "3.9.88" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "088"@it;
+      skos:prefLabel "088"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.89>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.9>;
+      skos:notation "3.9.89" ;
+      dct:identifier "3.9.89" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "089"@it;
+      skos:prefLabel "089"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.90>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.9>;
+      skos:notation "3.9.90" ;
+      dct:identifier "3.9.90" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "090"@it;
+      skos:prefLabel "090"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.91>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.9>;
+      skos:notation "3.9.91" ;
+      dct:identifier "3.9.91" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "091"@it;
+      skos:prefLabel "091"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.92>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.9>;
+      skos:notation "3.9.92" ;
+      dct:identifier "3.9.92" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "092"@it;
+      skos:prefLabel "092"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.93>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.9>;
+      skos:notation "3.9.93" ;
+      dct:identifier "3.9.93" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "093"@it;
+      skos:prefLabel "093"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.94>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.9>;
+      skos:notation "3.9.94" ;
+      dct:identifier "3.9.94" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "094"@it;
+      skos:prefLabel "094"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.95>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.9>;
+      skos:notation "3.9.95" ;
+      dct:identifier "3.9.95" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "095"@it;
+      skos:prefLabel "095"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.96>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.9>;
+      skos:notation "3.9.96" ;
+      dct:identifier "3.9.96" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "096"@it;
+      skos:prefLabel "096"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.97>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.9>;
+      skos:notation "3.9.97" ;
+      dct:identifier "3.9.97" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "097"@it;
+      skos:prefLabel "097"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.98>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.9>;
+      skos:notation "3.9.98" ;
+      dct:identifier "3.9.98" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "098"@it;
+      skos:prefLabel "098"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.99>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.9>;
+      skos:notation "3.9.99" ;
+      dct:identifier "3.9.99" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "099"@it;
+      skos:prefLabel "099"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/grado/3.9.100>
+a  	skos:Concept, INAILService:ClasseMenomazioneINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/classe_menomazione/fascia2/3.9>;
+      skos:notation "3.9.100" ;
+      dct:identifier "3.9.100" ;
+      clvapit:hasRankOrder "3" ;
+      xkos:depth 3 ;
+	  rdfs:label "100"@it;
+      skos:prefLabel "100"@it.

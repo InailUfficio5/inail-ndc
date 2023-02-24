@@ -1,609 +1,605 @@
-@prefix adms: <http://www.w3.org/ns/adms#> .
-@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
-@prefix cov: <https://w3id.org/italia/onto/COV/> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix inail: <https://w3id.org/italia/onto/WorkAccident/> .
-@prefix inailvoc: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/> .
-@prefix lavcod: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_lavoro/codice/> .
-@prefix lavgrup: <https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_lavoro/gruppo/> .
-@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:            <http://purl.org/dc/terms/> .
+@prefix adms:           <http://www.w3.org/ns/adms#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:            <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc:             <http://purl.org/dc/elements/1.1/> .
+@prefix skos:           <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf:           <http://xmlns.com/foaf/0.1/> .
+@prefix xkos:           <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix clvapit:        <https://w3id.org/italia/onto/CLV/> .
+@prefix dcat:           <http://www.w3.org/ns/dcat#> .
+@prefix vcard:          <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcatapit:       <http://dati.gov.it/onto/dcatapit#> .
+@prefix xsd:            <http://www.w3.org/2001/XMLSchema#> .
+@prefix ndc:            <https://w3id.org/italia/onto/NDC/> .
+@prefix cov:            <https://w3id.org/italia/onto/COV/> .
+@prefix INAILService:   <https://w3id.org/italia/onto/work-accident/ised/adm_serv/> .
+@prefix inailvoc:       <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/> .
+@prefix tipolavorogrup: <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/> .
+@prefix tipolavorocod:  <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/> .
 
-### Annotations
+		
+#Metadata DCAT-AP_IT for the controlled vocabulary
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>
+      a       skos:ConceptScheme , adms:Asset , dcatapit:Dataset  ;
+      dct:title "Vocabolario Controllato sulla classificazione delle tipologie di lavoro adottata dall'INAIL"@it , "Controlled vocabulary on the classification of types of work adopted by INAIL"@en ;
+      dct:description "Classificazione delle tipologie di lavoro svolte dall'infortunato/tecnopatico"@it, "Classification of the types of work performed by the injured/worker with occupational disease"@en ;
+      rdfs:comment "Classificazione delle tipologie di lavoro svolte dall'infortunato/tecnopatico"@it, "Classification of the types of work performed by the injured/worker with occupational disease"@en ;
+      rdfs:label "Vocabolario Controllato sulla classificazione delle tipologie di lavoro adottata dall'INAIL"@it  , "Controlled vocabulary on the classification of types of work adopted by INAIL"@en ;
+      skos:prefLabel "Vocabolario Controllato sulla classificazione delle tipologie di lavoro adottata dall'INAIL"@it ;
+	  dct:type <http://purl.org/adms/assettype/CodeList> ;
+	  xkos:numberOfLevels "2"; 
+      ndc:keyConcept "tipo_lavoro" ;
+      adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+      dct:identifier "https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro";
+      dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI>;
+      dct:subject <http://eurovoc.europa.eu/825>, <http://eurovoc.europa.eu/4543>, <http://eurovoc.europa.eu/414>, <http://eurovoc.europa.eu/1761> ;
+      dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+      dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+      rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro> ;
+      dcat:keyword "inail"@it , "malattia professionale"@it , "infortunio"@it , "lavoro"@it, "tipo lavoro"@it, "occupational injury"@en, "occupational disease"@en, "work"@en, "type of work"@en; 
+      dct:issued "2022-09-06"^^xsd:date ;
+      dct:modified "2023-02-13"^^xsd:date ;
+      owl:versionInfo "0.3" ;
+      dct:accrualPeriodicity  <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+      dct:creator <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
+      dct:publisher <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
+      dct:relation <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/mansione>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoratore>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/settore_correlato_malattia>, 
+	               <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/grande_gruppo_tariffario>, 
+				   <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/gestione_assicurativa>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/luogo_accadimento>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/attivita_fisica> ; 
+      dct:rightsHolder <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
+      dcat:contactPoint <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/ufficioV> ;
+      dcat:distribution <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TL_RDF_TURTLE>, <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TL_JSON_LD>, <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TL_CSV>; 
+      skos:hasTopConcept <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/1>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/2>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/3>,
+	                     <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/4>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/5>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/6>,
+						 <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/9>.
 
-<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
-        dct:Standard ;
-    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
-    dct:identifier "SKOS" ;
-    dct:title "Simple Knowledge Organization System - SKOS" .
+#######################################################################################################
+#                                   INAIL and standard                                                #
+#######################################################################################################
 
-<https://w3id.org/italia/data/WorkAccident/distribution/TL_CSV> a dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-lavoro> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-lavoro/tipo_lavoro.csv> ;
-    dct:description "Questa è la distribuzione CSV del vocabolario controllato sulle tipologie di lavoro adottate dall'INAIL"@it,
-        "This is the distribution in CSV of types of work adopted by INAIL controlled vocabulary"@en ;
-    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
-    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    dct:title "CSV distribution of types of work adopted by INAIL controlled vocabulary"@en,
-        "Distribuzione CSV del vocabolario controllato sulle tipologie di lavoro adottate dall'INAIL"@it .
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail>
+a   dcatapit:Agent , foaf:Agent ;
+      dct:identifier "inail" ;
+      foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it ,
+                "National Institute for Insurance against Accidents at Work"@en .
 
-<https://w3id.org/italia/data/WorkAccident/distribution/TL_JSON_LD> a dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-lavoro> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-lavoro/tipo_lavoro.json> ;
-    dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulle tipologie di lavoro adottate dall'INAIL"@it,
-        "This is the distribution in JSON_LD of types of work adopted by INAIL controlled vocabulary"@en ;
-    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
-    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    dct:title "Distribuzione JSON_LD del vocabolario controllato sulle tipologie di lavoro adottate dall'INAIL"@it,
-        "JSON_LD distribution of types of work adopted by INAIL controlled vocabulary"@en .
+<https://w3id.org/italia/data/standard/SKOS>
+a   dcatapit:Standard, dct:Standard ;
+      dct:identifier "SKOS" ;
+      dct:title "Simple Knowledge Organization System - SKOS" ;
+      dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
 
-<https://w3id.org/italia/data/WorkAccident/distribution/TL_RDF_TURTLE> a dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-lavoro> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-lavoro/tipo_lavoro.ttl> ;
-    dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulle tipologie di lavoro adottate dall'INAIL"@it,
-        "This is the distribution in RDF/turtle of types of work adopted by INAIL controlled vocabulary"@en ;
-    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    dct:title "Distribuzione RDF/Turtle del vocabolario controllato sulle tipologie di lavoro adottate dall'INAIL"@it,
-        "RDF/Turtle distribution of types of work adopted by INAIL controlled vocabulary"@en .
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TL_RDF_TURTLE>
+a   dcatapit:Distribution, dcat:Distribution ;
+      dct:title	"Distribuzione RDF/Turtle del vocabolario controllato sulle tipologie di lavoro adottate dall'INAIL"@it, "RDF/Turtle distribution of types of work adopted by INAIL controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulle tipologie di lavoro adottate dall'INAIL"@it, "This is the distribution in RDF/turtle of types of work adopted by INAIL controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-lavoro/tipo_lavoro.ttl> ;  
+      dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-lavoro> .	  
 
-<https://w3id.org/italia/data/WorkAccident/Organization/inail> a cov:Organization ;
-    rdfs:label "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
-    cov:IPAcode "inail" ;
-    cov:legalName "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" ;
-    cov:orgAcronym "inail" .
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TL_JSON_LD>
+a   dcatapit:Distribution, dcat:Distribution ;
+      dct:title "Distribuzione JSON_LD del vocabolario controllato sulle tipologie di lavoro adottate dall'INAIL"@it , "JSON_LD distribution of types of work adopted by INAIL controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulle tipologie di lavoro adottate dall'INAIL"@it , "This is the distribution in JSON_LD of types of work adopted by INAIL controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-lavoro/tipo_lavoro.json> ; 
+      dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-lavoro> . 
 
-inailvoc:tipo_lavoro a adms:Asset,
-        dcatapit:Dataset,
-        skos:ConceptScheme ;
-    rdfs:label "Controlled vocabulary on the classification of types of work adopted by INAIL"@en,
-        "Vocabolario Controllato sulla classificazione delle tipologie di lavoro adottata dall'INAIL"@it ;
-    skos:prefLabel "Vocabolario Controllato sulla classificazione delle tipologie di lavoro adottata dall'INAIL"@it ;
-    rdfs:comment "Classification of the types of work performed by the injured/worker with occupational disease"@en,
-        "Classificazione delle tipologie di lavoro svolte dall'infortunato/tecnopatico"@it ;
-    owl:versionInfo "0.2" ;
-    rdfs:isDefinedBy inailvoc:tipo_lavoro ;
-    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
-    dcat:contactPoint <https://www.inail.it> ;
-    dcat:distribution <https://w3id.org/italia/data/WorkAccident/distribution/TL_CSV>,
-        <https://w3id.org/italia/data/WorkAccident/distribution/TL_JSON_LD>,
-        <https://w3id.org/italia/data/WorkAccident/distribution/TL_RDF_TURTLE> ;
-    dcat:keyword "inail"@it,
-        "infortunio"@it,
-        "injured"@en,
-        "inofrtunato"@it,
-        "lavoro"@it,
-        "occupational injury"@en,
-        "work"@en ;
-    dcat:theme <http://eurovoc.europa.eu/825>,
-        <http://eurovoc.europa.eu/4543> ;
-    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
-    dct:creator <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
-    dct:description "Classification of the types of work performed by the injured/worker with occupational disease"@en,
-        "Classificazione delle tipologie di lavoro svolte dall'infortunato/tecnopatico"@it ;
-    dct:identifier "https://w3id.org/italia/controlled-vocabulary/WorkAccident/tipo_lavoro" ;
-    dct:issued "2022-09-06"^^xsd:date ;
-    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-    dct:modified "2022-11-17"^^xsd:date ;
-    dct:publisher <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
-    dct:relation inailvoc:attivita_fisica,
-        inailvoc:gestione,
-        inailvoc:gestione_assicurativa,
-        inailvoc:grande_gruppo_tariffario,
-        inailvoc:luogo_accadimento,
-        inailvoc:mansione,
-        inailvoc:settore_attivita,
-        inailvoc:settore_correlato_malattia,
-        inailvoc:tipo_lavoratore ;
-    dct:rightsHolder <https://w3id.org/italia/data/WorkAccident/Organization/inail> ;
-    dct:title "Controlled vocabulary on the classification of types of work adopted by INAIL"@en,
-        "Vocabolario Controllato sulla classificazione delle tipologie di lavoro adottata dall'INAIL"@it ;
-    dct:type <http://purl.org/adms/assettype/CodeList> ;
-    ndc:keyConcept "Tipo Lavoro" ;
-    skos:hasTopConcept lavgrup:1,
-        lavgrup:2,
-        lavgrup:3,
-        lavgrup:4,
-        lavgrup:5,
-        lavgrup:6,
-        lavgrup:9 ;
-    xkos:numberOfLevels "2" .
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/TL_CSV>
+a	dcatapit:Distribution, dcat:Distribution ;
+      dct:title	"Distribuzione CSV del vocabolario controllato sulle tipologie di lavoro adottate dall'INAIL"@it , "CSV distribution of types of work adopted by INAIL controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione CSV del vocabolario controllato sulle tipologie di lavoro adottate dall'INAIL"@it , "This is the distribution in CSV of types of work adopted by INAIL controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-lavoro/tipo_lavoro.csv> ; 
+      dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-lavoro> .	
 
-lavcod:1.0 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Produzione, trasformazione, trattamento, magazzinaggio - di ogni tipo - non precisato"@it ;
-    skos:prefLabel "Produzione, trasformazione, trattamento, magazzinaggio - di ogni tipo - non precisato"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "1.0" ;
-    skos:broader lavgrup:1 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "1.0" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/ufficioV> 
+a   owl:NamedIndividual, dcatapit:Organization, vcard:Kind, vcard:Organization ;
+      vcard:fn "INAIL Ufficio V - D.C.O.D";
+      vcard:hasEmail <mailto:dcod@inail.it> .      	
+      	
+#######################################################################################################
+#                         Definition of the controlled vocabulary - First level                       #
+#######################################################################################################
 
-lavcod:1.1 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Produzione, trasformazione, trattamento - di ogni tipo"@it ;
-    skos:prefLabel "Produzione, trasformazione, trattamento - di ogni tipo"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "1.1" ;
-    skos:broader lavgrup:1 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "1.1" ;
-    xkos:depth 2 .
 
-lavcod:1.2 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Magazzinaggio - di ogni tipo"@it ;
-    skos:prefLabel "Magazzinaggio - di ogni tipo"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "1.2" ;
-    skos:broader lavgrup:1 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "1.2" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/1>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/1.0>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/1.1>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/1.2>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/1.9>;	  
+      skos:notation "1" ;
+      dct:identifier "1" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Produzione, trasformazione, trattamento, magazzinaggio - di ogni tipo"@it ;
+      skos:prefLabel "Produzione, trasformazione, trattamento, magazzinaggio - di ogni tipo"@it.
 
-lavcod:1.9 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Altro tipo di lavoro conosciuto del gruppo 10 non indicato qui sopra"@it ;
-    skos:prefLabel "Altro tipo di lavoro conosciuto del gruppo 10 non indicato qui sopra"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "1.9" ;
-    skos:broader lavgrup:1 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "1.9" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/2>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/2.0>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/2.1>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/2.2>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/2.3>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/2.4>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/2.5>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/2.9>;	  
+      skos:notation "2" ;
+      dct:identifier "2" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Sterro, costruzione, manutenzione e demolizione edili"@it ;
+      skos:prefLabel "Sterro, costruzione, manutenzione e demolizione edili"@it.
 
-lavcod:2.0 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Sterro, costruzione, manutenzione e demolizione edili - non precisato"@it ;
-    skos:prefLabel "Sterro, costruzione, manutenzione e demolizione edili - non precisato"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "2.0" ;
-    skos:broader lavgrup:2 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "2.0" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/3>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/3.0>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/3.1>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/3.2>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/3.3>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/3.4>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/3.5>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/3.9>;	  
+      skos:notation "3" ;
+      dct:identifier "3" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Attivita' di tipo agricolo, forestale,  ittico, con l'uso di animali vivi "@it ;
+      skos:prefLabel "Attivita' di tipo agricolo, forestale,  ittico, con l'uso di animali vivi"@it.
 
-lavcod:2.1 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Sterro"@it ;
-    skos:prefLabel "Sterro"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "2.1" ;
-    skos:broader lavgrup:2 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "2.1" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/4>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/4.0>,	  
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/4.1>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/4.2>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/4.3>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/4.9>;
+      skos:notation "4" ;
+      dct:identifier "4" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Attivita' di servizio all'impresa e/o alla persona umana; lavoro intellettuale"@it ;
+      skos:prefLabel "Attivita' di servizio all'impresa e/o alla persona umana; lavoro intellettuale"@it.
 
-lavcod:2.2 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Edilizia (costruzione)"@it ;
-    skos:prefLabel "Edilizia (costruzione)"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "2.2" ;
-    skos:broader lavgrup:2 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "2.2" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/5>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/5.0>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/5.1>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/5.2>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/5.3>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/5.4>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/5.5>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/5.9>;  
+      skos:notation "5" ;
+      dct:identifier "5" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Attività complementari a quelle espresse dai gruppi 10, 20, 30, 40"@it ;
+      skos:prefLabel "Attività complementari a quelle espresse dai gruppi 10, 20, 30, 40"@it.
 
-lavcod:2.3 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Genio civile, infrastrutture, strade, ponti, dighe, porti (costruzione)"@it ;
-    skos:prefLabel "Genio civile, infrastrutture, strade, ponti, dighe, porti (costruzione)"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "2.3" ;
-    skos:broader lavgrup:2 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "2.3" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/6>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/6.0>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/6.1>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/6.2>,
+	                <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/6.9>;  
+      skos:notation "6" ;
+      dct:identifier "6" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Circolazione, attività sportiva, attività artistica"@it ;
+      skos:prefLabel "Circolazione, attività sportiva, attività artistica"@it.
 
-lavcod:2.4 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Restauro, riparazione, ampliamento - di ogni tipo"@it ;
-    skos:prefLabel "Restauro, riparazione, ampliamento - di ogni tipo"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "2.4" ;
-    skos:broader lavgrup:2 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "2.4" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/9>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/9.9>; 
+      skos:notation "9" ;
+      dct:identifier "9" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Altro tipo di lavoro non indicato in questa nomenclatura"@it ;
+      skos:prefLabel "Altro tipo di lavoro non indicato in questa nomenclatura"@it.	  
 
-lavcod:2.5 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Demolizione - di ogni tipo"@it ;
-    skos:prefLabel "Demolizione - di ogni tipo"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "2.5" ;
-    skos:broader lavgrup:2 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "2.5" ;
-    xkos:depth 2 .
 
-lavcod:2.9 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Altro tipo di lavoro conosciuto del gruppo 20 non indicato qui sopra"@it ;
-    skos:prefLabel "Altro tipo di lavoro conosciuto del gruppo 20 non indicato qui sopra"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "2.9" ;
-    skos:broader lavgrup:2 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "2.9" ;
-    xkos:depth 2 .
+#######################################################################################################
+#                                          Second level                                               #
+#######################################################################################################
 
-lavcod:3.0 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Attivita' di tipo agricolo, forestale,  ittico, con l'uso di animali vivi - non precisato"@it ;
-    skos:prefLabel "Attivita' di tipo agricolo, forestale,  ittico, con l'uso di animali vivi - non precisato"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "3.0" ;
-    skos:broader lavgrup:3 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "3.0" ;
-    xkos:depth 2 .
 
-lavcod:3.1 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Lavoro di tipo agricolo, trattamento del terreno"@it ;
-    skos:prefLabel "Lavoro di tipo agricolo, trattamento del terreno"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "3.1" ;
-    skos:broader lavgrup:3 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "3.1" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/1.0>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/1>;
+      skos:notation "1.0" ;
+      dct:identifier "1.0" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Produzione, trasformazione, trattamento, magazzinaggio - di ogni tipo - non precisato"@it ;
+      skos:prefLabel "Produzione, trasformazione, trattamento, magazzinaggio - di ogni tipo - non precisato"@it.
 
-lavcod:3.2 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Lavoro di tipo agricolo, coltura dei vegetali"@it ;
-    skos:prefLabel "Lavoro di tipo agricolo, coltura dei vegetali"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "3.2" ;
-    skos:broader lavgrup:3 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "3.2" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/1.1>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/1>;
+      skos:notation "1.1" ;
+      dct:identifier "1.1" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Produzione, trasformazione, trattamento - di ogni tipo"@it ;
+      skos:prefLabel "Produzione, trasformazione, trattamento - di ogni tipo"@it.
 
-lavcod:3.3 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Lavoro di tipo agricolo che comporti l'allevamento o l'uso di animali vivi"@it ;
-    skos:prefLabel "Lavoro di tipo agricolo che comporti l'allevamento o l'uso di animali vivi"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "3.3" ;
-    skos:broader lavgrup:3 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "3.3" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/1.2>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/1>;
+      skos:notation "1.2" ;
+      dct:identifier "1.2" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Magazzinaggio - di ogni tipo"@it ;
+      skos:prefLabel "Magazzinaggio - di ogni tipo"@it.
 
-lavcod:3.4 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Lavoro di tipo forestale"@it ;
-    skos:prefLabel "Lavoro di tipo forestale"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "3.4" ;
-    skos:broader lavgrup:3 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "3.4" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/1.9>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/1>;
+      skos:notation "1.9" ;
+      dct:identifier "1.9" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Altro tipo di lavoro conosciuto del gruppo 10 non indicato qui sopra"@it ;
+      skos:prefLabel "Altro tipo di lavoro conosciuto del gruppo 10 non indicato qui sopra"@it.
 
-lavcod:3.5 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Lavoro di tipo ittico, pesca"@it ;
-    skos:prefLabel "Lavoro di tipo ittico, pesca"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "3.5" ;
-    skos:broader lavgrup:3 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "3.5" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/2.0>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/2>;
+      skos:notation "2.0" ;
+      dct:identifier "2.0" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Sterro, costruzione, manutenzione e demolizione edili - non precisato"@it ;
+      skos:prefLabel "Sterro, costruzione, manutenzione e demolizione edili - non precisato"@it.
 
-lavcod:3.9 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Altro tipo di lavoro conosciuto del gruppo 30 non indicato qui sopra"@it ;
-    skos:prefLabel "Altro tipo di lavoro conosciuto del gruppo 30 non indicato qui sopra"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "3.9" ;
-    skos:broader lavgrup:3 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "3.9" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/2.1>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/2>;
+      skos:notation "2.1" ;
+      dct:identifier "2.1" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Sterro"@it ;
+      skos:prefLabel "Sterro"@it.
 
-lavcod:4.0 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Attivita' di servizio all'impresa e/o alla persona umana; lavoro intellettuale - non precisato"@it ;
-    skos:prefLabel "Attivita' di servizio all'impresa e/o alla persona umana; lavoro intellettuale - non precisato"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "4.0" ;
-    skos:broader lavgrup:4 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "4.0" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/2.2>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/2>;
+      skos:notation "2.2" ;
+      dct:identifier "2.2" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Edilizia (costruzione)"@it ;
+      skos:prefLabel "Edilizia (costruzione)"@it.
 
-lavcod:4.1 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Attività di servizio, cura, assistenza alla persona umana"@it ;
-    skos:prefLabel "Attività di servizio, cura, assistenza alla persona umana"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "4.1" ;
-    skos:broader lavgrup:4 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "4.1" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/2.3>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/2>;
+      skos:notation "2.3" ;
+      dct:identifier "2.3" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Genio civile, infrastrutture, strade, ponti, dighe, porti (costruzione)"@it ;
+      skos:prefLabel "Genio civile, infrastrutture, strade, ponti, dighe, porti (costruzione)"@it.
 
-lavcod:4.2 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Attivita' intellettuale - insegnamento, formazione, trattamento dell'informazione, lavoro d'ufficio,attivita' di organizzazione, di gestione"@it ;
-    skos:prefLabel "Attivita' intellettuale - insegnamento, formazione, trattamento dell'informazione, lavoro d'ufficio,attivita' di organizzazione, di gestione"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "4.2" ;
-    skos:broader lavgrup:4 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "4.2" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/2.4>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/2>;
+      skos:notation "2.4" ;
+      dct:identifier "2.4" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Restauro, riparazione, ampliamento - di ogni tipo"@it ;
+      skos:prefLabel "Restauro, riparazione, ampliamento - di ogni tipo"@it.
 
-lavcod:4.3 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Attività commerciale: acquisto, vendita, attività ad esse complementari"@it ;
-    skos:prefLabel "Attività commerciale: acquisto, vendita, attività ad esse complementari"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "4.3" ;
-    skos:broader lavgrup:4 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "4.3" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/2.5>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/2>;
+      skos:notation "2.5" ;
+      dct:identifier "2.5" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Demolizione - di ogni tipo"@it ;
+      skos:prefLabel "Demolizione - di ogni tipo"@it.
 
-lavcod:4.9 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Altro tipo di lavoro conosciuto del gruppo 40 non indicato qui sopra"@it ;
-    skos:prefLabel "Altro tipo di lavoro conosciuto del gruppo 40 non indicato qui sopra"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "4.9" ;
-    skos:broader lavgrup:4 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "4.9" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/2.9>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/2>;
+      skos:notation "2.9" ;
+      dct:identifier "2.9" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Altro tipo di lavoro conosciuto del gruppo 20 non indicato qui sopra"@it ;
+      skos:prefLabel "Altro tipo di lavoro conosciuto del gruppo 20 non indicato qui sopra"@it.
 
-lavcod:5.0 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Attività complementari a quelle espresse dai gruppi 10, 20, 30, 40 - non precisato"@it ;
-    skos:prefLabel "Attività complementari a quelle espresse dai gruppi 10, 20, 30, 40 - non precisato"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "5.0" ;
-    skos:broader lavgrup:5 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "5.0" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/3.0>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/3>;
+      skos:notation "3.0" ;
+      dct:identifier "3.0" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Attivita' di tipo agricolo, forestale,  ittico, con l'uso di animali vivi - non precisato"@it ;
+      skos:prefLabel "Attivita' di tipo agricolo, forestale,  ittico, con l'uso di animali vivi - non precisato"@it.
 
-lavcod:5.1 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Installazione, preparazione, montaggio, smontaggio"@it ;
-    skos:prefLabel "Installazione, preparazione, montaggio, smontaggio"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "5.1" ;
-    skos:broader lavgrup:5 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "5.1" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/3.1>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/3>;
+      skos:notation "3.1" ;
+      dct:identifier "3.1" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Lavoro di tipo agricolo, trattamento del terreno"@it ;
+      skos:prefLabel "Lavoro di tipo agricolo, trattamento del terreno"@it.
 
-lavcod:5.2 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Manutenzione, riparazione,  registrazione, messa a punto"@it ;
-    skos:prefLabel "Manutenzione, riparazione,  registrazione, messa a punto"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "5.2" ;
-    skos:broader lavgrup:5 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "5.2" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/3.2>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/3>;
+      skos:notation "3.2" ;
+      dct:identifier "3.2" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Lavoro di tipo agricolo, coltura dei vegetali"@it ;
+      skos:prefLabel "Lavoro di tipo agricolo, coltura dei vegetali"@it.
 
-lavcod:5.3 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Pulizia di locali, di macchine - industriale o manuale"@it ;
-    skos:prefLabel "Pulizia di locali, di macchine - industriale o manuale"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "5.3" ;
-    skos:broader lavgrup:5 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "5.3" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/3.3>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/3>;
+      skos:notation "3.3" ;
+      dct:identifier "3.3" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Lavoro di tipo agricolo che comporti l'allevamento o l'uso di animali vivi"@it ;
+      skos:prefLabel "Lavoro di tipo agricolo che comporti l'allevamento o l'uso di animali vivi"@it.
 
-lavcod:5.4 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Gestione dei rifiuti, raccolta e trattamento dei rifiuti di ogni tipo"@it ;
-    skos:prefLabel "Gestione dei rifiuti, raccolta e trattamento dei rifiuti di ogni tipo"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "5.4" ;
-    skos:broader lavgrup:5 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "5.4" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/3.4>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/3>;
+      skos:notation "3.4" ;
+      dct:identifier "3.4" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Lavoro di tipo forestale"@it ;
+      skos:prefLabel "Lavoro di tipo forestale"@it.
 
-lavcod:5.5 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Sorveglianza, ispezione - di processi di fabbricazione, di locali, di mezzi di trasporto, di attrezzature - con o senza materiale di controllo"@it ;
-    skos:prefLabel "Sorveglianza, ispezione - di processi di fabbricazione, di locali, di mezzi di trasporto, di attrezzature - con o senza materiale di controllo"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "5.5" ;
-    skos:broader lavgrup:5 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "5.5" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/3.5>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/3>;
+      skos:notation "3.5" ;
+      dct:identifier "3.5" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Lavoro di tipo ittico, pesca"@it ;
+      skos:prefLabel "Lavoro di tipo ittico, pesca"@it.
 
-lavcod:5.9 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Altro tipo di  lavoro conosciuto del gruppo 50 non indicato qui sopra"@it ;
-    skos:prefLabel "Altro tipo di  lavoro conosciuto del gruppo 50 non indicato qui sopra"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "5.9" ;
-    skos:broader lavgrup:5 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "5.9" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/3.9>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/3>;
+      skos:notation "3.9" ;
+      dct:identifier "3.9" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Altro tipo di lavoro conosciuto del gruppo 30 non indicato qui sopra"@it ;
+      skos:prefLabel "Altro tipo di lavoro conosciuto del gruppo 30 non indicato qui sopra"@it.
 
-lavcod:6.0 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Circolazione, attività sportiva, attività artistica - non precisato"@it ;
-    skos:prefLabel "Circolazione, attività sportiva, attività artistica - non precisato"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "6.0" ;
-    skos:broader lavgrup:6 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "6.0" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/4.0>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/4>;
+      skos:notation "4.0" ;
+      dct:identifier "4.0" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Attivita' di servizio all'impresa e/o alla persona umana; lavoro intellettuale - non precisato"@it ;
+      skos:prefLabel "Attivita' di servizio all'impresa e/o alla persona umana; lavoro intellettuale - non precisato"@it.
 
-lavcod:6.1 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Circolazione, con o senza mezzi di trasporto"@it ;
-    skos:prefLabel "Circolazione, con o senza mezzi di trasporto"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "6.1" ;
-    skos:broader lavgrup:6 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "6.1" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/4.1>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/4>;
+      skos:notation "4.1" ;
+      dct:identifier "4.1" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Attività di servizio, cura, assistenza alla persona umana"@it ;
+      skos:prefLabel "Attività di servizio, cura, assistenza alla persona umana"@it.
 
-lavcod:6.2 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Attività sportiva, attività artistica"@it ;
-    skos:prefLabel "Attività sportiva, attività artistica"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "6.2" ;
-    skos:broader lavgrup:6 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "6.2" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/4.2>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/4>;
+      skos:notation "4.2" ;
+      dct:identifier "4.2" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Attivita' intellettuale - insegnamento, formazione, trattamento dell'informazione, lavoro d'ufficio,attivita' di organizzazione, di gestione"@it ;
+      skos:prefLabel "Attivita' intellettuale - insegnamento, formazione, trattamento dell'informazione, lavoro d'ufficio,attivita' di organizzazione, di gestione"@it.
 
-lavcod:6.9 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Altro tipo di lavoro conosciuto del gruppo 60 non indicato qui sopra"@it ;
-    skos:prefLabel "Altro tipo di lavoro conosciuto del gruppo 60 non indicato qui sopra"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "6.9" ;
-    skos:broader lavgrup:6 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "6.9" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/4.3>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/4>;
+      skos:notation "4.3" ;
+      dct:identifier "4.3" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Attività commerciale: acquisto, vendita, attività ad esse complementari"@it ;
+      skos:prefLabel "Attività commerciale: acquisto, vendita, attività ad esse complementari"@it.
 
-lavcod:9.9 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Altro tipo di lavoro non indicato in questa nomenclatura"@it ;
-    skos:prefLabel "Altro tipo di lavoro non indicato in questa nomenclatura"@it ;
-    clvapit:hasRankOrder "2" ;
-    dct:identifier "9.9" ;
-    skos:broader lavgrup:9 ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:notation "9.9" ;
-    xkos:depth 2 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/4.9>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/4>;
+      skos:notation "4.9" ;
+      dct:identifier "4.9" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Altro tipo di lavoro conosciuto del gruppo 40 non indicato qui sopra"@it ;
+      skos:prefLabel "Altro tipo di lavoro conosciuto del gruppo 40 non indicato qui sopra"@it.
 
-lavgrup:1 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Produzione, trasformazione, trattamento, magazzinaggio - di ogni tipo"@it ;
-    skos:prefLabel "Produzione, trasformazione, trattamento, magazzinaggio - di ogni tipo"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "1" ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:narrower lavcod:1.0,
-        lavcod:1.1,
-        lavcod:1.2,
-        lavcod:1.9 ;
-    skos:notation "1" ;
-    xkos:depth 1 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/5.0>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/5>;
+      skos:notation "5.0" ;
+      dct:identifier "5.0" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Attività complementari a quelle espresse dai gruppi 10, 20, 30, 40 - non precisato"@it ;
+      skos:prefLabel "Attività complementari a quelle espresse dai gruppi 10, 20, 30, 40 - non precisato"@it.
 
-lavgrup:2 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Sterro, costruzione, manutenzione e demolizione edili"@it ;
-    skos:prefLabel "Sterro, costruzione, manutenzione e demolizione edili"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "2" ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:narrower lavcod:2.0,
-        lavcod:2.1,
-        lavcod:2.2,
-        lavcod:2.3,
-        lavcod:2.4,
-        lavcod:2.5,
-        lavcod:2.9 ;
-    skos:notation "2" ;
-    xkos:depth 1 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/5.1>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/5>;
+      skos:notation "5.1" ;
+      dct:identifier "5.1" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Installazione, preparazione, montaggio, smontaggio"@it ;
+      skos:prefLabel "Installazione, preparazione, montaggio, smontaggio"@it.
 
-lavgrup:3 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Attivita' di tipo agricolo, forestale,  ittico, con l'uso di animali vivi "@it ;
-    skos:prefLabel "Attivita' di tipo agricolo, forestale,  ittico, con l'uso di animali vivi"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "3" ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:narrower lavcod:3.0,
-        lavcod:3.1,
-        lavcod:3.2,
-        lavcod:3.3,
-        lavcod:3.4,
-        lavcod:3.5,
-        lavcod:3.9 ;
-    skos:notation "3" ;
-    xkos:depth 1 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/5.2>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/5>;
+      skos:notation "5.2" ;
+      dct:identifier "5.2" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Manutenzione, riparazione,  registrazione, messa a punto"@it ;
+      skos:prefLabel "Manutenzione, riparazione,  registrazione, messa a punto"@it.
 
-lavgrup:4 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Attivita' di servizio all'impresa e/o alla persona umana; lavoro intellettuale"@it ;
-    skos:prefLabel "Attivita' di servizio all'impresa e/o alla persona umana; lavoro intellettuale"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "4" ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:narrower lavcod:4.0,
-        lavcod:4.1,
-        lavcod:4.2,
-        lavcod:4.3,
-        lavcod:4.9 ;
-    skos:notation "4" ;
-    xkos:depth 1 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/5.3>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/5>;
+      skos:notation "5.3" ;
+      dct:identifier "5.3" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Pulizia di locali, di macchine - industriale o manuale"@it ;
+      skos:prefLabel "Pulizia di locali, di macchine - industriale o manuale"@it.
 
-lavgrup:5 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Attività complementari a quelle espresse dai gruppi 10, 20, 30, 40"@it ;
-    skos:prefLabel "Attività complementari a quelle espresse dai gruppi 10, 20, 30, 40"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "5" ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:narrower lavcod:5.0,
-        lavcod:5.1,
-        lavcod:5.2,
-        lavcod:5.3,
-        lavcod:5.4,
-        lavcod:5.5,
-        lavcod:5.9 ;
-    skos:notation "5" ;
-    xkos:depth 1 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/5.4>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/5>;
+      skos:notation "5.4" ;
+      dct:identifier "5.4" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Gestione dei rifiuti, raccolta e trattamento dei rifiuti di ogni tipo"@it ;
+      skos:prefLabel "Gestione dei rifiuti, raccolta e trattamento dei rifiuti di ogni tipo"@it.
 
-lavgrup:6 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Circolazione, attività sportiva, attività artistica"@it ;
-    skos:prefLabel "Circolazione, attività sportiva, attività artistica"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "6" ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:narrower lavcod:6.0,
-        lavcod:6.1,
-        lavcod:6.2,
-        lavcod:6.9 ;
-    skos:notation "6" ;
-    xkos:depth 1 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/5.5>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/5>;
+      skos:notation "5.5" ;
+      dct:identifier "5.5" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Sorveglianza, ispezione - di processi di fabbricazione, di locali, di mezzi di trasporto, di attrezzature - con o senza materiale di controllo"@it ;
+      skos:prefLabel "Sorveglianza, ispezione - di processi di fabbricazione, di locali, di mezzi di trasporto, di attrezzature - con o senza materiale di controllo"@it.
 
-lavgrup:9 a inail:TipoLavoro,
-        skos:Concept ;
-    rdfs:label "Altro tipo di lavoro non indicato in questa nomenclatura"@it ;
-    skos:prefLabel "Altro tipo di lavoro non indicato in questa nomenclatura"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "9" ;
-    skos:inScheme inailvoc:tipo_lavoro ;
-    skos:narrower lavcod:9.9 ;
-    skos:notation "9" ;
-    xkos:depth 1 .
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/5.9>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/5>;
+      skos:notation "5.9" ;
+      dct:identifier "5.9" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Altro tipo di  lavoro conosciuto del gruppo 50 non indicato qui sopra"@it ;
+      skos:prefLabel "Altro tipo di  lavoro conosciuto del gruppo 50 non indicato qui sopra"@it.
 
-### Serialized using the ttlser deterministic serializer v1.2.0
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/6.0>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/6>;
+      skos:notation "6.0" ;
+      dct:identifier "6.0" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Circolazione, attività sportiva, attività artistica - non precisato"@it ;
+      skos:prefLabel "Circolazione, attività sportiva, attività artistica - non precisato"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/6.1>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/6>;
+      skos:notation "6.1" ;
+      dct:identifier "6.1" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Circolazione, con o senza mezzi di trasporto"@it ;
+      skos:prefLabel "Circolazione, con o senza mezzi di trasporto"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/6.2>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/6>;
+      skos:notation "6.2" ;
+      dct:identifier "6.2" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Attività sportiva, attività artistica"@it ;
+      skos:prefLabel "Attività sportiva, attività artistica"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/6.9>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/6>;
+      skos:notation "6.9" ;
+      dct:identifier "6.9" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Altro tipo di lavoro conosciuto del gruppo 60 non indicato qui sopra"@it ;
+      skos:prefLabel "Altro tipo di lavoro conosciuto del gruppo 60 non indicato qui sopra"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/concetto/9.9>
+a  	skos:Concept, INAILService:TipoLavoroINAIL ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro>;
+      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_lavoro/gruppo/9>;
+      skos:notation "9.9" ;
+      dct:identifier "9.9" ;
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Altro tipo di lavoro non indicato in questa nomenclatura"@it ;
+      skos:prefLabel "Altro tipo di lavoro non indicato in questa nomenclatura"@it.
