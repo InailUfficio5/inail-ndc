@@ -1,0 +1,2829 @@
+@prefix adms: <https://w3id.org/italia/onto/ADMS/> .
+@prefix CLV: <https://w3id.org/italia/onto/CLV/> .
+@prefix COV: <https://w3id.org/italia/onto/COV/> .
+@prefix CPV: <https://w3id.org/italia/onto/CPV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAILCore: <https://w3id.org/italia/onto/work-accident/ised/core/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix RO: <https://w3id.org/italia/onto/RO/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix TI: <https://w3id.org/italia/onto/TI/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+INAILCore: a owl:Ontology ;
+    owl:versionIRI INAILCore:1.7 ;
+    owl:imports CLV:,
+        COV:,
+        CPV:,
+        l0:,
+        RO:,
+        TI: ;
+    rdfs:label "Core INAIL Ontology"@en,
+        "Ontologia Core di INAIL"@it ;
+    rdfs:comment "Ontologia INAIL relativa ai concetti core dell'istituto: Azienda, Posizione Assicurativa Territoriale (PAT), Posizione Assicurativa Navigazione (PAN), Denuncia, Polizza, Sede INAIL, Retribuzione"@it,
+        "This is the ontology of the INAIL Organization about core concepts of the institute: Company, Insurance Territorial Position (PAT), Insurance Navigation Position(PAN), Complaint, Policy, INAIL Office, Salary"@en ;
+    owl:versionInfo "Version 1.7 - Modified on 31 January 2023"@en,
+        "Versione 1.7 - Modificata il 31 Gennaio 2023"@it ;
+    rdfs:isDefinedBy INAILCore: ;
+    adms:acronym "inail" ;
+    adms:hasContributor <https://w3id.org/italia/onto/work-accident/ised/core/organization/td> ;
+    adms:hasFormalityLevel adms:Formal ;
+    adms:hasKeyClass INAILCore:DenunciaINAIL,
+        INAILCore:PolizzaINAIL,
+        INAILCore:PosizioneAssicurativaNavigazione,
+        INAILCore:PosizioneAssicurativaTerritoriale,
+        INAILCore:RetribuzioneComplessiva,
+        INAILCore:SedeINAIL,
+        INAILCore:SoggettoAssicuranteINAIL ;
+    adms:hasOntologyLanguage adms:OWL ;
+    adms:hasSemanticAssetDistribution <https://w3id.org/italia/onto/work-accident/ised/core/distribution/CORE-RDF-TURTLE> ;
+    adms:hasTask adms:AnnotationTask,
+        adms:QueryFormulationTask,
+        adms:SearchTask ;
+    adms:last INAILCore:1.7 ;
+    adms:officialURI "https://w3id.org/italia/onto/work-accident/ised/core"^^xsd:anyURI ;
+    adms:prefix "inail" ;
+    adms:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
+    adms:status "catalogued",
+        "published" ;
+    adms:target "Cittadini"@it,
+        "Imprese"@it,
+        "Pubbliche Amministrazioni"@it ;
+    adms:type adms:ServiceOnytology ;
+    dcat:contactPoint <https://w3id.org/italia/onto/work-accident/ised/core/organization/ufficioV> ;
+    dcat:keyword "Azienda"@it,
+        "Company"@en,
+        "Complaint"@en,
+        "Denuncia"@it,
+        "INAIL Office"@en,
+        "Insurance Navigation Position"@en,
+        "Insurance Territorial Position"@en,
+        "Policy"@en,
+        "Polizza"@it,
+        "Posizione Assicurativa Navigazione"@it,
+        "Posizione Assicurativa Territoriale"@it,
+        "Retribuzione"@it,
+        "Salary"@en,
+        "Sede INAIL"@it ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:creator <https://w3id.org/italia/onto/work-accident/ised/core/organization/inail> ;
+    dct:description "Ontologia INAIL relativa ai concetti core dell'istituto: Azienda, Posizione Assicurativa Territoriale (PAT), Posizione Assicurativa Navigazione (PAN), Denuncia, Polizza, Sede INAIL, Retribuzione"@it,
+        "This is the ontology of the INAIL Organization about core concepts of the institute: Company, Insurance Territorial Position (PAT), Insurance Navigation Position(PAN), Complaint, Policy, INAIL Office, Salary"@en ;
+    dct:identifier "https://w3id.org/italia/onto/work-accident/ised/core/" ;
+    dct:issued "2022-09-06T00:00:00+00:00"^^xsd:dateTime ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2023-01-31T00:00:00+00:00"^^xsd:dateTime ;
+    dct:publisher <https://w3id.org/italia/onto/work-accident/ised/core/organization/inail> ;
+    dct:rightsHolder <https://w3id.org/italia/onto/work-accident/ised/core/organization/inail> ;
+    dct:title "Core INAIL Ontology"@en,
+        "Ontologia Core di INAIL "@it .
+
+### Object Properties
+
+INAILCore:afferisceADirezioneRegionale a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "afferisce A Direzione Regionale"@it ;
+    rdfs:domain INAILCore:SedeINAIL ;
+    rdfs:range INAILCore:DirezioneRegionaleINAIL .
+
+INAILCore:armatoreHaIntermediario a owl:ObjectProperty ;
+    rdfs:label "armatore Ha Intermediario"@it ;
+    rdfs:domain INAILCore:ArmatoreResidenteAllEstero ;
+    rdfs:range INAILCore:RaccomandatarioMarittimo .
+
+INAILCore:armatoreNominaCapitano a owl:ObjectProperty ;
+    rdfs:label "armatore Nomina Capitano"@it ;
+    rdfs:domain INAILCore:Armatore ;
+    rdfs:range INAILCore:Capitano .
+
+INAILCore:broaderLegalStatus a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "broader Legal Status"@it ;
+    rdfs:subPropertyOf skos:broader ;
+    rdfs:domain INAILCore:NaturaGiuridica ;
+    rdfs:range INAILCore:NaturaGiuridica .
+
+INAILCore:denunciaHaRiclassificazione a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "denuncia Ha Riclassificazione"@it ;
+    rdfs:domain INAILCore:DenunciaSoggettoAssicuranteINAIL ;
+    rdfs:range INAILCore:RiclassificazioneDenunciaINAIL .
+
+INAILCore:denunciaRelativaACanaleAcquisizione a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "denuncia Relativa A Canale Acquisizione"@it ;
+    rdfs:domain INAILCore:DenunciaINAIL ;
+    rdfs:range INAILCore:CanaleAcquisizione .
+
+INAILCore:denunciaRelativaAFonteDenuncia a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "denuncia Relativa A Fonte Denuncia"@it ;
+    rdfs:domain INAILCore:DenunciaINAIL ;
+    rdfs:range INAILCore:FonteDenuncia .
+
+INAILCore:denunciaRelativaAPAN a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "denuncia Relativa A PAN"@it ;
+    rdfs:domain INAILCore:DenunciaPAN ;
+    rdfs:range INAILCore:PosizioneAssicurativaNavigazione .
+
+INAILCore:denunciaRelativaAPAT a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "denuncia Relativa A PAT"@it ;
+    rdfs:domain INAILCore:DenunciaPAT ;
+    rdfs:range INAILCore:PosizioneAssicurativaTerritoriale .
+
+INAILCore:denunciaRelativaASedeINAIL a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "denuncia Relativa A Sede INAIL"@it ;
+    rdfs:domain INAILCore:DenunciaINAIL ;
+    rdfs:range INAILCore:StrutturaINAIL .
+
+INAILCore:denunciaRelativaASoggettoAssicurante a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "denuncia Relativa A Soggetto Assicurante"@it ;
+    rdfs:domain INAILCore:DenunciaINAIL ;
+    rdfs:range INAILCore:SoggettoAssicuranteINAIL .
+
+INAILCore:faRiferimentoASedeLavoro a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "fa Riferimento A Sede Lavoro"@it .
+
+INAILCore:haAvutoClassificazioneATECO a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha Avuto Classificazione ATECO"@it ;
+    rdfs:domain INAILCore:StatoDiSoggettoAssicurante ;
+    rdfs:range skos:Concept .
+
+INAILCore:haAvutoNaturaGiuridica a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha Avuto Natura Giuridica"@it ;
+    rdfs:domain INAILCore:StatoDiSoggettoAssicurante ;
+    rdfs:range INAILCore:NaturaGiuridica .
+
+INAILCore:haAvutoResidenza a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha Avuto Residenza"@it ;
+    rdfs:domain INAILCore:StatoDiPersonaFisica ;
+    rdfs:range CLV:Feature .
+
+INAILCore:haClassificazioneATECO a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha Classificazione ATECO"@it ;
+    rdfs:domain INAILCore:SoggettoAssicuranteINAIL ;
+    rdfs:range skos:Concept .
+
+INAILCore:haLuogoDiNascita a owl:ObjectProperty ;
+    rdfs:label "ha Luogo Di Nascita"@it ;
+    rdfs:domain INAILCore:PersonaFisica ;
+    rdfs:range CLV:Feature .
+
+INAILCore:haNaturaGiuridica a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha Natura Giuridica"@it ;
+    rdfs:domain INAILCore:SoggettoAssicuranteINAIL ;
+    rdfs:range INAILCore:NaturaGiuridica .
+
+INAILCore:haResidenza a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha Residenza"@it ;
+    rdfs:domain INAILCore:PersonaFisica ;
+    rdfs:range CLV:Feature .
+
+INAILCore:haResponsabileUfficio a owl:ObjectProperty ;
+    rdfs:label "ha Responsabile Ufficio"@it ;
+    rdfs:domain INAILCore:StrutturaINAIL ;
+    rdfs:range INAILCore:ResponsabileUfficio .
+
+INAILCore:haSedeLegaleIn a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha Sede Legale In"@it ;
+    rdfs:domain INAILCore:SoggettoAssicuranteINAIL ;
+    rdfs:range CLV:Feature .
+
+INAILCore:haStatoDiSoggetto a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha Stato Di Soggetto"@it ;
+    rdfs:domain INAILCore:Soggetto ;
+    rdfs:range INAILCore:StatoDiSoggetto .
+
+INAILCore:haStatoRapportoAssicurativo a owl:FunctionalProperty,
+        owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha Stato Rapporto Assicurativo"@it ;
+    rdfs:range INAILCore:StatoRapportoAssicurativoINAIL .
+
+INAILCore:narrowerLegalStatus a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "narrower Legal Status"@it .
+
+INAILCore:panAppartieneASoggettoAssicurante a owl:ObjectProperty ;
+    rdfs:label "pan Appartiene A Soggetto Assicurante"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaNavigazione ;
+    rdfs:range INAILCore:SoggettoAssicuranteINAIL .
+
+INAILCore:panCompetenzaDi a owl:ObjectProperty ;
+    rdfs:label "pan Competenza Di"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaNavigazione ;
+    rdfs:range INAILCore:SedeINAIL .
+
+INAILCore:panHaSettoreAttivita a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "pan Ha Settore Attivita"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaNavigazione ;
+    rdfs:range INAILCore:SettoreAttivita .
+
+INAILCore:panHaStatoRapportoAssicurativo a owl:FunctionalProperty,
+        owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "pan Ha Stato Rapporto Assicurativo"@it ;
+    rdfs:subPropertyOf INAILCore:haStatoRapportoAssicurativo ;
+    rdfs:domain INAILCore:PosizioneAssicurativaNavigazione .
+
+INAILCore:patAppartieneASoggettoAssicurante a owl:ObjectProperty ;
+    rdfs:label "pat Appartiene A Soggetto Assicurante"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaTerritoriale ;
+    rdfs:range INAILCore:SoggettoAssicuranteINAIL .
+
+INAILCore:patCompetenzaDi a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "pat Competenza Di"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaTerritoriale ;
+    rdfs:range INAILCore:SedeINAIL .
+
+INAILCore:patHaFasciaNumeroAddetti a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "pat Ha Fascia Numero Addetti"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaTerritoriale ;
+    rdfs:range INAILCore:FasciaNumeroAddetti .
+
+INAILCore:patHaSettoreAttivita a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "pat Ha Settore Attivita"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaTerritoriale ;
+    rdfs:range INAILCore:SettoreAttivita .
+
+INAILCore:patHaStatoRapportoAssicurativo a owl:FunctionalProperty,
+        owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "pat Ha Stato Rapporto Assicurativo"@it ;
+    rdfs:subPropertyOf INAILCore:haStatoRapportoAssicurativo ;
+    rdfs:domain INAILCore:PosizioneAssicurativaTerritoriale .
+
+INAILCore:personaHaCittadinanza a owl:ObjectProperty ;
+    rdfs:label "persona Ha Cittadinanza"@it ;
+    rdfs:domain INAILCore:PersonaFisica ;
+    rdfs:range INAILCore:Cittadinanza .
+
+INAILCore:polizzaHaStatoRapportoAssicurativo a owl:FunctionalProperty,
+        owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "polizza Ha Stato Rapporto Assicurativo"@it ;
+    rdfs:subPropertyOf INAILCore:haStatoRapportoAssicurativo ;
+    rdfs:domain INAILCore:PolizzaINAIL .
+
+INAILCore:polizzaHaTipoPeriodo a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "polizza Ha Tipo Periodo"@it ;
+    rdfs:range INAILCore:TipoPeriodoRetribuzione .
+
+INAILCore:polizzaRelativaAPAN a owl:ObjectProperty ;
+    rdfs:label "polizza Relativa A PAN"@it ;
+    rdfs:range INAILCore:PosizioneAssicurativaNavigazione .
+
+INAILCore:polizzaRelativaAPAT a owl:ObjectProperty ;
+    rdfs:label "polizza Relativa A PAT"@it ;
+    rdfs:range INAILCore:PosizioneAssicurativaTerritoriale .
+
+INAILCore:retribuzioneHaTipoPeriodo a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "retribuzione Ha Tipo Periodo"@it ;
+    rdfs:domain INAILCore:RetribuzioneComplessiva ;
+    rdfs:range INAILCore:TipoPeriodoRetribuzione .
+
+INAILCore:retribuzioneRelativaAPAN a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "retribuzione Relativa A PAN"@it ;
+    rdfs:domain INAILCore:RetribuzioneComplessiva ;
+    rdfs:range INAILCore:PosizioneAssicurativaNavigazione .
+
+INAILCore:retribuzioneRelativaAPAT a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "retribuzione Relativa A PAT"@it ;
+    rdfs:domain INAILCore:RetribuzioneComplessiva ;
+    rdfs:range INAILCore:PosizioneAssicurativaTerritoriale .
+
+INAILCore:retribuzioneRelativaASoggettoAssicurante a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "retribuzione Relativa A Soggetto Assicurante"@it ;
+    rdfs:domain INAILCore:RetribuzioneComplessiva ;
+    rdfs:range INAILCore:SoggettoAssicuranteINAIL .
+
+INAILCore:ricopreRuolo a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ricopre Ruolo"@it .
+
+INAILCore:ricopreRuoloDiAssicurato a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ricopre Ruolo Di Assicurato"@it ;
+    rdfs:subPropertyOf INAILCore:ricopreRuolo ;
+    rdfs:domain INAILCore:PersonaFisica ;
+    rdfs:range INAILCore:SoggettoAssicuratoINAIL .
+
+INAILCore:ricopreRuoloResponsabileUfficio a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ricopre Ruolo Responsabile Ufficio"@it ;
+    rdfs:subPropertyOf INAILCore:ricopreRuolo ;
+    rdfs:domain INAILCore:PersonaFisica ;
+    rdfs:range INAILCore:ResponsabileUfficio .
+
+INAILCore:situatoIn a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "situato In"@it ;
+    rdfs:domain INAILCore:SedeLavoro ;
+    rdfs:range CLV:Feature .
+
+INAILCore:soggettoAssicuranteAssicura a owl:ObjectProperty ;
+    rdfs:label "soggetto Assicurante Assicura"@it ;
+    rdfs:domain INAILCore:SoggettoAssicuranteINAIL ;
+    rdfs:range INAILCore:SoggettoAssicuratoINAIL .
+
+INAILCore:soggettoAssicuranteCompetenzaDi a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "soggetto Assicurante Competenza Di"@it ;
+    rdfs:domain INAILCore:SoggettoAssicuranteINAIL ;
+    rdfs:range INAILCore:SedeINAIL .
+
+INAILCore:soggettoAssicuranteHaAvutoDimensione a owl:ObjectProperty ;
+    rdfs:label "soggetto Assicurante Ha Avuto Dimensione "@it ;
+    rdfs:domain INAILCore:StatoDiSoggettoAssicurante ;
+    rdfs:range INAILCore:DimensioneSoggettoAssicurante .
+
+INAILCore:soggettoAssicuranteHaDimensione a owl:ObjectProperty ;
+    rdfs:label "soggetto Assicurante Ha Dimensione"@it ;
+    rdfs:range INAILCore:DimensioneSoggettoAssicurante .
+
+INAILCore:soggettoAssicuranteHaFasciaNumeroLavoratori a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "soggetto Assicurante Ha Fascia Numero Lavoratori"@it ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf (
+                    INAILCore:SoggettoAssicuranteINAIL
+                    INAILCore:StatoDiSoggettoAssicurante ) ] ;
+    rdfs:range INAILCore:FasciaNumeroLavoratori .
+
+INAILCore:soggettoAssicuranteHaSettoreAttivita a owl:ObjectProperty ;
+    rdfs:label "soggetto Assicurante Ha Settore Attivita"@it ;
+    rdfs:domain INAILCore:SoggettoAssicuranteINAIL ;
+    rdfs:range INAILCore:SettoreAttivita .
+
+INAILCore:soggettoAssicuranteHaStatoRapportoAssicurativo a owl:FunctionalProperty,
+        owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "soggetto Assicurante Ha Stato Rapporto Assicurativo"@it ;
+    rdfs:subPropertyOf INAILCore:haStatoRapportoAssicurativo ;
+    rdfs:domain INAILCore:SoggettoAssicuranteINAIL .
+
+INAILCore:soggettoAssicuranteVariataIn a owl:ObjectProperty ;
+    rdfs:label "soggetto Assicurante Variato in"@it ;
+    rdfs:domain INAILCore:SoggettoAssicuranteINAIL ;
+    rdfs:range INAILCore:SoggettoAssicuranteINAIL .
+
+INAILCore:strutturaINAILSituataIn a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "struttura INAIL Situata In"@it ;
+    rdfs:domain INAILCore:StrutturaINAIL ;
+    rdfs:range CLV:Feature .
+
+INAILCore:tipoCertificatoRelativoAPAN a owl:ObjectProperty ;
+    rdfs:label "tipo Certificato Relativo A PAN"@it ;
+    rdfs:domain INAILCore:TipoCertificatoPAN ;
+    rdfs:range INAILCore:PosizioneAssicurativaNavigazione .
+
+skos:broader a owl:ObjectProperty .
+
+### Datatypes
+
+xsd:double a rdfs:Datatype .
+
+### Annotation Properties
+
+dct:accessURL a owl:AnnotationProperty .
+
+dct:description a owl:AnnotationProperty .
+
+dct:downloadURL a owl:AnnotationProperty .
+
+dct:format a owl:AnnotationProperty .
+
+dct:identifier a owl:AnnotationProperty .
+
+dct:license a owl:AnnotationProperty .
+
+dct:title a owl:AnnotationProperty .
+
+foaf:name a owl:AnnotationProperty .
+
+vcard:fn a owl:AnnotationProperty .
+
+vcard:hasEmail a owl:AnnotationProperty .
+
+### Data Properties
+
+INAILCore:annoCompetenzaPolizza a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "anno Competenza Polizza"@it ;
+    rdfs:domain INAILCore:PolizzaINAIL ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Anno di competenza della polizza"@it .
+
+INAILCore:annoCompetenzaRetribuzione a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "anno Competenza Retribuzione"@it ;
+    rdfs:domain INAILCore:RetribuzioneComplessiva ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Anno di competenza della retribuzione"@it .
+
+INAILCore:annoUltimaClassificazione a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "anno Ultima Classificazione"@it ;
+    rdfs:domain INAILCore:SoggettoAssicuranteINAIL ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Anno dell'ultima classificazione"@it .
+
+INAILCore:classificazioneDannoBiologico a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "classificazione Danno Biologico"@it ;
+    rdfs:domain INAILCore:RetribuzioneComplessiva ;
+    rdfs:comment "Classificazione del danno biologico"@it .
+
+INAILCore:codiceAssicurativoPersonale a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice Assicurativo Personale"@it ;
+    rdfs:domain INAILCore:PolizzaINAIL ;
+    rdfs:comment "Codice assicurativo identificativo della persona"@it .
+
+INAILCore:codiceBelfioreCittadinanza a owl:DatatypeProperty ;
+    rdfs:label "codice Belfiore Cittadinanza"@it ;
+    rdfs:domain INAILCore:Cittadinanza ;
+    rdfs:comment "Codice Belfiore Cittadinanza"@it .
+
+INAILCore:codiceCanaleAcquisizione a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice Canale Acquisizione"@it ;
+    rdfs:domain INAILCore:CanaleAcquisizione ;
+    rdfs:comment "Codice del canale di acquisizione"@it ;
+    rdfs:isDefinedBy true .
+
+INAILCore:codiceCategoriaFonteDenuncia a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice Categoria Fonte Denuncia"@it ;
+    rdfs:domain INAILCore:FonteDenuncia ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Codice Categoria della fonte della denuncia"@it .
+
+INAILCore:codiceCausaSospensioneRetribuzione a owl:DatatypeProperty ;
+    rdfs:label "codice Causa Sospensione Retribuzione"@it ;
+    rdfs:domain INAILCore:RetribuzioneComplessiva ;
+    rdfs:comment "Codice della causa di sospensione della retribuzione"@it .
+
+INAILCore:codiceCausaStatoRapportoAssicurativo a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice Causa Stato Rapporto Assicurativo"@it ;
+    rdfs:domain INAILCore:StatoRapportoAssicurativoINAIL ;
+    rdfs:comment "Codice della Causa dello Stato rapporto assicurativo"@it ;
+    rdfs:isDefinedBy true .
+
+INAILCore:codiceEsitoPratica a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice Esito Pratica"@it ;
+    rdfs:domain INAILCore:DenunciaINAIL ;
+    rdfs:comment "Cosice esito pratica"@it .
+
+INAILCore:codiceFiscale a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice Fiscale"@it ;
+    rdfs:subPropertyOf INAILCore:identificatoreFiscale ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf (
+                    INAILCore:Soggetto
+                    INAILCore:StatoDiSoggetto ) ] ;
+    rdfs:comment "Codice Fiscale"@it .
+
+INAILCore:codiceFonteDenuncia a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice Fonte Denuncia"@it ;
+    rdfs:domain INAILCore:FonteDenuncia ;
+    rdfs:comment "Codice della fonte della denuncia"@it ;
+    rdfs:isDefinedBy true .
+
+INAILCore:codiceIncarico a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice Incarico"@it ;
+    rdfs:domain INAILCore:ResponsabileUfficio ;
+    rdfs:comment "Codice dell'Incarico"@it .
+
+INAILCore:codiceLivello1 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice Livello 1"@it ;
+    rdfs:comment "Codice Livello 1"@it ;
+    rdfs:isDefinedBy true .
+
+INAILCore:codiceLivello2 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice Livello 2"@it ;
+    rdfs:comment "Codice Livello 2"@it .
+
+INAILCore:codiceNaturaGiuridica a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice Natura Giuridica"@it ;
+    rdfs:domain INAILCore:NaturaGiuridica ;
+    rdfs:comment "Codice Natura Giuridica"@it ;
+    rdfs:isDefinedBy true .
+
+INAILCore:codicePAN a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice PAN"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaNavigazione .
+
+INAILCore:codicePAT a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice PAT"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaTerritoriale ;
+    rdfs:comment "Codice Pat"@it ;
+    rdfs:isDefinedBy true .
+
+INAILCore:codiceSoggettoAssicurante a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice Soggetto Assicurante"@it ;
+    rdfs:domain INAILCore:SoggettoAssicuranteINAIL ;
+    rdfs:comment "Codice del SoggettoAssicurante"@it ;
+    rdfs:isDefinedBy true .
+
+INAILCore:codiceStatoRapportoAssicurativo a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice Stato Rapporto Assicurativo"@it ;
+    rdfs:domain INAILCore:StatoRapportoAssicurativoINAIL ;
+    rdfs:comment "Identificativo del codice dello stato del rapporto assicurativo"@it .
+
+INAILCore:codiceStrutturaINAIL a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "Codice Struttura INAIL"@it ;
+    rdfs:domain INAILCore:StrutturaINAIL ;
+    rdfs:comment "Codice Struttura INAIL"@it .
+
+INAILCore:codiceTipoCanaleAcquisizione a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice Tipo Canale Acquisizione"@it ;
+    rdfs:domain INAILCore:CanaleAcquisizione ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Codice relativo al Tipo di Canale  acquisizione"@it .
+
+INAILCore:codiceTipoFonteDenuncia a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice Tipo Fonte Denuncia"@it ;
+    rdfs:domain INAILCore:FonteDenuncia ;
+    rdfs:comment "Codice relativo al  Tipo di fonte della denuncia"@it .
+
+INAILCore:codiceTipoIncarico a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice Tipo Incarico"@it ;
+    rdfs:domain INAILCore:ResponsabileUfficio ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Codice della tipologia di incarico"@it ;
+    rdfs:isDefinedBy true .
+
+INAILCore:codiceTipoSettoreAttivita a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice Tipo Settore Attivita"@it ;
+    rdfs:comment "Codice relativo al Tipo di settore attività"@it ;
+    rdfs:isDefinedBy true .
+
+INAILCore:cognomePersona a owl:DatatypeProperty ;
+    rdfs:label "cognome Persona"@it ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf (
+                    INAILCore:PersonaFisica
+                    INAILCore:StatoDiPersonaFisica ) ] ;
+    rdfs:comment "Cognome della Persona"@it .
+
+INAILCore:dannoBiologicoComplessivo a owl:DatatypeProperty ;
+    rdfs:label "danno Biologico Complessivo"@it ;
+    rdfs:domain INAILCore:PersonaFisica ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Indica il grado complessivo del danno biologico"@it .
+
+INAILCore:dataCessazioneAttivitaPAN a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data Cessazione Attivita PAN"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaNavigazione .
+
+INAILCore:dataCessazioneAttivitaPAT a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data Cessazione Attivita PAT"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaTerritoriale ;
+    rdfs:comment "Data della Cessazione dell'attività della Pat"@it .
+
+INAILCore:dataCostituzione a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data Costituzione"@it ;
+    rdfs:domain INAILCore:SoggettoAssicuranteINAIL ;
+    rdfs:comment "Data  Costituzione"@it .
+
+INAILCore:dataDenuncia a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data Denuncia"@it ;
+    rdfs:domain INAILCore:DenunciaINAIL ;
+    rdfs:comment "Data della Denuncia"@it .
+
+INAILCore:dataDiComunicazioneGRADenuncia a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data Di Comunicazione GRA Denuncia"@it ;
+    rdfs:domain INAILCore:DenunciaINAIL ;
+    rdfs:comment "Data della comunicazione in GRA della denuncia"@it .
+
+INAILCore:dataDiCreazioneDenuncia a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data Di Creazione Denuncia"@it ;
+    rdfs:domain INAILCore:DenunciaINAIL ;
+    rdfs:comment "Data della creazione della denuncia"@it .
+
+INAILCore:dataDigitazioneDenuncia a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data Digitazione Denuncia"@it ;
+    rdfs:domain INAILCore:DenunciaINAIL ;
+    rdfs:comment "Indica la data di digitazione della denuncia"@it .
+
+INAILCore:dataDiNascita a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data Di Nascita"@it ;
+    rdfs:domain INAILCore:PersonaFisica ;
+    rdfs:comment "Data Di Nascita"@it .
+
+INAILCore:dataFineSospensioneRetribuzione a owl:DatatypeProperty ;
+    rdfs:label "data Fine Sospensione Retribuzione"@it ;
+    rdfs:domain INAILCore:RetribuzioneComplessiva ;
+    rdfs:comment "Data di fine sospensione della retribuzione"@it .
+
+INAILCore:dataFineValiditaTariffa a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data Fine Validita Tariffa"@it ;
+    rdfs:domain INAILCore:PolizzaINAIL ;
+    rdfs:comment "Data della fine validità della tariffa"@it .
+
+INAILCore:dataFineValiditaTariffaRetribuzione a owl:DatatypeProperty ;
+    rdfs:label "data Fine Validita Tariffa Retribuzione"@it ;
+    rdfs:domain INAILCore:RetribuzioneComplessiva ;
+    rdfs:comment "Data di fine validità della tariffa di retribuzione"@it .
+
+INAILCore:dataInizioAttivita a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data Inizio Attivita"@it ;
+    rdfs:domain INAILCore:SoggettoAssicuranteINAIL ;
+    rdfs:comment "Data Inizio Attività"@it .
+
+INAILCore:dataInizioAttivitaPAN a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data Inizio Attivita PAN"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaNavigazione .
+
+INAILCore:dataInizioAttivitaPAT a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data Inizio Attivita PAT"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaTerritoriale ;
+    rdfs:comment "Data di Inizio attività della Pat"@it .
+
+INAILCore:dataInizioRapportoAssicurativo a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data Inizio Rapporto Assicurativo"@it ;
+    rdfs:domain INAILCore:StatoRapportoAssicurativoINAIL ;
+    rdfs:comment "Data dell'inizio del rapporto assicurativo"@it .
+
+INAILCore:dataInizioRischioAssicurativo a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data Inizio Rischio Assicurativo"@it ;
+    rdfs:domain INAILCore:PolizzaINAIL ;
+    rdfs:comment "Data Inizio Rischio Assicurativo"@it .
+
+INAILCore:dataInizioValiditaTariffa a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data Inizio Validita Tariffa"@it ;
+    rdfs:domain INAILCore:PolizzaINAIL ;
+    rdfs:comment "Data di inizio della validità della tariffa"@it .
+
+INAILCore:dataInizioValiditaTariffaRetribuzione a owl:DatatypeProperty ;
+    rdfs:label "data Inizio Validita Tariffa Retribuzione"@it ;
+    rdfs:domain INAILCore:RetribuzioneComplessiva ;
+    rdfs:comment "Data di inizio della validità della tariffa di retribuzione"@it .
+
+INAILCore:dataInizioVerificaDenuncia a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data Inizio Verifica Denuncia"@it ;
+    rdfs:domain INAILCore:DenunciaINAIL ;
+    rdfs:comment "Data Inizio Verifica Denuncia"@it .
+
+INAILCore:dataProtocollazioneDenuncia a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data Protocollazione Denuncia"@it ;
+    rdfs:domain INAILCore:DenunciaINAIL ;
+    rdfs:comment "Data di Protocollazione della Denuncia"@it .
+
+INAILCore:dataVerificaDenuncia a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data Verifica Denuncia"@it ;
+    rdfs:domain INAILCore:DenunciaINAIL ;
+    rdfs:comment "Data della verifica della denuncia"@it .
+
+INAILCore:definizioneAmministrativaPrevalente a owl:DatatypeProperty ;
+    rdfs:label "definizione Amministrativa Prevalente"@it ;
+    rdfs:domain INAILCore:PersonaFisica .
+
+INAILCore:descrizioneCanaleAcquisizione a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione Canale Acquisizione"@it ;
+    rdfs:domain INAILCore:CanaleAcquisizione ;
+    rdfs:comment "Descrizione Canale Acquisizione"@it .
+
+INAILCore:descrizioneCategoriaFonteDenuncia a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione Categoria Fonte Denuncia"@it ;
+    rdfs:domain INAILCore:FonteDenuncia ;
+    rdfs:comment "Descrizione  Categoria  fonte  denuncia"@it .
+
+INAILCore:descrizioneCausaStatoRapportoAssicurativo a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione Causa Stato Rapporto Assicurativo"@it ;
+    rdfs:domain INAILCore:StatoRapportoAssicurativoINAIL ;
+    rdfs:comment "Descrizione della Causa dello Stato rapporto assicurativo"@it .
+
+INAILCore:descrizioneCittadinanza a owl:DatatypeProperty ;
+    rdfs:label "descrizione Cittadinanza"@it ;
+    rdfs:domain INAILCore:Cittadinanza ;
+    rdfs:comment "Descrizione Cittadinanza"@it .
+
+INAILCore:descrizioneDimensioneSoggettoAssicurante a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione Dimensione Soggetto Assicurante"@it ;
+    rdfs:domain INAILCore:DimensioneSoggettoAssicurante ;
+    rdfs:comment "Descrizione Dimensione Soggetto Assicurante"@it .
+
+INAILCore:descrizioneEsitoPratica a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione Esito Pratica"@it ;
+    rdfs:domain INAILCore:DenunciaINAIL ;
+    rdfs:comment "Descrizione Esito Pratica"@it .
+
+INAILCore:descrizioneFonteDenuncia a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione Fonte Denuncia"@it ;
+    rdfs:domain INAILCore:FonteDenuncia ;
+    rdfs:comment "Descrizione Fonte Denuncia"@it .
+
+INAILCore:descrizioneIncarico a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione Incarico"@it ;
+    rdfs:domain INAILCore:ResponsabileUfficio ;
+    rdfs:comment "Descrizione  Incarico"@it .
+
+INAILCore:descrizioneLivello1 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione Livello 1"@it ;
+    rdfs:comment "Descrizione del Livello 1"@it .
+
+INAILCore:descrizioneLivello2 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione Livello 2"@it ;
+    rdfs:comment "Descrizione del Livello 2"@it .
+
+INAILCore:descrizioneNaturaGiuridica a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione Natura Giuridica"@it ;
+    rdfs:domain INAILCore:NaturaGiuridica ;
+    rdfs:comment "Descrizione Natura Giuridica"@it .
+
+INAILCore:descrizioneRiclassificazioneDenuncia a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione Riclassificazione Denuncia"@it ;
+    rdfs:domain INAILCore:RiclassificazioneDenunciaINAIL ;
+    rdfs:comment "Descrizione Riclassificazione Denuncia"@it .
+
+INAILCore:descrizioneStatoRapportoAssicurativo a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione Stato Rapporto Assicurativo"@it ;
+    rdfs:domain INAILCore:StatoRapportoAssicurativoINAIL ;
+    rdfs:comment "Descrizione dello Stato rapporto assicurativo"@it .
+
+INAILCore:descrizioneStrutturaINAIL a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "Descrizione Struttura INAIL"@it ;
+    rdfs:domain INAILCore:StrutturaINAIL ;
+    rdfs:comment "Descrizione Struttura INAIL"@it .
+
+INAILCore:descrizioneStrutturaINAILEstesa a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione Struttura INAIL Estesa"@it ;
+    rdfs:domain INAILCore:StrutturaINAIL ;
+    rdfs:comment "descrizione Struttura INAIL Estesa"@it .
+
+INAILCore:descrizioneTipoCanaleAcquisizione a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione Tipo Canale Acquisizione"@it ;
+    rdfs:domain INAILCore:CanaleAcquisizione ;
+    rdfs:comment "Descrizione della tipologia del canale acquisizione"@it .
+
+INAILCore:descrizioneTipoFonteDenuncia a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione Tipo Fonte Denuncia"@it ;
+    rdfs:domain INAILCore:FonteDenuncia ;
+    rdfs:comment "Descrizione della tipologia di fonte della denuncia"@it .
+
+INAILCore:descrizioneTipoIncarico a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione Tipo Incarico"@it ;
+    rdfs:domain INAILCore:ResponsabileUfficio ;
+    rdfs:comment "Descrizione Tipo Incarico"@it .
+
+INAILCore:descrizioneTipoSettoreAttivita a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione Tipo Settore Attivita"@it .
+
+INAILCore:eta a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "Età"@it ;
+    rdfs:domain INAILCore:PersonaFisica ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Età del soggetto alla data di osservazione."@it .
+
+INAILCore:fineValidita a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "fine Validita"@it ;
+    rdfs:domain INAILCore:StatoPassato ;
+    rdfs:comment "Fine  Validità"@it .
+
+INAILCore:idCertificato a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "id Certificato"@it ;
+    rdfs:domain INAILCore:TipoCertificatoPAN .
+
+INAILCore:idDenuncia a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "id Denuncia"@it ;
+    rdfs:domain INAILCore:DenunciaINAIL ;
+    rdfs:comment "campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità"@it .
+
+INAILCore:identificatoreFiscale a owl:DatatypeProperty ;
+    rdfs:label "identificatore Fiscale"@it ;
+    rdfs:comment "Identificatore  Fiscale"@it .
+
+INAILCore:idPolizza a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "id Polizza"@it ;
+    rdfs:domain INAILCore:PolizzaINAIL ;
+    rdfs:comment "campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità"@it .
+
+INAILCore:idRetribuzioneSoggettoAssicurante a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "id Retribuzione Soggetto Assicurante"@it ;
+    rdfs:domain INAILCore:RetribuzioneComplessiva ;
+    rdfs:comment "campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità"@it .
+
+INAILCore:importoRetribuzioniGeneraliInfortuni a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "importo Retribuzioni Generali Infortuni"@it ;
+    rdfs:domain INAILCore:RetribuzioneComplessiva ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Indica l'importo delle retribuzioni generali per infortuni"@it .
+
+INAILCore:importoRetribuzioniInfortuniPAT a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "importo Retribuzioni Infortuni PAT"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaTerritoriale ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Importo della retribuzione infortuni relativo alla PAT"@it .
+
+INAILCore:importoRetribuzioniParzialmenteEsenti a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "importo Retribuzioni Parzialmente Esenti"@it ;
+    rdfs:domain INAILCore:RetribuzioneComplessiva ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Importo delle Retribuzioni parzialmente esenti"@it .
+
+INAILCore:importoRetribuzioniSilicosi a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "importo Retribuzioni Silicosi"@it ;
+    rdfs:domain INAILCore:RetribuzioneComplessiva ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Indica l'importo delle retribuzioni per silicosi"@it .
+
+INAILCore:indirizzoEmail a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "indirizzo Email"@it ;
+    rdfs:domain INAILCore:StrutturaINAIL ;
+    rdfs:comment "Indirizzo Email"@it .
+
+INAILCore:indirizzoStrutturaINAIL a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "Indirizzo Struttura INAIL"@it ;
+    rdfs:domain INAILCore:StrutturaINAIL ;
+    rdfs:comment "Indirizzo Struttura INAIL"@it .
+
+INAILCore:inizioValidita a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "inizio Validita"@it ;
+    rdfs:domain INAILCore:StatoPassato ;
+    rdfs:comment "Inizio Validità"@it .
+
+INAILCore:matricola a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "matricola"@it ;
+    rdfs:domain INAILCore:ResponsabileUfficio ;
+    rdfs:comment "Matricola "@it ;
+    rdfs:isDefinedBy true .
+
+INAILCore:nomePersona a owl:DatatypeProperty ;
+    rdfs:label "nome Persona"@it ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf (
+                    INAILCore:PersonaFisica
+                    INAILCore:StatoDiPersonaFisica ) ] ;
+    rdfs:comment "Nome della Persona"@it .
+
+INAILCore:numeroAddettiPAT a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Addetti PAT"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaTerritoriale ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero Addetti della PAT"@it .
+
+INAILCore:numeroAddettiRetribuzione a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Addetti Retribuzione"@it ;
+    rdfs:domain INAILCore:RetribuzioneComplessiva ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero degli addetti dell'azienda"@it .
+
+INAILCore:numeroAnniAttivitaPAT a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Anni Attivita PAT"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaTerritoriale ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero degli Anni di attività della pat"@it .
+
+INAILCore:numeroApparecchiRxGruppoA1 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Apparecchi Rx Gruppo A1"@it ;
+    rdfs:domain INAILCore:PolizzaRadiologi ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero Apparecchi Rx Gruppo A1"@it .
+
+INAILCore:numeroApparecchiRxGruppoA2 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Apparecchi Rx Gruppo A2"@it ;
+    rdfs:domain INAILCore:PolizzaRadiologi ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero Apparecchi Rx Gruppo A2"@it .
+
+INAILCore:numeroApparecchiRxGruppoA3 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Apparecchi Rx Gruppo A3"@it ;
+    rdfs:domain INAILCore:PolizzaRadiologi ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero Apparecchi Rx Gruppo A3"@it .
+
+INAILCore:numeroApparecchiRxGruppoA4 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Apparecchi Rx Gruppo A4"@it ;
+    rdfs:domain INAILCore:PolizzaRadiologi ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero Apparecchi Rx Gruppo A4"@it .
+
+INAILCore:numeroApparecchiRxGruppoA5 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Apparecchi Rx Gruppo A5"@it ;
+    rdfs:domain INAILCore:PolizzaRadiologi ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero Apparecchi Rx Gruppo A5"@it .
+
+INAILCore:numeroApparecchiRxGruppoA6 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Apparecchi Rx Gruppo A6"@it ;
+    rdfs:domain INAILCore:PolizzaRadiologi ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero Apparecchi Rx Gruppo A6"@it .
+
+INAILCore:numeroApparecchiRxGruppoB1 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Apparecchi Rx Gruppo B1"@it ;
+    rdfs:domain INAILCore:PolizzaRadiologi ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero Apparecchi Rx Gruppo B1"@it .
+
+INAILCore:numeroApparecchiRxGruppoB2 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Apparecchi Rx Gruppo B2"@it ;
+    rdfs:domain INAILCore:PolizzaRadiologi ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero Apparecchi Rx Gruppo B2"@it .
+
+INAILCore:numeroApprendistiPAT a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Apprendisti PAT"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaTerritoriale ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero di apprendisti relativi alla Posizione Assicurativa"@it .
+
+INAILCore:numeroDipendentiPAT a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Dipendenti PAT"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaTerritoriale ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero Dipendenti della PAT"@it .
+
+INAILCore:numeroFamiliariPAT a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Familiari PAT"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaTerritoriale ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero dei familiari di dipendenti relativi alla Posizione Assicurativa"@it .
+
+INAILCore:numeroGiornateLavorate a owl:DatatypeProperty ;
+    rdfs:label "numero Giornate Lavorate"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaNavigazione .
+
+INAILCore:numeroGiorniAttivitaPAT a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Giorni Attivita PAT"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaTerritoriale ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero dei Giorni di attività della Pat"@it .
+
+INAILCore:numeroLavoratori a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Lavoratori"@it ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf (
+                    INAILCore:SoggettoAssicuranteINAIL
+                    INAILCore:StatoDiSoggettoAssicurante ) ] ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Stima numero lavoratori annuo"@it .
+
+INAILCore:numeroLavoratoriAutonomiPAT a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Lavoratori Autonomi PAT"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaTerritoriale ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero dei Lavoratori autonomi della pat"@it .
+
+INAILCore:numeroLavoratoriAutonomiRetribuzione a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Lavoratori Autonomi Retribuzione"@it ;
+    rdfs:domain INAILCore:RetribuzioneComplessiva ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero dei lavoratori autonomi nell'ambito dell'azienda"@it .
+
+INAILCore:numeroLavoratoriSpecialiPAT a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Lavoratori Speciali PAT"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaTerritoriale ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero dei lavoratori speciali relativi alla Posizione Assicurativa"@it .
+
+INAILCore:numeroLavoratoriTotaliPAT a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Lavoratori Totali PAT"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaTerritoriale ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero dei lavoratori totali relativi alla Posizione Assicurativa"@it .
+
+INAILCore:numeroPATAttiveSoggettoAssicurante a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero PAT Attive Soggetto Assicurante"@it ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf (
+                    INAILCore:SoggettoAssicuranteINAIL
+                    INAILCore:StatoDiSoggettoAssicurante ) ] ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero delle PAT attive per il SoggettoAssicurante"@it .
+
+INAILCore:numeroPraticaDenuncia a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Pratica Denuncia "@it ;
+    rdfs:domain INAILCore:DenunciaINAIL ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Indica il numero di pratica della denuncia"@it ;
+    rdfs:isDefinedBy true .
+
+INAILCore:numeroSettoriAttivitaSoggettoAssicurante a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Settori Attivita Soggetto Assicurante"@it ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf (
+                    INAILCore:SoggettoAssicuranteINAIL
+                    INAILCore:StatoDiSoggettoAssicurante ) ] ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero dei settori di attività relativi al Soggetto Assicurante"@it .
+
+INAILCore:numeroSettoriPAT a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Settori PAT"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaTerritoriale ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero dei settori  della PAT"@it .
+
+INAILCore:numeroSociPAT a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Soci PAT"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaTerritoriale ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero dei soci relativi alla Posizione Assicurativa"@it .
+
+INAILCore:numeroTelefono a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Telefono"@it ;
+    rdfs:domain INAILCore:StrutturaINAIL ;
+    rdfs:comment "Numero di Telefono"@it .
+
+INAILCore:numeroTelefonoAlternativo a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Telefono Alternativo"@it ;
+    rdfs:domain INAILCore:StrutturaINAIL ;
+    rdfs:comment "Numero di Telefono Alternativo"@it .
+
+INAILCore:numeroTelefonoFAX a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Telefono FAX"@it ;
+    rdfs:domain INAILCore:StrutturaINAIL ;
+    rdfs:comment "Numero di telefono per FAX"@it .
+
+INAILCore:numeroTitolariPAT a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Titolari PAT"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaTerritoriale ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero dei titolari relativi alla Posizione Assicurativa"@it .
+
+INAILCore:numeroVociPAT a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero Voci PAT"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaTerritoriale ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero voci della PAT"@it .
+
+INAILCore:partitaIVA a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "partita IVA"@it ;
+    rdfs:subPropertyOf INAILCore:identificatoreFiscale ;
+    rdfs:comment "Partita Iva"@it .
+
+INAILCore:ragioneSociale a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "ragione Sociale"@it ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf (
+                    INAILCore:SoggettoAssicuranteINAIL
+                    INAILCore:StatoDiSoggettoAssicurante ) ] ;
+    rdfs:comment "Ragione  Sociale"@it .
+
+INAILCore:scontoRata a owl:DatatypeProperty ;
+    rdfs:label "sconto Rata"@it ;
+    rdfs:domain INAILCore:RetribuzioneComplessiva ;
+    rdfs:comment "Quota retribuzioni con codice di sconto da applicare in rata. "@it .
+
+INAILCore:scontoRegolazione a owl:DatatypeProperty ;
+    rdfs:label "sconto Regolazione"@it ;
+    rdfs:domain INAILCore:RetribuzioneComplessiva ;
+    rdfs:comment "Quota retribuzioni con codice di sconto da applicare in regolazione."@it .
+
+INAILCore:segueArticolo28 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "segue Articolo 28"@it ;
+    rdfs:domain INAILCore:RetribuzioneComplessiva ;
+    rdfs:comment "Segue  Articolo 28"@it .
+
+INAILCore:sesso a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "sesso"@it ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf (
+                    INAILCore:PersonaFisica
+                    INAILCore:StatoDiPersonaFisica ) ] ;
+    rdfs:comment "Sesso "@it .
+
+INAILCore:statoAttivitaSoggettoAssicurante a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "stato Attivita Soggetto Assicurante"@it ;
+    rdfs:domain INAILCore:SoggettoAssicuranteINAIL ;
+    rdfs:comment "Stato di attivita del soggetto assicurante"@it .
+
+INAILCore:statoChiusuraStruttura a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "stato Chiusura Struttura" ;
+    rdfs:domain INAILCore:StrutturaINAIL .
+
+INAILCore:tempoMedioDiInvioAVerificaDenuncia a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "tempo Medio Di Invio A Verifica Denuncia"@it ;
+    rdfs:domain INAILCore:DenunciaINAIL ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Tempo medio necessario per l'invio alla fase di verifica delle denunce"@it .
+
+INAILCore:tempoMedioDiLavorazioneDenuncia a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "tempo Medio Di Lavorazione Denuncia"@it ;
+    rdfs:domain INAILCore:DenunciaINAIL ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Tempo medio necessario per la lavorazione di denunce"@it .
+
+INAILCore:tempoMedioDiLavorazioneInGRADenuncia a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "tempo Medio Di Lavorazione In GRA Denuncia"@it ;
+    rdfs:domain INAILCore:DenunciaINAIL ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Tempo medio necessario per la lavorazione in GRA delle denunce"@it .
+
+INAILCore:tempoMedioDiPresaInCaricoGRADenuncia a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "tempo Medio Di Presa In Carico GRA Denuncia"@it ;
+    rdfs:domain INAILCore:DenunciaINAIL ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Tempo medio necessario per la presa in carico GRA delle denunce"@it .
+
+INAILCore:tempoMedioDiVerificaDenuncia a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "tempo Medio Di Verifica Denuncia"@it ;
+    rdfs:domain INAILCore:DenunciaINAIL ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Tempo medio necessario per la verifica di denunce"@it .
+
+INAILCore:tipoDiDenuncia a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "tipo Di Denuncia"@it ;
+    rdfs:domain INAILCore:DenunciaINAIL ;
+    rdfs:comment "Tipo Di Denuncia"@it ;
+    rdfs:isDefinedBy true .
+
+INAILCore:tipologiaDitta a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "tipologia Ditta"@it ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf (
+                    INAILCore:SoggettoAssicuranteINAIL
+                    INAILCore:StatoDiSoggettoAssicurante ) ] ;
+    rdfs:comment "Tipologia della Ditta"@it .
+
+INAILCore:tipoPATClassificazioneINAIL a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "tipo PAT Classificazione INAIL"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaTerritoriale ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Tipo  di Pat nella classificazione INAIL"@it .
+
+INAILCore:tipoPersona a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "tipo Persona"@it ;
+    rdfs:domain INAILCore:Soggetto ;
+    rdfs:comment "Tipo di Persona"@it .
+
+INAILCore:tipoPolizzaPAT a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "tipo Polizza PAT"@it ;
+    rdfs:domain INAILCore:PosizioneAssicurativaTerritoriale ;
+    rdfs:comment "Tipologia di polizza della PAT"@it .
+
+INAILCore:tipoSoggettoNaturaGiuridica a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "tipo Soggetto Natura Giuridica"@it ;
+    rdfs:domain INAILCore:NaturaGiuridica ;
+    rdfs:comment "Può assumere valori: Ente Pubblico (E) e Privati (P)."@it .
+
+INAILCore:tipoStrutturaINAIL a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "tipo Struttura INAIL"@it ;
+    rdfs:domain INAILCore:StrutturaINAIL ;
+    rdfs:comment "Indica di che tipo di Struttura Territoriale INAIL si tratta. I casi possibili sono: D = Strutture Centrali R = Direzioni Regionali S = Sedi C = COT"@it .
+
+INAILCore:UnioneEuropea a owl:DatatypeProperty ;
+    rdfs:label "Unione Europea"@it ;
+    rdfs:domain INAILCore:Cittadinanza ;
+    rdfs:comment "Indica se la cittadinanza è quella di un paese dell'Unione Europea"@it .
+
+### Classes
+
+CLV:Feature a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:haLuogoDiNascita ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+CPV:Person a owl:Class .
+
+INAILCore:Armatore a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILCore:ArmatoreResidenteAllEstero
+                    INAILCore:ArmatoreResidenteInItalia ) ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:armatoreNominaCapitano ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Armatore"@it,
+        "Person who Fitts a Ship Out"@en ;
+    rdfs:subClassOf INAILCore:SoggettoAssicuranteINAIL ;
+    rdfs:comment "L’armatore è colui che assume l’esercizio della nave divenendo di conseguenza titolare di tutti i rapporti giuridici che sono connessi a tale esercizio. Ai fini del regolamento per il collocamento della gente di mare (Art. 2, comma 1, lettera b), DPR 231/2006) per armatore si intende la persona fisica o il soggetto giuridico che esercita l'impresa di navigazione ai sensi dell'articolo 265 del CdN. Elemento essenziale che caratterizza lo status di armatore è la disponibilità della nave sulla base di un rapporto di natura reale (uso, usufrutto, proprietà ecc.) o di natura obbligatoria (comodato, locazione, ecc.). L'armatore può essere una persona fisica, una persona giuridica, un’associazione o una società di armamento."@it .
+
+INAILCore:ArmatoreResidenteAllEstero a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:armatoreHaIntermediario ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Armatore  Residente  Estero"@it,
+        "Person who Prepare a Ship to Sail and Resident Abroad"@en ;
+    owl:disjointWith INAILCore:ArmatoreResidenteInItalia ;
+    rdfs:comment "L’armatore straniero – persona fisica residente all’estero o soggetto diverso da persona fisica che abbia sede all’estero – può armare navi battenti bandiera italiana, per il cui equipaggio vige l’obbligo assicurativo ed ha, altresì, facoltà di richiedere all’Inail l’assicurazione dell’equipaggio di una nave battente bandiera estera, ossia iscritta presso compartimenti esteri, purché siano soddisfatti i requisiti di iscrizione ai Registri e di composizione dell’equipaggio previsti, cioè le navi siano iscritte presso gli appositi Registri Speciali tenuti presso le Direzioni Marittime, ovvero presso la Sezione terza del Registro Internazionale e purché l’equipaggio sia costituito per almeno due terzi, da marittimi di cittadinanza italiana. "@it .
+
+INAILCore:ArmatoreResidenteInItalia a owl:Class ;
+    rdfs:label "Armatore  Residente  In Italia"@it,
+        "Person who Prepare a Ship to Sail and Italian Resident"@en ;
+    rdfs:comment "Un armatore italiano può armare sia navi battenti bandiera italiana (per il cui equipaggio vige l’obbligo assicurativo) che navi battenti bandiera estera (art. 291 DPR 1124/1965) purché queste ultime siano iscritte presso gli appositi Registri Speciali tenuti presso le Direzioni Marittime, ovvero presso la Sezione terza del Registro Internazionale e purché l’equipaggio sia costituito per almeno due terzi, da marittimi di cittadinanza italiana."@it .
+
+INAILCore:Associazione a owl:Class ;
+    rdfs:label "Association"@en,
+        "Associazione"@it ;
+    rdfs:comment "L'associazione è un ente caratterizzato dall’organizzazione di più persone al fine di perseguire uno scopo comune"@it .
+
+INAILCore:AssociazioneNonRiconosciuta a owl:Class ;
+    rdfs:label "Associazione  Non Riconosciuta"@it,
+        "Unrecognized Association"@en ;
+    owl:disjointWith INAILCore:AssociazioneSenzaFiniDiLucro ;
+    rdfs:comment "Associazione non Riconosciuta ovvero priva di personalità giuridica"@it .
+
+INAILCore:AssociazioneSenzaFiniDiLucro a owl:Class ;
+    rdfs:label "Associazione  Senza Fini Di Lucro"@it,
+        "Non-Profit Association"@en ;
+    rdfs:comment " L'associazione senza scopo di lucro, non profit in inglese, è un ente non commerciale composto da 3 o più persone che si organizzano per il raggiungimento di scopi di natura ideale, solidale o di utilità sociale (culturali, ricreativi, sociali, ambientali, assistenziali, sportivi, etc.).  "@it .
+
+INAILCore:CanaleAcquisizione a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:codiceCanaleAcquisizione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:codiceTipoCanaleAcquisizione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:descrizioneCanaleAcquisizione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:descrizioneTipoCanaleAcquisizione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:denunciaRelativaACanaleAcquisizione ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Canale  Acquisizione"@it,
+        "Channel Acquisition"@en ;
+    rdfs:comment "Modalità con cui avviene l'acquisizione della denuncia INAIL"@it .
+
+INAILCore:Capitano a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:armatoreNominaCapitano ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Capitano"@it,
+        "Captain "@en ;
+    rdfs:comment "Il comandante della nave è il soggetto apicale dell’equipaggio ed è legato all’armatore dal contratto di arruolamento. Ha un generale potere di rappresentanza dell’armatore (Art. 292 CdN) ed è responsabile di tutte le attività che si svolgono nella nave, in particolare della sicurezza della nave, dell'equipaggio, dei passeggeri e del carico."@it .
+
+INAILCore:Cittadinanza a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:codiceBelfioreCittadinanza ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:descrizioneCittadinanza ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:UnioneEuropea ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:personaHaCittadinanza ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Citizenship"@en,
+        "Cittadinanza"@it ;
+    rdfs:comment "Il termine cittadinanza indica il rapporto tra un individuo e lo Stato ed è uno status al quale l'ordinamento giuridico ricollega la pienezza dei diritti civili e politici."@it .
+
+INAILCore:ConcessionarioServiziBordoEOfficina a owl:Class ;
+    rdfs:label "Concessionario  Servizi Bordo  E Officina"@it,
+        "On-board Services Dealer and Workshop"@en ;
+    rdfs:subClassOf INAILCore:SoggettoAssicuranteINAIL ;
+    rdfs:comment "Il Ministero Infrastrutture e Trasporti può autorizzare l’armatore (art. 17 della legge 856/1986) ad appaltare ad imprese nazionali o straniere i servizi complementari di bordo delle navi da crociera o di altri mezzi navali. I servizi di bordo oggetto di contratto di appalto, per le navi da crociera sono: - i servizi complementari di camera; - i servizi di cucina; - i servizi generali; - i servizi relativi ad attività commerciali complementari, accessorie o comunque relative all’attività crocieristica. I servizi di bordo oggetto di contratto di appalto, per i mezzi navali (galleggianti mobili): - i servizi già indicati per le navi da crociera; - i servizi di officina, di cantiere e assimilati."@it .
+
+INAILCore:DenunciaDiCessazioneINAIL a owl:Class ;
+    rdfs:label "Denuncia Di  Cessazione INAIL"@it,
+        "INAIL Complaint of Termination"@en ;
+    rdfs:comment "Denunce di cessazione inviate all’Inail dai  datori di lavoro che chiudono un’attività. Devono pervenire entro 30 gg dall'avvenuta cessazione tramite il servizio telematico ComUnica, per Imprese,  o per via telematica nel caso di polizze speciali e PAN"@it .
+
+INAILCore:DenunciaDiCessazionePAN a owl:Class ;
+    rdfs:label " PAN Complaint of Termination"@en,
+        "Denuncia Di  Cessazione PAN"@it ;
+    owl:disjointWith INAILCore:DenunciaDiIscrizionePAN ;
+    rdfs:comment "La denuncia di cessazione viene fatta dall’armatore per fine attività, fallimento, liquidazione e per cessazione “amministrativa” nei casi in cui viene denunciata la cessazione di PAN/certificati con le causali di cessazione “Affondamento/Naufragio”, Demolizione, Dismissione di bandiera/Vendita all’estero” della nave e con la causale “amministrativa” e non sussistono PAN attive."@it .
+
+INAILCore:DenunciaDiCessazionePAT a owl:Class ;
+    rdfs:label " PAT Complaint of Termination"@en,
+        "Denuncia  Di Cessazione PAT"@it ;
+    owl:disjointWith INAILCore:DenunciaDiIscrizionePAT ;
+    rdfs:comment "Il datore di lavoro che chiude una o più Pat deve darne comunicazione all’Inail entro 30 giorni dalla cessazione attraverso il servizio telematico ComUnica"@it .
+
+INAILCore:DenunciaDiIscrizioneINAIL a owl:Class ;
+    rdfs:label "Denuncia Di  Iscrizione INAIL"@it,
+        "INAIL Complaint of Enrollment"@en ;
+    rdfs:comment "Denunce presentate dai datori di lavoro all'Inail, nel momento in cui ciascuno inizia la propria attività lavorativa (la denuncia dei lavori o  denuncia di esercizio o di iscrizione telematica) per la valutazione dei rischi ed il calcolo del premio di assicurazione."@it .
+
+INAILCore:DenunciaDiIscrizionePAN a owl:Class ;
+    rdfs:label "Denuncia Di  Iscrizione PAN"@it,
+        "PAN Complaint of Enrollment"@en ;
+    rdfs:comment "Denunce presentate dai datori di lavoro all'Inail, nel momento in cui inizia la propria attività lavorativa di ciascuna PAN"@it .
+
+INAILCore:DenunciaDiIscrizionePAT a owl:Class ;
+    rdfs:label "Denuncia  Di Iscrizione PAT"@it,
+        "PAT Complaint of Enrollment"@en ;
+    rdfs:comment "Denunce presentate dai datori di lavoro all'Inail, nel momento in cui inizia la propria attività lavorativa di ciascuna PAT"@it .
+
+INAILCore:DenunciaDiRiattivazioneINAIL a owl:Class ;
+    rdfs:label "Denuncia Di  Riattivazione INAIL"@it,
+        "INAIL Complaint of Reactivation"@en ;
+    rdfs:comment "Procedura per la riapertura di un codice ditta a seguito di una cessazione avvenuta"@it .
+
+INAILCore:DenunciaDiVariazioneINAIL a owl:Class ;
+    rdfs:label "Denuncia Di  Variazione INAIL"@it,
+        "INAIL Complaint of Variation"@en ;
+    rdfs:comment "Denunce presentate dai datori di lavoro oltre la denuncia di iscrizione. Ogni variazione successiva alla presentazione della denuncia di iscrizione o di esercizio deve essere denunciata all’Inail(modificazioni di estensione e di natura del rischio già coperto dall’assicurazione e la cessazione delle lavorazioni, variazione della ragione sociale o del legale rappresentante, ecc.)."@it .
+
+INAILCore:DenunciaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILCore:DenunciaPAN
+                    INAILCore:DenunciaPAT
+                    INAILCore:DenunciaSoggettoAssicuranteINAIL ) ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:codiceEsitoPratica ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:dataDenuncia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:dataDiComunicazioneGRADenuncia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:dataDiCreazioneDenuncia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:dataDigitazioneDenuncia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:dataInizioVerificaDenuncia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:dataProtocollazioneDenuncia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:dataVerificaDenuncia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:denunciaRelativaACanaleAcquisizione ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:denunciaRelativaAFonteDenuncia ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:denunciaRelativaASedeINAIL ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:denunciaRelativaASoggettoAssicurante ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:descrizioneEsitoPratica ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:idDenuncia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:numeroPraticaDenuncia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:tempoMedioDiInvioAVerificaDenuncia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:tempoMedioDiLavorazioneDenuncia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:tempoMedioDiLavorazioneInGRADenuncia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:tempoMedioDiPresaInCaricoGRADenuncia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:tempoMedioDiVerificaDenuncia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:tipoDiDenuncia ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:label "Denuncia INAIL"@it,
+        "INAIL Complaint"@en ;
+    rdfs:comment "Rappresentano le pratiche assicurative che intervengono nel rapporto assicurativo; dalla costituzione della Azienda (denunce di esercizio), al suo mantenimento (denunce di emissione pat, denunce di variazione pat, denunce di cessazione pat), alla sua cessazione (denunce di cessazione azienda), o al momento della ripresa delle attività (denunce di riattivazione)."@it .
+
+INAILCore:DenunciaPAN a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILCore:DenunciaDiCessazionePAN
+                    INAILCore:DenunciaDiIscrizionePAN ) ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:denunciaRelativaAPAN ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Denuncia PAN"@it,
+        "PAN Complaint"@en ;
+    rdfs:comment "Dettaglio delle denunce di iscrizione, di variazione, di esercizio e di cessazione di una posizione assicurativa navigazione (Pan)"@it .
+
+INAILCore:DenunciaPAT a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILCore:DenunciaDiCessazionePAT
+                    INAILCore:DenunciaDiIscrizionePAT ) ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:denunciaRelativaAPAT ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Denuncia  PAT"@it,
+        "PAT Complaint"@en ;
+    rdfs:comment "Dettaglio delle denunce di iscrizione, di variazione, di esercizio e di cessazione di una posizione assicurativa territoriale (Pat)"@it .
+
+INAILCore:DenunciaSoggettoAssicuranteINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILCore:DenunciaDiCessazioneINAIL
+                    INAILCore:DenunciaDiIscrizioneINAIL
+                    INAILCore:DenunciaDiRiattivazioneINAIL
+                    INAILCore:DenunciaDiVariazioneINAIL ) ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:denunciaHaRiclassificazione ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Denuncia  Soggetto  Assicurante INAIL"@it,
+        "INAIL Complaint of Insuring Subject"@en ;
+    rdfs:comment "Il datore di lavoro, nel momento in cui inizia la propria attività lavorativa, deve presentare all’Inail la denuncia dei lavori (cd. denuncia di esercizio o di iscrizione telematica) per la valutazione dei rischi ed il calcolo del premio di assicurazione."@it .
+
+INAILCore:DimensioneSoggettoAssicurante a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:descrizioneDimensioneSoggettoAssicurante ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:soggettoAssicuranteHaAvutoDimensione ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:soggettoAssicuranteHaDimensione ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Dimensione  Soggetto  Assicurante"@it,
+        "Insuring Subject Size"@en ;
+    rdfs:comment "La dimensione del Azienda in INAIL corrisponde al numero dei dipendenti calcolato secondo le modalità previste dal d.m. 18 aprile 2005 (G.U. n. 238 del 12.10.2005) ed espresso in ULA (unità lavorative anno), laddove per ULA si intende il numero medio mensile di dipendenti occupati a tempo pieno durante un anno. I lavoratori a tempo parziale rappresentano frazioni di ULA (ad es. 120 dipendenti a tempo pieno per tutto l’anno corrispondono a 120 ULA, mentre 1 dipendente a tempo pieno occupato per 6 mesi corrisponde a 0,5 ULA). Nel caso in cui il calcolo delle ULA non corrisponda ad un numero intero si dovrà operare un arrotondamento matematico al primo decimale dopo la virgola. Se il primo decimale è inferiore a 5 si arrotonda per difetto, se invece è uguale o superiore a 5 si arrotonda per eccesso."@it .
+
+INAILCore:DirezioneRegionaleINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:afferisceADirezioneRegionale ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Direzione  Regionale  INAIL"@it,
+        "INAIL Regional Direction"@en ;
+    owl:disjointWith INAILCore:SedeINAIL ;
+    rdfs:comment "Direzione Regionale INAIL"@it .
+
+INAILCore:DittaDiCostruzioniNavali a owl:Class ;
+    rdfs:label "Ditta Di  Costruzioni Navali"@it,
+        "Shipbuilding Company"@en ;
+    rdfs:subClassOf INAILCore:SoggettoAssicuranteINAIL ;
+    rdfs:comment "La nave di nuova costruzione può necessitare di essere sottoposta a delle prove di navigazione a cura del personale del cantiere. In tal caso, l’impresa di costruzione deve assicurare i propri dipendenti per le attività in mare con l’assicurazione per gli addetti alla navigazione e alla pesca marittima. Al restante personale si applica anche in questo caso l’assicurazione generale e quindi l’obbligo assicurativo è assolto con le posizioni assicurative territoriali ai sensi del DM 12.12.2000."@it .
+
+INAILCore:EntePubblico a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILCore:EntePubblicoNonTerritoriale
+                    INAILCore:EntePubblicoTerritoriale ) ] ;
+    rdfs:label "Ente Pubblico"@it,
+        "Public Institution"@en ;
+    rdfs:comment "Ente del Settore Pubblico Allargato, istituzione dotata di personalità giuridica. Può essere un'amministrazione pubblica o una delle aziende o altro organismo controllato. Il settore pubblico allargato si compone di enti appartenenti alla pubblica amministrazione - P.a. (enti che producono servizi non destinabili alla vendita) e al settore extra P.a (enti che pur avendo una connotazione giuridica privatistica, ad esempio società per azioni, comunque risentono del controllo pubblico tramite la partecipazione al loro capitale)."@it .
+
+INAILCore:EntePubblicoNonTerritoriale a owl:Class ;
+    rdfs:label "Ente Pubblico  Non Territoriale"@it,
+        "Non-Territorial Public Institution"@en ;
+    owl:disjointWith INAILCore:EntePubblicoTerritoriale ;
+    rdfs:comment "Enti dotati di personalità giuridica pubblica nei quali non sussiste quale elemento costitutivo il territorio."@it .
+
+INAILCore:EntePubblicoTerritoriale a owl:Class ;
+    rdfs:label "Ente Pubblico  Territoriale"@it,
+        "Territorial Public Institution"@en ;
+    rdfs:comment "Un Ente territoriale  è un ente pubblico locale , che ha tra i suoi elementi costitutivi il territorio, il quale è quindi essenziale per l'esistenza dell'ente. Gli enti pubblici che non appartengono a questa categoria sono detti enti istituzionali.  E' ente territoriale la nazione ma lo sono anche quegli enti locali per i quali il territorio della circoscrizione non è solo limite della competenza degli organi, ma anche elemento costitutivo dell'ente stesso, i cui organi di governo sono rappresentativi della popolazione residente. Con riferimento a questi enti locali si suole parlare di governo locale. Secondo l'art. 114 della Costituzione, la Repubblica Italiana è costituita da un ente territoriale nazionale, lo Stato, e dai seguenti enti territoriali:  i comuni, le province, le città metropolitane,le regioni. Secondo il citato art. 114 \" essi sono enti autonomi con propri statuti, poteri e funzioni secondo i principi fissati dalla Costituzione\".  Il territorio nazione è diviso in regioni."@it .
+
+INAILCore:FasciaNumeroAddetti a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:patHaFasciaNumeroAddetti ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Employees Number Range"@en,
+        "Fascia  Numero Addetti"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty INAILCore:codiceLivello1 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:codiceLivello2 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:descrizioneLivello1 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:descrizioneLivello2 ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:comment "Suddivisione in Fasce del numero di addetti di una ditta."@it .
+
+INAILCore:FasciaNumeroLavoratori a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:soggettoAssicuranteHaFasciaNumeroLavoratori ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Fascia  Numero Lavoratori"@it,
+        "Workers Number Range"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty INAILCore:codiceLivello1 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:codiceLivello2 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:descrizioneLivello1 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:descrizioneLivello2 ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:comment "Numerosità dei Lavoratori suddivisa in fasce."@it .
+
+INAILCore:FonteDenuncia a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:codiceCategoriaFonteDenuncia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:codiceFonteDenuncia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:codiceTipoFonteDenuncia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:descrizioneCategoriaFonteDenuncia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:descrizioneFonteDenuncia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:descrizioneTipoFonteDenuncia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:denunciaRelativaAFonteDenuncia ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Complaint Source"@en,
+        "Fonte  Denuncia"@it ;
+    rdfs:comment "Elenco delle possibili fonti di provenienza/acquisizione delle denunce pervenute."@it .
+
+INAILCore:Intermediario a owl:Class ;
+    rdfs:label "Intermediario"@it,
+        "Intermediary"@en ;
+    rdfs:comment "Mediatore tra due persone o enti che consente la costituzione o lo svolgimento di un rapporto."@it .
+
+INAILCore:NaturaGiuridica a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:codiceNaturaGiuridica ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:descrizioneNaturaGiuridica ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:tipoSoggettoNaturaGiuridica ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:haAvutoNaturaGiuridica ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:haNaturaGiuridica ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Legal Nature"@en,
+        "Natura Giuridica"@it ;
+    rdfs:comment "Classificazione delle forme giuridiche assunte da imprese di medie e grandi dimensioni operanti nei diversi settori produttivi."@it .
+
+INAILCore:PANAppaltiServiziOfficina a owl:Class ;
+    rdfs:label "PAN Appalti  Servizi Officina"@it,
+        "Procurement Services Workshop PAN"@en ;
+    rdfs:comment "PAN appalti servizi officina"@it .
+
+INAILCore:PANComandata a owl:Class ;
+    rdfs:label "Captained PAN"@en,
+        "PAN Comandata"@it ;
+    rdfs:comment "PAN comandata"@it .
+
+INAILCore:PANConcessionariServiziDiBordo a owl:Class ;
+    rdfs:label "On-board Services Dealers PAN"@en,
+        "PAN Concessionari  Servizi Di Bordo"@it ;
+    rdfs:comment "PAN concessionari servizi di bordo"@it .
+
+INAILCore:PANNave a owl:Class ;
+    rdfs:label "PAN Nave"@it,
+        "Ship PAN"@en ;
+    rdfs:comment "PAN nave"@it .
+
+INAILCore:PANProveInMare a owl:Class ;
+    rdfs:label "PAN Prove  In Mare"@it,
+        "Sea Trials PAN"@en ;
+    rdfs:comment "PAN prove in mare"@it .
+
+INAILCore:PANRuoloUnico a owl:Class ;
+    rdfs:label "PAN Ruolo Unico"@it,
+        "Unique Role PAN"@en ;
+    rdfs:comment "PAN ruolo unico"@it .
+
+INAILCore:PANTecniciEIspettori a owl:Class ;
+    rdfs:label "Engineers and Inspectors PAN"@en,
+        "PAN Tecnici  E Ispettori"@it ;
+    rdfs:comment "PAN tecnici e ispettori"@it .
+
+INAILCore:PATArtigianiAutonomi a owl:Class ;
+    rdfs:label "PAT  Artigiani  Autonomi"@it,
+        "Self-employed Craftsmen PAT"@en ;
+    owl:disjointWith INAILCore:PATDipendenti ;
+    rdfs:comment "PAT relativa agli Artigiani Autonomi."@it .
+
+INAILCore:PATDipendenti a owl:Class ;
+    rdfs:label "Employees PAT"@en,
+        "PAT  Dipendenti"@it ;
+    rdfs:comment "PAT Dipendenti"@it .
+
+INAILCore:PATMonotariffa a owl:Class ;
+    rdfs:label "Mono-Tariff PAT"@en,
+        "PAT  Monotariffa"@it ;
+    owl:disjointWith INAILCore:PATPluritariffa ;
+    rdfs:comment "PAT Monotariffa"@it .
+
+INAILCore:PATPluritariffa a owl:Class ;
+    rdfs:label "Multi-Tariff PAT"@en,
+        "PAT  Pluritariffa"@it ;
+    rdfs:comment "PAT Pluritariffa"@it .
+
+INAILCore:PersonaFisica a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:dataDiNascita ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:eta ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:haLuogoDiNascita ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:ricopreRuoloDiAssicurato ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Person"@en,
+        "Persona  Fisica"@it ;
+    rdfs:subClassOf CPV:Person ;
+    owl:disjointWith INAILCore:SoggettoAssicuranteINAIL,
+        INAILCore:StatoDiPersonaFisica ;
+    rdfs:comment "L'ordinamento giuridico considera persona fisica ogni essere umano nato vivo, anche se non vitale, quindi anche se morto subito dopo la nascita. Con la nascita la persona acquisice la capacità giuridica, ossia è soggetto di diritto, centro di imputazione di situazioni giuridiche e di diritti e doveri. Con il raggiungimento della maggiore età (18 anni nell'ordinamento italiano) la persona fisica acquisisce la capacità di agire, cioè la possibilità di porre in essere atti giuridicamente rilevanti."@it .
+
+INAILCore:PiccolaSocietaCooperativa a owl:Class ;
+    rdfs:label "Piccola Societa  Cooperativa"@it,
+        "Small Cooperative Society"@en ;
+    rdfs:subClassOf INAILCore:SocCoopAResponsabilitaLimitata ;
+    rdfs:comment " Piccola Società Cooperativa: forma societaria finalizzata a facilitare la nascita di piccole imprese commerciali o agricole perseguenti uno scopo mutualistico. "@it .
+
+INAILCore:PolizzaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:annoCompetenzaPolizza ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:codiceAssicurativoPersonale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:dataFineValiditaTariffa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:dataInizioRischioAssicurativo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:dataInizioValiditaTariffa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:idPolizza ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:polizzaHaStatoRapportoAssicurativo ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Policy"@en,
+        "Polizza INAIL"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty INAILCore:polizzaHaTipoPeriodo ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:polizzaRelativaAPAN ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:polizzaRelativaAPAT ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Le polizze sono le tipologie di assicurazioni che un’Azienda può stipulare con INAIL in relazione all’attivita lavorativa dell’Azienda. Ogni PAT può avere una o più polizze a seconda delle lavorazioni che vengono svolte durante l’attività."@it .
+
+INAILCore:PolizzaRadiologi a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:numeroApparecchiRxGruppoA1 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:numeroApparecchiRxGruppoA2 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:numeroApparecchiRxGruppoA3 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:numeroApparecchiRxGruppoA4 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:numeroApparecchiRxGruppoA5 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:numeroApparecchiRxGruppoA6 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:numeroApparecchiRxGruppoB1 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:numeroApparecchiRxGruppoB2 ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:label "Polizza  Radiologi"@it,
+        "Radiologists Policy"@en ;
+    owl:disjointWith INAILCore:PolizzaScuola ;
+    rdfs:comment "Premi speciali per medici radiologi, tecnici sanitari di radiologia medica e allievi dei corsi, esposti all’azione dei raggi X e delle sostanze radioattive."@it .
+
+INAILCore:PolizzaScuola a owl:Class ;
+    rdfs:label "Polizza  Scuola"@it,
+        "School Policy"@en ;
+    rdfs:comment "Premi speciali per alunni e studenti delle scuole o istituti di istruzione di ogni ordine e grado, non statali, addetti ad esperienze tecnico-scientifiche od esercitazioni pratiche o di lavoro."@it .
+
+INAILCore:PosizioneAssicurativaNavigazione a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILCore:PANAppaltiServiziOfficina
+                    INAILCore:PANComandata
+                    INAILCore:PANConcessionariServiziDiBordo
+                    INAILCore:PANNave
+                    INAILCore:PANProveInMare
+                    INAILCore:PANRuoloUnico
+                    INAILCore:PANTecniciEIspettori ) ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:codicePAN ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:dataCessazioneAttivitaPAN ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:dataInizioAttivitaPAN ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:numeroGiornateLavorate ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:panAppartieneASoggettoAssicurante ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:panCompetenzaDi ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:panHaSettoreAttivita ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:panHaStatoRapportoAssicurativo ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:denunciaRelativaAPAN ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:polizzaRelativaAPAN ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:retribuzioneRelativaAPAN ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:tipoCertificatoRelativoAPAN ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Insurance Navigation Position"@en,
+        "Posizione  Assicurativa  Navigazione"@it ;
+    rdfs:comment "Posizione Assicurativa Navigazione   "@it .
+
+INAILCore:PosizioneAssicurativaTerritoriale a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:codicePAT ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:dataInizioAttivitaPAT ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:importoRetribuzioniInfortuniPAT ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:numeroAddettiPAT ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:numeroAnniAttivitaPAT ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:numeroApprendistiPAT ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:numeroDipendentiPAT ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:numeroFamiliariPAT ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:numeroGiorniAttivitaPAT ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:numeroLavoratoriAutonomiPAT ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:numeroLavoratoriSpecialiPAT ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:numeroLavoratoriTotaliPAT ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:numeroSociPAT ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:numeroTitolariPAT ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:patAppartieneASoggettoAssicurante ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:patCompetenzaDi ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:patHaFasciaNumeroAddetti ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:patHaSettoreAttivita ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:patHaStatoRapportoAssicurativo ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:denunciaRelativaAPAT ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:polizzaRelativaAPAT ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:retribuzioneRelativaAPAT ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Insurance Territorial Position"@en,
+        "Posizione  Assicurativa  Territoriale"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty INAILCore:faRiferimentoASedeLavoro ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "La PAT (posizione assicurativa territoriale) indica la sede di lavoro che coincide con l'unità produttiva (intesa come stabilimento o struttura facente capo alla medesima azienda e dotata di autonomia finanziaria e tecnico funzionale) rilevante ai fini degli adempimenti assicurativi; all'interno della PAT sono registrate le polizze assicurative e le relative voci di rischio assicurato corrispondenti alle tipologie di lavoratori e di attività lavorative esercitate (anagrafica della polizza, voce/i di rischio, dati retributivi)."@it .
+
+INAILCore:RaccomandatarioMarittimo a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:armatoreHaIntermediario ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Maritime Recommender"@en,
+        "Raccomandatario  Marittimo"@it ;
+    rdfs:subClassOf INAILCore:Intermediario ;
+    rdfs:comment "Intermediario di cui si avvale l'armatore residente all'estero che opera in Italia. Il raccomandatario svolge, in nome e per conto del comandante e dell’armatore che rappresenta, ogni attività nei confronti dell’Autorità marittima e dell'Inail."@it .
+
+INAILCore:RapportoAssicurativoAttivoINAIL a owl:Class ;
+    rdfs:label "INAIL Active Insurance Relationship"@en,
+        "Rapporto  Assicurativo  Attivo INAIL"@it ;
+    rdfs:comment "Il rapporto assicurativo si costituisce automaticamente al verificarsi dei presupposti soggettivi e oggettivi stabiliti dalla legge. Esso ha normalmente inizio con la presentazione all’Inail della denuncia dell’attività esercitata; tuttavia, anche in assenza della denuncia iniziale, il lavoratore è comunque garantito sin dall’inizio dell’attività assicurata in base al principio dell’automaticità delle prestazioni."@it .
+
+INAILCore:RapportoAssicurativoCessatoINAIL a owl:Class ;
+    rdfs:label "INAIL Ceased Insurance Relationship"@en,
+        "Rapporto  Assicurativo  Cessato INAIL"@it ;
+    rdfs:comment "Rapporto assicurativo cessato"@it .
+
+INAILCore:RapportoAssicurativoSospesoINAIL a owl:Class ;
+    rdfs:label "INAIL Suspended Insurance Relationship"@en,
+        "Rapporto  Assicurativo  Sospeso INAIL"@it ;
+    rdfs:comment "Rapporto assicurativo sospeso"@it .
+
+INAILCore:ResponsabileUfficio a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:matricola ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:haResponsabileUfficio ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:ricopreRuoloResponsabileUfficio ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Office Manager"@en,
+        "Responsabile  Ufficio"@it ;
+    rdfs:comment "Responsabile d'ufficio"@it .
+
+INAILCore:RetribuzioneAnteDecreto38 a owl:Class ;
+    rdfs:label "Ante Decree 38 Salary "@en,
+        "Retribuzione  Ante  Decreto 38"@it ;
+    owl:disjointWith INAILCore:RetribuzionePostDecreto38 ;
+    rdfs:comment "Retribuzione ante decreto38"@it .
+
+INAILCore:RetribuzioneComplessiva a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:annoCompetenzaRetribuzione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:classificazioneDannoBiologico ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:dataFineValiditaTariffaRetribuzione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:dataInizioValiditaTariffaRetribuzione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:idRetribuzioneSoggettoAssicurante ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:numeroAddettiRetribuzione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:numeroLavoratoriAutonomiRetribuzione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:retribuzioneHaTipoPeriodo ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:retribuzioneRelativaAPAN ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:retribuzioneRelativaAPAT ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:retribuzioneRelativaASoggettoAssicurante ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:scontoRata ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:scontoRegolazione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:segueArticolo28 ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:label "Retribuzione  Complessiva"@it,
+        "Total Salary"@en ;
+    rdfs:comment "Indica tutte le retribuzioni erogate ai dipendenti, incluse quelle con esenzione inferiore al 100%, i compensi erogati ai collaboratori coordinati e continuativi e ai collaboratori a progetto, nonché le retribuzioni (convenzionali o di ragguaglio) di soci, familiari, associati in partecipazione e coadiuvanti di aziende non artigiane. "@it .
+
+INAILCore:RetribuzioneConvenzionale a owl:Class ;
+    rdfs:label "Conventional Salary"@en,
+        "Retribuzione  Convenzionale"@it ;
+    rdfs:comment "La retribuzione convenzionale è, per talune categorie di lavoratori, l’eccezione che prevale sulla regola dell’imponibile effettivo ed è stabilita con decreti ministeriali aventi valenza nazionale o provinciale ovvero con legge."@it .
+
+INAILCore:RetribuzioneEffettiva a owl:Class ;
+    rdfs:label "Effective Salary"@en,
+        "Retribuzione  Effettiva"@it ;
+    rdfs:comment "La retribuzione effettiva per la generalità dei lavoratori è costituita dall’ammontare lordo del reddito di lavoro dipendente di cui al combinato disposto degli art. 51 T.u.i.r. e art. 29 T.u. 1124/1965. Detta retribuzione deve tenere conto: a. delle retribuzioni minime stabilite da leggi e contratti – c.d. minimale contrattuale (art.1 del decreto legge 9 ottobre 1989, n. 338, convertito con modificazioni dalla legge 7 dicembre 1989, n. 389); b. dei limiti minimi di retribuzione giornaliera stabiliti dalla legge, annualmente rivalutati in relazione all’indice del costo della vita accertato dall’Istat – c.d. minimale di retribuzione giornaliera (art. 1 del decreto legge 29 luglio 1981, n. 402, convertito dalla legge 6 settembre 1981, n. 537)."@it .
+
+INAILCore:RetribuzioneImponibile a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILCore:RetribuzioneConvenzionale
+                    INAILCore:RetribuzioneEffettiva
+                    INAILCore:RetribuzioneRagguaglio ) ] ;
+    rdfs:label "Retribuzione  Imponibile"@it,
+        "Taxable Salary"@en ;
+    owl:disjointWith INAILCore:RetribuzionePresunta ;
+    rdfs:comment "La retribuzione imponibile è la retribuzione su cui calcolare il premio assicurativo. Si distingue in retribuzione effettiva, retribuzione convenzionale e retribuzione di ragguaglio."@it .
+
+INAILCore:RetribuzioneParzialmenteEsente a owl:Class ;
+    rdfs:label "Partially Exempt Salary"@en,
+        "Retribuzione  Parzialmente  Esente"@it ;
+    rdfs:subClassOf INAILCore:RetribuzioneComplessiva ;
+    rdfs:comment "Quota di retribuzione parzialmente esente dai premi. "@it .
+
+INAILCore:RetribuzionePostDecreto38 a owl:Class ;
+    rdfs:label "Post Decree 38 Salary "@en,
+        "Retribuzione  Post  Decreto 38"@it ;
+    rdfs:comment "Retribuzione post decreto 38"@it .
+
+INAILCore:RetribuzionePresunta a owl:Class ;
+    rdfs:label "Presumed Salary"@en,
+        "Retribuzione  Presunta"@it ;
+    rdfs:comment "Quota di retribuzione in base alla quale calcolare il premio anticipato per l'autoliquidazione. "@it .
+
+INAILCore:RetribuzioneRagguaglio a owl:Class ;
+    rdfs:label "Adjustment Salary"@en,
+        "Retribuzione  Ragguaglio"@it ;
+    rdfs:comment "La retribuzione di ragguaglio è pari al minimale di rendita. Tale retribuzione si assume solo in via residuale, ovvero in mancanza di retribuzione convenzionale e di retribuzione effettiva"@it .
+
+INAILCore:RetribuzioneSpecificaSILASB a owl:Class ;
+    rdfs:label "Retribuzione  Specifica SIL/ASB"@it,
+        "Specific SIL/ASB Salary"@en ;
+    rdfs:subClassOf INAILCore:RetribuzioneComplessiva ;
+    rdfs:comment "Indica le retribuzioni dei dipendenti esposti al particolare rischio di silicosi e/o asbestosi già incluse nelle retribuzioni complessive. Le retribuzioni relative ai rapporti di lavoro per i quali il datore di lavoro fruisce dell’esenzione parziale del premio devono essere incluse in tale campo nella misura del 100%."@it .
+
+INAILCore:RiclassificazioneDenunciaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:descrizioneRiclassificazioneDenuncia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:denunciaHaRiclassificazione ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Reclassification INAIL Complaint"@en,
+        "Riclassificazione  Denuncia INAIL"@it ;
+    rdfs:comment "Riclassificazione Denuncia"@it .
+
+INAILCore:SedeINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:panCompetenzaDi ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:patCompetenzaDi ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:soggettoAssicuranteCompetenzaDi ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Office"@en,
+        "Sede INAIL"@it ;
+    rdfs:comment "Nell'attuale modello organizzativo sono le Sedi presenti sul territorio nazionale, generalmente in ambito provinciale, che erogano i servizi affidati all'Istituto. In alcuni casi esistono più Sedi nell'ambito della stessa provincia o dello stesso territorio comunale. Tali unità sono denominate Sedi locali."@it .
+
+INAILCore:SedeLavoro a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:situatoIn ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Sede Lavoro"@it,
+        "Workplace"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:faRiferimentoASedeLavoro ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Sede lavoro"@it .
+
+INAILCore:SettoreAltri a owl:Class ;
+    rdfs:label "Other Sector "@en,
+        "Settore  Altri"@it ;
+    rdfs:comment "Settore altri"@it .
+
+INAILCore:SettoreArtigianato a owl:Class ;
+    rdfs:label "Craft Sector"@en,
+        "Settore  Artigianato"@it ;
+    rdfs:comment "Settore artigianato"@it .
+
+INAILCore:SettoreAttivita a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:panHaSettoreAttivita ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:patHaSettoreAttivita ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:soggettoAssicuranteHaSettoreAttivita ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Business Sector"@en,
+        "Settore  Attivita"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty INAILCore:codiceTipoSettoreAttivita ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:descrizioneTipoSettoreAttivita ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:comment "Classificazione in due livelli dei Settori Attività Economica. Il secondo livello elenca i vari settori (Agricoltura, Terziario, Casalinghe, Industria, Artigianato, Etc). Il primo livello, il macro settore, raggruppa ove possibile i livelli precedenti. Ad esempio Industria Raggruppa: Industria, Artigianato, Terziario, Altro. https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2000-02-23;38"@it .
+
+INAILCore:SettoreAttivitaSpeciale a owl:Class ;
+    rdfs:label "Settore  Attivita Speciale"@it,
+        "Special Business Sector"@en ;
+    owl:disjointWith INAILCore:SettoreAttivitaTOD ;
+    rdfs:comment "Settore attività speciale"@it .
+
+INAILCore:SettoreAttivitaTOD a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILCore:SettoreAltri
+                    INAILCore:SettoreArtigianato
+                    INAILCore:SettoreIndustriaEServizi
+                    INAILCore:SettoreTerziario ) ] ;
+    rdfs:label "Settore  Attivita TOD"@it,
+        "TOD Business Sector"@en ;
+    rdfs:comment "Settore  tod"@it .
+
+INAILCore:SettoreIndustriaEServizi a owl:Class ;
+    rdfs:label "Industry and Services Sector"@en,
+        "Settore  Industria E Servizi"@it ;
+    rdfs:comment "Settore industria eservizi"@it .
+
+INAILCore:SettoreTerziario a owl:Class ;
+    rdfs:label "Settore  Terziario"@it,
+        "Tertiary Sector"@en ;
+    rdfs:comment "settore terziario"@it .
+
+INAILCore:SocCoopAResponsabilitaLimitata a owl:Class ;
+    rdfs:label "Limited Liability Coop Company"@en,
+        "Soc Coop  A Responsabilita  Limitata"@it ;
+    owl:disjointWith INAILCore:SocCoopAResponsabiltaIllimitata ;
+    rdfs:comment "Società Cooperativa a responsabilita limitata"@it .
+
+INAILCore:SocCoopAResponsabiltaIllimitata a owl:Class ;
+    rdfs:label "Soc Coop  A Responsabilta  Illimitata"@it,
+        "Unlimited Liability Co-op Company"@en ;
+    rdfs:comment "Società Cooperativa a responsabilita illimitata"@it .
+
+INAILCore:Societa a owl:Class ;
+    rdfs:label "Societa"@it,
+        "Society "@en ;
+    rdfs:comment "Una società è un soggetto esercente attività di impresa: essa può essere costituita da un unico soggetto (società unipersonale) o da più soggetti detti soci (persone fisiche e/o giuridiche) riunite in un'impresa collettiva. È soggetta al diritto societario."@it .
+
+INAILCore:SocietaAnonima a owl:Class ;
+    rdfs:label "Anonymous Society"@en,
+        "Societa  Anonima"@it ;
+    rdfs:subClassOf INAILCore:SocietaDiCapitali ;
+    rdfs:comment "Società Anonima (SA) è una denominazione formale con cui gli ordinamenti giuridici vigenti in molti Stati del mondo definiscono una società di capitali, o quantomeno quelle società di capitali che hanno una tale frammentazione del pacchetto sociale da essere di fatto anonime, ovvero non riconducibili a una proprietà unica e stabile.  Fonte Esterna INAIL"@it .
+
+INAILCore:SocietaAResponsabilitaLimitata a owl:Class ;
+    rdfs:label "Limited Liability Company"@en,
+        "Societa  A Responsabilita  Limitata"@it ;
+    owl:disjointWith INAILCore:SocietaPerAzioni ;
+    rdfs:comment " La società a responsabilità limitata, in sigla S.r.l., è un tipo di società di capitali che, come tale, è dotata di personalità giuridica e risponde delle obbligazioni sociali solamente nei limiti delle quote versate da ciascun socio.  Fonte Esterna INAIL"@it .
+
+INAILCore:SocietaCooperativa a owl:Class ;
+    rdfs:label "Cooperative Society"@en,
+        "Societa  Cooperativa"@it ;
+    rdfs:comment "Una società cooperativa è una società costituita per gestire in comune un'impresa che si prefigge lo scopo di fornire agli stessi soci (scopo mutualistico) quei beni o servizi per il conseguimento dei quali la cooperativa è sorta.  Fonte Esterna INAIL"@it .
+
+INAILCore:SocietaDiCapitali a owl:Class ;
+    rdfs:label "Capital Society"@en,
+        "Societa  Di Capitali"@it ;
+    rdfs:comment "Le società di capitali sono forme giuridiche assunte da imprese di medie e grandi dimensioni operanti nei diversi settori produttivi. Sono società definite tali in quanto in esse l'elemento del capitale ha una prevalenza concettuale e normativa rispetto all'elemento soggettivo rappresentato dai soci. La partecipazione dei soci al capitale sociale può essere rappresentata da azioni o da quote a seconda dello specifico tipo di società. Sono classificate come tali la S.p.A. (società per azioni), la S.a.p.a. (società in accomandita per azioni), la S.r.l. (società a responsabilità limitata), la S.r.l.s. (società a responsabilità limitata semplificata).  Fonte Esterna INAIL"@it .
+
+INAILCore:SocietaDiFatto a owl:Class ;
+    rdfs:label "Factual Society"@en,
+        "Societa Di Fatto"@it ;
+    rdfs:comment "Società di Fatto, o società semplice, è una particolare forma di società di persone - in assoluto la più basilare forma di società prevista nel nostro ordinamento - che può essere costituita per l’esercizio esclusivo di attività economiche non di natura commerciale.  Fonte Esterna INAIL"@it .
+
+INAILCore:SocietaDiPersone a owl:Class ;
+    rdfs:label "Partnership Company "@en,
+        "Societa  Di Persone"@it ;
+    rdfs:comment "Le società di persone sono società definite tali in quanto in esse prevale l'elemento soggettivo, rappresentato dai soci, rispetto al capitale. Non acquistano mai la personalità giuridica, cosa che invece avviene per le società di capitali, ma è sempre presente un certo grado di separazione patrimoniale tra il patrimonio della società e quello del socio che varia a seconda del tipo considerato.  Fonte Esterna INAIL"@it .
+
+INAILCore:SocietaEsteraAResponsabilitaLimitata a owl:Class ;
+    rdfs:label "Foreign Limited Liability Company"@en,
+        "Societa Estera  A Responsabilita  Limitata"@it ;
+    rdfs:subClassOf INAILCore:SocietaAResponsabilitaLimitata ;
+    rdfs:comment "Società Estera a Responsabilità Limitata"@it .
+
+INAILCore:SocietaInAccomanditaSemplice a owl:Class ;
+    rdfs:label "Limited Partnership Company"@en,
+        "Societa In  Accomandita  Semplice"@it ;
+    rdfs:comment "Una società in accomandita semplice (abbreviato in S.a.s.), nel diritto italiano, è una società di persone che può esercitare sia attività commerciale sia attività non commerciale e che si caratterizza per la presenza di due categorie distinte di soci: il socio accomandatario e il socio accomandante  Fonte Esterna INAIL"@it .
+
+INAILCore:SocietaIndividuale a owl:Class ;
+    rdfs:label "Individual Company"@en,
+        "Societa Individuale"@it ;
+    rdfs:comment "La ditta individuale è quel tipo di impresa che fa riferimento a un solo titolare, l’imprenditore, il quale è l’unico responsabile e  anche l’unico promotore della sua iniziativa imprenditoriale.  Fonte Esterna INAIL"@it .
+
+INAILCore:SocietaInNomeCollettivo a owl:Class ;
+    rdfs:label "Company in Collective Name"@en,
+        "Societa In  Nome Collettivo"@it ;
+    rdfs:comment "La società in nome collettivo (o S.n.c.) è un tipo di società di persone disciplinato dagli artt. 2291-2312 del codice civile in cui tutti i soci rispondono solidalmente, illimitatamente, personalmente e sussidiariamente per le obbligazioni sociali   Fonte Esterna INAIL"@it .
+
+INAILCore:SocietaPerAzioni a owl:Class ;
+    rdfs:label "Joint Stock Company"@en,
+        "Societa Per  Azioni"@it ;
+    rdfs:comment "La società per azioni, sigla S.p.A., è una società di capitali, dotata di personalità giuridica e una autonomia patrimoniale perfetta, nella quale le partecipazioni dei soci sono rappresentate da titoli trasferibili, le cosiddette azioni.  Fonte Esterna INAIL"@it .
+
+INAILCore:SocietaSenzaObbligoPartitaIVA a owl:Class ;
+    rdfs:label "Societa Senza Obbligo Partita IVA"@it,
+        "Society without VAT Number Obligation"@en ;
+    rdfs:subClassOf INAILCore:Societa ;
+    rdfs:comment "Società Senza Obbligo di Partita IVA"@it .
+
+INAILCore:Soggetto a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILCore:PersonaFisica
+                    INAILCore:SoggettoAssicuranteINAIL ) ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:haStatoDiSoggetto ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:tipoPersona ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:label "Soggetto"@it,
+        "Subject"@en ;
+    rdfs:subClassOf l0:Agent ;
+    owl:disjointWith INAILCore:StatoDiSoggetto ;
+    rdfs:comment "Soggetto"@it .
+
+INAILCore:SoggettoAssicuranteAttivoINAIL a owl:Class ;
+    rdfs:label "INAIL Active Insuring Subject"@en,
+        "Soggetto  Assicurante  Attivo INAIL"@it ;
+    rdfs:comment "Soggetto Assicurante Attivo"@it .
+
+INAILCore:SoggettoAssicuranteCessatoINAIL a owl:Class ;
+    rdfs:label "INAIL Ceased Insuring Subject"@en,
+        "Soggetto  Assicurante  Cessato INAIL"@it ;
+    rdfs:comment "Soggetto Assicurante Cessato"@it .
+
+INAILCore:SoggettoAssicuranteINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILCore:SoggettoAssicuranteAttivoINAIL
+                    INAILCore:SoggettoAssicuranteCessatoINAIL
+                    INAILCore:SoggettoAssicuranteSospesoINAIL ) ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:codiceSoggettoAssicurante ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:dataCostituzione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:dataInizioAttivita ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:haClassificazioneATECO ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:haNaturaGiuridica ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:haSedeLegaleIn ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:soggettoAssicuranteAssicura ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:soggettoAssicuranteCompetenzaDi ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:soggettoAssicuranteHaStatoRapportoAssicurativo ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:statoAttivitaSoggettoAssicurante ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:denunciaRelativaASoggettoAssicurante ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:panAppartieneASoggettoAssicurante ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:retribuzioneRelativaASoggettoAssicurante ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Insuring Subject"@en,
+        "Soggetto  Assicurante INAIL"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty INAILCore:soggettoAssicuranteHaDimensione ;
+            owl:someValuesFrom owl:Thing ] ;
+    owl:disjointWith INAILCore:StatoDiSoggettoAssicurante ;
+    rdfs:comment "Ai fini dell'insaturazione e gestione del rapporto assicurativo vengono indicati da Inail come \"soggetti assicuranti\" tutte le imprese, anche quelle senza lavoratori dipendenti e/o parasubordinati (es. imprese artigiane); ai fini Inail sono considerati soggetti assicuranti anche quelli del settore navigazione e le persone giuridiche diverse dall'impresa (es. associazioni)."@it .
+
+INAILCore:SoggettoAssicuranteSospesoINAIL a owl:Class ;
+    rdfs:label "INAIL Suspended Insuring Subject"@en,
+        "Soggetto  Assicurante   Sospeso INAIL"@it ;
+    rdfs:comment "Soggetto Assicurante Sospeso"@it .
+
+INAILCore:SoggettoAssicuratoINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:ricopreRuoloDiAssicurato ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:soggettoAssicuranteAssicura ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Insured Subject"@en,
+        "Soggetto  Assicurato  INAIL"@it ;
+    rdfs:comment "In linea generale, sono assicurati all'Inail tutti i soggetti che svolgono lavoro retribuito alle dipendenze di un datore di lavoro e siano addetti ad una delle attività indicate dall'articolo 1 (per il settore industria) e dagli articoli 204 e seguenti (per il settore agricoltura) del Testo Unico (d.p.r.  1124/1965). Sono anche assicurate alcune categorie di lavoratori autonomi (quali, ad esempio, gli artigiani e i coltivatori diretti), i lavoratori parasubordinati (articolo 4 d.lgs. 38/2000) e altri lavoratori assicurati ai sensi di disposizioni speciali (soggetti di cui alla legge 493/1999, medici e tecnici di radiologia di cui alla legge 93/1958). "@it .
+
+INAILCore:StatoDiLuogo a owl:Class ;
+    rdfs:label "Location Status"@en,
+        "Stato Di Luogo"@it ;
+    owl:disjointWith INAILCore:StatoDiSoggetto ;
+    rdfs:comment "Stato di luogo"@it .
+
+INAILCore:StatoDiPersonaFisica a owl:Class ;
+    rdfs:label "Individual Status"@en,
+        "Stato Di  Persona Fisica"@it ;
+    owl:disjointWith INAILCore:StatoDiSoggettoAssicurante ;
+    rdfs:comment "Stato Di Persona Fisica"@it .
+
+INAILCore:StatoDiSoggetto a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILCore:StatoDiPersonaFisica
+                    INAILCore:StatoDiSoggettoAssicurante ) ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:haStatoDiSoggetto ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Stato Di  Soggetto"@it,
+        "Subject Status"@en ;
+    rdfs:comment "Uno stato di una persona è uno stato che rappresenta le caratteristiche di quella persona durante il periodo di validità dello stato stesso."@it .
+
+INAILCore:StatoDiSoggettoAssicurante a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:haAvutoClassificazioneATECO ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:haAvutoNaturaGiuridica ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:soggettoAssicuranteHaAvutoDimensione ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Insuring Subject Status"@en,
+        "Stato Di  Soggetto  Assicurante"@it ;
+    rdfs:comment "Stato di soggetto assicurante"@it .
+
+INAILCore:StatoPassato a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:fineValidita ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:inizioValidita ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:label "Past Status"@en,
+        "Stato Passato"@it ;
+    rdfs:comment "L'ontologia ha un certo numero di concetti temporizzati. Questi classificano oggetti per come essi sono osservabili in diversi istanti temporali. L'intervallo di tempo in cui le proprietà dell'oggetto che sono di interesse per l'ontologia non cambiano è denotato tramite uno stato. Gli istanti in cui una o più proprietà dell'oggetto cambiano, sono i tempi di discontinuità e definiscono gli estremi di uno stato, o in altri termini il suo inizio e la sua fine. Due stati contigui nel tempo avranno la fine di uno pari all'inizio dell'altro. Nell'ontologia si è deciso di introdurre uno stato corrispondente ad un oggetto ogni qual volta cambia il valore di una sua proprietà rilevante. A titolo di esempio si consideri una persona. La sua data di nascita è una proprietà che non varia nel tempo, ed è pertanto considerata una proprietà rigida, e quindi sarà associata direttamente alla persona. Il suo indirizzo di residenza è invece una proprietà che può variare nel tempo, e pertanto sarà associata ai suoi stati. I punti di discontinuità tra gli stati rappresentano i momenti in cui la persona ha cambiato residenza."@it .
+
+INAILCore:StatoRapportoAssicurativoINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:codiceCausaStatoRapportoAssicurativo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:codiceStatoRapportoAssicurativo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:dataInizioRapportoAssicurativo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:descrizioneCausaStatoRapportoAssicurativo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:descrizioneStatoRapportoAssicurativo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:haStatoRapportoAssicurativo ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Insurance Relationship Status"@en,
+        "Stato Rapporto  Assicurativo INAIL"@it ;
+    rdfs:comment "Stato Rapporto Assicurativo"@it .
+
+INAILCore:StrutturaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILCore:StrutturaINAILAperta
+                    INAILCore:StrutturaINAILChiusa ) ],
+        [ a owl:Class ;
+            owl:unionOf (
+                    INAILCore:StrutturaINAILCentrale
+                    INAILCore:StrutturaINAILTerritoriale ) ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:codiceStrutturaINAIL ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:haResponsabileUfficio ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:statoChiusuraStruttura ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:strutturaINAILSituataIn ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:tipoStrutturaINAIL ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:denunciaRelativaASedeINAIL ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Territorial Structure"@en,
+        "Struttura INAIL"@it ;
+    rdfs:comment "L'elenco delle Strutture Inail comprende le Direzioni centrali, l'Avvocatura generale, la Sovrintendenza sanitaria centrale, la Consulenza tecnica per l'accertamento dei rischi e la prevenzione, Consulenza statistico attuariale, la Consulenza tecnica per l'edilizia, la Consulenza per l'innovazione tecnologica, il Casellario centrale infortuni, il Servizio ispettorato e sicurezza, il Servizio supporto organi, le Segreterie tecniche di supporto degli Organi, le Direzioni regionali, le Direzioni provinciali  di Trento e di Bolzamo, la Sede regionale di Aosta, le Sedi locali, le Unità operative territoriali di certificazione, verifica e ricerca. Sono state inoltre istituite le Direzioni territoriali con compiti di coordinamento tra le Sedi locali."@it .
+
+INAILCore:StrutturaINAILAperta a owl:Class ;
+    rdfs:label "INAIL Open Territorial Structure"@en,
+        "Struttura  INAIL  Aperta"@it ;
+    owl:disjointWith INAILCore:StrutturaINAILChiusa ;
+    rdfs:comment "Struttura INAIL Aperta"@it .
+
+INAILCore:StrutturaINAILCentrale a owl:Class ;
+    rdfs:label "INAIL Central Territorial Structure"@en,
+        "Struttura  INAIL  Centrale "@it ;
+    owl:disjointWith INAILCore:StrutturaINAILTerritoriale ;
+    rdfs:comment "La struttura centrale Inail è la Direzione generale che comprende le Direzioni centrali, l'Avvocatura generale, la Sovrintendenza sanitaria centrale, la Consulenza tecnica per l'accertamento dei rischi e la prevenzione, Consulenza statistico attuariale, la Consulenza tecnica per l'edilizia, la Consulenza per l'innovazione tecnologica, il Casellario centrale infortuni, il Servizio ispettorato e sicurezza, il Servizio supporto organi e le Segreterie tecniche di supporto degli Organi."@it .
+
+INAILCore:StrutturaINAILChiusa a owl:Class ;
+    rdfs:label "INAIL Closed Territorial Structure"@en,
+        "Struttura  INAIL  Chiusa"@it ;
+    rdfs:comment "Struttura INAIL Chiusa"@it .
+
+INAILCore:StrutturaINAILTerritoriale a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILCore:DirezioneRegionaleINAIL
+                    INAILCore:SedeINAIL ) ] ;
+    rdfs:label "INAIL Territorial Headquarters"@en,
+        "Struttura  INAIL  Territoriale"@it ;
+    rdfs:comment "Le Strutture Inail presenti sul territorio sono le Direzioni regionali, le Direzioni provinciali  di Trento e di Bolzamo, la Sede regionale di Aosta, le Sedi locali, le Unità operative territoriali di certificazione, verifica e ricerca. Sono state inoltre istituite le Direzioni territoriali con compiti di coordinamento tra le Sedi locali."@it .
+
+INAILCore:TipoCertificatoPAN a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:idCertificato ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:tipoCertificatoRelativoAPAN ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Tipo Certificato  PAN"@it,
+        "Type of PAN Certificate"@en ;
+    rdfs:comment "Il tipo certificato è correlato alle specifiche forme di assicurazione previste per il settore marittimo. Sono previste le tipologie Nave, Ruolo Unico, Comandata, Concessionario di bordo, Personale addetto alle prove in mare, Tecnici ed ispettori, Appalti servizi di officina"@it .
+
+INAILCore:TipoPeriodoRetribuzione a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:polizzaHaTipoPeriodo ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:retribuzioneHaTipoPeriodo ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Tipo Periodo  Retribuzione"@it,
+        "Type Period of Salary"@en ;
+    rdfs:comment "Classificazione a due livelli della tipologia del periodo di pagamento. Il secondo livello definisce la tipologia (Rata, Ratino, Arti. 28, Etc) mentre il primo livello raggruppa la tipologia di retribuzione in Effettiva o Presunta."@it .
+
+l0:Agent a owl:Class .
+
+skos:Concept a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:haAvutoClassificazioneATECO ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:haClassificazioneATECO ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+[] a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:codiceFiscale ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    owl:unionOf (
+            INAILCore:Soggetto
+            INAILCore:StatoDiSoggetto ) .
+
+[] a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:cognomePersona ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    owl:unionOf (
+            INAILCore:PersonaFisica
+            INAILCore:StatoDiPersonaFisica ) .
+
+[] a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:nomePersona ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    owl:unionOf (
+            INAILCore:PersonaFisica
+            INAILCore:StatoDiPersonaFisica ) .
+
+[] a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:ragioneSociale ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    owl:unionOf (
+            INAILCore:SoggettoAssicuranteINAIL
+            INAILCore:StatoDiSoggettoAssicurante ) .
+
+[] a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:sesso ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    owl:unionOf (
+            INAILCore:PersonaFisica
+            INAILCore:StatoDiPersonaFisica ) .
+
+[] a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:soggettoAssicuranteHaFasciaNumeroLavoratori ;
+            owl:someValuesFrom owl:Thing ] ;
+    owl:unionOf (
+            INAILCore:SoggettoAssicuranteINAIL
+            INAILCore:StatoDiSoggettoAssicurante ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf INAILCore:Associazione ;
+    owl:unionOf (
+            INAILCore:AssociazioneNonRiconosciuta
+            INAILCore:AssociazioneSenzaFiniDiLucro ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf INAILCore:PolizzaINAIL ;
+    owl:unionOf (
+            INAILCore:PolizzaRadiologi
+            INAILCore:PolizzaScuola ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf INAILCore:PosizioneAssicurativaTerritoriale ;
+    owl:unionOf (
+            INAILCore:PATArtigianiAutonomi
+            INAILCore:PATDipendenti ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf INAILCore:PosizioneAssicurativaTerritoriale ;
+    owl:unionOf (
+            INAILCore:PATMonotariffa
+            INAILCore:PATPluritariffa ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf INAILCore:RetribuzioneComplessiva ;
+    owl:unionOf (
+            INAILCore:RetribuzioneAnteDecreto38
+            INAILCore:RetribuzionePostDecreto38 ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf INAILCore:RetribuzioneComplessiva ;
+    owl:unionOf (
+            INAILCore:RetribuzioneImponibile
+            INAILCore:RetribuzionePresunta ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf INAILCore:SettoreAttivita ;
+    owl:unionOf (
+            INAILCore:SettoreAttivitaSpeciale
+            INAILCore:SettoreAttivitaTOD ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf INAILCore:Societa ;
+    owl:unionOf (
+            INAILCore:SocietaCooperativa
+            INAILCore:SocietaDiCapitali
+            INAILCore:SocietaDiPersone
+            INAILCore:SocietaIndividuale ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf INAILCore:SocietaCooperativa ;
+    owl:unionOf (
+            INAILCore:SocCoopAResponsabilitaLimitata
+            INAILCore:SocCoopAResponsabiltaIllimitata ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf INAILCore:SocietaDiCapitali ;
+    owl:unionOf (
+            INAILCore:SocietaAResponsabilitaLimitata
+            INAILCore:SocietaPerAzioni ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf INAILCore:SocietaDiPersone ;
+    owl:unionOf (
+            INAILCore:SocietaDiFatto
+            INAILCore:SocietaInAccomanditaSemplice
+            INAILCore:SocietaInNomeCollettivo ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf INAILCore:SoggettoAssicuranteINAIL ;
+    owl:unionOf (
+            INAILCore:Associazione
+            INAILCore:EntePubblico
+            INAILCore:Societa ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf INAILCore:StatoPassato ;
+    owl:unionOf (
+            INAILCore:StatoDiLuogo
+            INAILCore:StatoDiSoggetto ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf INAILCore:StatoRapportoAssicurativoINAIL ;
+    owl:unionOf (
+            INAILCore:RapportoAssicurativoAttivoINAIL
+            INAILCore:RapportoAssicurativoCessatoINAIL
+            INAILCore:RapportoAssicurativoSospesoINAIL ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty INAILCore:partitaIVA ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    owl:unionOf (
+            INAILCore:Soggetto
+            INAILCore:StatoDiSoggetto ) .
+
+### Individuals
+
+<https://w3id.org/italia/onto/work-accident/ised/core/distribution/CORE-RDF-TURTLE> a dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dct:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core> ;
+    dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia INAIL relativa ai concetti principali dell'istituto"@it,
+        "This is the distribution in RDF/Turtle of the INAIL ontology about core concepts of the institute"@en ;
+    dct:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/core.ttl> ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione RDF/Turtle ontologia INAIL - Core"@it,
+        "RDF/Turtle distribution of INAIL ontology - Core"@en .
+
+<https://w3id.org/italia/onto/work-accident/ised/core/organization/inail> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/onto/work-accident/ised/core/organization/td> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "TD" ;
+    foaf:name "Digital Transformation Team"@en,
+        "Team per la Trasformazione Digitale"@it .
+
+<https://w3id.org/italia/onto/work-accident/ised/core/organization/ufficioV> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+INAILCore:GrandeImpresa a INAILCore:DimensioneSoggettoAssicurante,
+        owl:NamedIndividual ;
+    rdfs:label "Grande Impresa"@it .
+
+INAILCore:MediaImpresa a INAILCore:DimensioneSoggettoAssicurante,
+        owl:NamedIndividual ;
+    rdfs:label "Media Impresa"@it .
+
+INAILCore:MicroImpresa a INAILCore:DimensioneSoggettoAssicurante,
+        owl:NamedIndividual ;
+    rdfs:label "Micro Impresa"@it .
+
+INAILCore:PiccolaImpresa a INAILCore:DimensioneSoggettoAssicurante,
+        owl:NamedIndividual ;
+    rdfs:label "Piccola Impresa"@it .
+
+### Axioms
+
+[] a owl:AllDisjointClasses ;
+    owl:members (
+            INAILCore:Associazione
+            INAILCore:EntePubblico
+            INAILCore:Societa ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members (
+            INAILCore:DenunciaDiCessazioneINAIL
+            INAILCore:DenunciaDiIscrizioneINAIL
+            INAILCore:DenunciaDiRiattivazioneINAIL
+            INAILCore:DenunciaDiVariazioneINAIL ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members (
+            INAILCore:DenunciaPAN
+            INAILCore:DenunciaPAT
+            INAILCore:DenunciaSoggettoAssicuranteINAIL ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members (
+            INAILCore:PANAppaltiServiziOfficina
+            INAILCore:PANComandata
+            INAILCore:PANConcessionariServiziDiBordo
+            INAILCore:PANNave
+            INAILCore:PANProveInMare
+            INAILCore:PANRuoloUnico
+            INAILCore:PANTecniciEIspettori ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members (
+            INAILCore:RapportoAssicurativoAttivoINAIL
+            INAILCore:RapportoAssicurativoCessatoINAIL
+            INAILCore:RapportoAssicurativoSospesoINAIL ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members (
+            INAILCore:RetribuzioneConvenzionale
+            INAILCore:RetribuzioneEffettiva
+            INAILCore:RetribuzioneRagguaglio ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members (
+            INAILCore:SettoreAltri
+            INAILCore:SettoreArtigianato
+            INAILCore:SettoreIndustriaEServizi
+            INAILCore:SettoreTerziario ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members (
+            INAILCore:SocietaCooperativa
+            INAILCore:SocietaDiCapitali
+            INAILCore:SocietaDiPersone
+            INAILCore:SocietaIndividuale ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members (
+            INAILCore:SocietaDiFatto
+            INAILCore:SocietaInAccomanditaSemplice
+            INAILCore:SocietaInNomeCollettivo ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members (
+            INAILCore:SoggettoAssicuranteAttivoINAIL
+            INAILCore:SoggettoAssicuranteCessatoINAIL
+            INAILCore:SoggettoAssicuranteSospesoINAIL ) .
+
+[] rdfs:subPropertyOf INAILCore:broaderLegalStatus ;
+    owl:inverseOf INAILCore:narrowerLegalStatus .
+
+### Serialized using the ttlser deterministic serializer v1.2.0
