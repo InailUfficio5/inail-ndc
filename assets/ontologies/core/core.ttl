@@ -2738,22 +2738,6 @@ skos:Concept a owl:Class ;
     vcard:fn "INAIL Ufficio V - D.C.O.D" ;
     vcard:hasEmail <mailto:dcod@inail.it> .
 
-INAILCore:GrandeImpresa a INAILCore:DimensioneSoggettoAssicurante,
-        owl:NamedIndividual ;
-    rdfs:label "Grande Impresa"@it .
-
-INAILCore:MediaImpresa a INAILCore:DimensioneSoggettoAssicurante,
-        owl:NamedIndividual ;
-    rdfs:label "Media Impresa"@it .
-
-INAILCore:MicroImpresa a INAILCore:DimensioneSoggettoAssicurante,
-        owl:NamedIndividual ;
-    rdfs:label "Micro Impresa"@it .
-
-INAILCore:PiccolaImpresa a INAILCore:DimensioneSoggettoAssicurante,
-        owl:NamedIndividual ;
-    rdfs:label "Piccola Impresa"@it .
-
 ### Axioms
 
 [] a owl:AllDisjointClasses ;
