@@ -1,599 +1,643 @@
-@prefix dct:           <http://purl.org/dc/terms/> .
-@prefix adms:          <http://www.w3.org/ns/adms#> .
-@prefix rdfs:          <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix owl:           <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:           <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix dc:            <http://purl.org/dc/elements/1.1/> .
-@prefix skos:          <http://www.w3.org/2004/02/skos/core#> .
-@prefix foaf:          <http://xmlns.com/foaf/0.1/> .
-@prefix xkos:          <http://rdf-vocabulary.ddialliance.org/xkos#> .
-@prefix clvapit:       <https://w3id.org/italia/onto/CLV/> .
-@prefix dcat:          <http://www.w3.org/ns/dcat#> .
-@prefix vcard:         <http://www.w3.org/2006/vcard/ns#> .
-@prefix dcatapit:      <http://dati.gov.it/onto/dcatapit#> .
-@prefix xsd:           <http://www.w3.org/2001/XMLSchema#> .
-@prefix ndc:           <https://w3id.org/italia/onto/NDC/> .
-@prefix cov:           <https://w3id.org/italia/onto/COV/> .
-@prefix INAILAutoliq:  <https://w3id.org/italia/onto/work-accident/ised/proc21/> .
-@prefix inailvoc:      <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/> .
-@prefix tiponave:      <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAILAutoliq: <https://w3id.org/italia/onto/work-accident/ised/proc21/> .
+@prefix inailvoc: <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tiponave: <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+### Individuals
 
-#Metadata DCAT-AP_IT for the controlled vocabulary
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>  
-      a       skos:ConceptScheme , adms:Asset , dcatapit:Dataset  ;
-      dct:title "Vocabolario controllato sulla classificazione delle tipologie di nave adottata dall'INAIL"@it , "Controlled vocabulary on the ship types classification adopted by INAIL"@en ;
-      dct:description "Classificazione delle tipologie di nave: aliscafo, motoscafo, peschereccio ecc."@it, "Classification of ship types: hydrofoil, motorboat, fishing boat etc."@en ;
-      rdfs:comment "Classificazione delle tipologie di nave: aliscafo, motoscafo, peschereccio ecc."@it, "Classification of ship types: hydrofoil, motorboat, fishing boat etc."@en ;
-      rdfs:label "Vocabolario controllato sulla classificazione delle tipologie di nave adottata dall'INAIL"@it , "Controlled vocabulary on the ship types classification adopted by INAIL"@en ;
-      skos:prefLabel "Vocabolario controllato sulla classificazione delle tipologie di nave adottata dall'INAIL"@it ;
-      dct:type <http://purl.org/adms/assettype/CodeList> ;
-      xkos:numberOfLevels "1"; 
-      ndc:keyConcept "tipo_nave";
-      adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
-      dct:identifier "https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave"; 
-      dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN>, <http://publications.europa.eu/resource/authority/data-theme/AGRI>, <http://publications.europa.eu/resource/authority/data-theme/ECON> ;
-      dct:subject <http://eurovoc.europa.eu/4827>, <http://eurovoc.europa.eu/4829>, <http://eurovoc.europa.eu/985>, <http://eurovoc.europa.eu/4832>, <http://eurovoc.europa.eu/2316> ;
-      dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
-      dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-      rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave> ; 
-      dcat:keyword "inail"@it , "autoliquidazione"@it, "premio assicurativo"@it, "nave"@it, "tipo nave"@it, "inail"@en, "ship"@en, "insurance premium"@en, "type of ship"@en ;
-      dct:issued "2022-12-21"^^xsd:date ;
-      dct:modified "2023-02-13"^^xsd:date ; 
-      owl:versionInfo "0.3";
-      dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-      dct:creator <https://w3id.org/italia/data/work-accident/ised/proc21/organization/inail> ;
-      dct:publisher <https://w3id.org/italia/data/work-accident/ised/proc21/organization/inail> ;
-      dct:relation <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/registro_iscrizione>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/servizio_nave>,
-                   <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/specie_navigazione> ; 
-      dct:rightsHolder <https://w3id.org/italia/data/work-accident/ised/proc21/organization/inail> ;
-      dcat:contactPoint <https://w3id.org/italia/data/work-accident/ised/proc21/organization/ufficioV> ;
-      dcat:distribution <https://w3id.org/italia/data/work-accident/ised/proc21/distribution/TN_RDF_TURTLE>, <https://w3id.org/italia/data/work-accident/ised/proc21/distribution/TN_JSON_LD>, <https://w3id.org/italia/data/work-accident/ised/proc21/distribution/TN_CSV> ;
-	  skos:hasTopConcept <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/0>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/1>,
-                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/2>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/3>,
-                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/4>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/5>,
-                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/6>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/7>,
-                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/8>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/9>,
-                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/10>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/11>,
-                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/12>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/13>,
-                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/14>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/15>,
-                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/16>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/17>,
-                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/18>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/19>,
-                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/20>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/21>,
-                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/22>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/23>,
-                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/24>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/25>,
-                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/26>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/27>,
-                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/28>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/29>,
-                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/30>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/31>,
-                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/32>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/33>,
-                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/34>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/35>,
-                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/36>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/37>,
-                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/38>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/39>,
-                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/40>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/41>,
-                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/42>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/43>,
-                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/44>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/45>,
-                         <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/46>.
+<https://w3id.org/italia/data/work-accident/ised/proc21/organization/ufficioV> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
 
-	  
-#######################################################################################################
-#                                   INAIL and standard                                                #
-#######################################################################################################
+### Annotations
 
-<https://w3id.org/italia/data/work-accident/ised/proc21/organization/inail>
-a   dcatapit:Agent , foaf:Agent ;
-      dct:identifier "inail" ;
-      foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it ,
-                "National Institute for Insurance against Accidents at Work"@en .
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
+        dct:Standard ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dct:identifier "SKOS" ;
+    dct:title "Simple Knowledge Organization System - SKOS" .
 
-<https://w3id.org/italia/data/standard/SKOS>
-a   dcatapit:Standard, dct:Standard ;
-      dct:identifier "SKOS" ;
-      dct:title "Simple Knowledge Organization System - SKOS" ;
-      dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
+<https://w3id.org/italia/data/work-accident/ised/proc21/distribution/TN_CSV> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-nave> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-nave/tipo_nave.csv> ;
+    dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classificazione delle tipologie di nave adottata dall'INAIL"@it,
+        "This is the distribution in CSV of the ship types classification adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "CSV distribution of the ship types classification adopted by INAIL controlled vocabulary"@en,
+        "Distribuzione CSV del vocabolario controllato sulla classificazione delle tipologie di nave adottata dall'INAIL"@it .
 
-<https://w3id.org/italia/data/work-accident/ised/proc21/distribution/TN_RDF_TURTLE> 
-a   dcatapit:Distribution, dcat:Distribution ;
-      dct:title	"Distribuzione RDF/Turtle del vocabolario controllato sulla classificazione delle tipologie di nave adottata dall'INAIL"@it, "RDF/Turtle distribution of the ship types classification adopted by INAIL controlled vocabulary"@en ;
-      dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla classificazione delle tipologie di nave adottata dall'INAIL"@it, "This is the distribution in RDF/turtle of the ship types classification adopted by INAIL controlled vocabulary"@en ;
-      dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-      dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-nave/tipo_nave.ttl> ;  
-      dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-nave> .	  
+<https://w3id.org/italia/data/work-accident/ised/proc21/distribution/TN_JSON_LD> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-nave> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-nave/tipo_nave.json> ;
+    dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla classificazione delle tipologie di nave adottata dall'INAIL"@it,
+        "This is the distribution in JSON_LD of the ship types classification adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione JSON_LD del vocabolario controllato sulla classificazione delle tipologie di nave adottata dall'INAIL"@it,
+        "JSON_LD distribution of the ship types classification adopted by INAIL controlled vocabulary"@en .
 
-<https://w3id.org/italia/data/work-accident/ised/proc21/distribution/TN_JSON_LD> 
-a   dcatapit:Distribution, dcat:Distribution ;
-      dct:title "Distribuzione JSON_LD del vocabolario controllato sulla classificazione delle tipologie di nave adottata dall'INAIL"@it , "JSON_LD distribution of the ship types classification adopted by INAIL controlled vocabulary"@en ;
-      dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla classificazione delle tipologie di nave adottata dall'INAIL"@it , "This is the distribution in JSON_LD of the ship types classification adopted by INAIL controlled vocabulary"@en ;
-      dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
-      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-      dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-nave/tipo_nave.json> ; 
-      dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-nave> .
+<https://w3id.org/italia/data/work-accident/ised/proc21/distribution/TN_RDF_TURTLE> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-nave> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-nave/tipo_nave.ttl> ;
+    dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla classificazione delle tipologie di nave adottata dall'INAIL"@it,
+        "This is the distribution in RDF/turtle of the ship types classification adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione RDF/Turtle del vocabolario controllato sulla classificazione delle tipologie di nave adottata dall'INAIL"@it,
+        "RDF/Turtle distribution of the ship types classification adopted by INAIL controlled vocabulary"@en .
 
-<https://w3id.org/italia/data/work-accident/ised/proc21/distribution/TN_CSV> 
-a	dcatapit:Distribution, dcat:Distribution ;
-      dct:title	"Distribuzione CSV del vocabolario controllato sulla classificazione delle tipologie di nave adottata dall'INAIL"@it , "CSV distribution of the ship types classification adopted by INAIL controlled vocabulary"@en ;
-      dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classificazione delle tipologie di nave adottata dall'INAIL"@it , "This is the distribution in CSV of the ship types classification adopted by INAIL controlled vocabulary"@en ;
-      dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
-      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-      dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-nave/tipo_nave.csv> ; 
-      dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-nave> .	
+<https://w3id.org/italia/data/work-accident/ised/proc21/organization/inail> a dcatapit:Agent,
+        foaf:Agent ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
 
-<https://w3id.org/italia/data/work-accident/ised/proc21/organization/ufficioV> 
-a   owl:NamedIndividual, dcatapit:Organization, vcard:Kind, vcard:Organization ;
-      vcard:fn "INAIL Ufficio V - D.C.O.D";
-      vcard:hasEmail <mailto:dcod@inail.it> . 
-      	
-#######################################################################################################
-#                 Definition of the controlled vocabulary - First level                               #
-#######################################################################################################
+inailvoc:tipo_nave a adms:Asset,
+        dcatapit:Dataset,
+        skos:ConceptScheme ;
+    rdfs:label "Controlled vocabulary on the ship types classification adopted by INAIL"@en,
+        "Vocabolario controllato sulla classificazione delle tipologie di nave adottata dall'INAIL"@it ;
+    skos:prefLabel "Vocabolario controllato sulla classificazione delle tipologie di nave adottata dall'INAIL"@it ;
+    rdfs:comment "Classification of ship types: hydrofoil, motorboat, fishing boat etc."@en,
+        "Classificazione delle tipologie di nave: aliscafo, motoscafo, peschereccio ecc."@it ;
+    owl:versionInfo "0.3" ;
+    rdfs:isDefinedBy inailvoc:tipo_nave ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:contactPoint <https://w3id.org/italia/data/work-accident/ised/proc21/organization/ufficioV> ;
+    dcat:distribution <https://w3id.org/italia/data/work-accident/ised/proc21/distribution/TN_CSV>,
+        <https://w3id.org/italia/data/work-accident/ised/proc21/distribution/TN_JSON_LD>,
+        <https://w3id.org/italia/data/work-accident/ised/proc21/distribution/TN_RDF_TURTLE> ;
+    dcat:keyword "autoliquidazione"@it,
+        "inail"@en,
+        "inail"@it,
+        "insurance premium"@en,
+        "nave"@it,
+        "premio assicurativo"@it,
+        "ship"@en,
+        "tipo nave"@it,
+        "type of ship"@en ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/AGRI>,
+        <http://publications.europa.eu/resource/authority/data-theme/ECON>,
+        <http://publications.europa.eu/resource/authority/data-theme/TRAN> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dct:creator <https://w3id.org/italia/data/work-accident/ised/proc21/organization/inail> ;
+    dct:description "Classification of ship types: hydrofoil, motorboat, fishing boat etc."@en,
+        "Classificazione delle tipologie di nave: aliscafo, motoscafo, peschereccio ecc."@it ;
+    dct:identifier "https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave" ;
+    dct:issued "2022-12-21"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2023-02-13"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/data/work-accident/ised/proc21/organization/inail> ;
+    dct:relation inailvoc:registro_iscrizione,
+        inailvoc:servizio_nave,
+        inailvoc:specie_navigazione ;
+    dct:rightsHolder <https://w3id.org/italia/data/work-accident/ised/proc21/organization/inail> ;
+    dct:subject <http://eurovoc.europa.eu/985>,
+        <http://eurovoc.europa.eu/2316>,
+        <http://eurovoc.europa.eu/4827>,
+        <http://eurovoc.europa.eu/4829>,
+        <http://eurovoc.europa.eu/4832> ;
+    dct:title "Controlled vocabulary on the ship types classification adopted by INAIL"@en,
+        "Vocabolario controllato sulla classificazione delle tipologie di nave adottata dall'INAIL"@it ;
+    dct:type <http://purl.org/adms/assettype/CodeList> ;
+    ndc:keyConcept "tipo_nave" ;
+    skos:hasTopConcept tiponave:0,
+        tiponave:1,
+        tiponave:2,
+        tiponave:3,
+        tiponave:4,
+        tiponave:5,
+        tiponave:6,
+        tiponave:7,
+        tiponave:8,
+        tiponave:9,
+        tiponave:10,
+        tiponave:11,
+        tiponave:12,
+        tiponave:13,
+        tiponave:14,
+        tiponave:15,
+        tiponave:16,
+        tiponave:17,
+        tiponave:18,
+        tiponave:19,
+        tiponave:20,
+        tiponave:21,
+        tiponave:22,
+        tiponave:23,
+        tiponave:24,
+        tiponave:25,
+        tiponave:26,
+        tiponave:27,
+        tiponave:28,
+        tiponave:29,
+        tiponave:30,
+        tiponave:31,
+        tiponave:32,
+        tiponave:33,
+        tiponave:34,
+        tiponave:35,
+        tiponave:36,
+        tiponave:37,
+        tiponave:38,
+        tiponave:39,
+        tiponave:40,
+        tiponave:41,
+        tiponave:42,
+        tiponave:43,
+        tiponave:44,
+        tiponave:45,
+        tiponave:46 ;
+    xkos:numberOfLevels "1" .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/0>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "0" ;
-      dct:identifier "0" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Assente"@it ;
-      skos:prefLabel "Assente"@it.
+tiponave:0 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Assente"@it ;
+    skos:prefLabel "Assente"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "0" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "0" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/1>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "1" ;
-      dct:identifier "1" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Aliscafo"@it ;
-      skos:prefLabel "Aliscafo"@it.
+tiponave:1 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Aliscafo"@it ;
+    skos:prefLabel "Aliscafo"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "1" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "1" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/2>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "2" ;
-      dct:identifier "2" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Bacino gallegiante"@it ;
-      skos:prefLabel "Bacino gallegiante"@it.
+tiponave:2 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Bacino gallegiante"@it ;
+    skos:prefLabel "Bacino gallegiante"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "2" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "2" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/3>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "3" ;
-      dct:identifier "3" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Barca"@it ;
-      skos:prefLabel "Barca"@it.
+tiponave:3 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Barca"@it ;
+    skos:prefLabel "Barca"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "3" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "3" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/4>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "4" ;
-      dct:identifier "4" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Barca palombaro"@it ;
-      skos:prefLabel "Barca palombaro"@it.
+tiponave:4 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Barca palombaro"@it ;
+    skos:prefLabel "Barca palombaro"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "4" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "4" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/5>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "5" ;
-      dct:identifier "5" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Betta"@it ;
-      skos:prefLabel "Betta"@it.
+tiponave:5 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Betta"@it ;
+    skos:prefLabel "Betta"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "5" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "5" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/6>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "6" ;
-      dct:identifier "6" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Bettolina"@it ;
-      skos:prefLabel "Bettolina"@it.
+tiponave:6 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Bettolina"@it ;
+    skos:prefLabel "Bettolina"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "6" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "6" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/7>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "7" ;
-      dct:identifier "7" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Chiatta"@it ;
-      skos:prefLabel "Chiatta"@it.
+tiponave:7 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Chiatta"@it ;
+    skos:prefLabel "Chiatta"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "7" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "7" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/8>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "8" ;
-      dct:identifier "8" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Draga"@it ;
-      skos:prefLabel "Draga"@it.
+tiponave:8 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Draga"@it ;
+    skos:prefLabel "Draga"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "8" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "8" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/9>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "9" ;
-      dct:identifier "9" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Imbarcazione a  remi"@it ;
-      skos:prefLabel "Imbarcazione a  remi"@it.
+tiponave:9 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Imbarcazione a  remi"@it ;
+    skos:prefLabel "Imbarcazione a  remi"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "9" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "9" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/10>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "10" ;
-      dct:identifier "10" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Imbarcazione a vela"@it ;
-      skos:prefLabel "Imbarcazione a vela"@it.
+tiponave:10 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Imbarcazione a vela"@it ;
+    skos:prefLabel "Imbarcazione a vela"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "10" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "10" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/11>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "11" ;
-      dct:identifier "11" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Motobarca"@it ;
-      skos:prefLabel "Motobarca"@it.
+tiponave:11 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Motobarca"@it ;
+    skos:prefLabel "Motobarca"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "11" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "11" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/12>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "12" ;
-      dct:identifier "12" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Motobettolina"@it ;
-      skos:prefLabel "Motobettolina"@it.
+tiponave:12 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Motobettolina"@it ;
+    skos:prefLabel "Motobettolina"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "12" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "12" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/13>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "13" ;
-      dct:identifier "13" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Motobetta"@it ;
-      skos:prefLabel "Motobetta"@it.
+tiponave:13 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Motobetta"@it ;
+    skos:prefLabel "Motobetta"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "13" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "13" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/14>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "14" ;
-      dct:identifier "14" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Motocisterna"@it ;
-      skos:prefLabel "Motocisterna"@it.
+tiponave:14 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Motocisterna"@it ;
+    skos:prefLabel "Motocisterna"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "14" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "14" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/15>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "15" ;
-      dct:identifier "15" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Motodraga"@it ;
-      skos:prefLabel "Motodraga"@it.
+tiponave:15 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Motodraga"@it ;
+    skos:prefLabel "Motodraga"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "15" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "15" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/16>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "16" ;
-      dct:identifier "16" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Motonave"@it ;
-      skos:prefLabel "Motonave"@it.
+tiponave:16 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Motonave"@it ;
+    skos:prefLabel "Motonave"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "16" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "16" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/17>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "17" ;
-      dct:identifier "17" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Motopeschereccio"@it ;
-      skos:prefLabel "Motopeschereccio"@it.
+tiponave:17 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Motopeschereccio"@it ;
+    skos:prefLabel "Motopeschereccio"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "17" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "17" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/18>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "18" ;
-      dct:identifier "18" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Motopontone"@it ;
-      skos:prefLabel "Motopontone"@it.
+tiponave:18 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Motopontone"@it ;
+    skos:prefLabel "Motopontone"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "18" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "18" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/19>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "19" ;
-      dct:identifier "19" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Motoscafo"@it ;
-      skos:prefLabel "Motoscafo"@it.
+tiponave:19 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Motoscafo"@it ;
+    skos:prefLabel "Motoscafo"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "19" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "19" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/20>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "20" ;
-      dct:identifier "20" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Motoveliero"@it ;
-      skos:prefLabel "Motoveliero"@it.
+tiponave:20 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Motoveliero"@it ;
+    skos:prefLabel "Motoveliero"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "20" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "20" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/21>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "21" ;
-      dct:identifier "21" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Motozattera"@it ;
-      skos:prefLabel "Motozattera"@it.
+tiponave:21 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Motozattera"@it ;
+    skos:prefLabel "Motozattera"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "21" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "21" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/22>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "22" ;
-      dct:identifier "22" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Motobarca palombaro"@it ;
-      skos:prefLabel "Motobarca palombaro"@it.
+tiponave:22 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Motobarca palombaro"@it ;
+    skos:prefLabel "Motobarca palombaro"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "22" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "22" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/23>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "23" ;
-      dct:identifier "23" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Nave scuola"@it ;
-      skos:prefLabel "Nave scuola"@it.
+tiponave:23 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Nave scuola"@it ;
+    skos:prefLabel "Nave scuola"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "23" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "23" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/24>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "24" ;
-      dct:identifier "24" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Diporto con quote sind."@it ;
-      skos:prefLabel "Diporto con quote sind."@it.
+tiponave:24 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Diporto con quote sind."@it ;
+    skos:prefLabel "Diporto con quote sind."@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "24" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "24" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/25>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "25" ;
-      dct:identifier "25" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Pesca atlantica"@it ;
-      skos:prefLabel "Pesca atlantica"@it.
+tiponave:25 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Pesca atlantica"@it ;
+    skos:prefLabel "Pesca atlantica"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "25" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "25" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/26>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "26" ;
-      dct:identifier "26" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Peschereccio"@it ;
-      skos:prefLabel "Peschereccio"@it.
+tiponave:26 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Peschereccio"@it ;
+    skos:prefLabel "Peschereccio"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "26" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "26" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/27>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "27" ;
-      dct:identifier "27" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Pilotina"@it ;
-      skos:prefLabel "Pilotina"@it.
+tiponave:27 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Pilotina"@it ;
+    skos:prefLabel "Pilotina"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "27" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "27" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/28>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "28" ;
-      dct:identifier "28" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Piroscafo"@it ;
-      skos:prefLabel "Piroscafo"@it.
+tiponave:28 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Piroscafo"@it ;
+    skos:prefLabel "Piroscafo"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "28" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "28" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/29>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "29" ;
-      dct:identifier "29" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Pontone"@it ;
-      skos:prefLabel "Pontone"@it.
+tiponave:29 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Pontone"@it ;
+    skos:prefLabel "Pontone"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "29" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "29" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/30>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "30" ;
-      dct:identifier "30" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Porta containers"@it ;
-      skos:prefLabel "Porta containers"@it.
+tiponave:30 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Porta containers"@it ;
+    skos:prefLabel "Porta containers"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "30" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "30" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/31>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "31" ;
-      dct:identifier "31" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Rimorchiatori"@it ;
-      skos:prefLabel "Rimorchiatori"@it.
+tiponave:31 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Rimorchiatori"@it ;
+    skos:prefLabel "Rimorchiatori"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "31" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "31" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/32>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "32" ;
-      dct:identifier "32" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Traghetto ro ro"@it ;
-      skos:prefLabel "Traghetto ro ro"@it.
+tiponave:32 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Traghetto ro ro"@it ;
+    skos:prefLabel "Traghetto ro ro"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "32" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "32" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/33>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "33" ;
-      dct:identifier "33" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Traghetto"@it ;
-      skos:prefLabel "Traghetto"@it.
+tiponave:33 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Traghetto"@it ;
+    skos:prefLabel "Traghetto"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "33" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "33" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/34>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "34" ;
-      dct:identifier "34" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Turbonave"@it ;
-      skos:prefLabel "Turbonave"@it.
+tiponave:34 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Turbonave"@it ;
+    skos:prefLabel "Turbonave"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "34" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "34" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/35>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "35" ;
-      dct:identifier "35" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Veliero"@it ;
-      skos:prefLabel "Veliero"@it.
+tiponave:35 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Veliero"@it ;
+    skos:prefLabel "Veliero"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "35" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "35" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/36>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "36" ;
-      dct:identifier "36" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Veliero con motore"@it ;
-      skos:prefLabel "Veliero con motore"@it.
+tiponave:36 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Veliero con motore"@it ;
+    skos:prefLabel "Veliero con motore"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "36" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "36" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/37>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "37" ;
-      dct:identifier "37" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Diporto"@it ;
-      skos:prefLabel "Diporto"@it.
+tiponave:37 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Diporto"@it ;
+    skos:prefLabel "Diporto"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "37" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "37" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/38>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "38" ;
-      dct:identifier "38" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Zattera"@it ;
-      skos:prefLabel "Zattera"@it.
+tiponave:38 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Zattera"@it ;
+    skos:prefLabel "Zattera"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "38" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "38" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/39>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "39" ;
-      dct:identifier "39" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Galleggiante"@it ;
-      skos:prefLabel "Galleggiante"@it.
+tiponave:39 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Galleggiante"@it ;
+    skos:prefLabel "Galleggiante"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "39" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "39" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/40>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "40" ;
-      dct:identifier "40" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Piattaforma"@it ;
-      skos:prefLabel "Piattaforma"@it.
+tiponave:40 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Piattaforma"@it ;
+    skos:prefLabel "Piattaforma"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "40" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "40" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/41>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "41" ;
-      dct:identifier "41" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Nave veloce"@it ;
-      skos:prefLabel "Nave veloce"@it.
+tiponave:41 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Nave veloce"@it ;
+    skos:prefLabel "Nave veloce"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "41" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "41" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/42>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "42" ;
-      dct:identifier "42" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Natante"@it ;
-      skos:prefLabel "Natante"@it.
+tiponave:42 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Natante"@it ;
+    skos:prefLabel "Natante"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "42" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "42" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/43>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "43" ;
-      dct:identifier "43" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Barca a remi"@it ;
-      skos:prefLabel "Barca a remi"@it.
+tiponave:43 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Barca a remi"@it ;
+    skos:prefLabel "Barca a remi"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "43" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "43" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/44>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "44" ;
-      dct:identifier "44" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Nave diporto"@it ;
-      skos:prefLabel "Nave diporto"@it.
+tiponave:44 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Nave diporto"@it ;
+    skos:prefLabel "Nave diporto"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "44" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "44" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/45>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "45" ;
-      dct:identifier "45" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Imbarcazione diporto"@it ;
-      skos:prefLabel "Imbarcazione diporto"@it.
+tiponave:45 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Imbarcazione diporto"@it ;
+    skos:prefLabel "Imbarcazione diporto"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "45" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "45" ;
+    xkos:depth 1 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave/46>
-a  	skos:Concept, INAILAutoliq:tipoNave ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/proc21/tipo_nave>;
-      skos:notation "46" ;
-      dct:identifier "46" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Barca a vela"@it ;
-      skos:prefLabel "Barca a vela"@it.
+tiponave:46 a INAILAutoliq:tipoNave,
+        skos:Concept ;
+    rdfs:label "Barca a vela"@it ;
+    skos:prefLabel "Barca a vela"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "46" ;
+    skos:inScheme inailvoc:tipo_nave ;
+    skos:notation "46" ;
+    xkos:depth 1 .
 
+### Serialized using the ttlser deterministic serializer v1.2.0

@@ -1,814 +1,837 @@
-@prefix dct:            <http://purl.org/dc/terms/> .
-@prefix adms:           <http://www.w3.org/ns/adms#> .
-@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix owl:            <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:            <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix dc:             <http://purl.org/dc/elements/1.1/> .
-@prefix skos:           <http://www.w3.org/2004/02/skos/core#> .
-@prefix foaf:           <http://xmlns.com/foaf/0.1/> .
-@prefix xkos:           <http://rdf-vocabulary.ddialliance.org/xkos#> .
-@prefix clvapit:        <https://w3id.org/italia/onto/CLV/> .
-@prefix dcat:           <http://www.w3.org/ns/dcat#> .
-@prefix vcard:          <http://www.w3.org/2006/vcard/ns#> .
-@prefix dcatapit:       <http://dati.gov.it/onto/dcatapit#> .
-@prefix xsd:            <http://www.w3.org/2001/XMLSchema#> .
-@prefix ndc:            <https://w3id.org/italia/onto/NDC/> .
-@prefix cov:            <https://w3id.org/italia/onto/COV/> .
-@prefix INAILService:   <https://w3id.org/italia/onto/work-accident/ised/adm_serv/> .
-@prefix inailvoc:       <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/> .
-@prefix grupagentemat:  <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/> .
-@prefix agentemat:      <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/>.
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix agentemat: <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix grupagentemat: <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/> .
+@prefix INAILService: <https://w3id.org/italia/onto/work-accident/ised/adm_serv/> .
+@prefix inailvoc: <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+### Individuals
 
-#Metadata DCAT-AP_IT for the controlled vocabulary
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>
-      a       skos:ConceptScheme , adms:Asset , dcatapit:Dataset  ;
-      dct:title "Vocabolario Controllato sulla classificazione degli agenti materiali adottata dall'INAIL"@it , "Classification of material agents adopted by INAIL Controlled Vocabulary"@en ;
-      dct:description "Questo è il vocabolario controllato della classificazione degli agenti materiali adottata dall'INAIL"@it , "This is the controlled vocabulary of the material agents adopted by INAIL classification."@en ;
-      rdfs:comment "Questo è il vocabolario controllato della classificazione degli agenti materiali adottata dall'INAIL"@it , "This is the controlled vocabulary of the material agents adopted by INAIL classification."@en ;
-      rdfs:label "Vocabolario Controllato sulla classificazione degli agenti materiali adottata dall'INAIL"@it , "Classification of material agents adopted by INAIL Controlled Vocabulary"@en ;
-      skos:prefLabel "Vocabolario Controllato sulla classificazione degli agenti materiali adottata dall'INAIL"@it ;
-	  dct:type <http://purl.org/adms/assettype/CodeList>;
-	  xkos:numberOfLevels "2";
-      ndc:keyConcept "agente_materiale" ;
-      adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS>;
-      dct:identifier "https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale" ;
-      dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI>, <http://publications.europa.eu/resource/authority/data-theme/HEAL>;
-      dct:subject <http://eurovoc.europa.eu/1761>, <http://eurovoc.europa.eu/825>, <http://eurovoc.europa.eu/1993>, <http://eurovoc.europa.eu/100215> ;
-      dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS>;
-      dct:language <http://publications.europa.eu/resource/authority/language/ITA>;
-      rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      dcat:keyword "agente materiale"@it, "inail"@it , "malattie professionali"@it , "infortunio"@it , "sicurezza sul lavoro"@it , "mortalità professionale"@it , "occupational disease"@en, "occupational injury"@en, "occupational safety"@en , "occupationale mortality"@en;
-      dct:issued "2022-07-26"^^xsd:date ;
-      dct:modified "2023-02-13"^^xsd:date ;
-      owl:versionInfo "0.3" ;
-	  dct:accrualPeriodicity  <http://publications.europa.eu/resource/authority/frequency/IRREG>;
-      dct:creator <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail>;
-      dct:publisher <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail>;
-      dct:relation <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_causale> , <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/tipo_contatto>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/deviazione> ;   
-      dct:rightsHolder <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail>;
-      dcat:contactPoint <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/ufficioV> ;
-      dcat:distribution <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/AM_RDF_TURTLE>, <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/AM_JSON_LD>, <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/AM_CSV> ;
-      skos:hasTopConcept  <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/0>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/1>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/2>,
-	                      <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/3>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/4>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/5>, 
-	                      <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/6>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/7>, <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/8> .
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/ufficioV> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
 
-#######################################################################################################
-#                                   INAIL and standard                                                #
-#######################################################################################################
+### Annotations
 
-<https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail>
-a   dcatapit:Agent , foaf:Agent ;
-      dct:identifier "inail" ;
-      foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it ,
-                "National Institute for Insurance against Accidents at Work"@en .
+agentemat:0.0 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Macchine motrici"@it ;
+    skos:prefLabel "Macchine motrici"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "0.0" ;
+    skos:broader grupagentemat:0 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "0.0" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/data/standard/SKOS>
-a   dcatapit:Standard, dct:Standard ;
-      dct:identifier "SKOS" ;
-      dct:title "Simple Knowledge Organization System - SKOS" ;
-      dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
+agentemat:0.1 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Macchine generatrici"@it ;
+    skos:prefLabel "Macchine generatrici"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "0.1" ;
+    skos:broader grupagentemat:0 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "0.1" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/AM_RDF_TURTLE>
-a   dcatapit:Distribution, dcat:Distribution ;
-      dct:title	"Distribuzione RDF/Turtle del vocabolario controllato sulla classificazione degli agenti materiali adottata dall'INAIL"@it, "RDF/Turtle distribution of the classification of material agents adopted by INAIL controlled vocabulary"@en ;
-      dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla classificazione degli agenti materiali adottata dall'INAIL"@it, "This is the distribution in RDF/turtle of the classification of material agents adopted by INAIL controlled vocabulary"@en ;
-      dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-      dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/agente-materiale/agente_materiale.ttl> ;  
-      dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/agente-materiale> .	  
+agentemat:0.2 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Macchine operatrici non utensili"@it ;
+    skos:prefLabel "Macchine operatrici non utensili"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "0.2" ;
+    skos:broader grupagentemat:0 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "0.2" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/AM_JSON_LD>
-a   dcatapit:Distribution, dcat:Distribution ;
-      dct:title "Distribuzione JSON_LD del vocabolario controllato sulla classificazione degli agenti materiali adottata dall'INAIL"@it , "JSON_LD distribution of the classification of material agents adopted by INAIL controlled vocabulary"@en ;
-      dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla classificazione degli agenti materiali adottata dall'INAIL"@it , "This is the distribution in JSON_LD of the classification of material agents adopted by INAIL controlled vocabulary"@en ;
-      dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
-      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-      dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/agente-materiale/agente_materiale.json> ; 
-      dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/agente-materiale> . 
+agentemat:0.3 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Macchine trasformatrici e convertitrici"@it ;
+    skos:prefLabel "Macchine trasformatrici e convertitrici"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "0.3" ;
+    skos:broader grupagentemat:0 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "0.3" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/AM_CSV>
-a	dcatapit:Distribution, dcat:Distribution ;
-      dct:title	"Distribuzione CSV del vocabolario controllato sulla classificazione degli agenti materiali adottata dall'INAIL"@it , "CSV distribution of the classification of material agents adopted by INAIL controlled vocabulary"@en ;
-      dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classificazione degli agenti materiali adottata dall'INAIL"@it , "This is the distribution in CSV of the classification of material agents adopted by INAIL controlled vocabulary"@en ;
-      dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
-      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-      dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/agente-materiale/agente_materiale.csv> ; 
-      dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/agente-materiale> .
+agentemat:0.4 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Macchine utensili"@it ;
+    skos:prefLabel "Macchine utensili"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "0.4" ;
+    skos:broader grupagentemat:0 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "0.4" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/ufficioV> 
-a   owl:NamedIndividual, dcatapit:Organization, vcard:Kind, vcard:Organization ;
-      vcard:fn "INAIL Ufficio V - D.C.O.D";
-      vcard:hasEmail <mailto:dcod@inail.it> .
+agentemat:1.0 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Mezzi di sollevamento e/o stoccaggio e/o smistamento materiali"@it ;
+    skos:prefLabel "Mezzi di sollevamento e/o stoccaggio e/o smistamento materiali"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.0" ;
+    skos:broader grupagentemat:1 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "1.0" ;
+    xkos:depth 2 .
 
-#######################################################################################################
-#                         Definition of the controlled vocabulary - First level                       #
-#######################################################################################################      	
+agentemat:1.1 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Mezzi di trasporto terrestre non su rotaia"@it ;
+    skos:prefLabel "Mezzi di trasporto terrestre non su rotaia"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.1" ;
+    skos:broader grupagentemat:1 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "1.1" ;
+    xkos:depth 2 .
 
+agentemat:1.2 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Mezzi di trasporto su rotaia"@it ;
+    skos:prefLabel "Mezzi di trasporto su rotaia"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.2" ;
+    skos:broader grupagentemat:1 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "1.2" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/0>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/0.0>,
-                    <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/0.1>, 
-                    <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/0.2>, 
-                    <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/0.3>,
-					<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/0.4>;					
-      skos:notation "0" ;
- 	  dct:identifier "0" ;
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Macchine"@it ;
- 	  skos:prefLabel "Macchine"@it .
+agentemat:1.3 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Mezzi di trasporto aereo"@it ;
+    skos:prefLabel "Mezzi di trasporto aereo"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.3" ;
+    skos:broader grupagentemat:1 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "1.3" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/1>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/1.0>, 
-                    <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/1.1>,
-					<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/1.2>,
-                    <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/1.3>,
-					<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/1.4>,
-                    <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/1.5>;
-      skos:notation "1" ;
- 	  dct:identifier "1" ;
-	  clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Mezzi di sollevamento e trasporto"@it ;
- 	  skos:prefLabel "Mezzi di sollevamento e trasporto"@it .
-      
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/2>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/2.0>,
-					<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/2.1>,
-                    <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/2.2>,
-					<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/2.3>,
-                    <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/2.5>;
-	  skos:notation "2" ;
- 	  dct:identifier "2" ;				
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Impianti di distribuzione"@it ;
- 	  skos:prefLabel "Impianti di distribuzione"@it .
+agentemat:1.4 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Mezzi di trasporto per via acqua"@it ;
+    skos:prefLabel "Mezzi di trasporto per via acqua"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.4" ;
+    skos:broader grupagentemat:1 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "1.4" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/3>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL  ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/3.0>,
-					<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/3.1>,
-                    <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/3.2>,
-					<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/3.3>;
-	  skos:notation "3" ;
- 	  dct:identifier "3" ;				
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;    
-	  rdfs:label "Attrezzature, apparecchiature, attrezzi e utensili"@it ;
- 	  skos:prefLabel "Attrezzature, apparecchiature, attrezzi e utensili"@it .
+agentemat:1.5 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Mezzi di trasporto su fune"@it ;
+    skos:prefLabel "Mezzi di trasporto su fune"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.5" ;
+    skos:broader grupagentemat:1 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "1.5" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/4>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/4.0>,
-					<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/4.1>,
-                    <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/4.2>,
-					<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/4.3>,
-                    <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/4.4>,
-					<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/4.5>,
-                    <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/4.6>,
-					<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/4.7>,
-					<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/4.8>,
-                    <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/4.9>;
-	  skos:notation "4" ;
- 	  dct:identifier "4" ;			
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Materiali, sostanze, radiazioni"@it ;
- 	  skos:prefLabel "Materiali, sostanze, radiazioni"@it .    
-	 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/5>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/5.0>,
-					<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/5.1>,
-                    <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/5.2>,
-					<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/5.3>,
-					<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/5.4>,
-					<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/5.5>,
-                    <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/5.6>;
-	  skos:notation "5" ;
- 	  dct:identifier "5" ;			
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Ambienti di lavoro"@it ;
-      skos:prefLabel "Ambienti di lavoro"@it .  
+agentemat:2.0 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Impianti di distribuzione di vapore"@it ;
+    skos:prefLabel "Impianti di distribuzione di vapore"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.0" ;
+    skos:broader grupagentemat:2 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "2.0" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/6>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/6.0>,
-					<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/6.1>,
-                    <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/6.2>;
-	  skos:notation "6" ;
- 	  dct:identifier "6" ;			
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Persone, animali e vegetali"@it ;
-      skos:prefLabel "Persone, animali e vegetali"@it .
-     	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/7>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/7.0>,
-					<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/7.1>,
-                    <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/7.2>,
-					<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/7.3>,
-					<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/7.4>;			
-	  skos:notation "7" ;
- 	  dct:identifier "7" ;				
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Recipienti e contenitori"@it ;
- 	  skos:prefLabel "Recipienti e contenitori"@it . 
+agentemat:2.1 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Impianti di distribuzione di liquidi"@it ;
+    skos:prefLabel "Impianti di distribuzione di liquidi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.1" ;
+    skos:broader grupagentemat:2 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "2.1" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/8>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:narrower <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/8.0>,
-					<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/8.1>,
-                    <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/8.2>,
-					<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/8.3>,
-					<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/8.4>,
-					<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/8.5>;             
-	  skos:notation "8" ;
- 	  dct:identifier "8" ;			
-      clvapit:hasRankOrder "1" ;
-      xkos:depth 1 ;
-	  rdfs:label "Parti di macchine, mezzi di sollevamento e trasporto"@it ;
- 	  skos:prefLabel "Parti di macchine, mezzi di sollevamento e trasporto"@it .
+agentemat:2.2 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Impianti di distribuzione di elettricità"@it ;
+    skos:prefLabel "Impianti di distribuzione di elettricità"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.2" ;
+    skos:broader grupagentemat:2 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "2.2" ;
+    xkos:depth 2 .
 
-#######################################################################################################
-#                                              Second level                                           #
-#######################################################################################################
+agentemat:2.3 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Impianti di distribuzione di gas"@it ;
+    skos:prefLabel "Impianti di distribuzione di gas"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.3" ;
+    skos:broader grupagentemat:2 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "2.3" ;
+    xkos:depth 2 .
 
+agentemat:2.5 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Impianti di distribuzione di materiali solidi"@it ;
+    skos:prefLabel "Impianti di distribuzione di materiali solidi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.5" ;
+    skos:broader grupagentemat:2 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "2.5" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/0.0>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/0>;
-      skos:notation "0.0" ;
-      dct:identifier "0.0" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Macchine motrici"@it ;
-      skos:prefLabel "Macchine motrici"@it .
+agentemat:3.0 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Attrezzi"@it ;
+    skos:prefLabel "Attrezzi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.0" ;
+    skos:broader grupagentemat:3 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "3.0" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/0.1>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/0>;
-      skos:notation "0.1" ;
-      dct:identifier "0.1" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Macchine generatrici"@it ;
-      skos:prefLabel "Macchine generatrici"@it .
+agentemat:3.1 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Utensili"@it ;
+    skos:prefLabel "Utensili"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.1" ;
+    skos:broader grupagentemat:3 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "3.1" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/0.2>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/0>;
-      skos:notation "0.2" ;
-      dct:identifier "0.2" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Macchine operatrici non utensili"@it ;
-      skos:prefLabel "Macchine operatrici non utensili"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/0.3>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/0>;
-      skos:notation "0.3" ;
-      dct:identifier "0.3" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Macchine trasformatrici e convertitrici"@it ;
-      skos:prefLabel "Macchine trasformatrici e convertitrici"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/0.4>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/0>;
-      skos:notation "0.4" ;
-      dct:identifier "0.4" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Macchine utensili"@it ;
-      skos:prefLabel "Macchine utensili"@it .
+agentemat:3.2 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Attrezzature"@it ;
+    skos:prefLabel "Attrezzature"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.2" ;
+    skos:broader grupagentemat:3 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "3.2" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/1.0>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/1>;
-      skos:notation "1.0" ;
-      dct:identifier "1.0" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Mezzi di sollevamento e/o stoccaggio e/o smistamento materiali"@it ;
-      skos:prefLabel "Mezzi di sollevamento e/o stoccaggio e/o smistamento materiali"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/1.1>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/1>;
-      skos:notation "1.1" ;
-      dct:identifier "1.1" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Mezzi di trasporto terrestre non su rotaia"@it ;
-      skos:prefLabel "Mezzi di trasporto terrestre non su rotaia"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/1.2>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/1>;
-      skos:notation "1.2" ;
-      dct:identifier "1.2" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Mezzi di trasporto su rotaia"@it ;
-      skos:prefLabel "Mezzi di trasporto su rotaia"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/1.3>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/1>;
-      skos:notation "1.3" ;
-      dct:identifier "1.3" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Mezzi di trasporto aereo"@it ;
-      skos:prefLabel "Mezzi di trasporto aereo"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/1.4>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/1>;
-      skos:notation "1.4" ;
-      dct:identifier "1.4" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Mezzi di trasporto per via acqua"@it ;
-      skos:prefLabel "Mezzi di trasporto per via acqua"@it .
+agentemat:3.3 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Apparecchiature"@it ;
+    skos:prefLabel "Apparecchiature"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.3" ;
+    skos:broader grupagentemat:3 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "3.3" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/1.5>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/1>;
-      skos:notation "1.5" ;
-      dct:identifier "1.5" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Mezzi di trasporto su fune"@it ;
-      skos:prefLabel "Mezzi di trasporto su fune"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/2.0>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/2>;
-      skos:notation "2.0" ;
-      dct:identifier "2.0" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Impianti di distribuzione di vapore"@it ;
-      skos:prefLabel "Impianti di distribuzione di vapore"@it . 
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/2.1>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/2>;
-      skos:notation "2.1" ;
-      dct:identifier "2.1" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Impianti di distribuzione di liquidi"@it ;
-      skos:prefLabel "Impianti di distribuzione di liquidi"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/2.2>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/2>;
-      skos:notation "2.2" ;
-      dct:identifier "2.2" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Impianti di distribuzione di elettricità"@it ;
-      skos:prefLabel "Impianti di distribuzione di elettricità"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/2.3>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/2>;
-      skos:notation "2.3" ;
-      dct:identifier "2.3" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Impianti di distribuzione di gas"@it ;
-      skos:prefLabel "Impianti di distribuzione di gas"@it . 
+agentemat:4.0 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Esplosivi"@it ;
+    skos:prefLabel "Esplosivi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.0" ;
+    skos:broader grupagentemat:4 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "4.0" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/2.5>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/2>;
-      skos:notation "2.5" ;
-      dct:identifier "2.5" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Impianti di distribuzione di materiali solidi"@it ;
-      skos:prefLabel "Impianti di distribuzione di materiali solidi"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/3.0>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/3>;
-      skos:notation "3.0" ;
-      dct:identifier "3.0" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Attrezzi"@it ;
-      skos:prefLabel "Attrezzi"@it .
+agentemat:4.1 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Polveri"@it ;
+    skos:prefLabel "Polveri"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.1" ;
+    skos:broader grupagentemat:4 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "4.1" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/3.1>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/3>;
-      skos:notation "3.1" ;
-      dct:identifier "3.1" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Utensili"@it ;
-      skos:prefLabel "Utensili"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/3.2>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/3>;
-      skos:notation "3.2" ;
-      dct:identifier "3.2" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Attrezzature"@it ;
-      skos:prefLabel "Attrezzature"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/3.3>
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/3>;
-      skos:notation "3.3" ;
-      dct:identifier "3.3" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Apparecchiature"@it ;
-      skos:prefLabel "Apparecchiature"@it .
+agentemat:4.2 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Gas, vapori, fumi"@it ;
+    skos:prefLabel "Gas, vapori, fumi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.2" ;
+    skos:broader grupagentemat:4 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "4.2" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/4.0> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/4>;
-      skos:notation "4.0" ;
-      dct:identifier "4.0" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Esplosivi"@it ;
-      skos:prefLabel "Esplosivi"@it .
+agentemat:4.3 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Materiali liquidi"@it ;
+    skos:prefLabel "Materiali liquidi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.3" ;
+    skos:broader grupagentemat:4 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "4.3" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/4.1> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/4>;
-      skos:notation "4.1" ;
-      dct:identifier "4.1" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Polveri"@it ;
-      skos:prefLabel "Polveri"@it .
+agentemat:4.4 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Materiali solidi"@it ;
+    skos:prefLabel "Materiali solidi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.4" ;
+    skos:broader grupagentemat:4 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "4.4" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/4.2> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/4>;
-      skos:notation "4.2" ;
-      dct:identifier "4.2" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Gas, vapori, fumi"@it ;
-      skos:prefLabel "Gas, vapori, fumi"@it .
+agentemat:4.5 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Plastici"@it ;
+    skos:prefLabel "Plastici"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.5" ;
+    skos:broader grupagentemat:4 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "4.5" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/4.3> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/4>;
-      skos:notation "4.3" ;
-      dct:identifier "4.3" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Materiali liquidi"@it ;
-      skos:prefLabel "Materiali liquidi"@it .
+agentemat:4.6 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Radiazioni, scariche elettriche"@it ;
+    skos:prefLabel "Radiazioni, scariche elettriche"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.6" ;
+    skos:broader grupagentemat:4 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "4.6" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/4.4> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/4>;
-      skos:notation "4.4" ;
-      dct:identifier "4.4" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Materiali solidi"@it ;
-      skos:prefLabel "Materiali solidi"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/4.5> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/4>;
-      skos:notation "4.5" ;
-      dct:identifier "4.5" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Plastici"@it ;
-      skos:prefLabel "Plastici"@it .
+agentemat:4.7 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Fuoco"@it ;
+    skos:prefLabel "Fuoco"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.7" ;
+    skos:broader grupagentemat:4 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "4.7" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/4.6> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/4>;
-      skos:notation "4.6" ;
-      dct:identifier "4.6" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Radiazioni, scariche elettriche"@it ;
-      skos:prefLabel "Radiazioni, scariche elettriche"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/4.7> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/4>;
-      skos:notation "4.7" ;
-      dct:identifier "4.7" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Fuoco"@it ;
-      skos:prefLabel "Fuoco"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/4.8> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/4>;
-      skos:notation "4.8" ;
-      dct:identifier "4.8" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Frammenti, particelle, schegge, scorte, detriti"@it ;
-      skos:prefLabel "Frammenti, particelle, schegge, scorte, detriti"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/4.9> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/4>;
-      skos:notation "4.9" ;
-      dct:identifier "4.9" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Schizzi, spruzzi, gocce, metallo fuso"@it ;
-      skos:prefLabel "Schizzi, spruzzi, gocce, metallo fuso"@it .
+agentemat:4.8 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Frammenti, particelle, schegge, scorte, detriti"@it ;
+    skos:prefLabel "Frammenti, particelle, schegge, scorte, detriti"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.8" ;
+    skos:broader grupagentemat:4 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "4.8" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/5.0> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/5>;
-      skos:notation "5.0" ;
-      dct:identifier "5.0" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Agenti atmosferici"@it ;
-      skos:prefLabel "Agenti atmosferici"@it .
+agentemat:4.9 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Schizzi, spruzzi, gocce, metallo fuso"@it ;
+    skos:prefLabel "Schizzi, spruzzi, gocce, metallo fuso"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.9" ;
+    skos:broader grupagentemat:4 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "4.9" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/5.1> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/5>;
-      skos:notation "5.1" ;
-      dct:identifier "5.1" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Superfici di lavoro e transito"@it ;
-      skos:prefLabel "Superfici di lavoro e transito"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/5.2> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/5>;
-      skos:notation "5.2" ;
-      dct:identifier "5.2" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Scale e passerelle"@it ;
-      skos:prefLabel "Scale e passerelle"@it .
+agentemat:5.0 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Agenti atmosferici"@it ;
+    skos:prefLabel "Agenti atmosferici"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.0" ;
+    skos:broader grupagentemat:5 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "5.0" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/5.3> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/5>;
-      skos:notation "5.3" ;
-      dct:identifier "5.3" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Aperture nel pavimento o nelle pareti"@it ;
-      skos:prefLabel "Aperture nel pavimento o nelle pareti"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/5.4> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/5>;
-      skos:notation "5.4" ;
-      dct:identifier "5.4" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Parti costitutive di edifici"@it ;
-      skos:prefLabel "Parti costitutive di edifici"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/5.5> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/5>;
-      skos:notation "5.5" ;
-      dct:identifier "5.5" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Infissi"@it ;
-      skos:prefLabel "Infissi"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/5.6> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/5>;
-      skos:notation "5.6" ;
-      dct:identifier "5.6" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Arredi e impianti fissi"@it ;
-      skos:prefLabel "Arredi e impianti fissi"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/6.0> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/6>;
-      skos:notation "6.0" ;
-      dct:identifier "6.0" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Persone"@it ;
-      skos:prefLabel "Persone"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/6.1> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/6>;
-      skos:notation "6.1" ;
-      dct:identifier "6.1" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Animali"@it ;
-      skos:prefLabel "Animali"@it .
+agentemat:5.1 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Superfici di lavoro e transito"@it ;
+    skos:prefLabel "Superfici di lavoro e transito"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.1" ;
+    skos:broader grupagentemat:5 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "5.1" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/6.2> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/6>;
-      skos:notation "6.2" ;
-      dct:identifier "6.2" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Vegetali"@it ;
-      skos:prefLabel "Vegetali"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/7.0> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/7>;
-      skos:notation "7.0" ;
-      dct:identifier "7.0" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Serbatoi per liquidi"@it ;
-      skos:prefLabel "Serbatoi per liquidi"@it .
+agentemat:5.2 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Scale e passerelle"@it ;
+    skos:prefLabel "Scale e passerelle"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.2" ;
+    skos:broader grupagentemat:5 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "5.2" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/7.1> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/7>;
-      skos:notation "7.1" ;
-      dct:identifier "7.1" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Serbatoi per gas"@it ;
-      skos:prefLabel "Serbatoi per gas"@it .
+agentemat:5.3 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Aperture nel pavimento o nelle pareti"@it ;
+    skos:prefLabel "Aperture nel pavimento o nelle pareti"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.3" ;
+    skos:broader grupagentemat:5 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "5.3" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/7.2> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/7>;
-      skos:notation "7.2" ;
-      dct:identifier "7.2" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Silos"@it ;
-      skos:prefLabel "Silos"@it .
+agentemat:5.4 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Parti costitutive di edifici"@it ;
+    skos:prefLabel "Parti costitutive di edifici"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.4" ;
+    skos:broader grupagentemat:5 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "5.4" ;
+    xkos:depth 2 .
 
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/7.3> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/7>;
-      skos:notation "7.3" ;
-      dct:identifier "7.3" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Bombole"@it ;
-      skos:prefLabel "Bombole"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/7.4> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/7>;
-      skos:notation "7.4" ;
-      dct:identifier "7.4" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Contenitori"@it ;
-      skos:prefLabel "Contenitori"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/8.0> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/8>;
-      skos:notation "8.0" ;
-      dct:identifier "8.0" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Parti meccaniche"@it ;
-      skos:prefLabel "Parti meccaniche"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/8.1> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/8>;
-      skos:notation "8.1" ;
-      dct:identifier "8.1" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Parti elettriche"@it ;
-      skos:prefLabel "Parti elettriche"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/8.2> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/8>;
-      skos:notation "8.2" ;
-      dct:identifier "8.2" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Parti pneumatiche"@it ;
-      skos:prefLabel "Parti pneumatiche"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/8.3> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/8>;
-      skos:notation "8.3" ;
-      dct:identifier "8.3" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Parti oleodinamiche"@it ;
-      skos:prefLabel "Parti oleodinamiche"@it .
-	  
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/8.4> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/8>;
-      skos:notation "8.4" ;
-      dct:identifier "8.4" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Parti termiche"@it ;
-      skos:prefLabel "Parti termiche"@it .	  
-	   
-<https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/agente/8.5> 
-a  	skos:Concept, INAILService:AgenteMaterialeINAIL ;
-      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale>;
-      skos:broader <https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale/gruppo/8>;
-      skos:notation "8.5" ;
-      dct:identifier "8.5" ;
-      clvapit:hasRankOrder "2" ;
-      xkos:depth 2 ;
-	  rdfs:label "Parti non altrove specificate"@it ;
-      skos:prefLabel "Parti non altrove specificate"@it .
+agentemat:5.5 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Infissi"@it ;
+    skos:prefLabel "Infissi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.5" ;
+    skos:broader grupagentemat:5 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "5.5" ;
+    xkos:depth 2 .
+
+agentemat:5.6 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Arredi e impianti fissi"@it ;
+    skos:prefLabel "Arredi e impianti fissi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.6" ;
+    skos:broader grupagentemat:5 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "5.6" ;
+    xkos:depth 2 .
+
+agentemat:6.0 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Persone"@it ;
+    skos:prefLabel "Persone"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.0" ;
+    skos:broader grupagentemat:6 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "6.0" ;
+    xkos:depth 2 .
+
+agentemat:6.1 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Animali"@it ;
+    skos:prefLabel "Animali"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.1" ;
+    skos:broader grupagentemat:6 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "6.1" ;
+    xkos:depth 2 .
+
+agentemat:6.2 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Vegetali"@it ;
+    skos:prefLabel "Vegetali"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.2" ;
+    skos:broader grupagentemat:6 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "6.2" ;
+    xkos:depth 2 .
+
+agentemat:7.0 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Serbatoi per liquidi"@it ;
+    skos:prefLabel "Serbatoi per liquidi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "7.0" ;
+    skos:broader grupagentemat:7 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "7.0" ;
+    xkos:depth 2 .
+
+agentemat:7.1 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Serbatoi per gas"@it ;
+    skos:prefLabel "Serbatoi per gas"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "7.1" ;
+    skos:broader grupagentemat:7 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "7.1" ;
+    xkos:depth 2 .
+
+agentemat:7.2 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Silos"@it ;
+    skos:prefLabel "Silos"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "7.2" ;
+    skos:broader grupagentemat:7 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "7.2" ;
+    xkos:depth 2 .
+
+agentemat:7.3 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Bombole"@it ;
+    skos:prefLabel "Bombole"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "7.3" ;
+    skos:broader grupagentemat:7 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "7.3" ;
+    xkos:depth 2 .
+
+agentemat:7.4 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Contenitori"@it ;
+    skos:prefLabel "Contenitori"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "7.4" ;
+    skos:broader grupagentemat:7 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "7.4" ;
+    xkos:depth 2 .
+
+agentemat:8.0 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Parti meccaniche"@it ;
+    skos:prefLabel "Parti meccaniche"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "8.0" ;
+    skos:broader grupagentemat:8 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "8.0" ;
+    xkos:depth 2 .
+
+agentemat:8.1 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Parti elettriche"@it ;
+    skos:prefLabel "Parti elettriche"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "8.1" ;
+    skos:broader grupagentemat:8 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "8.1" ;
+    xkos:depth 2 .
+
+agentemat:8.2 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Parti pneumatiche"@it ;
+    skos:prefLabel "Parti pneumatiche"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "8.2" ;
+    skos:broader grupagentemat:8 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "8.2" ;
+    xkos:depth 2 .
+
+agentemat:8.3 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Parti oleodinamiche"@it ;
+    skos:prefLabel "Parti oleodinamiche"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "8.3" ;
+    skos:broader grupagentemat:8 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "8.3" ;
+    xkos:depth 2 .
+
+agentemat:8.4 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Parti termiche"@it ;
+    skos:prefLabel "Parti termiche"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "8.4" ;
+    skos:broader grupagentemat:8 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "8.4" ;
+    xkos:depth 2 .
+
+agentemat:8.5 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Parti non altrove specificate"@it ;
+    skos:prefLabel "Parti non altrove specificate"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "8.5" ;
+    skos:broader grupagentemat:8 ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:notation "8.5" ;
+    xkos:depth 2 .
+
+grupagentemat:0 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Macchine"@it ;
+    skos:prefLabel "Macchine"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "0" ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:narrower agentemat:0.0,
+        agentemat:0.1,
+        agentemat:0.2,
+        agentemat:0.3,
+        agentemat:0.4 ;
+    skos:notation "0" ;
+    xkos:depth 1 .
+
+grupagentemat:1 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Mezzi di sollevamento e trasporto"@it ;
+    skos:prefLabel "Mezzi di sollevamento e trasporto"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "1" ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:narrower agentemat:1.0,
+        agentemat:1.1,
+        agentemat:1.2,
+        agentemat:1.3,
+        agentemat:1.4,
+        agentemat:1.5 ;
+    skos:notation "1" ;
+    xkos:depth 1 .
+
+grupagentemat:2 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Impianti di distribuzione"@it ;
+    skos:prefLabel "Impianti di distribuzione"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "2" ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:narrower agentemat:2.0,
+        agentemat:2.1,
+        agentemat:2.2,
+        agentemat:2.3,
+        agentemat:2.5 ;
+    skos:notation "2" ;
+    xkos:depth 1 .
+
+grupagentemat:3 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Attrezzature, apparecchiature, attrezzi e utensili"@it ;
+    skos:prefLabel "Attrezzature, apparecchiature, attrezzi e utensili"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "3" ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:narrower agentemat:3.0,
+        agentemat:3.1,
+        agentemat:3.2,
+        agentemat:3.3 ;
+    skos:notation "3" ;
+    xkos:depth 1 .
+
+grupagentemat:4 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Materiali, sostanze, radiazioni"@it ;
+    skos:prefLabel "Materiali, sostanze, radiazioni"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "4" ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:narrower agentemat:4.0,
+        agentemat:4.1,
+        agentemat:4.2,
+        agentemat:4.3,
+        agentemat:4.4,
+        agentemat:4.5,
+        agentemat:4.6,
+        agentemat:4.7,
+        agentemat:4.8,
+        agentemat:4.9 ;
+    skos:notation "4" ;
+    xkos:depth 1 .
+
+grupagentemat:5 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Ambienti di lavoro"@it ;
+    skos:prefLabel "Ambienti di lavoro"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "5" ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:narrower agentemat:5.0,
+        agentemat:5.1,
+        agentemat:5.2,
+        agentemat:5.3,
+        agentemat:5.4,
+        agentemat:5.5,
+        agentemat:5.6 ;
+    skos:notation "5" ;
+    xkos:depth 1 .
+
+grupagentemat:6 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Persone, animali e vegetali"@it ;
+    skos:prefLabel "Persone, animali e vegetali"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "6" ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:narrower agentemat:6.0,
+        agentemat:6.1,
+        agentemat:6.2 ;
+    skos:notation "6" ;
+    xkos:depth 1 .
+
+grupagentemat:7 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Recipienti e contenitori"@it ;
+    skos:prefLabel "Recipienti e contenitori"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "7" ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:narrower agentemat:7.0,
+        agentemat:7.1,
+        agentemat:7.2,
+        agentemat:7.3,
+        agentemat:7.4 ;
+    skos:notation "7" ;
+    xkos:depth 1 .
+
+grupagentemat:8 a INAILService:AgenteMaterialeINAIL,
+        skos:Concept ;
+    rdfs:label "Parti di macchine, mezzi di sollevamento e trasporto"@it ;
+    skos:prefLabel "Parti di macchine, mezzi di sollevamento e trasporto"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "8" ;
+    skos:inScheme inailvoc:agente_materiale ;
+    skos:narrower agentemat:8.0,
+        agentemat:8.1,
+        agentemat:8.2,
+        agentemat:8.3,
+        agentemat:8.4,
+        agentemat:8.5 ;
+    skos:notation "8" ;
+    xkos:depth 1 .
+
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
+        dct:Standard ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dct:identifier "SKOS" ;
+    dct:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/AM_CSV> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/agente-materiale> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/agente-materiale/agente_materiale.csv> ;
+    dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classificazione degli agenti materiali adottata dall'INAIL"@it,
+        "This is the distribution in CSV of the classification of material agents adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "CSV distribution of the classification of material agents adopted by INAIL controlled vocabulary"@en,
+        "Distribuzione CSV del vocabolario controllato sulla classificazione degli agenti materiali adottata dall'INAIL"@it .
+
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/AM_JSON_LD> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/agente-materiale> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/agente-materiale/agente_materiale.json> ;
+    dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla classificazione degli agenti materiali adottata dall'INAIL"@it,
+        "This is the distribution in JSON_LD of the classification of material agents adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione JSON_LD del vocabolario controllato sulla classificazione degli agenti materiali adottata dall'INAIL"@it,
+        "JSON_LD distribution of the classification of material agents adopted by INAIL controlled vocabulary"@en .
+
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/AM_RDF_TURTLE> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/agente-materiale> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/agente-materiale/agente_materiale.ttl> ;
+    dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla classificazione degli agenti materiali adottata dall'INAIL"@it,
+        "This is the distribution in RDF/turtle of the classification of material agents adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione RDF/Turtle del vocabolario controllato sulla classificazione degli agenti materiali adottata dall'INAIL"@it,
+        "RDF/Turtle distribution of the classification of material agents adopted by INAIL controlled vocabulary"@en .
+
+<https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> a dcatapit:Agent,
+        foaf:Agent ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+inailvoc:agente_materiale a adms:Asset,
+        dcatapit:Dataset,
+        skos:ConceptScheme ;
+    rdfs:label "Classification of material agents adopted by INAIL Controlled Vocabulary"@en,
+        "Vocabolario Controllato sulla classificazione degli agenti materiali adottata dall'INAIL"@it ;
+    skos:prefLabel "Vocabolario Controllato sulla classificazione degli agenti materiali adottata dall'INAIL"@it ;
+    rdfs:comment "Questo è il vocabolario controllato della classificazione degli agenti materiali adottata dall'INAIL"@it,
+        "This is the controlled vocabulary of the material agents adopted by INAIL classification."@en ;
+    owl:versionInfo "0.3" ;
+    rdfs:isDefinedBy inailvoc:agente_materiale ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:contactPoint <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/ufficioV> ;
+    dcat:distribution <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/AM_CSV>,
+        <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/AM_JSON_LD>,
+        <https://w3id.org/italia/data/work-accident/ised/adm_serv/distribution/AM_RDF_TURTLE> ;
+    dcat:keyword "agente materiale"@it,
+        "inail"@it,
+        "infortunio"@it,
+        "malattie professionali"@it,
+        "mortalità professionale"@it,
+        "occupational disease"@en,
+        "occupational injury"@en,
+        "occupational safety"@en,
+        "occupationale mortality"@en,
+        "sicurezza sul lavoro"@it ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/HEAL>,
+        <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dct:creator <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
+    dct:description "Questo è il vocabolario controllato della classificazione degli agenti materiali adottata dall'INAIL"@it,
+        "This is the controlled vocabulary of the material agents adopted by INAIL classification."@en ;
+    dct:identifier "https://w3id.org/italia/controlled-vocabulary/work-accident/ised/adm_serv/agente_materiale" ;
+    dct:issued "2022-07-26"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2023-02-13"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
+    dct:relation inailvoc:agente_causale,
+        inailvoc:deviazione,
+        inailvoc:tipo_contatto ;
+    dct:rightsHolder <https://w3id.org/italia/data/work-accident/ised/adm_serv/organization/inail> ;
+    dct:subject <http://eurovoc.europa.eu/825>,
+        <http://eurovoc.europa.eu/1761>,
+        <http://eurovoc.europa.eu/1993>,
+        <http://eurovoc.europa.eu/100215> ;
+    dct:title "Classification of material agents adopted by INAIL Controlled Vocabulary"@en,
+        "Vocabolario Controllato sulla classificazione degli agenti materiali adottata dall'INAIL"@it ;
+    dct:type <http://purl.org/adms/assettype/CodeList> ;
+    ndc:keyConcept "agente_materiale" ;
+    skos:hasTopConcept grupagentemat:0,
+        grupagentemat:1,
+        grupagentemat:2,
+        grupagentemat:3,
+        grupagentemat:4,
+        grupagentemat:5,
+        grupagentemat:6,
+        grupagentemat:7,
+        grupagentemat:8 ;
+    xkos:numberOfLevels "2" .
+
+### Serialized using the ttlser deterministic serializer v1.2.0
