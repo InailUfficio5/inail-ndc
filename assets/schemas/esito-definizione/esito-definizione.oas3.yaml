@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: Schema dell'Esito Definizione
-  version: 202211.10.00
+  version: 202302.24.00
   x-summary: Schema dell'esito di definizione di un evento lesivo compatibile con l'ontologia INAIL.
   license:
     name: CC BY 4.0
@@ -26,21 +26,21 @@ components:
       type: string
       maxLength: 20
       description: Campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità.
-        Associato a https://w3id.org/italia/onto/WorkAccident/codiceEsitoDefinizione.
+        Associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/codiceEsitoDefinizione.
       example: 'CO'
 
     EsitoDefinizione:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/EsitoDefinizione
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/EsitoDefinizioneINAIL
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         codice_esito_definizione: codiceEsitoDefinizione
         descrizione_esito_definizione: descrizioneEsitoDefinizione
         codice_classificazione_esito_definizione: codiceClassificazioneEsitoDefinizione
         descrizione_classificazione_esito_definizione: descrizioneClassificazioneEsitoDefinizione
       additionalProperties: true
       description:
-          Questo schema rappresenta l'esito definizione ed è associato a https://w3id.org/italia/onto/WorkAccident/EsitoDefinizione.
+          Questo schema rappresenta l'esito definizione ed è associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/EsitoDefinizioneINAIL.
       required:
       - codice_esito_definizione
       - descrizione_esito_definizione

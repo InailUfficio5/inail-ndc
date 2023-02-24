@@ -1,8 +1,8 @@
 openapi: 3.0.3
 info:
-  title: Schema dell'Infortunato
-  version: 202301.10.00
-  x-summary: Schema dell'infortunato compatibile con l'ontologia INAIL.
+  title: Schema dell'Infortunato sul lavoro
+  version: 202302.24.00
+  x-summary: Schema dell'infortunato sul lavoro compatibile con l'ontologia INAIL.
   license:
     name: CC BY 4.0
     url: https://creativecommons.org/licenses/by/4.0/
@@ -27,19 +27,19 @@ components:
         format: int64
         description:
             Campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità.
-            Associato a https://w3id.org/italia/onto/WorkAccident/codiceSoggettoEventoLesivo.
+            Associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/codiceSoggettoEventoLesivo.
         example: 12345678
 
     Infortunato:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/Infortunato
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/InfortunatoSulLavoro
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         id_infortunato: codiceSoggettoEventoLesivo
         eta_all_accadimento_infortunato: etaAllAccadimento
       additionalProperties: true
       description:
-          Questo schema rappresenta un infortunato ed è associato ad https://w3id.org/italia/onto/WorkAccident/Infortunato.
+          Questo schema rappresenta un infortunato sul lavoro ed è associato ad https://w3id.org/italia/onto/work-accident/ised/adm_serv/InfortunatoSulLavoro.
       required:
       - id_infortunato
       - eta_all_accadimento_infortunato

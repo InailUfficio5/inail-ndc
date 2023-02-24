@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: Schema della Riapertura di una Trattazione
-  version: 202301.10.00
+  version: 202302.24.00
   x-summary: Schema della riapertura di una trattazione compatibile con l'ontologia INAIL.
   license:
     name: CC BY 4.0
@@ -37,18 +37,18 @@ components:
       type: string
       description:
           Campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità.
-          Associato a https://w3id.org/italia/onto/WorkAccident/idRiapertura.
+          Associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/idRiapertura.
       example: '111000000'
       maxLength: 50
       minLength: 1
     Riapertura:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/Riapertura
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/RiaperturaINAIL
       # This custom property defines the associated json-ld
       #   context that can be used to semantically describe
       #   the instances.
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         id_riapertura: idRiapertura
         data_apertura_riapertura: dataAperturaRiapertura
         data_inizio_riapertura: dataInizioRiapertura
@@ -72,7 +72,7 @@ components:
       additionalProperties: true
       description:
           Questo schema rappresenta la riapertura di una trattazione
-          ed è associato a https://w3id.org/italia/onto/WorkAccident/Riapertura.
+          ed è associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/RiaperturaINAIL.
       required:
       - id_riapertura
       - data_apertura_riapertura

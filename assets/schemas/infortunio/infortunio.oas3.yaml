@@ -1,8 +1,8 @@
 openapi: 3.0.3
 info:
-  title: Schema dell'Infortunio
-  version: 202310.10.00
-  x-summary: Schema dell'infortunio compatibile con l'ontologia INAIL.
+  title: Schema dell'Infortunio sul lavoro
+  version: 202302.24.00
+  x-summary: Schema dell'infortunio sul lavoro compatibile con l'ontologia INAIL.
   license:
     name: CC BY 4.0
     url: https://creativecommons.org/licenses/by/4.0/
@@ -32,19 +32,19 @@ components:
       type: string
       description:
         Campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità.
-        Associato a https://w3id.org/italia/onto/WorkAccident/idInfortunio.
+        Associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/idInfortunio.
       example: '111000000'
       maxLength: 50
       minLength: 1
 
     Infortunio:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/Infortunio
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/InfortunioSulLavoro
       # This custom property defines the associated json-ld
       #   context that can be used to semantically describe
       #   the instances.
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         id_infortunio: idInfortunio
         tipo_infortunio: tipoInfortunio
         modalita_infortunio_mezzo_trasporto: modalitaInfortunioMezzoDiTrasporto
@@ -56,8 +56,7 @@ components:
         data_protocollazione_infortunio: dataProtocollazioneEventoLesivo
         data_esito_definizione_infortunio: dataEsitoDefinizioneEventoLesivo
         data_infortunio: dataEventoLesivo
-        flag_positivo_negativo_infortunio: flagEventoLesivoPositivoNegativo
-        descrizione_flag_positivo_negativo_infortunio: descrizioneFlagEventoLesivoPositivoNegativo
+        descrizione_infortunio: descrizioneEventoLesivo
         infortunio_accaduto_a_infortunato:
           "@id": infortunioAccadutoAInfortunato
         infortunio_grado_inabilita_assunto:
@@ -124,7 +123,7 @@ components:
            "@id": eventoHaDecodificaIstruttoriaMorte
       additionalProperties: true
       description:
-         Questo schema rappresenta un infortunio ed è associato ad https://w3id.org/italia/onto/WorkAccident/Infortunio.
+         Questo schema rappresenta un infortunio sul lavoro ed è associato ad https://w3id.org/italia/onto/work-accident/ised/adm_serv/InfortunioSulLavoro.
       required:
       - tipo_infortunio
       - data_riferimento_infortunio
@@ -137,8 +136,7 @@ components:
       - data_protocollazione_infortunio
       - data_esito_definizione_infortunio
       - data_infortunio
-      - flag_positivo_negativo_infortunio
-      - descrizione_flag_positivo_negativo_infortunio
+      - descrizione_infortunio
       properties:
         id_infortunio:
           $ref: "#/components/schemas/IdInfortunio"
@@ -179,10 +177,7 @@ components:
           type: string
           format: date
           pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
-        flag_positivo_negativo_infortunio:
-          type: string
-          maxLength: 20
-        descrizione_flag_positivo_negativo_infortunio:
+        descrizione_infortunio:
           type: string
           maxLength: 50
         infortunio_accaduto_a_infortunato:
@@ -325,8 +320,7 @@ components:
         data_protocollazione_infortunio: '2014-08-03'
         data_esito_definizione_infortunio: '2015-04-23'
         data_infortunio: '2014-08-02'
-        flag_positivo_negativo_infortunio: 'N'
-        descrizione_flag_positivo_negativo_infortunio: 'Negativo'
+        descrizione_infortunio: 'Negativo'
         infortunio_accaduto_a_infortunato:
           $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/infortunato/infortunato.oas3.yaml#/components/schemas/Infortunato/example"
         infortunio_grado_inabilita_assunto:
@@ -447,15 +441,15 @@ components:
 
     GradoDiInabilita:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/GradoDiInabilita
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/GradoDiInabilitaINAIL
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         descrizione_inabilita: descrizioneGradoDiInabilita
         percentuale_inabilita: percentualeGradoDiInabilita
       additionalProperties: true
       description:
           Questo schema rappresenta la percentuale con cui si misura il livello di perdita della capacità lavorativa complessiva in conseguenza di infortunio sul lavoro o di malattia professionale in regime Testo Unico.
-          Lo schema è associato a https://w3id.org/italia/onto/WorkAccident/GradoDiInabilita.
+          Lo schema è associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/GradoDiInabilitaINAIL.
       required:
       - descrizione_inabilita
       - percentuale_inabilita
@@ -474,15 +468,15 @@ components:
 
     TipoLuogoAccadimento:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/TipoLuogoAccadimento
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/TipoLuogoAccadimento
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         categoria_tipo_luogo: categoriaTipoLuogo
         descrizione_tipo_luogo: descrizioneTipoLuogo
       additionalProperties: true
       description:
           Questo schema rappresenta il luogo in cui è avvenuto un evento lesivo
-          ed è associato a https://w3id.org/italia/onto/WorkAccident/TipoLuogoAccadimento.
+          ed è associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/TipoLuogoAccadimentoINAIL.
       required:
       - descrizione_tipo_luogo
       - categoria_tipo_luogo
@@ -499,15 +493,15 @@ components:
 
     TipoAttivitaFisica:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/TipoAttivitaFisica
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/TipoAttivitaFisicaINAIL
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         categoria_attivita_fisica: categoriaAttivitaFisica
         descrizione_attivita_fisica : descrizioneAttivitaFisica
       additionalProperties: true
       description:
           Questo schema rappresenta Questo schema rappresenta il tipo di attività fisica svolta al momento dell'evento lesivo
-          ed è associato a https://w3id.org/italia/onto/WorkAccident/TipoAttivitaFisica.
+          ed è associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/TipoAttivitaFisicaINAIL.
       required:
       - categoria_attivita_fisica
       - descrizione_attivita_fisica
@@ -524,15 +518,15 @@ components:
 
     TipoContatto:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/TipoContatto
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/TipoContattoINAIL
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         categoria_tipo_contatto:
         descrizione_tipo_contatto:
       additionalProperties: true
       description:
           Questo schema rappresenta la sostanza e la tipologia di contatto con la stessa, che causa l'evento lesivo
-          ed è associato a https://w3id.org/italia/onto/WorkAccident/TipoContatto.
+          ed è associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/TipoContattoINAIL.
       required:
       - categoria_tipo_contatto
       - descrizione_tipo_contatto
@@ -549,15 +543,15 @@ components:
 
     TipoDeviazione:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/TipoDeviazione
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/TipoDeviazioneINAIL
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         categoria_tipo_deviazione:
         descrizione_tipo_deviazione:
       additionalProperties: true
       description:
           Questo schema rappresenta l'ultimo evento, deviante rispetto alla norma, che ha portato all'infortunio.
-          Rappresenta la descrizione di un evento anomalo e consiste in ciò che provoca l'infortunio ed è associato a https://w3id.org/italia/onto/WorkAccident/TipoDeviazione.
+          Rappresenta la descrizione di un evento anomalo e consiste in ciò che provoca l'infortunio ed è associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/TipoDeviazioneINAIL.
       required:
       - categoria_tipo_deviazione
       - descrizione_tipo_deviazione
@@ -574,14 +568,14 @@ components:
 
     SedeInail:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/SedeINAIL
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/core/SedeINAIL
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "hhttps://w3id.org/italia/onto/work-accident/ised/core/"
         codice_struttura: codiceStrutturaINAIL
         indirizzo_struttura: indirizzoStrutturaINAIL
       additionalProperties: true
       description:
-          Questo schema rappresenta una sede INAIL ed è associato a https://w3id.org/italia/onto/WorkAccident/SedeINAIL.
+          Questo schema rappresenta una sede INAIL ed è associato a https://w3id.org/italia/onto/work-accident/ised/core/SedeINAIL.
       required:
       - codice_struttura
       - indirizzo_struttura
@@ -598,14 +592,14 @@ components:
 
     PosizioneAssicurativaTerritoriale:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/PosizioneAssicurativaTerritoriale
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/core/PosizioneAssicurativaTerritoriale
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/core/"
         codice_pat: codicePAT
       additionalProperties: true
       description:
           La PAT (posizione assicurativa territoriale) indica la sede di lavoro che coincide con l'unità produttiva rilevante ai fini degli adempimenti assicurativi.
-          Lo schema è associato a https://w3id.org/italia/onto/WorkAccident/PosizioneAssicurativaTerritoriale.
+          Lo schema è associato a https://w3id.org/italia/onto/work-accident/ised/core/PosizioneAssicurativaTerritoriale.
       required:
       - codice_pat
       properties:
@@ -617,13 +611,14 @@ components:
 
     SoggettoAssicurante:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/SoggettoAssicurante
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/core/SoggettoAssicuranteINAIL
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/core/"
         codice_soggetto_assicurante: codiceSoggettoAssicurante
       additionalProperties: true
       description:
-          Questo schema rappresenta un soggetto assicurante ed è associato a https://w3id.org/italia/onto/WorkAccident/SoggettoAssicurante.
+          Ai fini dell'insaturazione e gestione del rapporto assicurativo vengono indicati da Inail come "soggetti assicuranti" tutte le imprese, anche quelle senza lavoratori dipendenti e/o parasubordinati. Sono considerati soggetti assicuranti anche quelli del settore navigazione e le persone giuridiche diverse dall'impresa.
+          Questo schema è associato a https://w3id.org/italia/onto/work-accident/ised/core/SoggettoAssicuranteINAIL.
       required:
       - codice_soggetto_assicurante
       properties:
@@ -635,14 +630,14 @@ components:
 
     SettoreAttivita:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/SettoreAttivita
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/core/SettoreAttivita
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/core/"
         codice_tipo_settore_attivita: codiceTipoSettoreAttivita
         descrizione_tipo_settore_attivita: descrizioneTipoSettoreAttivita
       additionalProperties: true
       description:
-          Questo schema rappresenta il settore di attività economica ed è associato a https://w3id.org/italia/onto/WorkAccident/SettoreAttivita.
+          Questo schema rappresenta il settore di attività economica ed è associato a https://w3id.org/italia/onto/work-accident/ised/core/SettoreAttivita.
       required:
       - codice_tipo_settore_attivita
       - descrizione_tipo_settore_attivita
@@ -659,15 +654,15 @@ components:
 
     GestioneAssicurativa:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/GestioneAssicurativa
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/GestioneAssicurativaINAIL
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         gruppo_gestione_assicurativa: gruppoGestioneAssicurativa
         tipo_gestione_assicurativa: tipoGestioneAssicurativa
       additionalProperties: true
       description:
           Questo schema rappresenta la categoria che evidenzia in quale gestione/settore è stata inquadrata l'attività assicurata.
-          Lo schema è associato a https://w3id.org/italia/onto/WorkAccident/GestioneAssicurativa.
+          Lo schema è associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/GestioneAssicurativaINAIL.
       required:
       - gruppo_gestione_assicurativa
       - tipo_gestione_assicurativa
@@ -684,9 +679,9 @@ components:
 
     VoceDiTariffa:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/VoceDiTariffa
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/VoceDiTariffaINAIL
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         codice_voce_tariffa: codiceVoceDiTariffa
         descrizione_voce_tariffa: descrizioneVoceDiTariffa
         codice_settore_attivita: codiceSettoreAttivita
@@ -695,7 +690,7 @@ components:
       description:
           Le Tariffe rappresentano un elenco di lavorazioni che servono a classificare l'attività di un'azienda ai fini assicurativi;
           la voce di tariffa ricomprende le lavorazioni produttive od operative, considerate come complesso unitario e ne definisce la rischiosità;
-          Lo schema è associato a https://w3id.org/italia/onto/WorkAccident/VoceDiTariffa.
+          Lo schema è associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/VoceDiTariffaINAIL.
       required:
       - codice_voce_tariffa
       - descrizione_voce_tariffa
@@ -722,13 +717,13 @@ components:
 
     NaturaLesione:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/NaturaLesione
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/NaturaLesioneINAIL
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         descrizione_natura_lesione:
       additionalProperties: true
       description:
-          Questo schema rappresenta la natura della lesione ed è associato a https://w3id.org/italia/onto/WorkAccident/NaturaLesione.
+          Questo schema rappresenta la natura della lesione ed è associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/NaturaLesioneINAIL.
       required:
       - descrizione_natura_lesione
       properties:
@@ -740,16 +735,16 @@ components:
 
     SedeLesione:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/SedeLesione
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/SedeLesioneINAIL
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         area_sede_lesione:
         macroarea_sede_lesione:
         descrizione_sede_lesione:
       additionalProperties: true
       description:
           Questo schema rappresenta la classificazione della sede delle lesioni adottata da Inail ed è
-          associato a https://w3id.org/italia/onto/WorkAccident/SedeLesione.
+          associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/SedeLesioneINAIL.
       required:
       - area_sede_lesione
       - macroarea_sede_lesione
@@ -771,9 +766,9 @@ components:
 
     GestioneContabile:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/GestioneContabile
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/GestioneContabileINAIL
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         codice_tipo_gestione_contabile: codiceTipoGestioneContabile
         descrizione_tipo_gestione_contabile: descrizioneTipoGestioneContabile
         descrizione_gestione_contabile: descrizioneGestioneContabile
@@ -783,7 +778,7 @@ components:
       description:
           Questo schema rappresenta il sistema di classificazione dell'evento
           lesivo ai fini della imputazione contabile ai capitoli di spesa,
-          ed è associato a https://w3id.org/italia/onto/WorkAccident/GestioneContabile.
+          ed è associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/GestioneContabileINAIL.
       required:
       - codice_tipo_gestione_contabile
       - descrizione_tipo_gestione_contabile
@@ -815,16 +810,16 @@ components:
 
     FasciaPeriodoMorte:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/FasciaPeriodoMorte
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/FasciaPeriodoMorteINAIL
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         descrizione_fascia: descrizioneFasciaPeriodoMorte
         limite_inferiore: limiteInferioreFasciaPeriodoMorte
         limite_superiore: limiteSuperioreFasciaPeriodoMorte
       additionalProperties: true
       description:
           Questo schema rappresenta il numero di giorni trascorsi tra l'evento lesivo
-          e il decesso oppure se la morte è avvenuta sul colpo ed è associato a https://w3id.org/italia/onto/WorkAccident/FasciaPeriodoMorte.
+          e il decesso oppure se la morte è avvenuta sul colpo ed è associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/FasciaPeriodoMorteINAIL.
       required:
       - descrizione_fascia
       - limite_inferiore
@@ -846,16 +841,16 @@ components:
 
     DefinizioneMorte:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/DefinizioneMorte
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/DefinizioneMorteINAIL
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         codice_definizione_morte: codiceDefinizioneMorte
         descrizione_classificazione_morte: descrizioneClassificazioneMorte
       additionalProperties: true
       description:
           Questo schema rappresenta la definizione morte, ovvero la cessazione delle funzioni vitali negli organismi viventi e nell'uomo.
           Viene in rilievo quando sia riconducibile ad un infortunio sul lavoro o ad una malattia professionali, nonché quando interessi persone che percepiscono prestazioni economiche o considerate ai fini del calcolo dell'importo della rendita diretta.
-          Lo schema è associato a https://w3id.org/italia/onto/WorkAccident/DefinizioneMorte.
+          Lo schema è associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/DefinizioneMorteINAIL.
       required:
       - codice_definizione_morte
       - descrizione_classificazione_morte
@@ -872,16 +867,16 @@ components:
 
     QualificaAssicurativa:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/QualificaAssicurativa
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/QualificaAssicurativaINAIL
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         codice_qualifica_assicurativa: codiceQualificaAssicurativa
         descrizione_qualifica_assicurativa: descrizioneQualificaAssicurativa
         gestione_qualifica_assicurativa: gestioneQualificaAssicurativa
         tipo_lavoratore_qualifica_assicurativa: tipoLavoratoreQualificaAssicurativa
       additionalProperties: true
       description:
-          Questo schema rappresenta l'anagrafica della tipologia di qualifica assicurativa ed è associato a https://w3id.org/italia/onto/WorkAccident/QualificaAssicurativa.
+          Questo schema rappresenta l'anagrafica della tipologia di qualifica assicurativa ed è associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/QualificaAssicurativaINAIL.
           La qualifica assicurativa nasce dalla concatenazione del tipo di gestione e la qualifica professionale.
       required:
       - codice_qualifica_assicurativa
@@ -909,16 +904,16 @@ components:
 
     AgenteMateriale:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/AgenteMateriale
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/AgenteMaterialeINAIL
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         codice_agente_materiale: codiceAgenteMateriale
         descrizione_agente_materiale: descrizioneAgenteMateriale
         codice_gruppo_agente_materiale: codiceGruppoAgenteMatreriale
         descrizione_gruppo_agente_materiale: descrizioneGruppoAgenteMatreriale
       additionalProperties: true
       description:
-          Questo schema rappresenta la classificazione degli agenti materiali adottata dall'INAIL ed è associato a https://w3id.org/italia/onto/WorkAccident/AgenteMateriale.
+          Questo schema rappresenta la classificazione degli agenti materiali adottata dall'INAIL ed è associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/AgenteMaterialeINAIL.
       required:
       - codice_agente_materiale
       - descrizione_agente_materiale
@@ -945,9 +940,9 @@ components:
 
     ClassificazioneContrattoCnel:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/ClassificazioneContrattoCNEL
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/ClassificazioneContrattoCNEL
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         codice_classificazione_cnel: codiceClassificazioneCNEL
         descrizione_classificazione cnel: descrizioneClassificazioneCNEL
         categoria_classificazione_cnel: categoriaClassificazioneCNEL
@@ -955,7 +950,7 @@ components:
       additionalProperties: true
       description:
           Il contratto collettivo nazionale di lavoro (CCNL), è il contratto di lavoro stipulato dalle organizzazioni rappresentanti degli interessi dei datori di lavoro e dalle associazioni rappresentanti dei lavoratori.
-          Lo schema è associato a https://w3id.org/italia/onto/WorkAccident/ClassificazioneContrattoCNEL.
+          Lo schema è associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/ClassificazioneContrattoCNEL.
       required:
       - codice_classificazione_cnel
       - descrizione_classificazione cnel
@@ -982,15 +977,15 @@ components:
 
     ClassificazioneFasciaEta:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/ClassificazioneFasciaEta
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/ClassificazioneFasciaEtaINAIL
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         classificazione_eta_1: classificazioneEtaFascia1
         classificazione_eta_2: classificazioneEtaFascia2
         classificazione_eta_3: classificazioneEtaFascia3
       additionalProperties: true
       description:
-          Questo schema rappresenta la classificazione delle fasce d'età ed è associato a https://w3id.org/italia/onto/WorkAccident/ClassificazioneFasciaEta.
+          Questo schema rappresenta la classificazione delle fasce d'età ed è associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/ClassificazioneFasciaEtaINAIL.
       required:
       - classificazione_eta_1
       - classificazione_eta_2
@@ -1012,9 +1007,9 @@ components:
 
     ClassificazioneCauseEsterne:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/ClassificazioneCauseEsterne
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/ClassificazioneCauseEsterneINAIL
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         codice_cause_esterne: codiceClassificazioneCauseEsterne
         descrizione_cause_estere: descrizioneClassificazioneCauseEsterne
         sotto_settore_cause_esterne: sottoSettoreClassificazioneCauseEsterne
@@ -1022,7 +1017,7 @@ components:
       additionalProperties: true
       description:
           Questo schema rappresenta la classificazione supplementare delle cause esterne
-          di traumatismo ed avvelenamento ed è associato a https://w3id.org/italia/onto/WorkAccident/ClassificazioneCauseEsterne.
+          di traumatismo ed avvelenamento ed è associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/ClassificazioneCauseEsterneINAIL.
       required:
       - codice_cause_esterne
       - descrizione_cause_estere
@@ -1049,9 +1044,9 @@ components:
 
     AgenteCausale:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/AgenteCausale
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/AgenteCausaleINAIL
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         codice_agente_causale: codiceAgenteCausale
         descrizione_agente_causale: descrizioneAgenteCausale
         codice_gruppo_agente_causale: codiceGruppoAgenteCausale
@@ -1059,7 +1054,7 @@ components:
       additionalProperties: true
       description:
           Questo schema rappresenta la decodifica dell'agente, della lavorazione o dell'esposizione che può essere causa o concausa di malattia professionale
-          ed è associato a https://w3id.org/italia/onto/WorkAccident/AgenteCausale.
+          ed è associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/AgenteCausaleINAIL.
       required:
       - codice_agente_causale
       - descrizione_agente_causale
@@ -1086,15 +1081,15 @@ components:
 
     TipoPratica:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/TipoPratica
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/TipoPraticaINAIL
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         codice_tipo_pratica: codiceTipoPratica
         descrizione_tipo_pratica: descrizioneTipoPratica
       additionalProperties: true
       description:
           Questo schema rappresenta la classificazione di una pratica in funzione del tipo
-          di segnalazione (denuncia o comunicazione) ed è associato a https://w3id.org/italia/onto/WorkAccident/TipoPratica.
+          di segnalazione (denuncia o comunicazione) ed è associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/TipoPraticaINAIL.
       required:
       - codice_tipo_pratica
       - descrizione_tipo_pratica
@@ -1111,15 +1106,15 @@ components:
 
     TipoLavoratore:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/TipoLavoratore
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/TipoLavoratoreINAIL
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         codice_tipo_lavoratore: codiceTipoLavoratore
         descrizione_tipo_lavoratore: descrizioneTipoLavoratore
       additionalProperties: true
       description:
           Questo schema rappresenta l'elenco delle tipologie di lavoratore riferite alla tipologia di datore di lavoro dei settori industria, artigianato, servizi e Pubbliche Amministrazioni titolari di P.A.T.
-          Lo schema è associato a https://w3id.org/italia/onto/WorkAccident/TipoLavoratore.
+          Lo schema è associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/TipoLavoratoreINAIL.
       required:
       - codice_tipo_lavoratore
       - descrizione_tipo_lavoratore
@@ -1136,9 +1131,9 @@ components:
 
     Mansione:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/Mansione
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/MansioneINAIL
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         codice_mansione_l1: codiceMansioneLivello1
         descrizione_mansione_l1: descrizioneMansioneLivello1
         codice_mansione_l2: codiceMansioneLivello2
@@ -1154,7 +1149,7 @@ components:
       additionalProperties: true
       description:
           Il mansionario Inail è realizzato in un'ottica di analisi del rischio e individua le singole professioni.
-          Lo schema è associato a https://w3id.org/italia/onto/WorkAccident/Mansione.
+          Lo schema è associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/MansioneINAIL.
       required:
       - codice_mansione_l1
       - descrizione_mansione_l1
@@ -1221,15 +1216,15 @@ components:
 
     GradoDiMenomazione:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/GradoDiMenomazione
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/GradoDiMenomazioneINAIL
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         percentuale_grado_menomazione: percentualeGradoDiMenomazione
         descrizione_grado_menomazione: descrizioneGradoDiMenomazione
       additionalProperties: true
       description:
           Questo schema rappresenta la percentuale con cui si misura il livello di menomazione dell'integrità psicofisica complessiva in conseguenza di infortunio o malattia professionale in regime di danno biologico.
-          Lo schema è associato a https://w3id.org/italia/onto/WorkAccident/GradoDiMenomazione.
+          Lo schema è associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/GradoDiMenomazioneINAIL.
       required:
       - percentuale_grado_menomazione
       - descrizione_grado_menomazione
@@ -1246,14 +1241,14 @@ components:
 
     DecodificaIstruttoriaMorte:
       type: object
-      x-jsonld-type: https://w3id.org/italia/onto/WorkAccident/DecodificaIstruttoriaMorte
+      x-jsonld-type: https://w3id.org/italia/onto/work-accident/ised/adm_serv/DecodificaIstruttoriaMorteINAIL
       x-jsonld-context:
-        "@vocab": "https://w3id.org/italia/onto/WorkAccident/"
+        "@vocab": "https://w3id.org/italia/onto/work-accident/ised/adm_serv/"
         codice_decodifica_istruttoria_morte: codiceDecodificaIstruttoriaMorte
         descrizione_decodifica_istruttoria_morte: descrizioneDecodificaIstruttoriaMorte
       additionalProperties: true
       description:
-          Questo schema rappresenta la decodifica istruttoria morte ed è associato a https://w3id.org/italia/onto/WorkAccident/DecodificaIstruttoriaMorte.
+          Questo schema rappresenta la decodifica istruttoria morte ed è associato a https://w3id.org/italia/onto/work-accident/ised/adm_serv/DecodificaIstruttoriaMorteINAIL.
       required:
       - codice_decodifica_istruttoria_morte
       - descrizione_decodifica_istruttoria_morte
