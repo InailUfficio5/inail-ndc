@@ -34,6 +34,7 @@ jobs:
       # Only run on main branch push (e.g. after pull request merge).
       if: github.event_name == 'push'
       run: |
+        git config --global --add safe.directory /__w/ndc-feed/ndc-feed
         git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
         git config --global user.email "ci-bot@noreply"
         git add assets/
