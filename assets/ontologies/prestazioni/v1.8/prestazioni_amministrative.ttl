@@ -1,0 +1,3579 @@
+@prefix adms: <https://w3id.org/italia/onto/ADMS/> .
+@prefix CLV: <https://w3id.org/italia/onto/CLV/> .
+@prefix COV: <https://w3id.org/italia/onto/COV/> .
+@prefix CPV: <https://w3id.org/italia/onto/CPV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAIL: <http://okms.inail/ontology/> .
+@prefix INAILCore: <https://w3id.org/italia/work-accident/onto/core/> .
+@prefix INAILService: <https://w3id.org/italia/work-accident/onto/adm_serv/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix RO: <https://w3id.org/italia/onto/RO/> .
+@prefix TI: <https://w3id.org/italia/onto/TI/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+INAILService: a owl:Ontology ;
+    owl:versionIRI INAILService:1.8 ;
+    owl:imports CLV:,
+        COV:,
+        CPV:,
+        INAILCore:,
+        l0:,
+        RO:,
+        TI: ;
+    rdfs:label "INAIL Ontology  about Occupational Diseases and Injuries"@en,
+        "Ontologia INAIL relativa a Malattie Professionali e Infortuni"@it ;
+    rdfs:comment "Ontologia INAIL relativa a Malattie Professionali e Infortuni. La malattia professionale è una patologia la cui causa agisce lentamente e progressivamente sull’organismo (causa diluita e non causa violenta e concentrata nel tempo), e deve essere diretta ed efficiente, cioè in grado di produrre l’infermità in modo esclusivo o prevalente. Deve esistere un rapporto causale, o concausale, diretto tra il rischio professionale e la malattia. Il rischio può essere provocato dalla lavorazione che l'assicurato svolge, oppure dall'ambiente in cui la lavorazione stessa si svolge. L' infortunio sul lavoro è ogni lesione originata, in occasione di lavoro, da causa violenta che determini la morte della persona o ne menomi parzialmente o totalmente la capacità lavorativa in via temporanea o permanente. Si differenzia dalla malattia professionale poiché l’evento scatenante è improvviso e violento, mentre nel primo caso le cause sono lente e diluite nel tempo."@it,
+        "This is the ontology of the INAIL Organization about Occupational Diseases and Injuries. Occupational disease is a pathology whose cause acts slowly and progressively on the body (diluted cause and not violent cause concentrated over time), and ti must be direct and efficient, that is, capable of producing the infirmity exclusively or predominantly. There must be a direct causal, or concausal, relationship between the occupational risk and the disease. The risk may be caused by the work the insured person does, or by the environment in which the work takes place. Occupational injury is any wound originating, on the occasion of work, from a violent cause that results in the death of the person or partially or totally damages his or her ability to work temporarily or permanently. It's different from occupational disease in that the triggering event is sudden and violent, whereas in the former the causes are slow and diluted over time."@en ;
+    owl:versionInfo "Version 1.8 - Modified on 03 July 2023"@en,
+        "Versione 1.8 - Modificata il 03 Luglio 2023"@it ;
+    rdfs:isDefinedBy INAILService: ;
+    adms:acronym "inail" ;
+    adms:hasContributor <https://w3id.org/italia/work-accident/data/organization/td> ;
+    adms:hasFormalityLevel adms:Formal ;
+    adms:hasKeyClass INAILService:EventoLesivoINAIL,
+        INAILService:GestioneAssicurativaINAIL,
+        INAILService:InfortunioSulLavoro,
+        INAILService:MalattiaProfessionale,
+        INAILService:PrestazioneEconomicaINAIL ;
+    adms:hasOntologyLanguage adms:OWL ;
+    adms:hasSemanticAssetDistribution <https://w3id.org/italia/work-accident/data/adm_serv/distribution/ADM-SERV-RDF-TURTLE> ;
+    adms:hasTask adms:AnnotationTask,
+        adms:QueryFormulationTask,
+        adms:SearchTask ;
+    adms:last INAILService:1.8 ;
+    adms:officialURI "https://w3id.org/italia/work-accident/onto/adm_serv"^^xsd:anyURI ;
+    adms:prefix "inail" ;
+    adms:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
+    adms:status "draft" ;
+    adms:target "Cittadini"@it,
+        "Imprese"@it,
+        "Pubbliche Amministrazioni"@it ;
+    adms:type adms:ServiceOnytology ;
+    dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+    dcat:keyword "Evento Lesivo"@it,
+        "Gestione Assicurativa"@it,
+        "Infortunio"@it,
+        "Insurance Management"@en,
+        "Malattia Professionale"@it,
+        "Occupational Disease"@en,
+        "Occupational Injury"@en,
+        "Work Accident"@en ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:description "Ontologia INAIL relativa a Malattie Professionali e Infortuni. La malattia professionale è una patologia la cui causa agisce lentamente e progressivamente sull’organismo (causa diluita e non causa violenta e concentrata nel tempo), e deve essere diretta ed efficiente, cioè in grado di produrre l’infermità in modo esclusivo o prevalente. Deve esistere un rapporto causale, o concausale, diretto tra il rischio professionale e la malattia. Il rischio può essere provocato dalla lavorazione che l'assicurato svolge, oppure dall'ambiente in cui la lavorazione stessa si svolge. L' infortunio sul lavoro è ogni lesione originata, in occasione di lavoro, da causa violenta che determini la morte della persona o ne menomi parzialmente o totalmente la capacità lavorativa in via temporanea o permanente. Si differenzia dalla malattia professionale poiché l’evento scatenante è improvviso e violento, mentre nel primo caso le cause sono lente e diluite nel tempo."@it,
+        "This is the ontology of the INAIL Organization about Occupational Diseases and Injuries, Occupational disease is a pathology whose cause acts slowly and progressively on the body (diluted cause and not violent cause concentrated over time), and ti must be direct and efficient, that is, capable of producing the infirmity exclusively or predominantly. There must be a direct causal, or concausal, relationship between the occupational risk and the disease. The risk may be caused by the work the insured person does, or by the environment in which the work takes place. Occupational injury is any wound originating, on the occasion of work, from a violent cause that results in the death of the person or partially or totally damages his or her ability to work temporarily or permanently. It's different from occupational disease in that the triggering event is sudden and violent, whereas in the former the causes are slow and diluted over time."@en ;
+    dct:identifier "https://w3id.org/italia/work-accident/onto/adm_serv" ;
+    dct:issued "2022-09-06T00:00:00+00:00"^^xsd:dateTime ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2023-06-27T00:00:00+00:00"^^xsd:dateTime ;
+    dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:title "INAIL Ontology  about Occupational Diseases and Injuries"@en,
+        "Ontologia INAIL relativa a Malattie Professionali e Infortuni"@it .
+
+### Object Properties
+
+INAIL:eventoHaTrattazione a owl:ObjectProperty ;
+    rdfs:label "eventoHaTrattazione"@it ;
+    owl:inverseOf INAILService:trattazioneRelativaAEvento .
+
+INAIL:SettoreAttivitaRelativoAVoceTariffa a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "SettoreAttivitaRelativoAVoceTariffa"@it ;
+    owl:inverseOf INAILService:voceDiTariffaHaSettoreAttivita .
+
+INAILService:appartieneAGrandeGruppoVoceDiTariffa a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "appartiene A Grande Gruppo Voce Di Tariffa"@it ;
+    rdfs:domain INAILService:GruppoVoceDiTariffaINAIL ;
+    rdfs:range INAILService:GrandeGruppoVoceDiTariffaINAIL .
+
+INAILService:appartieneAGruppoVoceDiTariffa a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "appartiene A Gruppo Voce Di Tariffa"@it ;
+    rdfs:domain INAILService:SottoGruppoVoceDiTariffaINAIL ;
+    rdfs:range INAILService:GruppoVoceDiTariffaINAIL .
+
+INAILService:appartieneASottoGruppoVoceDiTariffa a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "appartiene A Sotto Gruppo Voce Di Tariffa"@it ;
+    rdfs:domain INAILService:VoceDiTariffaINAIL ;
+    rdfs:range INAILService:SottoGruppoVoceDiTariffaINAIL .
+
+INAILService:eventoAvvenutoInLuogo a owl:ObjectProperty ;
+    rdfs:label "evento Avvenuto In Luogo"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range CLV:Feature .
+
+INAILService:eventoCoinvolgePAN a owl:ObjectProperty ;
+    rdfs:label "evento Coinvolge PAN"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILCore:PosizioneAssicurativaNavigazione .
+
+INAILService:eventoCoinvolgePAT a owl:ObjectProperty ;
+    rdfs:label "evento Coinvolge PAT"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILCore:PosizioneAssicurativaTerritoriale .
+
+INAILService:eventoCoinvolgeSoggettoAssicurante a owl:ObjectProperty ;
+    rdfs:label "evento Coinvolge Soggetto Assicurante"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILCore:SoggettoAssicuranteINAIL .
+
+INAILService:eventoHaDecodificaIstruttoriaMorte a owl:ObjectProperty ;
+    rdfs:label "evento Ha Decodifica Istruttoria Morte"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILService:DecodificaIstruttoriaMorteINAIL .
+
+INAILService:eventoHaDefinizioneMorte a owl:ObjectProperty ;
+    rdfs:label "evento Ha Definizione Morte"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILService:DefinizioneMorteINAIL .
+
+INAILService:eventoHaEsitoDefinizione a owl:ObjectProperty ;
+    rdfs:label "evento Ha Esito Definizione"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILService:EsitoDefinizioneINAIL .
+
+INAILService:eventoHaGradoDiMenomazione a owl:ObjectProperty ;
+    rdfs:label "evento Ha Grado Di Menomazione"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILService:GradoDiMenomazioneINAIL .
+
+INAILService:eventoHaNaturaLesione a owl:ObjectProperty ;
+    rdfs:label "evento Ha Natura Lesione"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILService:NaturaLesioneINAIL .
+
+INAILService:eventoHaSettoreAttivita a owl:ObjectProperty ;
+    rdfs:label "evento Ha Settore Attivita"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILCore:SettoreAttivita .
+
+INAILService:eventoHaTipoIndennizzo a owl:ObjectProperty ;
+    rdfs:label "evento Ha Tipo Indennizzo"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILService:TipoIndennizzoINAIL .
+
+INAILService:eventoHaTipoLavoratore a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "evento Ha Tipo Lavoratore"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILService:TipoLavoratoreINAIL .
+
+INAILService:eventoHaTipoPratica a owl:ObjectProperty ;
+    rdfs:label "evento Ha Tipo Pratica"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILService:TipoPraticaINAIL .
+
+INAILService:eventoHaTipoTrattazione a owl:ObjectProperty ;
+    rdfs:label "evento Ha Tipo Trattazione"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILService:TipoTrattazioneINAIL .
+
+INAILService:eventoHaVoceDiTariffa a owl:ObjectProperty ;
+    rdfs:label "evento Ha Voce Di Tariffa"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILService:VoceDiTariffaINAIL .
+
+INAILService:eventoRelativoAGestioneAssicurativa a owl:ObjectProperty ;
+    rdfs:label "evento Relativo A Gestione Assicurativa"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILService:GestioneAssicurativaINAIL .
+
+INAILService:eventoRelativoAMansione a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "evento Relativo A Mansione"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILService:MansioneINAIL .
+
+INAILService:eventoRelativoASoggetto a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "evento Relativo A Soggetto"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILService:SoggettoEventoLesivoINAIL .
+
+INAILService:eventoTrattatoDaSedeINAIL a owl:ObjectProperty ;
+    rdfs:label "evento Trattato Da Sede INAIL"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILCore:SedeINAIL .
+
+INAILService:gestioneAssicurativaRelativaAPolizza a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "gestione Assicurativa Relativa A Polizza"@it ;
+    rdfs:domain INAILService:GestioneAssicurativaINAIL ;
+    rdfs:range INAILCore:PolizzaINAIL .
+
+INAILService:gestioneHaSettoreAttivita a owl:ObjectProperty ;
+    rdfs:label "gestione Ha Settore Attivita"@it ;
+    rdfs:domain INAILService:GestioneAssicurativaINAIL ;
+    rdfs:range INAILCore:SettoreAttivita .
+
+INAILService:haAgenteCausale a owl:ObjectProperty ;
+    rdfs:label "ha Agente Causale"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILService:AgenteCausaleINAIL .
+
+INAILService:haAgenteMateriale a owl:ObjectProperty ;
+    rdfs:label "ha Agente Materiale"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILService:AgenteMaterialeINAIL .
+
+INAILService:haAvutoInabilita a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha Avuto Inabilita"@it ;
+    rdfs:range INAILService:InabilitaTemporaneaINAIL .
+
+INAILService:haClasseDiInabilita a owl:ObjectProperty ;
+    rdfs:label "ha Classe Di Inabilita"@it ;
+    rdfs:domain INAILService:GradoDiInabilitaINAIL ;
+    rdfs:range INAILService:ClasseInabilitaINAIL .
+
+INAILService:haClasseDiMenomazione a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha Classe Di Menomazione"@it ;
+    rdfs:domain INAILService:GradoDiMenomazioneINAIL ;
+    rdfs:range INAILService:ClasseMenomazioneINAIL .
+
+INAILService:haClassificazioneCauseEsterne a owl:ObjectProperty ;
+    rdfs:label "ha Classificazione Cause Esterne"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILService:ClassificazioneCauseEsterneINAIL .
+
+INAILService:haClassificazioneContrattoCNEL a owl:ObjectProperty ;
+    rdfs:label "ha Classificazione Contratto CNEL"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILService:ClassificazioneContrattoCNEL .
+
+INAILService:haClassificazioneFasciaEta a owl:ObjectProperty ;
+    rdfs:label "ha Classificazione Fascia Eta"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILService:ClassificazioneFasciaEtaINAIL .
+
+INAILService:haFasciaPeriodoMorte a owl:ObjectProperty ;
+    rdfs:label "ha Fascia Periodo Morte"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILService:FasciaPeriodoMorteINAIL .
+
+INAILService:haGestioneContabile a owl:ObjectProperty ;
+    rdfs:label "ha Gestione Contabile"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILService:GestioneContabileINAIL .
+
+INAILService:haQualificaAssicurativa a owl:ObjectProperty ;
+    rdfs:label "ha Qualifica Assicurativa"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILService:QualificaAssicurativaINAIL .
+
+INAILService:haSedeLesione a owl:ObjectProperty ;
+    rdfs:label "ha Sede Lesione"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range INAILService:SedeLesioneINAIL .
+
+INAILService:haTipoStatoRivalsa a owl:ObjectProperty ;
+    rdfs:label "ha Tipo Stato Rivalsa"@it ;
+    rdfs:domain INAILService:RivalsaINAIL ;
+    rdfs:range INAILService:TipoStatoRivalsaINAIL .
+
+INAILService:haTipoTrattazione a owl:ObjectProperty ;
+    rdfs:label "ha Tipo Trattazione"@it ;
+    rdfs:domain INAILService:TrattazioneINAIL ;
+    rdfs:range INAILService:TipoTrattazioneINAIL .
+
+INAILService:inabilitaCausataDaEvento a owl:ObjectProperty ;
+    rdfs:label "inabilita Causata Da Evento"@it ;
+    rdfs:domain INAILService:InabilitaTemporaneaINAIL ;
+    rdfs:range INAILService:EventoLesivoINAIL .
+
+INAILService:inabilitaRelativaATipoTrattazione a owl:ObjectProperty ;
+    rdfs:label "inabilita Relativa A Tipo Trattazione "@it ;
+    rdfs:domain INAILService:InabilitaTemporaneaINAIL ;
+    rdfs:range INAILService:TipoTrattazioneINAIL .
+
+INAILService:inabilitaRiferitaASoggetto a owl:ObjectProperty ;
+    rdfs:label "inabilita Riferita A Soggetto"@it ;
+    rdfs:domain INAILService:InabilitaTemporaneaINAIL .
+
+INAILService:indennizzoGiornalieroHaInabilita a owl:ObjectProperty ;
+    rdfs:label "indennizzo Giornaliero Ha Inabilita"@it ;
+    rdfs:domain INAILService:IndennizzoGiornalieroPerInabilitaTemporaneaINAIL ;
+    rdfs:range INAILService:InabilitaTemporaneaINAIL .
+
+INAILService:infortunioAccadutoAInfortunato a owl:ObjectProperty ;
+    rdfs:label "infortunio Accaduto A Infortunato"@it ;
+    rdfs:subPropertyOf INAILService:eventoRelativoASoggetto ;
+    rdfs:domain INAILService:InfortunioSulLavoro ;
+    rdfs:range INAILService:InfortunatoSulLavoro .
+
+INAILService:infortunioAccadutoInTipoLuogo a owl:ObjectProperty ;
+    rdfs:label "infortunio Accaduto In Tipo Luogo"@it ;
+    rdfs:domain INAILService:InfortunioSulLavoro ;
+    rdfs:range INAILService:TipoLuogoAccadimentoINAIL .
+
+INAILService:infortunioHaGradoDiInabilitaAssunto a owl:ObjectProperty ;
+    rdfs:label "infortunio Ha Grado Di Inabilita Assunto"@it ;
+    rdfs:domain INAILService:InfortunioSulLavoro ;
+    rdfs:range INAILService:GradoDiInabilitaINAIL .
+
+INAILService:infortunioHaGradoDiInabilitaAttuale a owl:ObjectProperty ;
+    rdfs:label "infortunio Ha Grado Di Inabilita Attuale"@it ;
+    rdfs:domain INAILService:InfortunioSulLavoro ;
+    rdfs:range INAILService:GradoDiInabilitaINAIL .
+
+INAILService:infortunioHaTipoAttivitaFisica a owl:ObjectProperty ;
+    rdfs:label "infortunio Ha Tipo Attivita Fisica"@it ;
+    rdfs:domain INAILService:InfortunioSulLavoro ;
+    rdfs:range INAILService:TipoAttivitaFisicaINAIL .
+
+INAILService:infortunioHaTipoContatto a owl:ObjectProperty ;
+    rdfs:label "infortunio Ha Tipo Contatto"@it ;
+    rdfs:domain INAILService:InfortunioSulLavoro ;
+    rdfs:range INAILService:TipoContattoINAIL .
+
+INAILService:infortunioHaTipoDeviazione a owl:ObjectProperty ;
+    rdfs:label "infortunio Ha Tipo Deviazione"@it ;
+    rdfs:domain INAILService:InfortunioSulLavoro ;
+    rdfs:range INAILService:TipoDeviazioneINAIL .
+
+INAILService:malattiaProfessionaleHaClassificazioneInternazionaleDenunciata a owl:ObjectProperty ;
+    rdfs:label "malattia Professionale Ha Classificazione Internazionale Denunciata"@it ;
+    rdfs:domain INAILService:MalattiaProfessionale ;
+    rdfs:range INAILService:ClassificazioneInternazionaleMalattieICD .
+
+INAILService:malattiaProfessionaleHaClassificazioneInternazionaleRiconosciuta a owl:ObjectProperty ;
+    rdfs:label "malattia Professionale Ha Classificazione Internazionale Riconosciuta"@it ;
+    rdfs:domain INAILService:MalattiaProfessionale ;
+    rdfs:range INAILService:ClassificazioneInternazionaleMalattieICD .
+
+INAILService:malattiaProfessionaleHaGradoDiInabilitaAssunto a owl:ObjectProperty ;
+    rdfs:label "malattia Professionale Ha Grado Di Inabilita Assunto"@it ;
+    rdfs:domain INAILService:MalattiaProfessionale ;
+    rdfs:range INAILService:GradoDiInabilitaINAIL .
+
+INAILService:malattiaProfessionaleHaGradoDiInabilitaAttuale a owl:ObjectProperty ;
+    rdfs:label "malattia Professionale Ha Grado Di Inabilita Attuale"@it ;
+    rdfs:domain INAILService:MalattiaProfessionale ;
+    rdfs:range INAILService:GradoDiInabilitaINAIL .
+
+INAILService:malattiaProfessionaleHaTipoMalattia a owl:ObjectProperty ;
+    rdfs:label "malattia Professionale Ha Tipo Malattia"@it ;
+    rdfs:domain INAILService:MalattiaProfessionale ;
+    rdfs:range INAILService:TipoMalattiaINAIL .
+
+INAILService:malattiaProfessionaleHaTipoMalattiaDenunciato a owl:ObjectProperty ;
+    rdfs:label "malattia Professionale Ha Tipo Malattia Denunciato"@it ;
+    rdfs:domain INAILService:MalattiaProfessionale ;
+    rdfs:range INAILService:TipoMalattiaINAIL .
+
+INAILService:malattiaProfessionaleHaTipoMalattiaFinale a owl:ObjectProperty ;
+    rdfs:label "malattia Professionale Ha Tipo Malattia Finale"@it ;
+    rdfs:domain INAILService:MalattiaProfessionale ;
+    rdfs:range INAILService:TipoMalattiaINAIL .
+
+INAILService:malattiaProfessionalehaTipoTecnopatia a owl:ObjectProperty ;
+    rdfs:label "malattia Professionale ha Tipo Tecnopatia"@it ;
+    rdfs:domain INAILService:MalattiaProfessionale ;
+    rdfs:range INAILService:TipoTecnopatiaINAIL .
+
+INAILService:malattiaProfessionalehaTipoTecnopatiaDenunciato a owl:ObjectProperty ;
+    rdfs:label "malattia Professionale ha Tipo Tecnopatia Denunciato"@it ;
+    rdfs:domain INAILService:MalattiaProfessionale ;
+    rdfs:range INAILService:TipoTecnopatiaINAIL .
+
+INAILService:malattiaProfessionalehaTipoTecnopatiaFinale a owl:ObjectProperty ;
+    rdfs:label "malattia Professionale ha Tipo Tecnopatia Finale"@it ;
+    rdfs:domain INAILService:MalattiaProfessionale ;
+    rdfs:range INAILService:TipoTecnopatiaINAIL .
+
+INAILService:malattiaProfessionaleRelativaATecnopatico a owl:ObjectProperty ;
+    rdfs:label "malattia Professionale Relativa A Tecnopatico"@it ;
+    rdfs:subPropertyOf INAILService:eventoRelativoASoggetto ;
+    rdfs:domain INAILService:MalattiaProfessionale ;
+    rdfs:range INAILService:Tecnopatico .
+
+INAILService:prestazioneRelativaAEvento a owl:ObjectProperty ;
+    rdfs:label "prestazione Relativa A Evento"@it ;
+    rdfs:domain INAILService:PrestazioneEconomicaINAIL ;
+    rdfs:range INAILService:EventoLesivoINAIL .
+
+INAILService:relativoARivalsa a owl:ObjectProperty ;
+    rdfs:label "relativo A Rivalsa"@it ;
+    rdfs:domain INAILService:PagamentoRivalsaINAIL ;
+    rdfs:range INAILService:RivalsaINAIL .
+
+INAILService:riaperturaHaEsitoDefinizione a owl:ObjectProperty ;
+    rdfs:label "riapertura Ha Esito Definizione"@it ;
+    rdfs:domain INAILService:RiaperturaINAIL ;
+    rdfs:range INAILService:EsitoDefinizioneINAIL .
+
+INAILService:riaperturaHaEsitoDefinizioneTrattazione a owl:ObjectProperty ;
+    rdfs:label "riapertura Ha Esito Definizione Trattazione"@it ;
+    rdfs:domain INAILService:RiaperturaINAIL ;
+    rdfs:range INAILService:EsitoDefinizioneINAIL .
+
+INAILService:riaperturaRelativaAEvento a owl:ObjectProperty ;
+    rdfs:label "riapertura Relativa A Evento"@it ;
+    rdfs:domain INAILService:RiaperturaINAIL ;
+    rdfs:range INAILService:EventoLesivoINAIL .
+
+INAILService:riaperturaRelativaATipoTrattazione a owl:ObjectProperty ;
+    rdfs:label "riapertura Relativa A Tipo Trattazione"@it ;
+    rdfs:domain INAILService:RiaperturaINAIL ;
+    rdfs:range INAILService:TipoTrattazioneINAIL .
+
+INAILService:riaperturaRelativaATrattazione a owl:ObjectProperty ;
+    rdfs:label "riapertura Relativa A Trattazione"@it ;
+    rdfs:domain INAILService:RiaperturaINAIL ;
+    rdfs:range INAILService:TrattazioneDefinitaINAIL .
+
+INAILService:rivalsaRelativaAEvento a owl:ObjectProperty ;
+    rdfs:label "rivalsa Relativa A Evento"@it ;
+    rdfs:domain INAILService:RivalsaINAIL ;
+    rdfs:range INAILService:EventoLesivoINAIL .
+
+INAILService:soggettoEventoLesivoRelativoAPersonaFisica a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "soggetto Evento Lesivo Relativo A Persona Fisica"@it ;
+    rdfs:domain INAILService:SoggettoEventoLesivoINAIL ;
+    rdfs:range INAILCore:PersonaFisica .
+
+INAILService:spesaSostenutaPerRivalsaRelativaA a owl:ObjectProperty ;
+    rdfs:label "spesa Sostenuta Per Rivalsa Relativa A"@it ;
+    rdfs:domain INAILService:SpesaSostenutaPerRivalsaINAIL ;
+    rdfs:range INAILService:RivalsaINAIL .
+
+INAILService:svolgeTipoDiLavoro a owl:ObjectProperty ;
+    rdfs:label "svolge Tipo Di Lavoro"@it ;
+    rdfs:domain INAILService:SoggettoEventoLesivoINAIL ;
+    rdfs:range INAILService:TipoLavoroINAIL .
+
+INAILService:tipoAssicurazioneRelativoARetribuzione a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "tipo Assicurazione Relativo A Retribuzione"@it ;
+    rdfs:domain INAILService:GestioneAssicurativaINAIL ;
+    rdfs:range INAILCore:RetribuzioneComplessiva .
+
+INAILService:trattazioneHaEsitoDefinizione a owl:ObjectProperty ;
+    rdfs:label "trattazione Ha Esito Definizione"@it ;
+    rdfs:domain INAILService:TrattazioneINAIL ;
+    rdfs:range INAILService:EsitoDefinizioneINAIL .
+
+INAILService:trattazioneHaTipoDefinizioneDecisioneIstruttoria a owl:ObjectProperty ;
+    rdfs:label "trattazione Ha Tipo Definizione Decisione Istruttoria"@it ;
+    rdfs:domain INAILService:TrattazioneINAIL ;
+    rdfs:range INAILService:TipoDefinizioneDecisioneIstruttoriaINAIL .
+
+INAILService:trattazioneHaTipoIndennizzo a owl:ObjectProperty ;
+    rdfs:label "trattazione Ha Tipo Indennizzo"@it ;
+    rdfs:domain INAILService:TrattazioneINAIL ;
+    rdfs:range INAILService:TipoIndennizzoINAIL .
+
+INAILService:trattazioneRelativaAEvento a owl:ObjectProperty ;
+    rdfs:label "trattazione Relativa A Evento"@it ;
+    rdfs:domain INAILService:TrattazioneINAIL ;
+    rdfs:range INAILService:EventoLesivoINAIL .
+
+INAILService:voceDiTariffaHaSettoreAttivita a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "voce Di Tariffa Ha Settore Attivita"@it ;
+    rdfs:range INAILCore:SettoreAttivita .
+
+INAILService:voceDiTariffaRelativaAPAN a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "voce Di Tariffa Relativa A PAN"@it ;
+    rdfs:domain INAILService:VoceDiTariffaINAIL ;
+    rdfs:range INAILCore:PosizioneAssicurativaNavigazione .
+
+INAILService:voceDiTariffaRelativaAPAT a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "voce Di Tariffa Relativa A PAT"@it ;
+    rdfs:domain INAILService:VoceDiTariffaINAIL ;
+    rdfs:range INAILCore:PosizioneAssicurativaTerritoriale .
+
+INAILService:voceDiTariffaRelativaARetribuzione a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "voce Di Tariffa Relativa A Retribuzione"@it ;
+    rdfs:domain INAILService:VoceDiTariffaINAIL ;
+    rdfs:range INAILCore:RetribuzioneComplessiva .
+
+### Datatypes
+
+xsd:double a rdfs:Datatype .
+
+### Annotation Properties
+
+dct:accessURL a owl:AnnotationProperty .
+
+dct:description a owl:AnnotationProperty .
+
+dct:downloadURL a owl:AnnotationProperty .
+
+dct:format a owl:AnnotationProperty .
+
+dct:identifier a owl:AnnotationProperty .
+
+dct:license a owl:AnnotationProperty .
+
+dct:title a owl:AnnotationProperty .
+
+foaf:name a owl:AnnotationProperty .
+
+vcard:fn a owl:AnnotationProperty .
+
+vcard:hasEmail a owl:AnnotationProperty .
+
+### Data Properties
+
+INAILService:annoEventoLesivo a owl:DatatypeProperty ;
+    rdfs:label "anno Evento Lesivo"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Anno dell'evento lesivo"@it .
+
+INAILService:areaSedeLesione a owl:DatatypeProperty ;
+    rdfs:label "area Sede Lesione"@it ;
+    rdfs:domain INAILService:SedeLesioneINAIL ;
+    rdfs:comment "Area della sede della lesione"@it .
+
+INAILService:categoriaAttivitaFisica a owl:DatatypeProperty ;
+    rdfs:label "categoria Attivita Fisica"@it ;
+    rdfs:domain INAILService:TipoAttivitaFisicaINAIL ;
+    rdfs:comment "Categoria di attivita fisica"@it .
+
+INAILService:categoriaClassificazioneCNEL a owl:DatatypeProperty ;
+    rdfs:label "categoria Classificazione CNEL"@it ;
+    rdfs:domain INAILService:ClassificazioneContrattoCNEL ;
+    rdfs:comment "Categoria della classificazione C N E L"@it .
+
+INAILService:categoriaTipoContatto a owl:DatatypeProperty ;
+    rdfs:label "categoria Tipo Contatto"@it ;
+    rdfs:domain INAILService:TipoContattoINAIL ;
+    rdfs:comment "Indica la tipologia di contatto"@it .
+
+INAILService:categoriaTipoDeviazione a owl:DatatypeProperty ;
+    rdfs:label "categoria Tipo Deviazione"@it ;
+    rdfs:domain INAILService:TipoDeviazioneINAIL ;
+    rdfs:comment "Indica la tipologia di deviazione"@it .
+
+INAILService:categoriaTipoLavoro a owl:DatatypeProperty ;
+    rdfs:label "categoria Tipo Lavoro"@it ;
+    rdfs:domain INAILService:TipoLavoroINAIL ;
+    rdfs:comment "Indica la tipologia di lavoro"@it .
+
+INAILService:categoriaTipoLuogo a owl:DatatypeProperty ;
+    rdfs:label "categoria Tipo Luogo"@it ;
+    rdfs:domain INAILService:TipoLuogoAccadimentoINAIL ;
+    rdfs:comment "Indica la tipologia di luogo"@it .
+
+INAILService:causalePagamentoIndennizzo a owl:DatatypeProperty ;
+    rdfs:label "Causale Pagamento Indennizzo"@it ;
+    rdfs:domain INAILService:IndennizzoINAIL ;
+    rdfs:comment "Indica la causale di pagamento dell'indennizzo corrisposto"@it .
+
+INAILService:causalePagamentoRivalsa a owl:DatatypeProperty ;
+    rdfs:label "causale Pagamento Rivalsa"@it ;
+    rdfs:domain INAILService:PagamentoRivalsaINAIL ;
+    rdfs:comment "Indica la causale di pagamento della rivalsa"@it .
+
+INAILService:classificazioneEtaFascia1 a owl:DatatypeProperty ;
+    rdfs:label "classificazione Eta Fascia 1"@it ;
+    rdfs:domain INAILService:ClassificazioneFasciaEtaINAIL ;
+    rdfs:comment "classificazione Eta Fascia1"@it .
+
+INAILService:classificazioneEtaFascia2 a owl:DatatypeProperty ;
+    rdfs:label "classificazione Eta Fascia 2"@it ;
+    rdfs:domain INAILService:ClassificazioneFasciaEtaINAIL ;
+    rdfs:comment "classificazione Eta Fascia2"@it .
+
+INAILService:classificazioneEtaFascia3 a owl:DatatypeProperty ;
+    rdfs:label "classificazione Eta Fascia 3"@it ;
+    rdfs:domain INAILService:ClassificazioneFasciaEtaINAIL ;
+    rdfs:comment "classificazione Eta Fascia3"@it .
+
+INAILService:codiceAgenteCausale a owl:DatatypeProperty ;
+    rdfs:label "codice Agente Causale"@it ;
+    rdfs:domain INAILService:AgenteCausaleINAIL ;
+    rdfs:range xsd:double ;
+    rdfs:comment "codice Agente Causale"@it .
+
+INAILService:codiceAgenteMateriale a owl:DatatypeProperty ;
+    rdfs:label "codice Agente Materiale"@it ;
+    rdfs:domain INAILService:AgenteMaterialeINAIL ;
+    rdfs:comment "codice Agente Materiale"@it .
+
+INAILService:codiceCaso a owl:DatatypeProperty ;
+    rdfs:label "codice Caso"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:comment "Codice identificativo Evento Lesivo"@it .
+
+INAILService:codiceCategoriaICD a owl:DatatypeProperty ;
+    rdfs:label "codice Categoria ICDX"@it ;
+    rdfs:domain INAILService:ClassificazioneInternazionaleMalattieICD ;
+    rdfs:comment "codice Categoria I C D"@it .
+
+INAILService:codiceClassificazioneCauseEsterne a owl:DatatypeProperty ;
+    rdfs:label "codice Classificazione Cause Esterne"@it ;
+    rdfs:domain INAILService:ClassificazioneCauseEsterneINAIL ;
+    rdfs:comment "codice Classificazione Cause Esterne"@it .
+
+INAILService:codiceClassificazioneCNEL a owl:DatatypeProperty ;
+    rdfs:label "codice Classificazione CNEL"@it ;
+    rdfs:domain INAILService:ClassificazioneContrattoCNEL ;
+    rdfs:comment "codice Classificazione C N E L"@it .
+
+INAILService:codiceClassificazioneEsitoDefinizione a owl:DatatypeProperty ;
+    rdfs:label "codice Classificazione Esito Definizione"@it ;
+    rdfs:domain INAILService:EsitoDefinizioneINAIL ;
+    rdfs:comment "codice Classificazione Esito Definizione"@it .
+
+INAILService:codiceDecodificaIstruttoriaMorte a owl:DatatypeProperty ;
+    rdfs:label "codice Decodifica Istruttoria Morte"@it ;
+    rdfs:domain INAILService:DecodificaIstruttoriaMorteINAIL .
+
+INAILService:codiceDefinizioneMorte a owl:DatatypeProperty ;
+    rdfs:label "codice Definizione Morte"@it ;
+    rdfs:domain INAILService:DefinizioneMorteINAIL ;
+    rdfs:comment "codice Definizione Morte"@it .
+
+INAILService:codiceEsitoDefinizione a owl:DatatypeProperty ;
+    rdfs:label "codice Esito Definizione"@it ;
+    rdfs:domain INAILService:EsitoDefinizioneINAIL ;
+    rdfs:comment "codice Esito Definizione"@it .
+
+INAILService:codiceGestioneContabileAggregata a owl:DatatypeProperty ;
+    rdfs:label "codice Gestione Contabile Aggregata"@it ;
+    rdfs:domain INAILService:GestioneContabileINAIL ;
+    rdfs:comment "Codici della suddivisione delle tipologie di gestioni contabili "@it .
+
+INAILService:codiceGrandeGruppoVoceDItariffa a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice Grande Gruppo Voce DI tariffa"@it ;
+    rdfs:domain INAILService:GrandeGruppoVoceDiTariffaINAIL ;
+    rdfs:comment "Codice  Grande  Gruppo voce ditariffa"@it ;
+    rdfs:isDefinedBy true .
+
+INAILService:codiceGruppoAgenteCausale a owl:DatatypeProperty ;
+    rdfs:label "codice Gruppo Agente Causale"@it ;
+    rdfs:domain INAILService:AgenteCausaleINAIL ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Identificativo del codice del gruppo dell' agente causale"@it .
+
+INAILService:codiceGruppoAgenteMatreriale a owl:DatatypeProperty ;
+    rdfs:label "codice Gruppo Agente Matreriale"@it ;
+    rdfs:domain INAILService:AgenteMaterialeINAIL ;
+    rdfs:comment "Identificativo del codice del gruppo dell' agente matreriale"@it .
+
+INAILService:codiceGruppoVoceDiTariffa a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice Gruppo Voce Di Tariffa"@it ;
+    rdfs:domain INAILService:GruppoVoceDiTariffaINAIL ;
+    rdfs:comment "Identificativo del codice del gruppo della voce di tariffa"@it ;
+    rdfs:isDefinedBy true .
+
+INAILService:codiceICD a owl:DatatypeProperty ;
+    rdfs:label "codice ICDX"@it ;
+    rdfs:domain INAILService:ClassificazioneInternazionaleMalattieICD ;
+    rdfs:comment "codice I C D"@it .
+
+INAILService:codiceIndennizzo a owl:DatatypeProperty ;
+    rdfs:label "codice Indennizzo"@it ;
+    rdfs:domain INAILService:IndennizzoINAIL .
+
+INAILService:codiceMansioneLivello1 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "Codice Mansione Livello1"@it ;
+    rdfs:domain INAILService:MansioneINAIL ;
+    rdfs:comment "Codice Mansione Livello1"@it .
+
+INAILService:codiceMansioneLivello2 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "Codice Mansione Livello2"@it ;
+    rdfs:domain INAILService:MansioneINAIL ;
+    rdfs:comment "Codice Mansione Livello2"@it .
+
+INAILService:codiceMansioneLivello3 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "Codice Mansione Livello3"@it ;
+    rdfs:domain INAILService:MansioneINAIL ;
+    rdfs:comment "Codice Mansione Livello3"@it .
+
+INAILService:codiceMansioneLivello4 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "Codice Mansione Livello4"@it ;
+    rdfs:domain INAILService:MansioneINAIL ;
+    rdfs:comment "Codice Mansione Livello4"@it .
+
+INAILService:codiceMansioneLivello5 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "Codice Mansione Livello5"@it ;
+    rdfs:domain INAILService:MansioneINAIL ;
+    rdfs:comment "Codice Mansione Livello5"@it .
+
+INAILService:codiceMansioneLivello6 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "Codice Mansione Livello6"@it ;
+    rdfs:domain INAILService:MansioneINAIL ;
+    rdfs:comment "Codice Mansione Livello6"@it .
+
+INAILService:codicePraticaRivalsa a owl:DatatypeProperty ;
+    rdfs:label "codice Pratica Rivalsa"@it ;
+    rdfs:domain INAILService:RivalsaINAIL ;
+    rdfs:comment "Codice della pratica di rivalsa"@it .
+
+INAILService:codiceQualificaAssicurativa a owl:DatatypeProperty ;
+    rdfs:label "codice Qualifica Assicurativa"@it ;
+    rdfs:domain INAILService:QualificaAssicurativaINAIL ;
+    rdfs:comment "codice Qualifica Assicurativa"@it .
+
+INAILService:codiceSettoreAttivita a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice Settore Attivita"@it ;
+    rdfs:domain INAILService:VoceDiTariffaINAIL ;
+    rdfs:comment "Codice relativo al Tipo di settore attività"@it .
+
+INAILService:codiceSettoreCorrelatoMalattiaProfessionale a owl:DatatypeProperty ;
+    rdfs:label "codice Settore Correlato Malattia Professionale"@it ;
+    rdfs:domain INAILService:MalattiaProfessionale .
+
+INAILService:codiceSettoreICD a owl:DatatypeProperty ;
+    rdfs:label "codice Settore ICDX"@it ;
+    rdfs:domain INAILService:ClassificazioneInternazionaleMalattieICD ;
+    rdfs:comment "codice Settore I C D"@it .
+
+INAILService:codiceSoggettoEventoLesivo a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice Soggetto Evento Lesivo"@it ;
+    rdfs:domain INAILService:SoggettoEventoLesivoINAIL ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Identificativo del codice del soggetto dell'evento lesivo"@it .
+
+INAILService:codiceSottoGruppoVoceDiTariffa a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice Sotto Gruppo Voce Di Tariffa"@it ;
+    rdfs:domain INAILService:SottoGruppoVoceDiTariffaINAIL ;
+    rdfs:comment "Codice  relativo al sottogruppo della voce di tariffa"@it ;
+    rdfs:isDefinedBy true .
+
+INAILService:codiceSubsettoreCorrelatoMalattiaProfessionale a owl:DatatypeProperty ;
+    rdfs:label "codice Subsettore Correlato Malattia Professionale"@it ;
+    rdfs:domain INAILService:MalattiaProfessionale .
+
+INAILService:codiceTipoDefinizioneDecisioneIstruttoria a owl:DatatypeProperty ;
+    rdfs:label "codice Tipo Definizione Decisione Istruttoria"@it ;
+    rdfs:domain INAILService:TipoDefinizioneDecisioneIstruttoriaINAIL ;
+    rdfs:comment "codice Tipo Definizione Decisione Istruttoria"@it .
+
+INAILService:codiceTipoGestioneContabile a owl:DatatypeProperty ;
+    rdfs:label "codice Tipo Gestione Contabile"@it ;
+    rdfs:domain INAILService:GestioneContabileINAIL ;
+    rdfs:comment "Caratterizza le modalità  di esercizio dell'assicurazione contro gli infortuni sul lavoro e le malattie professionali in 5 gestioni:  industria e servizi, agricoltura, per conto dello Stato, medici radiologi, infortuni in ambito domestico"@it .
+
+INAILService:codiceTipoIndennizzo a owl:DatatypeProperty ;
+    rdfs:label "codice Tipo Indennizzo"@it ;
+    rdfs:domain INAILService:TipoIndennizzoINAIL ;
+    rdfs:comment "Codice della tipologia di indennizzo"@it .
+
+INAILService:codiceTipoLavoratore a owl:DatatypeProperty ;
+    rdfs:label "Codice Tipo Lavoratore"@it ;
+    rdfs:domain INAILService:TipoLavoratoreINAIL ;
+    rdfs:comment "Codice Tipo LavoratoreCodice della tipologia di lavoratore"@it .
+
+INAILService:codiceTipoPratica a owl:DatatypeProperty ;
+    rdfs:label "codice Tipo Pratica"@it ;
+    rdfs:domain INAILService:TipoPraticaINAIL ;
+    rdfs:comment "Indica il codice della tipologia di pratica"@it .
+
+INAILService:codiceTipoTrattazione a owl:DatatypeProperty ;
+    rdfs:label "codice Tipo Trattazione"@it ;
+    rdfs:domain INAILService:TipoTrattazioneINAIL ;
+    rdfs:comment "Indica il codice della tipologia di trattazione"@it .
+
+INAILService:codiceVoceDiTariffa a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice Voce Di Tariffa"@it ;
+    rdfs:domain INAILService:VoceDiTariffaINAIL ;
+    rdfs:comment "Codice della Voce di  tariffa"@it ;
+    rdfs:isDefinedBy true .
+
+INAILService:dataAperturaEventoLesivo a owl:DatatypeProperty ;
+    rdfs:label "data Apertura Evento Lesivo"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:comment "data Apertura Evento Lesivo"@it .
+
+INAILService:dataAperturaInabilitaTemporanea a owl:DatatypeProperty ;
+    rdfs:label "data Apertura Inabilita Temporanea"@it ;
+    rdfs:domain INAILService:InabilitaTemporaneaINAIL ;
+    rdfs:comment "Indica la data di apertura dell'inabilità temporanea"@it .
+
+INAILService:dataAperturaRiapertura a owl:DatatypeProperty ;
+    rdfs:label "data Apertura Riapertura"@it ;
+    rdfs:domain INAILService:RiaperturaINAIL ;
+    rdfs:comment "Indica la data di riapertura"@it .
+
+INAILService:dataAperturaRivalsa a owl:DatatypeProperty ;
+    rdfs:label "data Apertura Rivalsa"@it ;
+    rdfs:domain INAILService:RivalsaINAIL ;
+    rdfs:comment "Indica la data di apertura della rivalsa"@it .
+
+INAILService:dataContabileRivalsa a owl:DatatypeProperty ;
+    rdfs:label "data Contabile Rivalsa"@it ;
+    rdfs:domain INAILService:PagamentoRivalsaINAIL ;
+    rdfs:comment "Indica la data contabile della rivalsa"@it .
+
+INAILService:dataDecessoEventoLesivo a owl:DatatypeProperty ;
+    rdfs:label "data Decesso Evento Lesivo"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:comment "Data di morte del lavoratore"@it .
+
+INAILService:dataDecorrenzaStatoRivalsa a owl:DatatypeProperty ;
+    rdfs:label "data Decorrenza Stato Rivalsa"@it ;
+    rdfs:domain INAILService:RivalsaINAIL ;
+    rdfs:comment "Indica la data di decorrenza dello stato della rivalsa"@it .
+
+INAILService:dataDefinizioneEventoLesivo a owl:DatatypeProperty ;
+    rdfs:label "data Definizione Evento Lesivo"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:comment "Indica la data di definizione dell'evento lesivo"@it .
+
+INAILService:dataDefinizioneInabilitaTemporanea a owl:DatatypeProperty ;
+    rdfs:label "data Definizione Inabilita Temporanea"@it ;
+    rdfs:domain INAILService:InabilitaTemporaneaINAIL ;
+    rdfs:comment "Indica la data di definizione dell'inabilità temporanea"@it .
+
+INAILService:dataDefinizioneMorteEventoLesivo a owl:DatatypeProperty ;
+    rdfs:label "data Definizione Morte Evento Lesivo"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:comment "Indica la data di definizione morte in seguito all'evento lesivo"@it .
+
+INAILService:dataDiRiferimentoRivalsa a owl:DatatypeProperty ;
+    rdfs:label "data Di Riferimento Rivalsa"@it ;
+    rdfs:domain INAILService:RivalsaINAIL ;
+    rdfs:comment "Indica la data di riferimento della rivalsa"@it .
+
+INAILService:dataEsitoDefinizioneEventoLesivo a owl:DatatypeProperty ;
+    rdfs:label "data Esito Definizione Evento Lesivo"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:comment "Indica la data dell'esito definizione dell'evento lesivo"@it .
+
+INAILService:dataEventoLesivo a owl:DatatypeProperty ;
+    rdfs:label "data Evento Lesivo"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:comment "Indica la data dell'evento lesivo"@it .
+
+INAILService:dataFineInabilitaTemporanea a owl:DatatypeProperty ;
+    rdfs:label "data Fine Inabilita Temporanea"@it ;
+    rdfs:domain INAILService:InabilitaTemporaneaINAIL ;
+    rdfs:comment "Indica la data della fine dell'inabilità temporanea"@it .
+
+INAILService:dataFineRiapertura a owl:DatatypeProperty ;
+    rdfs:label "data Fine Riapertura"@it ;
+    rdfs:domain INAILService:RiaperturaINAIL ;
+    rdfs:comment "Data Fine Riapertura"@it .
+
+INAILService:dataFineTrattazione a owl:DatatypeProperty ;
+    rdfs:label "data Fine Trattazione"@it ;
+    rdfs:domain INAILService:TrattazioneINAIL ;
+    rdfs:comment "Data Fine Trattazione"@it .
+
+INAILService:dataInizioInabilitaTemporanea a owl:DatatypeProperty ;
+    rdfs:label "data Inizio Inabilita Temporanea"@it ;
+    rdfs:domain INAILService:InabilitaTemporaneaINAIL ;
+    rdfs:comment "Indica la data di inizio dell'inabilità temporanea"@it .
+
+INAILService:dataInizioRiapertura a owl:DatatypeProperty ;
+    rdfs:label "data Inizio Riapertura"@it ;
+    rdfs:domain INAILService:RiaperturaINAIL ;
+    rdfs:comment "Data Inizio Riapertura"@it .
+
+INAILService:dataInizioTrattazione a owl:DatatypeProperty ;
+    rdfs:label "data Inizio Trattazione"@it ;
+    rdfs:domain INAILService:TrattazioneINAIL ;
+    rdfs:comment "Data Inizio Trattazione"@it .
+
+INAILService:dataInizioTrattazioneIndennizzo a owl:DatatypeProperty ;
+    rdfs:label "data Inizio Trattazione Indennizzo"@it ;
+    rdfs:domain INAILService:IndennizzoINAIL ;
+    rdfs:comment "data Inizio Trattazione Indennizzo"@it .
+
+INAILService:dataInizioTrattazioneRiapertura a owl:DatatypeProperty ;
+    rdfs:label "data Inizio Trattazione Riapertura"@it ;
+    rdfs:domain INAILService:RiaperturaINAIL ;
+    rdfs:comment "data Inizio Trattazione Riapertura"@it .
+
+INAILService:dataLavorazioneInfortunio a owl:DatatypeProperty ;
+    rdfs:label "data Lavorazione Infortunio"@it ;
+    rdfs:domain INAILService:InfortunioSulLavoro ;
+    rdfs:comment "data Lavorazione Infortunio"@it .
+
+INAILService:dataLiquidazioneIndennizzo a owl:DatatypeProperty ;
+    rdfs:label "data Liquidazione Indennizzo"@it ;
+    rdfs:domain INAILService:IndennizzoINAIL ;
+    rdfs:comment "data Liquidazione Indennizzo"@it .
+
+INAILService:dataPagamentoRivalsa a owl:DatatypeProperty ;
+    rdfs:label "data Pagamento Rivalsa"@it ;
+    rdfs:domain INAILService:PagamentoRivalsaINAIL ;
+    rdfs:comment "Data Pagamento Rivalsa"@it .
+
+INAILService:dataPropostaPagamentoIndennizzo a owl:DatatypeProperty ;
+    rdfs:label "data Proposta Pagamento Indennizzo"@it ;
+    rdfs:domain INAILService:IndennizzoINAIL ;
+    rdfs:comment "data Proposta Pagamento Indennizzo"@it .
+
+INAILService:dataProtocollazioneEventoLesivo a owl:DatatypeProperty ;
+    rdfs:label "data Protocollazione Evento Lesivo"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:comment "E' la data in cui è stato protocollato il (aperta la pratica del) il caso di infortunio o di malattia professionale, espressa nella forma di anno, mese e giorno. Si protocolla a seguito di denuncia infortunio o di malattia professionale e/o di presentazione di un certificato medico."@it .
+
+INAILService:dataRiferimentoInfortunio a owl:DatatypeProperty ;
+    rdfs:label "data Riferimento Infortunio"@it ;
+    rdfs:domain INAILService:InfortunioSulLavoro ;
+    rdfs:comment "data Riferimento Infortunio"@it .
+
+INAILService:dataRiferimentoMalattiaProfessionale a owl:DatatypeProperty ;
+    rdfs:label "data Riferimento Malattia Professionale"@it ;
+    rdfs:domain INAILService:MalattiaProfessionale ;
+    rdfs:comment "data Riferimento Malattia Professionale"@it .
+
+INAILService:dataUltimaDefinizioneDecisioneIstruttoriaTrattazione a owl:DatatypeProperty ;
+    rdfs:label "data Ultima Definizione Decisione Istruttoria Trattazione"@it ;
+    rdfs:domain INAILService:TrattazioneINAIL ;
+    rdfs:comment "Data dell'ultima definizione della decisione della trattazione dell'istruttoria "@it .
+
+INAILService:definizioneAmministrativaInfortunio a owl:DatatypeProperty ;
+    rdfs:label "definizione Amministrativa Infortunio"@it ;
+    rdfs:domain INAILService:InfortunioSulLavoro ;
+    rdfs:comment "Definizione dell'infortunio: Positivo, Negativo, Franchigia, In Istruttoria"@it .
+
+INAILService:definizioneAmministrativaMalattiaProfessionale a owl:DatatypeProperty ;
+    rdfs:label "definizione Amministrativa Malattia Professionale"@it ;
+    rdfs:domain INAILService:MalattiaProfessionale ;
+    rdfs:comment "Definizione della Malattia Professionale: Positiva, Negativa, Franchigia, In Istruttoria"@it .
+
+INAILService:definizioneStatoRivalsa a owl:DatatypeProperty ;
+    rdfs:label "definizione Stato Rivalsa"@it ;
+    rdfs:domain INAILService:TipoStatoRivalsaINAIL ;
+    rdfs:comment "definizione dello stato della rivalsa"@it .
+
+INAILService:definizioneTipoIndennizzo a owl:DatatypeProperty ;
+    rdfs:label "definizione Tipo Indennizzo"@it ;
+    rdfs:domain INAILService:TipoIndennizzoINAIL ;
+    rdfs:comment "definizione della tipologia di indennizzo"@it .
+
+INAILService:descrizioneAgenteCausale a owl:DatatypeProperty ;
+    rdfs:label "descrizione Agente Causale"@it ;
+    rdfs:domain INAILService:AgenteCausaleINAIL ;
+    rdfs:comment "descrizione Agente Causale"@it .
+
+INAILService:descrizioneAgenteMateriale a owl:DatatypeProperty ;
+    rdfs:label "descrizione Agente Materiale"@it ;
+    rdfs:domain INAILService:AgenteMaterialeINAIL ;
+    rdfs:comment "descrizione Agente Materiale"@it .
+
+INAILService:descrizioneAttivitaFisica a owl:DatatypeProperty ;
+    rdfs:label "descrizione Attivita Fisica"@it ;
+    rdfs:domain INAILService:TipoAttivitaFisicaINAIL ;
+    rdfs:comment "descrizione Attivita Fisica"@it .
+
+INAILService:descrizioneCategoriaIDC a owl:DatatypeProperty ;
+    rdfs:label "descrizione Categoria ICDX"@it ;
+    rdfs:domain INAILService:ClassificazioneInternazionaleMalattieICD ;
+    rdfs:comment "descrizione Categoria I C D"@it .
+
+INAILService:descrizioneClassificazioneCauseEsterne a owl:DatatypeProperty ;
+    rdfs:label "descrizione Classificazione Cause Esterne"@it ;
+    rdfs:domain INAILService:ClassificazioneCauseEsterneINAIL ;
+    rdfs:comment "descrizione Classificazione Cause Esterne"@it .
+
+INAILService:descrizioneClassificazioneCNEL a owl:DatatypeProperty ;
+    rdfs:label "descrizione Classificazione CNEL"@it ;
+    rdfs:domain INAILService:ClassificazioneContrattoCNEL ;
+    rdfs:comment "descrizione Classificazione C N E L"@it .
+
+INAILService:descrizioneClassificazioneEsitoDefinizione a owl:DatatypeProperty ;
+    rdfs:label "descrizione Classificazione Esito Definizione"@it ;
+    rdfs:domain INAILService:EsitoDefinizioneINAIL ;
+    rdfs:comment "descrizione Classificazione Esito Definizione"@it .
+
+INAILService:descrizioneClassificazioneMorte a owl:DatatypeProperty ;
+    rdfs:label "descrizione Classificazione Morte"@it ;
+    rdfs:domain INAILService:DefinizioneMorteINAIL ;
+    rdfs:comment "descrizione Classificazione Morte"@it .
+
+INAILService:descrizioneDecodificaIstruttoriaMorte a owl:DatatypeProperty ;
+    rdfs:label "descrizione Decodifica Istruttoria Morte"@it ;
+    rdfs:domain INAILService:DecodificaIstruttoriaMorteINAIL .
+
+INAILService:descrizioneEsitoDefinizione a owl:DatatypeProperty ;
+    rdfs:label "descrizione Esito Definizione"@it ;
+    rdfs:domain INAILService:EsitoDefinizioneINAIL ;
+    rdfs:comment "descrizione Esito Definizione"@it .
+
+INAILService:descrizioneEventoLesivo a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione Evento Lesivo"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:comment "descrizione evento lesivo: altra sede,annullato, franchigia, istruttoria, negativo, positivo."@it .
+
+INAILService:descrizioneFasciaPeriodoMorte a owl:DatatypeProperty ;
+    rdfs:label "descrizione Fascia Periodo Morte"@it ;
+    rdfs:domain INAILService:FasciaPeriodoMorteINAIL ;
+    rdfs:comment "descrizione Fascia Periodo Morte"@it .
+
+INAILService:descrizioneGestioneContabile a owl:DatatypeProperty ;
+    rdfs:label "descrizione Gestione Contabile"@it ;
+    rdfs:domain INAILService:GestioneContabileINAIL ;
+    rdfs:comment "Descrizione delle voci del Sistema di classificazione dell’evento lesivo ai fini della imputazione contabile ai capitoli di spesa"@it .
+
+INAILService:descrizioneGestioneContabileAggregata a owl:DatatypeProperty ;
+    rdfs:label "descrizione Gestione Contabile Aggregata"@it ;
+    rdfs:domain INAILService:GestioneContabileINAIL ;
+    rdfs:comment "descrizione  della suddivisione delle tipologie di gestioni contabili "@it .
+
+INAILService:descrizioneGradoDiInabilita a owl:DatatypeProperty ;
+    rdfs:label "descrizione Grado Di Inabilita"@it ;
+    rdfs:domain INAILService:GradoDiInabilitaINAIL ;
+    rdfs:comment "Descrizione del grado di inabilità"@it .
+
+INAILService:descrizioneGradoDiMenomazione a owl:DatatypeProperty ;
+    rdfs:label "descrizione Grado Di Menomazione"@it ;
+    rdfs:domain INAILService:GradoDiMenomazioneINAIL ;
+    rdfs:comment "Descrizione del grado di menomazione"@it .
+
+INAILService:descrizioneGrandeGruppoVoceDItariffa a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione Grande Gruppo Voce DI tariffa"@it ;
+    rdfs:domain INAILService:GrandeGruppoVoceDiTariffaINAIL ;
+    rdfs:comment "Descrizione Grande Gruppo voce di tariffa"@it .
+
+INAILService:descrizioneGruppoAgenteCausale a owl:DatatypeProperty ;
+    rdfs:label "descrizione Gruppo Agente Causale"@it ;
+    rdfs:domain INAILService:AgenteCausaleINAIL ;
+    rdfs:comment "descrizione Gruppo Agente Causale"@it .
+
+INAILService:descrizioneGruppoAgenteMatreriale a owl:DatatypeProperty ;
+    rdfs:label "descrizione Gruppo Agente Matreriale"@it ;
+    rdfs:domain INAILService:AgenteMaterialeINAIL ;
+    rdfs:comment "descrizione Gruppo Agente Matreriale"@it .
+
+INAILService:descrizioneGruppoVoceDiTariffa a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione Gruppo Voce Di Tariffa"@it ;
+    rdfs:domain INAILService:GruppoVoceDiTariffaINAIL ;
+    rdfs:comment "Descrizione  Gruppo  Voce di tariffa"@it .
+
+INAILService:descrizioneICD a owl:DatatypeProperty ;
+    rdfs:label "descrizione ICDX"@it ;
+    rdfs:domain INAILService:ClassificazioneInternazionaleMalattieICD ;
+    rdfs:comment "descrizione I C D"@it .
+
+INAILService:descrizioneMansioneLivello1 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "Descrizione Mansione Livello1"@it ;
+    rdfs:domain INAILService:MansioneINAIL ;
+    rdfs:comment "Descrizione Mansione Livello1"@it .
+
+INAILService:descrizioneMansioneLivello2 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "Descrizione Mansione Livello2"@it ;
+    rdfs:domain INAILService:MansioneINAIL ;
+    rdfs:comment "Descrizione Mansione Livello2"@it .
+
+INAILService:descrizioneMansioneLivello3 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "Descrizione Mansione Livello3"@it ;
+    rdfs:domain INAILService:MansioneINAIL ;
+    rdfs:comment "Descrizione Mansione Livello3"@it .
+
+INAILService:descrizioneMansioneLivello4 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "Descrizione Mansione Livello4"@it ;
+    rdfs:domain INAILService:MansioneINAIL ;
+    rdfs:comment "Descrizione Mansione Livello4"@it .
+
+INAILService:descrizioneMansioneLivello5 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "Descrizione Mansione Livello5"@it ;
+    rdfs:domain INAILService:MansioneINAIL ;
+    rdfs:comment "Descrizione Mansione Livello5"@it .
+
+INAILService:descrizioneMansioneLivello6 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "Descrizione Mansione Livello6"@it ;
+    rdfs:domain INAILService:MansioneINAIL ;
+    rdfs:comment "Descrizione Mansione Livello6"@it .
+
+INAILService:descrizioneNaturaLesione a owl:DatatypeProperty ;
+    rdfs:label "descrizione Natura Lesione"@it ;
+    rdfs:domain INAILService:NaturaLesioneINAIL ;
+    rdfs:comment "descrizione Natura Lesione"@it .
+
+INAILService:descrizioneQualificaAssicurativa a owl:DatatypeProperty ;
+    rdfs:label "descrizione Qualifica Assicurativa"@it ;
+    rdfs:domain INAILService:QualificaAssicurativaINAIL ;
+    rdfs:comment "descrizione Qualifica Assicurativa"@it .
+
+INAILService:descrizioneSedeLesione a owl:DatatypeProperty ;
+    rdfs:label "descrizione Sede Lesione"@it ;
+    rdfs:domain INAILService:SedeLesioneINAIL ;
+    rdfs:comment "descrizione Sede Lesione"@it .
+
+INAILService:descrizioneSettoreAttivita a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione Settore Attivita"@it ;
+    rdfs:domain INAILService:VoceDiTariffaINAIL ;
+    rdfs:comment "Descrizione Tipo settore attività"@it .
+
+INAILService:descrizioneSettoreICD a owl:DatatypeProperty ;
+    rdfs:label "descrizione Settore ICDX"@it ;
+    rdfs:domain INAILService:ClassificazioneInternazionaleMalattieICD ;
+    rdfs:comment "descrizione Settore I C D"@it .
+
+INAILService:descrizioneSottoGruppoVoceDiTariffa a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione Sotto Gruppo Voce Di Tariffa"@it ;
+    rdfs:domain INAILService:SottoGruppoVoceDiTariffaINAIL ;
+    rdfs:comment "Descrizione Sotto Gruppo Voce Di Tariffa"@it .
+
+INAILService:descrizioneTipoContatto a owl:DatatypeProperty ;
+    rdfs:label "descrizione Tipo Contatto"@it ;
+    rdfs:domain INAILService:TipoContattoINAIL ;
+    rdfs:comment "Descrizionedella tipologia di contatto"@it .
+
+INAILService:descrizioneTipoDefinizioneDecisioneIstruttoria a owl:DatatypeProperty ;
+    rdfs:label "descrizione Tipo Definizione Decisione Istruttoria"@it ;
+    rdfs:domain INAILService:TipoDefinizioneDecisioneIstruttoriaINAIL ;
+    rdfs:comment "Descrizione della tipologia di definizione della decisione istruttoria"@it .
+
+INAILService:descrizioneTipoDeviazione a owl:DatatypeProperty ;
+    rdfs:label "descrizione Tipo Deviazione"@it ;
+    rdfs:domain INAILService:TipoDeviazioneINAIL ;
+    rdfs:comment "Descrizione della tipologia di deviazione"@it .
+
+INAILService:descrizioneTipoGestioneContabile a owl:DatatypeProperty ;
+    rdfs:label "descrizione Tipo Gestione Contabile"@it ;
+    rdfs:domain INAILService:GestioneContabileINAIL ;
+    rdfs:comment "Caratterizza le modalità  di esercizio dell'assicurazione contro gli infortuni sul lavoro e le malattie professionali in 5 gestioni:  industria e servizi, agricoltura, per conto dello Stato, medici radiologi, infortuni in ambito domestico"@it .
+
+INAILService:descrizioneTipoIndennizzo a owl:DatatypeProperty ;
+    rdfs:label "descrizione Tipo Indennizzo"@it ;
+    rdfs:domain INAILService:TipoIndennizzoINAIL ;
+    rdfs:comment "descrizione Tipo Indennizzo"@it .
+
+INAILService:descrizioneTipoLavoratore a owl:DatatypeProperty ;
+    rdfs:label "Descrizione Tipo Lavoratore"@it ;
+    rdfs:domain INAILService:TipoLavoratoreINAIL ;
+    rdfs:comment "Descrizione Tipo Lavoratore"@it .
+
+INAILService:descrizioneTipoLavoro a owl:DatatypeProperty ;
+    rdfs:label "descrizione Tipo Lavoro"@it ;
+    rdfs:domain INAILService:TipoLavoroINAIL ;
+    rdfs:comment "descrizione Tipo Lavoro"@it .
+
+INAILService:descrizioneTipoLuogo a owl:DatatypeProperty ;
+    rdfs:label "descrizione Tipo Luogo"@it ;
+    rdfs:domain INAILService:TipoLuogoAccadimentoINAIL ;
+    rdfs:comment "descrizione Tipo Luogo"@it .
+
+INAILService:descrizioneTipoMalattia a owl:DatatypeProperty ;
+    rdfs:label "descrizione Tipo Malattia"@it ;
+    rdfs:domain INAILService:TipoMalattiaINAIL ;
+    rdfs:comment "descrizione Tipo Malattia"@it .
+
+INAILService:descrizioneTipoPratica a owl:DatatypeProperty ;
+    rdfs:label "descrizione Tipo Pratica"@it ;
+    rdfs:domain INAILService:TipoPraticaINAIL ;
+    rdfs:comment "descrizione Tipo Pratica"@it .
+
+INAILService:descrizioneTipoTecnopatia a owl:DatatypeProperty ;
+    rdfs:label "descrizione Tipo Tecnopatia"@it ;
+    rdfs:domain INAILService:TipoTecnopatiaINAIL ;
+    rdfs:comment "descrizione Tipo Tecnopatia"@it .
+
+INAILService:descrizioneTipoTrattazione a owl:DatatypeProperty ;
+    rdfs:label "descrizione Tipo Trattazione"@it ;
+    rdfs:domain INAILService:TipoTrattazioneINAIL ;
+    rdfs:comment "descrizione Tipo Trattazione"@it .
+
+INAILService:descrizioneVoceDiTariffa a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione Voce Di Tariffa"@it ;
+    rdfs:domain INAILService:VoceDiTariffaINAIL ;
+    rdfs:comment "Descrizione della Voce di tariffa"@it .
+
+INAILService:esitoDecisioneIstruttoria a owl:DatatypeProperty ;
+    rdfs:label "esito Decisione Istruttoria"@it ;
+    rdfs:domain INAILService:TipoDefinizioneDecisioneIstruttoriaINAIL ;
+    rdfs:comment "esito Decisione Istruttoria"@it .
+
+INAILService:esitoRiconoscimentoMalattiaProfessionale a owl:DatatypeProperty ;
+    rdfs:label "esito Riconoscimento Malattia Professionale"@it ;
+    rdfs:domain INAILService:MalattiaProfessionale ;
+    rdfs:comment "Indica se la malattia professionale è stata riconosciuta."@it .
+
+INAILService:etaAllAccadimento a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "Età all accadimento"@it ;
+    rdfs:domain INAILService:SoggettoEventoLesivoINAIL ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Età del soggetto vittima di evento lesivo al momento dell'accadimento."@it .
+
+INAILService:formaAccadimentoEventoLesivo a owl:DatatypeProperty ;
+    rdfs:label "forma Accadimento Evento Lesivo"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:comment "Forma di accadimenti dell'incidente che porta all'evento lesivo"@it .
+
+INAILService:gestioneParticolareInfortunio a owl:DatatypeProperty ;
+    rdfs:label "gestione Particolare Infortunio"@it ;
+    rdfs:domain INAILService:InfortunioSulLavoro ;
+    rdfs:comment "Categorie di lavoratori non comprese nelle gestioni predefinite: Colf-badanti, Lavoratori Belgio, Rimpatriati Libia"@it .
+
+INAILService:gestioneQualificaAssicurativa a owl:DatatypeProperty ;
+    rdfs:label "gestione Qualifica Assicurativa"@it ;
+    rdfs:domain INAILService:QualificaAssicurativaINAIL ;
+    rdfs:comment "gestione Qualifica Assicurativa"@it .
+
+INAILService:gradoDiInabilitaAssuntoInfortunio a owl:DatatypeProperty ;
+    rdfs:label "Danno Biologico Complessivo Infortunio"@it ;
+    rdfs:domain INAILService:InfortunioSulLavoro ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Grado di inabilità assunto dell'infortunato"@it .
+
+INAILService:gradoDiInabilitaAssuntoMalattiaProfessionale a owl:DatatypeProperty ;
+    rdfs:label "Danno Biologico Complessivo Malattia Professionale"@it ;
+    rdfs:domain INAILService:MalattiaProfessionale ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Grado di inabilità assunto del tecnopatico"@it .
+
+INAILService:gradoDiInabilitaAttualeInfortunio a owl:DatatypeProperty ;
+    rdfs:label "Danno Biologico Attuale Infortunio"@it ;
+    rdfs:domain INAILService:InfortunioSulLavoro ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Grado di inabilità attuale dell'infortunato"@it .
+
+INAILService:gradoDiInabilitaAttualeMalattiaProfessionale a owl:DatatypeProperty ;
+    rdfs:label "Danno Biologico Attuale Malattia Professionale"@it ;
+    rdfs:domain INAILService:MalattiaProfessionale ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Grado di inabilità attuale del tecnopatico"@it .
+
+INAILService:gruppoGestioneAssicurativa a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "gruppo Gestione Assicurativa"@it ;
+    rdfs:domain INAILService:GestioneAssicurativaINAIL .
+
+INAILService:idInabilitaTemporanea a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "id Inabilita Temporanea"@it ;
+    rdfs:domain INAILService:InabilitaTemporaneaINAIL ;
+    rdfs:comment "campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità"@it .
+
+INAILService:idInfortunio a owl:DatatypeProperty ;
+    rdfs:label "id Infortunio"@it ;
+    rdfs:domain INAILService:InfortunioSulLavoro ;
+    rdfs:comment "campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità"@it .
+
+INAILService:idMalattiaProfessionale a owl:DatatypeProperty ;
+    rdfs:label "id Malattia Professionale"@it ;
+    rdfs:domain INAILService:MalattiaProfessionale ;
+    rdfs:comment "campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità"@it .
+
+INAILService:idPagamentoRivalsa a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "id Pagamento Rivalsa"@it ;
+    rdfs:domain INAILService:PagamentoRivalsaINAIL ;
+    rdfs:comment "campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità"@it .
+
+INAILService:idPrestazioneEconomica a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "id Prestazione Economica"@it ;
+    rdfs:domain INAILService:PrestazioneEconomicaINAIL ;
+    rdfs:comment "campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità"@it .
+
+INAILService:idRiapertura a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "id Riapertura"@it ;
+    rdfs:domain INAILService:RiaperturaINAIL ;
+    rdfs:comment "campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità"@it .
+
+INAILService:idRivalsa a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "id Rivalsa"@it ;
+    rdfs:domain INAILService:RivalsaINAIL ;
+    rdfs:comment "campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità"@it .
+
+INAILService:idSpesaRivalsa a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "id Spesa Rivalsa"@it ;
+    rdfs:domain INAILService:SpesaSostenutaPerRivalsaINAIL ;
+    rdfs:comment "campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità"@it .
+
+INAILService:idTrattazione a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "id Trattazione"@it ;
+    rdfs:domain INAILService:TrattazioneINAIL ;
+    rdfs:comment "campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità"@it .
+
+INAILService:importoIndennizzoInfortunio a owl:DatatypeProperty ;
+    rdfs:label "importo Indennizzo Infortunio"@it ;
+    rdfs:domain INAILService:InfortunioSulLavoro ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Indica l'importo dell'indennizzo per infortunio"@it .
+
+INAILService:importoMalattiaProfessionale a owl:DatatypeProperty ;
+    rdfs:label "importo Malattia Professionale"@it ;
+    rdfs:domain INAILService:MalattiaProfessionale ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Indica l'importo dell'indennizzo per malattia professionale"@it .
+
+INAILService:importoPrestazione a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "importo Prestazione"@it ;
+    rdfs:domain INAILService:PrestazioneEconomicaINAIL ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Indica l'importo della prestazione"@it .
+
+INAILService:importoRivalsa a owl:DatatypeProperty ;
+    rdfs:label "importo Rivalsa"@it ;
+    rdfs:domain INAILService:PagamentoRivalsaINAIL ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Importo relativo azioni di rivalsa dell’Istituto (regresso o surroga), contro i responsabili in caso di infortunio o malattia professionale."@it .
+
+INAILService:importoSpesaRivalsa a owl:DatatypeProperty ;
+    rdfs:label "importo Spesa Rivalsa"@it ;
+    rdfs:domain INAILService:SpesaSostenutaPerRivalsaINAIL ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Importo Spesa Sostenuta per Rivalsa"@it .
+
+INAILService:incidenteStradaleSpesaRivalsa a owl:DatatypeProperty ;
+    rdfs:label "incidente Stradale Spesa Rivalsa"@it ;
+    rdfs:domain INAILService:SpesaSostenutaPerRivalsaINAIL ;
+    rdfs:comment "incidente Stradale Spesa Rivalsa"@it .
+
+INAILService:indicatoreTipoTrattazione a owl:DatatypeProperty ;
+    rdfs:label "indicatore Tipo Trattazione"@it ;
+    rdfs:domain INAILService:TipoTrattazioneINAIL ;
+    rdfs:comment "indicatore Tipo Trattazione"@it .
+
+INAILService:indiceDiGravitaEventoLesivo a owl:DatatypeProperty ;
+    rdfs:label "indice Di Gravita Evento Lesivo"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:comment "Classificazione della gravità dell'evento lesivo espresso in giornate"@it .
+
+INAILService:infortunioInSedeDiLavoro a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "infortunio In Sede Di Lavoro"@it ;
+    rdfs:domain INAILService:InfortunioSulLavoro ;
+    rdfs:comment "Infortunio avvenuto in sede di lavoro"@it .
+
+INAILService:itinereSpesaRivalsa a owl:DatatypeProperty ;
+    rdfs:label "itinere Spesa Rivalsa"@it ;
+    rdfs:domain INAILService:SpesaSostenutaPerRivalsaINAIL ;
+    rdfs:comment "itinere Spesa Rivalsa"@it .
+
+INAILService:lavorazioneAgricola a owl:DatatypeProperty ;
+    rdfs:label "lavorazione Agricola"@it ;
+    rdfs:domain INAILService:InfortunioSulLavoro ;
+    rdfs:comment "Ciclo tecnologico-produttivo o operativo necessario per giungere alla realizzazione del prodotto Agricolo"@it .
+
+INAILService:limiteInferioreFasciaPeriodoMorte a owl:DatatypeProperty ;
+    rdfs:label "limite Inferiore Fascia Periodo Morte"@it ;
+    rdfs:domain INAILService:FasciaPeriodoMorteINAIL ;
+    rdfs:range xsd:double ;
+    rdfs:comment "limite Inferiore Fascia Periodo Morte"@it .
+
+INAILService:limiteSuperioreFasciaPeriodoMorte a owl:DatatypeProperty ;
+    rdfs:label "limite Superiore Fascia Periodo Morte"@it ;
+    rdfs:domain INAILService:FasciaPeriodoMorteINAIL ;
+    rdfs:range xsd:double ;
+    rdfs:comment "limite Superiore Fascia Periodo Morte"@it .
+
+INAILService:macroareaSedeLesione a owl:DatatypeProperty ;
+    rdfs:label "macroarea Sede Lesione"@it ;
+    rdfs:domain INAILService:SedeLesioneINAIL ;
+    rdfs:comment "macroarea Sede Lesione"@it .
+
+INAILService:malattiaTabellata a owl:DatatypeProperty ;
+    rdfs:label "malattia Tabellata"@it ;
+    rdfs:domain INAILService:TipoTecnopatiaINAIL ;
+    rdfs:comment "Flag che indica se la malattia è tabellata"@it .
+
+INAILService:meseEventoLesivo a owl:DatatypeProperty ;
+    rdfs:label "mese Evento Lesivo"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Mese dell'evento lesivo"@it .
+
+INAILService:modalitaInfortunioMezzoDiTrasporto a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "modalita Infortunio Mezzo Di Trasporto"@it ;
+    rdfs:domain INAILService:InfortunioSulLavoro ;
+    rdfs:comment "Modalita dell' infortunio avvenuto con mezzo di trasporto"@it .
+
+INAILService:motivazioneContenziosoRiapertura a owl:DatatypeProperty ;
+    rdfs:label "motivazione Contenzioso Riapertura"@it ;
+    rdfs:domain INAILService:RiaperturaINAIL ;
+    rdfs:comment "Indica la motivazione della riapertura del contenzioso "@it .
+
+INAILService:numeroGiorniDefinizioneRiapertura a owl:DatatypeProperty ;
+    rdfs:label "numero Giorni Definizione Riapertura"@it ;
+    rdfs:domain INAILService:RiaperturaINAIL ;
+    rdfs:comment "Numero dei Giorni di definizione della riapertura"@it .
+
+INAILService:numeroGiorniDefinizioneTrattazione a owl:DatatypeProperty ;
+    rdfs:label "numero Giorni Definizione Trattazione"@it ;
+    rdfs:domain INAILService:TrattazioneINAIL ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero di giorni necessari per la definizione della trattazione legata a pratiche di infortunio o malattia registrata presso INAIL"@it .
+
+INAILService:numeroGiorniInabilitaTemporanea a owl:DatatypeProperty ;
+    rdfs:label "numero Giorni Inabilita Temporanea"@it ;
+    rdfs:domain INAILService:InabilitaTemporaneaINAIL ;
+    rdfs:comment "Numero dei giorni di inabilità temporanea"@it .
+
+INAILService:numeroGiorniInabilitaTemporaneaIndennizzoGiornaliero a owl:DatatypeProperty ;
+    rdfs:label "numero Giorni Inabilita Temporanea Indennizzo Giornaliero"@it ;
+    rdfs:domain INAILService:IndennizzoGiornalieroPerInabilitaTemporaneaINAIL ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero dei giorni di inabilità temporanea-Indennizzo Giornaliero"@it .
+
+INAILService:numeroGiorniIndennizzoInfortunio a owl:DatatypeProperty ;
+    rdfs:label "numero Giorni Indennizzo Infortunio"@it ;
+    rdfs:domain INAILService:InfortunioSulLavoro ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero dei giorni di indennizzo per infortunio"@it .
+
+INAILService:numeroGiorniIndennizzoMalattiaProfessionale a owl:DatatypeProperty ;
+    rdfs:label "numero Giorni Indennizzo Malattia Professionale"@it ;
+    rdfs:domain INAILService:MalattiaProfessionale ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero dei giorni di indennizzo a seguito della Malattia Professionale"@it .
+
+INAILService:numeroGiorniOriginaliInabilitaTemporanea a owl:DatatypeProperty ;
+    rdfs:label "numero Giorni Originali Inabilita Temporanea"@it ;
+    rdfs:domain INAILService:IndennizzoGiornalieroPerInabilitaTemporaneaINAIL ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero dei Giorni originali di inabilità temporanea"@it .
+
+INAILService:numeroPraticaRivalsa a owl:DatatypeProperty ;
+    rdfs:label "numero Pratica Rivalsa"@it ;
+    rdfs:domain INAILService:RivalsaINAIL ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Numero della pratica della rivalsa"@it .
+
+INAILService:oraPropostaPagamentoIndennizzo a owl:DatatypeProperty ;
+    rdfs:label "ora Proposta Pagamento Indennizzo"@it ;
+    rdfs:domain INAILService:IndennizzoINAIL ;
+    rdfs:comment "ora Proposta Pagamento Indennizzo"@it .
+
+INAILService:percentualeGradoDiInabilita a owl:DatatypeProperty ;
+    rdfs:label "Percentuale Grado Di Inabilita"@it ;
+    rdfs:domain INAILService:GradoDiInabilitaINAIL ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Indica la percentuale di grado di inabilità"@it .
+
+INAILService:percentualeGradoDiMenomazione a owl:DatatypeProperty ;
+    rdfs:label "percentuale Grado di Menomazione"@it ;
+    rdfs:domain INAILService:GradoDiMenomazioneINAIL ;
+    rdfs:comment "Indica la percentuale di grado di menomazione"@it .
+
+INAILService:periodoMassimoIndennizzabilita a owl:DatatypeProperty ;
+    rdfs:label "periodo Massimo Indennizzabilita"@it ;
+    rdfs:domain INAILService:TipoTecnopatiaINAIL ;
+    rdfs:comment "È un requisito da rispettare per le malattie tabellari, e consiste nel periodo di tempo entro il quale devono essere denunciate dalla cessazione dell'attività rischiosa.  Questo periodo di tempo è definito nelle tabelle stesse."@it .
+
+INAILService:qualificaProfessionaleTrattazione a owl:DatatypeProperty ;
+    rdfs:label "qualifica Professionale Trattazione"@it ;
+    rdfs:domain INAILService:TrattazioneINAIL ;
+    rdfs:comment "Indica la qualifica professionale"@it .
+
+INAILService:RivalsaAperta a owl:DatatypeProperty ;
+    rdfs:label "Rivalsa Aperta"@it ;
+    rdfs:domain INAILService:RivalsaINAIL ;
+    rdfs:comment "Flag rivalsa aperta"@it .
+
+INAILService:settoreClassificazioneCauseEsterne a owl:DatatypeProperty ;
+    rdfs:label "settore Classificazione Cause Esterne"@it ;
+    rdfs:domain INAILService:ClassificazioneCauseEsterneINAIL ;
+    rdfs:comment "settore Classificazione Cause Esterne"@it .
+
+INAILService:settoreClassificazioneCNEL a owl:DatatypeProperty ;
+    rdfs:label "settore Classificazione CNEL"@it ;
+    rdfs:domain INAILService:ClassificazioneContrattoCNEL ;
+    rdfs:comment "settore Classificazione C N E L"@it .
+
+INAILService:settoreCorrelatoMalattiaProfessionale a owl:DatatypeProperty ;
+    rdfs:label "settore Correlato Malattia Professionale"@it ;
+    rdfs:domain INAILService:MalattiaProfessionale ;
+    rdfs:comment "Raggruppamento settori contratti di lavoro CNEL"@it .
+
+INAILService:settoreTipoMalattia a owl:DatatypeProperty ;
+    rdfs:label "settore Tipo Malattia"@it ;
+    rdfs:domain INAILService:TipoMalattiaINAIL ;
+    rdfs:comment "Indica il settore della tipologia di malattia"@it .
+
+INAILService:settoreTipoTecnopatia a owl:DatatypeProperty ;
+    rdfs:label "settore Tipo Tecnopatia"@it ;
+    rdfs:domain INAILService:TipoTecnopatiaINAIL ;
+    rdfs:comment "Indica il settore della tipologia di tecnopatia"@it .
+
+INAILService:SilicosiAsbestosi a owl:DatatypeProperty ;
+    rdfs:label "Silicosi Asbestosi"@it ;
+    rdfs:domain INAILService:MalattiaProfessionale .
+
+INAILService:sottoSettoreClassificazioneCauseEsterne a owl:DatatypeProperty ;
+    rdfs:label "sotto Settore Classificazione Cause Esterne"@it ;
+    rdfs:domain INAILService:ClassificazioneCauseEsterneINAIL ;
+    rdfs:comment "sotto Settore Classificazione Cause Esterne"@it .
+
+INAILService:sottovoceTipoTecnopatia a owl:DatatypeProperty ;
+    rdfs:label "sottovoce Tipo Tecnopatia"@it ;
+    rdfs:domain INAILService:TipoTecnopatiaINAIL ;
+    rdfs:comment "sottovoce Tipo Tecnopatia"@it .
+
+INAILService:specificaStatoRivalsa a owl:DatatypeProperty ;
+    rdfs:label "specifica Stato Rivalsa"@it ;
+    rdfs:domain INAILService:TipoStatoRivalsaINAIL ;
+    rdfs:comment "specifica Stato Rivalsa"@it .
+
+INAILService:statoRivalsa a owl:DatatypeProperty ;
+    rdfs:label "stato Rivalsa"@it ;
+    rdfs:domain INAILService:TipoStatoRivalsaINAIL ;
+    rdfs:comment "stato Rivalsa"@it .
+
+INAILService:subsettoreCorrelatoMalattiaProfessionale a owl:DatatypeProperty ;
+    rdfs:label "subsettore Correlato Malattia Professionale"@it ;
+    rdfs:domain INAILService:MalattiaProfessionale ;
+    rdfs:comment "Raggruppamento sotto settori contratti di lavoro CNEL"@it .
+
+INAILService:subsettoreTipoTecnopatia a owl:DatatypeProperty ;
+    rdfs:label "subsettore Tipo Tecnopatia"@it ;
+    rdfs:domain INAILService:TipoTecnopatiaINAIL ;
+    rdfs:comment "subsettore Tipo Tecnopatia"@it .
+
+INAILService:tipoAperturaEventoLesivo a owl:DatatypeProperty ;
+    rdfs:label "tipo Apertura Evento Lesivo"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:comment "Indica se il caso aprto è relativo a: Franchigia Veloce Malattia professionale senza prognosi Malattia professionale con prognosi Infortuni con prognosi maggiore di 3 giorni"@it .
+
+INAILService:tipoConclusionePrecedenteRiapertura a owl:DatatypeProperty ;
+    rdfs:label "tipo Conclusione Precedente Riapertura"@it ;
+    rdfs:domain INAILService:RiaperturaINAIL ;
+    rdfs:comment "Indica la tipologia di conclusione della precedente riapertura"@it .
+
+INAILService:tipoConclusioneRiapertura a owl:DatatypeProperty ;
+    rdfs:label "tipo Conclusione Riapertura"@it ;
+    rdfs:domain INAILService:RiaperturaINAIL ;
+    rdfs:comment "Indica la tipologia di conclusione della riapertura"@it .
+
+INAILService:tipoDecisioneIstruttoriaAmministrativaEventoLesivo a owl:DatatypeProperty ;
+    rdfs:label "tipo Decisione Istruttoria Amministrativa Evento Lesivo"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:comment "Risultato della decisione istruttoria amministrativa. "@it .
+
+INAILService:tipoDecisioneIstruttoriaAmministrativaMalattiaProfessionale a owl:DatatypeProperty ;
+    rdfs:label "tipo Decisione Istruttoria Amministrativa Malattia Professionale"@it ;
+    rdfs:domain INAILService:MalattiaProfessionale ;
+    rdfs:comment "Risultato della decisione istruttoria amministrativa. "@it .
+
+INAILService:tipoDecisioneIstruttoriaAmministrativaTrattazione a owl:DatatypeProperty ;
+    rdfs:label "tipo Decisione Istruttoria Amministrativa Trattazione"@it ;
+    rdfs:domain INAILService:TrattazioneINAIL ;
+    rdfs:comment "Risultato della decisione istruttoria amministrativa. "@it .
+
+INAILService:tipoDecisioneIstruttoriaSanitariaEventoLesivo a owl:DatatypeProperty ;
+    rdfs:label "tipo Decisione Istruttoria Sanitaria Evento Lesivo"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:comment "Risultato della decisione istruttoria sanitaria"@it .
+
+INAILService:tipoDecisioneIstruttoriaSanitariaMalattiaProfessionale a owl:DatatypeProperty ;
+    rdfs:label "tipo Decisione Istruttoria Sanitaria Malattia Professionale"@it ;
+    rdfs:domain INAILService:MalattiaProfessionale ;
+    rdfs:comment "Risultato della decisione istruttoria sanitaria."@it .
+
+INAILService:tipoDecisioneIstruttoriaSanitariaTrattazione a owl:DatatypeProperty ;
+    rdfs:label "tipo Decisione Istruttoria Sanitaria Trattazione"@it ;
+    rdfs:domain INAILService:TrattazioneINAIL ;
+    rdfs:comment "Risultato della decisione istruttoria sanitaria."@it .
+
+INAILService:tipoEventoLesivo a owl:DatatypeProperty ;
+    rdfs:label "tipo Evento Lesivo"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:comment "Indica se l'evento lesivo è un infortunio o una malattia professionale"@it .
+
+INAILService:tipoGestioneAssicurativa a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "tipo Gestione Assicurativa"@it ;
+    rdfs:domain INAILService:GestioneAssicurativaINAIL ;
+    rdfs:isDefinedBy true .
+
+INAILService:tipoInfortunio a owl:DatatypeProperty ;
+    rdfs:label "tipo Infortunio"@it ;
+    rdfs:domain INAILService:InfortunioSulLavoro ;
+    rdfs:comment "Modalità di accadimento dell'infortunio"@it .
+
+INAILService:tipoLavoratoreQualificaAssicurativa a owl:DatatypeProperty ;
+    rdfs:label "tipo Lavoratore Qualifica Assicurativa"@it ;
+    rdfs:domain INAILService:QualificaAssicurativaINAIL ;
+    rdfs:comment "Indica la tipologia di qualifica assicurativa del lavoratore"@it .
+
+INAILService:tipoLavorazione a owl:DatatypeProperty ;
+    rdfs:label "tipo Lavorazione"@it ;
+    rdfs:domain INAILService:TipoTecnopatiaINAIL ;
+    rdfs:comment "tipo Lavorazione"@it .
+
+INAILService:tipoMaterialeATV a owl:DatatypeProperty ;
+    rdfs:label "tipo Materiale ATV"@it ;
+    rdfs:domain INAILService:InfortunioSulLavoro ;
+    rdfs:comment "Anagrafica dei materiali con cui l'infortunato lavora"@it .
+
+INAILService:tipoMaterialeCON a owl:DatatypeProperty ;
+    rdfs:label "tipo Materiale CON"@it ;
+    rdfs:domain INAILService:InfortunioSulLavoro ;
+    rdfs:comment "Anagrafica dei materiali con cui l'infortunato lavora"@it .
+
+INAILService:tipoMaterialeDEV a owl:DatatypeProperty ;
+    rdfs:label "tipo Materiale DEV"@it ;
+    rdfs:domain INAILService:InfortunioSulLavoro ;
+    rdfs:comment "Anagrafica dei materiali con cui l'infortunato lavora"@it .
+
+INAILService:tipoMorteEventoLesivo a owl:DatatypeProperty ;
+    rdfs:label "tipo Morte Evento Lesivo"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:comment "Descrive quando è avvenuta la morte del lavoratore relativamente all'evento lesivo. Immediata, in temporanea, successiva prima definizione.. "@it .
+
+INAILService:tipoRegimeEventoLesivo a owl:DatatypeProperty ;
+    rdfs:label "tipo Regime Evento Lesivo"@it ;
+    rdfs:domain INAILService:EventoLesivoINAIL ;
+    rdfs:comment "Anagrafica dei principali regimi assicurativi ai quali la struttura si attiene"@it .
+
+INAILService:tipoRiapertura a owl:DatatypeProperty ;
+    rdfs:label "tipo Riapertura"@it ;
+    rdfs:domain INAILService:RiaperturaINAIL ;
+    rdfs:comment "Indica la tipologia di riapertura"@it .
+
+INAILService:tipoRiaperturaIndennizzo a owl:DatatypeProperty ;
+    rdfs:label "tipo Riapertura Indennizzo"@it ;
+    rdfs:domain INAILService:IndennizzoINAIL ;
+    rdfs:comment "Indica la tipologia di riapertura dell'indennizzo"@it .
+
+INAILService:tipoRivalsa a owl:DatatypeProperty ;
+    rdfs:label "tipo Rivalsa"@it ;
+    rdfs:domain INAILService:RivalsaINAIL ;
+    rdfs:comment "Indica la tipologia di rivalsa"@it .
+
+INAILService:tipoSpesaRivalsa a owl:DatatypeProperty ;
+    rdfs:label "tipo Spesa Rivalsa"@it ;
+    rdfs:domain INAILService:SpesaSostenutaPerRivalsaINAIL ;
+    rdfs:comment "Tipologia di Spesa per Rivalsa"@it .
+
+INAILService:valoreClasseInabilita a owl:DatatypeProperty ;
+    rdfs:label "valore Classe Inabilita"@it ;
+    rdfs:domain INAILService:ClasseInabilitaINAIL ;
+    rdfs:comment "Indica il valore della classe inabilità"@it .
+
+INAILService:valoreClasseMenomazione a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "valore Classe Menomazione"@it ;
+    rdfs:domain INAILService:ClasseMenomazioneINAIL ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Indica il valore della classe menomazione"@it .
+
+INAILService:voceTipoTecnopatia a owl:DatatypeProperty ;
+    rdfs:label "voce Tipo Tecnopatia"@it ;
+    rdfs:domain INAILService:TipoTecnopatiaINAIL ;
+    rdfs:comment "Indica la tipologia di tecnopatia"@it .
+
+### Classes
+
+CLV:Feature a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:eventoAvvenutoInLuogo ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:PersonaFisica a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:soggettoEventoLesivoRelativoAPersonaFisica ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:PolizzaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:gestioneAssicurativaRelativaAPolizza ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:PosizioneAssicurativaNavigazione a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:eventoCoinvolgePAN ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:voceDiTariffaRelativaAPAN ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:PosizioneAssicurativaTerritoriale a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:eventoCoinvolgePAT ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:voceDiTariffaRelativaAPAT ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:RetribuzioneComplessiva a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:tipoAssicurazioneRelativoARetribuzione ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:voceDiTariffaRelativaARetribuzione ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:SedeINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:eventoTrattatoDaSedeINAIL ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:SettoreAttivita a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:eventoHaSettoreAttivita ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:gestioneHaSettoreAttivita ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:voceDiTariffaHaSettoreAttivita ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:SettoreAttivitaTOD a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:gestioneHaSettoreAttivita ] ;
+            owl:allValuesFrom INAILService:GestioneTariffaOrdinariaDipendentiINAIL ] .
+
+INAILCore:SoggettoAssicuranteINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:eventoCoinvolgeSoggettoAssicurante ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:StatoDiPersonaFisica a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty INAILService:haAvutoInabilita ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILService:AgenteCausaleINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceAgenteCausale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceGruppoAgenteCausale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneAgenteCausale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneGruppoAgenteCausale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:haAgenteCausale ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Agente Causale  INAIL"@it,
+        "INAIL Casual Agent"@en ;
+    rdfs:comment "Decodifica dell'agente, lavorazione, o esposizione che può essere causa o concausa di malattia professionale"@it .
+
+INAILService:AgenteMaterialeINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceAgenteMateriale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceGruppoAgenteMatreriale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneAgenteMateriale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneGruppoAgenteMatreriale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:haAgenteMateriale ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Agente Materiale  INAIL"@it,
+        "INAIL Material Agent"@en ;
+    rdfs:comment "Classificazione degli agenti materiali adottata dall'INAIL"@it .
+
+INAILService:Asbestosi a owl:Class ;
+    rdfs:label "Asbestosi"@it,
+        "Asbestosis"@en ;
+    rdfs:subClassOf INAILService:MalattiaProfessionale ;
+    rdfs:comment "Forma di fibrosi interstiziale polmonare causata dall'esposizione all'amianto"@it .
+
+INAILService:AssegnoFunerarioINAIL a owl:Class ;
+    rdfs:label "Assegno  Funerario INAIL"@it,
+        "INAIL Funerary Cheque"@en ;
+    owl:disjointWith INAILService:IndennizzoINAIL ;
+    rdfs:comment "Prestazione economica una tantum di importo fisso corrisposta ai superstiti di lavoratori deceduti a causa di infortunio sul lavoro o malattia professionale o, in mancanza di superstiti, a chiunque dimostri di aver sostenuto le spese funerarie, nel limite dell'importo fisso che sarebbe spettato ai superstiti."@it .
+
+INAILService:AssegnoIncollocabilitaINAIL a owl:Class ;
+    rdfs:label "Assegno  Incollocabilita INAIL"@it,
+        "INAIL Incollocability Cheque"@en ;
+    rdfs:subClassOf INAILService:RenditaDiInabilitaPermanenteINAIL ;
+    rdfs:comment "Prestazione economica integrativa/assistenziale erogata agli infortunati sul lavoro o tecnopatici per impossibilità di collocazione in qualsiasi settore lavorativo certificata dagli Organismi competenti."@it .
+
+INAILService:AssegnoPerAssistenzaPersonaleContinuativaINAIL a owl:Class ;
+    rdfs:label "Assegno  Per Assistenza  Personale  Continuativa INAIL"@it,
+        "INAIL Continuing Personal Assistance Allowance"@en ;
+    rdfs:subClassOf INAILService:RenditaDiInabilitaPermanenteINAIL ;
+    rdfs:comment "Prestazione economica riconosciuta ai titolari di rendita che versano in una o più condizioni menomative, elencate nella tabella (Allegato n.3) del Testo Unico (d.P.R. 1124/1965) e per le quali necessitano di assistenza personale continuativa. Per gli eventi occorsi fino al 31 dicembre 2006 per la corresponsione dell'assegno era necessaria l'ulteriore condizione di inabilità permanente assoluta, cioè una valutazione dei postumi permanenti pari al 100%."@it .
+
+INAILService:CitazioneINAIL a owl:Class ;
+    rdfs:label "Citazione INAIL"@it,
+        "INAIL Subpoena"@en ;
+    owl:disjointWith INAILService:OpposizioneINAIL ;
+    rdfs:comment "Il lavoratore che non ritiene corrette le valutazioni dell’Istituto può promuovere ricorso giudiziale presso il Tribunale del lavoro conferendo mandato di assistenza ad un avvocato. Il termine di prescrizione per il ricorso giudiziale è di tre anni dal giorno dell’infortunio. Secondo un precedente orientamento giurisprudenziale il termine triennale resta sospeso durante lo svolgimento del procedimento amministrativo di 150 giorni (210 per le revisioni) di liquidazione delle prestazioni. Di recente, con sentenza n. 11928 del 07.05.2019, la Cassazione, a Sezioni Unite, ha affermato che la prescrizione triennale resta sospesa per tutta la durata dell’iter amministrativo e fino all'adozione di un provvedimento di accoglimento o di diniego da parte dell'Istituto."@it .
+
+INAILService:ClasseInabilitaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:valoreClasseInabilita ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:label "Classe Inabilita  INAIL"@it,
+        "INAIL Inability Class"@en ;
+    rdfs:comment "L'inabilità al lavoro è una particolare condizione caratterizzata da una infermità grave che determina l'impossibilità di svolgere l'attività lavorativa. L'inabilità assoluta al lavoro dà diritto ad una indennità, se temporanea. Per gli infortuni verificatisi fino al 24 luglio 2000 e per le malattie professionali denunciate entro la stessa data, il lavoratore aveva diritto a rendita per inabilità permanente di grado compreso tra l’11% ed il 100% valutato in base alle tabelle allegate al Testo Unico (d.P.R. 1124/1965). Per gli eventi occorsi dal 25 luglio 2000 il parametro della inabilità al lavoro è stato sostituito da quello della menomazione dell'integrità psico-fisica (d.lgs. 38/2000). Il lavoratore ha diritto ad un indennizzo in capitale una tantum per gradi di menomazione permanente compresi tra il 6 e il 15% e alla rendita gradi di menomazione compresi tra il 16% e il 100%. In tutti i casi la rendita decorre dal giorno successivo alla guarigione clinica."@it .
+
+INAILService:ClasseMenomazioneINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:valoreClasseMenomazione ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:label "Classe  Menomazione  INAIL"@it,
+        "INAIL Disability Class"@en ;
+    rdfs:comment "Classificazione del grado di menomazione rispetto agli intervalli di variabilità del grado di menomazione permanente sono state definite convenzionalmente 6 classi:  1. menomazioni micro permanenti: p nell’intervallo [1-5%]; 2.    menomazioni di minima entità ma superiori alle micro permanenti: p nell’intervallo [6-15%]; 3.    menomazioni di entità media inferiore: p nell’intervallo [16-25%]; 4.    menomazioni di entità media superiore: p nell’intervallo [26-50%]; 5.    macro menomazioni permanenti: p nell’intervallo [51-85%]; 6.    macro menomazioni permanenti che giungono ad annullare il bene salute: p nell’intervallo [86-100%]. La partizione in classi è orlata dai casi in assenza di menomazioni e dai casi esito mortale. https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2000-02-23;38~art13-com1 "@it .
+
+INAILService:ClassificazioneCauseEsterneINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceClassificazioneCauseEsterne ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneClassificazioneCauseEsterne ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:settoreClassificazioneCauseEsterne ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:sottoSettoreClassificazioneCauseEsterne ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:haClassificazioneCauseEsterne ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Classificazione  Cause Esterne INAIL"@it,
+        "INAIL External Causes Classification"@en ;
+    rdfs:comment "Classificazione supplementare delle cause esterne di traumatismo ed avvelenamento"@it .
+
+INAILService:ClassificazioneContrattoCNEL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:categoriaClassificazioneCNEL ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceClassificazioneCNEL ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneClassificazioneCNEL ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:settoreClassificazioneCNEL ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:haClassificazioneContrattoCNEL ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Classificazione  Contratto CNEL"@it,
+        "CNEL Contract Classification"@en ;
+    rdfs:comment "Il contratto collettivo nazionale di lavoro (CCNL) è il contratto di lavoro stipulato dalle organizzazioni rappresentanti degli interessi dei datori di lavoro e dalle associazioni rappresentanti dei lavoratori. Esistono in Italia diversi CCNL a seconda della categoria. La contrattazione collettiva si articola anche su diversi livelli locali e aziendali, ma i contratti che hanno maggiore rilevanza sono i contratti collettivi nazionali del lavoro (CCNL)."@it .
+
+INAILService:ClassificazioneFasciaEtaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:classificazioneEtaFascia1 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:classificazioneEtaFascia2 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:classificazioneEtaFascia3 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:haClassificazioneFasciaEta ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Classificazione  Fascia Eta INAIL"@it,
+        "INAIL Age Range"@en ;
+    rdfs:comment "Elemento della partizione convenzionale (definita dall’Istat) per la rappresentazione della distribuzione per l'età."@it .
+
+INAILService:ClassificazioneInternazionaleMalattieICD a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceCategoriaICD ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceICD ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceSettoreICD ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneCategoriaIDC ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneICD ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneSettoreICD ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:malattiaProfessionaleHaClassificazioneInternazionaleDenunciata ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:malattiaProfessionaleHaClassificazioneInternazionaleRiconosciuta ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Classificazione  Internazionale  Malattie ICD X"@it,
+        "International Classification of Diseases"@en ;
+    rdfs:comment "Sistema di classificazione internazionale (ICD) che organizza le malattie ed i traumatismi in gruppi sulla base di criteri definiti.  La versione attualmente in uso è la decima revisione."@it .
+
+INAILService:DecodificaIstruttoriaMorteINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceDecodificaIstruttoriaMorte ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneDecodificaIstruttoriaMorte ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:eventoHaDecodificaIstruttoriaMorte ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Decodifica  Istruttoria  Morte INAIL"@it,
+        "INAIL Decoding Death Investigation"@en ;
+    rdfs:comment "Decodifica istruttoria morte."@it .
+
+INAILService:DefinizioneMorteINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceDefinizioneMorte ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneClassificazioneMorte ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:eventoHaDefinizioneMorte ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Definizione Morte  INAIL"@it,
+        "INAIL Death Definition"@en ;
+    rdfs:comment "E' la cessazione delle funzioni vitali negli organismi viventi e nell'uomo. Ai fini dell'assicurazione contro gli infortuni sul lavoro e le malattie professionali viene in rilievo quando sia riconducibile ad un infortunio sul lavoro o ad una malattia professionali, nonché quando interessi persone che percepiscono prestazioni economiche (superstiti) o considerate ai fini del calcolo dell'importo della rendita diretta (familiari del reddituario)."@it .
+
+INAILService:EsitoDefinizioneINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceClassificazioneEsitoDefinizione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceEsitoDefinizione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneClassificazioneEsitoDefinizione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneEsitoDefinizione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:eventoHaEsitoDefinizione ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:riaperturaHaEsitoDefinizione ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:riaperturaHaEsitoDefinizioneTrattazione ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:trattazioneHaEsitoDefinizione ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Esito Definizione  INAIL"@it,
+        "INAIL Outcome Definition"@en ;
+    rdfs:comment "Esito che caratterizza la definizione ovvero la situazione amministrativa del caso"@it .
+
+INAILService:EventoLesivoINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILService:EventoLesivoNegativoINAIL
+                    INAILService:EventoLesivoPositivoINAIL ) ],
+        [ a owl:Class ;
+            owl:unionOf (
+                    INAILService:InfortunioSulLavoro
+                    INAILService:MalattiaProfessionale ) ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:annoEventoLesivo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceCaso ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataAperturaEventoLesivo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataDefinizioneEventoLesivo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataDefinizioneMorteEventoLesivo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataEsitoDefinizioneEventoLesivo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataEventoLesivo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataProtocollazioneEventoLesivo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneEventoLesivo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:eventoAvvenutoInLuogo ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:eventoCoinvolgePAN ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:eventoCoinvolgePAT ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:eventoCoinvolgeSoggettoAssicurante ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:eventoHaDefinizioneMorte ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:eventoHaEsitoDefinizione ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:eventoHaGradoDiMenomazione ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:eventoHaNaturaLesione ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:eventoHaSettoreAttivita ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:eventoHaTipoIndennizzo ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:eventoHaTipoLavoratore ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:eventoHaTipoPratica ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:eventoHaTipoTrattazione ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:eventoHaVoceDiTariffa ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:eventoRelativoAGestioneAssicurativa ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:eventoRelativoAMansione ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:eventoTrattatoDaSedeINAIL ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:formaAccadimentoEventoLesivo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:haAgenteCausale ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:haAgenteMateriale ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:haClassificazioneCauseEsterne ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:haClassificazioneContrattoCNEL ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:haClassificazioneFasciaEta ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:haFasciaPeriodoMorte ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:haGestioneContabile ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:haQualificaAssicurativa ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:haSedeLesione ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:indiceDiGravitaEventoLesivo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:meseEventoLesivo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tipoAperturaEventoLesivo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tipoDecisioneIstruttoriaAmministrativaEventoLesivo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tipoDecisioneIstruttoriaSanitariaEventoLesivo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tipoEventoLesivo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tipoMorteEventoLesivo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tipoRegimeEventoLesivo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:inabilitaCausataDaEvento ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:prestazioneRelativaAEvento ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:riaperturaRelativaAEvento ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:rivalsaRelativaAEvento ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:trattazioneRelativaAEvento ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Evento Lesivo  INAIL"@it,
+        "INAIL Work Accident"@en ;
+    rdfs:subClassOf TI:TimeIndexedEvent ;
+    rdfs:comment "Gli eventi lesivi rilevanti ai fini dell'assicurazione gestita dall'Inail sono gli infortuni sul lavoro e le malattie professionali da cui sia derivata una inabilità/menomazione (temporanea o permanente) o la morte. Gli eventi lesivi devono essere denunciati all'Istituto e sono riconosciuti in presenza di tutti i presupposti di legge (definizione positiva) o respinti in mancanza dei presupposti di legge (definizione negativa)."@it .
+
+INAILService:EventoLesivoNegativoINAIL a owl:Class ;
+    rdfs:label "Evento Lesivo  Negativo INAIL"@it,
+        "INAIL Negative Work Accident"@en ;
+    owl:disjointWith INAILService:EventoLesivoPositivoINAIL ;
+    rdfs:comment "Evento Lesivo Negativo"@it .
+
+INAILService:EventoLesivoPositivoINAIL a owl:Class ;
+    rdfs:label "Evento Lesivo  Positivo INAIL"@it,
+        "INAIL Positive Work Accident"@en ;
+    rdfs:comment "Evento Lesivo Positivo"@it .
+
+INAILService:EventoMortaleINAIL a owl:Class ;
+    rdfs:label "Evento Mortale  INAIL"@it,
+        "INAIL Fatal Event"@en ;
+    rdfs:subClassOf INAILService:EventoLesivoINAIL ;
+    rdfs:comment "Evento Mortale"@it .
+
+INAILService:EventoMortaleRespintoINAIL a owl:Class ;
+    rdfs:label "Evento Mortale  Respinto INAIL"@it,
+        "INAIL Rejected Fatal Event"@en ;
+    rdfs:subClassOf INAILService:EventoLesivoINAIL ;
+    rdfs:comment "Evento Mortale Respinto"@it .
+
+INAILService:FasciaPeriodoMorteINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneFasciaPeriodoMorte ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:limiteInferioreFasciaPeriodoMorte ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:limiteSuperioreFasciaPeriodoMorte ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:haFasciaPeriodoMorte ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Fascia Periodo  Morte INAIL"@it,
+        "INAIL Death Period Range"@en ;
+    rdfs:comment "Indica se è stata morte sul colpo oppure il numero di giorni trascorsi tra l'evento lesivo e il decesso"@it .
+
+INAILService:GestioneAgricolturaINAIL a owl:Class ;
+    rdfs:label "Gestione  Agricoltura INAIL"@it,
+        "INAIL Agriculture Management"@en ;
+    rdfs:comment "La tutela assicurativa in “agricoltura” è disciplinata dal Titolo II del DPR 1124/1965 mentre i soggetti assicurati sono individuati (sempre nel DPR 1124/1965) dall’articolo 205. Le lavorazioni oggetto della tutela contro gli infortuni nell’industria devono essere considerate “agricole” (e come tali rientrano nella tutela dell’assicurazione in agricoltura) quando sono svolte da un imprenditore agricolo nell’interesse e per conto di aziende agricole o forestali e anche se i lavori sono eseguiti con l’impiego di macchine."@it .
+
+INAILService:GestioneAmbitoDomesticoINAIL a owl:Class ;
+    rdfs:label "Gestione Ambito  Domestico INAIL"@it,
+        "INAIL Domestic Management"@en ;
+    rdfs:comment "Tutela assicurativa per tutti coloro che svolgono, a titolo gratuito e senza vincolo di subordinazione, un’attività rivolta alla cura dei componenti della famiglia e dell’ambiente in cui dimorano, in modo abituale ed esclusivo."@it .
+
+INAILService:GestioneAssicurativaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILService:GestioneAgricolturaINAIL
+                    INAILService:GestioneAmbitoDomesticoINAIL
+                    INAILService:GestioneIndustriaCommercioEServiziINAIL
+                    INAILService:GestioneMediciEspostiARadiazioniIonizzantiINAIL
+                    INAILService:GestioneNavigazioneINAIL ) ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:gestioneAssicurativaRelativaAPolizza ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:gestioneHaSettoreAttivita ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tipoAssicurazioneRelativoARetribuzione ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:eventoRelativoAGestioneAssicurativa ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Gestione  Assicurativa INAIL"@it,
+        "INAIL Insurance Management"@en ;
+    rdfs:comment "Settore tariffario corrispondente ad un grande comporto produttivo nel quale vengono inquadrate le aziende secondo un sistema di classificazione disposta dalla legge ai fini previdenziali e assistenziali; le gestioni tariffarie Inail sono quattro: industria, artigianato, terziario, altre attività; all'interno di ogni gestione è presente un elenco di lavorazioni articolato in grandi gruppi, gruppi, sottogruppi e voci; in base alla \"Gestione\" nella quale viene inquadrata l'azienda viene individuato il tasso di tariffa che viene utilizzato, insieme alle retribuzioni, come elemento per il calcolo del premio assicurativo."@it .
+
+INAILService:GestioneContabileINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceGestioneContabileAggregata ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceTipoGestioneContabile ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneGestioneContabile ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneGestioneContabileAggregata ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneTipoGestioneContabile ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:haGestioneContabile ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Gestione  Contabile INAIL"@it,
+        "INAIL Accounting Management"@en ;
+    rdfs:comment "Sistema di classificazione dell’evento lesivo ai fini della imputazione contabile ai capitoli di spesa"@it .
+
+INAILService:GestioneIndustriaCommercioEServiziINAIL a owl:Class ;
+    rdfs:label "Gestione Industria  Commercio E Servizi  INAIL"@it,
+        "INAIL Management of Industry Trade and Services"@en ;
+    rdfs:comment "La gestione \"industria e servizi\" costituisce l'unico ramo di attività dell'Inail che realizza completamente il ciclo dell'assicurazione: definizione delle tariffe, individuazione della polizza, calcolo e riscossione del premio, accertamento del sinistro, (eventuale) erogazione della prestazione. L'\"industria e servizi\" gestisce aziende e, in generale, datori di lavoro."@it .
+
+INAILService:GestioneMediciEspostiARadiazioniIonizzantiINAIL a owl:Class ;
+    rdfs:label "Gestione Medici  Esposti A Radiazioni  Ionizzanti INAIL"@it,
+        "INAIL Management of Physician Exposed to Ionizing Radiation"@en ;
+    rdfs:comment "Le attività comportanti esposizione a radiazioni ionizzanti in ambito sanitario trovano copertura secondo una normativa speciale (legge 93/1958 e s.m.i.) che coesiste con la tutela assicurativa ai sensi della normativa ordinaria (d.p.r. 1124/1965 e s.m.i. e d.lgs. 38/2000). "@it .
+
+INAILService:GestioneNavigazioneINAIL a owl:Class ;
+    rdfs:label "Gestione  Navigazione INAIL"@it,
+        "INAIL Navigation Management"@en ;
+    rdfs:comment "I premi per l’assicurazione degli addetti alla navigazione e alla pesca marittima a carico degli armatori sono compresi nella gestione Industria di cui al titolo I del d.p.r. 1124/1965 e sono quindi premi ordinari determinati (ai sensi dell’art. 41) applicando le aliquote stabilite dalla specifica tariffa. "@it .
+
+INAILService:GestionePolizzaColfINAIL a owl:Class ;
+    rdfs:label "Gestione Polizza  Colf INAIL"@it,
+        "INAIL Housemaid Policy Management"@en ;
+    rdfs:comment "Gestione Polizza colf. Il premio è riscosso in forma unificata dall’INPS (i contributi comprendono il premio di assicurazione INAIL). "@it .
+
+INAILService:GestionePolizzaSpecialeINAIL a owl:Class ;
+    rdfs:label "Gestione Polizza  Speciale INAIL"@it,
+        "INAIL Special Policy Management"@en ;
+    rdfs:comment "Polizze speciali per alcune attivita che , a causa della loro natura, della modalita di svolgimento o altre circostanze, risulta difficoltosa la determinazione del premio nella forma ordinaria."@it .
+
+INAILService:GestioneTariffaInterinaliINAIL a owl:Class ;
+    rdfs:label "Gestione Tariffa  Interinali INAIL"@it,
+        "INAIL Interim Rate Management"@en ;
+    rdfs:comment "Tariffa Interinali riguarda coperture assicurative contro gli infortuni e le malattie professionali dei lavoratori in somministrazione. L’obbligo assicurativo è a carico del somministratore, ma l'utilizzatore è obbligato in solido con il somministratore a corrispondere i contributi previdenziali dovuti a favore dei lavoratori. "@it .
+
+INAILService:GestioneTariffaOrdinariaDipendentiINAIL a owl:Class ;
+    rdfs:label "Gestione  Tariffa Ordinaria  Dipendenti INAIL"@it,
+        "INAIL Ordinary Rate Management Employees"@en ;
+    rdfs:comment "La Tariffa ordinaria dipendenti vigente dal 1° gennaio 20001 (tariffa 2000), riguarda le coperture assicurative contro gli infortuni e le malattie professionali dei lavoratori dipendenti delle quattro gestioni riportate all’articolo 1 del decreto legislativo n.38/2000.Ciascuna delle quattro gestioni della Tariffa Ordinaria Dipendenti, ai fini tariffari, è suddivisa in 10 grandi gruppi di lavorazioni (gruppi da 1 a 9 e grande gruppo 0)."@it .
+
+INAILService:GradoDiInabilitaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneGradoDiInabilita ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:haClasseDiInabilita ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:percentualeGradoDiInabilita ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:infortunioHaGradoDiInabilitaAssunto ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:infortunioHaGradoDiInabilitaAttuale ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:malattiaProfessionaleHaGradoDiInabilitaAssunto ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:malattiaProfessionaleHaGradoDiInabilitaAttuale ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Grado Di  Inabilita INAIL"@it,
+        "INAIL Degree of Inability"@en ;
+    rdfs:comment "Percentuale con cui si misura il livello di perdita della capacità lavorativa complessiva in conseguenza di infortunio sul lavoro o di malattia professionale in regime Testo Unico (per casi con data di denuncia precedente al 25 luglio 2000). La percentuale complessiva valuta anche inabilità derivate da eventi preesistenti disciplinati dal medesimo regime."@it .
+
+INAILService:GradoDiMenomazioneINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneGradoDiMenomazione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:haClasseDiMenomazione ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:percentualeGradoDiMenomazione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:eventoHaGradoDiMenomazione ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Grado Di  Menomazione  INAIL"@it,
+        "INAIL Menomation Grades"@en ;
+    rdfs:comment "Percentuale con cui si misura il livello di menomazione dell’integrità psicofisica complessiva in conseguenza di infortunio o malattia professionale in regime di danno biologico (per casi con data di denuncia uguale o successiva al 25 luglio 2000). E' la percentuale con cui si misura il livello di menomazione dell’integrità psicofisica complessiva in conseguenza dell'infortunio o della malattia professionale e di eventuali eventi preesistenti anch’essi disciplinati dal medesimo regime. https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2000-02-23;38~art13-com1 "@it .
+
+INAILService:GrandeGruppoVoceDiTariffaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceGrandeGruppoVoceDItariffa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneGrandeGruppoVoceDItariffa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:appartieneAGrandeGruppoVoceDiTariffa ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Grande Gruppo  Voce Di Tariffa  INAIL"@it,
+        "INAIL Large Group of Rate Item"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty INAILService:voceDiTariffaHaSettoreAttivita ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Grande Gruppo di attività riferite ad uno stessa Gestione tariffaria; ogni grande gruppo raccoglie un insieme di lavorazioni che appartengono a comparti produttivi omogenei. https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1965-06-30;1124~art40"@it .
+
+INAILService:GruppoVoceDiTariffaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:appartieneAGrandeGruppoVoceDiTariffa ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceGruppoVoceDiTariffa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneGruppoVoceDiTariffa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:appartieneAGruppoVoceDiTariffa ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Gruppo Voce Di  Tariffa INAIL"@it,
+        "INAIL Group of Rate Item"@en ;
+    rdfs:comment "Gruppo di attività omogenee all'interno di uno stesso Grande Gruppo (le lavorazioni descritte nei gruppi sono circoscritte al comparto produttivo definito dal grande gruppo di appartenenza). https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1965-06-30;1124~art40 "@it .
+
+INAILService:InabilitaTemporaneaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:dataAperturaInabilitaTemporanea ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataDefinizioneInabilitaTemporanea ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataFineInabilitaTemporanea ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataInizioInabilitaTemporanea ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:idInabilitaTemporanea ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:inabilitaCausataDaEvento ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:inabilitaRelativaATipoTrattazione ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:inabilitaRiferitaASoggetto ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:numeroGiorniInabilitaTemporanea ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:haAvutoInabilita ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:indennizzoGiornalieroHaInabilita ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Inabilita  Temporanea  INAIL"@it,
+        "INAIL Temporary Disability"@en ;
+    rdfs:comment "E' l'incapacità di svolgere per un periodo di tempo limitato la propria attività lavorativa. Può essere causata da un infortunio sul lavoro o, in qualche caso, da una malattia professionale."@it .
+
+INAILService:IndennizzoGiornalieroPerInabilitaTemporaneaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:indennizzoGiornalieroHaInabilita ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:numeroGiorniInabilitaTemporaneaIndennizzoGiornaliero ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:numeroGiorniOriginaliInabilitaTemporanea ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:label "INAIL Temporary Disability Daily  Compensation"@en,
+        "Indennizzo  Giornaliero Per  Inabilita Temporanea  INAIL"@it ;
+    owl:disjointWith INAILService:IndennizzoInCapitalePerDannoBiologicoINAIL ;
+    rdfs:comment "Prestazione economica, sostitutiva della retribuzione. Viene corrisposta al lavoratore in caso di infortunio o di malattia professionale - che impedisca totalmente e di fatto all’infortunato di svolgere l’attività lavorativa - a decorrere dal quarto giorno successivo alla data di infortunio o di manifestazione della malattia professionale, compresi i giorni festivi, fino alla guarigione clinica. L’Inail eroga l’indennità giornaliera nella misura del 60% della retribuzione media giornaliera fino al 90° giorno, del 75% della retribuzione media giornaliera dal 91° giorno fino alla guarigione clinica. Per i lavoratori del settore marittimo sono previste diverse specifiche disposizioni in merito al calcolo dell'indennità in questione."@it .
+
+INAILService:IndennizzoINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILService:IndennizzoGiornalieroPerInabilitaTemporaneaINAIL
+                    INAILService:IndennizzoInCapitalePerDannoBiologicoINAIL ) ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:causalePagamentoIndennizzo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceIndennizzo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataInizioTrattazioneIndennizzo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataLiquidazioneIndennizzo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataPropostaPagamentoIndennizzo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:oraPropostaPagamentoIndennizzo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tipoRiaperturaIndennizzo ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:label "INAIL Compensation"@en,
+        "Indennizzo INAIL"@it ;
+    rdfs:comment "Prestazione economica che l’Inail corrisponde ad infortunati e tecnopatici nell'ambito del sistema assicurativo. Le tipologie principali di indennizzo sono: l'indennità per inabilità temporanea assoluta al lavoro, l'indennizzo in capitale una tantum per menomazioni permanenti di grado compreso tra 6 e il 15%, la rendita diretta per menomazioni permanenti di grado compreso tra 16 e il 100%, la rendita a superstiti nel caso di morte riconducibile ad infortunio sul lavoro o malattia professionale. https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2000-02-23;38~art13 https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1965-06-30;1124~art66"@it .
+
+INAILService:IndennizzoInCapitalePerDannoBiologicoINAIL a owl:Class ;
+    rdfs:label "INAIL Lump Sum Compensation for Biological Damage"@en,
+        "Indennizzo In  Capitale Per Danno  Biologico INAIL"@it ;
+    rdfs:comment "Prestazione economica una tantum riconosciuta per gli infortuni e le malattie professionali verificatisi a decorrere dal 25 luglio 2000, per i quali sia accertato un grado di menomazione dell’integrità psicofisica compreso tra il 6% ed il 15%. Per gli eventi fino al 31 dicembre 2018 , gli indennizzi in capitale sono tabellati  in funzione dell’età, del genere dell'infortunato/tecnopatico e del grado di menomazione accertato in sede di valutazione dei postumi permanenti (Tabella allegata al d.m. 12 luglio 2000); per gli eventi a decorrere dal 1° gennaio 2019, gli importi sono invece definiti secondo la “Tabella indennizzo danno biologico in capitale” di cui al d.m. 45 del  23 aprile 2019 indipendentemente dal genere dell'infortunato/tecnopatico."@it .
+
+INAILService:InfortunatoSulLavoro a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:infortunioAccadutoAInfortunato ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Infortunato  Sul Lavoro"@it,
+        "Injured at Work"@en ;
+    owl:disjointWith INAILService:Tecnopatico ;
+    rdfs:comment "Per infortunato sul lavoro si intende ogni lavoratore con una lesione originata, in occasione di lavoro, da causa violenta che determini la morte della persona o che comprometta parzialmente o totalmente la capacità lavorativa."@it .
+
+INAILService:InfortunioChiusoSulLavoro a owl:Class ;
+    rdfs:label "Closed Occupational Injury at Work"@en,
+        "Infortunio Chiuso  Sul Lavoro"@it ;
+    owl:disjointWith INAILService:InfortunioSulLavoroInIstruttoria ;
+    rdfs:comment "Infortunio Chiuso"@it .
+
+INAILService:InfortunioInSedeDiLavoro a owl:Class ;
+    rdfs:label "Infortunio In  Sede Di Lavoro"@it,
+        "Workplace Injury"@en ;
+    owl:disjointWith INAILService:InfortunioSulLavoroInItinere ;
+    rdfs:comment "Accadimento in occasione di lavoro"@it .
+
+INAILService:InfortunioSulLavoro a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILService:InfortunioChiusoSulLavoro
+                    INAILService:InfortunioSulLavoroInIstruttoria ) ],
+        [ a owl:Class ;
+            owl:unionOf (
+                    INAILService:InfortunioInSedeDiLavoro
+                    INAILService:InfortunioSulLavoroInItinere ) ],
+        [ a owl:Class ;
+            owl:unionOf (
+                    INAILService:InfortunioSulLavoroConMezzoDiTrasporto
+                    INAILService:InfortunioSulLavoroSenzaMezzoDiTrasporto ) ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataLavorazioneInfortunio ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataRiferimentoInfortunio ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:definizioneAmministrativaInfortunio ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:gestioneParticolareInfortunio ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:gradoDiInabilitaAssuntoInfortunio ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:gradoDiInabilitaAttualeInfortunio ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:idInfortunio ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:importoIndennizzoInfortunio ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:infortunioAccadutoAInfortunato ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:infortunioAccadutoInTipoLuogo ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:infortunioHaGradoDiInabilitaAssunto ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:infortunioHaGradoDiInabilitaAttuale ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:infortunioHaTipoAttivitaFisica ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:infortunioHaTipoContatto ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:infortunioHaTipoDeviazione ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:infortunioInSedeDiLavoro ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:lavorazioneAgricola ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:modalitaInfortunioMezzoDiTrasporto ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:numeroGiorniIndennizzoInfortunio ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tipoInfortunio ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tipoMaterialeATV ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tipoMaterialeCON ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tipoMaterialeDEV ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:label "Infortunio  Sul Lavoro"@it,
+        "Occupational Injury at Work"@en ;
+    owl:disjointWith INAILService:MalattiaProfessionale ;
+    rdfs:comment "L' infortunio sul lavoro è ogni lesione originata, in occasione di lavoro, da causa violenta che determini la morte della persona o ne menomi parzialmente o totalmente la capacità lavorativa in via temporanea o permanente. Gli elementi integranti l'infortunio sul lavoro sono: la lesione; la causa violenta; l'occasione di lavoro."@it .
+
+INAILService:InfortunioSulLavoroConIndennizzo a owl:Class ;
+    rdfs:label "Infortunio  Sul Lavoro  Con Indennizzo"@it,
+        "Injury at Work with Compensation"@en ;
+    owl:disjointWith INAILService:InfortunioSulLavoroSenzaIndennizzo ;
+    rdfs:comment "Inofrtunio per il quale è previsto un indennizzo "@it .
+
+INAILService:InfortunioSulLavoroConMezzoDiTrasporto a owl:Class ;
+    rdfs:label "Infortunio Sul  Lavoro Con Mezzo  Di Trasporto"@it,
+        "Injury with a Means of Transport"@en ;
+    owl:disjointWith INAILService:InfortunioSulLavoroSenzaMezzoDiTrasporto ;
+    rdfs:comment "Infortunio Con Mezzo Di Trasporto"@it .
+
+INAILService:InfortunioSulLavoroInFranchigia a owl:Class ;
+    rdfs:label "Excess Injury"@en,
+        "Infortunio Sul  Lavoro In  Franchigia"@it ;
+    rdfs:comment "E' uno degli esiti di definizione amministrativa del caso di infortunio o di malattia professionale; si dice in franchigia se provoca assenza dal lavoro non superiore ai tre giorni; per il periodo di franchigia l'Inail non corrisponde alcuna prestazione al lavoratore."@it .
+
+INAILService:InfortunioSulLavoroInIstruttoria a owl:Class ;
+    rdfs:label "Infortunio  Sul Lavoro In Istruttoria"@it,
+        "Injury in Case"@en ;
+    rdfs:comment "Il caso è  in istruttoria se non è concluso il procedimento amministrativo per l'accertamento dei presupposti di ammissione a tutela assicurativa."@it .
+
+INAILService:InfortunioSulLavoroInItinere a owl:Class ;
+    rdfs:label "In-Commuting Injury"@en,
+        "Infortunio  Sul Lavoro  In Itinere"@it ;
+    rdfs:comment "Infortuni occorsi al lavoratore durante il normale percorso di andata e ritorno delle seguenti tipologie: da abitazione a lavoro da sede lavoro a diversa sede lavoro da sede lavoro a luogo pasto (in assenza di mensa aziendale)"@it .
+
+INAILService:InfortunioSulLavoroMortale a owl:Class ;
+    rdfs:label "Fatal Injury"@en,
+        "Infortunio  Sul Lavoro  Mortale"@it ;
+    rdfs:subClassOf INAILService:InfortunioSulLavoro ;
+    rdfs:comment "Infortunio Mortale"@it .
+
+INAILService:InfortunioSulLavoroMortaleNegativo a owl:Class ;
+    rdfs:label "Infortunio  Sul Lavoro Mortale Negativo"@it,
+        "Negative Fatal injury"@en ;
+    rdfs:subClassOf INAILService:InfortunioSulLavoroMortale,
+        INAILService:InfortunioSulLavoroNegativo ;
+    rdfs:comment " Infortunio mortale definito negativo, non riconosciuto dall'Istituto "@it .
+
+INAILService:InfortunioSulLavoroMortalePositivo a owl:Class ;
+    rdfs:label "Infortunio  Sul Lavoro  Mortale Positivo"@it,
+        "Positive Fatal injury"@en ;
+    rdfs:subClassOf INAILService:InfortunioSulLavoroMortale,
+        INAILService:InfortunioSulLavoroPositivo ;
+    rdfs:comment "Infortunio mortale definito positivo, riconosciuto dall'Istituto "@it .
+
+INAILService:InfortunioSulLavoroNegativo a owl:Class ;
+    rdfs:label "Infortunio  Sul Lavoro  Negativo"@it,
+        "Negative Injury"@en ;
+    rdfs:comment "E' uno degli esiti di definizione amministrativa del caso d'infortunio o di malattia professionale; un caso d'infortunio o di malattia professionale ha esito negativo se non rientra nella tutela assicurativa o vi sono altre cause di negatività ."@it .
+
+INAILService:InfortunioSulLavoroPositivo a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILService:InfortunioSulLavoroConIndennizzo
+                    INAILService:InfortunioSulLavoroSenzaIndennizzo ) ] ;
+    rdfs:label "Infortunio  Sul Lavoro  Positivo"@it,
+        "Positive Injury"@en ;
+    owl:disjointWith INAILService:MalattiaProfessionaleDefinitaPositiva ;
+    rdfs:comment "E' uno degli esiti di definizione amministrativa del caso d'infortunio o di malattia professionale; un caso d'infortunio o di malattia professionale ha esito positivo se rientra nella tutela assicurativa."@it .
+
+INAILService:InfortunioSulLavoroSenzaIndennizzo a owl:Class ;
+    rdfs:label "Infortunio Sul  Lavoro Senza  Indennizzo"@it,
+        "Injury Without Compensation"@en ;
+    rdfs:comment "Infortunio per il quale non è previsto un indennizzo"@it .
+
+INAILService:InfortunioSulLavoroSenzaMezzoDiTrasporto a owl:Class ;
+    rdfs:label "Infortunio Sul  Lavoro Senza  Mezzo Di Trasporto"@it,
+        "Injury Without a Means of Transport"@en ;
+    rdfs:comment "Infortunio Senza Mezzo Di Trasporto"@it .
+
+INAILService:MalattiaProfessionale a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILService:MalattiaProfessionaleConPrognosi
+                    INAILService:MalattiaProfessionaleSenzaPrognosi ) ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceSettoreCorrelatoMalattiaProfessionale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceSubsettoreCorrelatoMalattiaProfessionale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataRiferimentoMalattiaProfessionale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:definizioneAmministrativaMalattiaProfessionale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:esitoRiconoscimentoMalattiaProfessionale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:gradoDiInabilitaAssuntoMalattiaProfessionale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:gradoDiInabilitaAttualeMalattiaProfessionale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:idMalattiaProfessionale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:importoMalattiaProfessionale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:malattiaProfessionaleHaClassificazioneInternazionaleDenunciata ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:malattiaProfessionaleHaClassificazioneInternazionaleRiconosciuta ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:malattiaProfessionaleHaGradoDiInabilitaAssunto ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:malattiaProfessionaleHaGradoDiInabilitaAttuale ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:malattiaProfessionaleHaTipoMalattia ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:malattiaProfessionaleHaTipoMalattiaDenunciato ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:malattiaProfessionaleHaTipoMalattiaFinale ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:malattiaProfessionalehaTipoTecnopatia ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:malattiaProfessionalehaTipoTecnopatiaDenunciato ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:malattiaProfessionalehaTipoTecnopatiaFinale ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:malattiaProfessionaleRelativaATecnopatico ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:numeroGiorniIndennizzoMalattiaProfessionale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:settoreCorrelatoMalattiaProfessionale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:subsettoreCorrelatoMalattiaProfessionale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tipoDecisioneIstruttoriaAmministrativaMalattiaProfessionale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tipoDecisioneIstruttoriaSanitariaMalattiaProfessionale ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:label "Malattia  Professionale"@it,
+        "Occupational Disease"@en ;
+    rdfs:comment "La malattia professionale è una patologia la cui causa agisce lentamente e progressivamente sull’organismo (causa diluita e non causa violenta e concentrata nel tempo). La stessa causa deve essere diretta ed efficiente, cioè in grado di produrre l’infermità in modo esclusivo o prevalente: il Testo Unico n. 1124/1965, infatti, parla di malattie contratte nell’esercizio e a causa delle lavorazioni rischiose. È ammesso, tuttavia, il concorso di cause extraprofessionali, purché queste non interrompano il nesso causale in quanto capaci di produrre da sole l’infermità. Per le malattie professionali, quindi, non basta l’occasione di lavoro come per gli infortuni, cioè un rapporto anche mediato o indiretto con il rischio lavorativo, ma deve esistere un rapporto causale o concausale diretto tra il rischio professionale e la malattia. Il rischio può essere provocato dalla lavorazione che l’assicurato svolge oppure dall’ambiente in cui la lavorazione stessa si svolge (cosiddetto “rischio ambientale”). https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1965-06-30;1124~art3 https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1965-06-30;1124~art140 https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1965-06-30;1124~art211 https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2000-02-23;38~art10"@it .
+
+INAILService:MalattiaProfessionaleConPrognosi a owl:Class ;
+    rdfs:label "Malattia  Professionale  Con Prognosi"@it,
+        "Occupational Disease with Prognosis"@en ;
+    owl:disjointWith INAILService:MalattiaProfessionaleSenzaPrognosi ;
+    rdfs:comment "Malattia Professionale Con Prognosi"@it .
+
+INAILService:MalattiaProfessionaleDefinitaPositiva a owl:Class ;
+    rdfs:label "Malattia  Professionale  Definita Positiva"@it,
+        "Occupational Disease Defined as Positive"@en ;
+    rdfs:comment "E' uno degli esiti di definizione amministrativa del caso d'infortunio o di malattia professionale; un caso d'infortunio o di malattia professionale ha esito positivo se rientra nella tutela assicurativa."@it .
+
+INAILService:MalattiaProfessionaleInDefinizione a owl:Class ;
+    rdfs:label "Malattia  Professionale  In Definizione"@it,
+        "Occupational Disease In Definition"@en ;
+    rdfs:comment "Malattia Professionale In Definizione"@it .
+
+INAILService:MalattiaProfessionaleInFranchigia a owl:Class ;
+    rdfs:label "Malattia  Professionale  In Franchigia"@it,
+        "Occupational Disease In Excess"@en ;
+    rdfs:subClassOf INAILService:MalattiaProfessionale ;
+    rdfs:comment "Un caso di malattia professionale si dice “ in franchigia” se provoca assenza dal lavoro non superiore ai tre giorni; per il periodo di franchigia l’Inail non corrisponde alcuna prestazione al lavoratore."@it .
+
+INAILService:MalattiaProfessionaleMortale a owl:Class ;
+    rdfs:label "Fatal Occupational Disease"@en,
+        "Malattia  Professionale  Mortale"@it ;
+    rdfs:subClassOf INAILService:MalattiaProfessionale ;
+    rdfs:comment "Malattia professionale che è causa (o concausa) della morte del lavoratore."@it .
+
+INAILService:MalattiaProfessionaleNonRiconosciuta a owl:Class ;
+    rdfs:label "Malattia  Professionale  Non Riconosciuta"@it,
+        "Unrecognised Occupational Disease"@en ;
+    rdfs:comment "Malattia Professionale Non Riconosciuta"@it .
+
+INAILService:MalattiaProfessionaleSenzaPrognosi a owl:Class ;
+    rdfs:label "Malattia  Professionale  Senza Prognosi"@it,
+        "Occupational Disease without Prognosis"@en ;
+    rdfs:comment "Malattia Professionale Senza Prognosi"@it .
+
+INAILService:MansioneINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceMansioneLivello1 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceMansioneLivello2 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceMansioneLivello3 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceMansioneLivello4 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceMansioneLivello5 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceMansioneLivello6 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneMansioneLivello1 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneMansioneLivello2 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneMansioneLivello3 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneMansioneLivello4 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneMansioneLivello5 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneMansioneLivello6 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:eventoRelativoAMansione ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Job Task"@en,
+        "Mansione INAIL"@it ;
+    rdfs:subClassOf RO:Role ;
+    rdfs:comment "Il mansionario Inail è realizzato in un’ottica di analisi del rischio e individua le singole professioni. Il mansionario Istat, invece, riporta anche il dettaglio di gruppi di mansioni affini ed è molto specifico solo per alcune professioni (es. Medici). "@it .
+
+INAILService:NaturaLesioneINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneNaturaLesione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:eventoHaNaturaLesione ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Nature of Injury"@en,
+        "Natura Lesione  INAIL"@it ;
+    rdfs:comment "Classificazione Anagrafica della Natura Lesione"@it .
+
+INAILService:OpposizioneINAIL a owl:Class ;
+    rdfs:label "INAIL Objection Judicial "@en,
+        "Opposizione INAIL"@it ;
+    rdfs:comment "Il lavoratore che non ritiene corrette le valutazioni dell’Istituto può promuovere ricorso amministrativo presso la Sede Inail di competenza del caso seguendo le procedure di cui all'articolo 104 del testo Unico (d.p.r. 1124/1965). L'opposizione può essere presentata entro 60 giorni dal ricevimento della comunicazione dell'Istituto; peraltro, la Legge n. 533/1973, che ha riformato il processo del lavoro, ha stabilito che nelle procedure amministrative in materia previdenziale e assistenziale non si tiene conto dei vizi, delle preclusioni e delle decadenze di natura processuale, sicché il predetto termine di 60 giorni non ha più carattere repentorio. In pratica, l'assicurato può presentare l'opposizione in ogni momento perch nel termine triennnale di prescrizione."@it .
+
+INAILService:PagamentoRivalsaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:causalePagamentoRivalsa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataContabileRivalsa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataPagamentoRivalsa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:idPagamentoRivalsa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:importoRivalsa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:relativoARivalsa ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Recoupment Payment"@en,
+        "Pagamento  Rivalsa INAIL"@it ;
+    rdfs:comment "Pagamento Rivalsa"@it .
+
+INAILService:PrestazioneABreveDurataINAIL a owl:Class ;
+    rdfs:label "INAIL Short-Term Benefit"@en,
+        "Prestazione Non  Continuativa INAIL"@it ;
+    owl:disjointWith INAILService:PrestazioneALungaDurataINAIL ;
+    rdfs:comment "Prestazione A Breve Durata"@it .
+
+INAILService:PrestazioneALungaDurataINAIL a owl:Class ;
+    rdfs:label "INAIL Long-Term Benefit"@en,
+        "Prestazione  Continuativa  INAIL"@it ;
+    rdfs:comment "Prestazione A Lunga Durata"@it .
+
+INAILService:PrestazioneEconomicaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:idPrestazioneEconomica ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:importoPrestazione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:prestazioneRelativaAEvento ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Economic Benefit"@en,
+        "Prestazione  Economica  INAIL"@it ;
+    rdfs:comment "L’Inail tutela i lavoratori che subiscono un infortunio sul lavoro o contraggono una malattia professionale (tecnopatici) o, in caso di morte, i loro superstiti mediante l'erogazione di prestazioni economiche finalizzate a indennizzare il danno derivante dall'evento lesivo. Le prestazioni economiche spettano, di norma, anche se il datore di lavoro non ha versato regolarmente il premio assicurativo (sono esclusi i lavoratori autonomi, quali ad esempio gli artigiani e coltivatori diretti, fino all'assolvimento dell’obbligo contributivo; le/i casalinghe/i non sono iscritte/i all'assicurazione al momento dell'evento lesivo)."@it .
+
+INAILService:QualificaAssicurativaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceQualificaAssicurativa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneQualificaAssicurativa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:gestioneQualificaAssicurativa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tipoLavoratoreQualificaAssicurativa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:haQualificaAssicurativa ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Insurance Qualification"@en,
+        "Qualifica  Assicurativa  INAIL"@it ;
+    rdfs:comment "E' l'anagrafica della tipologia di Qualifica Assicurativa ed è il risultato della concatenazione tra il tipo di gestione (Industria, Agricoltura, Navigazione, conto Stato) e la qualifica professionale (Lavoratore Dipendente, Quadro, Impiegato, ecc.)."@it .
+
+INAILService:RenditaASuperstitiINAIL a owl:Class ;
+    rdfs:label "INAIL Survivor Pension"@en,
+        "Rendita A  Superstiti  INAIL"@it ;
+    owl:disjointWith INAILService:RenditaDiInabilitaPermanenteINAIL ;
+    rdfs:comment "E' la prestazione economica spettante ai superstiti quando dall'infortunio o dalla malattia professionale sia derivata la morte del lavoratore. La rendita spetta a favore dei superstiti del lavoratore ai sensi dell'articolo 85 del Testo Unico (d.p.r. 1124/1965). La prestazione decorre dal giorno successivo alla morte e viene calcolata moltiplicando la retribuzione del lavoratore deceduto per specifiche aliquote differenziate per tipo di familiare avente diritto. La retribuzione alla base del calcolo della rendita si rivaluta annualmente a norma dell’articolo 11 del d.lgs 38/2000. Per i superstiti di lavoratori deceduti a decorrere dal 1° gennaio 2014 la rendita è calcolata sulla base della retribuzione massima convenzionale del settore industria (massimale di rendita)."@it .
+
+INAILService:RenditaDiInabilitaPermanenteINAIL a owl:Class ;
+    rdfs:label "Permanent Disability Pension"@en,
+        "Rendita Di  Inabilita  Permanente INAIL"@it ;
+    rdfs:comment "E' la prestazione economica erogata a coloro che subiscono un infortunio sul lavoro o contraggono una malattia professionale che comporti una inabilità permanente assoluta o parziale che tolga completamente o diminuisca in parte l'attitudine al lavoro. In regime Testo Unico 1124/1965 la rendita veniva riconosciuta se l'evento lesivo comportava un'inabilità permanente tale da ridurre l'attitudine al lavoro in misura superiore al 10%. Per gli infortuni sul lavoro verificatisi e per le malattie professionali denunciate dal 25 luglio 2000, data di entrata in vigore del nuovo sistema di indennizzo introdotto dall'articolo 13 del  d.lgs 38/2000 e dal decreto ministeria di attuazione (d.m. 12 luglio 2000) l'erogazione della rendita è prevista per le menomazioni permanenti dell'integrità psicofisica del lavoratore di grado pari o superiore al 16% valutate secondo il nuovo regime di indennizzo."@it .
+
+INAILService:RenditaDLgs38-2000 a owl:Class ;
+    rdfs:label "Pension DLgs38-2000"@en,
+        "Rendita In Regime Danno  Biologico DLgs38-2000"@it ;
+    owl:disjointWith INAILService:RenditaTestoUnicoINAIL ;
+    rdfs:comment "A seguito della entrata in vigore del regime di indennizzo introdotto dal D.lgs 38/2000, vigente dal 25 luglio 2000, la rendita diretta è corrisposta a seguito di infortuni sul lavoro o malattie professionali che abbiano causato una menomazione permanente di grado pari o superiore al 16% valutato secondo le predette disposizioni citate."@it .
+
+INAILService:RenditaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILService:RenditaASuperstitiINAIL
+                    INAILService:RenditaDiInabilitaPermanenteINAIL ) ] ;
+    rdfs:label "INAIL Pension"@en,
+        "Rendita INAIL"@it ;
+    rdfs:subClassOf INAILService:PrestazioneALungaDurataINAIL ;
+    rdfs:comment "E' la prestazione economica erogata dall’Inail a coloro che subiscono un infortunio sul lavoro o contraggono una malattia professionale che comporti una inabilità permanente  (Rendita Diretta) o ai supertiti aventi diritto del lavoratore deceduto quando la morte sia riconducibile all'evento lesivo (Rendita a superstiti)."@it .
+
+INAILService:RenditaTestoUnicoINAIL a owl:Class ;
+    rdfs:label "INAIL Testo Unico Pension"@en,
+        "Rendita In Regime  Testo Unico INAIL"@it ;
+    rdfs:comment "Ai sensi del Testo Unico 1124/1965 è la prestazione economica erogata dall’Inail a coloro che abbiano subito un infortunio sul lavoro o abbiano contratto una malattia professionale che abbiano comportato una inabilità permanente una inabilità permanente con riduzione dell'attitudine al lavoro in misura superiore al 10%."@it .
+
+INAILService:RiaperturaDefinitaINAIL a owl:Class ;
+    rdfs:label "Definitive Reopening"@en,
+        "Riapertura  Definita  INAIL"@it ;
+    owl:disjointWith INAILService:RiaperturaInLavorazioneINAIL ;
+    rdfs:comment "Riapertura Definita"@it .
+
+INAILService:RiaperturaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILService:CitazioneINAIL
+                    INAILService:OpposizioneINAIL ) ],
+        [ a owl:Class ;
+            owl:unionOf (
+                    INAILService:RiaperturaDefinitaINAIL
+                    INAILService:RiaperturaInLavorazioneINAIL ) ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataAperturaRiapertura ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataFineRiapertura ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataInizioRiapertura ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataInizioTrattazioneRiapertura ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:idRiapertura ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:motivazioneContenziosoRiapertura ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:numeroGiorniDefinizioneRiapertura ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:riaperturaHaEsitoDefinizione ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:riaperturaHaEsitoDefinizioneTrattazione ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:riaperturaRelativaAEvento ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:riaperturaRelativaATipoTrattazione ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:riaperturaRelativaATrattazione ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tipoConclusionePrecedenteRiapertura ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tipoConclusioneRiapertura ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tipoRiapertura ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:label "INAIL Reopening"@en,
+        "Riapertura INAIL"@it ;
+    rdfs:comment "La trattazione amministrativa dell'evento lesivo si conclude con una \"definizione\" e dall’esito della definizione scaturisce un provvedimento. La trattazione può essere, in alcuni casi, riaperta e successivamente ridefinita. La riapertura viene effettuata sempre per volere del soggetto che ha subito l’evento lesivo. Dalla riapertura può scaturire un contenzioso giudiziario, ma può essere risolta anche in ambito amministrativo con lo strumento dell'opposizione."@it .
+
+INAILService:RiaperturaInLavorazioneINAIL a owl:Class ;
+    rdfs:label "INAIL Reopening in Process"@en,
+        "Riapertura In  Lavorazione  INAIL"@it ;
+    rdfs:comment "Riapertura In Lavorazione"@it .
+
+INAILService:RivalsaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:codicePraticaRivalsa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataAperturaRivalsa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataDecorrenzaStatoRivalsa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataDiRiferimentoRivalsa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:haTipoStatoRivalsa ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:idRivalsa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:numeroPraticaRivalsa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:RivalsaAperta ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:rivalsaRelativaAEvento ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tipoRivalsa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:relativoARivalsa ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:spesaSostenutaPerRivalsaRelativaA ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Revenge"@en,
+        "Rivalsa INAIL"@it ;
+    rdfs:comment "Le rivalse sono azioni intraprese dall’Istituto per il recupero delle prestazioni erogate o comunque sostenute in conseguenza di un infortunio sul lavoro o di una malattia professionale. Il presupposto è che la responsabilità dell’evento sia a carico di uno più soggetti estranei o meno all’assicurazione. Le tipologie delle azioni di rivalsa sono: il regresso che viene intrapreso quando sussista la responsabilità del datore di lavoro o di un soggetto del quale egli debba rispondere (articoli 10 e 11 del Testo Unico 1124/1965); la surroga che viene intrapresa in caso di responsabilità a carico di un terzo estraneo al rapporto assicurativo (articolo 1916 del codice civile)."@it .
+
+INAILService:SedeLesioneINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:areaSedeLesione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneSedeLesione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:macroareaSedeLesione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:haSedeLesione ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Injury Site"@en,
+        "Sede Lesione  INAIL"@it ;
+    rdfs:comment "Classificazione della sede delle lesioni adottata da Inail"@it .
+
+INAILService:Silicosi a owl:Class ;
+    rdfs:label "Silicosi"@it,
+        "Silicosis"@en ;
+    rdfs:subClassOf INAILService:MalattiaProfessionale ;
+    rdfs:comment "Patologia irreversibile, invalidante e incurabile dovuta all’accumulo nel polmone (pneumoconiosi) di polveri di Slc (silice libera cristallina) respirabili, ossia polveri con particelle di dimensioni inferiori a 10 micrometri. Una polvere aerodispersa viene considerata silicotigena se contiene almeno l’1% in peso di Slc."@it .
+
+INAILService:SoggettoEventoLesivoINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILService:InfortunatoSulLavoro
+                    INAILService:Tecnopatico ) ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceSoggettoEventoLesivo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:etaAllAccadimento ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:soggettoEventoLesivoRelativoAPersonaFisica ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:svolgeTipoDiLavoro ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:eventoRelativoASoggetto ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Subject of Work Accident"@en,
+        "Soggetto Evento  Lesivo INAIL"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:inabilitaRiferitaASoggetto ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Classe che collega l'evento lesivo alla persona fisica."@it .
+
+INAILService:SottoGruppoVoceDiTariffaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:appartieneAGruppoVoceDiTariffa ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceSottoGruppoVoceDiTariffa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneSottoGruppoVoceDiTariffa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:appartieneASottoGruppoVoceDiTariffa ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Subgroup of Rate Item"@en,
+        "Sotto Gruppo Voce Di Tariffa  INAIL"@it ;
+    rdfs:comment "Sotto Gruppo Voce di Tariffa. https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1965-06-30;1124~art40 "@it .
+
+INAILService:SpesaSostenutaPerRivalsaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:idSpesaRivalsa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:importoSpesaRivalsa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:incidenteStradaleSpesaRivalsa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:itinereSpesaRivalsa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:spesaSostenutaPerRivalsaRelativaA ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tipoSpesaRivalsa ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:label "INAIL Supported Expenditure"@en,
+        "Spesa Sostenuta  Per Rivalsa INAIL"@it ;
+    rdfs:comment "Sono le spese associate ad azioni di rivalsa (regresso o surroga) intraprese dall'Istituto contro i responsabili in caso di infortunio o malattia professionale."@it .
+
+INAILService:Tecnopatico a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:malattiaProfessionaleRelativaATecnopatico ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Tecnopatico"@it,
+        "Worker with Occupational Disease"@en ;
+    rdfs:comment "Lavoratore affetto da malattia professionale"@it .
+
+INAILService:TipoAttivitaFisicaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:categoriaAttivitaFisica ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneAttivitaFisica ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:infortunioHaTipoAttivitaFisica ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Type of Physical Activity"@en,
+        "Tipo Attivita  Fisica INAIL"@it ;
+    rdfs:comment "Classificazione a due livelli dell'attività svolta al momento dell'evento lesivo."@it .
+
+INAILService:TipoContattoINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:categoriaTipoContatto ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneTipoContatto ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:infortunioHaTipoContatto ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Type of Contact"@en,
+        "Tipo Contatto  INAIL"@it ;
+    rdfs:comment "Classificazione a due livelli delle sostanze e delle tipologie di contatto con le stesse, che causano l'evento lesivo"@it .
+
+INAILService:TipoDecisioneIstruttoriaEsitoMortaleINAIL a owl:Class ;
+    rdfs:label "INAIL Type of Investigation Decision for Fatal Outcome"@en,
+        "Tipo Decisione  Istruttoria Esito  Mortale INAIL"@it ;
+    rdfs:subClassOf INAILService:TipoDefinizioneDecisioneIstruttoriaINAIL ;
+    rdfs:comment "Identifica la tipologia di decisione istruttoria in caso di esito mortale"@it .
+
+INAILService:TipoDefinizioneDecisioneIstruttoriaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceTipoDefinizioneDecisioneIstruttoria ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneTipoDefinizioneDecisioneIstruttoria ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:esitoDecisioneIstruttoria ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:trattazioneHaTipoDefinizioneDecisioneIstruttoria ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Type Definition of Investigation Decision "@en,
+        "Tipo Definizione  Decisione  Istruttoria INAIL"@it ;
+    rdfs:comment "Descrizione della definizione della trattazione o della riapertura della pratica di infortunio o malattia professionale."@it .
+
+INAILService:TipoDeviazioneINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:categoriaTipoDeviazione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneTipoDeviazione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:infortunioHaTipoDeviazione ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Type of Deviation"@en,
+        "Tipo Deviazione  INAIL"@it ;
+    rdfs:comment "Ultimo evento, deviante rispetto alla norma, che ha portato all’infortunio. Rappresenta la descrizione di un evento anomalo e consiste in ciò che provoca l'infortunio. Se esiste una sequenza concatenata di eventi, viene registrato l'ultimo della catena, cioè la deviazione temporalmente più prossima al contatto lesivo. Agente Materiale della Deviazione Principale agente materiale associato o collegato all’evento deviante. L’agente materiale della deviazione descrive lo strumento, l’utensile o l’oggetto coinvolto nell’evento anomalo."@it .
+
+INAILService:TipoIndennizzoINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceTipoIndennizzo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:definizioneTipoIndennizzo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneTipoIndennizzo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:eventoHaTipoIndennizzo ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:trattazioneHaTipoIndennizzo ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Type of Compensation"@en,
+        "Tipo Indennizzo  INAIL"@it ;
+    rdfs:comment "Il tipo di indennizzo erogato viene stabilito in base al grado di menomazione (v. Tabella menomazioni approvata con d.m. 12 luglio 2000): inferiore al 6%: nessun indennizzo (franchigia); dal 6% al 15% indennizzo del danno biologico in capitale (v. Tabella  indennizzo approvata con d.m. 12 luglio 2000), nessun indennizzo per conseguenze patrimoniali; dal 16% al 100% indennizzo del danno biologico in rendita (v. Tabella  indennizzo approvata con d.m. 12 luglio 2000) e indennizzo ulteriore quota di rendita per conseguenze  patrimoniali (v. Tabella coefficienti approvata con d.m. 12 luglio 2000)."@it .
+
+INAILService:TipoLavoratoreINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceTipoLavoratore ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneTipoLavoratore ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:eventoHaTipoLavoratore ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Type of Worker"@en,
+        "Tipo Lavoratore  INAIL"@it ;
+    rdfs:comment "Elenco delle tipologie di lavoratore riferite alla tipologia di datore di lavoro dei settori industria, artigianato, servizi e Pubbliche Amministrazioni titolari di P.A.T. (es: Dipendente, Apprendista, Autonomo, Parasubordinato, ecc.)."@it .
+
+INAILService:TipoLavoroINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:categoriaTipoLavoro ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneTipoLavoro ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:svolgeTipoDiLavoro ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Type of Work"@en,
+        "Tipo Lavoro  INAIL"@it ;
+    rdfs:comment "Classificazione delle tipologie di lavoro svolte dal tecnopatico/infortunato"@it .
+
+INAILService:TipoLuogoAccadimentoINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:categoriaTipoLuogo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneTipoLuogo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:infortunioAccadutoInTipoLuogo ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Type of Happening Place"@en,
+        "Tipo Luogo  Accadimento  INAIL"@it ;
+    rdfs:comment "Classificazione dei luoghi in cui è avvenuto l'evento lesivo."@it .
+
+INAILService:TipoMalattiaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneTipoMalattia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:settoreTipoMalattia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:malattiaProfessionaleHaTipoMalattia ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:malattiaProfessionaleHaTipoMalattiaDenunciato ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:malattiaProfessionaleHaTipoMalattiaFinale ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Type of Disease"@en,
+        "Tipo Malattia  INAIL"@it ;
+    rdfs:comment "Classificazione delle malattie professionali"@it .
+
+INAILService:TipoPraticaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceTipoPratica ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneTipoPratica ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:eventoHaTipoPratica ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Type of Practice"@en,
+        "Tipo Pratica  INAIL"@it ;
+    rdfs:comment "Indica se la pratica è stata aperta a causa di una  denuncia o di una comunicazione di infortunio. Si parla di denuncia nel caso in cui l’infortunio sul lavoro preveda un’assenza dal lavoro superiore ai tre giorni."@it .
+
+INAILService:TipoStatoRivalsaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:definizioneStatoRivalsa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:specificaStatoRivalsa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:statoRivalsa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:haTipoStatoRivalsa ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Type of Revenge Status"@en,
+        "Tipo Stato  Rivalsa INAIL"@it ;
+    rdfs:comment "Indica la tipologia della Rivalsa, ovvero la  modalità con la quale l'istituto ha il potere di chiedere  il risarcimento delle prestazioni erogate, nei casi di infortunio o di malattia professionale, quando nelle cause che hanno determinato l'evento, sia accertata una responsabilità del datore di lavoro o di soggetto estraneo al rapporto di lavoro."@it .
+
+INAILService:TipoTecnopatiaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneTipoTecnopatia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:malattiaTabellata ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:periodoMassimoIndennizzabilita ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:settoreTipoTecnopatia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:sottovoceTipoTecnopatia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:subsettoreTipoTecnopatia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tipoLavorazione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:voceTipoTecnopatia ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:malattiaProfessionalehaTipoTecnopatia ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:malattiaProfessionalehaTipoTecnopatiaDenunciato ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:malattiaProfessionalehaTipoTecnopatiaFinale ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Type of Occupational Disease"@en,
+        "Tipo Tecnopatia  INAIL"@it ;
+    rdfs:comment "Classificazione  Malattia Professionale"@it .
+
+INAILService:TipoTrattazioneINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceTipoTrattazione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneTipoTrattazione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:indicatoreTipoTrattazione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:eventoHaTipoTrattazione ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:haTipoTrattazione ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:inabilitaRelativaATipoTrattazione ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:riaperturaRelativaATipoTrattazione ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Type of Treatment"@en,
+        "Tipo Trattazione  INAIL"@it ;
+    rdfs:comment "Classificazione  delle trattazioni che, a seguito dell'istruttoria, determinano  il periodo di inabilità assoluta al lavoro, il grado di invalidità/menomazione, l’indennizzo e la prestazione che viene erogata agli aventi diritto."@it .
+
+INAILService:TrattazioneApertaINAIL a owl:Class ;
+    rdfs:label "INAIL Open Treatment"@en,
+        "Trattazione  Aperta INAIL"@it ;
+    owl:disjointWith INAILService:TrattazioneDefinitaINAIL ;
+    rdfs:comment "Trattazione Aperta"@it .
+
+INAILService:TrattazioneDefinitaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:riaperturaRelativaATrattazione ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Defined Treatment INAIL"@en,
+        "Trattazione  Definita INAIL"@it ;
+    rdfs:comment "Trattazione Definita"@it .
+
+INAILService:TrattazioneINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILService:TrattazioneApertaINAIL
+                    INAILService:TrattazioneDefinitaINAIL ) ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataFineTrattazione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataInizioTrattazione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataUltimaDefinizioneDecisioneIstruttoriaTrattazione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:haTipoTrattazione ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:idTrattazione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:numeroGiorniDefinizioneTrattazione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:qualificaProfessionaleTrattazione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tipoDecisioneIstruttoriaAmministrativaTrattazione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tipoDecisioneIstruttoriaSanitariaTrattazione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:trattazioneHaEsitoDefinizione ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:trattazioneHaTipoDefinizioneDecisioneIstruttoria ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:trattazioneHaTipoIndennizzo ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:trattazioneRelativaAEvento ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Treatment"@en,
+        "Trattazione INAIL"@it ;
+    rdfs:comment "Identifica le diverse fasi della pratica di infortunio o di malattia professionale. Dagli esiti delle varie trattazioni si definisce il grado di invalidità, l’indennizzo e la prestazione che viene erogata agli aventi diritto."@it .
+
+INAILService:VoceDiTariffaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:appartieneASottoGruppoVoceDiTariffa ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceSettoreAttivita ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceVoceDiTariffa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneSettoreAttivita ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:descrizioneVoceDiTariffa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:voceDiTariffaRelativaAPAN ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:voceDiTariffaRelativaAPAT ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:voceDiTariffaRelativaARetribuzione ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:eventoHaVoceDiTariffa ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL Rate Item"@en,
+        "Voce Di Tariffa  INAIL"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty INAILService:voceDiTariffaHaSettoreAttivita ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Le Tariffe rappresentano un elenco di lavorazioni articolato in \"grandi gruppi\", \"gruppi\", \"sottogruppi\" e \"voci\" che servono a classificare l'attività di un'azienda ai fini assicurativi; la voce di tariffa ricomprende le lavorazioni produttive od operative, considerate come complesso unitario e ne definisce la rischiosità; la classificazione secondo il sistema delle \"voci di tariffa\" è fatta analizzando le “lavorazioni”, ossia i cicli operativi necessari per giungere alla realizzazione del prodotto (le lavorazioni si distinguono, in base all'apporto al ciclo produttivo, in principali, complementari e sussidiarie). https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1965-06-30;1124~art40 "@it .
+
+RO:Role a owl:Class .
+
+TI:TimeIndexedEvent a owl:Class .
+
+[] a owl:Class ;
+    rdfs:subClassOf INAILService:EventoLesivoPositivoINAIL ;
+    owl:unionOf (
+            INAILService:InfortunioSulLavoroPositivo
+            INAILService:MalattiaProfessionaleDefinitaPositiva ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf INAILService:GestioneIndustriaCommercioEServiziINAIL ;
+    owl:unionOf (
+            INAILService:GestionePolizzaColfINAIL
+            INAILService:GestionePolizzaSpecialeINAIL
+            INAILService:GestioneTariffaInterinaliINAIL
+            INAILService:GestioneTariffaOrdinariaDipendentiINAIL ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf INAILService:InfortunioChiusoSulLavoro ;
+    owl:unionOf (
+            INAILService:InfortunioSulLavoroInFranchigia
+            INAILService:InfortunioSulLavoroNegativo
+            INAILService:InfortunioSulLavoroPositivo ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf INAILService:MalattiaProfessionale ;
+    owl:unionOf (
+            INAILService:MalattiaProfessionaleDefinitaPositiva
+            INAILService:MalattiaProfessionaleInDefinizione
+            INAILService:MalattiaProfessionaleNonRiconosciuta ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf INAILService:PrestazioneABreveDurataINAIL ;
+    owl:unionOf (
+            INAILService:AssegnoFunerarioINAIL
+            INAILService:IndennizzoINAIL ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf INAILService:PrestazioneEconomicaINAIL ;
+    owl:unionOf (
+            INAILService:PrestazioneABreveDurataINAIL
+            INAILService:PrestazioneALungaDurataINAIL ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf INAILService:RenditaDiInabilitaPermanenteINAIL ;
+    owl:unionOf (
+            INAILService:RenditaDLgs38-2000
+            INAILService:RenditaTestoUnicoINAIL ) .
+
+### Individuals
+
+<https://w3id.org/italia/work-accident/data/adm_serv/distribution/ADM-SERV-RDF-TURTLE> a dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dct:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/prestazioni> ;
+    dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia INAIL relativa alle malattie professionali e gli infortuni"@it,
+        "This is the distribution in RDF/Turtle of the INAIL ontology about occupational diseases and injuries"@en ;
+    dct:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/prestazioni/prestazioni_amministrative.ttl> ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione RDF/Turtle ontologia INAIL - Malattie Professionali e Infortuni"@it,
+        "RDF/Turtle distribution of INAIL ontology - Occupational Diseases and Injuries"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/td> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "TD" ;
+    foaf:name "Digital Transformation Team"@en,
+        "Team per la Trasformazione Digitale"@it .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+### Axioms
+
+[] a owl:AllDisjointClasses ;
+    owl:members (
+            INAILService:GestioneAgricolturaINAIL
+            INAILService:GestioneAmbitoDomesticoINAIL
+            INAILService:GestioneIndustriaCommercioEServiziINAIL
+            INAILService:GestioneMediciEspostiARadiazioniIonizzantiINAIL
+            INAILService:GestioneNavigazioneINAIL ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members (
+            INAILService:GestionePolizzaColfINAIL
+            INAILService:GestionePolizzaSpecialeINAIL
+            INAILService:GestioneTariffaInterinaliINAIL
+            INAILService:GestioneTariffaOrdinariaDipendentiINAIL ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members (
+            INAILService:InfortunioSulLavoroInFranchigia
+            INAILService:InfortunioSulLavoroNegativo
+            INAILService:InfortunioSulLavoroPositivo ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members (
+            INAILService:MalattiaProfessionaleDefinitaPositiva
+            INAILService:MalattiaProfessionaleInDefinizione
+            INAILService:MalattiaProfessionaleNonRiconosciuta ) .
+
+### Serialized using the ttlser deterministic serializer v1.2.0
