@@ -142,6 +142,7 @@ components:
           descrizione_natura_giuridica: 'Società estera a responsabilità limitata'
           tipo_soggetto_natura_giuridica: 'P'
         ha_dimensione:
+          descrizione_dimensione_soggetto: 'Grande Impresa'
 
     NaturaGiuridica:
       type: object
