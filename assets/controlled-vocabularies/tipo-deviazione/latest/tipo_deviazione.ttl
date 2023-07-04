@@ -1,0 +1,806 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix deviazionecod: <https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/deviazione/concetto/> .
+@prefix deviazionegrup: <https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/deviazione/gruppo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAILService: <https://w3id.org/italia/work-accident/onto/adm_serv/> .
+@prefix inailvoc: <https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Annotations
+
+deviazionecod:1.0 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Deviazione per problema elettrico, esplosione, incendio - non precisato"@it ;
+    skos:prefLabel "Deviazione per problema elettrico, esplosione, incendio - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.0" ;
+    skos:broader deviazionegrup:1 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "1.0" ;
+    xkos:depth 2 .
+
+deviazionecod:1.1 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Problema elettrico causato da un guasto all'impianto -  contatto indiretto"@it ;
+    skos:prefLabel "Problema elettrico causato da un guasto all'impianto -  contatto indiretto"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.1" ;
+    skos:broader deviazionegrup:1 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "1.1" ;
+    xkos:depth 2 .
+
+deviazionecod:1.2 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Problema elettrico -  contatto diretto"@it ;
+    skos:prefLabel "Problema elettrico -  contatto diretto"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.2" ;
+    skos:broader deviazionegrup:1 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "1.2" ;
+    xkos:depth 2 .
+
+deviazionecod:1.3 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Esplosione"@it ;
+    skos:prefLabel "Esplosione"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.3" ;
+    skos:broader deviazionegrup:1 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "1.3" ;
+    xkos:depth 2 .
+
+deviazionecod:1.4 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Incendio"@it ;
+    skos:prefLabel "Incendio"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.4" ;
+    skos:broader deviazionegrup:1 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "1.4" ;
+    xkos:depth 2 .
+
+deviazionecod:1.9 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Altra deviazione conosciuta del gruppo 10 non indicata qui sopra"@it ;
+    skos:prefLabel "Altra deviazione conosciuta del gruppo 10 non indicata qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "1.9" ;
+    skos:broader deviazionegrup:1 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "1.9" ;
+    xkos:depth 2 .
+
+deviazionecod:2.0 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Deviazione dovuta a traboccamento, rovesciamento, perdita, fuoruscita, vaporizzazione, emanazione - non precisato"@it ;
+    skos:prefLabel "Deviazione dovuta a traboccamento, rovesciamento, perdita, fuoruscita, vaporizzazione, emanazione - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.0" ;
+    skos:broader deviazionegrup:2 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "2.0" ;
+    xkos:depth 2 .
+
+deviazionecod:2.1 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Allo stato solido - traboccamento, rovesciamento"@it ;
+    skos:prefLabel "Allo stato solido - traboccamento, rovesciamento"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.1" ;
+    skos:broader deviazionegrup:2 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "2.1" ;
+    xkos:depth 2 .
+
+deviazionecod:2.2 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Allo stato liquido - perdita, trasudo, fuoruscita, spruzzo, aspersione"@it ;
+    skos:prefLabel "Allo stato liquido - perdita, trasudo, fuoruscita, spruzzo, aspersione"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.2" ;
+    skos:broader deviazionegrup:2 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "2.2" ;
+    xkos:depth 2 .
+
+deviazionecod:2.3 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Allo stato gassoso - vaporizzazione, formazione di aerosol, formazione di gas"@it ;
+    skos:prefLabel "Allo stato gassoso - vaporizzazione, formazione di aerosol, formazione di gas"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.3" ;
+    skos:broader deviazionegrup:2 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "2.3" ;
+    xkos:depth 2 .
+
+deviazionecod:2.4 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Polverosità - generazione di fumi, emissione di polveri, particelle"@it ;
+    skos:prefLabel "Polverosità - generazione di fumi, emissione di polveri, particelle"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.4" ;
+    skos:broader deviazionegrup:2 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "2.4" ;
+    xkos:depth 2 .
+
+deviazionecod:2.9 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Altra deviazione conosciuta del gruppo 20 non indicata qui sopra"@it ;
+    skos:prefLabel "Altra deviazione conosciuta del gruppo 20 non indicata qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "2.9" ;
+    skos:broader deviazionegrup:2 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "2.9" ;
+    xkos:depth 2 .
+
+deviazionecod:3.0 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Rottura, frattura, deformazione, scivolamento, caduta, crollo dell'agente materiale - non precisato"@it ;
+    skos:prefLabel "Rottura, frattura, deformazione, scivolamento, caduta, crollo dell'agente materiale - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.0" ;
+    skos:broader deviazionegrup:3 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "3.0" ;
+    xkos:depth 2 .
+
+deviazionecod:3.1 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Rottura di materiale, alle giunzioni, alle connessioni"@it ;
+    skos:prefLabel "Rottura di materiale, alle giunzioni, alle connessioni"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.1" ;
+    skos:broader deviazionegrup:3 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "3.1" ;
+    xkos:depth 2 .
+
+deviazionecod:3.2 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Rottura, esplosione con produzione di schegge (legno, vetro, metallo, pietra, plastica, altro)"@it ;
+    skos:prefLabel "Rottura, esplosione con produzione di schegge (legno, vetro, metallo, pietra, plastica, altro)"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.2" ;
+    skos:broader deviazionegrup:3 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "3.2" ;
+    xkos:depth 2 .
+
+deviazionecod:3.3 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Scivolamento, caduta, crollo di agente materiale posto al di sopra (che cade sulla vittima)"@it ;
+    skos:prefLabel "Scivolamento, caduta, crollo di agente materiale posto al di sopra (che cade sulla vittima)"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.3" ;
+    skos:broader deviazionegrup:3 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "3.3" ;
+    xkos:depth 2 .
+
+deviazionecod:3.4 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Scivolamento, caduta, crollo di agente materiale posto al di sotto (che trascina la vittima)"@it ;
+    skos:prefLabel "Scivolamento, caduta, crollo di agente materiale posto al di sotto (che trascina la vittima)"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.4" ;
+    skos:broader deviazionegrup:3 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "3.4" ;
+    xkos:depth 2 .
+
+deviazionecod:3.5 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Scivolamento, caduta, crollo di un agente materiale  allo stesso livello"@it ;
+    skos:prefLabel "Scivolamento, caduta, crollo di un agente materiale  allo stesso livello"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.5" ;
+    skos:broader deviazionegrup:3 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "3.5" ;
+    xkos:depth 2 .
+
+deviazionecod:3.9 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Altra deviazione conosciuta del gruppo 30 non indicata qui sopra"@it ;
+    skos:prefLabel "Altra deviazione conosciuta del gruppo 30 non indicata qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "3.9" ;
+    skos:broader deviazionegrup:3 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "3.9" ;
+    xkos:depth 2 .
+
+deviazionecod:4.0 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Perdita di controllo totale o parziale di una macchina, di un mezzo di trasporto/attrezzatura dimovimentazione, di un utensile a mano o oggetto, di un animale - non precisato"@it ;
+    skos:prefLabel "Perdita di controllo totale o parziale di una macchina, di un mezzo di trasporto/attrezzatura dimovimentazione, di un utensile a mano o oggetto, di un animale - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.0" ;
+    skos:broader deviazionegrup:4 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "4.0" ;
+    xkos:depth 2 .
+
+deviazionecod:4.1 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Perdita di controllo totale o parziale di macchina (ivi compreso l'avviamento intempestivo) nonche' del materiale lavorato"@it ;
+    skos:prefLabel "Perdita di controllo totale o parziale di macchina (ivi compreso l'avviamento intempestivo) nonche' del materiale lavorato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.1" ;
+    skos:broader deviazionegrup:4 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "4.1" ;
+    xkos:depth 2 .
+
+deviazionecod:4.2 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Perdita di controllo totale o parziale di mezzo di trasporto/di attrezzatura di movimentazione (motorizzato o no)"@it ;
+    skos:prefLabel "Perdita di controllo totale o parziale di mezzo di trasporto/di attrezzatura di movimentazione (motorizzato o no)"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.2" ;
+    skos:broader deviazionegrup:4 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "4.2" ;
+    xkos:depth 2 .
+
+deviazionecod:4.3 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Perdita di controllo totale o parziale di utensile a mano (motorizzato o no) nonche' del materiale lavorato dall'utensile"@it ;
+    skos:prefLabel "Perdita di controllo totale o parziale di utensile a mano (motorizzato o no) nonche' del materiale lavorato dall'utensile"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.3" ;
+    skos:broader deviazionegrup:4 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "4.3" ;
+    xkos:depth 2 .
+
+deviazionecod:4.4 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Perdita di controllo totale o parziale di oggetto (portato, spostato, movimentato, ecc.)"@it ;
+    skos:prefLabel "Perdita di controllo totale o parziale di oggetto (portato, spostato, movimentato, ecc.)"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.4" ;
+    skos:broader deviazionegrup:4 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "4.4" ;
+    xkos:depth 2 .
+
+deviazionecod:4.5 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Perdita di controllo totale o parziale di animale"@it ;
+    skos:prefLabel "Perdita di controllo totale o parziale di animale"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.5" ;
+    skos:broader deviazionegrup:4 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "4.5" ;
+    xkos:depth 2 .
+
+deviazionecod:4.9 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Altra deviazione conosciuta del gruppo 40 non indicata qui sopra"@it ;
+    skos:prefLabel "Altra deviazione conosciuta del gruppo 40 non indicata qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "4.9" ;
+    skos:broader deviazionegrup:4 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "4.9" ;
+    xkos:depth 2 .
+
+deviazionecod:5.0 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Scivolamento o inciampamento  con caduta di persona  non precisato"@it ;
+    skos:prefLabel "Scivolamento o inciampamento  con caduta di persona  non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.0" ;
+    skos:broader deviazionegrup:5 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "5.0" ;
+    xkos:depth 2 .
+
+deviazionecod:5.1 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Caduta di persona dall'alto"@it ;
+    skos:prefLabel "Caduta di persona dall'alto"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.1" ;
+    skos:broader deviazionegrup:5 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "5.1" ;
+    xkos:depth 2 .
+
+deviazionecod:5.2 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Scivolamento o inciampamento  con caduta di persona  allo stesso livello"@it ;
+    skos:prefLabel "Scivolamento o inciampamento  con caduta di persona  allo stesso livello"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.2" ;
+    skos:broader deviazionegrup:5 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "5.2" ;
+    xkos:depth 2 .
+
+deviazionecod:5.9 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Altra deviazione conosciuta del gruppo 50 non indicata qui sopra"@it ;
+    skos:prefLabel "Altra deviazione conosciuta del gruppo 50 non indicata qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "5.9" ;
+    skos:broader deviazionegrup:5 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "5.9" ;
+    xkos:depth 2 .
+
+deviazionecod:6.0 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Movimento del corpo senza sforzo fisico (che porta generalmente a una lesione esterna) - non precisato"@it ;
+    skos:prefLabel "Movimento del corpo senza sforzo fisico (che porta generalmente a una lesione esterna) - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.0" ;
+    skos:broader deviazionegrup:6 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "6.0" ;
+    xkos:depth 2 .
+
+deviazionecod:6.1 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Camminare su un oggetto tagliente"@it ;
+    skos:prefLabel "Camminare su un oggetto tagliente"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.1" ;
+    skos:broader deviazionegrup:6 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "6.1" ;
+    xkos:depth 2 .
+
+deviazionecod:6.2 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Inginocchiarsi, sedersi, appoggiarsi contro"@it ;
+    skos:prefLabel "Inginocchiarsi, sedersi, appoggiarsi contro"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.2" ;
+    skos:broader deviazionegrup:6 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "6.2" ;
+    xkos:depth 2 .
+
+deviazionecod:6.3 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Essere afferrato, trascinato da qualcosa o dal proprio slancio"@it ;
+    skos:prefLabel "Essere afferrato, trascinato da qualcosa o dal proprio slancio"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.3" ;
+    skos:broader deviazionegrup:6 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "6.3" ;
+    xkos:depth 2 .
+
+deviazionecod:6.4 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Movimenti scoordinati, gesti intempestivi, inopportuni"@it ;
+    skos:prefLabel "Movimenti scoordinati, gesti intempestivi, inopportuni"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.4" ;
+    skos:broader deviazionegrup:6 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "6.4" ;
+    xkos:depth 2 .
+
+deviazionecod:6.9 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Altra deviazione conosciuta del gruppo 60 non indicata qui sopra"@it ;
+    skos:prefLabel "Altra deviazione conosciuta del gruppo 60 non indicata qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "6.9" ;
+    skos:broader deviazionegrup:6 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "6.9" ;
+    xkos:depth 2 .
+
+deviazionecod:7.0 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Movimento del corpo sotto sforzo fisico (che porta generalmente ad una lesione interna) - non precisato"@it ;
+    skos:prefLabel "Movimento del corpo sotto sforzo fisico (che porta generalmente ad una lesione interna) - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "7.0" ;
+    skos:broader deviazionegrup:7 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "7.0" ;
+    xkos:depth 2 .
+
+deviazionecod:7.1 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Sollevando, portando, alzandosi"@it ;
+    skos:prefLabel "Sollevando, portando, alzandosi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "7.1" ;
+    skos:broader deviazionegrup:7 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "7.1" ;
+    xkos:depth 2 .
+
+deviazionecod:7.2 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Spingendo, tirando"@it ;
+    skos:prefLabel "Spingendo, tirando"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "7.2" ;
+    skos:broader deviazionegrup:7 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "7.2" ;
+    xkos:depth 2 .
+
+deviazionecod:7.3 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Depositando, abbassandosi"@it ;
+    skos:prefLabel "Depositando, abbassandosi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "7.3" ;
+    skos:broader deviazionegrup:7 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "7.3" ;
+    xkos:depth 2 .
+
+deviazionecod:7.4 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Torsione, rotazione, girandosi"@it ;
+    skos:prefLabel "Torsione, rotazione, girandosi"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "7.4" ;
+    skos:broader deviazionegrup:7 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "7.4" ;
+    xkos:depth 2 .
+
+deviazionecod:7.5 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Passo falso, torsione di gamba o caviglia, scivolamento senza caduta"@it ;
+    skos:prefLabel "Passo falso, torsione di gamba o caviglia, scivolamento senza caduta"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "7.5" ;
+    skos:broader deviazionegrup:7 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "7.5" ;
+    xkos:depth 2 .
+
+deviazionecod:7.9 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Altra deviazione conosciuta del gruppo 70 non indicata qui sopra"@it ;
+    skos:prefLabel "Altra deviazione conosciuta del gruppo 70 non indicata qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "7.9" ;
+    skos:broader deviazionegrup:7 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "7.9" ;
+    xkos:depth 2 .
+
+deviazionecod:8.0 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Sorpresa, sbigottimento, violenza, aggressione, minaccia, presenza, - non precisato"@it ;
+    skos:prefLabel "Sorpresa, sbigottimento, violenza, aggressione, minaccia, presenza, - non precisato"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "8.0" ;
+    skos:broader deviazionegrup:8 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "8.0" ;
+    xkos:depth 2 .
+
+deviazionecod:8.1 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Sorpresa, sbigottimento"@it ;
+    skos:prefLabel "Sorpresa, sbigottimento"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "8.1" ;
+    skos:broader deviazionegrup:8 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "8.1" ;
+    xkos:depth 2 .
+
+deviazionecod:8.2 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Violenza, aggressione, minaccia ? tra dipendenti dell'impresa"@it ;
+    skos:prefLabel "Violenza, aggressione, minaccia ? tra dipendenti dell'impresa"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "8.2" ;
+    skos:broader deviazionegrup:8 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "8.2" ;
+    xkos:depth 2 .
+
+deviazionecod:8.3 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Violenza, aggressione, minaccia - proveniente da persone esterne all'impresa verso le vittime nel quadro della loro funzione (rapina in banca, aggressione ad autisti di autobus, ecc.)"@it ;
+    skos:prefLabel "Violenza, aggressione, minaccia - proveniente da persone esterne all'impresa verso le vittime nel quadro della loro funzione (rapina in banca, aggressione ad autisti di autobus, ecc.)"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "8.3" ;
+    skos:broader deviazionegrup:8 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "8.3" ;
+    xkos:depth 2 .
+
+deviazionecod:8.4 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Aggressione, calca, violenza da parte di animali"@it ;
+    skos:prefLabel "Aggressione, calca, violenza da parte di animali"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "8.4" ;
+    skos:broader deviazionegrup:8 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "8.4" ;
+    xkos:depth 2 .
+
+deviazionecod:8.5 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Presenza della vittima o di un terzo che crea di per se' stesso un pericolo per la vittima/per se' stesso e se del caso per altri"@it ;
+    skos:prefLabel "Presenza della vittima o di un terzo che crea di per se' stesso un pericolo per la vittima/per se' stesso e se del caso per altri"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "8.5" ;
+    skos:broader deviazionegrup:8 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "8.5" ;
+    xkos:depth 2 .
+
+deviazionecod:8.9 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Altra deviazione conosciuta del gruppo 80 non indicata qui sopra"@it ;
+    skos:prefLabel "Altra deviazione conosciuta del gruppo 80 non indicata qui sopra"@it ;
+    clvapit:hasRankOrder "2" ;
+    dct:identifier "8.9" ;
+    skos:broader deviazionegrup:8 ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:notation "8.9" ;
+    xkos:depth 2 .
+
+deviazionegrup:1 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Deviazione per problema elettrico, esplosione, incendio"@it ;
+    skos:prefLabel "Deviazione per problema elettrico, esplosione, incendio"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "1" ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:narrower deviazionecod:1.0,
+        deviazionecod:1.1,
+        deviazionecod:1.2,
+        deviazionecod:1.3,
+        deviazionecod:1.4,
+        deviazionecod:1.9 ;
+    skos:notation "1" ;
+    xkos:depth 1 .
+
+deviazionegrup:2 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Deviazione dovuta a traboccamento, rovesciamento, perdita, fuoruscita, vaporizzazione, emanazione "@it ;
+    skos:prefLabel "Deviazione dovuta a traboccamento, rovesciamento, perdita, fuoruscita, vaporizzazione, emanazione "@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "2" ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:narrower deviazionecod:2.0,
+        deviazionecod:2.1,
+        deviazionecod:2.2,
+        deviazionecod:2.3,
+        deviazionecod:2.4,
+        deviazionecod:2.9 ;
+    skos:notation "2" ;
+    xkos:depth 1 .
+
+deviazionegrup:3 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Rottura, frattura, deformazione, scivolamento, caduta, crollo dell'agente materiale "@it ;
+    skos:prefLabel "Rottura, frattura, deformazione, scivolamento, caduta, crollo dell'agente materiale "@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "3" ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:narrower deviazionecod:3.0,
+        deviazionecod:3.1,
+        deviazionecod:3.2,
+        deviazionecod:3.3,
+        deviazionecod:3.4,
+        deviazionecod:3.5,
+        deviazionecod:3.9 ;
+    skos:notation "3" ;
+    xkos:depth 1 .
+
+deviazionegrup:4 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Perdita di controllo totale o parziale di una macchina, di un mezzo di trasporto/attrezzatura di movimentazione, di un utensile a mano o oggetto, di un animale "@it ;
+    skos:prefLabel "Perdita di controllo totale o parziale di una macchina, di un mezzo di trasporto/attrezzatura di movimentazione, di un utensile a mano o oggetto, di un animale "@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "4" ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:narrower deviazionecod:4.0,
+        deviazionecod:4.1,
+        deviazionecod:4.2,
+        deviazionecod:4.3,
+        deviazionecod:4.4,
+        deviazionecod:4.5,
+        deviazionecod:4.9 ;
+    skos:notation "4" ;
+    xkos:depth 1 .
+
+deviazionegrup:5 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Scivolamento o inciampamento con caduta di persona "@it ;
+    skos:prefLabel "Scivolamento o inciampamento con caduta di persona "@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "5" ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:narrower deviazionecod:5.0,
+        deviazionecod:5.1,
+        deviazionecod:5.2,
+        deviazionecod:5.9 ;
+    skos:notation "5" ;
+    xkos:depth 1 .
+
+deviazionegrup:6 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Movimento del corpo senza sforzo fisico (che porta generalmente a una lesione esterna)"@it ;
+    skos:prefLabel "Movimento del corpo senza sforzo fisico (che porta generalmente a una lesione esterna)"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "6" ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:narrower deviazionecod:6.0,
+        deviazionecod:6.1,
+        deviazionecod:6.2,
+        deviazionecod:6.3,
+        deviazionecod:6.4,
+        deviazionecod:6.9 ;
+    skos:notation "6" ;
+    xkos:depth 1 .
+
+deviazionegrup:7 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Movimento del corpo sotto sforzo fisico (che porta generalmente ad una lesione interna)"@it ;
+    skos:prefLabel "Movimento del corpo sotto sforzo fisico (che porta generalmente ad una lesione interna)"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "7" ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:narrower deviazionecod:7.0,
+        deviazionecod:7.1,
+        deviazionecod:7.2,
+        deviazionecod:7.3,
+        deviazionecod:7.4,
+        deviazionecod:7.5,
+        deviazionecod:7.9 ;
+    skos:notation "7" ;
+    xkos:depth 1 .
+
+deviazionegrup:8 a INAILService:TipoDeviazioneINAIL,
+        skos:Concept ;
+    rdfs:label "Sorpresa, sbigottimento, violenza, aggressione, minaccia, presenza"@it ;
+    skos:prefLabel "Sorpresa, sbigottimento, violenza, aggressione, minaccia, presenza"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "8" ;
+    skos:inScheme inailvoc:deviazione ;
+    skos:narrower deviazionecod:8.0,
+        deviazionecod:8.1,
+        deviazionecod:8.2,
+        deviazionecod:8.3,
+        deviazionecod:8.4,
+        deviazionecod:8.5,
+        deviazionecod:8.9 ;
+    skos:notation "8" ;
+    xkos:depth 1 .
+
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
+        dct:Standard ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dct:identifier "SKOS" ;
+    dct:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/work-accident/data/adm_serv/distribution/TDV_CSV> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-deviazione> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-deviazione/tipo_deviazione.csv> ;
+    dct:description "Questa è la distribuzione CSV del vocabolario controllato sul tipo di deviazione adottato dall'INAIL"@it,
+        "This is the distribution in CSV of the type of deviation adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "CSV distribution of the type of deviation adopted by INAIL controlled vocabulary"@en,
+        "Distribuzione CSV del vocabolario controllato sul tipo di deviazione adottato dall'INAIL"@it .
+
+<https://w3id.org/italia/work-accident/data/adm_serv/distribution/TDV_JSON_LD> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-deviazione> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-deviazione/tipo_deviazione.json> ;
+    dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sul tipo di deviazione adottato dall'INAIL"@it,
+        "This is the distribution in JSON_LD of the type of deviation adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione JSON_LD del vocabolario controllato sul tipo di deviazione adottato dall'INAIL"@it,
+        "JSON_LD distribution of the type of deviation adopted by INAIL controlled vocabulary"@en .
+
+<https://w3id.org/italia/work-accident/data/adm_serv/distribution/TDV_RDF_TURTLE> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-deviazione> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-deviazione/tipo_deviazione.ttl> ;
+    dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sul tipo di deviazione adottato dall'INAIL"@it,
+        "This is the distribution in RDF/turtle of the type of deviation adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione RDF/Turtle del vocabolario controllato sul tipo di deviazione adottato dall'INAIL"@it,
+        "RDF/Turtle distribution of the type of deviation adopted by INAIL controlled vocabulary"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+inailvoc:deviazione a adms:Asset,
+        dcatapit:Dataset,
+        skos:ConceptScheme ;
+    rdfs:label "Controlled vocabulary on the type of deviation adopted by INAIL"@en,
+        "Vocabolario Controllato sul tipo di deviazione adottato dall'INAIL"@it ;
+    skos:prefLabel "Vocabolario Controllato sul tipo di deviazione adottato dall'INAIL"@it ;
+    rdfs:comment "Last event, deviating from the norm, that led to the occupational injury. It represents the description of an unexpected event and consists of what causes the occupational injury. If there is a concatenated sequence of events, the last in the chain, i.e., the deviation temporally closest to the injurious contact, is recorded "@en,
+        "Ultimo evento, deviante rispetto alla norma, che ha portato all’infortunio. Rappresenta la descrizione di un evento anomalo e consiste in ciò che provoca l'infortunio. Se esiste una sequenza concatenata di eventi, viene registrato l'ultimo della catena, cioè la deviazione temporalmente più prossima al contatto lesivo."@it ;
+    owl:versionInfo "0.4" ;
+    rdfs:isDefinedBy inailvoc:deviazione ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+    dcat:distribution <https://w3id.org/italia/work-accident/data/adm_serv/distribution/TDV_CSV>,
+        <https://w3id.org/italia/work-accident/data/adm_serv/distribution/TDV_JSON_LD>,
+        <https://w3id.org/italia/work-accident/data/adm_serv/distribution/TDV_RDF_TURTLE> ;
+    dcat:keyword "deviation"@en,
+        "deviazione"@it,
+        "inail"@it,
+        "infortunio"@it,
+        "occupational injury"@en ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/HEAL>,
+        <http://publications.europa.eu/resource/authority/data-theme/SOCI>,
+        <http://publications.europa.eu/resource/authority/data-theme/TRAN> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:description "Last event, deviating from the norm, that led to the occupational injury. It represents the description of an unexpected event and consists of what causes the occupational injury. If there is a concatenated sequence of events, the last in the chain, i.e., the deviation temporally closest to the injurious contact, is recorded "@en,
+        "Ultimo evento, deviante rispetto alla norma, che ha portato all’infortunio. Rappresenta la descrizione di un evento anomalo e consiste in ciò che provoca l'infortunio. Se esiste una sequenza concatenata di eventi, viene registrato l'ultimo della catena, cioè la deviazione temporalmente più prossima al contatto lesivo."@it ;
+    dct:identifier "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/deviazione" ;
+    dct:issued "2022-09-06"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2023-07-03"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:relation inailvoc:agente_causale,
+        inailvoc:agente_materiale,
+        inailvoc:tipo_contatto ;
+    dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:subject <http://eurovoc.europa.eu/730>,
+        <http://eurovoc.europa.eu/825>,
+        <http://eurovoc.europa.eu/5939> ;
+    dct:title "Controlled vocabulary on the type of deviation adopted by INAIL"@en,
+        "Vocabolario Controllato sul tipo di deviazione adottato dall'INAIL"@it ;
+    dct:type <http://purl.org/adms/assettype/CodeList> ;
+    ndc:keyConcept "deviazione" ;
+    skos:hasTopConcept deviazionegrup:1,
+        deviazionegrup:2,
+        deviazionegrup:3,
+        deviazionegrup:4,
+        deviazionegrup:5,
+        deviazionegrup:6,
+        deviazionegrup:7,
+        deviazionegrup:8 ;
+    xkos:numberOfLevels "2" .
+
+### Serialized using the ttlser deterministic serializer v1.2.0
