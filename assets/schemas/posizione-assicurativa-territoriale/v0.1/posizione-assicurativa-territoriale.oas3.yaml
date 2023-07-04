@@ -1,0 +1,223 @@
+openapi: 3.0.3
+info:
+  title: Schema della Posizione Assicurativa Territoriale
+  version: 202306.27.00
+  x-summary: Schema della posizione assicurativa territoriale compatibile con l'ontologia INAIL.
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  termsOfService: https://creativecommons.org/licenses/by/4.0/
+  contact:
+    name: Anna Maria De Paoli
+    email: a.depaoli@inail.it
+   # url:
+  description: |-
+   La PAT (posizione assicurativa territoriale) indica la sede di lavoro che coincide con l'unità produttiva (intesa come stabilimento o struttura facente capo alla medesima azienda e dotata di autonomia finanziaria e tecnico funzionale) rilevante ai fini degli adempimenti assicurativi; all'interno della PAT sono registrate le polizze assicurative e le relative voci di rischio assicurato corrispondenti alle tipologie di lavoratori e di attività lavorative esercitate (anagrafica della polizza, voce/i di rischio, dati retributivi). La metadatazione semantica degli schemi si basa sul documento [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html) che introduce le keyword x-jsonld-type e x-jsonld-context.
+paths: {}
+servers: []
+tags: []
+components:
+  schemas:
+    SedeInail:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/sede-inail/sede-inail.oas3.yaml#/components/schemas/SedeInail"
+    SoggettoAssicurante:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/soggetto-assicurante/soggetto-assicurante.oas3.yaml#/components/schemas/SoggettoAssicurante"
+
+    CodicePat:
+      type: integer
+      format: int64
+      description:
+        Campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità.
+        Associato a https://w3id.org/italia/work-accident/onto/core/codicePAT.
+      example: 1234567
+
+    PosizioneAssicurativaTerritoriale:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/core/PosizioneAssicurativaTerritoriale
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/core/"
+        codice_pat: codicePAT
+        numero_addetti_pat: numeroAddettiPAT
+        data_inizio_attivita_pat: dataInizioAttivitaPAT
+        data_cessazione_attivita_pat: dataCessazioneAttivitaPAT
+        numero_dipendenti_pat: numeroDipendentiPAT
+        numero_lavoratori_autonomi_pat: numeroLavoratoriAutonomiPAT
+        numero_giorni_attivita_pat: numeroGiorniAttivitaPAT
+        numero_anni_attivita_pat: numeroAnniAttivitaPAT
+        importo_retribuzioni_infortuni_pat: importoRetribuzioniInfortuniPAT
+        numero_titolari_pat: numeroTitolariPAT
+        numero_soci_pat: numeroSociPAT
+        numero_lavoratori_totali_pat: numeroLavoratoriTotaliPAT
+        numero_lavoratori_speciali_pat: numeroLavoratoriSpecialiPAT
+        numero_familiari_pat: numeroFamiliariPAT
+        numero_apprendisti_pat: numeroApprendistiPAT
+        numero_settori_pat: numeroSettoriPAT
+        numero_voci_pat: numeroVociPAT
+        tipo_pat_classificazione_inail: tipoPATClassificazioneINAIL
+        tipo_polizza_pat: tipoPolizzaPAT
+        pat_competenza_di:
+          "@id": patCompetenzaDi
+        pat_di_soggetto_assicurante:
+          "@id": patAppartieneASoggettoAssicurante
+        pat_riferita_sede_lavoro:
+          "@id": faRiferimentoASedeLavoro
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la posizione assicurativa territoriale ed è
+          associato a https://w3id.org/italia/work-accident/onto/core/PosizioneAssicurativaTerritoriale.
+      required:
+      - codice_pat
+      - numero_addetti_pat
+      - data_inizio_attivita_pat
+      - data_cessazione_attivita_pat
+      - numero_dipendenti_pat
+      - numero_lavoratori_autonomi_pat
+      - numero_giorni_attivita_pat
+      - numero_anni_attivita_pat
+      - importo_retribuzioni_infortuni_pat
+      - numero_titolari_pat
+      - numero_soci_pat
+      - numero_lavoratori_totali_pat
+      - numero_lavoratori_speciali_pat
+      - numero_familiari_pat
+      - numero_apprendisti_pat
+      - numero_settori_pat
+      - numero_voci_pat
+      - tipo_pat_classificazione_inail
+      - tipo_polizza_pat
+      properties:
+        codice_pat:
+          $ref: "#/components/schemas/CodicePat"
+        numero_addetti_pat:
+          type: number
+          format: double
+        data_inizio_attivita_pat:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        data_cessazione_attivita_pat:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        numero_dipendenti_pat:
+          type: number
+          format: double
+        numero_lavoratori_autonomi_pat:
+          type: number
+          format: double
+        numero_giorni_attivita_pat:
+          type: number
+          format: double
+        numero_anni_attivita_pat:
+          type: number
+          format: double
+        importo_retribuzioni_infortuni_pat:
+          type: number
+          format: double
+        numero_titolari_pat:
+          type: number
+          format: double
+        numero_soci_pat:
+          type: number
+          format: double
+        numero_lavoratori_totali_pat:
+          type: number
+          format: double
+        numero_lavoratori_speciali_pat:
+          type: number
+          format: double
+        numero_familiari_pat:
+          type: number
+          format: double
+        numero_apprendisti_pat:
+          type: number
+          format: double
+        numero_settori_pat:
+          type: number
+          format: double
+        numero_voci_pat:
+          type: number
+          format: double
+        tipo_pat_classificazione_inail:
+          type: integer
+          format: int32
+        tipo_polizza_pat:
+          type: string
+          maxLength: 20
+        pat_competenza_di:
+          type: object
+          items:
+            $ref: "#/components/schemas/SedeInail"
+        pat_di_soggetto_assicurante:
+          type: object
+          items:
+            $ref: "#/components/schemas/SoggettoAssicurante"
+        pat_riferita_sede_lavoro:
+          type: object
+          items:
+            $ref: "#/components/schemas/SedeLavoro"
+      example:
+        codice_pat: 1234567
+        numero_addetti_pat: 89.12
+        data_inizio_attivita_pat: '1992-10-28'
+        data_cessazione_attivita_pat: '2019-02-01'
+        numero_dipendenti_pat: 0.26
+        numero_lavoratori_autonomi_pat: 0.42
+        numero_giorni_attivita_pat: 469
+        numero_anni_attivita_pat: 28.543
+        importo_retribuzioni_infortuni_pat: 4116.00
+        numero_titolari_pat: 0.2849
+        numero_soci_pat: 2
+        numero_lavoratori_totali_pat: 89.12
+        numero_lavoratori_speciali_pat: 1
+        numero_familiari_pat: 1
+        numero_apprendisti_pat: 1
+        numero_settori_pat: 1
+        numero_voci_pat: 2
+        tipo_pat_classificazione_inail: 1
+        tipo_polizza_pat: 'DI'
+        pat_competenza_di:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/sede-inail/sede-inail.oas3.yaml#/components/schemas/SedeInail/example"
+        pat_di_soggetto_assicurante:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/soggetto-assicurante/soggetto-assicurante.oas3.yaml#/components/schemas/SoggettoAssicurante/example"
+        pat_riferita_sede_lavoro:
+          numero_rea_sede_lavoro: 'MI-123456'
+          denominazione_sede_lavoro: 'Sede Enel di via Roma'
+
+    SedeLavoro:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/core/SedeLavoro
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/core/"
+        numero_rea_sede_lavoro: numeroREA
+        denominazione_sede_lavoro: denominazioneSedeLavoro
+        data_inizio_attivita_sede: dataInizioAttivitaSede
+        codice_sede_lavoro: codiceSedeLavoro
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la sede lavoro di un'azienda ed è
+          associato a https://w3id.org/italia/work-accident/onto/core/SedeLavoro.
+      required:
+      - numero_rea_sede_lavoro
+      - denominazione_sede_lavoro
+      - data_inizio_attivita_sede
+      - codice_sede_lavoro
+      properties:
+        numero_rea_sede_lavoro:
+          type: string
+          maxLength: 20
+        denominazione_sede_lavoro:
+          type: string
+          maxLength: 250
+        data_inizio_attivita_sede:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        codice_sede_lavoro:
+          type: integer
+          format: int64
+      example:
+        numero_rea_sede_lavoro: 'MI-123456'
+        denominazione_sede_lavoro: 'Sede Enel di via Roma'
+        data_inizio_attivita_sede: '2019-05-15'
+        codice_sede_lavoro: 123456

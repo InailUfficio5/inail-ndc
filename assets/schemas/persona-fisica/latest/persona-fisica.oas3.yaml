@@ -1,0 +1,119 @@
+openapi: 3.0.3
+info:
+  title: Schema della Persona Fisica
+  version: 202306.27.00
+  x-summary: Schema della persona fisica compatibile con l'ontologia INAIL.
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  termsOfService: https://creativecommons.org/licenses/by/4.0/
+  contact:
+    name: Anna Maria De Paoli
+    email: a.depaoli@inail.it
+   # url:
+  description: |-
+   L'ordinamento giuridico considera persona fisica ogni essere umano nato vivo, anche se non vitale, quindi anche se morto subito dopo la nascita. Con la nascita la persona acquisice la capacità giuridica, ossia è soggetto di diritto, centro di imputazione di situazioni giuridiche e di diritti e doveri. Con il raggiungimento della maggiore età (18 anni nell'ordinamento italiano) la persona fisica acquisisce la capacità di agire, cioè la possibilità di porre in essere atti giuridicamente rilevanti.
+
+    La metadatazione semantica degli schemi si basa sul documento
+    [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html)
+    che introduce le keyword x-jsonld-type e x-jsonld-context.
+paths: {}
+servers: []
+tags: []
+components:
+  schemas:
+    CodiceFiscale:
+        type: string
+        maxLength: 20
+        description:
+            Campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità.
+            Associato a https://w3id.org/italia/work-accident/onto/core/codiceFiscale
+        example: 'MRARSS90T10H501F'
+
+    PersonaFisica:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/core/PersonaFisica
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/core/"
+        codice_fiscale_persona: codiceFiscale
+        eta_persona: eta
+        data_nascita_persona: dataDiNascita
+        nome_persona: nomePersona
+        cognome_persona: cognomePersona
+        sesso_persona: sesso
+        ha_cittadinanza:
+         "@id": personaHaCittadinanza
+      additionalProperties: true
+      description:
+          Questo schema rappresenta una persona fisica ed è associato ad https://w3id.org/italia/work-accident/onto/core/PersonaFisica.
+      required:
+      - codice_fiscale_persona
+      - eta_persona
+      - data_nascita_persona
+      - nome_persona
+      - cognome_persona
+      - sesso_persona
+      properties:
+        codice_fiscale_persona:
+          $ref: "#/components/schemas/CodiceFiscale"
+        eta_persona:
+          type: integer
+          format: int32
+        data_nascita_persona:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        nome_persona:
+          type: string
+          maxLength: 50
+        cognome_persona:
+          type: string
+          maxLength: 50
+        sesso_persona:
+          type: string
+          maxLength: 10
+        ha_cittadinanza:
+          type: object
+          items:
+            $ref: "#/components/schemas/Cittadinanza"
+      example:
+        codice_fiscale_persona: 'MRARSS90T10H501F'
+        eta_persona: 20
+        data_nascita_persona: '1990-12-10'
+        nome_persona: 'Mario'
+        cognome_persona: 'Rossi'
+        sesso_persona: 'M'
+        ha_cittadinanza:
+          codice_belfiore_cittadinanza: 'Z107'
+          descrizione_cittadinanza: 'Danimarca'
+          unione_europea: 'S'
+
+    Cittadinanza:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/core/Cittadinanza
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/core/"
+        codice_belfiore_cittadinanza: codiceBelfioreCittadinanza
+        descrizione_cittadinanza: descrizioneCittadinanza
+        unione_europea: UnioneEuropea
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la cittadinanza ed è associato ad https://w3id.org/italia/work-accident/onto/core/Cittadinanza.
+      required:
+      - codice_belfiore_cittadinanza
+      - descrizione_cittadinanza
+      - unione_europea
+      properties:
+        codice_belfiore_cittadinanza:
+          type: string
+          maxLength: 10
+        descrizione_cittadinanza:
+          type: string
+          maxLength: 50
+        unione_europea:
+          type: string
+          maxLength: 20
+      example:
+        codice_belfiore_cittadinanza: 'Z107'
+        descrizione_cittadinanza: 'Danimarca'
+        unione_europea: 'S'

@@ -1,0 +1,193 @@
+openapi: 3.0.3
+info:
+  title: Schema del Soggetto Assicurante
+  version: 202306.27.00
+  x-summary: Schema del soggetto assicurante compatibile con l'ontologia INAIL.
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  termsOfService: https://creativecommons.org/licenses/by/4.0/
+  contact:
+    name: Anna Maria De Paoli
+    email: a.depaoli@inail.it
+   # url:
+  description: |-
+   Ai fini dell'insaturazione e gestione del rapporto assicurativo vengono indicati da Inail come "soggetti assicuranti" tutte le imprese, anche quelle senza lavoratori dipendenti e/o parasubordinati (es. imprese artigiane); ai fini Inail sono considerati soggetti assicuranti anche quelli del settore navigazione e le persone giuridiche diverse dall'impresa (es. associazioni).
+
+    La metadatazione semantica degli schemi si basa sul documento
+    [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html)
+    che introduce le keyword x-jsonld-type e x-jsonld-context.
+paths: {}
+servers: []
+tags: []
+components:
+  schemas:
+    SedeInail:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/sede-inail/sede-inail.oas3.yaml#/components/schemas/SedeInail"
+
+    CodiceSoggettoAssicurante:
+        type: integer
+        format: int32
+        description:
+            Campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità.
+            Associato a https://w3id.org/italia/work-accident/onto/core/codiceSoggettoAssicurante
+        example: 18448587
+
+    SoggettoAssicurante:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/core/"
+        codice_soggetto_assicurante: codiceSoggettoAssicurante
+        codice_fiscale_soggetto_assicurante: codiceFiscale
+        ragione_sociale: ragioneSociale
+        partita_iva: partitaIVA
+        data_costituzione: dataCostituzione
+        data_inizio_attivita: dataInizioAttivita
+        stato_attivita: statoAttivitaSoggettoAssicurante
+        anno_ultima_classificazione: annoUltimaClassificazione
+        numero_lavoratori: numeroLavoratori
+        tipologia_ditta: tipologiaDitta
+        numero_pat: numeroPATAttiveSoggettoAssicurante
+        numero_settori_attivita: numeroSettoriAttivitaSoggettoAssicurante
+        soggetto_assicurante_competenza_di:
+          "@id": soggettoAssicuranteCompetenzaDi
+        ha_natura_giuridica:
+          "@id": haNaturaGiuridica
+        ha_dimensione:
+          "@id": soggettoAssicuranteHaDimensione
+      additionalProperties: true
+      description:
+          Questo schema rappresenta un soggetto assicurante ed è associato ad https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL.
+      required:
+        - codice_soggetto_assicurante
+        - codice_fiscale_soggetto_assicurante
+        - ragione_sociale
+        - partita_iva
+        - data_costituzione
+        - data_inizio_attivita
+        - stato_attivita
+        - anno_ultima_classificazione
+        - numero_lavoratori
+        - tipologia_ditta
+        - numero_pat
+        - numero_settori_attivita
+      properties:
+        codice_soggetto_assicurante:
+          $ref: "#/components/schemas/CodiceSoggettoAssicurante"
+        codice_fiscale_soggetto_assicurante:
+          type: string
+          maxLength: 50
+        ragione_sociale:
+          type: string
+          maxLength: 50
+        partits_iva:
+          type: string
+          format: int32
+        data_costituzione:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        data_inizio_attivita:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        stato_attivita:
+          type: string
+          maxLength: 50
+        anno_ultima_classificazione:
+          type: string
+          pattern: ([0-9]{4})
+        numero_lavoratori:
+          type: number
+          format: double
+        tipologia_ditta:
+          type: string
+          maxLength: 20
+        numero_pat:
+          type: integer
+          format: int32
+        numero_settori_attivita:
+          type: integer
+          format: int32
+        soggetto_assicurante_competenza_di:
+          type: object
+          items:
+            $ref: "#/components/schemas/SedeInail"
+        ha_natura_giuridica:
+          type: object
+          items:
+            $ref: "#/components/schemas/NaturaGiuridica"
+        ha_dimensione:
+          type: object
+          items:
+            $ref: "#/components/schemas/DimensioneSoggettoAssicurante"
+      example:
+        codice_soggetto_assicurante: 12345678
+        codice_fiscale_soggetto_assicurante: 'MRARSS90R84D843T'
+        ragione_sociale: 'ENEL'
+        partita_iva: '01234567891'
+        data_costituzione: '2009-05-01'
+        data_inizio_attivita: '2018-05-22'
+        stato_attivita: 'Attiva'
+        anno_ultima_classificazione: '2022'
+        numero_lavoratori: 2.09
+        tipologia_ditta: AD
+        numero_pat: 2
+        numero_settori_attivita: 3
+        soggetto_assicurante_competenza_di:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/sede-inail/sede-inail.oas3.yaml#/components/schemas/SedeInail/example"
+        ha_natura_giuridica:
+          codice_natura_giuridica: 'LTD'
+          descrizione_natura_giuridica: 'Società estera a responsabilità limitata'
+          tipo_soggetto_natura_giuridica: 'P'
+        ha_dimensione:
+
+    NaturaGiuridica:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/core/NaturaGiuridica
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/core/"
+        codice_natura_giuridica: codiceNaturaGiuridica
+        descrizione_natura_giuridica: descrizioneNaturaGiuridica
+        tipo_soggetto_natura_giuridica: tipoSoggettoNaturaGiuridica
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la natura giuridica di un soggetto assicurante, ovvero la classificazione delle forme giuridiche assunte da imprese di medie e grandi dimensioni operanti nei diversi settori produttivi. Lo schema è associato a https://w3id.org/italia/work-accident/onto/core/NaturaGiuridica.
+      required:
+      - codice_natura_giuridica
+      - descrizione_natura_giuridica
+      - tipo_soggetto_natura_giuridica
+      properties:
+        codice_natura_giuridica:
+          type: string
+          maxLength: 20
+        descrizione_natura_giuridica:
+          type: string
+          maxLength: 250
+        tipo_soggetto_natura_giuridica:
+          type: string
+          maxLength: 10
+      example:
+        codice_natura_giuridica: 'LTD'
+        descrizione_natura_giuridica: 'Società estera a responsabilità limitata'
+        tipo_soggetto_natura_giuridica: 'P'
+
+    DimensioneSoggettoAssicurante:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/core/DimensioneSoggettoAssicurante
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/core/"
+        descrizione_dimensione_soggetto: descrizioneDimensioneSoggettoAssicurante
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la dimensione di un soggetto assicurante. Corrisponde al numero di dipendenti ed è espresso in ULA (unità lavorative anno), laddove per ULA si intende il numero medio mensile di dipendenti occupati a tempo pieno durante un anno.
+          Lo schema è associato a https://w3id.org/italia/work-accident/onto/core/DimensioneSoggettoAssicurante.
+      required:
+      - descrizione_dimensione_soggetto
+      properties:
+        descrizione_dimensione_soggetto:
+          type: string
+          maxLength: 250
+      example:
+        descrizione_dimensione_soggetto: 'Grande Impresa'

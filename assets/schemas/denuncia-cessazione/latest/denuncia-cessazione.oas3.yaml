@@ -1,0 +1,91 @@
+openapi: 3.0.3
+info:
+  title: Schema della Denuncia di Cessazione
+  version: 202306.27.00
+  x-summary: Schema della denuncia di cessazione compatibile con l'ontologia INAIL.
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  termsOfService: https://creativecommons.org/licenses/by/4.0/
+  contact:
+    name: Anna Maria De Paoli
+    email: a.depaoli@inail.it
+   # url:
+  description: |-
+    Denuncia di cessazione inviata all’Inail dal datore di lavoro che chiude un’attività. Deve pervenire entro 30 gg dall'avvenuta cessazione tramite il servizio telematico ComUnica, per Imprese, o per via telematica nel caso di polizze speciali e PAN. La metadatazione semantica degli schemi si basa sul documento [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html) che introduce le keyword x-jsonld-type e x-jsonld-context.
+paths: {}
+servers: []
+tags: []
+components:
+  schemas:
+    SedeInail:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/sede-inail/sede-inail.oas3.yaml#/components/schemas/SedeInail"
+    SoggettoAssicurante:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/soggetto-assicurante/soggetto-assicurante.oas3.yaml#/components/schemas/SoggettoAssicurante"
+
+    NumeroPraticaDenunciaCessazione:
+      type: integer
+      format: int64
+      description:
+        Campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità.
+        Associato a https://w3id.org/italia/work-accident/onto/core/numeroPraticaDenuncia.
+      example: 1234567
+
+    Denuncia:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/core/DenunciaDiCessazioneINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/core/"
+        numero_pratica_denuncia_cessazione: numeroPraticaDenuncia
+        data_denuncia_cessazione_soggetto: dataDenuncia
+        data_protocollazione_denuncia_cessazione: dataProtocollazioneDenuncia
+        codice_esito_pratica: codiceEsitoPratica
+        descrizione_esito_pratica: descrizioneEsitoPratica
+        relativa_a_soggetto:
+          "@id": denunciaRelativaASoggettoAssicurante
+        relativa_a_sede_inail:
+          "@id": denunciaRelativaASedeINAIL
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la denuncia di cessazione ed è associato a https://w3id.org/italia/work-accident/onto/core/DenunciaDiCessazioneINAIL.
+      required:
+      - numero_pratica_denuncia_cessazione
+      - data_denuncia_cessazione_soggetto
+      - data_protocollazione_denuncia_cessazione
+      - codice_esito_pratica
+      - descrizione_esito_pratica
+      properties:
+        numero_pratica_denuncia_cessazione:
+          $ref: "#/components/schemas/NumeroPraticaDenunciaCessazione"
+        data_denuncia_cessazione_soggetto:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        data_protocollazione_denuncia_cessazione:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        codice_esito_pratica:
+          type: string
+          maxLength: 10
+        descrizione_esito_pratica:
+          type: string
+          maxLength: 250
+        relativa_a_soggetto:
+          type: object
+          items:
+            $ref: "#/components/schemas/SoggettoAssicurante"
+        relativa_a_sede_inail:
+          type: object
+          items:
+            $ref: "#/components/schemas/SedeInail"
+      example:
+        numero_pratica_denuncia_cessazione: 1234567
+        data_denuncia_cessazione_soggetto: '2019-10-28'
+        data_protocollazione_denuncia_cessazione: '2019-10-30'
+        codice_esito_pratica: 'C'
+        descrizione_esito_pratica: 'Confermata'
+        relativa_a_soggetto:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/soggetto-assicurante/soggetto-assicurante.oas3.yaml#/components/schemas/SoggettoAssicurante/example"
+        relativa_a_sede_inail:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/sede-inail/sede-inail.oas3.yaml#/components/schemas/SedeInail/example"

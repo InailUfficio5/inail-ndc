@@ -1,0 +1,151 @@
+openapi: 3.0.3
+info:
+  title: Schema della Sede INAIL
+  version: 202306.27.00
+  x-summary: Schema della sede inail compatibile con l'ontologia INAIL.
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  termsOfService: https://creativecommons.org/licenses/by/4.0/
+  contact:
+    name: Anna Maria De Paoli
+    email: a.depaoli@inail.it
+   # url:
+  description: |-
+   Nell'attuale modello organizzativo sono le Sedi presenti sul territorio nazionale, generalmente in ambito provinciale, che erogano i servizi affidati all'Istituto. In alcuni casi esistono più Sedi nell'ambito della stessa provincia o dello stesso territorio comunale. Tali unità sono denominate Sedi locali
+
+    La metadatazione semantica degli schemi si basa sul documento
+    [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html)
+    che introduce le keyword x-jsonld-type e x-jsonld-context.
+paths: {}
+servers: []
+tags: []
+components:
+  schemas:
+    CodiceSedeInail:
+        type: integer
+        format: int32
+        description:
+            Campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità.
+            Associato a https://w3id.org/italia/work-accident/onto/core/codiceStrutturaINAIL
+        example: 18448587
+
+    SedeInail:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/core/SedeINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/core/"
+        codice_sede_inail: codiceStrutturaINAIL
+        indirizzo_sede_inail: indirizzoStrutturaINAIL
+        descrizione_sede_inail: descrizioneStrutturaINAIL
+        numero_telefono_sede_inail: numeroTelefono
+        numero_telefono_alt_sede_inail: numeroTelefonoAlternativo
+        numero_telefono_fax_sede_inail: numeroTelefonoFAX
+        indirizzo_email_sede_inail: indirizzoEmail
+        stato_chiusura_sede_inail: statoChiusuraStruttura
+        tipo_sede_inail: tipoStrutturaINAIL
+        ha_responsabile_ufficio:
+          "@id": haResponsabileUfficio
+      additionalProperties: true
+      description:
+          Questo schema rappresenta una sede inail ed è associato ad https://w3id.org/italia/work-accident/onto/core/SedeINAIL.
+      required:
+        - codice_sede_inail
+        - indirizzo_sede_inail
+        - descrizione_sede_inail
+        - numero_telefono_sede_inail
+        - numero_telefono_alt_sede_inail
+        - numero_telefono_fax_sede_inail
+        - indirizzo_email_sede_inail
+        - stato_chiusura_sede_inail
+        - tipo_sede_inail
+      properties:
+        codice_sede_inail:
+          $ref: "#/components/schemas/CodiceSedeInail"
+        indirizzo_sede_inail:
+          type: string
+          maxLength: 150
+        descrizione_sede_inail:
+          type: string
+          maxLength: 250
+        numero_telefono_sede_inail:
+          type: string
+          maxLength: 20
+        numero_telefono_alt_sede_inail:
+          type: string
+          maxLength: 20
+        numero_telefono_fax_sede_inail:
+          type: string
+          maxLength: 20
+        indirizzo_email_sede_inail:
+          type: string
+          maxLength: 150
+        stato_chiusura_sede_inail:
+          type: string
+          maxLength: 10
+        tipo_sede_inail:
+          type: string
+          maxLength: 10
+        ha_responsabile_ufficio:
+          type: object
+          items:
+            $ref: "#/components/schemas/ResponsabileUfficio"
+      example:
+        codice_sede_inail: 12345
+        indirizzo_sede_inail: 'VIA MAZZINI, 7'
+        descrizione_sede_inail: 'BARI 2'
+        numero_telefono_sede_inail: '01/2345678'
+        numero_telefono_alt_sede_inail: '012/3456789'
+        numero_telefono_fax_sede_inail: '012/3434567'
+        indirizzo_email_sede_inail: 'sardegna@inail.it'
+        stato_chiusura_sede_inail: 'N'
+        tipo_sede_inail: 'S'
+        ha_responsabile_ufficio:
+          matricola_responsabile: 12345
+          codice_incarico: 'C002'
+          descrizione_incarico: 'Responsabile Struttura Non Dirigenziale'
+          codice_tipo_incarico: 1
+          descrizione_tipo_incarico: 'Principale'
+
+
+    ResponsabileUfficio:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/core/ResponsabileUfficio
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/core/"
+        matricola_responsabile: matricola
+        codice_incarico: codiceIncarico
+        descrizione_incarico: descrizioneIncarico
+        codice_tipo_incarico: codiceTipoIncarico
+        descrizione_tipo_incarico: descrizioneTipoIncarico
+      additionalProperties: true
+      description:
+          Questo schema rappresenta il responsabile di un ufficio ed è associato ad https://w3id.org/italia/work-accident/onto/core/ResponsabileUfficio.
+      required:
+        - matricola_responsabile
+        - codice_incarico
+        - descrizione_incarico
+        - codice_tipo_incarico
+        - descrizione_tipo_incarico
+      properties:
+        matricola_responsabile:
+          type: integer
+          format: int64
+        codice_incarico:
+          type: string
+          maxLength: 20
+        descrizione_incarico:
+          type: string
+          maxLength: 150
+        codice_tipo_incarico:
+          type: integer
+          format: int32
+        descrizione_tipo_incarico:
+          type: string
+          maxLength: 150
+      example:
+         matricola_responsabile: 12345
+         codice_incarico: 'C002'
+         descrizione_incarico: 'Responsabile Struttura Non Dirigenziale'
+         codice_tipo_incarico: 1
+         descrizione_tipo_incarico: 'Principale'
