@@ -1,0 +1,102 @@
+[
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/grande_gruppo_tariffario/0",
+    "@type": [
+      "skos:Concept",
+      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL"
+    ],
+    "id": "0",
+    "label_it": "GG0 Attivit\u00e0 varie",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/grande_gruppo_tariffario/1",
+    "@type": [
+      "skos:Concept",
+      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL"
+    ],
+    "id": "1",
+    "label_it": "GG1 Lav. agricole e alimenti",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/grande_gruppo_tariffario/2",
+    "@type": [
+      "skos:Concept",
+      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL"
+    ],
+    "id": "2",
+    "label_it": "GG2 Chimica, carta e cuoi",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/grande_gruppo_tariffario/3",
+    "@type": [
+      "skos:Concept",
+      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL"
+    ],
+    "id": "3",
+    "label_it": "GG3 Costruzioni e impianti",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/grande_gruppo_tariffario/4",
+    "@type": [
+      "skos:Concept",
+      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL"
+    ],
+    "id": "4",
+    "label_it": "GG4 Energia e comunicazioni",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/grande_gruppo_tariffario/5",
+    "@type": [
+      "skos:Concept",
+      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL"
+    ],
+    "id": "5",
+    "label_it": "GG5 Legno e affini",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/grande_gruppo_tariffario/6",
+    "@type": [
+      "skos:Concept",
+      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL"
+    ],
+    "id": "6",
+    "label_it": "GG6 Metalli e macchinari",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/grande_gruppo_tariffario/7",
+    "@type": [
+      "skos:Concept",
+      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL"
+    ],
+    "id": "7",
+    "label_it": "GG7 Mineraria, rocce e vetro",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/grande_gruppo_tariffario/8",
+    "@type": [
+      "skos:Concept",
+      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL"
+    ],
+    "id": "8",
+    "label_it": "GG8 Tessile e confezioni",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/grande_gruppo_tariffario/9",
+    "@type": [
+      "skos:Concept",
+      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL"
+    ],
+    "id": "9",
+    "label_it": "GG9 Trasporti e magazzini",
+    "level": "1"
+  }
+]

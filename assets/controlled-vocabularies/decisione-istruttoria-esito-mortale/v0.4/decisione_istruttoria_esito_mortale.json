@@ -2,8 +2,8 @@
   {
     "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/decisione_istruttoria_esito_mortale/15",
     "@type": [
-      "skos:Concept",
-      "https://w3id.org/italia/work-accident/onto/adm_serv/TipoDecisioneIstruttoriaEsitoMortaleINAIL"
+      "https://w3id.org/italia/work-accident/onto/adm_serv/TipoDecisioneIstruttoriaEsitoMortaleINAIL",
+      "skos:Concept"
     ],
     "id": "15",
     "label_it": "Esiti mortali nei termini con superstiti",
@@ -12,8 +12,8 @@
   {
     "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/decisione_istruttoria_esito_mortale/16",
     "@type": [
-      "skos:Concept",
-      "https://w3id.org/italia/work-accident/onto/adm_serv/TipoDecisioneIstruttoriaEsitoMortaleINAIL"
+      "https://w3id.org/italia/work-accident/onto/adm_serv/TipoDecisioneIstruttoriaEsitoMortaleINAIL",
+      "skos:Concept"
     ],
     "id": "16",
     "label_it": "Esiti mortali nei termini senza superstiti",
@@ -22,8 +22,8 @@
   {
     "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/decisione_istruttoria_esito_mortale/17",
     "@type": [
-      "skos:Concept",
-      "https://w3id.org/italia/work-accident/onto/adm_serv/TipoDecisioneIstruttoriaEsitoMortaleINAIL"
+      "https://w3id.org/italia/work-accident/onto/adm_serv/TipoDecisioneIstruttoriaEsitoMortaleINAIL",
+      "skos:Concept"
     ],
     "id": "17",
     "label_it": "Morte con superstiti itinere",
@@ -32,8 +32,8 @@
   {
     "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/decisione_istruttoria_esito_mortale/18",
     "@type": [
-      "skos:Concept",
-      "https://w3id.org/italia/work-accident/onto/adm_serv/TipoDecisioneIstruttoriaEsitoMortaleINAIL"
+      "https://w3id.org/italia/work-accident/onto/adm_serv/TipoDecisioneIstruttoriaEsitoMortaleINAIL",
+      "skos:Concept"
     ],
     "id": "18",
     "label_it": "Morte senza superstiti itinere",
@@ -42,8 +42,8 @@
   {
     "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/decisione_istruttoria_esito_mortale/21",
     "@type": [
-      "skos:Concept",
-      "https://w3id.org/italia/work-accident/onto/adm_serv/TipoDecisioneIstruttoriaEsitoMortaleINAIL"
+      "https://w3id.org/italia/work-accident/onto/adm_serv/TipoDecisioneIstruttoriaEsitoMortaleINAIL",
+      "skos:Concept"
     ],
     "id": "21",
     "label_it": "Difetto occasione di lavoro",
@@ -52,8 +52,8 @@
   {
     "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/decisione_istruttoria_esito_mortale/22",
     "@type": [
-      "skos:Concept",
-      "https://w3id.org/italia/work-accident/onto/adm_serv/TipoDecisioneIstruttoriaEsitoMortaleINAIL"
+      "https://w3id.org/italia/work-accident/onto/adm_serv/TipoDecisioneIstruttoriaEsitoMortaleINAIL",
+      "skos:Concept"
     ],
     "id": "22",
     "label_it": "Difetto in itinere",
@@ -62,8 +62,8 @@
   {
     "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/decisione_istruttoria_esito_mortale/24",
     "@type": [
-      "skos:Concept",
-      "https://w3id.org/italia/work-accident/onto/adm_serv/TipoDecisioneIstruttoriaEsitoMortaleINAIL"
+      "https://w3id.org/italia/work-accident/onto/adm_serv/TipoDecisioneIstruttoriaEsitoMortaleINAIL",
+      "skos:Concept"
     ],
     "id": "24",
     "label_it": "Persona non tutelata",
@@ -72,8 +72,8 @@
   {
     "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/decisione_istruttoria_esito_mortale/244",
     "@type": [
-      "skos:Concept",
-      "https://w3id.org/italia/work-accident/onto/adm_serv/TipoDecisioneIstruttoriaEsitoMortaleINAIL"
+      "https://w3id.org/italia/work-accident/onto/adm_serv/TipoDecisioneIstruttoriaEsitoMortaleINAIL",
+      "skos:Concept"
     ],
     "id": "244",
     "label_it": "Morte non riconducibile all'evento",
@@ -82,8 +82,8 @@
   {
     "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/decisione_istruttoria_esito_mortale/27",
     "@type": [
-      "skos:Concept",
-      "https://w3id.org/italia/work-accident/onto/adm_serv/TipoDecisioneIstruttoriaEsitoMortaleINAIL"
+      "https://w3id.org/italia/work-accident/onto/adm_serv/TipoDecisioneIstruttoriaEsitoMortaleINAIL",
+      "skos:Concept"
     ],
     "id": "27",
     "label_it": "Attivit\u00e0 non tutelata",
@@ -92,8 +92,8 @@
   {
     "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/decisione_istruttoria_esito_mortale/28",
     "@type": [
-      "skos:Concept",
-      "https://w3id.org/italia/work-accident/onto/adm_serv/TipoDecisioneIstruttoriaEsitoMortaleINAIL"
+      "https://w3id.org/italia/work-accident/onto/adm_serv/TipoDecisioneIstruttoriaEsitoMortaleINAIL",
+      "skos:Concept"
     ],
     "id": "28",
     "label_it": "Carenza di documentazione valida",
@@ -102,8 +102,8 @@
   {
     "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/decisione_istruttoria_esito_mortale/300",
     "@type": [
-      "skos:Concept",
-      "https://w3id.org/italia/work-accident/onto/adm_serv/TipoDecisioneIstruttoriaEsitoMortaleINAIL"
+      "https://w3id.org/italia/work-accident/onto/adm_serv/TipoDecisioneIstruttoriaEsitoMortaleINAIL",
+      "skos:Concept"
     ],
     "id": "300",
     "label_it": "Altre cause di negativit\u00e0",
