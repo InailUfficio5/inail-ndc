@@ -2,8 +2,8 @@
   {
     "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/grande_gruppo_tariffario/0",
     "@type": [
-      "skos:Concept",
-      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL"
+      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL",
+      "skos:Concept"
     ],
     "id": "0",
     "label_it": "GG0 Attivit\u00e0 varie",
@@ -12,8 +12,8 @@
   {
     "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/grande_gruppo_tariffario/1",
     "@type": [
-      "skos:Concept",
-      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL"
+      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL",
+      "skos:Concept"
     ],
     "id": "1",
     "label_it": "GG1 Lav. agricole e alimenti",
@@ -22,8 +22,8 @@
   {
     "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/grande_gruppo_tariffario/2",
     "@type": [
-      "skos:Concept",
-      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL"
+      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL",
+      "skos:Concept"
     ],
     "id": "2",
     "label_it": "GG2 Chimica, carta e cuoi",
@@ -32,8 +32,8 @@
   {
     "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/grande_gruppo_tariffario/3",
     "@type": [
-      "skos:Concept",
-      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL"
+      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL",
+      "skos:Concept"
     ],
     "id": "3",
     "label_it": "GG3 Costruzioni e impianti",
@@ -42,8 +42,8 @@
   {
     "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/grande_gruppo_tariffario/4",
     "@type": [
-      "skos:Concept",
-      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL"
+      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL",
+      "skos:Concept"
     ],
     "id": "4",
     "label_it": "GG4 Energia e comunicazioni",
@@ -52,8 +52,8 @@
   {
     "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/grande_gruppo_tariffario/5",
     "@type": [
-      "skos:Concept",
-      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL"
+      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL",
+      "skos:Concept"
     ],
     "id": "5",
     "label_it": "GG5 Legno e affini",
@@ -62,8 +62,8 @@
   {
     "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/grande_gruppo_tariffario/6",
     "@type": [
-      "skos:Concept",
-      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL"
+      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL",
+      "skos:Concept"
     ],
     "id": "6",
     "label_it": "GG6 Metalli e macchinari",
@@ -72,8 +72,8 @@
   {
     "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/grande_gruppo_tariffario/7",
     "@type": [
-      "skos:Concept",
-      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL"
+      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL",
+      "skos:Concept"
     ],
     "id": "7",
     "label_it": "GG7 Mineraria, rocce e vetro",
@@ -82,8 +82,8 @@
   {
     "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/grande_gruppo_tariffario/8",
     "@type": [
-      "skos:Concept",
-      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL"
+      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL",
+      "skos:Concept"
     ],
     "id": "8",
     "label_it": "GG8 Tessile e confezioni",
@@ -92,8 +92,8 @@
   {
     "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/grande_gruppo_tariffario/9",
     "@type": [
-      "skos:Concept",
-      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL"
+      "https://w3id.org/italia/work-accident/onto/adm_serv/GrandeGruppoVoceDiTariffaINAIL",
+      "skos:Concept"
     ],
     "id": "9",
     "label_it": "GG9 Trasporti e magazzini",
