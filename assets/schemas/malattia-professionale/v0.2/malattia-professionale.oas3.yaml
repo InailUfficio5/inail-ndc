@@ -1,0 +1,1191 @@
+openapi: 3.0.3
+info:
+  title: Schema della Malattia Professionale
+  version: 202306.27.00
+  x-summary: Schema della malattia professionale compatibile con l'ontologia INAIL.
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  termsOfService: https://creativecommons.org/licenses/by/4.0/
+  contact:
+    name: Anna Maria De Paoli
+    email: a.depaoli@inail.it
+   # url:
+  description: |-
+   La malattia professionale è una patologia la cui causa agisce lentamente e progressivamente sull'organismo (causa diluita e non causa violenta e concentrata nel tempo). La stessa causa deve essere diretta ed efficiente, cioè in grado di produrre l'infermità in modo esclusivo o prevalente. Il Testo Unico n 1124/1965, infatti, parla di malattie contratte nell'esercizio e a causa delle lavorazioni rischiose. È ammesso, tuttavia, il concorso di cause extraprofessionali, purché queste non interrompano il nesso causale in quanto capaci di produrre da sole l'infermità. Per le malattie professionali, quindi, non basta l'occasione di lavoro come per gli infortuni, cioè un rapporto anche mediato o indiretto con il rischio lavorativo, ma deve esistere un rapporto causale o concausale diretto tra il rischio professionale e la malattia. Il rischio può essere provocato dalla lavorazione che l'assicurato svolge oppure dall'ambiente in cui la lavorazione stessa si svolge (cosiddetto «rischio ambientale»). La metadatazione semantica degli schemi si basa sul documento [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html) che introduce le keyword x-jsonld-type e x-jsonld-context.
+paths: {}
+servers: []
+tags: []
+components:
+  schemas:
+    EsitoDefinizione:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/esito-definizione/esito-definizione.oas3.yaml#/components/schemas/EsitoDefinizione"
+    TipoIndennizzo:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tipo-indennizzo/tipo-indennizzo.oas3.yaml#/components/schemas/TipoIndennizzo"
+    TipoTrattazione:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tipo-trattazione/tipo-trattazione.oas3.yaml#/components/schemas/TipoTrattazione"
+    Tecnopatico:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tecnopatico/tecnopatico.oas3.yaml#/components/schemas/Tecnopatico"
+    PosizioneAssicurativaTerritoriale:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/posizione-assicurativa-territoriale/posizione-assicurativa-territoriale.oas3.yaml#/components/schemas/PosizioneAssicurativaTerritoriale"
+    SoggettoAssicurante:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/soggetto-assicurante/soggetto-assicurante.oas3.yaml#/components/schemas/SoggettoAssicurante"
+    SedeInail:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/sede-inail/sede-inail.oas3.yaml#/components/schemas/SedeInail"
+
+    IdMalattiaProfessionale:
+      type: integer
+      format: int64
+      description:
+        Campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità.
+        Associato a https://w3id.org/italia/work-accident/onto/adm_serv/codiceCaso.
+      example: 111000000
+
+    MalattiaProfessionale:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/MalattiaProfessionale
+      # This custom property defines the associated json-ld
+      #   context that can be used to semantically describe
+      #   the instances.
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+        codice_caso_malattia: codiceCaso
+        esito_riconoscimento: esitoRiconoscimentoMalattiaProfessionale
+        data_riferimento_malattia: dataRiferimentoMalattiaProfessionale
+        importo_indennizzo_malattia: importoMalattiaProfessionale
+        codice_settore_malattia: codiceSettoreCorrelatoMalattiaProfessionale
+        codice_subsettore_malattia: codiceSubsettoreCorrelatoMalattiaProfessionale
+        definizione_malattia: definizioneAmministrativaMalattiaProfessionale
+        silicosi_asbestosi: SilicosiAsbestosi
+        data_apertura_malattia: dataAperturaEventoLesivo
+        data_decesso_malattia: dataDecessoEventoLesivo
+        data_definizione_malattia: dataDefinizioneEventoLesivo
+        data_protocollazione_malattia: dataProtocollazioneEventoLesivo
+        data_esito_definizione_malattia: dataEsitoDefinizioneEventoLesivo
+        data_malattia: dataEventoLesivo
+        descrizione_malattia_professionale: descrizioneEventoLesivo
+        malattia_grado_inabilita_assunto:
+          "@id": malattiaProfessionaleHaGradoDiInabilitaAssunto
+        malattia_grado_inabilita_attuale:
+          "@id": malattiaProfessionaleHaGradoDiInabilitaAttuale
+        malattia_accaduta_a_tecnopatico:
+          "@id": malattiaProfessionaleRelativaATecnopatico
+        malattia_ha_tipo_tecnopatia:
+          "@id": malattiaProfessionalehaTipoTecnopatia
+        malattia_ha_tipo_malattia:
+          "@id": malattiaProfessionaleHaTipoMalattia
+        malattia_ha_icdx:
+          "@id": malattiaProfessionaleHaClassificazioneInternazionale
+        malattia_trattato_da_sede_INAIL:
+          "@id": eventoTrattatoDaSedeINAIL
+        malattia_coinvolge_pat:
+          "@id": eventoCoinvolgePAT
+        malattia_coinvolge_soggetto_assicurante:
+          "@id": eventoCoinvolgeSoggettoAssicurante
+        malattia_ha_settore_attivita:
+          "@id": eventoHaSettoreAttivita
+        malattia_relativo_a_gestione_assicurativa:
+          "@id": eventoRelativoAGestioneAssicurativa
+        malattia_ha_voce_di_tariffa:
+          "@id": eventoHaVoceDiTariffa
+        malattia_ha_esito_definizione:
+           "@id": eventoHaEsitoDefinizione
+        malattia_ha_tipo_indennizzo:
+           "@id": eventoHaTipoIndennizzo
+        malattia_ha_natura_lesione:
+           "@id": eventoHaNaturaLesione
+        malattia_ha_sede_lesione:
+           "@id": haSedeLesione
+        malattia_ha_gestione_contabile:
+           "@id": haGestioneContabile
+        malattia_ha_fascia_periodo_morte:
+           "@id": haFasciaPeriodoMorte
+        malattia_ha_definizione_morte:
+           "@id": eventoHaDefinizioneMorte
+        malattia_ha_qualifica_assicurativa:
+           "@id": haQualificaAssicurativa
+        malattia_ha_agente_materiale:
+           "@id": haAgenteMateriale
+        malattia_ha_classificazione_cnel:
+           "@id": haClassificazioneContrattoCNEL
+        malattia_ha_classificazione_fascia_eta:
+           "@id": haClassificazioneFasciaEta
+        malattia_ha_classificazione_cause_esterne:
+           "@id": haClassificazioneCauseEsterne
+        malattia_ha_agente_causale:
+           "@id": haAgenteCausale
+        malattia_ha_tipo_trattazione:
+           "@id": eventoHaTipoTrattazione
+        malattia_ha_tipo_pratica:
+           "@id": eventoHaTipoPratica
+        malattia_ha_tipo_lavoratore:
+           "@id": eventoHaTipoLavoratore
+        malattia_relativo_a_mansione:
+           "@id": eventoRelativoAMansione
+        malattia_ha_grado_di_menomazione:
+           "@id": eventoHaGradoDiMenomazione
+        malattia_ha_decodifica_istruttoria_morte:
+           "@id": eventoHaDecodificaIstruttoriaMorte
+      additionalProperties: true
+      description:
+          Questo schema rappresenta una malattia professionale
+          ed è associato a https://w3id.org/italia/work-accident/onto/adm_serv/MalattiaProfessionale.
+      required:
+      - codice_caso_malattia
+      - esito_riconoscimento
+      - data_riferimento_malattia
+      - importo_indennizzo_malattia
+      - codice_settore_malattia
+      - codice_subsettore_malattia
+      - definizione_malattia
+      - silicosi_asbestosi
+      - data_apertura_malattia
+      - data_decesso_malattia
+      - data_definizione_malattia
+      - data_protocollazione_malattia
+      - data_esito_definizione_malattia
+      - data_malattia
+      - descrizione_malattia_professionale
+      properties:
+        codice_caso_malattia:
+          $ref: "#/components/schemas/IdMalattiaProfessionale"
+        esito_riconoscimento:
+          type: string
+          maxLength: 50
+        data_riferimento_malattia:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        importo_indennizzo_malattia:
+          type: number
+          format: double
+        codice_settore_malattia:
+          type: integer
+          format: int32
+        codice_subsettore_malattia:
+          type: integer
+          format: int32
+        definizione_malattia:
+          type: string
+          maxLength: 50
+        silicosi_asbestosi:
+          type: string
+          maxLength: 50
+        data_apertura_malattia:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        data_decesso_malattia:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        data_definizione_malattia:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        data_protocollazione_malattia:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        data_esito_definizione_malattia:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        data_malattia:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        descrizione_malattia_professionale:
+          type: string
+          maxLength: 50
+        malattia_grado_inabilita_assunto:
+          type: object
+          items:
+            $ref: "#/components/schemas/GradoDiInabilita"
+        malattia_grado_inabilita_attuale:
+          type: object
+          items:
+            $ref: "#/components/schemas/GradoDiInabilita"
+        malattia_accaduta_a_tecnopatico:
+          type: object
+          items:
+            $ref: "#/components/schemas/Tecnopatico"
+        malattia_ha_tipo_tecnopatia:
+          type: object
+          items:
+            $ref: "#/components/schemas/TipoTecnopatia"
+        malattia_ha_tipo_malattia:
+          type: object
+          items:
+            $ref: "#/components/schemas/TipoMalattia"
+        malattia_ha_icdx:
+          type: object
+          items:
+            $ref: "#/components/schemas/ClassificazioneInternazionaleMalattie"
+        malattia_trattato_da_sede_inail:
+          type: object
+          items:
+            $ref: "#/components/schemas/SedeInail"
+        malattia_coinvolge_pat:
+          type: object
+          items:
+            $ref: "#/components/schemas/PosizioneAssicurativaTerritoriale"
+        malattia_coinvolge_soggetto_assicurante:
+          type: object
+          items:
+            $ref: "#/components/schemas/SoggettoAssicurante"
+        malattia_ha_settore_attivita:
+          type: object
+          items:
+            $ref: "#/components/schemas/SettoreAttivita"
+        malattia_relativo_a_gestione_assicurativa:
+          type: object
+          items:
+            $ref: "#/components/schemas/GestioneAssicurativa"
+        malattia_ha_voce_di_tariffa:
+          type: object
+          items:
+            $ref: "#/components/schemas/VoceDiTariffa"
+        malattia_ha_esito_definizione:
+          type: object
+          items:
+            $ref: "#/components/schemas/EsitoDefinizione"
+        malattia_ha_tipo_indennizzo:
+          type: object
+          items:
+            $ref: "#/components/schemas/TipoIndennizzo"
+        malattia_ha_natura_lesione:
+          type: object
+          items:
+            $ref: "#/components/schemas/NaturaLesione"
+        malattia_ha_sede_lesione:
+          type: object
+          items:
+            $ref: "#/components/schemas/SedeLesione"
+        malattia_ha_gestione_contabile:
+          type: object
+          items:
+            $ref: "#/components/schemas/GestioneContabile"
+        malattia_ha_fascia_periodo_morte:
+          type: object
+          items:
+            $ref: "#/components/schemas/FasciaPeriodoMorte"
+        malattia_ha_definizione_morte:
+          type: object
+          items:
+            $ref: "#/components/schemas/DefinizioneMorte"
+        malattia_ha_qualifica_assicurativa:
+          type: object
+          items:
+            $ref: "#/components/schemas/QualificaAssicurativa"
+        malattia_ha_agente_materiale:
+          type: object
+          items:
+            $ref: "#/components/schemas/AgenteMateriale"
+        malattia_ha_classificazione_cnel:
+          type: object
+          items:
+            $ref: "#/components/schemas/ClassificazioneContrattoCnel"
+        malattia_ha_classificazione_fascia_eta:
+          type: object
+          items:
+            $ref: "#/components/schemas/ClassificazioneFasciaEta"
+        malattia_ha_classificazione_cause_esterne:
+          type: object
+          items:
+            $ref: "#/components/schemas/ClassificazioneCauseEsterne"
+        malattia_ha_agente_causale:
+          type: object
+          items:
+            $ref: "#/components/schemas/AgenteCausale"
+        malattia_ha_tipo_trattazione:
+          type: object
+          items:
+            $ref: "#/components/schemas/TipoTrattazione"
+        malattia_ha_tipo_pratica:
+          type: object
+          items:
+            $ref: "#/components/schemas/TipoPratica"
+        malattia_ha_tipo_lavoratore:
+          type: object
+          items:
+            $ref: "#/components/schemas/TipoLavoratore"
+        malattia_relativo_a_mansione:
+          type: object
+          items:
+            $ref: "#/components/schemas/Mansione"
+        malattia_ha_grado_di_menomazione:
+          type: object
+          items:
+            $ref: "#/components/schemas/GradoDiMenomazione"
+        malattia_ha_decodifica_istruttoria_morte:
+          type: object
+          items:
+            $ref: "#/components/schemas/DecodificaIstruttoriaMorte"
+      example:
+        codice_caso_malattia: 111000000
+        esito_riconoscimento: 'Riconosciuta'
+        data_riferimento_malattia: '2015-04-14'
+        importo_indennizzo_malattia: 0.00
+        codice_settore_malattia: 1
+        codice_subsettore_malattia: 1
+        definizione_malattia: 'In istruttoria'
+        silicosi_asbestosi: 'S'
+        data_apertura_malattia: '2021-01-18'
+        data_decesso_malattia: '2015-09-29'
+        data_definizione_malattia: '2021-02-23'
+        data_protocollazione_malattia: '2015-08-03'
+        data_esito_definizione_malattia: '2021-02-23'
+        data_malattia: '2015-08-01'
+        descrizione_malattia_professionale: 'Positivo'
+        malattia_grado_inabilita_assunto:
+          descrizione_inabilita: '003'
+          percentuale_inabilita: 3
+        malattia_grado_inabilita_attuale:
+          descrizione_inabilita: '003'
+          percentuale_inabilita: 3
+        malattia_accaduta_a_tecnopatico:
+           $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tecnopatico/tecnopatico.oas3.yaml#/components/schemas/Tecnopatico/example"
+        malattia_ha_tipo_tecnopatia:
+          descrizione_tecnopatia: 'Acido ftalico'
+          malattia_tabellata: 'Tabellate'
+        malattia_ha_tipo_malattia:
+          settore_tipo_malattia: 'Disturbi psichici'
+          descrizione_tipo_malattia: 'Altre forme psicotiche'
+        malattia_ha_icdx:
+          codice_icdx: 'F33'
+          descrizione_icdx: 'Disturbo depressivo ricorrente'
+        malattia_trattato_da_sede_inail:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/sede-inail/sede-inail.oas3.yaml#/components/schemas/SedeInail/example"
+        malattia_coinvolge_pat:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/posizione-assicurativa-territoriale/posizione-assicurativa-territoriale.oas3.yaml#/components/schemas/PosizioneAssicurativaTerritoriale/example"
+        malattia_coinvolge_soggetto_assicurante:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/soggetto-assicurante/soggetto-assicurante.oas3.yaml#/components/schemas/SoggettoAssicurante/example"
+        malattia_ha_settore_attivita:
+          codice_tipo_settore_attivita: 2
+          descrizione_tipo_settore_attivita: 'Artigianato'
+        malattia_relativo_a_gestione_assicurativa:
+          gruppo_gestione_assicurativa: 'Ordinarie'
+          tipo_gestione_assicurativa: 'Dipendenti'
+        malattia_ha_voce_di_tariffa:
+          codice_voce_tariffa: 2707
+          descrizione_voce_tariffa: '2707 - Uffici scolastici regionali - scuole del primo ciclo'
+          codice_settore_attivita: 7
+          descrizione_settore_attivita: '7 - Conto stato'
+        malattia_ha_esito_definizione:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/esito-definizione/esito-definizione.oas3.yaml#/components/schemas/EsitoDefinizione/example"
+        malattia_ha_tipo_indennizzo:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tipo-indennizzo/tipo-indennizzo.oas3.yaml#/components/schemas/TipoIndennizzo/example"
+        malattia_ha_natura_lesione:
+          descrizione_natura_lesione: 'Lussazione, distorsione, distrazione'
+        malattia_ha_sede_lesione:
+          area_sede_lesione: 'Cingolo toracico'
+          macroarea_sede_lesione: 'Torace e organi interni'
+          descrizione_sede_lesione: 'Cingolo toracico destro'
+        malattia_ha_gestione_contabile:
+          codice_tipo_gestione_contabile: 'S'
+          descrizione_tipo_gestione_contabile: 'Conto stato'
+          descrizione_gestione_contabile: 'Infortuni dipendenti dello stato'
+          codice_gestione_contabile_aggr: 3
+          descrizione_gestione_contabile_aggr: '3 - Conto stato dipendenti'
+        malattia_ha_fascia_periodo_morte:
+          descrizione_fascia: 'Da 16 a 30 gg'
+          limite_inferiore: 16
+          limite_superiore: 30
+        malattia_ha_definizione_morte:
+          codice_definizione_morte: 'AC'
+          descrizione_classificazione_morte: 'Accolta'
+        malattia_ha_qualifica_assicurativa:
+          codice_qualifica_assicurativa: '12A'
+          descrizione_qualifica_assicurativa: 'Socio di cooperativa agricola'
+          gestione_qualifica_assicurativa: 'Agricoltura'
+          tipo_lavoratore_qualifica_assicurativa: 'Cooperative'
+        malattia_ha_agente_materiale:
+          codice_agente_materiale: 10
+          descrizione_agente_materiale: 'Sollevamento e/o stoccaggio e/o smistamento materiali'
+          codice_gruppo_agente_materiale: 1
+          descrizione_gruppo_agente_materiale: 'Mezzi di sollevamento e trasporto'
+        malattia_ha_classificazione_cnel:
+          codice_classificazione_cnel: 'A'
+          descrizione_classificazione cnel: 'Sistemazioni idraulico forestali'
+          categoria_classificazione_cnel: 'A181'
+          settore_classificazione_cnel: 'Agricoltura'
+        malattia_ha_classificazione_fascia_eta:
+          classificazione_eta_1: 'Da 56 a 60 anni'
+          classificazione_eta_2: 'Da 55 a 59 anni'
+          classificazione_eta_3: 'Da 50 a 64 anni'
+        malattia_ha_classificazione_cause_esterne:
+          codice_cause_esterne: 801
+          descrizione_cause_estere: 'Frattura della base del cranio'
+          sotto_settore_cause_esterne: 'Fratture del cranio, della colonna vertebrale e del tronco'
+          settore_cause_esterne: 'Accidenti, avvelenamenti e traumatismi secondo la natura della lesione'
+        malattia_ha_agente_causale:
+          codice_agente_causale: 60110402
+          descrizione_agente_causale: 'Silice cristallizzata cristobalite'
+          codice_gruppo_agente_causale: 1
+          descrizione_gruppo_agente_causale: 'Polveri'
+        malattia_ha_tipo_trattazione:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tipo-trattazione/tipo-trattazione.oas3.yaml#/components/schemas/TipoTrattazione/example"
+        malattia_ha_tipo_pratica:
+          codice_tipo_pratica: 'D'
+          descrizione_tipo_pratica: 'Denuncia'
+        malattia_ha_tipo_lavoratore:
+          codice_tipo_lavoratore: 'E'
+          descrizione_tipo_lavoratore: 'Socio'
+        malattia_relativo_a_mansione:
+          codice_mansione_l1: '2'
+          descrizione_mansione_l1: 'Professioni intellettuali, scientifiche e di elevata specializzazione'
+          codice_mansione_l2: '2.6'
+          descrizione_mansione_l2: 'Specialisti della formazione e della ricerca'
+          codice_mansione_l3: '2.6.3'
+          descrizione_mansione_l3: 'Professori di scuola secondaria, post'
+          codice_mansione_l4: '2.6.3.2'
+          descrizione_mansione_l4: 'Professori di scuola secondaria superiore'
+          codice_mansione_l5: '2.6.3.2.6'
+          descrizione_mansione_l5: 'Professori di scienze giuridiche, economiche e sociali nella scuola secondaria superiore'
+          codice_mansione_l6: '2.6.3.2.6.1'
+          descrizione_mansione_l6: 'docente di economia'
+        malattia_ha_grado_di_menomazione:
+          percentuale_grado_menomazione: 8
+          descrizione_grado_menomazione: '008'
+        malattia_ha_decodifica_istruttoria_morte:
+          codice_decodifica_istruttoria_morte: '005'
+          descrizione_decodifica_istruttoria_morte: 'Istruttoria Incompleta. Pratica ad esame medico'
+
+    GradoDiInabilita:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/GradoDiInabilitaINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+        descrizione_inabilita: descrizioneGradoDiInabilita
+        percentuale_inabilita: percentualeGradoDiInabilita
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la percentuale con cui si misura il livello di perdita della capacità lavorativa complessiva in conseguenza di infortunio sul lavoro o di malattia professionale in regime Testo Unico.
+          Lo schema è associato a https://w3id.org/italia/work-accident/onto/adm_serv/GradoDiInabilitaINAIL.
+      required:
+      - descrizione_inabilita
+      - percentuale_inabilita
+      properties:
+        descrizione_inabilita:
+          type: string
+          maxLength: 10
+        percentuale_inabilita:
+          type: integer
+          format: int32
+          minimum: 0
+          maximum: 100
+      example:
+        descrizione_inabilita: '003'
+        percentuale_inabilita: 3
+
+    SettoreAttivita:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/core/SettoreAttivita
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/core/"
+        codice_tipo_settore_attivita: codiceTipoSettoreAttivita
+        descrizione_tipo_settore_attivita: descrizioneTipoSettoreAttivita
+      additionalProperties: true
+      description:
+          Questo schema rappresenta il settore di attività economica ed è associato a https://w3id.org/italia/work-accident/onto/core/SettoreAttivita.
+      required:
+      - codice_tipo_settore_attivita
+      - descrizione_tipo_settore_attivita
+      properties:
+        codice_settore_attivita:
+          type: integer
+          format: int32
+        descrizione_settore_attivita:
+          type: string
+          maxLength: 50
+      example:
+        codice_tipo_settore_attivita: 2
+        descrizione_tipo_settore_attivita: 'Artigianato'
+
+    GestioneAssicurativa:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/GestioneAssicurativaINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+        gruppo_gestione_assicurativa: gruppoGestioneAssicurativa
+        tipo_gestione_assicurativa: tipoGestioneAssicurativa
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la categoria che evidenzia in quale gestione/settore è stata inquadrata l'attività assicurata.
+          Lo schema è associato a https://w3id.org/italia/work-accident/onto/adm_serv/GestioneAssicurativaINAIL.
+      required:
+      - gruppo_gestione_assicurativa
+      - tipo_gestione_assicurativa
+      properties:
+        gruppo_gestione_assicurativa:
+          type: string
+          maxLength: 255
+        tipo_gestione_assicurativa:
+          type: string
+          maxLength: 255
+      example:
+        gruppo_gestione_assicurativa: 'Ordinarie'
+        tipo_gestione_assicurativa: 'Dipendenti'
+
+    VoceDiTariffa:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/VoceDiTariffaINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+        codice_voce_tariffa: codiceVoceDiTariffa
+        descrizione_voce_tariffa: descrizioneVoceDiTariffa
+        codice_settore_attivita: codiceSettoreAttivita
+        descrizione_settore_attivita: descrizioneSettoreAttivita
+      additionalProperties: true
+      description:
+          Le Tariffe rappresentano un elenco di lavorazioni che servono a classificare l'attività di un'azienda ai fini assicurativi;
+          la voce di tariffa ricomprende le lavorazioni produttive od operative, considerate come complesso unitario e ne definisce la rischiosità;
+          Lo schema è associato a https://w3id.org/italia/work-accident/onto/adm_serv/VoceDiTariffaINAIL.
+      required:
+      - codice_voce_tariffa
+      - descrizione_voce_tariffa
+      - codice_settore_attivita
+      - descrizione_settore_attivita
+      properties:
+        codice_voce_tariffa:
+          type: integer
+          format: int64
+        descrizione_voce_tariffa:
+          type: string
+          maxLength: 255
+        codice_settore_attivita:
+          type: integer
+          format: int32
+        descrizione_settore_attivita:
+          type: string
+          maxLength: 255
+      example:
+        codice_voce_tariffa: 2707
+        descrizione_voce_tariffa: '2707 - Uffici scolastici regionali - scuole del primo ciclo'
+        codice_settore_attivita: 7
+        descrizione_settore_attivita: '7 - Conto stato'
+
+    NaturaLesione:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/NaturaLesioneINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+        descrizione_natura_lesione: descrizioneNaturaLesione
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la natura della lesione ed è associato a https://w3id.org/italia/work-accident/onto/adm_serv/NaturaLesioneINAIL.
+      required:
+      - descrizione_natura_lesione
+      properties:
+        descrizione_natura_lesione:
+          type: string
+          maxLength: 255
+      example:
+        descrizione_natura_lesione: 'Lussazione, distorsione, distrazione'
+
+    SedeLesione:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/SedeLesioneINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+        area_sede_lesione: areaSedeLesione
+        macroarea_sede_lesione: macroareaSedeLesione
+        descrizione_sede_lesione: descrizioneSedeLesione
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la classificazione della sede delle lesioni adottata da Inail ed è
+          associato a https://w3id.org/italia/work-accident/onto/adm_serv/SedeLesioneINAIL.
+      required:
+      - area_sede_lesione
+      - macroarea_sede_lesione
+      - descrizione_sede_lesione
+      properties:
+        area_sede_lesione:
+          type: string
+          maxLength: 255
+        macroarea_sede_lesione:
+          type: string
+          maxLength: 255
+        descrizione_natura_lesione:
+          type: string
+          maxLength: 255
+      example:
+        area_sede_lesione: 'Cingolo toracico'
+        macroarea_sede_lesione: 'Torace e organi interni'
+        descrizione_sede_lesione: 'Cingolo toracico destro'
+
+    GestioneContabile:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/GestioneContabileINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+        codice_tipo_gestione_contabile: codiceTipoGestioneContabile
+        descrizione_tipo_gestione_contabile: descrizioneTipoGestioneContabile
+        descrizione_gestione_contabile: descrizioneGestioneContabile
+        codice_gestione_contabile_aggr: codiceGestioneContabileAggregata
+        descrizione_gestione_contabile_aggr: descrizioneGestioneContabileAggregata
+      additionalProperties: true
+      description:
+          Questo schema rappresenta il sistema di classificazione dell'evento
+          lesivo ai fini della imputazione contabile ai capitoli di spesa,
+          ed è associato a https://w3id.org/italia/work-accident/onto/adm_serv/GestioneContabileINAIL.
+      required:
+      - codice_tipo_gestione_contabile
+      - descrizione_tipo_gestione_contabile
+      - descrizione_gestione_contabile
+      - codice_gestione_contabile_aggr
+      - descrizione_gestione_contabile_aggr
+      properties:
+        codice_tipo_gestione_contabile:
+          type: string
+          maxLength: 50
+        descrizione_tipo_gestione_contabile:
+          type: string
+          maxLength: 255
+        descrizione_gestione_contabile:
+          type: string
+          maxLength: 255
+        codice_gestione_contabile_aggr:
+          type: integer
+          format: int32
+        descrizione_gestione_contabile_aggr:
+          type: string
+          maxLength: 255
+      example:
+        codice_tipo_gestione_contabile: 'S'
+        descrizione_tipo_gestione_contabile: 'Conto stato'
+        descrizione_gestione_contabile: 'Infortuni dipendenti dello stato'
+        codice_gestione_contabile_aggr: 3
+        descrizione_gestione_contabile_aggr: '3 - Conto stato dipendenti'
+
+    FasciaPeriodoMorte:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/FasciaPeriodoMorteINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+        descrizione_fascia: descrizioneFasciaPeriodoMorte
+        limite_inferiore: limiteInferioreFasciaPeriodoMorte
+        limite_superiore: limiteSuperioreFasciaPeriodoMorte
+      additionalProperties: true
+      description:
+          Questo schema rappresenta il numero di giorni trascorsi tra l'evento lesivo
+          e il decesso oppure se la morte è avvenuta sul colpo ed è associato a https://w3id.org/italia/work-accident/onto/adm_serv/FasciaPeriodoMorteINAIL.
+      required:
+      - descrizione_fascia
+      - limite_inferiore
+      - limite_superiore
+      properties:
+        descrizione_fascia:
+          type: string
+          maxLength: 50
+        limite_inferiore:
+          type: integer
+          format: int32
+        limite_superiore:
+          type: integer
+          format: int32
+      example:
+        descrizione_fascia: 'Da 16 a 30 gg'
+        limite_inferiore: 16
+        limite_superiore: 30
+
+    DefinizioneMorte:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/DefinizioneMorteINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+        codice_definizione_morte: codiceDefinizioneMorte
+        descrizione_classificazione_morte: descrizioneClassificazioneMorte
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la definizione morte, ovvero la cessazione delle funzioni vitali negli organismi viventi e nell'uomo.
+          Viene in rilievo quando sia riconducibile ad un infortunio sul lavoro o ad una malattia professionali, nonché quando interessi persone che percepiscono prestazioni economiche o considerate ai fini del calcolo dell'importo della rendita diretta.
+          Lo schema è associato a https://w3id.org/italia/work-accident/onto/adm_serv/DefinizioneMorteINAIL.
+      required:
+      - codice_definizione_morte
+      - descrizione_classificazione_morte
+      properties:
+        codice_definizione_morte:
+          type: string
+          maxLength: 50
+        descrizione_classificazione_morte:
+          type: string
+          maxLength: 50
+      example:
+        codice_definizione_morte: 'AC'
+        descrizione_classificazione_morte: 'Accolta'
+
+    QualificaAssicurativa:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/QualificaAssicurativaINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+        codice_qualifica_assicurativa: codiceQualificaAssicurativa
+        descrizione_qualifica_assicurativa: descrizioneQualificaAssicurativa
+        gestione_qualifica_assicurativa: gestioneQualificaAssicurativa
+        tipo_lavoratore_qualifica_assicurativa: tipoLavoratoreQualificaAssicurativa
+      additionalProperties: true
+      description:
+          Questo schema rappresenta l'anagrafica della tipologia di qualifica assicurativa ed è associato a https://w3id.org/italia/work-accident/onto/adm_serv/QualificaAssicurativaINAIL.
+          La qualifica assicurativa nasce dalla concatenazione del tipo di gestione e la qualifica professionale.
+      required:
+      - codice_qualifica_assicurativa
+      - descrizione_qualifica_assicurativa
+      - gestione_qualifica_assicurativa
+      - tipo_lavoratore_qualifica_assicurativa
+      properties:
+        codice_qualifica_assicurativa:
+          type: string
+          maxLength: 50
+        descrizione_qualifica_assicurativa:
+          type: string
+          maxLength: 255
+        gestione_qualifica_assicurativa:
+          type: string
+          maxLength: 255
+        tipo_lavoratore_qualifica_assicurativa:
+          type: string
+          maxLength: 255
+      example:
+        codice_qualifica_assicurativa: '12A'
+        descrizione_qualifica_assicurativa: 'Socio di cooperativa agricola'
+        gestione_qualifica_assicurativa: 'Agricoltura'
+        tipo_lavoratore_qualifica_assicurativa: 'Cooperative'
+
+    AgenteMateriale:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/AgenteMaterialeINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+        codice_agente_materiale: codiceAgenteMateriale
+        descrizione_agente_materiale: descrizioneAgenteMateriale
+        codice_gruppo_agente_materiale: codiceGruppoAgenteMatreriale
+        descrizione_gruppo_agente_materiale: descrizioneGruppoAgenteMatreriale
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la classificazione degli agenti materiali adottata dall'INAIL ed è associato a https://w3id.org/italia/work-accident/onto/adm_serv/AgenteMaterialeINAIL.
+      required:
+      - codice_agente_materiale
+      - descrizione_agente_materiale
+      - codice_gruppo_agente_materiale
+      - descrizione_gruppo_agente_materiale
+      properties:
+        codice_agente_materiale:
+          type: integer
+          format: int32
+        descrizione_agente_materiale:
+          type: string
+          maxLength: 255
+        codice_gruppo_agente_materiale:
+          type: integer
+          format: int32
+        descrizione_gruppo_agente_materiale:
+          type: string
+          maxLength: 255
+      example:
+        codice_agente_materiale: 10
+        descrizione_agente_materiale: 'Sollevamento e/o stoccaggio e/o smistamento materiali'
+        codice_gruppo_agente_materiale: 1
+        descrizione_gruppo_agente_materiale: 'Mezzi di sollevamento e trasporto'
+
+    ClassificazioneContrattoCnel:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/ClassificazioneContrattoCNEL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+        codice_classificazione_cnel: codiceClassificazioneCNEL
+        descrizione_classificazione cnel: descrizioneClassificazioneCNEL
+        categoria_classificazione_cnel: categoriaClassificazioneCNEL
+        settore_classificazione_cnel: settoreClassificazioneCNEL
+      additionalProperties: true
+      description:
+          Il contratto collettivo nazionale di lavoro (CCNL), è il contratto di lavoro stipulato dalle organizzazioni rappresentanti degli interessi dei datori di lavoro e dalle associazioni rappresentanti dei lavoratori.
+          Lo schema è associato a https://w3id.org/italia/work-accident/onto/adm_serv/ClassificazioneContrattoCNEL.
+      required:
+      - codice_classificazione_cnel
+      - descrizione_classificazione cnel
+      - categoria_classificazione_cnel
+      - settore_classificazione_cnel
+      properties:
+        codice_classificazione_cnel:
+          type: string
+          maxLength: 50
+        descrizione_classificazione cnel:
+          type: string
+          maxLength: 255
+        categoria_classificazione_cnel:
+          type: string
+          maxLength: 50
+        settore_classificazione_cnel:
+          type: string
+          maxLength: 255
+      example:
+        codice_classificazione_cnel: 'A'
+        descrizione_classificazione cnel: 'Sistemazioni idraulico forestali'
+        categoria_classificazione_cnel: 'A181'
+        settore_classificazione_cnel: 'Agricoltura'
+
+    ClassificazioneFasciaEta:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/ClassificazioneFasciaEtaINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+        classificazione_eta_1: classificazioneEtaFascia1
+        classificazione_eta_2: classificazioneEtaFascia2
+        classificazione_eta_3: classificazioneEtaFascia3
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la classificazione delle fasce d'età ed è associato a https://w3id.org/italia/work-accident/onto/adm_serv/ClassificazioneFasciaEtaINAIL.
+      required:
+      - classificazione_eta_1
+      - classificazione_eta_2
+      - classificazione_eta_3
+      properties:
+        classificazione_eta_1:
+          type: string
+          maxLength: 50
+        classificazione_eta_2:
+          type: string
+          maxLength: 50
+        classificazione_eta_3:
+          type: string
+          maxLength: 50
+      example:
+        classificazione_eta_1: 'Da 56 a 60 anni'
+        classificazione_eta_2: 'Da 55 a 59 anni'
+        classificazione_eta_3: 'Da 50 a 64 anni'
+
+    ClassificazioneCauseEsterne:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/ClassificazioneCauseEsterneINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+        codice_cause_esterne: codiceClassificazioneCauseEsterne
+        descrizione_cause_estere: descrizioneClassificazioneCauseEsterne
+        sotto_settore_cause_esterne: sottoSettoreClassificazioneCauseEsterne
+        settore_cause_esterne: settoreClassificazioneCauseEsterne
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la classificazione supplementare delle cause esterne
+          di traumatismo ed avvelenamento ed è associato a https://w3id.org/italia/work-accident/onto/adm_serv/ClassificazioneCauseEsterneINAIL.
+      required:
+      - codice_cause_esterne
+      - descrizione_cause_estere
+      - sotto_settore_cause_esterne
+      - settore_cause_esterne
+      properties:
+        codice_cause_esterne:
+          type: integer
+          format: int64
+        descrizione_cause_estere:
+          type: string
+          maxLength: 255
+        sotto_settore_cause_esterne:
+          type: string
+          maxLength: 255
+        settore_cause_esterne:
+          type: string
+          maxLength: 255
+      example:
+        codice_cause_esterne: 801
+        descrizione_cause_estere: 'Frattura della base del cranio'
+        sotto_settore_cause_esterne: 'Fratture del cranio, della colonna vertebrale e del tronco'
+        settore_cause_esterne: 'Accidenti, avvelenamenti e traumatismi secondo la natura della lesione'
+
+    AgenteCausale:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/AgenteCausaleINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+        codice_agente_causale: codiceAgenteCausale
+        descrizione_agente_causale: descrizioneAgenteCausale
+        codice_gruppo_agente_causale: codiceGruppoAgenteCausale
+        descrizione_gruppo_agente_causale: descrizioneGruppoAgenteCausale
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la decodifica dell'agente, della lavorazione o dell'esposizione che può essere causa o concausa di malattia professionale
+          ed è associato a https://w3id.org/italia/work-accident/onto/adm_serv/AgenteCausaleINAIL.
+      required:
+      - codice_agente_causale
+      - descrizione_agente_causale
+      - codice_gruppo_agente_causale
+      - descrizione_gruppo_agente_causale
+      properties:
+        codice_agente_causale:
+          type: integer
+          format: int64
+        descrizione_agente_causale:
+          type: string
+          maxLength: 255
+        codice_gruppo_agente_causale:
+          type: integer
+          format: int32
+        descrizione_gruppo_agente_causale:
+          type: string
+          maxLength: 255
+      example:
+        codice_agente_causale: 60110402
+        descrizione_agente_causale: 'Silice cristallizzata cristobalite'
+        codice_gruppo_agente_causale: 1
+        descrizione_gruppo_agente_causale: 'Polveri'
+
+    TipoPratica:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/TipoPraticaINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+        codice_tipo_pratica: codiceTipoPratica
+        descrizione_tipo_pratica: descrizioneTipoPratica
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la classificazione di una pratica in funzione del tipo
+          di segnalazione (denuncia o comunicazione) ed è associato a https://w3id.org/italia/work-accident/onto/adm_serv/TipoPraticaINAIL.
+      required:
+      - codice_tipo_pratica
+      - descrizione_tipo_pratica
+      properties:
+        codice_tipo_pratica:
+          type: string
+          maxLength: 50
+        descrizione_tipo_pratica:
+          type: string
+          maxLength: 255
+      example:
+        codice_tipo_pratica: 'D'
+        descrizione_tipo_pratica: 'Denuncia'
+
+    TipoLavoratore:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/TipoLavoratoreINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+        codice_tipo_lavoratore: codiceTipoLavoratore
+        descrizione_tipo_lavoratore: descrizioneTipoLavoratore
+      additionalProperties: true
+      description:
+          Questo schema rappresenta l'elenco delle tipologie di lavoratore riferite alla tipologia di datore di lavoro dei settori industria, artigianato, servizi e Pubbliche Amministrazioni titolari di P.A.T.
+          Lo schema è associato a https://w3id.org/italia/work-accident/onto/adm_serv/TipoLavoratoreINAIL.
+      required:
+      - codice_tipo_lavoratore
+      - descrizione_tipo_lavoratore
+      properties:
+        codice_tipo_lavoratore:
+          type: string
+          maxLength: 50
+        descrizione_tipo_lavoratore:
+          type: string
+          maxLength: 255
+      example:
+        codice_tipo_lavoratore: 'E'
+        descrizione_tipo_lavoratore: 'Socio'
+
+    Mansione:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/MansioneINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+        codice_mansione_l1: codiceMansioneLivello1
+        descrizione_mansione_l1: descrizioneMansioneLivello1
+        codice_mansione_l2: codiceMansioneLivello2
+        descrizione_mansione_l2: descrizioneMansioneLivello2
+        codice_mansione_l3: codiceMansioneLivello3
+        descrizione_mansione_l3: descrizioneMansioneLivello3
+        codice_mansione_l4: codiceMansioneLivello4
+        descrizione_mansione_l4: descrizioneMansioneLivello4
+        codice_mansione_l5: codiceMansioneLivello5
+        descrizione_mansione_l5: descrizioneMansioneLivello5
+        codice_mansione_l6: codiceMansioneLivello6
+        descrizione_mansione_l6: descrizioneMansioneLivello6
+      additionalProperties: true
+      description:
+          Il mansionario Inail è realizzato in un'ottica di analisi del rischio e individua le singole professioni.
+          Lo schema è associato a https://w3id.org/italia/work-accident/onto/adm_serv/MansioneINAIL.
+      required:
+      - codice_mansione_l1
+      - descrizione_mansione_l1
+      - codice_mansione_l2
+      - descrizione_mansione_l2
+      - codice_mansione_l3
+      - descrizione_mansione_l3
+      - codice_mansione_l4
+      - descrizione_mansione_l4
+      - codice_mansione_l5
+      - descrizione_mansione_l5
+      - codice_mansione_l6
+      - descrizione_mansione_l6
+      properties:
+        codice_mansione_l1:
+          type: string
+          maxLength: 50
+        descrizione_mansione_l1:
+          type: string
+          maxLength: 255
+        codice_mansione_l2:
+          type: string
+          maxLength: 50
+        descrizione_mansione_l2:
+          type: string
+          maxLength: 255
+        codice_mansione_l3:
+          type: string
+          maxLength: 50
+        descrizione_mansione_l3:
+          type: string
+          maxLength: 255
+        codice_mansione_l4:
+          type: string
+          maxLength: 50
+        descrizione_mansione_l4:
+          type: string
+          maxLength: 255
+        codice_mansione_l5:
+          type: string
+          maxLength: 50
+        descrizione_mansione_l5:
+          type: string
+          maxLength: 255
+        codice_mansione_l6:
+          type: string
+          maxLength: 50
+        descrizione_mansione_l6:
+          type: string
+          maxLength: 255
+      example:
+        codice_mansione_l1: '2'
+        descrizione_mansione_l1: 'Professioni intellettuali, scientifiche e di elevata specializzazione'
+        codice_mansione_l2: '2.6'
+        descrizione_mansione_l2: 'Specialisti della formazione e della ricerca'
+        codice_mansione_l3: '2.6.3'
+        descrizione_mansione_l3: 'Professori di scuola secondaria, post'
+        codice_mansione_l4: '2.6.3.2'
+        descrizione_mansione_l4: 'Professori di scuola secondaria superiore'
+        codice_mansione_l5: '2.6.3.2.6'
+        descrizione_mansione_l5: 'Professori di scienze giuridiche, economiche e sociali nella scuola secondaria superiore'
+        codice_mansione_l6: '2.6.3.2.6.1'
+        descrizione_mansione_l6: 'docente di economia'
+
+    GradoDiMenomazione:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/GradoDiMenomazioneINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+        percentuale_grado_menomazione: percentualeGradoDiMenomazione
+        descrizione_grado_menomazione: descrizioneGradoDiMenomazione
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la percentuale con cui si misura il livello di menomazione dell'integrità psicofisica complessiva in conseguenza di infortunio o malattia professionale in regime di danno biologico.
+          Lo schema è associato a https://w3id.org/italia/work-accident/onto/adm_serv/GradoDiMenomazioneINAIL.
+      required:
+      - percentuale_grado_menomazione
+      - descrizione_grado_menomazione
+      properties:
+        percentuale_grado_menomazione:
+          type: integer
+          format: int32
+        descrizione_grado_menomazione:
+          type: string
+          maxLength: 50
+      example:
+        percentuale_grado_menomazione: 8
+        descrizione_grado_menomazione: '008'
+
+    DecodificaIstruttoriaMorte:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/DecodificaIstruttoriaMorteINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+        codice_decodifica_istruttoria_morte: codiceDecodificaIstruttoriaMorte
+        descrizione_decodifica_istruttoria_morte: descrizioneDecodificaIstruttoriaMorte
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la decodifica istruttoria morte ed è associato a https://w3id.org/italia/work-accident/onto/adm_serv/DecodificaIstruttoriaMorteINAIL.
+      required:
+      - codice_decodifica_istruttoria_morte
+      - descrizione_decodifica_istruttoria_morte
+      properties:
+        codice_decodifica_istruttoria_morte:
+          type: string
+          maxLength: 50
+        descrizione_decodifica_istruttoria_morte:
+          type: string
+          maxLength: 255
+      example:
+        codice_decodifica_istruttoria_morte: '005'
+        descrizione_decodifica_istruttoria_morte: 'Istruttoria Incompleta. Pratica ad esame medico'
+
+    TipoTecnopatia:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/TipoTecnopatiaINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+        voce_tecnopatia: voceTipoTecnopatia
+        descrizione_tecnopatia: descrizioneTipoTecnopatia
+        malattia_tabellata: malattiaTabellata
+      additionalProperties: true
+      description:
+          Questo schema rappresenta il tipo di tecnopatia, ovvero la classificazione malattia professionale,
+          ed è associato a https://w3id.org/italia/work-accident/onto/adm_serv/TipoTecnopatiaINAIL.
+      required:
+      - descrizione_tecnopatia
+      - malattia_tabellata
+      properties:
+        descrizione_tecnopatia:
+          type: string
+          maxLength: 250
+        malattia_tabellata:
+          type: string
+          maxLength: 50
+      example:
+        descrizione_tecnopatia: 'Acido ftalico'
+        malattia_tabellata: 'Tabellate'
+
+    TipoMalattia:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/TipoMalattiaINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+        settore_tipo_malattia: settoreTipoMalattia
+        descrizione_tipo_malattia: descrizioneTipoMalattia
+      additionalProperties: true
+      description:
+          Questo schema rappresenta il tipo di malattia, ovvero la classificazione delle malattie professionali,
+          ed è associato a https://w3id.org/italia/work-accident/onto/adm_serv/TipoMalattiaINAIL.
+      required:
+      - settore_tipo_malattia
+      - descrizione_tipo_malattia
+      properties:
+        settore_tipo_malattia:
+          type: string
+          maxLength: 250
+        descrizione_tipo_malattia:
+          type: string
+          maxLength: 250
+      example:
+        settore_tipo_malattia: 'Disturbi psichici'
+        descrizione_tipo_malattia: 'Altre forme psicotiche'
+
+    ClassificazioneInternazionaleMalattie:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/ClassificazioneInternazionaleMalattieICD
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+        codice_icdx: codiceICD
+        descrizione_icdx: descrizioneICD
+      additionalProperties: true
+      description:
+          Questo schema rappresenta il tipo di malattia secondo la classificazione
+          internazionale delle malattie (ICD) decima versione ed è associato a https://w3id.org/italia/work-accident/onto/adm_serv/ClassificazioneInternazionaleMalattieICD.
+      required:
+      - codice_icdx
+      - descrizione_icdx
+      properties:
+        codice_icdx:
+          type: string
+          maxLength: 250
+        descrizione_icdx:
+          type: string
+          maxLength: 250
+      example:
+        codice_icdx: F33
+        descrizione_icdx: 'Disturbo depressivo ricorrente'

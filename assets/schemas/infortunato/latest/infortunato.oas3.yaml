@@ -1,0 +1,65 @@
+openapi: 3.0.3
+info:
+  title: Schema dell'Infortunato sul lavoro
+  version: 202306.27.00
+  x-summary: Schema dell'infortunato sul lavoro compatibile con l'ontologia INAIL.
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  termsOfService: https://creativecommons.org/licenses/by/4.0/
+  contact:
+    name: Anna Maria De Paoli
+    email: a.depaoli@inail.it
+   # url:
+  description: |-
+   Per infortunato sul lavoro si intende ogni lavoratore con una lesione originata, in occasione di lavoro, da causa violenta che determini la morte della persona o che comprometta parzialmente o totalmente la capacità lavorativa.
+
+    La metadatazione semantica degli schemi si basa sul documento
+    [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html)
+    che introduce le keyword x-jsonld-type e x-jsonld-context.
+paths: {}
+servers: []
+tags: []
+components:
+  schemas:
+    PersonaFisica:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/persona-fisica/persona-fisica.oas3.yaml#/components/schemas/PersonaFisica"
+
+    IdInfortunato:
+        type: integer
+        format: int64
+        description:
+            Campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità.
+            Associato a https://w3id.org/italia/work-accident/onto/adm_serv/codiceSoggettoEventoLesivo.
+        example: 12345678
+
+    Infortunato:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/InfortunatoSulLavoro
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+        id_infortunato: codiceSoggettoEventoLesivo
+        eta_all_accadimento_infortunato: etaAllAccadimento
+        infortunato_persona_fisica:
+          "@id": soggettoEventoLesivoRelativoAPersonaFisica
+      additionalProperties: true
+      description:
+          Questo schema rappresenta un infortunato sul lavoro ed è associato ad https://w3id.org/italia/work-accident/onto/adm_serv/InfortunatoSulLavoro.
+      required:
+      - id_infortunato
+      - eta_all_accadimento_infortunato
+      properties:
+        id_infortunato:
+          $ref: "#/components/schemas/IdInfortunato"
+        eta_all_accadimento_infortunato:
+          type: integer
+          format: int32
+        infortunato_persona_fisica:
+          type: object
+          items:
+            $ref: "#/components/schemas/PersonaFisica"
+      example:
+        id_infortunato: 12345678
+        eta_all_accadimento_infortunato: 23
+        infortunato_persona_fisica:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/persona-fisica/persona-fisica.oas3.yaml#/components/schemas/PersonaFisica/example"
