@@ -1,0 +1,161 @@
+openapi: 3.0.3
+info:
+  title: Schema della Riapertura di una Trattazione
+  version: 202306.27.00
+  x-summary: Schema della riapertura di una trattazione compatibile con l'ontologia INAIL.
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  termsOfService: https://creativecommons.org/licenses/by/4.0/
+  contact:
+    name: Anna Maria De Paoli
+    email: a.depaoli@inail.it
+   # url:
+  description: |-
+   La trattazione amministrativa dell'evento lesivo si conclude con una definizione e dall'esito della definizione scaturisce un provvedimento.
+   La trattazione può essere, in alcuni casi, riaperta e successivamente ridefinita. La riapertura viene effettuata sempre per volere del soggetto che ha subito l'evento lesivo.
+   Dalla riapertura può scaturire un contenzioso giudiziario, ma può essere risolta anche in ambito amministrativo con lo strumento dell'opposizione.
+
+    La metadatazione semantica degli schemi si basa sul documento
+    [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html)
+    che introduce le keyword x-jsonld-type e x-jsonld-context.
+paths: {}
+servers: []
+tags: []
+components:
+  schemas:
+    EsitoDefinizione:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/esito-definizione/esito-definizione.oas3.yaml#/components/schemas/EsitoDefinizione"
+    MalattiaProfessionale:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/malattia-professionale/malattia-professionale.oas3.yaml#/components/schemas/MalattiaProfessionale"
+    Infortunio:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/infortunio/infortunio.oas3.yaml#/components/schemas/Infortunio"
+    TipoTrattazione:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tipo-trattazione/tipo-trattazione.oas3.yaml#/components/schemas/TipoTrattazione"
+
+    IdRiapertura:
+      type: integer
+      format: int64
+      description:
+          Campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità.
+          Associato a https://w3id.org/italia/work-accident/onto/adm_serv/idRiapertura.
+      example: 111000000
+
+    Riapertura:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/RiaperturaINAIL
+      # This custom property defines the associated json-ld
+      #   context that can be used to semantically describe
+      #   the instances.
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+        id_riapertura: idRiapertura
+        data_apertura_riapertura: dataAperturaRiapertura
+        data_inizio_riapertura: dataInizioRiapertura
+        data_inizio_trattazione_riapertura: dataInizioTrattazioneRiapertura
+        data_fine_riapertura: dataFineRiapertura
+        giorni_definizione_riapertura: numeroGiorniDefinizioneRiapertura
+        motivazione_contenzioso: motivazioneContenziosoRiapertura
+        tipo_riapertura: tipoRiapertura
+        tipo_conclusione_riapertura: tipoConclusioneRiapertura
+        tipo_conclusione_precedente: tipoConclusionePrecedenteRiapertura
+        riapertura_esito:
+          "@id": riaperturaHaEsitoDefinizione
+        riapertura_esito_trattazione:
+          "@id": riaperturaHaEsitoDefinizioneTrattazione
+        riapertura_tipo_trattazione:
+           "@id": riaperturaRelativaATipoTrattazione
+        riapertura_relativa_a_mp:
+           "@id": riaperturaRelativaAEvento
+        riapertura_relativa_a_inf:
+           "@id": riaperturaRelativaAEvento
+      additionalProperties: true
+      description:
+          Questo schema rappresenta la riapertura di una trattazione
+          ed è associato a https://w3id.org/italia/work-accident/onto/adm_serv/RiaperturaINAIL.
+      required:
+      - id_riapertura
+      - data_apertura_riapertura
+      - data_inizio_riapertura
+      - data_inizio_trattazione_riapertura
+      - data_fine_riapertura
+      - giorni_definizione_riapertura
+      - motivazione_contenzioso
+      - tipo_riapertura
+      - tipo_conclusione_riapertura
+      - tipo_conclusione_precedente
+      properties:
+        id_riapertura:
+          $ref: "#/components/schemas/IdRiapertura"
+        data_apertura_riapertura:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        data_inizio_riapertura:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        data_inizio_trattazione_riapertura:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        data_fine_riapertura:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        giorni_definizione_riapertura:
+          type: integer
+          format: int32
+        motivazione_contenzioso:
+          type: string
+          maxLength: 50
+        tipo_riapertura:
+          type: string
+          maxLength: 50
+        tipo_conclusione_riapertura:
+          type: string
+          maxLength: 50
+        tipo_conclusione_precedente:
+          type: string
+          maxLength: 50
+        riapertura_esito:
+          type: object
+          items:
+            $ref: "#/components/schemas/EsitoDefinizione"
+        riapertura_esito_trattazione:
+          type: object
+          items:
+            $ref: "#/components/schemas/EsitoDefinizione"
+        riapertura_tipo_trattazione:
+          type: object
+          items:
+            $ref: "#/components/schemas/TipoTrattazione"
+        riapertura_relativa_a_mp:
+          type: object
+          items:
+            $ref: "#/components/schemas/MalattiaProfessionale"
+        riapertura_relativa_a_inf:
+          type: object
+          items:
+            $ref: "#/components/schemas/Infortunio"
+      example:
+        id_riapertura: 111000000
+        data_apertura_riapertura: '1981-12-16'
+        data_inizio_riapertura: '1997-11-06'
+        data_inizio_trattazione_riapertura: '1981-12-16'
+        data_fine_riapertura: '1998-11-05'
+        giorni_definizione_riapertura: 512
+        motivazione_contenzioso: 'Percentuale di inabilità'
+        tipo_riapertura: 'Citazione'
+        tipo_conclusione_riapertura: 'Non definito'
+        tipo_conclusione_precedente: 'Non definito'
+        riapertura_esito:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/esito-definizione/esito-definizione.oas3.yaml#/components/schemas/EsitoDefinizione/example"
+        riapertura_esito_trattazione:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/esito-definizione/esito-definizione.oas3.yaml#/components/schemas/EsitoDefinizione/example"
+        riapertura_tipo_trattazione:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tipo-trattazione/tipo-trattazione.oas3.yaml#/components/schemas/TipoTrattazione/example"
+        riapertura_relativa_a_mp:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/malattia-professionale/malattia-professionale.oas3.yaml#/components/schemas/MalattiaProfessionale/example"
+        riapertura_relativa_a_inf:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/infortunio/infortunio.oas3.yaml#/components/schemas/Infortunio/example"

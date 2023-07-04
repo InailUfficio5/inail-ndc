@@ -1,0 +1,65 @@
+openapi: 3.0.3
+info:
+  title: Schema del Tecnopatico
+  version: 202306.27.00
+  x-summary: Schema del tecnopatico compatibile con l'ontologia INAIL.
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  termsOfService: https://creativecommons.org/licenses/by/4.0/
+  contact:
+    name: Anna Maria De Paoli
+    email: a.depaoli@inail.it
+   # url:
+  description: |-
+   Il tecnopatico è qualsiasi lavoratore affetto da malattia professionale.
+
+    La metadatazione semantica degli schemi si basa sul documento
+    [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html)
+    che introduce le keyword x-jsonld-type e x-jsonld-context.
+paths: {}
+servers: []
+tags: []
+components:
+  schemas:
+    PersonaFisica:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/persona-fisica/persona-fisica.oas3.yaml#/components/schemas/PersonaFisica"
+
+    IdTecnopatico:
+        type: integer
+        format: int64
+        description:
+            Campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità.
+            Associato a https://w3id.org/italia/work-accident/onto/adm_serv/codiceSoggettoEventoLesivo.
+        example: 12345678
+
+    Tecnopatico:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/Tecnopatico
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+        id_tecnopatico: codiceSoggettoEventoLesivo
+        eta_all_accadimento_tecnopatico: etaAllAccadimento
+        tecnopatico_persona_fisica:
+          "@id": soggettoEventoLesivoRelativoAPersonaFisica
+      additionalProperties: true
+      description:
+          Questo schema rappresenta un tecnopatico ed è associato ad https://w3id.org/italia/work-accident/onto/adm_serv/Tecnopatico.
+      required:
+      - id_tecnopatico
+      - eta_all_accadimento_tecnopatico
+      properties:
+        id_tecnopatico:
+          $ref: "#/components/schemas/IdTecnopatico"
+        eta_all_accadimento_tecnopatico:
+          type: integer
+          format: int32
+        tecnopatico_persona_fisica:
+          type: object
+          items:
+            $ref: "#/components/schemas/PersonaFisica"
+      example:
+        id_tecnopatico: 12345678
+        eta_all_accadimento_tecnopatico: 23
+        tecnopatico_persona_fisica:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/persona-fisica/persona-fisica.oas3.yaml#/components/schemas/PersonaFisica/example"
