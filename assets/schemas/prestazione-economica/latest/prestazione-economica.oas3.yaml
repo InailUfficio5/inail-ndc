@@ -24,9 +24,9 @@ tags: []
 components:
   schemas:
     MalattiaProfessionale:
-      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/malattia-professionale/malattia-professionale.oas3.yaml#/components/schemas/MalattiaProfessionale"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/malattia-professionale/latest/malattia-professionale.oas3.yaml#/components/schemas/MalattiaProfessionale"
     Infortunio:
-      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/infortunio/infortunio.oas3.yaml#/components/schemas/Infortunio"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/infortunio/latest/infortunio.oas3.yaml#/components/schemas/Infortunio"
 
     IdPrestazioneEconomica:
       type: integer
@@ -74,6 +74,6 @@ components:
         id_prestazione: 001234567
         importo_prestazione: 377.01
         prestazione_relativa_a_mp:
-          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/malattia-professionale/malattia-professionale.oas3.yaml#/components/schemas/MalattiaProfessionale/example"
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/malattia-professionale/latest/malattia-professionale.oas3.yaml#/components/schemas/MalattiaProfessionale/example"
         prestazione_relativa_a_inf:
-          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/infortunio/infortunio.oas3.yaml#/components/schemas/Infortunio/example"
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/infortunio/latest/infortunio.oas3.yaml#/components/schemas/Infortunio/example"

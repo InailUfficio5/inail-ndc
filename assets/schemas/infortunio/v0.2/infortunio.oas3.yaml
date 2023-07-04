@@ -20,19 +20,19 @@ tags: []
 components:
   schemas:
     EsitoDefinizione:
-      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/esito-definizione/esito-definizione.oas3.yaml#/components/schemas/EsitoDefinizione"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/esito-definizione/v0.2/esito-definizione.oas3.yaml#/components/schemas/EsitoDefinizione"
     TipoIndennizzo:
-      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tipo-indennizzo/tipo-indennizzo.oas3.yaml#/components/schemas/TipoIndennizzo"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tipo-indennizzo/v0.2/tipo-indennizzo.oas3.yaml#/components/schemas/TipoIndennizzo"
     TipoTrattazione:
-      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tipo-trattazione/tipo-trattazione.oas3.yaml#/components/schemas/TipoTrattazione"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tipo-trattazione/v0.2/tipo-trattazione.oas3.yaml#/components/schemas/TipoTrattazione"
     Infortunato:
-      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/infortunato/infortunato.oas3.yaml#/components/schemas/Infortunato"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/infortunato/v0.2/infortunato.oas3.yaml#/components/schemas/Infortunato"
     PosizioneAssicurativaTerritoriale:
-      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/posizione-assicurativa-territoriale/posizione-assicurativa-territoriale.oas3.yaml#/components/schemas/PosizioneAssicurativaTerritoriale"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/posizione-assicurativa-territoriale/v0.2/posizione-assicurativa-territoriale.oas3.yaml#/components/schemas/PosizioneAssicurativaTerritoriale"
     SoggettoAssicurante:
-      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/soggetto-assicurante/soggetto-assicurante.oas3.yaml#/components/schemas/SoggettoAssicurante"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/soggetto-assicurante/v0.2/soggetto-assicurante.oas3.yaml#/components/schemas/SoggettoAssicurante"
     SedeInail:
-      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/sede-inail/sede-inail.oas3.yaml#/components/schemas/SedeInail"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/sede-inail/v0.2/sede-inail.oas3.yaml#/components/schemas/SedeInail"
 
     IdInfortunio:
       type: integer
@@ -327,7 +327,7 @@ components:
         data_infortunio: '2014-08-02'
         descrizione_infortunio: 'Negativo'
         infortunio_accaduto_a_infortunato:
-          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/infortunato/infortunato.oas3.yaml#/components/schemas/Infortunato/example"
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/infortunato/v0.2/infortunato.oas3.yaml#/components/schemas/Infortunato/example"
         infortunio_grado_inabilita_assunto:
           descrizione_inabilita: "003"
           percentuale_inabilita: 3
@@ -347,11 +347,11 @@ components:
           categoria_tipo_deviazione: 'Movimento del corpo senza sforzo fisico (che porta generalmente a una lesione esterna) - non precisato'
           descrizione_tipo_deviazione: 'Movimenti scoordinati, gesti intempestivi, inopportuni'
         infortunio_trattato_da_sede_inail:
-          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/sede-inail/sede-inail.oas3.yaml#/components/schemas/SedeInail/example"
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/sede-inail/v0.2/sede-inail.oas3.yaml#/components/schemas/SedeInail/example"
         infortunio_coinvolge_pat:
-          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/posizione-assicurativa-territoriale/posizione-assicurativa-territoriale.oas3.yaml#/components/schemas/PosizioneAssicurativaTerritoriale/example"
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/posizione-assicurativa-territoriale/v0.2/posizione-assicurativa-territoriale.oas3.yaml#/components/schemas/PosizioneAssicurativaTerritoriale/example"
         infortunio_coinvolge_soggetto_assicurante:
-          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/soggetto-assicurante/soggetto-assicurante.oas3.yaml#/components/schemas/SoggettoAssicurante/example"
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/soggetto-assicurante/v0.2/soggetto-assicurante.oas3.yaml#/components/schemas/SoggettoAssicurante/example"
         infortunio_ha_settore_attivita:
           codice_tipo_settore_attivita: 2
           descrizione_tipo_settore_attivita: 'Artigianato'
@@ -364,9 +364,9 @@ components:
           codice_settore_attivita: 7
           descrizione_settore_attivita: '7 - Conto stato'
         infortunio_ha_esito_definizione:
-          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/esito-definizione/esito-definizione.oas3.yaml#/components/schemas/EsitoDefinizione/example"
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/esito-definizione/v0.2/esito-definizione.oas3.yaml#/components/schemas/EsitoDefinizione/example"
         infortunio_ha_tipo_indennizzo:
-          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tipo-indennizzo/tipo-indennizzo.oas3.yaml#/components/schemas/TipoIndennizzo/example"
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tipo-indennizzo/v0.2/tipo-indennizzo.oas3.yaml#/components/schemas/TipoIndennizzo/example"
         infortunio_ha_natura_lesione:
           descrizione_natura_lesione: 'Lussazione, distorsione, distrazione'
         infortunio_ha_sede_lesione:
@@ -416,7 +416,7 @@ components:
           codice_gruppo_agente_causale: 1
           descrizione_gruppo_agente_causale: 'Polveri'
         infortunio_ha_tipo_trattazione:
-          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tipo-trattazione/tipo-trattazione.oas3.yaml#/components/schemas/TipoTrattazione/example"
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tipo-trattazione/v0.2/tipo-trattazione.oas3.yaml#/components/schemas/TipoTrattazione/example"
         infortunio_ha_tipo_pratica:
           codice_tipo_pratica: 'D'
           descrizione_tipo_pratica: 'Denuncia'

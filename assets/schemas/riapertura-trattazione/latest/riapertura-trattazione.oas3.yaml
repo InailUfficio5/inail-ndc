@@ -25,13 +25,13 @@ tags: []
 components:
   schemas:
     EsitoDefinizione:
-      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/esito-definizione/esito-definizione.oas3.yaml#/components/schemas/EsitoDefinizione"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/esito-definizione/latest/esito-definizione.oas3.yaml#/components/schemas/EsitoDefinizione"
     MalattiaProfessionale:
-      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/malattia-professionale/malattia-professionale.oas3.yaml#/components/schemas/MalattiaProfessionale"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/malattia-professionale/latest/malattia-professionale.oas3.yaml#/components/schemas/MalattiaProfessionale"
     Infortunio:
-      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/infortunio/infortunio.oas3.yaml#/components/schemas/Infortunio"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/infortunio/latest/infortunio.oas3.yaml#/components/schemas/Infortunio"
     TipoTrattazione:
-      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tipo-trattazione/tipo-trattazione.oas3.yaml#/components/schemas/TipoTrattazione"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tipo-trattazione/latest/tipo-trattazione.oas3.yaml#/components/schemas/TipoTrattazione"
 
     IdRiapertura:
       type: integer
@@ -150,12 +150,12 @@ components:
         tipo_conclusione_riapertura: 'Non definito'
         tipo_conclusione_precedente: 'Non definito'
         riapertura_esito:
-          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/esito-definizione/esito-definizione.oas3.yaml#/components/schemas/EsitoDefinizione/example"
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/esito-definizione/latest/esito-definizione.oas3.yaml#/components/schemas/EsitoDefinizione/example"
         riapertura_esito_trattazione:
-          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/esito-definizione/esito-definizione.oas3.yaml#/components/schemas/EsitoDefinizione/example"
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/esito-definizione/latest/esito-definizione.oas3.yaml#/components/schemas/EsitoDefinizione/example"
         riapertura_tipo_trattazione:
-          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tipo-trattazione/tipo-trattazione.oas3.yaml#/components/schemas/TipoTrattazione/example"
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/tipo-trattazione/latest/tipo-trattazione.oas3.yaml#/components/schemas/TipoTrattazione/example"
         riapertura_relativa_a_mp:
-          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/malattia-professionale/malattia-professionale.oas3.yaml#/components/schemas/MalattiaProfessionale/example"
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/malattia-professionale/latest/malattia-professionale.oas3.yaml#/components/schemas/MalattiaProfessionale/example"
         riapertura_relativa_a_inf:
-          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/infortunio/infortunio.oas3.yaml#/components/schemas/Infortunio/example"
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/infortunio/latest/infortunio.oas3.yaml#/components/schemas/Infortunio/example"

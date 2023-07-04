@@ -23,7 +23,7 @@ tags: []
 components:
   schemas:
     PersonaFisica:
-      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/persona-fisica/persona-fisica.oas3.yaml#/components/schemas/PersonaFisica"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/persona-fisica/v0.2/persona-fisica.oas3.yaml#/components/schemas/PersonaFisica"
 
     IdTecnopatico:
         type: integer
@@ -62,4 +62,4 @@ components:
         id_tecnopatico: 12345678
         eta_all_accadimento_tecnopatico: 23
         tecnopatico_persona_fisica:
-          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/persona-fisica/persona-fisica.oas3.yaml#/components/schemas/PersonaFisica/example"
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/persona-fisica/v0.2/persona-fisica.oas3.yaml#/components/schemas/PersonaFisica/example"

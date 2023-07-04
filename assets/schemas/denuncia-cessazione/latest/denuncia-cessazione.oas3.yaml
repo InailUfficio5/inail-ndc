@@ -19,9 +19,9 @@ tags: []
 components:
   schemas:
     SedeInail:
-      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/sede-inail/sede-inail.oas3.yaml#/components/schemas/SedeInail"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/sede-inail/latest/sede-inail.oas3.yaml#/components/schemas/SedeInail"
     SoggettoAssicurante:
-      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/soggetto-assicurante/soggetto-assicurante.oas3.yaml#/components/schemas/SoggettoAssicurante"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/soggetto-assicurante/latest/soggetto-assicurante.oas3.yaml#/components/schemas/SoggettoAssicurante"
 
     NumeroPraticaDenunciaCessazione:
       type: integer
@@ -86,6 +86,6 @@ components:
         codice_esito_pratica: 'C'
         descrizione_esito_pratica: 'Confermata'
         relativa_a_soggetto:
-          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/soggetto-assicurante/soggetto-assicurante.oas3.yaml#/components/schemas/SoggettoAssicurante/example"
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/soggetto-assicurante/latest/soggetto-assicurante.oas3.yaml#/components/schemas/SoggettoAssicurante/example"
         relativa_a_sede_inail:
-          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/sede-inail/sede-inail.oas3.yaml#/components/schemas/SedeInail/example"
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/sede-inail/latest/sede-inail.oas3.yaml#/components/schemas/SedeInail/example"

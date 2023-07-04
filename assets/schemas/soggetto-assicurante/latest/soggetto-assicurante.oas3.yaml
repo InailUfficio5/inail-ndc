@@ -23,7 +23,7 @@ tags: []
 components:
   schemas:
     SedeInail:
-      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/sede-inail/sede-inail.oas3.yaml#/components/schemas/SedeInail"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/sede-inail/latest/sede-inail.oas3.yaml#/components/schemas/SedeInail"
 
     CodiceSoggettoAssicurante:
         type: integer
@@ -136,7 +136,7 @@ components:
         numero_pat: 2
         numero_settori_attivita: 3
         soggetto_assicurante_competenza_di:
-          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/sede-inail/sede-inail.oas3.yaml#/components/schemas/SedeInail/example"
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/sede-inail/latest/sede-inail.oas3.yaml#/components/schemas/SedeInail/example"
         ha_natura_giuridica:
           codice_natura_giuridica: 'LTD'
           descrizione_natura_giuridica: 'Società estera a responsabilità limitata'

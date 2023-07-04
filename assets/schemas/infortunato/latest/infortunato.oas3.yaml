@@ -23,7 +23,7 @@ tags: []
 components:
   schemas:
     PersonaFisica:
-      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/persona-fisica/persona-fisica.oas3.yaml#/components/schemas/PersonaFisica"
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/persona-fisica/latest/persona-fisica.oas3.yaml#/components/schemas/PersonaFisica"
 
     IdInfortunato:
         type: integer
@@ -62,4 +62,4 @@ components:
         id_infortunato: 12345678
         eta_all_accadimento_infortunato: 23
         infortunato_persona_fisica:
-          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/persona-fisica/persona-fisica.oas3.yaml#/components/schemas/PersonaFisica/example"
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/persona-fisica/latest/persona-fisica.oas3.yaml#/components/schemas/PersonaFisica/example"
