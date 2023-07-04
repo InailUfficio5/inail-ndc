@@ -1,0 +1,60 @@
+openapi: 3.0.3
+info:
+  title: Schema del Tipo Indennizzo
+  version: 202306.27.00
+  x-summary: Schema del tipo di indennizzo di un evento lesivo compatibile con l'ontologia INAIL.
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  termsOfService: https://creativecommons.org/licenses/by/4.0/
+  contact:
+    name: Anna Maria De Paoli
+    email: a.depaoli@inail.it
+   # url:
+  description: |-
+   Tipo di indennizzo erogato, stabilito in base al grado di menomazione.
+
+    La metadatazione semantica degli schemi si basa sul documento
+    [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html)
+    che introduce le keyword x-jsonld-type e x-jsonld-context.
+paths: {}
+servers: []
+tags: []
+components:
+  schemas:
+    IdTipoIndennizzo:
+      type: string
+      description:
+          Campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità.
+          Associato a https://w3id.org/italia/work-accident/onto/adm_serv/codiceTipoIndennizzo.
+      example: 'APP'
+      maxLength: 20
+    TipoIndennizzo:
+        type: object
+        x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/TipoIndennizzoINAIL
+        x-jsonld-context:
+          "@vocab": "https://w3id.org/italia/work-accident/onto/adm_serv/"
+          codice_tipo_indennizzo: codiceTipoIndennizzo
+          descrizione_tipo_indennizzo: descrizioneTipoIndennizzo
+          definizione_tipo_indennizzo: definizioneTipoIndennizzo
+        additionalProperties: true
+        description:
+            Questo schema rappresenta il tipo di indennizzo
+            ed è associato a https://w3id.org/italia/work-accident/onto/adm_serv/TipoIndennizzoINAIL.
+        required:
+        - codice_tipo_indennizzo
+        - descrizione_tipo_indennizzo
+        - definizione_tipo_indennizzo
+        properties:
+          codice_tipo_indennizzo:
+             $ref: "#/components/schemas/IdTipoIndennizzo"
+          descrizione_tipo_indennizzo:
+            type: string
+            maxLength: 50
+          definizione_tipo_indennizzo:
+            type: string
+            maxLength: 255
+        example:
+          codice_tipo_indennizzo: 'APP'
+          descrizione_tipo_indennizzo: 'Accertamento postumi provvisorio'
+          definizione_tipo_indennizzo: 'Positivo'
