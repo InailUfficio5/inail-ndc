@@ -2850,10 +2850,10 @@ skos:Concept a owl:Class ;
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/CORE-RDF-TURTLE> a dcat:Distribution,
         dcatapit:Distribution,
         owl:NamedIndividual ;
-    dct:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core> ;
+    dct:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core/v1.8> ;
     dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia INAIL relativa ai concetti principali dell'istituto"@it,
         "This is the distribution in RDF/Turtle of the INAIL ontology about core concepts of the institute"@en ;
-    dct:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/core.ttl> ;
+    dct:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/v1.8/core.ttl> ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF> ;
     dct:license <http://creativecommons.org/licenses/by/4.0/> ;
     dct:title "Distribuzione RDF/Turtle ontologia INAIL - Core"@it,
