@@ -1863,10 +1863,10 @@ TI:TimeIndexedEvent a owl:Class .
 <https://w3id.org/italia/work-accident/onto/proc21/distribution/AUTOLIQ-RDF-TURTLE> a dcat:Distribution,
         dcatapit:Distribution,
         owl:NamedIndividual ;
-    dct:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/autoliquidazione> ;
+    dct:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/autoliquidazione/v1.8> ;
     dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia INAIL relativa all'autoliquidazione, procedimento che consente al datore di lavoro soggetto all’assicurazione obbligatoria contro gli infortuni sul lavoro e le malattie professionali di pagare il premio assicurativo annuale"@it,
         "This is the distribution in RDF/Turtle of the INAIL ontology about self-payment, the process by which an employer subject to compulsory insurance against occupational accidents and diseases pays the annual insurance premium"@en ;
-    dct:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/autoliquidazione/autoliquidazione.ttl> ;
+    dct:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/autoliquidazione/v1.8/autoliquidazione.ttl> ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF> ;
     dct:license <http://creativecommons.org/licenses/by/4.0/> ;
     dct:title "Distribuzione RDF/Turtle ontologia INAIL - Autoliquidazione"@it,
