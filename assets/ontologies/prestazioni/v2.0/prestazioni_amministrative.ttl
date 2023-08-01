@@ -3703,10 +3703,10 @@ TI:TimeIndexedEvent a owl:Class .
         dcat:Distribution,
         dcatapit:Distribution,
         owl:NamedIndividual ;
-    dct:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/prestazioni/latest> ;
+    dct:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/prestazioni/v2.0> ;
     dct:description "Questa è la distribuzione N-TRIPLES dell'ontologia INAIL relativa agli infortuni e le malattie professionali"@it,
         "This is the distribution in N-TRIPLES of the INAIL ontology about injuries and occupational diseases"@en ;
-    dct:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/prestazioni/latest/prestazioni_amministrative.n3> ;
+    dct:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/prestazioni/v2.0/prestazioni_amministrative.n3> ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES> ;
     dct:license <http://creativecommons.org/licenses/by/4.0/> ;
     dct:title "Distribuzione N-TRIPLES ontologia INAIL - Infortuni e Malattie Professionali"@it,
@@ -3715,10 +3715,10 @@ TI:TimeIndexedEvent a owl:Class .
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/ADM-SERV-RDF-TURTLE> a dcat:Distribution,
         dcatapit:Distribution,
         owl:NamedIndividual ;
-    dct:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/prestazioni/latest> ;
+    dct:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/prestazioni/v2.0> ;
     dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia INAIL relativa agli infortuni e le malattie professionali"@it,
         "This is the distribution in RDF/Turtle of the INAIL ontology about injuries and occupational diseases"@en ;
-    dct:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/prestazioni/latest/prestazioni_amministrative.ttl> ;
+    dct:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/prestazioni/v2.0/prestazioni_amministrative.ttl> ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dct:license <http://creativecommons.org/licenses/by/4.0/> ;
     dct:title "Distribuzione RDF/Turtle ontologia INAIL - Infortuni e Malattie Professionali"@it,
@@ -3728,10 +3728,10 @@ TI:TimeIndexedEvent a owl:Class .
         dcat:Distribution,
         dcatapit:Distribution,
         owl:NamedIndividual ;
-    dct:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/prestazioni/latest> ;
+    dct:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/prestazioni/v2.0> ;
     dct:description "Questa è la distribuzione RDF/XML dell'ontologia INAIL relativa agli infortuni e le malattie professionali"@it,
         "This is the distribution in RDF/XML of the INAIL ontology about injuries and occupational diseases"@en ;
-    dct:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/prestazioni/latest/prestazioni_amministrative.rdf> ;
+    dct:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/prestazioni/v2.0/prestazioni_amministrative.rdf> ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
     dct:license <http://creativecommons.org/licenses/by/4.0/> ;
     dct:title "Distribuzione RDF/XML ontologia INAIL - Infortuni e Malattie Professionali"@it,
