@@ -91,12 +91,12 @@
 		<dct:description xml:lang="it">Ontologia INAIL relativa all'autoliquidazione. L'autoliquidazione è il procedimento che consente al datore di lavoro soggetto all’assicurazione obbligatoria contro gli infortuni sul lavoro e le malattie professionali di pagare il premio assicurativo annuale</dct:description>
         <dct:description xml:lang="en">This is the ontology of the INAIL Organization about sel-payment. Self-payment is the process by which an employer subject to compulsory insurance against occupational accidents and diseases pays the annual insurance premium</dct:description>
         <dct:identifier>https://w3id.org/italia/work-accident/onto/proc21</dct:identifier>
-        <adms:prefix>inail</adms:prefix>  
+        <adms:prefix>inail</adms:prefix>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -104,70 +104,70 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/dc/terms/accessURL -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accessURL"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/downloadURL -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/downloadURL"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/format -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/format"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/identifier -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
+
 
 
     <!-- http://www.w3.org/2006/vcard/ns#fn -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#fn"/>
-    
+
 
 
     <!-- http://www.w3.org/2006/vcard/ns#hasEmail -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasEmail"/>
-    
+
 
 
     <!-- http://xmlns.com/foaf/0.1/name -->
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -175,7 +175,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/abilitanoAllaNavigazione -->
@@ -185,7 +185,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/Nave"/>
         <rdfs:label xml:lang="it">abilitano Alla Navigazione</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/annullamentoRelativoAF24 -->
@@ -195,7 +195,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/ModelloPagamentoF24"/>
         <rdfs:label xml:lang="it">annullamento Relativo A F24</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/armaNave -->
@@ -205,7 +205,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/Nave"/>
         <rdfs:label xml:lang="it">arma Nave</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/associatoAPagamento -->
@@ -215,7 +215,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/Pagamento"/>
         <rdfs:label xml:lang="it">associato A Pagamento</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/autoliquidazioneHaSaldoFinale -->
@@ -232,7 +232,7 @@
         </rdfs:range>
         <rdfs:label xml:lang="it">autoliquidazione Ha Saldo Finale</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/baseDiCalcoloLegataASoggettoAssicurante -->
@@ -242,7 +242,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/BaseDiCalcolo"/>
         <rdfs:label xml:lang="it">base Di Calcolo Legata A Soggetto Assicurante</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/calcolatoCon -->
@@ -258,7 +258,7 @@
         </rdfs:range>
         <rdfs:label xml:lang="it">calcolato Con</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/cartaBordoAbilitanteNavigazionePerNaveMaggiore -->
@@ -275,7 +275,7 @@
         </rdfs:domain>
         <rdfs:label xml:lang="it">carta Bordo Abilitante Navigazione Per Nave Maggiore</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/cartaBordoAbilitanteNavigazionePerNaveMinore -->
@@ -292,7 +292,7 @@
         </rdfs:domain>
         <rdfs:label xml:lang="it">carta Bordo Abilitante Navigazione Per Nave Minore</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/cassettoRelativoAContribuente -->
@@ -302,7 +302,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/Contribuente"/>
         <rdfs:label xml:lang="it">cassetto Relativo A Contribuente</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/costituisconoBaseDiCalcolo -->
@@ -324,7 +324,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/BaseDiCalcolo"/>
         <rdfs:label xml:lang="it">costituisconoBaseDiCalcolo</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/denunciaDetermina -->
@@ -334,7 +334,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/BaseDiCalcolo"/>
         <rdfs:label xml:lang="it">denuncia Determina</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/destinatarioTrasmissioneDati -->
@@ -344,7 +344,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/DestinatarioPremioINAIL"/>
         <rdfs:label xml:lang="it">destinatario Trasmissione Dati</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/determinaPremioAssicurativo -->
@@ -353,7 +353,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/PremioAssicurativoINAIL"/>
         <rdfs:label xml:lang="it">determina Premio Assicurativo</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/documentoAbilitanteNavigazioneUnitaDiporto -->
@@ -361,7 +361,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc21/documentoAbilitanteNavigazioneUnitaDiporto">
         <rdfs:label xml:lang="it">documento Abilitante Navigazione Unita Diporto</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/effettuaPagamento -->
@@ -371,7 +371,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/Pagamento"/>
         <rdfs:label xml:lang="it">effettua Pagamento</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/emanaRicevutaPagamento -->
@@ -381,7 +381,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/RicevutaPagamento"/>
         <rdfs:label xml:lang="it">emana Ricevuta Pagamento</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/esattoreEffettuaRiversamento -->
@@ -391,7 +391,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/RiversamentoSomme"/>
         <rdfs:label xml:lang="it">esattore Effettua Riversamento</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/esattoreEffettuaTrasmissioneDati -->
@@ -401,7 +401,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/TrasmissioneDatiPagamento"/>
         <rdfs:label xml:lang="it">esattore Effettua Trasmissione Dati</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/haCategoriaNaviglio -->
@@ -412,7 +412,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/CategoriaNaviglio"/>
         <rdfs:label xml:lang="it">ha Categoria Naviglio</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/haEsattore -->
@@ -422,7 +422,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/Esattore"/>
         <rdfs:label xml:lang="it">ha Esattore</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/haModalitaDiPagamento -->
@@ -442,7 +442,7 @@
         </rdfs:range>
         <rdfs:label xml:lang="it">ha Modalita Di Pagamento</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/haModelloDiPagamento -->
@@ -459,7 +459,7 @@
         </rdfs:range>
         <rdfs:label xml:lang="it">ha Modello Di Pagamento</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/haScopoDiporto -->
@@ -469,7 +469,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/UnitaDaDiporto"/>
         <rdfs:label xml:lang="it">ha Scopo Diporto</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/inserisceRicevutaPagamentoIn -->
@@ -479,7 +479,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/CassettoFiscale"/>
         <rdfs:label xml:lang="it">inserisce Ricevuta Pagamento In</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/intermediarioRichiedeAnnullamento -->
@@ -489,7 +489,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/AnnullamentoF24"/>
         <rdfs:label xml:lang="it">intermediario Richiede Annullamento</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/iscrittoARegistro -->
@@ -498,7 +498,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/RegistroDiIscrizioneNave"/>
         <rdfs:label xml:lang="it">iscritto A Registro</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/naveAbilitataAServizio -->
@@ -508,7 +508,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/ServizioNave"/>
         <rdfs:label xml:lang="it">nave Abilitata A Servizio</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/naveAbilitataASpecieDiNavigazione -->
@@ -518,7 +518,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/SpecieDiNavigazione"/>
         <rdfs:label xml:lang="it">nave Abilitata A Specie Di Navigazione</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/naveHaDatiIscrizione -->
@@ -528,7 +528,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/DatoIscrizioneNave"/>
         <rdfs:label xml:lang="it">nave Ha Dati Iscrizione</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/naveHaDatiTecnici -->
@@ -538,7 +538,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/DatoTecnicoNave"/>
         <rdfs:label xml:lang="it">nave Ha Dati Tecnici</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/naveHaPanRelativa -->
@@ -549,7 +549,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/Nave"/>
         <rdfs:label xml:lang="it">nave Ha Pan Relativa</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/naveHaTipoNave -->
@@ -559,7 +559,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:label xml:lang="it">nave Ha Tipo Nave</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/naveIscrittaAPorto -->
@@ -570,7 +570,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/PortoIscrizioneNave"/>
         <rdfs:label xml:lang="it">nave Iscritta A Porto</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/premioAssicurativoSoggettoA -->
@@ -579,7 +579,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/PremioAssicurativoINAIL"/>
         <rdfs:label xml:lang="it">premio Assicurativo Soggetto A</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/premioAutoliquidazioneHaTariffa -->
@@ -589,7 +589,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/adm_serv/VoceDiTariffaINAIL"/>
         <rdfs:label xml:lang="it">premio Autoliquidazione Ha Tariffa</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/premioRelativoAEventoLesivo -->
@@ -599,7 +599,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/adm_serv/EventoLesivoINAIL"/>
         <rdfs:label xml:lang="it">premio Relativo A Evento Lesivo</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/premioRelativoAPAN -->
@@ -610,7 +610,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/PosizioneAssicurativaNavigazione"/>
         <rdfs:label xml:lang="it">premio Relativo A PAN</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/premioRelativoAPAT -->
@@ -621,7 +621,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/PosizioneAssicurativaTerritoriale"/>
         <rdfs:label xml:lang="it">premio Relativo A PAT</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/premioRelativoARetribuzione -->
@@ -631,7 +631,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/RetribuzioneComplessiva"/>
         <rdfs:label xml:lang="it">premio Relativo A Retribuzione</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/premioRelativoASedeINAIL -->
@@ -642,7 +642,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/SedeINAIL"/>
         <rdfs:label xml:lang="it">premio Relativo A Sede INAIL</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/premioRelativoASoggettoAssicurante -->
@@ -653,7 +653,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL"/>
         <rdfs:label xml:lang="it">premio Relativo A Soggetto Assicurante</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/premioVersatoDa -->
@@ -663,7 +663,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL"/>
         <rdfs:label xml:lang="it">premio Versato Da </rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/presentaModelloF24 -->
@@ -680,7 +680,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/ModelloPagamentoF24"/>
         <rdfs:label xml:lang="it">presenta Modello F24</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/prevedeClasseDiRischio -->
@@ -689,7 +689,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/ClasseDiRischioINAIL"/>
         <rdfs:label xml:lang="it">prevede Classe Di Rischio</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/proprietarioDiNave -->
@@ -707,7 +707,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/Nave"/>
         <rdfs:label xml:lang="it">proprietario Di Nave</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/ricevutaInseritaIn -->
@@ -717,7 +717,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/CassettoFiscale"/>
         <rdfs:label xml:lang="it">ricevuta Inserita In</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/ricevutaRelativaAPagamento -->
@@ -727,7 +727,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/Pagamento"/>
         <rdfs:label xml:lang="it">ricevuta Relativa A Pagamento</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/ricopreRuolo -->
@@ -736,7 +736,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:label xml:lang="it">ricopre Ruolo</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/ricopreRuoloContribuente -->
@@ -748,7 +748,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/Contribuente"/>
         <rdfs:label xml:lang="it">ricopre Ruolo Contribuente</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/riversamentoAssociatoAPagamento -->
@@ -758,7 +758,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/Pagamento"/>
         <rdfs:label xml:lang="it">riversamento Associato A Pagamento</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/riversamentoHaDestinatario -->
@@ -768,7 +768,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/DestinatarioPremioINAIL"/>
         <rdfs:label xml:lang="it">riversamento Ha Destinatario</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/soggettoAssicurantePresentaDenuncia -->
@@ -778,7 +778,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/DenunciaDiEsercizioINAIL"/>
         <rdfs:label xml:lang="it">soggetto Assicurante Presenta Denuncia</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/svolgeAttivita -->
@@ -788,7 +788,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/AttivitaVerificaImportiVersati"/>
         <rdfs:label xml:lang="it">svolge Attivita</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/tramissioneRelativaAPagamento -->
@@ -798,10 +798,10 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/Pagamento"/>
         <rdfs:label xml:lang="it">tramissione Relativa A Pagamento</rdfs:label>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -809,7 +809,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/italia/onto/COV/legalName -->
@@ -817,7 +817,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/COV/legalName">
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/COV/orgAcronym -->
@@ -825,7 +825,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/COV/orgAcronym">
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/AddizionaleAmianto -->
@@ -834,7 +834,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/BaseDiCalcolo"/>
         <rdfs:label xml:lang="it">Addizionale Amianto</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/AnnoDiRiferimentoBaseDiCalcolo -->
@@ -843,7 +843,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/BaseDiCalcolo"/>
         <rdfs:label xml:lang="it">Anno Di Riferimento Base Di Calcolo</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/Estero -->
@@ -852,7 +852,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/PortoIscrizioneNave"/>
         <rdfs:label xml:lang="it">Estero</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/ImportoADebitoVersatoContributiAssociativi -->
@@ -861,7 +861,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/ModelloPagamentoF24"/>
         <rdfs:label xml:lang="it">Importo A Debito Versato Contributi Associativi</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/annoDiCostruzioneNave -->
@@ -871,7 +871,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/DatoIscrizioneNave"/>
         <rdfs:label xml:lang="it">anno Di Costruzione Nave</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/annoDiRiferimentoF24 -->
@@ -880,7 +880,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/ModelloPagamentoF24"/>
         <rdfs:label xml:lang="it">anno Di Riferimento F24</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/annoDiRiferimentoPremioAssicurativo -->
@@ -889,7 +889,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/PremioAssicurativoINAIL"/>
         <rdfs:label xml:lang="it">anno Di Riferimento Premio Assicurativo</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/cantiereNavaleDiCostruzione -->
@@ -898,7 +898,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/DatoIscrizioneNave"/>
         <rdfs:label xml:lang="it">cantiere Navale Di Costruzione</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/causaleAnnullamento -->
@@ -907,7 +907,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/AnnullamentoF24"/>
         <rdfs:label xml:lang="it">causale Annullamento</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/causaleF24 -->
@@ -916,7 +916,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/ModelloPagamentoF24"/>
         <rdfs:label xml:lang="it">causale F24</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/codiceControllo -->
@@ -925,7 +925,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/ModelloPagamentoF24"/>
         <rdfs:label xml:lang="it">codice Controllo</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/codiceNaviglio -->
@@ -934,7 +934,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/CategoriaNaviglio"/>
         <rdfs:label xml:lang="it">codice Naviglio</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/codiceServizioNave -->
@@ -943,7 +943,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/ServizioNave"/>
         <rdfs:label xml:lang="it">codice Servizio Nave</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/codiceSgravio -->
@@ -952,7 +952,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/SgravioINAIL"/>
         <rdfs:label xml:lang="it">codice Sgravio</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/codiceSpecieNavigazione -->
@@ -961,7 +961,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/SpecieDiNavigazione"/>
         <rdfs:label xml:lang="it">codice Specie Navigazione</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/compartimentoDiProvenienza -->
@@ -970,7 +970,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/DatoIscrizioneNave"/>
         <rdfs:label xml:lang="it">compartimento Di Provenienza</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/dataAnnullamentoF24 -->
@@ -979,7 +979,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/AnnullamentoF24"/>
         <rdfs:label xml:lang="it">data Annullamento F24</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/dataArmamento -->
@@ -988,7 +988,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/DatoIscrizioneNave"/>
         <rdfs:label xml:lang="it">data Armamento</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/dataDisarmamento -->
@@ -997,7 +997,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/DatoIscrizioneNave"/>
         <rdfs:label xml:lang="it">data Disarmamento</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/dataImmatricolazioneNave -->
@@ -1007,7 +1007,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/DatoIscrizioneNave"/>
         <rdfs:label xml:lang="it">data Immatricolazione Nave</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/dataPagamento -->
@@ -1016,7 +1016,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/Pagamento"/>
         <rdfs:label xml:lang="it">data Pagamento</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/dataRicevutaPagamento -->
@@ -1025,7 +1025,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/RicevutaPagamento"/>
         <rdfs:label xml:lang="it">data Ricevuta Pagamento</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/dataRiversamento -->
@@ -1034,7 +1034,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/RiversamentoSomme"/>
         <rdfs:label xml:lang="it">data Riversamento</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/dataTrasmissione -->
@@ -1043,7 +1043,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/TrasmissioneDatiPagamento"/>
         <rdfs:label xml:lang="it">data Trasmissione</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/descrizioneNaviglio -->
@@ -1052,7 +1052,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/CategoriaNaviglio"/>
         <rdfs:label xml:lang="it">descrizione Naviglio</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/descrizionePorto -->
@@ -1061,7 +1061,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/PortoIscrizioneNave"/>
         <rdfs:label xml:lang="it">descrizione Porto</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/descrizioneRegistroIscrizione -->
@@ -1070,7 +1070,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/RegistroDiIscrizioneNave"/>
         <rdfs:label xml:lang="it">descrizione Registro Iscrizione</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/descrizioneServizioNave -->
@@ -1079,7 +1079,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/ServizioNave"/>
         <rdfs:label xml:lang="it">descrizione Servizio Nave</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/descrizioneSgravio -->
@@ -1088,7 +1088,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/SgravioINAIL"/>
         <rdfs:label xml:lang="it">descrizione Sgravio</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/descrizioneSpecieNavigazione -->
@@ -1097,7 +1097,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/SpecieDiNavigazione"/>
         <rdfs:label xml:lang="it">descrizione Specie Navigazione</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/exNomeNave -->
@@ -1106,7 +1106,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/DatoTecnicoNave"/>
         <rdfs:label xml:lang="it">ex Nome Nave</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/exNumeroDiIscrizione -->
@@ -1115,7 +1115,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/DatoIscrizioneNave"/>
         <rdfs:label xml:lang="it">ex Numero Di Iscrizione</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/importoADebitoVersatoPremioINAIL -->
@@ -1124,7 +1124,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/ModelloPagamentoF24"/>
         <rdfs:label xml:lang="it">importo A Debito Versato Premio INAIL</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/importoCredito -->
@@ -1133,7 +1133,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/Credito"/>
         <rdfs:label xml:lang="it">importo Credito</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/importoDebito -->
@@ -1142,7 +1142,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/Debito"/>
         <rdfs:label xml:lang="it">importo Debito</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/importoPagamento -->
@@ -1151,7 +1151,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/Pagamento"/>
         <rdfs:label xml:lang="it">importo Pagamento</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/importoPremioACreditoDatoreLavorodaCompensare -->
@@ -1160,7 +1160,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/ModelloPagamentoF24"/>
         <rdfs:label xml:lang="it">importo Premio A Credito Datore Lavoro da Compensare</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/importoPremioADebitoDatoreLavorodaCompensare -->
@@ -1169,7 +1169,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/ModelloPagamentoF24"/>
         <rdfs:label xml:lang="it">importo Premio A Debito Datore Lavoro da Compensare</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/importoPremioAssicurativo -->
@@ -1178,7 +1178,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/PremioAssicurativoINAIL"/>
         <rdfs:label xml:lang="it">importo Premio Assicurativo</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/importoVersato -->
@@ -1187,7 +1187,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/RiversamentoSomme"/>
         <rdfs:label xml:lang="it">importo Versato</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/lunghezzaNave -->
@@ -1196,7 +1196,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/DatoTecnicoNave"/>
         <rdfs:label xml:lang="it">lunghezza Nave</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/modalitaPagamento -->
@@ -1204,7 +1204,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc21/modalitaPagamento">
         <rdfs:label xml:lang="it">modalita Pagamento</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/modalitàTrasmissione -->
@@ -1213,7 +1213,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/TrasmissioneDatiPagamento"/>
         <rdfs:label xml:lang="it">modalità Trasmissione</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/nazione -->
@@ -1222,7 +1222,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/DatoIscrizioneNave"/>
         <rdfs:label xml:lang="it">nazione</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/nomeArmatore -->
@@ -1232,7 +1232,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/core/Armatore"/>
         <rdfs:label xml:lang="it">nome Armatore</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/nomeNave -->
@@ -1243,7 +1243,7 @@
         <rdfs:comment xml:lang="it">Il nome è obbligatorio per le navi maggiori10 . Le navi minori marittime di stazza lorda superiore alle dieci tonnellate (se a propulsione meccanica o alle venticinque in ogni altro caso) e i galleggianti possono essere contraddistinti anche da un nome</rdfs:comment>
         <rdfs:label xml:lang="it">nome Nave</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/nomeProprietario -->
@@ -1253,7 +1253,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/ProprietarioNave"/>
         <rdfs:label xml:lang="it">nome Proprietario</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/numeroCaratiArmatori -->
@@ -1263,7 +1263,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/core/Armatore"/>
         <rdfs:label xml:lang="it">numero Carati Armatori</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/numeroCaratiProprietario -->
@@ -1273,7 +1273,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/ProprietarioNave"/>
         <rdfs:label xml:lang="it">numero Carati Proprietario</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/numeroFatturaEmessa -->
@@ -1282,7 +1282,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/RicevutaPagamento"/>
         <rdfs:label xml:lang="it">numero Fattura Emessa</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/numeroIMO -->
@@ -1292,7 +1292,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/DatoTecnicoNave"/>
         <rdfs:label xml:lang="it">numero IMO</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/numeroRegistro -->
@@ -1302,7 +1302,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/RegistroDiIscrizioneNave"/>
         <rdfs:label xml:lang="it">numero Registro</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/oscillazioneTasso -->
@@ -1311,7 +1311,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/BaseDiCalcolo"/>
         <rdfs:label xml:lang="it">oscillazione Tasso</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/percentualeDiSgravio -->
@@ -1320,7 +1320,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/SgravioINAIL"/>
         <rdfs:label xml:lang="it">percentuale Di Sgravio</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/potenzaMotoreNave -->
@@ -1331,7 +1331,7 @@
         <rdfs:label xml:lang="it">potenza Motore Nave
 </rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/progressivoProprietario -->
@@ -1341,7 +1341,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/ProprietarioNave"/>
         <rdfs:label xml:lang="it">progressivo Proprietario</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/rimorchiatoreDiAltoMare -->
@@ -1350,7 +1350,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/DatoTecnicoNave"/>
         <rdfs:label xml:lang="it">rimorchiatore Di Alto Mare</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/sistemaDiPropulsione -->
@@ -1360,7 +1360,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/DatoTecnicoNave"/>
         <rdfs:label xml:lang="it">sistema Di Propulsione</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/statoDelPagamento -->
@@ -1369,7 +1369,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/Pagamento"/>
         <rdfs:label xml:lang="it">stato Del Pagamento</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/stazzaLorda -->
@@ -1379,7 +1379,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/DatoTecnicoNave"/>
         <rdfs:label xml:lang="it">stazza Lorda</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/stazzaNetta -->
@@ -1389,7 +1389,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/DatoTecnicoNave"/>
         <rdfs:label xml:lang="it">stazza Netta</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/tassoApplicabile -->
@@ -1399,7 +1399,7 @@
         <rdfs:comment xml:lang="it">Corrisponde al tasso medio per andamento infortunistico dopo i primi due anni di attività, determinato ai sensi degli artt. 19-20 del dm 27.2.2019.</rdfs:comment>
         <rdfs:label xml:lang="it">tasso Applicabile</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/tassoApplicato -->
@@ -1409,7 +1409,7 @@
         <rdfs:comment xml:lang="it">Indica il tasso medio per andamento infortunistico dopo i primi due anni di attività, determinato ai sensi degli artt. 19-20 del dm 27.2.2019, corretto dell’eventuale riduzione del tasso medio per prevenzione ex articolo 23, (con esclusione del comma 5) del citato dm. Nel caso in cui l’attività è iniziata da meno di due anni (campo tasso applicabile non valorizzato) indica il tasso medio nazionale corretto dell’eventuale oscillazione ex articolo 23, comma 5, del dm 27.2.2019.</rdfs:comment>
         <rdfs:label xml:lang="it">tasso Applicato</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/tassoMedioDiTariffa -->
@@ -1419,7 +1419,7 @@
         <rdfs:comment xml:lang="it">Indica il tasso medio nazionale previsto nella corrispondente voce della tariffa della gestione nella quale è inquadrato il datore di lavoro ex articolo 17 del dm 27.2.2019.</rdfs:comment>
         <rdfs:label xml:lang="it">tasso Medio Di Tariffa</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/tipoTrafficoInMare -->
@@ -1428,10 +1428,10 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/DatoTecnicoNave"/>
         <rdfs:label xml:lang="it">tipo Traffico In Mare</rdfs:label>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -1439,7 +1439,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
@@ -1456,7 +1456,7 @@
             </owl:Restriction>
         </owl:equivalentClass>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/COV/Organization -->
@@ -1481,13 +1481,13 @@
             </owl:Restriction>
         </owl:equivalentClass>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/TI/TimeIndexedEvent -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/TI/TimeIndexedEvent"/>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/adm_serv/EventoLesivoINAIL -->
@@ -1504,7 +1504,7 @@
             </owl:Restriction>
         </owl:equivalentClass>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/adm_serv/VoceDiTariffaINAIL -->
@@ -1527,7 +1527,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/core/Armatore -->
@@ -1552,13 +1552,13 @@
             </owl:Restriction>
         </owl:equivalentClass>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/core/DenunciaINAIL -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/DenunciaINAIL"/>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/core/Intermediario -->
@@ -1572,7 +1572,7 @@
         </owl:equivalentClass>
         <owl:disjointWith rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/Contribuente"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/core/PosizioneAssicurativaNavigazione -->
@@ -1595,7 +1595,7 @@
             </owl:Restriction>
         </owl:equivalentClass>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/core/PosizioneAssicurativaTerritoriale -->
@@ -1612,7 +1612,7 @@
             </owl:Restriction>
         </owl:equivalentClass>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/core/RetribuzioneComplessiva -->
@@ -1629,7 +1629,7 @@
             </owl:Restriction>
         </owl:equivalentClass>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/core/SedeINAIL -->
@@ -1646,13 +1646,13 @@
             </owl:Restriction>
         </owl:equivalentClass>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/core/SettoreAttivita -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/SettoreAttivita"/>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL -->
@@ -1691,7 +1691,7 @@
             </owl:Restriction>
         </owl:equivalentClass>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/AnnullamentoF24 -->
@@ -1729,19 +1729,19 @@
         <rdfs:label xml:lang="it">Annullamento F24</rdfs:label>
         <rdfs:label xml:lang="en">F24 Cancellation</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/AssegnoBancarioOPostale -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/AssegnoBancarioOPostale">
-        <rdfs:comment xml:lang="it">Strumento di pagamento sostitutivo del contante con il quale il titolare del conto corrente (traente) ordina alla propria banca (trattario) di versare una determinata somma di denaro a favore di un’altra persona 
+        <rdfs:comment xml:lang="it">Strumento di pagamento sostitutivo del contante con il quale il titolare del conto corrente (traente) ordina alla propria banca (trattario) di versare una determinata somma di denaro a favore di un’altra persona
 Consente di effettuare pagamenti, anche di importo rilevante, senza utilizzare il denaro contante. Gli assegni postali sono equiparati ad un assegno bancario e possono essere utilizzati per effettuare pagamenti, trasferire denaro a terzi o prelevare contante presso il proprio Ufficio Postale.</rdfs:comment>
-        <rdfs:label xml:lang="it">Assegno Bancario 
+        <rdfs:label xml:lang="it">Assegno Bancario
 O Postale</rdfs:label>
         <rdfs:label xml:lang="en">Bank or Postal Check</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/AssegnoCircolare -->
@@ -1752,7 +1752,7 @@ O Postale</rdfs:label>
         <rdfs:label xml:lang="en">Bank Draft
 </rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/AttivitaVerificaImportiVersati -->
@@ -1770,10 +1770,10 @@ O Postale</rdfs:label>
         </owl:equivalentClass>
         <rdfs:comment xml:lang="it">Attività eseguita dall&apos;Inail, a seguito del pagamento dell&apos;F24, che consiste nel verificare che l&apos;importo pagato sia uguale a quello che viene calcolato come dovuto  internamente dall&apos;archivio GRA (Gestione Rapporti Assicurativi). </rdfs:comment>
         <rdfs:label xml:lang="en">Activities to Verify the Amounts Paid</rdfs:label>
-        <rdfs:label xml:lang="it">Attivita Verifica 
+        <rdfs:label xml:lang="it">Attivita Verifica
 Importi Versati</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/AttoDiNazionalitaNave -->
@@ -1782,11 +1782,11 @@ Importi Versati</rdfs:label>
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/CartaDiBordoNave"/>
         <owl:disjointWith rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/RuoloDiEquipaggioNave"/>
         <rdfs:comment xml:lang="it">L&apos;atto di nazionalità è rilasciato dal direttore marittimo nella cui zona la nave maggiore è immatricolata, e, nel caso di cui all&apos;articolo 148, dal console che ne ha ricevuto la iscrizione. L&apos;atto di nazionalità enuncia il nome, il tipo e le caratteristiche principali, la stazza lorda e netta della nave, il nome del proprietario, l&apos;ufficio di immatricolazione (Art. 150 CdN).</rdfs:comment>
-        <rdfs:label xml:lang="it">Atto Di 
+        <rdfs:label xml:lang="it">Atto Di
 Nazionalità Nave</rdfs:label>
         <rdfs:label xml:lang="en">Ship Nationality Act</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/BaseDiCalcolo -->
@@ -1878,53 +1878,53 @@ Nazionalità Nave</rdfs:label>
         <rdfs:label xml:lang="it">Base Di Calcolo</rdfs:label>
         <rdfs:label xml:lang="en">Calculation Base</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/BaseDiCalcoloContributiAssociativi -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/BaseDiCalcoloContributiAssociativi">
         <rdfs:comment xml:lang="it">Insieme degli elementi necessari per il calcolo dei contributi associativi.</rdfs:comment>
-        <rdfs:label xml:lang="it">Base Di Calcolo 
-Contributi 
+        <rdfs:label xml:lang="it">Base Di Calcolo
+Contributi
 Associativi</rdfs:label>
         <rdfs:label xml:lang="en">Calculation Base for Membership Fee</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/BaseDiCalcoloDipendenti -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/BaseDiCalcoloDipendenti">
         <rdfs:comment xml:lang="it">Insieme degli elementi necessari per il calcolo della regolazione e della rata del premio di autoliquidazione del premio dei dipendenti e dei contributi associativi. </rdfs:comment>
-        <rdfs:label xml:lang="it">Base Di Calcolo 
+        <rdfs:label xml:lang="it">Base Di Calcolo
 Dipendenti</rdfs:label>
         <rdfs:label xml:lang="en">Calculation Base for Employees</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/BaseDiCalcoloNavigazione -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/BaseDiCalcoloNavigazione">
         <rdfs:comment xml:lang="it">Insieme degli elementi necessari per il calcolo della regolazione e della rata del premio di autoliquidazione dei lavoratori della gestione navigazione e dei contributi associativi.</rdfs:comment>
-        <rdfs:label xml:lang="it">Base Di Calcolo 
+        <rdfs:label xml:lang="it">Base Di Calcolo
 Navigazione</rdfs:label>
         <rdfs:label xml:lang="en">Calculation Base of Navigation </rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/BaseDiCalcoloSoggettiAutonomiArtigiani -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/BaseDiCalcoloSoggettiAutonomiArtigiani">
         <rdfs:comment xml:lang="it">Individua gli elementi necessari per il calcolo della regolazione e della rata del premio di autoliquidazione dei soggetti autonomi artigiani e dei contributi associativi</rdfs:comment>
-        <rdfs:label xml:lang="it">Base Di Calcolo 
-Soggetti Autonomi 
+        <rdfs:label xml:lang="it">Base Di Calcolo
+Soggetti Autonomi
 Artigiani</rdfs:label>
         <rdfs:label xml:lang="en">Calculation Base for Self-Employed Craftsmen</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/CartaDiBordoNave -->
@@ -1938,7 +1938,7 @@ Il ruolo di equipaggio (navi maggiori) contiene gli elementi identificativi dell
 Nave</rdfs:label>
         <rdfs:label xml:lang="en">Ship On-Board Paper</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/CassettoFiscale -->
@@ -1971,11 +1971,11 @@ Nave</rdfs:label>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:comment xml:lang="it">Servizio che consente la consultazione delle proprie informazioni fiscali, come: dati anagrafici, dati delle dichiarazioni fiscali, dati dei rimborsi, dati dei versamenti effettuati tramite modello F24 e F23, atti del registro (dati patrimoniali), dati e informazioni relativi agli studi di settore e agli indicatori sintetici di affidabilità fiscale (Isa), le informazioni sul proprio stato di iscrizione al Vies (VAT information exchange system).</rdfs:comment>
-        <rdfs:label xml:lang="it">Cassetto 
+        <rdfs:label xml:lang="it">Cassetto
 Fiscale</rdfs:label>
         <rdfs:label xml:lang="en">Tax Drawer</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/CategoriaNaviglio -->
@@ -2007,19 +2007,19 @@ Fiscale</rdfs:label>
         <rdfs:label xml:lang="it">Categoria Naviglio</rdfs:label>
         <rdfs:label xml:lang="en">Naviglio Category</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/CertificatoDiBordoLiberoEGalleggiabilita -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/CertificatoDiBordoLiberoEGalleggiabilita">
         <rdfs:comment xml:lang="it">Il certificato di bordo libero e galleggiabilità attesta la distanza misurata verticalmente verso il basso, al centro della nave, dal bordo superiore della linea del ponte al bordo superiore della relativa linea di carico. Il certificato è emesso prima della messa in servizio della nave ed è soggetto ai controlli annuali ed al rinnovo allo scadere del quinto anno. [Art. 14 Legge 5 giugno 1962, n. 616]</rdfs:comment>
-        <rdfs:label xml:lang="it">Certificato 
-Di Bordo Libero 
+        <rdfs:label xml:lang="it">Certificato
+Di Bordo Libero
 E Galleggiabilita</rdfs:label>
         <rdfs:label xml:lang="en">Free Board and Floatability Certificate</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/CertificatoDiClasseNave -->
@@ -2027,52 +2027,52 @@ E Galleggiabilita</rdfs:label>
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/CertificatoDiClasseNave">
         <rdfs:comment xml:lang="it">Certificato rilasciato da una società di classificazione che attesta l&apos;idoneità strutturale e meccanica delle navi a determinati impieghi o servizi in conformità alle norme ed ai regolamenti da essa fissati e resi pubblici [art. 2 DM Trasporti 4 aprile 2005, n. 95]
 Nel certificato di classe sono registrate le &quot;notazioni di classe&quot;; esse stabiliscono i termini sui quali è stata basata la classificazione della nave con riferimento alle norme per l&apos;assegnazione delle notazioni stesse. Le notazioni di classe assegnate ad una nave possono essere: sigla principale di classe, marche di sorveglianza alla costruzione, notazioni di servizio, notazioni di navigazione, notazioni di area operativa (facoltative), notazioni di classe addizionali (facoltative).</rdfs:comment>
-        <rdfs:label xml:lang="it">Certificato 
+        <rdfs:label xml:lang="it">Certificato
 Di Classe Nave</rdfs:label>
         <rdfs:label xml:lang="en">Ship Class Certificate</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/CertificatoDiStazzaNave -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/CertificatoDiStazzaNave">
         <rdfs:comment xml:lang="it">Certificato indicate la stazza (misura, lorda e netta, della capacità interna di una nave mercantile o di un&apos;imbarcazione) della nave che le navi maggiori devono avere a bordo (art. 169 Codice Navigazione). Il certificato di stazza è depositato presso l&apos;ufficio del porto d&apos; iscrizione della nave dopo l&apos;esecuzione della stazzatura.
-La stazzatura delle navi marittime è eseguita nella Repubblica dal Registro italiano navale, quale delegato del ministero dei trasporti e della navigazione, a mezzo di ingegneri navali o di altri periti stazzatori abilitati a norma del Regolamento (art. 307 Regolamento Codice Navigazione). 
+La stazzatura delle navi marittime è eseguita nella Repubblica dal Registro italiano navale, quale delegato del ministero dei trasporti e della navigazione, a mezzo di ingegneri navali o di altri periti stazzatori abilitati a norma del Regolamento (art. 307 Regolamento Codice Navigazione).
 Per la navigazione interna, gli Uffici Motorizzazione Civile (U.M.C.) delle Direzioni Generali Territoriali, nel rispettivo ambito territoriale di competenza, provvedono alla stazzatura delle navI elle unità navali e rilascio del certificato di stazza (art 11 DPCM n.190/2020). Negli altri casi provvedono l&apos;ispettorato compartimentale o gli altri organi stabiliti da leggi e da regolamenti speciali.</rdfs:comment>
-        <rdfs:label xml:lang="it">Certificato 
+        <rdfs:label xml:lang="it">Certificato
 Di Stazza
 Nave</rdfs:label>
         <rdfs:label xml:lang="en">Ship Tonnage Certificate</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/CertificatoDiVisitaNave -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/CertificatoDiVisitaNave">
         <rdfs:comment xml:lang="it">Certificato (obbligatorio per le navi maggiori, art. 169 Codice della navigazione) di avvenuta effettuazione dell&apos;insieme degli accertamenti tecnici e delle ispezioni concernenti l&apos;idoneità della nave alla navigazione.
-Ai fini degli accertamenti per il rilascio e per la conferma dei documenti di sicurezza delle navi, le visite alle quali devono essere sottoposte le navi, sono: 
- &quot;visite iniziali&quot;, prima dell&apos;entrata in servizio o prima dell&apos;ottenimento dei certificati definitivi; 
+Ai fini degli accertamenti per il rilascio e per la conferma dei documenti di sicurezza delle navi, le visite alle quali devono essere sottoposte le navi, sono:
+ &quot;visite iniziali&quot;, prima dell&apos;entrata in servizio o prima dell&apos;ottenimento dei certificati definitivi;
 &quot;visite periodiche&quot;, alla scadenza dei periodi di validità dei certificati di sicurezza, di idoneità e delle annotazioni di sicurezza;
 &quot;visite intermedie&quot;, con intervalli piu&apos; brevi delle periodiche, come stabilito nel presente regolamento;
 &quot;visite occasionali&quot;, quando se ne verifichi la necessità.</rdfs:comment>
-        <rdfs:label xml:lang="it">Certificato 
+        <rdfs:label xml:lang="it">Certificato
 Di Visita Nave</rdfs:label>
         <rdfs:label xml:lang="en">Ship Visit Certificate</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/CertificatoNavigabilita -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/CertificatoNavigabilita">
         <rdfs:comment xml:lang="it">Certificato che attesta l’idoneità alla navigazione delle navi di stazza lorda uguale o superiore a 25 tonnellate, che non siano munite di certificato di classe, rilasciato dall&apos;autorità marittima in base agli accertamenti esperti dall&apos;ente tecnico a norma dei regolamenti di applicazione della legge 616/1962, con validità di quattro anni prorogabile al massimo per un anno. [art. 5 legge 5 giugno 1962, n. 616]</rdfs:comment>
-        <rdfs:label xml:lang="it">Certificato 
+        <rdfs:label xml:lang="it">Certificato
 Navigabilita</rdfs:label>
         <rdfs:label xml:lang="en">Navigability Certificate</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/CertificatoSicurezzaNave -->
@@ -2087,11 +2087,11 @@ Navigabilita</rdfs:label>
         <rdfs:comment xml:lang="it">Certificato che attesta l&apos;adempimento delle prescrizioni relative alla sicurezza della vita umana in mare. [art. 4, L. 616/1962]
 Il certificato di sicurezza è rilasciato dall&apos;autorità marittima. [art. 6, L. 616/1962]
 Il certificato di sicurezza per le navi da passeggeri in viaggi internazionali ha validità di un anno; il certificato di sicurezza per le dotazioni di armamento per le navi da carico di stazza lorda uguale o superiore a 500 tonnellate in viaggi internazionali e il certificato di sicurezza radioelettrica per le navi da carico di stazza lorda uguale o superiore a 500 tonnellate in viaggi internazionali hanno validità di cinque anni [art.6 L. 616/1962]</rdfs:comment>
-        <rdfs:label xml:lang="it">Certificato 
+        <rdfs:label xml:lang="it">Certificato
 Sicurezza Nave</rdfs:label>
         <rdfs:label xml:lang="en">Ship Security Certificate</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/CertificatoTecnicoNave -->
@@ -2110,13 +2110,13 @@ Sicurezza Nave</rdfs:label>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:comment xml:lang="it">Certificato che attesta l&apos;adempimento delle prescrizioni relative alla sicurezza della vita umana in mare per le navi da carico di stazza lorda inferiore alle 500 tonnellate adibite a viaggi internazionali, nonche&apos; per le navi da passeggeri o da carico di stazza lorda uguale o superiore a 25 tonnellate adibite a viaggi nazionali. [art. 4, L. 616/1962]
-Il certificato di idoneità tecnica è rilasciato dall&apos;autorità marittima. [art. 6, L. 616/1962] 
+Il certificato di idoneità tecnica è rilasciato dall&apos;autorità marittima. [art. 6, L. 616/1962]
 La validità del certificato di idoneità tecnica non può essere superiore a due anni, ad eccezione delle unità da pesca la cui durata è fissata in tre anni. [art.6 L. 616/1962]</rdfs:comment>
-        <rdfs:label xml:lang="it">Certificato 
+        <rdfs:label xml:lang="it">Certificato
 Tecnico Nave</rdfs:label>
         <rdfs:label xml:lang="en">Ship Technical Certificate</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/ClasseDiRischioINAIL -->
@@ -2133,11 +2133,11 @@ Tecnico Nave</rdfs:label>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:comment xml:lang="it">Classi che raggruppano le voci di lavorazione della tariffa dei premi previste dal d.m. 27/2/2019, ai fini della determinazione del premio di autoliquidazione. La classe di rischio INAIL è prevista solo per la tariffa artigiani; l&apos;INAIL raggruppa lavorazioni omogenee all&apos;interno di una stessa classe di rischio e determina in base alla classe di rischio applicata il premo speciale unitario dei lavoratori autonomi artigiani.</rdfs:comment>
-        <rdfs:label xml:lang="it">Classe Di Rischio 
+        <rdfs:label xml:lang="it">Classe Di Rischio
 INAIL</rdfs:label>
         <rdfs:label xml:lang="en">INAIL Risk Class</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/Contante -->
@@ -2147,7 +2147,7 @@ INAIL</rdfs:label>
         <rdfs:label xml:lang="en">Cash</rdfs:label>
         <rdfs:label xml:lang="it">Contante</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/Contribuente -->
@@ -2191,7 +2191,7 @@ INAIL</rdfs:label>
         <rdfs:label xml:lang="it">Contribuente</rdfs:label>
         <rdfs:label xml:lang="en">Taxpayer</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/ContribuenteNonTitolarePartitaIVA -->
@@ -2199,11 +2199,11 @@ INAIL</rdfs:label>
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/ContribuenteNonTitolarePartitaIVA">
         <owl:disjointWith rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/ContribuenteTitolarePartitaIVA"/>
         <rdfs:comment xml:lang="it">Contribuente non titolare di partita Iva.</rdfs:comment>
-        <rdfs:label xml:lang="it">Contribuente Non 
+        <rdfs:label xml:lang="it">Contribuente Non
 Titolare Partita IVA</rdfs:label>
         <rdfs:label xml:lang="en">Taxpayer without VAT Number</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/ContribuenteTitolarePartitaIVA -->
@@ -2216,11 +2216,11 @@ Titolare Partita IVA</rdfs:label>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:comment xml:lang="it">Contribuente titolare di partita Iva.</rdfs:comment>
-        <rdfs:label xml:lang="it">Contribuente 
+        <rdfs:label xml:lang="it">Contribuente
 Titolare Partita IVA</rdfs:label>
         <rdfs:label xml:lang="en">Taxpayer with VAT Number</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/Credito -->
@@ -2237,7 +2237,7 @@ Titolare Partita IVA</rdfs:label>
         <rdfs:label xml:lang="en">Credit</rdfs:label>
         <rdfs:label xml:lang="it">Credito</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/DatoIscrizioneNave -->
@@ -2302,11 +2302,11 @@ Titolare Partita IVA</rdfs:label>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:comment xml:lang="it">Individua in maniera univoca l&apos;unita navale in base al porto di iscrziione, al titpo di registro e al numero di registro (cd. TARGA)</rdfs:comment>
-        <rdfs:label xml:lang="it">Dato Iscrizione 
+        <rdfs:label xml:lang="it">Dato Iscrizione
 Nave</rdfs:label>
         <rdfs:label xml:lang="en">Ship Enrollment Data</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/DatoTecnicoNave -->
@@ -2386,7 +2386,7 @@ Nave</rdfs:label>
         <rdfs:label xml:lang="it">Dato Tecnico Nave</rdfs:label>
         <rdfs:label xml:lang="en">Ship Technical Data</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/Debito -->
@@ -2402,7 +2402,7 @@ Nave</rdfs:label>
         <rdfs:label xml:lang="it">Debito</rdfs:label>
         <rdfs:label xml:lang="en">Debt</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/DenunciaDiEsercizioINAIL -->
@@ -2426,11 +2426,11 @@ Nave</rdfs:label>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/DenunciaINAIL"/>
         <rdfs:comment xml:lang="it">La denuncia di esercizio serve per valutare la sussistenza dell’obbligo assicurativo e determinare le basi di calcolo del premio (retribuzioni presunte, componenti nucleo artigiano, natura della lavorazione, inquadramento tariffario ecc.).</rdfs:comment>
-        <rdfs:label xml:lang="it">Denuncia Di 
+        <rdfs:label xml:lang="it">Denuncia Di
 Esercizio INAIL</rdfs:label>
         <rdfs:label xml:lang="en">INAIL Complaint of Operation</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/DestinatarioPremioINAIL -->
@@ -2464,11 +2464,11 @@ Esercizio INAIL</rdfs:label>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
         <rdfs:comment xml:lang="it">Il soggetto che riceve il premio assicurativo pagato dall&apos;assicurante per tutelare i lavoratori. </rdfs:comment>
-        <rdfs:label xml:lang="it">Destinatario 
+        <rdfs:label xml:lang="it">Destinatario
 Premio INAIL</rdfs:label>
         <rdfs:label xml:lang="en">INAIL Premium Recipient</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/DocumentoDiBordoNave -->
@@ -2496,17 +2496,17 @@ Premio INAIL</rdfs:label>
         </owl:equivalentClass>
         <rdfs:comment xml:lang="it">Documento obbligatorio per la navigazione e da tenere a bordo:
 - le “carte di bordo” per le navi maggiori (l&apos;atto di nazionalità e il ruolo di equipaggio) e per le navi minori e i galleggianti (la licenza).
-Inoltre, le navi maggiori devono avere a bordo: 
-a) il certificato di stazza; il certificato di classe o quello di navigabilità; i certificati di bordo libero e di galleggiabilità; i certificati di visita; 
-b) i documenti doganali e sanitari; 
-c) il giornale nautico; 
-d) gli altri libri e documenti prescritti da leggi e regolamenti. 
+Inoltre, le navi maggiori devono avere a bordo:
+a) il certificato di stazza; il certificato di classe o quello di navigabilità; i certificati di bordo libero e di galleggiabilità; i certificati di visita;
+b) i documenti doganali e sanitari;
+c) il giornale nautico;
+d) gli altri libri e documenti prescritti da leggi e regolamenti.
 [art. 169 Codice della Navigazione]</rdfs:comment>
-        <rdfs:label xml:lang="it">Documento 
+        <rdfs:label xml:lang="it">Documento
 Di Bordo Nave</rdfs:label>
         <rdfs:label xml:lang="en">On-Board Ship Document</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/DocumentoDoganaleNave -->
@@ -2514,21 +2514,21 @@ Di Bordo Nave</rdfs:label>
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/DocumentoDoganaleNave">
         <rdfs:comment xml:lang="it">Documento doganale</rdfs:comment>
         <rdfs:label xml:lang="en">Customs Ship Document</rdfs:label>
-        <rdfs:label xml:lang="it">Documento 
+        <rdfs:label xml:lang="it">Documento
 Doganale Nave</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/DocumentoSanitarioNave -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/DocumentoSanitarioNave">
         <rdfs:comment xml:lang="it">Documento sanitario</rdfs:comment>
-        <rdfs:label xml:lang="it">Documento 
+        <rdfs:label xml:lang="it">Documento
 Sanitario Nave</rdfs:label>
         <rdfs:label xml:lang="en">Health Ship Document</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/Esattore -->
@@ -2573,7 +2573,7 @@ Sanitario Nave</rdfs:label>
         <rdfs:label xml:lang="en">Collector</rdfs:label>
         <rdfs:label xml:lang="it">Esattore</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/GalleggianteMobile -->
@@ -2597,26 +2597,26 @@ Sanitario Nave</rdfs:label>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">Costruzione che sia adibita a qualsiasi servizio attinente alla navigazione o al traffico in acque marittime o interne, come ad esempio draghe, pontoni, bighe, chiatte. Pertanto non rientrano nell&apos;ambito di tale definizione i galleggianti fissi come le boe di segnalazione, i fari galleggianti e i pontili galleggianti fissi, e neanche altri edifici galleggianti, quando sono saldamente assicurati alla riva.</rdfs:comment>
-        <rdfs:label xml:lang="it">Galleggiante 
+        <rdfs:label xml:lang="it">Galleggiante
 Mobile</rdfs:label>
         <rdfs:label xml:lang="en">Mobile Float </rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/GiornaleNautico -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/GiornaleNautico">
-        <rdfs:comment xml:lang="it">Documento di bordo che il comandante della nave ha l’obbligo di tenere e conservare. Il giornale nautico si compone di quattro libri: 
-- inventario di bordo, nel quale sono descritti tutti gli attrezzi e gli oggetti che formano il corredo e armamento della nave; 
-- giornale generale e di contabilità, nel quale sono annotate tutte le entrate e le spese riguardanti la gestione della nave (prestiti contratti e la loro estinzione, atti compiuti dal comandante e i processi verbali da lui redatti in qualità di ufficiale di stato civile, oltre che tutti gli avvenimenti straordinari verificatisi durante il viaggio e ogni altra indicazione prevista dal regolamento; 
-- giornale di navigazione nel quale sono annotati tutti i dati e i fatti inerenti alla navigazione (rotte seguite, rilievi meteorologici, manovre effettuate ecc.); 
+        <rdfs:comment xml:lang="it">Documento di bordo che il comandante della nave ha l’obbligo di tenere e conservare. Il giornale nautico si compone di quattro libri:
+- inventario di bordo, nel quale sono descritti tutti gli attrezzi e gli oggetti che formano il corredo e armamento della nave;
+- giornale generale e di contabilità, nel quale sono annotate tutte le entrate e le spese riguardanti la gestione della nave (prestiti contratti e la loro estinzione, atti compiuti dal comandante e i processi verbali da lui redatti in qualità di ufficiale di stato civile, oltre che tutti gli avvenimenti straordinari verificatisi durante il viaggio e ogni altra indicazione prevista dal regolamento;
+- giornale di navigazione nel quale sono annotati tutti i dati e i fatti inerenti alla navigazione (rotte seguite, rilievi meteorologici, manovre effettuate ecc.);
 - giornale di carico o di boccaporto, nel quale si annotano gli imbarchi e gli sbarchi di merci, specificandone natura, qualità, quantità, numero e marche di colli, ubicazione nelle stive, data, luogo di carico e di destinazione, nome del caricatore e nome del destinatario, data e luogo di riconsegna.</rdfs:comment>
-        <rdfs:label xml:lang="it">Giornale 
+        <rdfs:label xml:lang="it">Giornale
 Nautico</rdfs:label>
         <rdfs:label xml:lang="en">Nautical Journal</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/ImbarcazioneDaDiporto -->
@@ -2633,22 +2633,22 @@ Nautico</rdfs:label>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">Ogni unità con scafo di lunghezza superiore a dieci metri e fino a ventiquattro metri destinata alla navigazione da diporto (art 3 legge 172/2003)</rdfs:comment>
-        <rdfs:label xml:lang="it">Imbarcazione 
+        <rdfs:label xml:lang="it">Imbarcazione
 Da Diporto</rdfs:label>
         <rdfs:label xml:lang="en">Recreational Boat</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/InventarioDiBordoNave -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/InventarioDiBordoNave">
         <rdfs:comment xml:lang="it">Documento che contiene l’elenco e la descrizione di tutti gli oggetti e gli attrezzi di corredo e di armamento della nave.</rdfs:comment>
-        <rdfs:label xml:lang="it">Inventario 
+        <rdfs:label xml:lang="it">Inventario
 Di Bordo Nave</rdfs:label>
         <rdfs:label xml:lang="en">On-Board Ship Inventory</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/LibroDiBordoNave -->
@@ -2658,7 +2658,7 @@ Di Bordo Nave</rdfs:label>
         <rdfs:label xml:lang="it">Libro Di Bordo Nave</rdfs:label>
         <rdfs:label xml:lang="en">On-Board Ship Book</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/LicenzaNave -->
@@ -2676,7 +2676,7 @@ Di Bordo Nave</rdfs:label>
         <rdfs:label xml:lang="it">Licenza Nave</rdfs:label>
         <rdfs:label xml:lang="en">Ship License</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/ModelloF24Ordinario -->
@@ -2684,11 +2684,11 @@ Di Bordo Nave</rdfs:label>
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/ModelloF24Ordinario">
         <owl:disjointWith rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/ModelloPagamentoF24EP"/>
         <rdfs:comment xml:lang="it">Il modello F24 utilizzato da tutti i contribuenti, titolari e non titolari di partita Iva, per il versamento di tributi, contributi e premi assicurativi Il modello può essere è “unificato” perché permette al contribuente di effettuare con un’unica operazione il pagamento delle somme dovute nei confronti di più amministrazioni, anche compensando il versamento con eventuali crediti ) oppure per gli Enti Pubblici . I contribuenti titolari di partita Iva hanno l’obbligo di utilizzare, anche tramite intermediari (professionisti, associazioni di categoria, Caf, ecc.), la modalità telematiche di pagamento.</rdfs:comment>
-        <rdfs:label xml:lang="it">Modello F24 
+        <rdfs:label xml:lang="it">Modello F24
 Ordinario</rdfs:label>
         <rdfs:label xml:lang="en">Ordinary F24 Model Payment</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/ModelloPagamentoF24 -->
@@ -2772,10 +2772,10 @@ Ordinario</rdfs:label>
         </owl:equivalentClass>
         <rdfs:comment xml:lang="it">Il modello F24 utilizzato da tutti i contribuenti, titolari e non titolari di partita Iva, per il versamento di tributi, contributi e premi assicurativi Il modello può essere è “unificato” perché permette al contribuente di effettuare con un’unica operazione il pagamento delle somme dovute nei confronti di più amministrazioni, anche compensando il versamento con eventuali crediti ) oppure per gli Enti Pubblici . I contribuenti titolari di partita Iva hanno l’obbligo di utilizzare, anche tramite intermediari (professionisti, associazioni di categoria, Caf, ecc.), la modalità telematiche di pagamento.</rdfs:comment>
         <rdfs:label xml:lang="en">F24 Model Payment</rdfs:label>
-        <rdfs:label xml:lang="it">Modello 
+        <rdfs:label xml:lang="it">Modello
 Pagamento F24</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/ModelloPagamentoF24Cartaceo -->
@@ -2790,11 +2790,11 @@ Pagamento F24</rdfs:label>
         <owl:disjointWith rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/ModelloPagamentoF24Telematico"/>
         <rdfs:comment xml:lang="it">Modello F24 presentato in forma cartacea presso una banca, un ufficio postale o qualsiasi sportello degli agenti della riscossione (Agenzia delle Entrate-Riscossione e Riscossione Sicilia S.p.A.).</rdfs:comment>
         <rdfs:label xml:lang="en">F24 Paper Model Payment</rdfs:label>
-        <rdfs:label xml:lang="it">Modello 
-Pagamento F24 
+        <rdfs:label xml:lang="it">Modello
+Pagamento F24
 Cartaceo</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/ModelloPagamentoF24EP -->
@@ -2802,11 +2802,11 @@ Cartaceo</rdfs:label>
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/ModelloPagamentoF24EP">
         <rdfs:comment xml:lang="it">Modello F24 utilizzato dagli enti pubblici sottoposti ai vincoli del sistema di tesoreria unica dello Stato (enti individuati dalle tabelle A e B allegate alla Legge n. 720/1984),  dalle Amministrazioni centrali dello Stato, titolari di conti presso la tesoreria centrale, nonché dagli enti titolari di contabilità speciale autorizzati dal Dipartimento della Ragioneria Generale dello Stato (I.Ge.P.A.), per il pagamento delle ritenute alla fonte, dell&apos;Irap, dei tributi erariali e comunali, dei contributi previdenziali e dei premi Inail. </rdfs:comment>
         <rdfs:label xml:lang="en">F24 Model Payment for Public Institution</rdfs:label>
-        <rdfs:label xml:lang="it">Modello 
-Pagamento 
+        <rdfs:label xml:lang="it">Modello
+Pagamento
 F24 EP</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/ModelloPagamentoF24Telematico -->
@@ -2814,22 +2814,22 @@ F24 EP</rdfs:label>
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/ModelloPagamentoF24Telematico">
         <rdfs:comment xml:lang="it">Modello F24 presentato direttamente tramite i servizi telematici messi a disposizione dall&apos;Agenzia delle Entrate (&quot;F24 web&quot; e &quot;F24 online&quot;) utilizzando i canali Entratel o Fisconline oppure mediante i servizi di internet banking messi a disposizione dagli intermediari della riscossione convenzionati con l&apos;Agenzia. </rdfs:comment>
         <rdfs:label xml:lang="en">F24 Telematic Model Payment</rdfs:label>
-        <rdfs:label xml:lang="it">Modello 
-Pagamento F24 
+        <rdfs:label xml:lang="it">Modello
+Pagamento F24
 Telematico</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/NatanteDaDiporto -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/NatanteDaDiporto">
         <rdfs:comment xml:lang="it">Ogni unità da diporto a remi, o con scafo di lunghezza pari o inferiore a dieci metri, con esclusione delle moto ad acqua.</rdfs:comment>
-        <rdfs:label xml:lang="it">Natante Da 
+        <rdfs:label xml:lang="it">Natante Da
 Diporto</rdfs:label>
         <rdfs:label xml:lang="en">Pleasure Boat</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/NatanteEGalleggiante -->
@@ -2837,10 +2837,10 @@ Diporto</rdfs:label>
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/NatanteEGalleggiante">
         <rdfs:comment xml:lang="it">Naviglio di ogni tipo e stazza a adibiti a servizi o lavori portuali;</rdfs:comment>
         <rdfs:label xml:lang="en">Boat and Float</rdfs:label>
-        <rdfs:label xml:lang="it">Natante E 
+        <rdfs:label xml:lang="it">Natante E
 Galleggiante</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/Nave -->
@@ -2963,7 +2963,7 @@ Il tipo di nave viene indicato nelle matricole o nei registri e nei documenti di
         <rdfs:label xml:lang="it">Nave</rdfs:label>
         <rdfs:label xml:lang="en">Ship</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/NaveDaDiporto -->
@@ -2983,7 +2983,7 @@ Il tipo di nave viene indicato nelle matricole o nei registri e nei documenti di
         <rdfs:label xml:lang="en">Leisure Boat</rdfs:label>
         <rdfs:label xml:lang="it">Nave Da Diporto</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/NaveDaTraffico -->
@@ -2993,7 +2993,7 @@ Il tipo di nave viene indicato nelle matricole o nei registri e nei documenti di
         <rdfs:label xml:lang="it">Nave Da Traffico</rdfs:label>
         <rdfs:label xml:lang="en">Traffic Ship</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/NaveMaggiore -->
@@ -3014,7 +3014,7 @@ Il tipo di nave viene indicato nelle matricole o nei registri e nei documenti di
         <rdfs:label xml:lang="en">Greater Ship</rdfs:label>
         <rdfs:label xml:lang="it">Nave Maggiore</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/NaveMinore -->
@@ -3034,18 +3034,18 @@ Il tipo di nave viene indicato nelle matricole o nei registri e nei documenti di
         <rdfs:label xml:lang="en">Minor Ship</rdfs:label>
         <rdfs:label xml:lang="it">Nave Minore</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/NaviglioDaPescaMarittima -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/NaviglioDaPescaMarittima">
         <rdfs:comment xml:lang="it">navi maggiori, navi minori e navi maggiori con limitazioni alla navigazione annotate sul ruolo che esercitano la pesca</rdfs:comment>
-        <rdfs:label xml:lang="it">Naviglio Da 
+        <rdfs:label xml:lang="it">Naviglio Da
 Pesca Marittima</rdfs:label>
         <rdfs:label xml:lang="en">Seagoing Fishing Ship</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/Pagamento -->
@@ -3130,7 +3130,7 @@ Pesca Marittima</rdfs:label>
         <rdfs:label xml:lang="it">Pagamento</rdfs:label>
         <rdfs:label xml:lang="en">Payment</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/PagoBancomat -->
@@ -3140,7 +3140,7 @@ Pesca Marittima</rdfs:label>
         <rdfs:label xml:lang="en">PagoBancomat</rdfs:label>
         <rdfs:label xml:lang="it">PagoBancomat</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/PortoIscrizioneNave -->
@@ -3168,13 +3168,13 @@ Pesca Marittima</rdfs:label>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:comment xml:lang="it">Il porto dove la nave è iscritta. 
+        <rdfs:comment xml:lang="it">Il porto dove la nave è iscritta.
 Individua l’Autorità marittima che ai sensi dell’art. 17, comma 1, della legge 413/1984, è tenuta a comunicare all’Inail con tempestività, le notizie concernenti l’armamento e la proprietà della nave. In analogia alla “sede dei lavori” prevista per le PAT, per le PAN/certificato Nave è indicata la Sede Inail nel cui territorio ricade il porto</rdfs:comment>
         <rdfs:label xml:lang="en">Port of Ship Enrollment</rdfs:label>
-        <rdfs:label xml:lang="it">Porto Iscrizione 
+        <rdfs:label xml:lang="it">Porto Iscrizione
 Nave</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/Postamat -->
@@ -3184,7 +3184,7 @@ Nave</rdfs:label>
         <rdfs:label xml:lang="en">Postamat</rdfs:label>
         <rdfs:label xml:lang="it">Postamat</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/PremioAddettiServiziDomesticiEFamiliariINAIL -->
@@ -3192,11 +3192,11 @@ Nave</rdfs:label>
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/PremioAddettiServiziDomesticiEFamiliariINAIL">
         <rdfs:comment xml:lang="it">Il premio assicurativo Inailper gli addetti ai servizi domestici e familiari sono compresi nei contributi che  ogni 3 mesi il datore di lavoro versa all’Inps, che provvede direttamente ad attribuirli all’Inail </rdfs:comment>
         <rdfs:label xml:lang="en">INAIL Premium for Domestic and Family Service Workers INAIL</rdfs:label>
-        <rdfs:label xml:lang="it">Premio Addetti 
-Servizi Domestici 
+        <rdfs:label xml:lang="it">Premio Addetti
+Servizi Domestici
 E Familiari INAIL</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/PremioAnticipatoINAIL -->
@@ -3205,10 +3205,10 @@ E Familiari INAIL</rdfs:label>
         <owl:disjointWith rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/RegolazionePremioINAIL"/>
         <rdfs:comment xml:lang="it">L’importo del premio di autoliquidazione anticipato che il datore di lavoro deve versare, calcolato sulla base delle retribuzioni effettive dichiarate per l&apos;anno precedente utilizzate come presunte per l’anno in corso.</rdfs:comment>
         <rdfs:label xml:lang="en">Advance INAIL Premium</rdfs:label>
-        <rdfs:label xml:lang="it">Premio Anticipato 
+        <rdfs:label xml:lang="it">Premio Anticipato
 INAIL</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/PremioApprendistiIndustrialiEArtigianiINAIL -->
@@ -3216,11 +3216,11 @@ INAIL</rdfs:label>
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/PremioApprendistiIndustrialiEArtigianiINAIL">
         <rdfs:comment xml:lang="it">Per gli apprendisti il contributo per l’assicurazione INAIL in base alla classificazione del rischio a cui è sottoposto è già compreso nella contribuzione INPS e, quindi, il loro imponibile non rileva ai fini del calcolo del premio di autoliquidazione</rdfs:comment>
         <rdfs:label xml:lang="en">INAIL Premium for Industrial and Craft Apprentices</rdfs:label>
-        <rdfs:label xml:lang="it">Premio Apprendisti 
-Industriali E 
+        <rdfs:label xml:lang="it">Premio Apprendisti
+Industriali E
 Artigiani INAIL</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/PremioArtigianiINAIL -->
@@ -3229,10 +3229,10 @@ Artigiani INAIL</rdfs:label>
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/PremioSpecialeUnitarioINAIL"/>
         <rdfs:comment xml:lang="it">Premio speciale unitario previsto per il lavoratore autonomo artigiano il cui importo è determinato in base alla classe di rischio e alla retribuzione convenzionale. Per ogni voce di tariffa relativa alla lavorazione svolta dal singolo soggetto autonomo artigiano è indicata la quota di premio corrispondente.</rdfs:comment>
         <rdfs:label xml:lang="en">Craftsmen INAIL Premium</rdfs:label>
-        <rdfs:label xml:lang="it">Premio Artigiani 
+        <rdfs:label xml:lang="it">Premio Artigiani
 INAIL</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/PremioAssicurativoINAIL -->
@@ -3305,10 +3305,10 @@ INAIL</rdfs:label>
         <rdfs:comment xml:lang="it">Il corrispettivo dovuto dal soggetto assicurante all&apos;Inail per l&apos;assicurazione obbligatoria contro gli infortuni e le malattie professionali a tutela dei soggetti assicurati. Nella generalità dei casi l&apos;importo del premio si calcola moltiplicando le retribuzioni imponibili per il tasso applicato dall&apos;Inail alla specifica lavorazione. Il calcolo del premio assicurativo avviene ogni anno tramite il sistema dell&apos;autoliquidazione (calcolo effettuato dal datore di lavoro sulla base delle norme di legge e delle istruzioni operative fornite dall&apos;Istituto). In altri casi, specificatamente indicati dalle legge, il premio del premio è invece stabilito in misura fissa, con o senza parametri di riferimento.</rdfs:comment>
         <rdfs:label xml:lang="en">Insurance INAIL Premium
 </rdfs:label>
-        <rdfs:label xml:lang="it">Premio 
+        <rdfs:label xml:lang="it">Premio
 Assicurativo INAIL</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/PremioAutoliquidazioneINAIL -->
@@ -3359,11 +3359,11 @@ Assicurativo INAIL</rdfs:label>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">Premio il cui importo è dato dalla somma algebrica della rata e della regolazione. Rientrano nei premi da autoliquidazione quelli ordinari e quello speciale per l&apos;autonomo artigiano (sono esclusi dall&apos;autoliquidazione, invece, gli altri “premi speciali unitari.)</rdfs:comment>
         <rdfs:label xml:lang="en">INAIL Premium for Self-Payment </rdfs:label>
-        <rdfs:label xml:lang="it">Premio 
-Autoliquidazione 
+        <rdfs:label xml:lang="it">Premio
+Autoliquidazione
 INAIL</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/PremioCasalingheINAIL -->
@@ -3371,10 +3371,10 @@ INAIL</rdfs:label>
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/PremioCasalingheINAIL">
         <rdfs:comment xml:lang="it">Premio annuale in misura fissa dovuto all&apos;INAIL per l&apos;assicurazione contro gli infortuni in ambito domestico regolamentata dalla legge 493/1999 </rdfs:comment>
         <rdfs:label xml:lang="en">INAIL Housewives Premium</rdfs:label>
-        <rdfs:label xml:lang="it">Premio 
+        <rdfs:label xml:lang="it">Premio
 Casalinghe INAIL</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/PremioNavigazioneEPescaMarittimaINAIL -->
@@ -3383,11 +3383,11 @@ Casalinghe INAIL</rdfs:label>
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/PremioOrdinarioINAIL"/>
         <rdfs:comment xml:lang="it">Il premio per l’assicurazione degli addetti alla navigazione e alla pesca marittima, compreso nella gestione Industria di cui al titolo I del d.p.r. 1124/1965 e determinato ai sensi dell’art. 41, applicando le aliquote stabilite dalla specifica tariffa.</rdfs:comment>
         <rdfs:label xml:lang="en">INAIL Premium for Navigation and Sea Fishing</rdfs:label>
-        <rdfs:label xml:lang="it">Premio Navigazione 
-E Pesca Marittima 
+        <rdfs:label xml:lang="it">Premio Navigazione
+E Pesca Marittima
 INAIL</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/PremioOrdinarioINAIL -->
@@ -3395,32 +3395,32 @@ INAIL</rdfs:label>
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/PremioOrdinarioINAIL">
         <rdfs:comment xml:lang="it">L&apos;importo ottenuto moltiplicando il tasso applicato per l&apos;ammontare delle retribuzioni imponibili e dividendo il prodotto per mille. Da tale importo vanno detratti gli importi per sconti ed agevolazioni eventualmente spettanti ed all&apos;importo per tal via ottenuto va aggiunta la percentuale a favore dell&apos;Associazione nazionale dei mutilati ed invalidi del lavoro (Anmil).</rdfs:comment>
         <rdfs:label xml:lang="en">Ordinary INAIL Premium</rdfs:label>
-        <rdfs:label xml:lang="it">Premio Ordinario 
+        <rdfs:label xml:lang="it">Premio Ordinario
 INAIL</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/PremioSilicosiAsbestosiINAIL -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/PremioSilicosiAsbestosiINAIL">
         <rdfs:comment xml:lang="it">Il premio supplementare di cui all&apos;art. 153 e 154 del TU 1124/1965 dovuto in presenza del rischio di contrarre queste patologie a seguito di inalazione di sostanze contenti silice allo stato libero o fibre di amianto. L&apos;importo, ottenuto moltiplicando le retribuzioni complessive riferite alla lavorazione o luogo di lavoro per il tasso silicosi/asbestosi applicato, non è più dovuto dal 1° gennaio 2019.</rdfs:comment>
-        <rdfs:label xml:lang="it">Premio Silicosi 
+        <rdfs:label xml:lang="it">Premio Silicosi
 Asbestosi INAIL</rdfs:label>
         <rdfs:label xml:lang="en">Silicosis Asbestosis INAIL Premium</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/PremioSpecialeUnitarioINAIL -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/PremioSpecialeUnitarioINAIL">
         <rdfs:comment xml:lang="it">Premi calcolati utilizzando elementi diversi rispetto a quelli che determinano il premio ordinario, come ad esempio il numero delle persone coinvolte nella lavorazione, il numero delle macchine, la natura e la durata dell’attività. La legge prevede la possibilità di ricorrere a “ premi speciali unitari” per le attività per le quali, a causa della loro natura, della modalità di svolgimento o di altre circostanze, risulta difficoltosa la determinazione del premio nella forma ordinaria. </rdfs:comment>
-        <rdfs:label xml:lang="it">Premio Speciale 
+        <rdfs:label xml:lang="it">Premio Speciale
 Unitario INAIL</rdfs:label>
         <rdfs:label xml:lang="en">Special Unit INAIL Premium</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/ProprietarioNave -->
@@ -3445,11 +3445,11 @@ Unitario INAIL</rdfs:label>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:comment xml:lang="it">il proprietario della imbarcazione è colui che mantiene il diritto di proprietà, piena o parziale, e concede all’armatore la sola disponibilità della nave sulla base, o di un rapporto di natura reale (usufrutto/uso) oppure di natura obbligatoria (locazione, comodato, ecc.), attestandolo poi con la dichiarazione di armatore. L&apos;armatore e il proprietario sono due figure che non necessariamente coincidono.</rdfs:comment>
-        <rdfs:label xml:lang="it">Proprietario 
+        <rdfs:label xml:lang="it">Proprietario
 Nave</rdfs:label>
         <rdfs:label xml:lang="en">Ship Owner</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/RegistroDiIscrizioneNave -->
@@ -3479,10 +3479,10 @@ Nave</rdfs:label>
         </owl:equivalentClass>
         <rdfs:comment xml:lang="it">Le navi sono iscritte presso le matricole e i registri tenuti dall’Autorità Marittima competente. Le matricole e i registri sono tenuti su base reale, cioè sono ordinati con riferimento ai beni – ossia  alle navi – e non ai loro titolari. I registri d’iscrizione sono le Matricole delle navi maggiori, il Registro delle navi minori e dei galleggianti, il Registro internazionale, i Registri speciali, l&apos;ATCN (archivio telematico centrale delle unità da diporto in cui dal 2019 sono confluiti i dati presenti nel Registro delle navi da diporto e nel Registro delle imbarcazioni da diporto).</rdfs:comment>
         <rdfs:label xml:lang="en">Enrollment Ship Register</rdfs:label>
-        <rdfs:label xml:lang="it">Registro Di 
+        <rdfs:label xml:lang="it">Registro Di
 Iscrizione Nave</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/RegistroInfortuniNave -->
@@ -3490,10 +3490,10 @@ Iscrizione Nave</rdfs:label>
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/RegistroInfortuniNave">
         <rdfs:comment xml:lang="it">Registro nel quale sono annotati gli infortuni occorsi ai lavoratori imbarcati e la tipologia dell&apos;infortunio (art. 25, comma 2, d.lgs. 271/1999)</rdfs:comment>
         <rdfs:label xml:lang="en">Occupational Injuries Register of Ship</rdfs:label>
-        <rdfs:label xml:lang="it">Registro 
+        <rdfs:label xml:lang="it">Registro
 Infortuni Nave</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/RegolazionePremioINAIL -->
@@ -3501,10 +3501,10 @@ Infortuni Nave</rdfs:label>
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/RegolazionePremioINAIL">
         <rdfs:comment xml:lang="it">Conguaglio del premio di autoliquidazione per l’anno precedente. </rdfs:comment>
         <rdfs:label xml:lang="en">INAIL Premium Regulation</rdfs:label>
-        <rdfs:label xml:lang="it">Regolazione 
+        <rdfs:label xml:lang="it">Regolazione
 Premio INAIL</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/RicevutaPagamento -->
@@ -3544,14 +3544,14 @@ Premio INAIL</rdfs:label>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:comment xml:lang="it">Documento che comprova, indicando date e importi, la corresponsione di una fattura: 
+        <rdfs:comment xml:lang="it">Documento che comprova, indicando date e importi, la corresponsione di una fattura:
 - Parzialmente, per cui sulla ricevuta c’è scritto che il debitore deve ancora un altro importo di denaro;
 - Totalmente, quando il debitore paga tutto il suo debito, oppure paga l’ultima delle rate. In questo caso il creditore consegna una ricevuta di pagamento “a saldo”.</rdfs:comment>
         <rdfs:label xml:lang="en">Receipt of Payment</rdfs:label>
-        <rdfs:label xml:lang="it">Ricevuta 
+        <rdfs:label xml:lang="it">Ricevuta
 Pagamento</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/RiversamentoSomme -->
@@ -3593,10 +3593,10 @@ Pagamento</rdfs:label>
         </owl:equivalentClass>
         <rdfs:comment xml:lang="it">Somme di denaro relative ad un premio assicurativo, versate da ADER all&apos;INAIL.</rdfs:comment>
         <rdfs:label xml:lang="en">Repayment</rdfs:label>
-        <rdfs:label xml:lang="it">Riversamento 
+        <rdfs:label xml:lang="it">Riversamento
 Somme</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/RuolinoDiEquipaggioNave -->
@@ -3611,31 +3611,31 @@ Somme</rdfs:label>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">Elenco delle persone dell&apos;equipaggio per le unità da diporto con l&apos;indicazione del contratto individuale di arruolamento, nonché del titolo professionale, della qualifica, delle mansioni da esplicare a bordo e della retribuzione fissata nel contratto stesso.</rdfs:comment>
         <rdfs:label xml:lang="en">Crew Small Role Paper of Ship</rdfs:label>
-        <rdfs:label xml:lang="it">Ruolino Di 
+        <rdfs:label xml:lang="it">Ruolino Di
 Equipaggio Nave</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/RuoloDiEquipaggioNave -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc21/RuoloDiEquipaggioNave">
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/CartaDiBordoNave"/>
-        <rdfs:comment xml:lang="it">Documento di bordo obbligatorio per le navi maggiori e da tenere a bordo che deve contenere: 
- 1) il nome della nave; 
- 2) il nome dell&apos;armatore; 
- 3) l&apos;indicazione del rappresentante dell&apos;armatore nominato a sensi dell&apos;articolo 267 Codice della navigazione; 
+        <rdfs:comment xml:lang="it">Documento di bordo obbligatorio per le navi maggiori e da tenere a bordo che deve contenere:
+ 1) il nome della nave;
+ 2) il nome dell&apos;armatore;
+ 3) l&apos;indicazione del rappresentante dell&apos;armatore nominato a sensi dell&apos;articolo 267 Codice della navigazione;
  4) l&apos;indicazione della data di armamento e di quella di
-disarmamento; 
+disarmamento;
  5) l&apos;elenco delle persone dell&apos;equipaggio, con l&apos;indicazione del contratto individuale di arruolamento, nonche&apos; del titolo
-professionale, della qualifica, delle mansioni da esplicare a bordo e della retribuzione fissata nel contratto stesso; 
- 6) la descrizione delle armi e delle munizioni in dotazione della nave. 
+professionale, della qualifica, delle mansioni da esplicare a bordo e della retribuzione fissata nel contratto stesso;
+ 6) la descrizione delle armi e delle munizioni in dotazione della nave.
 [art. 169 e 170 Codice della navigazione]</rdfs:comment>
         <rdfs:label xml:lang="en">Crew Role Paper of Ship</rdfs:label>
-        <rdfs:label xml:lang="it">Ruolo Di 
+        <rdfs:label xml:lang="it">Ruolo Di
 Equipaggio Nave</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/ServizioNave -->
@@ -3663,17 +3663,17 @@ Equipaggio Nave</rdfs:label>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:comment xml:lang="it">Una nave può essere abilitata ad uno o più dei seguenti servizi ai sensi dell&apos;art. 13 DPR 435/1991: 
-a) trasporto di passeggeri; 
-b) trasporto di merci; 
+        <rdfs:comment xml:lang="it">Una nave può essere abilitata ad uno o più dei seguenti servizi ai sensi dell&apos;art. 13 DPR 435/1991:
+a) trasporto di passeggeri;
+b) trasporto di merci;
 c) servizi speciali (servizi scientifici o di ricerca, scuola, salvataggio, appoggio flottiglia da pesca, conservazione o trasformazione dei prodotti della pesca, posa cavi, sfruttamento fauna, flora e fondo marino diverso dalla pesca, uso privato ed altri servizi stabiliti con decreto del Ministro della Marina Mercantile);
-d) servizio di impianti off-shore e di navi adibite alla esplorazione o sfruttamento del fondo marino; 
-e) pesca; 
+d) servizio di impianti off-shore e di navi adibite alla esplorazione o sfruttamento del fondo marino;
+e) pesca;
 f) rimorchio.</rdfs:comment>
         <rdfs:label xml:lang="it">Servizio Nave</rdfs:label>
         <rdfs:label xml:lang="en">Ship Service</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/SgravioINAIL -->
@@ -3707,9 +3707,9 @@ f) rimorchio.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="it">Riduzioni contributive che si applicano ai premi di autoliquidazione:                        
+        <rdfs:comment xml:lang="it">Riduzioni contributive che si applicano ai premi di autoliquidazione:
 1. Riduzione per la piccola pesca costiera e nelle acque interne e lagunari (PAT)
-2. Sgravi per pesca oltre gli stretti, pesca mediterranea e pesca costiera (PAN)                                                                                                                                        
+2. Sgravi per pesca oltre gli stretti, pesca mediterranea e pesca costiera (PAN)
 3. Sgravio per il Registro Internazionale (PAN) - vedi 106
 4. Incentivi per il sostegno della maternità e paternità e per la sostituzione di
 lavoratori in congedo (PAT)
@@ -3721,7 +3721,7 @@ lavoratori in congedo (PAT)
         <rdfs:label xml:lang="en">INAIL Tax Break/Contribution Reduction</rdfs:label>
         <rdfs:label xml:lang="it">Sgravio/Riduzione contributiva INAIL</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/SgravioRegistroInternazionaleINAIL -->
@@ -3730,10 +3730,10 @@ lavoratori in congedo (PAT)
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/SgravioINAIL"/>
         <rdfs:comment xml:lang="it">Sgravio contributivo previsto dall&apos;articolo 6 del decreto-legge n. 457/1997 che si concretizza nell&apos;esonero dal versamento dei premi dovuti per legge applicato alle imprese armatrici per il personale avente i requisiti di cui all’art. 119 del codice della navigazione ed imbarcato su navi iscritte nel Registro Internazionale.</rdfs:comment>
         <rdfs:label xml:lang="en">International Registry Tax Break of INAIL</rdfs:label>
-        <rdfs:label xml:lang="it">Sgravio Registro 
+        <rdfs:label xml:lang="it">Sgravio Registro
 Internazionale INAIL</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/SpecieDiNavigazione -->
@@ -3761,20 +3761,20 @@ Internazionale INAIL</rdfs:label>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:comment xml:lang="it">Classificazione che ai sensi dell&apos;art. 12 DPR 435/1991 definisce le specie di navigazione cui possono essere abilitate le navi. Si compone delle seguenti modalità: 
-a) navigazione internazionale lunga (Nav. I.L.); 
-b) navigazione internazionale breve (Nav. I.B.); 
-c) navigazione internazionale costiera (Nav. I.C.); 
-d) navigazione nazionale (Nav. N.); 
+        <rdfs:comment xml:lang="it">Classificazione che ai sensi dell&apos;art. 12 DPR 435/1991 definisce le specie di navigazione cui possono essere abilitate le navi. Si compone delle seguenti modalità:
+a) navigazione internazionale lunga (Nav. I.L.);
+b) navigazione internazionale breve (Nav. I.B.);
+c) navigazione internazionale costiera (Nav. I.C.);
+d) navigazione nazionale (Nav. N.);
 e) navigazione nazionale costiera (Nav. N.C.);
-f) navigazione litoranea (Nav. N.Li.); 
+f) navigazione litoranea (Nav. N.Li.);
 g) navigazione locale (Nav. N.Lo.);
 h) navigazione speciale (Nav. S.). </rdfs:comment>
         <rdfs:label xml:lang="en">Navigation Species</rdfs:label>
-        <rdfs:label xml:lang="it">Specie Di 
+        <rdfs:label xml:lang="it">Specie Di
 Navigazione</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/TrasmissioneDatiPagamento -->
@@ -3816,10 +3816,10 @@ Navigazione</rdfs:label>
         </owl:equivalentClass>
         <rdfs:comment xml:lang="it">Trasmissione dei dati relativi al modello di pagamento dell&apos;F24.</rdfs:comment>
         <rdfs:label xml:lang="en">Payment Data Transmission</rdfs:label>
-        <rdfs:label xml:lang="it">Trasmissione 
+        <rdfs:label xml:lang="it">Trasmissione
 Dati Pagamento</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/proc21/UnitaDaDiporto -->
@@ -3846,13 +3846,13 @@ Dati Pagamento</rdfs:label>
         </owl:equivalentClass>
         <rdfs:comment xml:lang="it">Si intende ogni costruzione di qualunque tipo e con qualunque mezzo di propulsione destinata alla navigazione da diporto. Il diporto è disciplinato dal Codice della nautica da diporto e dalla legge 172/2003. Le unità da diporto si distinguono in: Nave, Imbarcazione e Natante.</rdfs:comment>
         <rdfs:label xml:lang="en">Recreational Unit</rdfs:label>
-        <rdfs:label xml:lang="it">Unita Da 
+        <rdfs:label xml:lang="it">Unita Da
 Diporto</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -3860,7 +3860,7 @@ Diporto</rdfs:label>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/data/proc21/distribution/AUTOLIQ-RDF-TURTLE -->
@@ -3878,9 +3878,9 @@ Diporto</rdfs:label>
         <dct:title xml:lang="it">Distribuzione RDF/Turtle ontologia INAIL - Autoliquidazione</dct:title>
         <dct:title xml:lang="en">RDF/Turtle distribution of INAIL ontology - Self-Payment</dct:title>
     </owl:NamedIndividual>
-	
-	
-	
+
+
+
 	<!-- https://w3id.org/italia/work-accident/data/proc21/distribution/AUTOLIQ-RDF-XML -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/data/proc21/distribution/AUTOLIQ-RDF-XML">
@@ -3896,9 +3896,9 @@ Diporto</rdfs:label>
         <dct:title xml:lang="it">Distribuzione RDF/XML ontologia INAIL - Autoliquidazione</dct:title>
         <dct:title xml:lang="en">RDF/XML distribution of INAIL ontology - Self-Payment</dct:title>
     </owl:NamedIndividual>
-	
-	
-	
+
+
+
 	<!-- https://w3id.org/italia/work-accident/data/proc21/distribution/AUTOLIQ-N-TRIPLES -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/data/proc21/distribution/AUTOLIQ-N-TRIPLES">
@@ -3914,7 +3914,7 @@ Diporto</rdfs:label>
         <dct:title xml:lang="it">Distribuzione N-TRIPLES ontologia INAIL - Autoliquidazione</dct:title>
         <dct:title xml:lang="en">N-TRIPLES distribution of INAIL ontology - Self-Payment</dct:title>
     </owl:NamedIndividual>
-	
+
 
 
     <!-- https://w3id.org/italia/work-accident/data/organization/agenzia_entrate -->
@@ -3926,7 +3926,7 @@ Diporto</rdfs:label>
         <dct:identifier>age</dct:identifier>
         <foaf:name xml:lang="it">Agenzia delle Entrate</foaf:name>
         <foaf:name xml:lang="en">Italian Revenue Agency</foaf:name>
-    </owl:NamedIndividual>	
+    </owl:NamedIndividual>
 
 
 
@@ -3940,7 +3940,7 @@ Diporto</rdfs:label>
         <foaf:name xml:lang="it">Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro</foaf:name>
         <foaf:name xml:lang="en">National Institute for Insurance against Accidents at Work</foaf:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/data/organization/td -->
@@ -3952,7 +3952,7 @@ Diporto</rdfs:label>
         <foaf:name xml:lang="it">Team per la Trasformazione Digitale</foaf:name>
 		<foaf:name xml:lang="en">Digital Transformation Team</foaf:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/italia/work-accident/data/organization/ufficioV -->
@@ -3964,10 +3964,10 @@ Diporto</rdfs:label>
 		<vcard:fn>INAIL Ufficio V - D.C.O.D</vcard:fn>
         <vcard:hasEmail rdf:resource="mailto:dcod@inail.it"/>
     </owl:NamedIndividual>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // General axioms
