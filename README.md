@@ -48,4 +48,4 @@ I file presenti in questo repository sono organizzati secondo la seguente albera
 Ontologie e [vocabolari controllati](https://www.agid.gov.it/it/dati/vocabolari-controllati) sono documenti [RDF](https://www.w3.org/RDF/) serializzati in formato [TURTLE](https://www.w3.org/TR/turtle/) mentre gli schemi  [Open Api 3 (OAS3)](https://spec.openapis.org/oas/v3.1.0) sono serializzati in formato [YAML](https://yaml.org/).
 
 ## Licenza
-Tutti i moduli ontologici sono rilasciati sotto la licenza aperta Creative Commons Attribution 4.0
+Tutti i moduli ontologici sono rilasciati sotto la licenza aperta Creative Commons Attribution 4.0.
