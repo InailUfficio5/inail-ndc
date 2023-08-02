@@ -37,8 +37,8 @@
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/CM_CSV> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/classe-menomazione/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/classe-menomazione/latest/classe_menomazione.csv> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/classe-menomazione/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/classe-menomazione/v0.5/classe_menomazione.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classe di menomazione adottata dall'INAIL"@it,
         "This is the distribution in CSV of the disability class adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
@@ -48,8 +48,8 @@
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/CM_JSON> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/classe-menomazione/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/classe-menomazione/latest/classe_menomazione.json> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/classe-menomazione/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/classe-menomazione/v0.5/classe_menomazione.json> ;
     dct:description "Questa è la distribuzione JSON del vocabolario controllato sulla classe di menomazione adottata dall'INAIL"@it,
         "This is the distribution in JSON of the disability class adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
@@ -59,8 +59,8 @@
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/CM_RDF_TURTLE> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/classe-menomazione/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/classe-menomazione/latest/classe_menomazione.ttl> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/classe-menomazione/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/classe-menomazione/v0.5/classe_menomazione.ttl> ;
     dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla classe di menomazione adottata dall'INAIL"@it,
         "This is the distribution in RDF/turtle of the disability class adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;

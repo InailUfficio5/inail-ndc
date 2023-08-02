@@ -20047,8 +20047,8 @@ causaesternasubset:17.21 a INAILService:ClassificazioneCauseEsterneINAIL,
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/CCE_CSV> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/classificazione-cause-esterne/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/classificazione-cause-esterne/latest/classificazione_cause_esterne.csv> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/classificazione-cause-esterne/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/classificazione-cause-esterne/v0.5/classificazione_cause_esterne.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classificazione delle cause esterne adottata dall'INAIL"@it,
         "This is the distribution in CSV of the external causes classification adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
@@ -20058,8 +20058,8 @@ causaesternasubset:17.21 a INAILService:ClassificazioneCauseEsterneINAIL,
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/CCE_JSON> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/classificazione-cause-esterne/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/classificazione-cause-esterne/latest/classificazione_cause_esterne.json> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/classificazione-cause-esterne/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/classificazione-cause-esterne/v0.5/classificazione_cause_esterne.json> ;
     dct:description "Questa è la distribuzione JSON del vocabolario controllato sulla classificazione delle cause esterne adottata dall'INAIL"@it,
         "This is the distribution in JSON of the external causes classification adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
@@ -20069,8 +20069,8 @@ causaesternasubset:17.21 a INAILService:ClassificazioneCauseEsterneINAIL,
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/CCE_RDF_TURTLE> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/classificazione-cause-esterne/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/classificazione-cause-esterne/latest/classificazione_cause_esterne.ttl> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/classificazione-cause-esterne/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/classificazione-cause-esterne/v0.5/classificazione_cause_esterne.ttl> ;
     dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla classificazione delle cause esterne adottata dall'INAIL"@it,
         "This is the distribution in RDF/turtle of the external causes classification adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
