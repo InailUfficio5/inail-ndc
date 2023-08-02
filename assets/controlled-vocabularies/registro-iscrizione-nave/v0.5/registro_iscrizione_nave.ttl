@@ -37,8 +37,8 @@
 
 <https://w3id.org/italia/work-accident/data/proc21/distribution/RI_CSV> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/registro-iscrizione-nave/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/registro-iscrizione-nave/latest/registro_iscrizione_nave.csv> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/registro-iscrizione-nave/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/registro-iscrizione-nave/v0.5/registro_iscrizione_nave.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla tipologia di registro di iscrizione della nave adottata dall'INAIL"@it,
         "This is the distribution in CSV of the type of ship registration book adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
@@ -48,8 +48,8 @@
 
 <https://w3id.org/italia/work-accident/data/proc21/distribution/RI_JSON> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/registro-iscrizione-nave/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/registro-iscrizione-nave/latest/registro_iscrizione_nave.json> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/registro-iscrizione-nave/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/registro-iscrizione-nave/v0.5/registro_iscrizione_nave.json> ;
     dct:description "Questa è la distribuzione JSON del vocabolario controllato sulla tipologia di registro di iscrizione della nave adottata dall'INAIL"@it,
         "This is the distribution in JSON of the type of ship registration book adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
@@ -59,8 +59,8 @@
 
 <https://w3id.org/italia/work-accident/data/proc21/distribution/RI_RDF_TURTLE> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/registro-iscrizione-nave/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/registro-iscrizione-nave/latest/registro_iscrizione_nave.ttl> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/registro-iscrizione-nave/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/registro-iscrizione-nave/v0.5/registro_iscrizione_nave.ttl> ;
     dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla tipologia di registro di iscrizione della nave adottata dall'INAIL"@it,
         "This is the distribution in RDF/turtle of the type of ship registration book adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
