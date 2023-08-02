@@ -658,8 +658,8 @@ contattogrup:8 a INAILService:TipoContattoINAIL,
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/TC_CSV> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-contatto/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-contatto/latest/tipo_contatto.csv> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-contatto/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-contatto/v0.5/tipo_contatto.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sulle tipologie di contatto adottate dall'INAIL"@it,
         "This is the distribution in CSV of types of contact adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
@@ -669,8 +669,8 @@ contattogrup:8 a INAILService:TipoContattoINAIL,
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/TC_JSON> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-contatto/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-contatto/latest/tipo_contatto.json> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-contatto/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-contatto/v0.5/tipo_contatto.json> ;
     dct:description "Questa è la distribuzione JSON del vocabolario controllato sulle tipologie di contatto adottate dall'INAIL"@it,
         "This is the distribution in JSON of types of contact adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
@@ -680,8 +680,8 @@ contattogrup:8 a INAILService:TipoContattoINAIL,
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/TC_RDF_TURTLE> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-contatto/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-contatto/latest/tipo_contatto.ttl> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-contatto/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-contatto/v0.5/tipo_contatto.ttl> ;
     dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulle tipologie di contatto adottate dall'INAIL"@it,
         "This is the distribution in RDF/turtle of types of contact adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
