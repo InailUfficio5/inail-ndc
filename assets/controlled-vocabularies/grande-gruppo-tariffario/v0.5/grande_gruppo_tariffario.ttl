@@ -125,8 +125,8 @@ ggtariff:9 a INAILService:GrandeGruppoVoceDiTariffaINAIL,
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/GGT_CSV> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/grande-gruppo-tariffario/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/grande-gruppo-tariffario/latest/grande_gruppo_tariffario.csv> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/grande-gruppo-tariffario/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/grande-gruppo-tariffario/v0.5/grande_gruppo_tariffario.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classificazione del grande gruppo tariffario adottata dall'INAIL"@it,
         "This is the distribution in CSV of the classification of the large tariff group adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
@@ -136,8 +136,8 @@ ggtariff:9 a INAILService:GrandeGruppoVoceDiTariffaINAIL,
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/GGT_JSON> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/grande-gruppo-tariffario/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/grande-gruppo-tariffario/latest/grande_gruppo_tariffario.json> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/grande-gruppo-tariffario/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/grande-gruppo-tariffario/v0.5/grande_gruppo_tariffario.json> ;
     dct:description "Questa è la distribuzione JSON del vocabolario controllato sulla classificazione del grande gruppo tariffario adottata dall'INAIL"@it,
         "This is the distribution in JSON of the classification of the large tariff group adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
@@ -147,8 +147,8 @@ ggtariff:9 a INAILService:GrandeGruppoVoceDiTariffaINAIL,
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/GGT_RDF_TURTLE> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/grande-gruppo-tariffario/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/grande-gruppo-tariffario/latest/grande_gruppo_tariffario.ttl> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/grande-gruppo-tariffario/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/grande-gruppo-tariffario/v0.5/grande_gruppo_tariffario.ttl> ;
     dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla classificazione del grande gruppo tariffario adottata dall'INAIL"@it,
         "This is the distribution in RDF/turtle of the classification of the large tariff group adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
