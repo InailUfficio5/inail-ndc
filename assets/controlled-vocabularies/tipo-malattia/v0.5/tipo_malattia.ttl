@@ -26,8 +26,8 @@
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/TM_CSV> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-malattia/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-malattia/latest/tipo_malattia.csv> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-malattia/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-malattia/v0.5/tipo_malattia.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classificazione delle tipologie di malattia adottata dall'INAIL"@it,
         "This is the distribution in CSV of the classification of disease types adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
@@ -37,8 +37,8 @@
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/TM_JSON> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-malattia/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-malattia/latest/tipo_malattia.json> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-malattia/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-malattia/v0.5/tipo_malattia.json> ;
     dct:description "Questa è la distribuzione JSON del vocabolario controllato sulla classificazione delle tipologie di malattia adottata dall'INAIL"@it,
         "This is the distribution in JSON of the classification of disease types adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
@@ -48,8 +48,8 @@
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/TM_RDF_TURTLE> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-malattia/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-malattia/latest/tipo_malattia.ttl> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-malattia/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-malattia/v0.5/tipo_malattia.ttl> ;
     dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla classificazione delle tipologie di malattia adottata dall'INAIL"@it,
         "This is the distribution in RDF/turtle of the the classification of disease types adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
