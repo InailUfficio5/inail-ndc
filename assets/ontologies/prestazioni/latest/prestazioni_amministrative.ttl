@@ -32,8 +32,8 @@ INAILService: a owl:Ontology ;
         "Ontologia INAIL relativa a Infortuni e Malattie Professionali"@it ;
     rdfs:comment "Ontologia INAIL relativa a Infortuni e Malattie Professionali. La malattia professionale è una patologia la cui causa agisce lentamente e progressivamente sull’organismo (causa diluita e non causa violenta e concentrata nel tempo), e deve essere diretta ed efficiente, cioè in grado di produrre l’infermità in modo esclusivo o prevalente. Deve esistere un rapporto causale, o concausale, diretto tra il rischio professionale e la malattia. Il rischio può essere provocato dalla lavorazione che l'assicurato svolge, oppure dall'ambiente in cui la lavorazione stessa si svolge. L' infortunio sul lavoro è ogni lesione originata, in occasione di lavoro, da causa violenta che determini la morte della persona o ne menomi parzialmente o totalmente la capacità lavorativa in via temporanea o permanente. Si differenzia dalla malattia professionale poiché l’evento scatenante è improvviso e violento, mentre nel primo caso le cause sono lente e diluite nel tempo."@it,
         "This is the ontology of the INAIL Organization about Injuries and Occupational Diseases. Occupational disease is a pathology whose cause acts slowly and progressively on the body (diluted cause and not violent cause concentrated over time), and ti must be direct and efficient, that is, capable of producing the infirmity exclusively or predominantly. There must be a direct causal, or concausal, relationship between the occupational risk and the disease. The risk may be caused by the work the insured person does, or by the environment in which the work takes place. Occupational injury is any wound originating, on the occasion of work, from a violent cause that results in the death of the person or partially or totally damages his or her ability to work temporarily or permanently. It's different from occupational disease in that the triggering event is sudden and violent, whereas in the former the causes are slow and diluted over time."@en ;
-    owl:versionInfo "Version 2.0 - Modified on 31 July 2023"@en,
-        "Versione 2.0 - Modificata il 31 Luglio 2023"@it ;
+    owl:versionInfo "Version 2.0 - Modified on 05 September 2023"@en,
+        "Versione 2.0 - Modificata il 05 Settembre 2023"@it ;
     rdfs:isDefinedBy INAILService: ;
     prov:wasDerivedFrom INAILService:1.9 ;
     adms:acronym "inail" ;
@@ -79,7 +79,7 @@ INAILService: a owl:Ontology ;
     dct:issued "2022-09-06T00:00:00+00:00"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
         <http://publications.europa.eu/resource/authority/language/ITA> ;
-    dct:modified "2023-07-31T00:00:00+00:00"^^xsd:dateTime ;
+    dct:modified "2023-09-05T00:00:00+00:00"^^xsd:dateTime ;
     dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
     dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
     dct:title "INAIL Ontology about Injuries and Occupational Diseases"@en,

@@ -48,7 +48,6 @@
 		<dcat:keyword xml:lang="en">Insurance Premium</dcat:keyword>
 		<prov:wasDerivedFrom rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/1.9"/>
 		<adms:prev rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/1.9"/>
-		<adms:last rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/2.0"/>
 		<rdfs:comment xml:lang="it">Ontologia INAIL relativa all'autoliquidazione. L'autoliquidazione è il procedimento che consente al datore di lavoro soggetto all’assicurazione obbligatoria contro gli infortuni sul lavoro e le malattie professionali di pagare il premio assicurativo annuale.</rdfs:comment>
 		<rdfs:comment xml:lang="en">This is the ontology of the INAIL Organization about sel-payment. Self-payment is the process by which an employer subject to compulsory insurance against occupational accidents and diseases pays the annual insurance premium</rdfs:comment>
 		<adms:target xml:lang="it">Cittadini</adms:target>
@@ -62,7 +61,7 @@
 		<adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/proc21/distribution/AUTOLIQ-RDF-XML"/>
 		<adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/proc21/distribution/AUTOLIQ-N-TRIPLES"/>
         <rdfs:isDefinedBy>https://w3id.org/italia/work-accident/onto/proc21/</rdfs:isDefinedBy>
-		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-31T00:00:00Z</dct:modified>
+		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-05T00:00:00Z</dct:modified>
         <rdfs:label xml:lang="it">Ontologia INAIL relativa all'Autoliquidazione</rdfs:label>
 		<rdfs:label xml:lang="en">INAIL Ontology about Self-Payment</rdfs:label>
 		<adms:hasKeyClass rdf:resource="https://w3id.org/italia/work-accident/onto/proc21/ModelloPagamentoF24"/>
@@ -78,8 +77,8 @@
 		<dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
 		<dct:rightsHolder rdf:resource="https://w3id.org/italia/work-accident/data/organization/inail"/>
 		<adms:hasContributor rdf:resource="https://w3id.org/italia/work-accident/data/organization/td"/>
-		<owl:versionInfo xml:lang="it">Versione 2.0 - Modificata il 31 Luglio 2023</owl:versionInfo>
-		<owl:versionInfo xml:lang="en">Version 2.0 - Modified on 31 July 2023</owl:versionInfo>
+		<owl:versionInfo xml:lang="it">Versione 2.0 - Modificata il 05 Settembre 2023</owl:versionInfo>
+		<owl:versionInfo xml:lang="en">Version 2.0 - Modified on 05 September 2023</owl:versionInfo>
 		<adms:hasOntologyLanguage>https://w3id.org/italia/onto/ADMS/OWL</adms:hasOntologyLanguage>
 		<adms:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
 		<dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI"/>

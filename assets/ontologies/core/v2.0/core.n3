@@ -1,5 +1,5 @@
 <https://w3id.org/italia/work-accident/onto/core/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/italia/work-accident/onto/core/> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/italia/onto/work-accident/ised/core/2.0> .
+<https://w3id.org/italia/work-accident/onto/core/> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/italia/work-accident/onto/core/2.0> .
 <https://w3id.org/italia/work-accident/onto/core/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/italia/onto/CLV/> .
 <https://w3id.org/italia/work-accident/onto/core/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/italia/onto/COV/> .
 <https://w3id.org/italia/work-accident/onto/core/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/italia/onto/CPV/> .
@@ -38,7 +38,7 @@
 <https://w3id.org/italia/work-accident/onto/core/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> <https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-XML> .
 <https://w3id.org/italia/work-accident/onto/core/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> <https://w3id.org/italia/work-accident/data/core/distribution/CORE-N-TRIPLES> .
 <https://w3id.org/italia/work-accident/onto/core/> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/italia/work-accident/onto/core/" .
-<https://w3id.org/italia/work-accident/onto/core/> <http://purl.org/dc/terms/modified> "2023-07-31T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/italia/work-accident/onto/core/> <http://purl.org/dc/terms/modified> "2023-09-05T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/italia/work-accident/onto/core/> <http://www.w3.org/2000/01/rdf-schema#label> "Ontologia Core di INAIL"@it .
 <https://w3id.org/italia/work-accident/onto/core/> <http://www.w3.org/2000/01/rdf-schema#label> "Core INAIL Ontology"@en .
 <https://w3id.org/italia/work-accident/onto/core/> <https://w3id.org/italia/onto/ADMS/hasKeyClass> <https://w3id.org/italia/work-accident/onto/core/DenunciaINAIL> .
@@ -56,8 +56,8 @@
 <https://w3id.org/italia/work-accident/onto/core/> <http://purl.org/dc/terms/accrualPeriodicity> <http://publications.europa.eu/resource/authority/frequency/IRREG> .
 <https://w3id.org/italia/work-accident/onto/core/> <http://purl.org/dc/terms/rightsHolder> <https://w3id.org/italia/work-accident/data/organization/inail> .
 <https://w3id.org/italia/work-accident/onto/core/> <https://w3id.org/italia/onto/ADMS/hasContributor> <https://w3id.org/italia/work-accident/data/organization/td> .
-<https://w3id.org/italia/work-accident/onto/core/> <http://www.w3.org/2002/07/owl#versionInfo> "Versione 2.0 - Modificata il 31 Luglio 2023"@it .
-<https://w3id.org/italia/work-accident/onto/core/> <http://www.w3.org/2002/07/owl#versionInfo> "Version 2.0 - Modified on 31 July 2023"@en .
+<https://w3id.org/italia/work-accident/onto/core/> <http://www.w3.org/2002/07/owl#versionInfo> "Versione 2.0 - Modificata il 05 Settembre 2023"@it .
+<https://w3id.org/italia/work-accident/onto/core/> <http://www.w3.org/2002/07/owl#versionInfo> "Version 2.0 - Modified on 05 September 2023"@en .
 <https://w3id.org/italia/work-accident/onto/core/> <https://w3id.org/italia/onto/ADMS/hasOntologyLanguage> "https://w3id.org/italia/onto/ADMS/OWL" .
 <https://w3id.org/italia/work-accident/onto/core/> <https://w3id.org/italia/onto/ADMS/hasFormalityLevel> <https://w3id.org/italia/onto/ADMS/Formal> .
 <https://w3id.org/italia/work-accident/onto/core/> <http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/data-theme/SOCI> .

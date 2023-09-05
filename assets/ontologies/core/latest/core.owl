@@ -26,7 +26,7 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="https://w3id.org/italia/work-accident/onto/core/">
-        <owl:versionIRI rdf:resource="https://w3id.org/italia/onto/work-accident/ised/core/2.0"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/italia/work-accident/onto/core/2.0"/>
 		<owl:imports rdf:resource="https://w3id.org/italia/onto/CLV/"/>
 		<owl:imports rdf:resource="https://w3id.org/italia/onto/COV/"/>
 		<owl:imports rdf:resource="https://w3id.org/italia/onto/CPV/"/>
@@ -52,7 +52,6 @@
 		<dcat:keyword xml:lang="en">INAIL Office</dcat:keyword>
 		<prov:wasDerivedFrom rdf:resource="https://w3id.org/italia/work-accident/onto/core/1.9"/>
 		<adms:prev rdf:resource="https://w3id.org/italia/work-accident/onto/core/1.9"/>
-		<adms:last rdf:resource="https://w3id.org/italia/work-accident/onto/core/2.0"/>
 		<rdfs:comment xml:lang="it">Ontologia INAIL relativa ai concetti core dell'istituto: Azienda, Posizione Assicurativa Territoriale (PAT), Posizione Assicurativa Navigazione (PAN), Denuncia, Polizza, Sede INAIL, Retribuzione</rdfs:comment>
 		<rdfs:comment xml:lang="en">This is the ontology of the INAIL Organization about core concepts of the institute: Company, Insurance Territorial Position (PAT), Insurance Navigation Position(PAN), Complaint, Policy, INAIL Office, Salary</rdfs:comment>
 		<adms:target xml:lang="it">Cittadini</adms:target>
@@ -66,7 +65,7 @@
 		<adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-XML"/>
 		<adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/core/distribution/CORE-N-TRIPLES"/>
         <rdfs:isDefinedBy>https://w3id.org/italia/work-accident/onto/core/</rdfs:isDefinedBy>
-		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-31T00:00:00Z</dct:modified>
+		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-05T00:00:00Z</dct:modified>
         <rdfs:label xml:lang="it">Ontologia Core di INAIL</rdfs:label>
 		<rdfs:label xml:lang="en">Core INAIL Ontology</rdfs:label>
 		<adms:hasKeyClass rdf:resource="https://w3id.org/italia/work-accident/onto/core/DenunciaINAIL"/>
@@ -84,8 +83,8 @@
 		<dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
 		<dct:rightsHolder rdf:resource="https://w3id.org/italia/work-accident/data/organization/inail"/>
 		<adms:hasContributor rdf:resource="https://w3id.org/italia/work-accident/data/organization/td"/>
-		<owl:versionInfo xml:lang="it">Versione 2.0 - Modificata il 31 Luglio 2023</owl:versionInfo>
-		<owl:versionInfo xml:lang="en">Version 2.0 - Modified on 31 July 2023</owl:versionInfo>
+		<owl:versionInfo xml:lang="it">Versione 2.0 - Modificata il 05 Settembre 2023</owl:versionInfo>
+		<owl:versionInfo xml:lang="en">Version 2.0 - Modified on 05 September 2023</owl:versionInfo>
 		<adms:hasOntologyLanguage>https://w3id.org/italia/onto/ADMS/OWL</adms:hasOntologyLanguage>
 		<adms:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
 		<dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI"/>

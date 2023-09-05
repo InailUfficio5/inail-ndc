@@ -26,7 +26,7 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="https://w3id.org/italia/work-accident/onto/adm_serv/">
-        <owl:versionIRI rdf:resource="https://w3id.org/italia/onto/work-accident/ised/core/2.0"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/italia/work-accident/onto/adm_serv/2.0"/>
 		<owl:imports rdf:resource="https://w3id.org/italia/onto/CLV/"/>
 		<owl:imports rdf:resource="https://w3id.org/italia/onto/COV/"/>
 		<owl:imports rdf:resource="https://w3id.org/italia/onto/CPV/"/>
@@ -47,7 +47,6 @@
 		<dcat:keyword xml:lang="en">Occupational Disease</dcat:keyword>
 		<prov:wasDerivedFrom rdf:resource="https://w3id.org/italia/work-accident/onto/adm_serv/1.9"/>
 		<adms:prev rdf:resource="https://w3id.org/italia/work-accident/onto/adm_serv/1.9"/>
-		<adms:last rdf:resource="https://w3id.org/italia/work-accident/onto/adm_serv/2.0"/>
 		<rdfs:comment xml:lang="it">Ontologia INAIL relativa a Infortuni e Malattie Professionali. La malattia professionale è una patologia la cui causa agisce lentamente e progressivamente sull’organismo (causa diluita e non causa violenta e concentrata nel tempo), e deve essere diretta ed efficiente, cioè in grado di produrre l’infermità in modo esclusivo o prevalente. Deve esistere un rapporto causale, o concausale, diretto tra il rischio professionale e la malattia. Il rischio può essere provocato dalla lavorazione che l'assicurato svolge, oppure dall'ambiente in cui la lavorazione stessa si svolge. L' infortunio sul lavoro è ogni lesione originata, in occasione di lavoro, da causa violenta che determini la morte della persona o ne menomi parzialmente o totalmente la capacità lavorativa in via temporanea o permanente. Si differenzia dalla malattia professionale poiché l’evento scatenante è improvviso e violento, mentre nel primo caso le cause sono lente e diluite nel tempo.</rdfs:comment>
 		<rdfs:comment xml:lang="en">This is the ontology of the INAIL Organization about Injuries and Occupational Diseases. Occupational disease is a pathology whose cause acts slowly and progressively on the body (diluted cause and not violent cause concentrated over time), and ti must be direct and efficient, that is, capable of producing the infirmity exclusively or predominantly. There must be a direct causal, or concausal, relationship between the occupational risk and the disease. The risk may be caused by the work the insured person does, or by the environment in which the work takes place. Occupational injury is any wound originating, on the occasion of work, from a violent cause that results in the death of the person or partially or totally damages his or her ability to work temporarily or permanently. It's different from occupational disease in that the triggering event is sudden and violent, whereas in the former the causes are slow and diluted over time.</rdfs:comment>
 		<adms:target xml:lang="it">Cittadini</adms:target>
@@ -57,11 +56,11 @@
 		<dct:creator rdf:resource="https://w3id.org/italia/work-accident/data/organization/inail"/>
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-06T00:00:00Z</dct:issued>
 		<adms:type rdf:resource="https://w3id.org/italia/onto/ADMS/ServiceOnytology"/>
-		<adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/core/distribution/ADM-SERV-RDF-TURTLE"/>
-		<adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/core/distribution/ADM-SERV-RDF-XML"/>
-		<adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/core/distribution/ADM-SERV-N-TRIPLES"/>
+		<adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/adm_serv/distribution/ADM-SERV-RDF-TURTLE"/>
+		<adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/adm_serv/distribution/ADM-SERV-RDF-XML"/>
+		<adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/adm_serv/distribution/ADM-SERV-N-TRIPLES"/>
         <rdfs:isDefinedBy>https://w3id.org/italia/work-accident/onto/adm_serv/</rdfs:isDefinedBy>
-		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-31T00:00:00Z</dct:modified>
+		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-05T00:00:00Z</dct:modified>
         <rdfs:label xml:lang="it">Ontologia INAIL relativa a Infortuni e Malattie Professionali</rdfs:label>
 		<rdfs:label xml:lang="en">INAIL Ontology  about Injuries and Occupational Diseases</rdfs:label>
 		<adms:hasKeyClass rdf:resource="https://w3id.org/italia/work-accident/onto/adm_serv/EventoLesivoINAIL"/>
@@ -77,8 +76,8 @@
 		<dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
 		<dct:rightsHolder rdf:resource="https://w3id.org/italia/work-accident/data/organization/inail"/>
 		<adms:hasContributor rdf:resource="https://w3id.org/italia/work-accident/data/organization/td"/>
-		<owl:versionInfo xml:lang="it">Versione 2.0 - Modificata il 31 Luglio 2023</owl:versionInfo>
-		<owl:versionInfo xml:lang="en">Version 2.0 - Modified on 31 July 2023</owl:versionInfo>
+		<owl:versionInfo xml:lang="it">Versione 2.0 - Modificata il 05 Settembre 2023</owl:versionInfo>
+		<owl:versionInfo xml:lang="en">Version 2.0 - Modified on 05 September 2023</owl:versionInfo>
 		<adms:hasOntologyLanguage>https://w3id.org/italia/onto/ADMS/OWL</adms:hasOntologyLanguage>
 		<adms:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
 		<dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI"/>

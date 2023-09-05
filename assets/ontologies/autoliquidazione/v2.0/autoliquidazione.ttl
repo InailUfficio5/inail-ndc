@@ -34,8 +34,8 @@ INAILAutoliq: a owl:Ontology ;
         "Ontologia INAIL relativa all'Autoliquidazione"@it ;
     rdfs:comment "Ontologia INAIL relativa all'autoliquidazione. L'autoliquidazione è il procedimento che consente al datore di lavoro soggetto all’assicurazione obbligatoria contro gli infortuni sul lavoro e le malattie professionali di pagare il premio assicurativo annuale."@it,
         "This is the ontology of the INAIL Organization about sel-payment. Self-payment is the process by which an employer subject to compulsory insurance against occupational accidents and diseases pays the annual insurance premium"@en ;
-    owl:versionInfo "Version 2.0 - Modified on 31 July 2023"@en,
-        "Versione 2.0 - Modificata il 31 Luglio 2023"@it ;
+    owl:versionInfo "Version 2.0 - Modified on 05 September 2023"@en,
+        "Versione 2.0 - Modificata il 05 Settembre 2023"@it ;
     rdfs:isDefinedBy INAILAutoliq: ;
     prov:wasDerivedFrom INAILAutoliq:1.9 ;
     adms:acronym "inail" ;
@@ -81,7 +81,7 @@ INAILAutoliq: a owl:Ontology ;
     dct:issued "2022-09-06T00:00:00+00:00"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
         <http://publications.europa.eu/resource/authority/language/ITA> ;
-    dct:modified "2023-07-31T00:00:00+00:00"^^xsd:dateTime ;
+    dct:modified "2023-09-05T00:00:00+00:00"^^xsd:dateTime ;
     dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
     dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
     dct:title "INAIL Ontology about Self-Payment"@en,
