@@ -69,7 +69,7 @@
     vcard:hasEmail <mailto:dcod@inail.it> .
 
 inailvoc:settore_correlato_malattia a adms:Asset,
-        dcat:Dataset,
+        dcatapit:Dataset,
         skos:ConceptScheme ;
     rdfs:label "Controlled vocabulary of disease related sectors and subsectors adopted by INAIL"@en,
         "Vocabolario Controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it ;

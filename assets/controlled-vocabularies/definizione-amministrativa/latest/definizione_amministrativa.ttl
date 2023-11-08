@@ -104,7 +104,7 @@ defamm:P a skos:Concept ;
     vcard:hasEmail <mailto:dcod@inail.it> .
 
 inailvoc:definizione_amministrativa a adms:Asset,
-        dcat:Dataset,
+        dcatapit:Dataset,
         skos:ConceptScheme ;
     rdfs:label "This is the controlled vocabulary of the administrative definition adopted by INAIL classification"@en,
         "Vocabolario Controllato sulla classificazione della definizione amministrativa adottata dall'INAIL"@it ;

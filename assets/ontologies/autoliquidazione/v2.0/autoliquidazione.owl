@@ -106,9 +106,9 @@
 
 
 
-    <!-- http://purl.org/dc/terms/accessURL -->
+    <!-- http://www.w3.org/ns/dcat#accessURL -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accessURL"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#accessURL"/>
 
 
 
@@ -118,9 +118,9 @@
 
 
 
-    <!-- http://purl.org/dc/terms/downloadURL -->
+    <!-- http://www.w3.org/ns/dcat#downloadURL -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/downloadURL"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#downloadURL"/>
 
 
 
@@ -3868,10 +3868,10 @@ Diporto</rdfs:label>
 		<rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
 		<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
-		<dct:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/autoliquidazione/v2.0/"/>
+		<dcat:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/autoliquidazione/v2.0/"/>
         <dct:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell'ontologia INAIL relativa all'autoliquidazione, procedimento che consente al datore di lavoro soggetto all’assicurazione obbligatoria contro gli infortuni sul lavoro e le malattie professionali di pagare il premio assicurativo annuale</dct:description>
         <dct:description xml:lang="en">This is the distribution in RDF/Turtle of the INAIL ontology about self-payment, the process by which an employer subject to compulsory insurance against occupational accidents and diseases pays the annual insurance premium</dct:description>
-        <dct:downloadURL rdf:resource="https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/autoliquidazione/v2.0/autoliquidazione.ttl"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/autoliquidazione/v2.0/autoliquidazione.ttl"/>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
         <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dct:title xml:lang="it">Distribuzione RDF/Turtle ontologia INAIL - Autoliquidazione</dct:title>
@@ -3886,10 +3886,10 @@ Diporto</rdfs:label>
 		<rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
 		<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
-		<dct:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/autoliquidazione/v2.0/"/>
+		<dcat:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/autoliquidazione/v2.0/"/>
         <dct:description xml:lang="it">Questa è la distribuzione RDF/XML dell'ontologia INAIL relativa all'autoliquidazione, procedimento che consente al datore di lavoro soggetto all’assicurazione obbligatoria contro gli infortuni sul lavoro e le malattie professionali di pagare il premio assicurativo annuale</dct:description>
         <dct:description xml:lang="en">This is the distribution in RDF/XML of the INAIL ontology about self-payment, the process by which an employer subject to compulsory insurance against occupational accidents and diseases pays the annual insurance premium</dct:description>
-        <dct:downloadURL rdf:resource="https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/autoliquidazione/v2.0/autoliquidazione.rdf"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/autoliquidazione/v2.0/autoliquidazione.rdf"/>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
         <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dct:title xml:lang="it">Distribuzione RDF/XML ontologia INAIL - Autoliquidazione</dct:title>
@@ -3904,10 +3904,10 @@ Diporto</rdfs:label>
 		<rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
 		<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
-		<dct:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/autoliquidazione/v2.0/"/>
+		<dcat:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/autoliquidazione/v2.0/"/>
         <dct:description xml:lang="it">Questa è la distribuzione N-TRIPLES dell'ontologia INAIL relativa all'autoliquidazione, procedimento che consente al datore di lavoro soggetto all’assicurazione obbligatoria contro gli infortuni sul lavoro e le malattie professionali di pagare il premio assicurativo annuale</dct:description>
         <dct:description xml:lang="en">This is the distribution in N-TRIPLES of the INAIL ontology about self-payment, the process by which an employer subject to compulsory insurance against occupational accidents and diseases pays the annual insurance premium</dct:description>
-        <dct:downloadURL rdf:resource="https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/autoliquidazione/v2.0/autoliquidazione.n3"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/autoliquidazione/v2.0/autoliquidazione.n3"/>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES"/>
         <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dct:title xml:lang="it">Distribuzione N-TRIPLES ontologia INAIL - Autoliquidazione</dct:title>

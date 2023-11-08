@@ -179,7 +179,7 @@ decistresmort:300 a INAILService:TipoDecisioneIstruttoriaEsitoMortaleINAIL,
     vcard:hasEmail <mailto:dcod@inail.it> .
 
 inailvoc:decisione_istruttoria_esito_mortale a adms:Asset,
-        dcat:Dataset,
+        dcatapit:Dataset,
         skos:ConceptScheme ;
     rdfs:label "This is the controlled vocabulary of the investigation of the fatal outcome adopted by INAIL "@en,
         "Vocabolario Controllato sulla classificazione dell'istruttoria dell'esito mortale adottata dall'INAIL"@it ;

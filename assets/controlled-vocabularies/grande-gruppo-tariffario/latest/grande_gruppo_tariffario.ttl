@@ -169,7 +169,7 @@ ggtariff:9 a INAILService:GrandeGruppoVoceDiTariffaINAIL,
     vcard:hasEmail <mailto:dcod@inail.it> .
 
 inailvoc:grande_gruppo_tariffario a adms:Asset,
-        dcat:Dataset,
+        dcatapit:Dataset,
         skos:ConceptScheme ;
     rdfs:label "This is the controlled vocabulary of the large tariff group adopted by INAIL classification"@en,
         "Vocabolario Controllato sulla classificazione del grande gruppo tariffario adottata dall'INAIL"@it ;

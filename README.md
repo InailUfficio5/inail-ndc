@@ -11,36 +11,38 @@ I file presenti in questo repository sono organizzati secondo la seguente albera
 
 ```bash
 ┌─ assets/ontologies/
-│  ├─ mp-inf/
-│  │  └─ {version}/MP_INF.ttl
+│  ├─ autoliquidazione/
+│  │  │─ latest
+│  │  │   ├─ autoliquidazione.n3
+│  │  │   ├─ autoliquidazione.owl
+│  │  │   └─ autoliquidazione.ttl
+│  │  ├─ v{version}
+│  │  │   ├─ autoliquidazione.n3
+│  │  │   ├─ autoliquidazione.owl
+│  │  │   └─ autoliquidazione.ttl
+│  ├─ ...
 │  └─ notes.md
 ├─ assets/controlled-vocabularies/
-│  └─ ...
+│  ├─ agente-causale
+│  │  ├─ latest
+│  │  │   ├─ agente_causale.csv
+│  │  │   ├─ agente_causale.json
+│  │  │   └─ agente_causale.ttl
+│  │  ├─ v{version}
+│  │  │   ├─ agente_causale.csv
+│  │  │   ├─ agente_causale.json
+│  │  │   └─ agente_causale.ttl
+│  ├─ ...
+│  ├─ frame-short.yamlld
+│  └─ notes.md
 ├─ assets/schemas/
-│  ├─ esito-definizione
-│  │  └─ esito-definizione.oas3.yaml
-│  ├─ inabilita-temporanea
-│  │  └─ inabilita-temporanea.oas3.yaml
-│  ├─ indennizzo
-│  │  └─ indennizzo.oas3.yaml
-│  ├─ infortunato
-│  │  └─ infortunato.oas3.yaml
-│  ├─ infortunio
-│  │  └─ infortunio.oas3.yaml
-│  ├─ malattia-professionale
-│  │  └─ malattia-profesisonale.oas3.yaml
-│  ├─ prestazione-economica
-│  │  └─ prestazione-economica.oas3.yaml
-│  ├─ riapertura-trattazione
-│  │  └─ riapertura-trattazione.oas3.yaml
-│  ├─ tecnopatico
-│  │  └─ tecnopatico.oas3.yaml
-│  ├─ tipo-indennizzo
-│  │  └─ tipo-indennizzo.oas3.yaml
-│  ├─ tipo-trattazione
-│  │  └─ tipo-trattazione.oas3.yaml
-│  └─ trattazione
-│     └─ trattazione.oas3.yaml
+│  ├─ denuncia-cessazione
+│  │  ├─ latest
+│  │  │   └─ denuncia-cessazione.oas3.yaml
+│  │  ├─ v{version}
+│  │  │   └─ denuncia-cessazione.oas3.yaml
+│  ├─ ...
+│  └─ notes.md
 ├─ README.md
 └─ publiccode.yaml
 ```
