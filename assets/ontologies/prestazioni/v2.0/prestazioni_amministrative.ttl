@@ -56,7 +56,8 @@ INAILService: a owl:Ontology ;
     adms:prefix "inail" ;
     adms:prev INAILService:1.9 ;
     adms:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
-    adms:status "draft" ;
+    adms:status "catalogued",
+        "published" ;
     adms:target "Cittadini"@it,
         "Imprese"@it,
         "Pubbliche Amministrazioni"@it ;

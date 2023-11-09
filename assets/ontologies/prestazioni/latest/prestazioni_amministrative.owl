@@ -72,7 +72,8 @@
 		<adms:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/AnnotationTask"/>
 		<adms:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/QueryFormulationTask"/>
 		<adms:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/SearchTask"/>
-        <adms:status>draft</adms:status>
+        <adms:status>catalogued</adms:status>
+        <adms:status>published</adms:status>
 		<dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
 		<dct:rightsHolder rdf:resource="https://w3id.org/italia/work-accident/data/organization/inail"/>
 		<adms:hasContributor rdf:resource="https://w3id.org/italia/work-accident/data/organization/td"/>
