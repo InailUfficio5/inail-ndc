@@ -35,8 +35,8 @@
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/TDDI_CSV> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-definizione-decisione-istruttoria/v0.5> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-definizione-decisione-istruttoria/v0.5/tipo_definizione_decisione_istruttoria.csv> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo_definizione_decisione_istruttoria/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo_definizione_decisione_istruttoria/v0.5/tipo_definizione_decisione_istruttoria.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sul tipo definizione decisione dell'istruttoria adottato dall'INAIL"@it,
         "This is the distribution in CSV of the type definition of the investigation decision adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
@@ -46,8 +46,8 @@
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/TDDI_JSON> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-definizione-decisione-istruttoria/v0.5> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-definizione-decisione-istruttoria/v0.5/tipo_definizione_decisione_istruttoria.json> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo_definizione_decisione_istruttoria/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo_definizione_decisione_istruttoria/v0.5/tipo_definizione_decisione_istruttoria.json> ;
     dct:description "Questa è la distribuzione JSON del vocabolario controllato sul tipo definizione decisione dell'istruttoria adottato dall'INAIL"@it,
         "This is the distribution in JSON of the type definition of the investigation decision adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
@@ -57,8 +57,8 @@
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/TDDI_RDF_TURTLE> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-definizione-decisione-istruttoria/v0.5> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-definizione-decisione-istruttoria/v0.5/tipo_definizione_decisione_istruttoria.ttl> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo_definizione_decisione_istruttoria/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo_definizione_decisione_istruttoria/v0.5/tipo_definizione_decisione_istruttoria.ttl> ;
     dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sul tipo definizione decisione dell'istruttoria adottato dall'INAIL"@it,
         "This is the distribution in RDF/turtle of the type definition of the investigation decision adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;

@@ -97,8 +97,8 @@ areales:5 a INAILService:SedeLesioneINAIL,
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/SL_CSV> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/sede-lesione/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/sede-lesione/latest/sede_lesione.csv> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/sede_lesione/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/sede_lesione/latest/sede_lesione.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla sede della lesione adottata da INAIL"@it,
         "This is the distribution in CSV of the site of injury adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
@@ -108,8 +108,8 @@ areales:5 a INAILService:SedeLesioneINAIL,
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/SL_JSON> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/sede-lesione/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/sede-lesione/latest/sede_lesione.json> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/sede_lesione/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/sede_lesione/latest/sede_lesione.json> ;
     dct:description "Questa è la distribuzione JSON del vocabolario controllato sulla sede della lesione adottata da INAIL"@it,
         "This is the distribution in JSON of the site of injury adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
@@ -119,8 +119,8 @@ areales:5 a INAILService:SedeLesioneINAIL,
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/SL_RDF_TURTLE> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/sede-lesione/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/sede-lesione/latest/sede_lesione.ttl> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/sede_lesione/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/sede_lesione/latest/sede_lesione.ttl> ;
     dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla sede della lesione adottata da INAIL"@it,
         "This is the distribution in RDF/turtle of the site of injury adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;

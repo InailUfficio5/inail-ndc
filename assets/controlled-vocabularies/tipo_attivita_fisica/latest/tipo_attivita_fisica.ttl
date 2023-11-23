@@ -552,8 +552,8 @@ grupattivfisica:7 a INAILService:TipoAttivitaFisicaINAIL,
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/TAF_CSV> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-attivita-fisica/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-attivita-fisica/latest/tipo_attivita_fisica.csv> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo_attivita_fisica/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo_attivita_fisica/latest/tipo_attivita_fisica.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sulle tipologie di attività fisica adottate dall'INAIL"@it,
         "This is the distribution in CSV of types of physical activity adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
@@ -563,8 +563,8 @@ grupattivfisica:7 a INAILService:TipoAttivitaFisicaINAIL,
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/TAF_JSON> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-attivita-fisica/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-attivita-fisica/latest/tipo_attivita_fisica.json> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo_attivita_fisica/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo_attivita_fisica/latest/tipo_attivita_fisica.json> ;
     dct:description "Questa è la distribuzione JSON del vocabolario controllato sulle tipologie di attività fisica adottate dall'INAIL"@it,
         "This is the distribution in JSON of types of physical activity adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
@@ -574,8 +574,8 @@ grupattivfisica:7 a INAILService:TipoAttivitaFisicaINAIL,
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/TAF_RDF_TURTLE> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-attivita-fisica/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-attivita-fisica/latest/tipo_attivita_fisica.ttl> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo_attivita_fisica/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo_attivita_fisica/latest/tipo_attivita_fisica.ttl> ;
     dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulle tipologie di attività fisica adottate dall'INAIL"@it,
         "This is the distribution in RDF/turtle of types of physical activity adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;

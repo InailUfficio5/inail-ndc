@@ -27,8 +27,8 @@
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/ICDX_CSV> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/icdx-classificazione-internazionale-malattie/v0.5> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/icdx-classificazione-internazionale-malattie/v0.5/icdx.csv> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/classificazione_ICDX/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/classificazione_ICDX/v0.5/classificazione_ICDX.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla Classificazione Internazionale delle Malattie decima edizione"@it,
         "This is the distribution in CSV of International Statistical Classification of Diseases and Related Health Problems 10th Revision"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
@@ -38,8 +38,8 @@
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/ICDX_JSON> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/icdx-classificazione-internazionale-malattie/v0.5> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/icdx-classificazione-internazionale-malattie/v0.5/icdx.json> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/classificazione_ICDX/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/classificazione_ICDX/v0.5/classificazione_ICDX.json> ;
     dct:description "Questa è la distribuzione JSON del vocabolario controllato sulla Classificazione Internazionale delle Malattie decima edizione"@it,
         "This is the distribution in JSON of International Statistical Classification of Diseases and Related Health Problems 10th Revision"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
@@ -49,8 +49,8 @@
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/ICDX_RDF_TURTLE> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/icdx-classificazione-internazionale-malattie/v0.5> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/icdx-classificazione-internazionale-malattie/v0.5/icdx.ttl> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/classificazione_ICDX/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/classificazione_ICDX/v0.5/classificazione_ICDX.ttl> ;
     dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla Classificazione Internazionale delle Malattie decima edizione"@it,
         "This is the distribution in RDF/turtle of International Statistical Classification of Diseases and Related Health Problems 10th Revision"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;

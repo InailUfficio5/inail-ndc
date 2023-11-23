@@ -26,8 +26,8 @@
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/TLA_CSV> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-luogo-accadimento/v0.5> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-luogo-accadimento/v0.5/tipo_luogo_accadimento.csv> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo_luogo_accadimento/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo_luogo_accadimento/v0.5/tipo_luogo_accadimento.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla tipologia dei luoghi di accadimento adottata dall'INAIL"@it,
         "This is the distribution in CSV of type of happening place adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
@@ -37,8 +37,8 @@
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/TLA_JSON> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-luogo-accadimento/v0.5> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-luogo-accadimento/v0.5/tipo_luogo_accadimento.json> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo_luogo_accadimento/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo_luogo_accadimento/v0.5/tipo_luogo_accadimento.json> ;
     dct:description "Questa è la distribuzione JSON del vocabolario controllato sulla tipologia dei luoghi di accadimento adottata dall'INAIL"@it,
         "This is the distribution in JSON of type of happening place adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
@@ -48,8 +48,8 @@
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/TLA_RDF_TURTLE> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-luogo-accadimento/v0.5> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-luogo-accadimento/v0.5/tipo_luogo_accadimento.ttl> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo_luogo_accadimento/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo_luogo_accadimento/v0.5/tipo_luogo_accadimento.ttl> ;
     dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla tipologia dei luoghi di accadimento adottata dall'INAIL"@it,
         "This is the distribution in RDF/turtle of type of happening place adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;

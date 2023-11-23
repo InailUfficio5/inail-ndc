@@ -25,8 +25,8 @@
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/TTR_CSV> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-trattazione/v0.5> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-trattazione/v0.5/tipo_trattazione.csv> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo_trattazione/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo_trattazione/v0.5/tipo_trattazione.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla tipologia di trattazione adottata dall'INAIL"@it,
         "This is the distribution in CSV of the type of treatment adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
@@ -36,8 +36,8 @@
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/TTR_JSON> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-trattazione/v0.5> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-trattazione/v0.5/tipo_trattazione.json> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo_trattazione/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo_trattazione/v0.5/tipo_trattazione.json> ;
     dct:description "Questa è la distribuzione JSON del vocabolario controllato sulla tipologia di trattazione adottata dall'INAIL"@it,
         "This is the distribution in JSON of the type definition of the type of treatment adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
@@ -47,8 +47,8 @@
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/TTR_RDF_TURTLE> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-trattazione/v0.5> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-trattazione/v0.5/tipo_trattazione.ttl> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo_trattazione/v0.5> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo_trattazione/v0.5/tipo_trattazione.ttl> ;
     dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla tipologia di trattazione adottata dall'INAIL"@it,
         "This is the distribution in RDF/turtle of the type of treatment adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;

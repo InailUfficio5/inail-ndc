@@ -26,8 +26,8 @@
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/TL_CSV> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-lavoro/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-lavoro/latest/tipo_lavoro.csv> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo_lavoro/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo_lavoro/latest/tipo_lavoro.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sulle tipologie di lavoro adottate dall'INAIL"@it,
         "This is the distribution in CSV of types of work adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
@@ -37,8 +37,8 @@
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/TL_JSON> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-lavoro/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-lavoro/latest/tipo_lavoro.json> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo_lavoro/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo_lavoro/latest/tipo_lavoro.json> ;
     dct:description "Questa è la distribuzione JSON del vocabolario controllato sulle tipologie di lavoro adottate dall'INAIL"@it,
         "This is the distribution in JSON of types of work adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
@@ -48,8 +48,8 @@
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/TL_RDF_TURTLE> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo-lavoro/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo-lavoro/latest/tipo_lavoro.ttl> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo_lavoro/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo_lavoro/latest/tipo_lavoro.ttl> ;
     dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulle tipologie di lavoro adottate dall'INAIL"@it,
         "This is the distribution in RDF/turtle of types of work adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;

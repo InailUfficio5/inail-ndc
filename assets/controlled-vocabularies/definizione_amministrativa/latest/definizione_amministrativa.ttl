@@ -60,8 +60,8 @@ defamm:P a skos:Concept ;
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/DA_CSV> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/definizione-amministrativa/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/definizione-amministrativa/latest/definizione_amministrativa.csv> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/definizione_amministrativa/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/definizione_amministrativa/latest/definizione_amministrativa.csv> ;
     dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classificazione della definizione amministrativa adottata dall'INAIL"@it,
         "This is the distribution in CSV of the classification of administrative definition adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
@@ -71,8 +71,8 @@ defamm:P a skos:Concept ;
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/DA_JSON> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/definizione-amministrativa/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/definizione-amministrativa/latest/definizione_amministrativa.json> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/definizione_amministrativa/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/definizione_amministrativa/latest/definizione_amministrativa.json> ;
     dct:description "Questa è la distribuzione JSON del vocabolario controllato sulla classificazione della definizione amministrativa adottata dall'INAIL"@it,
         "This is the distribution in JSON of the classification of administrative definition adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
@@ -82,8 +82,8 @@ defamm:P a skos:Concept ;
 
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/DA_RDF_TURTLE> a dcat:Distribution,
         dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/definizione-amministrativa/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/definizione-amministrativa/latest/definizione_amministrativa.ttl> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/definizione_amministrativa/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/definizione_amministrativa/latest/definizione_amministrativa.ttl> ;
     dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla classificazione della definizione amministrativa adottata dall'INAIL"@it,
         "This is the distribution in RDF/turtle of the classification of administrative definition adopted by INAIL controlled vocabulary"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
