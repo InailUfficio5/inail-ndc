@@ -1477,7 +1477,7 @@ inailvoc:inabilita a adms:Asset,
     dct:title "Controlled vocabulary on the classification of the degree of inability adopted by INAIL"@en,
         "Vocabolario Controllato sulla classificazione del grado di inabilità adottata dall'INAIL"@it ;
     dct:type <http://purl.org/adms/assettype/CodeList> ;
-    ndc:keyConcept "inabilita" ;
+    ndc:keyConcept "grado_inabilita" ;
     skos:hasTopConcept grado1:0,
         grado1:1,
         grado1:2,

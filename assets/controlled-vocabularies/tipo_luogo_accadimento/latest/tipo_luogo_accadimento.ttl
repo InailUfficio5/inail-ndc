@@ -109,7 +109,7 @@ inailvoc:luogo_accadimento a adms:Asset,
     dct:title "Classification of type of happening place adopted by INAIL Controlled Vocabulary"@en,
         "Vocabolario Controllato sulla tipologia dei luoghi di accadimento adottata dall'INAIL"@it ;
     dct:type <http://purl.org/adms/assettype/CodeList> ;
-    ndc:keyConcept "luogo_accadimento" ;
+    ndc:keyConcept "tipo_luogo_accadimento" ;
     skos:hasTopConcept luogogrup:01,
         luogogrup:02,
         luogogrup:03,

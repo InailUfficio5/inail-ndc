@@ -636,7 +636,7 @@ inailvoc:attivita_fisica a adms:Asset,
     dct:title "Controlled vocabulary on types of physical activity adopted by INAIL"@en,
         "Vocabolario Controllato sulle tipologie di attività fisica adottate dall'INAIL"@it ;
     dct:type <http://purl.org/adms/assettype/CodeList> ;
-    ndc:keyConcept "attivita_fisica" ;
+    ndc:keyConcept "tipo_attivita_fisica" ;
     skos:hasTopConcept grupattivfisica:1,
         grupattivfisica:2,
         grupattivfisica:3,

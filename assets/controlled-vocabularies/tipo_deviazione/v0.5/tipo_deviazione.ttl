@@ -792,7 +792,7 @@ inailvoc:deviazione a adms:Asset,
     dct:title "Controlled vocabulary on the type of deviation adopted by INAIL"@en,
         "Vocabolario Controllato sul tipo di deviazione adottato dall'INAIL"@it ;
     dct:type <http://purl.org/adms/assettype/CodeList> ;
-    ndc:keyConcept "deviazione" ;
+    ndc:keyConcept "tipo_deviazione" ;
     skos:hasTopConcept deviazionegrup:1,
         deviazionegrup:2,
         deviazionegrup:3,

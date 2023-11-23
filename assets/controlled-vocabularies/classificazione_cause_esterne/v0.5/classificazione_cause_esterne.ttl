@@ -20136,7 +20136,7 @@ inailvoc:causa_esterna a adms:Asset,
     dct:title "Controlled vocabulary on the external causes classification adopted by INAIL"@en,
         "Vocabolario controllato sulla classificazione delle cause esterne adottata dall'INAIL"@it ;
     dct:type <http://purl.org/adms/assettype/CodeList> ;
-    ndc:keyConcept "causa_esterna" ;
+    ndc:keyConcept "classificazione_cause_esterne" ;
     skos:hasTopConcept causaesternaset:1,
         causaesternaset:2,
         causaesternaset:3,
