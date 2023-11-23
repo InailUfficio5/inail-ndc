@@ -1,3 +1,4 @@
+url,id,label_it,level,parent
 https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/grado_inabilita/grado1/-2,-2,Grado superiore a 100,1,
 https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/grado_inabilita/grado1/0,0,a zero,1,
 https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/grado_inabilita/grado1/1,1,da 01 a 10,1,
