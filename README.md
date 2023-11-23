@@ -11,19 +11,19 @@ I file presenti in questo repository sono organizzati secondo la seguente albera
 
 ```bash
 ┌─ assets/ontologies/
-│  ├─ autoliquidazione/
+│  ├─ adm_serv/
 │  │  │─ latest
-│  │  │   ├─ autoliquidazione.n3
-│  │  │   ├─ autoliquidazione.owl
-│  │  │   └─ autoliquidazione.ttl
+│  │  │   ├─ adm_serv.n3
+│  │  │   ├─ adm_serv.owl
+│  │  │   └─ adm_serv.ttl
 │  │  ├─ v{version}
-│  │  │   ├─ autoliquidazione.n3
-│  │  │   ├─ autoliquidazione.owl
-│  │  │   └─ autoliquidazione.ttl
+│  │  │   ├─ adm_serv.n3
+│  │  │   ├─ adm_serv.owl
+│  │  │   └─ adm_serv.ttl
 │  ├─ ...
 │  └─ notes.md
 ├─ assets/controlled-vocabularies/
-│  ├─ agente-causale
+│  ├─ agente_causale
 │  │  ├─ latest
 │  │  │   ├─ agente_causale.csv
 │  │  │   ├─ agente_causale.json
