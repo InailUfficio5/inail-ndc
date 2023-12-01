@@ -3531,8 +3531,8 @@ TI:TimeIndexedEvent a owl:Class .
         dcat:Distribution,
         dcatapit:Distribution,
         owl:NamedIndividual ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/adm_serv/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/adm_serv/latest/adm_serv.n3> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/adm_serv/v2.1> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/adm_serv/v2.1/adm_serv.n3> ;
     dct:description "Questa è la distribuzione N-TRIPLES dell'ontologia INAIL relativa agli infortuni e le malattie professionali"@it,
         "This is the distribution in N-TRIPLES of the INAIL ontology about injuries and occupational diseases"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES> ;
@@ -3543,8 +3543,8 @@ TI:TimeIndexedEvent a owl:Class .
 <https://w3id.org/italia/work-accident/data/adm_serv/distribution/ADM-SERV-RDF-TURTLE> a dcat:Distribution,
         dcatapit:Distribution,
         owl:NamedIndividual ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/adm_serv/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/adm_serv/latest/adm_serv.ttl> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/adm_serv/v2.1> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/adm_serv/v2.1/adm_serv.ttl> ;
     dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia INAIL relativa agli infortuni e le malattie professionali"@it,
         "This is the distribution in RDF/Turtle of the INAIL ontology about injuries and occupational diseases"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
@@ -3556,8 +3556,8 @@ TI:TimeIndexedEvent a owl:Class .
         dcat:Distribution,
         dcatapit:Distribution,
         owl:NamedIndividual ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/adm_serv/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/adm_serv/latest/adm_serv.owl> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/adm_serv/v2.1> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/adm_serv/v2.1/adm_serv.owl> ;
     dct:description "Questa è la distribuzione RDF/XML dell'ontologia INAIL relativa agli infortuni e le malattie professionali"@it,
         "This is the distribution in RDF/XML of the INAIL ontology about injuries and occupational diseases"@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
