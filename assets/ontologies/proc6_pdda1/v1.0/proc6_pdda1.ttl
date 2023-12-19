@@ -1,0 +1,677 @@
+@prefix adms: <https://w3id.org/italia/onto/ADMS/> .
+@prefix CLV: <https://w3id.org/italia/onto/CLV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAILCore: <https://w3id.org/italia/work-accident/onto/core/> .
+@prefix INAILPDDA1: <https://w3id.org/italia/work-accident/onto/proc6_pdda1/> .
+@prefix INAILService: <https://w3id.org/italia/work-accident/onto/adm_serv/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix TI: <https://w3id.org/italia/onto/TI/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+INAILPDDA1: a owl:Ontology ;
+    owl:versionIRI INAILPDDA1:1.0 ;
+    owl:imports CLV:,
+        INAILCore:,
+        l0:,
+        TI: ;
+    rdfs:label "INAIL Ontology  about the PD DA1 document request"@en,
+        "Ontologia INAIL relativa alla richiesta del documento PD DA1"@it ;
+    rdfs:comment "Ontologia INAIL relativa alla richiesta del documento PD DA1. Il PD DA1 è il Documento Portabile (PD) che dà diritto alla copertura sanitaria in caso di infortunio sul lavoro o di malattia professionale ed è destinato alla persona che si sposta, risiede o soggiorna in uno Stato membro dell'Unione Europea diverso da quello in cui è assicurata contro gli infortuni sul lavoro e le malattie professionali."@it,
+        "This is the ontology of the INAIL Organization about the PD DA1 document request. The PD DA1 is the Portable Document (PD) that entitles the person to health care coverage in the event of a occupational injury or occupational disease and it is destined to the person who moves to, resides in or stays in a European Union member state other than the one in which he or she is insured against occupational injury or occupational disease."@en ;
+    owl:versionInfo "Version 1.0 - Modified on 3 November 2023"@en,
+        "Versione 1.0 - Modificata il 3 Novembre 2023"@it ;
+    rdfs:isDefinedBy INAILPDDA1: ;
+    adms:acronym "inail" ;
+    adms:hasContributor <https://w3id.org/italia/work-accident/data/organization/td> ;
+    adms:hasFormalityLevel adms:Formal ;
+    adms:hasKeyClass INAILPDDA1:DocumentoPDDA1,
+        INAILPDDA1:PraticaPDDA1,
+        INAILPDDA1:RichiestaDocumentoPDDA1,
+        INAILPDDA1:TipoRichiedente ;
+    adms:hasOntologyLanguage adms:OWL ;
+    adms:hasSemanticAssetDistribution <https://w3id.org/italia/work-accident/data/proc6_pdda1/distribution/PDDA1-N-TRIPLES>,
+        <https://w3id.org/italia/work-accident/data/proc6_pdda1/distribution/PDDA1-RDF-TURTLE>,
+        <https://w3id.org/italia/work-accident/data/proc6_pdda1/distribution/PDDA1-RDF-XML> ;
+    adms:hasTask adms:AnnotationTask,
+        adms:QueryFormulationTask,
+        adms:SearchTask ;
+    adms:last INAILPDDA1:1.0 ;
+    adms:officialURI "https://w3id.org/italia/work-accident/onto/proc6_pdda1"^^xsd:anyURI ;
+    adms:prefix "inailpdda1" ;
+    adms:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
+    adms:status "catalogued",
+        "published" ;
+    adms:target "Cittadini"@it,
+        "Imprese"@it,
+        "Pubbliche Amministrazioni"@it ;
+    adms:type adms:ServiceOnytology ;
+    dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+    dcat:keyword "abroad"@en,
+        "assicurazione"@it,
+        "document"@en,
+        "documento"@it,
+        "estero"@it,
+        "infortunio"@it,
+        "insurance"@en,
+        "malattia professionale"@it,
+        "occupational disease"@en,
+        "occupational injury"@en,
+        "PD DA1"@it ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:description "Ontologia INAIL relativa alla richiesta del documento PD DA1. Il PD DA1 è il Documento Portabile (PD) che dà diritto alla copertura sanitaria in caso di infortunio sul lavoro o di malattia professionale ed è destinato alla persona che si sposta, risiede o soggiorna in uno Stato membro dell'Unione Europea diverso da quello in cui è assicurata contro gli infortuni sul lavoro e le malattie professionali."@it,
+        "This is the ontology of the INAIL Organization about the PD DA1 document request. The PD DA1 is the Portable Document (PD) that entitles the person to health care coverage in the event of a occupational injury or occupational disease and it is destined to the person who moves to, resides in or stays in a European Union member state other than the one in which he or she is insured against occupational injury or occupational disease."@en ;
+    dct:identifier "https://w3id.org/italia/work-accident/onto/proc6_pdda1" ;
+    dct:issued "2023-08-28T00:00:00+00:00"^^xsd:dateTime ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2023-11-01T00:00:00+00:00"^^xsd:dateTime ;
+    dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:title "INAIL Ontology about the PD DA1 document request"@en,
+        "Ontologia INAIL relativa alla richiesta del documento PD DA1"@it .
+
+### Object Properties
+
+CLV:hasAddressComponent a owl:ObjectProperty ;
+    rdfs:domain CLV:Address ;
+    rdfs:range CLV:AddressComponent .
+
+CLV:hasDirectHigherRank a owl:ObjectProperty ;
+    rdfs:subPropertyOf CLV:hasHigherRank ;
+    rdfs:domain CLV:AdminUnitComponent ;
+    rdfs:range CLV:AdminUnitComponent .
+
+CLV:hasDirectLowerRank a owl:ObjectProperty ;
+    rdfs:subPropertyOf CLV:hasLowerRank ;
+    rdfs:domain CLV:AdminUnitComponent ;
+    rdfs:range CLV:AdminUnitComponent .
+
+CLV:hasHigherRank a owl:ObjectProperty .
+
+CLV:hasLowerRank a owl:ObjectProperty .
+
+CLV:hasNumber a owl:ObjectProperty ;
+    rdfs:domain CLV:Address ;
+    rdfs:range CLV:CivicNumbering .
+
+CLV:hasStreetToponym a owl:ObjectProperty ;
+    rdfs:domain CLV:Address ;
+    rdfs:range CLV:StreetToponym .
+
+INAILCore:faRiferimentoASedeLavoro a owl:ObjectProperty .
+
+INAILCore:haClassificazioneATECO a owl:ObjectProperty ;
+    rdfs:domain INAILCore:SoggettoAssicuranteINAIL ;
+    rdfs:range skos:Concept .
+
+INAILCore:haResidenza a owl:ObjectProperty ;
+    rdfs:domain INAILCore:PersonaFisica ;
+    rdfs:range CLV:Feature .
+
+INAILCore:haSedeLegaleIn a owl:ObjectProperty ;
+    rdfs:domain INAILCore:SoggettoAssicuranteINAIL ;
+    rdfs:range CLV:Feature .
+
+INAILCore:panAppartieneASoggettoAssicurante a owl:ObjectProperty ;
+    rdfs:domain INAILCore:PosizioneAssicurativaNavigazione ;
+    rdfs:range INAILCore:SoggettoAssicuranteINAIL .
+
+INAILCore:panCompetenzaDi a owl:ObjectProperty ;
+    rdfs:domain INAILCore:PosizioneAssicurativaNavigazione ;
+    rdfs:range INAILCore:SedeINAIL .
+
+INAILCore:patAppartieneASoggettoAssicurante a owl:ObjectProperty ;
+    rdfs:domain INAILCore:PosizioneAssicurativaTerritoriale ;
+    rdfs:range INAILCore:SoggettoAssicuranteINAIL .
+
+INAILCore:patCompetenzaDi a owl:ObjectProperty ;
+    rdfs:domain INAILCore:PosizioneAssicurativaTerritoriale ;
+    rdfs:range INAILCore:SedeINAIL .
+
+INAILCore:ricopreRuolo a owl:InverseFunctionalProperty,
+        owl:ObjectProperty .
+
+INAILCore:ricopreRuoloDiAssicurato a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:subPropertyOf INAILCore:ricopreRuolo ;
+    rdfs:domain INAILCore:PersonaFisica ;
+    rdfs:range INAILCore:SoggettoAssicuratoINAIL .
+
+INAILCore:situatoIn a owl:ObjectProperty ;
+    rdfs:domain INAILCore:SedeLavoro ;
+    rdfs:range CLV:Feature .
+
+INAILCore:soggettoAssicuranteCompetenzaDi a owl:ObjectProperty ;
+    rdfs:domain INAILCore:SoggettoAssicuranteINAIL ;
+    rdfs:range INAILCore:SedeINAIL .
+
+INAILCore:strutturaINAILSituataIn a owl:ObjectProperty ;
+    rdfs:domain INAILCore:SedeINAIL ;
+    rdfs:range CLV:Feature .
+
+INAILPDDA1:documentoRelativoAAssicurato a owl:ObjectProperty ;
+    rdfs:label "documento relativo ad assicurato"@it ;
+    rdfs:range INAILCore:SoggettoAssicuratoINAIL .
+
+INAILPDDA1:effettuaRichiestaModuloPDDA1 a owl:ObjectProperty ;
+    rdfs:label "effettua richiesta modulo PDDA1"@it ;
+    rdfs:domain INAILCore:SoggettoAssicuranteINAIL ;
+    rdfs:range INAILPDDA1:RichiestaDocumentoPDDA1 .
+
+INAILPDDA1:lavoraPresso a owl:ObjectProperty ;
+    rdfs:label "lavora presso"@it ;
+    rdfs:domain INAILCore:SoggettoAssicuratoINAIL .
+
+INAILPDDA1:nazioneDiDestinazione a owl:ObjectProperty ;
+    rdfs:label "nazione di destinazione"@it ;
+    rdfs:range CLV:Country .
+
+INAILPDDA1:praticaElaborataDaSedeINAIL a owl:ObjectProperty ;
+    rdfs:label "pratica elaborata da sede INAIL"@it ;
+    rdfs:range INAILCore:SedeINAIL .
+
+INAILPDDA1:praticaGeneraDocumentoPDDA1 a owl:ObjectProperty ;
+    rdfs:label "pratica genera documento PDDA1"@it ;
+    rdfs:domain INAILPDDA1:PraticaPDDA1 ;
+    rdfs:range INAILPDDA1:DocumentoPDDA1 .
+
+INAILPDDA1:praticaHaStato a owl:ObjectProperty ;
+    rdfs:label "pratica ha stato"@it .
+
+INAILPDDA1:richiestaHaPraticaPDDA1 a owl:ObjectProperty ;
+    rdfs:label "richiesta ha pratica PDDA1"@it .
+
+INAILPDDA1:richiestaInviataASedeINAIL a owl:ObjectProperty ;
+    rdfs:label "richiesta inviata a sede INAIL"@it ;
+    rdfs:range INAILCore:SedeINAIL .
+
+INAILPDDA1:richiestaPerPaeseDiDestinazione a owl:ObjectProperty ;
+    rdfs:label "richiesta per paese di destinazione"@it ;
+    rdfs:range CLV:Country .
+
+INAILPDDA1:richiestaRelativaAAssicurato a owl:ObjectProperty ;
+    rdfs:label "richiesta relativa ad assicurato"@it ;
+    rdfs:range INAILCore:SoggettoAssicuratoINAIL .
+
+INAILPDDA1:soggettoAssicuranteDiTipo a owl:ObjectProperty ;
+    rdfs:label "soggetto assicurante di tipo"@it ;
+    rdfs:domain INAILCore:SoggettoAssicuranteINAIL ;
+    rdfs:range INAILPDDA1:TipoRichiedente .
+
+INAILPDDA1:SoggettoAssicuratoDiTipo a owl:ObjectProperty ;
+    rdfs:label "soggetto assicurato di tipo"@it ;
+    rdfs:domain INAILCore:SoggettoAssicuratoINAIL ;
+    rdfs:range INAILService:TipoLavoratoreINAIL .
+
+INAILPDDA1:statoPraticaHaStato a owl:ObjectProperty ;
+    rdfs:label "stato pratica ha stato"@it ;
+    rdfs:domain INAILPDDA1:StatoPraticaPDDA1 ;
+    rdfs:range skos:Concept .
+
+### Datatypes
+
+rdfs:Literal a rdfs:Datatype .
+
+xsd:int a rdfs:Datatype .
+
+### Data Properties
+
+CLV:acronym a owl:DatatypeProperty ;
+    rdfs:domain CLV:Province ;
+    rdfs:range rdfs:Literal .
+
+CLV:officialStreetName a owl:DatatypeProperty ;
+    rdfs:subPropertyOf l0:name ;
+    rdfs:domain CLV:StreetToponym ;
+    rdfs:range rdfs:Literal .
+
+CLV:postCode a owl:DatatypeProperty ;
+    rdfs:subPropertyOf l0:identifier ;
+    rdfs:domain CLV:Address ;
+    rdfs:range rdfs:Literal .
+
+CLV:streetNumber a owl:DatatypeProperty ;
+    rdfs:domain CLV:CivicNumbering ;
+    rdfs:range xsd:int .
+
+INAILPDDA1:codicePraticaPDDA1 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice pratica PDDA1"@it ;
+    rdfs:domain INAILPDDA1:PraticaPDDA1 .
+
+INAILPDDA1:codiceRichiedente a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice richiedente"@it ;
+    rdfs:domain INAILPDDA1:TipoRichiedente .
+
+INAILPDDA1:codiceRichiestaPDDA1 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice richiesta PDDA1"@it ;
+    rdfs:domain INAILPDDA1:RichiestaDocumentoPDDA1 .
+
+INAILPDDA1:dataDocumentoPDDA1 a owl:DatatypeProperty ;
+    rdfs:label "data documento PDDA1"@it ;
+    rdfs:domain INAILPDDA1:DocumentoPDDA1 .
+
+INAILPDDA1:dataFinePermanenzaEstero a owl:DatatypeProperty ;
+    rdfs:label "data fine permanenza estero"@it .
+
+INAILPDDA1:dataInizioPermanenzaEstero a owl:DatatypeProperty ;
+    rdfs:label "data inizio permanenza estero"@it .
+
+INAILPDDA1:dataRichiestaPDDA1 a owl:DatatypeProperty ;
+    rdfs:label "data richiesta PDDA1"@it ;
+    rdfs:domain INAILPDDA1:RichiestaDocumentoPDDA1 .
+
+INAILPDDA1:denominazioneRichiedente a owl:DatatypeProperty ;
+    rdfs:label "denominazione richiedente"@it ;
+    rdfs:domain INAILPDDA1:TipoRichiedente .
+
+INAILPDDA1:descrizioneRichiedente a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione richiedente"@it ;
+    rdfs:domain INAILPDDA1:TipoRichiedente .
+
+INAILPDDA1:numeroDocumentoPDDA1 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero documento PDDA1"@it ;
+    rdfs:domain INAILPDDA1:DocumentoPDDA1 .
+
+INAILPDDA1:numeroGiorniPDDA1 a owl:DatatypeProperty ;
+    rdfs:label "numero giorni PDDA1"@it ;
+    rdfs:domain INAILPDDA1:DocumentoPDDA1 ;
+    rdfs:comment "Numero di giorni di validità del documento PD DA1."@it .
+
+INAILPDDA1:struttura a owl:DatatypeProperty ;
+    rdfs:label "struttura"@it .
+
+INAILPDDA1:tipoGruppo a owl:DatatypeProperty ;
+    rdfs:label "tipo gruppo"@it .
+
+INAILPDDA1:ufficio a owl:DatatypeProperty ;
+    rdfs:label "ufficio"@it .
+
+l0:identifier a owl:DatatypeProperty .
+
+l0:name a owl:DatatypeProperty .
+
+### Classes
+
+CLV:Address a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty CLV:hasAddressComponent ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty CLV:hasNumber ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty CLV:hasStreetToponym ;
+            owl:someValuesFrom owl:Thing ] ;
+    owl:disjointWith CLV:AddressComponent .
+
+CLV:AddressComponent a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf CLV:hasAddressComponent ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+CLV:AdminUnitComponent a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty CLV:hasDirectHigherRank ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty CLV:hasDirectLowerRank ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf CLV:hasDirectHigherRank ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf CLV:hasDirectLowerRank ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:subClassOf CLV:AddressComponent,
+        [ a owl:Restriction ;
+            owl:onProperty l0:identifier ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty l0:name ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    owl:disjointWith CLV:CivicNumbering .
+
+CLV:City a owl:Class ;
+    rdfs:subClassOf CLV:AdminUnitComponent .
+
+CLV:CivicNumbering a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty CLV:streetNumber ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf CLV:hasNumber ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+CLV:Country a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILPDDA1:nazioneDiDestinazione ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILPDDA1:richiestaPerPaeseDiDestinazione ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:subClassOf CLV:AdminUnitComponent .
+
+CLV:Feature a owl:Class .
+
+CLV:Province a owl:Class ;
+    rdfs:subClassOf CLV:AdminUnitComponent .
+
+CLV:StreetToponym a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty CLV:officialStreetName ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf CLV:hasStreetToponym ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:subClassOf CLV:AddressComponent .
+
+INAILCore:PersonaFisica a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:ricopreRuoloDiAssicurato ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:PosizioneAssicurativaNavigazione a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:panAppartieneASoggettoAssicurante ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:panCompetenzaDi ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:PosizioneAssicurativaTerritoriale a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:patAppartieneASoggettoAssicurante ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:patCompetenzaDi ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty INAILCore:faRiferimentoASedeLavoro ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:SedeINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:strutturaINAILSituataIn ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:panCompetenzaDi ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:patCompetenzaDi ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:soggettoAssicuranteCompetenzaDi ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILPDDA1:praticaElaborataDaSedeINAIL ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILPDDA1:richiestaInviataASedeINAIL ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:SedeLavoro a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:situatoIn ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:faRiferimentoASedeLavoro ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:SoggettoAssicuranteINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:haClassificazioneATECO ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:haSedeLegaleIn ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:soggettoAssicuranteCompetenzaDi ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:effettuaRichiestaModuloPDDA1 ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:soggettoAssicuranteDiTipo ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:panAppartieneASoggettoAssicurante ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILPDDA1:lavoraPresso ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:SoggettoAssicuratoINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:lavoraPresso ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:SoggettoAssicuratoDiTipo ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:ricopreRuoloDiAssicurato ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILPDDA1:documentoRelativoAAssicurato ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILPDDA1:richiestaRelativaAAssicurato ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILPDDA1:DocumentoPDDA1 a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:dataDocumentoPDDA1 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:numeroDocumentoPDDA1 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:numeroGiorniPDDA1 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILPDDA1:praticaGeneraDocumentoPDDA1 ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Documento PDDA1"@it,
+        "PDDA1 Document"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:dataFinePermanenzaEstero ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:dataInizioPermanenzaEstero ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:documentoRelativoAAssicurato ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:nazioneDiDestinazione ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Il PD DA1 è il Documento Portabile (PD) che dà diritto alla copertura sanitaria in caso di infortunio sul lavoro o di malattia professionale ed è destinato alla persona che si sposta, risiede o soggiorna in uno Stato membro dell'Unione Europea diverso da quello in cui è assicurata contro gli infortuni sul lavoro e le malattie professionali."@it .
+
+INAILPDDA1:PraticaPDDA1 a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:codicePraticaPDDA1 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:praticaGeneraDocumentoPDDA1 ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "PDDA1 Procedure"@en,
+        "Pratica PDDA1"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:praticaElaborataDaSedeINAIL ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:praticaHaStato ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILPDDA1:richiestaHaPraticaPDDA1 ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Pratica relativa alla richiesta del documento PD DA1 elaborata dalla Sede INAIL competente per territorio."@it .
+
+INAILPDDA1:RichiestaDocumentoPDDA1 a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:codiceRichiestaPDDA1 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:dataRichiestaPDDA1 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILPDDA1:effettuaRichiestaModuloPDDA1 ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "PDDA1 Document Request"@en,
+        "Richiesta Documento PDDA1"@it ;
+    rdfs:subClassOf TI:TimeIndexedEvent,
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:dataFinePermanenzaEstero ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:dataInizioPermanenzaEstero ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:richiestaHaPraticaPDDA1 ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:richiestaInviataASedeINAIL ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:richiestaPerPaeseDiDestinazione ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:richiestaRelativaAAssicurato ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Modulo di richiesta per il PD DA1 che il datore di lavoro, il lavoratore autonomo o un incaricato per conto del datore effettua. Il PD DA1 può essere altresì richiesto dalla persona, titolare di una rendita INAIL derivante da infortunio sul lavoro o malattia professionale, che intenda trasferirsi all’estero anche se non più in attività lavorativa. La richiesta è effettuata accedendo al sito istituzionale, previa abilitazione, oppure inviando il modulo compilato, tramite PEC, alla Sede INAIL competente per territorio."@it .
+
+INAILPDDA1:StatoPraticaPDDA1 a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:statoPraticaHaStato ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "PDDA1 Procedure Status"@en,
+        "Stato Pratica PDDA1"@it ;
+    rdfs:subClassOf TI:TimeIndexedEvent,
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILPDDA1:praticaHaStato ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Stato della pratica relativa alla richiesta del documento PD DA1: chiusa, inviata, sospesa ecc."@it .
+
+INAILPDDA1:TipoRichiedente a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:codiceRichiedente ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:denominazioneRichiedente ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:descrizioneRichiedente ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILPDDA1:soggettoAssicuranteDiTipo ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Applicant Type"@en,
+        "Tipo Richiedente"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:struttura ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:tipoGruppo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:ufficio ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:comment "Tipologie di utenti che hanno effettuato la richiesta del modulo PDDA1 a nome dell'azienda."@it .
+
+INAILService:TipoLavoratoreINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILPDDA1:SoggettoAssicuratoDiTipo ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+skos:Concept a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:haClassificazioneATECO ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILPDDA1:statoPraticaHaStato ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+TI:TimeIndexedEvent a owl:Class .
+
+[] a owl:Class ;
+    rdfs:subClassOf CLV:Feature ;
+    owl:unionOf (
+            CLV:Address
+            CLV:AddressComponent ) .
+
+### Individuals
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/td> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "TD" ;
+    foaf:name "Digital Transformation Team"@en,
+        "Team per la Trasformazione Digitale"@it .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+<https://w3id.org/italia/work-accident/data/proc6_pdda1/distribution/PDDA1-N-TRIPLES> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc6_pdda1/v1.0> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc6_pdda1/v1.0/proc6_pdda1.n3> ;
+    dct:description "Questa è la distribuzione N-TRIPLES dell'ontologia INAIL relativa alla richiesta del documento PD DA1"@it,
+        "This is the distribution in N-TRIPLES of the INAIL ontology about the PD DA1 document request"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione N-TRIPLES ontologia INAIL - Richiesta documento PD DA1"@it,
+        "N-TRIPLES distribution of INAIL ontology - PD DA1 document request"@en .
+
+<https://w3id.org/italia/work-accident/data/proc6_pdda1/distribution/PDDA1-RDF-TURTLE> a dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc6_pdda1/v1.0> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc6_pdda1/v1.0/proc6_pdda1.ttl> ;
+    dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia INAIL relativa alla richiesta del documento PD DA1"@it,
+        "This is the distribution in RDF/Turtle of the INAIL ontology about the PD DA1 document request"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione RDF/Turtle ontologia INAIL - Richiesta documento PD DA1"@it,
+        "RDF/Turtle distribution of INAIL ontology - PD DA1 document request"@en .
+
+<https://w3id.org/italia/work-accident/data/proc6_pdda1/distribution/PDDA1-RDF-XML> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc6_pdda1/v1.0> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc6_pdda1/v1.0/proc6_pdda1.owl> ;
+    dct:description "Questa è la distribuzione RDF/XML dell'ontologia INAIL relativa alla richiesta del documento PD DA1"@it,
+        "This is the distribution in RDF/XML of the INAIL ontology about the PD DA1 document request"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione RDF/XML ontologia INAIL - Richiesta documento PD DA1"@it,
+        "RDF/XML distribution of INAIL ontology - PD DA1 document request"@en .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

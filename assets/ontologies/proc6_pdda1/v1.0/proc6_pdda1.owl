@@ -1,0 +1,1502 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/italia/work-accident/onto/proc6_pdda1/"
+     xml:base="https://w3id.org/italia/work-accident/onto/proc6_pdda1/"
+     xmlns:INAILService="https://w3id.org/italia/work-accident/onto/adm_serv/"
+     xmlns:adms="https://w3id.org/italia/onto/ADMS/"
+     xmlns:l0="https://w3id.org/italia/onto/l0/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:CPV="https://w3id.org/italia/onto/CPV/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:INAILAutoliq="https://w3id.org/italia/work-accident/onto/proc21/"
+     xmlns:COV="https://w3id.org/italia/onto/COV/"
+     xmlns:INAILCore="https://w3id.org/italia/work-accident/onto/core/"
+     xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+     xmlns:CLV="https://w3id.org/italia/onto/CLV/"
+     xmlns:INAILPDDA1="https://w3id.org/italia/work-accident/onto/proc6_pdda1/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:TI="https://w3id.org/italia/onto/TI/"
+     xmlns:INAIL="http://okms.inail/ontology/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:dcatapit="http://dati.gov.it/onto/dcatapit#"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:RO="https://w3id.org/italia/onto/RO/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/">
+        <owl:versionIRI rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/1.0"/>
+		<owl:imports rdf:resource="https://w3id.org/italia/onto/CLV/"/>
+		<owl:imports rdf:resource="https://w3id.org/italia/onto/l0/"/>
+		<owl:imports rdf:resource="https://w3id.org/italia/onto/TI/"/>
+		<owl:imports rdf:resource="https://w3id.org/italia/work-accident/onto/core/"/>
+		<dct:title xml:lang="it">Ontologia INAIL relativa alla richiesta del documento PD DA1</dct:title>
+		<dct:title xml:lang="en">INAIL Ontology about the PD DA1 document request</dct:title>
+		<adms:last rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/1.0"/>
+		<dcat:keyword xml:lang="it">PD DA1</dcat:keyword>
+		<dcat:keyword xml:lang="it">estero</dcat:keyword>
+		<dcat:keyword xml:lang="it">documento</dcat:keyword>
+		<dcat:keyword xml:lang="it">infortunio</dcat:keyword>
+		<dcat:keyword xml:lang="it">malattia professionale</dcat:keyword>
+		<dcat:keyword xml:lang="it">assicurazione</dcat:keyword>
+		<dcat:keyword xml:lang="en">abroad</dcat:keyword>
+		<dcat:keyword xml:lang="en">document</dcat:keyword>
+		<dcat:keyword xml:lang="en">occupational injury</dcat:keyword>
+		<dcat:keyword xml:lang="en">occupational disease</dcat:keyword>
+		<dcat:keyword xml:lang="en">insurance</dcat:keyword>
+		<rdfs:comment xml:lang="it">Ontologia INAIL relativa alla richiesta del documento PD DA1. Il PD DA1 è il Documento Portabile (PD) che dà diritto alla copertura sanitaria in caso di infortunio sul lavoro o di malattia professionale ed è destinato alla persona che si sposta, risiede o soggiorna in uno Stato membro dell'Unione Europea diverso da quello in cui è assicurata contro gli infortuni sul lavoro e le malattie professionali.</rdfs:comment>
+		<rdfs:comment xml:lang="en">This is the ontology of the INAIL Organization about the PD DA1 document request. The PD DA1 is the Portable Document (PD) that entitles the person to health care coverage in the event of a occupational injury or occupational disease and it is destined to the person who moves to, resides in or stays in a European Union member state other than the one in which he or she is insured against occupational injury or occupational disease.</rdfs:comment>
+		<adms:target xml:lang="it">Cittadini</adms:target>
+		<adms:target xml:lang="it">Imprese</adms:target>
+		<adms:target xml:lang="it">Pubbliche Amministrazioni</adms:target>
+		<dcat:contactPoint rdf:resource="https://w3id.org/italia/work-accident/data/organization/ufficioV"/>
+		<dct:creator rdf:resource="https://w3id.org/italia/work-accident/data/organization/inail"/>
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-28T00:00:00Z</dct:issued>
+		<adms:type rdf:resource="https://w3id.org/italia/onto/ADMS/ServiceOnytology"/>
+		<adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/proc6_pdda1/distribution/PDDA1-RDF-TURTLE"/>
+		<adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/proc6_pdda1/distribution/PDDA1-RDF-XML"/>
+		<adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/proc6_pdda1/distribution/PDDA1-N-TRIPLES"/>
+        <rdfs:isDefinedBy>https://w3id.org/italia/work-accident/onto/proc6_pdda1/</rdfs:isDefinedBy>
+		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-3T00:00:00Z</dct:modified>
+        <rdfs:label xml:lang="it">Ontologia INAIL relativa alla richiesta del documento PD DA1</rdfs:label>
+		<rdfs:label xml:lang="en">INAIL Ontology  about the PD DA1 document request</rdfs:label>
+		<adms:hasKeyClass rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/RichiestaDocumentoPDDA1"/>
+		<adms:hasKeyClass rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/PraticaPDDA1"/>
+		<adms:hasKeyClass rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/DocumentoPDDA1"/>
+        <adms:hasKeyClass rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/TipoRichiedente"/>
+		<adms:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/NDC"/>
+		<adms:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/AnnotationTask"/>
+		<adms:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/QueryFormulationTask"/>
+		<adms:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/SearchTask"/>
+        <adms:status>catalogued</adms:status>
+		<adms:status>published</adms:status>
+		<dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+		<dct:rightsHolder rdf:resource="https://w3id.org/italia/work-accident/data/organization/inail"/>
+		<adms:hasContributor rdf:resource="https://w3id.org/italia/work-accident/data/organization/td"/>
+		<owl:versionInfo xml:lang="it">Versione 1.0 - Modificata il 3 Novembre 2023</owl:versionInfo>
+		<owl:versionInfo xml:lang="en">Version 1.0 - Modified on 3 November 2023</owl:versionInfo>
+		<adms:hasOntologyLanguage>https://w3id.org/italia/onto/ADMS/OWL</adms:hasOntologyLanguage>
+		<adms:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
+		<dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI"/>
+		<dct:publisher rdf:resource="https://w3id.org/italia/work-accident/data/organization/inail"/>
+		<adms:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/italia/work-accident/onto/proc6_pdda1</adms:officialURI>
+		<dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+		<dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+		<adms:acronym>inail</adms:acronym>
+		<dct:description xml:lang="it">Ontologia INAIL relativa alla richiesta del documento PD DA1. Il PD DA1 è il Documento Portabile (PD) che dà diritto alla copertura sanitaria in caso di infortunio sul lavoro o di malattia professionale ed è destinato alla persona che si sposta, risiede o soggiorna in uno Stato membro dell'Unione Europea diverso da quello in cui è assicurata contro gli infortuni sul lavoro e le malattie professionali.</dct:description>
+        <dct:description xml:lang="en">This is the ontology of the INAIL Organization about the PD DA1 document request. The PD DA1 is the Portable Document (PD) that entitles the person to health care coverage in the event of a occupational injury or occupational disease and it is destined to the person who moves to, resides in or stays in a European Union member state other than the one in which he or she is insured against occupational injury or occupational disease.</dct:description>
+        <dct:identifier>https://w3id.org/italia/work-accident/onto/proc6_pdda1</dct:identifier>
+        <adms:prefix>inailpdda1</adms:prefix>
+    </owl:Ontology>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Literal -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#int -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#int"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://w3id.org/italia/onto/CLV/hasAddressComponent -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasAddressComponent">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/Address"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/AddressComponent"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/onto/CLV/hasDirectHigherRank -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasDirectHigherRank">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/CLV/hasHigherRank"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/AdminUnitComponent"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/AdminUnitComponent"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/onto/CLV/hasDirectLowerRank -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasDirectLowerRank">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/CLV/hasLowerRank"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/AdminUnitComponent"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/AdminUnitComponent"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/onto/CLV/hasHigherRank -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasHigherRank"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/CLV/hasLowerRank -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasLowerRank"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/CLV/hasNumber -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasNumber">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/Address"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/CivicNumbering"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/onto/CLV/hasStreetToponym -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasStreetToponym">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/Address"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/StreetToponym"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/faRiferimentoASedeLavoro -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/core/faRiferimentoASedeLavoro"/>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/haClassificazioneATECO -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/core/haClassificazioneATECO">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/haResidenza -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/core/haResidenza">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/core/PersonaFisica"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/Feature"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/haSedeLegaleIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/core/haSedeLegaleIn">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/Feature"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/panAppartieneASoggettoAssicurante -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/core/panAppartieneASoggettoAssicurante">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/core/PosizioneAssicurativaNavigazione"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/panCompetenzaDi -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/core/panCompetenzaDi">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/core/PosizioneAssicurativaNavigazione"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/SedeINAIL"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/patAppartieneASoggettoAssicurante -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/core/patAppartieneASoggettoAssicurante">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/core/PosizioneAssicurativaTerritoriale"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/patCompetenzaDi -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/core/patCompetenzaDi">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/core/PosizioneAssicurativaTerritoriale"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/SedeINAIL"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/ricopreRuolo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/core/ricopreRuolo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/ricopreRuoloDiAssicurato -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/core/ricopreRuoloDiAssicurato">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/ricopreRuolo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/core/PersonaFisica"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuratoINAIL"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/situatoIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/core/situatoIn">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/core/SedeLavoro"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/Feature"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/soggettoAssicuranteCompetenzaDi -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/core/soggettoAssicuranteCompetenzaDi">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/SedeINAIL"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/strutturaINAILSituataIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/core/strutturaINAILSituataIn">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/core/SedeINAIL"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/Feature"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/SoggettoAssicuratoDiTipo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/SoggettoAssicuratoDiTipo">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuratoINAIL"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/adm_serv/TipoLavoratoreINAIL"/>
+        <rdfs:label xml:lang="it">soggetto assicurato di tipo</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/documentoRelativoAAssicurato -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/documentoRelativoAAssicurato">
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuratoINAIL"/>
+        <rdfs:label xml:lang="it">documento relativo ad assicurato</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/effettuaRichiestaModuloPDDA1 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/effettuaRichiestaModuloPDDA1">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/RichiestaDocumentoPDDA1"/>
+        <rdfs:label xml:lang="it">effettua richiesta modulo PDDA1</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/lavoraPresso -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/lavoraPresso">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuratoINAIL"/>
+        <rdfs:label xml:lang="it">lavora presso</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/nazioneDiDestinazione -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/nazioneDiDestinazione">
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/Country"/>
+        <rdfs:label xml:lang="it">nazione di destinazione</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/praticaElaborataDaSedeINAIL -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/praticaElaborataDaSedeINAIL">
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/SedeINAIL"/>
+        <rdfs:label xml:lang="it">pratica elaborata da sede INAIL</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/praticaGeneraDocumentoPDDA1 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/praticaGeneraDocumentoPDDA1">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/PraticaPDDA1"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/DocumentoPDDA1"/>
+        <rdfs:label xml:lang="it">pratica genera documento PDDA1</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/praticaHaStato -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/praticaHaStato">
+        <rdfs:label xml:lang="it">pratica ha stato</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/richiestaHaPraticaPDDA1 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/richiestaHaPraticaPDDA1">
+        <rdfs:label xml:lang="it">richiesta ha pratica PDDA1</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/richiestaInviataASedeINAIL -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/richiestaInviataASedeINAIL">
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/SedeINAIL"/>
+        <rdfs:label xml:lang="it">richiesta inviata a sede INAIL</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/richiestaPerPaeseDiDestinazione -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/richiestaPerPaeseDiDestinazione">
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/Country"/>
+        <rdfs:label xml:lang="it">richiesta per paese di destinazione</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/richiestaRelativaAAssicurato -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/richiestaRelativaAAssicurato">
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuratoINAIL"/>
+        <rdfs:label xml:lang="it">richiesta relativa ad assicurato</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/soggettoAssicuranteDiTipo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/soggettoAssicuranteDiTipo">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/TipoRichiedente"/>
+        <rdfs:label xml:lang="it">soggetto assicurante di tipo</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/statoPraticaHaStato -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/statoPraticaHaStato">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/StatoPraticaPDDA1"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="it">stato pratica ha stato</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://w3id.org/italia/onto/CLV/acronym -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/acronym">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/Province"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/onto/CLV/officialStreetName -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/officialStreetName">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/l0/name"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/StreetToponym"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/onto/CLV/postCode -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/postCode">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/l0/identifier"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/Address"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/onto/CLV/streetNumber -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/streetNumber">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/CivicNumbering"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/onto/l0/identifier -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/l0/identifier"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/l0/name -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/l0/name"/>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/codicePraticaPDDA1 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/codicePraticaPDDA1">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/PraticaPDDA1"/>
+        <rdfs:label xml:lang="it">codice pratica PDDA1</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/codiceRichiedente -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/codiceRichiedente">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/TipoRichiedente"/>
+        <rdfs:label xml:lang="it">codice richiedente</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/codiceRichiestaPDDA1 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/codiceRichiestaPDDA1">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/RichiestaDocumentoPDDA1"/>
+        <rdfs:label xml:lang="it">codice richiesta PDDA1</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/dataDocumentoPDDA1 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/dataDocumentoPDDA1">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/DocumentoPDDA1"/>
+        <rdfs:label xml:lang="it">data documento PDDA1</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/dataFinePermanenzaEstero -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/dataFinePermanenzaEstero">
+        <rdfs:label xml:lang="it">data fine permanenza estero</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/dataInizioPermanenzaEstero -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/dataInizioPermanenzaEstero">
+        <rdfs:label xml:lang="it">data inizio permanenza estero</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/dataRichiestaPDDA1 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/dataRichiestaPDDA1">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/RichiestaDocumentoPDDA1"/>
+        <rdfs:label xml:lang="it">data richiesta PDDA1</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/denominazioneRichiedente -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/denominazioneRichiedente">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/TipoRichiedente"/>
+        <rdfs:label xml:lang="it">denominazione richiedente</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/descrizioneRichiedente -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/descrizioneRichiedente">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/TipoRichiedente"/>
+        <rdfs:label xml:lang="it">descrizione richiedente</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/numeroDocumentoPDDA1 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/numeroDocumentoPDDA1">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/DocumentoPDDA1"/>
+        <rdfs:label xml:lang="it">numero documento PDDA1</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/numeroGiorniPDDA1 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/numeroGiorniPDDA1">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/DocumentoPDDA1"/>
+        <rdfs:comment xml:lang="it">Numero di giorni di validità del documento PD DA1.</rdfs:comment>
+        <rdfs:label xml:lang="it">numero giorni PDDA1</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/struttura -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/struttura">
+        <rdfs:label xml:lang="it">struttura</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/tipoGruppo -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/tipoGruppo">
+        <rdfs:label xml:lang="it">tipo gruppo</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/ufficio -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/ufficio">
+        <rdfs:label xml:lang="it">ufficio</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/haClassificazioneATECO"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/statoPraticaHaStato"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/onto/CLV/Address -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Address">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasAddressComponent"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasNumber"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasStreetToponym"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="https://w3id.org/italia/onto/CLV/AddressComponent"/>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/onto/CLV/AddressComponent -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/AddressComponent">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/CLV/hasAddressComponent"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/onto/CLV/AdminUnitComponent -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/AdminUnitComponent">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasDirectHigherRank"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasDirectLowerRank"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/CLV/hasDirectHigherRank"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/CLV/hasDirectLowerRank"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/AddressComponent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/l0/identifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/l0/name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/italia/onto/CLV/CivicNumbering"/>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/onto/CLV/City -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/City">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/AdminUnitComponent"/>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/onto/CLV/CivicNumbering -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/CivicNumbering">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/CLV/hasNumber"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/streetNumber"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/onto/CLV/Country -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Country">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/nazioneDiDestinazione"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/richiestaPerPaeseDiDestinazione"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/AdminUnitComponent"/>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/onto/CLV/Feature -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Feature"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/CLV/Province -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Province">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/AdminUnitComponent"/>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/onto/CLV/StreetToponym -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/StreetToponym">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/CLV/hasStreetToponym"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/officialStreetName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/AddressComponent"/>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/onto/TI/TimeIndexedEvent -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/TI/TimeIndexedEvent"/>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/adm_serv/TipoLavoratoreINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/adm_serv/TipoLavoratoreINAIL">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/SoggettoAssicuratoDiTipo"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/PersonaFisica -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/PersonaFisica">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/core/ricopreRuoloDiAssicurato"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/PosizioneAssicurativaNavigazione -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/PosizioneAssicurativaNavigazione">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/core/panAppartieneASoggettoAssicurante"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/core/panCompetenzaDi"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/PosizioneAssicurativaTerritoriale -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/PosizioneAssicurativaTerritoriale">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/core/patAppartieneASoggettoAssicurante"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/core/patCompetenzaDi"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/core/faRiferimentoASedeLavoro"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/SedeINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/SedeINAIL">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/core/strutturaINAILSituataIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/panCompetenzaDi"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/patCompetenzaDi"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/soggettoAssicuranteCompetenzaDi"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/praticaElaborataDaSedeINAIL"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/richiestaInviataASedeINAIL"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/SedeLavoro -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/SedeLavoro">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/core/situatoIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/faRiferimentoASedeLavoro"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/core/haClassificazioneATECO"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/core/haSedeLegaleIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/core/soggettoAssicuranteCompetenzaDi"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/effettuaRichiestaModuloPDDA1"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/soggettoAssicuranteDiTipo"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/panAppartieneASoggettoAssicurante"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/lavoraPresso"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuratoINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuratoINAIL">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/SoggettoAssicuratoDiTipo"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/lavoraPresso"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/ricopreRuoloDiAssicurato"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/documentoRelativoAAssicurato"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/richiestaRelativaAAssicurato"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/DocumentoPDDA1 -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/DocumentoPDDA1">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/praticaGeneraDocumentoPDDA1"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/dataDocumentoPDDA1"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/numeroDocumentoPDDA1"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/numeroGiorniPDDA1"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/documentoRelativoAAssicurato"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/nazioneDiDestinazione"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/dataFinePermanenzaEstero"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/dataInizioPermanenzaEstero"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Il PD DA1 è il Documento Portabile (PD) che dà diritto alla copertura sanitaria in caso di infortunio sul lavoro o di malattia professionale ed è destinato alla persona che si sposta, risiede o soggiorna in uno Stato membro dell'Unione Europea diverso da quello in cui è assicurata contro gli infortuni sul lavoro e le malattie professionali.</rdfs:comment>
+        <rdfs:label xml:lang="it">Documento PDDA1</rdfs:label>
+        <rdfs:label xml:lang="en">PDDA1 Document</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/PraticaPDDA1 -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/PraticaPDDA1">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/praticaGeneraDocumentoPDDA1"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/codicePraticaPDDA1"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/praticaElaborataDaSedeINAIL"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/praticaHaStato"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/richiestaHaPraticaPDDA1"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Pratica relativa alla richiesta del documento PD DA1 elaborata dalla Sede INAIL competente per territorio.</rdfs:comment>
+        <rdfs:label xml:lang="en">PDDA1 Procedure</rdfs:label>
+        <rdfs:label xml:lang="it">Pratica PDDA1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/RichiestaDocumentoPDDA1 -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/RichiestaDocumentoPDDA1">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/effettuaRichiestaModuloPDDA1"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/codiceRichiestaPDDA1"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/dataRichiestaPDDA1"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/TI/TimeIndexedEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/richiestaHaPraticaPDDA1"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/richiestaInviataASedeINAIL"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/richiestaPerPaeseDiDestinazione"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/richiestaRelativaAAssicurato"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/dataFinePermanenzaEstero"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/dataInizioPermanenzaEstero"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Modulo di richiesta per il PD DA1 che il datore di lavoro, il lavoratore autonomo o un incaricato per conto del datore effettua. Il PD DA1 può essere altresì richiesto dalla persona, titolare di una rendita INAIL derivante da infortunio sul lavoro o malattia professionale, che intenda trasferirsi all’estero anche se non più in attività lavorativa. La richiesta è effettuata accedendo al sito istituzionale, previa abilitazione, oppure inviando il modulo compilato, tramite PEC, alla Sede INAIL competente per territorio.</rdfs:comment>
+        <rdfs:label xml:lang="en">PDDA1 Document Request</rdfs:label>
+        <rdfs:label xml:lang="it">Richiesta Documento PDDA1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/StatoPraticaPDDA1 -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/StatoPraticaPDDA1">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/statoPraticaHaStato"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/TI/TimeIndexedEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/praticaHaStato"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Stato della pratica relativa alla richiesta del documento PD DA1: chiusa, inviata, sospesa ecc.</rdfs:comment>
+        <rdfs:label xml:lang="en">PDDA1 Procedure Status</rdfs:label>
+        <rdfs:label xml:lang="it">Stato Pratica PDDA1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc6_pdda1/TipoRichiedente -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc6_pdda1/TipoRichiedente">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/soggettoAssicuranteDiTipo"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/codiceRichiedente"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/denominazioneRichiedente"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/descrizioneRichiedente"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/struttura"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/tipoGruppo"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc6_pdda1/ufficio"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Tipologie di utenti che hanno effettuato la richiesta del modulo PDDA1 a nome dell'azienda.</rdfs:comment>
+        <rdfs:label xml:lang="en">Applicant Type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo Richiedente</rdfs:label>
+    </owl:Class>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://w3id.org/italia/work-accident/data/proc6_pdda1/distribution/PDDA1-RDF-TURTLE -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/data/proc6_pdda1/distribution/PDDA1-RDF-TURTLE">
+		<rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+		<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+		<dcat:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc6_pdda1/v1.0"/>
+        <dct:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell'ontologia INAIL relativa alla richiesta del documento PD DA1</dct:description>
+        <dct:description xml:lang="en">This is the distribution in RDF/Turtle of the INAIL ontology about the PD DA1 document request</dct:description>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc6_pdda1/v1.0/proc6_pdda1.ttl"/>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
+        <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <dct:title xml:lang="it">Distribuzione RDF/Turtle ontologia INAIL - Richiesta documento PD DA1</dct:title>
+        <dct:title xml:lang="en">RDF/Turtle distribution of INAIL ontology - PD DA1 document request</dct:title>
+    </owl:NamedIndividual>
+
+
+
+	<!-- https://w3id.org/italia/work-accident/data/proc6_pdda1/distribution/PDDA1-RDF-XML -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/data/proc6_pdda1/distribution/PDDA1-RDF-XML">
+		<rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+		<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+		<dcat:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc6_pdda1/v1.0"/>
+        <dct:description xml:lang="it">Questa è la distribuzione RDF/XML dell'ontologia INAIL relativa alla richiesta del documento PD DA1</dct:description>
+        <dct:description xml:lang="en">This is the distribution in RDF/XML of the INAIL ontology about the PD DA1 document request</dct:description>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc6_pdda1/v1.0/proc6_pdda1.owl"/>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+        <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <dct:title xml:lang="it">Distribuzione RDF/XML ontologia INAIL - Richiesta documento PD DA1</dct:title>
+        <dct:title xml:lang="en">RDF/XML distribution of INAIL ontology - PD DA1 document request</dct:title>
+    </owl:NamedIndividual>
+
+
+
+	<!-- https://w3id.org/italia/work-accident/data/proc6_pdda1/distribution/PDDA1-N-TRIPLES -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/data/proc6_pdda1/distribution/PDDA1-N-TRIPLES">
+		<rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+		<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+		<dcat:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc6_pdda1/v1.0"/>
+        <dct:description xml:lang="it">Questa è la distribuzione N-TRIPLES dell'ontologia INAIL relativa alla richiesta del documento PD DA1</dct:description>
+        <dct:description xml:lang="en">This is the distribution in N-TRIPLES of the INAIL ontology about the PD DA1 document request</dct:description>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc6_pdda1/v1.0/proc6_pdda1.n3"/>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES"/>
+        <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <dct:title xml:lang="it">Distribuzione N-TRIPLES ontologia INAIL - Richiesta documento PD DA1</dct:title>
+        <dct:title xml:lang="en">N-TRIPLES distribution of INAIL ontology - PD DA1 document request</dct:title>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/data/organization/inail -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/data/organization/inail">
+		<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+		<dct:identifier>inail</dct:identifier>
+        <foaf:name xml:lang="it">Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro</foaf:name>
+        <foaf:name xml:lang="en">National Institute for Insurance against Accidents at Work</foaf:name>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/data/organization/td -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/data/organization/td">
+		<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+		<dct:identifier>TD</dct:identifier>
+        <foaf:name xml:lang="it">Team per la Trasformazione Digitale</foaf:name>
+		<foaf:name xml:lang="en">Digital Transformation Team</foaf:name>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/data/organization/ufficioV -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/data/organization/ufficioV">
+		<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Organization"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+		<vcard:fn>INAIL Ufficio V - D.C.O.D</vcard:fn>
+        <vcard:hasEmail rdf:resource="mailto:dcod@inail.it"/>
+    </owl:NamedIndividual>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Address"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/AddressComponent"/>
+        </owl:unionOf>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/Feature"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.4) https://github.com/owlcs/owlapi -->
+
