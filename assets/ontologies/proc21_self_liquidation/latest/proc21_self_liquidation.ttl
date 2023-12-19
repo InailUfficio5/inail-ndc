@@ -47,9 +47,9 @@ INAILAutoliq: a owl:Ontology ;
         INAILAutoliq:PremioAssicurativoINAIL,
         INAILAutoliq:PremioAutoliquidazioneINAIL ;
     adms:hasOntologyLanguage adms:OWL ;
-    adms:hasSemanticAssetDistribution <https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution//AUTOLIQ-N-TRIPLES>,
-        <https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution//AUTOLIQ-RDF-TURTLE>,
-        <https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution//AUTOLIQ-RDF-XML> ;
+    adms:hasSemanticAssetDistribution <https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution/AUTOLIQ-N-TRIPLES>,
+        <https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution/AUTOLIQ-RDF-TURTLE>,
+        <https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution/AUTOLIQ-RDF-XML> ;
     adms:hasTask adms:AnnotationTask,
         adms:QueryFormulationTask,
         adms:SearchTask ;
@@ -1872,7 +1872,7 @@ TI:TimeIndexedEvent a owl:Class .
     vcard:fn "INAIL Ufficio V - D.C.O.D" ;
     vcard:hasEmail <mailto:dcod@inail.it> .
 
-<https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution//AUTOLIQ-N-TRIPLES> a adms:SemanticAssetDistribution,
+<https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution/AUTOLIQ-N-TRIPLES> a adms:SemanticAssetDistribution,
         dcat:Distribution,
         dcatapit:Distribution,
         owl:NamedIndividual ;
@@ -1885,7 +1885,7 @@ TI:TimeIndexedEvent a owl:Class .
     dct:title "Distribuzione N-TRIPLES ontologia INAIL - Autoliquidazione"@it,
         "N-TRIPLES distribution of INAIL ontology - Self-liquidation"@en .
 
-<https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution//AUTOLIQ-RDF-TURTLE> a adms:SemanticAssetDistribution,
+<https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution/AUTOLIQ-RDF-TURTLE> a adms:SemanticAssetDistribution,
         dcat:Distribution,
         dcatapit:Distribution,
         owl:NamedIndividual ;
@@ -1898,7 +1898,7 @@ TI:TimeIndexedEvent a owl:Class .
     dct:title "Distribuzione RDF/Turtle ontologia INAIL - Autoliquidazione"@it,
         "RDF/Turtle distribution of INAIL ontology - Self-Liquidation"@en .
 
-<https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution//AUTOLIQ-RDF-XML> a adms:SemanticAssetDistribution,
+<https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution/AUTOLIQ-RDF-XML> a adms:SemanticAssetDistribution,
         dcat:Distribution,
         dcatapit:Distribution,
         owl:NamedIndividual ;

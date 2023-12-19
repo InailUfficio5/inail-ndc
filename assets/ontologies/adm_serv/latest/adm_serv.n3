@@ -31,7 +31,7 @@
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <https://w3id.org/italia/onto/ADMS/type> <https://w3id.org/italia/onto/ADMS/ServiceOnytology> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> <https://w3id.org/italia/work-accident/data/adm_serv/distribution/ADM-SERV-RDF-TURTLE> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> <https://w3id.org/italia/work-accident/data/adm_serv/distribution/ADM-SERV-RDF-XML> .
-<https://w3id.org/italia/work-accident/onto/adm_serv/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> <https://w3id.org/italia/work-accident/data/adm_serv/distribution/ADM-SERV-N3> .
+<https://w3id.org/italia/work-accident/onto/adm_serv/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> <https://w3id.org/italia/work-accident/data/adm_serv/distribution/ADM-SERV-N-TRIPLES> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/italia/work-accident/onto/adm_serv/> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <http://purl.org/dc/terms/modified> "2023-12-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <http://www.w3.org/2000/01/rdf-schema#label> "Ontologia INAIL relativa a Infortuni e Malattie Professionali"@it .
