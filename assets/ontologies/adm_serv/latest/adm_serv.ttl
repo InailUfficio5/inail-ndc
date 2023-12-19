@@ -45,7 +45,7 @@ INAILService: a owl:Ontology ;
         INAILService:MalattiaProfessionale,
         INAILService:PrestazioneEconomicaINAIL ;
     adms:hasOntologyLanguage adms:OWL ;
-    adms:hasSemanticAssetDistribution <https://w3id.org/italia/work-accident/data/adm_serv/distribution/ADM-SERV-NTRIPLES>,
+    adms:hasSemanticAssetDistribution <https://w3id.org/italia/work-accident/data/adm_serv/distribution/ADM-SERV-N-TRIPLES>,
         <https://w3id.org/italia/work-accident/data/adm_serv/distribution/ADM-SERV-RDF-TURTLE>,
         <https://w3id.org/italia/work-accident/data/adm_serv/distribution/ADM-SERV-RDF-XML> ;
     adms:hasTask adms:AnnotationTask,
