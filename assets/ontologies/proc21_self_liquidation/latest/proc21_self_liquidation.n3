@@ -64,7 +64,7 @@
 <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> <http://purl.org/dc/terms/description> "Ontologia INAIL relativa all'autoliquidazione. L'autoliquidazione \u00E8 il procedimento che consente al datore di lavoro soggetto all\u2019assicurazione obbligatoria contro gli infortuni sul lavoro e le malattie professionali di pagare il premio assicurativo annuale."@it .
 <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> <http://purl.org/dc/terms/description> "This is the ontology of the INAIL Organization about self-liquidation. Self-liquidation is the process by which an employer subject to compulsory insurance against occupational accidents and diseases pays the annual insurance premium"@en .
 <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> <http://purl.org/dc/terms/identifier> "https://w3id.org/italia/work-accident/onto/proc21_self_liquidation" .
-<https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> <https://w3id.org/italia/onto/ADMS/prefix> "inailsl" .
+<https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> <https://w3id.org/italia/onto/ADMS/prefix> "inailproc21" .
 <http://purl.org/dc/terms/accessURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <http://purl.org/dc/terms/downloadURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .

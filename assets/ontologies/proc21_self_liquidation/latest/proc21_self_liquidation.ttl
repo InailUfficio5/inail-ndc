@@ -55,7 +55,7 @@ INAILAutoliq: a owl:Ontology ;
         adms:SearchTask ;
     adms:last INAILAutoliq:2.1 ;
     adms:officialURI "https://w3id.org/italia/work-accident/onto/proc21_self_liquidation"^^xsd:anyURI ;
-    adms:prefix "inailsl" ;
+    adms:prefix "inailproc21" ;
     adms:prev <https://w3id.org/italia/work-accident/onto/proc21/2.0> ;
     adms:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
     adms:status "catalogued",

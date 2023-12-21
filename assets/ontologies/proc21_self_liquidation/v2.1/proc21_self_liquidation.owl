@@ -91,7 +91,7 @@
 		<dct:description xml:lang="it">Ontologia INAIL relativa all'autoliquidazione. L'autoliquidazione è il procedimento che consente al datore di lavoro soggetto all’assicurazione obbligatoria contro gli infortuni sul lavoro e le malattie professionali di pagare il premio assicurativo annuale</dct:description>
         <dct:description xml:lang="en">This is the ontology of the INAIL Organization about self-liquidation. Self-liquidation is the process by which an employer subject to compulsory insurance against occupational accidents and diseases pays the annual insurance premium</dct:description>
         <dct:identifier>https://w3id.org/italia/work-accident/onto/proc21_self_liquidation</dct:identifier>
-        <adms:prefix>inailsl</adms:prefix>
+        <adms:prefix>inailproc21</adms:prefix>
     </owl:Ontology>
 
 

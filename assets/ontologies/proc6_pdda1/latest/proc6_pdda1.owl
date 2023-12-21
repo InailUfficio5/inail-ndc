@@ -87,7 +87,7 @@
 		<dct:description xml:lang="it">Ontologia INAIL relativa alla richiesta del documento PD DA1. Il PD DA1 è il Documento Portabile (PD) che dà diritto alla copertura sanitaria in caso di infortunio sul lavoro o di malattia professionale ed è destinato alla persona che si sposta, risiede o soggiorna in uno Stato membro dell'Unione Europea diverso da quello in cui è assicurata contro gli infortuni sul lavoro e le malattie professionali.</dct:description>
         <dct:description xml:lang="en">This is the ontology of the INAIL Organization about the PD DA1 document request. The PD DA1 is the Portable Document (PD) that entitles the person to health care coverage in the event of a occupational injury or occupational disease and it is destined to the person who moves to, resides in or stays in a European Union member state other than the one in which he or she is insured against occupational injury or occupational disease.</dct:description>
         <dct:identifier>https://w3id.org/italia/work-accident/onto/proc6_pdda1</dct:identifier>
-        <adms:prefix>inailpdda1</adms:prefix>
+        <adms:prefix>inailproc6</adms:prefix>
     </owl:Ontology>
 
 

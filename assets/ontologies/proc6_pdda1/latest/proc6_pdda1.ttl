@@ -45,7 +45,7 @@ INAILPDDA1: a owl:Ontology ;
         adms:SearchTask ;
     adms:last INAILPDDA1:1.0 ;
     adms:officialURI "https://w3id.org/italia/work-accident/onto/proc6_pdda1"^^xsd:anyURI ;
-    adms:prefix "inailpdda1" ;
+    adms:prefix "inailproc6" ;
     adms:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
     adms:status "catalogued",
         "published" ;
