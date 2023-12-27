@@ -1,0 +1,48 @@
+url,id,label_it,level
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/0,0,Assente,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/1,1,Aliscafo,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/10,10,Imbarcazione a vela,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/11,11,Motobarca,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/12,12,Motobettolina,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/13,13,Motobetta,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/14,14,Motocisterna,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/15,15,Motodraga,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/16,16,Motonave,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/17,17,Motopeschereccio,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/18,18,Motopontone,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/19,19,Motoscafo,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/2,2,Bacino gallegiante,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/20,20,Motoveliero,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/21,21,Motozattera,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/22,22,Motobarca palombaro,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/23,23,Nave scuola,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/24,24,Diporto con quote sind.,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/25,25,Pesca atlantica,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/26,26,Peschereccio,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/27,27,Pilotina,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/28,28,Piroscafo,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/29,29,Pontone,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/3,3,Barca,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/30,30,Porta containers,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/31,31,Rimorchiatori,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/32,32,Traghetto ro ro,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/33,33,Traghetto,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/34,34,Turbonave,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/35,35,Veliero,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/36,36,Veliero con motore,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/37,37,Diporto,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/38,38,Zattera,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/39,39,Galleggiante,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/4,4,Barca palombaro,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/40,40,Piattaforma,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/41,41,Nave veloce,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/42,42,Natante,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/43,43,Barca a remi,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/44,44,Nave diporto,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/45,45,Imbarcazione diporto,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/46,46,Barca a vela,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/5,5,Betta,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/6,6,Bettolina,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/7,7,Chiatta,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/8,8,Draga,1
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/9,9,Imbarcazione a  remi,1
