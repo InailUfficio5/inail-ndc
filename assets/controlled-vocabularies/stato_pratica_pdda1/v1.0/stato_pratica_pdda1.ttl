@@ -9,6 +9,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix stpratica: <https://w3id.org/italia/work-accident/controlled-vocabulary/proc6_pdda1/stato_pratica_pdda1/concetto/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -20,78 +21,6 @@
     dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
     dct:identifier "SKOS" ;
     dct:title "Simple Knowledge Organization System - SKOS" .
-
-<https://w3id.org/italia/work-accident/controlled-vocabulary/proc6_pdda1/stato_pratica_pdda1/concetto/1> a skos:Concept ;
-    rdfs:label "Sostituita"@it ;
-    skos:prefLabel "Sostituita"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "1" ;
-    skos:inScheme inailvoc:stato_pratica_pdda1 ;
-    skos:notation "1" ;
-    xkos:depth "1" .
-
-<https://w3id.org/italia/work-accident/controlled-vocabulary/proc6_pdda1/stato_pratica_pdda1/concetto/2> a skos:Concept ;
-    rdfs:label "Sospesa"@it ;
-    skos:prefLabel "Sospesa"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "2" ;
-    skos:inScheme inailvoc:stato_pratica_pdda1 ;
-    skos:notation "2" ;
-    xkos:depth "1" .
-
-<https://w3id.org/italia/work-accident/controlled-vocabulary/proc6_pdda1/stato_pratica_pdda1/concetto/3> a skos:Concept ;
-    rdfs:label "Chiusa"@it ;
-    skos:prefLabel "Chiusa"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "3" ;
-    skos:inScheme inailvoc:stato_pratica_pdda1 ;
-    skos:notation "3" ;
-    xkos:depth "1" .
-
-<https://w3id.org/italia/work-accident/controlled-vocabulary/proc6_pdda1/stato_pratica_pdda1/concetto/4> a skos:Concept ;
-    rdfs:label "Inviata"@it ;
-    skos:prefLabel "Inviata"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "4" ;
-    skos:inScheme inailvoc:stato_pratica_pdda1 ;
-    skos:notation "4" ;
-    xkos:depth "1" .
-
-<https://w3id.org/italia/work-accident/controlled-vocabulary/proc6_pdda1/stato_pratica_pdda1/concetto/5> a skos:Concept ;
-    rdfs:label "In Istruttoria"@it ;
-    skos:prefLabel "In Istruttoria"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "5" ;
-    skos:inScheme inailvoc:stato_pratica_pdda1 ;
-    skos:notation "5" ;
-    xkos:depth "1" .
-
-<https://w3id.org/italia/work-accident/controlled-vocabulary/proc6_pdda1/stato_pratica_pdda1/concetto/6> a skos:Concept ;
-    rdfs:label "Inviata con Errori"@it ;
-    skos:prefLabel "Inviata con Errori"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "6" ;
-    skos:inScheme inailvoc:stato_pratica_pdda1 ;
-    skos:notation "6" ;
-    xkos:depth "1" .
-
-<https://w3id.org/italia/work-accident/controlled-vocabulary/proc6_pdda1/stato_pratica_pdda1/concetto/7> a skos:Concept ;
-    rdfs:label "Da Lavorare"@it ;
-    skos:prefLabel "Da Lavorare"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "7" ;
-    skos:inScheme inailvoc:stato_pratica_pdda1 ;
-    skos:notation "7" ;
-    xkos:depth "1" .
-
-<https://w3id.org/italia/work-accident/controlled-vocabulary/proc6_pdda1/stato_pratica_pdda1/concetto/8> a skos:Concept ;
-    rdfs:label "Dato non Disponibile"@it ;
-    skos:prefLabel "Dato non Disponibile"@it ;
-    clvapit:hasRankOrder "1" ;
-    dct:identifier "8" ;
-    skos:inScheme inailvoc:stato_pratica_pdda1 ;
-    skos:notation "8" ;
-    xkos:depth "1" .
 
 <https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
         foaf:Agent ;
@@ -181,14 +110,86 @@ inailvoc:stato_pratica_pdda1 a adms:Asset,
         "Vocabolario Controllato sulla classificazione delle tipologie di stato della pratica della richiesta relativa al documento PDDA1 adottata dall'INAIL"@it ;
     dct:type <http://purl.org/adms/assettype/CodeList> ;
     ndc:keyConcept "stato_pratica_pdda1" ;
-    skos:hasTopConcept <https://w3id.org/italia/work-accident/controlled-vocabulary/proc6_pdda1/stato_pratica_pdda1/concetto/1>,
-        <https://w3id.org/italia/work-accident/controlled-vocabulary/proc6_pdda1/stato_pratica_pdda1/concetto/2>,
-        <https://w3id.org/italia/work-accident/controlled-vocabulary/proc6_pdda1/stato_pratica_pdda1/concetto/3>,
-        <https://w3id.org/italia/work-accident/controlled-vocabulary/proc6_pdda1/stato_pratica_pdda1/concetto/4>,
-        <https://w3id.org/italia/work-accident/controlled-vocabulary/proc6_pdda1/stato_pratica_pdda1/concetto/5>,
-        <https://w3id.org/italia/work-accident/controlled-vocabulary/proc6_pdda1/stato_pratica_pdda1/concetto/6>,
-        <https://w3id.org/italia/work-accident/controlled-vocabulary/proc6_pdda1/stato_pratica_pdda1/concetto/7>,
-        <https://w3id.org/italia/work-accident/controlled-vocabulary/proc6_pdda1/stato_pratica_pdda1/concetto/8> ;
+    skos:hasTopConcept stpratica:1,
+        stpratica:2,
+        stpratica:3,
+        stpratica:4,
+        stpratica:5,
+        stpratica:6,
+        stpratica:7,
+        stpratica:8 ;
     xkos:numberOfLevels "1" .
+
+stpratica:1 a skos:Concept ;
+    rdfs:label "Sostituita"@it ;
+    skos:prefLabel "Sostituita"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "1" ;
+    skos:inScheme inailvoc:stato_pratica_pdda1 ;
+    skos:notation "1" ;
+    xkos:depth "1" .
+
+stpratica:2 a skos:Concept ;
+    rdfs:label "Sospesa"@it ;
+    skos:prefLabel "Sospesa"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "2" ;
+    skos:inScheme inailvoc:stato_pratica_pdda1 ;
+    skos:notation "2" ;
+    xkos:depth "1" .
+
+stpratica:3 a skos:Concept ;
+    rdfs:label "Chiusa"@it ;
+    skos:prefLabel "Chiusa"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "3" ;
+    skos:inScheme inailvoc:stato_pratica_pdda1 ;
+    skos:notation "3" ;
+    xkos:depth "1" .
+
+stpratica:4 a skos:Concept ;
+    rdfs:label "Inviata"@it ;
+    skos:prefLabel "Inviata"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "4" ;
+    skos:inScheme inailvoc:stato_pratica_pdda1 ;
+    skos:notation "4" ;
+    xkos:depth "1" .
+
+stpratica:5 a skos:Concept ;
+    rdfs:label "In Istruttoria"@it ;
+    skos:prefLabel "In Istruttoria"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "5" ;
+    skos:inScheme inailvoc:stato_pratica_pdda1 ;
+    skos:notation "5" ;
+    xkos:depth "1" .
+
+stpratica:6 a skos:Concept ;
+    rdfs:label "Inviata con Errori"@it ;
+    skos:prefLabel "Inviata con Errori"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "6" ;
+    skos:inScheme inailvoc:stato_pratica_pdda1 ;
+    skos:notation "6" ;
+    xkos:depth "1" .
+
+stpratica:7 a skos:Concept ;
+    rdfs:label "Da Lavorare"@it ;
+    skos:prefLabel "Da Lavorare"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "7" ;
+    skos:inScheme inailvoc:stato_pratica_pdda1 ;
+    skos:notation "7" ;
+    xkos:depth "1" .
+
+stpratica:8 a skos:Concept ;
+    rdfs:label "Dato non Disponibile"@it ;
+    skos:prefLabel "Dato non Disponibile"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "8" ;
+    skos:inScheme inailvoc:stato_pratica_pdda1 ;
+    skos:notation "8" ;
+    xkos:depth "1" .
 
 ### Serialized using the ttlser deterministic serializer v1.2.0
