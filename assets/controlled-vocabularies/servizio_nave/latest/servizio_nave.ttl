@@ -4,12 +4,12 @@
 @prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix INAILAutoliq: <https://w3id.org/italia/work-accident/onto/proc21/> .
-@prefix inailvoc: <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21/> .
+@prefix INAILAutoliq: <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> .
+@prefix inailvoc: <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/> .
 @prefix ndc: <https://w3id.org/italia/onto/NDC/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix servnave: <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21/servizio_nave/> .
+@prefix servnave: <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/servizio_nave/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
@@ -35,7 +35,7 @@
     vcard:fn "INAIL Ufficio V - D.C.O.D" ;
     vcard:hasEmail <mailto:dcod@inail.it> .
 
-<https://w3id.org/italia/work-accident/data/proc21/distribution/SN_CSV> a dcat:Distribution,
+<https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution/SN_CSV> a dcat:Distribution,
         dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/servizio_nave/latest> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/servizio_nave/latest/servizio_nave.csv> ;
@@ -46,7 +46,7 @@
     dct:title "CSV distribution of typology of ship service adopted by INAIL controlled vocabulary"@en,
         "Distribuzione CSV del vocabolario controllato sulla tipologia del servizio di una nave adottata dall'INAIL"@it .
 
-<https://w3id.org/italia/work-accident/data/proc21/distribution/SN_JSON> a dcat:Distribution,
+<https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution/SN_JSON> a dcat:Distribution,
         dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/servizio_nave/latest> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/servizio_nave/latest/servizio_nave.json> ;
@@ -57,7 +57,7 @@
     dct:title "Distribuzione JSON del vocabolario controllato sulla tipologia del servizio di una nave adottata dall'INAIL"@it,
         "JSON distribution of typology of ship service adopted by INAIL controlled vocabulary"@en .
 
-<https://w3id.org/italia/work-accident/data/proc21/distribution/SN_RDF_TURTLE> a dcat:Distribution,
+<https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution/SN_RDF_TURTLE> a dcat:Distribution,
         dcatapit:Distribution ;
     dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/servizio_nave/latest> ;
     dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/servizio_nave/latest/servizio_nave.ttl> ;
@@ -80,9 +80,9 @@ inailvoc:servizio_nave a adms:Asset,
     rdfs:isDefinedBy inailvoc:servizio_nave ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
-    dcat:distribution <https://w3id.org/italia/work-accident/data/proc21/distribution/SN_CSV>,
-        <https://w3id.org/italia/work-accident/data/proc21/distribution/SN_JSON>,
-        <https://w3id.org/italia/work-accident/data/proc21/distribution/SN_RDF_TURTLE> ;
+    dcat:distribution <https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution/SN_CSV>,
+        <https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution/SN_JSON>,
+        <https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution/SN_RDF_TURTLE> ;
     dcat:keyword "autoliquidazione"@it,
         "inail"@it,
         "insurance premium"@en,
@@ -98,10 +98,10 @@ inailvoc:servizio_nave a adms:Asset,
     dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
     dct:description "Service to which a ship may be enabled"@en,
         "Servizio a cui una nave può essere abilitata"@it ;
-    dct:identifier "https://w3id.org/italia/work-accident/controlled-vocabulary/proc21/servizio_nave" ;
+    dct:identifier "https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/servizio_nave" ;
     dct:issued "2022-12-21"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-    dct:modified "2023-07-31"^^xsd:date ;
+    dct:modified "2023-12-27"^^xsd:date ;
     dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
     dct:relation inailvoc:registro_iscrizione_nave,
         inailvoc:specie_navigazione,
