@@ -3812,7 +3812,7 @@
 
     <!-- https://w3id.org/italia/work-accident/data/organization/agenzia_entrate -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/organization/agenzia_entrate">
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/data/organization/agenzia_entrate">
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
 		<rdf:type rdf:resource="https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/Esattore"/>
