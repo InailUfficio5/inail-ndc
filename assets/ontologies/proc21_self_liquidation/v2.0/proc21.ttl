@@ -659,7 +659,7 @@ INAILAutoliq:percentualeDiSgravio a owl:DatatypeProperty ;
 
 INAILAutoliq:potenzaMotoreNave a owl:DatatypeProperty,
         owl:FunctionalProperty ;
-    rdfs:label """potenza Motore Nave\r
+    rdfs:label """potenza Motore Nave\r\r
 """@it ;
     rdfs:domain INAILAutoliq:DatoTecnicoNave .
 
@@ -741,15 +741,15 @@ INAILAutoliq:AnnullamentoF24 a owl:Class ;
     rdfs:comment "In caso di errore di compilazione o di sopravvenuta impossibilità ad eseguire il pagamento, è possibile annullare un modello F24 trasmesso attraverso i servizi telematici dell'Agenzia delle Entrate seguendo una apposita procedura on line, ma entro e non oltre il penultimo giorno lavorativo precedente la data di versamento prevista (cioè prima che il pagamento sia definitivamente inoltrato alla banca da parte dell’Agenzia delle Entrate). "@it .
 
 INAILAutoliq:AssegnoBancarioOPostale a owl:Class ;
-    rdfs:label """Assegno Bancario\r
+    rdfs:label """Assegno Bancario\r\r
 O Postale"""@it,
         "Bank or Postal Check"@en ;
-    rdfs:comment """Strumento di pagamento sostitutivo del contante con il quale il titolare del conto corrente (traente) ordina alla propria banca (trattario) di versare una determinata somma di denaro a favore di un’altra persona\r
+    rdfs:comment """Strumento di pagamento sostitutivo del contante con il quale il titolare del conto corrente (traente) ordina alla propria banca (trattario) di versare una determinata somma di denaro a favore di un’altra persona\r\r
 Consente di effettuare pagamenti, anche di importo rilevante, senza utilizzare il denaro contante. Gli assegni postali sono equiparati ad un assegno bancario e possono essere utilizzati per effettuare pagamenti, trasferire denaro a terzi o prelevare contante presso il proprio Ufficio Postale."""@it .
 
 INAILAutoliq:AssegnoCircolare a owl:Class ;
     rdfs:label "Assegno Circolare"@it,
-        """Bank Draft\r
+        """Bank Draft\r\r
 """@en ;
     rdfs:comment "Titolo di credito all'ordine emesso da una banca autorizzata per somme che siano presso di esso disponibili al momento dell'emissione, e pagabile a vista presso tutti i recapiti comunque indicati dall'emittente. [Art. 82, R. D. 21 dicembre 1933, n. 1736] "@it .
 
@@ -758,12 +758,12 @@ INAILAutoliq:AttivitaVerificaImportiVersati a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILAutoliq:svolgeAttivita ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Activities to Verify the Amounts Paid"@en,
-        """Attivita Verifica\r
+        """Attivita Verifica\r\r
 Importi Versati"""@it ;
     rdfs:comment "Attività eseguita dall'Inail, a seguito del pagamento dell'F24, che consiste nel verificare che l'importo pagato sia uguale a quello che viene calcolato come dovuto  internamente dall'archivio GRA (Gestione Rapporti Assicurativi). "@it .
 
 INAILAutoliq:AttoDiNazionalitaNave a owl:Class ;
-    rdfs:label """Atto Di\r
+    rdfs:label """Atto Di\r\r
 Nazionalità Nave"""@it,
         "Ship Nationality Act"@en ;
     rdfs:subClassOf INAILAutoliq:CartaDiBordoNave ;
@@ -812,38 +812,38 @@ INAILAutoliq:BaseDiCalcolo a owl:Class ;
     rdfs:comment "Individua gli elementi Insieme degli elementi necessari per il calcolo della regolazione e della rata del premio di autoliquidazione e dei contributi associativi. La comunicazione delle basi di calcolo del premio, per ogni codice ditta, avviene tramite pubblicazione nella sezione “Fascicolo aziende” mentre per il settore marittimo sono rese disponibili agli armatori direttamente con il servizio online \"Visualizzazione elementi calcolo\". "@it .
 
 INAILAutoliq:BaseDiCalcoloContributiAssociativi a owl:Class ;
-    rdfs:label """Base Di Calcolo\r
-Contributi\r
+    rdfs:label """Base Di Calcolo\r\r
+Contributi\r\r
 Associativi"""@it,
         "Calculation Base for Membership Fee"@en ;
     rdfs:comment "Insieme degli elementi necessari per il calcolo dei contributi associativi."@it .
 
 INAILAutoliq:BaseDiCalcoloDipendenti a owl:Class ;
-    rdfs:label """Base Di Calcolo\r
+    rdfs:label """Base Di Calcolo\r\r
 Dipendenti"""@it,
         "Calculation Base for Employees"@en ;
     rdfs:comment "Insieme degli elementi necessari per il calcolo della regolazione e della rata del premio di autoliquidazione del premio dei dipendenti e dei contributi associativi. "@it .
 
 INAILAutoliq:BaseDiCalcoloNavigazione a owl:Class ;
-    rdfs:label """Base Di Calcolo\r
+    rdfs:label """Base Di Calcolo\r\r
 Navigazione"""@it,
         "Calculation Base of Navigation "@en ;
     rdfs:comment "Insieme degli elementi necessari per il calcolo della regolazione e della rata del premio di autoliquidazione dei lavoratori della gestione navigazione e dei contributi associativi."@it .
 
 INAILAutoliq:BaseDiCalcoloSoggettiAutonomiArtigiani a owl:Class ;
-    rdfs:label """Base Di Calcolo\r
-Soggetti Autonomi\r
+    rdfs:label """Base Di Calcolo\r\r
+Soggetti Autonomi\r\r
 Artigiani"""@it,
         "Calculation Base for Self-Employed Craftsmen"@en ;
     rdfs:comment "Individua gli elementi necessari per il calcolo della regolazione e della rata del premio di autoliquidazione dei soggetti autonomi artigiani e dei contributi associativi"@it .
 
 INAILAutoliq:CartaDiBordoNave a owl:Class ;
-    rdfs:label """Carta Di Bordo\r
+    rdfs:label """Carta Di Bordo\r\r
 Nave"""@it,
         "Ship On-Board Paper"@en ;
-    rdfs:comment """Documento obbligatorio per la navigazione e da tenere a bordo: l'atto di nazionalità e il ruolo di equipaggio per le navi maggiori; la licenza per le navi minori e i galleggianti.\r
-L'atto di nazionalità e la licenza abilitano alla navigazione e contengono gli elementi identificativi della nave, le sue caratteristiche principali, il nome del suo proprietario, l'ufficio di immatricolazione/iscrizione.\r
-Il ruolo di equipaggio (navi maggiori) contiene gli elementi identificativi dell’armatore e l’elenco delle persone dell’equipaggio.\r
+    rdfs:comment """Documento obbligatorio per la navigazione e da tenere a bordo: l'atto di nazionalità e il ruolo di equipaggio per le navi maggiori; la licenza per le navi minori e i galleggianti.\r\r
+L'atto di nazionalità e la licenza abilitano alla navigazione e contengono gli elementi identificativi della nave, le sue caratteristiche principali, il nome del suo proprietario, l'ufficio di immatricolazione/iscrizione.\r\r
+Il ruolo di equipaggio (navi maggiori) contiene gli elementi identificativi dell’armatore e l’elenco delle persone dell’equipaggio.\r\r
 [Artt. 169 e 170 Codice della navigazione]"""@it .
 
 INAILAutoliq:CassettoFiscale a owl:Class ;
@@ -856,7 +856,7 @@ INAILAutoliq:CassettoFiscale a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILAutoliq:ricevutaInseritaIn ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Cassetto\r
+    rdfs:label """Cassetto\r\r
 Fiscale"""@it,
         "Tax Drawer"@en ;
     rdfs:comment "Servizio che consente la consultazione delle proprie informazioni fiscali, come: dati anagrafici, dati delle dichiarazioni fiscali, dati dei rimborsi, dati dei versamenti effettuati tramite modello F24 e F23, atti del registro (dati patrimoniali), dati e informazioni relativi agli studi di settore e agli indicatori sintetici di affidabilità fiscale (Isa), le informazioni sul proprio stato di iscrizione al Vies (VAT information exchange system)."@it .
@@ -876,54 +876,54 @@ INAILAutoliq:CategoriaNaviglio a owl:Class ;
     rdfs:comment "Classificazione determinata in base al tipo di nave, al tipo di servizio e alle attività in cui sono impegnate le persone imbarcate; sono previste categorie specifiche per navigli da traffico, navigli da pesca marittima e navigli da diporto. "@it .
 
 INAILAutoliq:CertificatoDiBordoLiberoEGalleggiabilita a owl:Class ;
-    rdfs:label """Certificato\r
-Di Bordo Libero\r
+    rdfs:label """Certificato\r\r
+Di Bordo Libero\r\r
 E Galleggiabilita"""@it,
         "Free Board and Floatability Certificate"@en ;
     rdfs:comment "Il certificato di bordo libero e galleggiabilità attesta la distanza misurata verticalmente verso il basso, al centro della nave, dal bordo superiore della linea del ponte al bordo superiore della relativa linea di carico. Il certificato è emesso prima della messa in servizio della nave ed è soggetto ai controlli annuali ed al rinnovo allo scadere del quinto anno. [Art. 14 Legge 5 giugno 1962, n. 616]"@it .
 
 INAILAutoliq:CertificatoDiClasseNave a owl:Class ;
-    rdfs:label """Certificato\r
+    rdfs:label """Certificato\r\r
 Di Classe Nave"""@it,
         "Ship Class Certificate"@en ;
-    rdfs:comment """Certificato rilasciato da una società di classificazione che attesta l'idoneità strutturale e meccanica delle navi a determinati impieghi o servizi in conformità alle norme ed ai regolamenti da essa fissati e resi pubblici [art. 2 DM Trasporti 4 aprile 2005, n. 95]\r
+    rdfs:comment """Certificato rilasciato da una società di classificazione che attesta l'idoneità strutturale e meccanica delle navi a determinati impieghi o servizi in conformità alle norme ed ai regolamenti da essa fissati e resi pubblici [art. 2 DM Trasporti 4 aprile 2005, n. 95]\r\r
 Nel certificato di classe sono registrate le "notazioni di classe"; esse stabiliscono i termini sui quali è stata basata la classificazione della nave con riferimento alle norme per l'assegnazione delle notazioni stesse. Le notazioni di classe assegnate ad una nave possono essere: sigla principale di classe, marche di sorveglianza alla costruzione, notazioni di servizio, notazioni di navigazione, notazioni di area operativa (facoltative), notazioni di classe addizionali (facoltative)."""@it .
 
 INAILAutoliq:CertificatoDiStazzaNave a owl:Class ;
-    rdfs:label """Certificato\r
-Di Stazza\r
+    rdfs:label """Certificato\r\r
+Di Stazza\r\r
 Nave"""@it,
         "Ship Tonnage Certificate"@en ;
-    rdfs:comment """Certificato indicate la stazza (misura, lorda e netta, della capacità interna di una nave mercantile o di un'imbarcazione) della nave che le navi maggiori devono avere a bordo (art. 169 Codice Navigazione). Il certificato di stazza è depositato presso l'ufficio del porto d' iscrizione della nave dopo l'esecuzione della stazzatura.\r
-La stazzatura delle navi marittime è eseguita nella Repubblica dal Registro italiano navale, quale delegato del ministero dei trasporti e della navigazione, a mezzo di ingegneri navali o di altri periti stazzatori abilitati a norma del Regolamento (art. 307 Regolamento Codice Navigazione).\r
+    rdfs:comment """Certificato indicate la stazza (misura, lorda e netta, della capacità interna di una nave mercantile o di un'imbarcazione) della nave che le navi maggiori devono avere a bordo (art. 169 Codice Navigazione). Il certificato di stazza è depositato presso l'ufficio del porto d' iscrizione della nave dopo l'esecuzione della stazzatura.\r\r
+La stazzatura delle navi marittime è eseguita nella Repubblica dal Registro italiano navale, quale delegato del ministero dei trasporti e della navigazione, a mezzo di ingegneri navali o di altri periti stazzatori abilitati a norma del Regolamento (art. 307 Regolamento Codice Navigazione).\r\r
 Per la navigazione interna, gli Uffici Motorizzazione Civile (U.M.C.) delle Direzioni Generali Territoriali, nel rispettivo ambito territoriale di competenza, provvedono alla stazzatura delle navI elle unità navali e rilascio del certificato di stazza (art 11 DPCM n.190/2020). Negli altri casi provvedono l'ispettorato compartimentale o gli altri organi stabiliti da leggi e da regolamenti speciali."""@it .
 
 INAILAutoliq:CertificatoDiVisitaNave a owl:Class ;
-    rdfs:label """Certificato\r
+    rdfs:label """Certificato\r\r
 Di Visita Nave"""@it,
         "Ship Visit Certificate"@en ;
-    rdfs:comment """Certificato (obbligatorio per le navi maggiori, art. 169 Codice della navigazione) di avvenuta effettuazione dell'insieme degli accertamenti tecnici e delle ispezioni concernenti l'idoneità della nave alla navigazione.\r
-Ai fini degli accertamenti per il rilascio e per la conferma dei documenti di sicurezza delle navi, le visite alle quali devono essere sottoposte le navi, sono:\r
- "visite iniziali", prima dell'entrata in servizio o prima dell'ottenimento dei certificati definitivi;\r
-"visite periodiche", alla scadenza dei periodi di validità dei certificati di sicurezza, di idoneità e delle annotazioni di sicurezza;\r
-"visite intermedie", con intervalli piu' brevi delle periodiche, come stabilito nel presente regolamento;\r
+    rdfs:comment """Certificato (obbligatorio per le navi maggiori, art. 169 Codice della navigazione) di avvenuta effettuazione dell'insieme degli accertamenti tecnici e delle ispezioni concernenti l'idoneità della nave alla navigazione.\r\r
+Ai fini degli accertamenti per il rilascio e per la conferma dei documenti di sicurezza delle navi, le visite alle quali devono essere sottoposte le navi, sono:\r\r
+ "visite iniziali", prima dell'entrata in servizio o prima dell'ottenimento dei certificati definitivi;\r\r
+"visite periodiche", alla scadenza dei periodi di validità dei certificati di sicurezza, di idoneità e delle annotazioni di sicurezza;\r\r
+"visite intermedie", con intervalli piu' brevi delle periodiche, come stabilito nel presente regolamento;\r\r
 "visite occasionali", quando se ne verifichi la necessità."""@it .
 
 INAILAutoliq:CertificatoNavigabilita a owl:Class ;
-    rdfs:label """Certificato\r
+    rdfs:label """Certificato\r\r
 Navigabilita"""@it,
         "Navigability Certificate"@en ;
     rdfs:comment "Certificato che attesta l’idoneità alla navigazione delle navi di stazza lorda uguale o superiore a 25 tonnellate, che non siano munite di certificato di classe, rilasciato dall'autorità marittima in base agli accertamenti esperti dall'ente tecnico a norma dei regolamenti di applicazione della legge 616/1962, con validità di quattro anni prorogabile al massimo per un anno. [art. 5 legge 5 giugno 1962, n. 616]"@it .
 
 INAILAutoliq:CertificatoSicurezzaNave a owl:Class ;
-    rdfs:label """Certificato\r
+    rdfs:label """Certificato\r\r
 Sicurezza Nave"""@it,
         "Ship Security Certificate"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAILAutoliq:documentoAbilitanteNavigazioneUnitaDiporto ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment """Certificato che attesta l'adempimento delle prescrizioni relative alla sicurezza della vita umana in mare. [art. 4, L. 616/1962]\r
-Il certificato di sicurezza è rilasciato dall'autorità marittima. [art. 6, L. 616/1962]\r
+    rdfs:comment """Certificato che attesta l'adempimento delle prescrizioni relative alla sicurezza della vita umana in mare. [art. 4, L. 616/1962]\r\r
+Il certificato di sicurezza è rilasciato dall'autorità marittima. [art. 6, L. 616/1962]\r\r
 Il certificato di sicurezza per le navi da passeggeri in viaggi internazionali ha validità di un anno; il certificato di sicurezza per le dotazioni di armamento per le navi da carico di stazza lorda uguale o superiore a 500 tonnellate in viaggi internazionali e il certificato di sicurezza radioelettrica per le navi da carico di stazza lorda uguale o superiore a 500 tonnellate in viaggi internazionali hanno validità di cinque anni [art.6 L. 616/1962]"""@it .
 
 INAILAutoliq:CertificatoTecnicoNave a owl:Class ;
@@ -935,18 +935,18 @@ INAILAutoliq:CertificatoTecnicoNave a owl:Class ;
                     INAILAutoliq:CertificatoDiVisitaNave
                     INAILAutoliq:CertificatoNavigabilita
                     INAILAutoliq:CertificatoSicurezzaNave ) ] ;
-    rdfs:label """Certificato\r
+    rdfs:label """Certificato\r\r
 Tecnico Nave"""@it,
         "Ship Technical Certificate"@en ;
-    rdfs:comment """Certificato che attesta l'adempimento delle prescrizioni relative alla sicurezza della vita umana in mare per le navi da carico di stazza lorda inferiore alle 500 tonnellate adibite a viaggi internazionali, nonche' per le navi da passeggeri o da carico di stazza lorda uguale o superiore a 25 tonnellate adibite a viaggi nazionali. [art. 4, L. 616/1962]\r
-Il certificato di idoneità tecnica è rilasciato dall'autorità marittima. [art. 6, L. 616/1962]\r
+    rdfs:comment """Certificato che attesta l'adempimento delle prescrizioni relative alla sicurezza della vita umana in mare per le navi da carico di stazza lorda inferiore alle 500 tonnellate adibite a viaggi internazionali, nonche' per le navi da passeggeri o da carico di stazza lorda uguale o superiore a 25 tonnellate adibite a viaggi nazionali. [art. 4, L. 616/1962]\r\r
+Il certificato di idoneità tecnica è rilasciato dall'autorità marittima. [art. 6, L. 616/1962]\r\r
 La validità del certificato di idoneità tecnica non può essere superiore a due anni, ad eccezione delle unità da pesca la cui durata è fissata in tre anni. [art.6 L. 616/1962]"""@it .
 
 INAILAutoliq:ClasseDiRischioINAIL a owl:Class ;
     owl:equivalentClass [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILAutoliq:prevedeClasseDiRischio ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Classe Di Rischio\r
+    rdfs:label """Classe Di Rischio\r\r
 INAIL"""@it,
         "INAIL Risk Class"@en ;
     rdfs:comment "Classi che raggruppano le voci di lavorazione della tariffa dei premi previste dal d.m. 27/2/2019, ai fini della determinazione del premio di autoliquidazione. La classe di rischio INAIL è prevista solo per la tariffa artigiani; l'INAIL raggruppa lavorazioni omogenee all'interno di una stessa classe di rischio e determina in base alla classe di rischio applicata il premo speciale unitario dei lavoratori autonomi artigiani."@it .
@@ -975,7 +975,7 @@ INAILAutoliq:Contribuente a owl:Class ;
     rdfs:comment "Soggetto che, ai sensi del diritto tributario statale, è tenuto al versamento di imposte e tributi, stabiliti per legge."@it .
 
 INAILAutoliq:ContribuenteNonTitolarePartitaIVA a owl:Class ;
-    rdfs:label """Contribuente Non\r
+    rdfs:label """Contribuente Non\r\r
 Titolare Partita IVA"""@it,
         "Taxpayer without VAT Number"@en ;
     owl:disjointWith INAILAutoliq:ContribuenteTitolarePartitaIVA ;
@@ -985,7 +985,7 @@ INAILAutoliq:ContribuenteTitolarePartitaIVA a owl:Class ;
     owl:equivalentClass [ a owl:Restriction ;
             owl:onProperty INAILAutoliq:presentaModelloF24 ;
             owl:allValuesFrom INAILAutoliq:ModelloPagamentoF24Telematico ] ;
-    rdfs:label """Contribuente\r
+    rdfs:label """Contribuente\r\r
 Titolare Partita IVA"""@it,
         "Taxpayer with VAT Number"@en ;
     rdfs:comment "Contribuente titolare di partita Iva."@it .
@@ -1027,7 +1027,7 @@ INAILAutoliq:DatoIscrizioneNave a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILAutoliq:naveHaDatiIscrizione ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Dato Iscrizione\r
+    rdfs:label """Dato Iscrizione\r\r
 Nave"""@it,
         "Ship Enrollment Data"@en ;
     rdfs:comment "Individua in maniera univoca l'unita navale in base al porto di iscrziione, al titpo di registro e al numero di registro (cd. TARGA)"@it .
@@ -1085,7 +1085,7 @@ INAILAutoliq:DenunciaDiEsercizioINAIL a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILAutoliq:soggettoAssicurantePresentaDenuncia ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Denuncia Di\r
+    rdfs:label """Denuncia Di\r\r
 Esercizio INAIL"""@it,
         "INAIL Complaint of Operation"@en ;
     rdfs:subClassOf INAILCore:DenunciaINAIL ;
@@ -1101,7 +1101,7 @@ INAILAutoliq:DestinatarioPremioINAIL a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILAutoliq:riversamentoHaDestinatario ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Destinatario\r
+    rdfs:label """Destinatario\r\r
 Premio INAIL"""@it,
         "INAIL Premium Recipient"@en ;
     rdfs:subClassOf COV:Organization ;
@@ -1121,26 +1121,26 @@ INAILAutoliq:DocumentoDiBordoNave a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty INAILAutoliq:abilitanoAllaNavigazione ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Documento\r
+    rdfs:label """Documento\r\r
 Di Bordo Nave"""@it,
         "On-Board Ship Document"@en ;
-    rdfs:comment """Documento obbligatorio per la navigazione e da tenere a bordo:\r
-- le “carte di bordo” per le navi maggiori (l'atto di nazionalità e il ruolo di equipaggio) e per le navi minori e i galleggianti (la licenza).\r
-Inoltre, le navi maggiori devono avere a bordo:\r
-a) il certificato di stazza; il certificato di classe o quello di navigabilità; i certificati di bordo libero e di galleggiabilità; i certificati di visita;\r
-b) i documenti doganali e sanitari;\r
-c) il giornale nautico;\r
-d) gli altri libri e documenti prescritti da leggi e regolamenti.\r
+    rdfs:comment """Documento obbligatorio per la navigazione e da tenere a bordo:\r\r
+- le “carte di bordo” per le navi maggiori (l'atto di nazionalità e il ruolo di equipaggio) e per le navi minori e i galleggianti (la licenza).\r\r
+Inoltre, le navi maggiori devono avere a bordo:\r\r
+a) il certificato di stazza; il certificato di classe o quello di navigabilità; i certificati di bordo libero e di galleggiabilità; i certificati di visita;\r\r
+b) i documenti doganali e sanitari;\r\r
+c) il giornale nautico;\r\r
+d) gli altri libri e documenti prescritti da leggi e regolamenti.\r\r
 [art. 169 Codice della Navigazione]"""@it .
 
 INAILAutoliq:DocumentoDoganaleNave a owl:Class ;
     rdfs:label "Customs Ship Document"@en,
-        """Documento\r
+        """Documento\r\r
 Doganale Nave"""@it ;
     rdfs:comment "Documento doganale"@it .
 
 INAILAutoliq:DocumentoSanitarioNave a owl:Class ;
-    rdfs:label """Documento\r
+    rdfs:label """Documento\r\r
 Sanitario Nave"""@it,
         "Health Ship Document"@en ;
     rdfs:comment "Documento sanitario"@it .
@@ -1167,7 +1167,7 @@ INAILAutoliq:Esattore a owl:Class ;
     rdfs:comment "Persona incaricata della riscossione di somme dovute per obblighi contratti con un ente pubblico o privato."@it .
 
 INAILAutoliq:GalleggianteMobile a owl:Class ;
-    rdfs:label """Galleggiante\r
+    rdfs:label """Galleggiante\r\r
 Mobile"""@it,
         "Mobile Float "@en ;
     rdfs:subClassOf INAILAutoliq:NatanteEGalleggiante,
@@ -1180,17 +1180,17 @@ Mobile"""@it,
     rdfs:comment "Costruzione che sia adibita a qualsiasi servizio attinente alla navigazione o al traffico in acque marittime o interne, come ad esempio draghe, pontoni, bighe, chiatte. Pertanto non rientrano nell'ambito di tale definizione i galleggianti fissi come le boe di segnalazione, i fari galleggianti e i pontili galleggianti fissi, e neanche altri edifici galleggianti, quando sono saldamente assicurati alla riva."@it .
 
 INAILAutoliq:GiornaleNautico a owl:Class ;
-    rdfs:label """Giornale\r
+    rdfs:label """Giornale\r\r
 Nautico"""@it,
         "Nautical Journal"@en ;
-    rdfs:comment """Documento di bordo che il comandante della nave ha l’obbligo di tenere e conservare. Il giornale nautico si compone di quattro libri:\r
-- inventario di bordo, nel quale sono descritti tutti gli attrezzi e gli oggetti che formano il corredo e armamento della nave;\r
-- giornale generale e di contabilità, nel quale sono annotate tutte le entrate e le spese riguardanti la gestione della nave (prestiti contratti e la loro estinzione, atti compiuti dal comandante e i processi verbali da lui redatti in qualità di ufficiale di stato civile, oltre che tutti gli avvenimenti straordinari verificatisi durante il viaggio e ogni altra indicazione prevista dal regolamento;\r
-- giornale di navigazione nel quale sono annotati tutti i dati e i fatti inerenti alla navigazione (rotte seguite, rilievi meteorologici, manovre effettuate ecc.);\r
+    rdfs:comment """Documento di bordo che il comandante della nave ha l’obbligo di tenere e conservare. Il giornale nautico si compone di quattro libri:\r\r
+- inventario di bordo, nel quale sono descritti tutti gli attrezzi e gli oggetti che formano il corredo e armamento della nave;\r\r
+- giornale generale e di contabilità, nel quale sono annotate tutte le entrate e le spese riguardanti la gestione della nave (prestiti contratti e la loro estinzione, atti compiuti dal comandante e i processi verbali da lui redatti in qualità di ufficiale di stato civile, oltre che tutti gli avvenimenti straordinari verificatisi durante il viaggio e ogni altra indicazione prevista dal regolamento;\r\r
+- giornale di navigazione nel quale sono annotati tutti i dati e i fatti inerenti alla navigazione (rotte seguite, rilievi meteorologici, manovre effettuate ecc.);\r\r
 - giornale di carico o di boccaporto, nel quale si annotano gli imbarchi e gli sbarchi di merci, specificandone natura, qualità, quantità, numero e marche di colli, ubicazione nelle stive, data, luogo di carico e di destinazione, nome del caricatore e nome del destinatario, data e luogo di riconsegna."""@it .
 
 INAILAutoliq:ImbarcazioneDaDiporto a owl:Class ;
-    rdfs:label """Imbarcazione\r
+    rdfs:label """Imbarcazione\r\r
 Da Diporto"""@it,
         "Recreational Boat"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -1199,7 +1199,7 @@ Da Diporto"""@it,
     rdfs:comment "Ogni unità con scafo di lunghezza superiore a dieci metri e fino a ventiquattro metri destinata alla navigazione da diporto (art 3 legge 172/2003)"@it .
 
 INAILAutoliq:InventarioDiBordoNave a owl:Class ;
-    rdfs:label """Inventario\r
+    rdfs:label """Inventario\r\r
 Di Bordo Nave"""@it,
         "On-Board Ship Inventory"@en ;
     rdfs:comment "Documento che contiene l’elenco e la descrizione di tutti gli oggetti e gli attrezzi di corredo e di armamento della nave."@it .
@@ -1220,7 +1220,7 @@ INAILAutoliq:LicenzaNave a owl:Class ;
     rdfs:comment "Documento rilasciata dall'autorità che tiene il registro di iscrizione delle navi minori o dei galleggianti. La licenza deve indicare il numero, il tipo, le caratteristiche principali, la stazza lorda e netta della nave minore o del galleggiante, il nome del proprietario e l'ufficio d'iscrizione, nonchè, nel caso previsto nell'articolo 141, il nome della nave medesima. Nei casi previsti nel primo comma dell'articolo 141, alle navi minori è rilasciata una licenza provvisoria secondo le norme stabilite dal regolamento."@it .
 
 INAILAutoliq:ModelloF24Ordinario a owl:Class ;
-    rdfs:label """Modello F24\r
+    rdfs:label """Modello F24\r\r
 Ordinario"""@it,
         "Ordinary F24 Model Payment"@en ;
     owl:disjointWith INAILAutoliq:ModelloPagamentoF24EP ;
@@ -1262,7 +1262,7 @@ INAILAutoliq:ModelloPagamentoF24 a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILAutoliq:presentaModelloF24 ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "F24 Model Payment"@en,
-        """Modello\r
+        """Modello\r\r
 Pagamento F24"""@it ;
     rdfs:comment "Il modello F24 utilizzato da tutti i contribuenti, titolari e non titolari di partita Iva, per il versamento di tributi, contributi e premi assicurativi Il modello può essere è “unificato” perché permette al contribuente di effettuare con un’unica operazione il pagamento delle somme dovute nei confronti di più amministrazioni, anche compensando il versamento con eventuali crediti ) oppure per gli Enti Pubblici . I contribuenti titolari di partita Iva hanno l’obbligo di utilizzare, anche tramite intermediari (professionisti, associazioni di categoria, Caf, ecc.), la modalità telematiche di pagamento."@it .
 
@@ -1271,35 +1271,35 @@ INAILAutoliq:ModelloPagamentoF24Cartaceo a owl:Class ;
             owl:onProperty INAILAutoliq:haModalitaDiPagamento ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "F24 Paper Model Payment"@en,
-        """Modello\r
-Pagamento F24\r
+        """Modello\r\r
+Pagamento F24\r\r
 Cartaceo"""@it ;
     owl:disjointWith INAILAutoliq:ModelloPagamentoF24Telematico ;
     rdfs:comment "Modello F24 presentato in forma cartacea presso una banca, un ufficio postale o qualsiasi sportello degli agenti della riscossione (Agenzia delle Entrate-Riscossione e Riscossione Sicilia S.p.A.)."@it .
 
 INAILAutoliq:ModelloPagamentoF24EP a owl:Class ;
     rdfs:label "F24 Model Payment for Public Institution"@en,
-        """Modello\r
-Pagamento\r
+        """Modello\r\r
+Pagamento\r\r
 F24 EP"""@it ;
     rdfs:comment "Modello F24 utilizzato dagli enti pubblici sottoposti ai vincoli del sistema di tesoreria unica dello Stato (enti individuati dalle tabelle A e B allegate alla Legge n. 720/1984),  dalle Amministrazioni centrali dello Stato, titolari di conti presso la tesoreria centrale, nonché dagli enti titolari di contabilità speciale autorizzati dal Dipartimento della Ragioneria Generale dello Stato (I.Ge.P.A.), per il pagamento delle ritenute alla fonte, dell'Irap, dei tributi erariali e comunali, dei contributi previdenziali e dei premi Inail. "@it .
 
 INAILAutoliq:ModelloPagamentoF24Telematico a owl:Class ;
     rdfs:label "F24 Telematic Model Payment"@en,
-        """Modello\r
-Pagamento F24\r
+        """Modello\r\r
+Pagamento F24\r\r
 Telematico"""@it ;
     rdfs:comment "Modello F24 presentato direttamente tramite i servizi telematici messi a disposizione dall'Agenzia delle Entrate (\"F24 web\" e \"F24 online\") utilizzando i canali Entratel o Fisconline oppure mediante i servizi di internet banking messi a disposizione dagli intermediari della riscossione convenzionati con l'Agenzia. "@it .
 
 INAILAutoliq:NatanteDaDiporto a owl:Class ;
-    rdfs:label """Natante Da\r
+    rdfs:label """Natante Da\r\r
 Diporto"""@it,
         "Pleasure Boat"@en ;
     rdfs:comment "Ogni unità da diporto a remi, o con scafo di lunghezza pari o inferiore a dieci metri, con esclusione delle moto ad acqua."@it .
 
 INAILAutoliq:NatanteEGalleggiante a owl:Class ;
     rdfs:label "Boat and Float"@en,
-        """Natante E\r
+        """Natante E\r\r
 Galleggiante"""@it ;
     rdfs:comment "Naviglio di ogni tipo e stazza a adibiti a servizi o lavori portuali;"@it .
 
@@ -1354,8 +1354,8 @@ INAILAutoliq:Nave a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAILAutoliq:iscrittoARegistro ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment """Costruzione destinata al trasporto per acqua, anche a scopo di rimorchio, di pesca, di diporto, o ad altro scopo.\r
-Le navi si distinguono in maggiori e minori. Sono maggiori le navi alturiere; sono minori le navi costiere, quelle del servizio marittimo dei porti e le navi addette alla navigazione interna (art. 136 Codice della navigazione).\r
+    rdfs:comment """Costruzione destinata al trasporto per acqua, anche a scopo di rimorchio, di pesca, di diporto, o ad altro scopo.\r\r
+Le navi si distinguono in maggiori e minori. Sono maggiori le navi alturiere; sono minori le navi costiere, quelle del servizio marittimo dei porti e le navi addette alla navigazione interna (art. 136 Codice della navigazione).\r\r
 Il tipo di nave viene indicato nelle matricole o nei registri e nei documenti di bordo di cui all'art. 169 del codice della navigazione."""@it .
 
 INAILAutoliq:NaveDaDiporto a owl:Class ;
@@ -1389,7 +1389,7 @@ INAILAutoliq:NaveMinore a owl:Class ;
     rdfs:comment "Le navi costiere, cioè le navi del servizio marittimo dei porti e le navi addette alla navigazione interna. [art. 136 Codice della navigazione] Le navi costiere sono quelle navi che per caratteristiche, per dotazioni e per sistemazioni riservate all’equipaggio sono atte soltanto alla navigazione costiera, intesa come navigazione lungo le coste continentali e insulari dello Stato a distanza non superiore alle 20 miglia."@it .
 
 INAILAutoliq:NaviglioDaPescaMarittima a owl:Class ;
-    rdfs:label """Naviglio Da\r
+    rdfs:label """Naviglio Da\r\r
 Pesca Marittima"""@it,
         "Seagoing Fishing Ship"@en ;
     rdfs:comment "navi maggiori, navi minori e navi maggiori con limitazioni alla navigazione annotate sul ruolo che esercitano la pesca"@it .
@@ -1443,9 +1443,9 @@ INAILAutoliq:PortoIscrizioneNave a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILAutoliq:naveIscrittaAPorto ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Port of Ship Enrollment"@en,
-        """Porto Iscrizione\r
+        """Porto Iscrizione\r\r
 Nave"""@it ;
-    rdfs:comment """Il porto dove la nave è iscritta.\r
+    rdfs:comment """Il porto dove la nave è iscritta.\r\r
 Individua l’Autorità marittima che ai sensi dell’art. 17, comma 1, della legge 413/1984, è tenuta a comunicare all’Inail con tempestività, le notizie concernenti l’armamento e la proprietà della nave. In analogia alla “sede dei lavori” prevista per le PAT, per le PAN/certificato Nave è indicata la Sede Inail nel cui territorio ricade il porto"""@it .
 
 INAILAutoliq:Postamat a owl:Class ;
@@ -1455,28 +1455,28 @@ INAILAutoliq:Postamat a owl:Class ;
 
 INAILAutoliq:PremioAddettiServiziDomesticiEFamiliariINAIL a owl:Class ;
     rdfs:label "INAIL Premium for Domestic and Family Service Workers INAIL"@en,
-        """Premio Addetti\r
-Servizi Domestici\r
+        """Premio Addetti\r\r
+Servizi Domestici\r\r
 E Familiari INAIL"""@it ;
     rdfs:comment "Il premio assicurativo Inailper gli addetti ai servizi domestici e familiari sono compresi nei contributi che  ogni 3 mesi il datore di lavoro versa all’Inps, che provvede direttamente ad attribuirli all’Inail "@it .
 
 INAILAutoliq:PremioAnticipatoINAIL a owl:Class ;
     rdfs:label "Advance INAIL Premium"@en,
-        """Premio Anticipato\r
+        """Premio Anticipato\r\r
 INAIL"""@it ;
     owl:disjointWith INAILAutoliq:RegolazionePremioINAIL ;
     rdfs:comment "L’importo del premio di autoliquidazione anticipato che il datore di lavoro deve versare, calcolato sulla base delle retribuzioni effettive dichiarate per l'anno precedente utilizzate come presunte per l’anno in corso."@it .
 
 INAILAutoliq:PremioApprendistiIndustrialiEArtigianiINAIL a owl:Class ;
     rdfs:label "INAIL Premium for Industrial and Craft Apprentices"@en,
-        """Premio Apprendisti\r
-Industriali E\r
+        """Premio Apprendisti\r\r
+Industriali E\r\r
 Artigiani INAIL"""@it ;
     rdfs:comment "Per gli apprendisti il contributo per l’assicurazione INAIL in base alla classificazione del rischio a cui è sottoposto è già compreso nella contribuzione INPS e, quindi, il loro imponibile non rileva ai fini del calcolo del premio di autoliquidazione"@it .
 
 INAILAutoliq:PremioArtigianiINAIL a owl:Class ;
     rdfs:label "Craftsmen INAIL Premium"@en,
-        """Premio Artigiani\r
+        """Premio Artigiani\r\r
 INAIL"""@it ;
     rdfs:subClassOf INAILAutoliq:PremioSpecialeUnitarioINAIL ;
     rdfs:comment "Premio speciale unitario previsto per il lavoratore autonomo artigiano il cui importo è determinato in base alla classe di rischio e alla retribuzione convenzionale. Per ogni voce di tariffa relativa alla lavorazione svolta dal singolo soggetto autonomo artigiano è indicata la quota di premio corrispondente."@it .
@@ -1512,9 +1512,9 @@ INAILAutoliq:PremioAssicurativoINAIL a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILAutoliq:determinaPremioAssicurativo ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Insurance INAIL Premium\r
+    rdfs:label """Insurance INAIL Premium\r\r
 """@en,
-        """Premio\r
+        """Premio\r\r
 Assicurativo INAIL"""@it ;
     rdfs:comment "Il corrispettivo dovuto dal soggetto assicurante all'Inail per l'assicurazione obbligatoria contro gli infortuni e le malattie professionali a tutela dei soggetti assicurati. Nella generalità dei casi l'importo del premio si calcola moltiplicando le retribuzioni imponibili per il tasso applicato dall'Inail alla specifica lavorazione. Il calcolo del premio assicurativo avviene ogni anno tramite il sistema dell'autoliquidazione (calcolo effettuato dal datore di lavoro sulla base delle norme di legge e delle istruzioni operative fornite dall'Istituto). In altri casi, specificatamente indicati dalle legge, il premio del premio è invece stabilito in misura fissa, con o senza parametri di riferimento."@it .
 
@@ -1540,8 +1540,8 @@ INAILAutoliq:PremioAutoliquidazioneINAIL a owl:Class ;
             owl:onProperty INAILAutoliq:premioVersatoDa ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "INAIL Premium for Self-Payment "@en,
-        """Premio\r
-Autoliquidazione\r
+        """Premio\r\r
+Autoliquidazione\r\r
 INAIL"""@it ;
     rdfs:subClassOf INAILAutoliq:PremioAssicurativoINAIL,
         [ a owl:Restriction ;
@@ -1551,32 +1551,32 @@ INAIL"""@it ;
 
 INAILAutoliq:PremioCasalingheINAIL a owl:Class ;
     rdfs:label "INAIL Housewives Premium"@en,
-        """Premio\r
+        """Premio\r\r
 Casalinghe INAIL"""@it ;
     rdfs:comment "Premio annuale in misura fissa dovuto all'INAIL per l'assicurazione contro gli infortuni in ambito domestico regolamentata dalla legge 493/1999 "@it .
 
 INAILAutoliq:PremioNavigazioneEPescaMarittimaINAIL a owl:Class ;
     rdfs:label "INAIL Premium for Navigation and Sea Fishing"@en,
-        """Premio Navigazione\r
-E Pesca Marittima\r
+        """Premio Navigazione\r\r
+E Pesca Marittima\r\r
 INAIL"""@it ;
     rdfs:subClassOf INAILAutoliq:PremioOrdinarioINAIL ;
     rdfs:comment "Il premio per l’assicurazione degli addetti alla navigazione e alla pesca marittima, compreso nella gestione Industria di cui al titolo I del d.p.r. 1124/1965 e determinato ai sensi dell’art. 41, applicando le aliquote stabilite dalla specifica tariffa."@it .
 
 INAILAutoliq:PremioOrdinarioINAIL a owl:Class ;
     rdfs:label "Ordinary INAIL Premium"@en,
-        """Premio Ordinario\r
+        """Premio Ordinario\r\r
 INAIL"""@it ;
     rdfs:comment "L'importo ottenuto moltiplicando il tasso applicato per l'ammontare delle retribuzioni imponibili e dividendo il prodotto per mille. Da tale importo vanno detratti gli importi per sconti ed agevolazioni eventualmente spettanti ed all'importo per tal via ottenuto va aggiunta la percentuale a favore dell'Associazione nazionale dei mutilati ed invalidi del lavoro (Anmil)."@it .
 
 INAILAutoliq:PremioSilicosiAsbestosiINAIL a owl:Class ;
-    rdfs:label """Premio Silicosi\r
+    rdfs:label """Premio Silicosi\r\r
 Asbestosi INAIL"""@it,
         "Silicosis Asbestosis INAIL Premium"@en ;
     rdfs:comment "Il premio supplementare di cui all'art. 153 e 154 del TU 1124/1965 dovuto in presenza del rischio di contrarre queste patologie a seguito di inalazione di sostanze contenti silice allo stato libero o fibre di amianto. L'importo, ottenuto moltiplicando le retribuzioni complessive riferite alla lavorazione o luogo di lavoro per il tasso silicosi/asbestosi applicato, non è più dovuto dal 1° gennaio 2019."@it .
 
 INAILAutoliq:PremioSpecialeUnitarioINAIL a owl:Class ;
-    rdfs:label """Premio Speciale\r
+    rdfs:label """Premio Speciale\r\r
 Unitario INAIL"""@it,
         "Special Unit INAIL Premium"@en ;
     rdfs:comment "Premi calcolati utilizzando elementi diversi rispetto a quelli che determinano il premio ordinario, come ad esempio il numero delle persone coinvolte nella lavorazione, il numero delle macchine, la natura e la durata dell’attività. La legge prevede la possibilità di ricorrere a “ premi speciali unitari” per le attività per le quali, a causa della loro natura, della modalità di svolgimento o di altre circostanze, risulta difficoltosa la determinazione del premio nella forma ordinaria. "@it .
@@ -1591,7 +1591,7 @@ INAILAutoliq:ProprietarioNave a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty INAILAutoliq:progressivoProprietario ;
             owl:someValuesFrom rdfs:Literal ] ;
-    rdfs:label """Proprietario\r
+    rdfs:label """Proprietario\r\r
 Nave"""@it,
         "Ship Owner"@en ;
     rdfs:comment "il proprietario della imbarcazione è colui che mantiene il diritto di proprietà, piena o parziale, e concede all’armatore la sola disponibilità della nave sulla base, o di un rapporto di natura reale (usufrutto/uso) oppure di natura obbligatoria (locazione, comodato, ecc.), attestandolo poi con la dichiarazione di armatore. L'armatore e il proprietario sono due figure che non necessariamente coincidono."@it .
@@ -1607,19 +1607,19 @@ INAILAutoliq:RegistroDiIscrizioneNave a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILAutoliq:iscrittoARegistro ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Enrollment Ship Register"@en,
-        """Registro Di\r
+        """Registro Di\r\r
 Iscrizione Nave"""@it ;
     rdfs:comment "Le navi sono iscritte presso le matricole e i registri tenuti dall’Autorità Marittima competente. Le matricole e i registri sono tenuti su base reale, cioè sono ordinati con riferimento ai beni – ossia  alle navi – e non ai loro titolari. I registri d’iscrizione sono le Matricole delle navi maggiori, il Registro delle navi minori e dei galleggianti, il Registro internazionale, i Registri speciali, l'ATCN (archivio telematico centrale delle unità da diporto in cui dal 2019 sono confluiti i dati presenti nel Registro delle navi da diporto e nel Registro delle imbarcazioni da diporto)."@it .
 
 INAILAutoliq:RegistroInfortuniNave a owl:Class ;
     rdfs:label "Occupational Injuries Register of Ship"@en,
-        """Registro\r
+        """Registro\r\r
 Infortuni Nave"""@it ;
     rdfs:comment "Registro nel quale sono annotati gli infortuni occorsi ai lavoratori imbarcati e la tipologia dell'infortunio (art. 25, comma 2, d.lgs. 271/1999)"@it .
 
 INAILAutoliq:RegolazionePremioINAIL a owl:Class ;
     rdfs:label "INAIL Premium Regulation"@en,
-        """Regolazione\r
+        """Regolazione\r\r
 Premio INAIL"""@it ;
     rdfs:comment "Conguaglio del premio di autoliquidazione per l’anno precedente. "@it .
 
@@ -1640,10 +1640,10 @@ INAILAutoliq:RicevutaPagamento a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILAutoliq:emanaRicevutaPagamento ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Receipt of Payment"@en,
-        """Ricevuta\r
+        """Ricevuta\r\r
 Pagamento"""@it ;
-    rdfs:comment """Documento che comprova, indicando date e importi, la corresponsione di una fattura:\r
-- Parzialmente, per cui sulla ricevuta c’è scritto che il debitore deve ancora un altro importo di denaro;\r
+    rdfs:comment """Documento che comprova, indicando date e importi, la corresponsione di una fattura:\r\r
+- Parzialmente, per cui sulla ricevuta c’è scritto che il debitore deve ancora un altro importo di denaro;\r\r
 - Totalmente, quando il debitore paga tutto il suo debito, oppure paga l’ultima delle rate. In questo caso il creditore consegna una ricevuta di pagamento “a saldo”."""@it .
 
 INAILAutoliq:RiversamentoSomme a owl:Class ;
@@ -1663,13 +1663,13 @@ INAILAutoliq:RiversamentoSomme a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILAutoliq:esattoreEffettuaRiversamento ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Repayment"@en,
-        """Riversamento\r
+        """Riversamento\r\r
 Somme"""@it ;
     rdfs:comment "Somme di denaro relative ad un premio assicurativo, versate da ADER all'INAIL."@it .
 
 INAILAutoliq:RuolinoDiEquipaggioNave a owl:Class ;
     rdfs:label "Crew Small Role Paper of Ship"@en,
-        """Ruolino Di\r
+        """Ruolino Di\r\r
 Equipaggio Nave"""@it ;
     rdfs:subClassOf INAILAutoliq:CartaDiBordoNave,
         [ a owl:Restriction ;
@@ -1679,18 +1679,18 @@ Equipaggio Nave"""@it ;
 
 INAILAutoliq:RuoloDiEquipaggioNave a owl:Class ;
     rdfs:label "Crew Role Paper of Ship"@en,
-        """Ruolo Di\r
+        """Ruolo Di\r\r
 Equipaggio Nave"""@it ;
     rdfs:subClassOf INAILAutoliq:CartaDiBordoNave ;
-    rdfs:comment """Documento di bordo obbligatorio per le navi maggiori e da tenere a bordo che deve contenere:\r
- 1) il nome della nave;\r
- 2) il nome dell'armatore;\r
- 3) l'indicazione del rappresentante dell'armatore nominato a sensi dell'articolo 267 Codice della navigazione;\r
- 4) l'indicazione della data di armamento e di quella di\r
-disarmamento;\r
- 5) l'elenco delle persone dell'equipaggio, con l'indicazione del contratto individuale di arruolamento, nonche' del titolo\r
-professionale, della qualifica, delle mansioni da esplicare a bordo e della retribuzione fissata nel contratto stesso;\r
- 6) la descrizione delle armi e delle munizioni in dotazione della nave.\r
+    rdfs:comment """Documento di bordo obbligatorio per le navi maggiori e da tenere a bordo che deve contenere:\r\r
+ 1) il nome della nave;\r\r
+ 2) il nome dell'armatore;\r\r
+ 3) l'indicazione del rappresentante dell'armatore nominato a sensi dell'articolo 267 Codice della navigazione;\r\r
+ 4) l'indicazione della data di armamento e di quella di\r\r
+disarmamento;\r\r
+ 5) l'elenco delle persone dell'equipaggio, con l'indicazione del contratto individuale di arruolamento, nonche' del titolo\r\r
+professionale, della qualifica, delle mansioni da esplicare a bordo e della retribuzione fissata nel contratto stesso;\r\r
+ 6) la descrizione delle armi e delle munizioni in dotazione della nave.\r\r
 [art. 169 e 170 Codice della navigazione]"""@it .
 
 INAILAutoliq:ServizioNave a owl:Class ;
@@ -1705,12 +1705,12 @@ INAILAutoliq:ServizioNave a owl:Class ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Servizio Nave"@it,
         "Ship Service"@en ;
-    rdfs:comment """Una nave può essere abilitata ad uno o più dei seguenti servizi ai sensi dell'art. 13 DPR 435/1991:\r
-a) trasporto di passeggeri;\r
-b) trasporto di merci;\r
-c) servizi speciali (servizi scientifici o di ricerca, scuola, salvataggio, appoggio flottiglia da pesca, conservazione o trasformazione dei prodotti della pesca, posa cavi, sfruttamento fauna, flora e fondo marino diverso dalla pesca, uso privato ed altri servizi stabiliti con decreto del Ministro della Marina Mercantile);\r
-d) servizio di impianti off-shore e di navi adibite alla esplorazione o sfruttamento del fondo marino;\r
-e) pesca;\r
+    rdfs:comment """Una nave può essere abilitata ad uno o più dei seguenti servizi ai sensi dell'art. 13 DPR 435/1991:\r\r
+a) trasporto di passeggeri;\r\r
+b) trasporto di merci;\r\r
+c) servizi speciali (servizi scientifici o di ricerca, scuola, salvataggio, appoggio flottiglia da pesca, conservazione o trasformazione dei prodotti della pesca, posa cavi, sfruttamento fauna, flora e fondo marino diverso dalla pesca, uso privato ed altri servizi stabiliti con decreto del Ministro della Marina Mercantile);\r\r
+d) servizio di impianti off-shore e di navi adibite alla esplorazione o sfruttamento del fondo marino;\r\r
+e) pesca;\r\r
 f) rimorchio."""@it .
 
 INAILAutoliq:SgravioINAIL a owl:Class ;
@@ -1728,21 +1728,21 @@ INAILAutoliq:SgravioINAIL a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILAutoliq:premioAssicurativoSoggettoA ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment """Riduzioni contributive che si applicano ai premi di autoliquidazione:\r
-1. Riduzione per la piccola pesca costiera e nelle acque interne e lagunari (PAT)\r
-2. Sgravi per pesca oltre gli stretti, pesca mediterranea e pesca costiera (PAN)\r
-3. Sgravio per il Registro Internazionale (PAN) - vedi 106\r
-4. Incentivi per il sostegno della maternità e paternità e per la sostituzione di\r
-lavoratori in congedo (PAT)\r
-5. Riduzione per le imprese artigiane (PAT)\r
-6. Riduzione per Campione d’Italia (PAT)\r
-7. Riduzione per le cooperative agricole e i loro consorzi operanti in zone montane e svantaggiate (PAT)\r
-8. Riduzione per le cooperative agricole e i loro consorzi in proporzione al prodotto proveniente da zone montane o svantaggiate conferito dai soci (PAT)\r
+    rdfs:comment """Riduzioni contributive che si applicano ai premi di autoliquidazione:\r\r
+1. Riduzione per la piccola pesca costiera e nelle acque interne e lagunari (PAT)\r\r
+2. Sgravi per pesca oltre gli stretti, pesca mediterranea e pesca costiera (PAN)\r\r
+3. Sgravio per il Registro Internazionale (PAN) - vedi 106\r\r
+4. Incentivi per il sostegno della maternità e paternità e per la sostituzione di\r\r
+lavoratori in congedo (PAT)\r\r
+5. Riduzione per le imprese artigiane (PAT)\r\r
+6. Riduzione per Campione d’Italia (PAT)\r\r
+7. Riduzione per le cooperative agricole e i loro consorzi operanti in zone montane e svantaggiate (PAT)\r\r
+8. Riduzione per le cooperative agricole e i loro consorzi in proporzione al prodotto proveniente da zone montane o svantaggiate conferito dai soci (PAT)\r\r
 9. Incentivi per assunzioni legge n. 92/2012, art. 4, commi 8-11 (PAT)"""@it .
 
 INAILAutoliq:SgravioRegistroInternazionaleINAIL a owl:Class ;
     rdfs:label "International Registry Tax Break of INAIL"@en,
-        """Sgravio Registro\r
+        """Sgravio Registro\r\r
 Internazionale INAIL"""@it ;
     rdfs:subClassOf INAILAutoliq:SgravioINAIL ;
     rdfs:comment "Sgravio contributivo previsto dall'articolo 6 del decreto-legge n. 457/1997 che si concretizza nell'esonero dal versamento dei premi dovuti per legge applicato alle imprese armatrici per il personale avente i requisiti di cui all’art. 119 del codice della navigazione ed imbarcato su navi iscritte nel Registro Internazionale."@it .
@@ -1758,16 +1758,16 @@ INAILAutoliq:SpecieDiNavigazione a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILAutoliq:naveAbilitataASpecieDiNavigazione ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Navigation Species"@en,
-        """Specie Di\r
+        """Specie Di\r\r
 Navigazione"""@it ;
-    rdfs:comment """Classificazione che ai sensi dell'art. 12 DPR 435/1991 definisce le specie di navigazione cui possono essere abilitate le navi. Si compone delle seguenti modalità:\r
-a) navigazione internazionale lunga (Nav. I.L.);\r
-b) navigazione internazionale breve (Nav. I.B.);\r
-c) navigazione internazionale costiera (Nav. I.C.);\r
-d) navigazione nazionale (Nav. N.);\r
-e) navigazione nazionale costiera (Nav. N.C.);\r
-f) navigazione litoranea (Nav. N.Li.);\r
-g) navigazione locale (Nav. N.Lo.);\r
+    rdfs:comment """Classificazione che ai sensi dell'art. 12 DPR 435/1991 definisce le specie di navigazione cui possono essere abilitate le navi. Si compone delle seguenti modalità:\r\r
+a) navigazione internazionale lunga (Nav. I.L.);\r\r
+b) navigazione internazionale breve (Nav. I.B.);\r\r
+c) navigazione internazionale costiera (Nav. I.C.);\r\r
+d) navigazione nazionale (Nav. N.);\r\r
+e) navigazione nazionale costiera (Nav. N.C.);\r\r
+f) navigazione litoranea (Nav. N.Li.);\r\r
+g) navigazione locale (Nav. N.Lo.);\r\r
 h) navigazione speciale (Nav. S.). """@it .
 
 INAILAutoliq:TrasmissioneDatiPagamento a owl:Class ;
@@ -1787,7 +1787,7 @@ INAILAutoliq:TrasmissioneDatiPagamento a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILAutoliq:esattoreEffettuaTrasmissioneDati ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Payment Data Transmission"@en,
-        """Trasmissione\r
+        """Trasmissione\r\r
 Dati Pagamento"""@it ;
     rdfs:comment "Trasmissione dei dati relativi al modello di pagamento dell'F24."@it .
 
@@ -1801,7 +1801,7 @@ INAILAutoliq:UnitaDaDiporto a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILAutoliq:haScopoDiporto ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Recreational Unit"@en,
-        """Unita Da\r
+        """Unita Da\r\r
 Diporto"""@it ;
     rdfs:comment "Si intende ogni costruzione di qualunque tipo e con qualunque mezzo di propulsione destinata alla navigazione da diporto. Il diporto è disciplinato dal Codice della nautica da diporto e dalla legge 172/2003. Le unità da diporto si distinguono in: Nave, Imbarcazione e Natante."@it .
 

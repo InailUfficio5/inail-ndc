@@ -31,7 +31,7 @@ repos:
     #     name: pretty format json-ld
     #     files: '^assets\/controlled-vocabularies\/.*\.jsonld'
 - repo: https://github.com/pycqa/isort
-  rev: 5.12.0
+  rev: 5.13.2
   hooks:
     - id: isort
       name: isort (python)

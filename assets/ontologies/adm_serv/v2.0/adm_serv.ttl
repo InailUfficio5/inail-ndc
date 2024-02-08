@@ -793,7 +793,7 @@ INAILService:codiceTipoDefinizioneDecisioneIstruttoria a owl:DatatypeProperty ;
 INAILService:codiceTipoGestioneContabile a owl:DatatypeProperty ;
     rdfs:label "codice Tipo Gestione Contabile"@it ;
     rdfs:domain INAILService:GestioneContabileINAIL ;
-    rdfs:comment """Caratterizza le modalità  di esercizio dell'assicurazione contro gli infortuni sul lavoro e le malattie professionali in 5 gestioni:\r
+    rdfs:comment """Caratterizza le modalità  di esercizio dell'assicurazione contro gli infortuni sul lavoro e le malattie professionali in 5 gestioni:\r\r
 industria e servizi, agricoltura, per conto dello Stato, medici radiologi, infortuni in ambito domestico"""@it .
 
 INAILService:codiceTipoIndennizzo a owl:DatatypeProperty ;
@@ -1171,7 +1171,7 @@ INAILService:descrizioneTipoDeviazione a owl:DatatypeProperty ;
 INAILService:descrizioneTipoGestioneContabile a owl:DatatypeProperty ;
     rdfs:label "descrizione Tipo Gestione Contabile"@it ;
     rdfs:domain INAILService:GestioneContabileINAIL ;
-    rdfs:comment """Caratterizza le modalità  di esercizio dell'assicurazione contro gli infortuni sul lavoro e le malattie professionali in 5 gestioni:\r
+    rdfs:comment """Caratterizza le modalità  di esercizio dell'assicurazione contro gli infortuni sul lavoro e le malattie professionali in 5 gestioni:\r\r
 industria e servizi, agricoltura, per conto dello Stato, medici radiologi, infortuni in ambito domestico"""@it .
 
 INAILService:descrizioneTipoIndennizzo a owl:DatatypeProperty ;
@@ -1499,7 +1499,7 @@ INAILService:percentualeGradoDiMenomazione a owl:DatatypeProperty ;
 INAILService:periodoMassimoIndennizzabilita a owl:DatatypeProperty ;
     rdfs:label "periodo Massimo Indennizzabilita"@it ;
     rdfs:domain INAILService:TipoTecnopatiaINAIL ;
-    rdfs:comment """È un requisito da rispettare per le malattie tabellari, e consiste nel periodo di tempo entro il quale devono essere denunciate dalla cessazione dell'attività rischiosa.\r
+    rdfs:comment """È un requisito da rispettare per le malattie tabellari, e consiste nel periodo di tempo entro il quale devono essere denunciate dalla cessazione dell'attività rischiosa.\r\r
 Questo periodo di tempo è definito nelle tabelle stesse."""@it .
 
 INAILService:qualificaProfessionaleTrattazione a owl:DatatypeProperty ;
@@ -1568,10 +1568,10 @@ INAILService:tabellata a owl:DatatypeProperty ;
 INAILService:tipoAperturaEventoLesivo a owl:DatatypeProperty ;
     rdfs:label "tipo Apertura Evento Lesivo"@it ;
     rdfs:domain INAILService:EventoLesivoINAIL ;
-    rdfs:comment """Indica se il caso aprto è relativo a:\r
-Franchigia Veloce\r
-Malattia professionale senza prognosi\r
-Malattia professionale con prognosi\r
+    rdfs:comment """Indica se il caso aprto è relativo a:\r\r
+Franchigia Veloce\r\r
+Malattia professionale senza prognosi\r\r
+Malattia professionale con prognosi\r\r
 Infortuni con prognosi maggiore di 3 giorni"""@it .
 
 INAILService:tipoConclusionePrecedenteRiapertura a owl:DatatypeProperty ;
@@ -1790,7 +1790,7 @@ INAILService:AgenteCausaleINAIL a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILService:haAgenteCausale ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Agente Causale\r
+    rdfs:label """Agente Causale\r\r
 INAIL"""@it,
         "INAIL Casual Agent"@en ;
     rdfs:comment "Decodifica dell'agente, della lavorazione o dell'esposizione che può essere causa o concausa di malattia professionale"@it .
@@ -1811,7 +1811,7 @@ INAILService:AgenteMaterialeINAIL a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILService:haAgenteMateriale ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Agente Materiale\r
+    rdfs:label """Agente Materiale\r\r
 INAIL"""@it,
         "INAIL Material Agent"@en ;
     rdfs:comment "Strumento, utensile o oggetto utilizzato dalla vittima al momento dell’infortunio, anche se non è implicato nell’infortunio stesso (descrizione in ambito UE/ESAW/3, adottata dall'Inail)"@it .
@@ -1823,23 +1823,23 @@ INAILService:Asbestosi a owl:Class ;
     rdfs:comment "Forma di fibrosi interstiziale polmonare causata dall'esposizione all'amianto."@it .
 
 INAILService:AssegnoFunerarioINAIL a owl:Class ;
-    rdfs:label """Assegno\r
+    rdfs:label """Assegno\r\r
 Funerario INAIL"""@it,
         "INAIL Funerary Cheque"@en ;
     owl:disjointWith INAILService:IndennizzoINAIL ;
     rdfs:comment "Prestazione economica una tantum di importo fisso corrisposta ai superstiti di lavoratori deceduti a causa di infortunio sul lavoro o malattia professionale o, in mancanza di superstiti, a chiunque dimostri di aver sostenuto le spese funerarie, nel limite dell'importo fisso che sarebbe spettato ai superstiti."@it .
 
 INAILService:AssegnoIncollocabilitaINAIL a owl:Class ;
-    rdfs:label """Assegno\r
+    rdfs:label """Assegno\r\r
 Incollocabilita INAIL"""@it,
         "INAIL Incollocability Cheque"@en ;
     rdfs:subClassOf INAILService:RenditaDiInabilitaPermanenteINAIL ;
     rdfs:comment "Prestazione economica di importo fisso erogata ai titolari di rendita diretta che si trovano nell’impossibilità di fruire dell’assunzione obbligatoria (età non superiore ai 65 anni, grado di inabilità non inferiore al 34% secondo le tabelle allegate al Testo Unico (d.P.R. 1124/1965) per infortuni sul lavoro verificatisi o malattie professionali denunciate fino al 31 dicembre 2006 o grado di menomazione dell'integrità psicofisica superiore al 20% riconosciuto secondo le tabelle di cui al d.m. 12 luglio 2000 per gli infortuni verificatisi e per le malattie professionali denunciate a decorrere dal 1° gennaio 2007."@it .
 
 INAILService:AssegnoPerAssistenzaPersonaleContinuativaINAIL a owl:Class ;
-    rdfs:label """Assegno\r
-Per Assistenza\r
-Personale\r
+    rdfs:label """Assegno\r\r
+Per Assistenza\r\r
+Personale\r\r
 Continuativa INAIL"""@it,
         "INAIL Continuing Personal Assistance Allowance"@en ;
     rdfs:subClassOf INAILService:RenditaDiInabilitaPermanenteINAIL ;
@@ -1855,7 +1855,7 @@ INAILService:ClasseInabilitaINAIL a owl:Class ;
     owl:equivalentClass [ a owl:Restriction ;
             owl:onProperty INAILService:valoreClasseInabilita ;
             owl:someValuesFrom rdfs:Literal ] ;
-    rdfs:label """Classe Inabilita\r
+    rdfs:label """Classe Inabilita\r\r
 INAIL"""@it,
         "INAIL Inability Class"@en ;
     rdfs:comment "L'inabilità al lavoro è una particolare condizione caratterizzata da una infermità grave che incide sulla capacità di svolgerere attività lavorativa. L'inabilità assoluta al lavoro dà diritto ad una indennità, se temporanea. L'inabilità permanente paziale Per gli infortuni verificatisi fino al 24 luglio 2000 e per le malattie professionali denunciate entro la stessa data, il lavoratore aveva diritto a rendita per inabilità permanente di grado compreso tra l’11% ed il 100% valutato in base alle tabelle allegate al Testo Unico (d.P.R. 1124/1965). Per gli eventi occorsi dal 25 luglio 2000 il parametro della inabilità al lavoro è stato sostituito da quello della menomazione dell'integrità psicofisica (d.lgs. 38/2000). Il lavoratore ha diritto ad un indennizzo in capitale una tantum per gradi di menomazione permanente dell'integrità psicofisica compresi tra il 6 e il 15% e alla rendita gradi di menomazione compresi tra il 16% e il 100%. In tutti i casi la rendita decorre dal giorno successivo alla guarigione clinica."@it .
@@ -1864,8 +1864,8 @@ INAILService:ClasseMenomazioneINAIL a owl:Class ;
     owl:equivalentClass [ a owl:Restriction ;
             owl:onProperty INAILService:valoreClasseMenomazione ;
             owl:someValuesFrom rdfs:Literal ] ;
-    rdfs:label """Classe\r
-Menomazione\r
+    rdfs:label """Classe\r\r
+Menomazione\r\r
 INAIL"""@it,
         "INAIL Disability Class"@en ;
     rdfs:comment "Classificazione del grado di menomazione rispetto agli intervalli di variabilità del grado di menomazione permanente. Sono state definite convenzionalmente 6 classi: 1. menomazioni micro permanenti: p nell’intervallo (1-5%); 2. menomazioni di minima entità ma superiori alle micro permanenti: p nell’intervallo (6-15%); 3. menomazioni di entità media inferiore: p nell’intervallo (16-25%); 4. menomazioni di entità media superiore: p nell’intervallo (26-50%); 5. macro menomazioni permanenti: p nell’intervallo (51-85%); 6. macro menomazioni permanenti che giungono ad annullare il bene salute: p nell’intervallo (86-100%). La partizione in classi è \"orlata\" dai casi \"in assenza di menomazioni\" e dai casi \"esito mortale\""@it .
@@ -1886,7 +1886,7 @@ INAILService:ClassificazioneCauseEsterneINAIL a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILService:haClassificazioneCauseEsterne ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Classificazione\r
+    rdfs:label """Classificazione\r\r
 Cause Esterne INAIL"""@it,
         "INAIL External Causes Classification"@en ;
     rdfs:comment "Classificazione supplementare delle cause esterne di traumatismo ed avvelenamento."@it .
@@ -1907,7 +1907,7 @@ INAILService:ClassificazioneContrattoCNEL a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILService:haClassificazioneContrattoCNEL ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Classificazione\r
+    rdfs:label """Classificazione\r\r
 Contratto CNEL"""@it,
         "CNEL Contract Classification"@en ;
     rdfs:comment "Il contratto collettivo nazionale di lavoro (CCNL) è il contratto di lavoro stipulato dalle organizzazioni rappresentative dei datori di lavoro e dalle associazioni rappresentative dei lavoratori. Esistono diversi CCNL a seconda della categoria. La contrattazione collettiva si articola anche su diversi livelli locali e aziendali, ma i contratti che hanno maggiore rilevanza sono i contratti collettivi nazionali del lavoro (CCNL)."@it .
@@ -1925,7 +1925,7 @@ INAILService:ClassificazioneFasciaEtaINAIL a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILService:haClassificazioneFasciaEta ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Classificazione\r
+    rdfs:label """Classificazione\r\r
 Fascia Eta INAIL"""@it,
         "INAIL Age Range"@en ;
     rdfs:comment "Elemento della partizione convenzionale (definita dall’Istat) per la rappresentazione della della distribuzione per età."@it .
@@ -1955,11 +1955,11 @@ INAILService:ClassificazioneInternazionaleMalattieICD a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILService:malattiaProfessionaleHaClassificazioneInternazionaleRiconosciuta ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Classificazione\r
-Internazionale\r
+    rdfs:label """Classificazione\r\r
+Internazionale\r\r
 Malattie ICD X"""@it,
         "International Classification of Diseases"@en ;
-    rdfs:comment """Edizione italiana della International Classification of Diseases and Related Health Problems, il sistema di classificazione delle malattie stilato dall'Organizzazione mondiale della sanità. Con questo standard internazionale vengono classificate le informazioni sanitarie della rilevazione Istat sui decessi e le cause di morte.\r
+    rdfs:comment """Edizione italiana della International Classification of Diseases and Related Health Problems, il sistema di classificazione delle malattie stilato dall'Organizzazione mondiale della sanità. Con questo standard internazionale vengono classificate le informazioni sanitarie della rilevazione Istat sui decessi e le cause di morte.\r\r
 Il sistema ripartisce le malattie in 21 settori e ciascun settore contiene una famiglia di malattie; ciascuna malattia è individuata da un codice alfanumerico."""@it .
 
 INAILService:DecodificaIstruttoriaMorteINAIL a owl:Class ;
@@ -1972,8 +1972,8 @@ INAILService:DecodificaIstruttoriaMorteINAIL a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILService:eventoHaDecodificaIstruttoriaMorte ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Decodifica\r
-Istruttoria\r
+    rdfs:label """Decodifica\r\r
+Istruttoria\r\r
 Morte INAIL"""@it,
         "INAIL Decoding Death Investigation"@en ;
     rdfs:comment "Decodifica istruttoria morte."@it .
@@ -1988,7 +1988,7 @@ INAILService:DefinizioneMorteINAIL a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILService:eventoHaDefinizioneMorte ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Definizione Morte\r
+    rdfs:label """Definizione Morte\r\r
 INAIL"""@it,
         "INAIL Death Definition"@en ;
     rdfs:comment "E' la cessazione delle funzioni vitali negli organismi viventi e nell'uomo. Ai fini dell'assicurazione contro gli infortuni sul lavoro e le malattie professionali viene in rilievo quando sia riconducibile ad un infortunio sul lavoro o ad una malattia professionali, nonché quando interessi persone che percepiscono prestazioni economiche (superstiti) o considerate ai fini del calcolo dell'importo della rendita diretta (familiari del reddituario)."@it .
@@ -2018,7 +2018,7 @@ INAILService:EsitoDefinizioneINAIL a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILService:trattazioneHaEsitoDefinizione ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Esito Definizione\r
+    rdfs:label """Esito Definizione\r\r
 INAIL"""@it,
         "INAIL Outcome Definition"@en ;
     rdfs:comment "Esito che indica la definizione ovvero la situazione amministrativa del caso."@it .
@@ -2179,34 +2179,34 @@ INAILService:EventoLesivoINAIL a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILService:trattazioneRelativaAEvento ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Evento Lesivo\r
+    rdfs:label """Evento Lesivo\r\r
 INAIL"""@it,
         "INAIL Work Accident"@en ;
     rdfs:subClassOf TI:TimeIndexedEvent ;
     rdfs:comment "Gli eventi lesivi rilevanti ai fini dell'assicurazione gestita dall'Inail sono gli infortuni sul lavoro e le malattie professionali da cui sia derivata una inabilità/menomazione (temporanea o permanente) o la morte. Gli eventi lesivi devono essere denunciati all'Inail e sono riconosciuti in presenza di tutti i presupposti di legge (definizione positiva) o respinti in mancanza dei presupposti di legge (definizione negativa)."@it .
 
 INAILService:EventoLesivoNegativoINAIL a owl:Class ;
-    rdfs:label """Evento Lesivo\r
+    rdfs:label """Evento Lesivo\r\r
 Negativo INAIL"""@it,
         "INAIL Negative Work Accident"@en ;
     owl:disjointWith INAILService:EventoLesivoPositivoINAIL ;
     rdfs:comment "Evento non coperto dalla tutela assicurativa INAIL "@it .
 
 INAILService:EventoLesivoPositivoINAIL a owl:Class ;
-    rdfs:label """Evento Lesivo\r
+    rdfs:label """Evento Lesivo\r\r
 Positivo INAIL"""@it,
         "INAIL Positive Work Accident"@en ;
     rdfs:comment "Evento lesivo (infortunio sul lavoro o malattia professionale) coperto dalla tutela assicurativa INAIL"@it .
 
 INAILService:EventoMortaleINAIL a owl:Class ;
-    rdfs:label """Evento Mortale\r
+    rdfs:label """Evento Mortale\r\r
 INAIL"""@it,
         "INAIL Fatal Event"@en ;
     rdfs:subClassOf INAILService:EventoLesivoINAIL ;
     rdfs:comment "Evento lesivo (infortunio sul lavoro o malattia professionale) da cui sia derivata la morte del lavoratore "@it .
 
 INAILService:EventoMortaleRespintoINAIL a owl:Class ;
-    rdfs:label """Evento Mortale\r
+    rdfs:label """Evento Mortale\r\r
 Respinto INAIL"""@it,
         "INAIL Rejected Fatal Event"@en ;
     rdfs:subClassOf INAILService:EventoLesivoINAIL ;
@@ -2225,19 +2225,19 @@ INAILService:FasciaPeriodoMorteINAIL a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILService:haFasciaPeriodoMorte ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Fascia Periodo\r
+    rdfs:label """Fascia Periodo\r\r
 Morte INAIL"""@it,
         "INAIL Death Period Range"@en ;
     rdfs:comment "Numero di giorni, in fasce, trascorsi tra l'evento lesivo e il decesso, nei casi in cui la morte non avviene sul colpo."@it .
 
 INAILService:GestioneAgricolturaINAIL a owl:Class ;
-    rdfs:label """Gestione\r
+    rdfs:label """Gestione\r\r
 Agricoltura INAIL"""@it,
         "INAIL Agriculture Management"@en ;
     rdfs:comment "La tutela assicurativa in “agricoltura” è disciplinata dal Titolo II del DPR 1124/1965; la gestione del rapporto assicurativo nel settore agricolo è in capo all’INPS che accerta e riscuote i contributi, sia per i lavoratori dipendenti sia per i lavoratori autonomi, riversando poi all’INAIL la quota parte contributiva relativa ai premi; restano di competenza Inail determinate attività che seppur agricole vengono attratte nella tutela propria della Gestione Industria in ragione del modo in cui viene svolta l’attività agricola; gli impiegati e dirigenti in agricoltura, anche qualora siano addetti a lavori manuali o di sovrintendenza, sono assicurati contro gli infortuni sul lavoro dall’ENPAIA (vedi anche Gestione Agricoltura Autonomi)"@it .
 
 INAILService:GestioneAmbitoDomesticoINAIL a owl:Class ;
-    rdfs:label """Gestione Ambito\r
+    rdfs:label """Gestione Ambito\r\r
 Domestico INAIL"""@it,
         "INAIL Domestic Management"@en ;
     rdfs:comment "Tutela assicurativa per tutti coloro che svolgono, a titolo gratuito e senza vincolo di subordinazione, un’attività rivolta alla cura dei componenti della famiglia e dell’ambiente in cui dimorano, in modo abituale ed esclusivo. [Legge 3 dicembre 1999, n. 493; D.M. 15 settembre 2000]"@it .
@@ -2262,16 +2262,16 @@ INAILService:GestioneAssicurativaINAIL a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILService:eventoRelativoAGestioneAssicurativa ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Gestione\r
+    rdfs:label """Gestione\r\r
 Assicurativa INAIL"""@it,
         "INAIL Insurance Management"@en ;
-    rdfs:comment """Settore tariffario corrispondente ad un grande comparto produttivo nel quale vengono inquadrate le aziende secondo un sistema di classificazione disposta dalla legge ai fini previdenziali e assistenziali; all'interno di ogni gestione è presente un elenco di lavorazioni articolato in grandi gruppi, gruppi, sottogruppi e voci; in base alla "Gestione" nella quale viene inquadrata l'azienda viene individuato il tasso di tariffa che viene utilizzato, insieme alle retribuzioni, come elemento per il calcolo del premio assicurativo.\r
-A decorrere dal 1° gennaio 2000, nell'ambito della gestione industria (TU 1124/1965), sono individuate, ai fini tariffari, le seguenti quattro gestioni separate:\r
- a) industria, per le attività: manifatturiere, estrattive, impiantistiche; di produzione e distribuzione dell'energia, gas ed acqua; dell'edilizia; dei trasporti e comunicazioni; della pesca; dello spettacolo; per le relative attività ausiliarie;\r
-b) artigianato, per le attività di cui alla legge 8 agosto 1985, n. 443, e successive modifiche ed integrazioni;\r
- c) terziario, per le attività: commerciali, ivi comprese quelle turistiche; di produzione, intermediazione e prestazione dei servizi anche finanziari; per le attività professionali ed artistiche: per le relative attività ausiliarie;\r
- d) altre attività, per le attività non rientranti fra quelle di cui alle lettere a), b) e c), fra le quali quelle svolte dagli enti pubblici, compresi lo Stato e gli enti locali, e quelle di cui all'articolo 49, comma 1, lettera e), della legge 9 marzo 1989, n. 88.\r
-A ciascuna di queste quattro gestioni sono riferite le attività protette di cui all'articolo 1 TU 1124/1965 [Art. 1, d.lgs. n.38/2000].\r
+    rdfs:comment """Settore tariffario corrispondente ad un grande comparto produttivo nel quale vengono inquadrate le aziende secondo un sistema di classificazione disposta dalla legge ai fini previdenziali e assistenziali; all'interno di ogni gestione è presente un elenco di lavorazioni articolato in grandi gruppi, gruppi, sottogruppi e voci; in base alla "Gestione" nella quale viene inquadrata l'azienda viene individuato il tasso di tariffa che viene utilizzato, insieme alle retribuzioni, come elemento per il calcolo del premio assicurativo.\r\r
+A decorrere dal 1° gennaio 2000, nell'ambito della gestione industria (TU 1124/1965), sono individuate, ai fini tariffari, le seguenti quattro gestioni separate:\r\r
+ a) industria, per le attività: manifatturiere, estrattive, impiantistiche; di produzione e distribuzione dell'energia, gas ed acqua; dell'edilizia; dei trasporti e comunicazioni; della pesca; dello spettacolo; per le relative attività ausiliarie;\r\r
+b) artigianato, per le attività di cui alla legge 8 agosto 1985, n. 443, e successive modifiche ed integrazioni;\r\r
+ c) terziario, per le attività: commerciali, ivi comprese quelle turistiche; di produzione, intermediazione e prestazione dei servizi anche finanziari; per le attività professionali ed artistiche: per le relative attività ausiliarie;\r\r
+ d) altre attività, per le attività non rientranti fra quelle di cui alle lettere a), b) e c), fra le quali quelle svolte dagli enti pubblici, compresi lo Stato e gli enti locali, e quelle di cui all'articolo 49, comma 1, lettera e), della legge 9 marzo 1989, n. 88.\r\r
+A ciascuna di queste quattro gestioni sono riferite le attività protette di cui all'articolo 1 TU 1124/1965 [Art. 1, d.lgs. n.38/2000].\r\r
 A ciascuna delle quattro gestioni di cui al comma 1 sono riferite le attività protette di cui all'articolo 1 TU 1124/1965 [ Art. 1, d.lgs. n.38/2000]."""@it .
 
 INAILService:GestioneContabileINAIL a owl:Class ;
@@ -2293,52 +2293,52 @@ INAILService:GestioneContabileINAIL a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILService:haGestioneContabile ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Gestione\r
+    rdfs:label """Gestione\r\r
 Contabile INAIL"""@it,
         "INAIL Accounting Management"@en ;
     rdfs:comment "Sistema di classificazione dell’evento lesivo ai fini della imputazione contabile ai capitoli di spesa."@it .
 
 INAILService:GestioneIndustriaCommercioEServiziINAIL a owl:Class ;
-    rdfs:label """Gestione Industria\r
-Commercio E Servizi\r
+    rdfs:label """Gestione Industria\r\r
+Commercio E Servizi\r\r
 INAIL"""@it,
         "INAIL Management of Industry Trade and Services"@en ;
     rdfs:comment "Classe che accorpa in modo fittizio le gestioni assicurative."@it .
 
 INAILService:GestioneMediciEspostiARadiazioniIonizzantiINAIL a owl:Class ;
-    rdfs:label """Gestione Medici\r
-Esposti A Radiazioni\r
+    rdfs:label """Gestione Medici\r\r
+Esposti A Radiazioni\r\r
 Ionizzanti INAIL"""@it,
         "INAIL Management of Physician Exposed to Ionizing Radiation"@en ;
     rdfs:comment "Polizza assicurativa che tutela i medici esposti al rischio di malattie e di lesioni conseguenti all’azione dei raggi X (Legge 93/1958); l’onere dell’assicurazione è a carico dei possessori a qualunque titolo degli apparecchi radiologici, che sono tenuti a presentare all’Istituto apposita denuncia; è dovuto il pagamento di un premio unitario il cui importo è fissato annualmente con decreto ministeriale"@it .
 
 INAILService:GestioneNavigazioneINAIL a owl:Class ;
-    rdfs:label """Gestione\r
+    rdfs:label """Gestione\r\r
 Navigazione INAIL"""@it,
         "INAIL Navigation Management"@en ;
     rdfs:comment "Polizza che tutela gli addetti alla navigazione e alla pesca marittima con onere a carico degli armatori e compresa nella gestione Industria; è previsto il pagamento di un premio ordinario determinato applicando le aliquote stabilite dalla specifica tariffa (aliquote tariffarie in relazione alle categorie assicurative di naviglio previste e determinate in base al tipo di nave, al tipo di servizio a cui la nave è adibita e alle attività in cui sono impegnate le persone imbarcate)"@it .
 
 INAILService:GestionePolizzaColfINAIL a owl:Class ;
-    rdfs:label """Gestione Polizza\r
+    rdfs:label """Gestione Polizza\r\r
 Colf INAIL"""@it,
         "INAIL Housemaid Policy Management"@en ;
     rdfs:comment "Assicurazione che tutela i collaboratori domestici; i premi vengono riscossi dall'Inps unitamente ai versamenti dei contributi trimestrali e poi riversati all'Inail  "@it .
 
 INAILService:GestionePolizzaSpecialeINAIL a owl:Class ;
-    rdfs:label """Gestione Polizza\r
+    rdfs:label """Gestione Polizza\r\r
 Speciale INAIL"""@it,
         "INAIL Special Policy Management"@en ;
     rdfs:comment "Polizze assicurative previste per alcune attività e/o alcune categorie di lavoratori che a causa della loro natura, della modalità di svolgimento o di altre circostanze, non consentono la determinazione del premio nella forma ordinaria; per tali polizze è previsto il pagamento di \"premi speciali unitari” calcolati utilizzando elementi diversi da quelli utilizzati per determinare il premio ordinario (es. il numero delle persone coinvolte nella lavorazione o la natura e la durata dell’attività)"@it .
 
 INAILService:GestioneTariffaInterinaliINAIL a owl:Class ;
-    rdfs:label """Gestione Tariffa\r
+    rdfs:label """Gestione Tariffa\r\r
 Interinali INAIL"""@it,
         "INAIL Interim Rate Management"@en ;
     rdfs:comment "Forma di assicurazione prevista per le società di somministrazione/agenzie di lavoro interinale a tutela dei lavoratori somministrati; l’obbligo assicurativo è a carico della società di somministrazione; Il premio è determinato in base all'attività svolta dall'impresa utilizzatrice nella quale sono inquadrabili le lavorazioni svolte dai lavoratori somministrati sulla base dell’effettiva retribuzione percepita; per la determinazione del premio le agenzie di somministrazione devono trasmettere i contratti di lavoro ed effettuare la denuncia delle retribuzioni nonchè versare il premio assicurativo successivamente alla scadenza del trimestre a cui si riferiscono i dati denunciati"@it .
 
 INAILService:GestioneTariffaOrdinariaDipendentiINAIL a owl:Class ;
-    rdfs:label """Gestione\r
-Tariffa Ordinaria\r
+    rdfs:label """Gestione\r\r
+Tariffa Ordinaria\r\r
 Dipendenti INAIL"""@it,
         "INAIL Ordinary Rate Management Employees"@en ;
     rdfs:comment "La Tariffa ordinaria  fissata con il decreto 27 febbraio 2019 che ha stabilito le nuove tariffe dei premi per l'assicurazione contro gli infortuni sul lavoro e le malattie professionali dei dipendenti delle quattro gestioni riportate all’articolo 1 del decreto legislativo n.38/2000 e relative modalità di applicazione. Ciascuna delle quattro gestioni della Tariffa Ordinaria Dipendenti, ai fini tariffari, è suddivisa in 10 grandi gruppi di lavorazioni (gruppi da 1 a 9 e grande gruppo 0)."@it .
@@ -2365,7 +2365,7 @@ INAILService:GradoDiInabilitaINAIL a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILService:malattiaProfessionaleHaGradoDiInabilitaAttuale ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Grado Di\r
+    rdfs:label """Grado Di\r\r
 Inabilita INAIL"""@it,
         "INAIL Degree of Inability"@en ;
     rdfs:comment "Percentuale che misura il livello di perdita della capacità lavorativa complessiva in conseguenza di infortunio sul lavoro o di malattia professionale in regime Testo Unico (d.P.R. 1124/1965) per infortuni verificatisi o malattie denunciate in data precedente al 25 luglio 2000. La percentuale complessiva valuta anche inabilità derivate da eventi preesistenti disciplinati dal medesimo regime."@it .
@@ -2383,8 +2383,8 @@ INAILService:GradoDiMenomazioneINAIL a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILService:eventoHaGradoDiMenomazione ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Grado Di\r
-Menomazione\r
+    rdfs:label """Grado Di\r\r
+Menomazione\r\r
 INAIL"""@it,
         "INAIL Menomation Grades"@en ;
     rdfs:comment "Percentuale che misura il livello di menomazione dell’integrità psicofisica complessiva in conseguenza di infortunio o malattia professionale in regime Danno Biologico (per infortuni verificatisi o malattie denunciate dal 25 luglio 2000). E' la percentuale con cui si misura il livello di menomazione dell’integrità psicofisica complessiva in conseguenza dell'infortunio o della malattia professionale e di eventuali eventi preesistenti anch’essi disciplinati dal medesimo regime."@it .
@@ -2399,14 +2399,14 @@ INAILService:GrandeGruppoVoceDiTariffaINAIL a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILService:appartieneAGrandeGruppoVoceDiTariffa ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Grande Gruppo\r
-Voce Di Tariffa\r
+    rdfs:label """Grande Gruppo\r\r
+Voce Di Tariffa\r\r
 INAIL"""@it,
         "INAIL Large Group of Rate Item"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAILService:voceDiTariffaHaSettoreAttivita ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment """Categoria gerarchicamente più alta della classificazione tariffaria delle attività lavorative effettuata dall’INAIL (art. 40 TU 1124/1965) e secondo cui le tariffe dei premi sono ordinate in dieci grandi gruppi, di norma articolati in gruppi, sottogruppi e voci (art. 3, Modalità di Applicazione delle Tariffe Inail 2019).\r
+    rdfs:comment """Categoria gerarchicamente più alta della classificazione tariffaria delle attività lavorative effettuata dall’INAIL (art. 40 TU 1124/1965) e secondo cui le tariffe dei premi sono ordinate in dieci grandi gruppi, di norma articolati in gruppi, sottogruppi e voci (art. 3, Modalità di Applicazione delle Tariffe Inail 2019).\r\r
 Per ciascuna delle gestioni di cui all'articolo 1 d.lgs. n. 38/2000 (Industria, Artigianato, Terziario e Altre attività) sono approvate distinte tariffe dei premi per l'assicurazione contro gli infortuni sul lavoro e le malattie professionali, con le relative Modalità di Applicazione delle Tariffe (MAT)."""@it .
 
 INAILService:GruppoVoceDiTariffaINAIL a owl:Class ;
@@ -2422,10 +2422,10 @@ INAILService:GruppoVoceDiTariffaINAIL a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILService:appartieneAGruppoVoceDiTariffa ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Gruppo Voce Di\r
+    rdfs:label """Gruppo Voce Di\r\r
 Tariffa INAIL"""@it,
         "INAIL Group of Rate Item"@en ;
-    rdfs:comment """Categoria gerarchicamente intermedia (articolazione di un grande gruppo) della classificazione tariffaria delle attività lavorative effettuata dall’INAIL (art. 40 TU 1124/1965) e secondo cui le tariffe dei premi sono ordinate in dieci grandi gruppi, di norma articolati in gruppi, sottogruppi e voci (art. 3, Modalità di Applicazione delle Tariffe Inail 2019).\r
+    rdfs:comment """Categoria gerarchicamente intermedia (articolazione di un grande gruppo) della classificazione tariffaria delle attività lavorative effettuata dall’INAIL (art. 40 TU 1124/1965) e secondo cui le tariffe dei premi sono ordinate in dieci grandi gruppi, di norma articolati in gruppi, sottogruppi e voci (art. 3, Modalità di Applicazione delle Tariffe Inail 2019).\r\r
 Per ciascuna delle gestioni di cui all'articolo 1 d.lgs. n. 38/2000 (Industria, Artigianato, Terziario e Altre attività) sono approvate distinte tariffe dei premi per l'assicurazione contro gli infortuni sul lavoro e le malattie professionali, con le relative Modalità di Applicazione delle Tariffe (MAT)."""@it .
 
 INAILService:InabilitaTemporaneaINAIL a owl:Class ;
@@ -2462,8 +2462,8 @@ INAILService:InabilitaTemporaneaINAIL a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILService:indennizzoGiornalieroHaInabilita ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Inabilita\r
-Temporanea\r
+    rdfs:label """Inabilita\r\r
+Temporanea\r\r
 INAIL"""@it,
         "INAIL Temporary Disability"@en ;
     rdfs:comment "E' l'incapacità di svolgere l'attività lavorativa per un periodo di tempo limitato. Può essere causata da un infortunio sul lavoro o, in qualche caso, da una malattia professionale."@it .
@@ -2479,9 +2479,9 @@ INAILService:IndennizzoGiornalieroPerInabilitaTemporaneaINAIL a owl:Class ;
             owl:onProperty INAILService:numeroGiorniOriginaliInabilitaTemporanea ;
             owl:someValuesFrom rdfs:Literal ] ;
     rdfs:label "INAIL Temporary Disability Daily  Compensation"@en,
-        """Indennizzo\r
-Giornaliero Per\r
-Inabilita Temporanea\r
+        """Indennizzo\r\r
+Giornaliero Per\r\r
+Inabilita Temporanea\r\r
 INAIL"""@it ;
     owl:disjointWith INAILService:IndennizzoInCapitalePerDannoBiologicoINAIL ;
     rdfs:comment "Prestazione economica sostitutiva della retribuzione corrisposta al lavoratore in caso di infortunio o di malattia professionale che impedisca totalmente e di fatto all’infortunato di svolgere l’attività lavorativa. La prestazione spetta a decorrere dal quarto giorno successivo al giorno dell'infortunio o della manifestazione della malattia professionale, compresi i giorni festivi, fino alla guarigione clinica. La misura dell’indennità giornaliera è pari al 60% della retribuzione media giornaliera fino al 90° giorno e al 75% della retribuzione media giornaliera dal 91° giorno fino alla guarigione clinica. Per i lavoratori del settore marittimo il calcolo dell'indennità è effettuato in base a diverse e specifiche disposizioni."@it .
@@ -2518,8 +2518,8 @@ INAILService:IndennizzoINAIL a owl:Class ;
 
 INAILService:IndennizzoInCapitalePerDannoBiologicoINAIL a owl:Class ;
     rdfs:label "INAIL Lump Sum Compensation for Biological Damage"@en,
-        """Indennizzo In\r
-Capitale Per Danno\r
+        """Indennizzo In\r\r
+Capitale Per Danno\r\r
 Biologico INAIL"""@it ;
     rdfs:comment "Prestazione economica una tantum riconosciuta per gli infortuni verificatisi e le malattie professionali denunciate a decorrere dal 25 luglio 2000, per i quali sia accertato un grado di menomazione dell’integrità psicofisica compreso tra il 6% ed il 15%. Per gli infortuni verificatisi e le malattie professionali denunciate fino al 31 dicembre 2018 gli indennizzi in capitale sono tabellati in funzione dell’età, del genere dell'infortunato/tecnopatico e del grado di menomazione accertato in sede di valutazione dei postumi permanenti (Tabella allegata al d.m. 12 luglio 2000); per gli infortuni verificatisi e le malattie professionali denunciate a decorrere dal 1° gennaio 2019 gli importi sono invece definiti secondo la “Tabella indennizzo danno biologico in capitale” di cui al d.m. 45 del 23 aprile 2019 indipendentemente dal genere dell'infortunato/tecnopatico."@it .
 
@@ -2527,7 +2527,7 @@ INAILService:InfortunatoSulLavoro a owl:Class ;
     owl:equivalentClass [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILService:infortunioAccadutoAInfortunato ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Infortunato\r
+    rdfs:label """Infortunato\r\r
 Sul Lavoro"""@it,
         "Injured at Work"@en ;
     owl:disjointWith INAILService:Tecnopatico ;
@@ -2535,13 +2535,13 @@ Sul Lavoro"""@it,
 
 INAILService:InfortunioChiusoSulLavoro a owl:Class ;
     rdfs:label "Closed Occupational Injury at Work"@en,
-        """Infortunio Chiuso\r
+        """Infortunio Chiuso\r\r
 Sul Lavoro"""@it ;
     owl:disjointWith INAILService:InfortunioSulLavoroInIstruttoria ;
     rdfs:comment "Infortunio chiuso"@it .
 
 INAILService:InfortunioInSedeDiLavoro a owl:Class ;
-    rdfs:label """Infortunio In\r
+    rdfs:label """Infortunio In\r\r
 Sede Di Lavoro"""@it,
         "Workplace Injury"@en ;
     owl:disjointWith INAILService:InfortunioSulLavoroInItinere ;
@@ -2629,23 +2629,23 @@ INAILService:InfortunioSulLavoro a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty INAILService:tipoMaterialeDEV ;
             owl:someValuesFrom rdfs:Literal ] ;
-    rdfs:label """Infortunio\r
+    rdfs:label """Infortunio\r\r
 Sul Lavoro"""@it,
         "Occupational Injury at Work"@en ;
     owl:disjointWith INAILService:MalattiaProfessionale ;
     rdfs:comment "Per infortunio sul lavoro si intende ogni lesione originata, in occasione di lavoro, da causa violenta che determini la morte del lavoratore o postumi, temporanei o permanenti, che incidano sulla capacità lavorativa generica o sulla integrità psicofisica."@it .
 
 INAILService:InfortunioSulLavoroConIndennizzo a owl:Class ;
-    rdfs:label """Infortunio\r
-Sul Lavoro\r
+    rdfs:label """Infortunio\r\r
+Sul Lavoro\r\r
 Con Indennizzo"""@it,
         "Injury at Work with Compensation"@en ;
     owl:disjointWith INAILService:InfortunioSulLavoroSenzaIndennizzo ;
     rdfs:comment "Evento lesivo riconosciuto dall'Inail come infortunio sul lavoro indennizzabile (senza franchigia)."@it .
 
 INAILService:InfortunioSulLavoroConMezzoDiTrasporto a owl:Class ;
-    rdfs:label """Infortunio Sul\r
-Lavoro Con Mezzo\r
+    rdfs:label """Infortunio Sul\r\r
+Lavoro Con Mezzo\r\r
 Di Trasporto"""@it,
         "Injury with a Means of Transport"@en ;
     owl:disjointWith INAILService:InfortunioSulLavoroSenzaMezzoDiTrasporto ;
@@ -2653,40 +2653,40 @@ Di Trasporto"""@it,
 
 INAILService:InfortunioSulLavoroInFranchigia a owl:Class ;
     rdfs:label "Excess Injury"@en,
-        """Infortunio Sul\r
-Lavoro In\r
+        """Infortunio Sul\r\r
+Lavoro In\r\r
 Franchigia"""@it ;
     rdfs:comment "Uno degli esiti di definizione amministrativa del caso di infortunio o di malattia professionale; si dice in franchigia se provoca assenza dal lavoro non superiore ai tre giorni; per il periodo di franchigia l'Inail non corrisponde alcuna prestazione al lavoratore."@it .
 
 INAILService:InfortunioSulLavoroInIstruttoria a owl:Class ;
-    rdfs:label """Infortunio\r
-Sul Lavoro\r
+    rdfs:label """Infortunio\r\r
+Sul Lavoro\r\r
 In Istruttoria"""@it,
         "Injury in Case"@en ;
     rdfs:comment "Caso per il quale non è concluso il procedimento amministrativo per l'accertamento dei presupposti di ammissione a tutela assicurativa."@it .
 
 INAILService:InfortunioSulLavoroInItinere a owl:Class ;
     rdfs:label "In-Commuting Injury"@en,
-        """Infortunio\r
-Sul Lavoro\r
+        """Infortunio\r\r
+Sul Lavoro\r\r
 In Itinere"""@it ;
-    rdfs:comment """Infortunio occorso al lavoratore durante il normale percorso di andata e ritorno delle seguenti tipologie:\r
-da abitazione a lavoro\r
-da sede lavoro a diversa sede lavoro\r
-da sede lavoro a luogo pasto (in assenza di mensa aziendale);\r
+    rdfs:comment """Infortunio occorso al lavoratore durante il normale percorso di andata e ritorno delle seguenti tipologie:\r\r
+da abitazione a lavoro\r\r
+da sede lavoro a diversa sede lavoro\r\r
+da sede lavoro a luogo pasto (in assenza di mensa aziendale);\r\r
 salvo il caso di interruzione o deviazione del tutto indipendenti dal lavoro o, comunque, non necessitate (art. 2 e 210 TU 1124/1965)."""@it .
 
 INAILService:InfortunioSulLavoroMortale a owl:Class ;
     rdfs:label "Fatal Injury"@en,
-        """Infortunio\r
-Sul Lavoro\r
+        """Infortunio\r\r
+Sul Lavoro\r\r
 Mortale"""@it ;
     rdfs:subClassOf INAILService:InfortunioSulLavoro ;
     rdfs:comment "Infortunio con esito mortale."@it .
 
 INAILService:InfortunioSulLavoroMortaleNegativo a owl:Class ;
-    rdfs:label """Infortunio\r
-Sul Lavoro\r
+    rdfs:label """Infortunio\r\r
+Sul Lavoro\r\r
 Mortale Negativo"""@it,
         "Negative Fatal injury"@en ;
     rdfs:subClassOf INAILService:InfortunioSulLavoroMortale,
@@ -2694,8 +2694,8 @@ Mortale Negativo"""@it,
     rdfs:comment "Infortunio con esito mortale che non è riconosciuto dall'Inail."@it .
 
 INAILService:InfortunioSulLavoroMortalePositivo a owl:Class ;
-    rdfs:label """Infortunio\r
-Sul Lavoro\r
+    rdfs:label """Infortunio\r\r
+Sul Lavoro\r\r
 Mortale Positivo"""@it,
         "Positive Fatal injury"@en ;
     rdfs:subClassOf INAILService:InfortunioSulLavoroMortale,
@@ -2703,8 +2703,8 @@ Mortale Positivo"""@it,
     rdfs:comment "Infortunio con esito mortale, riconosciuto dall'Istituto."@it .
 
 INAILService:InfortunioSulLavoroNegativo a owl:Class ;
-    rdfs:label """Infortunio\r
-Sul Lavoro\r
+    rdfs:label """Infortunio\r\r
+Sul Lavoro\r\r
 Negativo"""@it,
         "Negative Injury"@en ;
     rdfs:comment "Uno degli esiti di definizione amministrativa del caso d'infortunio o di malattia professionale; un caso d'infortunio o di malattia professionale ha esito negativo se non rientra nella tutela assicurativa o vi sono altre cause di negatività."@it .
@@ -2714,23 +2714,23 @@ INAILService:InfortunioSulLavoroPositivo a owl:Class ;
             owl:unionOf (
                     INAILService:InfortunioSulLavoroConIndennizzo
                     INAILService:InfortunioSulLavoroSenzaIndennizzo ) ] ;
-    rdfs:label """Infortunio\r
-Sul Lavoro\r
+    rdfs:label """Infortunio\r\r
+Sul Lavoro\r\r
 Positivo"""@it,
         "Positive Injury"@en ;
     owl:disjointWith INAILService:MalattiaProfessionaleDefinitaPositiva ;
     rdfs:comment "Evento lesivo riconosciuto dall'Inail come infortunio sul lavoro."@it .
 
 INAILService:InfortunioSulLavoroSenzaIndennizzo a owl:Class ;
-    rdfs:label """Infortunio Sul\r
-Lavoro Senza\r
+    rdfs:label """Infortunio Sul\r\r
+Lavoro Senza\r\r
 Indennizzo"""@it,
         "Injury Without Compensation"@en ;
     rdfs:comment "Evento lesivo riconosciuto dall'Inail come infortunio sul lavoro non indennizzabile (in franchigia)."@it .
 
 INAILService:InfortunioSulLavoroSenzaMezzoDiTrasporto a owl:Class ;
-    rdfs:label """Infortunio Sul\r
-Lavoro Senza\r
+    rdfs:label """Infortunio Sul\r\r
+Lavoro Senza\r\r
 Mezzo Di Trasporto"""@it,
         "Injury Without a Means of Transport"@en ;
     rdfs:comment "Infortunio senza mezzo di trasporto"@it .
@@ -2812,36 +2812,36 @@ INAILService:MalattiaProfessionale a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty INAILService:tipoDecisioneIstruttoriaSanitariaMalattiaProfessionale ;
             owl:someValuesFrom rdfs:Literal ] ;
-    rdfs:label """Malattia\r
+    rdfs:label """Malattia\r\r
 Professionale"""@it,
         "Occupational Disease"@en ;
     rdfs:comment "La malattia professionale è una patologia la cui causa agisce lentamente e progressivamente sull’organismo (causa diluita e non causa violenta). La stessa causa deve essere diretta ed efficiente, cioè in grado di produrre l’infermità in modo esclusivo o prevalente. Il Testo Unico (d.P.R. 1124/1965), infatti, fa riferimento a malattie contratte nell’esercizio e a causa delle lavorazioni rischiose. È ammesso il concorso di cause extraprofessionali, purché non interrompano il nesso causale in quanto capaci di produrre da sole l’infermità. Per le malattie professionali, quindi, non basta l’occasione di lavoro - cioè un rapporto anche mediato o indiretto con il rischio lavorativo, come per gli infortuni - ma deve esistere un rapporto causale o concausale diretto tra il rischio professionale e la malattia. Il rischio può essere provocato dalla lavorazione che l’assicurato svolge oppure dall’ambiente in cui la lavorazione stessa si svolge (cosiddetto “rischio ambientale”). Si distinguono in tabellate e non tabellate. Sono tabellate se: a) indicate nelle due tabelle relative all'industria e all'agricoltura;  b) provocate da lavorazioni indicate nelle stesse tabelle; c) denunciate entro il periodo dalla cessazione dell’attività rischiosa fissato nelle tabelle (“periodo massimo di indennizzabilità”). Nell’ambito del “sistema tabellare” il lavoratore è sollevato dall’onere di dimostrare l’origine professionale della malattia. Infatti, una volta che abbia provato l’adibizione a lavorazione tabellata (o comunque l’esposizione ad un rischio ambientale provocato da quella lavorazione e l’esistenza della malattia anch’essa tabellata e abbia effettuato la denuncia nel termine massimo di indennizzabilità, si presume per legge che quella malattia sia di origine professionale (cosiddetta “presunzione legale d’origine”), superabile soltanto con la rigorosissima prova, a carico dell’Inail, che la malattia è stata determinata da cause extraprofessionali e non dal lavoro. Le tabelle sono aggiornate periodicamente. Con il d.m. del 9 aprile 2008 sono state approvate le nuove tabelle delle malattie professionali dell’industria e dell’agricoltura. Con sentenza n. 179/1988 La Corte Costituzionale ha introdotto il cosiddetto “sistema misto” prevede la possibilità per il lavoratore di dimostrare che, pur non ricorrendo le tre condizioni previste nelle tabelle, la malattia è comunque di origine professionale. "@it .
 
 INAILService:MalattiaProfessionaleConPrognosi a owl:Class ;
-    rdfs:label """Malattia\r
-Professionale\r
+    rdfs:label """Malattia\r\r
+Professionale\r\r
 Con Prognosi"""@it,
         "Occupational Disease with Prognosis"@en ;
     owl:disjointWith INAILService:MalattiaProfessionaleSenzaPrognosi ;
     rdfs:comment "Malattia professionale con prognosi."@it .
 
 INAILService:MalattiaProfessionaleDefinitaPositiva a owl:Class ;
-    rdfs:label """Malattia\r
-Professionale\r
+    rdfs:label """Malattia\r\r
+Professionale\r\r
 Definita Positiva"""@it,
         "Occupational Disease Defined as Positive"@en ;
     rdfs:comment "Uno degli esiti di definizione amministrativa del caso d'infortunio o di malattia professionale; un caso d'infortunio o di malattia professionale ha esito positivo se rientra nella tutela assicurativa."@it .
 
 INAILService:MalattiaProfessionaleInDefinizione a owl:Class ;
-    rdfs:label """Malattia\r
-Professionale\r
+    rdfs:label """Malattia\r\r
+Professionale\r\r
 In Definizione"""@it,
         "Occupational Disease In Definition"@en ;
     rdfs:comment "Malattia professionale in definizione"@it .
 
 INAILService:MalattiaProfessionaleInFranchigia a owl:Class ;
-    rdfs:label """Malattia\r
-Professionale\r
+    rdfs:label """Malattia\r\r
+Professionale\r\r
 In Franchigia"""@it,
         "Occupational Disease In Excess"@en ;
     rdfs:subClassOf INAILService:MalattiaProfessionale ;
@@ -2849,22 +2849,22 @@ In Franchigia"""@it,
 
 INAILService:MalattiaProfessionaleMortale a owl:Class ;
     rdfs:label "Fatal Occupational Disease"@en,
-        """Malattia\r
-Professionale\r
+        """Malattia\r\r
+Professionale\r\r
 Mortale"""@it ;
     rdfs:subClassOf INAILService:MalattiaProfessionale ;
     rdfs:comment "Malattia professionale che è causa (o concausa) della morte del lavoratore."@it .
 
 INAILService:MalattiaProfessionaleNonRiconosciuta a owl:Class ;
-    rdfs:label """Malattia\r
-Professionale\r
+    rdfs:label """Malattia\r\r
+Professionale\r\r
 Non Riconosciuta"""@it,
         "Unrecognised Occupational Disease"@en ;
     rdfs:comment "Malattia professionale non riconosciuta"@it .
 
 INAILService:MalattiaProfessionaleSenzaPrognosi a owl:Class ;
-    rdfs:label """Malattia\r
-Professionale\r
+    rdfs:label """Malattia\r\r
+Professionale\r\r
 Senza Prognosi"""@it,
         "Occupational Disease without Prognosis"@en ;
     rdfs:comment "Malattia professionale senza prognosi"@it .
@@ -2922,7 +2922,7 @@ INAILService:NaturaLesioneINAIL a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILService:eventoHaNaturaLesione ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "INAIL Nature of Injury"@en,
-        """Natura Lesione\r
+        """Natura Lesione\r\r
 INAIL"""@it ;
     rdfs:comment "Classificazione della natura della lesione. Sono previste le seguenti tipologie: contusione; corpi estranei; ferita; frattura; lesione da agenti infettivi e parassitari; lesioni da altri agenti; lesioni da sforzo; lussazione, distorsione, distrazione; perdita antomica; altro. "@it .
 
@@ -2951,21 +2951,21 @@ INAILService:PagamentoRivalsaINAIL a owl:Class ;
             owl:onProperty INAILService:relativoARivalsa ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "INAIL Recoupment Payment"@en,
-        """Pagamento\r
+        """Pagamento\r\r
 Rivalsa INAIL"""@it ;
     rdfs:comment "Informazioni relative a ciascun incasso registrato sulla pratica di infortunio sul lavoro o di malattia professionale (dati della persona fisica o giuridica che ha effettuato il pagamento, causale dell'incasso, importo incassato e data di avvenuto incasso)."@it .
 
 INAILService:PrestazioneABreveDurataINAIL a owl:Class ;
     rdfs:label "INAIL Short-Term Benefit"@en,
-        """Prestazione Non\r
+        """Prestazione Non\r\r
 Continuativa INAIL"""@it ;
     owl:disjointWith INAILService:PrestazioneALungaDurataINAIL ;
     rdfs:comment "Prestazione a breve durata"@it .
 
 INAILService:PrestazioneALungaDurataINAIL a owl:Class ;
     rdfs:label "INAIL Long-Term Benefit"@en,
-        """Prestazione\r
-Continuativa\r
+        """Prestazione\r\r
+Continuativa\r\r
 INAIL"""@it ;
     rdfs:comment "Prestazione a lunga durata"@it .
 
@@ -2980,8 +2980,8 @@ INAILService:PrestazioneEconomicaINAIL a owl:Class ;
             owl:onProperty INAILService:prestazioneRelativaAEvento ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "INAIL Economic Benefit"@en,
-        """Prestazione\r
-Economica\r
+        """Prestazione\r\r
+Economica\r\r
 INAIL"""@it ;
     rdfs:comment "E' Ia somma di danaro riconosciuta ai lavoratori che subiscono un infortunio sul lavoro o contraggono una malattia professionale (tecnopatici) o, in caso di morte, ai loro superstiti. Le prestazioni economiche sono finalizzate a indennizzare il danno derivante dall'evento lesivo e spettano, di norma, anche se il datore di lavoro non ha versato regolarmente il premio assicurativo (principio dell'automaticità delle prestazioni). Sono esclusi soltanto i lavoratori autonomi, quali ad esempio gli artigiani e i coltivatori diretti, fino alla regolarizzazione del quinquennio precedente, nonché i lavoratori assicurati per il lavoro in ambito domestico (legge  493/1999: cosiddette/i casalinghe/i), la cui tutela, in caso di irregolarità contributiva, decorre soltanto dal primo giorno successivo alla regolarizzazione."@it .
 
@@ -3002,29 +3002,29 @@ INAILService:QualificaAssicurativaINAIL a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILService:haQualificaAssicurativa ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "INAIL Insurance Qualification"@en,
-        """Qualifica\r
-Assicurativa\r
+        """Qualifica\r\r
+Assicurativa\r\r
 INAIL"""@it ;
     rdfs:comment "E' l'elenco delle tipologie di Qualifica Assicurativa ed è il risultato della concatenazione tra il tipo di gestione (Industria, Agricoltura, Navigazione, conto Stato) e la tipologia di lavoratore (Lavoratore Dipendente, Quadro, Impiegato, ecc.)."@it .
 
 INAILService:RenditaASuperstitiINAIL a owl:Class ;
     rdfs:label "INAIL Survivor Pension"@en,
-        """Rendita A\r
-Superstiti\r
+        """Rendita A\r\r
+Superstiti\r\r
 INAIL"""@it ;
     owl:disjointWith INAILService:RenditaDiInabilitaPermanenteINAIL ;
     rdfs:comment "E' la prestazione economica spettante ai superstiti quando dall'infortunio o dalla malattia professionale sia derivata la morte del lavoratore. La rendita spetta ai superstiti del lavoratore ai sensi dell'articolo 85 Testo Unico (d.P.R. 1124/1965). La prestazione decorre dal giorno successivo alla morte e viene calcolata moltiplicando la retribuzione del lavoratore deceduto per specifiche aliquote differenziate per tipo di familiare avente diritto. La retribuzione alla base del calcolo della rendita si rivaluta annualmente a norma dell’articolo 11 del d.lgs 38/2000. Per i superstiti di lavoratori deceduti a decorrere dal 1° gennaio 2014 la rendita è calcolata sulla base della retribuzione massima convenzionale (massimale di rendita) del settore industria."@it .
 
 INAILService:RenditaDiInabilitaPermanenteINAIL a owl:Class ;
     rdfs:label "Permanent Disability Pension"@en,
-        """Rendita Di\r
-Inabilita\r
+        """Rendita Di\r\r
+Inabilita\r\r
 Permanente INAIL"""@it ;
     rdfs:comment "E' la prestazione economica erogata ai lavoratori che subiscono un infortunio sul lavoro o contraggono una malattia professionale che comporti una inabilità permanente assoluta o parziale che tolga completamente o diminuisca parzialmente l'attitudine al lavoro. In regime Testo Unico (d.P.R. 1124/1965) la rendita veniva riconosciuta in caso di riduzione permanente dell'attitudine al lavoro in misura superiore al 10%. Per gli infortuni sul lavoro verificatisi e per le malattie professionali denunciate dal 25 luglio 2000, data di entrata in vigore del nuovo regime di indennizzo Danno Biologico, introdotto dall'articolo 13 del d.lgs 38/2000 e dal d.m. 12 luglio 2000, la rendita è riconosciuta in caso di menomazioni permanenti dell'integrità psicofisica di grado pari o superiore al 16%, valutate secondo il nuovo regime di indennizzo."@it .
 
 INAILService:RenditaDLgs38-2000 a owl:Class ;
     rdfs:label "Pension DLgs38-2000"@en,
-        """Rendita In Regime Danno\r
+        """Rendita In Regime Danno\r\r
 Biologico DLgs38-2000"""@it ;
     owl:disjointWith INAILService:RenditaTestoUnicoINAIL ;
     rdfs:comment "A seguito della entrata in vigore del regime di indennizzo Danno Biologico, introdotto dall'articolo 13 del d.lgs 38/2000 e dal d.m. 12 luglio 2000, la rendita diretta è corrisposta per gli infortuni sul lavoro verificatisi o per le malattie professionali denunciate dal 25 luglio 2000 che abbiano causato una menomazione permanente dell'integrità psicofisica di grado pari o superiore al 16%, valutato secondo le predette disposizioni citate."@it .
@@ -3041,14 +3041,14 @@ INAILService:RenditaINAIL a owl:Class ;
 
 INAILService:RenditaTestoUnicoINAIL a owl:Class ;
     rdfs:label "INAIL Testo Unico Pension"@en,
-        """Rendita In Regime\r
+        """Rendita In Regime\r\r
 Testo Unico INAIL"""@it ;
     rdfs:comment "E' la prestazione economica riconosciuta ai lavoratori che abbiano subito un infortunio sul lavoro o abbiano contratto una malattia professionale che abbiano causato una riduzione permanente dell'attitudine al lavoro in misura superiore al 10%, valutata in regime indennizzo Testo Unico (d.P.R. 1124/1965)."@it .
 
 INAILService:RiaperturaDefinitaINAIL a owl:Class ;
     rdfs:label "Definitive Reopening"@en,
-        """Riapertura\r
-Definita\r
+        """Riapertura\r\r
+Definita\r\r
 INAIL"""@it ;
     owl:disjointWith INAILService:RiaperturaInLavorazioneINAIL ;
     rdfs:comment "Riapertura definita"@it .
@@ -3113,8 +3113,8 @@ INAILService:RiaperturaINAIL a owl:Class ;
 
 INAILService:RiaperturaInLavorazioneINAIL a owl:Class ;
     rdfs:label "INAIL Reopening in Process"@en,
-        """Riapertura In\r
-Lavorazione\r
+        """Riapertura In\r\r
+Lavorazione\r\r
 INAIL"""@it ;
     rdfs:comment "Riapertura in lavorazione"@it .
 
@@ -3173,7 +3173,7 @@ INAILService:SedeLesioneINAIL a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILService:haSedeLesione ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "INAIL Injury Site"@en,
-        """Sede Lesione\r
+        """Sede Lesione\r\r
 INAIL"""@it ;
     rdfs:comment "Classificazione della sede delle lesioni adottata dall'Inail. Sono suddivise per codici (73) con la descrizione puntuale della sede anatomica della lesione (da Cranio, codice 11, a Altre dita destre, codice 76) e un'ultima generica (\"Altra sede lesione\", codice 0). "@it .
 
@@ -3204,7 +3204,7 @@ INAILService:SoggettoEventoLesivoINAIL a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILService:eventoRelativoASoggetto ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "INAIL Subject of Work Accident"@en,
-        """Soggetto Evento\r
+        """Soggetto Evento\r\r
 Lesivo INAIL"""@it ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILService:inabilitaRiferitaASoggetto ] ;
@@ -3225,10 +3225,10 @@ INAILService:SottoGruppoVoceDiTariffaINAIL a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILService:appartieneASottoGruppoVoceDiTariffa ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "INAIL Subgroup of Rate Item"@en,
-        """Sotto Gruppo\r
-Voce Di Tariffa\r
+        """Sotto Gruppo\r\r
+Voce Di Tariffa\r\r
 INAIL"""@it ;
-    rdfs:comment """Categoria gerarchicamente intermedia (articolazione di un gruppo) della classificazione tariffaria delle attività lavorative effettuata dall’INAIL (art. 40 TU 1124/1965) e secondo cui le tariffe dei premi sono ordinate in dieci grandi gruppi, di norma articolati in gruppi, sottogruppi e voci (art. 3, Modalità di Applicazione delle Tariffe Inail 2019).\r
+    rdfs:comment """Categoria gerarchicamente intermedia (articolazione di un gruppo) della classificazione tariffaria delle attività lavorative effettuata dall’INAIL (art. 40 TU 1124/1965) e secondo cui le tariffe dei premi sono ordinate in dieci grandi gruppi, di norma articolati in gruppi, sottogruppi e voci (art. 3, Modalità di Applicazione delle Tariffe Inail 2019).\r\r
 Per ciascuna delle gestioni di cui all'articolo 1 d.lgs. n. 38/2000 (Industria, Artigianato, Terziario e Altre attività) sono approvate distinte tariffe dei premi per l'assicurazione contro gli infortuni sul lavoro e le malattie professionali, con le relative Modalità di Applicazione delle Tariffe (MAT)."""@it .
 
 INAILService:SpesaSostenutaPerRivalsaINAIL a owl:Class ;
@@ -3251,7 +3251,7 @@ INAILService:SpesaSostenutaPerRivalsaINAIL a owl:Class ;
             owl:onProperty INAILService:tipoSpesaRivalsa ;
             owl:someValuesFrom rdfs:Literal ] ;
     rdfs:label "INAIL Supported Expenditure"@en,
-        """Spesa Sostenuta\r
+        """Spesa Sostenuta\r\r
 Per Rivalsa INAIL"""@it ;
     rdfs:comment "Sono i costi sostenuti dall'Inail per l’infortunio sul lavoro o la malattia professionale. Sono raggruppati per tipologie omogenee. In caso di rivalsa (regresso o surroga) sono richiesti al responsabile civile."@it .
 
@@ -3274,7 +3274,7 @@ INAILService:TipoAttivitaFisicaINAIL a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILService:infortunioHaTipoAttivitaFisica ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "INAIL Type of Physical Activity"@en,
-        """Tipo Attivita\r
+        """Tipo Attivita\r\r
 Fisica INAIL"""@it ;
     rdfs:comment "Classificazione a due livelli dell'attività svolta al momento dell'evento lesivo."@it .
 
@@ -3289,28 +3289,28 @@ INAILService:TipoContattoINAIL a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILService:infortunioHaTipoContatto ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "INAIL Type of Contact"@en,
-        """Tipo Contatto\r
+        """Tipo Contatto\r\r
 INAIL"""@it ;
     rdfs:comment "Classificazione a due livelli delle sostanze e delle tipologie di contatto con le stesse, che causano l'evento lesivo."@it .
 
 INAILService:TipoDecisioneIstruttoriaEsitoMortaleINAIL a owl:Class ;
     rdfs:label "INAIL Type of Investigation Decision for Fatal Outcome"@en,
-        """Tipo Decisione\r
-Istruttoria Esito\r
+        """Tipo Decisione\r\r
+Istruttoria Esito\r\r
 Mortale INAIL"""@it ;
     rdfs:subClassOf INAILService:TipoDefinizioneDecisioneIstruttoriaINAIL ;
-    rdfs:comment """Classificazione delle decisioni di istruttoria in caso di esito mortale. Sono previste le seguenti tipologie e codici:\r
-28 - Carenza di documentazione valida;\r
-17 - Morte Con Superstiti Itinere;\r
-16 - Esiti Mortali Nei Termini Senza Superstiti;\r
-15 - Esiti Mortali Nei Termini Con Superstiti;\r
-21 - Difetto Occasione di lavoro;\r
-24 - Persona non tutelata;\r
-18 - Morte Senza Superstiti Itinere;\r
-22 - Difetto In itinere;\r
-27 - Attività non tutelata;\r
-244 - Morte non riconducibile all'evento;\r
-300 - Altre cause di negatività;\r
+    rdfs:comment """Classificazione delle decisioni di istruttoria in caso di esito mortale. Sono previste le seguenti tipologie e codici:\r\r
+28 - Carenza di documentazione valida;\r\r
+17 - Morte Con Superstiti Itinere;\r\r
+16 - Esiti Mortali Nei Termini Senza Superstiti;\r\r
+15 - Esiti Mortali Nei Termini Con Superstiti;\r\r
+21 - Difetto Occasione di lavoro;\r\r
+24 - Persona non tutelata;\r\r
+18 - Morte Senza Superstiti Itinere;\r\r
+22 - Difetto In itinere;\r\r
+27 - Attività non tutelata;\r\r
+244 - Morte non riconducibile all'evento;\r\r
+300 - Altre cause di negatività;\r\r
 ND - Non Applicabile."""@it .
 
 INAILService:TipoDefinizioneDecisioneIstruttoriaINAIL a owl:Class ;
@@ -3327,8 +3327,8 @@ INAILService:TipoDefinizioneDecisioneIstruttoriaINAIL a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILService:trattazioneHaTipoDefinizioneDecisioneIstruttoria ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "INAIL Type Definition of Investigation Decision "@en,
-        """Tipo Definizione\r
-Decisione\r
+        """Tipo Definizione\r\r
+Decisione\r\r
 Istruttoria INAIL"""@it ;
     rdfs:comment "Descrizione della definizione della trattazione o della riapertura della pratica di infortunio o malattia professionale."@it .
 
@@ -3343,7 +3343,7 @@ INAILService:TipoDeviazioneINAIL a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILService:infortunioHaTipoDeviazione ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "INAIL Type of Deviation"@en,
-        """Tipo Deviazione\r
+        """Tipo Deviazione\r\r
 INAIL"""@it ;
     rdfs:comment "E' l'elemento \"deviante\" rispetto alla \"norma\" e rappresenta la descrizione dell'evento anomalo che provoca l'infortunio. Se esiste una sequenza concatenata di eventi viene registrato l'ultimo della catena, cioè la deviazione temporalmente più prossima al contatto lesivo. Nella tabella in uso si fa riferimento alla definizione ESAW-3  che prevede le seguenti tipologie di deviazione: Da perdita di controllo; Da movimenti senza sforzo fisico; da caduta di persona, Da rottura; da Fuoriuscita; da sorpresa, violenza, ecc.; Da elettricità, incendio."@it .
 
@@ -3364,7 +3364,7 @@ INAILService:TipoIndennizzoINAIL a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILService:trattazioneHaTipoIndennizzo ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "INAIL Type of Compensation"@en,
-        """Tipo Indennizzo\r
+        """Tipo Indennizzo\r\r
 INAIL"""@it ;
     rdfs:comment "Il tipo di indennizzo erogato viene stabilito in base al grado di menomazione dell'integrità psicofisica (v. Tabella menomazioni approvata con d.m. 12 luglio 2000). Per menomazioni di grado inferiore al 6% non è previsto nessun indennizzo (franchigia); per menomazioni di grado compreso tra il 6% al 15% è previsto un indennizzo in capitale una tantum del danno biologico (v. Tabella indennizzo approvata con d.m. 12 luglio 2000), mentre non è previsto nessun indennizzo per le conseguenze patrimoniali; per menomazioni di grado dal 16% al 100% è previsto un indennizzo in rendita del danno biologico (v. Tabella indennizzo approvata con d.m. 12 luglio 2000) e un ulteriore indennizzo o quota di rendita per le conseguenze patrimoniali (v. Tabella coefficienti approvata con d.m. 12 luglio 2000)."@it .
 
@@ -3379,7 +3379,7 @@ INAILService:TipoLavoratoreINAIL a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILService:eventoHaTipoLavoratore ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "INAIL Type of Worker"@en,
-        """Tipo Lavoratore\r
+        """Tipo Lavoratore\r\r
 INAIL"""@it ;
     rdfs:comment "Elenco delle tipologie di lavoratore riferite alla tipologia di datore di lavoro dei settori industria, artigianato, servizi e Pubbliche Amministrazioni titolari di P.A.T. (es: Dipendente, Apprendista, Autonomo, Parasubordinato, ecc.)."@it .
 
@@ -3394,7 +3394,7 @@ INAILService:TipoLavoroINAIL a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILService:svolgeTipoDiLavoro ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "INAIL Type of Work"@en,
-        """Tipo Lavoro\r
+        """Tipo Lavoro\r\r
 INAIL"""@it ;
     rdfs:comment "Classificazione delle tipologie di lavoro"@it .
 
@@ -3409,8 +3409,8 @@ INAILService:TipoLuogoAccadimentoINAIL a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILService:infortunioAccadutoInTipoLuogo ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "INAIL Type of Happening Place"@en,
-        """Tipo Luogo\r
-Accadimento\r
+        """Tipo Luogo\r\r
+Accadimento\r\r
 INAIL"""@it ;
     rdfs:comment "Classificazione dei luoghi in cui è avvenuto l'evento lesivo."@it .
 
@@ -3431,7 +3431,7 @@ INAILService:TipoMalattiaINAIL a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILService:malattiaProfessionaleHaTipoMalattiaFinale ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "INAIL Type of Disease"@en,
-        """Tipo Malattia\r
+        """Tipo Malattia\r\r
 INAIL"""@it ;
     rdfs:comment "Classificazione delle malattie professionali. Le malattie professionali si distinguono dagli infortuni in quanto: la causa agisce lentamente e progressivamente sull’organismo (causa diluita e non causa violenta e concentrata nel tempo); la causa deve essere diretta ed efficiente, cioè in grado di produrre l’infermità in modo esclusivo o prevalente. Il Testo Unico (d.P.R. 1124/1965) si riferisce a malattie contratte nell’esercizio e a causa delle lavorazioni rischiose, ma è ammesso il concorso di cause extraprofessionali, purché queste non interrompano il nesso causale in quanto capaci di produrre da sole l’infermità. Le malattie professionali si distinguono in tabellate e non tabellate. Le malattie professionali sono tabellate se indicate nelle due tabelle allegate nn. 4 (industria) e 5 (agricoltura) al Testo Unico (d.p.R. 1124/1965 e provocate da lavorazioni indicate nelle stesse tabelle. Devono essere denunciate entro il periodo dalla cessazione dell’attività rischiosa fissato nelle tabelle stesse (“periodo massimo di indennizzabilità”; articoli 134 e 254 Testo Unico). Nell’ambito del cosiddetto “sistema tabellare”, il lavoratore è sollevato dall’onere di dimostrare l’origine professionale della malattia Infatti, una volta che egli abbia provato l’adibizione a lavorazione tabellata (o comunque l’esposizione ad un rischio ambientale provocato da quella lavorazione) e l’esistenza della malattia anch’essa tabellata e abbia effettuato la denuncia nel termine massimo di indennizzabilità, si presume per legge che quella malattia sia di origine professionale (cosiddetta “presunzione legale d’origine”, superabile soltanto con la rigorosissima prova – a carico dell’Inail – che la malattia è stata determinata da cause extraprofessionali e non dal lavoro. L'elenco delle malattie professionali è soggetto ad aggiornamento: con d.m. del 9 aprile 2008 sono state approvate le nuove tabelle delle malattie professionali dell’industria e dell’agricoltura. Con sentenza n. 179/1988, la Corte Costituzionale ha introdotto il cosiddetto “sistema misto”, in base al quale il sistema tabellare è affiancato dalla possibilità per l’assicurato di dimostrare che la malattia, pur non ricorrendo le tre condizioni previste nelle tabelle, è comunque di origine professionale."@it .
 
@@ -3446,7 +3446,7 @@ INAILService:TipoPraticaINAIL a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILService:eventoHaTipoPratica ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "INAIL Type of Practice"@en,
-        """Tipo Pratica\r
+        """Tipo Pratica\r\r
 INAIL"""@it ;
     rdfs:comment "Indica se la pratica consultata si riferisce ad un infortunio sul lavoro o a una malattia professionale, alla gestione di una rendita, ecc."@it .
 
@@ -3464,7 +3464,7 @@ INAILService:TipoStatoRivalsaINAIL a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILService:haTipoStatoRivalsa ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "INAIL Type of Revenge Status"@en,
-        """Tipo Stato\r
+        """Tipo Stato\r\r
 Rivalsa INAIL"""@it ;
     rdfs:comment "Indica la tipologia della Rivalsa, ovvero la modalità con la quale l'Inail può chiedere il rimborso dei costi sostenuti per gli infortuni sul lavoro e le malattie professionali quando sia accertata una responsabilità del datore di lavoro (regresso) o di un soggetto estraneo al rapporto di lavoro (surroga)."@it .
 
@@ -3503,7 +3503,7 @@ INAILService:TipoTecnopatiaINAIL a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILService:malattiaProfessionalehaTipoTecnopatiaFinale ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "INAIL Type of Occupational Disease"@en,
-        """Tipo Tecnopatia\r
+        """Tipo Tecnopatia\r\r
 INAIL"""@it ;
     rdfs:comment "Classificazione malattia professionale"@it .
 
@@ -3530,13 +3530,13 @@ INAILService:TipoTrattazioneINAIL a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILService:riaperturaRelativaATipoTrattazione ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "INAIL Type of Treatment"@en,
-        """Tipo Trattazione\r
+        """Tipo Trattazione\r\r
 INAIL"""@it ;
     rdfs:comment "Classificazione delle trattazioni che, a seguito dell'istruttoria, determinano il periodo di inabilità assoluta al lavoro, il grado di invalidità/menomazione, l’indennizzo e la prestazione che viene erogata agli aventi diritto (infortunati/tecnopatici e/o loro superstiti)."@it .
 
 INAILService:TrattazioneApertaINAIL a owl:Class ;
     rdfs:label "INAIL Open Treatment"@en,
-        """Trattazione\r
+        """Trattazione\r\r
 Aperta INAIL"""@it ;
     owl:disjointWith INAILService:TrattazioneDefinitaINAIL ;
     rdfs:comment "Trattazione aperta"@it .
@@ -3546,7 +3546,7 @@ INAILService:TrattazioneDefinitaINAIL a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILService:riaperturaRelativaATrattazione ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Defined Treatment INAIL"@en,
-        """Trattazione\r
+        """Trattazione\r\r
 Definita INAIL"""@it ;
     rdfs:comment "Trattazione definita"@it .
 
@@ -3627,7 +3627,7 @@ INAILService:VoceDiTariffaINAIL a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILService:eventoHaVoceDiTariffa ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "INAIL Rate Item"@en,
-        """Voce Di Tariffa\r
+        """Voce Di Tariffa\r\r
 INAIL"""@it ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAILService:voceDiTariffaHaSettoreAttivita ;
