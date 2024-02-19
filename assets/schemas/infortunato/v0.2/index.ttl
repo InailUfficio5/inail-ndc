@@ -1,0 +1,90 @@
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAILService: <https://w3id.org/italia/work-accident/onto/adm_serv/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/italia/work-accident/onto/adm_serv> a owl:Ontology ;
+    foaf:name "Ontologia INAIL relativa a Infortuni e Malattie Professionali" .
+
+### Classes
+
+INAILService:InfortunatoSulLavoro a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:infortunioAccadutoAInfortunato ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Infortunato sul lavoro"@it,
+        "Occupational injured at work"@en ;
+    owl:disjointWith INAILService:Tecnopatico ;
+    rdfs:comment "Per infortunato sul lavoro si intende ogni lavoratore con una lesione originata, in occasione di lavoro, da causa violenta che determini la morte della persona o che comprometta parzialmente o totalmente la capacità lavorativa o l'integrità psicofisica."@it .
+
+### Individuals
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/td> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "TD" ;
+    foaf:name "Digital Transformation Team"@en,
+        "Team per la Trasformazione Digitale"@it .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+### Annotations
+
+<https://w3id.org/italia/schemas/infortunato/latest/infortunato.oas3.yaml> a dcatapit:Dataset,
+        dcatapit:Distribution ;
+    rdfs:label "Consultazione Infortunato sul lavoro API"@it ;
+    rdfs:comment "Servizio di notifica"@it ;
+    owl:versionInfo "Versione 0.2"@it ;
+    admsapit:acronym "inail" ;
+    admsapit:hasKeyClass INAILService:InfortunatoSulLavoro ;
+    admsapit:prefix "INAILService"^^xsd:string ;
+    admsapit:status "catalogued",
+        "published" ;
+    admsapit:target "Cittadini"@it,
+        "Imprese"@it,
+        "Pubbliche Amministrazioni"@it ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/blob/main/assets/schemas/infortunato/latest> ;
+    dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+    dcat:distribution <https://w3id.org/italia/schemas/infortunato/latest/infortunato.oas3.yaml> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/infortunato/latest/infortunato.oas3.yaml> ;
+    dcat:keyword "Evento Lesivo"@it,
+        "Gestione Assicurativa"@it,
+        "Infortunio"@it,
+        "Insurance Management"@en,
+        "Malattia Professionale"@it,
+        "Occupational Disease"@en,
+        "Occupational Injury"@en,
+        "Work Accident"@en ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/work-accident/onto/adm_serv> ;
+    dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:description "Il servizio viene invocato per ottenere le informazioni sull'infortunato sul lavoro, cioè ogni lavoratore con una lesione originata, in occasione di lavoro, da causa violenta che determini la morte della persona o che comprometta parzialmente o totalmente la capacità lavorativa o l'integrità psicofisica. " ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dct:identifier <https://w3id.org/italia/schemas/infortunato> ;
+    dct:issued "2024-02-13"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2024-02-13"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:title "Consultazione Infortunato sul lavoro API"@it .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

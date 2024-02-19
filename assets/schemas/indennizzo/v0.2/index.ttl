@@ -1,0 +1,112 @@
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAILService: <https://w3id.org/italia/work-accident/onto/adm_serv/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/italia/work-accident/onto/adm_serv> a owl:Ontology ;
+    foaf:name "Ontologia INAIL relativa a Infortuni e Malattie Professionali" .
+
+### Classes
+
+INAILService:IndennizzoINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILService:IndennizzoGiornalieroPerInabilitaTemporaneaINAIL
+                    INAILService:IndennizzoInCapitalePerDannoBiologicoINAIL ) ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:causalePagamentoIndennizzo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:codiceIndennizzo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataInizioTrattazioneIndennizzo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataLiquidazioneIndennizzo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataPropostaPagamentoIndennizzo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:oraPropostaPagamentoIndennizzo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tipoRiaperturaIndennizzo ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:label "INAIL compensation"@en,
+        "Indennizzo INAIL"@it ;
+    rdfs:comment "Prestazione economica erogata agli infortunati e ai tecnopatici nell'ambito del sistema assicurativo. Le tipologie principali di indennizzo erogate in regime Danno Biologico sono: l'indennità per inabilità temporanea assoluta al lavoro, l'indennizzo in capitale una tantum per menomazioni permanenti di grado compreso tra 6 e il 15%, la rendita diretta per menomazioni permanenti di grado compreso tra 16 e il 100%, la rendita a superstiti nel caso di morte del titolare di rendita riconducibile ad infortunio sul lavoro o malattia professionale."@it .
+
+### Individuals
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/td> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "TD" ;
+    foaf:name "Digital Transformation Team"@en,
+        "Team per la Trasformazione Digitale"@it .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+### Annotations
+
+<https://w3id.org/italia/schemas/indennizzo/latest/indennizzo.oas3.yaml> a dcatapit:Dataset,
+        dcatapit:Distribution ;
+    rdfs:label "Consultazione Indennizzo API"@it ;
+    rdfs:comment "Servizio di notifica"@it ;
+    owl:versionInfo "Versione 0.2"@it ;
+    admsapit:acronym "inail" ;
+    admsapit:hasKeyClass INAILService:IndennizzoINAIL ;
+    admsapit:prefix "INAILService"^^xsd:string ;
+    admsapit:status "catalogued",
+        "published" ;
+    admsapit:target "Cittadini"@it,
+        "Imprese"@it,
+        "Pubbliche Amministrazioni"@it ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/blob/main/assets/schemas/indennizzo/latest> ;
+    dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+    dcat:distribution <https://w3id.org/italia/schemas/indennizzo/latest/indennizzo.oas3.yaml> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/indennizzo/latest/indennizzo.oas3.yaml> ;
+    dcat:keyword "Evento Lesivo"@it,
+        "Gestione Assicurativa"@it,
+        "Infortunio"@it,
+        "Insurance Management"@en,
+        "Malattia Professionale"@it,
+        "Occupational Disease"@en,
+        "Occupational Injury"@en,
+        "Work Accident"@en ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/work-accident/onto/adm_serv> ;
+    dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:description "Il servizio viene invocato per ottenere le informazioni sulla prestazione economica erogata agli infortunati e ai tecnopatici nell'ambito del sistema assicurativo. " ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dct:identifier <https://w3id.org/italia/schemas/indennizzo> ;
+    dct:issued "2024-02-13"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2024-02-13"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:title "Consultazione Indennizzo API"@it .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

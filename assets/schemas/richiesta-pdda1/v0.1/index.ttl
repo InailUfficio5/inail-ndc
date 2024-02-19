@@ -1,0 +1,118 @@
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAILPDDA1: <https://w3id.org/italia/work-accident/onto/proc6_pdda1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix TI: <https://w3id.org/italia/onto/TI/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/italia/work-accident/onto/proc6_pdda1> a owl:Ontology ;
+    foaf:name "Ontologia INAIL relativa alla richiesta del documento PD DA1" .
+
+### Classes
+
+INAILPDDA1:RichiestaDocumentoPDDA1 a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:codiceRichiestaPDDA1 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:dataRichiestaPDDA1 ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILPDDA1:effettuaRichiestaModuloPDDA1 ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "PDDA1 Document Request"@en,
+        "Richiesta Documento PDDA1"@it ;
+    rdfs:subClassOf TI:TimeIndexedEvent,
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:dataFinePermanenzaEstero ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:dataInizioPermanenzaEstero ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:richiestaHaPraticaPDDA1 ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:richiestaInviataASedeINAIL ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:richiestaPerPaeseDiDestinazione ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILPDDA1:richiestaRelativaAAssicurato ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Modulo di richiesta per il PD DA1 che il datore di lavoro, il lavoratore autonomo o un incaricato per conto del datore effettua. Il PD DA1 può essere altresì richiesto dalla persona, titolare di una rendita INAIL derivante da infortunio sul lavoro o malattia professionale, che intenda trasferirsi all’estero anche se non più in attività lavorativa. La richiesta è effettuata accedendo al sito istituzionale, previa abilitazione, oppure inviando il modulo compilato, tramite PEC, alla Sede INAIL competente per territorio."@it .
+
+### Individuals
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/td> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "TD" ;
+    foaf:name "Digital Transformation Team"@en,
+        "Team per la Trasformazione Digitale"@it .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+### Annotations
+
+<https://w3id.org/italia/schemas/richiesta-pdda1/latest/richiesta-pdda1.oas3.yaml> a dcatapit:Dataset,
+        dcatapit:Distribution ;
+    rdfs:label "Consultazione Richiesta Documento PDDA1 API"@it ;
+    rdfs:comment "Servizio di notifica"@it ;
+    owl:versionInfo "Versione 0.1"@it ;
+    admsapit:acronym "inail" ;
+    admsapit:hasKeyClass INAILPDDA1:RichiestaDocumentoPDDA1 ;
+    admsapit:prefix "INAILPDDA1"^^xsd:string ;
+    admsapit:status "catalogued",
+        "published" ;
+    admsapit:target "Cittadini"@it,
+        "Imprese"@it,
+        "Pubbliche Amministrazioni"@it ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/blob/main/assets/schemas/richiesta-pdda1/latest> ;
+    dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+    dcat:distribution <https://w3id.org/italia/schemas/richiesta-pdda1/latest/richiesta-pdda1.oas3.yaml> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/richiesta-pdda1/latest/richiesta-pdda1.oas3.yaml> ;
+    dcat:keyword "abroad"@en,
+        "assicurazione"@it,
+        "document"@en,
+        "documento"@it,
+        "estero"@it,
+        "infortunio"@it,
+        "insurance"@en,
+        "malattia professionale"@it,
+        "occupational disease"@en,
+        "occupational injury"@en,
+        "PD DA1"@it ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/work-accident/onto/proc6_pdda1> ;
+    dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:description "Il servizio viene invocato per ottenere le informazioni sul modulo di richiesta per il PD DA1 che il datore di lavoro, il lavoratore autonomo o un incaricato per conto del datore effettua. Il PD DA1 può essere altresì richiesto dalla persona, titolare di una rendita INAIL derivante da infortunio sul lavoro o malattia professionale, che intenda trasferirsi all’estero anche se non più in attività lavorativa. La richiesta è effettuata accedendo al sito istituzionale, previa abilitazione, oppure inviando il modulo compilato, tramite PEC, alla Sede INAIL competente per territorio. " ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dct:identifier <https://w3id.org/italia/schemas/richiesta-pdda1> ;
+    dct:issued "2024-02-13"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2024-02-13"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:title "Consultazione Richiesta Documento PDDA1 API"@it .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

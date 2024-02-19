@@ -1,0 +1,119 @@
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAILService: <https://w3id.org/italia/work-accident/onto/adm_serv/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/italia/work-accident/onto/adm_serv> a owl:Ontology ;
+    foaf:name "Ontologia INAIL relativa a Infortuni e Malattie Professionali" .
+
+### Classes
+
+INAILService:InabilitaTemporaneaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:dataAperturaInabilitaTemporanea ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataDefinizioneInabilitaTemporanea ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataFineInabilitaTemporanea ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataInizioInabilitaTemporanea ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:idInabilitaTemporanea ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:inabilitaCausataDaEvento ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:inabilitaRelativaATipoTrattazione ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:inabilitaRiferitaASoggetto ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:numeroGiorniInabilitaTemporanea ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:haAvutoInabilita ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILService:indennizzoGiornalieroHaInabilita ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Inabilità temporanea INAIL"@it,
+        "INAIL temporary disability"@en ;
+    rdfs:comment "E' l'incapacità di svolgere l'attività lavorativa per un periodo di tempo limitato. Può essere causata da un infortunio sul lavoro o, in qualche caso, da una malattia professionale."@it .
+
+### Individuals
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/td> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "TD" ;
+    foaf:name "Digital Transformation Team"@en,
+        "Team per la Trasformazione Digitale"@it .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+### Annotations
+
+<https://w3id.org/italia/schemas/inabilita-temporanea/latest/inabilita-temporanea.oas3.yaml> a dcatapit:Dataset,
+        dcatapit:Distribution ;
+    rdfs:label "Consultazione Inabilità Temporanea API"@it ;
+    rdfs:comment "Servizio di notifica"@it ;
+    owl:versionInfo "Versione 0.2"@it ;
+    admsapit:acronym "inail" ;
+    admsapit:hasKeyClass INAILService:InabilitaTemporaneaINAIL ;
+    admsapit:prefix "INAILService"^^xsd:string ;
+    admsapit:status "catalogued",
+        "published" ;
+    admsapit:target "Cittadini"@it,
+        "Imprese"@it,
+        "Pubbliche Amministrazioni"@it ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/blob/main/assets/schemas/inabilita-temporanea/latest> ;
+    dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+    dcat:distribution <https://w3id.org/italia/schemas/inabilita-temporanea/latest/inabilita-temporanea.oas3.yaml> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/inabilita-temporanea/latest/inabilita-temporanea.oas3.yaml> ;
+    dcat:keyword "Evento Lesivo"@it,
+        "Gestione Assicurativa"@it,
+        "Infortunio"@it,
+        "Insurance Management"@en,
+        "Malattia Professionale"@it,
+        "Occupational Disease"@en,
+        "Occupational Injury"@en,
+        "Work Accident"@en ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/work-accident/onto/adm_serv> ;
+    dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:description "Il servizio viene invocato per ottenere le informazioni sull'inabilità temporanea, cioè l'incapacità di svolgere per un periodo di tempo limitato la propria attività lavorativa. Può essere causata da un infortunio sul lavoro o, in qualche caso, da una malattia professionale. " ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dct:identifier <https://w3id.org/italia/schemas/inabilita-temporanea> ;
+    dct:issued "2024-02-13"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2024-02-13"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:title "Consultazione Inabilità Temporanea API"@it .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

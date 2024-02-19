@@ -1,0 +1,163 @@
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAILService: <https://w3id.org/italia/work-accident/onto/adm_serv/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/italia/work-accident/onto/adm_serv> a owl:Ontology ;
+    foaf:name "Ontologia INAIL relativa a Infortuni e Malattie Professionali" .
+
+### Classes
+
+INAILService:MalattiaProfessionale a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILService:MalattiaProfessionaleConPrognosi
+                    INAILService:MalattiaProfessionaleSenzaPrognosi ) ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:dataRiferimentoMalattiaProfessionale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:esitoRiconoscimentoMalattiaProfessionale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:gradoDiInabilitaAssuntoMalattiaProfessionale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:gradoDiInabilitaAttualeMalattiaProfessionale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:idMalattiaProfessionale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:importoMalattiaProfessionale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:malattiaProfessionaleHaClassificazioneInternazionaleDenunciata ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:malattiaProfessionaleHaClassificazioneInternazionaleRiconosciuta ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:malattiaProfessionaleHaDefinizioneAmministrativa ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:malattiaProfessionaleHaGradoDiInabilitaAssunto ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:malattiaProfessionaleHaGradoDiInabilitaAttuale ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:malattiaProfessionaleHaSettoreCorrelato ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:malattiaProfessionaleHaSubSettoreCorrelato ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:malattiaProfessionaleHaTipoMalattia ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:malattiaProfessionaleHaTipoMalattiaDenunciato ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:malattiaProfessionaleHaTipoMalattiaFinale ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:malattiaProfessionalehaTipoTecnopatia ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:malattiaProfessionalehaTipoTecnopatiaDenunciato ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:malattiaProfessionalehaTipoTecnopatiaFinale ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:malattiaProfessionaleRelativaATecnopatico ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:numeroGiorniIndennizzoMalattiaProfessionale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tabellata ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tipoDecisioneIstruttoriaAmministrativaMalattiaProfessionale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:tipoDecisioneIstruttoriaSanitariaMalattiaProfessionale ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:label "Malattia professionale"@it,
+        "Occupational disease"@en ;
+    rdfs:comment "La malattia professionale è una patologia la cui causa agisce lentamente e progressivamente sull'organismo (causa diluita e non causa violenta). La stessa causa deve essere diretta ed efficiente, cioè in grado di produrre l'infermità in modo esclusivo o prevalente. Il Testo Unico (d.P.R. 1124/1965), infatti, fa riferimento a malattie contratte nell'esercizio e a causa delle lavorazioni rischiose. È ammesso il concorso di cause extraprofessionali, purché non interrompano il nesso causale in quanto capaci di produrre da sole l'infermità. Per le malattie professionali, quindi, non basta l'occasione di lavoro - cioè un rapporto anche mediato o indiretto con il rischio lavorativo, come per gli infortuni - ma deve esistere un rapporto causale o concausale diretto tra il rischio professionale e la malattia. Il rischio può essere provocato dalla lavorazione che l'assicurato svolge oppure dall'ambiente in cui la lavorazione stessa si svolge (cosiddetto \"rischio ambientale”). Si distinguono in tabellate e non tabellate. Sono tabellate se: a) indicate nelle due tabelle relative all'industria e all'agricoltura;  b) provocate da lavorazioni indicate nelle stesse tabelle; c) denunciate entro il periodo dalla cessazione dell'attività rischiosa fissato nelle tabelle (\"periodo massimo di indennizzabilità”). Nell'ambito del \"sistema tabellare” il lavoratore è sollevato dall'onere di dimostrare l'origine professionale della malattia. Infatti, una volta che abbia provato l'adibizione a lavorazione tabellata (o comunque l'esposizione ad un rischio ambientale provocato da quella lavorazione e l'esistenza della malattia anch'essa tabellata e abbia effettuato la denuncia nel termine massimo di indennizzabilità, si presume per legge che quella malattia sia di origine professionale (cosiddetta \"presunzione legale d'origine”), superabile soltanto con la rigorosissima prova, a carico dell'Inail, che la malattia è stata determinata da cause extraprofessionali e non dal lavoro. Le tabelle sono aggiornate periodicamente. Con il d.m. del 9 aprile 2008 sono state approvate le nuove tabelle delle malattie professionali dell'industria e dell'agricoltura. Con sentenza n. 179/1988 La Corte Costituzionale ha introdotto il cosiddetto \"sistema misto” prevede la possibilità per il lavoratore di dimostrare che, pur non ricorrendo le tre condizioni previste nelle tabelle, la malattia è comunque di origine professionale. "@it .
+
+### Individuals
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/td> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "TD" ;
+    foaf:name "Digital Transformation Team"@en,
+        "Team per la Trasformazione Digitale"@it .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+### Annotations
+
+<https://w3id.org/italia/schemas/malattia-professionale/latest/malattia-professionale.oas3.yaml> a dcatapit:Dataset,
+        dcatapit:Distribution ;
+    rdfs:label "Consultazione Malattia Professionale API"@it ;
+    rdfs:comment "Servizio di notifica"@it ;
+    owl:versionInfo "Versione 0.2"@it ;
+    admsapit:acronym "inail" ;
+    admsapit:hasKeyClass INAILService:MalattiaProfessionale ;
+    admsapit:prefix "INAILService"^^xsd:string ;
+    admsapit:status "catalogued",
+        "published" ;
+    admsapit:target "Cittadini"@it,
+        "Imprese"@it,
+        "Pubbliche Amministrazioni"@it ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/blob/main/assets/schemas/malattia-professionale/latest> ;
+    dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+    dcat:distribution <https://w3id.org/italia/schemas/malattia-professionale/latest/malattia-professionale.oas3.yaml> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/malattia-professionale/latest/malattia-professionale.oas3.yaml> ;
+    dcat:keyword "Evento Lesivo"@it,
+        "Gestione Assicurativa"@it,
+        "Infortunio"@it,
+        "Insurance Management"@en,
+        "Malattia Professionale"@it,
+        "Occupational Disease"@en,
+        "Occupational Injury"@en,
+        "Work Accident"@en ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/work-accident/onto/adm_serv> ;
+    dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:description "Il servizio viene invocato per ottenere le informazioni sulla malattia professionale, una patologia la cui causa agisce lentamente e progressivamente sull'organismo (causa diluita e non causa violenta). La stessa causa deve essere diretta ed efficiente, cioè in grado di produrre l'infermità in modo esclusivo o prevalente. " ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dct:identifier <https://w3id.org/italia/schemas/malattia-professionale> ;
+    dct:issued "2024-02-13"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2024-02-13"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:title "Consultazione Malattia Professionale API"@it .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

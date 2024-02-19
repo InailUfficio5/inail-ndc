@@ -1,0 +1,95 @@
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAILService: <https://w3id.org/italia/work-accident/onto/adm_serv/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/italia/work-accident/onto/adm_serv> a owl:Ontology ;
+    foaf:name "Ontologia INAIL relativa a Infortuni e Malattie Professionali" .
+
+### Classes
+
+INAILService:PrestazioneEconomicaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILService:idPrestazioneEconomica ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:importoPrestazione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILService:prestazioneRelativaAEvento ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL economic benefit"@en,
+        "Prestazione economica INAIL"@it ;
+    rdfs:comment "E' Ia somma di danaro riconosciuta ai lavoratori che subiscono un infortunio sul lavoro o contraggono una malattia professionale (tecnopatici) o, in caso di morte, ai loro superstiti. Le prestazioni economiche sono finalizzate a indennizzare il danno derivante dall'evento lesivo e spettano, di norma, anche se il datore di lavoro non ha versato regolarmente il premio assicurativo (principio dell'automaticità delle prestazioni). Sono esclusi soltanto i lavoratori autonomi, quali ad esempio gli artigiani e i coltivatori diretti, fino alla regolarizzazione del quinquennio precedente, nonché i lavoratori assicurati per il lavoro in ambito domestico (legge  493/1999: cosiddette/i casalinghe/i), la cui tutela, in caso di irregolarità contributiva, decorre soltanto dal primo giorno successivo alla regolarizzazione."@it .
+
+### Individuals
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/td> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "TD" ;
+    foaf:name "Digital Transformation Team"@en,
+        "Team per la Trasformazione Digitale"@it .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+### Annotations
+
+<https://w3id.org/italia/schemas/prestazione-economica/latest/prestazione-economica.oas3.yaml> a dcatapit:Dataset,
+        dcatapit:Distribution ;
+    rdfs:label "Consultazione Prestazione Economica API"@it ;
+    rdfs:comment "Servizio di notifica"@it ;
+    owl:versionInfo "Versione 0.2"@it ;
+    admsapit:acronym "inail" ;
+    admsapit:hasKeyClass INAILService:PrestazioneEconomicaINAIL ;
+    admsapit:prefix "INAILService"^^xsd:string ;
+    admsapit:status "catalogued",
+        "published" ;
+    admsapit:target "Cittadini"@it,
+        "Imprese"@it,
+        "Pubbliche Amministrazioni"@it ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/blob/main/assets/schemas/prestazione-economica/latest> ;
+    dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+    dcat:distribution <https://w3id.org/italia/schemas/prestazione-economica/latest/prestazione-economica.oas3.yaml> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/prestazione-economica/latest/prestazione-economica.oas3.yaml> ;
+    dcat:keyword "Evento Lesivo"@it,
+        "Gestione Assicurativa"@it,
+        "Infortunio"@it,
+        "Insurance Management"@en,
+        "Malattia Professionale"@it,
+        "Occupational Disease"@en,
+        "Occupational Injury"@en,
+        "Work Accident"@en ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/work-accident/onto/adm_serv> ;
+    dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:description "Il servizio viene invocato per ottenere le informazioni sulla prestazione economica, cioè la somma di danaro riconosciuta ai lavoratori che subiscono un infortunio sul lavoro o contraggono una malattia professionale (tecnopatici) o, in caso di morte, ai loro superstiti." ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dct:identifier <https://w3id.org/italia/schemas/prestazione-economica> ;
+    dct:issued "2024-02-13"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2024-02-13"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:title "Consultazione Prestazione Economica API"@it .
+
+### Serialized using the ttlser deterministic serializer v1.2.0
