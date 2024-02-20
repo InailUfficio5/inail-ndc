@@ -129,8 +129,6 @@ INAILService:MalattiaProfessionale a owl:Class ;
     admsapit:acronym "inail" ;
     admsapit:hasKeyClass INAILService:MalattiaProfessionale ;
     admsapit:prefix "INAILService"^^xsd:string ;
-    admsapit:status "catalogued",
-        "published" ;
     admsapit:target "Cittadini"@it,
         "Imprese"@it,
         "Pubbliche Amministrazioni"@it ;
@@ -150,7 +148,7 @@ INAILService:MalattiaProfessionale a owl:Class ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
     dct:conformsTo <https://w3id.org/italia/work-accident/onto/adm_serv> ;
     dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
-    dct:description "Il servizio viene invocato per ottenere le informazioni sulla malattia professionale, una patologia la cui causa agisce lentamente e progressivamente sull'organismo (causa diluita e non causa violenta). La stessa causa deve essere diretta ed efficiente, cioè in grado di produrre l'infermità in modo esclusivo o prevalente. " ;
+    dct:description "Lo schema dati del servizio Consultazione Malattia Professionale presenta le informazioni scambiate per ottenere le informazioni sulla malattia professionale, una patologia la cui causa agisce lentamente e progressivamente sull'organismo (causa diluita e non causa violenta). La stessa causa deve essere diretta ed efficiente, cioè in grado di produrre l'infermità in modo esclusivo o prevalente. " ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dct:identifier <https://w3id.org/italia/schemas/malattia-professionale> ;
     dct:issued "2024-02-13"^^xsd:date ;

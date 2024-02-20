@@ -52,8 +52,6 @@ INAILCore:DenunciaDiCessazioneINAIL a owl:Class ;
     admsapit:acronym "inail" ;
     admsapit:hasKeyClass INAILCore:DenunciaDiCessazioneINAIL ;
     admsapit:prefix "INAILCore"^^xsd:string ;
-    admsapit:status "catalogued",
-        "published" ;
     admsapit:target "Cittadini"@it,
         "Imprese"@it,
         "Pubbliche Amministrazioni"@it ;
@@ -79,7 +77,7 @@ INAILCore:DenunciaDiCessazioneINAIL a owl:Class ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
     dct:conformsTo <https://w3id.org/italia/work-accident/onto/core> ;
     dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
-    dct:description "Il servizio viene invocato per ottenere le informazioni sulla denuncia di cessazione della lavorazione assicurata che i soggetti assicuranti devono presentare all'INAIL, tramite il servizio telematico ComUnica per le Imprese o, nel caso di polizze speciali e PAN, per via telematica tramite il portale Inail. " ;
+    dct:description "Lo schema dati del servizio Consultazione Denuncia Di Cessazione presenta le informazioni scambiate per ottenere le informazioni sulla denuncia di cessazione della lavorazione assicurata che i soggetti assicuranti devono presentare all'INAIL, tramite il servizio telematico ComUnica per le Imprese o, nel caso di polizze speciali e PAN, per via telematica tramite il portale Inail. " ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dct:identifier <https://w3id.org/italia/schemas/denuncia-cessazione> ;
     dct:issued "2024-02-13"^^xsd:date ;

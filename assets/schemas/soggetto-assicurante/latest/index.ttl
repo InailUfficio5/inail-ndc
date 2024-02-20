@@ -97,14 +97,12 @@ INAILCore:SoggettoAssicuranteINAIL a owl:Class ;
 
 <https://w3id.org/italia/schemas/soggetto-assicurante/latest/soggetto-assicurante.oas3.yaml> a dcatapit:Dataset,
         dcatapit:Distribution ;
-    rdfs:label "Consultazione Soggetto Assicurante INAIL API"@it ;
+    rdfs:label "Consultazione Soggetto Assicurante API"@it ;
     rdfs:comment "Servizio di notifica"@it ;
     owl:versionInfo "Versione 0.1"@it ;
     admsapit:acronym "inail" ;
     admsapit:hasKeyClass INAILCore:SoggettoAssicuranteINAIL ;
     admsapit:prefix "INAILCore"^^xsd:string ;
-    admsapit:status "catalogued",
-        "published" ;
     admsapit:target "Cittadini"@it,
         "Imprese"@it,
         "Pubbliche Amministrazioni"@it ;
@@ -130,7 +128,7 @@ INAILCore:SoggettoAssicuranteINAIL a owl:Class ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
     dct:conformsTo <https://w3id.org/italia/work-accident/onto/core> ;
     dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
-    dct:description "Il servizio viene invocato per ottenere le informazioni sul soggetto di diritto (persona fisica o persona giuridica), cioè il titolare di un'attività lavorativa per la quale è obbligatoria l'assicurazione presso l'INAIL e in capo al quale la legge pone l'obbligo di effettuare le denunce obbligatorie e di pagare il premio assicurativo. " ;
+    dct:description "Lo schema dati del servizio Consultazione Soggetto Assicurante presenta le informazioni scambiate per ottenere le informazioni sul soggetto di diritto (persona fisica o persona giuridica), cioè il titolare di un'attività lavorativa per la quale è obbligatoria l'assicurazione presso l'INAIL e in capo al quale la legge pone l'obbligo di effettuare le denunce obbligatorie e di pagare il premio assicurativo. " ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dct:identifier <https://w3id.org/italia/schemas/soggetto-assicurante> ;
     dct:issued "2024-02-13"^^xsd:date ;

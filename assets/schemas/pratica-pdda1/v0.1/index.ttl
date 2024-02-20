@@ -67,8 +67,6 @@ INAILPDDA1:PraticaPDDA1 a owl:Class ;
     admsapit:acronym "inail" ;
     admsapit:hasKeyClass INAILPDDA1:PraticaPDDA1 ;
     admsapit:prefix "INAILPDDA1"^^xsd:string ;
-    admsapit:status "catalogued",
-        "published" ;
     admsapit:target "Cittadini"@it,
         "Imprese"@it,
         "Pubbliche Amministrazioni"@it ;
@@ -91,7 +89,7 @@ INAILPDDA1:PraticaPDDA1 a owl:Class ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
     dct:conformsTo <https://w3id.org/italia/work-accident/onto/proc6_pdda1> ;
     dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
-    dct:description "Il servizio viene invocato per ottenere le informazioni sulla  pratica relativa alla richiesta del documento PD DA1 elaborata dalla Sede INAIL competente per territorio. " ;
+    dct:description "Lo schema dati del servizio Consultazione Pratica PDDA1 presenta le informazioni scambiate per ottenere le informazioni sulla  pratica relativa alla richiesta del documento PD DA1 elaborata dalla Sede INAIL competente per territorio. " ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dct:identifier <https://w3id.org/italia/schemas/pratica-pdda1> ;
     dct:issued "2024-02-13"^^xsd:date ;

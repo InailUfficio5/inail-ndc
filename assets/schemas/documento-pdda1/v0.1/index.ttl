@@ -76,8 +76,6 @@ INAILPDDA1:DocumentoPDDA1 a owl:Class ;
     admsapit:acronym "inail" ;
     admsapit:hasKeyClass INAILPDDA1:DocumentoPDDA1 ;
     admsapit:prefix "INAILPDDA1"^^xsd:string ;
-    admsapit:status "catalogued",
-        "published" ;
     admsapit:target "Cittadini"@it,
         "Imprese"@it,
         "Pubbliche Amministrazioni"@it ;
@@ -100,7 +98,7 @@ INAILPDDA1:DocumentoPDDA1 a owl:Class ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
     dct:conformsTo <https://w3id.org/italia/work-accident/onto/proc6_pdda1> ;
     dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
-    dct:description "Il servizio viene invocato per ottenere le informazioni sul PD DA1, il Documento Portabile (PD), che dà diritto alla copertura sanitaria in caso di infortunio sul lavoro o di malattia professionale ed è destinato alla persona che si sposta, risiede o soggiorna in uno Stato membro dell'Unione Europea diverso da quello in cui è assicurata contro gli infortuni sul lavoro e le malattie professionali. " ;
+    dct:description "Lo schema dati del servizio Consultazione Documento PDDA1 presenta le informazioni scambiate per ottenere le informazioni sul PD DA1, il Documento Portabile (PD), che dà diritto alla copertura sanitaria in caso di infortunio sul lavoro o di malattia professionale ed è destinato alla persona che si sposta, risiede o soggiorna in uno Stato membro dell'Unione Europea diverso da quello in cui è assicurata contro gli infortuni sul lavoro e le malattie professionali. " ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dct:identifier <https://w3id.org/italia/schemas/documento-pdda1> ;
     dct:issued "2024-02-13"^^xsd:date ;

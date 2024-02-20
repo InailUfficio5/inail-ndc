@@ -81,8 +81,6 @@ INAILPDDA1:RichiestaDocumentoPDDA1 a owl:Class ;
     admsapit:acronym "inail" ;
     admsapit:hasKeyClass INAILPDDA1:RichiestaDocumentoPDDA1 ;
     admsapit:prefix "INAILPDDA1"^^xsd:string ;
-    admsapit:status "catalogued",
-        "published" ;
     admsapit:target "Cittadini"@it,
         "Imprese"@it,
         "Pubbliche Amministrazioni"@it ;
@@ -105,7 +103,7 @@ INAILPDDA1:RichiestaDocumentoPDDA1 a owl:Class ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
     dct:conformsTo <https://w3id.org/italia/work-accident/onto/proc6_pdda1> ;
     dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
-    dct:description "Il servizio viene invocato per ottenere le informazioni sul modulo di richiesta per il PD DA1 che il datore di lavoro, il lavoratore autonomo o un incaricato per conto del datore effettua. Il PD DA1 può essere altresì richiesto dalla persona, titolare di una rendita INAIL derivante da infortunio sul lavoro o malattia professionale, che intenda trasferirsi all’estero anche se non più in attività lavorativa. La richiesta è effettuata accedendo al sito istituzionale, previa abilitazione, oppure inviando il modulo compilato, tramite PEC, alla Sede INAIL competente per territorio. " ;
+    dct:description "Lo schema dati del servizio Consultazione Richiesta Documento PDDA1 presenta le informazioni scambiate per ottenere le informazioni sul modulo di richiesta per il PD DA1 che il datore di lavoro, il lavoratore autonomo o un incaricato per conto del datore effettua. Il PD DA1 può essere altresì richiesto dalla persona, titolare di una rendita INAIL derivante da infortunio sul lavoro o malattia professionale, che intenda trasferirsi all’estero anche se non più in attività lavorativa. La richiesta è effettuata accedendo al sito istituzionale, previa abilitazione, oppure inviando il modulo compilato, tramite PEC, alla Sede INAIL competente per territorio. " ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dct:identifier <https://w3id.org/italia/schemas/richiesta-pdda1> ;
     dct:issued "2024-02-13"^^xsd:date ;

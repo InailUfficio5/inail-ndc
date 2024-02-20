@@ -67,8 +67,6 @@ INAILService:TipoIndennizzoINAIL a owl:Class ;
     admsapit:acronym "inail" ;
     admsapit:hasKeyClass INAILService:TipoIndennizzoINAIL ;
     admsapit:prefix "INAILService"^^xsd:string ;
-    admsapit:status "catalogued",
-        "published" ;
     admsapit:target "Cittadini"@it,
         "Imprese"@it,
         "Pubbliche Amministrazioni"@it ;
@@ -88,7 +86,7 @@ INAILService:TipoIndennizzoINAIL a owl:Class ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
     dct:conformsTo <https://w3id.org/italia/work-accident/onto/adm_serv> ;
     dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
-    dct:description "Il servizio viene invocato per ottenere le informazioni sul tipo di indennizzo erogato che viene stabilito in base al grado di menomazione dell'integrità psicofisica (v. Tabella menomazioni approvata con d.m. 12 luglio 2000)." ;
+    dct:description "Lo schema dati del servizio Consultazione Tipo Indennizzo presenta le informazioni scambiate per ottenere le informazioni sul tipo di indennizzo erogato che viene stabilito in base al grado di menomazione dell'integrità psicofisica (v. Tabella menomazioni approvata con d.m. 12 luglio 2000)." ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dct:identifier <https://w3id.org/italia/schemas/tipo-indennizzo> ;
     dct:issued "2024-02-13"^^xsd:date ;

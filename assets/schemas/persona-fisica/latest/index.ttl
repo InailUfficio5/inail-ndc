@@ -68,8 +68,6 @@ INAILCore:PersonaFisica a owl:Class ;
     admsapit:acronym "inail" ;
     admsapit:hasKeyClass INAILCore:PersonaFisica ;
     admsapit:prefix "INAILCore"^^xsd:string ;
-    admsapit:status "catalogued",
-        "published" ;
     admsapit:target "Cittadini"@it,
         "Imprese"@it,
         "Pubbliche Amministrazioni"@it ;
@@ -95,7 +93,7 @@ INAILCore:PersonaFisica a owl:Class ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
     dct:conformsTo INAILCore: ;
     dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
-    dct:description "Il servizio viene invocato per ottenere le informazioni sulla persona fisica, cioè ogni essere umano nato vivo, anche se non vitale, quindi anche se morto subito dopo la nascita. Con la nascita la persona acquisice la capacità giuridica, ossia è soggetto di diritto, centro di imputazione di situazioni giuridiche e di diritti e doveri. Con il raggiungimento della maggiore età (18 anni nell'ordinamento italiano) la persona fisica acquisisce la capacità di agire, cioè la possibilità di porre in essere atti giuridicamente rilevanti. " ;
+    dct:description "Lo schema dati del servizio Consultazione Persona Fisica presenta le informazioni scambiate per ottenere le informazioni sulla persona fisica, cioè ogni essere umano nato vivo, anche se non vitale, quindi anche se morto subito dopo la nascita. Con la nascita la persona acquisice la capacità giuridica, ossia è soggetto di diritto, centro di imputazione di situazioni giuridiche e di diritti e doveri. Con il raggiungimento della maggiore età (18 anni nell'ordinamento italiano) la persona fisica acquisisce la capacità di agire, cioè la possibilità di porre in essere atti giuridicamente rilevanti. " ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dct:identifier <https://w3id.org/italia/schemas/persona-fisica> ;
     dct:issued "2024-02-13"^^xsd:date ;

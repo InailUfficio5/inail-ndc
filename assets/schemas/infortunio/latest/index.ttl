@@ -135,8 +135,6 @@ INAILService:InfortunioSulLavoro a owl:Class ;
     admsapit:acronym "inail" ;
     admsapit:hasKeyClass INAILService:InfortunioSulLavoro ;
     admsapit:prefix "INAILService"^^xsd:string ;
-    admsapit:status "catalogued",
-        "published" ;
     admsapit:target "Cittadini"@it,
         "Imprese"@it,
         "Pubbliche Amministrazioni"@it ;
@@ -156,7 +154,7 @@ INAILService:InfortunioSulLavoro a owl:Class ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
     dct:conformsTo <https://w3id.org/italia/work-accident/onto/adm_serv> ;
     dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
-    dct:description "Il servizio viene invocato per ottenere le informazioni sull'infortunio sul lavoro, cioè ogni lesione originata, in occasione di lavoro, da causa violenta che determini la morte del lavoratore o postumi, temporanei o permanenti, che incidano sulla capacità lavorativa generica o sulla integrità psicofisica. " ;
+    dct:description "Lo schema dati del servizio Consultazione Infortunio sul lavoro presenta le informazioni scambiate per ottenere le informazioni sull'infortunio sul lavoro, cioè ogni lesione originata, in occasione di lavoro, da causa violenta che determini la morte del lavoratore o postumi, temporanei o permanenti, che incidano sulla capacità lavorativa generica o sulla integrità psicofisica. " ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dct:identifier <https://w3id.org/italia/schemas/infortunio> ;
     dct:issued "2024-02-13"^^xsd:date ;

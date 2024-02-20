@@ -76,8 +76,6 @@ INAILService:EsitoDefinizioneINAIL a owl:Class ;
     admsapit:acronym "inail" ;
     admsapit:hasKeyClass INAILService:EsitoDefinizioneINAIL ;
     admsapit:prefix "INAILService"^^xsd:string ;
-    admsapit:status "catalogued",
-        "published" ;
     admsapit:target "Cittadini"@it,
         "Imprese"@it,
         "Pubbliche Amministrazioni"@it ;
@@ -97,7 +95,7 @@ INAILService:EsitoDefinizioneINAIL a owl:Class ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
     dct:conformsTo <https://w3id.org/italia/work-accident/onto/adm_serv> ;
     dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
-    dct:description "Il servizio viene invocato per ottenere le informazioni sull'esito che indica la definizione ovvero la situazione amministrativa del caso. " ;
+    dct:description "Lo schema dati del servizio Consultazione Esito Definizione presenta le informazioni scambiate per ottenere le informazioni sull'esito che indica la definizione ovvero la situazione amministrativa del caso. " ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dct:identifier <https://w3id.org/italia/schemas/esito-definizione> ;
     dct:issued "2024-02-13"^^xsd:date ;
