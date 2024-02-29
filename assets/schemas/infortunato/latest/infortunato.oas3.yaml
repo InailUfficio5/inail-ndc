@@ -25,7 +25,7 @@ components:
         type: integer
         format: int64
         description:
-            https://w3id.org/italia/work-accident/onto/adm_serv/codiceSoggettoEventoLesivo.
+            https://w3id.org/italia/work-accident/onto/adm_serv/codiceSoggettoEventoLesivo
         example: 12345678
 
     Infortunato:
@@ -39,7 +39,7 @@ components:
           "@id": soggettoEventoLesivoRelativoAPersonaFisica
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/InfortunatoSulLavoro.
+          https://w3id.org/italia/work-accident/onto/adm_serv/InfortunatoSulLavoro
       required:
       - id_infortunato
       - eta_all_accadimento_infortunato

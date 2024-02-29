@@ -27,7 +27,7 @@ components:
       type: integer
       format: int64
       description:
-        https://w3id.org/italia/work-accident/onto/core/codicePAT.
+        https://w3id.org/italia/work-accident/onto/core/codicePAT
       example: 1234567
 
     PosizioneAssicurativaTerritoriale:
@@ -62,7 +62,7 @@ components:
           "@id": faRiferimentoASedeLavoro
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/core/PosizioneAssicurativaTerritoriale.
+          https://w3id.org/italia/work-accident/onto/core/PosizioneAssicurativaTerritoriale
       required:
       - codice_pat
       - numero_addetti_pat
@@ -193,7 +193,7 @@ components:
         codice_sede_lavoro: codiceSedeLavoro
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/core/SedeLavoro.
+          https://w3id.org/italia/work-accident/onto/core/SedeLavoro
       required:
       - numero_rea_sede_lavoro
       - denominazione_sede_lavoro

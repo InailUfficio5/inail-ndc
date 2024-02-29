@@ -27,7 +27,7 @@ components:
       type: integer
       format: int64
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/idPrestazioneEconomica.
+          https://w3id.org/italia/work-accident/onto/adm_serv/idPrestazioneEconomica
       example: 001234567
 
     PrestazioneEconomica:
@@ -46,7 +46,7 @@ components:
           "@id": prestazioneRelativaAEvento
       additionalProperties: true
       description:
-           https://w3id.org/italia/work-accident/onto/adm_serv/PrestazioneEconomicaINAIL.
+           https://w3id.org/italia/work-accident/onto/adm_serv/PrestazioneEconomicaINAIL
       required:
       - id_prestazione
       - importo_prestazione

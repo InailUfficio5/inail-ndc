@@ -31,7 +31,7 @@ components:
       type: integer
       format: int64
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/idRiapertura.
+          https://w3id.org/italia/work-accident/onto/adm_serv/idRiapertura
       example: 111000000
 
     Riapertura:
@@ -64,7 +64,7 @@ components:
            "@id": riaperturaRelativaAEvento
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/RiaperturaINAIL.
+          https://w3id.org/italia/work-accident/onto/adm_serv/RiaperturaINAIL
       required:
       - id_riapertura
       - data_apertura_riapertura

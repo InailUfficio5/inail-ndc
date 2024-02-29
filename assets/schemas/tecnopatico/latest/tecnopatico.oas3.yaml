@@ -39,7 +39,7 @@ components:
           "@id": soggettoEventoLesivoRelativoAPersonaFisica
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/Tecnopatico.
+          https://w3id.org/italia/work-accident/onto/adm_serv/Tecnopatico
       required:
       - id_tecnopatico
       - eta_all_accadimento_tecnopatico

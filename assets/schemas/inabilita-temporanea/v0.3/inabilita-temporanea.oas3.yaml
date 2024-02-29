@@ -33,7 +33,7 @@ components:
       type: integer
       format: int64
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/idInabilitaTemporanea.
+          https://w3id.org/italia/work-accident/onto/adm_serv/idInabilitaTemporanea
       example: 111000000
 
     InabilitaTemporanea:
@@ -62,7 +62,7 @@ components:
           "@id": inabilitaCausataDaEvento
       additionalProperties: true
       description:
-         https://w3id.org/italia/work-accident/onto/adm_serv/InabilitaTemporaneaINAIL.
+         https://w3id.org/italia/work-accident/onto/adm_serv/InabilitaTemporaneaINAIL
       required:
       - id_inabilita
       - data_inizio_inabilita

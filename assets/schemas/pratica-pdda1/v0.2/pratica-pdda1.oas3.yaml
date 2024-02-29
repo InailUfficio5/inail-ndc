@@ -46,7 +46,7 @@ components:
           "@id": praticaElaborataDaSedeINAIL
       additionalProperties: true
       description:
-         https://w3id.org/italia/work-accident/onto/proc6_pdda1/PraticaPDDA1.
+         https://w3id.org/italia/work-accident/onto/proc6_pdda1/PraticaPDDA1
       required:
       - codice_pratica_pdda1
       properties:

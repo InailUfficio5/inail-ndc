@@ -41,7 +41,7 @@ components:
         numero_giorni_pdda1: numeroGiorniPDDA1
       additionalProperties: true
       description:
-         https://w3id.org/italia/work-accident/onto/proc6_pdda1/DocumentoPDDA1.
+         https://w3id.org/italia/work-accident/onto/proc6_pdda1/DocumentoPDDA1
       required:
       - codice_documento_pdda1
       - data_documento_pdda1

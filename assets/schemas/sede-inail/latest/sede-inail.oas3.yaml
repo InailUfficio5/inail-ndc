@@ -43,7 +43,7 @@ components:
           "@id": haResponsabileUfficio
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/core/SedeINAIL.
+          https://w3id.org/italia/work-accident/onto/core/SedeINAIL
       required:
         - codice_sede_inail
         - indirizzo_sede_inail
@@ -115,7 +115,7 @@ components:
         descrizione_tipo_incarico: descrizioneTipoIncarico
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/core/ResponsabileUfficio.
+          https://w3id.org/italia/work-accident/onto/core/ResponsabileUfficio
       required:
         - matricola_responsabile
         - codice_incarico

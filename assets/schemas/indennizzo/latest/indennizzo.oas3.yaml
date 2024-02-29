@@ -23,7 +23,7 @@ components:
       type: integer
       format: int64
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/idPrestazioneEconomica.
+          https://w3id.org/italia/work-accident/onto/adm_serv/idPrestazioneEconomica
       example: 001234567
 
     Indennizzo:
@@ -45,7 +45,7 @@ components:
           "@id": indennizzoGiornalieroHaInabilita
       additionalProperties: true
       description:
-           https://w3id.org/italia/work-accident/onto/adm_serv/IndennizzoINAIL.
+           https://w3id.org/italia/work-accident/onto/adm_serv/IndennizzoINAIL
       required:
         - id_indennizzo
         - codice_indennizzo

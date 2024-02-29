@@ -22,7 +22,7 @@ components:
     IdEsitoDefinizione:
       type: string
       maxLength: 20
-      description: https://w3id.org/italia/work-accident/onto/adm_serv/codiceEsitoDefinizione.
+      description: https://w3id.org/italia/work-accident/onto/adm_serv/codiceEsitoDefinizione
       example: 'CO'
 
     EsitoDefinizione:
@@ -36,7 +36,7 @@ components:
         descrizione_classificazione_esito_definizione: descrizioneClassificazioneEsitoDefinizione
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/EsitoDefinizioneINAIL.
+          https://w3id.org/italia/work-accident/onto/adm_serv/EsitoDefinizioneINAIL
       required:
       - codice_esito_definizione
       - descrizione_esito_definizione

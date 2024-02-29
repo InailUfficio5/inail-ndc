@@ -53,7 +53,7 @@ components:
           "@id": soggettoAssicuranteHaDimensione
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL.
+          https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL
       required:
         - codice_soggetto_assicurante
         - codice_fiscale_soggetto_assicurante
@@ -177,7 +177,7 @@ components:
         descrizione_dimensione_soggetto: descrizioneDimensioneSoggettoAssicurante
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/core/DimensioneSoggettoAssicurante.
+          https://w3id.org/italia/work-accident/onto/core/DimensioneSoggettoAssicurante
       required:
       - descrizione_dimensione_soggetto
       properties:

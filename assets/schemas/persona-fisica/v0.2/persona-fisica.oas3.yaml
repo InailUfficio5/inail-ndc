@@ -40,7 +40,7 @@ components:
          "@id": personaHaCittadinanza
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/core/PersonaFisica.
+          https://w3id.org/italia/work-accident/onto/core/PersonaFisica
       required:
       - codice_fiscale_persona
       - eta_persona
@@ -93,7 +93,7 @@ components:
         unione_europea: UnioneEuropea
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/core/Cittadinanza.
+          https://w3id.org/italia/work-accident/onto/core/Cittadinanza
       required:
       - codice_belfiore_cittadinanza
       - descrizione_cittadinanza

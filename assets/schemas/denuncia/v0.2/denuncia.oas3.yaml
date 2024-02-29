@@ -27,7 +27,7 @@ components:
       type: integer
       format: int64
       description:
-        https://w3id.org/italia/work-accident/onto/core/numeroPraticaDenuncia.
+        https://w3id.org/italia/work-accident/onto/core/numeroPraticaDenuncia
       example: 1234567
 
     Denuncia:
@@ -47,7 +47,7 @@ components:
           "@id": denunciaRelativaASedeINAIL
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/core/DenunciaINAIL.
+          https://w3id.org/italia/work-accident/onto/core/DenunciaINAIL
       required:
       - numero_pratica_denuncia
       - data_denuncia

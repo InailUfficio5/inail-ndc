@@ -37,7 +37,7 @@ components:
       type: integer
       format: int64
       description:
-        https://w3id.org/italia/work-accident/onto/adm_serv/codiceCaso.
+        https://w3id.org/italia/work-accident/onto/adm_serv/codiceCaso
       example: 111000000
 
     MalattiaProfessionale:
@@ -127,7 +127,7 @@ components:
            "@id": eventoHaDecodificaIstruttoriaMorte
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/MalattiaProfessionale.
+          https://w3id.org/italia/work-accident/onto/adm_serv/MalattiaProfessionale
       required:
       - codice_caso_malattia
       - esito_riconoscimento
@@ -459,7 +459,7 @@ components:
         percentuale_inabilita: percentualeGradoDiInabilita
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/GradoDiInabilitaINAIL.
+          https://w3id.org/italia/work-accident/onto/adm_serv/GradoDiInabilitaINAIL
       required:
       - descrizione_inabilita
       - percentuale_inabilita
@@ -485,7 +485,7 @@ components:
         descrizione_tipo_settore_attivita: descrizioneTipoSettoreAttivita
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/core/SettoreAttivita.
+          https://w3id.org/italia/work-accident/onto/core/SettoreAttivita
       required:
       - codice_tipo_settore_attivita
       - descrizione_tipo_settore_attivita
@@ -509,7 +509,7 @@ components:
         tipo_gestione_assicurativa: tipoGestioneAssicurativa
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/GestioneAssicurativaINAIL.
+          https://w3id.org/italia/work-accident/onto/adm_serv/GestioneAssicurativaINAIL
       required:
       - gruppo_gestione_assicurativa
       - tipo_gestione_assicurativa
@@ -535,7 +535,7 @@ components:
         descrizione_settore_attivita: descrizioneSettoreAttivita
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/VoceDiTariffaINAIL.
+          https://w3id.org/italia/work-accident/onto/adm_serv/VoceDiTariffaINAIL
       required:
       - codice_voce_tariffa
       - descrizione_voce_tariffa
@@ -568,7 +568,7 @@ components:
         descrizione_natura_lesione: descrizioneNaturaLesione
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/NaturaLesioneINAIL.
+          https://w3id.org/italia/work-accident/onto/adm_serv/NaturaLesioneINAIL
       required:
       - descrizione_natura_lesione
       properties:
@@ -588,7 +588,7 @@ components:
         descrizione_sede_lesione: descrizioneSedeLesione
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/SedeLesioneINAIL.
+          https://w3id.org/italia/work-accident/onto/adm_serv/SedeLesioneINAIL
       required:
       - area_sede_lesione
       - macroarea_sede_lesione
@@ -620,7 +620,7 @@ components:
         descrizione_gestione_contabile_aggr: descrizioneGestioneContabileAggregata
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/GestioneContabileINAIL.
+          https://w3id.org/italia/work-accident/onto/adm_serv/GestioneContabileINAIL
       required:
       - codice_tipo_gestione_contabile
       - descrizione_tipo_gestione_contabile
@@ -660,7 +660,7 @@ components:
         limite_superiore: limiteSuperioreFasciaPeriodoMorte
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/FasciaPeriodoMorteINAIL.
+          https://w3id.org/italia/work-accident/onto/adm_serv/FasciaPeriodoMorteINAIL
       required:
       - descrizione_fascia
       - limite_inferiore
@@ -689,7 +689,7 @@ components:
         descrizione_classificazione_morte: descrizioneClassificazioneMorte
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/DefinizioneMorteINAIL.
+          https://w3id.org/italia/work-accident/onto/adm_serv/DefinizioneMorteINAIL
       required:
       - codice_definizione_morte
       - descrizione_classificazione_morte
@@ -715,7 +715,7 @@ components:
         tipo_lavoratore_qualifica_assicurativa: tipoLavoratoreQualificaAssicurativa
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/QualificaAssicurativaINAIL.
+          https://w3id.org/italia/work-accident/onto/adm_serv/QualificaAssicurativaINAIL
       required:
       - codice_qualifica_assicurativa
       - descrizione_qualifica_assicurativa
@@ -751,7 +751,7 @@ components:
         descrizione_gruppo_agente_materiale: descrizioneGruppoAgenteMatreriale
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/AgenteMaterialeINAIL.
+          https://w3id.org/italia/work-accident/onto/adm_serv/AgenteMaterialeINAIL
       required:
       - codice_agente_materiale
       - descrizione_agente_materiale
@@ -787,7 +787,7 @@ components:
         settore_classificazione_cnel: settoreClassificazioneCNEL
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/ClassificazioneContrattoCNEL.
+          https://w3id.org/italia/work-accident/onto/adm_serv/ClassificazioneContrattoCNEL
       required:
       - codice_classificazione_cnel
       - descrizione_classificazione cnel
@@ -822,7 +822,7 @@ components:
         classificazione_eta_3: classificazioneEtaFascia3
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/ClassificazioneFasciaEtaINAIL.
+          https://w3id.org/italia/work-accident/onto/adm_serv/ClassificazioneFasciaEtaINAIL
       required:
       - classificazione_eta_1
       - classificazione_eta_2
@@ -853,7 +853,7 @@ components:
         settore_cause_esterne: settoreClassificazioneCauseEsterne
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/ClassificazioneCauseEsterneINAIL.
+          https://w3id.org/italia/work-accident/onto/adm_serv/ClassificazioneCauseEsterneINAIL
       required:
       - codice_cause_esterne
       - descrizione_cause_estere
@@ -889,7 +889,7 @@ components:
         descrizione_gruppo_agente_causale: descrizioneGruppoAgenteCausale
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/AgenteCausaleINAIL.
+          https://w3id.org/italia/work-accident/onto/adm_serv/AgenteCausaleINAIL
       required:
       - codice_agente_causale
       - descrizione_agente_causale
@@ -923,7 +923,7 @@ components:
         descrizione_tipo_pratica: descrizioneTipoPratica
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/TipoPraticaINAIL.
+          https://w3id.org/italia/work-accident/onto/adm_serv/TipoPraticaINAIL
       required:
       - codice_tipo_pratica
       - descrizione_tipo_pratica
@@ -947,7 +947,7 @@ components:
         descrizione_tipo_lavoratore: descrizioneTipoLavoratore
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/TipoLavoratoreINAIL.
+          https://w3id.org/italia/work-accident/onto/adm_serv/TipoLavoratoreINAIL
       required:
       - codice_tipo_lavoratore
       - descrizione_tipo_lavoratore
@@ -981,7 +981,7 @@ components:
         descrizione_mansione_l6: descrizioneMansioneLivello6
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/MansioneINAIL.
+          https://w3id.org/italia/work-accident/onto/adm_serv/MansioneINAIL
       required:
       - codice_mansione_l1
       - descrizione_mansione_l1
@@ -1055,7 +1055,7 @@ components:
         descrizione_grado_menomazione: descrizioneGradoDiMenomazione
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/GradoDiMenomazioneINAIL.
+          https://w3id.org/italia/work-accident/onto/adm_serv/GradoDiMenomazioneINAIL
       required:
       - percentuale_grado_menomazione
       - descrizione_grado_menomazione
@@ -1079,7 +1079,7 @@ components:
         descrizione_decodifica_istruttoria_morte: descrizioneDecodificaIstruttoriaMorte
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/DecodificaIstruttoriaMorteINAIL.
+          https://w3id.org/italia/work-accident/onto/adm_serv/DecodificaIstruttoriaMorteINAIL
       required:
       - codice_decodifica_istruttoria_morte
       - descrizione_decodifica_istruttoria_morte
@@ -1104,7 +1104,7 @@ components:
         malattia_tabellata: malattiaTabellata
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/TipoTecnopatiaINAIL.
+          https://w3id.org/italia/work-accident/onto/adm_serv/TipoTecnopatiaINAIL
       required:
       - descrizione_tecnopatia
       - malattia_tabellata
@@ -1128,7 +1128,7 @@ components:
         descrizione_tipo_malattia: descrizioneTipoMalattia
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/TipoMalattiaINAIL.
+          https://w3id.org/italia/work-accident/onto/adm_serv/TipoMalattiaINAIL
       required:
       - settore_tipo_malattia
       - descrizione_tipo_malattia
@@ -1152,7 +1152,7 @@ components:
         descrizione_icdx: descrizioneICD
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/ClassificazioneInternazionaleMalattieICD.
+          https://w3id.org/italia/work-accident/onto/adm_serv/ClassificazioneInternazionaleMalattieICD
       required:
       - codice_icdx
       - descrizione_icdx

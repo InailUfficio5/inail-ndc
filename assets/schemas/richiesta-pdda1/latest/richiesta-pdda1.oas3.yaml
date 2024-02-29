@@ -49,7 +49,7 @@ components:
           "@id": richiestaHaPraticaPDDA1
       additionalProperties: true
       description:
-         https://w3id.org/italia/work-accident/onto/proc6_pdda1/RichiestaDocumentoPDDA1.
+         https://w3id.org/italia/work-accident/onto/proc6_pdda1/RichiestaDocumentoPDDA1
       required:
       - codice_richiesta_pdda1
       - data_richiesta_pdda1

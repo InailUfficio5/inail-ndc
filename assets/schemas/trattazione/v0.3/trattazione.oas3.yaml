@@ -33,7 +33,7 @@ components:
       type: integer
       format: int64
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/idTrattazione.
+          https://w3id.org/italia/work-accident/onto/adm_serv/idTrattazione
       example: 111000000
 
     Trattazione:
@@ -66,7 +66,7 @@ components:
           "@id": trattazioneRelativaAEvento
       additionalProperties: true
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/TrattazioneINAIL.
+          https://w3id.org/italia/work-accident/onto/adm_serv/TrattazioneINAIL
       required:
       - id_trattazione
       - data_inizio_trattazione
@@ -161,7 +161,7 @@ components:
         esito_decisione_istruttoria: esitoDecisioneIstruttoria
       additionalProperties: true
       description:
-         https://w3id.org/italia/work-accident/onto/adm_serv/TipoDefinizioneDecisioneIstruttoriaINAIL.
+         https://w3id.org/italia/work-accident/onto/adm_serv/TipoDefinizioneDecisioneIstruttoriaINAIL
       required:
       - codice_decisione_istruttoria
       - descrizione_decisione_istruttoria

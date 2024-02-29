@@ -21,7 +21,7 @@ components:
     IdTipoIndennizzo:
       type: string
       description:
-          https://w3id.org/italia/work-accident/onto/adm_serv/codiceTipoIndennizzo.
+          https://w3id.org/italia/work-accident/onto/adm_serv/codiceTipoIndennizzo
       example: 'APP'
       maxLength: 20
     TipoIndennizzo:
@@ -34,7 +34,7 @@ components:
           definizione_tipo_indennizzo: definizioneTipoIndennizzo
         additionalProperties: true
         description:
-            https://w3id.org/italia/work-accident/onto/adm_serv/TipoIndennizzoINAIL.
+            https://w3id.org/italia/work-accident/onto/adm_serv/TipoIndennizzoINAIL
         required:
         - codice_tipo_indennizzo
         - descrizione_tipo_indennizzo
