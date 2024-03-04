@@ -72,7 +72,7 @@ INAILPDDA1:DocumentoPDDA1 a owl:Class ;
         dcatapit:Distribution ;
     rdfs:label "Consultazione Documento PDDA1 API"@it ;
     rdfs:comment "Servizio di notifica"@it ;
-    owl:versionInfo "Versione 0.2"@it ;
+    owl:versionInfo "0.1"@it ;
     admsapit:acronym "inail" ;
     admsapit:hasKeyClass INAILPDDA1:DocumentoPDDA1 ;
     admsapit:prefix "INAILPDDA1"^^xsd:string ;

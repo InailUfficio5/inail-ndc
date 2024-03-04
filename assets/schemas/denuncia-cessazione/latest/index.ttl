@@ -48,7 +48,7 @@ INAILCore:DenunciaDiCessazioneINAIL a owl:Class ;
         dcatapit:Distribution ;
     rdfs:label "Consultazione Denuncia Di Cessazione API"@it ;
     rdfs:comment "Servizio di notifica"@it ;
-    owl:versionInfo "Versione 0.2"@it ;
+    owl:versionInfo "0.1"@it ;
     admsapit:acronym "inail" ;
     admsapit:hasKeyClass INAILCore:DenunciaDiCessazioneINAIL ;
     admsapit:prefix "INAILCore"^^xsd:string ;

@@ -63,7 +63,7 @@ INAILService:TipoIndennizzoINAIL a owl:Class ;
         dcatapit:Distribution ;
     rdfs:label "Consultazione Tipo Indennizzo API"@it ;
     rdfs:comment "Servizio di notifica"@it ;
-    owl:versionInfo "Versione 0.3"@it ;
+    owl:versionInfo "0.3"@it ;
     admsapit:acronym "inail" ;
     admsapit:hasKeyClass INAILService:TipoIndennizzoINAIL ;
     admsapit:prefix "INAILService"^^xsd:string ;

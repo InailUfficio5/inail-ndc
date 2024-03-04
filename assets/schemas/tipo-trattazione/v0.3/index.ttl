@@ -69,7 +69,7 @@ INAILService:TipoTrattazioneINAIL a owl:Class ;
         dcatapit:Distribution ;
     rdfs:label "Consultazione Tipo Trattazione API"@it ;
     rdfs:comment "Servizio di notifica"@it ;
-    owl:versionInfo "Versione 0.3"@it ;
+    owl:versionInfo "0.3"@it ;
     admsapit:acronym "inail" ;
     admsapit:hasKeyClass INAILService:TipoTrattazioneINAIL ;
     admsapit:prefix "INAILService"^^xsd:string ;
