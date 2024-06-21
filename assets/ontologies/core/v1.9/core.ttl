@@ -1360,10 +1360,10 @@ INAILCore:tipoStrutturaINAIL a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "tipo Struttura INAIL"@it ;
     rdfs:domain INAILCore:StrutturaINAIL ;
-    rdfs:comment """Indica di che tipo di Struttura Territoriale INAIL si tratta. I casi possibili sono:\r\r
-D = Strutture Centrali\r\r
-R = Direzioni Regionali\r\r
-S = Sedi\r\r
+    rdfs:comment """Indica di che tipo di Struttura Territoriale INAIL si tratta. I casi possibili sono:\r\r\r
+D = Strutture Centrali\r\r\r
+R = Direzioni Regionali\r\r\r
+S = Sedi\r\r\r
 C = COT"""@it .
 
 INAILCore:UnioneEuropea a owl:DatatypeProperty ;
@@ -1450,23 +1450,23 @@ INAILCore:Armatore a owl:Class ;
     rdfs:label "Armatore"@it,
         "Person who Fitts a Ship Out"@en ;
     rdfs:subClassOf INAILCore:SoggettoAssicuranteINAIL ;
-    rdfs:comment """L’armatore è colui che assume l’esercizio della nave divenendo di conseguenza titolare di tutti i rapporti giuridici che sono connessi a tale esercizio. Ai fini del regolamento per il collocamento della gente di mare (Art. 2, comma 1, lettera b), DPR 231/2006) per armatore si intende la persona fisica o il soggetto giuridico che esercita l'impresa di navigazione ai sensi dell'articolo 265 del CdN.\r\r
+    rdfs:comment """L’armatore è colui che assume l’esercizio della nave divenendo di conseguenza titolare di tutti i rapporti giuridici che sono connessi a tale esercizio. Ai fini del regolamento per il collocamento della gente di mare (Art. 2, comma 1, lettera b), DPR 231/2006) per armatore si intende la persona fisica o il soggetto giuridico che esercita l'impresa di navigazione ai sensi dell'articolo 265 del CdN.\r\r\r
 Elemento essenziale che caratterizza lo status di armatore è la disponibilità della nave sulla base di un rapporto di natura reale (uso, usufrutto, proprietà ecc.) o di natura obbligatoria (comodato, locazione, ecc.). L'armatore può essere una persona fisica, una persona giuridica, un’associazione o una società di armamento."""@it .
 
 INAILCore:ArmatoreResidenteAllEstero a owl:Class ;
     owl:equivalentClass [ a owl:Restriction ;
             owl:onProperty INAILCore:armatoreHaIntermediario ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Armatore\r\r
-Residente\r\r
+    rdfs:label """Armatore\r\r\r
+Residente\r\r\r
 Estero"""@it,
         "Person who Prepare a Ship to Sail and Resident Abroad"@en ;
     owl:disjointWith INAILCore:ArmatoreResidenteInItalia ;
     rdfs:comment "L’armatore straniero – persona fisica residente all’estero o soggetto diverso da persona fisica che abbia sede all’estero – può armare navi battenti bandiera italiana, per il cui equipaggio vige l’obbligo assicurativo ed ha, altresì, facoltà di richiedere all’Inail l’assicurazione dell’equipaggio di una nave battente bandiera estera, ossia iscritta presso compartimenti esteri, purché siano soddisfatti i requisiti di iscrizione ai Registri e di composizione dell’equipaggio previsti, cioè le navi siano iscritte presso gli appositi Registri Speciali tenuti presso le Direzioni Marittime, ovvero presso la Sezione terza del Registro Internazionale e purché l’equipaggio sia costituito per almeno due terzi, da marittimi di cittadinanza italiana. "@it .
 
 INAILCore:ArmatoreResidenteInItalia a owl:Class ;
-    rdfs:label """Armatore\r\r
-Residente\r\r
+    rdfs:label """Armatore\r\r\r
+Residente\r\r\r
 In Italia"""@it,
         "Person who Prepare a Ship to Sail and Italian Resident"@en ;
     rdfs:comment "Un armatore italiano può armare sia navi battenti bandiera italiana (per il cui equipaggio vige l’obbligo assicurativo) che navi battenti bandiera estera (art. 291 DPR 1124/1965) purché queste ultime siano iscritte presso gli appositi Registri Speciali tenuti presso le Direzioni Marittime, ovvero presso la Sezione terza del Registro Internazionale e purché l’equipaggio sia costituito per almeno due terzi, da marittimi di cittadinanza italiana."@it .
@@ -1478,7 +1478,7 @@ INAILCore:Associazione a owl:Class ;
     rdfs:isDefinedBy "https://w3id.org/italia/controlled-vocabulary/classifications-for-organizations/legal-status/1530"^^xsd:anyURI .
 
 INAILCore:AssociazioneNonRiconosciuta a owl:Class ;
-    rdfs:label """Associazione\r\r
+    rdfs:label """Associazione\r\r\r
 Non Riconosciuta"""@it,
         "Unrecognized Association"@en ;
     owl:disjointWith INAILCore:AssociazioneSenzaFiniDiLucro ;
@@ -1486,10 +1486,10 @@ Non Riconosciuta"""@it,
     rdfs:isDefinedBy "https://w3id.org/italia/controlled-vocabulary/classifications-for-organizations/legal-status/1810"^^xsd:anyURI .
 
 INAILCore:AssociazioneSenzaFiniDiLucro a owl:Class ;
-    rdfs:label """Associazione\r\r
+    rdfs:label """Associazione\r\r\r
 Senza Fini Di Lucro"""@it,
         "Non-Profit Association"@en ;
-    rdfs:comment """L'associazione senza scopo di lucro, non profit in inglese, è un ente non commerciale composto da 3 o più persone che si organizzano per il raggiungimento di scopi di natura ideale, solidale o di utilità sociale (culturali, ricreativi, sociali, ambientali, assistenziali, sportivi, etc.).\r\r
+    rdfs:comment """L'associazione senza scopo di lucro, non profit in inglese, è un ente non commerciale composto da 3 o più persone che si organizzano per il raggiungimento di scopi di natura ideale, solidale o di utilità sociale (culturali, ricreativi, sociali, ambientali, assistenziali, sportivi, etc.).\r\r\r
 """@it .
 
 INAILCore:CanaleAcquisizione a owl:Class ;
@@ -1508,7 +1508,7 @@ INAILCore:CanaleAcquisizione a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILCore:denunciaRelativaACanaleAcquisizione ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Canale\r\r
+    rdfs:label """Canale\r\r\r
 Acquisizione"""@it,
         "Channel Acquisition"@en ;
     rdfs:comment "Modalità con cui avviene l'acquisizione della denuncia INAIL"@it .
@@ -1539,59 +1539,59 @@ INAILCore:Cittadinanza a owl:Class ;
     rdfs:comment "Il termine cittadinanza indica il rapporto tra un individuo e lo Stato ed è uno status al quale l'ordinamento giuridico ricollega la pienezza dei diritti civili e politici."@it .
 
 INAILCore:ConcessionarioServiziBordoEOfficina a owl:Class ;
-    rdfs:label """Concessionario\r\r
-Servizi Bordo\r\r
+    rdfs:label """Concessionario\r\r\r
+Servizi Bordo\r\r\r
 E Officina"""@it,
         "On-board Services Dealer and Workshop"@en ;
     rdfs:subClassOf INAILCore:SoggettoAssicuranteINAIL ;
     rdfs:comment "Il Ministero Infrastrutture e Trasporti può autorizzare l’armatore (art. 17 della legge 856/1986) ad appaltare ad imprese nazionali o straniere i servizi complementari di bordo delle navi da crociera o di altri mezzi navali. I servizi di bordo oggetto di contratto di appalto, per le navi da crociera sono: - i servizi complementari di camera; - i servizi di cucina; - i servizi generali; - i servizi relativi ad attività commerciali complementari, accessorie o comunque relative all’attività crocieristica. I servizi di bordo oggetto di contratto di appalto, per i mezzi navali (galleggianti mobili): - i servizi già indicati per le navi da crociera; - i servizi di officina, di cantiere e assimilati."@it .
 
 INAILCore:DenunciaDiCessazioneINAIL a owl:Class ;
-    rdfs:label """Denuncia Di\r\r
+    rdfs:label """Denuncia Di\r\r\r
 Cessazione INAIL"""@it,
         "INAIL Complaint of Termination"@en ;
     rdfs:comment "Denunce di cessazione inviate all’Inail dai  datori di lavoro che chiudono un’attività. Devono pervenire entro 30 gg dall'avvenuta cessazione tramite il servizio telematico ComUnica, per Imprese,  o per via telematica nel caso di polizze speciali e PAN"@it .
 
 INAILCore:DenunciaDiCessazionePAN a owl:Class ;
     rdfs:label " PAN Complaint of Termination"@en,
-        """Denuncia Di\r\r
+        """Denuncia Di\r\r\r
 Cessazione PAN"""@it ;
     owl:disjointWith INAILCore:DenunciaDiIscrizionePAN ;
     rdfs:comment "La denuncia di cessazione viene fatta dall’armatore per fine attività, fallimento, liquidazione e per cessazione “amministrativa” nei casi in cui viene denunciata la cessazione di PAN/certificati con le causali di cessazione “Affondamento/Naufragio”, Demolizione, Dismissione di bandiera/Vendita all’estero” della nave e con la causale “amministrativa” e non sussistono PAN attive."@it .
 
 INAILCore:DenunciaDiCessazionePAT a owl:Class ;
     rdfs:label " PAT Complaint of Termination"@en,
-        """Denuncia\r\r
+        """Denuncia\r\r\r
 Di Cessazione PAT"""@it ;
     owl:disjointWith INAILCore:DenunciaDiIscrizionePAT ;
     rdfs:comment "Il datore di lavoro che chiude una o più Pat deve darne comunicazione all’Inail entro 30 giorni dalla cessazione attraverso il servizio telematico ComUnica"@it .
 
 INAILCore:DenunciaDiIscrizioneINAIL a owl:Class ;
-    rdfs:label """Denuncia Di\r\r
+    rdfs:label """Denuncia Di\r\r\r
 Iscrizione INAIL"""@it,
         "INAIL Complaint of Enrollment"@en ;
     rdfs:comment "Denunce presentate dai datori di lavoro all'Inail, nel momento in cui ciascuno inizia la propria attività lavorativa (la denuncia dei lavori o  denuncia di esercizio o di iscrizione telematica) per la valutazione dei rischi ed il calcolo del premio di assicurazione."@it .
 
 INAILCore:DenunciaDiIscrizionePAN a owl:Class ;
-    rdfs:label """Denuncia Di\r\r
+    rdfs:label """Denuncia Di\r\r\r
 Iscrizione PAN"""@it,
         "PAN Complaint of Enrollment"@en ;
     rdfs:comment "Denunce presentate dai datori di lavoro all'Inail, nel momento in cui inizia la propria attività lavorativa di ciascuna PAN"@it .
 
 INAILCore:DenunciaDiIscrizionePAT a owl:Class ;
-    rdfs:label """Denuncia\r\r
+    rdfs:label """Denuncia\r\r\r
 Di Iscrizione PAT"""@it,
         "PAT Complaint of Enrollment"@en ;
     rdfs:comment "Denunce presentate dai datori di lavoro all'Inail, nel momento in cui inizia la propria attività lavorativa di ciascuna PAT"@it .
 
 INAILCore:DenunciaDiRiattivazioneINAIL a owl:Class ;
-    rdfs:label """Denuncia Di\r\r
+    rdfs:label """Denuncia Di\r\r\r
 Riattivazione INAIL"""@it,
         "INAIL Complaint of Reactivation"@en ;
     rdfs:comment "Procedura per la riapertura di un codice ditta a seguito di una cessazione avvenuta"@it .
 
 INAILCore:DenunciaDiVariazioneINAIL a owl:Class ;
-    rdfs:label """Denuncia Di\r\r
+    rdfs:label """Denuncia Di\r\r\r
 Variazione INAIL"""@it,
         "INAIL Complaint of Variation"@en ;
     rdfs:comment "Denunce presentate dai datori di lavoro oltre la denuncia di iscrizione. Ogni variazione successiva alla presentazione della denuncia di iscrizione o di esercizio deve essere denunciata all’Inail(modificazioni di estensione e di natura del rischio già coperto dall’assicurazione e la cessazione delle lavorazioni, variazione della ragione sociale o del legale rappresentante, ecc.)."@it .
@@ -1689,7 +1689,7 @@ INAILCore:DenunciaPAT a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty INAILCore:denunciaRelativaAPAT ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Denuncia\r\r
+    rdfs:label """Denuncia\r\r\r
 PAT"""@it,
         "PAT Complaint"@en ;
     rdfs:comment "Dettaglio delle denunce di iscrizione, di variazione, di esercizio e di cessazione di una posizione assicurativa territoriale (Pat)"@it .
@@ -1704,8 +1704,8 @@ INAILCore:DenunciaSoggettoAssicuranteINAIL a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty INAILCore:denunciaHaRiclassificazione ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Denuncia\r\r
-Soggetto\r\r
+    rdfs:label """Denuncia\r\r\r
+Soggetto\r\r\r
 Assicurante INAIL"""@it,
         "INAIL Complaint of Insuring Subject"@en ;
     rdfs:comment "Il datore di lavoro, nel momento in cui inizia la propria attività lavorativa, deve presentare all’Inail la denuncia dei lavori (cd. denuncia di esercizio o di iscrizione telematica) per la valutazione dei rischi ed il calcolo del premio di assicurazione."@it .
@@ -1720,8 +1720,8 @@ INAILCore:DimensioneSoggettoAssicurante a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILCore:soggettoAssicuranteHaDimensione ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Dimensione\r\r
-Soggetto\r\r
+    rdfs:label """Dimensione\r\r\r
+Soggetto\r\r\r
 Assicurante"""@it,
         "Insuring Subject Size"@en ;
     rdfs:comment "La dimensione del Azienda in INAIL corrisponde al numero dei dipendenti calcolato secondo le modalità previste dal d.m. 18 aprile 2005 (G.U. n. 238 del 12.10.2005) ed espresso in ULA (unità lavorative anno), laddove per ULA si intende il numero medio mensile di dipendenti occupati a tempo pieno durante un anno. I lavoratori a tempo parziale rappresentano frazioni di ULA (ad es. 120 dipendenti a tempo pieno per tutto l’anno corrispondono a 120 ULA, mentre 1 dipendente a tempo pieno occupato per 6 mesi corrisponde a 0,5 ULA). Nel caso in cui il calcolo delle ULA non corrisponda ad un numero intero si dovrà operare un arrotondamento matematico al primo decimale dopo la virgola. Se il primo decimale è inferiore a 5 si arrotonda per difetto, se invece è uguale o superiore a 5 si arrotonda per eccesso."@it .
@@ -1730,15 +1730,15 @@ INAILCore:DirezioneRegionaleINAIL a owl:Class ;
     owl:equivalentClass [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILCore:afferisceADirezioneRegionale ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Direzione\r\r
-Regionale\r\r
+    rdfs:label """Direzione\r\r\r
+Regionale\r\r\r
 INAIL"""@it,
         "INAIL Regional Direction"@en ;
     owl:disjointWith INAILCore:SedeINAIL ;
     rdfs:comment "Direzione Regionale INAIL"@it .
 
 INAILCore:DittaDiCostruzioniNavali a owl:Class ;
-    rdfs:label """Ditta Di\r\r
+    rdfs:label """Ditta Di\r\r\r
 Costruzioni Navali"""@it,
         "Shipbuilding Company"@en ;
     rdfs:subClassOf INAILCore:SoggettoAssicuranteINAIL ;
@@ -1754,14 +1754,14 @@ INAILCore:EntePubblico a owl:Class ;
     rdfs:comment "Ente del Settore Pubblico Allargato, istituzione dotata di personalità giuridica. Può essere un'amministrazione pubblica o una delle aziende o altro organismo controllato. Il settore pubblico allargato si compone di enti appartenenti alla pubblica amministrazione - P.a. (enti che producono servizi non destinabili alla vendita) e al settore extra P.a (enti che pur avendo una connotazione giuridica privatistica, ad esempio società per azioni, comunque risentono del controllo pubblico tramite la partecipazione al loro capitale)."@it .
 
 INAILCore:EntePubblicoNonTerritoriale a owl:Class ;
-    rdfs:label """Ente Pubblico\r\r
+    rdfs:label """Ente Pubblico\r\r\r
 Non Territoriale"""@it,
         "Non-Territorial Public Institution"@en ;
     owl:disjointWith INAILCore:EntePubblicoTerritoriale ;
     rdfs:comment "Enti dotati di personalità giuridica pubblica nei quali non sussiste quale elemento costitutivo il territorio."@it .
 
 INAILCore:EntePubblicoTerritoriale a owl:Class ;
-    rdfs:label """Ente Pubblico\r\r
+    rdfs:label """Ente Pubblico\r\r\r
 Territoriale"""@it,
         "Territorial Public Institution"@en ;
     rdfs:comment "Un Ente territoriale  è un ente pubblico locale , che ha tra i suoi elementi costitutivi il territorio, il quale è quindi essenziale per l'esistenza dell'ente. Gli enti pubblici che non appartengono a questa categoria sono detti enti istituzionali.  E' ente territoriale la nazione ma lo sono anche quegli enti locali per i quali il territorio della circoscrizione non è solo limite della competenza degli organi, ma anche elemento costitutivo dell'ente stesso, i cui organi di governo sono rappresentativi della popolazione residente. Con riferimento a questi enti locali si suole parlare di governo locale. Secondo l'art. 114 della Costituzione, la Repubblica Italiana è costituita da un ente territoriale nazionale, lo Stato, e dai seguenti enti territoriali:  i comuni, le province, le città metropolitane,le regioni. Secondo il citato art. 114 \" essi sono enti autonomi con propri statuti, poteri e funzioni secondo i principi fissati dalla Costituzione\".  Il territorio nazione è diviso in regioni."@it .
@@ -1771,7 +1771,7 @@ INAILCore:FasciaNumeroAddetti a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILCore:patHaFasciaNumeroAddetti ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Employees Number Range"@en,
-        """Fascia\r\r
+        """Fascia\r\r\r
 Numero Addetti"""@it ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAILCore:codiceLivello1 ;
@@ -1791,7 +1791,7 @@ INAILCore:FasciaNumeroLavoratori a owl:Class ;
     owl:equivalentClass [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILCore:soggettoAssicuranteHaFasciaNumeroLavoratori ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Fascia\r\r
+    rdfs:label """Fascia\r\r\r
 Numero Lavoratori"""@it,
         "Workers Number Range"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -1831,7 +1831,7 @@ INAILCore:FonteDenuncia a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILCore:denunciaRelativaAFonteDenuncia ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Complaint Source"@en,
-        """Fonte\r\r
+        """Fonte\r\r\r
 Denuncia"""@it ;
     rdfs:comment "Elenco delle possibili fonti di provenienza/acquisizione delle denunce pervenute."@it .
 
@@ -1862,7 +1862,7 @@ INAILCore:NaturaGiuridica a owl:Class ;
     rdfs:comment "Classificazione delle forme giuridiche assunte da imprese di medie e grandi dimensioni operanti nei diversi settori produttivi."@it .
 
 INAILCore:PANAppaltiServiziOfficina a owl:Class ;
-    rdfs:label """PAN Appalti\r\r
+    rdfs:label """PAN Appalti\r\r\r
 Servizi Officina"""@it,
         "Procurement Services Workshop PAN"@en ;
     rdfs:comment "PAN appalti servizi officina"@it .
@@ -1874,7 +1874,7 @@ INAILCore:PANComandata a owl:Class ;
 
 INAILCore:PANConcessionariServiziDiBordo a owl:Class ;
     rdfs:label "On-board Services Dealers PAN"@en,
-        """PAN Concessionari\r\r
+        """PAN Concessionari\r\r\r
 Servizi Di Bordo"""@it ;
     rdfs:comment "PAN concessionari servizi di bordo"@it .
 
@@ -1884,7 +1884,7 @@ INAILCore:PANNave a owl:Class ;
     rdfs:comment "PAN nave"@it .
 
 INAILCore:PANProveInMare a owl:Class ;
-    rdfs:label """PAN Prove\r\r
+    rdfs:label """PAN Prove\r\r\r
 In Mare"""@it,
         "Sea Trials PAN"@en ;
     rdfs:comment "PAN prove in mare"@it .
@@ -1896,13 +1896,13 @@ INAILCore:PANRuoloUnico a owl:Class ;
 
 INAILCore:PANTecniciEIspettori a owl:Class ;
     rdfs:label "Engineers and Inspectors PAN"@en,
-        """PAN Tecnici\r\r
+        """PAN Tecnici\r\r\r
 E Ispettori"""@it ;
     rdfs:comment "PAN tecnici e ispettori"@it .
 
 INAILCore:PATArtigianiAutonomi a owl:Class ;
-    rdfs:label """PAT\r\r
-Artigiani\r\r
+    rdfs:label """PAT\r\r\r
+Artigiani\r\r\r
 Autonomi"""@it,
         "Self-employed Craftsmen PAT"@en ;
     owl:disjointWith INAILCore:PATDipendenti ;
@@ -1910,20 +1910,20 @@ Autonomi"""@it,
 
 INAILCore:PATDipendenti a owl:Class ;
     rdfs:label "Employees PAT"@en,
-        """PAT\r\r
+        """PAT\r\r\r
 Dipendenti"""@it ;
     rdfs:comment "PAT Dipendenti"@it .
 
 INAILCore:PATMonotariffa a owl:Class ;
     rdfs:label "Mono-Tariff PAT"@en,
-        """PAT\r\r
+        """PAT\r\r\r
 Monotariffa"""@it ;
     owl:disjointWith INAILCore:PATPluritariffa ;
     rdfs:comment "PAT Monotariffa"@it .
 
 INAILCore:PATPluritariffa a owl:Class ;
     rdfs:label "Multi-Tariff PAT"@en,
-        """PAT\r\r
+        """PAT\r\r\r
 Pluritariffa"""@it ;
     rdfs:comment "PAT Pluritariffa"@it .
 
@@ -1941,7 +1941,7 @@ INAILCore:PersonaFisica a owl:Class ;
             owl:onProperty INAILCore:ricopreRuoloDiAssicurato ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Person"@en,
-        """Persona\r\r
+        """Persona\r\r\r
 Fisica"""@it ;
     rdfs:subClassOf CPV:Person ;
     owl:disjointWith INAILCore:SoggettoAssicuranteINAIL,
@@ -1949,12 +1949,12 @@ Fisica"""@it ;
     rdfs:comment "L'ordinamento giuridico considera persona fisica ogni essere umano nato vivo, anche se non vitale, quindi anche se morto subito dopo la nascita. Con la nascita la persona acquisice la capacità giuridica, ossia è soggetto di diritto, centro di imputazione di situazioni giuridiche e di diritti e doveri. Con il raggiungimento della maggiore età (18 anni nell'ordinamento italiano) la persona fisica acquisisce la capacità di agire, cioè la possibilità di porre in essere atti giuridicamente rilevanti."@it .
 
 INAILCore:PiccolaSocietaCooperativa a owl:Class ;
-    rdfs:label """Piccola Societa\r\r
+    rdfs:label """Piccola Societa\r\r\r
 Cooperativa"""@it,
         "Small Cooperative Society"@en ;
     rdfs:subClassOf INAILCore:SocCoopAResponsabilitaLimitata ;
-    rdfs:comment """\r\r
-Piccola Società Cooperativa: forma societaria finalizzata a facilitare la nascita di piccole imprese commerciali o agricole perseguenti uno scopo mutualistico.\r\r
+    rdfs:comment """\r\r\r
+Piccola Società Cooperativa: forma societaria finalizzata a facilitare la nascita di piccole imprese commerciali o agricole perseguenti uno scopo mutualistico.\r\r\r
 """@it .
 
 INAILCore:PolizzaINAIL a owl:Class ;
@@ -2017,14 +2017,14 @@ INAILCore:PolizzaRadiologi a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty INAILCore:numeroApparecchiRxGruppoB2 ;
             owl:someValuesFrom rdfs:Literal ] ;
-    rdfs:label """Polizza\r\r
+    rdfs:label """Polizza\r\r\r
 Radiologi"""@it,
         "Radiologists Policy"@en ;
     owl:disjointWith INAILCore:PolizzaScuola ;
     rdfs:comment "Premi speciali per medici radiologi, tecnici sanitari di radiologia medica e allievi dei corsi, esposti all’azione dei raggi X e delle sostanze radioattive."@it .
 
 INAILCore:PolizzaScuola a owl:Class ;
-    rdfs:label """Polizza\r\r
+    rdfs:label """Polizza\r\r\r
 Scuola"""@it,
         "School Policy"@en ;
     rdfs:comment "Premi speciali per alunni e studenti delle scuole o istituti di istruzione di ogni ordine e grado, non statali, addetti ad esperienze tecnico-scientifiche od esercitazioni pratiche o di lavoro."@it .
@@ -2076,11 +2076,11 @@ INAILCore:PosizioneAssicurativaNavigazione a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILCore:tipoCertificatoRelativoAPAN ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Insurance Navigation Position"@en,
-        """Posizione\r\r
-Assicurativa\r\r
+        """Posizione\r\r\r
+Assicurativa\r\r\r
 Navigazione"""@it ;
-    rdfs:comment """Posizione Assicurativa Navigazione\r\r
-\r\r
+    rdfs:comment """Posizione Assicurativa Navigazione\r\r\r
+\r\r\r
 """@it .
 
 INAILCore:PosizioneAssicurativaTerritoriale a owl:Class ;
@@ -2151,8 +2151,8 @@ INAILCore:PosizioneAssicurativaTerritoriale a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILCore:retribuzioneRelativaAPAT ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Insurance Territorial Position"@en,
-        """Posizione\r\r
-Assicurativa\r\r
+        """Posizione\r\r\r
+Assicurativa\r\r\r
 Territoriale"""@it ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAILCore:faRiferimentoASedeLavoro ;
@@ -2164,29 +2164,29 @@ INAILCore:RaccomandatarioMarittimo a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILCore:armatoreHaIntermediario ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Maritime Recommender"@en,
-        """Raccomandatario\r\r
+        """Raccomandatario\r\r\r
 Marittimo"""@it ;
     rdfs:subClassOf INAILCore:Intermediario ;
     rdfs:comment "Intermediario di cui si avvale l'armatore residente all'estero che opera in Italia. Il raccomandatario svolge, in nome e per conto del comandante e dell’armatore che rappresenta, ogni attività nei confronti dell’Autorità marittima e dell'Inail."@it .
 
 INAILCore:RapportoAssicurativoAttivoINAIL a owl:Class ;
     rdfs:label "INAIL Active Insurance Relationship"@en,
-        """Rapporto\r\r
-Assicurativo\r\r
+        """Rapporto\r\r\r
+Assicurativo\r\r\r
 Attivo INAIL"""@it ;
     rdfs:comment "Il rapporto assicurativo si costituisce automaticamente al verificarsi dei presupposti soggettivi e oggettivi stabiliti dalla legge. Esso ha normalmente inizio con la presentazione all’Inail della denuncia dell’attività esercitata; tuttavia, anche in assenza della denuncia iniziale, il lavoratore è comunque garantito sin dall’inizio dell’attività assicurata in base al principio dell’automaticità delle prestazioni."@it .
 
 INAILCore:RapportoAssicurativoCessatoINAIL a owl:Class ;
     rdfs:label "INAIL Ceased Insurance Relationship"@en,
-        """Rapporto\r\r
-Assicurativo\r\r
+        """Rapporto\r\r\r
+Assicurativo\r\r\r
 Cessato INAIL"""@it ;
     rdfs:comment "Rapporto assicurativo cessato"@it .
 
 INAILCore:RapportoAssicurativoSospesoINAIL a owl:Class ;
     rdfs:label "INAIL Suspended Insurance Relationship"@en,
-        """Rapporto\r\r
-Assicurativo\r\r
+        """Rapporto\r\r\r
+Assicurativo\r\r\r
 Sospeso INAIL"""@it ;
     rdfs:comment "Rapporto assicurativo sospeso"@it .
 
@@ -2201,14 +2201,14 @@ INAILCore:ResponsabileUfficio a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILCore:ricopreRuoloResponsabileUfficio ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Office Manager"@en,
-        """Responsabile\r\r
+        """Responsabile\r\r\r
 Ufficio"""@it ;
     rdfs:comment "Responsabile d'ufficio"@it .
 
 INAILCore:RetribuzioneAnteDecreto38 a owl:Class ;
     rdfs:label "Ante Decree 38 Salary "@en,
-        """Retribuzione\r\r
-Ante\r\r
+        """Retribuzione\r\r\r
+Ante\r\r\r
 Decreto 38"""@it ;
     owl:disjointWith INAILCore:RetribuzionePostDecreto38 ;
     rdfs:comment "Retribuzione ante decreto38"@it .
@@ -2256,20 +2256,20 @@ INAILCore:RetribuzioneComplessiva a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty INAILCore:segueArticolo28 ;
             owl:someValuesFrom rdfs:Literal ] ;
-    rdfs:label """Retribuzione\r\r
+    rdfs:label """Retribuzione\r\r\r
 Complessiva"""@it,
         "Total Salary"@en ;
     rdfs:comment "Indica tutte le retribuzioni erogate ai dipendenti, incluse quelle con esenzione inferiore al 100%, i compensi erogati ai collaboratori coordinati e continuativi e ai collaboratori a progetto, nonché le retribuzioni (convenzionali o di ragguaglio) di soci, familiari, associati in partecipazione e coadiuvanti di aziende non artigiane. "@it .
 
 INAILCore:RetribuzioneConvenzionale a owl:Class ;
     rdfs:label "Conventional Salary"@en,
-        """Retribuzione\r\r
+        """Retribuzione\r\r\r
 Convenzionale"""@it ;
     rdfs:comment "La retribuzione convenzionale è, per talune categorie di lavoratori, l’eccezione che prevale sulla regola dell’imponibile effettivo ed è stabilita con decreti ministeriali aventi valenza nazionale o provinciale ovvero con legge."@it .
 
 INAILCore:RetribuzioneEffettiva a owl:Class ;
     rdfs:label "Effective Salary"@en,
-        """Retribuzione\r\r
+        """Retribuzione\r\r\r
 Effettiva"""@it ;
     rdfs:comment "La retribuzione effettiva per la generalità dei lavoratori è costituita dall’ammontare lordo del reddito di lavoro dipendente di cui al combinato disposto degli art. 51 T.u.i.r. e art. 29 T.u. 1124/1965. Detta retribuzione deve tenere conto: a. delle retribuzioni minime stabilite da leggi e contratti – c.d. minimale contrattuale (art.1 del decreto legge 9 ottobre 1989, n. 338, convertito con modificazioni dalla legge 7 dicembre 1989, n. 389); b. dei limiti minimi di retribuzione giornaliera stabiliti dalla legge, annualmente rivalutati in relazione all’indice del costo della vita accertato dall’Istat – c.d. minimale di retribuzione giornaliera (art. 1 del decreto legge 29 luglio 1981, n. 402, convertito dalla legge 6 settembre 1981, n. 537)."@it .
 
@@ -2279,7 +2279,7 @@ INAILCore:RetribuzioneImponibile a owl:Class ;
                     INAILCore:RetribuzioneConvenzionale
                     INAILCore:RetribuzioneEffettiva
                     INAILCore:RetribuzioneRagguaglio ) ] ;
-    rdfs:label """Retribuzione\r\r
+    rdfs:label """Retribuzione\r\r\r
 Imponibile"""@it,
         "Taxable Salary"@en ;
     owl:disjointWith INAILCore:RetribuzionePresunta ;
@@ -2287,33 +2287,33 @@ Imponibile"""@it,
 
 INAILCore:RetribuzioneParzialmenteEsente a owl:Class ;
     rdfs:label "Partially Exempt Salary"@en,
-        """Retribuzione\r\r
-Parzialmente\r\r
+        """Retribuzione\r\r\r
+Parzialmente\r\r\r
 Esente"""@it ;
     rdfs:subClassOf INAILCore:RetribuzioneComplessiva ;
     rdfs:comment "Quota di retribuzione parzialmente esente dai premi. "@it .
 
 INAILCore:RetribuzionePostDecreto38 a owl:Class ;
     rdfs:label "Post Decree 38 Salary "@en,
-        """Retribuzione\r\r
-Post\r\r
+        """Retribuzione\r\r\r
+Post\r\r\r
 Decreto 38"""@it ;
     rdfs:comment "Retribuzione post decreto 38"@it .
 
 INAILCore:RetribuzionePresunta a owl:Class ;
     rdfs:label "Presumed Salary"@en,
-        """Retribuzione\r\r
+        """Retribuzione\r\r\r
 Presunta"""@it ;
     rdfs:comment "Quota di retribuzione in base alla quale calcolare il premio anticipato per l'autoliquidazione. "@it .
 
 INAILCore:RetribuzioneRagguaglio a owl:Class ;
     rdfs:label "Adjustment Salary"@en,
-        """Retribuzione\r\r
+        """Retribuzione\r\r\r
 Ragguaglio"""@it ;
     rdfs:comment "La retribuzione di ragguaglio è pari al minimale di rendita. Tale retribuzione si assume solo in via residuale, ovvero in mancanza di retribuzione convenzionale e di retribuzione effettiva"@it .
 
 INAILCore:RetribuzioneSpecificaSILASB a owl:Class ;
-    rdfs:label """Retribuzione\r\r
+    rdfs:label """Retribuzione\r\r\r
 Specifica SIL/ASB"""@it,
         "Specific SIL/ASB Salary"@en ;
     rdfs:subClassOf INAILCore:RetribuzioneComplessiva ;
@@ -2327,7 +2327,7 @@ INAILCore:RiclassificazioneDenunciaINAIL a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILCore:denunciaHaRiclassificazione ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Reclassification INAIL Complaint"@en,
-        """Riclassificazione\r\r
+        """Riclassificazione\r\r\r
 Denuncia INAIL"""@it ;
     rdfs:comment "Riclassificazione Denuncia"@it .
 
@@ -2370,13 +2370,13 @@ INAILCore:SedeLavoro a owl:Class ;
 
 INAILCore:SettoreAltri a owl:Class ;
     rdfs:label "Other Sector "@en,
-        """Settore\r\r
+        """Settore\r\r\r
 Altri"""@it ;
     rdfs:comment "Settore altri"@it .
 
 INAILCore:SettoreArtigianato a owl:Class ;
     rdfs:label "Craft Sector"@en,
-        """Settore\r\r
+        """Settore\r\r\r
 Artigianato"""@it ;
     rdfs:comment "Settore artigianato"@it .
 
@@ -2391,7 +2391,7 @@ INAILCore:SettoreAttivita a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILCore:soggettoAssicuranteHaSettoreAttivita ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Business Sector"@en,
-        """Settore\r\r
+        """Settore\r\r\r
 Attivita"""@it ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAILCore:codiceTipoSettoreAttivita ;
@@ -2399,11 +2399,11 @@ Attivita"""@it ;
         [ a owl:Restriction ;
             owl:onProperty INAILCore:descrizioneTipoSettoreAttivita ;
             owl:someValuesFrom rdfs:Literal ] ;
-    rdfs:comment """Classificazione in due livelli dei Settori Attività Economica. Il secondo livello elenca i vari settori (Agricoltura, Terziario, Casalinghe, Industria, Artigianato, Etc). Il primo livello, il macro settore, raggruppa ove possibile i livelli precedenti. Ad esempio Industria Raggruppa: Industria, Artigianato, Terziario, Altro.\r\r
+    rdfs:comment """Classificazione in due livelli dei Settori Attività Economica. Il secondo livello elenca i vari settori (Agricoltura, Terziario, Casalinghe, Industria, Artigianato, Etc). Il primo livello, il macro settore, raggruppa ove possibile i livelli precedenti. Ad esempio Industria Raggruppa: Industria, Artigianato, Terziario, Altro.\r\r\r
 https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2000-02-23;38"""@it .
 
 INAILCore:SettoreAttivitaSpeciale a owl:Class ;
-    rdfs:label """Settore\r\r
+    rdfs:label """Settore\r\r\r
 Attivita Speciale"""@it,
         "Special Business Sector"@en ;
     owl:disjointWith INAILCore:SettoreAttivitaTOD ;
@@ -2416,34 +2416,34 @@ INAILCore:SettoreAttivitaTOD a owl:Class ;
                     INAILCore:SettoreArtigianato
                     INAILCore:SettoreIndustriaEServizi
                     INAILCore:SettoreTerziario ) ] ;
-    rdfs:label """Settore\r\r
+    rdfs:label """Settore\r\r\r
 Attivita TOD"""@it,
         "TOD Business Sector"@en ;
     rdfs:comment "Settore  tod"@it .
 
 INAILCore:SettoreIndustriaEServizi a owl:Class ;
     rdfs:label "Industry and Services Sector"@en,
-        """Settore\r\r
+        """Settore\r\r\r
 Industria E Servizi"""@it ;
     rdfs:comment "Settore industria eservizi"@it .
 
 INAILCore:SettoreTerziario a owl:Class ;
-    rdfs:label """Settore\r\r
+    rdfs:label """Settore\r\r\r
 Terziario"""@it,
         "Tertiary Sector"@en ;
     rdfs:comment "settore terziario"@it .
 
 INAILCore:SocCoopAResponsabilitaLimitata a owl:Class ;
     rdfs:label "Limited Liability Coop Company"@en,
-        """Soc Coop\r\r
-A Responsabilita\r\r
+        """Soc Coop\r\r\r
+A Responsabilita\r\r\r
 Limitata"""@it ;
     owl:disjointWith INAILCore:SocCoopAResponsabiltaIllimitata ;
     rdfs:comment "Società Cooperativa a responsabilita limitata"@it .
 
 INAILCore:SocCoopAResponsabiltaIllimitata a owl:Class ;
-    rdfs:label """Soc Coop\r\r
-A Responsabilta\r\r
+    rdfs:label """Soc Coop\r\r\r
+A Responsabilta\r\r\r
 Illimitata"""@it,
         "Unlimited Liability Co-op Company"@en ;
     rdfs:comment "Società Cooperativa a responsabilita illimitata"@it .
@@ -2455,64 +2455,64 @@ INAILCore:Societa a owl:Class ;
 
 INAILCore:SocietaAnonima a owl:Class ;
     rdfs:label "Anonymous Society"@en,
-        """Societa\r\r
+        """Societa\r\r\r
 Anonima"""@it ;
     rdfs:subClassOf INAILCore:SocietaDiCapitali ;
-    rdfs:comment """Società Anonima (SA) è una denominazione formale con cui gli ordinamenti giuridici vigenti in molti Stati del mondo definiscono una società di capitali, o quantomeno quelle società di capitali che hanno una tale frammentazione del pacchetto sociale da essere di fatto anonime, ovvero non riconducibili a una proprietà unica e stabile.\r\r
-\r\r
+    rdfs:comment """Società Anonima (SA) è una denominazione formale con cui gli ordinamenti giuridici vigenti in molti Stati del mondo definiscono una società di capitali, o quantomeno quelle società di capitali che hanno una tale frammentazione del pacchetto sociale da essere di fatto anonime, ovvero non riconducibili a una proprietà unica e stabile.\r\r\r
+\r\r\r
 Fonte Esterna INAIL"""@it .
 
 INAILCore:SocietaAResponsabilitaLimitata a owl:Class ;
     rdfs:label "Limited Liability Company"@en,
-        """Societa\r\r
-A Responsabilita\r\r
+        """Societa\r\r\r
+A Responsabilita\r\r\r
 Limitata"""@it ;
     owl:disjointWith INAILCore:SocietaPerAzioni ;
-    rdfs:comment """ La società a responsabilità limitata, in sigla S.r.l., è un tipo di società di capitali che, come tale, è dotata di personalità giuridica e risponde delle obbligazioni sociali solamente nei limiti delle quote versate da ciascun socio.\r\r
-\r\r
+    rdfs:comment """ La società a responsabilità limitata, in sigla S.r.l., è un tipo di società di capitali che, come tale, è dotata di personalità giuridica e risponde delle obbligazioni sociali solamente nei limiti delle quote versate da ciascun socio.\r\r\r
+\r\r\r
 Fonte Esterna INAIL"""@it ;
     rdfs:isDefinedBy "https://w3id.org/italia/controlled-vocabulary/classifications-for-organizations/legal-status/1320"^^xsd:anyURI .
 
 INAILCore:SocietaCooperativa a owl:Class ;
     rdfs:label "Cooperative Society"@en,
-        """Societa\r\r
+        """Societa\r\r\r
 Cooperativa"""@it ;
-    rdfs:comment """Una società cooperativa è una società costituita per gestire in comune un'impresa che si prefigge lo scopo di fornire agli stessi soci (scopo mutualistico) quei beni o servizi per il conseguimento dei quali la cooperativa è sorta.\r\r
-\r\r
+    rdfs:comment """Una società cooperativa è una società costituita per gestire in comune un'impresa che si prefigge lo scopo di fornire agli stessi soci (scopo mutualistico) quei beni o servizi per il conseguimento dei quali la cooperativa è sorta.\r\r\r
+\r\r\r
 Fonte Esterna INAIL"""@it ;
     rdfs:isDefinedBy "https://w3id.org/italia/controlled-vocabulary/classifications-for-organizations/legal-status/14"^^xsd:anyURI .
 
 INAILCore:SocietaDiCapitali a owl:Class ;
     rdfs:label "Capital Society"@en,
-        """Societa\r\r
+        """Societa\r\r\r
 Di Capitali"""@it ;
-    rdfs:comment """Le società di capitali sono forme giuridiche assunte da imprese di medie e grandi dimensioni operanti nei diversi settori produttivi. Sono società definite tali in quanto in esse l'elemento del capitale ha una prevalenza concettuale e normativa rispetto all'elemento soggettivo rappresentato dai soci. La partecipazione dei soci al capitale sociale può essere rappresentata da azioni o da quote a seconda dello specifico tipo di società. Sono classificate come tali la S.p.A. (società per azioni), la S.a.p.a. (società in accomandita per azioni), la S.r.l. (società a responsabilità limitata), la S.r.l.s. (società a responsabilità limitata semplificata).\r\r
-\r\r
+    rdfs:comment """Le società di capitali sono forme giuridiche assunte da imprese di medie e grandi dimensioni operanti nei diversi settori produttivi. Sono società definite tali in quanto in esse l'elemento del capitale ha una prevalenza concettuale e normativa rispetto all'elemento soggettivo rappresentato dai soci. La partecipazione dei soci al capitale sociale può essere rappresentata da azioni o da quote a seconda dello specifico tipo di società. Sono classificate come tali la S.p.A. (società per azioni), la S.a.p.a. (società in accomandita per azioni), la S.r.l. (società a responsabilità limitata), la S.r.l.s. (società a responsabilità limitata semplificata).\r\r\r
+\r\r\r
 Fonte Esterna INAIL"""@it ;
     rdfs:isDefinedBy "https://w3id.org/italia/controlled-vocabulary/classifications-for-organizations/legal-status/13"^^xsd:anyURI .
 
 INAILCore:SocietaDiFatto a owl:Class ;
     rdfs:label "Factual Society"@en,
         "Societa Di Fatto"@it ;
-    rdfs:comment """Società di Fatto, o società semplice, è una particolare forma di società di persone - in assoluto la più basilare forma di società prevista nel nostro ordinamento - che può essere costituita per l’esercizio esclusivo di attività economiche non di natura commerciale.\r\r
-\r\r
+    rdfs:comment """Società di Fatto, o società semplice, è una particolare forma di società di persone - in assoluto la più basilare forma di società prevista nel nostro ordinamento - che può essere costituita per l’esercizio esclusivo di attività economiche non di natura commerciale.\r\r\r
+\r\r\r
 Fonte Esterna INAIL"""@it ;
     rdfs:isDefinedBy "https://w3id.org/italia/controlled-vocabulary/classifications-for-organizations/legal-status/1250"^^xsd:anyURI .
 
 INAILCore:SocietaDiPersone a owl:Class ;
-    rdfs:label """Partnership Company\r\r
+    rdfs:label """Partnership Company\r\r\r
 """@en,
-        """Societa\r\r
+        """Societa\r\r\r
 Di Persone"""@it ;
-    rdfs:comment """Le società di persone sono società definite tali in quanto in esse prevale l'elemento soggettivo, rappresentato dai soci, rispetto al capitale. Non acquistano mai la personalità giuridica, cosa che invece avviene per le società di capitali, ma è sempre presente un certo grado di separazione patrimoniale tra il patrimonio della società e quello del socio che varia a seconda del tipo considerato.\r\r
-\r\r
+    rdfs:comment """Le società di persone sono società definite tali in quanto in esse prevale l'elemento soggettivo, rappresentato dai soci, rispetto al capitale. Non acquistano mai la personalità giuridica, cosa che invece avviene per le società di capitali, ma è sempre presente un certo grado di separazione patrimoniale tra il patrimonio della società e quello del socio che varia a seconda del tipo considerato.\r\r\r
+\r\r\r
 Fonte Esterna INAIL"""@it ;
     rdfs:isDefinedBy "https://schema.gov.it/lodview/controlled-vocabulary/classifications-for-organizations/legal-status/12"^^xsd:anyURI .
 
 INAILCore:SocietaEsteraAResponsabilitaLimitata a owl:Class ;
     rdfs:label "Foreign Limited Liability Company"@en,
-        """Societa Estera\r\r
-A Responsabilita\r\r
+        """Societa Estera\r\r\r
+A Responsabilita\r\r\r
 Limitata"""@it ;
     rdfs:subClassOf INAILCore:SocietaAResponsabilitaLimitata ;
     rdfs:comment "Società Estera a Responsabilità Limitata"@it ;
@@ -2520,42 +2520,42 @@ Limitata"""@it ;
 
 INAILCore:SocietaInAccomanditaSemplice a owl:Class ;
     rdfs:label "Limited Partnership Company"@en,
-        """Societa In\r\r
-Accomandita\r\r
+        """Societa In\r\r\r
+Accomandita\r\r\r
 Semplice"""@it ;
-    rdfs:comment """Una società in accomandita semplice (abbreviato in S.a.s.), nel diritto italiano, è una società di persone che può esercitare sia attività commerciale sia attività non commerciale e che si caratterizza per la presenza di due categorie distinte di soci: il socio accomandatario e il socio accomandante\r\r
-\r\r
+    rdfs:comment """Una società in accomandita semplice (abbreviato in S.a.s.), nel diritto italiano, è una società di persone che può esercitare sia attività commerciale sia attività non commerciale e che si caratterizza per la presenza di due categorie distinte di soci: il socio accomandatario e il socio accomandante\r\r\r
+\r\r\r
 Fonte Esterna INAIL"""@it ;
     rdfs:isDefinedBy "https://w3id.org/italia/controlled-vocabulary/classifications-for-organizations/legal-status/1230"^^xsd:anyURI .
 
 INAILCore:SocietaIndividuale a owl:Class ;
     rdfs:label "Individual Company"@en,
         "Societa Individuale"@it ;
-    rdfs:comment """La ditta individuale è quel tipo di impresa che fa riferimento a un solo titolare, l’imprenditore, il quale è l’unico responsabile e  anche l’unico promotore della sua iniziativa imprenditoriale.\r\r
-\r\r
+    rdfs:comment """La ditta individuale è quel tipo di impresa che fa riferimento a un solo titolare, l’imprenditore, il quale è l’unico responsabile e  anche l’unico promotore della sua iniziativa imprenditoriale.\r\r\r
+\r\r\r
 Fonte Esterna INAIL"""@it ;
     rdfs:isDefinedBy "https://w3id.org/italia/controlled-vocabulary/classifications-for-organizations/legal-status/11"^^xsd:anyURI .
 
 INAILCore:SocietaInNomeCollettivo a owl:Class ;
     rdfs:label "Company in Collective Name"@en,
-        """Societa In\r\r
+        """Societa In\r\r\r
 Nome Collettivo"""@it ;
-    rdfs:comment """La società in nome collettivo (o S.n.c.) è un tipo di società di persone disciplinato dagli artt. 2291-2312 del codice civile in cui tutti i soci rispondono solidalmente, illimitatamente, personalmente e sussidiariamente per le obbligazioni sociali\r\r
-\r\r
+    rdfs:comment """La società in nome collettivo (o S.n.c.) è un tipo di società di persone disciplinato dagli artt. 2291-2312 del codice civile in cui tutti i soci rispondono solidalmente, illimitatamente, personalmente e sussidiariamente per le obbligazioni sociali\r\r\r
+\r\r\r
 Fonte Esterna INAIL"""@it ;
     rdfs:isDefinedBy "https://w3id.org/italia/controlled-vocabulary/classifications-for-organizations/legal-status/1220"^^xsd:anyURI .
 
 INAILCore:SocietaPerAzioni a owl:Class ;
     rdfs:label "Joint Stock Company"@en,
-        """Societa Per\r\r
+        """Societa Per\r\r\r
 Azioni"""@it ;
-    rdfs:comment """La società per azioni, sigla S.p.A., è una società di capitali, dotata di personalità giuridica e una autonomia patrimoniale perfetta, nella quale le partecipazioni dei soci sono rappresentate da titoli trasferibili, le cosiddette azioni.\r\r
-\r\r
+    rdfs:comment """La società per azioni, sigla S.p.A., è una società di capitali, dotata di personalità giuridica e una autonomia patrimoniale perfetta, nella quale le partecipazioni dei soci sono rappresentate da titoli trasferibili, le cosiddette azioni.\r\r\r
+\r\r\r
 Fonte Esterna INAIL"""@it ;
     rdfs:isDefinedBy "https://w3id.org/italia/controlled-vocabulary/classifications-for-organizations/legal-status/1310"^^xsd:anyURI .
 
 INAILCore:SocietaSenzaObbligoPartitaIVA a owl:Class ;
-    rdfs:label """Societa Senza\r\r
+    rdfs:label """Societa Senza\r\r\r
 Obbligo Partita IVA"""@it,
         "Society without VAT Number Obligation"@en ;
     rdfs:subClassOf INAILCore:Societa ;
@@ -2580,15 +2580,15 @@ INAILCore:Soggetto a owl:Class ;
 
 INAILCore:SoggettoAssicuranteAttivoINAIL a owl:Class ;
     rdfs:label "INAIL Active Insuring Subject"@en,
-        """Soggetto\r\r
-Assicurante\r\r
+        """Soggetto\r\r\r
+Assicurante\r\r\r
 Attivo INAIL"""@it ;
     rdfs:comment "Soggetto Assicurante Attivo"@it .
 
 INAILCore:SoggettoAssicuranteCessatoINAIL a owl:Class ;
     rdfs:label "INAIL Ceased Insuring Subject"@en,
-        """Soggetto\r\r
-Assicurante\r\r
+        """Soggetto\r\r\r
+Assicurante\r\r\r
 Cessato INAIL"""@it ;
     rdfs:comment "Soggetto Assicurante Cessato"@it .
 
@@ -2638,7 +2638,7 @@ INAILCore:SoggettoAssicuranteINAIL a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILCore:retribuzioneRelativaASoggettoAssicurante ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "INAIL Insuring Subject"@en,
-        """Soggetto\r\r
+        """Soggetto\r\r\r
 Assicurante INAIL"""@it ;
     rdfs:subClassOf COV:Organization,
         [ a owl:Restriction ;
@@ -2649,8 +2649,8 @@ Assicurante INAIL"""@it ;
 
 INAILCore:SoggettoAssicuranteSospesoINAIL a owl:Class ;
     rdfs:label "INAIL Suspended Insuring Subject"@en,
-        """Soggetto\r\r
-Assicurante\r\r
+        """Soggetto\r\r\r
+Assicurante\r\r\r
 Sospeso INAIL"""@it ;
     rdfs:comment "Soggetto Assicurante Sospeso"@it .
 
@@ -2662,8 +2662,8 @@ INAILCore:SoggettoAssicuratoINAIL a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILCore:soggettoAssicuranteAssicura ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "INAIL Insured Subject"@en,
-        """Soggetto\r\r
-Assicurato\r\r
+        """Soggetto\r\r\r
+Assicurato\r\r\r
 INAIL"""@it ;
     rdfs:comment "In linea generale, sono assicurati all'Inail tutti i soggetti che svolgono lavoro retribuito alle dipendenze di un datore di lavoro e siano addetti ad una delle attività indicate dall'articolo 1 (per il settore industria) e dagli articoli 204 e seguenti (per il settore agricoltura) del Testo Unico (d.p.r.  1124/1965). Sono anche assicurate alcune categorie di lavoratori autonomi (quali, ad esempio, gli artigiani e i coltivatori diretti), i lavoratori parasubordinati (articolo 4 d.lgs. 38/2000) e altri lavoratori assicurati ai sensi di disposizioni speciali (soggetti di cui alla legge 493/1999, medici e tecnici di radiologia di cui alla legge 93/1958). "@it .
 
@@ -2675,7 +2675,7 @@ INAILCore:StatoDiLuogo a owl:Class ;
 
 INAILCore:StatoDiPersonaFisica a owl:Class ;
     rdfs:label "Individual Status"@en,
-        """Stato Di\r\r
+        """Stato Di\r\r\r
 Persona Fisica"""@it ;
     owl:disjointWith INAILCore:StatoDiSoggettoAssicurante ;
     rdfs:comment "Stato Di Persona Fisica"@it .
@@ -2688,7 +2688,7 @@ INAILCore:StatoDiSoggetto a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILCore:haStatoDiSoggetto ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Stato Di\r\r
+    rdfs:label """Stato Di\r\r\r
 Soggetto"""@it,
         "Subject Status"@en ;
     rdfs:comment "Uno stato di una persona è uno stato che rappresenta le caratteristiche di quella persona durante il periodo di validità dello stato stesso."@it .
@@ -2704,8 +2704,8 @@ INAILCore:StatoDiSoggettoAssicurante a owl:Class ;
             owl:onProperty INAILCore:soggettoAssicuranteHaAvutoDimensione ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Insuring Subject Status"@en,
-        """Stato Di\r\r
-Soggetto\r\r
+        """Stato Di\r\r\r
+Soggetto\r\r\r
 Assicurante"""@it ;
     rdfs:comment "Stato di soggetto assicurante"@it .
 
@@ -2740,7 +2740,7 @@ INAILCore:StatoRapportoAssicurativoINAIL a owl:Class ;
             owl:onProperty [ owl:inverseOf INAILCore:haStatoRapportoAssicurativo ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:label "INAIL Insurance Relationship Status"@en,
-        """Stato Rapporto\r\r
+        """Stato Rapporto\r\r\r
 Assicurativo INAIL"""@it ;
     rdfs:comment "Stato Rapporto Assicurativo"@it .
 
@@ -2777,24 +2777,24 @@ INAILCore:StrutturaINAIL a owl:Class ;
 
 INAILCore:StrutturaINAILAperta a owl:Class ;
     rdfs:label "INAIL Open Territorial Structure"@en,
-        """Struttura\r\r
-INAIL\r\r
+        """Struttura\r\r\r
+INAIL\r\r\r
 Aperta"""@it ;
     owl:disjointWith INAILCore:StrutturaINAILChiusa ;
     rdfs:comment "Struttura INAIL Aperta"@it .
 
 INAILCore:StrutturaINAILCentrale a owl:Class ;
     rdfs:label "INAIL Central Territorial Structure"@en,
-        """Struttura\r\r
-INAIL\r\r
+        """Struttura\r\r\r
+INAIL\r\r\r
 Centrale """@it ;
     owl:disjointWith INAILCore:StrutturaINAILTerritoriale ;
     rdfs:comment "La struttura centrale Inail è la Direzione generale che comprende le Direzioni centrali, l'Avvocatura generale, la Sovrintendenza sanitaria centrale, la Consulenza tecnica per l'accertamento dei rischi e la prevenzione, Consulenza statistico attuariale, la Consulenza tecnica per l'edilizia, la Consulenza per l'innovazione tecnologica, il Casellario centrale infortuni, il Servizio ispettorato e sicurezza, il Servizio supporto organi e le Segreterie tecniche di supporto degli Organi."@it .
 
 INAILCore:StrutturaINAILChiusa a owl:Class ;
     rdfs:label "INAIL Closed Territorial Structure"@en,
-        """Struttura\r\r
-INAIL\r\r
+        """Struttura\r\r\r
+INAIL\r\r\r
 Chiusa"""@it ;
     rdfs:comment "Struttura INAIL Chiusa"@it .
 
@@ -2804,8 +2804,8 @@ INAILCore:StrutturaINAILTerritoriale a owl:Class ;
                     INAILCore:DirezioneRegionaleINAIL
                     INAILCore:SedeINAIL ) ] ;
     rdfs:label "INAIL Territorial Headquarters"@en,
-        """Struttura\r\r
-INAIL\r\r
+        """Struttura\r\r\r
+INAIL\r\r\r
 Territoriale"""@it ;
     rdfs:comment "Le Strutture Inail presenti sul territorio sono le Direzioni regionali, le Direzioni provinciali  di Trento e di Bolzamo, la Sede regionale di Aosta, le Sedi locali, le Unità operative territoriali di certificazione, verifica e ricerca. Sono state inoltre istituite le Direzioni territoriali con compiti di coordinamento tra le Sedi locali."@it .
 
@@ -2816,7 +2816,7 @@ INAILCore:TipoCertificatoPAN a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty INAILCore:tipoCertificatoRelativoAPAN ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Tipo Certificato\r\r
+    rdfs:label """Tipo Certificato\r\r\r
 PAN"""@it,
         "Type of PAN Certificate"@en ;
     rdfs:comment "Il tipo certificato è correlato alle specifiche forme di assicurazione previste per il settore marittimo. Sono previste le tipologie Nave, Ruolo Unico, Comandata, Concessionario di bordo, Personale addetto alle prove in mare, Tecnici ed ispettori, Appalti servizi di officina"@it .
@@ -2828,7 +2828,7 @@ INAILCore:TipoPeriodoRetribuzione a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILCore:retribuzioneHaTipoPeriodo ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label """Tipo Periodo\r\r
+    rdfs:label """Tipo Periodo\r\r\r
 Retribuzione"""@it,
         "Type Period of Salary"@en ;
     rdfs:comment "Classificazione a due livelli della tipologia del periodo di pagamento. Il secondo livello definisce la tipologia (Rata, Ratino, Arti. 28, Etc) mentre il primo livello raggruppa la tipologia di retribuzione in Effettiva o Presunta."@it .
