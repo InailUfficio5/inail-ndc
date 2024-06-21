@@ -1,0 +1,345 @@
+@prefix adms: <https://w3id.org/italia/onto/ADMS/> .
+@prefix CLV: <https://w3id.org/italia/onto/CLV/> .
+@prefix COV: <https://w3id.org/italia/onto/COV/> .
+@prefix CPV: <https://w3id.org/italia/onto/CPV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAIL_Sostanze_Radioattive: <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/> .
+@prefix INAILAutoliq: <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> .
+@prefix INAILCore: <https://w3id.org/italia/work-accident/onto/core/> .
+@prefix INAILService: <https://w3id.org/italia/work-accident/onto/adm_serv/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix RO: <https://w3id.org/italia/onto/RO/> .
+@prefix TI: <https://w3id.org/italia/onto/TI/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+INAIL_Sostanze_Radioattive: a owl:Ontology ;
+    owl:versionIRI INAIL_Sostanze_Radioattive:1.0 ;
+    owl:imports CLV:,
+        COV:,
+        CPV:,
+        INAILCore:,
+        INAILService:,
+        l0:,
+        RO:,
+        TI: ;
+    rdfs:label "INAIL Ontology about Radioactive Substances Policy"@en,
+        "Ontologia INAIL relativa alla Polizza Sostanze Radioattive"@it ;
+    rdfs:comment "Ontologia INAIL relativa alla Polizza Sostanze Radioattive. La polizza sostanze radioattive assicura medici (dipendenti e autonomi), tecnici sanitari di radiologia medica (autonomi), allievi dei corsi per tecnici sanitari di radiologia medica e altre figure operanti in ambiente sanitario o nel contesto della vendita degli apparecchi radiologici e delle sostanze radioattive."@it,
+        "This is the ontology of the INAIL Organization about Radioactive Substances Policy. Radioactive Substances policy insures doctors (employed and self-employed), medical radiology health technicians (self-employed), students of courses for medical radiology health technicians and other figures working in a healthcare environment or in the context of the sale of radiological equipment and radioactive substances."@en ;
+    owl:versionInfo "Version 1.0 - Published on 31 December 2023"@en,
+        "Versione 1.0 - Pubblicata il 31 Dicembre 2023"@it ;
+    rdfs:isDefinedBy INAIL_Sostanze_Radioattive: ;
+    adms:acronym "inail" ;
+    adms:hasContributor <https://w3id.org/italia/work-accident/data/organization/td> ;
+    adms:hasFormalityLevel adms:Formal ;
+    adms:hasKeyClass INAIL_Sostanze_Radioattive:SoggettoEspostoASostanzaINAIL,
+        INAIL_Sostanze_Radioattive:SostanzaRadioattivaINAIL ;
+    adms:hasOntologyLanguage adms:OWL ;
+    adms:hasSemanticAssetDistribution <https://w3id.org/italia/work-accident/data/proc17_radioactive_substances/distribution/PROC17SRP-N-TRIPLES>,
+        <https://w3id.org/italia/work-accident/data/proc17_radioactive_substances/distribution/PROC17SRP-RDF-TURTLE>,
+        <https://w3id.org/italia/work-accident/data/proc17_radioactive_substances/distribution/PROC17SRP-RDF-XML> ;
+    adms:hasTask adms:AnnotationTask,
+        adms:QueryFormulationTask,
+        adms:SearchTask ;
+    adms:last INAIL_Sostanze_Radioattive:1.0 ;
+    adms:officialURI "https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances"^^xsd:anyURI ;
+    adms:prefix "INAIL_Sostanze_Radioattive" ;
+    adms:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
+    adms:status "draft" ;
+    adms:target "Cittadini"@it,
+        "Imprese"@it,
+        "Pubbliche Amministrazioni"@it ;
+    adms:type adms:ServiceOnytology ;
+    dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+    dcat:keyword "Exposed Subject To Substance"@en,
+        "Radioactive Substance"@en,
+        "Soggetto Esposto A Sostanza"@it,
+        "Sostanza Radioattiva"@it ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:description "Ontologia INAIL relativa alla Polizza Sostanze Radioattive. La polizza sostanze radioattive assicura medici (dipendenti e autonomi), tecnici sanitari di radiologia medica (autonomi), allievi dei corsi per tecnici sanitari di radiologia medica e altre figure operanti in ambiente sanitario o nel contesto della vendita degli apparecchi radiologici e delle sostanze radioattive."@it,
+        "This is the ontology of the INAIL Organization about Radioactive Substances Policy. Radioactive Substances policy insures doctors (employed and self-employed), medical radiology health technicians (self-employed), students of courses for medical radiology health technicians and other figures working in a healthcare environment or in the context of the sale of radiological equipment and radioactive substances."@en ;
+    dct:identifier "https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances" ;
+    dct:issued "2023-12-31T00:00:00+00:00"^^xsd:dateTime ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:title "INAIL Ontology about Radioactive Substances Policy"@en,
+        "Ontologia INAIL relativa alla Polizza Sostanze Radioattive"@it .
+
+### Object Properties
+
+INAIL_Sostanze_Radioattive:denunciaHaVariazioneSostanzaRadioattiva a owl:ObjectProperty ;
+    rdfs:label "denuncia ha variazione sostanza radioattiva"@it ;
+    rdfs:domain INAIL_Sostanze_Radioattive:DenunciaVariazioneSostanzeRadioattiveINAIL ;
+    rdfs:range INAIL_Sostanze_Radioattive:VariazioneSostanzaRadioattivaINAIL .
+
+INAIL_Sostanze_Radioattive:denunciaSostanzeRadioattiveRelativaA a owl:ObjectProperty ;
+    rdfs:label "denuncia sostanze radioattive relativa a"@it ;
+    rdfs:range INAIL_Sostanze_Radioattive:SostanzaRadioattivaINAIL .
+
+INAIL_Sostanze_Radioattive:soggettoEspostoASostanzaRadioattiva a owl:ObjectProperty ;
+    rdfs:label "soggetto esposto a sostanza radioattiva"@it ;
+    rdfs:domain INAIL_Sostanze_Radioattive:SoggettoEspostoASostanzaINAIL ;
+    rdfs:range INAIL_Sostanze_Radioattive:SostanzaRadioattivaINAIL .
+
+INAIL_Sostanze_Radioattive:SostanzaRadioattivaRelativaAPolizza a owl:ObjectProperty ;
+    rdfs:label "sostanza radioattiva relativa a polizza"@it ;
+    rdfs:domain INAIL_Sostanze_Radioattive:SostanzaRadioattivaINAIL ;
+    rdfs:range INAILCore:PolizzaSostanzeRadioattive .
+
+INAIL_Sostanze_Radioattive:variazioneRiferitaASostanzaRadioattiva a owl:ObjectProperty ;
+    rdfs:label "variazione riferita a sostanza radioattiva"@it ;
+    rdfs:domain INAIL_Sostanze_Radioattive:VariazioneSostanzaRadioattivaINAIL ;
+    rdfs:range INAIL_Sostanze_Radioattive:SostanzaRadioattivaINAIL .
+
+INAILCore:ricopreRuolo a owl:InverseFunctionalProperty,
+        owl:ObjectProperty .
+
+INAILCore:ricopreRuoloDiAssicurato a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:subPropertyOf INAILCore:ricopreRuolo ;
+    rdfs:domain INAILCore:PersonaFisica ;
+    rdfs:range INAILCore:SoggettoAssicuratoINAIL .
+
+### Annotation Properties
+
+dct:accessURL a owl:AnnotationProperty .
+
+dct:description a owl:AnnotationProperty .
+
+dct:downloadURL a owl:AnnotationProperty .
+
+dct:format a owl:AnnotationProperty .
+
+dct:identifier a owl:AnnotationProperty .
+
+dct:license a owl:AnnotationProperty .
+
+dct:title a owl:AnnotationProperty .
+
+foaf:name a owl:AnnotationProperty .
+
+vcard:fn a owl:AnnotationProperty .
+
+vcard:hasEmail a owl:AnnotationProperty .
+
+### Data Properties
+
+INAIL_Sostanze_Radioattive:annoCompetenzaSostanzeRadioattive a owl:DatatypeProperty ;
+    rdfs:label "anno competenza sostanze radioattive"@it .
+
+INAIL_Sostanze_Radioattive:gruppoSostanzeRadioattive a owl:DatatypeProperty ;
+    rdfs:label "gruppo sostanze radioattive"@it ;
+    rdfs:domain INAIL_Sostanze_Radioattive:SostanzaRadioattivaINAIL .
+
+INAIL_Sostanze_Radioattive:numeroMegabecquerel a owl:DatatypeProperty ;
+    rdfs:label "numero megabecquerel"@it ;
+    rdfs:domain INAIL_Sostanze_Radioattive:SostanzaRadioattivaINAIL ;
+    rdfs:comment """Numero di megabecquerel (o frazione) di cui si presume l'impiego nel primo trimestre di attività, se la sorgente è non sigillata, o Il numero di megabecquerel alla data di inizio dell'attività, se la sorgente è sigillata.\r
+Il becquerel è l'unità di misura del sistema internazionale dell'attività di un radionucleide (spesso chiamata radioattività)."""@it .
+
+INAIL_Sostanze_Radioattive:sorgenteSostanzaRadioattiva a owl:DatatypeProperty ;
+    rdfs:label "sorgente sostanza radioattiva"@it ;
+    rdfs:domain INAIL_Sostanze_Radioattive:SostanzaRadioattivaINAIL ;
+    rdfs:comment "Sorgente della sostana radioattiva. Può essere sorgente sigillata o sorgente non sigillata"@it .
+
+INAIL_Sostanze_Radioattive:tipoSostanzaRadioattiva a owl:DatatypeProperty ;
+    rdfs:label "tipo sostanza radioattiva"@it ;
+    rdfs:domain INAIL_Sostanze_Radioattive:SostanzaRadioattivaINAIL .
+
+### Classes
+
+INAIL_Sostanze_Radioattive:DenunciaAnnualeSostanzeRadioattiveINAIL a owl:Class ;
+    rdfs:label "Denuncia annuale sostanze radioattive INAIL"@it ;
+    rdfs:subClassOf INAILCore:DenunciaDiVariazioneINAIL,
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Sostanze_Radioattive:annoCompetenzaSostanzeRadioattive ;
+            owl:someValuesFrom rdfs:Literal ] .
+
+INAIL_Sostanze_Radioattive:DenunciaDiCessazioneSostanzeRadioattiveINAIL a owl:Class ;
+    rdfs:label "Denuncia di cessazione sostanze radioattive INAIL"@it ;
+    rdfs:subClassOf INAILCore:DenunciaDiCessazioneINAIL,
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Sostanze_Radioattive:denunciaSostanzeRadioattiveRelativaA ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Denuncia di cessazione della polizza assicurativa per soggetti esposti a sostanze radioattive."@it .
+
+INAIL_Sostanze_Radioattive:DenunciaDiIscrizioneSostanzeRadioattiveINAIL a owl:Class ;
+    rdfs:label "Denuncia di iscrizione sostanze radioattive INAIL"@it ;
+    rdfs:subClassOf INAILCore:DenunciaDiIscrizioneINAIL,
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Sostanze_Radioattive:annoCompetenzaSostanzeRadioattive ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Sostanze_Radioattive:denunciaSostanzeRadioattiveRelativaA ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Denuncia di iscrizione di una nuova ditta con contestuale apertura di una polizza assicurativa per soggetti esposti a sostanze radioattive."@it .
+
+INAIL_Sostanze_Radioattive:DenunciaSostanzeRadioattivePerRegolazioneINAIL a owl:Class ;
+    rdfs:label "Denuncia sostanze radioattive per regolazione INAIL"@it ;
+    rdfs:subClassOf INAIL_Sostanze_Radioattive:DenunciaAnnualeSostanzeRadioattiveINAIL ;
+    rdfs:comment "Denuncia che consente di effettuare la modifica/cessazione delle sostanze radioattive utilizzate oppure la denuncia delle nuove sostanze utilizzate."@it .
+
+INAIL_Sostanze_Radioattive:DenunciaVariazioneSostanzeRadioattiveINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Sostanze_Radioattive:denunciaHaVariazioneSostanzaRadioattiva ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Denuncia variazione sostanze radioattive INAIL"@it ;
+    rdfs:subClassOf INAILCore:DenunciaDiVariazioneINAIL,
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Sostanze_Radioattive:annoCompetenzaSostanzeRadioattive ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:comment "Denuncia che consente ai soggetti assicuranti l'apertura di una o più polizze assicurative per soggetti esposti a sostanze radioattive su una PAT già attiva e l'attivazione di una nuova PAT con contestuale apertura di una o più polizze assicurative contro sostanze radioattive sul codice ditta attivo."@it .
+
+INAIL_Sostanze_Radioattive:SoggettoEspostoASostanzaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Sostanze_Radioattive:soggettoEspostoASostanzaRadioattiva ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Soggetto Esposto A Sostanza INAIL"@it ;
+    rdfs:subClassOf INAILCore:SoggettoAssicuratoINAIL .
+
+INAIL_Sostanze_Radioattive:SostanzaRadioattivaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Sostanze_Radioattive:gruppoSostanzeRadioattive ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Sostanze_Radioattive:numeroMegabecquerel ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Sostanze_Radioattive:sorgenteSostanzaRadioattiva ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Sostanze_Radioattive:SostanzaRadioattivaRelativaAPolizza ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Sostanze_Radioattive:tipoSostanzaRadioattiva ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Sostanze_Radioattive:denunciaSostanzeRadioattiveRelativaA ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Sostanze_Radioattive:soggettoEspostoASostanzaRadioattiva ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Sostanze_Radioattive:variazioneRiferitaASostanzaRadioattiva ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Sostanza radioattiva INAIL"@it ;
+    rdfs:comment "Una sostanza radioattiva è una sostanza che presenti il fenomeno della radioattività cioè di disintegrazione spontanea di un nuclide, con emissione di una particella o di un fotone o di entrambi, che comporti la formazione di un nuovo nuclide."@it .
+
+INAIL_Sostanze_Radioattive:VariazioneSostanzaRadioattivaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Sostanze_Radioattive:variazioneRiferitaASostanzaRadioattiva ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Sostanze_Radioattive:denunciaHaVariazioneSostanzaRadioattiva ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Variazione sostanza radioattiva INAIL"@it ;
+    rdfs:subClassOf TI:TimeIndexedEvent .
+
+INAILCore:DenunciaDiCessazioneINAIL a owl:Class .
+
+INAILCore:DenunciaDiIscrizioneINAIL a owl:Class .
+
+INAILCore:DenunciaDiVariazioneINAIL a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty INAIL_Sostanze_Radioattive:denunciaSostanzeRadioattiveRelativaA ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:PersonaFisica a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:ricopreRuoloDiAssicurato ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:PolizzaSostanzeRadioattive a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Sostanze_Radioattive:SostanzaRadioattivaRelativaAPolizza ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:SoggettoAssicuratoINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:ricopreRuoloDiAssicurato ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+TI:TimeIndexedEvent a owl:Class .
+
+### Individuals
+
+<https://w3id.org/italia/work-accident/data/organization/agenzia_entrate> a dcatapit:Agent,
+        foaf:Agent,
+        INAILAutoliq:Esattore,
+        owl:NamedIndividual ;
+    dct:identifier "age" ;
+    foaf:name "Agenzia delle Entrate"@it,
+        "Italian Revenue Agency"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent,
+        INAILAutoliq:DestinatarioPremioINAIL,
+        owl:NamedIndividual ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/td> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "TD" ;
+    foaf:name "Digital Transformation Team"@en,
+        "Team per la Trasformazione Digitale"@it .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+<https://w3id.org/italia/work-accident/data/proc17_radioactive_substances/distribution/PROC17SRP-N-TRIPLES> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc17_radioactive_substances/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc17_radioactive_substances/latest/proc17_radioactive_substances.n3> ;
+    dct:description "Questa è la distribuzione N-TRIPLES dell'ontologia INAIL relativa alla polizza sostanze radioattive, polizza che consente di assicurare medici (dipendenti e autonomi), tecnici sanitari di radiologia medica (autonomi), allievi dei corsi per tecnici sanitari di radiologia medica e altre figure operanti in ambiente sanitario o nel contesto della vendita degli apparecchi radiologici e delle sostanze radioattive."@it,
+        "This is the distribution in N-TRIPLES of the INAIL ontology about radioactive substances policy, this policy insures doctors (employed and self-employed), medical radiology health technicians (self-employed), students of courses for medical radiology health technicians and other figures working in a healthcare environment or in the context of the sale of radiological equipment and radioactive substances."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione N-TRIPLES ontologia INAIL - Polizza Sostanze Radioattive"@it,
+        "N-TRIPLES distribution of INAIL ontology - Radioactive Substances Policy"@en .
+
+<https://w3id.org/italia/work-accident/data/proc17_radioactive_substances/distribution/PROC17SRP-RDF-TURTLE> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc17_radioactive_substances/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc17_radioactive_substances/latest/proc17_radioactive_substances.ttl> ;
+    dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia INAIL relativa alla polizza sostanze radioattive, polizza che consente di assicurare medici (dipendenti e autonomi), tecnici sanitari di radiologia medica (autonomi), allievi dei corsi per tecnici sanitari di radiologia medica e altre figure operanti in ambiente sanitario o nel contesto della vendita degli apparecchi radiologici e delle sostanze radioattive."@it,
+        "This is the distribution in RDF/Turtle of the INAIL ontology about radioactive substances policy, this policy insures doctors (employed and self-employed), medical radiology health technicians (self-employed), students of courses for medical radiology health technicians and other figures working in a healthcare environment or in the context of the sale of radiological equipment and radioactive substances."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione RDF/Turtle ontologia INAIL - Polizza Sostanze Radioattive"@it,
+        "RDF/Turtle distribution of INAIL ontology - Radioactive Substances Policy"@en .
+
+<https://w3id.org/italia/work-accident/data/proc17_radioactive_substances/distribution/PROC17SRP-RDF-XML> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc17_radioactive_substances/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc17_radioactive_substances/latest/proc17_radioactive_substances.owl> ;
+    dct:description "Questa è la distribuzione RDF/XML dell'ontologia INAIL relativa alla polizza sostanze radioattive, polizza che consente di assicurare medici (dipendenti e autonomi), tecnici sanitari di radiologia medica (autonomi), allievi dei corsi per tecnici sanitari di radiologia medica e altre figure operanti in ambiente sanitario o nel contesto della vendita degli apparecchi radiologici e delle sostanze radioattive."@it,
+        "This is the distribution in RDF/XML of the INAIL ontology about radioactive substances policy, this policy insures doctors (employed and self-employed), medical radiology health technicians (self-employed), students of courses for medical radiology health technicians and other figures working in a healthcare environment or in the context of the sale of radiological equipment and radioactive substances."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione RDF/XML ontologia INAIL - Polizza Sostanze Radioattive"@it,
+        "RDF/XML distribution of INAIL ontology - Radioactive Substances Policy"@en .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

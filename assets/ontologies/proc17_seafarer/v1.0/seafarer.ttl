@@ -1,0 +1,512 @@
+@prefix adms: <https://w3id.org/italia/onto/ADMS/> .
+@prefix CLV: <https://w3id.org/italia/onto/CLV/> .
+@prefix COV: <https://w3id.org/italia/onto/COV/> .
+@prefix CPV: <https://w3id.org/italia/onto/CPV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAIL_Seamen: <https://w3id.org/italia/work-accident/onto/proc17_seamen/> .
+@prefix INAILAutoliq: <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> .
+@prefix INAILCore: <https://w3id.org/italia/work-accident/onto/core/> .
+@prefix INAILService: <https://w3id.org/italia/work-accident/onto/adm_serv/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix RO: <https://w3id.org/italia/onto/RO/> .
+@prefix TI: <https://w3id.org/italia/onto/TI/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+INAIL_Seamen: a owl:Ontology ;
+    owl:versionIRI INAIL_Seamen:1.0 ;
+    owl:imports CLV:,
+        COV:,
+        CPV:,
+        INAILCore:,
+        INAILService:,
+        l0:,
+        RO:,
+        TI: ;
+    rdfs:label "INAIL Ontology about Seamen Policy"@en,
+        "Ontologia INAIL relativa alla Polizza Marittimi"@it ;
+    rdfs:comment "Ontologia INAIL relativa alla Polizza Marittimi. La polizza marittimi consente di assicurare i rischi legati agli infortuni e alle malattie professionali degli equipaggi a bordo delle navi."@it,
+        "This is the ontology of the INAIL Organization about Seamen Policy. Seamen policy allows to insure risks related to accidents and occupational diseases of crew on board the ship."@en ;
+    owl:versionInfo "Version 1.0 - Published on 31 December 2023"@en,
+        "Versione 1.0 - Pubblicata il 31 Dicembre 2023"@it ;
+    rdfs:isDefinedBy INAIL_Seamen: ;
+    adms:acronym "inail" ;
+    adms:hasContributor <https://w3id.org/italia/work-accident/data/organization/td> ;
+    adms:hasFormalityLevel adms:Formal ;
+    adms:hasKeyClass INAIL_Seamen:AltroTipoPersonaleNave,
+        INAIL_Seamen:EquipaggioNave,
+        INAIL_Seamen:MembroEquipaggio,
+        INAIL_Seamen:Nave,
+        INAIL_Seamen:ProprietarioNave ;
+    adms:hasOntologyLanguage adms:OWL ;
+    adms:hasSemanticAssetDistribution <https://w3id.org/italia/work-accident/data/proc17_seamen/distribution/PROC17PM-N-TRIPLES>,
+        <https://w3id.org/italia/work-accident/data/proc17_seamen/distribution/PROC17PM-RDF-TURTLE>,
+        <https://w3id.org/italia/work-accident/data/proc17_seamen/distribution/PROC17PM-RDF-XML> ;
+    adms:hasTask adms:AnnotationTask,
+        adms:QueryFormulationTask,
+        adms:SearchTask ;
+    adms:last INAIL_Seamen:1.0 ;
+    adms:officialURI "https://w3id.org/italia/work-accident/onto/proc17_seamen"^^xsd:anyURI ;
+    adms:prefix "INAIL_Seamen" ;
+    adms:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
+    adms:status "draft" ;
+    adms:target "Cittadini"@it,
+        "Imprese"@it,
+        "Pubbliche Amministrazioni"@it ;
+    adms:type adms:ServiceOnytology ;
+    dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+    dcat:keyword "Altro Tipo Personale Nave"@it,
+        "Crew Member"@en,
+        "Equipaggio Nave"@it,
+        "Membro Equipaggio"@it,
+        "Nave"@it,
+        "Other Type Of Ship's Staff"@en,
+        "Proprietario Nave"@it,
+        "Ship"@en,
+        "Ship's Crew"@en,
+        "Ship's Owner"@en ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:description "Ontologia INAIL relativa alla Polizza Marittimi. La polizza marittimi consente di assicurare i rischi legati agli infortuni e alle malattie professionali degli equipaggi a bordo delle navi."@it,
+        "This is the ontology of the INAIL Organization about Seamen Policy. Seamen policy allows to insure risks related to accidents and occupational diseases of crew on board the ship."@en ;
+    dct:identifier "https://w3id.org/italia/work-accident/onto/proc17_seamen" ;
+    dct:issued "2023-12-31T00:00:00+00:00"^^xsd:dateTime ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:title "INAIL Ontology about Seamen Policy"@en,
+        "Ontologia INAIL relativa alla Polizza Marittimi"@it .
+
+### Object Properties
+
+INAIL_Seamen:certificatoRelativoAEquipaggio a owl:ObjectProperty ;
+    rdfs:label "certificato relativo a equipaggio"@it ;
+    rdfs:domain INAIL_Seamen:CertificatoAssicurazioneEquipaggio ;
+    rdfs:range INAIL_Seamen:EquipaggioNave .
+
+INAIL_Seamen:certificatoRichiestoTramite a owl:ObjectProperty ;
+    rdfs:label "certificato richiesto tramite"@it ;
+    rdfs:domain INAIL_Seamen:CertificatoAssicurazioneEquipaggio ;
+    rdfs:range INAILCore:DenunciaDiIscrizionePAN .
+
+INAIL_Seamen:costituitaDa a owl:ObjectProperty ;
+    rdfs:label "costituita da"@it ;
+    rdfs:domain INAIL_Seamen:TabellaMinimaDiArmamento ;
+    rdfs:range INAIL_Seamen:MembroEquipaggioNave .
+
+INAIL_Seamen:denunciaMarittimiHaVariazione a owl:ObjectProperty ;
+    rdfs:label "denuncia marittimi ha variazione"@it ;
+    rdfs:domain INAILCore:DenunciaDiVariazionePAN ;
+    rdfs:range INAIL_Seamen:VariazionePAN .
+
+INAIL_Seamen:equipaggioCostituitoDaMembro a owl:ObjectProperty ;
+    rdfs:label "equipaggio costituito da membro"@it ;
+    rdfs:domain INAIL_Seamen:EquipaggioNave ;
+    rdfs:range INAIL_Seamen:MembroEquipaggioNave .
+
+INAIL_Seamen:equipaggioRelativoANave a owl:ObjectProperty ;
+    rdfs:label "equipaggio relativo a nave"@it ;
+    rdfs:domain INAIL_Seamen:EquipaggioNave ;
+    rdfs:range INAILAutoliq:Nave .
+
+INAIL_Seamen:polizzaMarittimiRelativaA a owl:ObjectProperty ;
+    rdfs:label "polizza marittimi relativa a"@it ;
+    rdfs:domain INAILCore:PolizzaMarittimi ;
+    rdfs:range INAIL_Seamen:EquipaggioNave .
+
+INAIL_Seamen:stabilitaDaAutorita a owl:ObjectProperty ;
+    rdfs:label "stabilita da autorità"@it ;
+    rdfs:domain INAIL_Seamen:TabellaMinimaDiArmamento ;
+    rdfs:range COV:Organization .
+
+INAIL_Seamen:variazioneDatiCaratteristiciRelativaANave a owl:ObjectProperty ;
+    rdfs:label "variazione dati caratteristici relativa a nave"@it ;
+    rdfs:domain INAIL_Seamen:VariazioneDatiCaratteristiciNave ;
+    rdfs:range INAILAutoliq:Nave .
+
+INAIL_Seamen:variazioneDatiRelativaASoggettoAssicurante a owl:ObjectProperty ;
+    rdfs:label "variazione dati relativa a soggetto assicurante"@it ;
+    rdfs:domain INAIL_Seamen:VariazioneDatiSoggettoAssicuranteINAIL ;
+    rdfs:range INAILCore:SoggettoAssicuranteINAIL .
+
+INAIL_Seamen:variazioneDatiTecniciRelativaANave a owl:ObjectProperty ;
+    rdfs:label "variazione dati tecnici relativa a nave"@it ;
+    rdfs:domain INAIL_Seamen:VariazioneDatiTecniciNave ;
+    rdfs:range INAILAutoliq:Nave .
+
+INAIL_Seamen:variazioneRelativaAProprietario a owl:ObjectProperty ;
+    rdfs:label "variazione relativa a proprietario"@it ;
+    rdfs:domain INAIL_Seamen:VariazioneProprietarioNave ;
+    rdfs:range INAILAutoliq:ProprietarioNave .
+
+INAIL_Seamen:variazioneRetribuzioneRelativaA a owl:ObjectProperty ;
+    rdfs:label "variazione retribuzione relativa a"@it ;
+    rdfs:domain INAIL_Seamen:VariazioneRetribuzioneSoggettoAssicuratoMarittimiINAIL ;
+    rdfs:range INAILCore:RetribuzioneComplessiva .
+
+INAILCore:denunciaRelativaAPAN a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain INAILCore:DenunciaPAN ;
+    rdfs:range INAILCore:PosizioneAssicurativaNavigazione .
+
+INAILCore:retribuzioneRelativaASoggettoAssicurante a owl:ObjectProperty ;
+    rdfs:domain INAILCore:RetribuzioneComplessiva ;
+    rdfs:range INAILCore:SoggettoAssicuranteINAIL .
+
+INAILCore:tipoCertificatoRelativoAPAN a owl:ObjectProperty ;
+    rdfs:domain INAILCore:TipoCertificatoPAN ;
+    rdfs:range INAILCore:PosizioneAssicurativaNavigazione .
+
+### Annotation Properties
+
+dct:accessURL a owl:AnnotationProperty .
+
+dct:description a owl:AnnotationProperty .
+
+dct:downloadURL a owl:AnnotationProperty .
+
+dct:format a owl:AnnotationProperty .
+
+dct:identifier a owl:AnnotationProperty .
+
+dct:license a owl:AnnotationProperty .
+
+dct:title a owl:AnnotationProperty .
+
+foaf:name a owl:AnnotationProperty .
+
+vcard:fn a owl:AnnotationProperty .
+
+vcard:hasEmail a owl:AnnotationProperty .
+
+### Data Properties
+
+INAIL_Seamen:gradoMembroEquipaggio a owl:DatatypeProperty ;
+    rdfs:label "grado membro equipaggio"@it ;
+    rdfs:domain INAIL_Seamen:MembroEquipaggioNave .
+
+INAIL_Seamen:qualificaSoggettoAssicurato a owl:DatatypeProperty ;
+    rdfs:label "qualifica soggetto assicurato"@it ;
+    rdfs:domain INAIL_Seamen:EquipaggioNave .
+
+### Classes
+
+COV:Organization a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Seamen:stabilitaDaAutorita ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAIL_Seamen:CertificatoAssicurazioneEquipaggio a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Seamen:certificatoRelativoAEquipaggio ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Seamen:certificatoRichiestoTramite ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Certificato assicurazione equipaggio"@it,
+        "Crew insurance certificate"@en ;
+    rdfs:comment "Certificato di assicurazione dell'equipaggio"@it .
+
+INAIL_Seamen:CreazioneNuovaPAN a owl:Class ;
+    rdfs:label "Creazione nuova PAN"@it,
+        "New PAN creation"@en ;
+    rdfs:comment "Sistema di variazione della PAN che consente di crearne una nuova."@it .
+
+INAIL_Seamen:EquipaggioNave a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Seamen:equipaggioCostituitoDaMembro ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Seamen:equipaggioRelativoANave ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Seamen:qualificaSoggettoAssicurato ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Seamen:certificatoRelativoAEquipaggio ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Seamen:polizzaMarittimiRelativaA ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Equipaggio nave"@it,
+        "Ship crew"@en ;
+    rdfs:subClassOf INAILCore:SoggettoAssicuratoINAIL ;
+    rdfs:comment "Complesso del personale imbarcato a bordo di una nave"@it .
+
+INAIL_Seamen:IstanzaRuoloUnico a owl:Class ;
+    rdfs:label "Istanza ruolo unico"@it,
+        "Unique role instance"@en ;
+    rdfs:comment "Istanza per l'autorizzazione al \"Ruolo Unico\""@it .
+
+INAIL_Seamen:MembroEquipaggioNave a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Seamen:gradoMembroEquipaggio ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Seamen:costituitaDa ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Seamen:equipaggioCostituitoDaMembro ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Crew member"@en,
+        "Membro equipaggio"@it ;
+    rdfs:subClassOf INAILCore:SoggettoAssicuratoINAIL ;
+    rdfs:comment "persona impiegata in un qualsiasi compito a bordo della nave, ed include qualsiasi persona assunta  direttamente,  sia  da un armatore sia tramite un'agenzia di armamento,  il  cui  luogo  di lavoro abituale e' a bordo della nave, compreso  il  comandante, gli ufficiali, i membri dell'equipaggio, ed il personale addetto al catering, e ai servizi di sala e alberghieri"@it .
+
+INAIL_Seamen:TabellaMinimaDiArmamento a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Seamen:costituitaDa ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Seamen:stabilitaDaAutorita ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Minimum fitting out table"@en,
+        "Tabella minima di armamento"@it ;
+    rdfs:comment "La tabella minima di armamento contiene il numero e i nomi dei componenti dell'equipaggio e i gradi corrispondenti alle qualifiche di bordo. Stabilita da una commissione presieduta dal comandante del porto, in essa rientrano i rappresentanti del sindacato e della società di armamento e i marittimi."@it .
+
+INAIL_Seamen:VariazioneDatiCaratteristiciNave a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Seamen:variazioneDatiCaratteristiciRelativaANave ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Ship characteristic data variation"@en,
+        "Variazione dati caratteristici nave"@it ;
+    rdfs:comment "Variazione dei dati caratteristici relativi alla nave (es: nome della nave, attività esercitata, servizio cui è abilitata ecc.)"@it .
+
+INAIL_Seamen:VariazioneDatiPAN a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAIL_Seamen:TabellaMinimaDiArmamento
+                    INAIL_Seamen:VariazioneDatiCaratteristiciNave
+                    INAIL_Seamen:VariazioneDatiSoggettoAssicuranteINAIL
+                    INAIL_Seamen:VariazioneDatiTecniciNave
+                    INAIL_Seamen:VariazioneProprietarioNave
+                    INAIL_Seamen:VariazioneRetribuzioneSoggettoAssicuratoMarittimiINAIL ) ] ;
+    rdfs:label "PAN data variation"@en,
+        "Variazione dati PAN"@it ;
+    rdfs:comment "Variazione dei dati della PAN"@it .
+
+INAIL_Seamen:VariazioneDatiSoggettoAssicuranteINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Seamen:variazioneDatiRelativaASoggettoAssicurante ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL insuring subject data variation"@en,
+        "Variazione dati soggetto assicurante INAIL"@it ;
+    rdfs:comment "Variazione dei dati relativi al soggetto assicurante (es: ragione sociale)"@it .
+
+INAIL_Seamen:VariazioneDatiTecniciNave a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Seamen:variazioneDatiTecniciRelativaANave ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Ship technical data variation"@en,
+        "Variazione dati tecnici nave"@it ;
+    rdfs:comment "Variazione dei dati tecnici relativi alla nave (es: anno di costruzione, tonnellaggio ecc.)"@it .
+
+INAIL_Seamen:VariazionePAN a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAIL_Seamen:CreazioneNuovaPAN
+                    INAIL_Seamen:IstanzaRuoloUnico
+                    INAIL_Seamen:VariazioneDatiPAN ) ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Seamen:denunciaMarittimiHaVariazione ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "PAN variation"@en,
+        "Variazione PAN"@it ;
+    rdfs:subClassOf TI:TimeIndexedEvent ;
+    rdfs:comment "Indica una possibile variazione della PAN: la creazione di una nuova  oppure la variazione di una già esistente ecc."@it .
+
+INAIL_Seamen:VariazioneProprietarioNave a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Seamen:variazioneRelativaAProprietario ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Ship owner variation"@en,
+        "Variazione proprietario nave"@it ;
+    rdfs:comment "Variazione dei dati relativi al proprietario della nave (es: dati anagrafici, quote di proprietà ecc.)"@it .
+
+INAIL_Seamen:VariazioneRetribuzioneSoggettoAssicuratoMarittimiINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Seamen:variazioneRetribuzioneRelativaA ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL seamen insured subject's salary variation"@en,
+        "Variazione retribuzione soggetto assicurato marittimi INAIL"@it ;
+    rdfs:comment "Variazione dei dati retributivi relativi al personale assicurato per le navi già armate"@it .
+
+INAILAutoliq:Nave a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Seamen:equipaggioRelativoANave ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Seamen:variazioneDatiCaratteristiciRelativaANave ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Seamen:variazioneDatiTecniciRelativaANave ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILAutoliq:ProprietarioNave a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Seamen:variazioneRelativaAProprietario ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:DenunciaDiCessazionePAN a owl:Class .
+
+INAILCore:DenunciaDiIscrizionePAN a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Seamen:certificatoRichiestoTramite ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:DenunciaDiVariazionePAN a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Seamen:denunciaMarittimiHaVariazione ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:DenunciaPAN a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAILCore:DenunciaDiCessazionePAN
+                    INAILCore:DenunciaDiIscrizionePAN
+                    INAILCore:DenunciaDiVariazionePAN ) ],
+        [ a owl:Restriction ;
+            owl:onProperty INAILCore:denunciaRelativaAPAN ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:PolizzaMarittimi a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Seamen:polizzaMarittimiRelativaA ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:PosizioneAssicurativaNavigazione a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:denunciaRelativaAPAN ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:tipoCertificatoRelativoAPAN ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:RetribuzioneComplessiva a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:retribuzioneRelativaASoggettoAssicurante ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Seamen:variazioneRetribuzioneRelativaA ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:SoggettoAssicuranteINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Seamen:variazioneDatiRelativaASoggettoAssicurante ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:retribuzioneRelativaASoggettoAssicurante ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:SoggettoAssicuratoINAIL a owl:Class .
+
+INAILCore:TipoCertificatoPAN a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:tipoCertificatoRelativoAPAN ;
+            owl:someValuesFrom owl:Thing ] .
+
+TI:TimeIndexedEvent a owl:Class .
+
+### Individuals
+
+<https://w3id.org/italia/work-accident/data/organization/agenzia_entrate> a dcatapit:Agent,
+        foaf:Agent,
+        INAILAutoliq:Esattore,
+        owl:NamedIndividual ;
+    dct:identifier "age" ;
+    foaf:name "Agenzia delle Entrate"@it,
+        "Italian Revenue Agency"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent,
+        INAILAutoliq:DestinatarioPremioINAIL,
+        owl:NamedIndividual ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/td> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "TD" ;
+    foaf:name "Digital Transformation Team"@en,
+        "Team per la Trasformazione Digitale"@it .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+<https://w3id.org/italia/work-accident/data/proc17_seamen/distribution/PROC17PM-N-TRIPLES> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc17_seamen/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc17_seamen/latest/proc17_seamen.n3> ;
+    dct:description "Questa è la distribuzione N-TRIPLES dell'ontologia INAIL relativa alla polizza marittimi, polizza che consente di assicurare i rischi legati agli infortuni e alle malattie professionali degli equipaggi a bordo delle navi."@it,
+        "This is the distribution in N-TRIPLES of the INAIL ontology about seamen policy, this policy allows to insure risks related to accidents and occupational diseases of crew on board the ship."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione N-TRIPLES ontologia INAIL - Polizza Marittimi"@it,
+        "N-TRIPLES distribution of INAIL ontology - Seamen Policy"@en .
+
+<https://w3id.org/italia/work-accident/data/proc17_seamen/distribution/PROC17PM-RDF-TURTLE> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc17_seamen/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc17_seamen/latest/proc17_seamen.ttl> ;
+    dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia INAIL relativa alla polizza marittimi, polizza che consente di assicurare i rischi legati agli infortuni e alle malattie professionali degli equipaggi a bordo delle navi."@it,
+        "This is the distribution in RDF/Turtle of the INAIL ontology about seamen policy, this policy allows to insure risks related to accidents and occupational diseases of crew on board the ship."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione RDF/Turtle ontologia INAIL - Polizza Marittimi"@it,
+        "RDF/Turtle distribution of INAIL ontology - Seamen Policy"@en .
+
+<https://w3id.org/italia/work-accident/data/proc17_seamen/distribution/PROC17PM-RDF-XML> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc17_seamen/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc17_seamen/latest/proc17_seamen.owl> ;
+    dct:description "Questa è la distribuzione RDF/XML dell'ontologia INAIL relativa alla polizza marittimi, polizza che consente di assicurare i rischi legati agli infortuni e alle malattie professionali degli equipaggi a bordo delle navi."@it,
+        "This is the distribution in RDF/XML of the INAIL ontology about seamen policy, this policy allows to insure risks related to accidents and occupational diseases of crew on board the ship."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione RDF/XML ontologia INAIL - Polizza Marittimi"@it,
+        "RDF/XML distribution of INAIL ontology - Seamen Policy"@en .
+
+### Axioms
+
+[] a owl:AllDisjointClasses ;
+    owl:members (
+            INAIL_Seamen:CreazioneNuovaPAN
+            INAIL_Seamen:IstanzaRuoloUnico
+            INAIL_Seamen:VariazioneDatiPAN ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members (
+            INAIL_Seamen:TabellaMinimaDiArmamento
+            INAIL_Seamen:VariazioneDatiCaratteristiciNave
+            INAIL_Seamen:VariazioneDatiSoggettoAssicuranteINAIL
+            INAIL_Seamen:VariazioneDatiTecniciNave
+            INAIL_Seamen:VariazioneProprietarioNave
+            INAIL_Seamen:VariazioneRetribuzioneSoggettoAssicuratoMarittimiINAIL ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members (
+            INAILCore:DenunciaDiCessazionePAN
+            INAILCore:DenunciaDiIscrizionePAN
+            INAILCore:DenunciaDiVariazionePAN ) .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

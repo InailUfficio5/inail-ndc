@@ -1,0 +1,497 @@
+@prefix adms: <https://w3id.org/italia/onto/ADMS/> .
+@prefix CLV: <https://w3id.org/italia/onto/CLV/> .
+@prefix COV: <https://w3id.org/italia/onto/COV/> .
+@prefix CPV: <https://w3id.org/italia/onto/CPV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAIL_Volunteers: <https://w3id.org/italia/work-accident/onto/proc17_volunteers/> .
+@prefix INAILAutoliq: <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> .
+@prefix INAILCore: <https://w3id.org/italia/work-accident/onto/core/> .
+@prefix INAILService: <https://w3id.org/italia/work-accident/onto/adm_serv/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix RO: <https://w3id.org/italia/onto/RO/> .
+@prefix TI: <https://w3id.org/italia/onto/TI/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+INAIL_Volunteers: a owl:Ontology ;
+    owl:versionIRI INAIL_Volunteers:1.0 ;
+    owl:imports CLV:,
+        COV:,
+        CPV:,
+        INAILCore:,
+        INAILService:,
+        l0:,
+        RO:,
+        TI: ;
+    rdfs:label "INAIL Ontology about Volunteers Policy"@en,
+        "Ontologia INAIL relativa alla Polizza Volontari"@it ;
+    rdfs:comment "Ontologia INAIL relativa alla Polizza Volontari. La polizza volontari copre i rischi legati agli infortuni e alle malattie professionali dei volontari beneficiari di ammortizzatori sociali e di altre forme di integrazione e sostegno del reddito che prestano la loro attività nell’ambito delle iniziative progettuali ai fini di utilità sociale individuate dai soggetti promotori in favore di Comuni e di enti locali."@it,
+        "This is the ontology of the INAIL Organization about Volunteers Policy. Volunteers policy insures the risks linked to accidents and occupational diseases of the volunteers who are beneficiaries of social safety nets and other forms of income integration and support who provide their activity within the project initiatives for the purposes of social utility identified by the promoters in favor of municipalities and local authorities."@en ;
+    owl:versionInfo "Version 1.0 - Published on 31 December 2023"@en,
+        "Versione 1.0 - Pubblicata il 31 Dicembre 2023"@it ;
+    rdfs:isDefinedBy INAIL_Volunteers: ;
+    adms:acronym "inail" ;
+    adms:hasContributor <https://w3id.org/italia/work-accident/data/organization/td> ;
+    adms:hasFormalityLevel adms:Formal ;
+    adms:hasKeyClass INAIL_Volunteers:BeneficiarioProgettoINAIL,
+        INAIL_Volunteers:ProgettoVolontariINAIL,
+        INAIL_Volunteers:VolontarioINAIL ;
+    adms:hasOntologyLanguage adms:OWL ;
+    adms:hasSemanticAssetDistribution <https://w3id.org/italia/work-accident/data/proc17_volunteers/distribution/PROC17VP-N-TRIPLES>,
+        <https://w3id.org/italia/work-accident/data/proc17_volunteers/distribution/PROC17VP-RDF-TURTLE>,
+        <https://w3id.org/italia/work-accident/data/proc17_volunteers/distribution/PROC17VP-RDF-XML> ;
+    adms:hasTask adms:AnnotationTask,
+        adms:QueryFormulationTask,
+        adms:SearchTask ;
+    adms:last INAIL_Volunteers:1.0 ;
+    adms:officialURI "https://w3id.org/italia/work-accident/onto/proc17_volunteers"^^xsd:anyURI ;
+    adms:prefix "INAIL_Volunteers" ;
+    adms:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
+    adms:status "draft" ;
+    adms:target "Cittadini"@it,
+        "Imprese"@it,
+        "Pubbliche Amministrazioni"@it ;
+    adms:type adms:ServiceOnytology ;
+    dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+    dcat:keyword "Beneficiario Progetto"@it,
+        "Beneficiary Project"@en,
+        "Progetto Volontari"@it,
+        "Volontario"@it,
+        "Volunteer"@en,
+        "Volunteers Project"@en ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:description "Ontologia INAIL relativa alla Polizza Volontari. La polizza volontari copre i rischi legati agli infortuni e alle malattie professionali dei volontari beneficiari di ammortizzatori sociali e di altre forme di integrazione e sostegno del reddito che prestano la loro attività nell’ambito delle iniziative progettuali ai fini di utilità sociale individuate dai soggetti promotori in favore di Comuni e di enti locali."@it,
+        "This is the ontology of the INAIL Organization about Volunteers Policy. Volunteers policy insures the risks linked to accidents and occupational diseases of the volunteers who are beneficiaries of social safety nets and other forms of income integration and support who provide their activity within the project initiatives for the purposes of social utility identified by the promoters in favor of municipalities and local authorities."@en ;
+    dct:identifier "https://w3id.org/italia/work-accident/onto/proc17_volunteers" ;
+    dct:issued "2023-12-31T00:00:00+00:00"^^xsd:dateTime ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:title "INAIL Ontology about Volunteers Policy"@en,
+        "Ontologia INAIL relativa alla Polizza Volontari"@it .
+
+### Object Properties
+
+INAIL_Volunteers:denunciaCessazioneVolontariRelativaAProgetto a owl:ObjectProperty ;
+    rdfs:label "denuncia cessazione volontari relativa a progetto"@it ;
+    rdfs:domain INAIL_Volunteers:DenunciaCessazioneVolontariINAIL ;
+    rdfs:range INAIL_Volunteers:ProgettoVolontariINAIL .
+
+INAIL_Volunteers:denunciaHaVariazioneProgetto a owl:ObjectProperty ;
+    rdfs:label "denuncia ha variazione progetto"@it ;
+    rdfs:domain INAIL_Volunteers:DenunciaVariazioneVolontariINAIL ;
+    rdfs:range INAIL_Volunteers:VariazioneProgettoVolontariINAIL .
+
+INAIL_Volunteers:denunciaHaVariazioneVolontario a owl:ObjectProperty ;
+    rdfs:label "denuncia ha variazione volontario"@it ;
+    rdfs:domain INAIL_Volunteers:DenunciaVariazioneVolontariINAIL ;
+    rdfs:range INAIL_Volunteers:VariazioneVolontarioINAIL .
+
+INAIL_Volunteers:haOrdinanzaDiRiferimento a owl:ObjectProperty ;
+    rdfs:label "ha ordinanza di riferimento"@it ;
+    rdfs:domain INAIL_Volunteers:LavoratoriDiPubblicaUtilitaINAIL ;
+    rdfs:range INAIL_Volunteers:OrdinanzaINAIL .
+
+INAIL_Volunteers:haSentenzaDiRiferimento a owl:ObjectProperty ;
+    rdfs:label "ha sentenza di riferimento"@it ;
+    rdfs:domain INAIL_Volunteers:LavoratoriDiPubblicaUtilitaINAIL ;
+    rdfs:range INAIL_Volunteers:SentenzaINAIL .
+
+INAIL_Volunteers:progettoHaBeneficiario a owl:ObjectProperty ;
+    rdfs:label "progetto ha beneficiario"@it ;
+    rdfs:domain INAIL_Volunteers:ProgettoVolontariINAIL ;
+    rdfs:range INAIL_Volunteers:BeneficiarioProgettoINAIL .
+
+INAIL_Volunteers:progettoRelativoAPolizza a owl:ObjectProperty ;
+    rdfs:label "progetto relativo a polizza"@it ;
+    rdfs:domain INAIL_Volunteers:ProgettoVolontariINAIL ;
+    rdfs:range INAILCore:PolizzaVolontari .
+
+INAIL_Volunteers:variazioneRiferitaAProgetto a owl:ObjectProperty ;
+    rdfs:label "variazione riferita a progetto"@it ;
+    rdfs:domain INAIL_Volunteers:VariazioneProgettoVolontariINAIL ;
+    rdfs:range INAIL_Volunteers:ProgettoVolontariINAIL .
+
+INAIL_Volunteers:variazioneRiferitaAVolontario a owl:ObjectProperty ;
+    rdfs:label "variazione riferita a volontario"@it ;
+    rdfs:domain INAIL_Volunteers:VariazioneVolontarioINAIL ;
+    rdfs:range INAIL_Volunteers:VolontarioINAIL .
+
+INAIL_Volunteers:volontarioPartecipanteAProgetto a owl:ObjectProperty ;
+    rdfs:label "volontario partecipante a progetto"@it ;
+    rdfs:domain INAIL_Volunteers:VolontarioINAIL .
+
+INAIL_Volunteers:volontarioRelativoAPolizza a owl:ObjectProperty ;
+    rdfs:label "volontario relativo a polizza"@it ;
+    rdfs:domain INAIL_Volunteers:VolontarioINAIL ;
+    rdfs:range INAILCore:PolizzaVolontari .
+
+INAILCore:ricopreRuolo a owl:InverseFunctionalProperty,
+        owl:ObjectProperty .
+
+INAILCore:ricopreRuoloDiAssicurato a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:subPropertyOf INAILCore:ricopreRuolo ;
+    rdfs:domain INAILCore:PersonaFisica ;
+    rdfs:range INAILCore:SoggettoAssicuratoINAIL .
+
+### Annotation Properties
+
+dct:accessURL a owl:AnnotationProperty .
+
+dct:description a owl:AnnotationProperty .
+
+dct:downloadURL a owl:AnnotationProperty .
+
+dct:format a owl:AnnotationProperty .
+
+dct:identifier a owl:AnnotationProperty .
+
+dct:license a owl:AnnotationProperty .
+
+dct:title a owl:AnnotationProperty .
+
+foaf:name a owl:AnnotationProperty .
+
+vcard:fn a owl:AnnotationProperty .
+
+vcard:hasEmail a owl:AnnotationProperty .
+
+### Data Properties
+
+INAIL_Volunteers:dataDeliberaProgetto a owl:DatatypeProperty ;
+    rdfs:label "data delibera progetto"@it ;
+    rdfs:domain INAIL_Volunteers:ProgettoVolontariINAIL .
+
+INAIL_Volunteers:dataFineProgetto a owl:DatatypeProperty ;
+    rdfs:label "data fine progetto"@it ;
+    rdfs:domain INAIL_Volunteers:ProgettoVolontariINAIL .
+
+INAIL_Volunteers:dataInizioProgetto a owl:DatatypeProperty ;
+    rdfs:label "data inizio progetto"@it ;
+    rdfs:domain INAIL_Volunteers:ProgettoVolontariINAIL .
+
+INAIL_Volunteers:dataOrdinanza a owl:DatatypeProperty ;
+    rdfs:label "data ordinanza"@it ;
+    rdfs:domain INAIL_Volunteers:OrdinanzaINAIL .
+
+INAIL_Volunteers:dataSentenza a owl:DatatypeProperty ;
+    rdfs:label "data sentenza"@it ;
+    rdfs:domain INAIL_Volunteers:SentenzaINAIL .
+
+INAIL_Volunteers:nomeProgetto a owl:DatatypeProperty ;
+    rdfs:label "nome progetto"@it ;
+    rdfs:domain INAIL_Volunteers:ProgettoVolontariINAIL .
+
+INAIL_Volunteers:numeroDeliberaProgetto a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero delibera progetto"@it ;
+    rdfs:domain INAIL_Volunteers:ProgettoVolontariINAIL .
+
+INAIL_Volunteers:numeroOrdinanza a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero ordinanza"@it ;
+    rdfs:domain INAIL_Volunteers:OrdinanzaINAIL .
+
+INAIL_Volunteers:numeroSentenza a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero sentenza"@it ;
+    rdfs:domain INAIL_Volunteers:SentenzaINAIL .
+
+INAIL_Volunteers:progressivoProgetto a owl:DatatypeProperty ;
+    rdfs:label "progressivo progetto"@it ;
+    rdfs:domain INAIL_Volunteers:ProgettoVolontariINAIL .
+
+INAIL_Volunteers:tipoDenunciaVariazioneVolontari a owl:DatatypeProperty ;
+    rdfs:label "tipo denuncia variazione volontari"@it ;
+    rdfs:domain INAIL_Volunteers:DenunciaVariazioneVolontariINAIL ;
+    rdfs:comment """Tipologia di denuncia di variazione:\r
+- Variazione Volontario;\r
+- Variazione Progetto Volontari."""@it .
+
+INAIL_Volunteers:tipologiaAttivitaVolontariato a owl:DatatypeProperty ;
+    rdfs:label "tipologia attivita volontariato"@it ;
+    rdfs:domain INAIL_Volunteers:VolontarioINAIL .
+
+INAIL_Volunteers:tribunale a owl:DatatypeProperty ;
+    rdfs:label "tribunale"@it .
+
+### Classes
+
+COV:Organization a owl:Class .
+
+INAIL_Volunteers:BeneficiarioDiAmmortizzatoriEFormeDiSostegnoARedditoINAIL a owl:Class ;
+    rdfs:label "Beneficiario di ammortizzatori e forme di sostegno a reddito INAIL"@it,
+        "INAIL beneficiaries of social safety nets and forms of income support"@en ;
+    rdfs:subClassOf INAIL_Volunteers:VolontarioINAIL ;
+    rdfs:comment "Soggetti beneficiari di ammortizzatori e di altre forme di integrazione e sostegno del reddito: cassa integrazione guadagni ordinaria e straordinaria, anche in deroga alla vigente normativa; integrazione salariale e contributo di cui all'articolo 5, commi 5 e seguenti del decreto legge 20 maggio 1993, n.148, convertito con modificazioni dalla legge 19 luglio 1993 n.236, a seguito di stipula di contratti di solidarietà; indennità di mobilità, anche in deroga alla vigente normativa Aspi e mini-Aspi; prestazioni, legate alla cessazione del rapporto di lavoro o alla sospensione o riduzione dell'attività lavorativa, anche a carico dei Fondi di solidarietà di cui all'articolo 3 della legge 28 giugno 2012, n.92, e successive modificazioni; altre prestazioni di natura assistenziale finalizzate a rimuovere e superare condizioni di bisogno e di difficoltà della persona, erogate a livello nazionale e locale"@it .
+
+INAIL_Volunteers:BeneficiarioProgettoINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Volunteers:progettoHaBeneficiario ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Beneficiario Progetto INAIL"@it,
+        "INAIL project beneficiary"@en ;
+    rdfs:subClassOf COV:Organization ;
+    rdfs:comment "Comune o ente locale che trae beneficio dal lavoro di pubblica utilità o dal progetto di utilità sociale."@it .
+
+INAIL_Volunteers:DenunciaCessazioneVolontariINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Volunteers:denunciaCessazioneVolontariRelativaAProgetto ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Denuncia cessazione volontari INAIL"@it,
+        "Termination complaint of volunteers policy"@en ;
+    rdfs:subClassOf INAILCore:DenunciaDiCessazioneINAIL ;
+    rdfs:comment "Denuncia di cessazione della polizza assicurazione volontari e soggetti impegnati in lavori di pubblica utilità."@it .
+
+INAIL_Volunteers:DenunciaVariazioneVolontariINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Volunteers:denunciaHaVariazioneProgetto ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Volunteers:denunciaHaVariazioneVolontario ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Volunteers:tipoDenunciaVariazioneVolontari ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:label "Denuncia variazione volontari INAIL"@it,
+        "INAIL variation complaint of volunteers policy"@en ;
+    rdfs:subClassOf INAILCore:DenunciaDiVariazioneINAIL ;
+    rdfs:comment "Denuncia relativa alla polizza volontari e soggetti impegnati in lavori di pubblica utilità che consente: la richiesta della copertura assicurativa per un nuovo soggetto; la variazione dei dati relativi a un soggetto assicurato; l'inserimento un nuovo progetto o lavoro di pubblica utilità con i relativi soggetti; la cessazione anticipata di un progetto e la modifica dei soggetti associati"@it .
+
+INAIL_Volunteers:DetenutiInternatiERichiedentiAsiloINAIL a owl:Class ;
+    rdfs:label "Detenuti internati e richiedenti asilo INAIL"@it,
+        "INAIL interned prisoners and asylum seekers"@en ;
+    rdfs:subClassOf INAIL_Volunteers:VolontarioINAIL ;
+    rdfs:comment "Detenuti e internati impegnati in attività volontarie gratuite ai sensi dell'articolo 21, comma 4-ter, della legge 26 luglio 1975, n. 354 e stranieri richiedenti asilo in possesso del relativo permesso di soggiorno, trascorso il termine cui all'articolo 22, comma 1, del decreto legislativo 18 agosto 2015, n.142."@it .
+
+INAIL_Volunteers:LavoratoriDiPubblicaUtilitaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Volunteers:haOrdinanzaDiRiferimento ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Volunteers:haSentenzaDiRiferimento ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL public utility workers"@en,
+        "Lavoratori di pubblica utilità INAIL"@it ;
+    rdfs:subClassOf INAIL_Volunteers:VolontarioINAIL ;
+    rdfs:comment "Soggetti impegnati in lavori di pubblica utilità in applicazione dei seguenti provvedimenti giudiziari: sentenza di condanna per reati in materia di violazione del Codice della strada previsti dall'art. 186, comma 9-bis (Guida sotto influenza dell'alcool) del d. lgs. 285 del 30 aprile 1992; sentenza di condanna per reati in materia di violazione del Codice della strada previsti dall'art. 187 comma 8-bis (Guida in stato di alterazione psicofisica per uso di sostanze stupefacenti) del d. lgs. 285 del 30 aprile 1992; sentenza di condanna per reati in materia di violazione della legge sugli stupefacenti, ai sensi dell'art.73, comma 5-bis (Produzione, traffico e detenzione illecita di sostanze stupefacenti o psicotrope) del d.P.R. 9 ottobre 1990 n. 309; ordinanza di sospensione del processo penale con messa alla prova dell'imputato, ai sensi dell'art. 168 -  bis del Codice penale, introdotto dalla legge 67 del 28 aprile 2014."@it .
+
+INAIL_Volunteers:OrdinanzaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Volunteers:dataOrdinanza ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Volunteers:numeroOrdinanza ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Volunteers:haOrdinanzaDiRiferimento ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL ordinance"@en,
+        "Ordinanza INAIL"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty INAIL_Volunteers:tribunale ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:comment "Nel processo civile, costituisce la forma che assumono i provvedimenti emanati dal giudice durante il processo allo scopo di regolarne lo svolgimento e per risolvere le questioni processuali insorte tra le parti (funzione ordinatoria). Di regola, l'ordinanza è modificabile e revocabile da parte del giudice che l'ha pronunciata, e l'art. 177 del c.p.c. individua le ipotesi in cui l'ordinanza è irrevocabile. Data la sua natura interlocutoria, essa non può pregiudicare la decisione della controversia. Nel processo penale, invece, l'ordinanza serve a risolvere questioni incidentali del procedimento e non contiene alcuna decisione nel merito. Le ordinanze, al pari delle sentenze, vanno sempre motivate a pena di nullità (125 c.p.p.) e il giudice può altresì optare per revocarle."@it .
+
+INAIL_Volunteers:ProgettoVolontariINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Volunteers:dataDeliberaProgetto ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Volunteers:dataFineProgetto ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Volunteers:dataInizioProgetto ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Volunteers:nomeProgetto ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Volunteers:numeroDeliberaProgetto ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Volunteers:progettoHaBeneficiario ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Volunteers:progettoRelativoAPolizza ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Volunteers:progressivoProgetto ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Volunteers:denunciaCessazioneVolontariRelativaAProgetto ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Volunteers:variazioneRiferitaAProgetto ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL volunteers project"@en,
+        "Progetto volontari INAIL"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Volunteers:volontarioPartecipanteAProgetto ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Lavoro di pubblica utilità o progetti di utilità sociale."@it .
+
+INAIL_Volunteers:SentenzaINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Volunteers:dataSentenza ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Volunteers:numeroSentenza ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Volunteers:haSentenzaDiRiferimento ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL judgment"@en,
+        "Sentenza INAIL"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty INAIL_Volunteers:tribunale ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:comment "La sentenza è il provvedimento di natura decisoria con cui l'autorità giudiziaria si pronuncia, definendo o meno il giudizio, sulle domande ed eccezioni proposte dalle parti, o su qualsiasi altra questione, di rito o di merito, sorta nel corso del processo. E' possibile operare una serie di distinzioni tra i diversi tipi di sentenze, in base al loro contenuto ed effetti: Sentenza di merito e di rito: le prima accolgono o respingono, interamente o parzialmente, le domande proposte dalle parti; le seconde evidenziano la carenza di un presupposto processuale o di una condizione dell'azione, che impedisce al giudice di pronunciarsi sul merito della causa; Sentenza di accoglimento e di rigetto, a seconda che il giudice ritenga o meno fondata la domanda; Sentenza definitiva, che chiude il giudizio, in quanto con essa il giudice decide interamente nel merito (o rileva il difetto di presupposti processuali o di condizioni delle azioni), e non definitiva, che decide il merito solo parzialmente, o si limita a risolvere una questione pregiudiziale o preliminare consentendo la prosecuzione del processo. La sentenza deve contenerel'indicazione del giudice che l'ha pronunciata, l'indicazione delle parti e dei loro difensori, le conclusioni del pubblico ministero e quelle delle parti, la concisa esposizione delle ragioni di fatto e di diritto della decisione, il dispositivo, la data della deliberazione e la sottoscrizione del giudice."@it .
+
+INAIL_Volunteers:VariazioneProgettoVolontariINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Volunteers:variazioneRiferitaAProgetto ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Volunteers:denunciaHaVariazioneProgetto ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL volunteers project variation"@en,
+        "Variazione progetto volontari INAIL"@it ;
+    rdfs:subClassOf TI:TimeIndexedEvent ;
+    rdfs:comment "Variazione dei dati relativi al progetto di pubblica utilità o inserimento di un nuovo progetto con i relativi soggetti assicurati."@it .
+
+INAIL_Volunteers:VariazioneVolontarioINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Volunteers:variazioneRiferitaAVolontario ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Volunteers:denunciaHaVariazioneVolontario ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL volunteers variation"@en,
+        "Variazione volontario INAIL"@it ;
+    rdfs:subClassOf TI:TimeIndexedEvent ;
+    rdfs:comment "Variazione dei dati relativi ai volontari (soggetti assicurati) o richiesta dell'assicurazione per un nuovo soggetto."@it .
+
+INAIL_Volunteers:VolontarioINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Volunteers:tipologiaAttivitaVolontariato ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Volunteers:volontarioPartecipanteAProgetto ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Volunteers:volontarioRelativoAPolizza ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Volunteers:variazioneRiferitaAVolontario ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL volunteer"@en,
+        "Volontario INAIL"@it ;
+    rdfs:subClassOf INAILCore:SoggettoAssicuratoINAIL ;
+    rdfs:comment "Soggetti che svolgono, in modo spontaneo e gratuito, la loro attività a fini di utilità sociale nell’ambito di progetti promossi da organizzazioni appartenenti al cosiddetto “terzo settore”, in favore di Comuni o enti locali"@it .
+
+INAILCore:DenunciaDiCessazioneINAIL a owl:Class .
+
+INAILCore:DenunciaDiVariazioneINAIL a owl:Class .
+
+INAILCore:PersonaFisica a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:ricopreRuoloDiAssicurato ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:PolizzaVolontari a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Volunteers:progettoRelativoAPolizza ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Volunteers:volontarioRelativoAPolizza ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:SoggettoAssicuratoINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:ricopreRuoloDiAssicurato ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+TI:TimeIndexedEvent a owl:Class .
+
+### Individuals
+
+<https://w3id.org/italia/work-accident/data/organization/agenzia_entrate> a dcatapit:Agent,
+        foaf:Agent,
+        INAILAutoliq:Esattore,
+        owl:NamedIndividual ;
+    dct:identifier "age" ;
+    foaf:name "Agenzia delle Entrate"@it,
+        "Italian Revenue Agency"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent,
+        INAILAutoliq:DestinatarioPremioINAIL,
+        owl:NamedIndividual ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/td> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "TD" ;
+    foaf:name "Digital Transformation Team"@en,
+        "Team per la Trasformazione Digitale"@it .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+<https://w3id.org/italia/work-accident/data/proc17_volunteers/distribution/PROC17VP-N-TRIPLES> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc17_volunteers/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc17_volunteers/latest/proc17_volunteers.n3> ;
+    dct:description "Questa è la distribuzione N-TRIPLES dell'ontologia INAIL relativa alla polizza volontari, polizza che copre i rischi legati agli infortuni e alle malattie professionali dei volontari beneficiari di ammortizzatori sociali e di altre forme di integrazione e sostegno del reddito che prestano la loro attività nell’ambito delle iniziative progettuali ai fini di utilità sociale individuate dai soggetti promotori in favore di Comuni e di enti locali."@it,
+        "This is the distribution in N-TRIPLES of the INAIL ontology about volunteers policy, this policy insures the risks linked to accidents and occupational diseases of the volunteers who are beneficiaries of social safety nets and other forms of income integration and support who provide their activity within the project initiatives for the purposes of social utility identified by the promoters in favor of municipalities and local authorities."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione N-TRIPLES ontologia INAIL - Polizza Volontari"@it,
+        "N-TRIPLES distribution of INAIL ontology - Volunteers Policy"@en .
+
+<https://w3id.org/italia/work-accident/data/proc17_volunteers/distribution/PROC17VP-RDF-TURTLE> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc17_volunteers/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc17_volunteers/latest/proc17_volunteers.ttl> ;
+    dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia INAIL relativa alla polizza volontari, polizza che copre i rischi legati agli infortuni e alle malattie professionali dei volontari beneficiari di ammortizzatori sociali e di altre forme di integrazione e sostegno del reddito che prestano la loro attività nell’ambito delle iniziative progettuali ai fini di utilità sociale individuate dai soggetti promotori in favore di Comuni e di enti locali."@it,
+        "This is the distribution in RDF/Turtle of the INAIL ontology about volunteers policy, this policy insures the risks linked to accidents and occupational diseases of the volunteers who are beneficiaries of social safety nets and other forms of income integration and support who provide their activity within the project initiatives for the purposes of social utility identified by the promoters in favor of municipalities and local authorities."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione RDF/Turtle ontologia INAIL - Polizza Volontari"@it,
+        "RDF/Turtle distribution of INAIL ontology - Volunteers Policy"@en .
+
+<https://w3id.org/italia/work-accident/data/proc17_volunteers/distribution/PROC17VP-RDF-XML> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc17_volunteers/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc17_volunteers/latest/proc17_volunteers.owl> ;
+    dct:description "Questa è la distribuzione RDF/XML dell'ontologia INAIL relativa alla polizza volontari, polizza che copre i rischi legati agli infortuni e alle malattie professionali dei volontari beneficiari di ammortizzatori sociali e di altre forme di integrazione e sostegno del reddito che prestano la loro attività nell’ambito delle iniziative progettuali ai fini di utilità sociale individuate dai soggetti promotori in favore di Comuni e di enti locali."@it,
+        "This is the distribution in RDF/XML of the INAIL ontology about volunteers policy, this policy insures the risks linked to accidents and occupational diseases of the volunteers who are beneficiaries of social safety nets and other forms of income integration and support who provide their activity within the project initiatives for the purposes of social utility identified by the promoters in favor of municipalities and local authorities."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione RDF/XML ontologia INAIL - Polizza Volontari"@it,
+        "RDF/XML distribution of INAIL ontology - Volunteers Policy"@en .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

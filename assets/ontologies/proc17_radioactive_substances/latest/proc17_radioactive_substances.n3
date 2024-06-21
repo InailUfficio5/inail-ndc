@@ -1,0 +1,304 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns0: <https://w3id.org/italia/onto/ADMS/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/>
+  a owl:Ontology ;
+  owl:versionIRI <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/1> ;
+  owl:imports <https://w3id.org/italia/onto/CLV/>, <https://w3id.org/italia/onto/COV/>, <https://w3id.org/italia/onto/CPV/>, <https://w3id.org/italia/onto/l0/>, <https://w3id.org/italia/onto/RO/> ;
+  rdfs:label "Radioactive substances INAIL Ontology"@en, "Ontologia INAIL sulla sostanze radioattive"@it ;
+  rdfs:comment "L'ontologia INAIL sulla sostanze radioattive definisce e organizza i concetti, le relazioni e le proprietà relative alle denunce delle sostanze radioattive nell'ambito dell'assicurazione contro gli infortuni sul lavoro (INAIL)."@it, "The INAIL ontology on radioactive substances defines and organizes concepts, relationships, and properties related to reports of radioactive substances within the scope of the National Institute for Insurance against Accidents at Work (INAIL)"@en ;
+  owl:versionInfo "Version 1.0 - Modified on 7 June 2024"@en, "Versione 1.0 - Modificata il 7 Giugno 2024"@it ;
+  rdfs:isDefinedBy <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/> ;
+  ns0:acronym "inail" ;
+  ns0:hasContributor <https://w3id.org/italia/work-accident/data/organization/td> ;
+  ns0:hasFormalityLevel ns0:Formal ;
+  ns0:hasKeyClass <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/SostanzaRadioattivaINAIL> ;
+  ns0:hasOntologyLanguage ns0:OWL ;
+  ns0:hasSemanticAssetDistribution <https://w3id.org/italia/work-accident/data/adm_serv/distribution/P17-RS-RDF-TURTLE> ;
+  ns0:hasTask ns0:SearchTask ;
+  ns0:last <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/1> ;
+  ns0:officialURI "https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/"^^xsd:anyURI ;
+  ns0:prefix "inail" ;
+  ns0:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
+  ns0:status "catalogued" ;
+  ns0:target "Cittadini"@it, "Imprese"@it, "Pubbliche Amministrazioni"@it ;
+  ns0:type ns0:ServiceOnytology ;
+  dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+  dcat:keyword "Sostanza radioattiva"@it, "Radioactive substance"@en ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+  dc:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+  dc:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+  dc:description "L'ontologia INAIL sulla sostanze radioattive definisce e organizza i concetti, le relazioni e le proprietà relative alle denunce delle sostanze radioattive nell'ambito dell'assicurazione contro gli infortuni sul lavoro (INAIL)."@it, "The INAIL ontology on radioactive substances defines and organizes concepts, relationships, and properties related to reports of radioactive substances within the scope of the National Institute for Insurance against Accidents at Work (INAIL)."@en ;
+  dc:identifier "https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/" ;
+  dc:issued "2024-06-16T00:00:00+00:00"^^xsd:dateTime ;
+  dc:language <http://publications.europa.eu/resource/authority/language/ENG>, <http://publications.europa.eu/resource/authority/language/ITA> ;
+  dc:modified "2024-01-17T00:00:00+00:00"^^xsd:dateTime ;
+  dc:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+  dc:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+  dc:title "Radioactive Substances INAIL Ontology"@en, "Ontologia sulle Sostanze Radioattive di INAIL "@it .
+
+dc:accessURL a owl:AnnotationProperty .
+dc:description a owl:AnnotationProperty .
+dc:downloadURL a owl:AnnotationProperty .
+dc:format a owl:AnnotationProperty .
+dc:identifier a owl:AnnotationProperty .
+dc:license a owl:AnnotationProperty .
+dc:title a owl:AnnotationProperty .
+vcard:fn a owl:AnnotationProperty .
+vcard:hasEmail a owl:AnnotationProperty .
+foaf:name a owl:AnnotationProperty .
+<https://w3id.org/italia/work-accident/onto/core/ricopreRuolo> a owl:ObjectProperty, owl:InverseFunctionalProperty .
+<https://w3id.org/italia/work-accident/onto/core/ricopreRuoloDiAssicurato>
+  a owl:ObjectProperty, owl:InverseFunctionalProperty ;
+  rdfs:subPropertyOf <https://w3id.org/italia/work-accident/onto/core/ricopreRuolo> ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/core/PersonaFisica> ;
+  rdfs:range <https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuratoINAIL> .
+
+<https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/SostanzaRadioattivaRelativaAPolizza>
+  a owl:ObjectProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/SostanzaRadioattivaINAIL> ;
+  rdfs:range <https://w3id.org/italia/work-accident/onto/core/PolizzaSostanzeRadioattive> ;
+  rdfs:comment "collega una \"SostanzaRadioattivaINAIL\" a una specifica \"PolizzaSostanzeRadioattive\". Questa relazione indica che una determinata sostanza radioattiva è coperta da una particolare polizza assicurativa, registrata dall'INAIL, che ne regola la gestione e le responsabilità in caso di incidenti o esposizione."@it ;
+  rdfs:label "sostanza radioattiva relativa a polizza"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/denunciaHaVariazioneSostanzaRadioattiva>
+  a owl:ObjectProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/DenunciaVariazioneSostanzeRadioattiveINAIL> ;
+  rdfs:range <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/VariazioneSostanzaRadioattivaINAIL> ;
+  rdfs:comment "indica la relazione tra una denuncia effettuata e una variazione nei dati relativi alla gestione, esposizione o monitoraggio delle sostanze radioattive. Questa proprietà viene utilizzata per collegare una denuncia specifica all'aggiornamento o modifica delle informazioni sulle sostanze radioattive, come registrato dall'INAIL, per garantire un accurato monitoraggio e gestione della sicurezza sul lavoro."@it ;
+  rdfs:label "denuncia ha variazione sostanza radioattiva"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/denunciaSostanzeRadioattiveRelativaA>
+  a owl:ObjectProperty ;
+  rdfs:range <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/SostanzaRadioattivaINAIL> ;
+  rdfs:comment "collega una \"DenunciaDiCessazioneSostanzeRadioattiveINAIL\" a una specifica \"SostanzaRadioattivaINAIL\". Questa relazione indica che la denuncia riguarda la cessazione dell'uso, della gestione o della presenza di una particolare sostanza radioattiva, come registrato dall'INAIL."@it ;
+  rdfs:label "denuncia sostanze radioattive relativa a"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/soggettoEspostoASostanzaRadioattiva>
+  a owl:ObjectProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/SoggettoEspostoASostanzaINAIL> ;
+  rdfs:range <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/SostanzaRadioattivaINAIL> ;
+  rdfs:comment "collega un \"SoggettoEspostoASostanzaINAIL\" a una specifica \"SostanzaRadioattivaINAIL\". Questa relazione indica che un particolare soggetto è  esposto a una determinata sostanza radioattiva nel contesto lavorativo, come registrato dall'INAIL per fini di monitoraggio e prevenzione."@it ;
+  rdfs:label "soggetto esposto a sostanza radioattiva"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/variazioneRiferitaASostanzaRadioattiva>
+  a owl:ObjectProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/VariazioneSostanzaRadioattivaINAIL> ;
+  rdfs:range <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/SostanzaRadioattivaINAIL> ;
+  rdfs:comment "collega una \"VariazioneSostanzaRadioattivaINAIL\" a una specifica \"SostanzaRadioattivaINAIL\". Questa relazione indica che una variazione nei dati, nella gestione o nel monitoraggio riguarda una particolare sostanza radioattiva, come registrato dall'INAIL."@it ;
+  rdfs:label "variazione riferita a sostanza radioattiva"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/annoCompetenzaSostanzeRadioattive>
+  a owl:DatatypeProperty ;
+  rdfs:comment "anno di riferimento in cui è stata registrata l'esposizione di un lavoratore a sostanze radioattive, rilevante per fini di monitoraggio, prevenzione e gestione della sicurezza sul lavoro."@it ;
+  rdfs:label "anno competenza sostanze radioattive"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/gruppoSostanzeRadioattive>
+  a owl:DatatypeProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/SostanzaRadioattivaINAIL> ;
+  rdfs:comment "classificazione di diverse sostanze radioattive in categorie specifiche, gestita dall'Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro (INAIL), per scopi di monitoraggio, sicurezza e prevenzione nei luoghi di lavoro."@it ;
+  rdfs:label "gruppo sostanze radioattive"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/numeroMegabecquerel>
+  a owl:DatatypeProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/SostanzaRadioattivaINAIL> ;
+  rdfs:comment "Numero di megabecquerel (o frazione) di cui si presume l'impiego nel primo trimestre di attività, se la sorgente è non sigillata, o Il numero di megabecquerel alla data di inizio dell'attività, se la sorgente è sigillata. Il becquerel è l'unità di misura del sistema internazionale dell'attività di un radionucleide (spesso chiamata radioattività)."@it ;
+  rdfs:label "numero megabecquerel"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/sorgenteSostanzaRadioattiva>
+  a owl:DatatypeProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/SostanzaRadioattivaINAIL> ;
+  rdfs:comment "Sorgente della sostana radioattiva. Può essere sorgente sigillata o sorgente non sigillata"@it ;
+  rdfs:label "sorgente sostanza radioattiva"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/tipoSostanzaRadioattiva>
+  a owl:DatatypeProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/SostanzaRadioattivaINAIL> ;
+  rdfs:comment "classificazione specifica di una sostanza radioattiva basata sulle sue caratteristiche chimiche e fisiche, utilizzata per identificare e gestire i rischi associati alla sua esposizione in ambito lavorativo."@it ;
+  rdfs:label "tipo sostanza radioattiva"@it .
+
+<https://w3id.org/italia/onto/TI/TimeIndexedEvent> a owl:Class .
+<https://w3id.org/italia/work-accident/onto/core/DenunciaDiCessazioneINAIL> a owl:Class .
+<https://w3id.org/italia/work-accident/onto/core/DenunciaDiIscrizioneINAIL> a owl:Class .
+<https://w3id.org/italia/work-accident/onto/core/DenunciaDiVariazioneINAIL>
+  a owl:Class ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/denunciaSostanzeRadioattiveRelativaA> ;
+    owl:someValuesFrom owl:Thing
+  ] .
+
+<https://w3id.org/italia/work-accident/onto/core/PersonaFisica>
+  a owl:Class ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/core/ricopreRuoloDiAssicurato> ;
+    owl:someValuesFrom owl:Thing
+  ] .
+
+<https://w3id.org/italia/work-accident/onto/core/PolizzaSostanzeRadioattive>
+  a owl:Class ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/SostanzaRadioattivaRelativaAPolizza> ] ;
+    owl:someValuesFrom owl:Thing
+  ] .
+
+<https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuratoINAIL>
+  a owl:Class ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/core/ricopreRuoloDiAssicurato> ] ;
+    owl:someValuesFrom owl:Thing
+  ] .
+
+<https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/DenunciaAnnualeSostanzeRadioattiveINAIL>
+  a owl:Class ;
+  rdfs:subClassOf <https://w3id.org/italia/work-accident/onto/core/DenunciaDiVariazioneINAIL>, [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/annoCompetenzaSostanzeRadioattive> ;
+    owl:someValuesFrom rdfs:Literal
+  ] ;
+  rdfs:comment "By 16 February of each year, the insurer shall report the characteristics of sealed sources and their quantity for each radiotoxicity group on 31 December of the preceding year, as well as the characteristics of unsealed sources and their average quarterly activity."@en, "Entro il 16 febbraio di ogni anno il soggetto assicurante è tenuto a denunciare le caratteristiche delle sorgenti sigillate e la loro quantità per ogni gruppo di radiotossicità al 31 dicembre dell’anno precedente, nonché le caratteristiche delle sorgenti non sigillate e l’attività media trimestrale delle stesse."@it ;
+  rdfs:label "Denuncia annuale sostanze radioattive INAIL"@it, "Radioactive substances INAIL annual declaration"@en .
+
+<https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/DenunciaDiCessazioneSostanzeRadioattiveINAIL>
+  a owl:Class ;
+  rdfs:subClassOf <https://w3id.org/italia/work-accident/onto/core/DenunciaDiCessazioneINAIL>, [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/denunciaSostanzeRadioattiveRelativaA> ;
+    owl:someValuesFrom owl:Thing
+  ] ;
+  rdfs:comment "Denuncia di cessazione della polizza assicurativa per soggetti esposti a sostanze radioattive."@it, "Termination of insurance policy for persons exposed to radioactive substances."@en ;
+  rdfs:label "Denuncia di cessazione sostanze radioattive INAIL"@it, "Radioactive substances termination INAIL notification"@en .
+
+<https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/DenunciaDiIscrizioneSostanzeRadioattiveINAIL>
+  a owl:Class ;
+  rdfs:subClassOf <https://w3id.org/italia/work-accident/onto/core/DenunciaDiIscrizioneINAIL>, [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/denunciaSostanzeRadioattiveRelativaA> ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/annoCompetenzaSostanzeRadioattive> ;
+    owl:someValuesFrom rdfs:Literal
+  ] ;
+  rdfs:comment "Denuncia di iscrizione di una nuova ditta con contestuale apertura di una polizza assicurativa per soggetti esposti a sostanze radioattive."@it ;
+  rdfs:label "Denuncia di iscrizione sostanze radioattive INAIL"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/DenunciaSostanzeRadioattivePerRegolazioneINAIL>
+  a owl:Class ;
+  rdfs:subClassOf <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/DenunciaAnnualeSostanzeRadioattiveINAIL> ;
+  rdfs:comment "Denuncia che consente di effettuare la modifica/cessazione delle sostanze radioattive utilizzate oppure la denuncia delle nuove sostanze utilizzate."@it ;
+  rdfs:label "Denuncia sostanze radioattive per regolazione INAIL"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/DenunciaVariazioneSostanzeRadioattiveINAIL>
+  a owl:Class ;
+  rdfs:subClassOf <https://w3id.org/italia/work-accident/onto/core/DenunciaDiVariazioneINAIL>, [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/denunciaHaVariazioneSostanzaRadioattiva> ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/annoCompetenzaSostanzeRadioattive> ;
+    owl:someValuesFrom rdfs:Literal
+  ] ;
+  rdfs:comment "Denuncia che consente ai soggetti assicuranti l'apertura di una o più polizze assicurative per soggetti esposti a sostanze radioattive su una PAT già attiva e l'attivazione di una nuova PAT con contestuale apertura di una o più polizze assicurative contro sostanze radioattive sul codice ditta attivo."@it ;
+  rdfs:label "Denuncia variazione sostanze radioattive INAIL"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/SoggettoEspostoASostanzaINAIL>
+  a owl:Class ;
+  rdfs:subClassOf <https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuratoINAIL>, [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/soggettoEspostoASostanzaRadioattiva> ;
+    owl:someValuesFrom owl:Thing
+  ] ;
+  rdfs:comment "Individuo che, nell'ambito del suo lavoro, è esposto a una sostanza riconosciuta dall'Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro (INAIL) come potenzialmente dannosa per la salute. "@it ;
+  rdfs:label "Soggetto Esposto A Sostanza INAIL"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/SostanzaRadioattivaINAIL>
+  a owl:Class ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/SostanzaRadioattivaRelativaAPolizza> ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/denunciaSostanzeRadioattiveRelativaA> ] ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/soggettoEspostoASostanzaRadioattiva> ] ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/variazioneRiferitaASostanzaRadioattiva> ] ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/gruppoSostanzeRadioattive> ;
+    owl:someValuesFrom rdfs:Literal
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/numeroMegabecquerel> ;
+    owl:someValuesFrom rdfs:Literal
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/sorgenteSostanzaRadioattiva> ;
+    owl:someValuesFrom rdfs:Literal
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/tipoSostanzaRadioattiva> ;
+    owl:someValuesFrom rdfs:Literal
+  ] ;
+  rdfs:comment "Una sostanza radioattiva è una sostanza che presenti il fenomeno della radioattività cioè di disintegrazione spontanea di un nuclide, con emissione di una particella o di un fotone o di entrambi, che comporti la formazione di un nuovo nuclide."@it ;
+  rdfs:label "Sostanza radioattiva INAIL"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/VariazioneSostanzaRadioattivaINAIL>
+  a owl:Class ;
+  rdfs:subClassOf <https://w3id.org/italia/onto/TI/TimeIndexedEvent>, [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/variazioneRiferitaASostanzaRadioattiva> ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/denunciaHaVariazioneSostanzaRadioattiva> ] ;
+    owl:someValuesFrom owl:Thing
+  ] ;
+  rdfs:comment "Cambiamento nei dati relativi alla gestione, esposizione o monitoraggio delle sostanze radioattive in ambito lavorativo"@it ;
+  rdfs:label "Variazione sostanza radioattiva INAIL"@it .
+
+<https://w3id.org/italia/work-accident/onto/core/organization/inail>
+  a owl:NamedIndividual ;
+  dc:identifier "inail" ;
+  foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it, "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/onto/core/organization/td>
+  a owl:NamedIndividual ;
+  dc:identifier "TD" ;
+  foaf:name "Digital Transformation Team"@en, "Team per la Trasformazione Digitale"@it .
+
+<https://w3id.org/italia/work-accident/onto/core/organization/ufficioV>
+  a owl:NamedIndividual ;
+  vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+  vcard:hasEmail "mailto:dcod@inail.it" .
+
+<https://w3id.org/italia/social-security/data/core/distribution/P17-RS-RDF-TURTLE>
+  a ns0:SemanticAssetDistribution, dcat:Distribution, <http://dati.gov.it/onto/dcatapit#Distribution>, owl:NamedIndividual ;
+  dcat:accessURL <https://github.com/INPS-it/NDC/tree/main/assets/ontologies/proc17_radioactive_substances/latest> ;
+  dcat:downloadURL <https://github.com/INPS-it/NDC/tree/main/assets/ontologies/proc17_radioactive_substances/latest/proc17_radioactive_substances.ttl> ;
+  dc:description "Questa è la distribuzione RDF/Turtle dell'ontologia INPS relativa alle sostanze radioattive"@it, "This is the RDF/Turtle distribution of the INPS ontology related to radioactive substances"@en ;
+  dc:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+  dc:license <http://creativecommons.org/licenses/by/4.0/> ;
+  dc:title "Distribuzione RDF/Turtle dell'ontologia INPS - Sostanze Radioattive"@it, "RDF/Turtle distribution of the INPS ontology - Radioactive Substances"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/inail>
+  a <https://w3id.org/italia/onto/COV/PublicOrganization>, <http://dati.gov.it/onto/dcatapit#Agent>, foaf:Agent, owl:NamedIndividual ;
+  dc:identifier "inail" ;
+  foaf:name "Istituto Nazionale Assicurazione contro gli Infortuni sul Lavoro"@it, "National Institute for Insurance against Accidents at Work"@en .
