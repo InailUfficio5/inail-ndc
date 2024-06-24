@@ -1,0 +1,104 @@
+openapi: 3.0.3
+info:
+  title: Schema della Polizza Scuole
+  version: 202312.07.00
+  x-summary: Schema della polizza scuole compatibile con l'ontologia INAIL.
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  termsOfService: https://creativecommons.org/licenses/by/4.0/
+  contact:
+    name: Anna Maria De Paoli
+    email: a.depaoli@inail.it
+   # url:
+  description: |-
+    L'assicurazione stipulata con l'Inail copre gli studenti da tutti gli infortuni che possono accadere all'interno della scuola durante l'attività scolastica, che si tratti di lezioni classiche, attività fisica oppure laboratori di ogni tipo.
+
+    La metadatazione semantica degli schemi si basa sul documento
+    [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html)
+    che introduce le keyword x-jsonld-type e x-jsonld-context.
+paths: {}
+servers: []
+tags: []
+components:
+  schemas:
+    PosizioneAssicurativaTerritoriale:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/posizione-assicurativa-territoriale/latest/posizione-assicurativa-territoriale.oas3.yaml#/components/schemas/PosizioneAssicurativaTerritoriale"
+    #PosizioneAssicurativaNavigazione:
+    #  $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/posizione-assicurativa-navigazione/latest/posizione-assicurativa-navigazione.oas3.yaml#/components/schemas/PosizioneAssicurativaNavigazione"
+
+    CodiceAssicurativoPersonale:
+      type: integer
+      format: int64
+      x-refersTo: https://w3id.org/italia/work-accident/onto/core/codiceAssicurativoPersonale
+      description:
+          Campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità.
+          Associato a https://w3id.org/italia/work-accident/onto/core/codiceAssicurativoPersonale.
+      example: 12954876
+
+    PolizzaScuole:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/core/PolizzaScuole
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/core/"
+        codice_assicurativo_personale: codiceAssicurativoPersonale
+        tipo_polizza: tipoPolizza
+        anno_competenza_polizza: annoCompetenzaPolizza
+        data_inizio_rischio_assicurativo: dataInizioRischioAssicurativo
+        data_inizio_validita_tariffa: dataInizioValiditaTariffa
+        data_fine_validita_tariffa: dataFineValiditaTariffa
+        polizza_relativa_a_pat:
+          "@id": polizzaRelativaAPAT
+        #polizza_relativa_a_pan:
+        #  "@id": polizzaRelativaAPAN
+      additionalProperties: true
+      description:
+         Questo schema rappresenta la polizza scuole ed è associato a https://w3id.org/italia/work-accident/onto/core/PolizzaScuole.
+      required:
+      - codice_assicurativo_personale
+      - tipo_polizza
+      - anno_competenza_polizza
+      - data_inizio_rischio_assicurativo
+      - data_inizio_validita_tariffa
+      - data_fine_validita_tariffa
+      properties:
+        codice_assicurativo_personale:
+          $ref: "#/components/schemas/CodiceAssicurativoPersonale"
+        tipo_polizza:
+          type: string
+          maxLength: 10
+        anno_competenza_polizza:
+          type: number
+          format: double
+        data_inizio_rischio_assicurativo:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        data_inizio_validita_tariffa:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        data_fine_validita_tariffa:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        polizza_relativa_a_pat:
+          type: object
+          items:
+            $ref: "#/components/schemas/PosizioneAssicurativaTerritoriale"
+        #polizza_relativa_a_pan:
+        #  type: object
+        #  items:
+        #    $ref: "#/components/schemas/PosizioneAssicurativaNavigazione"
+      example:
+        codice_assicurativo_personale:
+          $ref: "#/components/schemas/CodiceAssicurativoPersonale/example"
+        tipo_polizza: 'S7'
+        anno_competenza_polizza: 2013
+        data_inizio_rischio_assicurativo: '2013-02-01'
+        data_inizio_validita_tariffa: '2013-02-12'
+        data_fine_validita_tariffa: '2013-12-31'
+        polizza_relativa_a_pat:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/posizione-assicurativa-territoriale/latest/posizione-assicurativa-territoriale.oas3.yaml#/components/schemas/PosizioneAssicurativaTerritoriale/example"
+        #polizza_relativa_a_pan:
+        #  $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/posizione-assicurativa-navigazione/latest/posizione-assicurativa-navigazione.oas3.yaml#/components/schemas/PosizioneAssicurativaNavigazione/example"

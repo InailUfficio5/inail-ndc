@@ -1,0 +1,152 @@
+openapi: 3.0.3
+info:
+  title: Schema del Nuovo Lavoro Temporaneo
+  version: 202312.07.00
+  x-summary: Schema del nuovo lavoro temporaneo compatibile con l'ontologia INAIL.
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  termsOfService: https://creativecommons.org/licenses/by/4.0/
+  contact:
+    name: Anna Maria De Paoli
+    email: a.depaoli@inail.it
+   # url:
+  description: |-
+    Sono “nuovi lavori a carattere temporaneo” i lavori, anche di lunga durata, che: abbiano un termine finale, certo o presunto; siano classificabili ad una voce di tariffa già presente nella P.A.T. attiva presso la Sede INAIL in cui la ditta ha la propria sede legale. Rientrano in tale casistica non solo i lavori edili, idraulici, stradali, di linee di trasporto e di distribuzione, di condotta, ma anche tutti gli altri lavori aventi le suddette caratteristiche (ad es., gestione temporanea di un servizio di mensa scolastica; appalto del servizio di pulizia di edifici privati o pubblici, ecc.). Deve essere presentata, invece, apposita denuncia di variazione nel caso di: nuovi lavori a carattere stabile, per i quali cioè non sia previsto un termine finale; lavori a carattere temporaneo concernenti attività non ancora denunciate all'Istituto (nuovo rischio).
+
+    La metadatazione semantica degli schemi si basa sul documento
+    [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html)
+    che introduce le keyword x-jsonld-type e x-jsonld-context.
+paths: {}
+servers: []
+tags: []
+components:
+  schemas:
+    SoggettoAssicurante:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/soggetto-assicurante/latest/soggetto-assicurante.oas3.yaml#/components/schemas/SoggettoAssicurante"
+
+    NuovoLavoroTemporaneoInail:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/NuovoLavoroTemporaneoINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/"
+        data_inizio_lavoro_temporaneo: dataInizioLavoroTemporaneo
+        data_fine_lavoro_temporaneo: dataFineLavoroTemporaneo
+        descrizione_lavoro: descrizioneLavoro
+        importo_lavoro: importoLavoro
+        subappalto: subappalto
+        quota_opere_affidate_a_terzi: quotaOpereAffidateATerzi
+        lavori_su_materiali_con_amianto: lavoriSuMaterialiConAmianto
+        lavori_esterni: lavoriEsterni
+        lavoro_utilizza_macchinario:
+          "@id": lavoroUtilizzaMacchinario
+        lavoro_ha_committente:
+          "@id": lavoroHaCommittente
+        lavoro_ha_luogo:
+          "@id": lavoroHaLuogo
+      additionalProperties: true
+      description:
+         Questo schema rappresenta un nuovo lavoro temporaneo ed è associato a https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/NuovoLavoroTemporaneoINAIL.
+      required:
+      - data_inizio_lavoro_temporaneo
+      - data_fine_lavoro_temporaneo
+      - descrizione_lavoro
+      - importo_lavoro
+      - subappalto
+      - quota_opere_affidate_a_terzi
+      - lavori_su_materiali_con_amianto
+      - lavori_esterni
+      properties:
+        data_inizio_lavoro_temporaneo:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        data_fine_lavoro_temporaneo:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        descrizione_lavoro:
+          type: string
+          maxLength: 250
+        importo_lavoro:
+          type: number
+          format: double
+        subappalto:
+          type: boolean
+        quota_opere_affidate_a_terzi:
+          type: number
+          format: double
+        lavori_su_materiali_con_amianto:
+          type: boolean
+        lavori_esterni:
+          type: boolean
+        lavoro_utilizza_macchinario:
+          type: object
+          items:
+            $ref: "#/components/schemas/MacchinarioInail"
+        lavoro_ha_committente:
+          type: object
+          items:
+            $ref: "#/components/schemas/SoggettoAssicurante"
+        lavoro_ha_luogo:
+          type: object
+          items:
+            $ref: "#/components/schemas/LuogoDiLavoroInail"
+      example:
+        data_inizio_lavoro_temporaneo: '2017-05-01'
+        data_fine_lavoro_temporaneo: '2017-10-31'
+        descrizione_lavoro: "Ristrutturazione appartamento e impianto elettrico in via Roma 5"
+        importo_lavoro: 54689.25
+        subappalto: false
+        quota_opere_affidate_a_terzi: 15.6
+        lavori_su_materiali_con_amianto: false
+        lavori_esterni: true
+        lavoro_utilizza_macchinario:
+          tipo_strumento: "Carrello elevatore"
+          numero_strumento: 847912
+        lavoro_ha_committente:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/soggetto-assicurante/latest/soggetto-assicurante.oas3.yaml#/components/schemas/SoggettoAssicurante/example"
+        lavoro_ha_luogo:
+          tipoLuogoLavoro: "Ufficio"
+
+    MacchinarioInail:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/MacchinarioINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/"
+        tipo_strumento: tipoStrumento
+        numero_strumento: numeroStrumento
+      additionalProperties: true
+      description:
+          Questo schema rappresenta un macchinario da lavoro ed è associato ad https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/MacchinarioINAIL.
+      required:
+        - tipo_strumento
+        - numero_strumento
+      properties:
+        tipo_strumento:
+          type: string
+          maxLength: 30
+        numero_strumento:
+          type: integer
+          format: int32
+      example:
+         tipo_strumento: "Carrello elevatore"
+         numero_strumento: 847912
+
+    LuogoDiLavoroInail:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/LuogoDiLavoroINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/"
+        tipo_luogo_lavoro: tipoLuogoLavoro
+      additionalProperties: true
+      description:
+          Questo schema rappresenta un luogo di lavoro ed è associato ad https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/LuogoDiLavoroINAIL.
+      required:
+        - tipoLuogoLavoro
+      properties:
+        tipoLuogoLavoro:
+          type: string
+          maxLength: 30
+      example:
+         tipoLuogoLavoro: "Ufficio"

@@ -1,0 +1,75 @@
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAIL_DNLTemp: <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work> a owl:Ontology ;
+    foaf:name "Ontologia INAIL relativa alla polizza del lavoro temporaneo" .
+
+### Individuals
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/td> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "TD" ;
+    foaf:name "Digital Transformation Team"@en,
+        "Team per la Trasformazione Digitale"@it .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+### Annotations
+
+<https://w3id.org/italia/schemas/nuovo-lavoro-temporaneo/latest/nuovo-lavoro-temporaneo.oas3.yaml> a dcatapit:Dataset,
+        dcatapit:Distribution ;
+    rdfs:label "Consultazione Nuovo Lavoro Temporaneo API"@it ;
+    rdfs:comment "Servizio di notifica"@it ;
+    owl:versionInfo "0.1"@it ;
+    admsapit:acronym "inail" ;
+    admsapit:hasKeyClass INAIL_DNLTemp:NuovoLavoroTemporaneoINAIL ;
+    admsapit:prefix "INAIL_DNLTemp"^^xsd:string ;
+    admsapit:target "Cittadini"@it,
+        "Imprese"@it,
+        "Pubbliche Amministrazioni"@it ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/blob/main/assets/schemas/nuovo-lavoro-temporaneo/latest> ;
+    dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+    dcat:distribution <https://w3id.org/italia/schemas/nuovo-lavoro-temporaneo/latest/nuovo-lavoro-temporaneo.oas3.yaml> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/nuovo-lavoro-temporaneo/latest/nuovo-lavoro-temporaneo.oas3.yaml> ;
+    dcat:keyword "Luogo di Lavoro"@it,
+        "Macchinario"@it,
+        "New Temporary Job Position"@en,
+        "Nuovo Lavoro Temporaneo"@it,
+        "Work Equipment"@en,
+        "Workplace"@en ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work> ;
+    dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:description "Il servizio viene invocato per ottenere le informazioni su un nuovo lavoro a carattere temporaneo. Sono “nuovi lavori a carattere temporaneo” i lavori, anche di lunga durata, che: abbiano un termine finale, certo o presunto; siano classificabili ad una voce di tariffa già presente nella P.A.T. attiva presso la Sede INAIL in cui la ditta ha la propria sede legale. Rientrano in tale casistica non solo i lavori edili, idraulici, stradali, di linee di trasporto e di distribuzione, di condotta, ma anche tutti gli altri lavori aventi le suddette caratteristiche (ad es., gestione temporanea di un servizio di mensa scolastica; appalto del servizio di pulizia di edifici privati o pubblici, ecc.)." ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dct:identifier <https://w3id.org/italia/schemas/nuovo-lavoro-temporaneo> ;
+    dct:issued "2024-06-17"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2024-06-17"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:title "Consultazione Nuovo Lavoro Temporaneo API"@it .
+
+### Serialized using the ttlser deterministic serializer v1.2.0
