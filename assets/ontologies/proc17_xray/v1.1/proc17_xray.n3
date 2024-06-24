@@ -1,0 +1,366 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix ns0: <https://w3id.org/italia/onto/ADMS/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<https://w3id.org/italia/work-accident/onto/proc17_xray_machine/>
+  a owl:Ontology ;
+  owl:versionIRI <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/1.0> ;
+  owl:imports <https://w3id.org/italia/onto/CLV/>, <https://w3id.org/italia/onto/COV/>, <https://w3id.org/italia/onto/CPV/>, <https://w3id.org/italia/onto/l0/>, <https://w3id.org/italia/onto/RO/>, <https://w3id.org/italia/onto/TI/>, <https://w3id.org/italia/work-accident/onto/core/>, <https://w3id.org/italia/work-accident/onto/adm_serv/> ;
+  dc:title "Ontologia INAIL relativa alla Polizza Apparecchi RX"@it, "The INAIL X-ray insurance policy Ontology"@en ;
+  ns0:last <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/1.0> ;
+  dcat:keyword "Apparecchio RX"@it, "Soggetto Esposto A Apparecchio"@it, "INAIL X-ray Units"@en, "Worker exposure to X-ray units"@enn ;
+  rdfs:comment "Ontologia INAIL relativa alla Polizza Apparecchi RX. La polizza apparecchi rx consente alle aziende che usano apparecchi radiologici di assicurare sia gli apparecchi che i soggetti esposti alle radiazioni."@it, "This INAIL ontology addresses the X-ray Machine Insurance Policy Cover. This policy offers protection to workers of any Industrial Sector operating with X-ray imaging equipment. The Occupational radiation protection is designed to provide cover for both X-ray machines and radiation exposure in workplaces."@en ;
+  ns0:target "Cittadini"@it, "Imprese"@it, "Pubbliche Amministrazioni"@it ;
+  dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+  dc:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+  dc:issued "2023-12-31T00:00:00Z"^^xsd:dateTime ;
+  ns0:type ns0:ServiceOnytology ;
+  ns0:hasSemanticAssetDistribution <https://w3id.org/italia/work-accident/data/proc17_xray_machine/distribution/PROC17RXD-RDF-TURTLE>, <https://w3id.org/italia/work-accident/data/proc17_xray_machine/distribution/PROC17RXD-RDF-XML>, <https://w3id.org/italia/work-accident/data/proc17_xray_machine/distribution/PROC17RXD-N-TRIPLES> ;
+  rdfs:isDefinedBy <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/> ;
+  rdfs:label "Ontologia INAIL relativa alla Polizza Apparecchi RX"@it, "The INAIL X-ray insurance policy Ontology"@en ;
+  ns0:hasKeyClass <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/ApparecchioRXINAIL>, <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/SoggettoEspostoAApparecchioINAIL> ;
+  ns0:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
+  ns0:hasTask ns0:AnnotationTask, ns0:QueryFormulationTask, ns0:SearchTask ;
+  ns0:status "draft" ;
+  dc:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+  dc:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+  ns0:hasContributor <https://w3id.org/italia/work-accident/data/organization/td> ;
+  owl:versionInfo "Versione 1.0 - Pubblicata il 31 Dicembre 2023"@it, "Version 1.0 - Published on 31 December 2023"@en ;
+  ns0:hasOntologyLanguage ns0:OWL ;
+  ns0:hasFormalityLevel ns0:Formal ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+  dc:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+  ns0:officialURI "https://w3id.org/italia/work-accident/onto/proc17_xray_machine"^^xsd:anyURI ;
+  dc:language <http://publications.europa.eu/resource/authority/language/ENG>, <http://publications.europa.eu/resource/authority/language/ITA> ;
+  ns0:acronym "inail" ;
+  dc:description "Ontologia INAIL relativa alla Polizza Apparecchi RX. La polizza apparecchi rx consente alle aziende che usano apparecchi radiologici di assicurare sia gli apparecchi che i soggetti esposti alle radiazioni."@it, "This INAIL ontology addresses the X-ray Machine Insurance Policy Cover. This policy offers protection to workers of any Industrial Sector operating with X-ray imaging equipment. The Occupational radiation protection is designed to provide cover for both X-ray machines and radiation exposure in workplaces."@en ;
+  dc:identifier "https://w3id.org/italia/work-accident/onto/proc17_xray_machine" ;
+  ns0:prefix "INAIL_XrayMachine" .
+
+dc:accessURL a owl:AnnotationProperty .
+dc:description a owl:AnnotationProperty .
+dc:downloadURL a owl:AnnotationProperty .
+dc:format a owl:AnnotationProperty .
+dc:identifier a owl:AnnotationProperty .
+dc:license a owl:AnnotationProperty .
+dc:title a owl:AnnotationProperty .
+vcard:fn a owl:AnnotationProperty .
+vcard:hasEmail a owl:AnnotationProperty .
+foaf:name a owl:AnnotationProperty .
+<https://w3id.org/italia/work-accident/onto/core/ricopreRuolo> a owl:ObjectProperty, owl:InverseFunctionalProperty .
+<https://w3id.org/italia/work-accident/onto/core/ricopreRuoloDiAssicurato>
+  a owl:ObjectProperty, owl:InverseFunctionalProperty ;
+  rdfs:subPropertyOf <https://w3id.org/italia/work-accident/onto/core/ricopreRuolo> ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/core/PersonaFisica> ;
+  rdfs:range <https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuratoINAIL> .
+
+<https://w3id.org/italia/work-accident/onto/proc17_xray_machine/apparecchioRelativoAPolizza>
+  a owl:ObjectProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/ApparecchioRXINAIL> ;
+  rdfs:range <https://w3id.org/italia/work-accident/onto/core/PolizzaApparecchiRX> ;
+  rdfs:label "apparecchio relativo a polizza"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_xray_machine/denunciaApparecchiRXRelativaA>
+  a owl:ObjectProperty ;
+  rdfs:label "denuncia apparecchi RX relativa a"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_xray_machine/denunciaHaVariazioneApparecchioRX>
+  a owl:ObjectProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/DenunciaDiVariazionePolizzaApparecchiRXINAIL> ;
+  rdfs:range <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/VariazioneApparecchioRXINAIL> ;
+  rdfs:label "denuncia ha variazione apparecchio RX"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_xray_machine/denunciaHaVariazioneSoggettoEsposto>
+  a owl:ObjectProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/DenunciaDiVariazionePolizzaApparecchiRXINAIL> ;
+  rdfs:range <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/VariazioneSoggettoEspostoINAIL> ;
+  rdfs:label "denuncia ha variazione soggetto esposto"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_xray_machine/polizzaPerSoggettoEsposto>
+  a owl:ObjectProperty ;
+  rdfs:range <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/SoggettoEspostoAApparecchioINAIL> ;
+  rdfs:label "polizza per soggetto esposto"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_xray_machine/soggettoEspostoAdApparecchio>
+  a owl:ObjectProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/SoggettoEspostoAApparecchioINAIL> ;
+  rdfs:range <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/ApparecchioRXINAIL> ;
+  rdfs:label "soggetto esposto ad apparecchio"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_xray_machine/variazioneRiferitaASoggettoEsposto>
+  a owl:ObjectProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/VariazioneSoggettoEspostoINAIL> ;
+  rdfs:range <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/SoggettoEspostoAApparecchioINAIL> ;
+  rdfs:label "variazione riferita a soggetto esposto"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_xray_machine/variazioneRiferitaAdApparecchio>
+  a owl:ObjectProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/VariazioneApparecchioRXINAIL> ;
+  rdfs:range <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/ApparecchioRXINAIL> ;
+  rdfs:label "variazione riferita ad apparecchio"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_xray_machine/dataFineValiditaApparecchio>
+  a owl:DatatypeProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/DenunciaDiVariazionePolizzaApparecchiRXINAIL> ;
+  rdfs:comment "La data fine validità deve essere compilata solo nel caso si stia provvedendo a denunciare/regolarizzare un apparecchio che è stato utilizzato per un periodo di tempo limitato"@it ;
+  rdfs:label "data fine validita apparecchio"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_xray_machine/dataFineValiditaSoggettoEsposto>
+  a owl:DatatypeProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/DenunciaDiVariazionePolizzaApparecchiRXINAIL> ;
+  rdfs:comment "La data fine validità deve essere digitata solo nel caso in cui si stia effettuando una denuncia tardiva, per cui il soggetto esposto è già cessato nel momento in cui sta effettuando la denuncia"@it ;
+  rdfs:label "data fine validita soggetto esposto"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_xray_machine/dataInizioValiditaApparecchio>
+  a owl:DatatypeProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/DenunciaDiVariazionePolizzaApparecchiRXINAIL> ;
+  rdfs:label "data inizio validita apparecchio"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_xray_machine/dataInizioValiditaSoggettoEsposto>
+  a owl:DatatypeProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/DenunciaDiVariazionePolizzaApparecchiRXINAIL> ;
+  rdfs:label "data inizio validita soggetto esposto"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_xray_machine/matricolaApparecchio>
+  a owl:DatatypeProperty, owl:FunctionalProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/ApparecchioRXINAIL> ;
+  rdfs:label "matricola apparecchio"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_xray_machine/tipologiaApparecchio>
+  a owl:DatatypeProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/ApparecchioRXINAIL> ;
+  rdfs:label "tipologia apparecchio"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_xray_machine/tipologiaDettaglio>
+  a owl:DatatypeProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/DenunciaDiVariazionePolizzaApparecchiRXINAIL> ;
+  rdfs:comment "tipologia di variazione che si vuole effettuare per la polizza. Assume i seguenti valori: apparecchi, soggetti esposti."@it ;
+  rdfs:label "tipologia dettaglio"@it .
+
+<https://w3id.org/italia/onto/TI/TimeIndexedEvent> a owl:Class .
+<https://w3id.org/italia/work-accident/onto/core/DenunciaDiCessazioneINAIL> a owl:Class .
+<https://w3id.org/italia/work-accident/onto/core/DenunciaDiIscrizioneINAIL> a owl:Class .
+<https://w3id.org/italia/work-accident/onto/core/DenunciaDiVariazioneINAIL> a owl:Class .
+<https://w3id.org/italia/work-accident/onto/core/PersonaFisica>
+  a owl:Class ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/core/ricopreRuoloDiAssicurato> ;
+    owl:someValuesFrom owl:Thing
+  ] .
+
+<https://w3id.org/italia/work-accident/onto/core/PolizzaApparecchiRX>
+  a owl:Class ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/apparecchioRelativoAPolizza> ] ;
+    owl:someValuesFrom owl:Thing
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/polizzaPerSoggettoEsposto> ;
+    owl:someValuesFrom owl:Thing
+  ] .
+
+<https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuratoINAIL>
+  a owl:Class ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/core/ricopreRuoloDiAssicurato> ] ;
+    owl:someValuesFrom owl:Thing
+  ] .
+
+<https://w3id.org/italia/work-accident/onto/proc17_xray_machine/ApparecchioRXINAIL>
+  a owl:Class ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/apparecchioRelativoAPolizza> ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/soggettoEspostoAdApparecchio> ] ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/variazioneRiferitaAdApparecchio> ] ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/matricolaApparecchio> ;
+    owl:someValuesFrom rdfs:Literal
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/tipologiaApparecchio> ;
+    owl:someValuesFrom rdfs:Literal
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/denunciaApparecchiRXRelativaA> ] ;
+    owl:someValuesFrom owl:Thing
+  ] ;
+  rdfs:comment "Ai fini assicurativi per apparecchio radiologico, che costituisce l’elemento di individuazione e di determinazione del premio, si intende il complesso generatore di alta tensione composto da: tavoli di comando per alimentazione; cavi schermati di collegamento fra tavoli di comando e tubi radiogeni; uno o più tubi radiogeni montati su accessori d’esame (ortoscopi, trocoscopi, stratigrafi, ecc.)."@it ;
+  rdfs:label "Apparecchio RX INAIL"@it, "INAIL RX device"@en .
+
+<https://w3id.org/italia/work-accident/onto/proc17_xray_machine/DenunciaDiCessazionePolizzaApparecchiRXINAIL>
+  a owl:Class ;
+  rdfs:subClassOf <https://w3id.org/italia/work-accident/onto/core/DenunciaDiCessazioneINAIL>, [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/denunciaApparecchiRXRelativaA> ;
+    owl:someValuesFrom owl:Thing
+  ] ;
+  rdfs:comment "Denuncia di cessazione della polizza assicurativa per soggetti esposti ad apparecchi RX."@it ;
+  rdfs:label "Denuncia di cessazione polizza apparecchi RX INAIL"@it, "INAIL termination complaint of rx devices policy"@en .
+
+<https://w3id.org/italia/work-accident/onto/proc17_xray_machine/DenunciaDiIscrizionePolizzaApparecchiRXINAIL>
+  a owl:Class ;
+  rdfs:subClassOf <https://w3id.org/italia/work-accident/onto/core/DenunciaDiIscrizioneINAIL>, [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/denunciaApparecchiRXRelativaA> ;
+    owl:someValuesFrom owl:Thing
+  ] ;
+  rdfs:comment "Denuncia di iscrizione di una nuova ditta con contestuale apertura di una polizza assicurativa per soggetti esposti ad apparecchi RX."@it ;
+  rdfs:label "Denuncia di iscrizione polizza apparecchi RX INAIL"@it, "INAIL enrollment complaint of RX devices policy"@en .
+
+<https://w3id.org/italia/work-accident/onto/proc17_xray_machine/DenunciaDiVariazionePolizzaApparecchiRXINAIL>
+  a owl:Class ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/denunciaHaVariazioneApparecchioRX> ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/denunciaHaVariazioneSoggettoEsposto> ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/dataFineValiditaApparecchio> ;
+    owl:someValuesFrom rdfs:Literal
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/dataFineValiditaSoggettoEsposto> ;
+    owl:someValuesFrom rdfs:Literal
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/dataInizioValiditaApparecchio> ;
+    owl:someValuesFrom rdfs:Literal
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/dataInizioValiditaSoggettoEsposto> ;
+    owl:someValuesFrom rdfs:Literal
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/tipologiaDettaglio> ;
+    owl:someValuesFrom rdfs:Literal
+  ] ;
+  rdfs:subClassOf <https://w3id.org/italia/work-accident/onto/core/DenunciaDiVariazioneINAIL>, [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/denunciaApparecchiRXRelativaA> ;
+    owl:someValuesFrom owl:Thing
+  ] ;
+  rdfs:comment "Denuncia che consente ai soggetti assicuranti l'apertura di una o più polizze assicurative per soggetti esposti ad apparecchi RX su una PAT già attiva e l'attivazione di una nuova PAT con contestuale apertura di una o più polizze assicurative contro apparecchi RX sul codice ditta attivo."@it ;
+  rdfs:label "Denuncia di variazione polizza apparecchi RX INAIL"@it, "INAIL variation complaint of rx devices policy"@en .
+
+<https://w3id.org/italia/work-accident/onto/proc17_xray_machine/SoggettoEspostoAApparecchioINAIL>
+  a owl:Class ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/soggettoEspostoAdApparecchio> ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/polizzaPerSoggettoEsposto> ] ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/variazioneRiferitaASoggettoEsposto> ] ;
+    owl:someValuesFrom owl:Thing
+  ] ;
+  rdfs:subClassOf <https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuratoINAIL>, [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/denunciaApparecchiRXRelativaA> ] ;
+    owl:someValuesFrom owl:Thing
+  ] ;
+  rdfs:comment "I soggetti esposti sono persone fisiche che sono addette all’utilizzo degli apparecchi RX e quindi esposti in maniera prolungata alle onde elettromagnetiche dell’apparecchio."@it ;
+  rdfs:label "INAIL exposed subject"@en, "Soggetto esposto a apparecchio INAIL"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_xray_machine/VariazioneApparecchioRXINAIL>
+  a owl:Class ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/variazioneRiferitaAdApparecchio> ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/denunciaHaVariazioneApparecchioRX> ] ;
+    owl:someValuesFrom owl:Thing
+  ] ;
+  rdfs:subClassOf <https://w3id.org/italia/onto/TI/TimeIndexedEvent> ;
+  rdfs:comment "Variazione dei dati relativi all'apparecchio RX"@it ;
+  rdfs:label "INAIL RX device variation"@en, "Variazione apparecchio RX INAIL"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_xray_machine/VariazioneSoggettoEspostoINAIL>
+  a owl:Class ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/variazioneRiferitaASoggettoEsposto> ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/denunciaHaVariazioneSoggettoEsposto> ] ;
+    owl:someValuesFrom owl:Thing
+  ] ;
+  rdfs:subClassOf <https://w3id.org/italia/onto/TI/TimeIndexedEvent> ;
+  rdfs:comment "Variazione dei dati relativi al soggetto esposto all'apparecchio RX"@it ;
+  rdfs:label "INAIL exposed subject variation"@en, "Variazione soggetto esposto INAIL"@it .
+
+<https://w3id.org/italia/work-accident/data/proc17_xray_machine/distribution/PROC17RXD-RDF-TURTLE>
+  a ns0:SemanticAssetDistribution, dcat:Distribution, <http://dati.gov.it/onto/dcatapit#Distribution>, owl:NamedIndividual ;
+  dcat:accessURL <https://github.com/INAIL-it/NDC/tree/main/assets/ontologies/P17-XrayMACHINE/latest> ;
+  dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/P17-XrayMACHINE/latest/P17-XrayMACHINE.ttl> ;
+  dc:description "Questa è la distribuzione RDF/Turtle dell'ontologia INAIL relativa alla polizza apparecchi rx, polizza che consente alle aziende che usano apparecchi radiologici di assicurare sia gli apparecchi che i soggetti esposti alle radiazioni."@it, "X-ray Machine INAIL Insurance Policy Ontology distribution in RDF/Turtle. This policy offers protection to workers of any Industrial Sector operating with X-ray imaging equipment. The Occupational radiation protection is designed to provide cover for both X-ray machines and radiation exposure in workplaces."@en ;
+  dc:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+  dc:license <http://creativecommons.org/licenses/by/4.0/> ;
+  dc:title "Distribuzione RDF/Turtle ontologia INAIL - Polizza Apparecchi RX"@it, "RDF/Turtle distribution of the INAIL ontology - X-ray machine"@en .
+
+<https://w3id.org/italia/work-accident/data/proc17_xray_machine/distribution/PROC17RXD-RDF-XML>
+  a ns0:SemanticAssetDistribution, dcat:Distribution, <http://dati.gov.it/onto/dcatapit#Distribution>, owl:NamedIndividual ;
+  dcat:accessURL <https://github.com/INAIL-it/NDC/tree/main/assets/ontologies/P17-XrayMACHINE/latest> ;
+  dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/P17-XrayMACHINE/latest/P17-XrayMACHINE.owl> ;
+  dc:description "Questa è la distribuzione RDF/XML dell'ontologia INAIL relativa alla polizza apparecchi rx, polizza che consente alle aziende che usano apparecchi radiologici di assicurare sia gli apparecchi che i soggetti esposti alle radiazioni."@it, "X-ray Machine INAIL Insurance Policy Ontology distribution in RDF/XML. This policy offers protection to workers of any Industrial Sector operating with X-ray imaging equipment. The Occupational radiation protection is designed to provide cover for both X-ray machines and radiation exposure in workplaces."@en ;
+  dc:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+  dc:license <http://creativecommons.org/licenses/by/4.0/> ;
+  dc:title "Distribuzione RDF/XML ontologia INAIL - Polizza Apparecchi RX"@it, "RDF/XML distribution of the INAIL ontology - X-ray machine"@en .
+
+<https://w3id.org/italia/work-accident/data/proc17_xray_machine/distribution/PROC17RXD-N-TRIPLES>
+  a ns0:SemanticAssetDistribution, dcat:Distribution, <http://dati.gov.it/onto/dcatapit#Distribution>, owl:NamedIndividual ;
+  dcat:accessURL <https://github.com/INAIL-it/NDC/tree/main/assets/ontologies/P17-XrayMACHINE/latest> ;
+  dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/P17-XrayMACHINE/latest/P17-XrayMACHINE.n3> ;
+  dc:description "Questa è la distribuzione N-TRIPLES dell'ontologia INAIL relativa alla polizza apparecchi rx, polizza che consente alle aziende che usano apparecchi radiologici di assicurare sia gli apparecchi che i soggetti esposti alle radiazioni."@it, "X-ray Machine INAIL Insurance Policy Ontology distribution in N-TRIPLES. This policy offers protection to workers of any Industrial Sector operating with X-ray imaging equipment. The Occupational radiation protection is designed to provide cover for both X-ray machines and radiation exposure in workplaces."@en ;
+  dc:format <http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES> ;
+  dc:license <http://creativecommons.org/licenses/by/4.0/> ;
+  dc:title "Distribuzione N-TRIPLES ontologia INAIL - Polizza Apparecchi RX"@it, "N-TRIPLES distribution of the INAIL ontology - X-ray machine"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/agenzia_entrate>
+  a owl:NamedIndividual, <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/Esattore>, <http://dati.gov.it/onto/dcatapit#Agent>, foaf:Agent ;
+  dc:identifier "age" ;
+  foaf:name "Agenzia delle Entrate"@it, "Italian Revenue Agency"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/inail>
+  a owl:NamedIndividual, <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/DestinatarioPremioINAIL>, <http://dati.gov.it/onto/dcatapit#Agent>, foaf:Agent ;
+  dc:identifier "inail" ;
+  foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it, "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/td>
+  a owl:NamedIndividual, <http://dati.gov.it/onto/dcatapit#Agent>, foaf:Agent ;
+  dc:identifier "TD" ;
+  foaf:name "Team per la Trasformazione Digitale"@it, "Digital Transformation Team"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV>
+  a owl:NamedIndividual, <http://dati.gov.it/onto/dcatapit#Organization>, vcard:Kind, vcard:Organization ;
+  vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+  vcard:hasEmail <mailto:dcod@inail.it> .
