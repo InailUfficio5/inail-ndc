@@ -1,0 +1,52 @@
+[
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/settore_attivita/1",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SettoreAttivita",
+      "skos:Concept"
+    ],
+    "id": "1",
+    "label_it": "Industria",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/settore_attivita/2",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SettoreAttivita",
+      "skos:Concept"
+    ],
+    "id": "2",
+    "label_it": "Artigianato",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/settore_attivita/3",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SettoreAttivita",
+      "skos:Concept"
+    ],
+    "id": "3",
+    "label_it": "Terziario",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/settore_attivita/4",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SettoreAttivita",
+      "skos:Concept"
+    ],
+    "id": "4",
+    "label_it": "Altri",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/settore_attivita/5",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SettoreAttivita",
+      "skos:Concept"
+    ],
+    "id": "5",
+    "label_it": "Speciale",
+    "level": "1"
+  }
+]
