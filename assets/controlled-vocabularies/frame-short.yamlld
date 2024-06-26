@@ -5,7 +5,7 @@ _meta:
     A framing context for a short version
     of the table.
   schema:
-    CountryShort:
+    INAILVocab:
       type: object
       required:
       - url

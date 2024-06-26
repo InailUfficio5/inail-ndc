@@ -30,7 +30,13 @@ def save_to_csv(framed_data, context, output_path):
     if "parent" in df:
         df["parent"] = df["parent"] \
             .transform(lambda x: get_father(x) if pd.isna(x) is False else x)
-
+    
+    #Inserimento di apici per tutti i campi stringa
+    columnsList = df.columns
+    #non aggiungo la quotazione al campo level
+    columnsList = columnsList[:-1]
+    for col in columnsList:
+        df[col] =  df[col].apply(lambda x: "" + str(x) + "")
     df.to_csv(output_path, sep=',', index=False)
     # print(df.to_string())
 
