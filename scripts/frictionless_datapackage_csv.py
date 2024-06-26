@@ -112,7 +112,10 @@ def to_csv(url, src_file):
             .transform(lambda x: get_father(x) if pd.isna(x) is False else x)
 
     df.id = df.id.astype(str)
-    df.to_csv(dest_csv, index=False, sep=",", header=True, quote=csv.QUOTE_NONNUMERIC, quotechar='"')
+    if 'parent' in df.columns:
+        df.parent = df.parent.astype(str)
+
+    df.to_csv(dest_csv, index=False, sep=",", header=True, quoting=csv.QUOTE_NONNUMERIC, quotechar='"')
 
     # g = Graph()
     # g.parse(src_file.with_suffix(".ttl").as_posix())

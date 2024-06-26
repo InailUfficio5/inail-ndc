@@ -34,7 +34,9 @@ def save_to_csv(framed_data, context, output_path):
 
     #Inserimento di apici per tutti i campi stringa
     df.id = df.id.astype(str)
-    df.to_csv(output_path, sep=',', quote=csv.QUOTE_NONNUMERIC, quotechar='"', index=False)
+    if 'parent' in df.columns:
+        df.parent = df.parent.astype(str)
+    df.to_csv(output_path, sep=',', quoting=csv.QUOTE_NONNUMERIC, quotechar='"', index=False)
     # print(df.to_string())
 
 
