@@ -32,10 +32,12 @@ def save_to_csv(framed_data, context, output_path):
         df["parent"] = df["parent"] \
             .transform(lambda x: get_father(x) if pd.isna(x) is False else x)
 
-    #Inserimento di apici per tutti i campi stringa
+    #Columns data type
     df.id = df.id.astype(str)
     if 'parent' in df.columns:
         df.parent = df.parent.astype(str)
+    if 'level' in df.columns:
+        df.level = df.level.astype(int)
     df.to_csv(output_path, sep=',', quoting=csv.QUOTE_NONNUMERIC, quotechar='"', index=False)
     # print(df.to_string())
 

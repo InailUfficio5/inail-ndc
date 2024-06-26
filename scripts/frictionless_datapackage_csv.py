@@ -111,9 +111,12 @@ def to_csv(url, src_file):
         df["parent"] = df["parent"] \
             .transform(lambda x: get_father(x) if pd.isna(x) is False else x)
 
+    #Columns data type
     df.id = df.id.astype(str)
     if 'parent' in df.columns:
         df.parent = df.parent.astype(str)
+    if 'level' in df.columns:
+        df.level = df.level.astype(int)
 
     df.to_csv(dest_csv, index=False, sep=",", header=True, quoting=csv.QUOTE_NONNUMERIC, quotechar='"')
 
