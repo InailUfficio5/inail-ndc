@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/proc17_craftsmen/tipo_qualifica/AP",
+    "@type": "skos:Concept",
+    "id": "AP",
+    "label_it": "Assoc.in partecipaz.",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/proc17_craftsmen/tipo_qualifica/FA",
+    "@type": "skos:Concept",
+    "id": "FA",
+    "label_it": "Familiare",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/proc17_craftsmen/tipo_qualifica/SO",
+    "@type": "skos:Concept",
+    "id": "SO",
+    "label_it": "Socio",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/proc17_craftsmen/tipo_qualifica/TI",
+    "@type": "skos:Concept",
+    "id": "TI",
+    "label_it": "Titolare",
+    "level": "1"
+  }
+]

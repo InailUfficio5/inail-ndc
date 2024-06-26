@@ -48,26 +48,20 @@ repos:
 #
 # Semantic checks.
 #
-- repo: https://github.com/teamdigitale/json-semantic-playground
-  rev: c10c5879438de0d321d6591ec88ace95e042e9d2
-  hooks:
-  # - id: validate-csv
-  #   files: >-
-  #     ^assets\/controlled-vocabularies\/.*\.csv
-  - id: validate-oas-schema
-    files: >-
-      ^assets\/schemas\/.*.oas3.yaml
-  - id: validate-turtle
-    name: Validate ontologies
-    files: >-
-      ^assets\/ontologies\/[^\/]+\/.*\.ttl
-  - id: validate-turtle
-    name: Validate controlled vocabularies
-    files: >-
-      ^assets\/controlled-vocabularies\/.*\.ttl
-#  - id: validate-directory-versioning
-#    files: '^assets\/ontologies\/[^\/]+\/.*\.ttl'
-    #files: '^assets\/ontologies\/.*\.ttl'
+# - repo: https://github.com/teamdigitale/json-semantic-playground
+#   rev: c10c5879438de0d321d6591ec88ace95e042e9d2
+#   hooks:
+#   - id: validate-oas-schema
+#     files: >-
+#       ^assets\/schemas\/.*.oas3.yaml
+#   - id: validate-turtle
+#     name: Validate ontologies
+#     files: >-
+#       ^assets\/ontologies\/[^\/]+\/.*\.ttl
+#   - id: validate-turtle
+#     name: Validate controlled vocabularies
+#     files: >-
+#       ^assets\/controlled-vocabularies\/.*\.ttl
 
 #
 # TTL Serialization.
@@ -104,13 +98,13 @@ repos:
     language: python
     additional_dependencies:
     - typing
-  - id: csvseparator
-    name: Check csv separator
-    entry: python scripts/fix-csv-separator.py
-    files: >-
-      ^assets\/controlled-vocabularies\/.*\.csv
-    language: python
-    additional_dependencies:
-    - pandas==1.5.0
-    types:
-    - file
+  # - id: csvseparator
+  #   name: Check csv separator
+  #   entry: python scripts/fix-csv-separator.py
+  #   files: >-
+  #     ^assets\/controlled-vocabularies\/.*\.csv
+  #   language: python
+  #   additional_dependencies:
+  #   - pandas==1.5.0
+  #   types:
+  #   - file

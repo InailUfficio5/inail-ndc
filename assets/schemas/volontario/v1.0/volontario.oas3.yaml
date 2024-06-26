@@ -1,0 +1,160 @@
+openapi: 3.0.3
+info:
+  title: Schema del Volontario
+  version: 202312.06.00
+  x-summary: Schema del volontario compatibile con l'ontologia INAIL.
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  termsOfService: https://creativecommons.org/licenses/by/4.0/
+  contact:
+    name: Anna Maria De Paoli
+    email: a.depaoli@inail.it
+   # url:
+  description: |-
+    Soggetti che svolgono, in modo spontaneo e gratuito, la loro attività a fini di utilità sociale nell’ambito di progetti promossi da organizzazioni appartenenti al cosiddetto “terzo settore”, in favore di Comuni o enti locali
+
+    La metadatazione semantica degli schemi si basa sul documento
+    [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html)
+    che introduce le keyword x-jsonld-type e x-jsonld-context.
+paths: {}
+servers: []
+tags: []
+components:
+  schemas:
+    PolizzaVolontari:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/polizza-volontari/latest/polizza-volontari.oas3.yaml#/components/schemas/PolizzaVolontari"
+    ProgettoVolontariInail:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/progetto-volontari/latest/progetto-volontari.oas3.yaml#/components/schemas/ProgettoVolontariINAIL"
+
+    VolontarioInail:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/proc17_volunteers/VolontarioINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/proc17_volunteers/"
+        volontario_partecipante_a_progetto:
+          "@id": volontarioPartecipanteAProgetto
+        volontario_relativo_a_polizza:
+          "@id": volontarioRelativoAPolizza
+        ha_sentenza_di_riferimento:
+          "@id": haSentenzaDiRiferimento
+        ha_ordinanza_di_riferimento:
+          "@id": haOrdinanzaDiRiferimento
+      additionalProperties: true
+      description:
+          Questo schema rappresenta un volontario di un progetto ed è associato ad https://w3id.org/italia/work-accident/onto/proc17_volunteers/VolontarioINAIL.
+      required:
+        - numero_giornate_soggetto_assicurato
+        - data_inizio_rischio
+      properties:
+        numero_giornate_soggetto_assicurato:
+         $ref: "#/components/schemas/NumeroGiornate"
+        data_inizio_rischio:
+          $ref: "#/components/schemas/DataInizioRischio"
+        volontario_partecipante_a_progetto:
+          type: object
+          items:
+            $ref: "#/components/schemas/ProgettoVolontariInail"
+        volontario_relativo_a_polizza:
+          type: object
+          items:
+            $ref: "#/components/schemas/PolizzaVolontari"
+        ha_sentenza_di_riferimento:
+          type: object
+          items:
+            $ref: "#/components/schemas/SentenzaInail"
+        ha_ordinanza_di_riferimento:
+          type: object
+          items:
+            $ref: "#/components/schemas/OrdinanzaInail"
+      example:
+        numero_giornate_soggetto_assicurato:
+          $ref: "#/components/schemas/NumeroGiornate/example"
+        data_inizio_rischio:
+          $ref: "#/components/schemas/DataInizioRischio/example"
+        volontario_partecipante_a_progetto:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/progetto-volontari/latest/progetto-volontari.oas3.yaml#/components/schemas/ProgettoVolontariINAIL/example"
+        volontario_relativo_a_polizza:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/polizza-volontari/latest/polizza-volontari.oas3.yaml#/components/schemas/PolizzaVolontari/example"
+        ha_sentenza_di_riferimento:
+          numero_sentenza: 127546
+          data_sentenza: '2015-08-15'
+          tribunale_sentenza: "Tribunale Ordinario di Roma"
+        ha_ordinanza_di_riferimento:
+          numero_ordinanza: 128546
+          data_ordinanza: '2015-08-19'
+          tribunale_ordinanza: "Tribunale Ordinario di Roma"
+
+    NumeroGiornate:
+      type: integer
+      format: int64
+      x-refersTo: https://w3id.org/italia/work-accident/onto/core/numeroGiornateSoggettoAssicurato
+      example: 5
+    DataInizioRischio:
+      type: string
+      format: date
+      x-refersTo: https://w3id.org/italia/work-accident/onto/core/dataInizioRischio
+      pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+      example: '2015-09-02'
+
+    SentenzaInail:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/proc17_volunteers/SentenzaINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/proc17_volunteers/"
+        numero_sentenza: numeroSentenza
+        data_sentenza: dataSentenza
+        tribunale_sentenza: tribunale
+      additionalProperties: true
+      description:
+          Questo schema rappresenta una sentenza di riferimento relativa a un lavoratore di pubblica utilità ed è associato ad https://w3id.org/italia/work-accident/onto/proc17_volunteers/SentenzaINAIL.
+      required:
+        - numero_sentenza
+        - data_sentenza
+        - tribunale_sentenza
+      properties:
+        numero_sentenza:
+          type: integer
+          format: int64
+        data_sentenza:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        tribunale_sentenza:
+          type: string
+          maxLength: 30
+      example:
+        numero_sentenza: 127546
+        data_sentenza: '2015-08-15'
+        tribunale_sentenza: "Tribunale Ordinario di Roma"
+
+    OrdinanzaInail:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/proc17_volunteers/OrdinanzaINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/proc17_volunteers/"
+        numero_ordinanza: numeroOrdinanza
+        data_ordinanza: dataOrdinanza
+        tribunale_ordinanza: tribunale
+      additionalProperties: true
+      description:
+          Questo schema rappresenta un'ordinanza di riferimento relativa a un lavoratore di pubblica utilità ed è associato ad https://w3id.org/italia/work-accident/onto/proc17_volunteers/OrdinanzaINAIL.
+      required:
+        - numero_ordinanza
+        - data_ordinanza
+        - tribunale_ordinanza
+      properties:
+        numero_ordinanza:
+          type: integer
+          format: int64
+        data_ordinanza:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        tribunale_ordinanza:
+          type: string
+          maxLength: 30
+      example:
+        numero_ordinanza: 128546
+        data_ordinanza: '2015-08-19'
+        tribunale_ordinanza: "Tribunale Ordinario di Roma"

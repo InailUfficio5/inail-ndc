@@ -1,0 +1,78 @@
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAILCore: <https://w3id.org/italia/work-accident/onto/core/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+INAILCore: a owl:Ontology ;
+    foaf:name "Ontologia INAIL relativa ai concetti core dell'istituto: Azienda, Posizione Assicurativa Territoriale (PAT), Posizione Assicurativa Navigazione (PAN), Denuncia, Polizza, Sede INAIL, Retribuzione." .
+
+### Classes
+
+INAILCore:PolizzaSostanzeRadioattive a owl:Class ;
+    rdfs:label "Polizza Sostanze Radioattive"@it,
+        "Radioactive substances policy"@en ;
+    rdfs:comment "La polizza assicura medici (dipendenti e autonomi), tecnici sanitari di radiologia medica (autonomi), allievi dei corsi per tecnici sanitari di radiologia medica e altre figure operanti in ambiente sanitario o nel contesto della vendita degli apparecchi radiologici e delle sostanze radioattive. L'assicurazione speciale comprende tutti i casi di malattie e di lesioni da radiazioni ionizzanti da cui sia derivata la morte o l'inabilit� permanente assoluta e parziale; rimane esclusa la copertura dell'inabilit� temporanea assoluta e degli infortuni in itinere. Per questo tipo di assicurazione, a differenza di quella ordinaria (parametrizzata sulle retribuzioni), il premio � funzione del numero/tipologia di apparecchio radiologico e/o del tipo/quantit� di radionuclide."@it .
+
+### Individuals
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/td> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "TD" ;
+    foaf:name "Digital Transformation Team"@en,
+        "Team per la Trasformazione Digitale"@it .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+### Annotations
+
+<https://w3id.org/italia/schemas/polizza-sostanze-radioattive/latest/polizza-sostanze-radioattive.oas3.yaml> a dcatapit:Dataset,
+        dcatapit:Distribution ;
+    rdfs:label "Consultazione Polizze Sostanze Radioattive API"@it ;
+    rdfs:comment "Questo schema rappresenta la polizza sostanze radioattive ed � associato a https://w3id.org/italia/work-accident/onto/core/PolizzaSostanzeRadioattive."@it ;
+    owl:versionInfo "0.1"@it ;
+    admsapit:acronym "inail" ;
+    admsapit:hasKeyClass INAILCore:PolizzaSostanzeRadioattive ;
+    admsapit:prefix "INAILCore"^^xsd:string ;
+    admsapit:target "Cittadini"@it,
+        "Imprese"@it,
+        "Pubbliche Amministrazioni"@it ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/blob/main/assets/schemas/polizza-sostanze-radioattive/latest> ;
+    dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+    dcat:distribution <https://w3id.org/italia/schemas/polizza-sostanze-radioattive/latest/polizza-sostanze-radioattive.oas3.yaml> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/polizza-sostanze-radioattive/latest/polizza-sostanze-radioattive.oas3.yaml> ;
+    dcat:keyword "Polizza assicurativa"@it,
+        "Soggetto assicurato"@it ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo INAILCore: ;
+    dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:description "Il servizio viene invocato per ottenere le informazioni su polizze radioative." ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dct:identifier <https://w3id.org/italia/schemas/polizza-sostanze-radioattive> ;
+    dct:issued "2024-02-13"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2024-06-17"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:title "Consultazione Polizze Sostanze Radioattive API"@it .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

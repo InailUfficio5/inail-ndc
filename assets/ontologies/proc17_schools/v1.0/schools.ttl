@@ -1,0 +1,281 @@
+@prefix adms: <https://w3id.org/italia/onto/ADMS/> .
+@prefix CLV: <https://w3id.org/italia/onto/CLV/> .
+@prefix COV: <https://w3id.org/italia/onto/COV/> .
+@prefix CPV: <https://w3id.org/italia/onto/CPV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAIL_Scuole: <https://w3id.org/italia/work-accident/onto/proc17_schools/> .
+@prefix INAILAutoliq: <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> .
+@prefix INAILCore: <https://w3id.org/italia/work-accident/onto/core/> .
+@prefix INAILService: <https://w3id.org/italia/work-accident/onto/adm_serv/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix RO: <https://w3id.org/italia/onto/RO/> .
+@prefix TI: <https://w3id.org/italia/onto/TI/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+INAIL_Scuole: a owl:Ontology ;
+    owl:versionIRI INAIL_Scuole:1.0 ;
+    owl:imports CLV:,
+        COV:,
+        CPV:,
+        INAILCore:,
+        INAILService:,
+        l0:,
+        RO:,
+        TI: ;
+    rdfs:label "INAIL Ontology about Schools Policy"@en,
+        "Ontologia INAIL relativa alla Polizza Scuole"@it ;
+    rdfs:comment "Ontologia INAIL relativa alla Polizza Scuole. La polizza scuole copre gli studenti da tutti gli infortuni che possono accadere all'interno della scuola durante l'attività scolastica, che si tratti di lezioni classiche, attività fisica oppure laboratori di ogni tipo."@it,
+        "This is the ontology of the INAIL Organization about Schools Policy. Schools policy insures students from all accidents that may occur within the school during school activities, be it classic lessons, physical activity or workshops of any kind."@en ;
+    owl:versionInfo "Version 1.0 - Published on 31 December 2023"@en,
+        "Versione 1.0 - Pubblicata il 31 Dicembre 2023"@it ;
+    rdfs:isDefinedBy INAIL_Scuole: ;
+    adms:acronym "inail" ;
+    adms:hasContributor <https://w3id.org/italia/work-accident/data/organization/td> ;
+    adms:hasFormalityLevel adms:Formal ;
+    adms:hasKeyClass INAIL_Scuole:StudenteINAIL ;
+    adms:hasOntologyLanguage adms:OWL ;
+    adms:hasSemanticAssetDistribution <https://w3id.org/italia/work-accident/data/proc17_schools/distribution/PROC17SP-N-TRIPLES>,
+        <https://w3id.org/italia/work-accident/data/proc17_schools/distribution/PROC17SP-RDF-TURTLE>,
+        <https://w3id.org/italia/work-accident/data/proc17_schools/distribution/PROC17SP-RDF-XML> ;
+    adms:hasTask adms:AnnotationTask,
+        adms:QueryFormulationTask,
+        adms:SearchTask ;
+    adms:last INAIL_Scuole:1.0 ;
+    adms:officialURI "https://w3id.org/italia/work-accident/onto/proc17_schools"^^xsd:anyURI ;
+    adms:prefix "INAIL_Scuole" ;
+    adms:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
+    adms:status "draft" ;
+    adms:target "Cittadini"@it,
+        "Imprese"@it,
+        "Pubbliche Amministrazioni"@it ;
+    adms:type adms:ServiceOnytology ;
+    dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+    dcat:keyword "Student"@en,
+        "Studente"@it ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:description "Ontologia INAIL relativa alla Polizza Scuole. La polizza scuole copre gli studenti da tutti gli infortuni che possono accadere all'interno della scuola durante l'attività scolastica, che si tratti di lezioni classiche, attività fisica oppure laboratori di ogni tipo."@it,
+        "This is the ontology of the INAIL Organization about Schools Policy. Schools policy insures students from all accidents that may occur within the school during school activities, be it classic lessons, physical activity or workshops of any kind."@en ;
+    dct:identifier "https://w3id.org/italia/work-accident/onto/proc17_schools" ;
+    dct:issued "2023-12-31T00:00:00+00:00"^^xsd:dateTime ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:title "INAIL Ontology about Schools Policy"@en,
+        "Ontologia INAIL relativa alla Polizza Scuole"@it .
+
+### Object Properties
+
+INAIL_Scuole:denunciaScuoleRelativaA a owl:ObjectProperty ;
+    rdfs:label "denuncia scuole relativa a"@it ;
+    rdfs:range INAIL_Scuole:StudenteINAIL .
+
+INAIL_Scuole:polizzaRelativaAStudenti a owl:ObjectProperty ;
+    rdfs:label "polizza relativa a studenti"@it ;
+    rdfs:domain INAILCore:PolizzaScuole ;
+    rdfs:range INAIL_Scuole:StudenteINAIL .
+
+INAILCore:ricopreRuolo a owl:InverseFunctionalProperty,
+        owl:ObjectProperty .
+
+INAILCore:ricopreRuoloDiAssicurato a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:subPropertyOf INAILCore:ricopreRuolo ;
+    rdfs:domain INAILCore:PersonaFisica ;
+    rdfs:range INAILCore:SoggettoAssicuratoINAIL .
+
+### Annotation Properties
+
+dct:accessURL a owl:AnnotationProperty .
+
+dct:description a owl:AnnotationProperty .
+
+dct:downloadURL a owl:AnnotationProperty .
+
+dct:format a owl:AnnotationProperty .
+
+dct:identifier a owl:AnnotationProperty .
+
+dct:license a owl:AnnotationProperty .
+
+dct:title a owl:AnnotationProperty .
+
+foaf:name a owl:AnnotationProperty .
+
+vcard:fn a owl:AnnotationProperty .
+
+vcard:hasEmail a owl:AnnotationProperty .
+
+### Data Properties
+
+INAIL_Scuole:annoScolastico a owl:DatatypeProperty ;
+    rdfs:label "anno scolastico"@it ;
+    rdfs:comment "Se la denuncia è effettuata nei termini, l’inizio validità della polizza è il primo novembre dell’anno di riferimento e l’anno scolastico è quello relativo al periodo 01/11/xxxx – 31/10/xxxx+1; in questo caso l’anno di riferimento è l’unico per il quale è necessario effettuare la comunicazione del numero degli alunni. Se, invece la denuncia è effettuata fuori termine, ci saranno dei periodi in pregresso per i quali devono essere effettuate le comunicazioni del numero degli alunni e la lista presenterà più periodi selezionabili"@it .
+
+INAIL_Scuole:numeroAlunniEStudenti a owl:DatatypeProperty ;
+    rdfs:label "numero alunni e studenti"@it ;
+    rdfs:comment "Numero degli alunni e studenti da denunciare per l'anno in oggetto."@it .
+
+### Classes
+
+INAIL_Scuole:DenunciaAnnualeScuolePerRegolazioneINAIL a owl:Class ;
+    rdfs:label "Denuncia annuale scuole per regolazione INAIL"@it,
+        "INAIL annual schools complaint for regulation"@en ;
+    rdfs:subClassOf INAILCore:DenunciaDiVariazioneINAIL,
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Scuole:annoScolastico ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:comment "Denuncia che consente di definire un conguaglio a favore del contraente il quale prevede che la scuola si tuteli attraverso la determinazione di un premio minimo. In questo modo, in caso di regolazione passiva a favore dell'assicurato, la stessa acquisirà in ogni caso un premio commisurato alle sue aspettative; secondo il quale il mancato pagamento dei premi successivi al primo comporta la sospensione della garanzia assicurativa per il solo periodo a cui si riferisce il premio, fermo restando l'obbligo dell'assicuratore di indennizzare i sinistri verificatisi precedentemente."@it .
+
+INAIL_Scuole:DenunciaDiCessazionePolizzaScuoleINAIL a owl:Class ;
+    rdfs:label "Denuncia di cessazione polizza scuole INAIL"@it,
+        "INAIL termination complaint of schools policy"@en ;
+    rdfs:subClassOf INAILCore:DenunciaDiCessazioneINAIL,
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Scuole:denunciaScuoleRelativaA ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Denuncia di cessazione della polizza assicurativa per le scuole."@it .
+
+INAIL_Scuole:DenunciaDiIscrizionePolizzaScuoleINAIL a owl:Class ;
+    rdfs:label "Denuncia di iscrizione polizza scuole INAIL"@it,
+        "INAIL enrollment complaint of schools policy"@en ;
+    rdfs:subClassOf INAILCore:DenunciaDiIscrizioneINAIL,
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Scuole:annoScolastico ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Scuole:denunciaScuoleRelativaA ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Scuole:numeroAlunniEStudenti ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:comment "Denuncia di iscrizione di una nuova ditta con contestuale apertura di una polizza assicurativa per le scuole"@it .
+
+INAIL_Scuole:DenunciaDiVariazionePolizzaScuoleINAIL a owl:Class ;
+    rdfs:label "Denuncia di variazione polizza scuole INAIL"@it,
+        "INAIL variation complaint of schools policy"@en ;
+    rdfs:subClassOf INAILCore:DenunciaDiVariazioneINAIL,
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Scuole:annoScolastico ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Scuole:denunciaScuoleRelativaA ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Scuole:numeroAlunniEStudenti ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:comment "Denuncia che consente ai soggetti assicuranti l'apertura di una o più polizze assicurative per le scuole su una PAT già attiva e l'attivazione di una nuova PAT con contestuale apertura di una o più polizze assicurative per le scuole sul codice ditta attivo."@it .
+
+INAIL_Scuole:StudenteINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Scuole:denunciaScuoleRelativaA ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Scuole:polizzaRelativaAStudenti ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL student"@en,
+        "Studente INAIL"@it ;
+    rdfs:subClassOf INAILCore:SoggettoAssicuratoINAIL ;
+    rdfs:comment "Persona regolarmente iscritta a una scuola o un'università all'interno di un corso di studi proposto dalla stessa, sulla base di un progetto educativo finalizzato all'apprendimento di una o più materie."@it .
+
+INAILCore:DenunciaDiCessazioneINAIL a owl:Class .
+
+INAILCore:DenunciaDiIscrizioneINAIL a owl:Class .
+
+INAILCore:DenunciaDiVariazioneINAIL a owl:Class .
+
+INAILCore:PersonaFisica a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:ricopreRuoloDiAssicurato ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:PolizzaScuole a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Scuole:polizzaRelativaAStudenti ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:SoggettoAssicuratoINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:ricopreRuoloDiAssicurato ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+### Individuals
+
+<https://w3id.org/italia/work-accident/data/organization/agenzia_entrate> a dcatapit:Agent,
+        foaf:Agent,
+        INAILAutoliq:Esattore,
+        owl:NamedIndividual ;
+    dct:identifier "age" ;
+    foaf:name "Agenzia delle Entrate"@it,
+        "Italian Revenue Agency"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent,
+        INAILAutoliq:DestinatarioPremioINAIL,
+        owl:NamedIndividual ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/td> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "TD" ;
+    foaf:name "Digital Transformation Team"@en,
+        "Team per la Trasformazione Digitale"@it .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+<https://w3id.org/italia/work-accident/data/proc17_schools/distribution/PROC17SP-N-TRIPLES> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc17_schools/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc17_schools/latest/proc17_schools.n3> ;
+    dct:description "Questa è la distribuzione N-TRIPLES dell'ontologia INAIL relativa alla polizza scuole, polizza che copre gli studenti da tutti gli infortuni che possono accadere all'interno della scuola durante l'attività scolastica, che si tratti di lezioni classiche, attività fisica oppure laboratori di ogni tipo."@it,
+        "This is the distribution in N-TRIPLES of the INAIL ontology about schools policy, this policy insures students from all accidents that may occur within the school during school activities, be it classic lessons, physical activity or workshops of any kind."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione N-TRIPLES ontologia INAIL - Polizza Scuole"@it,
+        "N-TRIPLES distribution of INAIL ontology - Schools Policy"@en .
+
+<https://w3id.org/italia/work-accident/data/proc17_schools/distribution/PROC17SP-RDF-TURTLE> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc17_schools/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc17_schools/latest/proc17_schools.ttl> ;
+    dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia INAIL relativa alla polizza scuole, polizza che copre gli studenti da tutti gli infortuni che possono accadere all'interno della scuola durante l'attività scolastica, che si tratti di lezioni classiche, attività fisica oppure laboratori di ogni tipo."@it,
+        "This is the distribution in RDF/Turtle of the INAIL ontology about schools policy, this policy insures students from all accidents that may occur within the school during school activities, be it classic lessons, physical activity or workshops of any kind."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione RDF/Turtle ontologia INAIL - Polizza Scuole"@it,
+        "RDF/Turtle distribution of INAIL ontology - Schools Policy"@en .
+
+<https://w3id.org/italia/work-accident/data/proc17_schools/distribution/PROC17SP-RDF-XML> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc17_schools/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc17_schools/latest/proc17_schools.owl> ;
+    dct:description "Questa è la distribuzione RDF/XML dell'ontologia INAIL relativa alla polizza scuole, polizza che copre gli studenti da tutti gli infortuni che possono accadere all'interno della scuola durante l'attività scolastica, che si tratti di lezioni classiche, attività fisica oppure laboratori di ogni tipo."@it,
+        "This is the distribution in RDF/XML of the INAIL ontology about schools policy, this policy insures students from all accidents that may occur within the school during school activities, be it classic lessons, physical activity or workshops of any kind."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione RDF/XML ontologia INAIL - Polizza Scuole"@it,
+        "RDF/XML distribution of INAIL ontology - Schools Policy"@en .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

@@ -1,0 +1,812 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/italia/work-accident/onto/proc17_artisan/"
+     xml:base="https://w3id.org/italia/work-accident/onto/proc17_artisan/"
+     xmlns:INAIL_Fishermen="https://w3id.org/italia/work-accident/onto/proc17_fishermen/"
+     xmlns:INAILService="https://w3id.org/italia/work-accident/onto/adm_serv/"
+     xmlns:l0="https://w3id.org/italia/onto/l0/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:INAIL_Artisan="https://w3id.org/italia/work-accident/onto/proc17_artisan/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:CPV="https://w3id.org/italia/onto/CPV/"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:CLV="https://w3id.org/italia/onto/CLV/"
+     xmlns:INAIL_Sostanze_Radioattive="https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:dcatapit="http://dati.gov.it/onto/dcatapit#"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:adms="https://w3id.org/italia/onto/ADMS/"
+     xmlns:INAILAutoliq="https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/"
+     xmlns:INAILCore="https://w3id.org/italia/work-accident/onto/core/"
+     xmlns:COV="https://w3id.org/italia/onto/COV/"
+     xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+     xmlns:INAIL_RX_Devices="https://w3id.org/italia/work-accident/onto/proc17_rx_devices/"
+     xmlns:INAIL_DNLTemp="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/"
+     xmlns:INAILPDDA1="https://w3id.org/italia/work-accident/onto/proc6/"
+     xmlns:TI="https://w3id.org/italia/onto/TI/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:INAIL="http://okms.inail/ontology/"
+     xmlns:INAIL_Scuole="https://w3id.org/italia/work-accident/onto/proc17_schools/"
+     xmlns:INAIL_Volunteers="https://w3id.org/italia/work-accident/onto/proc17_volunteers/"
+     xmlns:RO="https://w3id.org/italia/onto/RO/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/">
+        <owl:versionIRI rdf:resource="urn:absolute:1.0"/>
+    </owl:Ontology>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://purl.org/dc/terms/accessURL -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accessURL"/>
+
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+
+
+
+    <!-- http://purl.org/dc/terms/downloadURL -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/downloadURL"/>
+
+
+
+    <!-- http://purl.org/dc/terms/format -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/format"/>
+
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#fn -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#fn"/>
+
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#hasEmail -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasEmail"/>
+
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/ricopreRuolo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/core/ricopreRuolo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/ricopreRuoloDiAssicurato -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/core/ricopreRuoloDiAssicurato">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/ricopreRuolo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/core/PersonaFisica"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuratoINAIL"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/soggettoAssicuratoSvolgeAttivita -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/core/soggettoAssicuratoSvolgeAttivita">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuratoINAIL"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/Attivita"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_artisan/artigianoHaIscrizioneAdAlbo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/artigianoHaIscrizioneAdAlbo">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/ArtigianoINAIL"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/IscrizioneAlboImpreseArtigianeINAIL"/>
+        <rdfs:label xml:lang="en">Artisan submits registation form </rdfs:label>
+        <rdfs:label xml:lang="it">artigiano ha iscrizione ad albo</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_artisan/denunciaArtigianiHaVariazione -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/denunciaArtigianiHaVariazione">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaVariazioneArtigianiINAIL"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/VariazioneAttivitaArtigianoINAIL"/>
+                    <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/VariazioneIncidenzeLavorazioniINAIL"/>
+                    <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/VariazioneSoggettoAssicuratoArtigianiINAIL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">INAIL Artisan Amendment in relation to </rdfs:label>
+        <rdfs:label xml:lang="it">denuncia artigiani ha variazione</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_artisan/denunciaIscrizioneRelativaAdArtigiano -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/denunciaIscrizioneRelativaAdArtigiano">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaIscrizioneArtigianiINAIL"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/SoggettoAssicuratoArtigianiINAIL"/>
+        <rdfs:label xml:lang="en">Become an Artisan Member </rdfs:label>
+        <rdfs:label xml:lang="it">denuncia iscrizione relativa ad artigiano</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_artisan/polizzaArtigianiRelativaA -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/polizzaArtigianiRelativaA">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/core/PolizzaArtigiani"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/SoggettoAssicuratoArtigianiINAIL"/>
+        <rdfs:label xml:lang="en">Artisan Policy in regards to </rdfs:label>
+        <rdfs:label xml:lang="it">polizza artigiani relativa a</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_artisan/variazioneIncidenzeRelativaA -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/variazioneIncidenzeRelativaA">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/VariazioneIncidenzeLavorazioniINAIL"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/Attivita"/>
+        <rdfs:label xml:lang="en">incidence update in relation to</rdfs:label>
+        <rdfs:label xml:lang="it">variazione incidenze relativa a</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_artisan/variazioneLavorazioneArtigianoRelativaA -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/variazioneLavorazioneArtigianoRelativaA">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/VariazioneAttivitaArtigianoINAIL"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/Attivita"/>
+        <rdfs:label xml:lang="en">Artisan&apos;s field of work update in relation to</rdfs:label>
+        <rdfs:label xml:lang="it">variazione lavorazione artigiano relativa a</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_artisan/variazioneSoggettoAssicuratoArtigianiRelativoA -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/variazioneSoggettoAssicuratoArtigianiRelativoA">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/VariazioneSoggettoAssicuratoArtigianiINAIL"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/SoggettoAssicuratoArtigianiINAIL"/>
+        <rdfs:label xml:lang="en">Amend the Artisan Insured Policy in regards to </rdfs:label>
+        <rdfs:label xml:lang="it">variazione soggetto assicurato artigiani relativa a</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_artisan/dataIscrizioneAlbo -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/dataIscrizioneAlbo">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/IscrizioneAlboImpreseArtigianeINAIL"/>
+        <rdfs:label xml:lang="en">Artisan Registation Date</rdfs:label>
+        <rdfs:label xml:lang="it">data iscrizione albo</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_artisan/nomeAlbo -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/nomeAlbo">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/IscrizioneAlboImpreseArtigianeINAIL"/>
+        <rdfs:label xml:lang="en">Artisan Registration Name </rdfs:label>
+        <rdfs:label xml:lang="it">nome albo</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_artisan/numeroIscrizioneAlbo -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/numeroIscrizioneAlbo">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/IscrizioneAlboImpreseArtigianeINAIL"/>
+        <rdfs:label xml:lang="en">Artisan Registration Number</rdfs:label>
+        <rdfs:label xml:lang="it">numero iscrizione albo</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_artisan/numeroLavorazione -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/numeroLavorazione">
+        <rdfs:label xml:lang="en">Application Number</rdfs:label>
+        <rdfs:label xml:lang="it">numero lavorazione</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_artisan/socioOFamiliare -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/socioOFamiliare">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/SoggettoAssicuratoNonArtigianoINAIL"/>
+        <rdfs:label xml:lang="en">Member or Family</rdfs:label>
+        <rdfs:label xml:lang="it">socio o familiare</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_artisan/tipoDenunciaVariazioneArtigiani -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/tipoDenunciaVariazioneArtigiani">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaVariazioneArtigianiINAIL"/>
+        <rdfs:label xml:lang="en">Type of amendment for INAIL Artisan </rdfs:label>
+        <rdfs:label xml:lang="it">tipo denuncia variazione artigiani</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://w3id.org/italia/onto/TI/TimeIndexedEvent -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/TI/TimeIndexedEvent"/>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/Attivita -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/Attivita">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/soggettoAssicuratoSvolgeAttivita"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/variazioneIncidenzeRelativaA"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/variazioneLavorazioneArtigianoRelativaA"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/DenunciaDiIscrizioneINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/DenunciaDiIscrizioneINAIL"/>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/DenunciaDiVariazioneINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/DenunciaDiVariazioneINAIL"/>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/PersonaFisica -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/PersonaFisica">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/core/ricopreRuoloDiAssicurato"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/PolizzaArtigiani -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/PolizzaArtigiani">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/polizzaArtigianiRelativaA"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Artisan Policy</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuratoINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuratoINAIL">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/core/soggettoAssicuratoSvolgeAttivita"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/ricopreRuoloDiAssicurato"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">The INAIL Insured</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_artisan/ArtigianoINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/ArtigianoINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/SoggettoAssicuratoArtigianiINAIL"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/artigianoHaIscrizioneAdAlbo"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/SoggettoAssicuratoNonArtigianoINAIL"/>
+        <rdfs:comment xml:lang="it">Soggetti che svolgono un&apos;attività di produzione di beni, anche semilavorati, o di prestazioni di servizi, escluse le attività agricole e le attività di prestazione di servizi commerciali, di intermediazione nella circolazione dei beni o ausiliarie di queste ultime e di somministrazione al pubblico di alimenti e bevande.</rdfs:comment>
+        <rdfs:label xml:lang="it">ArtigianoINAIL</rdfs:label>
+        <rdfs:label xml:lang="en">INAIL Artisan</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaCessazioneAssicuratoINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaCessazioneAssicuratoINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaVariazioneArtigianiINAIL"/>
+        <rdfs:comment xml:lang="it">Denuncia di cessazione del soggetto assicurato dalla polizza assicurazione artigiani.</rdfs:comment>
+        <rdfs:label xml:lang="it">Denuncia cessazione assicurato INAIL</rdfs:label>
+        <rdfs:label xml:lang="en">INAIL Insured Notice of Termination</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaIscrizioneArtigianiINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaIscrizioneArtigianiINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/DenunciaDiIscrizioneINAIL"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/denunciaIscrizioneRelativaAdArtigiano"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/numeroLavorazione"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Denuncia di iscrizione di una nuova ditta con contestuale apertura di una polizza assicurativa artigiani.</rdfs:comment>
+        <rdfs:label xml:lang="it">Denuncia iscrizione artigiani INAIL</rdfs:label>
+        <rdfs:label xml:lang="en">First Application with INAIL Artisan </rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaNuovaLavorazioneINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaNuovaLavorazioneINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaVariazioneArtigianiINAIL"/>
+        <rdfs:comment xml:lang="it">Denuncia che consente di comunicare la nuova lavorazione da realizzare e i relativi impianti e macchinari da utilizzare per la realizzazione.</rdfs:comment>
+        <rdfs:label xml:lang="it">Denuncia nuova lavorazione INAIL</rdfs:label>
+        <rdfs:label xml:lang="en">INAIL Implementation Notice</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaNuovoAssicuratoINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaNuovoAssicuratoINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaVariazioneArtigianiINAIL"/>
+        <rdfs:comment xml:lang="it">Denuncia che consente di comunicare  un nuovo soggetto da assicurare.</rdfs:comment>
+        <rdfs:label xml:lang="it">Denuncia nuovo assicurato INAIL</rdfs:label>
+        <rdfs:label xml:lang="en">INAIL Registration for a new Insured member </rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaVariazioneArtigianiINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaVariazioneArtigianiINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/DenunciaDiVariazioneINAIL"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaCessazioneAssicuratoINAIL"/>
+                    <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaNuovaLavorazioneINAIL"/>
+                    <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaNuovoAssicuratoINAIL"/>
+                    <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaVariazioneIncidenzeLavorazioniINAIL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/denunciaArtigianiHaVariazione"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/tipoDenunciaVariazioneArtigiani"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Denuncia di variazione che consente di modificare i dati relativi ad un soggetto assicurato con polizza artigiani con qualifica di artigiano.</rdfs:comment>
+        <rdfs:label xml:lang="it">Denuncia variazione artigiani INAIL</rdfs:label>
+        <rdfs:label xml:lang="en">INAIL Artisan Amendment</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaVariazioneIncidenzeLavorazioniINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaVariazioneIncidenzeLavorazioniINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaVariazioneArtigianiINAIL"/>
+        <rdfs:comment xml:lang="it">Denuncia di variazione che consente di modificare i dati relativi ad un soggetto assicurato con polizza artigiani con qualifica diversa da artigiano.</rdfs:comment>
+        <rdfs:label xml:lang="it">Denuncia variazione incidenze lavorazioniINAIL</rdfs:label>
+        <rdfs:label xml:lang="en">INAIL Update Service </rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_artisan/IscrizioneAlboImpreseArtigianeINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/IscrizioneAlboImpreseArtigianeINAIL">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/artigianoHaIscrizioneAdAlbo"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/dataIscrizioneAlbo"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/nomeAlbo"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/numeroIscrizioneAlbo"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Richiesta obbligatoria che permette ad un&apos;impresa artigiana di iscriversi al relativo albo, affinchè il titolare artigiano possa istituire il rapporto assicurativo con l&apos;Inail.</rdfs:comment>
+        <rdfs:label xml:lang="en">Artisans Registration with INAIL</rdfs:label>
+        <rdfs:label xml:lang="it">Iscrizione albo imprese artigiane INAIL</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_artisan/SoggettoAssicuratoArtigianiINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/SoggettoAssicuratoArtigianiINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuratoINAIL"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/ArtigianoINAIL"/>
+                    <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/SoggettoAssicuratoNonArtigianoINAIL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/denunciaIscrizioneRelativaAdArtigiano"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/polizzaArtigianiRelativaA"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/variazioneSoggettoAssicuratoArtigianiRelativoA"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Soggetto con qualifica di artigiano che viene assicurato da Inail attraverso polizza artigiani.</rdfs:comment>
+        <rdfs:label xml:lang="en">Artisan insured by INAIL</rdfs:label>
+        <rdfs:label xml:lang="it">Soggetto assicurato artigiani INAIL</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_artisan/SoggettoAssicuratoNonArtigianoINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/SoggettoAssicuratoNonArtigianoINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/SoggettoAssicuratoArtigianiINAIL"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/socioOFamiliare"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Soggetto con qualifica diversa da artigiano (es: familiare, socio, ecc..) che viene assicurato da Inail attraverso polizza artigiani.</rdfs:comment>
+        <rdfs:label xml:lang="en">INAIL Insured but not an Artisan </rdfs:label>
+        <rdfs:label xml:lang="it">Soggetto assicurato non artigiano INAIL</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_artisan/VariazioneAttivitaArtigianoINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/VariazioneAttivitaArtigianoINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/TI/TimeIndexedEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/variazioneLavorazioneArtigianoRelativaA"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/denunciaArtigianiHaVariazione"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Variazione dei dati relativi all&apos;attività di lavorazione da realizzare e i relativi impianti e macchinare da utilizzare per la realizzazione.</rdfs:comment>
+        <rdfs:label xml:lang="en">Update INAIL Artisan&apos;s field of work</rdfs:label>
+        <rdfs:label xml:lang="it">Variazione attività artigiano INAIL</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_artisan/VariazioneIncidenzeLavorazioniINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/VariazioneIncidenzeLavorazioniINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/TI/TimeIndexedEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/variazioneIncidenzeRelativaA"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/denunciaArtigianiHaVariazione"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Variazione dei dati dell&apos;attività in conseguenza di un&apos;incidenza della lavorazione.</rdfs:comment>
+        <rdfs:label xml:lang="en">INAIL incidence rate update</rdfs:label>
+        <rdfs:label xml:lang="it">Variazione incidenze lavorazioni INAIL</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_artisan/VariazioneSoggettoAssicuratoArtigianiINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/VariazioneSoggettoAssicuratoArtigianiINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/TI/TimeIndexedEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/variazioneSoggettoAssicuratoArtigianiRelativoA"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_artisan/denunciaArtigianiHaVariazione"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Variazione dei dati relativi al soggetto assicurato con polizza artigiani con qualifica di artigiano.</rdfs:comment>
+        <rdfs:label xml:lang="en">INAIL Artisans Policy Update</rdfs:label>
+        <rdfs:label xml:lang="it">Variazione soggetto assicurato artigiani INAIL</rdfs:label>
+    </owl:Class>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE">
+        <dct:accessURL>https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/.....</dct:accessURL>
+        <dct:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia INAIL relativa ai concetti principali dell&apos;istituto</dct:description>
+        <dct:description xml:lang="en">This is the distribution in RDF/Turtle of the INAIL ontology about core concepts of the institute</dct:description>
+        <dct:downloadURL>https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/...</dct:downloadURL>
+        <dct:format>http://publications.europa.eu/resource/authority/file-type/RDF</dct:format>
+        <dct:license>http://creativecommons.org/licenses/by/4.0/</dct:license>
+        <dct:title xml:lang="it">Distribuzione RDF/Turtle ontologia INAIL - Core</dct:title>
+        <dct:title xml:lang="en">RDF/Turtle distribution of INAIL ontology - Core</dct:title>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/organization/inail -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/onto/core/organization/inail">
+        <dct:identifier>inail</dct:identifier>
+        <foaf:name xml:lang="it">Istituto Nazionale per l&apos;Assicurazione contro gli Infortuni sul Lavoro</foaf:name>
+        <foaf:name xml:lang="en">National Institute for Insurance against Accidents at Work</foaf:name>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/organization/td -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/onto/core/organization/td">
+        <dct:identifier>TD</dct:identifier>
+        <foaf:name xml:lang="en">Digital Transformation Team</foaf:name>
+        <foaf:name xml:lang="it">Team per la Trasformazione Digitale</foaf:name>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/organization/ufficioV -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/onto/core/organization/ufficioV">
+        <vcard:fn>INAIL Ufficio V - D.C.O.D</vcard:fn>
+        <vcard:hasEmail xml:lang="inail.it">mailto:dcod</vcard:hasEmail>
+    </owl:NamedIndividual>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaCessazioneAssicuratoINAIL"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaNuovaLavorazioneINAIL"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaNuovoAssicuratoINAIL"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/DenunciaVariazioneIncidenzeLavorazioniINAIL"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/VariazioneAttivitaArtigianoINAIL"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/VariazioneIncidenzeLavorazioniINAIL"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/proc17_artisan/VariazioneSoggettoAssicuratoArtigianiINAIL"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.4) https://github.com/owlcs/owlapi -->
+

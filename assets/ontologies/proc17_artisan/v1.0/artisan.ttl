@@ -1,0 +1,442 @@
+@prefix adms: <https://w3id.org/italia/onto/ADMS/> .
+@prefix CLV: <https://w3id.org/italia/onto/CLV/> .
+@prefix COV: <https://w3id.org/italia/onto/COV/> .
+@prefix CPV: <https://w3id.org/italia/onto/CPV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAIL_Craftsmen: <https://w3id.org/italia/work-accident/onto/proc17_craftsmen/> .
+@prefix INAILAutoliq: <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> .
+@prefix INAILCore: <https://w3id.org/italia/work-accident/onto/core/> .
+@prefix INAILService: <https://w3id.org/italia/work-accident/onto/adm_serv/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix RO: <https://w3id.org/italia/onto/RO/> .
+@prefix TI: <https://w3id.org/italia/onto/TI/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+INAIL_Craftsmen: a owl:Ontology ;
+    owl:versionIRI INAIL_Craftsmen:1.0 ;
+    owl:imports CLV:,
+        COV:,
+        CPV:,
+        INAILCore:,
+        INAILService:,
+        l0:,
+        RO:,
+        TI: ;
+    rdfs:label "INAIL Ontology about Craftsmen Policy"@en,
+        "Ontologia INAIL relativa alla Polizza Artigiani"@it ;
+    rdfs:comment "Ontologia INAIL relativa alla Polizza Artigiani. La polizza artigiani consente di assicurare i rischi legati agli infortuni e alle malattie professionali degli artigiani e di tutti i soggetti assicurati che lo assistono (es: familiari, soci, ecc..)."@it,
+        "This is the ontology of the INAIL Organization about Craftsmen Policy. Craftsmen policy allows to insure risks related to accidents and occupational diseases of craftsmen and all insured persons who assist them (ex: family members, partners, etc.)."@en ;
+    owl:versionInfo "Version 1.0 - Published on 31 December 2023"@en,
+        "Versione 1.0 - Pubblicata il 31 Dicembre 2023"@it ;
+    rdfs:isDefinedBy INAIL_Craftsmen: ;
+    adms:acronym "inail" ;
+    adms:hasContributor <https://w3id.org/italia/work-accident/data/organization/td> ;
+    adms:hasFormalityLevel adms:Formal ;
+    adms:hasKeyClass INAIL_Craftsmen:ArtigianoINAIL,
+        INAIL_Craftsmen:SoggettoAssicuratoNonArtigianoINAIL ;
+    adms:hasOntologyLanguage adms:OWL ;
+    adms:hasSemanticAssetDistribution <https://w3id.org/italia/work-accident/data/proc17_craftsmen/distribution/PROC17CP-N-TRIPLES>,
+        <https://w3id.org/italia/work-accident/data/proc17_craftsmen/distribution/PROC17CP-RDF-TURTLE>,
+        <https://w3id.org/italia/work-accident/data/proc17_craftsmen/distribution/PROC17CP-RDF-XML> ;
+    adms:hasTask adms:AnnotationTask,
+        adms:QueryFormulationTask,
+        adms:SearchTask ;
+    adms:last INAIL_Craftsmen:1.0 ;
+    adms:officialURI "https://w3id.org/italia/work-accident/onto/proc17_craftsmen"^^xsd:anyURI ;
+    adms:prefix "INAIL_Craftsmen" ;
+    adms:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
+    adms:status "draft" ;
+    adms:target "Cittadini"@it,
+        "Imprese"@it,
+        "Pubbliche Amministrazioni"@it ;
+    adms:type adms:ServiceOnytology ;
+    dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+    dcat:keyword "Artigiano"@it,
+        "Craftsman"@en,
+        "Insured Subject Not Craftsman"@en,
+        "Soggetto Assicurato Non Artigiano"@it ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:description "Ontologia INAIL relativa alla Polizza Artigiani. La polizza artigiani consente di assicurare i rischi legati agli infortuni e alle malattie professionali degli artigiani e di tutti i soggetti assicurati che lo assistono (es: familiari, soci, ecc..)."@it,
+        "This is the ontology of the INAIL Organization about Craftsmen Policy. Craftsmen policy allows to insure risks related to accidents and occupational diseases of craftsmen and all insured persons who assist them (ex: family members, partners, etc.)."@en ;
+    dct:identifier "https://w3id.org/italia/work-accident/onto/proc17_craftsmen" ;
+    dct:issued "2023-12-31T00:00:00+00:00"^^xsd:dateTime ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:title "INAIL Ontology about Craftsmen Policy"@en,
+        "Ontologia INAIL relativa alla Polizza Artigiani"@it .
+
+### Object Properties
+
+INAIL_Craftsmen:artigianoHaIscrizioneAdAlbo a owl:ObjectProperty ;
+    rdfs:label "artigiano ha iscrizione ad albo"@it ;
+    rdfs:domain INAIL_Craftsmen:ArtigianoINAIL ;
+    rdfs:range INAIL_Craftsmen:IscrizioneAlboImpreseArtigianeINAIL .
+
+INAIL_Craftsmen:denunciaArtigianiHaVariazione a owl:ObjectProperty ;
+    rdfs:label "denuncia artigiani ha variazione"@it ;
+    rdfs:domain INAIL_Craftsmen:DenunciaVariazioneArtigianiINAIL ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf (
+                    INAIL_Craftsmen:VariazioneAttivitaArtigianoINAIL
+                    INAIL_Craftsmen:VariazioneIncidenzeLavorazioniINAIL
+                    INAIL_Craftsmen:VariazioneSoggettoAssicuratoArtigianiINAIL ) ] .
+
+INAIL_Craftsmen:denunciaIscrizioneRelativaAdArtigiano a owl:ObjectProperty ;
+    rdfs:label "denuncia iscrizione relativa ad artigiano"@it ;
+    rdfs:domain INAIL_Craftsmen:DenunciaIscrizioneArtigianiINAIL ;
+    rdfs:range INAIL_Craftsmen:SoggettoAssicuratoArtigianiINAIL .
+
+INAIL_Craftsmen:polizzaArtigianiRelativaA a owl:ObjectProperty ;
+    rdfs:label "polizza artigiani relativa a"@it ;
+    rdfs:domain INAILCore:PolizzaArtigiani ;
+    rdfs:range INAIL_Craftsmen:SoggettoAssicuratoArtigianiINAIL .
+
+INAIL_Craftsmen:variazioneIncidenzeRelativaA a owl:ObjectProperty ;
+    rdfs:label "variazione incidenze relativa a"@it ;
+    rdfs:domain INAIL_Craftsmen:VariazioneIncidenzeLavorazioniINAIL ;
+    rdfs:range INAILCore:Attivita .
+
+INAIL_Craftsmen:variazioneLavorazioneArtigianoRelativaA a owl:ObjectProperty ;
+    rdfs:label "variazione lavorazione artigiano relativa a"@it ;
+    rdfs:domain INAIL_Craftsmen:VariazioneAttivitaArtigianoINAIL ;
+    rdfs:range INAILCore:Attivita .
+
+INAIL_Craftsmen:variazioneSoggettoAssicuratoArtigianiRelativoA a owl:ObjectProperty ;
+    rdfs:label "variazione soggetto assicurato artigiani relativa a"@it ;
+    rdfs:domain INAIL_Craftsmen:VariazioneSoggettoAssicuratoArtigianiINAIL ;
+    rdfs:range INAIL_Craftsmen:SoggettoAssicuratoArtigianiINAIL .
+
+INAILCore:ricopreRuolo a owl:InverseFunctionalProperty,
+        owl:ObjectProperty .
+
+INAILCore:ricopreRuoloDiAssicurato a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:subPropertyOf INAILCore:ricopreRuolo ;
+    rdfs:domain INAILCore:PersonaFisica ;
+    rdfs:range INAILCore:SoggettoAssicuratoINAIL .
+
+INAILCore:soggettoAssicuratoSvolgeAttivita a owl:ObjectProperty ;
+    rdfs:domain INAILCore:SoggettoAssicuratoINAIL ;
+    rdfs:range INAILCore:Attivita .
+
+### Annotation Properties
+
+dct:accessURL a owl:AnnotationProperty .
+
+dct:description a owl:AnnotationProperty .
+
+dct:downloadURL a owl:AnnotationProperty .
+
+dct:format a owl:AnnotationProperty .
+
+dct:identifier a owl:AnnotationProperty .
+
+dct:license a owl:AnnotationProperty .
+
+dct:title a owl:AnnotationProperty .
+
+foaf:name a owl:AnnotationProperty .
+
+vcard:fn a owl:AnnotationProperty .
+
+vcard:hasEmail a owl:AnnotationProperty .
+
+### Data Properties
+
+INAIL_Craftsmen:dataIscrizioneAlbo a owl:DatatypeProperty ;
+    rdfs:label "data iscrizione albo"@it ;
+    rdfs:domain INAIL_Craftsmen:IscrizioneAlboImpreseArtigianeINAIL .
+
+INAIL_Craftsmen:nomeAlbo a owl:DatatypeProperty ;
+    rdfs:label "nome albo"@it ;
+    rdfs:domain INAIL_Craftsmen:IscrizioneAlboImpreseArtigianeINAIL .
+
+INAIL_Craftsmen:numeroIscrizioneAlbo a owl:DatatypeProperty ;
+    rdfs:label "numero iscrizione albo"@it ;
+    rdfs:domain INAIL_Craftsmen:IscrizioneAlboImpreseArtigianeINAIL .
+
+INAIL_Craftsmen:numeroLavorazione a owl:DatatypeProperty ;
+    rdfs:label "numero lavorazione"@it .
+
+INAIL_Craftsmen:socioOFamiliare a owl:DatatypeProperty ;
+    rdfs:label "socio o familiare"@it ;
+    rdfs:domain INAIL_Craftsmen:SoggettoAssicuratoNonArtigianoINAIL .
+
+INAIL_Craftsmen:tipoDenunciaVariazioneArtigiani a owl:DatatypeProperty ;
+    rdfs:label "tipo denuncia variazione artigiani"@it ;
+    rdfs:domain INAIL_Craftsmen:DenunciaVariazioneArtigianiINAIL .
+
+### Classes
+
+INAIL_Craftsmen:ArtigianoINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Craftsmen:artigianoHaIscrizioneAdAlbo ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "ArtigianoINAIL"@it,
+        "INAIL craftsman"@en ;
+    owl:disjointWith INAIL_Craftsmen:SoggettoAssicuratoNonArtigianoINAIL ;
+    rdfs:comment "Soggetti che svolgono un'attività di produzione di beni, anche semilavorati, o di prestazioni di servizi, escluse le attività agricole e le attività di prestazione di servizi commerciali, di intermediazione nella circolazione dei beni o ausiliarie di queste ultime e di somministrazione al pubblico di alimenti e bevande."@it .
+
+INAIL_Craftsmen:DenunciaCessazioneAssicuratoINAIL a owl:Class ;
+    rdfs:label "Denuncia cessazione assicurato INAIL"@it,
+        "INAIL termination complaint insured"@en ;
+    rdfs:comment "Denuncia di cessazione del soggetto assicurato dalla polizza assicurazione artigiani."@it .
+
+INAIL_Craftsmen:DenunciaIscrizioneArtigianiINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Craftsmen:denunciaIscrizioneRelativaAdArtigiano ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Denuncia iscrizione artigiani INAIL"@it,
+        "INAIL enrollment complaint of craftsmen"@en ;
+    rdfs:subClassOf INAILCore:DenunciaDiIscrizioneINAIL,
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Craftsmen:numeroLavorazione ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:comment "Denuncia di iscrizione di una nuova ditta con contestuale apertura di una polizza assicurativa artigiani."@it .
+
+INAIL_Craftsmen:DenunciaNuovaLavorazioneINAIL a owl:Class ;
+    rdfs:label "Denuncia nuova lavorazione INAIL"@it,
+        "INAIL complaint of new processing"@en ;
+    rdfs:comment "Denuncia che consente di comunicare la nuova lavorazione da realizzare e i relativi impianti e macchinari da utilizzare per la realizzazione."@it .
+
+INAIL_Craftsmen:DenunciaNuovoAssicuratoINAIL a owl:Class ;
+    rdfs:label "Denuncia nuovo assicurato INAIL"@it,
+        "INAIL complaint of new insured"@en ;
+    rdfs:comment "Denuncia che consente di comunicare  un nuovo soggetto da assicurare."@it .
+
+INAIL_Craftsmen:DenunciaVariazioneArtigianiINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAIL_Craftsmen:DenunciaCessazioneAssicuratoINAIL
+                    INAIL_Craftsmen:DenunciaNuovaLavorazioneINAIL
+                    INAIL_Craftsmen:DenunciaNuovoAssicuratoINAIL
+                    INAIL_Craftsmen:DenunciaVariazioneIncidenzeLavorazioniINAIL ) ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Craftsmen:denunciaArtigianiHaVariazione ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Craftsmen:tipoDenunciaVariazioneArtigiani ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:label "Denuncia variazione artigiani INAIL"@it,
+        "INAIL variation complaint of craftsmen"@en ;
+    rdfs:subClassOf INAILCore:DenunciaDiVariazioneINAIL ;
+    rdfs:comment "Denuncia di variazione che consente di modificare i dati relativi ad un soggetto assicurato con polizza artigiani con qualifica di artigiano."@it .
+
+INAIL_Craftsmen:DenunciaVariazioneIncidenzeLavorazioniINAIL a owl:Class ;
+    rdfs:label "Denuncia variazione incidenze lavorazioniINAIL"@it,
+        "INAIL variation complaint of processing incidence"@en ;
+    rdfs:comment "Denuncia di variazione che consente di modificare i dati relativi ad un soggetto assicurato con polizza artigiani con qualifica diversa da artigiano."@it .
+
+INAIL_Craftsmen:IscrizioneAlboImpreseArtigianeINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Craftsmen:dataIscrizioneAlbo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Craftsmen:nomeAlbo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_Craftsmen:numeroIscrizioneAlbo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Craftsmen:artigianoHaIscrizioneAdAlbo ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL enrollment in the register of craftsmen businesses"@en,
+        "Iscrizione albo imprese artigiane INAIL"@it ;
+    rdfs:comment "Richiesta obbligatoria che permette ad un'impresa artigiana di iscriversi al relativo albo, affinchè il titolare artigiano possa istituire il rapporto assicurativo con l'Inail."@it .
+
+INAIL_Craftsmen:SoggettoAssicuratoArtigianiINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf (
+                    INAIL_Craftsmen:ArtigianoINAIL
+                    INAIL_Craftsmen:SoggettoAssicuratoNonArtigianoINAIL ) ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Craftsmen:denunciaIscrizioneRelativaAdArtigiano ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Craftsmen:polizzaArtigianiRelativaA ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Craftsmen:variazioneSoggettoAssicuratoArtigianiRelativoA ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL insured subject craftsmen"@en,
+        "Soggetto assicurato artigiani INAIL"@it ;
+    rdfs:subClassOf INAILCore:SoggettoAssicuratoINAIL ;
+    rdfs:comment "Soggetto con qualifica di artigiano che viene assicurato da Inail attraverso polizza artigiani."@it .
+
+INAIL_Craftsmen:SoggettoAssicuratoNonArtigianoINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Craftsmen:socioOFamiliare ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:label "INAIL insured subject not craftsman"@en,
+        "Soggetto assicurato non artigiano INAIL"@it ;
+    rdfs:comment "Soggetto con qualifica diversa da artigiano (es: familiare, socio, ecc..) che viene assicurato da Inail attraverso polizza artigiani."@it .
+
+INAIL_Craftsmen:VariazioneAttivitaArtigianoINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Craftsmen:variazioneLavorazioneArtigianoRelativaA ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL activity variation of craftsman"@en,
+        "Variazione attività artigiano INAIL"@it ;
+    rdfs:subClassOf TI:TimeIndexedEvent ;
+    rdfs:comment "Variazione dei dati relativi all'attività di lavorazione da realizzare e i relativi impianti e macchinare da utilizzare per la realizzazione."@it .
+
+INAIL_Craftsmen:VariazioneIncidenzeLavorazioniINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Craftsmen:variazioneIncidenzeRelativaA ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL incidence processing variation"@en,
+        "Variazione incidenze lavorazioni INAIL"@it ;
+    rdfs:subClassOf TI:TimeIndexedEvent ;
+    rdfs:comment "Variazione dei dati dell'attività in conseguenza di un'incidenza della lavorazione."@it .
+
+INAIL_Craftsmen:VariazioneSoggettoAssicuratoArtigianiINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Craftsmen:variazioneSoggettoAssicuratoArtigianiRelativoA ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL variation of insured subject craftsmen"@en,
+        "Variazione soggetto assicurato artigiani INAIL"@it ;
+    rdfs:subClassOf TI:TimeIndexedEvent ;
+    rdfs:comment "Variazione dei dati relativi al soggetto assicurato con polizza artigiani con qualifica di artigiano."@it .
+
+INAILCore:Attivita a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Craftsmen:variazioneIncidenzeRelativaA ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Craftsmen:variazioneLavorazioneArtigianoRelativaA ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:soggettoAssicuratoSvolgeAttivita ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:DenunciaDiIscrizioneINAIL a owl:Class .
+
+INAILCore:DenunciaDiVariazioneINAIL a owl:Class .
+
+INAILCore:PersonaFisica a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:ricopreRuoloDiAssicurato ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:PolizzaArtigiani a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_Craftsmen:polizzaArtigianiRelativaA ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:SoggettoAssicuratoINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:soggettoAssicuratoSvolgeAttivita ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:ricopreRuoloDiAssicurato ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+TI:TimeIndexedEvent a owl:Class .
+
+[] a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_Craftsmen:denunciaArtigianiHaVariazione ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    owl:unionOf (
+            INAIL_Craftsmen:VariazioneAttivitaArtigianoINAIL
+            INAIL_Craftsmen:VariazioneIncidenzeLavorazioniINAIL
+            INAIL_Craftsmen:VariazioneSoggettoAssicuratoArtigianiINAIL ) .
+
+### Individuals
+
+<https://w3id.org/italia/work-accident/data/organization/agenzia_entrate> a dcatapit:Agent,
+        foaf:Agent,
+        INAILAutoliq:Esattore,
+        owl:NamedIndividual ;
+    dct:identifier "age" ;
+    foaf:name "Agenzia delle Entrate"@it,
+        "Italian Revenue Agency"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent,
+        INAILAutoliq:DestinatarioPremioINAIL,
+        owl:NamedIndividual ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/td> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "TD" ;
+    foaf:name "Digital Transformation Team"@en,
+        "Team per la Trasformazione Digitale"@it .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+<https://w3id.org/italia/work-accident/data/proc17_craftsmen/distribution/PROC17CP-N-TRIPLES> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc17_craftsmen/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc17_craftsmen/latest/proc17_craftsmen.n3> ;
+    dct:description "Questa è la distribuzione N-TRIPLES dell'ontologia INAIL relativa alla polizza artigiani, polizza che consente di assicurare i rischi legati agli infortuni e alle malattie professionali degli artigiani e di tutti i soggetti assicurati che lo assistono (es: familiari, soci, ecc..)."@it,
+        "This is the distribution in N-TRIPLES of the INAIL ontology about craftsmen policy, this policy allows to insure risks related to accidents and occupational diseases of craftsmen and all insured persons who assist them (ex: family members, partners, etc.)."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione N-TRIPLES ontologia INAIL - Polizza Artigiani"@it,
+        "N-TRIPLES distribution of INAIL ontology - Craftsmen Policy"@en .
+
+<https://w3id.org/italia/work-accident/data/proc17_craftsmen/distribution/PROC17CP-RDF-TURTLE> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc17_craftsmen/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc17_craftsmen/latest/proc17_craftsmen.ttl> ;
+    dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia INAIL relativa alla polizza artigiani, polizza che consente di assicurare i rischi legati agli infortuni e alle malattie professionali degli artigiani e di tutti i soggetti assicurati che lo assistono (es: familiari, soci, ecc..)."@it,
+        "This is the distribution in RDF/Turtle of the INAIL ontology about craftsmen policy, this policy allows to insure risks related to accidents and occupational diseases of craftsmen and all insured persons who assist them (ex: family members, partners, etc.)."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione RDF/Turtle ontologia INAIL - Polizza Artigiani"@it,
+        "RDF/Turtle distribution of INAIL ontology - Craftsmen Policy"@en .
+
+<https://w3id.org/italia/work-accident/data/proc17_craftsmen/distribution/PROC17CP-RDF-XML> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc17_craftsmen/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc17_craftsmen/latest/proc17_craftsmen.owl> ;
+    dct:description "Questa è la distribuzione RDF/XML dell'ontologia INAIL relativa alla polizza artigiani, polizza che consente di assicurare i rischi legati agli infortuni e alle malattie professionali degli artigiani e di tutti i soggetti assicurati che lo assistono (es: familiari, soci, ecc..)."@it,
+        "This is the distribution in RDF/XML of the INAIL ontology about craftsmen policy, this policy allows to insure risks related to accidents and occupational diseases of craftsmen and all insured persons who assist them (ex: family members, partners, etc.)."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione RDF/XML ontologia INAIL - Polizza Artigiani"@it,
+        "RDF/XML distribution of INAIL ontology - Craftsmen Policy"@en .
+
+### Axioms
+
+[] a owl:AllDisjointClasses ;
+    owl:members (
+            INAIL_Craftsmen:DenunciaCessazioneAssicuratoINAIL
+            INAIL_Craftsmen:DenunciaNuovaLavorazioneINAIL
+            INAIL_Craftsmen:DenunciaNuovoAssicuratoINAIL
+            INAIL_Craftsmen:DenunciaVariazioneIncidenzeLavorazioniINAIL ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members (
+            INAIL_Craftsmen:VariazioneAttivitaArtigianoINAIL
+            INAIL_Craftsmen:VariazioneIncidenzeLavorazioniINAIL
+            INAIL_Craftsmen:VariazioneSoggettoAssicuratoArtigianiINAIL ) .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

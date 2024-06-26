@@ -1,0 +1,773 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/italia/work-accident/onto/proc17_fishermen/"
+     xml:base="https://w3id.org/italia/work-accident/onto/proc17_fishermen/"
+     xmlns:INAIL_Fishermen="https://w3id.org/italia/work-accident/onto/proc17_fishermen/"
+     xmlns:INAILService="https://w3id.org/italia/work-accident/onto/adm_serv/"
+     xmlns:l0="https://w3id.org/italia/onto/l0/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:CPV="https://w3id.org/italia/onto/CPV/"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:CLV="https://w3id.org/italia/onto/CLV/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:dcatapit="http://dati.gov.it/onto/dcatapit#"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:adms="https://w3id.org/italia/onto/ADMS/"
+     xmlns:INAILAutoliq="https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/"
+     xmlns:INAILCore="https://w3id.org/italia/work-accident/onto/core/"
+     xmlns:COV="https://w3id.org/italia/onto/COV/"
+     xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+     xmlns:INAILPDDA1="https://w3id.org/italia/work-accident/onto/proc6/"
+     xmlns:TI="https://w3id.org/italia/onto/TI/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:INAIL="http://okms.inail/ontology/"
+     xmlns:RO="https://w3id.org/italia/onto/RO/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/">
+        <owl:versionIRI rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/1.0"/>
+        <adms:hasSemanticAssetDistribution>https://w3id.org/italia/work-accident/data/adm_serv/distribution/CORE-RDF-TURTLE</adms:hasSemanticAssetDistribution>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-31T00:00:00Z</dct:modified>
+        <adms:target xml:lang="it">Cittadini</adms:target>
+        <rdfs:isDefinedBy>https://w3id.org/italia/work-accident/onto/core/</rdfs:isDefinedBy>
+        <dct:description xml:lang="it">Ontologia INAIL relativa ai concetti core dell&apos;istituto: Azienda, Posizione Assicurativa Territoriale (PAT), Posizione Assicurativa Navigazione (PAN), Denuncia, Polizza, Sede INAIL, Retribuzione</dct:description>
+        <dcat:keyword>Sede INAIL</dcat:keyword>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-06T00:00:00Z</dct:issued>
+        <rdfs:comment xml:lang="it">Ontologia INAIL relativa ai concetti core dell&apos;istituto: Azienda, Posizione Assicurativa Territoriale (PAT), Posizione Assicurativa Navigazione (PAN), Denuncia, Polizza, Sede INAIL, Retribuzione</rdfs:comment>
+        <adms:type>https://w3id.org/italia/onto/ADMS/ServiceOnytology</adms:type>
+        <dcat:keyword xml:lang="it">Denuncia</dcat:keyword>
+        <adms:hasKeyClass>https://w3id.org/italia/work-accident/onto/core/DenunciaINAIL</adms:hasKeyClass>
+        <dcat:keyword xml:lang="it">Azienda</dcat:keyword>
+        <adms:hasKeyClass>https://w3id.org/italia/work-accident/onto/core/SedeINAIL</adms:hasKeyClass>
+        <adms:target xml:lang="it">Pubbliche Amministrazioni</adms:target>
+        <dcat:keyword xml:lang="en">INAIL Office</dcat:keyword>
+        <dct:description xml:lang="en">This is the ontology of the INAIL Organization about core concepts of the institute: Company, Insurance Territorial Position (PAT), Insurance Navigation Position(PAN), Complaint, Policy, INAIL Office, Salary</dct:description>
+        <adms:hasKeyClass>https://w3id.org/italia/work-accident/onto/core/PosizioneAssicurativaNavigazione</adms:hasKeyClass>
+        <adms:semanticAssetInUse>https://w3id.org/italia/data/project/NDC</adms:semanticAssetInUse>
+        <owl:imports>https://w3id.org/italia/onto/TI/</owl:imports>
+        <adms:officialURI>https://w3id.org/italia/work-accident/onto/core</adms:officialURI>
+        <adms:hasTask>https://w3id.org/italia/onto/ADMS/QueryFormulationTask</adms:hasTask>
+        <dct:title xml:lang="it">Ontologia Core di INAIL</dct:title>
+        <dcat:keyword xml:lang="en">Insurance Territorial Position</dcat:keyword>
+        <rdfs:comment xml:lang="en">This is the ontology of the INAIL Organization about core concepts of the institute: Company, Insurance Territorial Position (PAT), Insurance Navigation Position(PAN), Complaint, Policy, INAIL Office, Salary</rdfs:comment>
+        <adms:status>catalogued</adms:status>
+        <adms:hasContributor>https://w3id.org/italia/work-accident/data/organization/td</adms:hasContributor>
+        <owl:imports>https://w3id.org/italia/onto/l0/</owl:imports>
+        <dcat:keyword xml:lang="en">Policy</dcat:keyword>
+        <dct:accrualPeriodicity>http://publications.europa.eu/resource/authority/frequency/IRREG</dct:accrualPeriodicity>
+        <owl:imports>https://w3id.org/italia/onto/CLV/</owl:imports>
+        <adms:hasKeyClass>https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL</adms:hasKeyClass>
+        <owl:imports>https://w3id.org/italia/onto/CPV/</owl:imports>
+        <owl:versionInfo xml:lang="en">Version 1.10 - Modified on 31 July 2023</owl:versionInfo>
+        <adms:hasOntologyLanguage>https://w3id.org/italia/onto/ADMS/OWL</adms:hasOntologyLanguage>
+        <dcat:keyword xml:lang="en">Salary</dcat:keyword>
+        <dct:rightsHolder>https://w3id.org/italia/work-accident/data/organization/inail</dct:rightsHolder>
+        <dcat:keyword xml:lang="en">Company</dcat:keyword>
+        <adms:hasFormalityLevel>https://w3id.org/italia/onto/ADMS/Formal</adms:hasFormalityLevel>
+        <owl:versionInfo xml:lang="it">Versione 1.10 - Modificata il 31 Luglio 2023</owl:versionInfo>
+        <dcat:keyword xml:lang="it">Polizza</dcat:keyword>
+        <dcat:keyword xml:lang="en">Insurance Navigation Position</dcat:keyword>
+        <dcat:theme>http://publications.europa.eu/resource/authority/data-theme/SOCI</dcat:theme>
+        <adms:last>https://w3id.org/italia/work-accident/onto/core/1.10</adms:last>
+        <adms:hasTask>https://w3id.org/italia/onto/ADMS/AnnotationTask</adms:hasTask>
+        <dcat:contactPoint>https://w3id.org/italia/work-accident/data/organization/ufficioV</dcat:contactPoint>
+        <dct:language>http://publications.europa.eu/resource/authority/language/ENG</dct:language>
+        <adms:acronym>inail</adms:acronym>
+        <adms:hasTask>https://w3id.org/italia/onto/ADMS/SearchTask</adms:hasTask>
+        <dct:title xml:lang="en">Core INAIL Ontology</dct:title>
+        <dcat:keyword xml:lang="it">Posizione Assicurativa Territoriale</dcat:keyword>
+        <owl:imports>https://w3id.org/italia/onto/RO/</owl:imports>
+        <rdfs:label xml:lang="en">Core INAIL Ontology</rdfs:label>
+        <adms:hasKeyClass>https://w3id.org/italia/work-accident/onto/core/RetribuzioneComplessiva</adms:hasKeyClass>
+        <dct:publisher>https://w3id.org/italia/work-accident/data/organization/inail</dct:publisher>
+        <dct:identifier>https://w3id.org/italia/work-accident/onto/core</dct:identifier>
+        <dcat:keyword xml:lang="it">Posizione Assicurativa Navigazione</dcat:keyword>
+        <dct:creator>https://w3id.org/italia/work-accident/data/organization/inail</dct:creator>
+        <dcat:keyword xml:lang="it">Retribuzione</dcat:keyword>
+        <dct:language>http://publications.europa.eu/resource/authority/language/ITA</dct:language>
+        <adms:hasKeyClass>https://w3id.org/italia/work-accident/onto/core/PosizioneAssicurativaTerritoriale</adms:hasKeyClass>
+        <adms:prefix>inail</adms:prefix>
+        <adms:hasKeyClass>https://w3id.org/italia/work-accident/onto/core/PolizzaINAIL</adms:hasKeyClass>
+        <adms:target xml:lang="it">Imprese</adms:target>
+        <rdfs:label xml:lang="it">Ontologia Core di INAIL</rdfs:label>
+        <adms:status>published</adms:status>
+        <dcat:keyword xml:lang="en">Complaint</dcat:keyword>
+        <owl:imports>https://w3id.org/italia/onto/COV/</owl:imports>
+    </owl:Ontology>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://purl.org/dc/terms/accessURL -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accessURL"/>
+
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+
+
+
+    <!-- http://purl.org/dc/terms/downloadURL -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/downloadURL"/>
+
+
+
+    <!-- http://purl.org/dc/terms/format -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/format"/>
+
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#fn -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#fn"/>
+
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#hasEmail -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasEmail"/>
+
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/ricopreRuolo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/core/ricopreRuolo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/ricopreRuoloDiAssicurato -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/core/ricopreRuoloDiAssicurato">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/ricopreRuolo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/core/PersonaFisica"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuratoINAIL"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_fishermen/InvioElencoHaEsito -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/InvioElencoHaEsito">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/InvioRichiestaElencoSociINAIL"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/EsitoINAIL"/>
+        <rdfs:label xml:lang="it">Invio elenco ha esito</rdfs:label>
+        <rdfs:label xml:lang="en">request has outcome</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_fishermen/denunciaHaVariazioneRetribuzione -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/denunciaHaVariazioneRetribuzione">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/DenunciaVariazioneRetribuzionePescatoriINAIL"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/VariazioneRetribuzionePescatoriINAIL"/>
+        <rdfs:label xml:lang="en">amendment update in relation to income update</rdfs:label>
+        <rdfs:label xml:lang="it">denuncia ha variazione retribuzione</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_fishermen/denunciaPerInvio -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/denunciaPerInvio">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/DenunciaInvioElencoSociINAIL"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/InvioRichiestaElencoSociINAIL"/>
+        <rdfs:label xml:lang="en">delivery receipt </rdfs:label>
+        <rdfs:label xml:lang="it">denuncia per invio</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_fishermen/elencoSociGeneratoDa -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/elencoSociGeneratoDa">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/ElencoSociINAIL"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/InvioRichiestaElencoSociINAIL"/>
+        <rdfs:label xml:lang="en">Member list generated from</rdfs:label>
+        <rdfs:label xml:lang="it">elenco soci generato da</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_fishermen/elencoSociRelativoAPolizza -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/elencoSociRelativoAPolizza">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/ElencoSociINAIL"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/PolizzaPescatori"/>
+        <rdfs:label xml:lang="it">elenco soci relativo a polizza</rdfs:label>
+        <rdfs:label xml:lang="en">member list in realation to Policy</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_fishermen/socioAppartieneA -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/socioAppartieneA">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/SocioINAIL"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/ElencoSociINAIL"/>
+        <rdfs:label xml:lang="en">member belongs to</rdfs:label>
+        <rdfs:label xml:lang="it">socio appartiene a</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_fishermen/variazioneRiferitaARetribuzioneImponibile -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/variazioneRiferitaARetribuzioneImponibile">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/VariazioneRetribuzionePescatoriINAIL"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/RetribuzioneImponibile"/>
+        <rdfs:label xml:lang="en">income in relation to taxable income </rdfs:label>
+        <rdfs:label xml:lang="it">variazione riferita a retribuzione imponibile</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_fishermen/annoElenco -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/annoElenco">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/ElencoSociINAIL"/>
+        <rdfs:label xml:lang="it">anno elenco</rdfs:label>
+        <rdfs:label xml:lang="en">year list</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_fishermen/dataElaborazioneElenco -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/dataElaborazioneElenco">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/ElencoSociINAIL"/>
+        <rdfs:label xml:lang="it">data elaborazione elenco</rdfs:label>
+        <rdfs:label xml:lang="en">date list</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_fishermen/dataIngressoSocio -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/dataIngressoSocio">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/ElencoMensileSociINAIL"/>
+        <rdfs:label xml:lang="it">data ingresso socio</rdfs:label>
+        <rdfs:label xml:lang="en">member join date </rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_fishermen/dataInvioElenco -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/dataInvioElenco">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/ElencoSociINAIL"/>
+        <rdfs:label xml:lang="it">data invio elenco</rdfs:label>
+        <rdfs:label xml:lang="en">sent date list</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_fishermen/dataVariazioneRetribuzione -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/dataVariazioneRetribuzione">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/VariazioneRetribuzionePescatoriINAIL"/>
+        <rdfs:label xml:lang="it">data variazione retribuzione</rdfs:label>
+        <rdfs:label xml:lang="en">income update date </rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_fishermen/descrizioneEsito -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/descrizioneEsito">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/EsitoINAIL"/>
+        <rdfs:label xml:lang="en">Outcome Explanation</rdfs:label>
+        <rdfs:label xml:lang="it">descrizione esito</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_fishermen/descrizioneEstesaEsito -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/descrizioneEstesaEsito">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/EsitoINAIL"/>
+        <rdfs:label xml:lang="en">Expanded Outcome Explanation</rdfs:label>
+        <rdfs:label xml:lang="it">descrizione estesa esito</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_fishermen/retribuzionePrescelta -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/retribuzionePrescelta">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/VariazioneRetribuzionePescatoriINAIL"/>
+        <rdfs:label xml:lang="en">chosen income</rdfs:label>
+        <rdfs:label xml:lang="it">retribuzione prescelta</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://w3id.org/italia/onto/TI/TimeIndexedEvent -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/TI/TimeIndexedEvent"/>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/DenunciaDiVariazioneINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/DenunciaDiVariazioneINAIL"/>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/PersonaFisica -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/PersonaFisica">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/core/ricopreRuoloDiAssicurato"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/PolizzaPescatori -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/PolizzaPescatori">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/elencoSociRelativoAPolizza"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/RetribuzioneImponibile -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/RetribuzioneImponibile">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/variazioneRiferitaARetribuzioneImponibile"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuratoINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuratoINAIL">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/ricopreRuoloDiAssicurato"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_fishermen/DenunciaInvioElencoSociINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/DenunciaInvioElencoSociINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/DenunciaVariazionePescatoriINAIL"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/denunciaPerInvio"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Denuncia che consente l&apos;invio dell&apos;elenco soci che fanno parte della società cooperativa o della compagnia di pescatori della piccola pesca marittima e delle acque interne.</rdfs:comment>
+        <rdfs:label xml:lang="it">Denuncia invio elenco soci INAIL</rdfs:label>
+        <rdfs:label xml:lang="en">INAIL Member List Registration Notice</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_fishermen/DenunciaVariazionePescatoriINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/DenunciaVariazionePescatoriINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/DenunciaDiVariazioneINAIL"/>
+        <rdfs:comment xml:lang="it">Denuncia variazione pescatori</rdfs:comment>
+        <rdfs:label xml:lang="it">Denuncia variazione pescatori INAIL</rdfs:label>
+        <rdfs:label xml:lang="en">INAIL Fishermen Amendment Update</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_fishermen/DenunciaVariazioneRetribuzionePescatoriINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/DenunciaVariazioneRetribuzionePescatoriINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/DenunciaVariazionePescatoriINAIL"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/denunciaHaVariazioneRetribuzione"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Denuncia che consente di comunicare la variazione della retribuzione per l’anno di riferimento, nel caso in cui l’utente intenda pagare il premio sulla base di una retribuzione diversa da quella minima convenzionale stabilita per legge, purché la retribuzione prescelta sia superiore a quest’ultima. Tale comunicazione deve avvenire se la scelta non sia stata effettuata in fase di iscrizione o con l’invio degli elenchi annuali.</rdfs:comment>
+        <rdfs:label xml:lang="it">Denuncia variazione retribuzione pescatori INAIL</rdfs:label>
+        <rdfs:label xml:lang="en">INAIL fishermen&apos;s income Update</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_fishermen/ElencoAnnualeSociINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/ElencoAnnualeSociINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/ElencoSociINAIL"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/ElencoMensileSociINAIL"/>
+        <rdfs:comment xml:lang="it">Elenchi annuali dei soci delle società cooperative e delle compagnie di pescatori della piccola pesca marittima e delle acque interne titolari di codice ditta e PAT con polizza pescatori attiva, con l’eventuale retribuzione diversa dalla minima convenzionale stabilita per legge.</rdfs:comment>
+        <rdfs:label xml:lang="it">Elenco annuale soci INAIL</rdfs:label>
+        <rdfs:label xml:lang="en">INAIL annual member list</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_fishermen/ElencoMensileSociINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/ElencoMensileSociINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/ElencoSociINAIL"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/dataIngressoSocio"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Elenchi mensili con le variazioni, che si verificano nel corso dell’anno, dei soci delle società cooperative e delle compagnie della piccola pesca marittima e delle acque interne in ingresso e/o in uscita</rdfs:comment>
+        <rdfs:label xml:lang="it">Elenco mensile soci INAIL</rdfs:label>
+        <rdfs:label xml:lang="en">INAIL monthly member list</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_fishermen/ElencoSociINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/ElencoSociINAIL">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/ElencoAnnualeSociINAIL"/>
+                    <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/ElencoMensileSociINAIL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/elencoSociGeneratoDa"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/elencoSociRelativoAPolizza"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/socioAppartieneA"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/annoElenco"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/dataElaborazioneElenco"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/dataInvioElenco"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Elenco dei soci delle società cooperative e delle compagnie di pescatori della piccola pesca marittima e delle acque interne titolari di codice ditta e PAT con polizza pescatori attiva. L&apos;elenco può essere annuale o mensile.</rdfs:comment>
+        <rdfs:label xml:lang="it">Elenco soci INAIL</rdfs:label>
+        <rdfs:label xml:lang="en">INAIL Member List</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_fishermen/EsitoINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/EsitoINAIL">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/InvioElencoHaEsito"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/descrizioneEsito"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/descrizioneEstesaEsito"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Esito dell&apos;invio di una pratica</rdfs:comment>
+        <rdfs:label xml:lang="it">Esito INAIL</rdfs:label>
+        <rdfs:label xml:lang="en">INAIL Request Outcome</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_fishermen/InvioRichiestaElencoSociINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/InvioRichiestaElencoSociINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/TI/TimeIndexedEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/InvioElencoHaEsito"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/denunciaPerInvio"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/elencoSociGeneratoDa"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Consente la trasmissione degli elenchi annuali e mensili dei soci delle società cooperative e delle compagnie di pescatori della piccola pesca marittima e delle acque interne titolari di codice ditta e PAT con polizza pescatori attiva. L’invio annuale dell’elenco dei soci pescatori deve essere effettuato entro il 10 di gennaio di ogni anno, come stabilito dall’art. 2, comma 1, della legge n. 250/1958 mentre l’invio dell’elenco mensile delle variazioni dei soci pescatori deve essere effettuato entro il 10 del mese successivo a quello in cui le variazioni si sono verificate, come stabilito dall’art. 2, comma 2, della legge n. 250/1958.</rdfs:comment>
+        <rdfs:label xml:lang="en">INAIL Member List Join Request</rdfs:label>
+        <rdfs:label xml:lang="it">Invio richiesta elenco soci INAIL</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_fishermen/SocioINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/SocioINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuratoINAIL"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/socioAppartieneA"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Persona fisica che fa parte di una società cooperativa o di una compagnia di pescatori della piccola pesca marittima e delle acque interne.</rdfs:comment>
+        <rdfs:label xml:lang="en">INAIL member</rdfs:label>
+        <rdfs:label xml:lang="it">Socio INAIL</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_fishermen/VariazioneRetribuzionePescatoriINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_fishermen/VariazioneRetribuzionePescatoriINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/TI/TimeIndexedEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/variazioneRiferitaARetribuzioneImponibile"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/denunciaHaVariazioneRetribuzione"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/dataVariazioneRetribuzione"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_fishermen/retribuzionePrescelta"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Variazione della retribuzione minima convenzionale stabilita per legge.</rdfs:comment>
+        <rdfs:label xml:lang="en">INAIL fishermen&apos;s income Update</rdfs:label>
+        <rdfs:label xml:lang="it">Variazione retribuzione pescatori INAIL</rdfs:label>
+    </owl:Class>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE">
+        <dct:accessURL>https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/.....</dct:accessURL>
+        <dct:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia INAIL relativa ai concetti principali dell&apos;istituto</dct:description>
+        <dct:description xml:lang="en">This is the distribution in RDF/Turtle of the INAIL ontology about core concepts of the institute</dct:description>
+        <dct:downloadURL>https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/...</dct:downloadURL>
+        <dct:format>http://publications.europa.eu/resource/authority/file-type/RDF</dct:format>
+        <dct:license>http://creativecommons.org/licenses/by/4.0/</dct:license>
+        <dct:title xml:lang="it">Distribuzione RDF/Turtle ontologia INAIL - Core</dct:title>
+        <dct:title xml:lang="en">RDF/Turtle distribution of INAIL ontology - Core</dct:title>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/organization/inail -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/onto/core/organization/inail">
+        <dct:identifier>inail</dct:identifier>
+        <foaf:name xml:lang="it">Istituto Nazionale per l&apos;Assicurazione contro gli Infortuni sul Lavoro</foaf:name>
+        <foaf:name xml:lang="en">National Institute for Insurance against Accidents at Work</foaf:name>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/organization/td -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/onto/core/organization/td">
+        <dct:identifier>TD</dct:identifier>
+        <foaf:name xml:lang="en">Digital Transformation Team</foaf:name>
+        <foaf:name xml:lang="it">Team per la Trasformazione Digitale</foaf:name>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/organization/ufficioV -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/onto/core/organization/ufficioV">
+        <vcard:fn>INAIL Ufficio V - D.C.O.D</vcard:fn>
+        <vcard:hasEmail xml:lang="inail.it">mailto:dcod</vcard:hasEmail>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.4) https://github.com/owlcs/owlapi -->
+

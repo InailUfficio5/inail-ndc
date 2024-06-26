@@ -1,0 +1,78 @@
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAILRadioactiveSubstances: <https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+INAILRadioactiveSubstances: a owl:Ontology ;
+    foaf:name "L'ontologia INAIL sulla sostanze radioattive definisce e organizza i concetti, le relazioni e le propriet� relative alle denunce delle sostanze radioattive nell'ambito dell'assicurazione contro gli infortuni sul lavoro (INAIL)." .
+
+### Classes
+
+INAILRadioactiveSubstances:DenunciaVariazioneSostanzeRadioattiveINAIL a owl:Class ;
+    rdfs:label "Declaration of changes in radioactive substances"@en,
+        "Denuncia variazione sostanze radioattive"@it ;
+    rdfs:comment "Denuncia che consente ai soggetti assicuranti l'apertura di una o pi� polizze assicurative per soggetti esposti a sostanze radioattive su una PAT gi� attiva e l'attivazione di una nuova PAT con contestuale apertura di una o pi� polizze assicurative contro sostanze radioattive sul codice ditta attivo."@it .
+
+### Individuals
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/td> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "TD" ;
+    foaf:name "Digital Transformation Team"@en,
+        "Team per la Trasformazione Digitale"@it .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+### Annotations
+
+<https://w3id.org/italia/schemas/denuncia-variazione-sostanze-radioattive/latest/denuncia-variazione-sostanze-radioattive.oas3.yaml> a dcatapit:Dataset,
+        dcatapit:Distribution ;
+    rdfs:label "Consultazione Denuncia Variazione Sostanze Radioattive API"@it ;
+    rdfs:comment "Questo schema rappresenta la denuncia di variazione delle sostanze radioattive ed � associato a https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/DenunciaVariazioneSostanzeRadioattiveINAIL."@it ;
+    owl:versionInfo "0.1"@it ;
+    admsapit:acronym "inail" ;
+    admsapit:hasKeyClass INAILRadioactiveSubstances:DenunciaVariazioneSostanzeRadioattiveINAIL ;
+    admsapit:prefix "INAILRadioactiveSubstances"^^xsd:string ;
+    admsapit:target "Cittadini"@it,
+        "Imprese"@it,
+        "Pubbliche Amministrazioni"@it ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/blob/main/assets/schemas/denuncia-variazione-sostanze-radioattive/latest> ;
+    dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+    dcat:distribution <https://w3id.org/italia/schemas/denuncia-variazione-sostanze-radioattive/latest/denuncia-variazione-sostanze-radioattive.oas3.yaml> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/denuncia-variazione-sostanze-radioattive/latest/denuncia-variazione-sostanze-radioattive.oas3.yaml> ;
+    dcat:keyword "Radioactive substance"@en,
+        "Sostanza radioattiva"@it ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo INAILRadioactiveSubstances: ;
+    dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:description "Il servizio viene invocato per ottenere le informazioni sulle denunce che consentono ai soggetti assicuranti l'apertura di una o pi� polizze assicurative per soggetti esposti a sostanze radioattive su una PAT gi� attiva e l'attivazione di una nuova PAT con contestuale apertura di una o pi� polizze assicurative contro sostanze radioattive sul codice ditta attivo." ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dct:identifier <https://w3id.org/italia/schemas/denuncia-variazione-sostanze-radioattive> ;
+    dct:issued "2024-02-13"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2024-06-17"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:title "Consultazione Denuncia Variazione Sostanze Radioattive API"@it .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

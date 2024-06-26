@@ -1,0 +1,499 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix ns0: <https://w3id.org/italia/onto/ADMS/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/>
+  a owl:Ontology ;
+  owl:versionIRI <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/1.0> ;
+  owl:imports <https://w3id.org/italia/onto/CLV/>, <https://w3id.org/italia/onto/COV/>, <https://w3id.org/italia/onto/CPV/>, <https://w3id.org/italia/onto/l0/>, <https://w3id.org/italia/onto/RO/>, <https://w3id.org/italia/onto/TI/>, <https://w3id.org/italia/work-accident/onto/core/>, <https://w3id.org/italia/work-accident/onto/adm_serv/> ;
+  dc:title "Ontologia INAIL relativa alla Denuncia Nuovo Lavoro Temporaneo"@it, "INAIL Ontology about the New Temporary Employment Insurance Policy"@en ;
+  ns0:last <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/1.0> ;
+  dcat:keyword "Nuovo Lavoro Temporaneo"@it, "Luogo di Lavoro"@it, "Macchinario"@it, "New Temporary employment Position"@en, "Workplace"@en, "Work Equipment"@en ;
+  rdfs:comment "Ontologia INAIL relativa alla Denuncia Nuovo Lavoro Temporaneo. La denuncia nuovo lavoro temporaneo consente ai datori di lavoro di segnalare un nuovo lavoro di carattere temporaneo, anche di lunga durata, e di assicurare i propri dipendenti fino al termine dei lavori."@it, "This INAIL ontology addresses the New Temporary Employment Insurance Policy, which provides protection against occupational injuries and diseases to contractuals (such as outsourced employees, freelancers and so on) once their Temporary Employment contracts have been registered by their employers"@en ;
+  ns0:target "Cittadini"@it, "Imprese"@it, "Pubbliche Amministrazioni"@it ;
+  dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+  dc:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+  dc:issued "2023-12-31T00:00:00Z"^^xsd:dateTime ;
+  ns0:type ns0:ServiceOnytology ;
+  ns0:hasSemanticAssetDistribution <https://w3id.org/italia/work-accident/data/proc17_new_temporary_work/distribution/PROC17DNL-RDF-TURTLE>, <https://w3id.org/italia/work-accident/data/proc17_new_temporary_work/distribution/PROC17DNL-RDF-XML>, <https://w3id.org/italia/work-accident/data/proc17_new_temporary_work/distribution/PROC17DNL-N-TRIPLES> ;
+  rdfs:isDefinedBy <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/> ;
+  rdfs:label "Ontologia INAIL relativa alla Denuncia Nuovo Lavoro Temporaneo"@it, "INAIL Ontology about the New Temporary Employment Insurance Policy"@en ;
+  ns0:hasKeyClass <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/NuovoLavoroTemporaneoINAIL>, <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/LuogoDiLavoroINAIL>, <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/MacchinarioINAIL> ;
+  ns0:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
+  ns0:hasTask ns0:AnnotationTask, ns0:QueryFormulationTask, ns0:SearchTask ;
+  ns0:status "draft" ;
+  dc:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+  dc:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+  ns0:hasContributor <https://w3id.org/italia/work-accident/data/organization/td> ;
+  owl:versionInfo "Versione 1.0 - Pubblicata il 31 Dicembre 2023"@it, "Version 1.0 - Published on 31 December 2023"@en ;
+  ns0:hasOntologyLanguage ns0:OWL ;
+  ns0:hasFormalityLevel ns0:Formal ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+  dc:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+  ns0:officialURI "https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work"^^xsd:anyURI ;
+  dc:language <http://publications.europa.eu/resource/authority/language/ENG>, <http://publications.europa.eu/resource/authority/language/ITA> ;
+  ns0:acronym "inail" ;
+  dc:description "Ontologia INAIL relativa alla Denuncia Nuovo Lavoro Temporaneo. La denuncia nuovo lavoro temporaneo consente ai datori di lavoro di segnalare un nuovo lavoro di carattere temporaneo, anche di lunga durata, e di assicurare i propri dipendenti fino al termine dei lavori."@it, "This INAIL ontology addresses the New Temporary Employment Insurance Policy, which provides protection against occupational injuries and diseases to contractuals (such as outsourced employees, freelancers and so on) once their Temporary Employment contracts have been registered by their employers"@en ;
+  dc:identifier "https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work" ;
+  ns0:prefix "INAIL_DNLTemp" .
+
+dc:accessURL a owl:AnnotationProperty .
+dc:description a owl:AnnotationProperty .
+dc:downloadURL a owl:AnnotationProperty .
+dc:format a owl:AnnotationProperty .
+dc:identifier a owl:AnnotationProperty .
+dc:license a owl:AnnotationProperty .
+dc:title a owl:AnnotationProperty .
+vcard:fn a owl:AnnotationProperty .
+vcard:hasEmail a owl:AnnotationProperty .
+foaf:name a owl:AnnotationProperty .
+<https://w3id.org/italia/work-accident/onto/core/retribuzioneRelativaASoggettoAssicurante>
+  a owl:ObjectProperty, owl:FunctionalProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/core/RetribuzioneComplessiva> ;
+  rdfs:range <https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL> .
+
+<https://w3id.org/italia/work-accident/onto/core/ricopreRuolo> a owl:ObjectProperty, owl:InverseFunctionalProperty .
+<https://w3id.org/italia/work-accident/onto/core/ricopreRuoloDiAssicurato>
+  a owl:ObjectProperty, owl:InverseFunctionalProperty ;
+  rdfs:subPropertyOf <https://w3id.org/italia/work-accident/onto/core/ricopreRuolo> ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/core/PersonaFisica> ;
+  rdfs:range <https://w3id.org/italia/work-accident/onto/core/SoggettoAssicurato> .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/denunciaPerLavoro>
+  a owl:ObjectProperty ;
+  rdfs:label "denuncia per lavoro"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/denunciaPerProroga>
+  a owl:ObjectProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaProrogaLavoroINAIL> ;
+  rdfs:range <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/ProrogaLavoroTemporaneoINAIL> ;
+  rdfs:label "denuncia per proroga"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/denunciaPerSospensione>
+  a owl:ObjectProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaSospensioneLavoroINAIL> ;
+  rdfs:range <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/SospensioneLavoroTemporaneoINAIL> ;
+  rdfs:label "denuncia per sospensione"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroHaCommittente>
+  a owl:ObjectProperty ;
+  rdfs:range <https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL> ;
+  rdfs:label "lavoro ha committente"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroHaLuogo>
+  a owl:ObjectProperty ;
+  rdfs:range <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/LuogoDiLavoroINAIL> ;
+  rdfs:label "lavoro ha luogo"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroSvoltoDa>
+  a owl:ObjectProperty ;
+  rdfs:range <https://w3id.org/italia/work-accident/onto/core/SoggettoAssicurato> ;
+  rdfs:label "lavoro svolto da"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroTemporaneoHaLocalita>
+  a owl:ObjectProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/NuovoLavoroTemporaneoINAIL> ;
+  rdfs:range <https://w3id.org/italia/onto/CLV/Feature> ;
+  rdfs:label "lavoro temporaneo ha localita"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroUtilizzaMacchinario>
+  a owl:ObjectProperty ;
+  rdfs:label "lavoro utilizza macchinario"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/prorogaRelativaA>
+  a owl:ObjectProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/ProrogaLavoroTemporaneoINAIL> ;
+  rdfs:range <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/NuovoLavoroTemporaneoINAIL> ;
+  rdfs:label "proroga relativa a"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/sospensioneRelativaA>
+  a owl:ObjectProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/SospensioneLavoroTemporaneoINAIL> ;
+  rdfs:range <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/NuovoLavoroTemporaneoINAIL> ;
+  rdfs:label "sospensione relativa a"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/dataFineLavoroTemporaneo>
+  a owl:DatatypeProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/NuovoLavoroTemporaneoINAIL> ;
+  rdfs:label "data fine lavoro temporaneo"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/dataInizioLavoroTemporaneo>
+  a owl:DatatypeProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/NuovoLavoroTemporaneoINAIL> ;
+  rdfs:label "data inizio lavoro temporaneo"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/descrizioneLavoro>
+  a owl:DatatypeProperty ;
+  rdfs:comment "Descrizione dettagliata delle opere realizzate e/o i servizi resi nell'ambito dello specifico lavoro temporaneo contenente l'elenco sintetico delle fasi del processo produttivo."@it ;
+  rdfs:label "descrizione lavoro"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/importoLavoro>
+  a owl:DatatypeProperty ;
+  rdfs:comment "Importo complessivo del lavoro"@it ;
+  rdfs:label "importo lavoro"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoriEsterni>
+  a owl:DatatypeProperty ;
+  rdfs:comment "Indica se l'azienda effettua fasi di preparazione di elementi o di componenti di impianti in officine esterne al proprio cantiere o stabilimento."@it ;
+  rdfs:label "lavori esterni"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoriSuMaterialiConAmianto>
+  a owl:DatatypeProperty ;
+  rdfs:comment "Campo booleano per indicare se vengono effettuate rimozioni/bonifiche/manutenzioni di/su materiali contenenti amianto."@it ;
+  rdfs:label "lavori su materiali con amianto"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/numeroMacchinario>
+  a owl:DatatypeProperty, owl:FunctionalProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/MacchinarioINAIL> ;
+  rdfs:label "numero macchinario"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/quotaOpereAffidateATerzi>
+  a owl:DatatypeProperty ;
+  rdfs:comment "Quota percentuale dei lavori che sono stati affidati o che si intendono affidare a terzi."@it ;
+  rdfs:label "quota opere affidate a terzi"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/subappalto>
+  a owl:DatatypeProperty ;
+  rdfs:comment "Campo booleano"@it ;
+  rdfs:label "subappalto"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/tipoDenunciaNuovoLavoroTemporaneo>
+  a owl:DatatypeProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaNuovoLavoroINAIL> ;
+  rdfs:comment "Indica se si tratta di una denuncia per un nuovo lavoro temporaneo, per la sospensione o  per la proroga di lavori temporanei già denunciati."@it ;
+  rdfs:label "tipo denuncia nuovo lavoro temporaneo"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/tipoLuogoLavoro>
+  a owl:DatatypeProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/LuogoDiLavoroINAIL> ;
+  rdfs:label "tipo luogo lavoro"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/tipoMacchinario>
+  a owl:DatatypeProperty ;
+  rdfs:domain <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/MacchinarioINAIL> ;
+  rdfs:label "tipo macchinario"@it .
+
+<https://w3id.org/italia/onto/CLV/Feature>
+  a owl:Class ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroTemporaneoHaLocalita> ] ;
+    owl:someValuesFrom owl:Thing
+  ] .
+
+<https://w3id.org/italia/onto/TI/TimeIndexedEvent> a owl:Class .
+<https://w3id.org/italia/work-accident/onto/core/DenunciaDiIscrizioneINAIL> a owl:Class .
+<https://w3id.org/italia/work-accident/onto/core/PersonaFisica>
+  a owl:Class ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/core/ricopreRuoloDiAssicurato> ;
+    owl:someValuesFrom owl:Thing
+  ] .
+
+<https://w3id.org/italia/work-accident/onto/core/RetribuzioneComplessiva>
+  a owl:Class ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/core/retribuzioneRelativaASoggettoAssicurante> ;
+    owl:someValuesFrom owl:Thing
+  ] .
+
+<https://w3id.org/italia/work-accident/onto/core/RetribuzioneImponibile>
+  a owl:Class ;
+  owl:disjointWith <https://w3id.org/italia/work-accident/onto/core/RetribuzionePresunta> .
+
+<https://w3id.org/italia/work-accident/onto/core/RetribuzionePresunta> a owl:Class .
+<https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL>
+  a owl:Class ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/core/retribuzioneRelativaASoggettoAssicurante> ] ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroHaCommittente> ] ;
+    owl:someValuesFrom owl:Thing
+  ] .
+
+<https://w3id.org/italia/work-accident/onto/core/SoggettoAssicurato>
+  a owl:Class ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/core/ricopreRuoloDiAssicurato> ] ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroSvoltoDa> ] ;
+    owl:someValuesFrom owl:Thing
+  ] .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaNuovoLavoroINAIL>
+  a owl:Class ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/tipoDenunciaNuovoLavoroTemporaneo> ;
+    owl:someValuesFrom rdfs:Literal
+  ] ;
+  rdfs:subClassOf <https://w3id.org/italia/work-accident/onto/core/DenunciaDiIscrizioneINAIL>, [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/denunciaPerLavoro> ;
+    owl:someValuesFrom owl:Thing
+  ] ;
+  rdfs:comment "Indica tutte le tipologie di denuncia che possono essere presentate per un nuovo lavoro temporaneo: denuncia di sospensione, denuncia di proroga, denuncia di nuovo lavoro temporaneo."@it ;
+  rdfs:label "Denuncia nuovo lavoro INAIL"@it, "INAIL new work complaint"@en .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaNuovoLavoroTemporaneoINAIL>
+  a owl:Class ;
+  rdfs:comment "Denuncia di un nuovo lavoro a carattere temporaneo che il datore di lavoro deve presentare entro 30 giorni dalla data di inizio dei lavori. Deve essere presentata una denuncia di variazione, sempre entro il termine di 30 giorni dalla data di inizio dei lavori, anche nel caso di lavori: a carattere stabile, per i quali non sia previsto un termine finale; a carattere temporaneo che riguardano attività non ancora denunciate all'Istituto (nuovo rischio). Per i datori di lavoro non titolari di un rapporto assicurativo Inail, deve essere compilata la denuncia contestualmente all’inizio dei lavori (denuncia di esercizio). Il datore di lavoro può essere dispensato dall’obbligo della denuncia dei singoli lavori se questi sono classificabili in una delle lavorazioni già denunciate in precedenza. Tale dispensa è concessa per i lavori edili, stradali, idraulici ed affini di modesta entità e negli altri casi in cui si ravvisi l’opportunità, e in ogni caso solo se le lavorazioni richiedono l’impiego di non più di cinque persone e non durano più di quindici giorni (art.13, comma 9, delle \"Modalità di applicazione delle tariffe dei premi\" approvate con d.m. 27 febbraio 2019)."@it ;
+  rdfs:label "Denuncia nuovo lavoro temporaneo INAIL"@it, "INAIL new temporary work complaint"@en .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaProrogaLavoroINAIL>
+  a owl:Class ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/denunciaPerProroga> ;
+    owl:someValuesFrom owl:Thing
+  ] ;
+  rdfs:comment "Denuncia inviata per richiedera la proroga del lavoro temporaneo attualmente in corso."@it ;
+  rdfs:label "Denuncia proroga lavoro INAIL"@it, "INAIL work extension complaint"@en .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaSospensioneLavoroINAIL>
+  a owl:Class ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/denunciaPerSospensione> ;
+    owl:someValuesFrom owl:Thing
+  ] ;
+  rdfs:comment "Denuncia inviata per richiedera la sospensione del lavoro temporaneo attualmente in corso."@it ;
+  rdfs:label "Denuncia sospensione lavoro INAIL"@it, "INAIL work suspension complaint"@en .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/FamiliareCoadiuvanteESocioDiImpreseArtigianeINAIL>
+  a owl:Class ;
+  owl:disjointWith <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/FamiliareCoadiuvanteESocioDiImpreseNonArtigianeINAIL> ;
+  rdfs:comment "Familiare coadiuvante e socio di imprese artigiane"@it ;
+  rdfs:label "Familiare coadiuvante E socio di imprese artigiane INAIL"@it, "INAIL assistant family and business partner in craft enterprises"@en .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/FamiliareCoadiuvanteESocioDiImpreseNonArtigianeINAIL>
+  a owl:Class ;
+  rdfs:comment "Familiare coadiuvante e socio di imprese non artigiane"@it ;
+  rdfs:label "Familiare coadiuvante E socio di imprese non artigiane INAIL"@it, "INAIL assistant family and business partner in non-craft enterprises"@en .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/LuogoDiLavoroINAIL>
+  a owl:Class ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroHaLuogo> ] ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/tipoLuogoLavoro> ;
+    owl:someValuesFrom rdfs:Literal
+  ] ;
+  rdfs:comment "Luogo presso il quale vengono svolti i lavori, ad esempio: cantiere navale, aeroporto, scuola, ufficio ecc."@it ;
+  rdfs:label "INAIL workplace"@en, "Luogo di lavoro INAIL"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/MacchinarioINAIL>
+  a owl:Class ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/numeroMacchinario> ;
+    owl:someValuesFrom rdfs:Literal
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/tipoMacchinario> ;
+    owl:someValuesFrom rdfs:Literal
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroUtilizzaMacchinario> ] ;
+    owl:someValuesFrom owl:Thing
+  ] ;
+  rdfs:comment "Macchine, impianti o attrezzature necessarie all'esecuzione dei lavori, compresi i mezzi di trasporto."@it ;
+  rdfs:label "INAIL equipment"@en, "Macchinario INAIL"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/NuovoLavoroTemporaneoINAIL>
+  a owl:Class ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroTemporaneoHaLocalita> ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/prorogaRelativaA> ] ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/sospensioneRelativaA> ] ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/dataFineLavoroTemporaneo> ;
+    owl:someValuesFrom rdfs:Literal
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/dataInizioLavoroTemporaneo> ;
+    owl:someValuesFrom rdfs:Literal
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroHaCommittente> ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroHaLuogo> ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroSvoltoDa> ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroUtilizzaMacchinario> ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/denunciaPerLavoro> ] ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/descrizioneLavoro> ;
+    owl:someValuesFrom rdfs:Literal
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/importoLavoro> ;
+    owl:someValuesFrom rdfs:Literal
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoriEsterni> ;
+    owl:someValuesFrom rdfs:Literal
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoriSuMaterialiConAmianto> ;
+    owl:someValuesFrom rdfs:Literal
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/quotaOpereAffidateATerzi> ;
+    owl:someValuesFrom rdfs:Literal
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/subappalto> ;
+    owl:someValuesFrom rdfs:Literal
+  ] ;
+  rdfs:comment "Sono “nuovi lavori a carattere temporaneo” i lavori, anche di lunga durata, che: abbiano un termine finale, certo o presunto; siano classificabili ad una voce di tariffa già presente nella P.A.T. attiva presso la Sede INAIL in cui la ditta ha la propria sede legale. Rientrano in tale casistica non solo i lavori edili, idraulici, stradali, di linee di trasporto e di distribuzione, di condotta, ma anche tutti gli altri lavori aventi le suddette caratteristiche (ad es., gestione temporanea di un servizio di mensa scolastica; appalto del servizio di pulizia di edifici privati o pubblici, ecc.). Deve essere presentata, invece, apposita denuncia di variazione nel caso di: nuovi lavori a carattere stabile, per i quali cioè non sia previsto un termine finale; lavori a carattere temporaneo concernenti attività non ancora denunciate all'Istituto (nuovo rischio). "@it ;
+  rdfs:label "INAIL New employment Registration"@en, "Nuovo Lavoro temporaneo INAIL"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/ProrogaLavoroTemporaneoINAIL>
+  a owl:Class ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/prorogaRelativaA> ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/denunciaPerProroga> ] ;
+    owl:someValuesFrom owl:Thing
+  ] ;
+  rdfs:subClassOf <https://w3id.org/italia/onto/TI/TimeIndexedEvent> ;
+  rdfs:comment "Proroga richiesta per il lavoro temporaneo attualmente in corso."@it ;
+  rdfs:label "INAIL temporary employment extension"@en, "Proroga lavoro temporaneo INAIL"@it .
+
+<https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/SospensioneLavoroTemporaneoINAIL>
+  a owl:Class ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/sospensioneRelativaA> ;
+    owl:someValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/denunciaPerSospensione> ] ;
+    owl:someValuesFrom owl:Thing
+  ] ;
+  rdfs:subClassOf <https://w3id.org/italia/onto/TI/TimeIndexedEvent> ;
+  rdfs:comment "Sospensione richiesta per il lavoro temporaneo attualmente in corso."@it ;
+  rdfs:label "INAIL temporary employment suspension"@en, "Sospensione lavoro temporaneo INAIL"@it .
+
+<https://w3id.org/italia/work-accident/data/proc17_new_temporary_work/distribution/PROC17DNL-RDF-TURTLE>
+  a ns0:SemanticAssetDistribution, dcat:Distribution, <http://dati.gov.it/onto/dcatapit#Distribution>, owl:NamedIndividual ;
+  dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/P17-DNLTemp/latest> ;
+  dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/P17-DNLTemp/latest/P17-DNLTemp.ttl> ;
+  dc:description "Questa è la distribuzione RDF/Turtle dell'ontologia INAIL relativa alla denuncia nuovo lavoro temporaneo, denuncia che consente ai datori di lavoro di segnalare un nuovo lavoro di carattere temporaneo, anche di lunga durata, e di assicurare i propri dipendenti fino al termine dei lavori."@it, "The INAIL New Temporary Employment Insurance Policy ontology distribution in RDF/Turtle. This type of policy provides protection against occupational injuries and diseases to contractuals (such as outsourced employees, freelancers and so on)for the entire durantion of employment, as soon as their agreement has been registered by their employers"@en ;
+  dc:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+  dc:license <http://creativecommons.org/licenses/by/4.0/> ;
+  dc:title "Distribuzione RDF/Turtle ontologia INAIL - Denuncia Nuovo Lavoro Temporaneo"@it, "RDF/Turtle distribution of INAIL ontology - New Temporary Employment Insurance Policy"@en .
+
+<https://w3id.org/italia/work-accident/data/proc17_new_temporary_work/distribution/PROC17DNL-RDF-XML>
+  a ns0:SemanticAssetDistribution, dcat:Distribution, <http://dati.gov.it/onto/dcatapit#Distribution>, owl:NamedIndividual ;
+  dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/P17-DNLTemp/latest> ;
+  dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/P17-DNLTemp/latest/P17-DNLTemp.owl> ;
+  dc:description "Questa è la distribuzione RDF/XML dell'ontologia INAIL relativa alla denuncia nuovo lavoro temporaneo, denuncia che consente ai datori di lavoro di segnalare un nuovo lavoro di carattere temporaneo, anche di lunga durata, e di assicurare i propri dipendenti fino al termine dei lavori."@it, "The INAIL New Temporary Employment Insurance Policy ontology distribution in RDF/XML. This type of policy provides protection against occupational injuries and diseases to contractuals (such as outsourced employees, freelancers and so on)for the entire durantion of employment, as soon as their agreement has been registered by their employers"@en ;
+  dc:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+  dc:license <http://creativecommons.org/licenses/by/4.0/> ;
+  dc:title "Distribuzione RDF/XML ontologia INAIL - Denuncia Nuovo Lavoro Temporaneo"@it, "RDF/XML distribution of INAIL ontology - New Temporary Employment Insurance Policy"@en .
+
+<https://w3id.org/italia/work-accident/data/proc17_new_temporary_work/distribution/PROC17DNL-N-TRIPLES>
+  a ns0:SemanticAssetDistribution, dcat:Distribution, <http://dati.gov.it/onto/dcatapit#Distribution>, owl:NamedIndividual ;
+  dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/P17-DNLTemp/latest> ;
+  dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/P17-DNLTemp/latest/P17-DNLTemp.n3> ;
+  dc:description "Questa è la distribuzione N-TRIPLES dell'ontologia INAIL relativa alla denuncia nuovo lavoro temporaneo, denuncia che consente ai datori di lavoro di segnalare un nuovo lavoro di carattere temporaneo, anche di lunga durata, e di assicurare i propri dipendenti fino al termine dei lavori."@it, "The INAIL New Temporary Employment Insurance Policy ontology distribution in N-TRIPLES. This type of policy provides protection against occupational injuries and diseases to contractuals (such as outsourced employees, freelancers and so on)for the entire durantion of employment, as soon as their agreement has been registered by their employers"@en ;
+  dc:format <http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES> ;
+  dc:license <http://creativecommons.org/licenses/by/4.0/> ;
+  dc:title "Distribuzione N-TRIPLES ontologia INAIL - Denuncia Nuovo Lavoro Temporaneo"@it, "N-TRIPLES distribution of INAIL ontology - New Temporary Employment Insurance Policy"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/agenzia_entrate>
+  a owl:NamedIndividual, <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/Esattore>, <http://dati.gov.it/onto/dcatapit#Agent>, foaf:Agent ;
+  dc:identifier "age" ;
+  foaf:name "Agenzia delle Entrate"@it, "Italian Revenue Agency"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/inail>
+  a owl:NamedIndividual, <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/DestinatarioPremioINAIL>, <http://dati.gov.it/onto/dcatapit#Agent>, foaf:Agent ;
+  dc:identifier "inail" ;
+  foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it, "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/td>
+  a owl:NamedIndividual, <http://dati.gov.it/onto/dcatapit#Agent>, foaf:Agent ;
+  dc:identifier "TD" ;
+  foaf:name "Team per la Trasformazione Digitale"@it, "Digital Transformation Team"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV>
+  a owl:NamedIndividual, <http://dati.gov.it/onto/dcatapit#Organization>, vcard:Kind, vcard:Organization ;
+  vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+  vcard:hasEmail <mailto:dcod@inail.it> .
+
+[]
+  a owl:Class ;
+  owl:unionOf (
+   <https://w3id.org/italia/work-accident/onto/core/RetribuzioneImponibile>
+   <https://w3id.org/italia/work-accident/onto/core/RetribuzionePresunta>
+ ) ;
+  rdfs:subClassOf <https://w3id.org/italia/work-accident/onto/core/RetribuzioneComplessiva> .
+
+[]
+  a owl:Class ;
+  owl:unionOf (
+   <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaNuovoLavoroTemporaneoINAIL>
+   <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaProrogaLavoroINAIL>
+   <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaSospensioneLavoroINAIL>
+ ) ;
+  rdfs:subClassOf <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaNuovoLavoroINAIL> .
+
+[]
+  a owl:Class ;
+  owl:unionOf (
+   <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/FamiliareCoadiuvanteESocioDiImpreseArtigianeINAIL>
+   <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/FamiliareCoadiuvanteESocioDiImpreseNonArtigianeINAIL>
+ ) ;
+  rdfs:subClassOf <https://w3id.org/italia/work-accident/onto/core/SoggettoAssicurato> .
+
+[]
+  a owl:AllDisjointClasses ;
+  owl:members (
+   <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaNuovoLavoroTemporaneoINAIL>
+   <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaProrogaLavoroINAIL>
+   <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaSospensioneLavoroINAIL>
+ ) .

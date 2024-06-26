@@ -1,0 +1,149 @@
+openapi: 3.0.3
+info:
+  title: Schema della Denuncia Iscrizione Polizza Scuole
+  version: 202312.07.00
+  x-summary: Schema della denuncia di iscrizione della polizza scuole con l'ontologia INAIL.
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  termsOfService: https://creativecommons.org/licenses/by/4.0/
+  contact:
+    name: Anna Maria De Paoli
+    email: a.depaoli@inail.it
+   # url:
+  description: |-
+    Denuncia di iscrizione di una nuova ditta con contestuale apertura di una polizza assicurativa per le scuole.
+
+    La metadatazione semantica degli schemi si basa sul documento
+    [REST API Linked Data keywords](https://www.ietf.org/archive/id/draft-polli-restapi-ld-keywords-00.html)
+    che introduce le keyword x-jsonld-type e x-jsonld-context.
+paths: {}
+servers: []
+tags: []
+components:
+  schemas:
+    SedeInail:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/sede-inail/latest/sede-inail.oas3.yaml#/components/schemas/SedeInail"
+    SoggettoAssicurante:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/soggetto-assicurante/latest/soggetto-assicurante.oas3.yaml#/components/schemas/SoggettoAssicurante"
+    PolizzaScuole:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/polizza-scuole/latest/polizza-scuole.oas3.yaml#/components/schemas/PolizzaScuole"
+
+    NumeroPraticaDenunciaIscrizione:
+      type: number
+      format: double
+      x-refersTo: https://w3id.org/italia/work-accident/onto/core/numeroPraticaDenuncia
+      description:
+          Campo tecnico finalizzato all'individuazione univoca di ogni record dell'entità.
+          Associato a https://w3id.org/italia/work-accident/onto/core/numeroPraticaDenuncia.
+      example: 17569
+
+    DenunciaIscrizioneScuole:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/proc17_schools/DenunciaDiIscrizionePolizzaScuoleINAIL
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/proc17_schools/"
+        numero_alunni_e_studenti: numeroAlunniEStudenti
+        anno_scolastico: annoScolastico
+      additionalProperties: true
+      description:
+         Questo schema rappresenta la denuncia di iscrizione polizza scuole ed è associato a https://w3id.org/italia/work-accident/onto/proc17_schools/DenunciaDiIscrizionePolizzaScuoleINAIL.
+      required:
+      - numero_pratica_denuncia_iscrizione
+      - data_denuncia_iscrizione
+      - data_protocollazione_denuncia_iscrizione
+      - codice_esito_pratica
+      - descrizione_esito_pratica
+      - tipo_denuncia
+      - numero_alunni_e_studenti
+      - anno_scolastico
+      properties:
+        numero_pratica_denuncia_iscrizione:
+          $ref: "#/components/schemas/NumeroPraticaDenunciaIscrizione"
+        data_denuncia_iscrizione:
+          $ref: "#/components/schemas/DataDenunciaIscrizione"
+        data_protocollazione_denuncia_iscrizione:
+          $ref: "#/components/schemas/DataProtocollazioneDenunciaIscrizione"
+        codice_esito_pratica:
+          $ref: "#/components/schemas/CodiceEsitoPratica"
+        descrizione_esito_pratica:
+          $ref: "#/components/schemas/DescrizioneEsitoPratica"
+        tipo_denuncia:
+          $ref: "#/components/schemas/TipoDenuncia"
+        numero_alunni_e_studenti:
+          type: integer
+          format: int64
+        anno_scolastico: #vedere questo dato
+          type: string
+          maxLength: 30
+        relativa_a_soggetto:
+          $ref: "#/components/schemas/RelativaSoggetto"
+        relativa_a_sede_inail:
+          $ref: "#/components/schemas/RelativaSedeInail"
+        relativa_a_polizza:
+          $ref: "#/components/schemas/RelativaPolizza"
+      example:
+        numero_pratica_denuncia_iscrizione:
+          $ref: "#/components/schemas/NumeroPraticaDenunciaIscrizione/example"
+        data_denuncia_iscrizione:
+          $ref: "#/components/schemas/DataDenunciaIscrizione/example"
+        data_protocollazione_denuncia_iscrizione:
+          $ref: "#/components/schemas/DataProtocollazioneDenunciaIscrizione/example"
+        codice_esito_pratica:
+          $ref: "#/components/schemas/CodiceEsitoPratica/example"
+        descrizione_esito_pratica:
+          $ref: "#/components/schemas/DescrizioneEsitoPratica/example"
+        tipo_denuncia:
+          $ref: "#/components/schemas/TipoDenuncia/example"
+        numero_alunni_e_studenti: 154
+        anno_scolastico: '30/10/2010 - 31/10/2011' #controllare bene questo dato, il documento presenta dato del tipo 30/10/2012 - 31/10/2013
+        relativa_a_soggetto:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/soggetto-assicurante/latest/soggetto-assicurante.oas3.yaml#/components/schemas/SoggettoAssicurante/example"
+        relativa_a_sede_inail:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/sede-inail/latest/sede-inail.oas3.yaml#/components/schemas/SedeInail/example"
+        relativa_a_polizza:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/polizza-scuole/latest/polizza-scuole.oas3.yaml#/components/schemas/PolizzaScuole/example"
+
+    DataDenunciaIscrizione:
+      type: string
+      format: date
+      x-refersTo: https://w3id.org/italia/work-accident/onto/core/dataDenuncia
+      pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+      example: '2010-04-12'
+    DataProtocollazioneDenunciaIscrizione:
+      type: string
+      format: date
+      x-refersTo: https://w3id.org/italia/work-accident/onto/core/dataProtocollazioneDenuncia
+      pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+      example: '2010-04-17'
+    CodiceEsitoPratica:
+      type: string
+      x-refersTo: https://w3id.org/italia/work-accident/onto/core/codiceEsitoPratica
+      maxLength: 10
+      example: 'C'
+    DescrizioneEsitoPratica:
+      type: string
+      x-refersTo: https://w3id.org/italia/work-accident/onto/core/descrizioneEsitoPratica
+      maxLength: 250
+      example: 'Confermata'
+    TipoDenuncia:
+      type: string
+      x-refersTo: https://w3id.org/italia/work-accident/onto/core/tipoDiDenuncia
+      maxLength: 200
+      example: 'DENUNCIA ISCRIZIONE'
+
+    RelativaSoggetto:
+      type: object
+      x-refersTo: https://w3id.org/italia/work-accident/onto/core/denunciaRelativaASoggettoAssicurante
+      items:
+        $ref: "#/components/schemas/SoggettoAssicurante"
+    RelativaSedeInail:
+      type: object
+      x-refersTo: https://w3id.org/italia/work-accident/onto/core/denunciaRelativaASedeINAIL
+      items:
+        $ref: "#/components/schemas/SedeInail"
+    RelativaPolizza:
+      type: object
+      x-refersTo: https://w3id.org/italia/work-accident/onto/core/denunciaRelativaAPolizza
+      items:
+        $ref: "#/components/schemas/PolizzaScuole"

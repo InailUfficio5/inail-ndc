@@ -1,0 +1,394 @@
+@prefix adms: <https://w3id.org/italia/onto/ADMS/> .
+@prefix CLV: <https://w3id.org/italia/onto/CLV/> .
+@prefix COV: <https://w3id.org/italia/onto/COV/> .
+@prefix CPV: <https://w3id.org/italia/onto/CPV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAIL_RX_Devices: <https://w3id.org/italia/work-accident/onto/proc17_rx_devices/> .
+@prefix INAILAutoliq: <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> .
+@prefix INAILCore: <https://w3id.org/italia/work-accident/onto/core/> .
+@prefix INAILService: <https://w3id.org/italia/work-accident/onto/adm_serv/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix RO: <https://w3id.org/italia/onto/RO/> .
+@prefix TI: <https://w3id.org/italia/onto/TI/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+INAIL_RX_Devices: a owl:Ontology ;
+    owl:versionIRI INAIL_RX_Devices:1.0 ;
+    owl:imports CLV:,
+        COV:,
+        CPV:,
+        INAILCore:,
+        INAILService:,
+        l0:,
+        RO:,
+        TI: ;
+    rdfs:label "INAIL Ontology about RX Devices Policy"@en,
+        "Ontologia INAIL relativa alla Polizza Apparecchi RX"@it ;
+    rdfs:comment "Ontologia INAIL relativa alla Polizza Apparecchi RX. La polizza apparecchi rx consente alle aziende che usano apparecchi radiologici di assicurare sia gli apparecchi che i soggetti esposti alle radiazioni."@it,
+        "This is the ontology of the INAIL Organization about RX Devices Policy. This policy allows companies that use radiological equipment to insure both the equipment and the subjects exposed to radiation."@en ;
+    owl:versionInfo "Version 1.0 - Published on 31 December 2023"@en,
+        "Versione 1.0 - Pubblicata il 31 Dicembre 2023"@it ;
+    rdfs:isDefinedBy INAIL_RX_Devices: ;
+    adms:acronym "inail" ;
+    adms:hasContributor <https://w3id.org/italia/work-accident/data/organization/td> ;
+    adms:hasFormalityLevel adms:Formal ;
+    adms:hasKeyClass INAIL_RX_Devices:ApparecchioRXINAIL,
+        INAIL_RX_Devices:SoggettoEspostoAApparecchioINAIL ;
+    adms:hasOntologyLanguage adms:OWL ;
+    adms:hasSemanticAssetDistribution <https://w3id.org/italia/work-accident/data/proc17_rx_devices/distribution/PROC17RXD-N-TRIPLES>,
+        <https://w3id.org/italia/work-accident/data/proc17_rx_devices/distribution/PROC17RXD-RDF-TURTLE>,
+        <https://w3id.org/italia/work-accident/data/proc17_rx_devices/distribution/PROC17RXD-RDF-XML> ;
+    adms:hasTask adms:AnnotationTask,
+        adms:QueryFormulationTask,
+        adms:SearchTask ;
+    adms:last INAIL_RX_Devices:1.0 ;
+    adms:officialURI "https://w3id.org/italia/work-accident/onto/proc17_rx_devices"^^xsd:anyURI ;
+    adms:prefix "INAIL_RX_Devices" ;
+    adms:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
+    adms:status "draft" ;
+    adms:target "Cittadini"@it,
+        "Imprese"@it,
+        "Pubbliche Amministrazioni"@it ;
+    adms:type adms:ServiceOnytology ;
+    dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+    dcat:keyword "Apparecchio RX"@it,
+        "Exposed Subject To Device"@en,
+        "RX Device"@en,
+        "Soggetto Esposto A Apparecchio"@it ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:description "Ontologia INAIL relativa alla Polizza Apparecchi RX. La polizza apparecchi rx consente alle aziende che usano apparecchi radiologici di assicurare sia gli apparecchi che i soggetti esposti alle radiazioni."@it,
+        "This is the ontology of the INAIL Organization about RX Devices Policy. This policy allows companies that use radiological equipment to insure both the equipment and the subjects exposed to radiation."@en ;
+    dct:identifier "https://w3id.org/italia/work-accident/onto/proc17_rx_devices" ;
+    dct:issued "2023-12-31T00:00:00+00:00"^^xsd:dateTime ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:title "INAIL Ontology about RX Devices Policy"@en,
+        "Ontologia INAIL relativa alla Polizza Apparecchi RX"@it .
+
+### Object Properties
+
+INAIL_RX_Devices:apparecchioRelativoAPolizza a owl:ObjectProperty ;
+    rdfs:label "apparecchio relativo a polizza"@it ;
+    rdfs:domain INAIL_RX_Devices:ApparecchioRXINAIL ;
+    rdfs:range INAILCore:PolizzaApparecchiRX .
+
+INAIL_RX_Devices:denunciaApparecchiRXRelativaA a owl:ObjectProperty ;
+    rdfs:label "denuncia apparecchi RX relativa a"@it .
+
+INAIL_RX_Devices:denunciaHaVariazioneApparecchioRX a owl:ObjectProperty ;
+    rdfs:label "denuncia ha variazione apparecchio RX"@it ;
+    rdfs:domain INAIL_RX_Devices:DenunciaDiVariazionePolizzaApparecchiRXINAIL ;
+    rdfs:range INAIL_RX_Devices:VariazioneApparecchioRXINAIL .
+
+INAIL_RX_Devices:denunciaHaVariazioneSoggettoEsposto a owl:ObjectProperty ;
+    rdfs:label "denuncia ha variazione soggetto esposto"@it ;
+    rdfs:domain INAIL_RX_Devices:DenunciaDiVariazionePolizzaApparecchiRXINAIL ;
+    rdfs:range INAIL_RX_Devices:VariazioneSoggettoEspostoINAIL .
+
+INAIL_RX_Devices:polizzaPerSoggettoEsposto a owl:ObjectProperty ;
+    rdfs:label "polizza per soggetto esposto"@it ;
+    rdfs:range INAIL_RX_Devices:SoggettoEspostoAApparecchioINAIL .
+
+INAIL_RX_Devices:soggettoEspostoAdApparecchio a owl:ObjectProperty ;
+    rdfs:label "soggetto esposto ad apparecchio"@it ;
+    rdfs:domain INAIL_RX_Devices:SoggettoEspostoAApparecchioINAIL ;
+    rdfs:range INAIL_RX_Devices:ApparecchioRXINAIL .
+
+INAIL_RX_Devices:variazioneRiferitaAdApparecchio a owl:ObjectProperty ;
+    rdfs:label "variazione riferita ad apparecchio"@it ;
+    rdfs:domain INAIL_RX_Devices:VariazioneApparecchioRXINAIL ;
+    rdfs:range INAIL_RX_Devices:ApparecchioRXINAIL .
+
+INAIL_RX_Devices:variazioneRiferitaASoggettoEsposto a owl:ObjectProperty ;
+    rdfs:label "variazione riferita a soggetto esposto"@it ;
+    rdfs:domain INAIL_RX_Devices:VariazioneSoggettoEspostoINAIL ;
+    rdfs:range INAIL_RX_Devices:SoggettoEspostoAApparecchioINAIL .
+
+INAILCore:ricopreRuolo a owl:InverseFunctionalProperty,
+        owl:ObjectProperty .
+
+INAILCore:ricopreRuoloDiAssicurato a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:subPropertyOf INAILCore:ricopreRuolo ;
+    rdfs:domain INAILCore:PersonaFisica ;
+    rdfs:range INAILCore:SoggettoAssicuratoINAIL .
+
+### Annotation Properties
+
+dct:accessURL a owl:AnnotationProperty .
+
+dct:description a owl:AnnotationProperty .
+
+dct:downloadURL a owl:AnnotationProperty .
+
+dct:format a owl:AnnotationProperty .
+
+dct:identifier a owl:AnnotationProperty .
+
+dct:license a owl:AnnotationProperty .
+
+dct:title a owl:AnnotationProperty .
+
+foaf:name a owl:AnnotationProperty .
+
+vcard:fn a owl:AnnotationProperty .
+
+vcard:hasEmail a owl:AnnotationProperty .
+
+### Data Properties
+
+INAIL_RX_Devices:dataFineValiditaApparecchio a owl:DatatypeProperty ;
+    rdfs:label "data fine validita apparecchio"@it ;
+    rdfs:domain INAIL_RX_Devices:DenunciaDiVariazionePolizzaApparecchiRXINAIL ;
+    rdfs:comment "La data fine validità deve essere compilata solo nel caso si stia provvedendo a denunciare/regolarizzare un apparecchio che è stato utilizzato per un periodo di tempo limitato"@it .
+
+INAIL_RX_Devices:dataFineValiditaSoggettoEsposto a owl:DatatypeProperty ;
+    rdfs:label "data fine validita soggetto esposto"@it ;
+    rdfs:domain INAIL_RX_Devices:DenunciaDiVariazionePolizzaApparecchiRXINAIL ;
+    rdfs:comment "La data fine validità deve essere digitata solo nel caso in cui si stia effettuando una denuncia tardiva, per cui il soggetto esposto è già cessato nel momento in cui sta effettuando la denuncia"@it .
+
+INAIL_RX_Devices:dataInizioValiditaApparecchio a owl:DatatypeProperty ;
+    rdfs:label "data inizio validita apparecchio"@it ;
+    rdfs:domain INAIL_RX_Devices:DenunciaDiVariazionePolizzaApparecchiRXINAIL .
+
+INAIL_RX_Devices:dataInizioValiditaSoggettoEsposto a owl:DatatypeProperty ;
+    rdfs:label "data inizio validita soggetto esposto"@it ;
+    rdfs:domain INAIL_RX_Devices:DenunciaDiVariazionePolizzaApparecchiRXINAIL .
+
+INAIL_RX_Devices:matricolaApparecchio a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "matricola apparecchio"@it ;
+    rdfs:domain INAIL_RX_Devices:ApparecchioRXINAIL .
+
+INAIL_RX_Devices:tipologiaApparecchio a owl:DatatypeProperty ;
+    rdfs:label "tipologia apparecchio"@it ;
+    rdfs:domain INAIL_RX_Devices:ApparecchioRXINAIL .
+
+INAIL_RX_Devices:tipologiaDettaglio a owl:DatatypeProperty ;
+    rdfs:label "tipologia dettaglio"@it ;
+    rdfs:domain INAIL_RX_Devices:DenunciaDiVariazionePolizzaApparecchiRXINAIL ;
+    rdfs:comment "tipologia di variazione che si vuole effettuare per la polizza. Assume i seguenti valori: apparecchi, soggetti esposti."@it .
+
+### Classes
+
+INAIL_RX_Devices:ApparecchioRXINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_RX_Devices:apparecchioRelativoAPolizza ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_RX_Devices:matricolaApparecchio ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_RX_Devices:tipologiaApparecchio ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_RX_Devices:soggettoEspostoAdApparecchio ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_RX_Devices:variazioneRiferitaAdApparecchio ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Apparecchio RX INAIL"@it,
+        "INAIL RX device"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_RX_Devices:denunciaApparecchiRXRelativaA ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Ai fini assicurativi per apparecchio radiologico, che costituisce l’elemento di individuazione e di determinazione del premio, si intende il complesso generatore di alta tensione composto da: tavoli di comando per alimentazione; cavi schermati di collegamento fra tavoli di comando e tubi radiogeni; uno o più tubi radiogeni montati su accessori d’esame (ortoscopi, trocoscopi, stratigrafi, ecc.)."@it .
+
+INAIL_RX_Devices:DenunciaDiCessazionePolizzaApparecchiRXINAIL a owl:Class ;
+    rdfs:label "Denuncia di cessazione polizza apparecchi RX INAIL"@it,
+        "INAIL termination complaint of rx devices policy"@en ;
+    rdfs:subClassOf INAILCore:DenunciaDiCessazioneINAIL,
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_RX_Devices:denunciaApparecchiRXRelativaA ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Denuncia di cessazione della polizza assicurativa per soggetti esposti ad apparecchi RX."@it .
+
+INAIL_RX_Devices:DenunciaDiIscrizionePolizzaApparecchiRXINAIL a owl:Class ;
+    rdfs:label "Denuncia di iscrizione polizza apparecchi RX INAIL"@it,
+        "INAIL enrollment complaint of RX devices policy"@en ;
+    rdfs:subClassOf INAILCore:DenunciaDiIscrizioneINAIL,
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_RX_Devices:denunciaApparecchiRXRelativaA ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Denuncia di iscrizione di una nuova ditta con contestuale apertura di una polizza assicurativa per soggetti esposti ad apparecchi RX."@it .
+
+INAIL_RX_Devices:DenunciaDiVariazionePolizzaApparecchiRXINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_RX_Devices:dataFineValiditaApparecchio ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_RX_Devices:dataFineValiditaSoggettoEsposto ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_RX_Devices:dataInizioValiditaApparecchio ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_RX_Devices:dataInizioValiditaSoggettoEsposto ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_RX_Devices:denunciaHaVariazioneApparecchioRX ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_RX_Devices:denunciaHaVariazioneSoggettoEsposto ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_RX_Devices:tipologiaDettaglio ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:label "Denuncia di variazione polizza apparecchi RX INAIL"@it,
+        "INAIL variation complaint of rx devices policy"@en ;
+    rdfs:subClassOf INAILCore:DenunciaDiVariazioneINAIL,
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_RX_Devices:denunciaApparecchiRXRelativaA ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Denuncia che consente ai soggetti assicuranti l'apertura di una o più polizze assicurative per soggetti esposti ad apparecchi RX su una PAT già attiva e l'attivazione di una nuova PAT con contestuale apertura di una o più polizze assicurative contro apparecchi RX sul codice ditta attivo."@it .
+
+INAIL_RX_Devices:SoggettoEspostoAApparecchioINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_RX_Devices:soggettoEspostoAdApparecchio ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_RX_Devices:polizzaPerSoggettoEsposto ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_RX_Devices:variazioneRiferitaASoggettoEsposto ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL exposed subject"@en,
+        "Soggetto esposto a apparecchio INAIL"@it ;
+    rdfs:subClassOf INAILCore:SoggettoAssicuratoINAIL,
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_RX_Devices:denunciaApparecchiRXRelativaA ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "I soggetti esposti sono persone fisiche che sono addette all’utilizzo degli apparecchi RX e quindi esposti in maniera prolungata alle onde elettromagnetiche dell’apparecchio."@it .
+
+INAIL_RX_Devices:VariazioneApparecchioRXINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_RX_Devices:variazioneRiferitaAdApparecchio ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_RX_Devices:denunciaHaVariazioneApparecchioRX ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL RX device variation"@en,
+        "Variazione apparecchio RX INAIL"@it ;
+    rdfs:subClassOf TI:TimeIndexedEvent ;
+    rdfs:comment "Variazione dei dati relativi all'apparecchio RX"@it .
+
+INAIL_RX_Devices:VariazioneSoggettoEspostoINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_RX_Devices:variazioneRiferitaASoggettoEsposto ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_RX_Devices:denunciaHaVariazioneSoggettoEsposto ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL exposed subject variation"@en,
+        "Variazione soggetto esposto INAIL"@it ;
+    rdfs:subClassOf TI:TimeIndexedEvent ;
+    rdfs:comment "Variazione dei dati relativi al soggetto esposto all'apparecchio RX"@it .
+
+INAILCore:DenunciaDiCessazioneINAIL a owl:Class .
+
+INAILCore:DenunciaDiIscrizioneINAIL a owl:Class .
+
+INAILCore:DenunciaDiVariazioneINAIL a owl:Class .
+
+INAILCore:PersonaFisica a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:ricopreRuoloDiAssicurato ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:PolizzaApparecchiRX a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_RX_Devices:apparecchioRelativoAPolizza ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty INAIL_RX_Devices:polizzaPerSoggettoEsposto ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:SoggettoAssicuratoINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:ricopreRuoloDiAssicurato ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+TI:TimeIndexedEvent a owl:Class .
+
+### Individuals
+
+<https://w3id.org/italia/work-accident/data/organization/agenzia_entrate> a dcatapit:Agent,
+        foaf:Agent,
+        INAILAutoliq:Esattore,
+        owl:NamedIndividual ;
+    dct:identifier "age" ;
+    foaf:name "Agenzia delle Entrate"@it,
+        "Italian Revenue Agency"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent,
+        INAILAutoliq:DestinatarioPremioINAIL,
+        owl:NamedIndividual ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/td> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "TD" ;
+    foaf:name "Digital Transformation Team"@en,
+        "Team per la Trasformazione Digitale"@it .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+<https://w3id.org/italia/work-accident/data/proc17_rx_devices/distribution/PROC17RXD-N-TRIPLES> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc17_rx_devices/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc17_rx_devices/latest/proc17_rx_devices.n3> ;
+    dct:description "Questa è la distribuzione N-TRIPLES dell'ontologia INAIL relativa alla polizza apparecchi rx, polizza che consente alle aziende che usano apparecchi radiologici di assicurare sia gli apparecchi che i soggetti esposti alle radiazioni."@it,
+        "This is the distribution in N-TRIPLES of the INAIL ontology about rx devices policy, this policy allows companies that use radiological equipment to insure both the equipment and the subjects exposed to radiation."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione N-TRIPLES ontologia INAIL - Polizza Apparecchi RX"@it,
+        "N-TRIPLES distribution of INAIL ontology - RX Devices Policy"@en .
+
+<https://w3id.org/italia/work-accident/data/proc17_rx_devices/distribution/PROC17RXD-RDF-TURTLE> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc17_rx_devices/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc17_rx_devices/latest/proc17_rx_devices.ttl> ;
+    dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia INAIL relativa alla polizza apparecchi rx, polizza che consente alle aziende che usano apparecchi radiologici di assicurare sia gli apparecchi che i soggetti esposti alle radiazioni."@it,
+        "This is the distribution in RDF/Turtle of the INAIL ontology about rx devices policy, this policy allows companies that use radiological equipment to insure both the equipment and the subjects exposed to radiation."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione RDF/Turtle ontologia INAIL - Polizza Apparecchi RX"@it,
+        "RDF/Turtle distribution of INAIL ontology - RX Devices Policy"@en .
+
+<https://w3id.org/italia/work-accident/data/proc17_rx_devices/distribution/PROC17RXD-RDF-XML> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc17_rx_devices/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc17_rx_devices/latest/proc17_rx_devices.owl> ;
+    dct:description "Questa è la distribuzione RDF/XML dell'ontologia INAIL relativa alla polizza apparecchi rx, polizza che consente alle aziende che usano apparecchi radiologici di assicurare sia gli apparecchi che i soggetti esposti alle radiazioni."@it,
+        "This is the distribution in RDF/XML of the INAIL ontology about rx devices policy, this policy allows companies that use radiological equipment to insure both the equipment and the subjects exposed to radiation."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione RDF/XML ontologia INAIL - Polizza Apparecchi RX"@it,
+        "RDF/XML distribution of INAIL ontology - RX Devices Policy"@en .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

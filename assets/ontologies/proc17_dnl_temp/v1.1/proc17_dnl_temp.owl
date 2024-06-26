@@ -1,0 +1,989 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/"
+     xml:base="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/"
+     xmlns:INAIL_Fishermen="https://w3id.org/italia/work-accident/onto/proc17_fishermen/"
+     xmlns:INAILService="https://w3id.org/italia/work-accident/onto/adm_serv/"
+     xmlns:l0="https://w3id.org/italia/onto/l0/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:CPV="https://w3id.org/italia/onto/CPV/"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:CLV="https://w3id.org/italia/onto/CLV/"
+     xmlns:INAIL_Sostanze_Radioattive="https://w3id.org/italia/work-accident/onto/proc17_radioactive_substances/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:dcatapit="http://dati.gov.it/onto/dcatapit#"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:adms="https://w3id.org/italia/onto/ADMS/"
+     xmlns:INAILAutoliq="https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/"
+     xmlns:INAILCore="https://w3id.org/italia/work-accident/onto/core/"
+     xmlns:COV="https://w3id.org/italia/onto/COV/"
+     xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+     xmlns:INAIL_RX_Devices="https://w3id.org/italia/work-accident/onto/proc17_rx_devices/"
+     xmlns:INAIL_DNLTemp="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/"
+     xmlns:INAILPDDA1="https://w3id.org/italia/work-accident/onto/proc6/"
+     xmlns:TI="https://w3id.org/italia/onto/TI/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:INAIL="http://okms.inail/ontology/"
+     xmlns:INAIL_Scuole="https://w3id.org/italia/work-accident/onto/proc17_schools/"
+     xmlns:INAIL_Volunteers="https://w3id.org/italia/work-accident/onto/proc17_volunteers/"
+     xmlns:RO="https://w3id.org/italia/onto/RO/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/">
+        <owl:versionIRI rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/1.0"/>
+        <adms:hasSemanticAssetDistribution>https://w3id.org/italia/work-accident/data/adm_serv/distribution/CORE-RDF-TURTLE</adms:hasSemanticAssetDistribution>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-31T00:00:00Z</dct:modified>
+        <adms:target xml:lang="it">Cittadini</adms:target>
+        <rdfs:isDefinedBy>https://w3id.org/italia/work-accident/onto/core/</rdfs:isDefinedBy>
+        <dct:description xml:lang="it">Ontologia INAIL relativa alla Denuncia Nuovo Lavoro Temporaneo. La denuncia nuovo lavoro temporaneo consente ai datori di lavoro di segnalare un nuovo lavoro di carattere temporaneo, anche di lunga durata, e di assicurare i propri dipendenti fino al termine dei lavori.</dct:description>
+        <dcat:keyword>Sede INAIL</dcat:keyword>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-06T00:00:00Z</dct:issued>
+        <rdfs:comment xml:lang="it">Ontologia INAIL relativa alla Denuncia Nuovo Lavoro Temporaneo. La denuncia nuovo lavoro temporaneo consente ai datori di lavoro di segnalare un nuovo lavoro di carattere temporaneo, anche di lunga durata, e di assicurare i propri dipendenti fino al termine dei lavori.</rdfs:comment>
+        <adms:type>https://w3id.org/italia/onto/ADMS/ServiceOnytology</adms:type>
+        <dcat:keyword xml:lang="it">NuovoLavoroTemporaneo</dcat:keyword>
+        <adms:hasKeyClass>https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/NuovoLavoroTemporaneoINAIL</adms:hasKeyClass>
+        <dcat:keyword xml:lang="it">Azienda</dcat:keyword>
+        <adms:hasKeyClass>https://w3id.org/italia/work-accident/onto/core/SedeINAIL</adms:hasKeyClass>
+        <adms:target xml:lang="it">Pubbliche Amministrazioni</adms:target>
+        <dcat:keyword xml:lang="en">INAIL Office</dcat:keyword>
+        <dct:description xml:lang="en">This INAIL ontology addresses the New Temporary Employment Insurance Policy, which provides protection against occupational injuries and diseases to contractuals (such as outsourced employees, freelancers and so on) once their Temporary Employment contracts have been registered by their employers</dct:description>
+        <adms:hasKeyClass>https://w3id.org/italia/work-accident/onto/core/PosizioneAssicurativaNavigazione</adms:hasKeyClass>
+        <adms:semanticAssetInUse>https://w3id.org/italia/data/project/NDC</adms:semanticAssetInUse>
+        <owl:imports>https://w3id.org/italia/onto/TI/</owl:imports>
+        <adms:officialURI>https://w3id.org/italia/work-accident/onto/core</adms:officialURI>
+        <adms:hasTask>https://w3id.org/italia/onto/ADMS/QueryFormulationTask</adms:hasTask>
+        <dct:title xml:lang="it">Ontologia Core di INAIL</dct:title>
+        <dcat:keyword xml:lang="en">Insurance Territorial Position</dcat:keyword>
+        <rdfs:comment xml:lang="en">This INAIL ontology addresses the New Temporary Employment Insurance Policy, which provides protection against occupational injuries and diseases to contractuals (such as outsourced employees, freelancers and so on) once their Temporary Employment contracts have been registered by their employers</rdfs:comment>
+        <adms:status>catalogued</adms:status>
+        <adms:hasContributor>https://w3id.org/italia/work-accident/data/organization/td</adms:hasContributor>
+        <owl:imports>https://w3id.org/italia/onto/l0/</owl:imports>
+        <dcat:keyword xml:lang="en">Policy</dcat:keyword>
+        <dct:accrualPeriodicity>http://publications.europa.eu/resource/authority/frequency/IRREG</dct:accrualPeriodicity>
+        <owl:imports>https://w3id.org/italia/onto/CLV/</owl:imports>
+        <adms:hasKeyClass>https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL</adms:hasKeyClass>
+        <owl:imports>https://w3id.org/italia/onto/CPV/</owl:imports>
+        <owl:versionInfo xml:lang="en">Version 1.10 - Modified on 31 July 2023</owl:versionInfo>
+        <adms:hasOntologyLanguage>https://w3id.org/italia/onto/ADMS/OWL</adms:hasOntologyLanguage>
+        <dcat:keyword xml:lang="en">Salary</dcat:keyword>
+        <dct:rightsHolder>https://w3id.org/italia/work-accident/data/organization/inail</dct:rightsHolder>
+        <dcat:keyword xml:lang="en">Company</dcat:keyword>
+        <adms:hasFormalityLevel>https://w3id.org/italia/onto/ADMS/Formal</adms:hasFormalityLevel>
+        <owl:versionInfo xml:lang="it">Versione 1.10 - Modificata il 31 Luglio 2023</owl:versionInfo>
+        <dcat:keyword xml:lang="it">Polizza</dcat:keyword>
+        <dcat:keyword xml:lang="en">Insurance Navigation Position</dcat:keyword>
+        <dcat:theme>http://publications.europa.eu/resource/authority/data-theme/SOCI</dcat:theme>
+        <adms:last>https://w3id.org/italia/work-accident/onto/core/1.10</adms:last>
+        <adms:hasTask>https://w3id.org/italia/onto/ADMS/AnnotationTask</adms:hasTask>
+        <dcat:contactPoint>https://w3id.org/italia/work-accident/data/organization/ufficioV</dcat:contactPoint>
+        <dct:language>http://publications.europa.eu/resource/authority/language/ENG</dct:language>
+        <adms:acronym>inail</adms:acronym>
+        <adms:hasTask>https://w3id.org/italia/onto/ADMS/SearchTask</adms:hasTask>
+        <dct:title xml:lang="en">Core INAIL Ontology</dct:title>
+        <dcat:keyword xml:lang="it">Posizione Assicurativa Territoriale</dcat:keyword>
+        <owl:imports>https://w3id.org/italia/onto/RO/</owl:imports>
+        <rdfs:label xml:lang="en">Core INAIL Ontology</rdfs:label>
+        <adms:hasKeyClass>https://w3id.org/italia/work-accident/onto/core/RetribuzioneComplessiva</adms:hasKeyClass>
+        <dct:publisher>https://w3id.org/italia/work-accident/data/organization/inail</dct:publisher>
+        <dct:identifier>https://w3id.org/italia/work-accident/onto/core</dct:identifier>
+        <dcat:keyword xml:lang="it">Posizione Assicurativa Navigazione</dcat:keyword>
+        <dct:creator>https://w3id.org/italia/work-accident/data/organization/inail</dct:creator>
+        <dcat:keyword xml:lang="it">Retribuzione</dcat:keyword>
+        <dct:language>http://publications.europa.eu/resource/authority/language/ITA</dct:language>
+        <adms:hasKeyClass>https://w3id.org/italia/work-accident/onto/core/PosizioneAssicurativaTerritoriale</adms:hasKeyClass>
+        <adms:prefix>inail</adms:prefix>
+        <adms:hasKeyClass>https://w3id.org/italia/work-accident/onto/core/PolizzaINAIL</adms:hasKeyClass>
+        <adms:target xml:lang="it">Imprese</adms:target>
+        <rdfs:label xml:lang="it">Ontologia Core di INAIL</rdfs:label>
+        <adms:status>published</adms:status>
+        <dcat:keyword xml:lang="en">Complaint</dcat:keyword>
+        <owl:imports>https://w3id.org/italia/onto/COV/</owl:imports>
+    </owl:Ontology>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://purl.org/dc/terms/accessURL -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accessURL"/>
+
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+
+
+
+    <!-- http://purl.org/dc/terms/downloadURL -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/downloadURL"/>
+
+
+
+    <!-- http://purl.org/dc/terms/format -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/format"/>
+
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#fn -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#fn"/>
+
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#hasEmail -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasEmail"/>
+
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/retribuzioneRelativaASoggettoAssicurante -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/core/retribuzioneRelativaASoggettoAssicurante">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/core/RetribuzioneComplessiva"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/ricopreRuolo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/core/ricopreRuolo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/ricopreRuoloDiAssicurato -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/core/ricopreRuoloDiAssicurato">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/ricopreRuolo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/core/PersonaFisica"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicurato"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/denunciaPerLavoro -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/denunciaPerLavoro">
+        <rdfs:label xml:lang="it">denuncia per lavoro</rdfs:label>
+        <rdfs:label xml:lang="en">employment has registration</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/denunciaPerProroga -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/denunciaPerProroga">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaProrogaLavoroINAIL"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/ProrogaLavoroTemporaneoINAIL"/>
+        <rdfs:label xml:lang="it">denuncia per proroga</rdfs:label>
+        <rdfs:label xml:lang="en">extension notice </rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/denunciaPerSospensione -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/denunciaPerSospensione">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaSospensioneLavoroINAIL"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/SospensioneLavoroTemporaneoINAIL"/>
+        <rdfs:label xml:lang="it">denuncia per sospensione</rdfs:label>
+        <rdfs:label xml:lang="en">notice of suspension</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroHaCommittente -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroHaCommittente">
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL"/>
+        <rdfs:label xml:lang="en">employment has a client </rdfs:label>
+        <rdfs:label xml:lang="it">lavoro ha committente</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroHaLuogo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroHaLuogo">
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/LuogoDiLavoroINAIL"/>
+        <rdfs:label xml:lang="en">employment has a work enviroment</rdfs:label>
+        <rdfs:label xml:lang="it">lavoro ha luogo</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroSvoltoDa -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroSvoltoDa">
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicurato"/>
+        <rdfs:label xml:lang="en">job role carried out by </rdfs:label>
+        <rdfs:label xml:lang="it">lavoro svolto da</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroTemporaneoHaLocalita -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroTemporaneoHaLocalita">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/NuovoLavoroTemporaneoINAIL"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/Feature"/>
+        <rdfs:label xml:lang="it">lavoro temporaneo ha localita</rdfs:label>
+        <rdfs:label xml:lang="en">temporary employment has a location</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroUtilizzaMacchinario -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroUtilizzaMacchinario">
+        <rdfs:label xml:lang="en">job requires work equipment</rdfs:label>
+        <rdfs:label xml:lang="it">lavoro utilizza macchinario</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/prorogaRelativaA -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/prorogaRelativaA">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/ProrogaLavoroTemporaneoINAIL"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/NuovoLavoroTemporaneoINAIL"/>
+        <rdfs:label xml:lang="en">extension refers to</rdfs:label>
+        <rdfs:label xml:lang="it">proroga relativa a</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/sospensioneRelativaA -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/sospensioneRelativaA">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/SospensioneLavoroTemporaneoINAIL"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/NuovoLavoroTemporaneoINAIL"/>
+        <rdfs:label xml:lang="it">sospensione relativa a</rdfs:label>
+        <rdfs:label xml:lang="en">suspension refers to</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/dataFineLavoroTemporaneo -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/dataFineLavoroTemporaneo">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/NuovoLavoroTemporaneoINAIL"/>
+        <rdfs:label xml:lang="it">data fine lavoro temporaneo</rdfs:label>
+        <rdfs:label xml:lang="en">temporary employment end date</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/dataInizioLavoroTemporaneo -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/dataInizioLavoroTemporaneo">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/NuovoLavoroTemporaneoINAIL"/>
+        <rdfs:label xml:lang="it">data inizio lavoro temporaneo</rdfs:label>
+        <rdfs:label xml:lang="en">temporary employment start date</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/descrizioneLavoro -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/descrizioneLavoro">
+        <rdfs:comment xml:lang="it">Descrizione dettagliata delle opere realizzate e/o i servizi resi nell&apos;ambito dello specifico lavoro temporaneo contenente l&apos;elenco sintetico delle fasi del processo produttivo.</rdfs:comment>
+        <rdfs:label xml:lang="it">descrizione lavoro</rdfs:label>
+        <rdfs:label xml:lang="en">temporary employment description</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/importoLavoro -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/importoLavoro">
+        <rdfs:comment xml:lang="it">Importo complessivo del lavoro</rdfs:comment>
+        <rdfs:label xml:lang="en">employment complete guide </rdfs:label>
+        <rdfs:label xml:lang="it">importo lavoro</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoriEsterni -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoriEsterni">
+        <rdfs:comment xml:lang="it">Indica se l&apos;azienda effettua fasi di preparazione di elementi o di componenti di impianti in officine esterne al proprio cantiere o stabilimento.</rdfs:comment>
+        <rdfs:label xml:lang="en">external work</rdfs:label>
+        <rdfs:label xml:lang="it">lavori esterni</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoriSuMaterialiConAmianto -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoriSuMaterialiConAmianto">
+        <rdfs:comment xml:lang="it">Campo booleano per indicare se vengono effettuate rimozioni/bonifiche/manutenzioni di/su materiali contenenti amianto.</rdfs:comment>
+        <rdfs:label xml:lang="en">asbestos work</rdfs:label>
+        <rdfs:label xml:lang="it">lavori su materiali con amianto</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/numeroMacchinario -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/numeroMacchinario">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/MacchinarioINAIL"/>
+        <rdfs:label xml:lang="en">equipment serial number</rdfs:label>
+        <rdfs:label xml:lang="it">numero macchinario</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/quotaOpereAffidateATerzi -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/quotaOpereAffidateATerzi">
+        <rdfs:comment xml:lang="it">Quota percentuale dei lavori che sono stati affidati o che si intendono affidare a terzi.</rdfs:comment>
+        <rdfs:label xml:lang="en">outsource rate and percentage </rdfs:label>
+        <rdfs:label xml:lang="it">quota opere affidate a terzi</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/subappalto -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/subappalto">
+        <rdfs:comment xml:lang="it">Campo booleano</rdfs:comment>
+        <rdfs:label xml:lang="en">outsource</rdfs:label>
+        <rdfs:label xml:lang="it">subappalto</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/tipoDenunciaNuovoLavoroTemporaneo -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/tipoDenunciaNuovoLavoroTemporaneo">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaNuovoLavoroINAIL"/>
+        <rdfs:comment xml:lang="it">Indica se si tratta di una denuncia per un nuovo lavoro temporaneo, per la sospensione o  per la proroga di lavori temporanei già denunciati.</rdfs:comment>
+        <rdfs:label xml:lang="en">new employment regitration type</rdfs:label>
+        <rdfs:label xml:lang="it">tipo denuncia nuovo lavoro temporaneo</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/tipoLuogoLavoro -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/tipoLuogoLavoro">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/LuogoDiLavoroINAIL"/>
+        <rdfs:label xml:lang="it">tipo luogo lavoro</rdfs:label>
+        <rdfs:label xml:lang="en">work enviroments type</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/tipoMacchinario -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/tipoMacchinario">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/MacchinarioINAIL"/>
+        <rdfs:label xml:lang="it">tipo macchinario</rdfs:label>
+        <rdfs:label xml:lang="en">type of work equipment </rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://w3id.org/italia/onto/CLV/Feature -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Feature">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroTemporaneoHaLocalita"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/onto/TI/TimeIndexedEvent -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/TI/TimeIndexedEvent"/>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/DenunciaDiIscrizioneINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/DenunciaDiIscrizioneINAIL"/>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/PersonaFisica -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/PersonaFisica">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/core/ricopreRuoloDiAssicurato"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/RetribuzioneComplessiva -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/RetribuzioneComplessiva">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/core/retribuzioneRelativaASoggettoAssicurante"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/RetribuzioneImponibile -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/RetribuzioneImponibile">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/RetribuzioneComplessiva"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/italia/work-accident/onto/core/RetribuzionePresunta"/>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/RetribuzionePresunta -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/RetribuzionePresunta">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/RetribuzioneComplessiva"/>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/retribuzioneRelativaASoggettoAssicurante"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroHaCommittente"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/SoggettoAssicurato -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicurato">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/ricopreRuoloDiAssicurato"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroSvoltoDa"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaNuovoLavoroINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaNuovoLavoroINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/DenunciaDiIscrizioneINAIL"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/denunciaPerLavoro"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/tipoDenunciaNuovoLavoroTemporaneo"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Indica tutte le tipologie di denuncia che possono essere presentate per un nuovo lavoro temporaneo: denuncia di sospensione, denuncia di proroga, denuncia di nuovo lavoro temporaneo.</rdfs:comment>
+        <rdfs:label xml:lang="it">Denuncia nuovo lavoro INAIL</rdfs:label>
+        <rdfs:label xml:lang="en">INAIL new employment registration</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaNuovoLavoroTemporaneoINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaNuovoLavoroTemporaneoINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaNuovoLavoroINAIL"/>
+        <rdfs:comment xml:lang="it">Denuncia di un nuovo lavoro a carattere temporaneo che il datore di lavoro deve presentare entro 30 giorni dalla data di inizio dei lavori. Deve essere presentata una denuncia di variazione, sempre entro il termine di 30 giorni dalla data di inizio dei lavori, anche nel caso di lavori: a carattere stabile, per i quali non sia previsto un termine finale; a carattere temporaneo che riguardano attività non ancora denunciate all&apos;Istituto (nuovo rischio). Per i datori di lavoro non titolari di un rapporto assicurativo Inail, deve essere compilata la denuncia contestualmente all’inizio dei lavori (denuncia di esercizio). Il datore di lavoro può essere dispensato dall’obbligo della denuncia dei singoli lavori se questi sono classificabili in una delle lavorazioni già denunciate in precedenza. Tale dispensa è concessa per i lavori edili, stradali, idraulici ed affini di modesta entità e negli altri casi in cui si ravvisi l’opportunità, e in ogni caso solo se le lavorazioni richiedono l’impiego di non più di cinque persone e non durano più di quindici giorni (art.13, comma 9, delle &quot;Modalità di applicazione delle tariffe dei premi&quot; approvate con d.m. 27 febbraio 2019).</rdfs:comment>
+        <rdfs:label xml:lang="it">Denuncia nuovo lavoro temporaneo INAIL</rdfs:label>
+        <rdfs:label xml:lang="en">INAIL New Temporary Employment Registration </rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaProrogaLavoroINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaProrogaLavoroINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaNuovoLavoroINAIL"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/denunciaPerProroga"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Denuncia inviata per richiedera la proroga del lavoro temporaneo attualmente in corso.</rdfs:comment>
+        <rdfs:label xml:lang="it">Denuncia proroga lavoro INAIL</rdfs:label>
+        <rdfs:label xml:lang="en">INAIL Temporary Contract Extension Notice </rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaSospensioneLavoroINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaSospensioneLavoroINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaNuovoLavoroINAIL"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/denunciaPerSospensione"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Denuncia inviata per richiedera la sospensione del lavoro temporaneo attualmente in corso.</rdfs:comment>
+        <rdfs:label xml:lang="it">Denuncia sospensione lavoro INAIL</rdfs:label>
+        <rdfs:label xml:lang="en">INAIL Notice of Supension</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/FamiliareCoadiuvanteESocioDiImpreseArtigianeINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/FamiliareCoadiuvanteESocioDiImpreseArtigianeINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicurato"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/FamiliareCoadiuvanteESocioDiImpreseNonArtigianeINAIL"/>
+        <rdfs:comment xml:lang="it">Familiare coadiuvante e socio di imprese artigiane</rdfs:comment>
+        <rdfs:label xml:lang="it">Familiare coadiuvante E socio di imprese artigiane INAIL</rdfs:label>
+        <rdfs:label xml:lang="en">Family Business Partner employed in artisan companies and registered with INAIL</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/FamiliareCoadiuvanteESocioDiImpreseNonArtigianeINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/FamiliareCoadiuvanteESocioDiImpreseNonArtigianeINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicurato"/>
+        <rdfs:comment xml:lang="it">Familiare coadiuvante e socio di imprese non artigiane</rdfs:comment>
+        <rdfs:label xml:lang="it">Familiare coadiuvante E socio di imprese non artigiane INAIL</rdfs:label>
+        <rdfs:label xml:lang="en">Family Business Partner employed in a non-artisan company registered with INAIL</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/LuogoDiLavoroINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/LuogoDiLavoroINAIL">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroHaLuogo"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/tipoLuogoLavoro"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Luogo presso il quale vengono svolti i lavori, ad esempio: cantiere navale, aeroporto, scuola, ufficio ecc.</rdfs:comment>
+        <rdfs:label xml:lang="en">INAIL workplace</rdfs:label>
+        <rdfs:label xml:lang="it">Luogo di lavoro INAIL</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/MacchinarioINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/MacchinarioINAIL">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroUtilizzaMacchinario"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/numeroMacchinario"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/tipoMacchinario"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Macchine, impianti o attrezzature necessarie all&apos;esecuzione dei lavori, compresi i mezzi di trasporto.</rdfs:comment>
+        <rdfs:label xml:lang="en">INAIL work equipment</rdfs:label>
+        <rdfs:label xml:lang="it">Macchinario INAIL</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/NuovoLavoroTemporaneoINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/NuovoLavoroTemporaneoINAIL">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroHaCommittente"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroHaLuogo"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroSvoltoDa"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroTemporaneoHaLocalita"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoroUtilizzaMacchinario"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/denunciaPerLavoro"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/prorogaRelativaA"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/sospensioneRelativaA"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/dataFineLavoroTemporaneo"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/dataInizioLavoroTemporaneo"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/descrizioneLavoro"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/importoLavoro"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoriEsterni"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/lavoriSuMaterialiConAmianto"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/quotaOpereAffidateATerzi"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/subappalto"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Sono “nuovi lavori a carattere temporaneo” i lavori, anche di lunga durata, che: abbiano un termine finale, certo o presunto; siano classificabili ad una voce di tariffa già presente nella P.A.T. attiva presso la Sede INAIL in cui la ditta ha la propria sede legale. Rientrano in tale casistica non solo i lavori edili, idraulici, stradali, di linee di trasporto e di distribuzione, di condotta, ma anche tutti gli altri lavori aventi le suddette caratteristiche (ad es., gestione temporanea di un servizio di mensa scolastica; appalto del servizio di pulizia di edifici privati o pubblici, ecc.). Deve essere presentata, invece, apposita denuncia di variazione nel caso di: nuovi lavori a carattere stabile, per i quali cioè non sia previsto un termine finale; lavori a carattere temporaneo concernenti attività non ancora denunciate all&apos;Istituto (nuovo rischio). </rdfs:comment>
+        <rdfs:label xml:lang="en">INAIL new temporary Employment</rdfs:label>
+        <rdfs:label xml:lang="it">Nuovo Lavoro temporaneo INAIL</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/ProrogaLavoroTemporaneoINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/ProrogaLavoroTemporaneoINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/TI/TimeIndexedEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/prorogaRelativaA"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/denunciaPerProroga"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Proroga richiesta per il lavoro temporaneo attualmente in corso.</rdfs:comment>
+        <rdfs:label xml:lang="en">INAIL temporary employment extension</rdfs:label>
+        <rdfs:label xml:lang="it">Proroga lavoro temporaneo INAIL</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/SospensioneLavoroTemporaneoINAIL -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/SospensioneLavoroTemporaneoINAIL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/TI/TimeIndexedEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/sospensioneRelativaA"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/denunciaPerSospensione"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Sospensione richiesta per il lavoro temporaneo attualmente in corso.</rdfs:comment>
+        <rdfs:label xml:lang="en">INAIL temporary employment suspension</rdfs:label>
+        <rdfs:label xml:lang="it">Sospensione lavoro temporaneo INAIL</rdfs:label>
+    </owl:Class>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/data/proc17_new_temporary_work/distribution/PROC17DNL-N-TRIPLES">
+        <dct:accessURL>https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/P17-DNLTemp/latest</dct:accessURL>
+        <dct:description xml:lang="it">Questa è la distribuzione RDF/XML dell'ontologia INAIL relativa alla denuncia nuovo lavoro temporaneo, denuncia che consente ai datori di lavoro di segnalare un nuovo lavoro di carattere temporaneo, anche di lunga durata, e di assicurare i propri dipendenti fino al termine dei lavori.</dct:description>
+        <dct:description xml:lang="en">The INAIL New Temporary Employment Insurance Policy ontology distribution in RDF/XML. This type of policy provides protection against occupational injuries and diseases to contractuals (such as outsourced employees, freelancers and so on)for the entire durantion of employment, as soon as their agreement has been registered by their employers</dct:description>
+        <dct:downloadURL>https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/P17-DNLTemp/latest/P17-DNLTemp</dct:downloadURL>
+        <dct:format>http://publications.europa.eu/resource/authority/file-type/RDF</dct:format>
+        <dct:license>http://creativecommons.org/licenses/by/4.0/</dct:license>
+        <dct:title xml:lang="it">Distribuzione RDF/XML ontologia INAIL - Denuncia Nuovo Lavoro Temporaneo</dct:title>
+        <dct:title xml:lang="en">RDF/Turtle distribution of INAIL ontology - New Temporary Employment Insurance Policy</dct:title>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/organization/inail -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/onto/core/organization/inail">
+        <dct:identifier>inail</dct:identifier>
+        <foaf:name xml:lang="it">Istituto Nazionale per l&apos;Assicurazione contro gli Infortuni sul Lavoro</foaf:name>
+        <foaf:name xml:lang="en">National Institute for Insurance against Accidents at Work</foaf:name>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/organization/td -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/onto/core/organization/td">
+        <dct:identifier>TD</dct:identifier>
+        <foaf:name xml:lang="en">Digital Transformation Team</foaf:name>
+        <foaf:name xml:lang="it">Team per la Trasformazione Digitale</foaf:name>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/core/organization/ufficioV -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/onto/core/organization/ufficioV">
+        <vcard:fn>INAIL Ufficio V - D.C.O.D</vcard:fn>
+        <vcard:hasEmail xml:lang="inail.it">mailto:dcod</vcard:hasEmail>
+    </owl:NamedIndividual>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaNuovoLavoroTemporaneoINAIL"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaProrogaLavoroINAIL"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/DenunciaSospensioneLavoroINAIL"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.4) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,501 @@
+@prefix adms: <https://w3id.org/italia/onto/ADMS/> .
+@prefix CLV: <https://w3id.org/italia/onto/CLV/> .
+@prefix COV: <https://w3id.org/italia/onto/COV/> .
+@prefix CPV: <https://w3id.org/italia/onto/CPV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAIL_DNLTemp: <https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work/> .
+@prefix INAILAutoliq: <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> .
+@prefix INAILCore: <https://w3id.org/italia/work-accident/onto/core/> .
+@prefix INAILService: <https://w3id.org/italia/work-accident/onto/adm_serv/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix RO: <https://w3id.org/italia/onto/RO/> .
+@prefix TI: <https://w3id.org/italia/onto/TI/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+INAIL_DNLTemp: a owl:Ontology ;
+    owl:versionIRI INAIL_DNLTemp:1.0 ;
+    owl:imports CLV:,
+        COV:,
+        CPV:,
+        INAILCore:,
+        INAILService:,
+        l0:,
+        RO:,
+        TI: ;
+    rdfs:label "INAIL Ontology about New Temporary Work Report"@en,
+        "Ontologia INAIL relativa alla Denuncia Nuovo Lavoro Temporaneo"@it ;
+    rdfs:comment "Ontologia INAIL relativa alla Denuncia Nuovo Lavoro Temporaneo. La denuncia nuovo lavoro temporaneo consente ai datori di lavoro di segnalare un nuovo lavoro di carattere temporaneo, anche di lunga durata, e di assicurare i propri dipendenti fino al termine dei lavori."@it,
+        "This is the ontology of the INAIL Organization about New Temporary Work Report. New temporary job report allows owners to report a new temporary job, even a long-term one, and to insure their employees until the end of the work."@en ;
+    owl:versionInfo "Version 1.0 - Published on 31 December 2023"@en,
+        "Versione 1.0 - Pubblicata il 31 Dicembre 2023"@it ;
+    rdfs:isDefinedBy INAIL_DNLTemp: ;
+    adms:acronym "inail" ;
+    adms:hasContributor <https://w3id.org/italia/work-accident/data/organization/td> ;
+    adms:hasFormalityLevel adms:Formal ;
+    adms:hasKeyClass INAIL_DNLTemp:LuogoDiLavoroINAIL,
+        INAIL_DNLTemp:MacchinarioINAIL,
+        INAIL_DNLTemp:NuovoLavoroTemporaneoINAIL ;
+    adms:hasOntologyLanguage adms:OWL ;
+    adms:hasSemanticAssetDistribution <https://w3id.org/italia/work-accident/data/proc17_new_temporary_work/distribution/PROC17DNL-N-TRIPLES>,
+        <https://w3id.org/italia/work-accident/data/proc17_new_temporary_work/distribution/PROC17DNL-RDF-TURTLE>,
+        <https://w3id.org/italia/work-accident/data/proc17_new_temporary_work/distribution/PROC17DNL-RDF-XML> ;
+    adms:hasTask adms:AnnotationTask,
+        adms:QueryFormulationTask,
+        adms:SearchTask ;
+    adms:last INAIL_DNLTemp:1.0 ;
+    adms:officialURI "https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work"^^xsd:anyURI ;
+    adms:prefix "INAIL_DNLTemp" ;
+    adms:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
+    adms:status "draft" ;
+    adms:target "Cittadini"@it,
+        "Imprese"@it,
+        "Pubbliche Amministrazioni"@it ;
+    adms:type adms:ServiceOnytology ;
+    dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+    dcat:keyword "Luogo di Lavoro"@it,
+        "Macchinario"@it,
+        "Machinery"@en,
+        "New Temporary Work"@en,
+        "Nuovo Lavoro Temporaneo"@it,
+        "Workplace"@en ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:description "Ontologia INAIL relativa alla Denuncia Nuovo Lavoro Temporaneo. La denuncia nuovo lavoro temporaneo consente ai datori di lavoro di segnalare un nuovo lavoro di carattere temporaneo, anche di lunga durata, e di assicurare i propri dipendenti fino al termine dei lavori."@it,
+        "This is the ontology of the INAIL Organization about New Temporary Work Report. New temporary job report allows owners to report a new temporary job, even a long-term one, and to insure their employees until the end of the work."@en ;
+    dct:identifier "https://w3id.org/italia/work-accident/onto/proc17_new_temporary_work" ;
+    dct:issued "2023-12-31T00:00:00+00:00"^^xsd:dateTime ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:title "INAIL Ontology about New Temporary Work Report"@en,
+        "Ontologia INAIL relativa alla Denuncia Nuovo Lavoro Temporaneo"@it .
+
+### Object Properties
+
+INAIL_DNLTemp:denunciaPerLavoro a owl:ObjectProperty ;
+    rdfs:label "denuncia per lavoro"@it .
+
+INAIL_DNLTemp:denunciaPerProroga a owl:ObjectProperty ;
+    rdfs:label "denuncia per proroga"@it ;
+    rdfs:domain INAIL_DNLTemp:DenunciaProrogaLavoroINAIL ;
+    rdfs:range INAIL_DNLTemp:ProrogaLavoroTemporaneoINAIL .
+
+INAIL_DNLTemp:denunciaPerSospensione a owl:ObjectProperty ;
+    rdfs:label "denuncia per sospensione"@it ;
+    rdfs:domain INAIL_DNLTemp:DenunciaSospensioneLavoroINAIL ;
+    rdfs:range INAIL_DNLTemp:SospensioneLavoroTemporaneoINAIL .
+
+INAIL_DNLTemp:lavoroHaCommittente a owl:ObjectProperty ;
+    rdfs:label "lavoro ha committente"@it ;
+    rdfs:range INAILCore:SoggettoAssicuranteINAIL .
+
+INAIL_DNLTemp:lavoroHaLuogo a owl:ObjectProperty ;
+    rdfs:label "lavoro ha luogo"@it ;
+    rdfs:range INAIL_DNLTemp:LuogoDiLavoroINAIL .
+
+INAIL_DNLTemp:lavoroSvoltoDa a owl:ObjectProperty ;
+    rdfs:label "lavoro svolto da"@it ;
+    rdfs:range INAILCore:SoggettoAssicurato .
+
+INAIL_DNLTemp:lavoroTemporaneoHaLocalita a owl:ObjectProperty ;
+    rdfs:label "lavoro temporaneo ha localita"@it ;
+    rdfs:domain INAIL_DNLTemp:NuovoLavoroTemporaneoINAIL ;
+    rdfs:range CLV:Feature .
+
+INAIL_DNLTemp:lavoroUtilizzaMacchinario a owl:ObjectProperty ;
+    rdfs:label "lavoro utilizza macchinario"@it .
+
+INAIL_DNLTemp:prorogaRelativaA a owl:ObjectProperty ;
+    rdfs:label "proroga relativa a"@it ;
+    rdfs:domain INAIL_DNLTemp:ProrogaLavoroTemporaneoINAIL ;
+    rdfs:range INAIL_DNLTemp:NuovoLavoroTemporaneoINAIL .
+
+INAIL_DNLTemp:sospensioneRelativaA a owl:ObjectProperty ;
+    rdfs:label "sospensione relativa a"@it ;
+    rdfs:domain INAIL_DNLTemp:SospensioneLavoroTemporaneoINAIL ;
+    rdfs:range INAIL_DNLTemp:NuovoLavoroTemporaneoINAIL .
+
+INAILCore:retribuzioneRelativaASoggettoAssicurante a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain INAILCore:RetribuzioneComplessiva ;
+    rdfs:range INAILCore:SoggettoAssicuranteINAIL .
+
+INAILCore:ricopreRuolo a owl:InverseFunctionalProperty,
+        owl:ObjectProperty .
+
+INAILCore:ricopreRuoloDiAssicurato a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:subPropertyOf INAILCore:ricopreRuolo ;
+    rdfs:domain INAILCore:PersonaFisica ;
+    rdfs:range INAILCore:SoggettoAssicurato .
+
+### Annotation Properties
+
+dct:accessURL a owl:AnnotationProperty .
+
+dct:description a owl:AnnotationProperty .
+
+dct:downloadURL a owl:AnnotationProperty .
+
+dct:format a owl:AnnotationProperty .
+
+dct:identifier a owl:AnnotationProperty .
+
+dct:license a owl:AnnotationProperty .
+
+dct:title a owl:AnnotationProperty .
+
+foaf:name a owl:AnnotationProperty .
+
+vcard:fn a owl:AnnotationProperty .
+
+vcard:hasEmail a owl:AnnotationProperty .
+
+### Data Properties
+
+INAIL_DNLTemp:dataFineLavoroTemporaneo a owl:DatatypeProperty ;
+    rdfs:label "data fine lavoro temporaneo"@it ;
+    rdfs:domain INAIL_DNLTemp:NuovoLavoroTemporaneoINAIL .
+
+INAIL_DNLTemp:dataInizioLavoroTemporaneo a owl:DatatypeProperty ;
+    rdfs:label "data inizio lavoro temporaneo"@it ;
+    rdfs:domain INAIL_DNLTemp:NuovoLavoroTemporaneoINAIL .
+
+INAIL_DNLTemp:descrizioneLavoro a owl:DatatypeProperty ;
+    rdfs:label "descrizione lavoro"@it ;
+    rdfs:comment "Descrizione dettagliata delle opere realizzate e/o i servizi resi nell'ambito dello specifico lavoro temporaneo contenente l'elenco sintetico delle fasi del processo produttivo."@it .
+
+INAIL_DNLTemp:importoLavoro a owl:DatatypeProperty ;
+    rdfs:label "importo lavoro"@it ;
+    rdfs:comment "Importo complessivo del lavoro"@it .
+
+INAIL_DNLTemp:lavoriEsterni a owl:DatatypeProperty ;
+    rdfs:label "lavori esterni"@it ;
+    rdfs:comment "Indica se l'azienda effettua fasi di preparazione di elementi o di componenti di impianti in officine esterne al proprio cantiere o stabilimento."@it .
+
+INAIL_DNLTemp:lavoriSuMaterialiConAmianto a owl:DatatypeProperty ;
+    rdfs:label "lavori su materiali con amianto"@it ;
+    rdfs:comment "Campo booleano per indicare se vengono effettuate rimozioni/bonifiche/manutenzioni di/su materiali contenenti amianto."@it .
+
+INAIL_DNLTemp:numeroMacchinario a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "numero macchinario"@it ;
+    rdfs:domain INAIL_DNLTemp:MacchinarioINAIL .
+
+INAIL_DNLTemp:quotaOpereAffidateATerzi a owl:DatatypeProperty ;
+    rdfs:label "quota opere affidate a terzi"@it ;
+    rdfs:comment "Quota percentuale dei lavori che sono stati affidati o che si intendono affidare a terzi."@it .
+
+INAIL_DNLTemp:subappalto a owl:DatatypeProperty ;
+    rdfs:label "subappalto"@it ;
+    rdfs:comment "Campo booleano"@it .
+
+INAIL_DNLTemp:tipoDenunciaNuovoLavoroTemporaneo a owl:DatatypeProperty ;
+    rdfs:label "tipo denuncia nuovo lavoro temporaneo"@it ;
+    rdfs:domain INAIL_DNLTemp:DenunciaNuovoLavoroINAIL ;
+    rdfs:comment "Indica se si tratta di una denuncia per un nuovo lavoro temporaneo, per la sospensione o  per la proroga di lavori temporanei già denunciati."@it .
+
+INAIL_DNLTemp:tipoLuogoLavoro a owl:DatatypeProperty ;
+    rdfs:label "tipo luogo lavoro"@it ;
+    rdfs:domain INAIL_DNLTemp:LuogoDiLavoroINAIL .
+
+INAIL_DNLTemp:tipoMacchinario a owl:DatatypeProperty ;
+    rdfs:label "tipo macchinario"@it ;
+    rdfs:domain INAIL_DNLTemp:MacchinarioINAIL .
+
+### Classes
+
+CLV:Feature a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_DNLTemp:lavoroTemporaneoHaLocalita ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAIL_DNLTemp:DenunciaNuovoLavoroINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_DNLTemp:tipoDenunciaNuovoLavoroTemporaneo ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:label "Denuncia nuovo lavoro INAIL"@it,
+        "INAIL new work complaint"@en ;
+    rdfs:subClassOf INAILCore:DenunciaDiIscrizioneINAIL,
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_DNLTemp:denunciaPerLavoro ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Indica tutte le tipologie di denuncia che possono essere presentate per un nuovo lavoro temporaneo: denuncia di sospensione, denuncia di proroga, denuncia di nuovo lavoro temporaneo."@it .
+
+INAIL_DNLTemp:DenunciaNuovoLavoroTemporaneoINAIL a owl:Class ;
+    rdfs:label "Denuncia nuovo lavoro temporaneo INAIL"@it,
+        "INAIL new temporary work complaint"@en ;
+    rdfs:comment "Denuncia di un nuovo lavoro a carattere temporaneo che il datore di lavoro deve presentare entro 30 giorni dalla data di inizio dei lavori. Deve essere presentata una denuncia di variazione, sempre entro il termine di 30 giorni dalla data di inizio dei lavori, anche nel caso di lavori: a carattere stabile, per i quali non sia previsto un termine finale; a carattere temporaneo che riguardano attività non ancora denunciate all'Istituto (nuovo rischio). Per i datori di lavoro non titolari di un rapporto assicurativo Inail, deve essere compilata la denuncia contestualmente all’inizio dei lavori (denuncia di esercizio). Il datore di lavoro può essere dispensato dall’obbligo della denuncia dei singoli lavori se questi sono classificabili in una delle lavorazioni già denunciate in precedenza. Tale dispensa è concessa per i lavori edili, stradali, idraulici ed affini di modesta entità e negli altri casi in cui si ravvisi l’opportunità, e in ogni caso solo se le lavorazioni richiedono l’impiego di non più di cinque persone e non durano più di quindici giorni (art.13, comma 9, delle \"Modalità di applicazione delle tariffe dei premi\" approvate con d.m. 27 febbraio 2019)."@it .
+
+INAIL_DNLTemp:DenunciaProrogaLavoroINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_DNLTemp:denunciaPerProroga ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Denuncia proroga lavoro INAIL"@it,
+        "INAIL work extension complaint"@en ;
+    rdfs:comment "Denuncia inviata per richiedera la proroga del lavoro temporaneo attualmente in corso."@it .
+
+INAIL_DNLTemp:DenunciaSospensioneLavoroINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_DNLTemp:denunciaPerSospensione ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Denuncia sospensione lavoro INAIL"@it,
+        "INAIL work suspension complaint"@en ;
+    rdfs:comment "Denuncia inviata per richiedera la sospensione del lavoro temporaneo attualmente in corso."@it .
+
+INAIL_DNLTemp:FamiliareCoadiuvanteESocioDiImpreseArtigianeINAIL a owl:Class ;
+    rdfs:label "Familiare coadiuvante E socio di imprese artigiane INAIL"@it,
+        "INAIL assistant family and business partner in craft enterprises"@en ;
+    owl:disjointWith INAIL_DNLTemp:FamiliareCoadiuvanteESocioDiImpreseNonArtigianeINAIL ;
+    rdfs:comment "Familiare coadiuvante e socio di imprese artigiane"@it .
+
+INAIL_DNLTemp:FamiliareCoadiuvanteESocioDiImpreseNonArtigianeINAIL a owl:Class ;
+    rdfs:label "Familiare coadiuvante E socio di imprese non artigiane INAIL"@it,
+        "INAIL assistant family and business partner in non-craft enterprises"@en ;
+    rdfs:comment "Familiare coadiuvante e socio di imprese non artigiane"@it .
+
+INAIL_DNLTemp:LuogoDiLavoroINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_DNLTemp:tipoLuogoLavoro ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_DNLTemp:lavoroHaLuogo ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL workplace"@en,
+        "Luogo di lavoro INAIL"@it ;
+    rdfs:comment "Luogo presso il quale vengono svolti i lavori, ad esempio: cantiere navale, aeroporto, scuola, ufficio ecc."@it .
+
+INAIL_DNLTemp:MacchinarioINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_DNLTemp:numeroMacchinario ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_DNLTemp:tipoMacchinario ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:label "INAIL equipment"@en,
+        "Macchinario INAIL"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_DNLTemp:lavoroUtilizzaMacchinario ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Macchine, impianti o attrezzature necessarie all'esecuzione dei lavori, compresi i mezzi di trasporto."@it .
+
+INAIL_DNLTemp:NuovoLavoroTemporaneoINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_DNLTemp:dataFineLavoroTemporaneo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_DNLTemp:dataInizioLavoroTemporaneo ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_DNLTemp:lavoroTemporaneoHaLocalita ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_DNLTemp:prorogaRelativaA ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_DNLTemp:sospensioneRelativaA ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL new temporary work"@en,
+        "Nuovo Lavoro temporaneo INAIL"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty INAIL_DNLTemp:descrizioneLavoro ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_DNLTemp:importoLavoro ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_DNLTemp:lavoriEsterni ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_DNLTemp:lavoriSuMaterialiConAmianto ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_DNLTemp:lavoroHaCommittente ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_DNLTemp:lavoroHaLuogo ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_DNLTemp:lavoroSvoltoDa ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_DNLTemp:lavoroUtilizzaMacchinario ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_DNLTemp:quotaOpereAffidateATerzi ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty INAIL_DNLTemp:subappalto ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_DNLTemp:denunciaPerLavoro ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Sono “nuovi lavori a carattere temporaneo” i lavori, anche di lunga durata, che: abbiano un termine finale, certo o presunto; siano classificabili ad una voce di tariffa già presente nella P.A.T. attiva presso la Sede INAIL in cui la ditta ha la propria sede legale. Rientrano in tale casistica non solo i lavori edili, idraulici, stradali, di linee di trasporto e di distribuzione, di condotta, ma anche tutti gli altri lavori aventi le suddette caratteristiche (ad es., gestione temporanea di un servizio di mensa scolastica; appalto del servizio di pulizia di edifici privati o pubblici, ecc.). Deve essere presentata, invece, apposita denuncia di variazione nel caso di: nuovi lavori a carattere stabile, per i quali cioè non sia previsto un termine finale; lavori a carattere temporaneo concernenti attività non ancora denunciate all'Istituto (nuovo rischio). "@it .
+
+INAIL_DNLTemp:ProrogaLavoroTemporaneoINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_DNLTemp:prorogaRelativaA ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_DNLTemp:denunciaPerProroga ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL temporary work extension"@en,
+        "Proroga lavoro temporaneo INAIL"@it ;
+    rdfs:subClassOf TI:TimeIndexedEvent ;
+    rdfs:comment "Proroga richiesta per il lavoro temporaneo attualmente in corso."@it .
+
+INAIL_DNLTemp:SospensioneLavoroTemporaneoINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAIL_DNLTemp:sospensioneRelativaA ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_DNLTemp:denunciaPerSospensione ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "INAIL temporary work suspension"@en,
+        "Sospensione lavoro temporaneo INAIL"@it ;
+    rdfs:subClassOf TI:TimeIndexedEvent ;
+    rdfs:comment "Sospensione richiesta per il lavoro temporaneo attualmente in corso."@it .
+
+INAILCore:DenunciaDiIscrizioneINAIL a owl:Class .
+
+INAILCore:PersonaFisica a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:ricopreRuoloDiAssicurato ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:RetribuzioneComplessiva a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty INAILCore:retribuzioneRelativaASoggettoAssicurante ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:RetribuzioneImponibile a owl:Class ;
+    owl:disjointWith INAILCore:RetribuzionePresunta .
+
+INAILCore:RetribuzionePresunta a owl:Class .
+
+INAILCore:SoggettoAssicuranteINAIL a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_DNLTemp:lavoroHaCommittente ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:retribuzioneRelativaASoggettoAssicurante ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+INAILCore:SoggettoAssicurato a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAIL_DNLTemp:lavoroSvoltoDa ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILCore:ricopreRuoloDiAssicurato ] ;
+            owl:someValuesFrom owl:Thing ] .
+
+TI:TimeIndexedEvent a owl:Class .
+
+[] a owl:Class ;
+    rdfs:subClassOf INAIL_DNLTemp:DenunciaNuovoLavoroINAIL ;
+    owl:unionOf (
+            INAIL_DNLTemp:DenunciaNuovoLavoroTemporaneoINAIL
+            INAIL_DNLTemp:DenunciaProrogaLavoroINAIL
+            INAIL_DNLTemp:DenunciaSospensioneLavoroINAIL ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf INAILCore:RetribuzioneComplessiva ;
+    owl:unionOf (
+            INAILCore:RetribuzioneImponibile
+            INAILCore:RetribuzionePresunta ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf INAILCore:SoggettoAssicurato ;
+    owl:unionOf (
+            INAIL_DNLTemp:FamiliareCoadiuvanteESocioDiImpreseArtigianeINAIL
+            INAIL_DNLTemp:FamiliareCoadiuvanteESocioDiImpreseNonArtigianeINAIL ) .
+
+### Individuals
+
+<https://w3id.org/italia/work-accident/data/organization/agenzia_entrate> a dcatapit:Agent,
+        foaf:Agent,
+        INAILAutoliq:Esattore,
+        owl:NamedIndividual ;
+    dct:identifier "age" ;
+    foaf:name "Agenzia delle Entrate"@it,
+        "Italian Revenue Agency"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent,
+        INAILAutoliq:DestinatarioPremioINAIL,
+        owl:NamedIndividual ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/td> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "TD" ;
+    foaf:name "Digital Transformation Team"@en,
+        "Team per la Trasformazione Digitale"@it .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+<https://w3id.org/italia/work-accident/data/proc17_new_temporary_work/distribution/PROC17DNL-N-TRIPLES> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc17_new_temporary_work/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc17_new_temporary_work/latest/proc17_new_temporary_work.n3> ;
+    dct:description "Questa è la distribuzione N-TRIPLES dell'ontologia INAIL relativa alla denuncia nuovo lavoro temporaneo, denuncia che consente ai datori di lavoro di segnalare un nuovo lavoro di carattere temporaneo, anche di lunga durata, e di assicurare i propri dipendenti fino al termine dei lavori."@it,
+        "This is the distribution in N-TRIPLES of the INAIL ontology about new_temporary_work report, this report allows owners to report a new temporary job, even a long-term one, and to insure their employees until the end of the work."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione N-TRIPLES ontologia INAIL - Denuncia Nuovo Lavoro Temporaneo"@it,
+        "N-TRIPLES distribution of INAIL ontology - New Temporary Work Report"@en .
+
+<https://w3id.org/italia/work-accident/data/proc17_new_temporary_work/distribution/PROC17DNL-RDF-TURTLE> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc17_new_temporary_work/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc17_new_temporary_work/latest/proc17_new_temporary_work.ttl> ;
+    dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia INAIL relativa alla denuncia nuovo lavoro temporaneo, denuncia che consente ai datori di lavoro di segnalare un nuovo lavoro di carattere temporaneo, anche di lunga durata, e di assicurare i propri dipendenti fino al termine dei lavori."@it,
+        "This is the distribution in RDF/Turtle of the INAIL ontology about new_temporary_work report, this report allows owners to report a new temporary job, even a long-term one, and to insure their employees until the end of the work."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione RDF/Turtle ontologia INAIL - Denuncia Nuovo Lavoro Temporaneo"@it,
+        "RDF/Turtle distribution of INAIL ontology - New Temporary Work Report"@en .
+
+<https://w3id.org/italia/work-accident/data/proc17_new_temporary_work/distribution/PROC17DNL-RDF-XML> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc17_new_temporary_work/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc17_new_temporary_work/latest/proc17_new_temporary_work.owl> ;
+    dct:description "Questa è la distribuzione RDF/XML dell'ontologia INAIL relativa alla denuncia nuovo lavoro temporaneo, denuncia che consente ai datori di lavoro di segnalare un nuovo lavoro di carattere temporaneo, anche di lunga durata, e di assicurare i propri dipendenti fino al termine dei lavori."@it,
+        "This is the distribution in RDF/XML of the INAIL ontology about new_temporary_work report, this report allows owners to report a new temporary job, even a long-term one, and to insure their employees until the end of the work."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione RDF/XML ontologia INAIL - Denuncia Nuovo Lavoro Temporaneo"@it,
+        "RDF/XML distribution of INAIL ontology - New Temporary Work Report"@en .
+
+### Axioms
+
+[] a owl:AllDisjointClasses ;
+    owl:members (
+            INAIL_DNLTemp:DenunciaNuovoLavoroTemporaneoINAIL
+            INAIL_DNLTemp:DenunciaProrogaLavoroINAIL
+            INAIL_DNLTemp:DenunciaSospensioneLavoroINAIL ) .
+
+### Serialized using the ttlser deterministic serializer v1.2.0
