@@ -1,5 +1,6 @@
 # Source: https://github.com/ioggstream/dati-eu-authority-tables
 
+import csv
 import json
 import logging
 import os
@@ -109,7 +110,9 @@ def to_csv(url, src_file):
     if "parent" in df:
         df["parent"] = df["parent"] \
             .transform(lambda x: get_father(x) if pd.isna(x) is False else x)
-    df.to_csv(dest_csv, index=False, sep=",", header=True, quotechar='"')
+
+    df.id = df.id.astype(str)
+    df.to_csv(dest_csv, index=False, sep=",", header=True, quote=csv.QUOTE_NONNUMERIC, quotechar='"')
 
     # g = Graph()
     # g.parse(src_file.with_suffix(".ttl").as_posix())
