@@ -1,0 +1,6 @@
+"url","id","label_it","level.@type","level.@value"
+"https://w3id.org/italia/work-accident/controlled-vocabulary/core/settore_attivita/1","1","Industria","http://www.w3.org/2001/XMLSchema#integer","1"
+"https://w3id.org/italia/work-accident/controlled-vocabulary/core/settore_attivita/2","2","Artigianato","http://www.w3.org/2001/XMLSchema#integer","1"
+"https://w3id.org/italia/work-accident/controlled-vocabulary/core/settore_attivita/3","3","Terziario","http://www.w3.org/2001/XMLSchema#integer","1"
+"https://w3id.org/italia/work-accident/controlled-vocabulary/core/settore_attivita/4","4","Altri","http://www.w3.org/2001/XMLSchema#integer","1"
+"https://w3id.org/italia/work-accident/controlled-vocabulary/core/settore_attivita/5","5","Speciale","http://www.w3.org/2001/XMLSchema#integer","1"

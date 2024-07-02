@@ -1,0 +1,42 @@
+[
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/definizione_amministrativa/F",
+    "@type": "skos:Concept",
+    "id": "F",
+    "label_it": "Franchigia",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/definizione_amministrativa/I",
+    "@type": "skos:Concept",
+    "id": "I",
+    "label_it": "In istruttoria",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/definizione_amministrativa/N",
+    "@type": "skos:Concept",
+    "id": "N",
+    "label_it": "Negativo",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/definizione_amministrativa/P",
+    "@type": "skos:Concept",
+    "id": "P",
+    "label_it": "Positivo",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  }
+]

@@ -1,0 +1,8 @@
+"url","id","label_it","level.@type","level.@value"
+"https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/registro_iscrizione_nave/1","1","Matricole","http://www.w3.org/2001/XMLSchema#integer","1"
+"https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/registro_iscrizione_nave/2","2","RR.NN.MM.GG.","http://www.w3.org/2001/XMLSchema#integer","1"
+"https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/registro_iscrizione_nave/3","3","Registro internazionale","http://www.w3.org/2001/XMLSchema#integer","1"
+"https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/registro_iscrizione_nave/4","4","R.I.D.","http://www.w3.org/2001/XMLSchema#integer","1"
+"https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/registro_iscrizione_nave/5","5","R.N.D.","http://www.w3.org/2001/XMLSchema#integer","1"
+"https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/registro_iscrizione_nave/6","6","Registro speciale","http://www.w3.org/2001/XMLSchema#integer","1"
+"https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/registro_iscrizione_nave/7","7","Navi estere","http://www.w3.org/2001/XMLSchema#integer","1"
