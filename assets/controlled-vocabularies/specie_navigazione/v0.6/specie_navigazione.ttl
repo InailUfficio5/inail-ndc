@@ -1,0 +1,339 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAILAutoliq: <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> .
+@prefix inailvoc: <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix specienavig: <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/specie_navigazione/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Annotations
+
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
+        dct:Standard ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dct:identifier "SKOS" ;
+    dct:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+<https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution/SPN_CSV> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/specie_navigazione/v0.6> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/specie_navigazione/v0.6/specie_navigazione.csv> ;
+    dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla specie di navigazione della nave adottata dall'INAIL"@it,
+        "This is the distribution in CSV of the species of ship navigation adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "CSV distribution of the species of ship navigation adopted by INAIL controlled vocabulary"@en,
+        "Distribuzione CSV del vocabolario controllato sulla specie di navigazione della nave adottata dall'INAIL"@it .
+
+<https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution/SPN_JSON> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/specie_navigazione/v0.6> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/specie_navigazione/v0.6/specie_navigazione.json> ;
+    dct:description "Questa è la distribuzione JSON del vocabolario controllato sulla specie di navigazione della nave adottata dall'INAIL"@it,
+        "This is the distribution in JSON of the species of ship navigation adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione JSON del vocabolario controllato sulla specie di navigazione della nave adottata dall'INAIL"@it,
+        "JSON distribution of the species of ship navigation adopted by INAIL controlled vocabulary"@en .
+
+<https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution/SPN_RDF_TURTLE> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/specie_navigazione/v0.6> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/specie_navigazione/v0.6/specie_navigazione.ttl> ;
+    dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla specie di navigazione della nave adottata dall'INAIL"@it,
+        "This is the distribution in RDF/turtle of the species of ship navigation adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione RDF/Turtle del vocabolario controllato sulla specie di navigazione della nave adottata dall'INAIL"@it,
+        "RDF/Turtle distribution of the species of ship navigation adopted by INAIL controlled vocabulary"@en .
+
+inailvoc:specie_navigazione a adms:Asset,
+        dcatapit:Dataset,
+        skos:ConceptScheme ;
+    rdfs:label "Controlled vocabulary on the species of ship navigation adopted by INAIL"@en,
+        "Vocabolario controllato sulla specie di navigazione della nave adottata dall'INAIL"@it ;
+    skos:prefLabel "Vocabolario controllato sulla specie di navigazione della nave adottata dall'INAIL"@it ;
+    rdfs:comment "Specie di navigazione cui può essere abilitata una nave "@it,
+        "Species of navigation to which a ship may be licensed"@en ;
+    owl:versionInfo "0.6" ;
+    rdfs:isDefinedBy inailvoc:specie_navigazione ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+    dcat:distribution <https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution/SPN_CSV>,
+        <https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution/SPN_JSON>,
+        <https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution/SPN_RDF_TURTLE> ;
+    dcat:keyword "autoliquidazione"@it,
+        "inail"@it,
+        "insurance premium"@en,
+        "nave"@it,
+        "navigation"@en,
+        "navigazione"@it,
+        "premio assicurativo"@it,
+        "ship"@en ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:description "Specie di navigazione cui può essere abilitata una nave "@it,
+        "Species of navigation to which a ship may be licensed "@en ;
+    dct:identifier "https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/specie_navigazione" ;
+    dct:issued "2022-12-21"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2023-12-27"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:relation inailvoc:registro_iscrizione_nave,
+        inailvoc:servizio_nave,
+        inailvoc:tipo_nave ;
+    dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:subject <http://eurovoc.europa.eu/2041>,
+        <http://eurovoc.europa.eu/4522>,
+        <http://eurovoc.europa.eu/4827>,
+        <http://eurovoc.europa.eu/5077> ;
+    dct:title "Controlled vocabulary on the species of ship navigation adopted by INAIL"@en,
+        "Vocabolario controllato sulla specie di navigazione della nave adottata dall'INAIL"@it ;
+    dct:type <http://purl.org/adms/assettype/CodeList> ;
+    ndc:keyConcept "specie_navigazione" ;
+    skos:hasTopConcept specienavig:0,
+        specienavig:BI,
+        specienavig:BN,
+        specienavig:CI,
+        specienavig:CN,
+        specienavig:E,
+        specienavig:GI,
+        specienavig:GN,
+        specienavig:II,
+        specienavig:IN,
+        specienavig:LL,
+        specienavig:LN,
+        specienavig:ND,
+        specienavig:NM,
+        specienavig:NN,
+        specienavig:NS,
+        specienavig:ON,
+        specienavig:PI,
+        specienavig:PN,
+        specienavig:SN ;
+    xkos:numberOfLevels "1" .
+
+specienavig:0 a INAILAutoliq:SpecieDiNavigazione,
+        skos:Concept ;
+    rdfs:label "Assente"@it ;
+    skos:prefLabel "Assente"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "0" ;
+    skos:inScheme inailvoc:specie_navigazione ;
+    skos:notation "0" ;
+    xkos:depth 1 .
+
+specienavig:BI a INAILAutoliq:SpecieDiNavigazione,
+        skos:Concept ;
+    rdfs:label "Internazionale breve"@it ;
+    skos:prefLabel "Internazionale breve"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "BI" ;
+    skos:inScheme inailvoc:specie_navigazione ;
+    skos:notation "BI" ;
+    xkos:depth 1 .
+
+specienavig:BN a INAILAutoliq:SpecieDiNavigazione,
+        skos:Concept ;
+    rdfs:label "Internazionale breve (traffico nazionale)"@it ;
+    skos:prefLabel "Internazionale breve (traffico nazionale)"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "BN" ;
+    skos:inScheme inailvoc:specie_navigazione ;
+    skos:notation "BN" ;
+    xkos:depth 1 .
+
+specienavig:CI a INAILAutoliq:SpecieDiNavigazione,
+        skos:Concept ;
+    rdfs:label "Internazionale costiera"@it ;
+    skos:prefLabel "Internazionale costiera"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "CI" ;
+    skos:inScheme inailvoc:specie_navigazione ;
+    skos:notation "CI" ;
+    xkos:depth 1 .
+
+specienavig:CN a INAILAutoliq:SpecieDiNavigazione,
+        skos:Concept ;
+    rdfs:label "Nazionale costiera"@it ;
+    skos:prefLabel "Nazionale costiera"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "CN" ;
+    skos:inScheme inailvoc:specie_navigazione ;
+    skos:notation "CN" ;
+    xkos:depth 1 .
+
+specienavig:E a INAILAutoliq:SpecieDiNavigazione,
+        skos:Concept ;
+    rdfs:label "Estera (comandata all'estero)"@it ;
+    skos:prefLabel "Estera (comandata all'estero)"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "E" ;
+    skos:inScheme inailvoc:specie_navigazione ;
+    skos:notation "E" ;
+    xkos:depth 1 .
+
+specienavig:GI a INAILAutoliq:SpecieDiNavigazione,
+        skos:Concept ;
+    rdfs:label "Grande cabotaggio"@it ;
+    skos:prefLabel "Grande cabotaggio"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "GI" ;
+    skos:inScheme inailvoc:specie_navigazione ;
+    skos:notation "GI" ;
+    xkos:depth 1 .
+
+specienavig:GN a INAILAutoliq:SpecieDiNavigazione,
+        skos:Concept ;
+    rdfs:label "Gran cabotaggio (traffico nazionale)"@it ;
+    skos:prefLabel "Gran cabotaggio (traffico nazionale)"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "GN" ;
+    skos:inScheme inailvoc:specie_navigazione ;
+    skos:notation "GN" ;
+    xkos:depth 1 .
+
+specienavig:II a INAILAutoliq:SpecieDiNavigazione,
+        skos:Concept ;
+    rdfs:label "Illimitata (internazionale lunga)"@it ;
+    skos:prefLabel "Illimitata (internazionale lunga)"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "II" ;
+    skos:inScheme inailvoc:specie_navigazione ;
+    skos:notation "II" ;
+    xkos:depth 1 .
+
+specienavig:IN a INAILAutoliq:SpecieDiNavigazione,
+        skos:Concept ;
+    rdfs:label "Internazionale lunga (traffico nazionale)"@it ;
+    skos:prefLabel "Internazionale lunga (traffico nazionale)"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "IN" ;
+    skos:inScheme inailvoc:specie_navigazione ;
+    skos:notation "IN" ;
+    xkos:depth 1 .
+
+specienavig:LL a INAILAutoliq:SpecieDiNavigazione,
+        skos:Concept ;
+    rdfs:label "Interna"@it ;
+    skos:prefLabel "Interna"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "LL" ;
+    skos:inScheme inailvoc:specie_navigazione ;
+    skos:notation "LL" ;
+    xkos:depth 1 .
+
+specienavig:LN a INAILAutoliq:SpecieDiNavigazione,
+        skos:Concept ;
+    rdfs:label "Nazionale locale"@it ;
+    skos:prefLabel "Nazionale locale"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "LN" ;
+    skos:inScheme inailvoc:specie_navigazione ;
+    skos:notation "LN" ;
+    xkos:depth 1 .
+
+specienavig:ND a INAILAutoliq:SpecieDiNavigazione,
+        skos:Concept ;
+    rdfs:label "Diporto"@it ;
+    skos:prefLabel "Diporto"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "ND" ;
+    skos:inScheme inailvoc:specie_navigazione ;
+    skos:notation "ND" ;
+    xkos:depth 1 .
+
+specienavig:NM a INAILAutoliq:SpecieDiNavigazione,
+        skos:Concept ;
+    rdfs:label "Mediterranea (pesca)"@it ;
+    skos:prefLabel "Mediterranea (pesca)"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "NM" ;
+    skos:inScheme inailvoc:specie_navigazione ;
+    skos:notation "NM" ;
+    xkos:depth 1 .
+
+specienavig:NN a INAILAutoliq:SpecieDiNavigazione,
+        skos:Concept ;
+    rdfs:label "Nazionale"@it ;
+    skos:prefLabel "Nazionale"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "NN" ;
+    skos:inScheme inailvoc:specie_navigazione ;
+    skos:notation "NN" ;
+    xkos:depth 1 .
+
+specienavig:NS a INAILAutoliq:SpecieDiNavigazione,
+        skos:Concept ;
+    rdfs:label "Sportiva (categoria volo)"@it ;
+    skos:prefLabel "Sportiva (categoria volo)"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "NS" ;
+    skos:inScheme inailvoc:specie_navigazione ;
+    skos:notation "NS" ;
+    xkos:depth 1 .
+
+specienavig:ON a INAILAutoliq:SpecieDiNavigazione,
+        skos:Concept ;
+    rdfs:label "Nazionale litorale"@it ;
+    skos:prefLabel "Nazionale litorale"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "ON" ;
+    skos:inScheme inailvoc:specie_navigazione ;
+    skos:notation "ON" ;
+    xkos:depth 1 .
+
+specienavig:PI a INAILAutoliq:SpecieDiNavigazione,
+        skos:Concept ;
+    rdfs:label "Piccolo cabotaggio"@it ;
+    skos:prefLabel "Piccolo cabotaggio"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "PI" ;
+    skos:inScheme inailvoc:specie_navigazione ;
+    skos:notation "PI" ;
+    xkos:depth 1 .
+
+specienavig:PN a INAILAutoliq:SpecieDiNavigazione,
+        skos:Concept ;
+    rdfs:label "Piccolo cabotaggio (traffico nazionale)"@it ;
+    skos:prefLabel "Piccolo cabotaggio (traffico nazionale)"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "PN" ;
+    skos:inScheme inailvoc:specie_navigazione ;
+    skos:notation "PN" ;
+    xkos:depth 1 .
+
+specienavig:SN a INAILAutoliq:SpecieDiNavigazione,
+        skos:Concept ;
+    rdfs:label "Speciale"@it ;
+    skos:prefLabel "Speciale"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "SN" ;
+    skos:inScheme inailvoc:specie_navigazione ;
+    skos:notation "SN" ;
+    xkos:depth 1 .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

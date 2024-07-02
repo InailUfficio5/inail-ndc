@@ -1,0 +1,1210 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix areales: <https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/sede_lesione/macro_area/> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAILService: <https://w3id.org/italia/work-accident/onto/adm_serv/> .
+@prefix inailvoc: <https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix partecorpoles: <https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/sede_lesione/parte_corpo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix zonales: <https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/sede_lesione/zona/> .
+
+### Annotations
+
+areales:1 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Testa"@it ;
+    skos:prefLabel "Testa"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "1" ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:narrower zonales:1.1,
+        zonales:1.2,
+        zonales:1.3,
+        zonales:1.4 ;
+    skos:notation "1" ;
+    xkos:depth 1 .
+
+areales:2 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Torace e organi interni"@it ;
+    skos:prefLabel "Torace e organi interni"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "2" ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:narrower zonales:2.5,
+        zonales:2.6,
+        zonales:2.7 ;
+    skos:notation "2" ;
+    xkos:depth 1 .
+
+areales:3 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Colonna vertebrale"@it ;
+    skos:prefLabel "Colonna vertebrale"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "3" ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:narrower zonales:3.8 ;
+    skos:notation "3" ;
+    xkos:depth 1 .
+
+areales:4 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Arti superiori"@it ;
+    skos:prefLabel "Arti superiori"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "4" ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:narrower zonales:4.9,
+        zonales:4.10,
+        zonales:4.11,
+        zonales:4.12 ;
+    skos:notation "4" ;
+    xkos:depth 1 .
+
+areales:5 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Arti inferiori"@it ;
+    skos:prefLabel "Arti inferiori"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "5" ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:narrower zonales:5.13,
+        zonales:5.14,
+        zonales:5.15,
+        zonales:5.16,
+        zonales:5.17,
+        zonales:5.18,
+        zonales:5.19,
+        zonales:5.20 ;
+    skos:notation "5" ;
+    xkos:depth 1 .
+
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
+        dct:Standard ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dct:identifier "SKOS" ;
+    dct:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/work-accident/data/adm_serv/distribution/SL_CSV> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/sede_lesione/v0.6> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/sede_lesione/v0.6/sede_lesione.csv> ;
+    dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla sede della lesione adottata da INAIL"@it,
+        "This is the distribution in CSV of the site of injury adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "CSV distribution of the type definition of the site of injury adopted by INAIL controlled vocabulary"@en,
+        "Distribuzione CSV del vocabolario controllato sulla sede della lesione adottata da INAIL"@it .
+
+<https://w3id.org/italia/work-accident/data/adm_serv/distribution/SL_JSON> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/sede_lesione/v0.6> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/sede_lesione/v0.6/sede_lesione.json> ;
+    dct:description "Questa è la distribuzione JSON del vocabolario controllato sulla sede della lesione adottata da INAIL"@it,
+        "This is the distribution in JSON of the site of injury adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione JSON del vocabolario controllato sulla sede della lesione adottata da INAIL"@it,
+        "JSON distribution of the type definition of the site of injury adopted by INAIL controlled vocabulary"@en .
+
+<https://w3id.org/italia/work-accident/data/adm_serv/distribution/SL_RDF_TURTLE> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/sede_lesione/v0.6> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/sede_lesione/v0.6/sede_lesione.ttl> ;
+    dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla sede della lesione adottata da INAIL"@it,
+        "This is the distribution in RDF/turtle of the site of injury adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione RDF/Turtle del vocabolario controllato sulla sede della lesione adottata da INAIL"@it,
+        "RDF/Turtle distribution of the site of injury adopted by INAIL controlled vocabulary"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+inailvoc:sede_lesione a adms:Asset,
+        dcatapit:Dataset,
+        skos:ConceptScheme ;
+    rdfs:label "Controlled vocabulary of the site of injury adopted by INAIL"@en,
+        "Vocabolario controllato sulla sede della lesione adottata da INAIL"@it ;
+    skos:prefLabel "Vocabolario controllato sulla sede della lesione adottata da INAIL"@it ;
+    rdfs:comment "Classification of the parts of the body where the lesion is located"@en,
+        "Classificazione delle parti del corpo sede della lesione"@it ;
+    owl:versionInfo "0.6" ;
+    rdfs:isDefinedBy inailvoc:sede_lesione ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+    dcat:distribution <https://w3id.org/italia/work-accident/data/adm_serv/distribution/SL_CSV>,
+        <https://w3id.org/italia/work-accident/data/adm_serv/distribution/SL_JSON>,
+        <https://w3id.org/italia/work-accident/data/adm_serv/distribution/SL_RDF_TURTLE> ;
+    dcat:keyword "body"@en,
+        "corpo"@it,
+        "inail"@it,
+        "infortunio"@it,
+        "malattia professionale"@it,
+        "occupational disease"@en,
+        "occupational injury"@en,
+        "parti del corpo"@it,
+        "parts of the body"@en,
+        "person"@en,
+        "persona"@it ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/HEAL>,
+        <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:description "Classification of the parts of the body where the lesion is located"@en,
+        "Classificazione delle parti del corpo sede della lesione"@it ;
+    dct:identifier "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/sede_lesione" ;
+    dct:issued "2022-09-06"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2023-07-31"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:relation inailvoc:natura_lesione ;
+    dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:subject <http://eurovoc.europa.eu/825>,
+        <http://eurovoc.europa.eu/1761>,
+        <http://eurovoc.europa.eu/1859>,
+        <http://eurovoc.europa.eu/5939> ;
+    dct:title "Controlled vocabulary of the site of injury adopted by INAIL"@en,
+        "Vocabolario controllato sulla sede della lesione adottata da INAIL"@it ;
+    dct:type <http://purl.org/adms/assettype/CodeList> ;
+    ndc:keyConcept "sede_lesione" ;
+    skos:hasTopConcept areales:1,
+        areales:2,
+        areales:3,
+        areales:4,
+        areales:5 ;
+    xkos:numberOfLevels "3" .
+
+partecorpoles:11 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Cranio"@it ;
+    skos:prefLabel "Cranio"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "11" ;
+    skos:broader zonales:1.1 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "11" ;
+    xkos:depth 3 .
+
+partecorpoles:12 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Encefalo"@it ;
+    skos:prefLabel "Encefalo"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "12" ;
+    skos:broader zonales:1.1 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "12" ;
+    xkos:depth 3 .
+
+partecorpoles:13 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Naso"@it ;
+    skos:prefLabel "Naso"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "13" ;
+    skos:broader zonales:1.3 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "13" ;
+    xkos:depth 3 .
+
+partecorpoles:14 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Bocca"@it ;
+    skos:prefLabel "Bocca"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "14" ;
+    skos:broader zonales:1.3 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "14" ;
+    xkos:depth 3 .
+
+partecorpoles:15 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Faccia"@it ;
+    skos:prefLabel "Faccia"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "15" ;
+    skos:broader zonales:1.3 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "15" ;
+    xkos:depth 3 .
+
+partecorpoles:16 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Collo"@it ;
+    skos:prefLabel "Collo"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "16" ;
+    skos:broader zonales:1.4 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "16" ;
+    xkos:depth 3 .
+
+partecorpoles:17 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Cuore e organi mediastino"@it ;
+    skos:prefLabel "Cuore e organi mediastino"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "17" ;
+    skos:broader zonales:2.7 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "17" ;
+    xkos:depth 3 .
+
+partecorpoles:18 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Fegato"@it ;
+    skos:prefLabel "Fegato"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "18" ;
+    skos:broader zonales:2.7 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "18" ;
+    xkos:depth 3 .
+
+partecorpoles:19 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Milza"@it ;
+    skos:prefLabel "Milza"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "19" ;
+    skos:broader zonales:2.7 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "19" ;
+    xkos:depth 3 .
+
+partecorpoles:20 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Stomaco e organi intestinali"@it ;
+    skos:prefLabel "Stomaco e organi intestinali"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "20" ;
+    skos:broader zonales:2.7 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "20" ;
+    xkos:depth 3 .
+
+partecorpoles:21 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Organi urigenitali"@it ;
+    skos:prefLabel "Organi urigenitali"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "21" ;
+    skos:broader zonales:2.7 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "21" ;
+    xkos:depth 3 .
+
+partecorpoles:22 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Parete addominale"@it ;
+    skos:prefLabel "Parete addominale"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "22" ;
+    skos:broader zonales:2.6 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "22" ;
+    xkos:depth 3 .
+
+partecorpoles:23 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Colonna vertebr./cervicale"@it ;
+    skos:prefLabel "Colonna vertebr./cervicale"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "23" ;
+    skos:broader zonales:3.8 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "23" ;
+    xkos:depth 3 .
+
+partecorpoles:24 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Colonna vertebr./toracica"@it ;
+    skos:prefLabel "Colonna vertebr./toracica"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "24" ;
+    skos:broader zonales:3.8 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "24" ;
+    xkos:depth 3 .
+
+partecorpoles:25 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Colonna vertebr./lombare"@it ;
+    skos:prefLabel "Colonna vertebr./lombare"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "25" ;
+    skos:broader zonales:3.8 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "25" ;
+    xkos:depth 3 .
+
+partecorpoles:26 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Col.vertebr./sacro e coccige"@it ;
+    skos:prefLabel "Col.vertebr./sacro e coccige"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "26" ;
+    skos:broader zonales:3.8 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "26" ;
+    xkos:depth 3 .
+
+partecorpoles:27 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Col.vert-midollo/cervicale"@it ;
+    skos:prefLabel "Col.vert-midollo/cervicale"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "27" ;
+    skos:broader zonales:3.8 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "27" ;
+    xkos:depth 3 .
+
+partecorpoles:28 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Col.vert-midollo/toracica"@it ;
+    skos:prefLabel "Col.vert-midollo/toracica"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "28" ;
+    skos:broader zonales:3.8 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "28" ;
+    xkos:depth 3 .
+
+partecorpoles:29 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Col.vert-midollo/lombare"@it ;
+    skos:prefLabel "Col.vert-midollo/lombare"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "29" ;
+    skos:broader zonales:3.8 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "29" ;
+    xkos:depth 3 .
+
+partecorpoles:30 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Col.vert-midollo/sacro-coccige"@it ;
+    skos:prefLabel "Col.vert-midollo/sacro-coccige"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "30" ;
+    skos:broader zonales:3.8 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "30" ;
+    xkos:depth 3 .
+
+partecorpoles:31 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Occhio sinistro"@it ;
+    skos:prefLabel "Occhio sinistro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "31" ;
+    skos:broader zonales:1.2 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "31" ;
+    xkos:depth 3 .
+
+partecorpoles:32 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Occhio destro"@it ;
+    skos:prefLabel "Occhio destro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "32" ;
+    skos:broader zonales:1.2 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "32" ;
+    xkos:depth 3 .
+
+partecorpoles:33 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Orecchio sinistro"@it ;
+    skos:prefLabel "Orecchio sinistro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "33" ;
+    skos:broader zonales:1.3 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "33" ;
+    xkos:depth 3 .
+
+partecorpoles:34 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Orecchio destro"@it ;
+    skos:prefLabel "Orecchio destro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "34" ;
+    skos:broader zonales:1.3 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "34" ;
+    xkos:depth 3 .
+
+partecorpoles:35 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Cingolo toracico sinistro"@it ;
+    skos:prefLabel "Cingolo toracico sinistro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "35" ;
+    skos:broader zonales:2.5 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "35" ;
+    xkos:depth 3 .
+
+partecorpoles:36 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Cingolo toracico destro"@it ;
+    skos:prefLabel "Cingolo toracico destro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "36" ;
+    skos:broader zonales:2.5 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "36" ;
+    xkos:depth 3 .
+
+partecorpoles:37 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Polmone sinistro"@it ;
+    skos:prefLabel "Polmone sinistro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "37" ;
+    skos:broader zonales:2.7 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "37" ;
+    xkos:depth 3 .
+
+partecorpoles:38 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Polmone destro"@it ;
+    skos:prefLabel "Polmone destro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "38" ;
+    skos:broader zonales:2.7 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "38" ;
+    xkos:depth 3 .
+
+partecorpoles:39 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Parete toracica sinistra"@it ;
+    skos:prefLabel "Parete toracica sinistra"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "39" ;
+    skos:broader zonales:2.6 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "39" ;
+    xkos:depth 3 .
+
+partecorpoles:40 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Parete toracica destra"@it ;
+    skos:prefLabel "Parete toracica destra"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "40" ;
+    skos:broader zonales:2.6 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "40" ;
+    xkos:depth 3 .
+
+partecorpoles:41 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Braccio sinistro"@it ;
+    skos:prefLabel "Braccio sinistro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "41" ;
+    skos:broader zonales:4.9 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "41" ;
+    xkos:depth 3 .
+
+partecorpoles:42 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Braccio destro"@it ;
+    skos:prefLabel "Braccio destro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "42" ;
+    skos:broader zonales:4.9 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "42" ;
+    xkos:depth 3 .
+
+partecorpoles:43 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Gomito sinistro"@it ;
+    skos:prefLabel "Gomito sinistro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "43" ;
+    skos:broader zonales:4.10 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "43" ;
+    xkos:depth 3 .
+
+partecorpoles:44 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Gomito destro"@it ;
+    skos:prefLabel "Gomito destro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "44" ;
+    skos:broader zonales:4.10 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "44" ;
+    xkos:depth 3 .
+
+partecorpoles:45 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Avambraccio sinistro"@it ;
+    skos:prefLabel "Avambraccio sinistro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "45" ;
+    skos:broader zonales:4.9 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "45" ;
+    xkos:depth 3 .
+
+partecorpoles:46 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Avambraccio destro"@it ;
+    skos:prefLabel "Avambraccio destro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "46" ;
+    skos:broader zonales:4.9 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "46" ;
+    xkos:depth 3 .
+
+partecorpoles:47 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Polso sinistro"@it ;
+    skos:prefLabel "Polso sinistro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "47" ;
+    skos:broader zonales:4.11 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "47" ;
+    xkos:depth 3 .
+
+partecorpoles:48 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Polso destro"@it ;
+    skos:prefLabel "Polso destro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "48" ;
+    skos:broader zonales:4.11 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "48" ;
+    xkos:depth 3 .
+
+partecorpoles:49 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Mano sinistra"@it ;
+    skos:prefLabel "Mano sinistra"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "49" ;
+    skos:broader zonales:4.12 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "49" ;
+    xkos:depth 3 .
+
+partecorpoles:50 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Mano destra"@it ;
+    skos:prefLabel "Mano destra"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "50" ;
+    skos:broader zonales:4.12 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "50" ;
+    xkos:depth 3 .
+
+partecorpoles:51 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Pollice sinistro"@it ;
+    skos:prefLabel "Pollice sinistro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "51" ;
+    skos:broader zonales:4.12 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "51" ;
+    xkos:depth 3 .
+
+partecorpoles:52 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Pollice destro"@it ;
+    skos:prefLabel "Pollice destro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "52" ;
+    skos:broader zonales:4.12 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "52" ;
+    xkos:depth 3 .
+
+partecorpoles:53 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Indice sinistro"@it ;
+    skos:prefLabel "Indice sinistro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "53" ;
+    skos:broader zonales:4.12 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "53" ;
+    xkos:depth 3 .
+
+partecorpoles:54 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Indice destro"@it ;
+    skos:prefLabel "Indice destro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "54" ;
+    skos:broader zonales:4.12 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "54" ;
+    xkos:depth 3 .
+
+partecorpoles:55 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Medio sinistro"@it ;
+    skos:prefLabel "Medio sinistro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "55" ;
+    skos:broader zonales:4.12 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "55" ;
+    xkos:depth 3 .
+
+partecorpoles:56 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Medio destro"@it ;
+    skos:prefLabel "Medio destro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "56" ;
+    skos:broader zonales:4.12 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "56" ;
+    xkos:depth 3 .
+
+partecorpoles:57 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Anulare sinistro"@it ;
+    skos:prefLabel "Anulare sinistro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "57" ;
+    skos:broader zonales:4.12 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "57" ;
+    xkos:depth 3 .
+
+partecorpoles:58 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Anulare destro"@it ;
+    skos:prefLabel "Anulare destro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "58" ;
+    skos:broader zonales:4.12 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "58" ;
+    xkos:depth 3 .
+
+partecorpoles:59 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Mignolo sinistro"@it ;
+    skos:prefLabel "Mignolo sinistro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "59" ;
+    skos:broader zonales:4.12 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "59" ;
+    xkos:depth 3 .
+
+partecorpoles:60 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Mignolo destro"@it ;
+    skos:prefLabel "Mignolo destro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "60" ;
+    skos:broader zonales:4.12 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "60" ;
+    xkos:depth 3 .
+
+partecorpoles:61 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Cingolo pelvico sinistro"@it ;
+    skos:prefLabel "Cingolo pelvico sinistro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "61" ;
+    skos:broader zonales:5.13 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "61" ;
+    xkos:depth 3 .
+
+partecorpoles:62 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Cingolo pelvico destro"@it ;
+    skos:prefLabel "Cingolo pelvico destro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "62" ;
+    skos:broader zonales:5.13 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "62" ;
+    xkos:depth 3 .
+
+partecorpoles:63 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Coscia sinistra"@it ;
+    skos:prefLabel "Coscia sinistra"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "63" ;
+    skos:broader zonales:5.14 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "63" ;
+    xkos:depth 3 .
+
+partecorpoles:64 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Coscia destra"@it ;
+    skos:prefLabel "Coscia destra"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "64" ;
+    skos:broader zonales:5.14 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "64" ;
+    xkos:depth 3 .
+
+partecorpoles:65 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Ginocchio sinistro"@it ;
+    skos:prefLabel "Ginocchio sinistro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "65" ;
+    skos:broader zonales:5.15 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "65" ;
+    xkos:depth 3 .
+
+partecorpoles:66 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Ginocchio destro"@it ;
+    skos:prefLabel "Ginocchio destro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "66" ;
+    skos:broader zonales:5.15 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "66" ;
+    xkos:depth 3 .
+
+partecorpoles:67 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Gamba sinistra"@it ;
+    skos:prefLabel "Gamba sinistra"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "67" ;
+    skos:broader zonales:5.16 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "67" ;
+    xkos:depth 3 .
+
+partecorpoles:68 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Gamba destra"@it ;
+    skos:prefLabel "Gamba destra"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "68" ;
+    skos:broader zonales:5.16 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "68" ;
+    xkos:depth 3 .
+
+partecorpoles:69 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Caviglia sinistra"@it ;
+    skos:prefLabel "Caviglia sinistra"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "69" ;
+    skos:broader zonales:5.17 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "69" ;
+    xkos:depth 3 .
+
+partecorpoles:70 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Caviglia destra"@it ;
+    skos:prefLabel "Caviglia destra"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "70" ;
+    skos:broader zonales:5.17 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "70" ;
+    xkos:depth 3 .
+
+partecorpoles:71 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Piede sinistro"@it ;
+    skos:prefLabel "Piede sinistro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "71" ;
+    skos:broader zonales:5.18 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "71" ;
+    xkos:depth 3 .
+
+partecorpoles:72 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Piede destro"@it ;
+    skos:prefLabel "Piede destro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "72" ;
+    skos:broader zonales:5.18 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "72" ;
+    xkos:depth 3 .
+
+partecorpoles:73 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Alluce sinistro"@it ;
+    skos:prefLabel "Alluce sinistro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "73" ;
+    skos:broader zonales:5.19 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "73" ;
+    xkos:depth 3 .
+
+partecorpoles:74 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Alluce destro"@it ;
+    skos:prefLabel "Alluce destro"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "74" ;
+    skos:broader zonales:5.19 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "74" ;
+    xkos:depth 3 .
+
+partecorpoles:75 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Altre dita sinistre"@it ;
+    skos:prefLabel "Altre dita sinistre"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "75" ;
+    skos:broader zonales:5.20 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "75" ;
+    xkos:depth 3 .
+
+partecorpoles:76 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Altre dita destre"@it ;
+    skos:prefLabel "Altre dita destre"@it ;
+    clvapit:hasRankOrder 3 ;
+    dct:identifier "76" ;
+    skos:broader zonales:5.20 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:notation "76" ;
+    xkos:depth 3 .
+
+zonales:1.1 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Cranio"@it ;
+    skos:prefLabel "Cranio"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "1.1" ;
+    skos:broader areales:1 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:narrower partecorpoles:11,
+        partecorpoles:12 ;
+    skos:notation "1.1" ;
+    xkos:depth 2 .
+
+zonales:1.2 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Occhi"@it ;
+    skos:prefLabel "Occhi"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "1.2" ;
+    skos:broader areales:1 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:narrower partecorpoles:31,
+        partecorpoles:32 ;
+    skos:notation "1.2" ;
+    xkos:depth 2 .
+
+zonales:1.3 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Faccia"@it ;
+    skos:prefLabel "Faccia"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "1.3" ;
+    skos:broader areales:1 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:narrower partecorpoles:13,
+        partecorpoles:14,
+        partecorpoles:15,
+        partecorpoles:33,
+        partecorpoles:34 ;
+    skos:notation "1.3" ;
+    xkos:depth 2 .
+
+zonales:1.4 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Collo"@it ;
+    skos:prefLabel "Collo"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "1.4" ;
+    skos:broader areales:1 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:narrower partecorpoles:16 ;
+    skos:notation "1.4" ;
+    xkos:depth 2 .
+
+zonales:2.5 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Cingolo toracico"@it ;
+    skos:prefLabel "Cingolo toracico"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "2.5" ;
+    skos:broader areales:2 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:narrower partecorpoles:35,
+        partecorpoles:36 ;
+    skos:notation "2.5" ;
+    xkos:depth 2 .
+
+zonales:2.6 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Parete toracica"@it ;
+    skos:prefLabel "Parete toracica"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "2.6" ;
+    skos:broader areales:2 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:narrower partecorpoles:22,
+        partecorpoles:39,
+        partecorpoles:40 ;
+    skos:notation "2.6" ;
+    xkos:depth 2 .
+
+zonales:2.7 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Organi interni"@it ;
+    skos:prefLabel "Organi interni"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "2.7" ;
+    skos:broader areales:2 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:narrower partecorpoles:17,
+        partecorpoles:18,
+        partecorpoles:19,
+        partecorpoles:20,
+        partecorpoles:21,
+        partecorpoles:37,
+        partecorpoles:38 ;
+    skos:notation "2.7" ;
+    xkos:depth 2 .
+
+zonales:3.8 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Colonna vertebrale"@it ;
+    skos:prefLabel "Colonna vertebrale"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "3.8" ;
+    skos:broader areales:3 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:narrower partecorpoles:23,
+        partecorpoles:24,
+        partecorpoles:25,
+        partecorpoles:26,
+        partecorpoles:27,
+        partecorpoles:28,
+        partecorpoles:29,
+        partecorpoles:30 ;
+    skos:notation "3.8" ;
+    xkos:depth 2 .
+
+zonales:4.9 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Braccio,avambraccio"@it ;
+    skos:prefLabel "Braccio,avambraccio"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "4.9" ;
+    skos:broader areales:4 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:narrower partecorpoles:41,
+        partecorpoles:42,
+        partecorpoles:45,
+        partecorpoles:46 ;
+    skos:notation "4.9" ;
+    xkos:depth 2 .
+
+zonales:4.10 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Gomito"@it ;
+    skos:prefLabel "Gomito"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "4.10" ;
+    skos:broader areales:4 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:narrower partecorpoles:43,
+        partecorpoles:44 ;
+    skos:notation "4.10" ;
+    xkos:depth 2 .
+
+zonales:4.11 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Polso"@it ;
+    skos:prefLabel "Polso"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "4.11" ;
+    skos:broader areales:4 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:narrower partecorpoles:47,
+        partecorpoles:48 ;
+    skos:notation "4.11" ;
+    xkos:depth 2 .
+
+zonales:4.12 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Mano"@it ;
+    skos:prefLabel "Mano"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "4.12" ;
+    skos:broader areales:4 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:narrower partecorpoles:49,
+        partecorpoles:50,
+        partecorpoles:51,
+        partecorpoles:52,
+        partecorpoles:53,
+        partecorpoles:54,
+        partecorpoles:55,
+        partecorpoles:56,
+        partecorpoles:57,
+        partecorpoles:58,
+        partecorpoles:59,
+        partecorpoles:60 ;
+    skos:notation "4.12" ;
+    xkos:depth 2 .
+
+zonales:5.13 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Cingolo pelvico"@it ;
+    skos:prefLabel "Cingolo pelvico"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "5.13" ;
+    skos:broader areales:5 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:narrower partecorpoles:61,
+        partecorpoles:62 ;
+    skos:notation "5.13" ;
+    xkos:depth 2 .
+
+zonales:5.14 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Coscia"@it ;
+    skos:prefLabel "Coscia"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "5.14" ;
+    skos:broader areales:5 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:narrower partecorpoles:63,
+        partecorpoles:64 ;
+    skos:notation "5.14" ;
+    xkos:depth 2 .
+
+zonales:5.15 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Ginocchio"@it ;
+    skos:prefLabel "Ginocchio"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "5.15" ;
+    skos:broader areales:5 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:narrower partecorpoles:65,
+        partecorpoles:66 ;
+    skos:notation "5.15" ;
+    xkos:depth 2 .
+
+zonales:5.16 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Gamba"@it ;
+    skos:prefLabel "Gamba"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "5.16" ;
+    skos:broader areales:5 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:narrower partecorpoles:67,
+        partecorpoles:68 ;
+    skos:notation "5.16" ;
+    xkos:depth 2 .
+
+zonales:5.17 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Caviglia"@it ;
+    skos:prefLabel "Caviglia"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "5.17" ;
+    skos:broader areales:5 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:narrower partecorpoles:69,
+        partecorpoles:70 ;
+    skos:notation "5.17" ;
+    xkos:depth 2 .
+
+zonales:5.18 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Piede"@it ;
+    skos:prefLabel "Piede"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "5.18" ;
+    skos:broader areales:5 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:narrower partecorpoles:71,
+        partecorpoles:72 ;
+    skos:notation "5.18" ;
+    xkos:depth 2 .
+
+zonales:5.19 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Alluce"@it ;
+    skos:prefLabel "Alluce"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "5.19" ;
+    skos:broader areales:5 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:narrower partecorpoles:73,
+        partecorpoles:74 ;
+    skos:notation "5.19" ;
+    xkos:depth 2 .
+
+zonales:5.20 a INAILService:SedeLesioneINAIL,
+        skos:Concept ;
+    rdfs:label "Altre dita"@it ;
+    skos:prefLabel "Altre dita"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "5.20" ;
+    skos:broader areales:5 ;
+    skos:inScheme inailvoc:sede_lesione ;
+    skos:narrower partecorpoles:75,
+        partecorpoles:76 ;
+    skos:notation "5.20" ;
+    xkos:depth 2 .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

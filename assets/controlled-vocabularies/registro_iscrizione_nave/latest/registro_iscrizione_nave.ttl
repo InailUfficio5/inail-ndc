@@ -76,7 +76,7 @@ inailvoc:registro_iscrizione_nave a adms:Asset,
     skos:prefLabel "Vocabolario controllato sulla tipologia di registro di iscrizione della nave adottata dall'INAIL"@it ;
     rdfs:comment "Books of the competent Maritime Authority in which the ships are registered"@en,
         "Registri dell'Autorità marittima competente in cui le navi sono registrate"@it ;
-    owl:versionInfo "0.5" ;
+    owl:versionInfo "0.6" ;
     rdfs:isDefinedBy inailvoc:registro_iscrizione_nave ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
@@ -123,7 +123,7 @@ regiscr:1 a INAILAutoliq:RegistroDiIscrizioneNave,
         skos:Concept ;
     rdfs:label "Matricole"@it ;
     skos:prefLabel "Matricole"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "1" ;
     skos:inScheme inailvoc:registro_iscrizione_nave ;
     skos:notation "1" ;
@@ -134,7 +134,7 @@ regiscr:2 a INAILAutoliq:RegistroDiIscrizioneNave,
     rdfs:label "RR.NN.MM.GG."@it ;
     skos:prefLabel "RR.NN.MM.GG."@it ;
     skos:definition "Registro Navi Minori e Galleggianti"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "2" ;
     skos:inScheme inailvoc:registro_iscrizione_nave ;
     skos:notation "2" ;
@@ -144,7 +144,7 @@ regiscr:3 a INAILAutoliq:RegistroDiIscrizioneNave,
         skos:Concept ;
     rdfs:label "Registro internazionale"@it ;
     skos:prefLabel "Registro internazionale"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "3" ;
     skos:inScheme inailvoc:registro_iscrizione_nave ;
     skos:notation "3" ;
@@ -155,7 +155,7 @@ regiscr:4 a INAILAutoliq:RegistroDiIscrizioneNave,
     rdfs:label "R.I.D."@it ;
     skos:prefLabel "R.I.D."@it ;
     skos:definition "Registro Imbarcazioni da Diporto"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "4" ;
     skos:inScheme inailvoc:registro_iscrizione_nave ;
     skos:notation "4" ;
@@ -166,7 +166,7 @@ regiscr:5 a INAILAutoliq:RegistroDiIscrizioneNave,
     rdfs:label "R.N.D."@it ;
     skos:prefLabel "R.N.D."@it ;
     skos:definition "Registro Navi da Diporto"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "5" ;
     skos:inScheme inailvoc:registro_iscrizione_nave ;
     skos:notation "5" ;
@@ -176,7 +176,7 @@ regiscr:6 a INAILAutoliq:RegistroDiIscrizioneNave,
         skos:Concept ;
     rdfs:label "Registro speciale"@it ;
     skos:prefLabel "Registro speciale"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "6" ;
     skos:inScheme inailvoc:registro_iscrizione_nave ;
     skos:notation "6" ;
@@ -186,7 +186,7 @@ regiscr:7 a INAILAutoliq:RegistroDiIscrizioneNave,
         skos:Concept ;
     rdfs:label "Navi estere"@it ;
     skos:prefLabel "Navi estere"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "7" ;
     skos:inScheme inailvoc:registro_iscrizione_nave ;
     skos:notation "7" ;

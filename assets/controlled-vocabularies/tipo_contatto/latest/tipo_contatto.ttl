@@ -22,7 +22,7 @@ contattocod:1.0 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Contatto con corrente elettrica, temperatura, sostanza pericolosa - non precisato"@it ;
     skos:prefLabel "Contatto con corrente elettrica, temperatura, sostanza pericolosa - non precisato"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "1.0" ;
     skos:broader contattogrup:1 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -33,7 +33,7 @@ contattocod:1.1 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Contatto indiretto con circuito elettrico, fulmine (passivo)"@it ;
     skos:prefLabel "Contatto indiretto con circuito elettrico, fulmine (passivo)"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "1.1" ;
     skos:broader contattogrup:1 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -44,7 +44,7 @@ contattocod:1.2 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Contatto diretto con elettricità, subire una scarica elettrica nel corpo"@it ;
     skos:prefLabel "Contatto diretto con elettricità, subire una scarica elettrica nel corpo"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "1.2" ;
     skos:broader contattogrup:1 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -55,7 +55,7 @@ contattocod:1.3 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Contatto con fiamma viva o con oggetto/ambiente caldo o arroventato"@it ;
     skos:prefLabel "Contatto con fiamma viva o con oggetto/ambiente caldo o arroventato"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "1.3" ;
     skos:broader contattogrup:1 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -66,7 +66,7 @@ contattocod:1.4 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Contatto con oggetto o ambiente freddo o ghiacciato"@it ;
     skos:prefLabel "Contatto con oggetto o ambiente freddo o ghiacciato"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "1.4" ;
     skos:broader contattogrup:1 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -77,7 +77,7 @@ contattocod:1.5 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Contatto con sostanze pericolose per via nasale, orale, per inalazione"@it ;
     skos:prefLabel "Contatto con sostanze pericolose per via nasale, orale, per inalazione"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "1.5" ;
     skos:broader contattogrup:1 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -88,7 +88,7 @@ contattocod:1.6 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Contatto con sostanze pericolose attraverso pelle o occhi"@it ;
     skos:prefLabel "Contatto con sostanze pericolose attraverso pelle o occhi"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "1.6" ;
     skos:broader contattogrup:1 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -99,7 +99,7 @@ contattocod:1.7 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Contatto con sostanze pericolose attraverso il sistema digerente, inghiottendo o mangiando"@it ;
     skos:prefLabel "Contatto con sostanze pericolose attraverso il sistema digerente, inghiottendo o mangiando"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "1.7" ;
     skos:broader contattogrup:1 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -110,7 +110,7 @@ contattocod:1.9 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Altro contatto conosciuto del gruppo 1.0 non indicato qui sopra"@it ;
     skos:prefLabel "Altro contatto conosciuto del gruppo 1.0 non indicato qui sopra"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "1.9" ;
     skos:broader contattogrup:1 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -121,7 +121,7 @@ contattocod:2.0 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Annegamento, seppellimento, immersione in un gas - non precisato"@it ;
     skos:prefLabel "Annegamento, seppellimento, immersione in un gas - non precisato"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "2.0" ;
     skos:broader contattogrup:2 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -132,7 +132,7 @@ contattocod:2.1 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Annegamento in un liquido"@it ;
     skos:prefLabel "Annegamento in un liquido"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "2.1" ;
     skos:broader contattogrup:2 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -143,7 +143,7 @@ contattocod:2.2 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Seppellimento sotto un solido"@it ;
     skos:prefLabel "Seppellimento sotto un solido"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "2.2" ;
     skos:broader contattogrup:2 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -154,7 +154,7 @@ contattocod:2.3 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Immersione in un gas, in una sospensione di particelle"@it ;
     skos:prefLabel "Immersione in un gas, in una sospensione di particelle"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "2.3" ;
     skos:broader contattogrup:2 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -165,7 +165,7 @@ contattocod:2.9 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Altro contatto conosciuto del gruppo 2.0 non indicato qui sopra"@it ;
     skos:prefLabel "Altro contatto conosciuto del gruppo 2.0 non indicato qui sopra"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "2.9" ;
     skos:broader contattogrup:2 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -176,7 +176,7 @@ contattocod:3.0 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Schiacciamento in movimento verticale o orizzontale su/contro un oggetto immobile (vittima in movimento) - non precisato"@it ;
     skos:prefLabel "Schiacciamento in movimento verticale o orizzontale su/contro un oggetto immobile (vittima in movimento) - non precisato"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "3.0" ;
     skos:broader contattogrup:3 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -187,7 +187,7 @@ contattocod:3.1 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Movimento verticale, schiacciamento su/contro (caduta)"@it ;
     skos:prefLabel "Movimento verticale, schiacciamento su/contro (caduta)"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "3.1" ;
     skos:broader contattogrup:3 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -198,7 +198,7 @@ contattocod:3.2 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Movimento orizzontale, schiacciamento su/contro"@it ;
     skos:prefLabel "Movimento orizzontale, schiacciamento su/contro"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "3.2" ;
     skos:broader contattogrup:3 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -209,7 +209,7 @@ contattocod:3.9 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Altro contatto conosciuto del gruppo 3.0 non indicato qui sotto"@it ;
     skos:prefLabel "Altro contatto conosciuto del gruppo 3.0 non indicato qui sotto"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "3.9" ;
     skos:broader contattogrup:3 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -220,7 +220,7 @@ contattocod:4.0 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Urto da parte di oggetto in movimento, collisione con - non precisato"@it ;
     skos:prefLabel "Urto da parte di oggetto in movimento, collisione con - non precisato"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.0" ;
     skos:broader contattogrup:4 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -231,7 +231,7 @@ contattocod:4.1 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Urto da parte di oggetto proiettato"@it ;
     skos:prefLabel "Urto da parte di oggetto proiettato"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.1" ;
     skos:broader contattogrup:4 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -242,7 +242,7 @@ contattocod:4.2 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Urto da parte di oggetto in caduta"@it ;
     skos:prefLabel "Urto da parte di oggetto in caduta"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.2" ;
     skos:broader contattogrup:4 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -253,7 +253,7 @@ contattocod:4.3 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Urto da parte di oggetto che dondola"@it ;
     skos:prefLabel "Urto da parte di oggetto che dondola"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.3" ;
     skos:broader contattogrup:4 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -264,7 +264,7 @@ contattocod:4.4 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Urto da parte di oggetto in rotazione, movimento, spostamento, ivi inclusi i veicoli"@it ;
     skos:prefLabel "Urto da parte di oggetto in rotazione, movimento, spostamento, ivi inclusi i veicoli"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.4" ;
     skos:broader contattogrup:4 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -275,7 +275,7 @@ contattocod:4.5 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Collisione con un oggetto in movimento, ivi inclusi i veicoli collisione con una persona (la vittima e' in movimento)"@it ;
     skos:prefLabel "Collisione con un oggetto in movimento, ivi inclusi i veicoli collisione con una persona (la vittima e' in movimento)"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.5" ;
     skos:broader contattogrup:4 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -286,7 +286,7 @@ contattocod:4.9 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Altro contatto conosciuto del gruppo 4.0 non indicato qui sopra"@it ;
     skos:prefLabel "Altro contatto conosciuto del gruppo 4.0 non indicato qui sopra"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.9" ;
     skos:broader contattogrup:4 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -297,7 +297,7 @@ contattocod:5.0 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Contatto con agente materiale tagliente, appuntito, duro, abrasivo non precisato"@it ;
     skos:prefLabel "Contatto con agente materiale tagliente, appuntito, duro, abrasivo non precisato"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "5.0" ;
     skos:broader contattogrup:5 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -308,7 +308,7 @@ contattocod:5.1 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Contatto con agente materiale tagliente (coltello/lama)"@it ;
     skos:prefLabel "Contatto con agente materiale tagliente (coltello/lama)"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "5.1" ;
     skos:broader contattogrup:5 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -319,7 +319,7 @@ contattocod:5.2 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Contatto con agente materiale appuntito (chiodo/utensile acuminato)"@it ;
     skos:prefLabel "Contatto con agente materiale appuntito (chiodo/utensile acuminato)"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "5.2" ;
     skos:broader contattogrup:5 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -330,7 +330,7 @@ contattocod:5.3 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Contatto con agente materiale duro o abrasivo"@it ;
     skos:prefLabel "Contatto con agente materiale duro o abrasivo"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "5.3" ;
     skos:broader contattogrup:5 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -341,7 +341,7 @@ contattocod:5.9 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Altro contatto conosciuto del gruppo 5.0 non indicato qui sopra"@it ;
     skos:prefLabel "Altro contatto conosciuto del gruppo 5.0 non indicato qui sopra"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "5.9" ;
     skos:broader contattogrup:5 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -352,7 +352,7 @@ contattocod:6.0 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Incastramento, schiacciamento, ecc.  non precisato"@it ;
     skos:prefLabel "Incastramento, schiacciamento, ecc.  non precisato"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "6.0" ;
     skos:broader contattogrup:6 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -363,7 +363,7 @@ contattocod:6.1 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Incastramento, schiacciamento in"@it ;
     skos:prefLabel "Incastramento, schiacciamento in"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "6.1" ;
     skos:broader contattogrup:6 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -374,7 +374,7 @@ contattocod:6.2 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Incastramento, schiacciamento sotto"@it ;
     skos:prefLabel "Incastramento, schiacciamento sotto"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "6.2" ;
     skos:broader contattogrup:6 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -385,7 +385,7 @@ contattocod:6.3 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Incastramento, schiacciamento fra"@it ;
     skos:prefLabel "Incastramento, schiacciamento fra"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "6.3" ;
     skos:broader contattogrup:6 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -396,7 +396,7 @@ contattocod:6.4 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Perdita violenta, recisione d'un membro, di una mano, di un dito"@it ;
     skos:prefLabel "Perdita violenta, recisione d'un membro, di una mano, di un dito"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "6.4" ;
     skos:broader contattogrup:6 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -407,7 +407,7 @@ contattocod:6.9 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Altro contatto conosciuto del gruppo 6.0 non indicato qui sopra"@it ;
     skos:prefLabel "Altro contatto conosciuto del gruppo 6.0 non indicato qui sopra"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "6.9" ;
     skos:broader contattogrup:6 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -418,7 +418,7 @@ contattocod:7.0 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Sforzo fisico del corpo, sforzo psichico - non precisato"@it ;
     skos:prefLabel "Sforzo fisico del corpo, sforzo psichico - non precisato"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "7.0" ;
     skos:broader contattogrup:7 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -429,7 +429,7 @@ contattocod:7.1 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Sforzo fisico a carico del sistema muscolo-scheletrico"@it ;
     skos:prefLabel "Sforzo fisico a carico del sistema muscolo-scheletrico"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "7.1" ;
     skos:broader contattogrup:7 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -440,7 +440,7 @@ contattocod:7.2 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Sforzo fisico causato da radiazioni, rumore, luce, pressione"@it ;
     skos:prefLabel "Sforzo fisico causato da radiazioni, rumore, luce, pressione"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "7.2" ;
     skos:broader contattogrup:7 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -451,7 +451,7 @@ contattocod:7.3 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Sforzo psichico, shock mentale"@it ;
     skos:prefLabel "Sforzo psichico, shock mentale"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "7.3" ;
     skos:broader contattogrup:7 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -462,7 +462,7 @@ contattocod:7.9 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Altro contatto conosciuto del gruppo 7.0 non indicato qui sopra"@it ;
     skos:prefLabel "Altro contatto conosciuto del gruppo 7.0 non indicato qui sopra"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "7.9" ;
     skos:broader contattogrup:7 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -473,7 +473,7 @@ contattocod:8.0 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Morso, calcio, ecc., da parte di animali o di esseri umani - non precisato"@it ;
     skos:prefLabel "Morso, calcio, ecc., da parte di animali o di esseri umani - non precisato"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "8.0" ;
     skos:broader contattogrup:8 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -484,7 +484,7 @@ contattocod:8.1 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Morso"@it ;
     skos:prefLabel "Morso"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "8.1" ;
     skos:broader contattogrup:8 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -495,7 +495,7 @@ contattocod:8.2 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Puntura da insetti o pesci"@it ;
     skos:prefLabel "Puntura da insetti o pesci"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "8.2" ;
     skos:broader contattogrup:8 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -506,7 +506,7 @@ contattocod:8.3 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Colpo, calcio, testata, strangolamento"@it ;
     skos:prefLabel "Colpo, calcio, testata, strangolamento"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "8.3" ;
     skos:broader contattogrup:8 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -517,7 +517,7 @@ contattocod:8.9 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Altro contatto conosciuto del gruppo 8.0 non indicato qui sopra"@it ;
     skos:prefLabel "Altro contatto conosciuto del gruppo 8.0 non indicato qui sopra"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "8.9" ;
     skos:broader contattogrup:8 ;
     skos:inScheme inailvoc:tipo_contatto ;
@@ -528,7 +528,7 @@ contattogrup:1 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Contatto con corrente elettrica, temperatura, sostanza pericolosa"@it ;
     skos:prefLabel "Contatto con corrente elettrica, temperatura, sostanza pericolosa"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "1" ;
     skos:inScheme inailvoc:tipo_contatto ;
     skos:narrower contattocod:1.0,
@@ -547,7 +547,7 @@ contattogrup:2 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Annegamento, seppellimento, immersione in un gas"@it ;
     skos:prefLabel "Annegamento, seppellimento, immersione in un gas"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "2" ;
     skos:inScheme inailvoc:tipo_contatto ;
     skos:narrower contattocod:2.0,
@@ -562,7 +562,7 @@ contattogrup:3 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Schiacciamento in movimento verticale o orizzontale su/contro un oggetto immobile (vittima in movimento)"@it ;
     skos:prefLabel "Schiacciamento in movimento verticale o orizzontale su/contro un oggetto immobile (vittima in movimento)"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "3" ;
     skos:inScheme inailvoc:tipo_contatto ;
     skos:narrower contattocod:3.0,
@@ -576,7 +576,7 @@ contattogrup:4 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Urto da parte di oggetto in movimento, collisione con"@it ;
     skos:prefLabel "Urto da parte di oggetto in movimento, collisione con"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "4" ;
     skos:inScheme inailvoc:tipo_contatto ;
     skos:narrower contattocod:4.0,
@@ -593,7 +593,7 @@ contattogrup:5 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Contatto con agente materiale tagliente, appuntito, duro, abrasivo"@it ;
     skos:prefLabel "Contatto con agente materiale tagliente, appuntito, duro, abrasivo"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "5" ;
     skos:inScheme inailvoc:tipo_contatto ;
     skos:narrower contattocod:5.0,
@@ -608,7 +608,7 @@ contattogrup:6 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Incastramento, schiacciamento, ecc."@it ;
     skos:prefLabel "Incastramento, schiacciamento, ecc."@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "6" ;
     skos:inScheme inailvoc:tipo_contatto ;
     skos:narrower contattocod:6.0,
@@ -624,7 +624,7 @@ contattogrup:7 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Sforzo fisico del corpo, sforzo psichico"@it ;
     skos:prefLabel "Sforzo fisico del corpo, sforzo psichico"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "7" ;
     skos:inScheme inailvoc:tipo_contatto ;
     skos:narrower contattocod:7.0,
@@ -639,7 +639,7 @@ contattogrup:8 a INAILService:TipoContattoINAIL,
         skos:Concept ;
     rdfs:label "Morso, calcio, ecc., da parte di animali o di esseri umani"@it ;
     skos:prefLabel "Morso, calcio, ecc., da parte di animali o di esseri umani"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "8" ;
     skos:inScheme inailvoc:tipo_contatto ;
     skos:narrower contattocod:8.0,
@@ -709,7 +709,7 @@ inailvoc:tipo_contatto a adms:Asset,
     skos:prefLabel "Vocabolario Controllato sulle tipologie di contatto adottate dall'INAIL"@it ;
     rdfs:comment "Classificazione a due livelli delle sostanze e delle tipologie di contatto con le stesse, che causano l'evento lesivo"@it,
         "Two-level classification of substances and types of contact with them, which cause work accident"@en ;
-    owl:versionInfo "0.5" ;
+    owl:versionInfo "0.6" ;
     rdfs:isDefinedBy inailvoc:tipo_contatto ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;

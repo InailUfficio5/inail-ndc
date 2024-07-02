@@ -1,0 +1,570 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAILPDDA1: <https://w3id.org/italia/work-accident/onto/proc6_pdda1/> .
+@prefix inailvoc: <https://w3id.org/italia/work-accident/controlled-vocabulary/proc6_pdda1/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix trichiedente: <https://w3id.org/italia/work-accident/controlled-vocabulary/proc6_pdda1/tipo_richiedente_pdda1/concetto/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Annotations
+
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
+        dct:Standard ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dct:identifier "SKOS" ;
+    dct:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+<https://w3id.org/italia/work-accident/data/proc6_pdda1/distribution/TR_CSV> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo_richiedente_pdda1/v0.2> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo_richiedente_pdda1/v0.2/tipo_richiedente_pdda1.csv> ;
+    dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classificazione delle tipologie di richiedente del modulo PD DA1 adottata dall'INAIL"@it,
+        "This is the distribution in CSV of the classification of the types of PD DA1 form applicant adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "CSV distribution of the classification of the types of PD DA1 form applicant adopted by INAIL controlled vocabulary"@en,
+        "Distribuzione CSV del vocabolario controllato sulla classificazione delle tipologie di richiedente del modulo PD DA1 adottata dall'INAIL"@it .
+
+<https://w3id.org/italia/work-accident/data/proc6_pdda1/distribution/TR_JSON> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo_richiedente_pdda1/v0.2> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo_richiedente_pdda1/v0.2/tipo_richiedente_pdda1.json> ;
+    dct:description "Questa è la distribuzione JSON del vocabolario controllato sulla classificazione delle tipologie di richiedente del modulo PD DA1 adottata dall'INAIL"@it,
+        "This is the distribution in JSON of the classification of the types of PD DA1 form applicant adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione JSON del vocabolario controllato sulla classificazione delle tipologie di richiedente del modulo PD DA1 adottata dall'INAIL"@it,
+        "JSON distribution of the classification of the types of PD DA1 form applicant adopted by INAIL controlled vocabulary"@en .
+
+<https://w3id.org/italia/work-accident/data/proc6_pdda1/distribution/TR_RDF_TURTLE> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/tipo_richiedente_pdda1/v0.2> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/tipo_richiedente_pdda1/v0.2/tipo_richiedente_pdda1.ttl> ;
+    dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla classificazione delle tipologie di richiedente del modulo PD DA1 adottata dall'INAIL"@it,
+        "This is the distribution in RDF/turtle of the classification of the types of PD DA1 form applicant adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione RDF/Turtle del vocabolario controllato sulla classificazione delle tipologie di richiedente del modulo PD DA1 adottata dall'INAIL"@it,
+        "RDF/Turtle distribution of the classification of the types of PD DA1 form applicant adopted by INAIL controlled vocabulary"@en .
+
+inailvoc:tipo_richiedente_pdda1 a adms:Asset,
+        dcatapit:Dataset,
+        skos:ConceptScheme ;
+    rdfs:label "This is the controlled vocabulary of the types of PD DA1 form applicant adopted by INAIL classification"@en,
+        "Vocabolario Controllato sulla classificazione delle tipologie di richiedente del modulo PD DA1 adottata dall'INAIL"@it ;
+    skos:prefLabel "Vocabolario Controllato sulla classificazione delle tipologie di richiedente del modulo PD DA1 adottata dall'INAIL"@it ;
+    rdfs:comment "Tipologie di utenti che hanno effettuato la richiesta del modulo PDDA1 a nome dell'azienda"@it,
+        "Types of users who made the PD DA1 form request on behalf of the company"@en ;
+    owl:versionInfo "0.2" ;
+    rdfs:isDefinedBy inailvoc:tipo_richiedente_pdda1 ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+    dcat:distribution <https://w3id.org/italia/work-accident/data/proc6_pdda1/distribution/TR_CSV>,
+        <https://w3id.org/italia/work-accident/data/proc6_pdda1/distribution/TR_JSON>,
+        <https://w3id.org/italia/work-accident/data/proc6_pdda1/distribution/TR_RDF_TURTLE> ;
+    dcat:keyword "abroad"@en,
+        "assicurazione"@it,
+        "estero"@it,
+        "European Union"@en,
+        "inail"@it,
+        "infortunio"@it,
+        "insurance"@en,
+        "lavoratore"@it,
+        "malattia professionale"@it,
+        "occupational disease"@en,
+        "occupational injury"@en,
+        "pd da1"@it,
+        "Unione Europea"@it,
+        "worker"@en ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON>,
+        <http://publications.europa.eu/resource/authority/data-theme/REGI>,
+        <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:description "Tipologie di utenti che hanno effettuato la richiesta del modulo PDDA1 a nome dell'azienda"@it,
+        "Types of users who made the PD DA1 form request on behalf of the company"@en ;
+    dct:identifier "https://w3id.org/italia/work-accident/controlled-vocabulary/proc6_pdda1/tipo_richiedente_pdda1" ;
+    dct:issued "2023-08-28"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2023-11-01"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:relation <https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/mansione>,
+        <https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/tipo_lavoratore>,
+        <https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/tipo_lavoro> ;
+    dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:subject <http://eurovoc.europa.eu/825>,
+        <http://eurovoc.europa.eu/1761>,
+        <http://eurovoc.europa.eu/100203>,
+        <http://eurovoc.europa.eu/100236>,
+        <http://eurovoc.europa.eu/100278> ;
+    dct:title "Classification of the types of PD DA1 form applicant adopted by INAIL controlled vocabulary"@en,
+        "Vocabolario Controllato sulla classificazione delle tipologie di richiedente del modulo PD DA1 adottata dall'INAIL"@it ;
+    dct:type <http://purl.org/adms/assettype/CodeList> ;
+    ndc:keyConcept "tipo_richiedente_pdda1" ;
+    skos:hasTopConcept trichiedente:AgronDottForestali,
+        trichiedente:Agrotecnici,
+        trichiedente:Ausiliario_STP_Agron,
+        trichiedente:Ausiliario_STP_Agrot,
+        trichiedente:Ausiliario_STP_CommC,
+        trichiedente:Ausiliario_STP_ConsL,
+        trichiedente:Avvocati,
+        trichiedente:Aziende,
+        trichiedente:CAFPC,
+        trichiedente:Com_Cont,
+        trichiedente:CommSubDel,
+        trichiedente:ConsLav,
+        trichiedente:ConsTrb,
+        trichiedente:ConsulentiLavoro,
+        trichiedente:Funzionario,
+        trichiedente:G110qjiu,
+        trichiedente:G1000010U,
+        trichiedente:LegRapassNonSoc,
+        trichiedente:LegRapprAss,
+        trichiedente:LegRapprAssSoc,
+        trichiedente:LegRapprCAF,
+        trichiedente:LegRapprConsSoc,
+        trichiedente:LegRapprInternale,
+        trichiedente:LegRapprSocCap,
+        trichiedente:LegRapprSocCapGR,
+        trichiedente:RespffLocaleSubDeleg,
+        trichiedente:RespLocSubDelegNoSoc,
+        trichiedente:RespUffLoc2,
+        trichiedente:RespUffLocCaf,
+        trichiedente:ResUffLocSIACNoSoc,
+        trichiedente:Socio_STP_AgrForest,
+        trichiedente:Socio_STP_Agrotecnic,
+        trichiedente:Socio_STP_CommEspCon,
+        trichiedente:Socio_STP_ConsLav,
+        trichiedente:subDelAvvocati,
+        trichiedente:subDelConsLav,
+        trichiedente:subDelConsuLav,
+        trichiedente:SubDelUffCAF,
+        trichiedente:TitAzienda,
+        trichiedente:TitAziendaDel ;
+    xkos:numberOfLevels "1" .
+
+trichiedente:AgronDottForestali a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Agronomi e Dottori forestali"@it ;
+    skos:prefLabel "Agronomi e Dottori forestali"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "AgronDottForestali" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "AgronDottForestali" ;
+    xkos:depth 1 .
+
+trichiedente:Agrotecnici a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Agrotecnici e Agrotecnici Laureati"@it ;
+    skos:prefLabel "Agrotecnici e Agrotecnici Laureati"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "Agrotecnici" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "Agrotecnici" ;
+    xkos:depth 1 .
+
+trichiedente:Ausiliario_STP_Agron a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Ausiliario STP Albo: Agronomi e dottori forestali"@it ;
+    skos:prefLabel "Ausiliario STP Albo: Agronomi e dottori forestali"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "Ausiliario_STP_Agron" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "Ausiliario_STP_Agron" ;
+    xkos:depth 1 .
+
+trichiedente:Ausiliario_STP_Agrot a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Ausiliario STP Albo: Agrotecnici e agrotecnici laureati"@it ;
+    skos:prefLabel "Ausiliario STP Albo: Agrotecnici e agrotecnici laureati"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "Ausiliario_STP_Agrot" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "Ausiliario_STP_Agrot" ;
+    xkos:depth 1 .
+
+trichiedente:Ausiliario_STP_CommC a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Ausiliario STP Albo: Commercialisti ed esperti contabili"@it ;
+    skos:prefLabel "Ausiliario STP Albo: Commercialisti ed esperti contabili"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "Ausiliario_STP_CommC" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "Ausiliario_STP_CommC" ;
+    xkos:depth 1 .
+
+trichiedente:Ausiliario_STP_ConsL a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Ausiliario STP Albo: Consulenti del lavoro"@it ;
+    skos:prefLabel "Ausiliario STP Albo: Consulenti del lavoro"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "Ausiliario_STP_ConsL" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "Ausiliario_STP_ConsL" ;
+    xkos:depth 1 .
+
+trichiedente:Avvocati a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Avvocato"@it ;
+    skos:prefLabel "Avvocato"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "Avvocati" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "Avvocati" ;
+    xkos:depth 1 .
+
+trichiedente:Aziende a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Azienda"@it ;
+    skos:prefLabel "Azienda"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "Aziende" ;
+    INAILPDDA1:tipoGruppo "A"@it ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "Aziende" ;
+    xkos:depth 1 .
+
+trichiedente:CAFPC a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "CAF"@it ;
+    skos:prefLabel "CAF"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "CAFPC" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "CAFPC" ;
+    xkos:depth 1 .
+
+trichiedente:Com_Cont a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Commercialista / esperto contabile"@it ;
+    skos:prefLabel "Commercialista / esperto contabile"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "Com_Cont" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "Com_Cont" ;
+    xkos:depth 1 .
+
+trichiedente:CommSubDel a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Subdelegati commercialisti / esperti contabili"@it ;
+    skos:prefLabel "Subdelegati commercialisti / esperti contabili"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "CommSubDel" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "CommSubDel" ;
+    xkos:depth 1 .
+
+trichiedente:ConsLav a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Consulente del Lavoro Old"@it ;
+    skos:prefLabel "Consulente del Lavoro Old"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "ConsLav" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "ConsLav" ;
+    xkos:depth 1 .
+
+trichiedente:ConsTrb a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Tributaristi, revisori e altri professionisti per imprese senza dipendenti"@it ;
+    skos:prefLabel "Tributaristi, revisori e altri professionisti per imprese senza dipendenti"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "ConsTrb" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "ConsTrb" ;
+    xkos:depth 1 .
+
+trichiedente:ConsulentiLavoro a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Consulente del lavoro"@it ;
+    skos:prefLabel "Consulente del lavoro"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "ConsulentiLavoro" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "ConsulentiLavoro" ;
+    xkos:depth 1 .
+
+trichiedente:Funzionario a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Funzionario"@it ;
+    skos:prefLabel "Funzionario"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "Funzionario" ;
+    INAILPDDA1:tipoGruppo "F"@it ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "Funzionario" ;
+    xkos:depth 1 .
+
+trichiedente:G110qjiu a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Subdelegato società capogruppo"@it ;
+    skos:prefLabel "Subdelegato società capogruppo"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "G110qjiu" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "G110qjiu" ;
+    xkos:depth 1 .
+
+trichiedente:G1000010U a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Subdelegato tributaristi, revisori e altri professionisti per imprese senza dipendenti"@it ;
+    skos:prefLabel "Subdelegato tributaristi, revisori e altri professionisti per imprese senza dipendenti"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "G1000010U" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "G1000010U" ;
+    xkos:depth 1 .
+
+trichiedente:LegRapassNonSoc a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Consulente del lavoro"@it ;
+    skos:prefLabel "Consulente del lavoro"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "LegRapassNonSoc" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "LegRapassNonSoc" ;
+    xkos:depth 1 .
+
+trichiedente:LegRapprAss a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Legali rappresentanti di associazioni"@it ;
+    skos:prefLabel "Legali rappresentanti di associazioni"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "LegRapprAss" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "LegRapprAss" ;
+    xkos:depth 1 .
+
+trichiedente:LegRapprAssSoc a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Legale rappresentante del servizio - società "@it ;
+    skos:prefLabel "Legale rappresentante del servizio - società "@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "LegRapprAssSoc" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "LegRapprAssSoc" ;
+    xkos:depth 1 .
+
+trichiedente:LegRapprCAF a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Legale rappresentante CAF imprese"@it ;
+    skos:prefLabel "Legale rappresentante CAF imprese"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "LegRapprCAF" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "LegRapprCAF" ;
+    xkos:depth 1 .
+
+trichiedente:LegRapprConsSoc a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Consorzio società  cooperative"@it ;
+    skos:prefLabel "Consorzio società  cooperative"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "LegRapprConsSoc" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "LegRapprConsSoc" ;
+    xkos:depth 1 .
+
+trichiedente:LegRapprInternale a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "LegRapprInternale"@it ;
+    skos:prefLabel "LegRapprInternale"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "LegRapprInternale" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "LegRapprInternale" ;
+    xkos:depth 1 .
+
+trichiedente:LegRapprSocCap a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Legali rappresentanti di società  capofila"@it ;
+    skos:prefLabel "Legali rappresentanti di società  capofila"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "LegRapprSocCap" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "LegRapprSocCap" ;
+    xkos:depth 1 .
+
+trichiedente:LegRapprSocCapGR a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Società  capogruppo"@it ;
+    skos:prefLabel "Società  capogruppo"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "LegRapprSocCapGR" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "LegRapprSocCapGR" ;
+    xkos:depth 1 .
+
+trichiedente:RespffLocaleSubDeleg a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Subdelegato responsabile ufficio locale"@it ;
+    skos:prefLabel "Subdelegato responsabile ufficio locale"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "RespffLocaleSubDeleg" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "RespffLocaleSubDeleg" ;
+    xkos:depth 1 .
+
+trichiedente:RespLocSubDelegNoSoc a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Subdelegato responsabile Ufficio locale"@it ;
+    skos:prefLabel "Subdelegato responsabile Ufficio locale"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "RespLocSubDelegNoSoc" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "RespLocSubDelegNoSoc" ;
+    xkos:depth 1 .
+
+trichiedente:RespUffLoc2 a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Responsabile ufficio locale"@it ;
+    skos:prefLabel "Responsabile ufficio locale"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "RespUffLoc2" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "RespUffLoc2" ;
+    xkos:depth 1 .
+
+trichiedente:RespUffLocCaf a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Responsabile ufficio locale CAF imprese"@it ;
+    skos:prefLabel "Responsabile ufficio locale CAF imprese"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "RespUffLocCaf" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "RespUffLocCaf" ;
+    xkos:depth 1 .
+
+trichiedente:ResUffLocSIACNoSoc a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Responsabile Ufficio Locale"@it ;
+    skos:prefLabel "Responsabile Ufficio Locale"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "ResUffLocSIACNoSoc" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "ResUffLocSIACNoSoc" ;
+    xkos:depth 1 .
+
+trichiedente:Socio_STP_AgrForest a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Socio STP Albo: Dottori agronomi e dottori forestali"@it ;
+    skos:prefLabel "Socio STP Albo: Dottori agronomi e dottori forestali"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "Socio_STP_AgrForest" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "Socio_STP_AgrForest" ;
+    xkos:depth 1 .
+
+trichiedente:Socio_STP_Agrotecnic a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Socio STP Albo: Agrotecnici e Agrotecnici Laureati"@it ;
+    skos:prefLabel "Socio STP Albo: Agrotecnici e Agrotecnici Laureati"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "Socio_STP_Agrotecnic" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "Socio_STP_Agrotecnic" ;
+    xkos:depth 1 .
+
+trichiedente:Socio_STP_CommEspCon a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Socio STP Albo: Commercialisti ed esperti contabili"@it ;
+    skos:prefLabel "Socio STP Albo: Commercialisti ed esperti contabili"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "Socio_STP_CommEspCon" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "Socio_STP_CommEspCon" ;
+    xkos:depth 1 .
+
+trichiedente:Socio_STP_ConsLav a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Socio STP Albo: Consulenti del lavoro"@it ;
+    skos:prefLabel "Socio STP Albo: Consulenti del lavoro"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "Socio_STP_ConsLav" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "Socio_STP_ConsLav" ;
+    xkos:depth 1 .
+
+trichiedente:subDelAvvocati a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Delegati Avvocati"@it ;
+    skos:prefLabel "Delegati Avvocati"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "subDelAvvocati" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "subDelAvvocati" ;
+    xkos:depth 1 .
+
+trichiedente:subDelConsLav a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Subdelegati consulenti del lavoro"@it ;
+    skos:prefLabel "Subdelegati consulenti del lavoro"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "subDelConsLav" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "subDelConsLav" ;
+    xkos:depth 1 .
+
+trichiedente:subDelConsuLav a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Consulente del Lavoro Subdelegato"@it ;
+    skos:prefLabel "Consulente del Lavoro Subdelegato"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "subDelConsuLav" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "subDelConsuLav" ;
+    xkos:depth 1 .
+
+trichiedente:SubDelUffCAF a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "Subdelegato ufficio CAF imprese"@it ;
+    skos:prefLabel "Subdelegato ufficio CAF imprese"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "SubDelUffCAF" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "SubDelUffCAF" ;
+    xkos:depth 1 .
+
+trichiedente:TitAzienda a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "TitAzienda"@it ;
+    skos:prefLabel "TitAzienda"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "TitAzienda" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "TitAzienda" ;
+    xkos:depth 1 .
+
+trichiedente:TitAziendaDel a INAILPDDA1:TipoRichiedente,
+        skos:Concept ;
+    rdfs:label "TitAziendaDel"@it ;
+    skos:prefLabel "TitAziendaDel"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "TitAziendaDel" ;
+    skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
+    skos:notation "TitAziendaDel" ;
+    xkos:depth 1 .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

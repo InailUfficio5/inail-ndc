@@ -76,7 +76,7 @@ inailvoc:tipo_trattazione a adms:Asset,
     skos:prefLabel "Vocabolario Controllato sulla tipologia di trattazione adottata dall'INAIL"@it ;
     rdfs:comment "Tipologie delle trattazioni che, a seguito dell'istruttoria, determinano il periodo di inabilità assoluta al lavoro, il grado di invalidità/menomazione, l’indennizzo e la prestazione che viene erogata agli aventi diritto."@it,
         "Types of processing that, as a result of the investigation, determine the period of absolute inability to work, degree of inability/disability, compensation and the benefit that is provided to the eligible "@en ;
-    owl:versionInfo "0.5" ;
+    owl:versionInfo "0.6" ;
     rdfs:isDefinedBy inailvoc:tipo_trattazione ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
@@ -139,7 +139,7 @@ tipotrattazione:AC a INAILService:TipoTrattazioneINAIL,
         skos:Concept ;
     rdfs:label "Assegno continuativo mensile"@it ;
     skos:prefLabel "Assegno continuativo mensile"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "AC" ;
     skos:inScheme inailvoc:tipo_trattazione ;
     skos:notation "AC" ;
@@ -149,7 +149,7 @@ tipotrattazione:AI a INAILService:TipoTrattazioneINAIL,
         skos:Concept ;
     rdfs:label "Assegno incollocabilità"@it ;
     skos:prefLabel "Assegno incollocabilità"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "AI" ;
     skos:inScheme inailvoc:tipo_trattazione ;
     skos:notation "AI" ;
@@ -159,7 +159,7 @@ tipotrattazione:AP a INAILService:TipoTrattazioneINAIL,
         skos:Concept ;
     rdfs:label "Assegno personale continuativo"@it ;
     skos:prefLabel "Assegno personale continuativo"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "AP" ;
     skos:inScheme inailvoc:tipo_trattazione ;
     skos:notation "AP" ;
@@ -169,7 +169,7 @@ tipotrattazione:BA a INAILService:TipoTrattazioneINAIL,
         skos:Concept ;
     rdfs:label "Base"@it ;
     skos:prefLabel "Base"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "BA" ;
     skos:inScheme inailvoc:tipo_trattazione ;
     skos:notation "BA" ;
@@ -179,7 +179,7 @@ tipotrattazione:CC a INAILService:TipoTrattazioneINAIL,
         skos:Concept ;
     rdfs:label "Richiesta concessione cure termali"@it ;
     skos:prefLabel "Richiesta concessione cure termali"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "CC" ;
     skos:inScheme inailvoc:tipo_trattazione ;
     skos:notation "CC" ;
@@ -189,7 +189,7 @@ tipotrattazione:CO a INAILService:TipoTrattazioneINAIL,
         skos:Concept ;
     rdfs:label "Comunicazione infortunio"@it ;
     skos:prefLabel "Comunicazione infortunio"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "CO" ;
     skos:inScheme inailvoc:tipo_trattazione ;
     skos:notation "CO" ;
@@ -199,7 +199,7 @@ tipotrattazione:CP a INAILService:TipoTrattazioneINAIL,
         skos:Concept ;
     rdfs:label "Richiesta concessione protesi"@it ;
     skos:prefLabel "Richiesta concessione protesi"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "CP" ;
     skos:inScheme inailvoc:tipo_trattazione ;
     skos:notation "CP" ;
@@ -209,7 +209,7 @@ tipotrattazione:CT a INAILService:TipoTrattazioneINAIL,
         skos:Concept ;
     rdfs:label "Cure termali"@it ;
     skos:prefLabel "Cure termali"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "CT" ;
     skos:inScheme inailvoc:tipo_trattazione ;
     skos:notation "CT" ;
@@ -219,7 +219,7 @@ tipotrattazione:EM a INAILService:TipoTrattazioneINAIL,
         skos:Concept ;
     rdfs:label "Esiti mortali"@it ;
     skos:prefLabel "Esiti mortali"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "EM" ;
     skos:inScheme inailvoc:tipo_trattazione ;
     skos:notation "EM" ;
@@ -229,7 +229,7 @@ tipotrattazione:FO a INAILService:TipoTrattazioneINAIL,
         skos:Concept ;
     rdfs:label "Fondo speciale"@it ;
     skos:prefLabel "Fondo speciale"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "FO" ;
     skos:inScheme inailvoc:tipo_trattazione ;
     skos:notation "FO" ;
@@ -239,7 +239,7 @@ tipotrattazione:IF a INAILService:TipoTrattazioneINAIL,
         skos:Concept ;
     rdfs:label "Richiesta riconoscimento invalidita' familiare"@it ;
     skos:prefLabel "Richiesta riconoscimento invalidita' familiare"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "IF" ;
     skos:inScheme inailvoc:tipo_trattazione ;
     skos:notation "IF" ;
@@ -249,7 +249,7 @@ tipotrattazione:IN a INAILService:TipoTrattazioneINAIL,
         skos:Concept ;
     rdfs:label "I.N.P.S."@it ;
     skos:prefLabel "I.N.P.S."@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "IN" ;
     skos:inScheme inailvoc:tipo_trattazione ;
     skos:notation "IN" ;
@@ -259,7 +259,7 @@ tipotrattazione:IS a INAILService:TipoTrattazioneINAIL,
         skos:Concept ;
     rdfs:label "Richiesta riconoscimento invalidita' superstiti"@it ;
     skos:prefLabel "Richiesta riconoscimento invalidita' superstiti"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "IS" ;
     skos:inScheme inailvoc:tipo_trattazione ;
     skos:notation "IS" ;
@@ -269,7 +269,7 @@ tipotrattazione:LC a INAILService:TipoTrattazioneINAIL,
         skos:Concept ;
     rdfs:label "Liquidazione in capitale"@it ;
     skos:prefLabel "Liquidazione in capitale"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "LC" ;
     skos:inScheme inailvoc:tipo_trattazione ;
     skos:notation "LC" ;
@@ -279,7 +279,7 @@ tipotrattazione:PR a INAILService:TipoTrattazioneINAIL,
         skos:Concept ;
     rdfs:label "Protesi"@it ;
     skos:prefLabel "Protesi"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "PR" ;
     skos:inScheme inailvoc:tipo_trattazione ;
     skos:notation "PR" ;
@@ -289,7 +289,7 @@ tipotrattazione:RA a INAILService:TipoTrattazioneINAIL,
         skos:Concept ;
     rdfs:label "Richiesta riconoscimento A.P.C."@it ;
     skos:prefLabel "Richiesta riconoscimento A.P.C."@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "RA" ;
     skos:inScheme inailvoc:tipo_trattazione ;
     skos:notation "RA" ;
@@ -299,7 +299,7 @@ tipotrattazione:RC a INAILService:TipoTrattazioneINAIL,
         skos:Concept ;
     rdfs:label "Richiesta riconoscimento A.I."@it ;
     skos:prefLabel "Richiesta riconoscimento A.I."@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "RC" ;
     skos:inScheme inailvoc:tipo_trattazione ;
     skos:notation "RC" ;
@@ -309,7 +309,7 @@ tipotrattazione:RG a INAILService:TipoTrattazioneINAIL,
         skos:Concept ;
     rdfs:label "Revisione grado"@it ;
     skos:prefLabel "Revisione grado"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "RG" ;
     skos:inScheme inailvoc:tipo_trattazione ;
     skos:notation "RG" ;
@@ -319,7 +319,7 @@ tipotrattazione:RI a INAILService:TipoTrattazioneINAIL,
         skos:Concept ;
     rdfs:label "Ricaduta"@it ;
     skos:prefLabel "Ricaduta"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "RI" ;
     skos:inScheme inailvoc:tipo_trattazione ;
     skos:notation "RI" ;
@@ -329,7 +329,7 @@ tipotrattazione:RM a INAILService:TipoTrattazioneINAIL,
         skos:Concept ;
     rdfs:label "Richiesta riconoscimento morte"@it ;
     skos:prefLabel "Richiesta riconoscimento morte"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "RM" ;
     skos:inScheme inailvoc:tipo_trattazione ;
     skos:notation "RM" ;
@@ -339,7 +339,7 @@ tipotrattazione:RP a INAILService:TipoTrattazioneINAIL,
         skos:Concept ;
     rdfs:label "Rendita di passaggio"@it ;
     skos:prefLabel "Rendita di passaggio"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "RP" ;
     skos:inScheme inailvoc:tipo_trattazione ;
     skos:notation "RP" ;
@@ -349,7 +349,7 @@ tipotrattazione:SA a INAILService:TipoTrattazioneINAIL,
         skos:Concept ;
     rdfs:label "Domanda silicosi/asbestosi"@it ;
     skos:prefLabel "Domanda silicosi/asbestosi"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "SA" ;
     skos:inScheme inailvoc:tipo_trattazione ;
     skos:notation "SA" ;

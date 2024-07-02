@@ -76,7 +76,7 @@ inailvoc:tipo_richiedente_pdda1 a adms:Asset,
     skos:prefLabel "Vocabolario Controllato sulla classificazione delle tipologie di richiedente del modulo PD DA1 adottata dall'INAIL"@it ;
     rdfs:comment "Tipologie di utenti che hanno effettuato la richiesta del modulo PDDA1 a nome dell'azienda"@it,
         "Types of users who made the PD DA1 form request on behalf of the company"@en ;
-    owl:versionInfo "0.1" ;
+    owl:versionInfo "0.2" ;
     rdfs:isDefinedBy inailvoc:tipo_richiedente_pdda1 ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
@@ -169,7 +169,7 @@ trichiedente:AgronDottForestali a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Agronomi e Dottori forestali"@it ;
     skos:prefLabel "Agronomi e Dottori forestali"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "AgronDottForestali" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "AgronDottForestali" ;
@@ -179,7 +179,7 @@ trichiedente:Agrotecnici a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Agrotecnici e Agrotecnici Laureati"@it ;
     skos:prefLabel "Agrotecnici e Agrotecnici Laureati"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "Agrotecnici" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "Agrotecnici" ;
@@ -189,7 +189,7 @@ trichiedente:Ausiliario_STP_Agron a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Ausiliario STP Albo: Agronomi e dottori forestali"@it ;
     skos:prefLabel "Ausiliario STP Albo: Agronomi e dottori forestali"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "Ausiliario_STP_Agron" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "Ausiliario_STP_Agron" ;
@@ -199,7 +199,7 @@ trichiedente:Ausiliario_STP_Agrot a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Ausiliario STP Albo: Agrotecnici e agrotecnici laureati"@it ;
     skos:prefLabel "Ausiliario STP Albo: Agrotecnici e agrotecnici laureati"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "Ausiliario_STP_Agrot" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "Ausiliario_STP_Agrot" ;
@@ -209,7 +209,7 @@ trichiedente:Ausiliario_STP_CommC a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Ausiliario STP Albo: Commercialisti ed esperti contabili"@it ;
     skos:prefLabel "Ausiliario STP Albo: Commercialisti ed esperti contabili"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "Ausiliario_STP_CommC" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "Ausiliario_STP_CommC" ;
@@ -219,7 +219,7 @@ trichiedente:Ausiliario_STP_ConsL a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Ausiliario STP Albo: Consulenti del lavoro"@it ;
     skos:prefLabel "Ausiliario STP Albo: Consulenti del lavoro"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "Ausiliario_STP_ConsL" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "Ausiliario_STP_ConsL" ;
@@ -229,7 +229,7 @@ trichiedente:Avvocati a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Avvocato"@it ;
     skos:prefLabel "Avvocato"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "Avvocati" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "Avvocati" ;
@@ -239,7 +239,7 @@ trichiedente:Aziende a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Azienda"@it ;
     skos:prefLabel "Azienda"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "Aziende" ;
     INAILPDDA1:tipoGruppo "A"@it ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
@@ -250,7 +250,7 @@ trichiedente:CAFPC a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "CAF"@it ;
     skos:prefLabel "CAF"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "CAFPC" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "CAFPC" ;
@@ -260,7 +260,7 @@ trichiedente:Com_Cont a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Commercialista / esperto contabile"@it ;
     skos:prefLabel "Commercialista / esperto contabile"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "Com_Cont" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "Com_Cont" ;
@@ -270,7 +270,7 @@ trichiedente:CommSubDel a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Subdelegati commercialisti / esperti contabili"@it ;
     skos:prefLabel "Subdelegati commercialisti / esperti contabili"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "CommSubDel" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "CommSubDel" ;
@@ -280,7 +280,7 @@ trichiedente:ConsLav a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Consulente del Lavoro Old"@it ;
     skos:prefLabel "Consulente del Lavoro Old"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "ConsLav" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "ConsLav" ;
@@ -290,7 +290,7 @@ trichiedente:ConsTrb a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Tributaristi, revisori e altri professionisti per imprese senza dipendenti"@it ;
     skos:prefLabel "Tributaristi, revisori e altri professionisti per imprese senza dipendenti"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "ConsTrb" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "ConsTrb" ;
@@ -300,7 +300,7 @@ trichiedente:ConsulentiLavoro a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Consulente del lavoro"@it ;
     skos:prefLabel "Consulente del lavoro"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "ConsulentiLavoro" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "ConsulentiLavoro" ;
@@ -310,7 +310,7 @@ trichiedente:Funzionario a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Funzionario"@it ;
     skos:prefLabel "Funzionario"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "Funzionario" ;
     INAILPDDA1:tipoGruppo "F"@it ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
@@ -321,7 +321,7 @@ trichiedente:G110qjiu a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Subdelegato società capogruppo"@it ;
     skos:prefLabel "Subdelegato società capogruppo"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "G110qjiu" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "G110qjiu" ;
@@ -331,7 +331,7 @@ trichiedente:G1000010U a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Subdelegato tributaristi, revisori e altri professionisti per imprese senza dipendenti"@it ;
     skos:prefLabel "Subdelegato tributaristi, revisori e altri professionisti per imprese senza dipendenti"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "G1000010U" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "G1000010U" ;
@@ -341,7 +341,7 @@ trichiedente:LegRapassNonSoc a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Consulente del lavoro"@it ;
     skos:prefLabel "Consulente del lavoro"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "LegRapassNonSoc" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "LegRapassNonSoc" ;
@@ -351,7 +351,7 @@ trichiedente:LegRapprAss a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Legali rappresentanti di associazioni"@it ;
     skos:prefLabel "Legali rappresentanti di associazioni"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "LegRapprAss" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "LegRapprAss" ;
@@ -361,7 +361,7 @@ trichiedente:LegRapprAssSoc a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Legale rappresentante del servizio - società "@it ;
     skos:prefLabel "Legale rappresentante del servizio - società "@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "LegRapprAssSoc" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "LegRapprAssSoc" ;
@@ -371,7 +371,7 @@ trichiedente:LegRapprCAF a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Legale rappresentante CAF imprese"@it ;
     skos:prefLabel "Legale rappresentante CAF imprese"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "LegRapprCAF" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "LegRapprCAF" ;
@@ -381,7 +381,7 @@ trichiedente:LegRapprConsSoc a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Consorzio società  cooperative"@it ;
     skos:prefLabel "Consorzio società  cooperative"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "LegRapprConsSoc" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "LegRapprConsSoc" ;
@@ -391,7 +391,7 @@ trichiedente:LegRapprInternale a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "LegRapprInternale"@it ;
     skos:prefLabel "LegRapprInternale"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "LegRapprInternale" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "LegRapprInternale" ;
@@ -401,7 +401,7 @@ trichiedente:LegRapprSocCap a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Legali rappresentanti di società  capofila"@it ;
     skos:prefLabel "Legali rappresentanti di società  capofila"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "LegRapprSocCap" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "LegRapprSocCap" ;
@@ -411,7 +411,7 @@ trichiedente:LegRapprSocCapGR a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Società  capogruppo"@it ;
     skos:prefLabel "Società  capogruppo"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "LegRapprSocCapGR" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "LegRapprSocCapGR" ;
@@ -421,7 +421,7 @@ trichiedente:RespffLocaleSubDeleg a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Subdelegato responsabile ufficio locale"@it ;
     skos:prefLabel "Subdelegato responsabile ufficio locale"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "RespffLocaleSubDeleg" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "RespffLocaleSubDeleg" ;
@@ -431,7 +431,7 @@ trichiedente:RespLocSubDelegNoSoc a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Subdelegato responsabile Ufficio locale"@it ;
     skos:prefLabel "Subdelegato responsabile Ufficio locale"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "RespLocSubDelegNoSoc" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "RespLocSubDelegNoSoc" ;
@@ -441,7 +441,7 @@ trichiedente:RespUffLoc2 a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Responsabile ufficio locale"@it ;
     skos:prefLabel "Responsabile ufficio locale"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "RespUffLoc2" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "RespUffLoc2" ;
@@ -451,7 +451,7 @@ trichiedente:RespUffLocCaf a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Responsabile ufficio locale CAF imprese"@it ;
     skos:prefLabel "Responsabile ufficio locale CAF imprese"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "RespUffLocCaf" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "RespUffLocCaf" ;
@@ -461,7 +461,7 @@ trichiedente:ResUffLocSIACNoSoc a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Responsabile Ufficio Locale"@it ;
     skos:prefLabel "Responsabile Ufficio Locale"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "ResUffLocSIACNoSoc" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "ResUffLocSIACNoSoc" ;
@@ -471,7 +471,7 @@ trichiedente:Socio_STP_AgrForest a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Socio STP Albo: Dottori agronomi e dottori forestali"@it ;
     skos:prefLabel "Socio STP Albo: Dottori agronomi e dottori forestali"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "Socio_STP_AgrForest" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "Socio_STP_AgrForest" ;
@@ -481,7 +481,7 @@ trichiedente:Socio_STP_Agrotecnic a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Socio STP Albo: Agrotecnici e Agrotecnici Laureati"@it ;
     skos:prefLabel "Socio STP Albo: Agrotecnici e Agrotecnici Laureati"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "Socio_STP_Agrotecnic" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "Socio_STP_Agrotecnic" ;
@@ -491,7 +491,7 @@ trichiedente:Socio_STP_CommEspCon a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Socio STP Albo: Commercialisti ed esperti contabili"@it ;
     skos:prefLabel "Socio STP Albo: Commercialisti ed esperti contabili"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "Socio_STP_CommEspCon" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "Socio_STP_CommEspCon" ;
@@ -501,7 +501,7 @@ trichiedente:Socio_STP_ConsLav a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Socio STP Albo: Consulenti del lavoro"@it ;
     skos:prefLabel "Socio STP Albo: Consulenti del lavoro"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "Socio_STP_ConsLav" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "Socio_STP_ConsLav" ;
@@ -511,7 +511,7 @@ trichiedente:subDelAvvocati a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Delegati Avvocati"@it ;
     skos:prefLabel "Delegati Avvocati"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "subDelAvvocati" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "subDelAvvocati" ;
@@ -521,7 +521,7 @@ trichiedente:subDelConsLav a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Subdelegati consulenti del lavoro"@it ;
     skos:prefLabel "Subdelegati consulenti del lavoro"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "subDelConsLav" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "subDelConsLav" ;
@@ -531,7 +531,7 @@ trichiedente:subDelConsuLav a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Consulente del Lavoro Subdelegato"@it ;
     skos:prefLabel "Consulente del Lavoro Subdelegato"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "subDelConsuLav" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "subDelConsuLav" ;
@@ -541,7 +541,7 @@ trichiedente:SubDelUffCAF a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "Subdelegato ufficio CAF imprese"@it ;
     skos:prefLabel "Subdelegato ufficio CAF imprese"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "SubDelUffCAF" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "SubDelUffCAF" ;
@@ -551,7 +551,7 @@ trichiedente:TitAzienda a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "TitAzienda"@it ;
     skos:prefLabel "TitAzienda"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "TitAzienda" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "TitAzienda" ;
@@ -561,7 +561,7 @@ trichiedente:TitAziendaDel a INAILPDDA1:TipoRichiedente,
         skos:Concept ;
     rdfs:label "TitAziendaDel"@it ;
     skos:prefLabel "TitAziendaDel"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "TitAziendaDel" ;
     skos:inScheme inailvoc:tipo_richiedente_pdda1 ;
     skos:notation "TitAziendaDel" ;

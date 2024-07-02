@@ -1,0 +1,169 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAILCore: <https://w3id.org/italia/work-accident/onto/core/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix settoreattivita: <https://w3id.org/italia/work-accident/controlled-vocabulary/core/settore_attivita/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Annotations
+
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
+        dct:Standard ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dct:identifier "SKOS" ;
+    dct:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/work-accident/controlled-vocabulary/core/settore_attivita> a adms:Asset,
+        dcatapit:Dataset,
+        skos:ConceptScheme ;
+    rdfs:label "Controlled vocabulary on the sector of activities carried out by the INAIL-insured personL"@en,
+        "Vocabolario Controllato sul settore delle attività svolte dal Soggetto Assicurato dall'INAIL"@it ;
+    skos:prefLabel "Vocabolario Controllato sul settore delle attività svolte dal Soggetto Assicurato dall'INAIL"@it ;
+    rdfs:comment "Sector in which the activity carried out by the INAIL insured person is categorised"@en,
+        "Settore in cui viene categorizzata l'attività svolta dal soggetto assicurato INAIL"@it ;
+    owl:versionInfo "0.1" ;
+    rdfs:isDefinedBy <https://w3id.org/italia/work-accident/controlled-vocabulary/core/settore_attivita> ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+    dcat:distribution <https://w3id.org/italia/work-accident/data/core/distribution/SA_CSV>,
+        <https://w3id.org/italia/work-accident/data/core/distribution/SA_JSON_LD>,
+        <https://w3id.org/italia/work-accident/data/core/distribution/SA_RDF_TURTLE> ;
+    dcat:keyword "activity"@en,
+        "attività"@it,
+        "inail"@it,
+        "sector"@en,
+        "settore"@it ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON>,
+        <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:description "Sector in which the activity carried out by the INAIL insured person is categorised"@en,
+        "Settore in cui viene categorizzata l'attività svolta dal soggetto assicurato INAIL"@it ;
+    dct:identifier "https://w3id.org/italia/work-accident/controlled-vocabulary/core/settore_attivita" ;
+    dct:issued "2024-06-18"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2024-06-22"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:relation <https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/mansione>,
+        <https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/tipo_lavoratore> ;
+    dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:subject <http://eurovoc.europa.eu/3249>,
+        <http://eurovoc.europa.eu/3512>,
+        <http://eurovoc.europa.eu/100203> ;
+    dct:title "Controlled vocabulary on the sector of activities carried out by the INAIL-insured person"@en,
+        "Vocabolario Controllato sul settore delle attività svolte dal Soggetto Assicurato dall'INAIL"@it ;
+    dct:type <http://purl.org/adms/assettype/CodeList> ;
+    ndc:keyConcept "settore_attivita" ;
+    skos:hasTopConcept settoreattivita:1,
+        settoreattivita:2,
+        settoreattivita:3,
+        settoreattivita:4,
+        settoreattivita:5 ;
+    xkos:numberOfLevels "1" .
+
+<https://w3id.org/italia/work-accident/data/core/distribution/SA_JSON_LD> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/settore_attività/v0.1> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/settore_attività/v0.1/settore_attività.json> ;
+    dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sul settore dell'attività svolta dal soggetto assicurato INAIL"@it,
+        "This is the JSON_LD distribution of the controlled vocabulary on the sector of activity carried out by the INAIL-insured person"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione JSON_LD del vocabolario controllato sulla settore dell'attività svolta dal soggetto assicurato INAIL"@it,
+        "JSON_LD distribution of the controlled vocabulary on the sector of activity carried out by the INAIL insured person"@en .
+
+<https://w3id.org/italia/work-accident/data/core/distribution/SA_RDF_TURTLE> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/settore_attività/v0.1> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/settore_attività/v0.1/settore_attività.ttl> ;
+    dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sul settore dell'attività svolta dal soggetto assicurato INAIL"@it,
+        "This is the RDF/Turtle distribution of the controlled vocabulary on the sector of activity carried out by the INAIL-insured person"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione RDF/Turtle del vocabolario controllato sulla settore dell'attività svolta dal soggetto assicurato INAIL"@it,
+        "RDF/Turtle distribution of the controlled vocabulary on the sector of activity carried out by the INAIL insured person"@en .
+
+<https://w3id.org/italia/work-accident/data/core/distribution/TP_CSV> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/settore_attività/v0.1> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/settore_attività/v0.1/settore_attività.csv> ;
+    dct:description "Questa è la distribuzione CSV del vocabolario controllato sul settore dell'attività svolta dal soggetto assicurato INAIL"@it,
+        "This is the CSV distribution of the controlled vocabulary on the sector of activity carried out by the INAIL-insured person"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "CSV distribution of the controlled vocabulary on the sector of activity carried out by the INAIL insured person"@en,
+        "Distribuzione CSV del vocabolario controllato sulla settore dell'attività svolta dal soggetto assicurato INAIL"@it .
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+settoreattivita:1 a INAILCore:SettoreAttivita,
+        skos:Concept ;
+    rdfs:label "Industria"@it ;
+    skos:prefLabel "Industria"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "1" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/settore_attivita> ;
+    skos:notation "1" ;
+    xkos:depth 1 .
+
+settoreattivita:2 a INAILCore:SettoreAttivita,
+        skos:Concept ;
+    rdfs:label "Artigianato"@it ;
+    skos:prefLabel "Artigianato"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "2" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/settore_attivita> ;
+    skos:notation "2" ;
+    xkos:depth 1 .
+
+settoreattivita:3 a INAILCore:SettoreAttivita,
+        skos:Concept ;
+    rdfs:label "Terziario"@it ;
+    skos:prefLabel "Terziario"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "3" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/settore_attivita> ;
+    skos:notation "3" ;
+    xkos:depth 1 .
+
+settoreattivita:4 a INAILCore:SettoreAttivita,
+        skos:Concept ;
+    rdfs:label "Altri"@it ;
+    skos:prefLabel "Altri"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "4" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/settore_attivita> ;
+    skos:notation "4" ;
+    xkos:depth 1 .
+
+settoreattivita:5 a INAILCore:SettoreAttivita,
+        skos:Concept ;
+    rdfs:label "Speciale"@it ;
+    skos:prefLabel "Speciale"@it ;
+    clvapit:hasRankOrder "1" ;
+    dct:identifier "5" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/settore_attivita> ;
+    skos:notation "5" ;
+    xkos:depth 1 .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

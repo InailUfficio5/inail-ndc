@@ -21,7 +21,7 @@ decistresmort:15 a INAILService:TipoDecisioneIstruttoriaEsitoMortaleINAIL,
         skos:Concept ;
     rdfs:label "Esiti mortali nei termini con superstiti"@it ;
     skos:prefLabel "Esiti mortali nei termini con superstiti"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "15" ;
     skos:inScheme inailvoc:decisione_istruttoria_esito_mortale ;
     skos:notation "15" ;
@@ -31,7 +31,7 @@ decistresmort:16 a INAILService:TipoDecisioneIstruttoriaEsitoMortaleINAIL,
         skos:Concept ;
     rdfs:label "Esiti mortali nei termini senza superstiti"@it ;
     skos:prefLabel "Esiti mortali nei termini senza superstiti"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "16" ;
     skos:inScheme inailvoc:decisione_istruttoria_esito_mortale ;
     skos:notation "16" ;
@@ -41,7 +41,7 @@ decistresmort:17 a INAILService:TipoDecisioneIstruttoriaEsitoMortaleINAIL,
         skos:Concept ;
     rdfs:label "Morte con superstiti itinere"@it ;
     skos:prefLabel "Morte con superstiti itinere"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "17" ;
     skos:inScheme inailvoc:decisione_istruttoria_esito_mortale ;
     skos:notation "17" ;
@@ -51,7 +51,7 @@ decistresmort:18 a INAILService:TipoDecisioneIstruttoriaEsitoMortaleINAIL,
         skos:Concept ;
     rdfs:label "Morte senza superstiti itinere"@it ;
     skos:prefLabel "Morte senza superstiti itinere"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "18" ;
     skos:inScheme inailvoc:decisione_istruttoria_esito_mortale ;
     skos:notation "18" ;
@@ -61,7 +61,7 @@ decistresmort:21 a INAILService:TipoDecisioneIstruttoriaEsitoMortaleINAIL,
         skos:Concept ;
     rdfs:label "Difetto occasione di lavoro"@it ;
     skos:prefLabel "Difetto occasione di lavoro"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "21" ;
     skos:inScheme inailvoc:decisione_istruttoria_esito_mortale ;
     skos:notation "21" ;
@@ -71,7 +71,7 @@ decistresmort:22 a INAILService:TipoDecisioneIstruttoriaEsitoMortaleINAIL,
         skos:Concept ;
     rdfs:label "Difetto in itinere"@it ;
     skos:prefLabel "Difetto in itinere"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "22" ;
     skos:depth "1" ;
     skos:inScheme inailvoc:decisione_istruttoria_esito_mortale ;
@@ -81,7 +81,7 @@ decistresmort:24 a INAILService:TipoDecisioneIstruttoriaEsitoMortaleINAIL,
         skos:Concept ;
     rdfs:label "Persona non tutelata"@it ;
     skos:prefLabel "Persona non tutelata"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "24" ;
     skos:inScheme inailvoc:decisione_istruttoria_esito_mortale ;
     skos:notation "24" ;
@@ -91,7 +91,7 @@ decistresmort:27 a INAILService:TipoDecisioneIstruttoriaEsitoMortaleINAIL,
         skos:Concept ;
     rdfs:label "Attività non tutelata"@it ;
     skos:prefLabel "Attività non tutelata"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "27" ;
     skos:inScheme inailvoc:decisione_istruttoria_esito_mortale ;
     skos:notation "27" ;
@@ -101,7 +101,7 @@ decistresmort:28 a INAILService:TipoDecisioneIstruttoriaEsitoMortaleINAIL,
         skos:Concept ;
     rdfs:label "Carenza di documentazione valida"@it ;
     skos:prefLabel "Carenza di documentazione valida"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "28" ;
     skos:inScheme inailvoc:decisione_istruttoria_esito_mortale ;
     skos:notation "28" ;
@@ -111,7 +111,7 @@ decistresmort:244 a INAILService:TipoDecisioneIstruttoriaEsitoMortaleINAIL,
         skos:Concept ;
     rdfs:label "Morte non riconducibile all'evento"@it ;
     skos:prefLabel "Morte non riconducibile all'evento"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "244" ;
     skos:inScheme inailvoc:decisione_istruttoria_esito_mortale ;
     skos:notation "244" ;
@@ -121,7 +121,7 @@ decistresmort:300 a INAILService:TipoDecisioneIstruttoriaEsitoMortaleINAIL,
         skos:Concept ;
     rdfs:label "Altre cause di negatività"@it ;
     skos:prefLabel "Altre cause di negatività"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "300" ;
     skos:inScheme inailvoc:decisione_istruttoria_esito_mortale ;
     skos:notation "300" ;
@@ -186,7 +186,7 @@ inailvoc:decisione_istruttoria_esito_mortale a adms:Asset,
     skos:prefLabel "Vocabolario Controllato sulla classificazione dell'istruttoria esito mortale adottata dall'INAIL"@it ;
     rdfs:comment "Controlled vocabulary that identifies the type of investigation in the event of a fatal outcome"@en,
         "Vocabolario controllato che identifica la tipologia di decisione istruttoria in caso di esito mortale"@it ;
-    owl:versionInfo "0.5" ;
+    owl:versionInfo "0.6" ;
     rdfs:isDefinedBy inailvoc:decisione_istruttoria_esito_mortale ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;

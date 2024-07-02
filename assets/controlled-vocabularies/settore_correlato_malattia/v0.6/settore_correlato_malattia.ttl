@@ -1,0 +1,715 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix inailvoc: <https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix settcorr: <https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/settore_correlato_malattia/settore/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix subsettcorr: <https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/settore_correlato_malattia/sub_settore/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Annotations
+
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
+        dct:Standard ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dct:identifier "SKOS" ;
+    dct:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/work-accident/data/adm_serv/distribution/SM_CSV> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/settore_correlato_malattia/v0.6> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/settore_correlato_malattia/v0.6/settore_correlato_malattia.csv> ;
+    dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it,
+        "This is the distribution in CSV of disease related sectors and subsectors adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "CSV distribution of disease related sectors and subsectors adopted by INAILcontrolled vocabulary"@en,
+        "Distribuzione CSV del vocabolario controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it .
+
+<https://w3id.org/italia/work-accident/data/adm_serv/distribution/SM_JSON> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/settore_correlato_malattia/v0.6> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/settore_correlato_malattia/v0.6/settore_correlato_malattia.json> ;
+    dct:description "Questa è la distribuzione JSON del vocabolario controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it,
+        "This is the distribution in JSON of disease related sectors and subsectors adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione JSON del vocabolario controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it,
+        "JSON distribution of disease related sectors and subsectors adopted by INAIL controlled vocabulary"@en .
+
+<https://w3id.org/italia/work-accident/data/adm_serv/distribution/SM_RDF_TURTLE> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/settore_correlato_malattia/v0.6> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/settore_correlato_malattia/v0.6/settore_correlato_malattia.ttl> ;
+    dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it,
+        "This is the distribution in RDF/turtle of disease related sectors and subsectors adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione RDF/Turtle del vocabolario controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it,
+        "RDF/Turtle distribution of disease related sectors and subsectors adopted by INAIL controlled vocabulary"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+inailvoc:settore_correlato_malattia a adms:Asset,
+        dcatapit:Dataset,
+        skos:ConceptScheme ;
+    rdfs:label "Controlled vocabulary of disease related sectors and subsectors adopted by INAIL"@en,
+        "Vocabolario Controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it ;
+    skos:prefLabel "Vocabolario Controllato sulla classificazione del settore correlato malattia adottata dall'INAIL"@it ;
+    rdfs:comment "Grouping of sectors and subsectors of CNEL employment contracts."@en,
+        "Raggruppamento settori e sottosettori contratti di lavoro CNEL."@it ;
+    owl:versionInfo "0.6" ;
+    rdfs:isDefinedBy inailvoc:settore_correlato_malattia ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+    dcat:distribution <https://w3id.org/italia/work-accident/data/adm_serv/distribution/SM_CSV>,
+        <https://w3id.org/italia/work-accident/data/adm_serv/distribution/SM_JSON>,
+        <https://w3id.org/italia/work-accident/data/adm_serv/distribution/SM_RDF_TURTLE> ;
+    dcat:keyword "agricoltura"@it,
+        "agriculture"@en,
+        "artigianato"@it,
+        "cnel"@it,
+        "craftsmanship"@en,
+        "fishing"@en,
+        "industry"@en,
+        "malattia professionale"@it,
+        "occupational disease"@en,
+        "pesca"@it,
+        "pubblica amministrazione"@it,
+        "public administration"@en,
+        "service"@en,
+        "servizi"@it ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/AGRI>,
+        <http://publications.europa.eu/resource/authority/data-theme/ECON>,
+        <http://publications.europa.eu/resource/authority/data-theme/EDUC>,
+        <http://publications.europa.eu/resource/authority/data-theme/ENER>,
+        <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:description "Grouping of sectors and subsectors of CNEL employment contracts."@en,
+        "Raggruppamento settori e sottosettori contratti di lavoro CNEL."@it ;
+    dct:identifier "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/settore_correlato_malattia" ;
+    dct:issued "2022-07-22"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2023-07-31"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:relation inailvoc:grande_gruppo_tariffario,
+        inailvoc:mansione,
+        inailvoc:tipo_lavoratore,
+        inailvoc:tipo_lavoro ;
+    dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:subject <http://eurovoc.europa.eu/77>,
+        <http://eurovoc.europa.eu/1761>,
+        <http://eurovoc.europa.eu/2784>,
+        <http://eurovoc.europa.eu/100217>,
+        <http://eurovoc.europa.eu/100250>,
+        <http://eurovoc.europa.eu/100266>,
+        <http://eurovoc.europa.eu/100269>,
+        <http://eurovoc.europa.eu/100270>,
+        <http://eurovoc.europa.eu/100274>,
+        <http://eurovoc.europa.eu/100275>,
+        <http://eurovoc.europa.eu/100276> ;
+    dct:title "Classification of disease related sectors and subsectors adopted by INAIL Controlled Vocabulary"@en,
+        "Vocabolario Controllato sulla classificazione dei settori e sottosettori correlati malattia adottata dall'INAIL"@it ;
+    dct:type <http://purl.org/adms/assettype/CodeList> ;
+    ndc:keyConcept "settore_correlato_malattia" ;
+    skos:hasTopConcept settcorr:1,
+        settcorr:2,
+        settcorr:3,
+        settcorr:4,
+        settcorr:5 ;
+    xkos:numberOfLevels "2" .
+
+settcorr:1 a skos:Concept ;
+    rdfs:label "Agricoltura e pesca"@it ;
+    skos:prefLabel "Agricoltura e pesca"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "1" ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:narrower subsettcorr:11,
+        subsettcorr:12,
+        subsettcorr:13,
+        subsettcorr:14,
+        subsettcorr:15,
+        subsettcorr:16,
+        subsettcorr:17 ;
+    skos:notation "1" ;
+    xkos:depth 1 .
+
+settcorr:2 a skos:Concept ;
+    rdfs:label "Industria"@it ;
+    skos:prefLabel "Industria"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "2" ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:narrower subsettcorr:18,
+        subsettcorr:19,
+        subsettcorr:20,
+        subsettcorr:21,
+        subsettcorr:22,
+        subsettcorr:23,
+        subsettcorr:24,
+        subsettcorr:25,
+        subsettcorr:26,
+        subsettcorr:27,
+        subsettcorr:28,
+        subsettcorr:29,
+        subsettcorr:30,
+        subsettcorr:31 ;
+    skos:notation "2" ;
+    xkos:depth 1 .
+
+settcorr:3 a skos:Concept ;
+    rdfs:label "Servizi"@it ;
+    skos:prefLabel "Servizi"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "3" ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:narrower subsettcorr:32,
+        subsettcorr:33,
+        subsettcorr:34,
+        subsettcorr:35,
+        subsettcorr:36,
+        subsettcorr:37,
+        subsettcorr:38,
+        subsettcorr:39 ;
+    skos:notation "3" ;
+    xkos:depth 1 .
+
+settcorr:4 a skos:Concept ;
+    rdfs:label "Artigianato"@it ;
+    skos:prefLabel "Artigianato"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "4" ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:narrower subsettcorr:40,
+        subsettcorr:41,
+        subsettcorr:42,
+        subsettcorr:43,
+        subsettcorr:44,
+        subsettcorr:45,
+        subsettcorr:46,
+        subsettcorr:47,
+        subsettcorr:48,
+        subsettcorr:49,
+        subsettcorr:50,
+        subsettcorr:51,
+        subsettcorr:58 ;
+    skos:notation "4" ;
+    xkos:depth 1 .
+
+settcorr:5 a skos:Concept ;
+    rdfs:label "Pubblica amministrazione"@it ;
+    skos:prefLabel "Pubblica amministrazione"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "5" ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:narrower subsettcorr:52,
+        subsettcorr:53,
+        subsettcorr:54,
+        subsettcorr:55,
+        subsettcorr:56,
+        subsettcorr:57 ;
+    skos:notation "5" ;
+    xkos:depth 1 .
+
+subsettcorr:11 a skos:Concept ;
+    rdfs:label "Pesca - piscicoltura"@it ;
+    skos:prefLabel "Pesca - piscicoltura"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "11" ;
+    skos:broader settcorr:1 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "11" ;
+    xkos:depth 2 .
+
+subsettcorr:12 a skos:Concept ;
+    rdfs:label "Allevamento"@it ;
+    skos:prefLabel "Allevamento"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "12" ;
+    skos:broader settcorr:1 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "12" ;
+    xkos:depth 2 .
+
+subsettcorr:13 a skos:Concept ;
+    rdfs:label "Coltivazioni di seminativi"@it ;
+    skos:prefLabel "Coltivazioni di seminativi"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "13" ;
+    skos:broader settcorr:1 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "13" ;
+    xkos:depth 2 .
+
+subsettcorr:14 a skos:Concept ;
+    rdfs:label "Orticoltura, floricoltura"@it ;
+    skos:prefLabel "Orticoltura, floricoltura"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "14" ;
+    skos:broader settcorr:1 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "14" ;
+    xkos:depth 2 .
+
+subsettcorr:15 a skos:Concept ;
+    rdfs:label "Frutticoltura"@it ;
+    skos:prefLabel "Frutticoltura"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "15" ;
+    skos:broader settcorr:1 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "15" ;
+    xkos:depth 2 .
+
+subsettcorr:16 a skos:Concept ;
+    rdfs:label "Silvicoltura"@it ;
+    skos:prefLabel "Silvicoltura"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "16" ;
+    skos:broader settcorr:1 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "16" ;
+    xkos:depth 2 .
+
+subsettcorr:17 a skos:Concept ;
+    rdfs:label "Altre coltivazioni agricole"@it ;
+    skos:prefLabel "Altre coltivazioni agricole"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "17" ;
+    skos:broader settcorr:1 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "17" ;
+    xkos:depth 2 .
+
+subsettcorr:18 a skos:Concept ;
+    rdfs:label "Mineraria"@it ;
+    skos:prefLabel "Mineraria"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "18" ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "18" ;
+    xkos:depth 2 .
+
+subsettcorr:19 a skos:Concept ;
+    rdfs:label "Alimentare"@it ;
+    skos:prefLabel "Alimentare"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "19" ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "19" ;
+    xkos:depth 2 .
+
+subsettcorr:20 a skos:Concept ;
+    rdfs:label "Tessile e abbigliamento"@it ;
+    skos:prefLabel "Tessile e abbigliamento"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "20" ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "20" ;
+    xkos:depth 2 .
+
+subsettcorr:21 a skos:Concept ;
+    rdfs:label "Conciaria"@it ;
+    skos:prefLabel "Conciaria"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "21" ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "21" ;
+    xkos:depth 2 .
+
+subsettcorr:22 a skos:Concept ;
+    rdfs:label "Legno"@it ;
+    skos:prefLabel "Legno"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "22" ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "22" ;
+    xkos:depth 2 .
+
+subsettcorr:23 a skos:Concept ;
+    rdfs:label "Carta"@it ;
+    skos:prefLabel "Carta"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "23" ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "23" ;
+    xkos:depth 2 .
+
+subsettcorr:24 a skos:Concept ;
+    rdfs:label "Petrolchimica"@it ;
+    skos:prefLabel "Petrolchimica"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "24" ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "24" ;
+    xkos:depth 2 .
+
+subsettcorr:25 a skos:Concept ;
+    rdfs:label "Chimica"@it ;
+    skos:prefLabel "Chimica"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "25" ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "25" ;
+    xkos:depth 2 .
+
+subsettcorr:26 a skos:Concept ;
+    rdfs:label "Gomma e plastica"@it ;
+    skos:prefLabel "Gomma e plastica"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "26" ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "26" ;
+    xkos:depth 2 .
+
+subsettcorr:27 a skos:Concept ;
+    rdfs:label "Lav. minerali non metalliferi (vetro, cemento, calce e pietre ornamentali)"@it ;
+    skos:prefLabel "Lav. minerali non metalliferi (vetro, cemento, calce e pietre ornamentali)"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "27" ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "27" ;
+    xkos:depth 2 .
+
+subsettcorr:28 a skos:Concept ;
+    rdfs:label "Metalmeccanica (metallurgia,metalmeccanica, macchine, apparecchi e strumenti)"@it ;
+    skos:prefLabel "Metalmeccanica (metallurgia,metalmeccanica, macchine, apparecchi e strumenti)"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "28" ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "28" ;
+    xkos:depth 2 .
+
+subsettcorr:29 a skos:Concept ;
+    rdfs:label "Altre manifatturiere (gioielleria e oreficeria, strumenti musicali, ecc.)"@it ;
+    skos:prefLabel "Altre manifatturiere (gioielleria e oreficeria, strumenti musicali, ecc.)"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "29" ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "29" ;
+    xkos:depth 2 .
+
+subsettcorr:30 a skos:Concept ;
+    rdfs:label "Costruzioni (edilizia e installazione/manutenzione di impianti elettrici, idraulici e termici)"@it ;
+    skos:prefLabel "Costruzioni (edilizia e installazione/manutenzione di impianti elettrici, idraulici e termici)"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "30" ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "30" ;
+    xkos:depth 2 .
+
+subsettcorr:31 a skos:Concept ;
+    rdfs:label "Elettricita', gas e acqua"@it ;
+    skos:prefLabel "Elettricita', gas e acqua"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "31" ;
+    skos:broader settcorr:2 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "31" ;
+    xkos:depth 2 .
+
+subsettcorr:32 a skos:Concept ;
+    rdfs:label "Commercio"@it ;
+    skos:prefLabel "Commercio"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "32" ;
+    skos:broader settcorr:3 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "32" ;
+    xkos:depth 2 .
+
+subsettcorr:33 a skos:Concept ;
+    rdfs:label "Alberghi e ristoranti"@it ;
+    skos:prefLabel "Alberghi e ristoranti"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "33" ;
+    skos:broader settcorr:3 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "33" ;
+    xkos:depth 2 .
+
+subsettcorr:34 a skos:Concept ;
+    rdfs:label "Trasporti e comunicazioni"@it ;
+    skos:prefLabel "Trasporti e comunicazioni"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "34" ;
+    skos:broader settcorr:3 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "34" ;
+    xkos:depth 2 .
+
+subsettcorr:35 a skos:Concept ;
+    rdfs:label "Sanita' privata e servizi sociali privati"@it ;
+    skos:prefLabel "Sanita' privata e servizi sociali privati"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "35" ;
+    skos:broader settcorr:3 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "35" ;
+    xkos:depth 2 .
+
+subsettcorr:36 a skos:Concept ;
+    rdfs:label "Servizi di pulizia e disinfestazione."@it ;
+    skos:prefLabel "Servizi di pulizia e disinfestazione."@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "36" ;
+    skos:broader settcorr:3 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "36" ;
+    xkos:depth 2 .
+
+subsettcorr:37 a skos:Concept ;
+    rdfs:label "Attivita' immobiliari e professionali (intemediazione finanziaria,informatica, noleggio, vigilanza, pubblicita', ecc.)"@it ;
+    skos:prefLabel "Attivita' immobiliari e professionali (intemediazione finanziaria,informatica, noleggio, vigilanza, pubblicita', ecc.)"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "37" ;
+    skos:broader settcorr:3 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "37" ;
+    xkos:depth 2 .
+
+subsettcorr:38 a skos:Concept ;
+    rdfs:label "Istruzione privata"@it ;
+    skos:prefLabel "Istruzione privata"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "38" ;
+    skos:broader settcorr:3 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "38" ;
+    xkos:depth 2 .
+
+subsettcorr:39 a skos:Concept ;
+    rdfs:label "Altri servizi (smaltimento rifiuti, associazioni culturali, sportive, ecc.)"@it ;
+    skos:prefLabel "Altri servizi (smaltimento rifiuti, associazioni culturali, sportive, ecc.)"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "39" ;
+    skos:broader settcorr:3 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "39" ;
+    xkos:depth 2 .
+
+subsettcorr:40 a skos:Concept ;
+    rdfs:label "Alimentare"@it ;
+    skos:prefLabel "Alimentare"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "40" ;
+    skos:broader settcorr:4 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "40" ;
+    xkos:depth 2 .
+
+subsettcorr:41 a skos:Concept ;
+    rdfs:label "Tessile e abbigliamento"@it ;
+    skos:prefLabel "Tessile e abbigliamento"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "41" ;
+    skos:broader settcorr:4 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "41" ;
+    xkos:depth 2 .
+
+subsettcorr:42 a skos:Concept ;
+    rdfs:label "Conciaria"@it ;
+    skos:prefLabel "Conciaria"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "42" ;
+    skos:broader settcorr:4 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "42" ;
+    xkos:depth 2 .
+
+subsettcorr:43 a skos:Concept ;
+    rdfs:label "Legno"@it ;
+    skos:prefLabel "Legno"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "43" ;
+    skos:broader settcorr:4 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "43" ;
+    xkos:depth 2 .
+
+subsettcorr:44 a skos:Concept ;
+    rdfs:label "Carta"@it ;
+    skos:prefLabel "Carta"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "44" ;
+    skos:broader settcorr:4 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "44" ;
+    xkos:depth 2 .
+
+subsettcorr:45 a skos:Concept ;
+    rdfs:label "Chimica"@it ;
+    skos:prefLabel "Chimica"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "45" ;
+    skos:broader settcorr:4 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "45" ;
+    xkos:depth 2 .
+
+subsettcorr:46 a skos:Concept ;
+    rdfs:label "Gomma e plastica"@it ;
+    skos:prefLabel "Gomma e plastica"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "46" ;
+    skos:broader settcorr:4 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "46" ;
+    xkos:depth 2 .
+
+subsettcorr:47 a skos:Concept ;
+    rdfs:label "Lav. minerali non metalliferi (vetro, cemento, calce e pietre ornamentali)"@it ;
+    skos:prefLabel "Lav. minerali non metalliferi (vetro, cemento, calce e pietre ornamentali)"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "47" ;
+    skos:broader settcorr:4 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "47" ;
+    xkos:depth 2 .
+
+subsettcorr:48 a skos:Concept ;
+    rdfs:label "Metalmeccanica (metallurgia,metalmeccanica, macchine, apparecchi e strumenti)"@it ;
+    skos:prefLabel "Metalmeccanica (metallurgia,metalmeccanica, macchine, apparecchi e strumenti)"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "48" ;
+    skos:broader settcorr:4 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "48" ;
+    xkos:depth 2 .
+
+subsettcorr:49 a skos:Concept ;
+    rdfs:label "Altre manifatturiere (gioielleria e oreficeria, strumenti musicali, ecc.)"@it ;
+    skos:prefLabel "Altre manifatturiere (gioielleria e oreficeria, strumenti musicali, ecc.)"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "49" ;
+    skos:broader settcorr:4 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "49" ;
+    xkos:depth 2 .
+
+subsettcorr:50 a skos:Concept ;
+    rdfs:label "Costruzioni (edilizia e installazione/manutenzione di impianti elettrici, idraulici e termici)"@it ;
+    skos:prefLabel "Costruzioni (edilizia e installazione/manutenzione di impianti elettrici, idraulici e termici)"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "50" ;
+    skos:broader settcorr:4 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "50" ;
+    xkos:depth 2 .
+
+subsettcorr:51 a skos:Concept ;
+    rdfs:label "Elettricita', gas e acqua"@it ;
+    skos:prefLabel "Elettricita', gas e acqua"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "51" ;
+    skos:broader settcorr:4 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "51" ;
+    xkos:depth 2 .
+
+subsettcorr:52 a skos:Concept ;
+    rdfs:label "Ministeri (istruzione pubblica, salute, difesa, ecc.)"@it ;
+    skos:prefLabel "Ministeri (istruzione pubblica, salute, difesa, ecc.)"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "52" ;
+    skos:broader settcorr:5 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "52" ;
+    xkos:depth 2 .
+
+subsettcorr:53 a skos:Concept ;
+    rdfs:label "universita' e istituti di ricerca"@it ;
+    skos:prefLabel "universita' e istituti di ricerca"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "53" ;
+    skos:broader settcorr:5 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "53" ;
+    xkos:depth 2 .
+
+subsettcorr:54 a skos:Concept ;
+    rdfs:label "Parastato"@it ;
+    skos:prefLabel "Parastato"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "54" ;
+    skos:broader settcorr:5 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "54" ;
+    xkos:depth 2 .
+
+subsettcorr:55 a skos:Concept ;
+    rdfs:label "Istituti/ organismi regionali"@it ;
+    skos:prefLabel "Istituti/ organismi regionali"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "55" ;
+    skos:broader settcorr:5 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "55" ;
+    xkos:depth 2 .
+
+subsettcorr:56 a skos:Concept ;
+    rdfs:label "Istituti/ organismi provinciali"@it ;
+    skos:prefLabel "Istituti/ organismi provinciali"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "56" ;
+    skos:broader settcorr:5 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "56" ;
+    xkos:depth 2 .
+
+subsettcorr:57 a skos:Concept ;
+    rdfs:label "Istituti/ organismi comunali"@it ;
+    skos:prefLabel "Istituti/ organismi comunali"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "57" ;
+    skos:broader settcorr:5 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "57" ;
+    xkos:depth 2 .
+
+subsettcorr:58 a skos:Concept ;
+    rdfs:label "Petrolchimica"@it ;
+    skos:prefLabel "Petrolchimica"@it ;
+    clvapit:hasRankOrder 2 ;
+    dct:identifier "58" ;
+    skos:broader settcorr:4 ;
+    skos:inScheme inailvoc:settore_correlato_malattia ;
+    skos:notation "58" ;
+    xkos:depth 2 .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

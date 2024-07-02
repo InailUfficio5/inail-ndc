@@ -29,7 +29,7 @@
         skos:Concept ;
     rdfs:label "Grado superiore a 100"@it ;
     skos:prefLabel "Grado superiore a 100"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "-2" ;
     skos:inScheme inailvoc:classe_menomazione ;
     skos:notation "-2" ;
@@ -88,7 +88,7 @@ inailvoc:classe_menomazione a adms:Asset,
     skos:prefLabel "Vocabolario Controllato sulla classe di menomazione adottata dall'INAIL"@it ;
     rdfs:comment "Classification with respect to the ranges of variability of the menomation grade. Three classes have been conventionally defined: [1-5%], [6-15%]; [16-100%]"@en,
         "Classificazione rispetto agli intervalli di variabilità del grado di menomazione. Sono state definite convenzionalmente 3 classi: [1-5%], [6-15%]; [16-100%]"@it ;
-    owl:versionInfo "0.5" ;
+    owl:versionInfo "0.6" ;
     rdfs:isDefinedBy inailvoc:classe_menomazione ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
@@ -135,7 +135,7 @@ menom1:0 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "A zero"@it ;
     skos:prefLabel "A zero"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "0" ;
     skos:inScheme inailvoc:classe_menomazione ;
     skos:notation "0" ;
@@ -145,7 +145,7 @@ menom1:1 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "Da 01 a 05"@it ;
     skos:prefLabel "Da 01 a 05"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "1" ;
     skos:inScheme inailvoc:classe_menomazione ;
     skos:narrower menom2:1.1 ;
@@ -156,7 +156,7 @@ menom1:2 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "Da 06 a 15"@it ;
     skos:prefLabel "Da 06 a 15"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "2" ;
     skos:inScheme inailvoc:classe_menomazione ;
     skos:narrower menom2:2.2 ;
@@ -167,7 +167,7 @@ menom1:3 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "Da 16 a 100"@it ;
     skos:prefLabel "Da 16 a 100"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "3" ;
     skos:inScheme inailvoc:classe_menomazione ;
     skos:narrower menom2:3.3,
@@ -184,7 +184,7 @@ menom2:1.1 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "Da 01 a 05"@it ;
     skos:prefLabel "Da 01 a 05"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "1.1" ;
     skos:broader menom1:1 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -200,7 +200,7 @@ menom2:2.2 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "Da 06 a 15"@it ;
     skos:prefLabel "Da 06 a 15"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "2.2" ;
     skos:broader menom1:2 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -221,7 +221,7 @@ menom2:3.3 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "Da 16 a 20"@it ;
     skos:prefLabel "Da 16 a 20"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "3.3" ;
     skos:broader menom1:3 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -237,7 +237,7 @@ menom2:3.4 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "Da 21 a 25"@it ;
     skos:prefLabel "Da 21 a 25"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "3.4" ;
     skos:broader menom1:3 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -253,7 +253,7 @@ menom2:3.5 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "Da 26 a 35"@it ;
     skos:prefLabel "Da 26 a 35"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "3.5" ;
     skos:broader menom1:3 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -274,7 +274,7 @@ menom2:3.6 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "Da 36 a 50"@it ;
     skos:prefLabel "Da 36 a 50"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "3.6" ;
     skos:broader menom1:3 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -300,7 +300,7 @@ menom2:3.7 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "Da 51 a 70"@it ;
     skos:prefLabel "Da 51 a 70"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "3.7" ;
     skos:broader menom1:3 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -331,7 +331,7 @@ menom2:3.8 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "Da 71 a 85"@it ;
     skos:prefLabel "Da 71 a 85"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "3.8" ;
     skos:broader menom1:3 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -357,7 +357,7 @@ menom2:3.9 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "Da 86 a 100"@it ;
     skos:prefLabel "Da 86 a 100"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "3.9" ;
     skos:broader menom1:3 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -383,7 +383,7 @@ menomgrad:1.1.1 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "001"@it ;
     skos:prefLabel "001"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "1.1.1" ;
     skos:broader menom2:1.1 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -394,7 +394,7 @@ menomgrad:1.1.2 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "002"@it ;
     skos:prefLabel "002"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "1.1.2" ;
     skos:broader menom2:1.1 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -405,7 +405,7 @@ menomgrad:1.1.3 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "003"@it ;
     skos:prefLabel "003"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "1.1.3" ;
     skos:broader menom2:1.1 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -416,7 +416,7 @@ menomgrad:1.1.4 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "004"@it ;
     skos:prefLabel "004"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "1.1.4" ;
     skos:broader menom2:1.1 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -427,7 +427,7 @@ menomgrad:1.1.5 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "005"@it ;
     skos:prefLabel "005"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "1.1.5" ;
     skos:broader menom2:1.1 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -438,7 +438,7 @@ menomgrad:2.2.6 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "006"@it ;
     skos:prefLabel "006"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "2.2.6" ;
     skos:broader menom2:2.2 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -449,7 +449,7 @@ menomgrad:2.2.7 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "007"@it ;
     skos:prefLabel "007"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "2.2.7" ;
     skos:broader menom2:2.2 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -460,7 +460,7 @@ menomgrad:2.2.8 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "008"@it ;
     skos:prefLabel "008"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "2.2.8" ;
     skos:broader menom2:2.2 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -471,7 +471,7 @@ menomgrad:2.2.9 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "009"@it ;
     skos:prefLabel "009"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "2.2.9" ;
     skos:broader menom2:2.2 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -482,7 +482,7 @@ menomgrad:2.2.10 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "010"@it ;
     skos:prefLabel "010"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "2.2.10" ;
     skos:broader menom2:2.2 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -493,7 +493,7 @@ menomgrad:2.2.11 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "011"@it ;
     skos:prefLabel "011"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "2.2.11" ;
     skos:broader menom2:2.2 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -504,7 +504,7 @@ menomgrad:2.2.12 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "012"@it ;
     skos:prefLabel "012"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "2.2.12" ;
     skos:broader menom2:2.2 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -515,7 +515,7 @@ menomgrad:2.2.13 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "013"@it ;
     skos:prefLabel "013"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "2.2.13" ;
     skos:broader menom2:2.2 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -526,7 +526,7 @@ menomgrad:2.2.14 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "014"@it ;
     skos:prefLabel "014"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "2.2.14" ;
     skos:broader menom2:2.2 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -537,7 +537,7 @@ menomgrad:2.2.15 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "015"@it ;
     skos:prefLabel "015"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "2.2.15" ;
     skos:broader menom2:2.2 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -548,7 +548,7 @@ menomgrad:3.3.16 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "016"@it ;
     skos:prefLabel "016"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.3.16" ;
     skos:broader menom2:3.3 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -559,7 +559,7 @@ menomgrad:3.3.17 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "017"@it ;
     skos:prefLabel "017"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.3.17" ;
     skos:broader menom2:3.3 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -570,7 +570,7 @@ menomgrad:3.3.18 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "018"@it ;
     skos:prefLabel "018"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.3.18" ;
     skos:broader menom2:3.3 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -581,7 +581,7 @@ menomgrad:3.3.19 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "019"@it ;
     skos:prefLabel "019"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.3.19" ;
     skos:broader menom2:3.3 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -592,7 +592,7 @@ menomgrad:3.3.20 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "020"@it ;
     skos:prefLabel "020"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.3.20" ;
     skos:broader menom2:3.3 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -603,7 +603,7 @@ menomgrad:3.4.21 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "021"@it ;
     skos:prefLabel "021"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.4.21" ;
     skos:broader menom2:3.4 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -614,7 +614,7 @@ menomgrad:3.4.22 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "022"@it ;
     skos:prefLabel "022"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.4.22" ;
     skos:broader menom2:3.4 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -625,7 +625,7 @@ menomgrad:3.4.23 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "023"@it ;
     skos:prefLabel "023"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.4.23" ;
     skos:broader menom2:3.4 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -636,7 +636,7 @@ menomgrad:3.4.24 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "024"@it ;
     skos:prefLabel "024"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.4.24" ;
     skos:broader menom2:3.4 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -647,7 +647,7 @@ menomgrad:3.4.25 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "025"@it ;
     skos:prefLabel "025"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.4.25" ;
     skos:broader menom2:3.4 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -658,7 +658,7 @@ menomgrad:3.5.26 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "026"@it ;
     skos:prefLabel "026"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.5.26" ;
     skos:broader menom2:3.5 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -669,7 +669,7 @@ menomgrad:3.5.27 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "027"@it ;
     skos:prefLabel "027"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.5.27" ;
     skos:broader menom2:3.5 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -680,7 +680,7 @@ menomgrad:3.5.28 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "028"@it ;
     skos:prefLabel "028"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.5.28" ;
     skos:broader menom2:3.5 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -691,7 +691,7 @@ menomgrad:3.5.29 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "029"@it ;
     skos:prefLabel "029"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.5.29" ;
     skos:broader menom2:3.5 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -702,7 +702,7 @@ menomgrad:3.5.30 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "030"@it ;
     skos:prefLabel "030"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.5.30" ;
     skos:broader menom2:3.5 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -713,7 +713,7 @@ menomgrad:3.5.31 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "031"@it ;
     skos:prefLabel "031"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.5.31" ;
     skos:broader menom2:3.5 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -724,7 +724,7 @@ menomgrad:3.5.32 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "032"@it ;
     skos:prefLabel "032"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.5.32" ;
     skos:broader menom2:3.5 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -735,7 +735,7 @@ menomgrad:3.5.33 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "033"@it ;
     skos:prefLabel "033"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.5.33" ;
     skos:broader menom2:3.5 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -746,7 +746,7 @@ menomgrad:3.5.34 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "034"@it ;
     skos:prefLabel "034"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.5.34" ;
     skos:broader menom2:3.5 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -757,7 +757,7 @@ menomgrad:3.5.35 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "035"@it ;
     skos:prefLabel "035"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.5.35" ;
     skos:broader menom2:3.5 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -768,7 +768,7 @@ menomgrad:3.6.36 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "036"@it ;
     skos:prefLabel "036"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.6.36" ;
     skos:broader menom2:3.6 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -779,7 +779,7 @@ menomgrad:3.6.37 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "037"@it ;
     skos:prefLabel "037"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.6.37" ;
     skos:broader menom2:3.6 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -790,7 +790,7 @@ menomgrad:3.6.38 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "038"@it ;
     skos:prefLabel "038"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.6.38" ;
     skos:broader menom2:3.6 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -801,7 +801,7 @@ menomgrad:3.6.39 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "039"@it ;
     skos:prefLabel "039"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.6.39" ;
     skos:broader menom2:3.6 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -812,7 +812,7 @@ menomgrad:3.6.40 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "040"@it ;
     skos:prefLabel "040"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.6.40" ;
     skos:broader menom2:3.6 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -823,7 +823,7 @@ menomgrad:3.6.41 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "041"@it ;
     skos:prefLabel "041"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.6.41" ;
     skos:broader menom2:3.6 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -834,7 +834,7 @@ menomgrad:3.6.42 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "042"@it ;
     skos:prefLabel "042"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.6.42" ;
     skos:broader menom2:3.6 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -845,7 +845,7 @@ menomgrad:3.6.43 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "043"@it ;
     skos:prefLabel "043"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.6.43" ;
     skos:broader menom2:3.6 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -856,7 +856,7 @@ menomgrad:3.6.44 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "044"@it ;
     skos:prefLabel "044"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.6.44" ;
     skos:broader menom2:3.6 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -867,7 +867,7 @@ menomgrad:3.6.45 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "045"@it ;
     skos:prefLabel "045"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.6.45" ;
     skos:broader menom2:3.6 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -878,7 +878,7 @@ menomgrad:3.6.46 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "046"@it ;
     skos:prefLabel "046"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.6.46" ;
     skos:broader menom2:3.6 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -889,7 +889,7 @@ menomgrad:3.6.47 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "047"@it ;
     skos:prefLabel "047"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.6.47" ;
     skos:broader menom2:3.6 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -900,7 +900,7 @@ menomgrad:3.6.48 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "048"@it ;
     skos:prefLabel "048"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.6.48" ;
     skos:broader menom2:3.6 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -911,7 +911,7 @@ menomgrad:3.6.49 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "049"@it ;
     skos:prefLabel "049"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.6.49" ;
     skos:broader menom2:3.6 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -922,7 +922,7 @@ menomgrad:3.6.50 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "050"@it ;
     skos:prefLabel "050"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.6.50" ;
     skos:broader menom2:3.6 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -933,7 +933,7 @@ menomgrad:3.7.51 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "051"@it ;
     skos:prefLabel "051"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.51" ;
     skos:broader menom2:3.7 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -944,7 +944,7 @@ menomgrad:3.7.52 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "052"@it ;
     skos:prefLabel "052"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.52" ;
     skos:broader menom2:3.7 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -955,7 +955,7 @@ menomgrad:3.7.53 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "053"@it ;
     skos:prefLabel "053"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.53" ;
     skos:broader menom2:3.7 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -966,7 +966,7 @@ menomgrad:3.7.54 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "054"@it ;
     skos:prefLabel "054"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.54" ;
     skos:broader menom2:3.7 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -977,7 +977,7 @@ menomgrad:3.7.55 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "055"@it ;
     skos:prefLabel "055"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.55" ;
     skos:broader menom2:3.7 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -988,7 +988,7 @@ menomgrad:3.7.56 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "056"@it ;
     skos:prefLabel "056"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.56" ;
     skos:broader menom2:3.7 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -999,7 +999,7 @@ menomgrad:3.7.57 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "057"@it ;
     skos:prefLabel "057"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.57" ;
     skos:broader menom2:3.7 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1010,7 +1010,7 @@ menomgrad:3.7.58 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "058"@it ;
     skos:prefLabel "058"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.58" ;
     skos:broader menom2:3.7 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1021,7 +1021,7 @@ menomgrad:3.7.59 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "059"@it ;
     skos:prefLabel "059"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.59" ;
     skos:broader menom2:3.7 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1032,7 +1032,7 @@ menomgrad:3.7.60 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "060"@it ;
     skos:prefLabel "060"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.60" ;
     skos:broader menom2:3.7 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1043,7 +1043,7 @@ menomgrad:3.7.61 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "061"@it ;
     skos:prefLabel "061"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.61" ;
     skos:broader menom2:3.7 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1054,7 +1054,7 @@ menomgrad:3.7.62 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "062"@it ;
     skos:prefLabel "062"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.62" ;
     skos:broader menom2:3.7 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1065,7 +1065,7 @@ menomgrad:3.7.63 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "063"@it ;
     skos:prefLabel "063"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.63" ;
     skos:broader menom2:3.7 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1076,7 +1076,7 @@ menomgrad:3.7.64 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "064"@it ;
     skos:prefLabel "064"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.64" ;
     skos:broader menom2:3.7 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1087,7 +1087,7 @@ menomgrad:3.7.65 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "065"@it ;
     skos:prefLabel "065"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.65" ;
     skos:broader menom2:3.7 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1098,7 +1098,7 @@ menomgrad:3.7.66 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "066"@it ;
     skos:prefLabel "066"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.66" ;
     skos:broader menom2:3.7 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1109,7 +1109,7 @@ menomgrad:3.7.67 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "067"@it ;
     skos:prefLabel "067"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.67" ;
     skos:broader menom2:3.7 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1120,7 +1120,7 @@ menomgrad:3.7.68 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "068"@it ;
     skos:prefLabel "068"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.68" ;
     skos:broader menom2:3.7 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1131,7 +1131,7 @@ menomgrad:3.7.69 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "069"@it ;
     skos:prefLabel "069"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.69" ;
     skos:broader menom2:3.7 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1142,7 +1142,7 @@ menomgrad:3.7.70 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "070"@it ;
     skos:prefLabel "070"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.70" ;
     skos:broader menom2:3.7 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1153,7 +1153,7 @@ menomgrad:3.8.71 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "071"@it ;
     skos:prefLabel "071"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.8.71" ;
     skos:broader menom2:3.8 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1164,7 +1164,7 @@ menomgrad:3.8.72 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "072"@it ;
     skos:prefLabel "072"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.8.72" ;
     skos:broader menom2:3.8 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1175,7 +1175,7 @@ menomgrad:3.8.73 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "073"@it ;
     skos:prefLabel "073"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.8.73" ;
     skos:broader menom2:3.8 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1186,7 +1186,7 @@ menomgrad:3.8.74 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "074"@it ;
     skos:prefLabel "074"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.8.74" ;
     skos:broader menom2:3.8 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1197,7 +1197,7 @@ menomgrad:3.8.75 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "075"@it ;
     skos:prefLabel "075"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.8.75" ;
     skos:broader menom2:3.8 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1208,7 +1208,7 @@ menomgrad:3.8.76 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "076"@it ;
     skos:prefLabel "076"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.8.76" ;
     skos:broader menom2:3.8 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1219,7 +1219,7 @@ menomgrad:3.8.77 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "077"@it ;
     skos:prefLabel "077"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.8.77" ;
     skos:broader menom2:3.8 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1230,7 +1230,7 @@ menomgrad:3.8.78 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "078"@it ;
     skos:prefLabel "078"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.8.78" ;
     skos:broader menom2:3.8 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1241,7 +1241,7 @@ menomgrad:3.8.79 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "079"@it ;
     skos:prefLabel "079"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.8.79" ;
     skos:broader menom2:3.8 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1252,7 +1252,7 @@ menomgrad:3.8.80 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "080"@it ;
     skos:prefLabel "080"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.8.80" ;
     skos:broader menom2:3.8 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1263,7 +1263,7 @@ menomgrad:3.8.81 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "081"@it ;
     skos:prefLabel "081"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.8.81" ;
     skos:broader menom2:3.8 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1274,7 +1274,7 @@ menomgrad:3.8.82 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "082"@it ;
     skos:prefLabel "082"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.8.82" ;
     skos:broader menom2:3.8 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1285,7 +1285,7 @@ menomgrad:3.8.83 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "083"@it ;
     skos:prefLabel "083"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.8.83" ;
     skos:broader menom2:3.8 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1296,7 +1296,7 @@ menomgrad:3.8.84 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "084"@it ;
     skos:prefLabel "084"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.8.84" ;
     skos:broader menom2:3.8 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1307,7 +1307,7 @@ menomgrad:3.8.85 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "085"@it ;
     skos:prefLabel "085"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.8.85" ;
     skos:broader menom2:3.8 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1318,7 +1318,7 @@ menomgrad:3.9.86 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "086"@it ;
     skos:prefLabel "086"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.9.86" ;
     skos:broader menom2:3.9 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1329,7 +1329,7 @@ menomgrad:3.9.87 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "087"@it ;
     skos:prefLabel "087"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.9.87" ;
     skos:broader menom2:3.9 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1340,7 +1340,7 @@ menomgrad:3.9.88 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "088"@it ;
     skos:prefLabel "088"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.9.88" ;
     skos:broader menom2:3.9 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1351,7 +1351,7 @@ menomgrad:3.9.89 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "089"@it ;
     skos:prefLabel "089"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.9.89" ;
     skos:broader menom2:3.9 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1362,7 +1362,7 @@ menomgrad:3.9.90 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "090"@it ;
     skos:prefLabel "090"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.9.90" ;
     skos:broader menom2:3.9 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1373,7 +1373,7 @@ menomgrad:3.9.91 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "091"@it ;
     skos:prefLabel "091"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.9.91" ;
     skos:broader menom2:3.9 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1384,7 +1384,7 @@ menomgrad:3.9.92 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "092"@it ;
     skos:prefLabel "092"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.9.92" ;
     skos:broader menom2:3.9 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1395,7 +1395,7 @@ menomgrad:3.9.93 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "093"@it ;
     skos:prefLabel "093"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.9.93" ;
     skos:broader menom2:3.9 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1406,7 +1406,7 @@ menomgrad:3.9.94 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "094"@it ;
     skos:prefLabel "094"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.9.94" ;
     skos:broader menom2:3.9 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1417,7 +1417,7 @@ menomgrad:3.9.95 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "095"@it ;
     skos:prefLabel "095"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.9.95" ;
     skos:broader menom2:3.9 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1428,7 +1428,7 @@ menomgrad:3.9.96 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "096"@it ;
     skos:prefLabel "096"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.9.96" ;
     skos:broader menom2:3.9 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1439,7 +1439,7 @@ menomgrad:3.9.97 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "097"@it ;
     skos:prefLabel "097"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.9.97" ;
     skos:broader menom2:3.9 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1450,7 +1450,7 @@ menomgrad:3.9.98 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "098"@it ;
     skos:prefLabel "098"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.9.98" ;
     skos:broader menom2:3.9 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1461,7 +1461,7 @@ menomgrad:3.9.99 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "099"@it ;
     skos:prefLabel "099"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.9.99" ;
     skos:broader menom2:3.9 ;
     skos:inScheme inailvoc:classe_menomazione ;
@@ -1472,7 +1472,7 @@ menomgrad:3.9.100 a INAILService:ClasseMenomazioneINAIL,
         skos:Concept ;
     rdfs:label "100"@it ;
     skos:prefLabel "100"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.9.100" ;
     skos:broader menom2:3.9 ;
     skos:inScheme inailvoc:classe_menomazione ;

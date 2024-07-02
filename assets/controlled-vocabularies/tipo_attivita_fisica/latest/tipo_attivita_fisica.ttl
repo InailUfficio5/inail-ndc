@@ -22,7 +22,7 @@ codattivfisica:1.0 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Operazioni di macchina - non precisata"@it ;
     skos:prefLabel "Operazioni di macchina - non precisata"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "1.0" ;
     skos:broader grupattivfisica:1 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -33,7 +33,7 @@ codattivfisica:1.1 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Avviare la macchina, arrestare la macchina"@it ;
     skos:prefLabel "Avviare la macchina, arrestare la macchina"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "1.1" ;
     skos:broader grupattivfisica:1 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -44,7 +44,7 @@ codattivfisica:1.2 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Alimentare la macchina, disalimentare la macchina"@it ;
     skos:prefLabel "Alimentare la macchina, disalimentare la macchina"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "1.2" ;
     skos:broader grupattivfisica:1 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -55,7 +55,7 @@ codattivfisica:1.3 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Sorvegliare, far funzionare la macchina"@it ;
     skos:prefLabel "Sorvegliare, far funzionare la macchina"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "1.3" ;
     skos:broader grupattivfisica:1 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -66,7 +66,7 @@ codattivfisica:1.9 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Altra attività fisica specifica conosciuta del gruppo 10 non indicata qui sopra"@it ;
     skos:prefLabel "Altra attività fisica specifica conosciuta del gruppo 10 non indicata qui sopra"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "1.9" ;
     skos:broader grupattivfisica:1 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -77,7 +77,7 @@ codattivfisica:2.0 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Lavoro con utensili a mano - non precisato"@it ;
     skos:prefLabel "Lavoro con utensili a mano - non precisato"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "2.0" ;
     skos:broader grupattivfisica:2 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -88,7 +88,7 @@ codattivfisica:2.1 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Lavorare con utensili a mano manuali"@it ;
     skos:prefLabel "Lavorare con utensili a mano manuali"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "2.1" ;
     skos:broader grupattivfisica:2 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -99,7 +99,7 @@ codattivfisica:2.2 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Lavorare con utensili a mano motorizzati"@it ;
     skos:prefLabel "Lavorare con utensili a mano motorizzati"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "2.2" ;
     skos:broader grupattivfisica:2 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -110,7 +110,7 @@ codattivfisica:2.9 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Altra attività fisica specifica conosciuta del gruppo 20 non indicata qui sopra"@it ;
     skos:prefLabel "Altra attività fisica specifica conosciuta del gruppo 20 non indicata qui sopra"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "2.9" ;
     skos:broader grupattivfisica:2 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -121,7 +121,7 @@ codattivfisica:3.0 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Alla guida, a bordo di un mezzo di trasporto/attrezzatura di movimentazione - non precisato,"@it ;
     skos:prefLabel "Alla guida, a bordo di un mezzo di trasporto/attrezzatura di movimentazione - non precisato,"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "3.0" ;
     skos:broader grupattivfisica:3 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -132,7 +132,7 @@ codattivfisica:3.1 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Condurre un mezzo di trasporto o un'attrezzatura di movimentazione - mobile e  motorizzato/a"@it ;
     skos:prefLabel "Condurre un mezzo di trasporto o un'attrezzatura di movimentazione - mobile e  motorizzato/a"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "3.1" ;
     skos:broader grupattivfisica:3 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -143,7 +143,7 @@ codattivfisica:3.2 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Condurre un mezzo di trasporto o un'attrezzatura di movimentazione - mobile e non motorizzato/a"@it ;
     skos:prefLabel "Condurre un mezzo di trasporto o un'attrezzatura di movimentazione - mobile e non motorizzato/a"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "3.2" ;
     skos:broader grupattivfisica:3 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -154,7 +154,7 @@ codattivfisica:3.3 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Essere passeggero a bordo d'un mezzo di  trasporto"@it ;
     skos:prefLabel "Essere passeggero a bordo d'un mezzo di  trasporto"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "3.3" ;
     skos:broader grupattivfisica:3 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -165,7 +165,7 @@ codattivfisica:3.9 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Altra attività fisica specifica conosciuta del gruppo 30 non indicata qui sopra"@it ;
     skos:prefLabel "Altra attività fisica specifica conosciuta del gruppo 30 non indicata qui sopra"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "3.9" ;
     skos:broader grupattivfisica:3 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -176,7 +176,7 @@ codattivfisica:4.0 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Manipolazione di oggetti ? non precisato"@it ;
     skos:prefLabel "Manipolazione di oggetti ? non precisato"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.0" ;
     skos:broader grupattivfisica:4 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -187,7 +187,7 @@ codattivfisica:4.1 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Prendere in mano, afferrare, strappare, tenere in mano, deporre - su un piano orizzontale"@it ;
     skos:prefLabel "Prendere in mano, afferrare, strappare, tenere in mano, deporre - su un piano orizzontale"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.1" ;
     skos:broader grupattivfisica:4 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -198,7 +198,7 @@ codattivfisica:4.2 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Legare, allacciare, sciogliere, disfare, stringere, avvitare, svitare, girare"@it ;
     skos:prefLabel "Legare, allacciare, sciogliere, disfare, stringere, avvitare, svitare, girare"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.2" ;
     skos:broader grupattivfisica:4 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -209,7 +209,7 @@ codattivfisica:4.3 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Fissare a, appendere, alzare, istallare - su un piano verticale"@it ;
     skos:prefLabel "Fissare a, appendere, alzare, istallare - su un piano verticale"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.3" ;
     skos:broader grupattivfisica:4 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -220,7 +220,7 @@ codattivfisica:4.4 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Lanciare, proiettare lontano"@it ;
     skos:prefLabel "Lanciare, proiettare lontano"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.4" ;
     skos:broader grupattivfisica:4 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -231,7 +231,7 @@ codattivfisica:4.5 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Aprire, chiudere (cassa, imballaggio, pacco)"@it ;
     skos:prefLabel "Aprire, chiudere (cassa, imballaggio, pacco)"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.5" ;
     skos:broader grupattivfisica:4 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -242,7 +242,7 @@ codattivfisica:4.6 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Spargere, versare in, riempire, annaffiare, vuotare, prosciugare"@it ;
     skos:prefLabel "Spargere, versare in, riempire, annaffiare, vuotare, prosciugare"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.6" ;
     skos:broader grupattivfisica:4 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -253,7 +253,7 @@ codattivfisica:4.7 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Tirare (ad es. un cassetto), spingere (la porta di un capannone, di un ufficio, d'un armadio)"@it ;
     skos:prefLabel "Tirare (ad es. un cassetto), spingere (la porta di un capannone, di un ufficio, d'un armadio)"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.7" ;
     skos:broader grupattivfisica:4 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -264,7 +264,7 @@ codattivfisica:4.9 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Altra attività fisica specifica conosciuta del gruppo 40 non indicata qui sopra"@it ;
     skos:prefLabel "Altra attività fisica specifica conosciuta del gruppo 40 non indicata qui sopra"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.9" ;
     skos:broader grupattivfisica:4 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -275,7 +275,7 @@ codattivfisica:5.0 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Trasporto manuale - non precisato"@it ;
     skos:prefLabel "Trasporto manuale - non precisato"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "5.0" ;
     skos:broader grupattivfisica:5 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -286,7 +286,7 @@ codattivfisica:5.1 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Trasporto verticale, sollevare, alzare, portare in basso un oggetto"@it ;
     skos:prefLabel "Trasporto verticale, sollevare, alzare, portare in basso un oggetto"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "5.1" ;
     skos:broader grupattivfisica:5 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -297,7 +297,7 @@ codattivfisica:5.2 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Trasporto orizzontale: tirare, spingere, rotolare un oggetto"@it ;
     skos:prefLabel "Trasporto orizzontale: tirare, spingere, rotolare un oggetto"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "5.2" ;
     skos:broader grupattivfisica:5 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -308,7 +308,7 @@ codattivfisica:5.3 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Trasporto a mano di carichi (portare)"@it ;
     skos:prefLabel "Trasporto a mano di carichi (portare)"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "5.3" ;
     skos:broader grupattivfisica:5 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -319,7 +319,7 @@ codattivfisica:5.9 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Altra attività fisica specifica conosciuta del gruppo 50 non indicata qui sopra"@it ;
     skos:prefLabel "Altra attività fisica specifica conosciuta del gruppo 50 non indicata qui sopra"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "5.9" ;
     skos:broader grupattivfisica:5 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -330,7 +330,7 @@ codattivfisica:6.0 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Movimenti - non precisato"@it ;
     skos:prefLabel "Movimenti - non precisato"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "6.0" ;
     skos:broader grupattivfisica:6 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -341,7 +341,7 @@ codattivfisica:6.1 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Camminare, correre, salire, scendere, ecc"@it ;
     skos:prefLabel "Camminare, correre, salire, scendere, ecc"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "6.1" ;
     skos:broader grupattivfisica:6 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -352,7 +352,7 @@ codattivfisica:6.2 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Entrare, uscire"@it ;
     skos:prefLabel "Entrare, uscire"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "6.2" ;
     skos:broader grupattivfisica:6 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -363,7 +363,7 @@ codattivfisica:6.3 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Saltare, slanciarsi, ecc."@it ;
     skos:prefLabel "Saltare, slanciarsi, ecc."@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "6.3" ;
     skos:broader grupattivfisica:6 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -374,7 +374,7 @@ codattivfisica:6.4 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Strisciare, arrampicarsi, ecc."@it ;
     skos:prefLabel "Strisciare, arrampicarsi, ecc."@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "6.4" ;
     skos:broader grupattivfisica:6 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -385,7 +385,7 @@ codattivfisica:6.5 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Alzarsi in piedi, sedersi, ecc."@it ;
     skos:prefLabel "Alzarsi in piedi, sedersi, ecc."@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "6.5" ;
     skos:broader grupattivfisica:6 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -396,7 +396,7 @@ codattivfisica:6.6 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Nuotare, tuffarsi"@it ;
     skos:prefLabel "Nuotare, tuffarsi"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "6.6" ;
     skos:broader grupattivfisica:6 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -407,7 +407,7 @@ codattivfisica:6.7 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Fare movimenti sul posto"@it ;
     skos:prefLabel "Fare movimenti sul posto"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "6.7" ;
     skos:broader grupattivfisica:6 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -418,7 +418,7 @@ codattivfisica:6.9 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Altra attività fisica specifica conosciuta del gruppo 60 non indicata qui sopra"@it ;
     skos:prefLabel "Altra attività fisica specifica conosciuta del gruppo 60 non indicata qui sopra"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "6.9" ;
     skos:broader grupattivfisica:6 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -429,7 +429,7 @@ codattivfisica:7.0 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Presenza - non precisato"@it ;
     skos:prefLabel "Presenza - non precisato"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "7.0" ;
     skos:broader grupattivfisica:7 ;
     skos:inScheme inailvoc:attivita_fisica ;
@@ -440,7 +440,7 @@ grupattivfisica:1 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Operazioni di macchina"@it ;
     skos:prefLabel "Operazioni di macchina"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "1" ;
     skos:inScheme inailvoc:attivita_fisica ;
     skos:narrower codattivfisica:1.0,
@@ -455,7 +455,7 @@ grupattivfisica:2 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Lavoro con utensili a mano"@it ;
     skos:prefLabel "Lavoro con utensili a mano"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "2" ;
     skos:inScheme inailvoc:attivita_fisica ;
     skos:narrower codattivfisica:2.0,
@@ -469,7 +469,7 @@ grupattivfisica:3 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Alla guida, a bordo di un mezzo di trasporto/attrezzatura di movimentazione"@it ;
     skos:prefLabel "Alla guida, a bordo di un mezzo di trasporto/attrezzatura di movimentazione"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "3" ;
     skos:inScheme inailvoc:attivita_fisica ;
     skos:narrower codattivfisica:3.0,
@@ -484,7 +484,7 @@ grupattivfisica:4 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Manipolazione di oggetti"@it ;
     skos:prefLabel "Manipolazione di oggetti"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "4" ;
     skos:inScheme inailvoc:attivita_fisica ;
     skos:narrower codattivfisica:4.0,
@@ -503,7 +503,7 @@ grupattivfisica:5 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Trasporto manuale"@it ;
     skos:prefLabel "Trasporto manuale"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "5" ;
     skos:inScheme inailvoc:attivita_fisica ;
     skos:narrower codattivfisica:5.0,
@@ -518,7 +518,7 @@ grupattivfisica:6 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Movimenti"@it ;
     skos:prefLabel "Movimenti"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "6" ;
     skos:inScheme inailvoc:attivita_fisica ;
     skos:narrower codattivfisica:6.0,
@@ -537,7 +537,7 @@ grupattivfisica:7 a INAILService:TipoAttivitaFisicaINAIL,
         skos:Concept ;
     rdfs:label "Presenza"@it ;
     skos:prefLabel "Presenza"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "7" ;
     skos:inScheme inailvoc:attivita_fisica ;
     skos:narrower codattivfisica:7.0 ;
@@ -603,7 +603,7 @@ inailvoc:attivita_fisica a adms:Asset,
     skos:prefLabel "Vocabolario Controllato sulle tipologie di attività fisica adottate dall'INAIL"@it ;
     rdfs:comment "Classificazione a due livelli dell'attività svolta al momento dell'evento lesivo"@it,
         "Two-level classification of the activity carried out at the time of work accident"@en ;
-    owl:versionInfo "0.5" ;
+    owl:versionInfo "0.6" ;
     rdfs:isDefinedBy inailvoc:attivita_fisica ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;

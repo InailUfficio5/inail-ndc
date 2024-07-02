@@ -76,7 +76,7 @@ inailvoc:natura_lesione a adms:Asset,
     skos:prefLabel "Vocabolario controllato sulla classificazione della natura della lesione adottata dall'INAIL"@it ;
     rdfs:comment "Tipologia della lesione causata da un evento lesivo e classificata in 10 categorie"@it,
         "Type of injury caused by a work accident and classified into 10 categories."@en ;
-    owl:versionInfo "0.5" ;
+    owl:versionInfo "0.6" ;
     rdfs:isDefinedBy inailvoc:natura_lesione ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
@@ -126,7 +126,7 @@ natlescod:1 a INAILService:NaturaLesioneINAIL,
         skos:Concept ;
     rdfs:label "Ferita"@it ;
     skos:prefLabel "Ferita"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "1" ;
     skos:inScheme inailvoc:natura_lesione ;
     skos:notation "1" ;
@@ -136,7 +136,7 @@ natlescod:2 a INAILService:NaturaLesioneINAIL,
         skos:Concept ;
     rdfs:label "Contusione"@it ;
     skos:prefLabel "Contusione"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "2" ;
     skos:inScheme inailvoc:natura_lesione ;
     skos:notation "2" ;
@@ -146,7 +146,7 @@ natlescod:3 a INAILService:NaturaLesioneINAIL,
         skos:Concept ;
     rdfs:label "Lussazione, distorsione, distrazione"@it ;
     skos:prefLabel "Lussazione, distorsione, distrazione"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "3" ;
     skos:inScheme inailvoc:natura_lesione ;
     skos:notation "3" ;
@@ -156,7 +156,7 @@ natlescod:4 a INAILService:NaturaLesioneINAIL,
         skos:Concept ;
     rdfs:label "Frattura"@it ;
     skos:prefLabel "Frattura"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "4" ;
     skos:inScheme inailvoc:natura_lesione ;
     skos:notation "4" ;
@@ -166,7 +166,7 @@ natlescod:5 a INAILService:NaturaLesioneINAIL,
         skos:Concept ;
     rdfs:label "Perdita anatomica"@it ;
     skos:prefLabel "Perdita anatomica"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "5" ;
     skos:inScheme inailvoc:natura_lesione ;
     skos:notation "5" ;
@@ -176,7 +176,7 @@ natlescod:6 a INAILService:NaturaLesioneINAIL,
         skos:Concept ;
     rdfs:label "Lesioni da agenti infettivi e parassitari"@it ;
     skos:prefLabel "Lesioni da agenti infettivi e parassitari"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "6" ;
     skos:inScheme inailvoc:natura_lesione ;
     skos:notation "6" ;
@@ -186,7 +186,7 @@ natlescod:7 a INAILService:NaturaLesioneINAIL,
         skos:Concept ;
     rdfs:label "Lesioni da altri agenti"@it ;
     skos:prefLabel "Lesioni da altri agenti"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "7" ;
     skos:inScheme inailvoc:natura_lesione ;
     skos:notation "7" ;
@@ -196,7 +196,7 @@ natlescod:8 a INAILService:NaturaLesioneINAIL,
         skos:Concept ;
     rdfs:label "Corpi estranei"@it ;
     skos:prefLabel "Corpi estranei"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "8" ;
     skos:inScheme inailvoc:natura_lesione ;
     skos:notation "8" ;
@@ -206,7 +206,7 @@ natlescod:9 a INAILService:NaturaLesioneINAIL,
         skos:Concept ;
     rdfs:label "Lesioni da sforzo"@it ;
     skos:prefLabel "Lesioni da sforzo"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "9" ;
     skos:inScheme inailvoc:natura_lesione ;
     skos:notation "9" ;

@@ -20,7 +20,7 @@ catnaviglio:00 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Posizioni non assicurate per gli infortuni"@it ;
     skos:prefLabel "Posizioni non assicurate per gli infortuni"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "00" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "00" ;
@@ -30,7 +30,7 @@ catnaviglio:01 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Volo"@it ;
     skos:prefLabel "Volo"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "01" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "01" ;
@@ -40,7 +40,7 @@ catnaviglio:02 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Amministrativi"@it ;
     skos:prefLabel "Amministrativi"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "02" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "02" ;
@@ -50,7 +50,7 @@ catnaviglio:03 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "C.R.L."@it ;
     skos:prefLabel "C.R.L."@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "03" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "03" ;
@@ -60,7 +60,7 @@ catnaviglio:04 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "R.O. a terra senza incarichi"@it ;
     skos:prefLabel "R.O. a terra senza incarichi"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "04" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "04" ;
@@ -70,7 +70,7 @@ catnaviglio:10 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Attivita' particolari"@it ;
     skos:prefLabel "Attivita' particolari"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "10" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "10" ;
@@ -80,7 +80,7 @@ catnaviglio:11 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Concessionari di bordo"@it ;
     skos:prefLabel "Concessionari di bordo"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "11" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "11" ;
@@ -90,7 +90,7 @@ catnaviglio:12 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Personale addetto alle prove in mare"@it ;
     skos:prefLabel "Personale addetto alle prove in mare"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "12" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "12" ;
@@ -100,7 +100,7 @@ catnaviglio:13 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Tecnici ed ispettori"@it ;
     skos:prefLabel "Tecnici ed ispettori"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "13" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "13" ;
@@ -110,7 +110,7 @@ catnaviglio:14 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Corsi professionali"@it ;
     skos:prefLabel "Corsi professionali"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "14" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "14" ;
@@ -120,7 +120,7 @@ catnaviglio:15 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Allievi nautici"@it ;
     skos:prefLabel "Allievi nautici"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "15" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "15" ;
@@ -130,7 +130,7 @@ catnaviglio:16 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Appalti servizi di officina"@it ;
     skos:prefLabel "Appalti servizi di officina"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "16" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "16" ;
@@ -140,7 +140,7 @@ catnaviglio:20 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Passeggeri"@it ;
     skos:prefLabel "Passeggeri"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "20" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "20" ;
@@ -150,7 +150,7 @@ catnaviglio:21 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Ferrovie dello stato"@it ;
     skos:prefLabel "Ferrovie dello stato"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "21" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "21" ;
@@ -160,7 +160,7 @@ catnaviglio:30 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Carico"@it ;
     skos:prefLabel "Carico"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "30" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "30" ;
@@ -170,7 +170,7 @@ catnaviglio:31 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Ferrovie dello stato"@it ;
     skos:prefLabel "Ferrovie dello stato"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "31" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "31" ;
@@ -180,7 +180,7 @@ catnaviglio:40 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Rimorchiatori"@it ;
     skos:prefLabel "Rimorchiatori"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "40" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "40" ;
@@ -190,7 +190,7 @@ catnaviglio:50 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Naviglio ausiliario"@it ;
     skos:prefLabel "Naviglio ausiliario"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "50" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "50" ;
@@ -200,7 +200,7 @@ catnaviglio:60 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Traffico locale"@it ;
     skos:prefLabel "Traffico locale"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "60" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "60" ;
@@ -210,7 +210,7 @@ catnaviglio:61 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Traffico locale con contratti"@it ;
     skos:prefLabel "Traffico locale con contratti"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "61" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "61" ;
@@ -220,7 +220,7 @@ catnaviglio:70 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Pesca"@it ;
     skos:prefLabel "Pesca"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "70" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "70" ;
@@ -230,7 +230,7 @@ catnaviglio:71 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Pesca oltre gli stretti"@it ;
     skos:prefLabel "Pesca oltre gli stretti"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "71" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "71" ;
@@ -240,7 +240,7 @@ catnaviglio:72 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Pesca mediterranea"@it ;
     skos:prefLabel "Pesca mediterranea"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "72" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "72" ;
@@ -250,7 +250,7 @@ catnaviglio:73 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Pesca costiera"@it ;
     skos:prefLabel "Pesca costiera"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "73" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "73" ;
@@ -260,7 +260,7 @@ catnaviglio:80 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Diporto"@it ;
     skos:prefLabel "Diporto"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "80" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "80" ;
@@ -270,7 +270,7 @@ catnaviglio:81 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Diporto con contratti"@it ;
     skos:prefLabel "Diporto con contratti"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "81" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "81" ;
@@ -280,7 +280,7 @@ catnaviglio:82 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Diporto a noleggio"@it ;
     skos:prefLabel "Diporto a noleggio"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "82" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "82" ;
@@ -290,7 +290,7 @@ catnaviglio:83 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Diporto a noleggio iscritto R.I."@it ;
     skos:prefLabel "Diporto a noleggio iscritto R.I."@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "83" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "83" ;
@@ -300,7 +300,7 @@ catnaviglio:99 a INAILAutoliq:CategoriaNaviglio,
         skos:Concept ;
     rdfs:label "Tutte"@it ;
     skos:prefLabel "Tutte"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "99" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     skos:notation "99" ;
@@ -320,7 +320,7 @@ catnaviglio:99 a INAILAutoliq:CategoriaNaviglio,
     skos:prefLabel "Vocabolario Controllato sulle categorie di naviglio il cui equipaggio è assicurato dall'INAIL contro gli infortuni e le malattie professionali"@it ;
     rdfs:comment "Categoria di naviglio il cui equipaggio è assicurato dall'INAIL contro gli infortuni e le malattie professionali"@it,
         "Category of vessel whose crew is insured by INAIL against accidents and occupational diseases"@en ;
-    owl:versionInfo "0.1" ;
+    owl:versionInfo "0.2" ;
     rdfs:isDefinedBy <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/categoria_naviglio> ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;

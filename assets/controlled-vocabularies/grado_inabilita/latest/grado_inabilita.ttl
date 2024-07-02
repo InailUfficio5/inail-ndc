@@ -23,7 +23,7 @@ grado1:0 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "a zero"@it ;
     skos:prefLabel "a zero"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "0" ;
     skos:inScheme inailvoc:inabilita ;
     skos:notation "0" ;
@@ -33,7 +33,7 @@ grado1:1 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "da 01 a 10"@it ;
     skos:prefLabel "da 01 a 10"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "1" ;
     skos:inScheme inailvoc:inabilita ;
     skos:narrower grado2:1.1 ;
@@ -44,7 +44,7 @@ grado1:2 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "da 11 a 15"@it ;
     skos:prefLabel "da 11 a 15"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "2" ;
     skos:inScheme inailvoc:inabilita ;
     skos:narrower grado2:2.2 ;
@@ -55,7 +55,7 @@ grado1:3 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "da 16 a 79"@it ;
     skos:prefLabel "da 16 a 79"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "3" ;
     skos:inScheme inailvoc:inabilita ;
     skos:narrower grado2:3.3,
@@ -70,7 +70,7 @@ grado1:4 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "da 80 a 100"@it ;
     skos:prefLabel "da 80 a 100"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "4" ;
     skos:inScheme inailvoc:inabilita ;
     skos:narrower grado2:4.8 ;
@@ -81,7 +81,7 @@ grado2:1.1 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "da 01 a 10"@it ;
     skos:prefLabel "da 01 a 10"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "1.1" ;
     skos:broader grado1:1 ;
     skos:inScheme inailvoc:inabilita ;
@@ -102,7 +102,7 @@ grado2:2.2 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "da 11 a 15"@it ;
     skos:prefLabel "da 11 a 15"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "2.2" ;
     skos:broader grado1:2 ;
     skos:inScheme inailvoc:inabilita ;
@@ -118,7 +118,7 @@ grado2:3.3 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "da 16 a 29"@it ;
     skos:prefLabel "da 16 a 29"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "3.3" ;
     skos:broader grado1:3 ;
     skos:inScheme inailvoc:inabilita ;
@@ -143,7 +143,7 @@ grado2:3.4 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "da 30 a 32"@it ;
     skos:prefLabel "da 30 a 32"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "3.4" ;
     skos:broader grado1:3 ;
     skos:inScheme inailvoc:inabilita ;
@@ -157,7 +157,7 @@ grado2:3.5 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "da 33 a 39"@it ;
     skos:prefLabel "da 33 a 39"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "3.5" ;
     skos:broader grado1:3 ;
     skos:inScheme inailvoc:inabilita ;
@@ -175,7 +175,7 @@ grado2:3.6 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "da 40 a 49"@it ;
     skos:prefLabel "da 40 a 49"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "3.6" ;
     skos:broader grado1:3 ;
     skos:inScheme inailvoc:inabilita ;
@@ -196,7 +196,7 @@ grado2:3.7 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "da 50 a 79"@it ;
     skos:prefLabel "da 50 a 79"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "3.7" ;
     skos:broader grado1:3 ;
     skos:inScheme inailvoc:inabilita ;
@@ -237,7 +237,7 @@ grado2:4.8 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "da 80 a 100"@it ;
     skos:prefLabel "da 80 a 100"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.8" ;
     skos:broader grado1:4 ;
     skos:inScheme inailvoc:inabilita ;
@@ -269,7 +269,7 @@ grado3:1.1.1 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "001"@it ;
     skos:prefLabel "001"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "1.1.1" ;
     skos:broader grado2:1.1 ;
     skos:inScheme inailvoc:inabilita ;
@@ -280,7 +280,7 @@ grado3:1.1.2 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "002"@it ;
     skos:prefLabel "002"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "1.1.2" ;
     skos:broader grado2:1.1 ;
     skos:inScheme inailvoc:inabilita ;
@@ -291,7 +291,7 @@ grado3:1.1.3 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "003"@it ;
     skos:prefLabel "003"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "1.1.3" ;
     skos:broader grado2:1.1 ;
     skos:inScheme inailvoc:inabilita ;
@@ -302,7 +302,7 @@ grado3:1.1.4 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "004"@it ;
     skos:prefLabel "004"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "1.1.4" ;
     skos:broader grado2:1.1 ;
     skos:inScheme inailvoc:inabilita ;
@@ -313,7 +313,7 @@ grado3:1.1.5 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "005"@it ;
     skos:prefLabel "005"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "1.1.5" ;
     skos:broader grado2:1.1 ;
     skos:inScheme inailvoc:inabilita ;
@@ -324,7 +324,7 @@ grado3:1.1.6 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "006"@it ;
     skos:prefLabel "006"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "1.1.6" ;
     skos:broader grado2:1.1 ;
     skos:inScheme inailvoc:inabilita ;
@@ -335,7 +335,7 @@ grado3:1.1.7 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "007"@it ;
     skos:prefLabel "007"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "1.1.7" ;
     skos:broader grado2:1.1 ;
     skos:inScheme inailvoc:inabilita ;
@@ -346,7 +346,7 @@ grado3:1.1.8 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "008"@it ;
     skos:prefLabel "008"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "1.1.8" ;
     skos:broader grado2:1.1 ;
     skos:inScheme inailvoc:inabilita ;
@@ -357,7 +357,7 @@ grado3:1.1.9 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "009"@it ;
     skos:prefLabel "009"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "1.1.9" ;
     skos:broader grado2:1.1 ;
     skos:inScheme inailvoc:inabilita ;
@@ -368,7 +368,7 @@ grado3:1.1.10 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "010"@it ;
     skos:prefLabel "010"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "1.1.10" ;
     skos:broader grado2:1.1 ;
     skos:inScheme inailvoc:inabilita ;
@@ -379,7 +379,7 @@ grado3:2.2.11 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "011"@it ;
     skos:prefLabel "011"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "2.2.11" ;
     skos:broader grado2:2.2 ;
     skos:inScheme inailvoc:inabilita ;
@@ -390,7 +390,7 @@ grado3:2.2.12 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "012"@it ;
     skos:prefLabel "012"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "2.2.12" ;
     skos:broader grado2:2.2 ;
     skos:inScheme inailvoc:inabilita ;
@@ -401,7 +401,7 @@ grado3:2.2.13 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "013"@it ;
     skos:prefLabel "013"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "2.2.13" ;
     skos:broader grado2:2.2 ;
     skos:inScheme inailvoc:inabilita ;
@@ -412,7 +412,7 @@ grado3:2.2.14 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "014"@it ;
     skos:prefLabel "014"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "2.2.14" ;
     skos:broader grado2:2.2 ;
     skos:inScheme inailvoc:inabilita ;
@@ -423,7 +423,7 @@ grado3:2.2.15 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "015"@it ;
     skos:prefLabel "015"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "2.2.15" ;
     skos:broader grado2:2.2 ;
     skos:inScheme inailvoc:inabilita ;
@@ -434,7 +434,7 @@ grado3:3.3.16 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "016"@it ;
     skos:prefLabel "016"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.3.16" ;
     skos:broader grado2:3.3 ;
     skos:inScheme inailvoc:inabilita ;
@@ -445,7 +445,7 @@ grado3:3.3.17 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "017"@it ;
     skos:prefLabel "017"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.3.17" ;
     skos:broader grado2:3.3 ;
     skos:inScheme inailvoc:inabilita ;
@@ -456,7 +456,7 @@ grado3:3.3.18 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "018"@it ;
     skos:prefLabel "018"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.3.18" ;
     skos:broader grado2:3.3 ;
     skos:inScheme inailvoc:inabilita ;
@@ -467,7 +467,7 @@ grado3:3.3.19 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "019"@it ;
     skos:prefLabel "019"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.3.19" ;
     skos:broader grado2:3.3 ;
     skos:inScheme inailvoc:inabilita ;
@@ -478,7 +478,7 @@ grado3:3.3.20 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "020"@it ;
     skos:prefLabel "020"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.3.20" ;
     skos:broader grado2:3.3 ;
     skos:inScheme inailvoc:inabilita ;
@@ -489,7 +489,7 @@ grado3:3.3.21 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "021"@it ;
     skos:prefLabel "021"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.3.21" ;
     skos:broader grado2:3.3 ;
     skos:inScheme inailvoc:inabilita ;
@@ -500,7 +500,7 @@ grado3:3.3.22 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "022"@it ;
     skos:prefLabel "022"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.3.22" ;
     skos:broader grado2:3.3 ;
     skos:inScheme inailvoc:inabilita ;
@@ -511,7 +511,7 @@ grado3:3.3.23 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "023"@it ;
     skos:prefLabel "023"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.3.23" ;
     skos:broader grado2:3.3 ;
     skos:inScheme inailvoc:inabilita ;
@@ -522,7 +522,7 @@ grado3:3.3.24 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "024"@it ;
     skos:prefLabel "024"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.3.24" ;
     skos:broader grado2:3.3 ;
     skos:inScheme inailvoc:inabilita ;
@@ -533,7 +533,7 @@ grado3:3.3.25 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "025"@it ;
     skos:prefLabel "025"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.3.25" ;
     skos:broader grado2:3.3 ;
     skos:inScheme inailvoc:inabilita ;
@@ -544,7 +544,7 @@ grado3:3.3.26 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "026"@it ;
     skos:prefLabel "026"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.3.26" ;
     skos:broader grado2:3.3 ;
     skos:inScheme inailvoc:inabilita ;
@@ -555,7 +555,7 @@ grado3:3.3.27 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "027"@it ;
     skos:prefLabel "027"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.3.27" ;
     skos:broader grado2:3.3 ;
     skos:inScheme inailvoc:inabilita ;
@@ -566,7 +566,7 @@ grado3:3.3.28 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "028"@it ;
     skos:prefLabel "028"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.3.28" ;
     skos:broader grado2:3.3 ;
     skos:inScheme inailvoc:inabilita ;
@@ -577,7 +577,7 @@ grado3:3.3.29 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "029"@it ;
     skos:prefLabel "029"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.3.29" ;
     skos:broader grado2:3.3 ;
     skos:inScheme inailvoc:inabilita ;
@@ -588,7 +588,7 @@ grado3:3.4.30 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "030"@it ;
     skos:prefLabel "030"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.4.30" ;
     skos:broader grado2:3.4 ;
     skos:inScheme inailvoc:inabilita ;
@@ -599,7 +599,7 @@ grado3:3.4.31 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "031"@it ;
     skos:prefLabel "031"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.4.31" ;
     skos:broader grado2:3.4 ;
     skos:inScheme inailvoc:inabilita ;
@@ -610,7 +610,7 @@ grado3:3.4.32 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "032"@it ;
     skos:prefLabel "032"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.4.32" ;
     skos:broader grado2:3.4 ;
     skos:inScheme inailvoc:inabilita ;
@@ -621,7 +621,7 @@ grado3:3.5.33 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "033"@it ;
     skos:prefLabel "033"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.5.33" ;
     skos:broader grado2:3.5 ;
     skos:inScheme inailvoc:inabilita ;
@@ -632,7 +632,7 @@ grado3:3.5.34 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "034"@it ;
     skos:prefLabel "034"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.5.34" ;
     skos:broader grado2:3.5 ;
     skos:inScheme inailvoc:inabilita ;
@@ -643,7 +643,7 @@ grado3:3.5.35 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "035"@it ;
     skos:prefLabel "035"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.5.35" ;
     skos:broader grado2:3.5 ;
     skos:inScheme inailvoc:inabilita ;
@@ -654,7 +654,7 @@ grado3:3.5.36 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "036"@it ;
     skos:prefLabel "036"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.5.36" ;
     skos:broader grado2:3.5 ;
     skos:inScheme inailvoc:inabilita ;
@@ -665,7 +665,7 @@ grado3:3.5.37 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "037"@it ;
     skos:prefLabel "037"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.5.37" ;
     skos:broader grado2:3.5 ;
     skos:inScheme inailvoc:inabilita ;
@@ -676,7 +676,7 @@ grado3:3.5.38 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "038"@it ;
     skos:prefLabel "038"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.5.38" ;
     skos:broader grado2:3.5 ;
     skos:inScheme inailvoc:inabilita ;
@@ -687,7 +687,7 @@ grado3:3.5.39 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "039"@it ;
     skos:prefLabel "039"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.5.39" ;
     skos:broader grado2:3.5 ;
     skos:inScheme inailvoc:inabilita ;
@@ -698,7 +698,7 @@ grado3:3.6.40 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "040"@it ;
     skos:prefLabel "040"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.6.40" ;
     skos:broader grado2:3.6 ;
     skos:inScheme inailvoc:inabilita ;
@@ -709,7 +709,7 @@ grado3:3.6.41 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "041"@it ;
     skos:prefLabel "041"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.6.41" ;
     skos:broader grado2:3.6 ;
     skos:inScheme inailvoc:inabilita ;
@@ -720,7 +720,7 @@ grado3:3.6.42 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "042"@it ;
     skos:prefLabel "042"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.6.42" ;
     skos:broader grado2:3.6 ;
     skos:inScheme inailvoc:inabilita ;
@@ -731,7 +731,7 @@ grado3:3.6.43 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "043"@it ;
     skos:prefLabel "043"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.6.43" ;
     skos:broader grado2:3.6 ;
     skos:inScheme inailvoc:inabilita ;
@@ -742,7 +742,7 @@ grado3:3.6.44 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "044"@it ;
     skos:prefLabel "044"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.6.44" ;
     skos:broader grado2:3.6 ;
     skos:inScheme inailvoc:inabilita ;
@@ -753,7 +753,7 @@ grado3:3.6.45 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "045"@it ;
     skos:prefLabel "045"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.6.45" ;
     skos:broader grado2:3.6 ;
     skos:inScheme inailvoc:inabilita ;
@@ -764,7 +764,7 @@ grado3:3.6.46 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "046"@it ;
     skos:prefLabel "046"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.6.46" ;
     skos:broader grado2:3.6 ;
     skos:inScheme inailvoc:inabilita ;
@@ -775,7 +775,7 @@ grado3:3.6.47 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "047"@it ;
     skos:prefLabel "047"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.6.47" ;
     skos:broader grado2:3.6 ;
     skos:inScheme inailvoc:inabilita ;
@@ -786,7 +786,7 @@ grado3:3.6.48 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "048"@it ;
     skos:prefLabel "048"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.6.48" ;
     skos:broader grado2:3.6 ;
     skos:inScheme inailvoc:inabilita ;
@@ -797,7 +797,7 @@ grado3:3.6.49 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "049"@it ;
     skos:prefLabel "049"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.6.49" ;
     skos:broader grado2:3.6 ;
     skos:inScheme inailvoc:inabilita ;
@@ -808,7 +808,7 @@ grado3:3.7.50 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "050"@it ;
     skos:prefLabel "050"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.50" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -819,7 +819,7 @@ grado3:3.7.51 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "051"@it ;
     skos:prefLabel "051"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.51" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -830,7 +830,7 @@ grado3:3.7.52 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "052"@it ;
     skos:prefLabel "052"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.52" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -841,7 +841,7 @@ grado3:3.7.53 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "053"@it ;
     skos:prefLabel "053"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.53" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -852,7 +852,7 @@ grado3:3.7.54 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "054"@it ;
     skos:prefLabel "054"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.54" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -863,7 +863,7 @@ grado3:3.7.55 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "055"@it ;
     skos:prefLabel "055"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.55" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -874,7 +874,7 @@ grado3:3.7.56 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "056"@it ;
     skos:prefLabel "056"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.56" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -885,7 +885,7 @@ grado3:3.7.57 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "057"@it ;
     skos:prefLabel "057"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.57" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -896,7 +896,7 @@ grado3:3.7.58 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "058"@it ;
     skos:prefLabel "058"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.58" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -907,7 +907,7 @@ grado3:3.7.59 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "059"@it ;
     skos:prefLabel "059"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.59" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -918,7 +918,7 @@ grado3:3.7.60 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "060"@it ;
     skos:prefLabel "060"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.60" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -929,7 +929,7 @@ grado3:3.7.61 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "061"@it ;
     skos:prefLabel "061"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.61" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -940,7 +940,7 @@ grado3:3.7.62 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "062"@it ;
     skos:prefLabel "062"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.62" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -951,7 +951,7 @@ grado3:3.7.63 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "063"@it ;
     skos:prefLabel "063"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.63" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -962,7 +962,7 @@ grado3:3.7.64 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "064"@it ;
     skos:prefLabel "064"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.64" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -973,7 +973,7 @@ grado3:3.7.65 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "065"@it ;
     skos:prefLabel "065"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.65" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -984,7 +984,7 @@ grado3:3.7.66 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "066"@it ;
     skos:prefLabel "066"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.66" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -995,7 +995,7 @@ grado3:3.7.67 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "067"@it ;
     skos:prefLabel "067"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.67" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1006,7 +1006,7 @@ grado3:3.7.68 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "068"@it ;
     skos:prefLabel "068"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.68" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1017,7 +1017,7 @@ grado3:3.7.69 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "069"@it ;
     skos:prefLabel "069"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.69" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1028,7 +1028,7 @@ grado3:3.7.70 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "070"@it ;
     skos:prefLabel "070"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.70" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1039,7 +1039,7 @@ grado3:3.7.71 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "071"@it ;
     skos:prefLabel "071"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.71" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1050,7 +1050,7 @@ grado3:3.7.72 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "072"@it ;
     skos:prefLabel "072"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.72" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1061,7 +1061,7 @@ grado3:3.7.73 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "073"@it ;
     skos:prefLabel "073"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.73" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1072,7 +1072,7 @@ grado3:3.7.74 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "074"@it ;
     skos:prefLabel "074"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.74" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1083,7 +1083,7 @@ grado3:3.7.75 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "075"@it ;
     skos:prefLabel "075"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.75" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1094,7 +1094,7 @@ grado3:3.7.76 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "076"@it ;
     skos:prefLabel "076"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.76" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1105,7 +1105,7 @@ grado3:3.7.77 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "077"@it ;
     skos:prefLabel "077"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.77" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1116,7 +1116,7 @@ grado3:3.7.78 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "078"@it ;
     skos:prefLabel "078"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.78" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1127,7 +1127,7 @@ grado3:3.7.79 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "079"@it ;
     skos:prefLabel "079"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "3.7.79" ;
     skos:broader grado2:3.7 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1138,7 +1138,7 @@ grado3:4.8.80 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "080"@it ;
     skos:prefLabel "080"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "4.8.80" ;
     skos:broader grado2:4.8 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1149,7 +1149,7 @@ grado3:4.8.81 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "081"@it ;
     skos:prefLabel "081"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "4.8.81" ;
     skos:broader grado2:4.8 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1160,7 +1160,7 @@ grado3:4.8.82 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "082"@it ;
     skos:prefLabel "082"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "4.8.82" ;
     skos:broader grado2:4.8 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1171,7 +1171,7 @@ grado3:4.8.83 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "083"@it ;
     skos:prefLabel "083"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "4.8.83" ;
     skos:broader grado2:4.8 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1182,7 +1182,7 @@ grado3:4.8.84 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "084"@it ;
     skos:prefLabel "084"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "4.8.84" ;
     skos:broader grado2:4.8 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1193,7 +1193,7 @@ grado3:4.8.85 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "085"@it ;
     skos:prefLabel "085"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "4.8.85" ;
     skos:broader grado2:4.8 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1204,7 +1204,7 @@ grado3:4.8.86 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "086"@it ;
     skos:prefLabel "086"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "4.8.86" ;
     skos:broader grado2:4.8 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1215,7 +1215,7 @@ grado3:4.8.87 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "087"@it ;
     skos:prefLabel "087"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "4.8.87" ;
     skos:broader grado2:4.8 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1226,7 +1226,7 @@ grado3:4.8.88 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "088"@it ;
     skos:prefLabel "088"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "4.8.88" ;
     skos:broader grado2:4.8 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1237,7 +1237,7 @@ grado3:4.8.89 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "089"@it ;
     skos:prefLabel "089"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "4.8.89" ;
     skos:broader grado2:4.8 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1248,7 +1248,7 @@ grado3:4.8.90 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "090"@it ;
     skos:prefLabel "090"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "4.8.90" ;
     skos:broader grado2:4.8 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1259,7 +1259,7 @@ grado3:4.8.91 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "091"@it ;
     skos:prefLabel "091"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "4.8.91" ;
     skos:broader grado2:4.8 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1270,7 +1270,7 @@ grado3:4.8.92 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "092"@it ;
     skos:prefLabel "092"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "4.8.92" ;
     skos:broader grado2:4.8 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1281,7 +1281,7 @@ grado3:4.8.93 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "093"@it ;
     skos:prefLabel "093"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "4.8.93" ;
     skos:broader grado2:4.8 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1292,7 +1292,7 @@ grado3:4.8.94 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "094"@it ;
     skos:prefLabel "094"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "4.8.94" ;
     skos:broader grado2:4.8 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1303,7 +1303,7 @@ grado3:4.8.95 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "095"@it ;
     skos:prefLabel "095"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "4.8.95" ;
     skos:broader grado2:4.8 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1314,7 +1314,7 @@ grado3:4.8.96 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "096"@it ;
     skos:prefLabel "096"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "4.8.96" ;
     skos:broader grado2:4.8 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1325,7 +1325,7 @@ grado3:4.8.97 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "097"@it ;
     skos:prefLabel "097"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "4.8.97" ;
     skos:broader grado2:4.8 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1336,7 +1336,7 @@ grado3:4.8.98 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "098"@it ;
     skos:prefLabel "098"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "4.8.98" ;
     skos:broader grado2:4.8 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1347,7 +1347,7 @@ grado3:4.8.99 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "099"@it ;
     skos:prefLabel "099"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "4.8.99" ;
     skos:broader grado2:4.8 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1358,7 +1358,7 @@ grado3:4.8.100 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "100"@it ;
     skos:prefLabel "100"@it ;
-    clvapit:hasRankOrder "3" ;
+    clvapit:hasRankOrder 3 ;
     dct:identifier "4.8.100" ;
     skos:broader grado2:4.8 ;
     skos:inScheme inailvoc:inabilita ;
@@ -1375,7 +1375,7 @@ grado3:4.8.100 a INAILService:GradoDiInabilitaINAIL,
         skos:Concept ;
     rdfs:label "Grado superiore a 100"@it ;
     skos:prefLabel "Grado superiore a 100"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "-2" ;
     skos:inScheme inailvoc:inabilita ;
     skos:notation "-2" ;
@@ -1434,7 +1434,7 @@ inailvoc:inabilita a adms:Asset,
     skos:prefLabel "Vocabolario Controllato sulla classificazione del grado di inabilità adottata dall'INAIL"@it ;
     rdfs:comment "Percentage by which the level of loss of global work capacity as a result of occupational injury or occupational disease is measured under the Unique Text regime."@en,
         "Percentuale con cui si misura il livello di perdita della capacità lavorativa complessiva in conseguenza di infortunio sul lavoro o di malattia professionale in regime Testo Unico."@it ;
-    owl:versionInfo "0.5" ;
+    owl:versionInfo "0.6" ;
     rdfs:isDefinedBy inailvoc:inabilita ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;

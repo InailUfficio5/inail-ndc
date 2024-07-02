@@ -76,7 +76,7 @@ inailvoc:tipo_lavoratore a adms:Asset,
     skos:prefLabel "Vocabolario controllato sulla classificazione del tipo di lavoratore adottata dall'INAIL"@it ;
     rdfs:comment "Elenco delle tipologie di lavoratore riferite alla tipologia di datore di lavoro dei settori industria, artigianato, servizi e Pubbliche Amministrazioni titolari di P.A.T."@it,
         "List of worker types referred to the type of employer in the sectors of industry, handicrafts, services and public administrations holding P.A.T"@en ;
-    owl:versionInfo "0.5" ;
+    owl:versionInfo "0.6" ;
     rdfs:isDefinedBy inailvoc:tipo_lavoratore ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
@@ -149,7 +149,7 @@ tipolavoratore:A a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Dipendente"@it ;
     skos:prefLabel "Dipendente"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "A" ;
     skos:inScheme inailvoc:tipo_lavoratore ;
     skos:notation "A" ;
@@ -159,7 +159,7 @@ tipolavoratore:AA a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Dipendente o assimilato"@it ;
     skos:prefLabel "Dipendente o assimilato"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "AA" ;
     skos:inScheme inailvoc:tipo_lavoratore ;
     skos:notation "AA" ;
@@ -169,7 +169,7 @@ tipolavoratore:BB a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Allievo/istruttore corsi qualificazione prof.le"@it ;
     skos:prefLabel "Allievo/istruttore corsi qualificazione prof.le"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "BB" ;
     skos:inScheme inailvoc:tipo_lavoratore ;
     skos:notation "BB" ;
@@ -179,7 +179,7 @@ tipolavoratore:D a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Coadiuvante familiare"@it ;
     skos:prefLabel "Coadiuvante familiare"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "D" ;
     skos:inScheme inailvoc:tipo_lavoratore ;
     skos:notation "D" ;
@@ -189,7 +189,7 @@ tipolavoratore:E a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Socio"@it ;
     skos:prefLabel "Socio"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "E" ;
     skos:inScheme inailvoc:tipo_lavoratore ;
     skos:notation "E" ;
@@ -199,7 +199,7 @@ tipolavoratore:G a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Lavoratore interinale (o a scopo di somministrazione)"@it ;
     skos:prefLabel "Lavoratore interinale (o a scopo di somministrazione)"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "G" ;
     skos:inScheme inailvoc:tipo_lavoratore ;
     skos:notation "G" ;
@@ -209,7 +209,7 @@ tipolavoratore:H a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Tirocinante"@it ;
     skos:prefLabel "Tirocinante"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "H" ;
     skos:inScheme inailvoc:tipo_lavoratore ;
     skos:notation "H" ;
@@ -219,7 +219,7 @@ tipolavoratore:I a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Apprendista"@it ;
     skos:prefLabel "Apprendista"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "I" ;
     skos:inScheme inailvoc:tipo_lavoratore ;
     skos:notation "I" ;
@@ -229,7 +229,7 @@ tipolavoratore:J a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Lavoratore detenuto addetto ai lavori"@it ;
     skos:prefLabel "Lavoratore detenuto addetto ai lavori"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "J" ;
     skos:inScheme inailvoc:tipo_lavoratore ;
     skos:notation "J" ;
@@ -239,7 +239,7 @@ tipolavoratore:K a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Lavoratore ricoverato in case di cura,ospedali e strutture assimilate"@it ;
     skos:prefLabel "Lavoratore ricoverato in case di cura,ospedali e strutture assimilate"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "K" ;
     skos:inScheme inailvoc:tipo_lavoratore ;
     skos:notation "K" ;
@@ -249,7 +249,7 @@ tipolavoratore:L a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Autonomo"@it ;
     skos:prefLabel "Autonomo"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "L" ;
     skos:inScheme inailvoc:tipo_lavoratore ;
     skos:notation "L" ;
@@ -259,7 +259,7 @@ tipolavoratore:LL a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Autonomo o assimilato"@it ;
     skos:prefLabel "Autonomo o assimilato"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "LL" ;
     skos:inScheme inailvoc:tipo_lavoratore ;
     skos:notation "LL" ;
@@ -269,7 +269,7 @@ tipolavoratore:M a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Associato in partecipazione"@it ;
     skos:prefLabel "Associato in partecipazione"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "M" ;
     skos:inScheme inailvoc:tipo_lavoratore ;
     skos:notation "M" ;
@@ -279,7 +279,7 @@ tipolavoratore:N a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Parasubordinato a progetto/ collaborazione coordinata e continuativa"@it ;
     skos:prefLabel "Parasubordinato a progetto/ collaborazione coordinata e continuativa"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "N" ;
     skos:inScheme inailvoc:tipo_lavoratore ;
     skos:notation "N" ;
@@ -289,7 +289,7 @@ tipolavoratore:NN a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Parasubordinato"@it ;
     skos:prefLabel "Parasubordinato"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "NN" ;
     skos:inScheme inailvoc:tipo_lavoratore ;
     skos:notation "NN" ;
@@ -299,7 +299,7 @@ tipolavoratore:O a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Parasubordinato occasionale"@it ;
     skos:prefLabel "Parasubordinato occasionale"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "O" ;
     skos:inScheme inailvoc:tipo_lavoratore ;
     skos:notation "O" ;
@@ -309,7 +309,7 @@ tipolavoratore:P a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Lavoratore occasionale di tipo accessorio"@it ;
     skos:prefLabel "Lavoratore occasionale di tipo accessorio"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "P" ;
     skos:inScheme inailvoc:tipo_lavoratore ;
     skos:notation "P" ;
@@ -319,7 +319,7 @@ tipolavoratore:Q a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Lavoratore per sostituzione"@it ;
     skos:prefLabel "Lavoratore per sostituzione"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "Q" ;
     skos:inScheme inailvoc:tipo_lavoratore ;
     skos:notation "Q" ;
@@ -329,7 +329,7 @@ tipolavoratore:R a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Lavoratore con contratto di formazione lavoro (solo pubblica amministrazione)"@it ;
     skos:prefLabel "Lavoratore con contratto di formazione lavoro (solo pubblica amministrazione)"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "R" ;
     skos:inScheme inailvoc:tipo_lavoratore ;
     skos:notation "R" ;
@@ -339,7 +339,7 @@ tipolavoratore:S a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Lavoratore con contratto di inserimento lavorativo"@it ;
     skos:prefLabel "Lavoratore con contratto di inserimento lavorativo"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "S" ;
     skos:inScheme inailvoc:tipo_lavoratore ;
     skos:notation "S" ;
@@ -349,7 +349,7 @@ tipolavoratore:T a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Lavoratore domestico"@it ;
     skos:prefLabel "Lavoratore domestico"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "T" ;
     skos:inScheme inailvoc:tipo_lavoratore ;
     skos:notation "T" ;
@@ -359,7 +359,7 @@ tipolavoratore:U a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Lavoratore intermittente"@it ;
     skos:prefLabel "Lavoratore intermittente"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "U" ;
     skos:inScheme inailvoc:tipo_lavoratore ;
     skos:notation "U" ;
@@ -369,7 +369,7 @@ tipolavoratore:V a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Lavoratore con contratto ripartito"@it ;
     skos:prefLabel "Lavoratore con contratto ripartito"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "V" ;
     skos:inScheme inailvoc:tipo_lavoratore ;
     skos:notation "V" ;
@@ -379,7 +379,7 @@ tipolavoratore:W a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Lavoratore a domicilio"@it ;
     skos:prefLabel "Lavoratore a domicilio"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "W" ;
     skos:inScheme inailvoc:tipo_lavoratore ;
     skos:notation "W" ;
@@ -389,7 +389,7 @@ tipolavoratore:X a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Lavoratore socialmente utile (lsu - asu)"@it ;
     skos:prefLabel "Lavoratore socialmente utile (lsu - asu)"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "X" ;
     skos:inScheme inailvoc:tipo_lavoratore ;
     skos:notation "X" ;
@@ -399,7 +399,7 @@ tipolavoratore:Z a INAILService:TipoLavoratoreINAIL,
         skos:Concept ;
     rdfs:label "Lavoratore con contratto di agenzia"@it ;
     skos:prefLabel "Lavoratore con contratto di agenzia"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "Z" ;
     skos:inScheme inailvoc:tipo_lavoratore ;
     skos:notation "Z" ;

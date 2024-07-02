@@ -76,7 +76,7 @@ inailvoc:specie_navigazione a adms:Asset,
     skos:prefLabel "Vocabolario controllato sulla specie di navigazione della nave adottata dall'INAIL"@it ;
     rdfs:comment "Specie di navigazione cui può essere abilitata una nave "@it,
         "Species of navigation to which a ship may be licensed"@en ;
-    owl:versionInfo "0.5" ;
+    owl:versionInfo "0.6" ;
     rdfs:isDefinedBy inailvoc:specie_navigazione ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
@@ -140,7 +140,7 @@ specienavig:0 a INAILAutoliq:SpecieDiNavigazione,
         skos:Concept ;
     rdfs:label "Assente"@it ;
     skos:prefLabel "Assente"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "0" ;
     skos:inScheme inailvoc:specie_navigazione ;
     skos:notation "0" ;
@@ -150,7 +150,7 @@ specienavig:BI a INAILAutoliq:SpecieDiNavigazione,
         skos:Concept ;
     rdfs:label "Internazionale breve"@it ;
     skos:prefLabel "Internazionale breve"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "BI" ;
     skos:inScheme inailvoc:specie_navigazione ;
     skos:notation "BI" ;
@@ -160,7 +160,7 @@ specienavig:BN a INAILAutoliq:SpecieDiNavigazione,
         skos:Concept ;
     rdfs:label "Internazionale breve (traffico nazionale)"@it ;
     skos:prefLabel "Internazionale breve (traffico nazionale)"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "BN" ;
     skos:inScheme inailvoc:specie_navigazione ;
     skos:notation "BN" ;
@@ -170,7 +170,7 @@ specienavig:CI a INAILAutoliq:SpecieDiNavigazione,
         skos:Concept ;
     rdfs:label "Internazionale costiera"@it ;
     skos:prefLabel "Internazionale costiera"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "CI" ;
     skos:inScheme inailvoc:specie_navigazione ;
     skos:notation "CI" ;
@@ -180,7 +180,7 @@ specienavig:CN a INAILAutoliq:SpecieDiNavigazione,
         skos:Concept ;
     rdfs:label "Nazionale costiera"@it ;
     skos:prefLabel "Nazionale costiera"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "CN" ;
     skos:inScheme inailvoc:specie_navigazione ;
     skos:notation "CN" ;
@@ -190,7 +190,7 @@ specienavig:E a INAILAutoliq:SpecieDiNavigazione,
         skos:Concept ;
     rdfs:label "Estera (comandata all'estero)"@it ;
     skos:prefLabel "Estera (comandata all'estero)"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "E" ;
     skos:inScheme inailvoc:specie_navigazione ;
     skos:notation "E" ;
@@ -200,7 +200,7 @@ specienavig:GI a INAILAutoliq:SpecieDiNavigazione,
         skos:Concept ;
     rdfs:label "Grande cabotaggio"@it ;
     skos:prefLabel "Grande cabotaggio"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "GI" ;
     skos:inScheme inailvoc:specie_navigazione ;
     skos:notation "GI" ;
@@ -210,7 +210,7 @@ specienavig:GN a INAILAutoliq:SpecieDiNavigazione,
         skos:Concept ;
     rdfs:label "Gran cabotaggio (traffico nazionale)"@it ;
     skos:prefLabel "Gran cabotaggio (traffico nazionale)"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "GN" ;
     skos:inScheme inailvoc:specie_navigazione ;
     skos:notation "GN" ;
@@ -220,7 +220,7 @@ specienavig:II a INAILAutoliq:SpecieDiNavigazione,
         skos:Concept ;
     rdfs:label "Illimitata (internazionale lunga)"@it ;
     skos:prefLabel "Illimitata (internazionale lunga)"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "II" ;
     skos:inScheme inailvoc:specie_navigazione ;
     skos:notation "II" ;
@@ -230,7 +230,7 @@ specienavig:IN a INAILAutoliq:SpecieDiNavigazione,
         skos:Concept ;
     rdfs:label "Internazionale lunga (traffico nazionale)"@it ;
     skos:prefLabel "Internazionale lunga (traffico nazionale)"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "IN" ;
     skos:inScheme inailvoc:specie_navigazione ;
     skos:notation "IN" ;
@@ -240,7 +240,7 @@ specienavig:LL a INAILAutoliq:SpecieDiNavigazione,
         skos:Concept ;
     rdfs:label "Interna"@it ;
     skos:prefLabel "Interna"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "LL" ;
     skos:inScheme inailvoc:specie_navigazione ;
     skos:notation "LL" ;
@@ -250,7 +250,7 @@ specienavig:LN a INAILAutoliq:SpecieDiNavigazione,
         skos:Concept ;
     rdfs:label "Nazionale locale"@it ;
     skos:prefLabel "Nazionale locale"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "LN" ;
     skos:inScheme inailvoc:specie_navigazione ;
     skos:notation "LN" ;
@@ -260,7 +260,7 @@ specienavig:ND a INAILAutoliq:SpecieDiNavigazione,
         skos:Concept ;
     rdfs:label "Diporto"@it ;
     skos:prefLabel "Diporto"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "ND" ;
     skos:inScheme inailvoc:specie_navigazione ;
     skos:notation "ND" ;
@@ -270,7 +270,7 @@ specienavig:NM a INAILAutoliq:SpecieDiNavigazione,
         skos:Concept ;
     rdfs:label "Mediterranea (pesca)"@it ;
     skos:prefLabel "Mediterranea (pesca)"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "NM" ;
     skos:inScheme inailvoc:specie_navigazione ;
     skos:notation "NM" ;
@@ -280,7 +280,7 @@ specienavig:NN a INAILAutoliq:SpecieDiNavigazione,
         skos:Concept ;
     rdfs:label "Nazionale"@it ;
     skos:prefLabel "Nazionale"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "NN" ;
     skos:inScheme inailvoc:specie_navigazione ;
     skos:notation "NN" ;
@@ -290,7 +290,7 @@ specienavig:NS a INAILAutoliq:SpecieDiNavigazione,
         skos:Concept ;
     rdfs:label "Sportiva (categoria volo)"@it ;
     skos:prefLabel "Sportiva (categoria volo)"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "NS" ;
     skos:inScheme inailvoc:specie_navigazione ;
     skos:notation "NS" ;
@@ -300,7 +300,7 @@ specienavig:ON a INAILAutoliq:SpecieDiNavigazione,
         skos:Concept ;
     rdfs:label "Nazionale litorale"@it ;
     skos:prefLabel "Nazionale litorale"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "ON" ;
     skos:inScheme inailvoc:specie_navigazione ;
     skos:notation "ON" ;
@@ -310,7 +310,7 @@ specienavig:PI a INAILAutoliq:SpecieDiNavigazione,
         skos:Concept ;
     rdfs:label "Piccolo cabotaggio"@it ;
     skos:prefLabel "Piccolo cabotaggio"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "PI" ;
     skos:inScheme inailvoc:specie_navigazione ;
     skos:notation "PI" ;
@@ -320,7 +320,7 @@ specienavig:PN a INAILAutoliq:SpecieDiNavigazione,
         skos:Concept ;
     rdfs:label "Piccolo cabotaggio (traffico nazionale)"@it ;
     skos:prefLabel "Piccolo cabotaggio (traffico nazionale)"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "PN" ;
     skos:inScheme inailvoc:specie_navigazione ;
     skos:notation "PN" ;
@@ -330,7 +330,7 @@ specienavig:SN a INAILAutoliq:SpecieDiNavigazione,
         skos:Concept ;
     rdfs:label "Speciale"@it ;
     skos:prefLabel "Speciale"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "SN" ;
     skos:inScheme inailvoc:specie_navigazione ;
     skos:notation "SN" ;

@@ -30,7 +30,7 @@
     skos:prefLabel "Vocabolario Controllato sul settore delle attività svolte dal Soggetto Assicurato dall'INAIL"@it ;
     rdfs:comment "Sector in which the activity carried out by the INAIL insured person is categorised"@en,
         "Settore in cui viene categorizzata l'attività svolta dal soggetto assicurato INAIL"@it ;
-    owl:versionInfo "0.1" ;
+    owl:versionInfo "0.2" ;
     rdfs:isDefinedBy <https://w3id.org/italia/work-accident/controlled-vocabulary/core/settore_attivita> ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
@@ -120,7 +120,7 @@ settoreattivita:1 a INAILCore:SettoreAttivita,
         skos:Concept ;
     rdfs:label "Industria"@it ;
     skos:prefLabel "Industria"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "1" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/settore_attivita> ;
     skos:notation "1" ;
@@ -130,7 +130,7 @@ settoreattivita:2 a INAILCore:SettoreAttivita,
         skos:Concept ;
     rdfs:label "Artigianato"@it ;
     skos:prefLabel "Artigianato"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "2" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/settore_attivita> ;
     skos:notation "2" ;
@@ -140,7 +140,7 @@ settoreattivita:3 a INAILCore:SettoreAttivita,
         skos:Concept ;
     rdfs:label "Terziario"@it ;
     skos:prefLabel "Terziario"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "3" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/settore_attivita> ;
     skos:notation "3" ;
@@ -150,7 +150,7 @@ settoreattivita:4 a INAILCore:SettoreAttivita,
         skos:Concept ;
     rdfs:label "Altri"@it ;
     skos:prefLabel "Altri"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "4" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/settore_attivita> ;
     skos:notation "4" ;
@@ -160,7 +160,7 @@ settoreattivita:5 a INAILCore:SettoreAttivita,
         skos:Concept ;
     rdfs:label "Speciale"@it ;
     skos:prefLabel "Speciale"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "5" ;
     skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/settore_attivita> ;
     skos:notation "5" ;

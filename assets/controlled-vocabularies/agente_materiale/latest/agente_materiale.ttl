@@ -22,7 +22,7 @@ agentemat:0.0 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Macchine motrici"@it ;
     skos:prefLabel "Macchine motrici"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "0.0" ;
     skos:broader grupagentemat:0 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -33,7 +33,7 @@ agentemat:0.1 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Macchine generatrici"@it ;
     skos:prefLabel "Macchine generatrici"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "0.1" ;
     skos:broader grupagentemat:0 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -44,7 +44,7 @@ agentemat:0.2 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Macchine operatrici non utensili"@it ;
     skos:prefLabel "Macchine operatrici non utensili"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "0.2" ;
     skos:broader grupagentemat:0 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -55,7 +55,7 @@ agentemat:0.3 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Macchine trasformatrici e convertitrici"@it ;
     skos:prefLabel "Macchine trasformatrici e convertitrici"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "0.3" ;
     skos:broader grupagentemat:0 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -66,7 +66,7 @@ agentemat:0.4 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Macchine utensili"@it ;
     skos:prefLabel "Macchine utensili"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "0.4" ;
     skos:broader grupagentemat:0 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -77,7 +77,7 @@ agentemat:1.0 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Mezzi di sollevamento e/o stoccaggio e/o smistamento materiali"@it ;
     skos:prefLabel "Mezzi di sollevamento e/o stoccaggio e/o smistamento materiali"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "1.0" ;
     skos:broader grupagentemat:1 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -88,7 +88,7 @@ agentemat:1.1 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Mezzi di trasporto terrestre non su rotaia"@it ;
     skos:prefLabel "Mezzi di trasporto terrestre non su rotaia"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "1.1" ;
     skos:broader grupagentemat:1 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -99,7 +99,7 @@ agentemat:1.2 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Mezzi di trasporto su rotaia"@it ;
     skos:prefLabel "Mezzi di trasporto su rotaia"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "1.2" ;
     skos:broader grupagentemat:1 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -110,7 +110,7 @@ agentemat:1.3 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Mezzi di trasporto aereo"@it ;
     skos:prefLabel "Mezzi di trasporto aereo"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "1.3" ;
     skos:broader grupagentemat:1 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -121,7 +121,7 @@ agentemat:1.4 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Mezzi di trasporto per via acqua"@it ;
     skos:prefLabel "Mezzi di trasporto per via acqua"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "1.4" ;
     skos:broader grupagentemat:1 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -132,7 +132,7 @@ agentemat:1.5 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Mezzi di trasporto su fune"@it ;
     skos:prefLabel "Mezzi di trasporto su fune"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "1.5" ;
     skos:broader grupagentemat:1 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -143,7 +143,7 @@ agentemat:2.0 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Impianti di distribuzione di vapore"@it ;
     skos:prefLabel "Impianti di distribuzione di vapore"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "2.0" ;
     skos:broader grupagentemat:2 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -154,7 +154,7 @@ agentemat:2.1 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Impianti di distribuzione di liquidi"@it ;
     skos:prefLabel "Impianti di distribuzione di liquidi"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "2.1" ;
     skos:broader grupagentemat:2 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -165,7 +165,7 @@ agentemat:2.2 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Impianti di distribuzione di elettricità"@it ;
     skos:prefLabel "Impianti di distribuzione di elettricità"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "2.2" ;
     skos:broader grupagentemat:2 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -176,7 +176,7 @@ agentemat:2.3 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Impianti di distribuzione di gas"@it ;
     skos:prefLabel "Impianti di distribuzione di gas"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "2.3" ;
     skos:broader grupagentemat:2 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -187,7 +187,7 @@ agentemat:2.5 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Impianti di distribuzione di materiali solidi"@it ;
     skos:prefLabel "Impianti di distribuzione di materiali solidi"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "2.5" ;
     skos:broader grupagentemat:2 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -198,7 +198,7 @@ agentemat:3.0 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Attrezzi"@it ;
     skos:prefLabel "Attrezzi"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "3.0" ;
     skos:broader grupagentemat:3 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -209,7 +209,7 @@ agentemat:3.1 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Utensili"@it ;
     skos:prefLabel "Utensili"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "3.1" ;
     skos:broader grupagentemat:3 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -220,7 +220,7 @@ agentemat:3.2 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Attrezzature"@it ;
     skos:prefLabel "Attrezzature"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "3.2" ;
     skos:broader grupagentemat:3 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -231,7 +231,7 @@ agentemat:3.3 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Apparecchiature"@it ;
     skos:prefLabel "Apparecchiature"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "3.3" ;
     skos:broader grupagentemat:3 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -242,7 +242,7 @@ agentemat:4.0 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Esplosivi"@it ;
     skos:prefLabel "Esplosivi"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.0" ;
     skos:broader grupagentemat:4 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -253,7 +253,7 @@ agentemat:4.1 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Polveri"@it ;
     skos:prefLabel "Polveri"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.1" ;
     skos:broader grupagentemat:4 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -264,7 +264,7 @@ agentemat:4.2 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Gas, vapori, fumi"@it ;
     skos:prefLabel "Gas, vapori, fumi"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.2" ;
     skos:broader grupagentemat:4 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -275,7 +275,7 @@ agentemat:4.3 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Materiali liquidi"@it ;
     skos:prefLabel "Materiali liquidi"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.3" ;
     skos:broader grupagentemat:4 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -286,7 +286,7 @@ agentemat:4.4 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Materiali solidi"@it ;
     skos:prefLabel "Materiali solidi"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.4" ;
     skos:broader grupagentemat:4 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -297,7 +297,7 @@ agentemat:4.5 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Plastici"@it ;
     skos:prefLabel "Plastici"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.5" ;
     skos:broader grupagentemat:4 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -308,7 +308,7 @@ agentemat:4.6 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Radiazioni, scariche elettriche"@it ;
     skos:prefLabel "Radiazioni, scariche elettriche"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.6" ;
     skos:broader grupagentemat:4 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -319,7 +319,7 @@ agentemat:4.7 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Fuoco"@it ;
     skos:prefLabel "Fuoco"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.7" ;
     skos:broader grupagentemat:4 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -330,7 +330,7 @@ agentemat:4.8 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Frammenti, particelle, schegge, scorte, detriti"@it ;
     skos:prefLabel "Frammenti, particelle, schegge, scorte, detriti"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.8" ;
     skos:broader grupagentemat:4 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -341,7 +341,7 @@ agentemat:4.9 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Schizzi, spruzzi, gocce, metallo fuso"@it ;
     skos:prefLabel "Schizzi, spruzzi, gocce, metallo fuso"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "4.9" ;
     skos:broader grupagentemat:4 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -352,7 +352,7 @@ agentemat:5.0 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Agenti atmosferici"@it ;
     skos:prefLabel "Agenti atmosferici"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "5.0" ;
     skos:broader grupagentemat:5 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -363,7 +363,7 @@ agentemat:5.1 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Superfici di lavoro e transito"@it ;
     skos:prefLabel "Superfici di lavoro e transito"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "5.1" ;
     skos:broader grupagentemat:5 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -374,7 +374,7 @@ agentemat:5.2 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Scale e passerelle"@it ;
     skos:prefLabel "Scale e passerelle"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "5.2" ;
     skos:broader grupagentemat:5 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -385,7 +385,7 @@ agentemat:5.3 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Aperture nel pavimento o nelle pareti"@it ;
     skos:prefLabel "Aperture nel pavimento o nelle pareti"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "5.3" ;
     skos:broader grupagentemat:5 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -396,7 +396,7 @@ agentemat:5.4 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Parti costitutive di edifici"@it ;
     skos:prefLabel "Parti costitutive di edifici"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "5.4" ;
     skos:broader grupagentemat:5 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -407,7 +407,7 @@ agentemat:5.5 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Infissi"@it ;
     skos:prefLabel "Infissi"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "5.5" ;
     skos:broader grupagentemat:5 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -418,7 +418,7 @@ agentemat:5.6 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Arredi e impianti fissi"@it ;
     skos:prefLabel "Arredi e impianti fissi"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "5.6" ;
     skos:broader grupagentemat:5 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -429,7 +429,7 @@ agentemat:6.0 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Persone"@it ;
     skos:prefLabel "Persone"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "6.0" ;
     skos:broader grupagentemat:6 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -440,7 +440,7 @@ agentemat:6.1 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Animali"@it ;
     skos:prefLabel "Animali"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "6.1" ;
     skos:broader grupagentemat:6 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -451,7 +451,7 @@ agentemat:6.2 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Vegetali"@it ;
     skos:prefLabel "Vegetali"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "6.2" ;
     skos:broader grupagentemat:6 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -462,7 +462,7 @@ agentemat:7.0 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Serbatoi per liquidi"@it ;
     skos:prefLabel "Serbatoi per liquidi"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "7.0" ;
     skos:broader grupagentemat:7 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -473,7 +473,7 @@ agentemat:7.1 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Serbatoi per gas"@it ;
     skos:prefLabel "Serbatoi per gas"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "7.1" ;
     skos:broader grupagentemat:7 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -484,7 +484,7 @@ agentemat:7.2 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Silos"@it ;
     skos:prefLabel "Silos"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "7.2" ;
     skos:broader grupagentemat:7 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -495,7 +495,7 @@ agentemat:7.3 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Bombole"@it ;
     skos:prefLabel "Bombole"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "7.3" ;
     skos:broader grupagentemat:7 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -506,7 +506,7 @@ agentemat:7.4 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Contenitori"@it ;
     skos:prefLabel "Contenitori"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "7.4" ;
     skos:broader grupagentemat:7 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -517,7 +517,7 @@ agentemat:8.0 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Parti meccaniche"@it ;
     skos:prefLabel "Parti meccaniche"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "8.0" ;
     skos:broader grupagentemat:8 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -528,7 +528,7 @@ agentemat:8.1 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Parti elettriche"@it ;
     skos:prefLabel "Parti elettriche"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "8.1" ;
     skos:broader grupagentemat:8 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -539,7 +539,7 @@ agentemat:8.2 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Parti pneumatiche"@it ;
     skos:prefLabel "Parti pneumatiche"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "8.2" ;
     skos:broader grupagentemat:8 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -550,7 +550,7 @@ agentemat:8.3 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Parti oleodinamiche"@it ;
     skos:prefLabel "Parti oleodinamiche"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "8.3" ;
     skos:broader grupagentemat:8 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -561,7 +561,7 @@ agentemat:8.4 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Parti termiche"@it ;
     skos:prefLabel "Parti termiche"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "8.4" ;
     skos:broader grupagentemat:8 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -572,7 +572,7 @@ agentemat:8.5 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Parti non altrove specificate"@it ;
     skos:prefLabel "Parti non altrove specificate"@it ;
-    clvapit:hasRankOrder "2" ;
+    clvapit:hasRankOrder 2 ;
     dct:identifier "8.5" ;
     skos:broader grupagentemat:8 ;
     skos:inScheme inailvoc:agente_materiale ;
@@ -583,7 +583,7 @@ grupagentemat:0 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Macchine"@it ;
     skos:prefLabel "Macchine"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "0" ;
     skos:inScheme inailvoc:agente_materiale ;
     skos:narrower agentemat:0.0,
@@ -598,7 +598,7 @@ grupagentemat:1 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Mezzi di sollevamento e trasporto"@it ;
     skos:prefLabel "Mezzi di sollevamento e trasporto"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "1" ;
     skos:inScheme inailvoc:agente_materiale ;
     skos:narrower agentemat:1.0,
@@ -614,7 +614,7 @@ grupagentemat:2 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Impianti di distribuzione"@it ;
     skos:prefLabel "Impianti di distribuzione"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "2" ;
     skos:inScheme inailvoc:agente_materiale ;
     skos:narrower agentemat:2.0,
@@ -629,7 +629,7 @@ grupagentemat:3 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Attrezzature, apparecchiature, attrezzi e utensili"@it ;
     skos:prefLabel "Attrezzature, apparecchiature, attrezzi e utensili"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "3" ;
     skos:inScheme inailvoc:agente_materiale ;
     skos:narrower agentemat:3.0,
@@ -643,7 +643,7 @@ grupagentemat:4 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Materiali, sostanze, radiazioni"@it ;
     skos:prefLabel "Materiali, sostanze, radiazioni"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "4" ;
     skos:inScheme inailvoc:agente_materiale ;
     skos:narrower agentemat:4.0,
@@ -663,7 +663,7 @@ grupagentemat:5 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Ambienti di lavoro"@it ;
     skos:prefLabel "Ambienti di lavoro"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "5" ;
     skos:inScheme inailvoc:agente_materiale ;
     skos:narrower agentemat:5.0,
@@ -680,7 +680,7 @@ grupagentemat:6 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Persone, animali e vegetali"@it ;
     skos:prefLabel "Persone, animali e vegetali"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "6" ;
     skos:inScheme inailvoc:agente_materiale ;
     skos:narrower agentemat:6.0,
@@ -693,7 +693,7 @@ grupagentemat:7 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Recipienti e contenitori"@it ;
     skos:prefLabel "Recipienti e contenitori"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "7" ;
     skos:inScheme inailvoc:agente_materiale ;
     skos:narrower agentemat:7.0,
@@ -708,7 +708,7 @@ grupagentemat:8 a INAILService:AgenteMaterialeINAIL,
         skos:Concept ;
     rdfs:label "Parti di macchine, mezzi di sollevamento e trasporto"@it ;
     skos:prefLabel "Parti di macchine, mezzi di sollevamento e trasporto"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "8" ;
     skos:inScheme inailvoc:agente_materiale ;
     skos:narrower agentemat:8.0,
@@ -779,7 +779,7 @@ inailvoc:agente_materiale a adms:Asset,
     skos:prefLabel "Vocabolario Controllato sulla classificazione degli agenti materiali adottata dall'INAIL"@it ;
     rdfs:comment "Questo è il vocabolario controllato della classificazione degli agenti materiali adottata dall'INAIL"@it,
         "This is the controlled vocabulary of the material agents adopted by INAIL classification."@en ;
-    owl:versionInfo "0.5" ;
+    owl:versionInfo "0.6" ;
     rdfs:isDefinedBy inailvoc:agente_materiale ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;

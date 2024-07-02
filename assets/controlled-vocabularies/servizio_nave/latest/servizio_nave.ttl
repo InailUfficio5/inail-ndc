@@ -76,7 +76,7 @@ inailvoc:servizio_nave a adms:Asset,
     skos:prefLabel "Vocabolario controllato sulla tipologia del servizio di una nave adottata dall'INAIL"@it ;
     rdfs:comment "Service to which a ship may be enabled"@en,
         "Servizio a cui una nave può essere abilitata"@it ;
-    owl:versionInfo "0.5" ;
+    owl:versionInfo "0.6" ;
     rdfs:isDefinedBy inailvoc:servizio_nave ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
@@ -101,7 +101,7 @@ inailvoc:servizio_nave a adms:Asset,
     dct:identifier "https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/servizio_nave" ;
     dct:issued "2022-12-21"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-    dct:modified "2023-12-27"^^xsd:date ;
+    dct:modified "2023-07-31"^^xsd:date ;
     dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
     dct:relation inailvoc:registro_iscrizione_nave,
         inailvoc:specie_navigazione,
@@ -169,7 +169,7 @@ servnave:0 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Da definire"@it ;
     skos:prefLabel "Da definire"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "0" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "0" ;
@@ -179,7 +179,7 @@ servnave:1 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Concessionari di bordo"@it ;
     skos:prefLabel "Concessionari di bordo"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "1" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "1" ;
@@ -189,7 +189,7 @@ servnave:2 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Prove in mare"@it ;
     skos:prefLabel "Prove in mare"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "2" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "2" ;
@@ -199,7 +199,7 @@ servnave:3 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Tecnici ed ispettori"@it ;
     skos:prefLabel "Tecnici ed ispettori"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "3" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "3" ;
@@ -209,7 +209,7 @@ servnave:4 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Corsi professionali"@it ;
     skos:prefLabel "Corsi professionali"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "4" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "4" ;
@@ -219,7 +219,7 @@ servnave:5 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Allievi nautici"@it ;
     skos:prefLabel "Allievi nautici"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "5" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "5" ;
@@ -229,7 +229,7 @@ servnave:6 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Traffico di linea"@it ;
     skos:prefLabel "Traffico di linea"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "6" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "6" ;
@@ -239,7 +239,7 @@ servnave:7 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Traghetti"@it ;
     skos:prefLabel "Traghetti"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "7" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "7" ;
@@ -249,7 +249,7 @@ servnave:8 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Aliscafi"@it ;
     skos:prefLabel "Aliscafi"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "8" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "8" ;
@@ -259,7 +259,7 @@ servnave:9 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Crociera"@it ;
     skos:prefLabel "Crociera"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "9" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "9" ;
@@ -269,7 +269,7 @@ servnave:10 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Carico generico"@it ;
     skos:prefLabel "Carico generico"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "10" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "10" ;
@@ -279,7 +279,7 @@ servnave:11 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Trasporto containers"@it ;
     skos:prefLabel "Trasporto containers"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "11" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "11" ;
@@ -289,7 +289,7 @@ servnave:12 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Cisterna infiammabile"@it ;
     skos:prefLabel "Cisterna infiammabile"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "12" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "12" ;
@@ -299,7 +299,7 @@ servnave:13 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Cisterna non infiammabile"@it ;
     skos:prefLabel "Cisterna non infiammabile"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "13" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "13" ;
@@ -309,7 +309,7 @@ servnave:14 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Carico estero"@it ;
     skos:prefLabel "Carico estero"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "14" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "14" ;
@@ -319,7 +319,7 @@ servnave:15 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Cisterna estera"@it ;
     skos:prefLabel "Cisterna estera"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "15" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "15" ;
@@ -329,7 +329,7 @@ servnave:16 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Rimorchio portuale"@it ;
     skos:prefLabel "Rimorchio portuale"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "16" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "16" ;
@@ -339,7 +339,7 @@ servnave:17 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Rimorchio alto mare"@it ;
     skos:prefLabel "Rimorchio alto mare"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "17" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "17" ;
@@ -349,7 +349,7 @@ servnave:18 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Lavori marittimi"@it ;
     skos:prefLabel "Lavori marittimi"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "18" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "18" ;
@@ -359,7 +359,7 @@ servnave:19 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Servizi portuali"@it ;
     skos:prefLabel "Servizi portuali"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "19" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "19" ;
@@ -369,7 +369,7 @@ servnave:20 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Antinquinamento"@it ;
     skos:prefLabel "Antinquinamento"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "20" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "20" ;
@@ -379,7 +379,7 @@ servnave:21 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Bunkeraggio"@it ;
     skos:prefLabel "Bunkeraggio"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "21" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "21" ;
@@ -389,7 +389,7 @@ servnave:22 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Off-shore / appoggio piattaforme"@it ;
     skos:prefLabel "Off-shore / appoggio piattaforme"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "22" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "22" ;
@@ -399,7 +399,7 @@ servnave:23 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Pilotine"@it ;
     skos:prefLabel "Pilotine"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "23" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "23" ;
@@ -409,7 +409,7 @@ servnave:24 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Ricerca scientifica"@it ;
     skos:prefLabel "Ricerca scientifica"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "24" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "24" ;
@@ -419,7 +419,7 @@ servnave:25 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Navi scuola"@it ;
     skos:prefLabel "Navi scuola"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "25" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "25" ;
@@ -429,7 +429,7 @@ servnave:26 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Stoccaggio"@it ;
     skos:prefLabel "Stoccaggio"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "26" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "26" ;
@@ -439,7 +439,7 @@ servnave:28 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Trasporto merci"@it ;
     skos:prefLabel "Trasporto merci"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "28" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "28" ;
@@ -449,7 +449,7 @@ servnave:29 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Trasporto persone"@it ;
     skos:prefLabel "Trasporto persone"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "29" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "29" ;
@@ -459,7 +459,7 @@ servnave:30 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Trasporto promiscuo"@it ;
     skos:prefLabel "Trasporto promiscuo"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "30" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "30" ;
@@ -469,7 +469,7 @@ servnave:31 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Trasporto lagunare"@it ;
     skos:prefLabel "Trasporto lagunare"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "31" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "31" ;
@@ -479,7 +479,7 @@ servnave:32 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Diporto a noleggio"@it ;
     skos:prefLabel "Diporto a noleggio"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "32" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "32" ;
@@ -489,7 +489,7 @@ servnave:33 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Pesca per turismo"@it ;
     skos:prefLabel "Pesca per turismo"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "33" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "33" ;
@@ -499,7 +499,7 @@ servnave:34 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Pesca costiera"@it ;
     skos:prefLabel "Pesca costiera"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "34" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "34" ;
@@ -509,7 +509,7 @@ servnave:35 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Pesca mediterranea"@it ;
     skos:prefLabel "Pesca mediterranea"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "35" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "35" ;
@@ -519,7 +519,7 @@ servnave:36 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Pesca oltre gli stretti"@it ;
     skos:prefLabel "Pesca oltre gli stretti"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "36" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "36" ;
@@ -529,7 +529,7 @@ servnave:37 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Acquacoltura"@it ;
     skos:prefLabel "Acquacoltura"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "37" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "37" ;
@@ -539,7 +539,7 @@ servnave:38 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Tonnara"@it ;
     skos:prefLabel "Tonnara"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "38" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "38" ;
@@ -549,7 +549,7 @@ servnave:39 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Diporto"@it ;
     skos:prefLabel "Diporto"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "39" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "39" ;
@@ -559,7 +559,7 @@ servnave:40 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Diporto estero"@it ;
     skos:prefLabel "Diporto estero"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "40" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "40" ;
@@ -569,7 +569,7 @@ servnave:41 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Assistenza navi in costruzione"@it ;
     skos:prefLabel "Assistenza navi in costruzione"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "41" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "41" ;
@@ -579,7 +579,7 @@ servnave:42 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Pesca estera"@it ;
     skos:prefLabel "Pesca estera"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "42" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "42" ;
@@ -589,7 +589,7 @@ servnave:43 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Riparazione impianti in alto mare"@it ;
     skos:prefLabel "Riparazione impianti in alto mare"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "43" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "43" ;
@@ -599,7 +599,7 @@ servnave:44 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Superyacht in R.I."@it ;
     skos:prefLabel "Superyacht in R.I."@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "44" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "44" ;
@@ -609,7 +609,7 @@ servnave:90 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Addetti uffici"@it ;
     skos:prefLabel "Addetti uffici"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "90" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "90" ;
@@ -619,7 +619,7 @@ servnave:91 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Ferie/riposi compensativi"@it ;
     skos:prefLabel "Ferie/riposi compensativi"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "91" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "91" ;
@@ -629,7 +629,7 @@ servnave:92 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Attivita' di volo"@it ;
     skos:prefLabel "Attivita' di volo"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "92" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "92" ;
@@ -639,7 +639,7 @@ servnave:99 a INAILAutoliq:ServizioNave,
         skos:Concept ;
     rdfs:label "Comandata"@it ;
     skos:prefLabel "Comandata"@it ;
-    clvapit:hasRankOrder "1" ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "99" ;
     skos:inScheme inailvoc:servizio_nave ;
     skos:notation "99" ;

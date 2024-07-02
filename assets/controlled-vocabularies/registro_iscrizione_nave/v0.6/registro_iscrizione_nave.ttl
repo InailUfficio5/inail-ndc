@@ -1,0 +1,195 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAILAutoliq: <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> .
+@prefix inailvoc: <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix regiscr: <https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/registro_iscrizione_nave/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Annotations
+
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
+        dct:Standard ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dct:identifier "SKOS" ;
+    dct:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+<https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution/RI_CSV> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/registro_iscrizione_nave/v0.6> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/registro_iscrizione_nave/v0.6/registro_iscrizione_nave.csv> ;
+    dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla tipologia di registro di iscrizione della nave adottata dall'INAIL"@it,
+        "This is the distribution in CSV of the type of ship registration book adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "CSV distribution of the type of ship registration book adopted by INAIL controlled vocabulary"@en,
+        "Distribuzione CSV del vocabolario controllato sulla tipologia di registro di iscrizione della nave adottata dall'INAIL"@it .
+
+<https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution/RI_JSON> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/registro_iscrizione_nave/v0.6> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/registro_iscrizione_nave/v0.6/registro_iscrizione_nave.json> ;
+    dct:description "Questa è la distribuzione JSON del vocabolario controllato sulla tipologia di registro di iscrizione della nave adottata dall'INAIL"@it,
+        "This is the distribution in JSON of the type of ship registration book adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione JSON del vocabolario controllato sulla tipologia di registro di iscrizione della nave adottata dall'INAIL"@it,
+        "JSON distribution of the type of ship registration book adopted by INAIL controlled vocabulary"@en .
+
+<https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution/RI_RDF_TURTLE> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/registro_iscrizione_nave/v0.6> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/registro_iscrizione_nave/v0.6/registro_iscrizione_nave.ttl> ;
+    dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla tipologia di registro di iscrizione della nave adottata dall'INAIL"@it,
+        "This is the distribution in RDF/turtle of the type of ship registration book adopted by INAIL controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione RDF/Turtle del vocabolario controllato sulla tipologia di registro di iscrizione della nave adottata dall'INAIL"@it,
+        "RDF/Turtle distribution of the type of ship registration book adopted by INAIL controlled vocabulary"@en .
+
+inailvoc:registro_iscrizione_nave a adms:Asset,
+        dcatapit:Dataset,
+        skos:ConceptScheme ;
+    rdfs:label "Controlled vocabulary on the type of ship registration book adopted by INAIL"@en,
+        "Vocabolario controllato sulla tipologia di registro di iscrizione della nave adottata dall'INAIL"@it ;
+    skos:prefLabel "Vocabolario controllato sulla tipologia di registro di iscrizione della nave adottata dall'INAIL"@it ;
+    rdfs:comment "Books of the competent Maritime Authority in which the ships are registered"@en,
+        "Registri dell'Autorità marittima competente in cui le navi sono registrate"@it ;
+    owl:versionInfo "0.6" ;
+    rdfs:isDefinedBy inailvoc:registro_iscrizione_nave ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+    dcat:distribution <https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution/RI_CSV>,
+        <https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution/RI_JSON>,
+        <https://w3id.org/italia/work-accident/data/proc21_self_liquidation/distribution/RI_RDF_TURTLE> ;
+    dcat:keyword "autoliquidazione"@it,
+        "inail"@it,
+        "insurance premium"@en,
+        "nave"@it,
+        "premio assicurativo"@it,
+        "registro iscrizione nave"@en,
+        "ship"@en,
+        "ship registration book"@en ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:description "Books of the competent Maritime Authority in which the ships are registered"@en,
+        "Registri dell'Autorità marittima competente in cui le navi sono registrate"@it ;
+    dct:identifier "https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/registro_iscrizione_nave" ;
+    dct:issued "2022-12-21"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2023-12-27"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:relation inailvoc:servizio_nave,
+        inailvoc:specie_navigazione ;
+    dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:subject <http://eurovoc.europa.eu/4827> ;
+    dct:title "Controlled vocabulary on the type of ship registration book adopted by INAIL"@en,
+        "Vocabolario controllato sulla tipologia di registro di iscrizione della nave adottata dall'INAIL"@it ;
+    dct:type <http://purl.org/adms/assettype/CodeList> ;
+    ndc:keyConcept "registro_iscrizione_nave" ;
+    skos:hasTopConcept regiscr:1,
+        regiscr:2,
+        regiscr:3,
+        regiscr:4,
+        regiscr:5,
+        regiscr:6,
+        regiscr:7 ;
+    xkos:numberOfLevels "1" .
+
+regiscr:1 a INAILAutoliq:RegistroDiIscrizioneNave,
+        skos:Concept ;
+    rdfs:label "Matricole"@it ;
+    skos:prefLabel "Matricole"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "1" ;
+    skos:inScheme inailvoc:registro_iscrizione_nave ;
+    skos:notation "1" ;
+    xkos:depth 1 .
+
+regiscr:2 a INAILAutoliq:RegistroDiIscrizioneNave,
+        skos:Concept ;
+    rdfs:label "RR.NN.MM.GG."@it ;
+    skos:prefLabel "RR.NN.MM.GG."@it ;
+    skos:definition "Registro Navi Minori e Galleggianti"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "2" ;
+    skos:inScheme inailvoc:registro_iscrizione_nave ;
+    skos:notation "2" ;
+    xkos:depth 1 .
+
+regiscr:3 a INAILAutoliq:RegistroDiIscrizioneNave,
+        skos:Concept ;
+    rdfs:label "Registro internazionale"@it ;
+    skos:prefLabel "Registro internazionale"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "3" ;
+    skos:inScheme inailvoc:registro_iscrizione_nave ;
+    skos:notation "3" ;
+    xkos:depth 1 .
+
+regiscr:4 a INAILAutoliq:RegistroDiIscrizioneNave,
+        skos:Concept ;
+    rdfs:label "R.I.D."@it ;
+    skos:prefLabel "R.I.D."@it ;
+    skos:definition "Registro Imbarcazioni da Diporto"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "4" ;
+    skos:inScheme inailvoc:registro_iscrizione_nave ;
+    skos:notation "4" ;
+    xkos:depth 1 .
+
+regiscr:5 a INAILAutoliq:RegistroDiIscrizioneNave,
+        skos:Concept ;
+    rdfs:label "R.N.D."@it ;
+    skos:prefLabel "R.N.D."@it ;
+    skos:definition "Registro Navi da Diporto"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "5" ;
+    skos:inScheme inailvoc:registro_iscrizione_nave ;
+    skos:notation "5" ;
+    xkos:depth 1 .
+
+regiscr:6 a INAILAutoliq:RegistroDiIscrizioneNave,
+        skos:Concept ;
+    rdfs:label "Registro speciale"@it ;
+    skos:prefLabel "Registro speciale"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "6" ;
+    skos:inScheme inailvoc:registro_iscrizione_nave ;
+    skos:notation "6" ;
+    xkos:depth 1 .
+
+regiscr:7 a INAILAutoliq:RegistroDiIscrizioneNave,
+        skos:Concept ;
+    rdfs:label "Navi estere"@it ;
+    skos:prefLabel "Navi estere"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "7" ;
+    skos:inScheme inailvoc:registro_iscrizione_nave ;
+    skos:notation "7" ;
+    xkos:depth 1 .
+
+### Serialized using the ttlser deterministic serializer v1.2.0
