@@ -13,7 +13,7 @@
   owl:versionIRI <https://w3id.org/italia/work-accident/onto/core/3.0> ;
   owl:imports <https://w3id.org/italia/onto/CLV/>, <https://w3id.org/italia/onto/COV/>, <https://w3id.org/italia/onto/CPV/>, <https://w3id.org/italia/onto/l0/>, <https://w3id.org/italia/onto/RO/> ;
   rdfs:label "Core INAIL Ontology"@en, "Ontologia Core di INAIL"@it ;
-  rdfs:comment "Ontologia INAIL relativa ai concetti core dell'istituto: Azienda, Posizione Assicurativa Territoriale (PAT), Posizione Assicurativa Navigazione (PAN), Denuncia, Polizza, Sede INAIL, Retribuzione."@it, "This is the ontology of the INAIL Organization about core concepts of the institute: Company, Insurance Territorial Position (PAT), Insurance Navigation Position(PAN), Complaint, Policy, INAIL Office, Salary."@en ;
+  rdfs:comment "Ontologia INAIL relativa ai concetti core dell'istituto: Soggetto Assicurante, Posizione Assicurativa Territoriale (PAT), Posizione Assicurativa Navigazione (PAN), Denuncia, Polizza, Sede INAIL, Retribuzione."@it, "This is the ontology of the INAIL Organization about core concepts of the institute: Insurer, Insurance Territorial Position (PAT), Insurance Navigation Position(PAN), Complaint, Policy, INAIL Office, Salary."@en ;
   owl:versionInfo "Version 3.0 - Modified on 7 June 2024"@en, "Versione 3.0 - Modificata il 7 Giugno 2024"@it ;
   rdfs:isDefinedBy <https://w3id.org/italia/work-accident/onto/core/> ;
   ns0:acronym "inail" ;
@@ -34,7 +34,7 @@
   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
   dc:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
   dc:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
-  dc:description "Ontologia INAIL relativa ai concetti core dell'istituto: Azienda, Posizione Assicurativa Territoriale (PAT), Posizione Assicurativa Navigazione (PAN), Denuncia, Polizza, Sede INAIL, Retribuzione."@it, "This is the ontology of the INAIL Organization about core concepts of the institute: Company, Insurance Territorial Position (PAT), Insurance Navigation Position(PAN), Complaint, Policy, INAIL Office, Salary."@en ;
+  dc:description "Ontologia INAIL relativa ai concetti core dell'istituto: Soggetto Assicurante, Posizione Assicurativa Territoriale (PAT), Posizione Assicurativa Navigazione (PAN), Denuncia, Polizza, Sede INAIL, Retribuzione."@it, "This is the ontology of the INAIL Organization about core concepts of the institute: Insurer, Insurance Territorial Position (PAT), Insurance Navigation Position(PAN), Complaint, Policy, INAIL Office, Salary."@en ;
   dc:identifier "https://w3id.org/italia/work-accident/onto/core" ;
   dc:issued "2024-01-16T00:00:00+00:00"^^xsd:dateTime ;
   dc:language <http://publications.europa.eu/resource/authority/language/ENG>, <http://publications.europa.eu/resource/authority/language/ITA> ;

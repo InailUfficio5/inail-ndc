@@ -16,7 +16,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 INAIL_Schools: a owl:Ontology ;
-    owl:versionIRI INAIL_Schools:1.0 ;
+    owl:versionIRI INAIL_Schools:1.0.0 ;
     owl:imports CLV:,
         COV:,
         CPV:,
@@ -87,7 +87,49 @@ INAILCore:ricopreRuoloDiAssicurato a owl:InverseFunctionalProperty,
 
 ### Annotation Properties
 
+adms:acronym a owl:AnnotationProperty .
+
+adms:hasContributor a owl:AnnotationProperty .
+
+adms:hasFormalityLevel a owl:AnnotationProperty .
+
+adms:hasKeyClass a owl:AnnotationProperty .
+
+adms:hasOntologyLanguage a owl:AnnotationProperty .
+
+adms:hasSemanticAssetDistribution a owl:AnnotationProperty .
+
+adms:hasTask a owl:AnnotationProperty .
+
+adms:last a owl:AnnotationProperty .
+
+adms:officialURI a owl:AnnotationProperty .
+
+adms:prefix a owl:AnnotationProperty .
+
+adms:semanticAssetInUse a owl:AnnotationProperty .
+
+adms:status a owl:AnnotationProperty .
+
+adms:target a owl:AnnotationProperty .
+
+adms:type a owl:AnnotationProperty .
+
+dcat:accessURL a owl:AnnotationProperty .
+
+dcat:contactPoint a owl:AnnotationProperty .
+
+dcat:downloadURL a owl:AnnotationProperty .
+
+dcat:keyword a owl:AnnotationProperty .
+
+dcat:theme a owl:AnnotationProperty .
+
 dct:accessURL a owl:AnnotationProperty .
+
+dct:accrualPeriodicity a owl:AnnotationProperty .
+
+dct:creator a owl:AnnotationProperty .
 
 dct:description a owl:AnnotationProperty .
 
@@ -97,7 +139,17 @@ dct:format a owl:AnnotationProperty .
 
 dct:identifier a owl:AnnotationProperty .
 
+dct:issued a owl:AnnotationProperty .
+
+dct:language a owl:AnnotationProperty .
+
 dct:license a owl:AnnotationProperty .
+
+dct:modified a owl:AnnotationProperty .
+
+dct:publisher a owl:AnnotationProperty .
+
+dct:rightsHolder a owl:AnnotationProperty .
 
 dct:title a owl:AnnotationProperty .
 
@@ -120,6 +172,18 @@ INAIL_Schools:numeroAlunniEStudenti a owl:DatatypeProperty ;
     rdfs:comment "Numero degli alunni e studenti da denunciare per l'anno in oggetto."@it .
 
 ### Classes
+
+adms:SemanticAssetDistribution a owl:Class .
+
+COV:PublicOrganization a owl:Class .
+
+dcat:Distribution a owl:Class .
+
+dcatapit:Agent a owl:Class .
+
+dcatapit:Distribution a owl:Class .
+
+foaf:Agent a owl:Class .
 
 INAIL_Schools:DenunciaAnnualeScuolePerRegolazioneINAIL a owl:Class ;
     rdfs:label "Annual School assessment INAIL report"@en,

@@ -7,48 +7,38 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix INAIL_Employees: <https://w3id.org/italia/work-accident/onto/proc17_employees/> .
-@prefix INAILAutoliq: <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> .
 @prefix INAILCore: <https://w3id.org/italia/work-accident/onto/core/> .
-@prefix INAILService: <https://w3id.org/italia/work-accident/onto/adm_serv/> .
 @prefix l0: <https://w3id.org/italia/onto/l0/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix RO: <https://w3id.org/italia/onto/RO/> .
-@prefix TI: <https://w3id.org/italia/onto/TI/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 INAIL_Employees: a owl:Ontology ;
-    owl:versionIRI INAIL_Employees:1.0 ;
+    owl:versionIRI INAIL_Employees:1.0.0 ;
     owl:imports CLV:,
         COV:,
         CPV:,
-        INAILCore:,
-        INAILService:,
         l0:,
-        RO:,
-        TI: ;
-    rdfs:label "INAIL Ontology about Employees Policy"@en,
+        RO: ;
+    rdfs:label "INAIL Ontology about Employees Insurance Policy"@en,
         "Ontologia INAIL relativa alla Polizza Dipendenti"@it ;
     rdfs:comment "Ontologia INAIL relativa alla Polizza Dipendenti. La polizza dipendenti assicura i rischi legati agli infortuni e alle malattie professionali dei lavoratori dipendenti e assimilati."@it,
-        "This is the ontology of the INAIL Organization about Employees Policy. Employees policy allows to insure all risks related to accidents and occupational diseases of employees and similar workers."@en ;
-    owl:versionInfo "Version 1.0 - Published on 31 December 2023"@en,
-        "Versione 1.0 - Pubblicata il 31 Dicembre 2023"@it ;
+        "This INAIL ontology addresses the Employees Liability Insurance Policy Cover. This type of policy provides protection against occupational diseases and injuries to employees."@en ;
+    owl:versionInfo "Version 1.0 - Modified on June the 7th 2024"@en,
+        "Versione 1.0 - Modificata il 7 Giugno 2024"@it ;
     rdfs:isDefinedBy INAIL_Employees: ;
     adms:acronym "inail" ;
     adms:hasContributor <https://w3id.org/italia/work-accident/data/organization/td> ;
     adms:hasFormalityLevel adms:Formal ;
     adms:hasKeyClass INAIL_Employees:DipendenteINAIL ;
     adms:hasOntologyLanguage adms:OWL ;
-    adms:hasSemanticAssetDistribution <https://w3id.org/italia/work-accident/data/proc17_employees/distribution/PROC17EP-N-TRIPLES>,
-        <https://w3id.org/italia/work-accident/data/proc17_employees/distribution/PROC17EP-RDF-TURTLE>,
-        <https://w3id.org/italia/work-accident/data/proc17_employees/distribution/PROC17EP-RDF-XML> ;
-    adms:hasTask adms:AnnotationTask,
-        adms:QueryFormulationTask,
-        adms:SearchTask ;
-    adms:last INAIL_Employees:1.0 ;
+    adms:hasSemanticAssetDistribution <https://w3id.org/italia/work-accident/data/adm_serv/distribution/CORE-RDF-TURTLE> ;
+    adms:hasTask adms:SearchTask ;
+    adms:last INAILCore:1.10 ;
     adms:officialURI "https://w3id.org/italia/work-accident/onto/proc17_employees"^^xsd:anyURI ;
-    adms:prefix "INAIL_Employees" ;
+    adms:prefix "inail" ;
     adms:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
     adms:status "draft" ;
     adms:target "Cittadini"@it,
@@ -62,30 +52,34 @@ INAIL_Employees: a owl:Ontology ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
     dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
     dct:description "Ontologia INAIL relativa alla Polizza Dipendenti. La polizza dipendenti assicura i rischi legati agli infortuni e alle malattie professionali dei lavoratori dipendenti e assimilati."@it,
-        "This is the ontology of the INAIL Organization about Employees Policy. Employees policy allows cooperative societies and fishing companies to insure their members."@en ;
-    dct:identifier "https://w3id.org/italia/work-accident/onto/proc17_employees" ;
-    dct:issued "2023-12-31T00:00:00+00:00"^^xsd:dateTime ;
+        "This INAIL ontology addresses the Employees Liability Insurance Policy Cover. This type of policy provides protection against occupational diseases and injuries to employees."@en ;
+    dct:identifier "https://w3id.org/italia/work-accident/onto/core" ;
+    dct:issued "2024-01-16T00:00:00+00:00"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
         <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2024-01-17T00:00:00+00:00"^^xsd:dateTime ;
     dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
     dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
-    dct:title "INAIL Ontology about Employees Policy"@en,
+    dct:title "INAIL Employees Insurance Policy Ontology"@en,
         "Ontologia INAIL relativa alla Polizza Dipendenti"@it .
 
 ### Object Properties
 
 INAIL_Employees:denunciaDipendentiHaVariazione a owl:ObjectProperty ;
-    rdfs:label "denuncia dipendenti ha variazione"@it ;
+    rdfs:label "denuncia dipendenti ha variazione"@it,
+        "employee amendment in ralation to"@en ;
     rdfs:domain INAIL_Employees:DenunciaVariazioneDipendentiINAIL ;
     rdfs:range INAIL_Employees:VariazioneAttivitaDipendenteINAIL .
 
 INAIL_Employees:denunciaIscrizioneRelativaADipendente a owl:ObjectProperty ;
-    rdfs:label "denuncia iscrizione relativa a dipendente"@it ;
+    rdfs:label "denuncia iscrizione relativa a dipendente"@it,
+        "register as an employee"@en ;
     rdfs:domain INAIL_Employees:DenunciaIscrizioneDipendentiINAIL ;
     rdfs:range INAIL_Employees:DipendenteINAIL .
 
 INAIL_Employees:dipendenteSvolgeAttivita a owl:ObjectProperty ;
-    rdfs:label "dipendente svolge attività"@it ;
+    rdfs:label "dipendente svolge attività"@it,
+        "employee activity"@en ;
     rdfs:domain INAIL_Employees:DipendenteINAIL ;
     rdfs:range INAILCore:Attivita .
 
@@ -95,7 +89,8 @@ INAIL_Employees:polizzaDipendentiRelativaA a owl:ObjectProperty ;
     rdfs:range INAIL_Employees:DipendenteINAIL .
 
 INAIL_Employees:variazioneLavorazioneDipendenteRelativaA a owl:ObjectProperty ;
-    rdfs:label "variazione lavorazione dipendente relativa a"@it ;
+    rdfs:label "employee's field of work update"@en,
+        "variazione lavorazione dipendente relativa a"@it ;
     rdfs:domain INAIL_Employees:VariazioneAttivitaDipendenteINAIL ;
     rdfs:range INAILCore:Attivita .
 
@@ -110,7 +105,49 @@ INAILCore:ricopreRuoloDiAssicurato a owl:InverseFunctionalProperty,
 
 ### Annotation Properties
 
+adms:acronym a owl:AnnotationProperty .
+
+adms:hasContributor a owl:AnnotationProperty .
+
+adms:hasFormalityLevel a owl:AnnotationProperty .
+
+adms:hasKeyClass a owl:AnnotationProperty .
+
+adms:hasOntologyLanguage a owl:AnnotationProperty .
+
+adms:hasSemanticAssetDistribution a owl:AnnotationProperty .
+
+adms:hasTask a owl:AnnotationProperty .
+
+adms:last a owl:AnnotationProperty .
+
+adms:officialURI a owl:AnnotationProperty .
+
+adms:prefix a owl:AnnotationProperty .
+
+adms:semanticAssetInUse a owl:AnnotationProperty .
+
+adms:status a owl:AnnotationProperty .
+
+adms:target a owl:AnnotationProperty .
+
+adms:type a owl:AnnotationProperty .
+
+dcat:accessURL a owl:AnnotationProperty .
+
+dcat:contactPoint a owl:AnnotationProperty .
+
+dcat:downloadURL a owl:AnnotationProperty .
+
+dcat:keyword a owl:AnnotationProperty .
+
+dcat:theme a owl:AnnotationProperty .
+
 dct:accessURL a owl:AnnotationProperty .
+
+dct:accrualPeriodicity a owl:AnnotationProperty .
+
+dct:creator a owl:AnnotationProperty .
 
 dct:description a owl:AnnotationProperty .
 
@@ -120,7 +157,17 @@ dct:format a owl:AnnotationProperty .
 
 dct:identifier a owl:AnnotationProperty .
 
+dct:issued a owl:AnnotationProperty .
+
+dct:language a owl:AnnotationProperty .
+
 dct:license a owl:AnnotationProperty .
+
+dct:modified a owl:AnnotationProperty .
+
+dct:publisher a owl:AnnotationProperty .
+
+dct:rightsHolder a owl:AnnotationProperty .
 
 dct:title a owl:AnnotationProperty .
 
@@ -132,24 +179,39 @@ vcard:hasEmail a owl:AnnotationProperty .
 
 ### Classes
 
+adms:SemanticAssetDistribution a owl:Class .
+
+COV:PublicOrganization a owl:Class .
+
+dcat:Distribution a owl:Class .
+
+dcatapit:Agent a owl:Class .
+
+dcatapit:Distribution a owl:Class .
+
+foaf:Agent a owl:Class .
+
 INAIL_Employees:DenunciaIscrizioneDipendentiINAIL a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
+    rdfs:label "Denuncia iscrizione dipendenti INAIL"@it,
+        "INAIL Employee Registration "@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAIL_Employees:denunciaIscrizioneRelativaADipendente ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label "Denuncia iscrizione dipendenti INAIL"@it,
-        "INAIL Enrollment complaint employees"@en ;
     rdfs:comment "Denuncia di iscrizione di una nuova ditta con contestuale apertura di una polizza assicurativa per lavoratori dipendenti e assimilati."@it .
 
 INAIL_Employees:DenunciaVariazioneDipendentiINAIL a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
+    rdfs:label "Denuncia variazione dipendenti INAIL"@it,
+        "INAIL Employee Amendment"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAIL_Employees:denunciaDipendentiHaVariazione ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label "Denuncia variazione dipendenti INAIL"@it,
-        "INAIL variation complaint employees"@en ;
     rdfs:comment "Denuncia che consente di modificare i dati relativi ad un lavoratore dipendente o assimilato oppure l'inserimento di uno nuovo."@it .
 
 INAIL_Employees:DipendenteINAIL a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
+    rdfs:label "Dipendente INAIL"@it,
+        "INAIL employee"@en ;
+    rdfs:subClassOf INAILCore:SoggettoAssicuratoINAIL,
+        [ a owl:Restriction ;
             owl:onProperty INAIL_Employees:dipendenteSvolgeAttivita ;
             owl:someValuesFrom owl:Thing ],
         [ a owl:Restriction ;
@@ -158,24 +220,21 @@ INAIL_Employees:DipendenteINAIL a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAIL_Employees:polizzaDipendentiRelativaA ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label "Dipendente INAIL"@it,
-        "INAIL employee"@en ;
-    rdfs:subClassOf INAILCore:SoggettoAssicuratoINAIL ;
     rdfs:comment "Soggetto che svolge un'attività di lavorazione e che ricopre il ruolo di dipendente lavoratore o assimilato."@it .
 
 INAIL_Employees:VariazioneAttivitaDipendenteINAIL a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
+    rdfs:label "INAIL employee activity update"@en,
+        "Variazione attività dipendente INAIL"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAIL_Employees:variazioneLavorazioneDipendenteRelativaA ;
             owl:someValuesFrom owl:Thing ],
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAIL_Employees:denunciaDipendentiHaVariazione ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label "INAIL activity variation employee"@en,
-        "Variazione attività dipendente INAIL"@it ;
     rdfs:comment "Variazione dei dati relativi all'attività di lavorazione di un lavoratore dipendente o assimilato."@it .
 
 INAILCore:Attivita a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAIL_Employees:dipendenteSvolgeAttivita ] ;
             owl:someValuesFrom owl:Thing ],
         [ a owl:Restriction ;
@@ -183,89 +242,65 @@ INAILCore:Attivita a owl:Class ;
             owl:someValuesFrom owl:Thing ] .
 
 INAILCore:PersonaFisica a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAILCore:ricopreRuoloDiAssicurato ;
             owl:someValuesFrom owl:Thing ] .
 
 INAILCore:PolizzaDipendenti a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAIL_Employees:polizzaDipendentiRelativaA ;
             owl:someValuesFrom owl:Thing ] .
 
 INAILCore:SoggettoAssicuratoINAIL a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILCore:ricopreRuoloDiAssicurato ] ;
             owl:someValuesFrom owl:Thing ] .
 
 ### Individuals
 
-<https://w3id.org/italia/work-accident/data/organization/agenzia_entrate> a dcatapit:Agent,
-        foaf:Agent,
-        INAILAutoliq:Esattore,
+<https://w3id.org/italia/social-security/data/P17-EMPLOYEES/distribution/P17-EMPLOYEES-RDF-TURTLE> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
         owl:NamedIndividual ;
-    dct:identifier "age" ;
-    foaf:name "Agenzia delle Entrate"@it,
-        "Italian Revenue Agency"@en .
+    dcat:accessURL <https://github.com/INAIL-it/NDC/tree/main/assets/ontologies/P17-EMPLOYEES/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/INAIL-it/NDC/main/assets/ontologies/P17-EMPLOYEES/latest/P17-EMPLOYEES.ttl> ;
+    dct:description "INAIL Employees Insurance Policy distribution in RDF/Turtle. This particular type of policy provides protection against occupational diseases and injuries to employees."@en,
+        "Questa è la distribuzione RDF/Turtle dell'ontologia INAIL relativa alla polizza dipendenti, polizza che consente di assicurare i rischi legati agli infortuni e alle malattie professionali dei lavoratori dipendenti e assimilati."@it ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione RDF/Turtle dell'ontologia INAIL - Employee"@it,
+        "RDF/Turtle distribution of the INAIL ontology - Employee"@en .
 
-<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+<https://w3id.org/italia/work-accident/data/organization/inail> a COV:PublicOrganization,
+        dcatapit:Agent,
         foaf:Agent,
-        INAILAutoliq:DestinatarioPremioINAIL,
         owl:NamedIndividual ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/onto/core/organization/inail> a owl:NamedIndividual ;
     dct:identifier "inail" ;
     foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
         "National Institute for Insurance against Accidents at Work"@en .
 
-<https://w3id.org/italia/work-accident/data/organization/td> a dcatapit:Agent,
-        foaf:Agent,
-        owl:NamedIndividual ;
+<https://w3id.org/italia/work-accident/onto/core/organization/td> a owl:NamedIndividual ;
     dct:identifier "TD" ;
     foaf:name "Digital Transformation Team"@en,
         "Team per la Trasformazione Digitale"@it .
 
-<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
-        owl:NamedIndividual,
-        vcard:Kind,
-        vcard:Organization ;
+<https://w3id.org/italia/work-accident/onto/core/organization/ufficioV> a owl:NamedIndividual ;
     vcard:fn "INAIL Ufficio V - D.C.O.D" ;
-    vcard:hasEmail <mailto:dcod@inail.it> .
+    vcard:hasEmail "mailto:dcod@inail.it" .
 
-<https://w3id.org/italia/work-accident/data/proc17_employees/distribution/PROC17EP-N-TRIPLES> a adms:SemanticAssetDistribution,
-        dcat:Distribution,
-        dcatapit:Distribution,
-        owl:NamedIndividual ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc17_employees/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc17_employees/latest/proc17_employees.n3> ;
-    dct:description "Questa è la distribuzione N-TRIPLES dell'ontologia INAIL relativa alla polizza dipendenti, polizza che consente di assicurare i rischi legati agli infortuni e alle malattie professionali dei lavoratori dipendenti e assimilati."@it,
-        "This is the distribution in N-TRIPLES of the INAIL ontology about employees policy, this policy allows to insure all risks related to accidents and occupational diseases of employees and similar workers."@en ;
-    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES> ;
-    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
-    dct:title "Distribuzione N-TRIPLES ontologia INAIL - Polizza Dipendenti"@it,
-        "N-TRIPLES distribution of INAIL ontology - Employees Policy"@en .
-
-<https://w3id.org/italia/work-accident/data/proc17_employees/distribution/PROC17EP-RDF-TURTLE> a adms:SemanticAssetDistribution,
-        dcat:Distribution,
-        dcatapit:Distribution,
-        owl:NamedIndividual ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc17_employees/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc17_employees/latest/proc17_employees.ttl> ;
-    dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia INAIL relativa alla polizza dipendenti, polizza che consente di assicurare i rischi legati agli infortuni e alle malattie professionali dei lavoratori dipendenti e assimilati."@it,
-        "This is the distribution in RDF/Turtle of the INAIL ontology about employees policy, this policy allows to insure all risks related to accidents and occupational diseases of employees and similar workers."@en ;
-    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+<https://w3id.org/italia/work-accident/onto/P17-EMPLOYEES/distribution/P17-EMPLOYEES-RDF-TURTLE> a owl:NamedIndividual ;
+    dct:accessURL "https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/....." ;
+    dct:description "INAIL Employees Insurance Policy distribution in RDF/Turtle. This particular type of policy provides protection against occupational diseases and injuries to employees."@en,
+        "Questa è la distribuzione RDF/Turtle dell'ontologia INAIL relativa alla polizza dipendenti, polizza che consente di assicurare i rischi legati agli infortuni e alle malattie professionali dei lavoratori dipendenti e assimilati."@it ;
+    dct:downloadURL "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/..." ;
+    dct:format "http://publications.europa.eu/resource/authority/file-type/RDF" ;
+    dct:license "http://creativecommons.org/licenses/by/4.0/" ;
     dct:title "Distribuzione RDF/Turtle ontologia INAIL - Polizza Dipendenti"@it,
-        "RDF/Turtle distribution of INAIL ontology - Employees Policy"@en .
-
-<https://w3id.org/italia/work-accident/data/proc17_employees/distribution/PROC17EP-RDF-XML> a adms:SemanticAssetDistribution,
-        dcat:Distribution,
-        dcatapit:Distribution,
-        owl:NamedIndividual ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/proc17_employees/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/proc17_employees/latest/proc17_employees.owl> ;
-    dct:description "Questa è la distribuzione RDF/XML dell'ontologia INAIL relativa alla polizza dipendenti, polizza che consente di assicurare i rischi legati agli infortuni e alle malattie professionali dei lavoratori dipendenti e assimilati."@it,
-        "This is the distribution in RDF/XML of the INAIL ontology about employees policy, this policy allows to insure all risks related to accidents and occupational diseases of employees and similar workers."@en ;
-    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
-    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
-    dct:title "Distribuzione RDF/XML ontologia INAIL - Polizza Dipendenti"@it,
-        "RDF/XML distribution of INAIL ontology - Employees Policy"@en .
+        "RDF/Turtle distribution of INAIL ontology - Employees Insurance Policy"@en .
 
 ### Serialized using the ttlser deterministic serializer v1.2.0

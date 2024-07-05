@@ -25,8 +25,8 @@ INAILCore: a owl:Ontology ;
         RO: ;
     rdfs:label "Core INAIL Ontology"@en,
         "Ontologia Core di INAIL"@it ;
-    rdfs:comment "Ontologia INAIL relativa ai concetti core dell'istituto: Azienda, Posizione Assicurativa Territoriale (PAT), Posizione Assicurativa Navigazione (PAN), Denuncia, Polizza, Sede INAIL, Retribuzione."@it,
-        "This is the ontology of the INAIL Organization about core concepts of the institute: Company, Insurance Territorial Position (PAT), Insurance Navigation Position(PAN), Complaint, Policy, INAIL Office, Salary."@en ;
+    rdfs:comment "Ontologia INAIL relativa ai concetti core dell'istituto: Soggetto Assicurante, Posizione Assicurativa Territoriale (PAT), Posizione Assicurativa Navigazione (PAN), Denuncia, Polizza, Sede INAIL, Retribuzione."@it,
+        "This ontology describes the INAIL Organization and its core concepts, which are: Insurer, Insurance Territorial Position (PAT), Insurance Navigation Position(PAN), Notice,  Insurance Policy, INAIL Office, Income."@en ;
     owl:versionInfo "Version 3.0 - Modified on 7 June 2024"@en,
         "Versione 3.0 - Modificata il 7 Giugno 2024"@it ;
     rdfs:isDefinedBy INAILCore: ;
@@ -52,8 +52,8 @@ INAILCore: a owl:Ontology ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
     dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
-    dct:description "Ontologia INAIL relativa ai concetti core dell'istituto: Azienda, Posizione Assicurativa Territoriale (PAT), Posizione Assicurativa Navigazione (PAN), Denuncia, Polizza, Sede INAIL, Retribuzione."@it,
-        "This is the ontology of the INAIL Organization about core concepts of the institute: Company, Insurance Territorial Position (PAT), Insurance Navigation Position(PAN), Complaint, Policy, INAIL Office, Salary."@en ;
+    dct:description "Ontologia INAIL relativa ai concetti core dell'istituto: Soggetto Assicurante, Posizione Assicurativa Territoriale (PAT), Posizione Assicurativa Navigazione (PAN), Denuncia, Polizza, Sede INAIL, Retribuzione."@it,
+        "This ontology describes the INAIL Organization and its core concepts, which are: Insurer, Insurance Territorial Position (PAT), Insurance Navigation Position(PAN), Notice,  Insurance Policy, INAIL Office, Income."@en ;
     dct:identifier "https://w3id.org/italia/work-accident/onto/core" ;
     dct:issued "2024-01-16T00:00:00+00:00"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
@@ -1856,7 +1856,7 @@ INAILCore:DimensioneSoggettoAssicurante a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILCore:soggettoAssicuranteHaDimensione ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "La dimensione del Azienda in INAIL corrisponde al numero dei dipendenti calcolato secondo le modalità previste dal d.m. 18 aprile 2005 (G.U. n. 238 del 12.10.2005) ed espresso in ULA (unità lavorative anno), laddove per ULA si intende il numero medio mensile di dipendenti occupati a tempo pieno durante un anno. I lavoratori a tempo parziale rappresentano frazioni di ULA (ad es. 120 dipendenti a tempo pieno per tutto l’anno corrispondono a 120 ULA, mentre 1 dipendente a tempo pieno occupato per 6 mesi corrisponde a 0,5 ULA). Nel caso in cui il calcolo delle ULA non corrisponda ad un numero intero si dovrà operare un arrotondamento matematico al primo decimale dopo la virgola. Se il primo decimale è inferiore a 5 si arrotonda per difetto, se invece è uguale o superiore a 5 si arrotonda per eccesso."@it .
+    rdfs:comment "La dimensione del Soggetto Assicurante in INAIL corrisponde al numero dei dipendenti calcolato secondo le modalità previste dal d.m. 18 aprile 2005 (G.U. n. 238 del 12.10.2005) ed espresso in ULA (unità lavorative anno), laddove per ULA si intende il numero medio mensile di dipendenti occupati a tempo pieno durante un anno. I lavoratori a tempo parziale rappresentano frazioni di ULA (ad es. 120 dipendenti a tempo pieno per tutto l’anno corrispondono a 120 ULA, mentre 1 dipendente a tempo pieno occupato per 6 mesi corrisponde a 0,5 ULA). Nel caso in cui il calcolo delle ULA non corrisponda ad un numero intero si dovrà operare un arrotondamento matematico al primo decimale dopo la virgola. Se il primo decimale è inferiore a 5 si arrotonda per difetto, se invece è uguale o superiore a 5 si arrotonda per eccesso."@it .
 
 INAILCore:DirezioneRegionaleINAIL a owl:Class ;
     rdfs:label "Direzione Regionale INAIL"@it,
@@ -2198,7 +2198,7 @@ INAILCore:PolizzaINAIL a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILCore:denunciaRelativaAPolizza ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "Le polizze sono le tipologie di assicurazioni che un’azienda può stipulare con INAIL in relazione all’attivita lavorativa svolta ed alla tipologia dei lavoratori; le polizze sono riportate all'interno della PAT (posizione assicurativa territoriale); ogni PAT può avere una o più polizze a seconda delle lavorazioni che vengono svolte durante l’attività e della tipologia di lavoratori impiegati nello svolgimento di detta attività; la polizza identifica anche la tipologia di premio assicurativo; in base al premio da corrispondere si distingue la polizza \"ordinaria\" valida per la generalità dei soggetti assicuranti (per la quale il premio determinato dall’ammontare delle retribuzioni e dal tasso del premio) e la polizza speciale (per la quale è previsto un premio unitario calcolato con parametri diversi, come ad esempio il numero delle persone coinvolte nella lavorazione, il numero delle macchine, la natura e la durata dell’attività);"@it .
+    rdfs:comment "Le polizze sono le tipologie di assicurazioni che un Soggetto assicurante può stipulare con INAIL in relazione all’attivita lavorativa svolta ed alla tipologia dei lavoratori; le polizze sono riportate all'interno della PAT (posizione assicurativa territoriale); ogni PAT può avere una o più polizze a seconda delle lavorazioni che vengono svolte durante l’attività e della tipologia di lavoratori impiegati nello svolgimento di detta attività; la polizza identifica anche la tipologia di premio assicurativo; in base al premio da corrispondere si distingue la polizza \"ordinaria\" valida per la generalità dei soggetti assicuranti (per la quale il premio determinato dall’ammontare delle retribuzioni e dal tasso del premio) e la polizza speciale (per la quale è previsto un premio unitario calcolato con parametri diversi, come ad esempio il numero delle persone coinvolte nella lavorazione, il numero delle macchine, la natura e la durata dell’attività);"@it .
 
 INAILCore:PolizzaInterinale a owl:Class ;
     rdfs:label "Agency workers' policy"@en,
