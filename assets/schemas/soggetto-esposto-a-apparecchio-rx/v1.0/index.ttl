@@ -37,7 +37,7 @@
 
 ### Annotations
 
-<https://w3id.org/italia/schemas/SoggettoEspostoAApparecchioINAIL/latest/SoggettoEspostoAApparecchioINAIL.oas3.yaml> a dcatapit:Dataset,
+<https://w3id.org/italia/schemas/soggetto-esposto-a-apparecchio-rx/latest/soggetto-esposto-a-apparecchio-rx.oas3.yaml> a dcatapit:Dataset,
         dcatapit:Distribution ;
     rdfs:label "Consultazione Soggetto esposto a apparecchio INAIL API"@it ;
     rdfs:comment "Servizio di notifica"@it ;
@@ -48,10 +48,10 @@
     admsapit:target "Cittadini"@it,
         "Imprese"@it,
         "Pubbliche Amministrazioni"@it ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/blob/main/assets/schemas/SoggettoEspostoAApparecchioINAIL/latest> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/blob/main/assets/schemas/soggetto-esposto-a-apparecchio-rx/latest> ;
     dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
-    dcat:distribution <https://w3id.org/italia/schemas/SoggettoEspostoAApparecchioINAIL/latest/SoggettoEspostoAApparecchioINAIL.oas3.yaml> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/SoggettoEspostoAApparecchioINAIL/latest/SoggettoEspostoAApparecchioINAIL.oas3.yaml> ;
+    dcat:distribution <https://w3id.org/italia/schemas/soggetto-esposto-a-apparecchio-rx/latest/soggetto-esposto-a-apparecchio-rx.oas3.yaml> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/soggetto-esposto-a-apparecchio-rx/latest/soggetto-esposto-a-apparecchio-rx.oas3.yaml> ;
     dcat:keyword "Apparecchio RX INAIL"@it,
         "INAIL X-ray Units"@en,
         "Soggetto Esposto A Apparecchio"@it,
@@ -62,7 +62,7 @@
     dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
     dct:description "Il servizio viene invocato per ottenere informazioni sui soggetti esposti ovvero le persone fisiche che sono addette all’utilizzo degli apparecchi RX e quindi esposti in maniera prolungata alle onde elettromagnetiche dell’apparecchio." ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
-    dct:identifier <https://w3id.org/italia/schemas/SoggettoEspostoAApparecchioINAIL> ;
+    dct:identifier <https://w3id.org/italia/schemas/soggetto-esposto-a-apparecchio-rx> ;
     dct:issued "2024-06-17"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
     dct:modified "2024-06-17"^^xsd:date ;
