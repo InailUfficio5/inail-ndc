@@ -37,7 +37,7 @@
 
 ### Annotations
 
-<https://w3id.org/italia/schemas/DenunciaDiCessazionePolizzaScuoleINAIL/latest/DenunciaDiCessazionePolizzaScuoleINAIL.oas3.yaml> a dcatapit:Dataset,
+<https://w3id.org/italia/schemas/denuncia-cessazione-polizza-scuole/latest/denuncia-cessazione-polizza-scuole.oas3.yaml> a dcatapit:Dataset,
         dcatapit:Distribution ;
     rdfs:label "Consultazione Denuncia di cessazione polizza scuole INAIL API"@it ;
     rdfs:comment "Servizio di notifica"@it ;
@@ -48,10 +48,10 @@
     admsapit:target "Cittadini"@it,
         "Imprese"@it,
         "Pubbliche Amministrazioni"@it ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/blob/main/assets/schemas/DenunciaDiCessazionePolizzaScuoleINAIL/latest> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/blob/main/assets/schemas/denuncia-cessazione-polizza-scuole/latest> ;
     dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
-    dcat:distribution <https://w3id.org/italia/schemas/DenunciaDiCessazionePolizzaScuoleINAIL/latest/DenunciaDiCessazionePolizzaScuoleINAIL.oas3.yaml> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/DenunciaDiCessazionePolizzaScuoleINAIL/latest/DenunciaDiCessazionePolizzaScuoleINAIL.oas3.yaml> ;
+    dcat:distribution <https://w3id.org/italia/schemas/denuncia-cessazione-polizza-scuole/latest/denuncia-cessazione-polizza-scuole.oas3.yaml> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/denuncia-cessazione-polizza-scuole/latest/denuncia-cessazione-polizza-scuole.oas3.yaml> ;
     dcat:keyword "Pupil"@en,
         "Studente"@it ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
@@ -60,7 +60,7 @@
     dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
     dct:description "Il servizio viene invocato per ottenere informazioni sulla denuncia di cessazione della polizza assicurativa per le scuole." ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
-    dct:identifier <https://w3id.org/italia/schemas/DenunciaDiCessazionePolizzaScuoleINAIL> ;
+    dct:identifier <https://w3id.org/italia/schemas/denuncia-cessazione-polizza-scuole> ;
     dct:issued "2024-06-17"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
     dct:modified "2024-06-17"^^xsd:date ;
