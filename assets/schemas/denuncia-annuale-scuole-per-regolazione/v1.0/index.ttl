@@ -3,14 +3,14 @@
 @prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix INAIL_XrayMachine: <https://w3id.org/italia/work-accident/onto/proc17_xray_machine/> .
+@prefix INAIL_Schools: <https://w3id.org/italia/work-accident/onto/proc17_schools/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/italia/work-accident/onto/proc17_xray_machine> a owl:Ontology ;
-    foaf:name "Ontologia INAIL relativa alla Polizza Apparecchi RX" .
+<https://w3id.org/italia/work-accident/onto/proc17_schools> a owl:Ontology ;
+    foaf:name "Ontologia INAIL relativa alla Polizza Scuole" .
 
 ### Individuals
 
@@ -37,37 +37,35 @@
 
 ### Annotations
 
-<https://w3id.org/italia/schemas/DenunciaDiCessazionePolizzaApparecchiRXINAIL/latest/DenunciaDiCessazionePolizzaApparecchiRXINAIL.oas3.yaml> a dcatapit:Dataset,
+<https://w3id.org/italia/schemas/denuncia-annuale-scuole-per-regolazione/latest/denuncia-annuale-scuole-per-regolazione.oas3.yaml> a dcatapit:Dataset,
         dcatapit:Distribution ;
-    rdfs:label "Consultazione Denuncia Di Cessazione Polizza Apparecchi RX INAIL API"@it ;
+    rdfs:label "Consultazione Denuncia Annuale Scuole Per Regolazione INAIL API"@it ;
     rdfs:comment "Servizio di notifica"@it ;
     owl:versionInfo "0.1"@it ;
     admsapit:acronym "inail" ;
-    admsapit:hasKeyClass INAIL_XrayMachine:SoggettoEspostoAApparecchioINAIL ;
-    admsapit:prefix "INAIL_XrayMachine"^^xsd:string ;
+    admsapit:hasKeyClass INAIL_Schools:StudenteINAIL ;
+    admsapit:prefix "INAIL_Schools"^^xsd:string ;
     admsapit:target "Cittadini"@it,
         "Imprese"@it,
         "Pubbliche Amministrazioni"@it ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/blob/main/assets/schemas/DenunciaDiCessazionePolizzaApparecchiRXINAIL/latest> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/blob/main/assets/schemas/denuncia-annuale-scuole-per-regolazione/latest> ;
     dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
-    dcat:distribution <https://w3id.org/italia/schemas/DenunciaDiCessazionePolizzaApparecchiRXINAIL/latest/DenunciaDiCessazionePolizzaApparecchiRXINAIL.oas3.yaml> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/DenunciaDiCessazionePolizzaApparecchiRXINAIL/latest/DenunciaDiCessazionePolizzaApparecchiRXINAIL.oas3.yaml> ;
-    dcat:keyword "Apparecchio RX INAIL"@it,
-        "INAIL X-ray Units"@en,
-        "Soggetto Esposto A Apparecchio"@it,
-        "Worker exposure to X-ray units"@en ;
+    dcat:distribution <https://w3id.org/italia/schemas/denuncia-annuale-scuole-per-regolazione/latest/denuncia-annuale-scuole-per-regolazione.oas3.yaml> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/denuncia-annuale-scuole-per-regolazione/latest/denuncia-annuale-scuole-per-regolazione.oas3.yaml> ;
+    dcat:keyword "Pupil"@en,
+        "Studente"@it ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-    dct:conformsTo <https://w3id.org/italia/work-accident/onto/proc17_xray_machine> ;
+    dct:conformsTo <https://w3id.org/italia/work-accident/onto/proc17_schools> ;
     dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
-    dct:description "Il servizio viene invocato per ottenere informazioni sulla denuncia di cessazione della polizza assicurativa per soggetti esposti ad apparecchi RX." ;
+    dct:description "Il servizio viene invocato per ottenere informazioni sulla denuncia che consente di definire un conguaglio a favore del contraente il quale prevede che la scuola si tuteli attraverso la determinazione di un premio minimo. In questo modo, in caso di regolazione passiva a favore dell'assicurato, la stessa acquisirà in ogni caso un premio commisurato alle sue aspettative; secondo il quale il mancato pagamento dei premi successivi al primo comporta la sospensione della garanzia assicurativa per il solo periodo a cui si riferisce il premio, fermo restando l'obbligo dell'assicuratore di indennizzare i sinistri verificatisi precedentemente." ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
-    dct:identifier <https://w3id.org/italia/schemas/DenunciaDiCessazionePolizzaApparecchiRXINAIL> ;
+    dct:identifier <https://w3id.org/italia/schemas/denuncia-annuale-scuole-per-regolazione> ;
     dct:issued "2024-06-17"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
     dct:modified "2024-06-17"^^xsd:date ;
     dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
     dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
-    dct:title "Consultazione Denuncia Di Cessazione Polizza Apparecchi RX INAIL API"@it .
+    dct:title "Consultazione Denuncia Annuale Scuole Per Regolazione INAIL API"@it .
 
 ### Serialized using the ttlser deterministic serializer v1.2.0
