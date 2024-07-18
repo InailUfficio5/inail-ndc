@@ -1,5 +1,0 @@
-"url","id","label_it","level.@type","level.@value"
-"https://w3id.org/italia/work-accident/controlled-vocabulary/proc17_craftsmen/tipo_qualifica/AP","AP","Assoc.in partecipaz.","http://www.w3.org/2001/XMLSchema#integer","1"
-"https://w3id.org/italia/work-accident/controlled-vocabulary/proc17_craftsmen/tipo_qualifica/FA","FA","Familiare","http://www.w3.org/2001/XMLSchema#integer","1"
-"https://w3id.org/italia/work-accident/controlled-vocabulary/proc17_craftsmen/tipo_qualifica/SO","SO","Socio","http://www.w3.org/2001/XMLSchema#integer","1"
-"https://w3id.org/italia/work-accident/controlled-vocabulary/proc17_craftsmen/tipo_qualifica/TI","TI","Titolare","http://www.w3.org/2001/XMLSchema#integer","1"
