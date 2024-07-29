@@ -6144,10 +6144,10 @@
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-        <dct:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core/latest"/>
+        <dcat:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core/latest"/>
         <dct:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia INAIL relativa ai concetti principali dell&apos;istituto</dct:description>
         <dct:description xml:lang="en">This is the distribution in RDF/Turtle of the INAIL ontology about core concepts of the institute</dct:description>
-        <dct:downloadURL>https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/latest/core.ttl</dct:downloadURL>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/latest/core.ttl"/>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF"/>
         <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dct:title xml:lang="it">Distribuzione RDF/Turtle ontologia INAIL - Core</dct:title>
@@ -6160,10 +6160,10 @@
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-        <dct:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core/latest"/>
+        <dcat:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core/latest"/>
         <dct:description xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia INAIL relativa ai concetti principali dell&apos;istituto</dct:description>
         <dct:description xml:lang="en">This is the distribution in RDF/XML of the INAIL ontology about core concepts of the institute</dct:description>
-        <dct:downloadURL>https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/latest/core.owl</dct:downloadURL>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/latest/core.owl"/>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF"/>
         <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dct:title xml:lang="it">Distribuzione RDF/XML ontologia INAIL - Core</dct:title>
@@ -6176,10 +6176,10 @@
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-        <dct:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core/latest"/>
+        <dcat:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core/latest"/>
         <dct:description xml:lang="it">Questa è la distribuzione N-TRIPLES dell&apos;ontologia INAIL relativa ai concetti principali dell&apos;istituto</dct:description>
         <dct:description xml:lang="en">This is the distribution in N-TRIPLES of the INAIL ontology about core concepts of the institute</dct:description>
-        <dct:downloadURL>https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/latest/core.owl</dct:downloadURL>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/latest/core.n3"/>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF"/>
         <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dct:title xml:lang="it">Distribuzione N-TRIPLES ontologia INAIL - Core</dct:title>

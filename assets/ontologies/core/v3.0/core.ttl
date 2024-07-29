@@ -3094,10 +3094,10 @@ skos:Concept a owl:Class ;
         dcat:Distribution,
         dcatapit:Distribution,
         owl:NamedIndividual ;
-    dct:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core/latest> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/latest/core.n3> ;
     dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia INAIL relativa ai concetti principali dell'istituto"@it,
         "This is the distribution in N-TRIPLES of the INAIL ontology about core concepts of the institute"@en ;
-    dct:downloadURL "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/latest/core.n3" ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF> ;
     dct:license <http://creativecommons.org/licenses/by/4.0/> ;
     dct:title "Distribuzione N-TRIPLES ontologia INAIL - Core"@it,
@@ -3107,10 +3107,10 @@ skos:Concept a owl:Class ;
         dcat:Distribution,
         dcatapit:Distribution,
         owl:NamedIndividual ;
-    dct:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core/latest> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/latest/core.ttl> ;
     dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia INAIL relativa ai concetti principali dell'istituto"@it,
         "This is the distribution in RDF/Turtle of the INAIL ontology about core concepts of the institute"@en ;
-    dct:downloadURL "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/latest/core.ttl" ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF> ;
     dct:license <http://creativecommons.org/licenses/by/4.0/> ;
     dct:title "Distribuzione RDF/Turtle ontologia INAIL - Core"@it,
@@ -3120,10 +3120,10 @@ skos:Concept a owl:Class ;
         dcat:Distribution,
         dcatapit:Distribution,
         owl:NamedIndividual ;
-    dct:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core/latest> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/latest/core.owl> ;
     dct:description "Questa è la distribuzione RDF-XML dell'ontologia INAIL relativa ai concetti principali dell'istituto"@it,
         "This is the distribution in RDF-XML of the INAIL ontology about core concepts of the institute"@en ;
-    dct:downloadURL "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/latest/core.owl" ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF> ;
     dct:license <http://creativecommons.org/licenses/by/4.0/> ;
     dct:title "Distribuzione RDF-XML ontologia INAIL - Core"@it,
