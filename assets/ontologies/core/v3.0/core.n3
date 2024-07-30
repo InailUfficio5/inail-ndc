@@ -1,6 +1,8 @@
 <https://w3id.org/italia/work-accident/onto/core/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/italia/work-accident/onto/core/> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/italia/onto/work-accident/ised/core/1.0> .
-<https://w3id.org/italia/work-accident/onto/core/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> "https://w3id.org/italia/work-accident/data/adm_serv/distribution/CORE-RDF-TURTLE" .
+<https://w3id.org/italia/work-accident/onto/core/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> "https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE" .
+<https://w3id.org/italia/work-accident/onto/core/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> "https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-XML" .
+<https://w3id.org/italia/work-accident/onto/core/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> "https://w3id.org/italia/work-accident/onto/core/distribution/CORE-N-TRIPLES" .
 <https://w3id.org/italia/work-accident/onto/core/> <http://purl.org/dc/terms/modified> "2023-07-31T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/italia/work-accident/onto/core/> <https://w3id.org/italia/onto/ADMS/target> "Cittadini"@it .
 <https://w3id.org/italia/work-accident/onto/core/> <https://w3id.org/italia/onto/ADMS/target> "Pubbliche Amministrazioni"@it .
@@ -3085,6 +3087,7 @@ _:genid393 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid393 <http://www.w3.org/2002/07/owl#onProperty> _:genid394 .
 _:genid393 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
 _:genid394 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/work-accident/onto/core/retribuzioneHaTipoPeriodo> .
+<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> .
 <https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 <https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dati.gov.it/onto/dcatapit#Distribution> .
 <https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -3096,6 +3099,7 @@ _:genid394 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/wo
 <https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/" .
 <https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE> <http://purl.org/dc/terms/title> "Distribuzione RDF/Turtle ontologia INAIL - Core"@it .
 <https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE> <http://purl.org/dc/terms/title> "RDF/Turtle distribution of INAIL ontology - Core"@en .
+<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-XML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> .
 <https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-XML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 <https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-XML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dati.gov.it/onto/dcatapit#Distribution> .
 <https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-XML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -3107,6 +3111,7 @@ _:genid394 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/wo
 <https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-XML> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/" .
 <https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-XML> <http://purl.org/dc/terms/title> "Distribuzione RDF-XML ontologia INAIL - Core"@it .
 <https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-XML> <http://purl.org/dc/terms/title> "RDF-XML distribution of INAIL ontology - Core"@en .
+<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-N-TRIPLES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> .
 <https://w3id.org/italia/work-accident/onto/core/distribution/CORE-N-TRIPLES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 <https://w3id.org/italia/work-accident/onto/core/distribution/CORE-N-TRIPLES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dati.gov.it/onto/dcatapit#Distribution> .
 <https://w3id.org/italia/work-accident/onto/core/distribution/CORE-N-TRIPLES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

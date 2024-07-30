@@ -35,9 +35,11 @@ INAILCore: a owl:Ontology ;
     adms:hasFormalityLevel adms:Formal ;
     adms:hasKeyClass INAILCore:SoggettoAssicuranteINAIL ;
     adms:hasOntologyLanguage adms:OWL ;
-    adms:hasSemanticAssetDistribution <https://w3id.org/italia/work-accident/data/adm_serv/distribution/CORE-RDF-TURTLE> ;
+    adms:hasSemanticAssetDistribution <https://w3id.org/italia/work-accident/onto/core/distribution/CORE-N-TRIPLES>,
+        <https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE>,
+        <https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-XML> ;
     adms:hasTask adms:SearchTask ;
-    adms:last INAILCore:2.1 ;
+    adms:last INAILCore:3.0 ;
     adms:officialURI "https://w3id.org/italia/work-accident/onto/core"^^xsd:anyURI ;
     adms:prefix "inail" ;
     adms:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;

@@ -55,9 +55,11 @@
         <adms:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
         <adms:hasKeyClass rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL"/>
         <adms:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
-        <adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/adm_serv/distribution/CORE-RDF-TURTLE"/>
+        <adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE"/>
+		<adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-XML"/>
+		<adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/onto/core/distribution/CORE-N-TRIPLES"/>
         <adms:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/SearchTask"/>
-        <adms:last rdf:resource="https://w3id.org/italia/work-accident/onto/core/2.1"/>
+        <adms:last rdf:resource="https://w3id.org/italia/work-accident/onto/core/3.0"/>
         <adms:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/italia/work-accident/onto/core</adms:officialURI>
         <adms:prefix>inail</adms:prefix>
         <adms:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/NDC"/>
