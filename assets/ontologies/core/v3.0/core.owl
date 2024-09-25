@@ -9,6 +9,7 @@
      xmlns:dct="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:TI="https://w3id.org/italia/onto/TI/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:adms="https://w3id.org/italia/onto/ADMS/"
@@ -26,6 +27,7 @@
         <owl:imports rdf:resource="https://w3id.org/italia/onto/CPV/"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/RO/"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/l0/"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/onto/TI/"/>
         <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
         <dct:creator rdf:resource="https://w3id.org/italia/work-accident/data/organization/inail"/>
         <dct:description xml:lang="it">Ontologia INAIL relativa ai concetti core dell&apos;istituto: Soggetto Assicurante, Posizione Assicurativa Territoriale (PAT), Posizione Assicurativa Navigazione (PAN), Denuncia, Polizza, Sede INAIL, Retribuzione.</dct:description>
@@ -55,15 +57,18 @@
         <adms:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
         <adms:hasKeyClass rdf:resource="https://w3id.org/italia/work-accident/onto/core/SoggettoAssicuranteINAIL"/>
         <adms:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
-        <adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE"/>
-		<adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-XML"/>
-		<adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/onto/core/distribution/CORE-N-TRIPLES"/>
+        <adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-TURTLE"/>
+        <adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-XML"/>
+        <adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/core/distribution/CORE-N-TRIPLES"/>
+        <adms:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/AnnotationTask"/>
+        <adms:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/QueryFormulationTask"/>
         <adms:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/SearchTask"/>
         <adms:last rdf:resource="https://w3id.org/italia/work-accident/onto/core/3.0"/>
         <adms:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/italia/work-accident/onto/core</adms:officialURI>
         <adms:prefix>inail</adms:prefix>
         <adms:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/NDC"/>
         <adms:status>catalogued</adms:status>
+        <adms:status>published</adms:status>
         <adms:target xml:lang="it">Cittadini</adms:target>
         <adms:target xml:lang="it">Imprese</adms:target>
         <adms:target xml:lang="it">Pubbliche Amministrazioni</adms:target>
@@ -6140,49 +6145,49 @@
 
 
 
-    <!-- https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE -->
+    <!-- https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-TURTLE -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE">
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-TURTLE">
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-        <dcat:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core/latest"/>
+        <dcat:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core/v3.0"/>
         <dct:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia INAIL relativa ai concetti principali dell&apos;istituto</dct:description>
         <dct:description xml:lang="en">This is the distribution in RDF/Turtle of the INAIL ontology about core concepts of the institute</dct:description>
-        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/latest/core.ttl"/>
-        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/v3.0/core.ttl"/>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
         <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dct:title xml:lang="it">Distribuzione RDF/Turtle ontologia INAIL - Core</dct:title>
         <dct:title xml:lang="en">RDF/Turtle distribution of INAIL ontology - Core</dct:title>
     </owl:NamedIndividual>
 
-    <!-- https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-XML -->
+    <!-- https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-XML -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-XML">
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-XML">
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-        <dcat:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core/latest"/>
+        <dcat:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core/v3.0"/>
         <dct:description xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia INAIL relativa ai concetti principali dell&apos;istituto</dct:description>
         <dct:description xml:lang="en">This is the distribution in RDF/XML of the INAIL ontology about core concepts of the institute</dct:description>
-        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/latest/core.owl"/>
-        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/v3.0/core.owl"/>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
         <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dct:title xml:lang="it">Distribuzione RDF/XML ontologia INAIL - Core</dct:title>
         <dct:title xml:lang="en">RDF/XML distribution of INAIL ontology - Core</dct:title>
     </owl:NamedIndividual>
 
-	    <!-- https://w3id.org/italia/work-accident/onto/core/distribution/CORE-N-TRIPLES -->
+	    <!-- https://w3id.org/italia/work-accident/data/core/distribution/CORE-N-TRIPLES -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/onto/core/distribution/CORE-N-TRIPLES">
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/data/core/distribution/CORE-N-TRIPLES">
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-        <dcat:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core/latest"/>
+        <dcat:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core/v3.0"/>
         <dct:description xml:lang="it">Questa è la distribuzione N-TRIPLES dell&apos;ontologia INAIL relativa ai concetti principali dell&apos;istituto</dct:description>
         <dct:description xml:lang="en">This is the distribution in N-TRIPLES of the INAIL ontology about core concepts of the institute</dct:description>
-        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/latest/core.n3"/>
-        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/v3.0/core.n3"/>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES"/>
         <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dct:title xml:lang="it">Distribuzione N-TRIPLES ontologia INAIL - Core</dct:title>
         <dct:title xml:lang="en">N-TRIPLES distribution of INAIL ontology - Core</dct:title>
@@ -6190,9 +6195,9 @@
 
 
 
-    <!-- https://w3id.org/italia/work-accident/onto/core/organization/inail -->
+    <!-- https://w3id.org/italia/work-accident/data/organization/inail -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/onto/core/organization/inail">
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/data/organization/inail">
         <dct:identifier>inail</dct:identifier>
         <foaf:name xml:lang="it">Istituto Nazionale per l&apos;Assicurazione contro gli Infortuni sul Lavoro</foaf:name>
         <foaf:name xml:lang="en">National Institute for Insurance against Accidents at Work</foaf:name>
@@ -6200,9 +6205,9 @@
 
 
 
-    <!-- https://w3id.org/italia/work-accident/onto/core/organization/td -->
+    <!-- https://w3id.org/italia/work-accident/data/organization/td -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/onto/core/organization/td">
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/data/organization/td">
         <dct:identifier>TD</dct:identifier>
         <foaf:name xml:lang="en">Digital Transformation Team</foaf:name>
         <foaf:name xml:lang="it">Team per la Trasformazione Digitale</foaf:name>
@@ -6210,9 +6215,9 @@
 
 
 
-    <!-- https://w3id.org/italia/work-accident/onto/core/organization/ufficioV -->
+    <!-- https://w3id.org/italia/work-accident/data/organization/ufficioV -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/onto/core/organization/ufficioV">
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/data/organization/ufficioV">
         <vcard:fn>INAIL Ufficio V - D.C.O.D</vcard:fn>
         <vcard:hasEmail>mailto:dcod@inail.it</vcard:hasEmail>
     </owl:NamedIndividual>

@@ -1,8 +1,8 @@
 <https://w3id.org/italia/work-accident/onto/core/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/italia/work-accident/onto/core/> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/italia/onto/work-accident/ised/core/1.0> .
-<https://w3id.org/italia/work-accident/onto/core/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> "https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE" .
-<https://w3id.org/italia/work-accident/onto/core/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> "https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-XML" .
-<https://w3id.org/italia/work-accident/onto/core/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> "https://w3id.org/italia/work-accident/onto/core/distribution/CORE-N-TRIPLES" .
+<https://w3id.org/italia/work-accident/onto/core/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> "https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-TURTLE" .
+<https://w3id.org/italia/work-accident/onto/core/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> "https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-XML" .
+<https://w3id.org/italia/work-accident/onto/core/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> "https://w3id.org/italia/work-accident/data/core/distribution/CORE-N-TRIPLES" .
 <https://w3id.org/italia/work-accident/onto/core/> <http://purl.org/dc/terms/modified> "2023-07-31T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/italia/work-accident/onto/core/> <https://w3id.org/italia/onto/ADMS/target> "Cittadini"@it .
 <https://w3id.org/italia/work-accident/onto/core/> <https://w3id.org/italia/onto/ADMS/target> "Pubbliche Amministrazioni"@it .
@@ -3087,53 +3087,53 @@ _:genid393 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid393 <http://www.w3.org/2002/07/owl#onProperty> _:genid394 .
 _:genid393 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
 _:genid394 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/work-accident/onto/core/retribuzioneHaTipoPeriodo> .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dati.gov.it/onto/dcatapit#Distribution> .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE> <http://purl.org/dc/terms/accessURL> "https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core/latest" .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE> <http://purl.org/dc/terms/description> "Questa \u00E8 la distribuzione RDF/Turtle dell'ontologia INAIL relativa ai concetti principali dell'istituto"@it .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE> <http://purl.org/dc/terms/description> "This is the distribution in RDF/Turtle of the INAIL ontology about core concepts of the institute"@en .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE> <http://purl.org/dc/terms/downloadURL> "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/latest/core.ttl" .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE> <http://purl.org/dc/terms/format> "http://publications.europa.eu/resource/authority/file-type/RDF" .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/" .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE> <http://purl.org/dc/terms/title> "Distribuzione RDF/Turtle ontologia INAIL - Core"@it .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-TURTLE> <http://purl.org/dc/terms/title> "RDF/Turtle distribution of INAIL ontology - Core"@en .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-XML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-XML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-XML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dati.gov.it/onto/dcatapit#Distribution> .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-XML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-XML> <http://purl.org/dc/terms/accessURL> "https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core/latest" .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-XML> <http://purl.org/dc/terms/description> "Questa \u00E8 la distribuzione RDF-XML dell'ontologia INAIL relativa ai concetti principali dell'istituto"@it .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-XML> <http://purl.org/dc/terms/description> "This is the distribution in RDF-XML of the INAIL ontology about core concepts of the institute"@en .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-XML> <http://purl.org/dc/terms/downloadURL> "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/latest/core.owl" .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-XML> <http://purl.org/dc/terms/format> "http://publications.europa.eu/resource/authority/file-type/RDF" .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-XML> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/" .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-XML> <http://purl.org/dc/terms/title> "Distribuzione RDF-XML ontologia INAIL - Core"@it .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-RDF-XML> <http://purl.org/dc/terms/title> "RDF-XML distribution of INAIL ontology - Core"@en .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-N-TRIPLES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-N-TRIPLES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-N-TRIPLES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dati.gov.it/onto/dcatapit#Distribution> .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-N-TRIPLES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-N-TRIPLES> <http://purl.org/dc/terms/accessURL> "https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core/latest" .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-N-TRIPLES> <http://purl.org/dc/terms/description> "Questa \u00E8 la distribuzione N-TRIPLES dell'ontologia INAIL relativa ai concetti principali dell'istituto"@it .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-N-TRIPLES> <http://purl.org/dc/terms/description> "This is the distribution in N-TRIPLES of the INAIL ontology about core concepts of the institute"@en .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-N-TRIPLES> <http://purl.org/dc/terms/downloadURL> "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/latest/core.n3" .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-N-TRIPLES> <http://purl.org/dc/terms/format> "http://publications.europa.eu/resource/authority/file-type/RDF" .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-N-TRIPLES> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/" .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-N-TRIPLES> <http://purl.org/dc/terms/title> "Distribuzione N-TRIPLES ontologia INAIL - Core"@it .
-<https://w3id.org/italia/work-accident/onto/core/distribution/CORE-N-TRIPLES> <http://purl.org/dc/terms/title> "N-TRIPLES distribution of INAIL ontology - Core"@en .
-<https://w3id.org/italia/work-accident/onto/core/organization/inail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/italia/work-accident/onto/core/organization/inail> <http://purl.org/dc/terms/identifier> "inail" .
-<https://w3id.org/italia/work-accident/onto/core/organization/inail> <http://xmlns.com/foaf/0.1/name> "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it .
-<https://w3id.org/italia/work-accident/onto/core/organization/inail> <http://xmlns.com/foaf/0.1/name> "National Institute for Insurance against Accidents at Work"@en .
-<https://w3id.org/italia/work-accident/onto/core/organization/td> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/italia/work-accident/onto/core/organization/td> <http://purl.org/dc/terms/identifier> "TD" .
-<https://w3id.org/italia/work-accident/onto/core/organization/td> <http://xmlns.com/foaf/0.1/name> "Digital Transformation Team"@en .
-<https://w3id.org/italia/work-accident/onto/core/organization/td> <http://xmlns.com/foaf/0.1/name> "Team per la Trasformazione Digitale"@it .
-<https://w3id.org/italia/work-accident/onto/core/organization/ufficioV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/italia/work-accident/onto/core/organization/ufficioV> <http://www.w3.org/2006/vcard/ns#fn> "INAIL Ufficio V - D.C.O.D" .
-<https://w3id.org/italia/work-accident/onto/core/organization/ufficioV> <http://www.w3.org/2006/vcard/ns#hasEmail> "mailto:dcod@inail.it" .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-TURTLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-TURTLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-TURTLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dati.gov.it/onto/dcatapit#Distribution> .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-TURTLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-TURTLE> <http://purl.org/dc/terms/accessURL> "https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core/v3.0" .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-TURTLE> <http://purl.org/dc/terms/description> "Questa \u00E8 la distribuzione RDF/Turtle dell'ontologia INAIL relativa ai concetti principali dell'istituto"@it .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-TURTLE> <http://purl.org/dc/terms/description> "This is the distribution in RDF/Turtle of the INAIL ontology about core concepts of the institute"@en .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-TURTLE> <http://purl.org/dc/terms/downloadURL> "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/v3.0/core.ttl" .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-TURTLE> <http://purl.org/dc/terms/format> "http://publications.europa.eu/resource/authority/file-type/RDF" .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-TURTLE> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/" .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-TURTLE> <http://purl.org/dc/terms/title> "Distribuzione RDF/Turtle ontologia INAIL - Core"@it .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-TURTLE> <http://purl.org/dc/terms/title> "RDF/Turtle distribution of INAIL ontology - Core"@en .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-XML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-XML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-XML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dati.gov.it/onto/dcatapit#Distribution> .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-XML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-XML> <http://purl.org/dc/terms/accessURL> "https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core/v3.0" .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-XML> <http://purl.org/dc/terms/description> "Questa \u00E8 la distribuzione RDF-XML dell'ontologia INAIL relativa ai concetti principali dell'istituto"@it .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-XML> <http://purl.org/dc/terms/description> "This is the distribution in RDF-XML of the INAIL ontology about core concepts of the institute"@en .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-XML> <http://purl.org/dc/terms/downloadURL> "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/v3.0/core.owl" .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-XML> <http://purl.org/dc/terms/format> "http://publications.europa.eu/resource/authority/file-type/RDF" .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-XML> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/" .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-XML> <http://purl.org/dc/terms/title> "Distribuzione RDF-XML ontologia INAIL - Core"@it .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-RDF-XML> <http://purl.org/dc/terms/title> "RDF-XML distribution of INAIL ontology - Core"@en .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-N-TRIPLES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-N-TRIPLES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-N-TRIPLES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dati.gov.it/onto/dcatapit#Distribution> .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-N-TRIPLES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-N-TRIPLES> <http://purl.org/dc/terms/accessURL> "https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/core/v3.0" .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-N-TRIPLES> <http://purl.org/dc/terms/description> "Questa \u00E8 la distribuzione N-TRIPLES dell'ontologia INAIL relativa ai concetti principali dell'istituto"@it .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-N-TRIPLES> <http://purl.org/dc/terms/description> "This is the distribution in N-TRIPLES of the INAIL ontology about core concepts of the institute"@en .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-N-TRIPLES> <http://purl.org/dc/terms/downloadURL> "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/core/v3.0/core.n3" .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-N-TRIPLES> <http://purl.org/dc/terms/format> "http://publications.europa.eu/resource/authority/file-type/RDF" .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-N-TRIPLES> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/" .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-N-TRIPLES> <http://purl.org/dc/terms/title> "Distribuzione N-TRIPLES ontologia INAIL - Core"@it .
+<https://w3id.org/italia/work-accident/data/core/distribution/CORE-N-TRIPLES> <http://purl.org/dc/terms/title> "N-TRIPLES distribution of INAIL ontology - Core"@en .
+<https://w3id.org/italia/work-accident/data/organization/inail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/italia/work-accident/data/organization/inail> <http://purl.org/dc/terms/identifier> "inail" .
+<https://w3id.org/italia/work-accident/data/organization/inail> <http://xmlns.com/foaf/0.1/name> "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it .
+<https://w3id.org/italia/work-accident/data/organization/inail> <http://xmlns.com/foaf/0.1/name> "National Institute for Insurance against Accidents at Work"@en .
+<https://w3id.org/italia/work-accident/data/organization/td> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/italia/work-accident/data/organization/td> <http://purl.org/dc/terms/identifier> "TD" .
+<https://w3id.org/italia/work-accident/data/organization/td> <http://xmlns.com/foaf/0.1/name> "Digital Transformation Team"@en .
+<https://w3id.org/italia/work-accident/data/organization/td> <http://xmlns.com/foaf/0.1/name> "Team per la Trasformazione Digitale"@it .
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> <http://www.w3.org/2006/vcard/ns#fn> "INAIL Ufficio V - D.C.O.D" .
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> <http://www.w3.org/2006/vcard/ns#hasEmail> "mailto:dcod@inail.it" .
 _:genid395 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
 _:genid395 <http://www.w3.org/2002/07/owl#members> _:genid396 .
 _:genid396 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/core/Associazione> .
