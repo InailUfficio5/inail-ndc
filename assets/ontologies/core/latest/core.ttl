@@ -30,8 +30,8 @@ INAILCore: a owl:Ontology ;
         "Ontologia Core di INAIL"@it ;
     rdfs:comment "Ontologia INAIL relativa ai concetti core dell'istituto: Soggetto Assicurante INAIL, Posizione Assicurativa Territoriale (PAT), Posizione Assicurativa Navigazione (PAN), Denuncia, Polizza, Sede INAIL, Retribuzione"@it,
         "This is the ontology of the INAIL Organization about core concepts of the institute: INAIL Insurer, Insurance Territorial Position (PAT), Insurance Navigation Position(PAN), Complaint, Policy, INAIL Office, Salary"@en ;
-    owl:versionInfo "Version 2.1 - Modified on 01 December 2023"@en,
-        "Versione 2.1 - Modificata il 01 Dicembre 2023"@it ;
+    owl:versionInfo "Version 3.0 - Modified on June the 7th 2024"@en,
+        "Versione 3.0 - Modificata il 07 Giugno 2024"@it ;
     rdfs:isDefinedBy INAILCore: ;
     prov:wasDerivedFrom INAILCore:2.1 ;
     adms:acronym "inail" ;
@@ -86,7 +86,7 @@ INAILCore: a owl:Ontology ;
     dct:issued "2022-09-06T00:00:00+00:00"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
         <http://publications.europa.eu/resource/authority/language/ITA> ;
-    dct:modified "2023-12-01T00:00:00+00:00"^^xsd:dateTime ;
+    dct:modified "2024-06-07T00:00:00+00:00"^^xsd:dateTime ;
     dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
     dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
     dct:title "Core INAIL Ontology"@en,
