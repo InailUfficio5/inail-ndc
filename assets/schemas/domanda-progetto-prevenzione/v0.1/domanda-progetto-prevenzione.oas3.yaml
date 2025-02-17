@@ -1,0 +1,178 @@
+openapi: 3.0.3
+info:
+  title: Schema della Domanda Progetto Prevenzione
+  version: 202412.19.00
+  x-summary: Schema della Domanda Progetto Prevenzione compatibile con l'Ontologia INAIL relativa ai Bandi ISI
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  termsOfService: https://creativecommons.org/licenses/by/4.0/
+  contact:
+    name: Anna Maria De Paoli
+    email: a.depaoli@inail.it
+  description: https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione
+paths: {}
+servers: []
+tags: []
+components:
+  schemas:
+    SedeInail:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/sede-inail/latest/sede-inail.oas3.yaml#/components/schemas/SedeInail"
+    ProgettoPrevenzione:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/progetto-prevenzione/latest/progetto-prevenzione.oas3.yaml#/components/schemas/ProgettoPrevenzione"
+    BandoISI:
+      $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/bando-isi/latest/bando-isi.oas3.yaml#/components/schemas/BandoISI"
+
+    IdDomandaProgettoPrevenzione:
+      type: string
+      description: https://w3id.org/italia/work-accident/onto/risk_management/idDomandaProgettoPrevenzione
+      example: '154832264'
+      maxLength: 50
+      minLength: 1
+
+    DomandaProgettoPrevenzione:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione
+      # This custom property defines the associated json-ld
+      #   context that can be used to semantically describe
+      #   the instances.
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/risk_management/"
+        codice_domanda_progetto_prevenzione: codiceDomandaProgettoPrevenzione
+        progressivo_invio_domanda_progetto_prevenzione: progressivoInvioDomandaProgettoPrevenzione
+        data_invio_domanda_progetto_prevenzione: dataInvioDomandaProgettoPrevenzione
+        data_inserimento_in_elenco_domanda_progetto_prevenzione: dataInserimentoInElencoDomandaProgettoPrevenzione
+        data_ultima_modifica_domanda_progetto_prevenzione: dataUltimaModificaDomandaProgettoPrevenzione
+        data_scorrimento_domanda_progetto_prevenzione: dataScorrimentoDomandaProgettoPrevenzione
+        stato_domanda_progetto_prevenzione: statoDomandaProgettoPrevenzione
+        domanda_presentata_per_bando:
+          "@id": domandaPresentataPerBando
+        domanda_presenta_progetto_di_prevenzione:
+          "@id": domandaPresentaProgettoDiPrevenzione
+        domanda_presentata_presso_sede_inail:
+          "@id": domandaPresentataPressoSedeINAIL
+      additionalProperties: true
+      description: https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione
+      required:
+      - identificativo_domanda_progetto_prevenzione
+      - codice_domanda_progetto_prevenzione
+      - progressivo_invio_domanda_progetto_prevenzione
+      - data_invio_domanda_progetto_prevenzione
+      - data_inserimento_in_elenco_domanda_progetto_prevenzione
+      - data_ultima_modifica_domanda_progetto_prevenzione
+      - data_scorrimento_domanda_progetto_prevenzione
+      - stato_domanda_progetto_prevenzione
+      properties:
+        identificativo_domanda_progetto_prevenzione:
+          $ref: "#/components/schemas/IdDomandaProgettoPrevenzione"
+        codice_domanda_progetto_prevenzione:
+          type: string
+          maxLength: 50
+        progressivo_invio_domanda_progetto_prevenzione:
+          type: string
+          maxLength: 50
+        data_invio_domanda_progetto_prevenzione:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        data_inserimento_in_elenco_domanda_progetto_prevenzione:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        data_ultima_modifica_domanda_progetto_prevenzione:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        data_scorrimento_domanda_progetto_prevenzione:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        stato_domanda_progetto_prevenzione:
+          type: string
+          maxLength: 50
+        domanda_presentata_per_bando:
+          type: object
+          items:
+            $ref: "#/components/schemas/AvvisoPubblicoRegionale"
+        domanda_presenta_progetto_di_prevenzione:
+          type: object
+          items:
+            $ref: "#/components/schemas/ProgettoPrevenzione"
+        domanda_presentata_presso_sede_inail:
+          type: object
+          items:
+            $ref: "#/components/schemas/SedeInail"
+      example:
+        identificativo_domanda_progetto_prevenzione:
+          $ref: "#/components/schemas/IdDomandaProgettoPrevenzione/example"
+        codice_domanda_progetto_prevenzione: '25646'
+        progressivo_invio_domanda_progetto_prevenzione: '246'
+        data_invio_domanda_progetto_prevenzione: "2024-07-03"
+        data_inserimento_in_elenco_domanda_progetto_prevenzione: "2024-08-15"
+        data_ultima_modifica_domanda_progetto_prevenzione: "2024-09-01"
+        data_scorrimento_domanda_progetto_prevenzione: "2024-10-12"
+        stato_domanda_progetto_prevenzione: 'Domanda registrata'
+        domanda_presentata_per_bando:
+          $ref: "#/components/schemas/AvvisoPubblicoRegionale/example"
+        domanda_presenta_progetto_di_prevenzione:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/progetto-prevenzione/latest/progetto-prevenzione.oas3.yaml#/components/schemas/ProgettoPrevenzione/example"
+        domanda_presentata_presso_sede_inail:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/sede-inail/latest/sede-inail.oas3.yaml#/components/schemas/SedeInail/example"
+
+    IdAvvisoPubblicoRegionale:
+      type: string
+      description: https://w3id.org/italia/work-accident/onto/risk_management/idAvvisoPubblicoRegionale
+      example: '24568896'
+      maxLength: 50
+      minLength: 1
+
+    AvvisoPubblicoRegionale:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/risk_management/AvvisoPubblicoRegionale
+      # This custom property defines the associated json-ld
+      #   context that can be used to semantically describe
+      #   the instances.
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/risk_management/"
+        codice_avviso_pubblico_regionale: codiceAvvisoPubblicoRegionale
+        descrizione_avviso_pubblico_regionale: descrizioneAvvisoPubblicoRegionale
+        budget_avviso_pubblico_regionale: budgetAvvisoPubblicoRegionale
+        importo_impiegato_avviso_pubblico_regionale: importoImpiegatoBandoISIRegionale
+        avviso_relativo_a_bando:
+          "@id": avvisoRelativoABando
+      additionalProperties: true
+      description: https://w3id.org/italia/work-accident/onto/risk_management/AvvisoPubblicoRegionale
+      required:
+      - identificativo_avviso_pubblico_regionale
+      - codice_avviso_pubblico_regionale
+      - descrizione_avviso_pubblico_regionale
+      - budget_avviso_pubblico_regionale
+      - importo_impiegato_avviso_pubblico_regionale
+      properties:
+        identificativo_avviso_pubblico_regionale:
+          $ref: "#/components/schemas/IdAvvisoPubblicoRegionale"
+        codice_avviso_pubblico_regionale:
+          type: string
+          maxLength: 50
+        descrizione_avviso_pubblico_regionale:
+          type: string
+          maxLength: 50
+        budget_avviso_pubblico_regionale:
+          type: number
+          format: double
+        importo_impiegato_avviso_pubblico_regionale:
+          type: number
+          format: double
+        avviso_relativo_a_bando:
+          type: object
+          items:
+            $ref: "#/components/schemas/BandoISI"
+      example:
+        identificativo_avviso_pubblico_regionale:
+          $ref: "#/components/schemas/IdAvvisoPubblicoRegionale/example"
+        codice_avviso_pubblico_regionale: '451533'
+        descrizione_avviso_pubblico_regionale: 'Avviso pubblico regionale per il finanziamento dei progetti di miglioramento delle condizioni di salute e sicurezza'
+        budget_avviso_pubblico_regionale: 350000000
+        importo_impiegato_avviso_pubblico_regionale: 500000
+        avviso_relativo_a_bando:
+          $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/bando-isi/latest/bando-isi.oas3.yaml#/components/schemas/BandoISI/example"

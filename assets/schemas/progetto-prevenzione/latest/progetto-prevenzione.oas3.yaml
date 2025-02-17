@@ -1,0 +1,208 @@
+openapi: 3.0.3
+info:
+  title: Schema del Progetto Prevenzione
+  version: 202412.19.00
+  x-summary: Schema del progetto prevenzione compatibile con l'Ontologia INAIL relativa ai Bandi ISI
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  termsOfService: https://creativecommons.org/licenses/by/4.0/
+  contact:
+    name: Anna Maria De Paoli
+    email: a.depaoli@inail.it
+  description: https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione
+paths: {}
+servers: []
+tags: []
+components:
+  schemas:
+
+    IdProgettoPrevenzione:
+      type: string
+      description: https://w3id.org/italia/work-accident/onto/risk_management/idProgettoPrevenzione
+      example: '1874359953'
+      maxLength: 50
+      minLength: 1
+
+    ProgettoPrevenzione:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione
+      # This custom property defines the associated json-ld
+      #   context that can be used to semantically describe
+      #   the instances.
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/risk_management/"
+        punteggio_bene_2_progetto_prevenzione: punteggioBene2ProgettoPrevenzione
+        punteggio_bene_1_progetto_prevenzione: punteggioBene1ProgettoPrevenzione
+        punteggio_ateco_progetto_prevenzione: punteggioATECOProgettoPrevenzione
+        iban_progetto_prevenzione: ibanProgettoPrevenzione
+        importo_previsionale_vendita_o_permuta_progetto_prevenzione: importoPrevisionaleVenditaOPermutaProgettoPrevenzione
+        punteggio_totale_progetto_prevenzione: punteggioTotaleProgettoPrevenzione
+        importo_consulenza_progetto_prevenzione: importoConsulenzaProgettoPrevenzione
+        importo_certificazione_progetto_prevenzione: importoCertificazioneProgettoPrevenzione
+        importo_anticipo_progetto_prevenzione: importoAnticipoProgettoPrevenzione
+        importo_richiesto_progetto_prevenzione: importoRichiestoProgettoPrevenzione
+        importo_massimo_finanziato_progetto_prevenzione: importoMassimoFinanziatoProgettoPrevenzione
+        importo_progetto_prevenzione: importoProgettoPrevenzione
+        descrizione_progetto_prevenzione: descrizioneProgettoPrevenzione
+        progetto_ha_tipologia_di_acquisto:
+          "@id": progettoHaTipologiaDiAcquisto
+        progetto_ha_tipo_intervento:
+          "@id": progettoHaTipoIntervento
+      additionalProperties: true
+      description: https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione
+      required:
+      - identificativo_progetto_prevenzione
+      - punteggio_bene_2_progetto_prevenzione
+      - punteggio_bene_1_progetto_prevenzione
+      - punteggio_ateco_progetto_prevenzione
+      - iban_progetto_prevenzione
+      - importo_previsionale_vendita_o_permuta_progetto_prevenzione
+      - punteggio_totale_progetto_prevenzione
+      - importo_consulenza_progetto_prevenzione
+      - importo_certificazione_progetto_prevenzione
+      - importo_anticipo_progetto_prevenzione
+      - importo_richiesto_progetto_prevenzione
+      - importo_massimo_finanziato_progetto_prevenzione
+      - importo_progetto_prevenzione
+      - descrizione_progetto_prevenzione
+      properties:
+        identificativo_progetto_prevenzione:
+          $ref: "#/components/schemas/IdProgettoPrevenzione"
+        punteggio_bene_2_progetto_prevenzione:
+          type: number
+          format: double
+        punteggio_bene_1_progetto_prevenzione:
+          type: number
+          format: double
+        punteggio_ateco_progetto_prevenzione:
+          type: number
+          format: double
+        iban_progetto_prevenzione:
+          type: string
+          maxLength: 50
+        importo_previsionale_vendita_o_permuta_progetto_prevenzione:
+          type: number
+          format: double
+        punteggio_totale_progetto_prevenzione:
+          type: number
+          format: double
+        importo_consulenza_progetto_prevenzione:
+          type: number
+          format: double
+        importo_certificazione_progetto_prevenzione:
+          type: number
+          format: double
+        importo_anticipo_progetto_prevenzione:
+          type: number
+          format: double
+        importo_richiesto_progetto_prevenzione:
+          type: number
+          format: double
+        importo_massimo_finanziato_progetto_prevenzione:
+          type: number
+          format: double
+        importo_progetto_prevenzione:
+          type: number
+          format: double
+        descrizione_progetto_prevenzione:
+          type: string
+          maxLength: 50
+        progetto_ha_tipologia_di_acquisto:
+          type: object
+          items:
+            $ref: "#/components/schemas/TipologiaDiAcquistoProgettoPrevenzione"
+        progetto_ha_tipo_intervento:
+          type: object
+          items:
+            $ref: "#/components/schemas/TipoInterventoBandoISI"
+      example:
+        identificativo_progetto_prevenzione:
+          $ref: "#/components/schemas/IdProgettoPrevenzione/example"
+        punteggio_bene_2_progetto_prevenzione: 55.67
+        punteggio_bene_1_progetto_prevenzione: 33.44
+        punteggio_ateco_progetto_prevenzione: 5
+        iban_progetto_prevenzione: 'IT78K0200861860000005260654'
+        importo_previsionale_vendita_o_permuta_progetto_prevenzione: 12000
+        punteggio_totale_progetto_prevenzione: 120
+        importo_consulenza_progetto_prevenzione: 5500
+        importo_certificazione_progetto_prevenzione: 4400
+        importo_anticipo_progetto_prevenzione: 45035
+        importo_richiesto_progetto_prevenzione: 55250
+        importo_massimo_finanziato_progetto_prevenzione: 130000
+        importo_progetto_prevenzione: 200000
+        descrizione_progetto_prevenzione: 'Acquisti gru BENE 1'
+        progetto_ha_tipologia_di_acquisto:
+          $ref: "#/components/schemas/TipologiaDiAcquistoProgettoPrevenzione/example"
+        progetto_ha_tipo_intervento:
+          $ref: "#/components/schemas/TipoInterventoBandoISI/example"
+
+    IdTipologiaDiAcquistoProgettoPrevenzione:
+      type: string
+      description: https://w3id.org/italia/work-accident/onto/risk_management/idTipologiaDiAcquistoProgettoPrevenzione
+      example: '2908646'
+      maxLength: 50
+      minLength: 1
+
+    TipologiaDiAcquistoProgettoPrevenzione:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/risk_management/TipologiaDiAcquistoProgettoPrevenzione
+      # This custom property defines the associated json-ld
+      #   context that can be used to semantically describe
+      #   the instances.
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/risk_management/"
+        descrizione_tipo_acquisto: descrizioneTipoAcquisto
+      additionalProperties: true
+      description: https://w3id.org/italia/work-accident/onto/risk_management/TipologiaDiAcquistoProgettoPrevenzione
+      required:
+      - identificativo_tipologia_di_acquisto_progetto_prevenzione
+      - descrizione_tipo_acquisto
+      properties:
+        identificativo_tipologia_di_acquisto_progetto_prevenzione:
+          $ref: "#/components/schemas/IdTipologiaDiAcquistoProgettoPrevenzione"
+        descrizione_tipo_acquisto:
+          type: string
+          maxLength: 50
+      example:
+        identificativo_tipologia_di_acquisto_progetto_prevenzione:
+          $ref: "#/components/schemas/IdTipologiaDiAcquistoProgettoPrevenzione/example"
+        descrizione_tipo_acquisto: 'noleggio'
+
+    IdTipoInterventoBandoISI:
+      type: string
+      description: https://w3id.org/italia/work-accident/onto/risk_management/idTipoInterventoBandoISI
+      example: '9853250'
+      maxLength: 50
+      minLength: 1
+
+    TipoInterventoBandoISI:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandoISI
+      # This custom property defines the associated json-ld
+      #   context that can be used to semantically describe
+      #   the instances.
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/risk_management/"
+        descrizione_tipo_intervento: descrizioneTipoIntervento
+        dettaglio_tipo_intervento: dettaglioTipoIntervento
+      additionalProperties: true
+      description: https://w3id.org/italia/work-accident/onto/risk_management/TipologiaDiAcquistoProgettoPrevenzione
+      required:
+      - identificativo_tipo_intervento_bando_isi
+      - descrizione_tipo_intervento
+      - dettaglio_tipo_intervento
+      properties:
+        identificativo_tipo_intervento_bando_isi:
+          $ref: "#/components/schemas/IdTipoInterventoBandoISI"
+        descrizione_tipo_intervento:
+          type: string
+          maxLength: 50
+        dettaglio_tipo_intervento:
+          type: string
+          maxLength: 50
+      example:
+        identificativo_tipo_intervento_bando_isi:
+          $ref: "#/components/schemas/IdTipoInterventoBandoISI/example"
+        descrizione_tipo_intervento: '1 trattore agricolo o forestale'
+        dettaglio_tipo_intervento: 'a'

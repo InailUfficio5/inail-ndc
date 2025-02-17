@@ -1,0 +1,89 @@
+openapi: 3.0.3
+info:
+  title: Schema del Bando ISI
+  version: 202412.19.00
+  x-summary: Schema del Bando ISI compatibile con l'Ontologia INAIL relativa ai Bandi ISI
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  termsOfService: https://creativecommons.org/licenses/by/4.0/
+  contact:
+    name: Anna Maria De Paoli
+    email: a.depaoli@inail.it
+  description: https://w3id.org/italia/work-accident/onto/risk_management/BandoISI
+paths: {}
+servers: []
+tags: []
+components:
+  schemas:
+
+    IdBandoISI:
+      type: string
+      description: https://w3id.org/italia/work-accident/onto/risk_management/idBandoISI
+      example: '159848613'
+      maxLength: 50
+      minLength: 1
+
+    BandoISI:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/risk_management/BandoISI
+      # This custom property defines the associated json-ld
+      #   context that can be used to semantically describe
+      #   the instances.
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/work-accident/onto/risk_management/"
+        codice_bando_isi: codiceBandoISI
+        descrizione_bando_isi: descrizioneBandoISI
+        budget_bando_isi: budgetBandoISI
+        anno_di_riferimento_bando_isi: annoDiRiferimentoBandoISI
+        data_inizio_bando_isi: dataInizioBandoISI
+        data_fine_bando_isi: dataFineBandoISI
+        data_click_day_bando_isi: dataClickDayBandoISI
+      additionalProperties: true
+      description: https://w3id.org/italia/work-accident/onto/risk_management/BandoISI
+      required:
+      - identificativo_bando_isi
+      - codice_bando_isi
+      - descrizione_bando_isi
+      - budget_bando_isi
+      - anno_di_riferimento_bando_isi
+      - data_inizio_bando_isi
+      - data_fine_bando_isi
+      - data_click_day_bando_isi
+      properties:
+        identificativo_bando_isi:
+          $ref: "#/components/schemas/IdBandoISI"
+        codice_bando_isi:
+          type: string
+          maxLength: 50
+        descrizione_bando_isi:
+          type: string
+          maxLength: 50
+        budget_bando_isi:
+          type: number
+          format: double
+        anno_di_riferimento_bando_isi:
+          type: string
+          maxLength: 50
+        data_inizio_bando_isi:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        data_fine_bando_isi:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+        data_click_day_bando_isi:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
+      example:
+        identificativo_bando_isi:
+          $ref: "#/components/schemas/IdBandoISI/example"
+        codice_bando_isi: '2541589'
+        descrizione_bando_isi: 'Bando realizzazione progetti di miglioramento'
+        budget_bando_isi: 600000000.00
+        anno_di_riferimento_bando_isi: '2024'
+        data_inizio_bando_isi: "2024-09-01"
+        data_fine_bando_isi: "2024-12-31"
+        data_click_day_bando_isi: "2024-10-15"
