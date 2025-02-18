@@ -49,9 +49,9 @@
 <https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/hasKeyClass> <https://w3id.org/italia/work-accident/onto/risk_management/PresentatoreDomandaProgettoPrevenzione> .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/hasKeyClass> <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/hasOntologyLanguage> <https://w3id.org/italia/onto/ADMS/OWL> .
-<https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> <https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT> .
-<https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> <https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-N-TRIPLES> .
-<https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> <https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-XML> .
+<https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> <https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-TURTLE> .
+<https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> <https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-N-TRIPLES> .
+<https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> <https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-XML> .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/hasTask> <https://w3id.org/italia/onto/ADMS/AnnotationTask> .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/hasTask> <https://w3id.org/italia/onto/ADMS/QueryFormulationTask> .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/hasTask> <https://w3id.org/italia/onto/ADMS/SearchTask> .
@@ -1901,42 +1901,42 @@ _:genid224 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 <https://w3id.org/italia/work-accident/data/organization/ufficioV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2006/vcard/ns#Organization> .
 <https://w3id.org/italia/work-accident/data/organization/ufficioV> <http://www.w3.org/2006/vcard/ns#fn> "INAIL Ufficio V - D.C.O.D" .
 <https://w3id.org/italia/work-accident/data/organization/ufficioV> <http://www.w3.org/2006/vcard/ns#hasEmail> <mailto:dcod@inail.it> .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-N-TRIPLES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-N-TRIPLES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dati.gov.it/onto/dcatapit#Distribution> .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-N-TRIPLES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-N-TRIPLES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-N-TRIPLES> <http://purl.org/dc/terms/description> "Questa \u00E8 la distribuzione N-TRIPLES dell'ontologia INAIL relativa ai Bandi ISI"@it .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-N-TRIPLES> <http://purl.org/dc/terms/description> "This is the N-TRIPLES distribution of the INAIL Organization ontology about the Bando ISI funding scheme"@en .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-N-TRIPLES> <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES> .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-N-TRIPLES> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-N-TRIPLES> <http://purl.org/dc/terms/title> "Distribuzione N-TRIPLES ontologia INAIL - Prevenzione"@it .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-N-TRIPLES> <http://purl.org/dc/terms/title> "N-TRIPLES distribution of the INAIL Organization - Risk Management Ontology"@en .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-N-TRIPLES> <http://www.w3.org/ns/dcat#accessURL> <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/risk_mgmt/latest> .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-N-TRIPLES> <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/risk_mgmt/latest/risk_mgmt.n3> .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-TURTLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-TURTLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dati.gov.it/onto/dcatapit#Distribution> .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-TURTLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-TURTLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-TURTLE> <http://purl.org/dc/terms/description> "Questa \u00E8 la distribuzione RDF/Turtle dell'ontologia INAIL relativa ai Bandi ISI"@it .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-TURTLE> <http://purl.org/dc/terms/description> "This is the RDF/Turtle distribution of the INAIL Organization ontology about the Bando ISI funding scheme"@en .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-TURTLE> <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-TURTLE> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-TURTLE> <http://purl.org/dc/terms/title> "Distribuzione RDF/Turtle ontologia INAIL - Prevenzione"@it .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-TURTLE> <http://purl.org/dc/terms/title> "RDF/Turtle distribution of the INAIL Organization - Risk Management Ontology"@en .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-TURTLE> <http://www.w3.org/ns/dcat#accessURL> <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/risk_mgmt/latest> .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-TURTLE> <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/risk_mgmt/latest/risk_mgmt.ttl> .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-XML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-XML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dati.gov.it/onto/dcatapit#Distribution> .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-XML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-XML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-XML> <http://purl.org/dc/terms/description> "Questa \u00E8 la distribuzione RDF/XML dell'ontologia INAIL relativa ai Bandi ISI"@it .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-XML> <http://purl.org/dc/terms/description> "This is the RDF/XML distribution of the INAIL Organization ontology about the Bando ISI funding scheme"@en .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-XML> <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/RDF_XML> .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-XML> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-XML> <http://purl.org/dc/terms/title> "Distribuzione RDF/XML ontologia INAIL - Prevenzione"@it .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-XML> <http://purl.org/dc/terms/title> "RDF/XML distribution of INAIL Organization - Risk Management Ontology"@en .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-XML> <http://www.w3.org/ns/dcat#accessURL> <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/risk_mgmt/latest> .
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-XML> <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/risk_mgmt/latest/risk_mgmt.owl> .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-N-TRIPLES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-N-TRIPLES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dati.gov.it/onto/dcatapit#Distribution> .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-N-TRIPLES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-N-TRIPLES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-N-TRIPLES> <http://purl.org/dc/terms/description> "Questa \u00E8 la distribuzione N-TRIPLES dell'ontologia INAIL relativa ai Bandi ISI"@it .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-N-TRIPLES> <http://purl.org/dc/terms/description> "This is the N-TRIPLES distribution of the INAIL Organization ontology about the Bando ISI funding scheme"@en .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-N-TRIPLES> <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES> .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-N-TRIPLES> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-N-TRIPLES> <http://purl.org/dc/terms/title> "Distribuzione N-TRIPLES ontologia INAIL - Prevenzione"@it .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-N-TRIPLES> <http://purl.org/dc/terms/title> "N-TRIPLES distribution of the INAIL Organization - Risk Management Ontology"@en .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-N-TRIPLES> <http://www.w3.org/ns/dcat#accessURL> <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/risk_management/latest> .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-N-TRIPLES> <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/risk_management/latest/risk_management.n3> .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-TURTLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-TURTLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dati.gov.it/onto/dcatapit#Distribution> .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-TURTLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-TURTLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-TURTLE> <http://purl.org/dc/terms/description> "Questa \u00E8 la distribuzione RDF/Turtle dell'ontologia INAIL relativa ai Bandi ISI"@it .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-TURTLE> <http://purl.org/dc/terms/description> "This is the RDF/Turtle distribution of the INAIL Organization ontology about the Bando ISI funding scheme"@en .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-TURTLE> <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-TURTLE> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-TURTLE> <http://purl.org/dc/terms/title> "Distribuzione RDF/Turtle ontologia INAIL - Prevenzione"@it .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-TURTLE> <http://purl.org/dc/terms/title> "RDF/Turtle distribution of the INAIL Organization - Risk Management Ontology"@en .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-TURTLE> <http://www.w3.org/ns/dcat#accessURL> <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/risk_management/latest> .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-TURTLE> <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/risk_management/latest/risk_management.ttl> .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-XML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-XML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dati.gov.it/onto/dcatapit#Distribution> .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-XML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-XML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-XML> <http://purl.org/dc/terms/description> "Questa \u00E8 la distribuzione RDF/XML dell'ontologia INAIL relativa ai Bandi ISI"@it .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-XML> <http://purl.org/dc/terms/description> "This is the RDF/XML distribution of the INAIL Organization ontology about the Bando ISI funding scheme"@en .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-XML> <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/RDF_XML> .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-XML> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-XML> <http://purl.org/dc/terms/title> "Distribuzione RDF/XML ontologia INAIL - Prevenzione"@it .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-XML> <http://purl.org/dc/terms/title> "RDF/XML distribution of INAIL Organization - Risk Management Ontology"@en .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-XML> <http://www.w3.org/ns/dcat#accessURL> <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/risk_management/latest> .
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-XML> <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/risk_management/latest/risk_management.owl> .
 _:genid225 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
 _:genid225 <http://www.w3.org/2002/07/owl#members> _:genid226 .
 _:genid226 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheHasuperatoIlClickDay> .

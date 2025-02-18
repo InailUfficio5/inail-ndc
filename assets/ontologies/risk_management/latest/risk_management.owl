@@ -81,9 +81,9 @@
         <adms:hasKeyClass rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/PresentatoreDomandaProgettoPrevenzione"/>
         <adms:hasKeyClass rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione"/>
         <adms:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
-        <adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT"/>
-        <adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-N-TRIPLES"/>
-        <adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-XML"/>
+        <adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-TURTLE"/>
+        <adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-N-TRIPLES"/>
+        <adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-XML"/>
         <adms:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/AnnotationTask"/>
         <adms:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/QueryFormulationTask"/>
         <adms:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/SearchTask"/>
@@ -3616,9 +3616,9 @@
 
 
 
-    <!-- https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-N-TRIPLES -->
+    <!-- https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-N-TRIPLES -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-N-TRIPLES">
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-N-TRIPLES">
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
@@ -3628,15 +3628,15 @@
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title xml:lang="it">Distribuzione N-TRIPLES ontologia INAIL - Prevenzione</dcterms:title>
         <dcterms:title xml:lang="en">N-TRIPLES distribution of the INAIL Organization - Risk Management Ontology</dcterms:title>
-        <dcat:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/risk_mgmt/latest"/>
-        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/risk_mgmt/latest/risk_mgmt.n3"/>
+        <dcat:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/risk_management/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/risk_management/latest/risk_management.n3"/>
     </owl:NamedIndividual>
 
 
 
-    <!-- https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-TURTLE -->
+    <!-- https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-TURTLE -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-TURTLE">
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-TURTLE">
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
@@ -3646,15 +3646,15 @@
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title xml:lang="it">Distribuzione RDF/Turtle ontologia INAIL - Prevenzione</dcterms:title>
         <dcterms:title xml:lang="en">RDF/Turtle distribution of the INAIL Organization - Risk Management Ontology</dcterms:title>
-        <dcat:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/risk_mgmt/latest"/>
-        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/risk_mgmt/latest/risk_mgmt.ttl"/>
+        <dcat:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/risk_management/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/risk_management/latest/risk_management.ttl"/>
     </owl:NamedIndividual>
 
 
 
-    <!-- https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-XML -->
+    <!-- https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-XML -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-XML">
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-XML">
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
@@ -3664,8 +3664,8 @@
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title xml:lang="it">Distribuzione RDF/XML ontologia INAIL - Prevenzione</dcterms:title>
         <dcterms:title xml:lang="en">RDF/XML distribution of INAIL Organization - Risk Management Ontology</dcterms:title>
-        <dcat:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/risk_mgmt/latest"/>
-        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/risk_mgmt/latest/risk_mgmt.owl"/>
+        <dcat:accessURL rdf:resource="https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/risk_management/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/risk_management/latest/risk_management.owl"/>
     </owl:NamedIndividual>
 
 

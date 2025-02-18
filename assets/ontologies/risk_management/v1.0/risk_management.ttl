@@ -44,9 +44,9 @@ INAILRM: a owl:Ontology ;
         INAILRM:PresentatoreDomandaProgettoPrevenzione,
         INAILRM:ProgettoPrevenzione ;
     adms:hasOntologyLanguage adms:OWL ;
-    adms:hasSemanticAssetDistribution <https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT>,
-        <https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-N-TRIPLES>,
-        <https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-XML> ;
+    adms:hasSemanticAssetDistribution <https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-N-TRIPLES>,
+        <https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-TURTLE>,
+        <https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-XML> ;
     adms:hasTask adms:AnnotationTask,
         adms:QueryFormulationTask,
         adms:SearchTask ;
@@ -1909,12 +1909,12 @@ INAILRM:VerificaPraticaProgettoPrevenzione a owl:Class ;
     vcard:fn "INAIL Ufficio V - D.C.O.D" ;
     vcard:hasEmail <mailto:dcod@inail.it> .
 
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-N-TRIPLES> a adms:SemanticAssetDistribution,
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-N-TRIPLES> a adms:SemanticAssetDistribution,
         dcat:Distribution,
         dcatapit:Distribution,
         owl:NamedIndividual ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/risk_mgmt/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/risk_mgmt/latest/risk_mgmt.n3> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/risk_management/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/risk_management/latest/risk_management.n3> ;
     dcterms:description "Questa è la distribuzione N-TRIPLES dell'ontologia INAIL relativa ai Bandi ISI"@it,
         "This is the N-TRIPLES distribution of the INAIL Organization ontology about the Bando ISI funding scheme"@en ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES> ;
@@ -1922,12 +1922,12 @@ INAILRM:VerificaPraticaProgettoPrevenzione a owl:Class ;
     dcterms:title "Distribuzione N-TRIPLES ontologia INAIL - Prevenzione"@it,
         "N-TRIPLES distribution of the INAIL Organization - Risk Management Ontology"@en .
 
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-TURTLE> a adms:SemanticAssetDistribution,
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-TURTLE> a adms:SemanticAssetDistribution,
         dcat:Distribution,
         dcatapit:Distribution,
         owl:NamedIndividual ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/risk_mgmt/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/risk_mgmt/latest/risk_mgmt.ttl> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/risk_management/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/risk_management/latest/risk_management.ttl> ;
     dcterms:description "Questa è la distribuzione RDF/Turtle dell'ontologia INAIL relativa ai Bandi ISI"@it,
         "This is the RDF/Turtle distribution of the INAIL Organization ontology about the Bando ISI funding scheme"@en ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
@@ -1935,12 +1935,12 @@ INAILRM:VerificaPraticaProgettoPrevenzione a owl:Class ;
     dcterms:title "Distribuzione RDF/Turtle ontologia INAIL - Prevenzione"@it,
         "RDF/Turtle distribution of the INAIL Organization - Risk Management Ontology"@en .
 
-<https://w3id.org/italia/work-accident/data/risk_mgmt/distribution/RISK-MGMT-RDF-XML> a adms:SemanticAssetDistribution,
+<https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-XML> a adms:SemanticAssetDistribution,
         dcat:Distribution,
         dcatapit:Distribution,
         owl:NamedIndividual ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/risk_mgmt/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/risk_mgmt/latest/risk_mgmt.owl> ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/risk_management/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/risk_management/latest/risk_management.owl> ;
     dcterms:description "Questa è la distribuzione RDF/XML dell'ontologia INAIL relativa ai Bandi ISI"@it,
         "This is the RDF/XML distribution of the INAIL Organization ontology about the Bando ISI funding scheme"@en ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
