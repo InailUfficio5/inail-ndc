@@ -1,0 +1,28 @@
+[
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/risk_management/tipo_acquisto/1",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/risk_management/TipologiaDiAcquistoProgettoPrevenzione",
+      "skos:Concept"
+    ],
+    "id": "1",
+    "label_it": "ACQUISTO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/risk_management/tipo_acquisto/2",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/risk_management/TipologiaDiAcquistoProgettoPrevenzione",
+      "skos:Concept"
+    ],
+    "id": "2",
+    "label_it": "NOLEGGIO CON PATTO DI ACQUISTO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  }
+]

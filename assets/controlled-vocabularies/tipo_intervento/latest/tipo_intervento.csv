@@ -1,0 +1,6 @@
+"url","id","label_it","level.@type","level.@value"
+"https://w3id.org/italia/work-accident/controlled-vocabulary/risk_management/tipo_intervento/1","1","1 trattore agricolo o forestale e 1 macchina agricola o forestale dotata o meno di motore proprio","http://www.w3.org/2001/XMLSchema#integer","1"
+"https://w3id.org/italia/work-accident/controlled-vocabulary/risk_management/tipo_intervento/2","2","1 macchina agricola o forestale dotata di motore proprio e 1 macchina agricola o forestale non dotata di motore proprio","http://www.w3.org/2001/XMLSchema#integer","1"
+"https://w3id.org/italia/work-accident/controlled-vocabulary/risk_management/tipo_intervento/3","3","2 macchine agricole o forestali non dotate di motore proprio","http://www.w3.org/2001/XMLSchema#integer","1"
+"https://w3id.org/italia/work-accident/controlled-vocabulary/risk_management/tipo_intervento/4","4","1 trattore agricolo o forestale","http://www.w3.org/2001/XMLSchema#integer","1"
+"https://w3id.org/italia/work-accident/controlled-vocabulary/risk_management/tipo_intervento/5","5","1 macchina agricola o forestale dotata o meno di motore proprio","http://www.w3.org/2001/XMLSchema#integer","1"

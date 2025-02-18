@@ -1,0 +1,67 @@
+[
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/risk_management/tipo_intervento/1",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI",
+      "skos:Concept"
+    ],
+    "id": "1",
+    "label_it": "1 trattore agricolo o forestale e 1 macchina agricola o forestale dotata o meno di motore proprio",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/risk_management/tipo_intervento/2",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI",
+      "skos:Concept"
+    ],
+    "id": "2",
+    "label_it": "1 macchina agricola o forestale dotata di motore proprio e 1 macchina agricola o forestale non dotata di motore proprio",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/risk_management/tipo_intervento/3",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI",
+      "skos:Concept"
+    ],
+    "id": "3",
+    "label_it": "2 macchine agricole o forestali non dotate di motore proprio",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/risk_management/tipo_intervento/4",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI",
+      "skos:Concept"
+    ],
+    "id": "4",
+    "label_it": "1 trattore agricolo o forestale",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/risk_management/tipo_intervento/5",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI",
+      "skos:Concept"
+    ],
+    "id": "5",
+    "label_it": "1 macchina agricola o forestale dotata o meno di motore proprio",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  }
+]
