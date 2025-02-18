@@ -1,4 +1,5 @@
 @prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
 @prefix dct: <http://purl.org/dc/terms/> .
@@ -117,6 +118,7 @@ tipointervento:1 a INAILRM:TipoInterventoBandiISI,
         skos:Concept ;
     rdfs:label "1 trattore agricolo o forestale e 1 macchina agricola o forestale dotata o meno di motore proprio"@it ;
     skos:prefLabel "1 trattore agricolo o forestale e 1 macchina agricola o forestale dotata o meno di motore proprio"@it ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "1" ;
     skos:inScheme inailvoc:tipo_intervento ;
     skos:notation "1" ;
@@ -126,6 +128,7 @@ tipointervento:2 a INAILRM:TipoInterventoBandiISI,
         skos:Concept ;
     rdfs:label "1 macchina agricola o forestale dotata di motore proprio e 1 macchina agricola o forestale non dotata di motore proprio"@it ;
     skos:prefLabel "1 macchina agricola o forestale dotata di motore proprio e 1 macchina agricola o forestale non dotata di motore proprio"@it ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "2" ;
     skos:inScheme inailvoc:tipo_intervento ;
     skos:notation "2" ;
@@ -135,6 +138,7 @@ tipointervento:3 a INAILRM:TipoInterventoBandiISI,
         skos:Concept ;
     rdfs:label "2 macchine agricole o forestali non dotate di motore proprio"@it ;
     skos:prefLabel "2 macchine agricole o forestali non dotate di motore proprio"@it ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "3" ;
     skos:inScheme inailvoc:tipo_intervento ;
     skos:notation "3" ;
@@ -144,6 +148,7 @@ tipointervento:4 a INAILRM:TipoInterventoBandiISI,
         skos:Concept ;
     rdfs:label "1 trattore agricolo o forestale"@it ;
     skos:prefLabel "1 trattore agricolo o forestale"@it ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "4" ;
     skos:inScheme inailvoc:tipo_intervento ;
     skos:notation "4" ;
@@ -153,6 +158,7 @@ tipointervento:5 a INAILRM:TipoInterventoBandiISI,
         skos:Concept ;
     rdfs:label "1 macchina agricola o forestale dotata o meno di motore proprio"@it ;
     skos:prefLabel "1 macchina agricola o forestale dotata o meno di motore proprio"@it ;
+    clvapit:hasRankOrder 1 ;
     dct:identifier "5" ;
     skos:inScheme inailvoc:tipo_intervento ;
     skos:notation "5" ;
