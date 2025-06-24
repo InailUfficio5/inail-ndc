@@ -1,0 +1,3683 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix CLV: <https://w3id.org/italia/onto/CLV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix INAILCore: <https://w3id.org/italia/work-accident/onto/core/> .
+@prefix nazione: <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Annotations
+
+<https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
+        dcterms:Standard ;
+    dcterms:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dcterms:identifier "SKOS" ;
+    dcterms:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> a adms:Asset,
+        dcatapit:Dataset,
+        skos:ConceptScheme ;
+    rdfs:label "The Belfiore country code SKOS controlled vocabulary"@en,
+        "Vocabolario controllato sulle Nazioni/Continenti Inail"@it ;
+    skos:prefLabel "Vocabolario controllato sulla decodifica dei codici belfiore utilizzati per individuare la nazione Inail"@it ;
+    rdfs:comment "Elenco delle nazioni e dei codici Belfiore utilizzati per individuare la nazione Inail"@it,
+        "The Belfiore country code list adopted by the Inail institute to identify Inail countries"@en ;
+    owl:versionInfo "0.6" ;
+    rdfs:isDefinedBy <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
+    dcat:distribution <https://w3id.org/italia/work-accident/data//distribution/TNA_CSV>,
+        <https://w3id.org/italia/work-accident/data//distribution/TNA_RDF_TURTLE>,
+        <https://w3id.org/italia/work-accident/data/distribution/TNA_JSON> ;
+    dcat:keyword "codice nazione inail"@it,
+        "inail country"@en,
+        "inail country code"@en,
+        "nazione inail"@it ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dcterms:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dcterms:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dcterms:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dcterms:description "Elenco delle nazioni e dei codici Belfiore utilizzati per individuare la nazione Inail"@it,
+        "The Belfiore country code list adopted by the Inail institute to identify Inail countries"@en ;
+    dcterms:identifier "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail" ;
+    dcterms:issued "2025-05-29"^^xsd:date ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dcterms:modified "2025-05-29"^^xsd:date ;
+    dcterms:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dcterms:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dcterms:subject <http://eurovoc.europa.eu/166>,
+        <http://eurovoc.europa.eu/414>,
+        <http://eurovoc.europa.eu/825>,
+        <http://eurovoc.europa.eu/1761>,
+        <http://eurovoc.europa.eu/4543> ;
+    dcterms:title "The Belfiore country code SKOS controlled vocabulary"@en,
+        "Vocabolario controllato sulla decodifica dei codici belfiore utilizzati per individuare la nazione Inail"@it ;
+    dcterms:type <http://purl.org/adms/assettype/CodeList> ;
+    ndc:keyConcept "nazione_inail" ;
+    skos:hasTopConcept nazione:W001,
+        nazione:Z100,
+        nazione:Z101,
+        nazione:Z102,
+        nazione:Z103,
+        nazione:Z104,
+        nazione:Z105,
+        nazione:Z106,
+        nazione:Z107,
+        nazione:Z108,
+        nazione:Z109,
+        nazione:Z110,
+        nazione:Z111,
+        nazione:Z112,
+        nazione:Z113,
+        nazione:Z114,
+        nazione:Z115,
+        nazione:Z116,
+        nazione:Z117,
+        nazione:Z118,
+        nazione:Z119,
+        nazione:Z120,
+        nazione:Z121,
+        nazione:Z122,
+        nazione:Z123,
+        nazione:Z124,
+        nazione:Z125,
+        nazione:Z126,
+        nazione:Z127,
+        nazione:Z128,
+        nazione:Z129,
+        nazione:Z130,
+        nazione:Z131,
+        nazione:Z132,
+        nazione:Z133,
+        nazione:Z134,
+        nazione:Z135,
+        nazione:Z136,
+        nazione:Z137,
+        nazione:Z138,
+        nazione:Z139,
+        nazione:Z140,
+        nazione:Z141,
+        nazione:Z142,
+        nazione:Z143,
+        nazione:Z144,
+        nazione:Z145,
+        nazione:Z146,
+        nazione:Z147,
+        nazione:Z148,
+        nazione:Z149,
+        nazione:Z150,
+        nazione:Z151,
+        nazione:Z152,
+        nazione:Z153,
+        nazione:Z154,
+        nazione:Z155,
+        nazione:Z156,
+        nazione:Z157,
+        nazione:Z158,
+        nazione:Z159,
+        nazione:Z160,
+        nazione:Z161,
+        nazione:Z200,
+        nazione:Z201,
+        nazione:Z202,
+        nazione:Z203,
+        nazione:Z204,
+        nazione:Z205,
+        nazione:Z206,
+        nazione:Z207,
+        nazione:Z208,
+        nazione:Z209,
+        nazione:Z210,
+        nazione:Z211,
+        nazione:Z212,
+        nazione:Z213,
+        nazione:Z214,
+        nazione:Z215,
+        nazione:Z216,
+        nazione:Z217,
+        nazione:Z218,
+        nazione:Z219,
+        nazione:Z220,
+        nazione:Z221,
+        nazione:Z222,
+        nazione:Z223,
+        nazione:Z224,
+        nazione:Z225,
+        nazione:Z226,
+        nazione:Z227,
+        nazione:Z228,
+        nazione:Z229,
+        nazione:Z230,
+        nazione:Z231,
+        nazione:Z232,
+        nazione:Z233,
+        nazione:Z234,
+        nazione:Z235,
+        nazione:Z236,
+        nazione:Z237,
+        nazione:Z238,
+        nazione:Z239,
+        nazione:Z240,
+        nazione:Z241,
+        nazione:Z242,
+        nazione:Z243,
+        nazione:Z244,
+        nazione:Z245,
+        nazione:Z246,
+        nazione:Z247,
+        nazione:Z248,
+        nazione:Z249,
+        nazione:Z250,
+        nazione:Z251,
+        nazione:Z252,
+        nazione:Z253,
+        nazione:Z254,
+        nazione:Z255,
+        nazione:Z256,
+        nazione:Z257,
+        nazione:Z258,
+        nazione:Z259,
+        nazione:Z300,
+        nazione:Z301,
+        nazione:Z302,
+        nazione:Z303,
+        nazione:Z304,
+        nazione:Z305,
+        nazione:Z306,
+        nazione:Z307,
+        nazione:Z308,
+        nazione:Z309,
+        nazione:Z310,
+        nazione:Z311,
+        nazione:Z312,
+        nazione:Z313,
+        nazione:Z314,
+        nazione:Z315,
+        nazione:Z316,
+        nazione:Z317,
+        nazione:Z318,
+        nazione:Z319,
+        nazione:Z320,
+        nazione:Z321,
+        nazione:Z322,
+        nazione:Z323,
+        nazione:Z324,
+        nazione:Z325,
+        nazione:Z326,
+        nazione:Z327,
+        nazione:Z328,
+        nazione:Z329,
+        nazione:Z330,
+        nazione:Z331,
+        nazione:Z332,
+        nazione:Z333,
+        nazione:Z334,
+        nazione:Z335,
+        nazione:Z336,
+        nazione:Z337,
+        nazione:Z338,
+        nazione:Z339,
+        nazione:Z340,
+        nazione:Z341,
+        nazione:Z342,
+        nazione:Z343,
+        nazione:Z344,
+        nazione:Z345,
+        nazione:Z346,
+        nazione:Z347,
+        nazione:Z348,
+        nazione:Z349,
+        nazione:Z350,
+        nazione:Z351,
+        nazione:Z352,
+        nazione:Z353,
+        nazione:Z354,
+        nazione:Z355,
+        nazione:Z356,
+        nazione:Z357,
+        nazione:Z358,
+        nazione:Z359,
+        nazione:Z360,
+        nazione:Z361,
+        nazione:Z362,
+        nazione:Z363,
+        nazione:Z364,
+        nazione:Z365,
+        nazione:Z366,
+        nazione:Z367,
+        nazione:Z368,
+        nazione:Z369,
+        nazione:Z370,
+        nazione:Z400,
+        nazione:Z401,
+        nazione:Z402,
+        nazione:Z403,
+        nazione:Z404,
+        nazione:Z500,
+        nazione:Z501,
+        nazione:Z502,
+        nazione:Z503,
+        nazione:Z504,
+        nazione:Z505,
+        nazione:Z506,
+        nazione:Z507,
+        nazione:Z508,
+        nazione:Z509,
+        nazione:Z510,
+        nazione:Z511,
+        nazione:Z512,
+        nazione:Z513,
+        nazione:Z514,
+        nazione:Z515,
+        nazione:Z516,
+        nazione:Z517,
+        nazione:Z518,
+        nazione:Z519,
+        nazione:Z520,
+        nazione:Z521,
+        nazione:Z522,
+        nazione:Z523,
+        nazione:Z524,
+        nazione:Z525,
+        nazione:Z526,
+        nazione:Z527,
+        nazione:Z528,
+        nazione:Z529,
+        nazione:Z530,
+        nazione:Z531,
+        nazione:Z532,
+        nazione:Z533,
+        nazione:Z600,
+        nazione:Z601,
+        nazione:Z602,
+        nazione:Z603,
+        nazione:Z604,
+        nazione:Z605,
+        nazione:Z606,
+        nazione:Z607,
+        nazione:Z608,
+        nazione:Z609,
+        nazione:Z610,
+        nazione:Z611,
+        nazione:Z612,
+        nazione:Z613,
+        nazione:Z614,
+        nazione:Z700,
+        nazione:Z701,
+        nazione:Z702,
+        nazione:Z703,
+        nazione:Z704,
+        nazione:Z705,
+        nazione:Z706,
+        nazione:Z707,
+        nazione:Z708,
+        nazione:Z709,
+        nazione:Z710,
+        nazione:Z711,
+        nazione:Z712,
+        nazione:Z713,
+        nazione:Z714,
+        nazione:Z715,
+        nazione:Z716,
+        nazione:Z717,
+        nazione:Z718,
+        nazione:Z719,
+        nazione:Z720,
+        nazione:Z721,
+        nazione:Z722,
+        nazione:Z723,
+        nazione:Z724,
+        nazione:Z725,
+        nazione:Z726,
+        nazione:Z727,
+        nazione:Z728,
+        nazione:Z729,
+        nazione:Z730,
+        nazione:Z731,
+        nazione:Z732,
+        nazione:Z733,
+        nazione:Z734,
+        nazione:Z735,
+        nazione:Z800,
+        nazione:Z801,
+        nazione:Z802,
+        nazione:Z900,
+        nazione:Z901,
+        nazione:Z902,
+        nazione:Z903,
+        nazione:Z904,
+        nazione:Z905,
+        nazione:Z906,
+        nazione:Z907 ;
+    xkos:numberOfLevels "1" .
+
+<https://w3id.org/italia/work-accident/data/distribution/TNA_CSV> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/nazione_inail/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/nazione_inail/latest/nazione_inail.csv> ;
+    dcterms:description "Questa è la distribuzione CSV del vocabolario controllato sulle Nazioni/Continenti Inail"@it,
+        "The CSV distribution of the Belfiore country code SKOS controlled vocabulary"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dcterms:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dcterms:title "Distribuzione CSV del vocabolario controllato sulle Nazioni Inail"@it,
+        "The CSV distribution of the Belfiore country code SKOS controlled vocabulary"@en .
+
+<https://w3id.org/italia/work-accident/data/distribution/TNA_JSON> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/nazione_inail/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/nazione_inail/latest/nazione_inail.json> ;
+    dcterms:description "Questa è la distribuzione JSON del vocabolario controllato sulle Nazioni/Continenti Inail"@it,
+        "This is the JSON distribution of the Belfiore country code SKOS controlled vocabulary"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dcterms:title "Questa è la distribuzione JSON del vocabolario controllato sulle Nazioni Inail"@it,
+        "This is the JSON distribution of the Belfiore country code SKOS controlled vocabulary"@en .
+
+<https://w3id.org/italia/work-accident/data/distribution/TNA_RDF_TURTLE> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/nazione_inail/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/nazione_inail/latest/nazione_inail.ttl> ;
+    dcterms:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulle Nazioni/Continenti Inail"@it,
+        "This is the RDF/turtle distribution of the Belfiore country code SKOS controlled vocabulary"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dcterms:title "Distribuzione RDF/Turtle del vocabolario controllato sulle Nazioni Inail"@it,
+        "This is the RDF/turtle distribution of the Belfiore country code SKOS controlled vocabulary"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent ;
+    dcterms:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+nazione:W001 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ITALIA"@it ;
+    skos:prefLabel "ITALIA"@it ;
+    skos:altLabel "IT"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "W001" ;
+    dcterms:issued "1999-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "W001" ;
+    xkos:depth 1 .
+
+nazione:Z100 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ALBANIA"@it ;
+    skos:prefLabel "ALBANIA"@it ;
+    skos:altLabel "AL"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z100" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z100" ;
+    xkos:depth 1 .
+
+nazione:Z101 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ANDORRA"@it ;
+    skos:prefLabel "ANDORRA"@it ;
+    skos:altLabel "AND"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z101" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z101" ;
+    xkos:depth 1 .
+
+nazione:Z102 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "AUSTRIA"@it ;
+    skos:prefLabel "AUSTRIA"@it ;
+    skos:altLabel "A"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z102" ;
+    dcterms:issued "1999-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z102" ;
+    xkos:depth 1 .
+
+nazione:Z103 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "BELGIO"@it ;
+    skos:prefLabel "BELGIO"@it ;
+    skos:altLabel "B"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z103" ;
+    dcterms:issued "1999-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z103" ;
+    xkos:depth 1 .
+
+nazione:Z104 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "BULGARIA"@it ;
+    skos:prefLabel "BULGARIA"@it ;
+    skos:altLabel "BG"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z104" ;
+    dcterms:issued "2007-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z104" ;
+    xkos:depth 1 .
+
+nazione:Z105 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "CECOSLOVACCHIA (ANTE 1993)"@it ;
+    skos:prefLabel "CECOSLOVACCHIA (ANTE 1993)"@it ;
+    skos:altLabel "CS"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z105" ;
+    dcterms:issued "2005-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z105" ;
+    xkos:depth 1 .
+
+nazione:Z106 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "CITTA' DEL VATICANO"@it ;
+    skos:prefLabel "CITTA' DEL VATICANO"@it ;
+    skos:altLabel "V"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z106" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z106" ;
+    xkos:depth 1 .
+
+nazione:Z107 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "DANIMARCA"@it ;
+    skos:prefLabel "DANIMARCA"@it ;
+    skos:altLabel "DK"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z107" ;
+    dcterms:issued "1999-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z107" ;
+    xkos:depth 1 .
+
+nazione:Z108 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "FAER OER (ISOLE)"@it ;
+    skos:prefLabel "FAER OER (ISOLE)"@it ;
+    skos:altLabel "FO"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z108" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z108" ;
+    xkos:depth 1 .
+
+nazione:Z109 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "FINLANDIA"@it ;
+    skos:prefLabel "FINLANDIA"@it ;
+    skos:altLabel "FIN"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z109" ;
+    dcterms:issued "1999-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z109" ;
+    xkos:depth 1 .
+
+nazione:Z110 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "FRANCIA"@it ;
+    skos:prefLabel "FRANCIA"@it ;
+    skos:altLabel "F"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z110" ;
+    dcterms:issued "1999-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z110" ;
+    xkos:depth 1 .
+
+nazione:Z111 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "GERMANIA REPUBBLICA DEMOCRATICA"@it ;
+    skos:prefLabel "GERMANIA REPUBBLICA DEMOCRATICA"@it ;
+    skos:altLabel "DDR"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z111" ;
+    dcterms:issued "1999-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z111" ;
+    xkos:depth 1 .
+
+nazione:Z112 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "GERMANIA (GERMANIA REPUBBLICA FEDERALE ANTE 1990)"@it ;
+    skos:prefLabel "GERMANIA (GERMANIA REPUBBLICA FEDERALE ANTE 1990)"@it ;
+    skos:altLabel "D"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z112" ;
+    dcterms:issued "1999-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z112" ;
+    xkos:depth 1 .
+
+nazione:Z113 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "GIBILTERRA"@it ;
+    skos:prefLabel "GIBILTERRA"@it ;
+    skos:altLabel "GBZ"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z113" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z113" ;
+    xkos:depth 1 .
+
+nazione:Z114 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "GRAN BRETAGNA E IRLANDA DEL NORD"@it ;
+    skos:prefLabel "GRAN BRETAGNA E IRLANDA DEL NORD"@it ;
+    skos:altLabel "GB"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z114" ;
+    dcterms:issued "1999-01-01"^^xsd:date ;
+    dcterms:valid "1999-01-01/2020-01-31" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z114" ;
+    xkos:depth 1 .
+
+nazione:Z115 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "GRECIA"@it ;
+    skos:prefLabel "GRECIA"@it ;
+    skos:altLabel "GR"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z115" ;
+    dcterms:issued "1999-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z115" ;
+    xkos:depth 1 .
+
+nazione:Z116 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "IRLANDA=EIRE"@it ;
+    skos:prefLabel "IRLANDA=EIRE"@it ;
+    skos:altLabel "IRL"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z116" ;
+    dcterms:issued "1999-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z116" ;
+    xkos:depth 1 .
+
+nazione:Z117 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ISLANDA"@it ;
+    skos:prefLabel "ISLANDA"@it ;
+    skos:altLabel "IS"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z117" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z117" ;
+    xkos:depth 1 .
+
+nazione:Z118 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "IUGOSLAVIA (ANTE 1991)"@it ;
+    skos:prefLabel "IUGOSLAVIA (ANTE 1991)"@it ;
+    skos:altLabel "YU"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z118" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z118" ;
+    xkos:depth 1 .
+
+nazione:Z119 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "LIECHTENSTEIN"@it ;
+    skos:prefLabel "LIECHTENSTEIN"@it ;
+    skos:altLabel "FL"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z119" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z119" ;
+    xkos:depth 1 .
+
+nazione:Z120 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "LUSSEMBURGO"@it ;
+    skos:prefLabel "LUSSEMBURGO"@it ;
+    skos:altLabel "L"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z120" ;
+    dcterms:issued "1999-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z120" ;
+    xkos:depth 1 .
+
+nazione:Z121 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MALTA"@it ;
+    skos:prefLabel "MALTA"@it ;
+    skos:altLabel "M"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z121" ;
+    dcterms:issued "2005-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z121" ;
+    xkos:depth 1 .
+
+nazione:Z122 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MAN (ISOLA)"@it ;
+    skos:prefLabel "MAN (ISOLA)"@it ;
+    skos:altLabel "122"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z122" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z122" ;
+    xkos:depth 1 .
+
+nazione:Z123 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MONACO"@it ;
+    skos:prefLabel "MONACO"@it ;
+    skos:altLabel "MC"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z123" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z123" ;
+    xkos:depth 1 .
+
+nazione:Z124 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "NORMANNE (ISOLE)=ISOLE DEL CANALE"@it ;
+    skos:prefLabel "NORMANNE (ISOLE)=ISOLE DEL CANALE"@it ;
+    skos:altLabel "124"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z124" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z124" ;
+    xkos:depth 1 .
+
+nazione:Z125 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "NORVEGIA"@it ;
+    skos:prefLabel "NORVEGIA"@it ;
+    skos:altLabel "N"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z125" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z125" ;
+    xkos:depth 1 .
+
+nazione:Z126 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "PAESI BASSI"@it ;
+    skos:prefLabel "PAESI BASSI"@it ;
+    skos:altLabel "NL"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z126" ;
+    dcterms:issued "1999-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z126" ;
+    xkos:depth 1 .
+
+nazione:Z127 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "REPUBBLICA DI POLONIA (REPUBBLICA POPOLARE DI POLONIA ANTE 1989)"@it ;
+    skos:prefLabel "REPUBBLICA DI POLONIA (REPUBBLICA POPOLARE DI POLONIA ANTE 1989)"@it ;
+    skos:altLabel "PL"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z127" ;
+    dcterms:issued "2005-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z127" ;
+    xkos:depth 1 .
+
+nazione:Z128 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "PORTOGALLO"@it ;
+    skos:prefLabel "PORTOGALLO"@it ;
+    skos:altLabel "P"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z128" ;
+    dcterms:issued "1999-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z128" ;
+    xkos:depth 1 .
+
+nazione:Z129 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ROMANIA"@it ;
+    skos:prefLabel "ROMANIA"@it ;
+    skos:altLabel "RO"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z129" ;
+    dcterms:issued "2007-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z129" ;
+    xkos:depth 1 .
+
+nazione:Z130 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SAN MARINO"@it ;
+    skos:prefLabel "SAN MARINO"@it ;
+    skos:altLabel "RSM"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z130" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z130" ;
+    xkos:depth 1 .
+
+nazione:Z131 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SPAGNA"@it ;
+    skos:prefLabel "SPAGNA"@it ;
+    skos:altLabel "E"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z131" ;
+    dcterms:issued "1999-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z131" ;
+    xkos:depth 1 .
+
+nazione:Z132 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SVEZIA"@it ;
+    skos:prefLabel "SVEZIA"@it ;
+    skos:altLabel "S"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z132" ;
+    dcterms:issued "1999-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z132" ;
+    xkos:depth 1 .
+
+nazione:Z133 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SVIZZERA"@it ;
+    skos:prefLabel "SVIZZERA"@it ;
+    skos:altLabel "CH"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z133" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z133" ;
+    xkos:depth 1 .
+
+nazione:Z134 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "UNGHERIA"@it ;
+    skos:prefLabel "UNGHERIA"@it ;
+    skos:altLabel "H"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z134" ;
+    dcterms:issued "2005-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z134" ;
+    xkos:depth 1 .
+
+nazione:Z135 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "UNIONE REPUBBLICHE SOCIALISTE SOVIETICHE (ANTE 1991)"@it ;
+    skos:prefLabel "UNIONE REPUBBLICHE SOCIALISTE SOVIETICHE (ANTE 1991)"@it ;
+    skos:altLabel "SU"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z135" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z135" ;
+    xkos:depth 1 .
+
+nazione:Z136 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "GEORGIA (ANTE 1994)"@it ;
+    skos:prefLabel "GEORGIA (ANTE 1994)"@it ;
+    skos:altLabel "136"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z136" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z136" ;
+    xkos:depth 1 .
+
+nazione:Z137 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ARMENIA"@it ;
+    skos:prefLabel "ARMENIA"@it ;
+    skos:altLabel "137"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z137" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z137" ;
+    xkos:depth 1 .
+
+nazione:Z138 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "UCRAINA"@it ;
+    skos:prefLabel "UCRAINA"@it ;
+    skos:altLabel "UA"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z138" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z138" ;
+    xkos:depth 1 .
+
+nazione:Z139 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "BIELORUSSIA=RUSSIA BIANCA"@it ;
+    skos:prefLabel "BIELORUSSIA=RUSSIA BIANCA"@it ;
+    skos:altLabel "BY"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z139" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z139" ;
+    xkos:depth 1 .
+
+nazione:Z140 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MOLDAVIA"@it ;
+    skos:prefLabel "MOLDAVIA"@it ;
+    skos:altLabel "MD"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z140" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z140" ;
+    xkos:depth 1 .
+
+nazione:Z141 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "AZERBAIGIAN"@it ;
+    skos:prefLabel "AZERBAIGIAN"@it ;
+    skos:altLabel "141"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z141" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z141" ;
+    xkos:depth 1 .
+
+nazione:Z142 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "KIRGHIZISTAN"@it ;
+    skos:prefLabel "KIRGHIZISTAN"@it ;
+    skos:altLabel "142"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z142" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z142" ;
+    xkos:depth 1 .
+
+nazione:Z143 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "UZBEKISTAN"@it ;
+    skos:prefLabel "UZBEKISTAN"@it ;
+    skos:altLabel "143"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z143" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z143" ;
+    xkos:depth 1 .
+
+nazione:Z144 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ESTONIA"@it ;
+    skos:prefLabel "ESTONIA"@it ;
+    skos:altLabel "EST"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z144" ;
+    dcterms:issued "2005-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z144" ;
+    xkos:depth 1 .
+
+nazione:Z145 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "LETTONIA"@it ;
+    skos:prefLabel "LETTONIA"@it ;
+    skos:altLabel "LV"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z145" ;
+    dcterms:issued "2005-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z145" ;
+    xkos:depth 1 .
+
+nazione:Z146 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "LITUANIA"@it ;
+    skos:prefLabel "LITUANIA"@it ;
+    skos:altLabel "LT"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z146" ;
+    dcterms:issued "2005-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z146" ;
+    xkos:depth 1 .
+
+nazione:Z147 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "TAGIKISTAN"@it ;
+    skos:prefLabel "TAGIKISTAN"@it ;
+    skos:altLabel "147"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z147" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z147" ;
+    xkos:depth 1 .
+
+nazione:Z148 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MACEDONIA"@it ;
+    skos:prefLabel "MACEDONIA"@it ;
+    skos:altLabel "MK"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z148" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z148" ;
+    xkos:depth 1 .
+
+nazione:Z149 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "CROAZIA"@it ;
+    skos:prefLabel "CROAZIA"@it ;
+    skos:altLabel "HR"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z149" ;
+    dcterms:issued "2013-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z149" ;
+    xkos:depth 1 .
+
+nazione:Z150 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SLOVENIA"@it ;
+    skos:prefLabel "SLOVENIA"@it ;
+    skos:altLabel "SLO"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z150" ;
+    dcterms:issued "2005-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z150" ;
+    xkos:depth 1 .
+
+nazione:Z151 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "TURKEMENISTAN"@it ;
+    skos:prefLabel "TURKEMENISTAN"@it ;
+    skos:altLabel "151"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z151" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z151" ;
+    xkos:depth 1 .
+
+nazione:Z152 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "KAZAKISTAN"@it ;
+    skos:prefLabel "KAZAKISTAN"@it ;
+    skos:altLabel "152"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z152" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z152" ;
+    xkos:depth 1 .
+
+nazione:Z153 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "BOSNIA ED ERZEGOVINA"@it ;
+    skos:prefLabel "BOSNIA ED ERZEGOVINA"@it ;
+    skos:altLabel "BiH"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z153" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z153" ;
+    xkos:depth 1 .
+
+nazione:Z154 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "RUSSIA=FEDERAZIONE RUSSA"@it ;
+    skos:prefLabel "RUSSIA=FEDERAZIONE RUSSA"@it ;
+    skos:altLabel "RUS"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z154" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z154" ;
+    xkos:depth 1 .
+
+nazione:Z155 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SLOVACCHIA"@it ;
+    skos:prefLabel "SLOVACCHIA"@it ;
+    skos:altLabel "SK"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z155" ;
+    dcterms:issued "2005-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z155" ;
+    xkos:depth 1 .
+
+nazione:Z156 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "CECA REPUBBLICA"@it ;
+    skos:prefLabel "CECA REPUBBLICA"@it ;
+    skos:altLabel "CZ"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z156" ;
+    dcterms:issued "2005-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z156" ;
+    xkos:depth 1 .
+
+nazione:Z157 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SERBIA E MONTENEGRO"@it ;
+    skos:prefLabel "SERBIA E MONTENEGRO"@it ;
+    skos:altLabel "SCG"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z157" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z157" ;
+    xkos:depth 1 .
+
+nazione:Z158 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SERBIA"@it ;
+    skos:prefLabel "SERBIA"@it ;
+    skos:altLabel "SRB"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z158" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z158" ;
+    xkos:depth 1 .
+
+nazione:Z159 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MONTENEGRO"@it ;
+    skos:prefLabel "MONTENEGRO"@it ;
+    skos:altLabel "MNE"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z159" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z159" ;
+    xkos:depth 1 .
+
+nazione:Z160 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "KOSSOVO"@it ;
+    skos:prefLabel "KOSSOVO"@it ;
+    skos:altLabel "UNK"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z160" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z160" ;
+    xkos:depth 1 .
+
+nazione:Z161 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "TERRITORI PALESTINESI"@it ;
+    skos:prefLabel "TERRITORI PALESTINESI"@it ;
+    skos:altLabel "PN"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z161" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z161" ;
+    xkos:depth 1 .
+
+nazione:Z200 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "AFGHANISTAN"@it ;
+    skos:prefLabel "AFGHANISTAN"@it ;
+    skos:altLabel "AFG"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z200" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z200" ;
+    xkos:depth 1 .
+
+nazione:Z201 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ARABIA MERIDIONALE FEDERAZIONE"@it ;
+    skos:prefLabel "ARABIA MERIDIONALE FEDERAZIONE"@it ;
+    skos:altLabel "201"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z201" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z201" ;
+    xkos:depth 1 .
+
+nazione:Z202 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ARABIA MERIDIONALE PROTETTORATO"@it ;
+    skos:prefLabel "ARABIA MERIDIONALE PROTETTORATO"@it ;
+    skos:altLabel "202"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z202" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z202" ;
+    xkos:depth 1 .
+
+nazione:Z203 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ARABIA SAUDITA"@it ;
+    skos:prefLabel "ARABIA SAUDITA"@it ;
+    skos:altLabel "KSA"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z203" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z203" ;
+    xkos:depth 1 .
+
+nazione:Z204 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "BAHREIN"@it ;
+    skos:prefLabel "BAHREIN"@it ;
+    skos:altLabel "BRN"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z204" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z204" ;
+    xkos:depth 1 .
+
+nazione:Z205 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "BHUTAN"@it ;
+    skos:prefLabel "BHUTAN"@it ;
+    skos:altLabel "BHT"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z205" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z205" ;
+    xkos:depth 1 .
+
+nazione:Z206 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "BIRMANIA"@it ;
+    skos:prefLabel "BIRMANIA"@it ;
+    skos:altLabel "BUR"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z206" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z206" ;
+    xkos:depth 1 .
+
+nazione:Z207 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "BRUNEI"@it ;
+    skos:prefLabel "BRUNEI"@it ;
+    skos:altLabel "BRU"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z207" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z207" ;
+    xkos:depth 1 .
+
+nazione:Z208 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "CAMBOGIA"@it ;
+    skos:prefLabel "CAMBOGIA"@it ;
+    skos:altLabel "K"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z208" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z208" ;
+    xkos:depth 1 .
+
+nazione:Z209 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SRI LANKA (CEYLON ANTE 1975)"@it ;
+    skos:prefLabel "SRI LANKA (CEYLON ANTE 1975)"@it ;
+    skos:altLabel "CL"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z209" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z209" ;
+    xkos:depth 1 .
+
+nazione:Z210 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "CINA REPUBBLICA POPOLARE"@it ;
+    skos:prefLabel "CINA REPUBBLICA POPOLARE"@it ;
+    skos:altLabel "CN"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z210" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z210" ;
+    xkos:depth 1 .
+
+nazione:Z211 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "CIPRO"@it ;
+    skos:prefLabel "CIPRO"@it ;
+    skos:altLabel "CY"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z211" ;
+    dcterms:issued "2005-01-01"^^xsd:date ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z211" ;
+    xkos:depth 1 .
+
+nazione:Z212 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "COCOS (ISOLE)"@it ;
+    skos:prefLabel "COCOS (ISOLE)"@it ;
+    skos:altLabel "CCK"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z212" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z212" ;
+    xkos:depth 1 .
+
+nazione:Z213 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "COREA DEL SUD"@it ;
+    skos:prefLabel "COREA DEL SUD"@it ;
+    skos:altLabel "ROK"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z213" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z213" ;
+    xkos:depth 1 .
+
+nazione:Z214 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "COREA DEL NORD"@it ;
+    skos:prefLabel "COREA DEL NORD"@it ;
+    skos:altLabel "DVR"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z214" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z214" ;
+    xkos:depth 1 .
+
+nazione:Z215 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "EMIRATI ARABI UNITI (COSTA DEI PIRATI=TRUCIAL STATES ANTE 1975)"@it ;
+    skos:prefLabel "EMIRATI ARABI UNITI (COSTA DEI PIRATI=TRUCIAL STATES ANTE 1975)"@it ;
+    skos:altLabel "UAE"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z215" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z215" ;
+    xkos:depth 1 .
+
+nazione:Z216 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "FILIPPINE"@it ;
+    skos:prefLabel "FILIPPINE"@it ;
+    skos:altLabel "RP"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z216" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z216" ;
+    xkos:depth 1 .
+
+nazione:Z217 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "TAIWAN (REPUBBLICA DELLA CINA NAZIONALE - FORMOSA ANTE 1975)"@it ;
+    skos:prefLabel "TAIWAN (REPUBBLICA DELLA CINA NAZIONALE - FORMOSA ANTE 1975)"@it ;
+    skos:altLabel "RC"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z217" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z217" ;
+    xkos:depth 1 .
+
+nazione:Z218 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "GAZA (TERRITORIO DI)"@it ;
+    skos:prefLabel "GAZA (TERRITORIO DI)"@it ;
+    skos:altLabel "218"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z218" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z218" ;
+    xkos:depth 1 .
+
+nazione:Z219 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "GIAPPONE"@it ;
+    skos:prefLabel "GIAPPONE"@it ;
+    skos:altLabel "J"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z219" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z219" ;
+    xkos:depth 1 .
+
+nazione:Z220 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "GIORDANIA"@it ;
+    skos:prefLabel "GIORDANIA"@it ;
+    skos:altLabel "HKJ"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z220" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z220" ;
+    xkos:depth 1 .
+
+nazione:Z221 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "HONG KONG"@it ;
+    skos:prefLabel "HONG KONG"@it ;
+    skos:altLabel "HK"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z221" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z221" ;
+    xkos:depth 1 .
+
+nazione:Z222 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "INDIA"@it ;
+    skos:prefLabel "INDIA"@it ;
+    skos:altLabel "IND"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z222" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z222" ;
+    xkos:depth 1 .
+
+nazione:Z223 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "INDONESIA"@it ;
+    skos:prefLabel "INDONESIA"@it ;
+    skos:altLabel "RI"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z223" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z223" ;
+    xkos:depth 1 .
+
+nazione:Z224 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "IRAN"@it ;
+    skos:prefLabel "IRAN"@it ;
+    skos:altLabel "IR"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z224" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z224" ;
+    xkos:depth 1 .
+
+nazione:Z225 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "IRAQ"@it ;
+    skos:prefLabel "IRAQ"@it ;
+    skos:altLabel "IRQ"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z225" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z225" ;
+    xkos:depth 1 .
+
+nazione:Z226 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ISRAELE"@it ;
+    skos:prefLabel "ISRAELE"@it ;
+    skos:altLabel "IL"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z226" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z226" ;
+    xkos:depth 1 .
+
+nazione:Z227 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "KUWAIT"@it ;
+    skos:prefLabel "KUWAIT"@it ;
+    skos:altLabel "KWT"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z227" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z227" ;
+    xkos:depth 1 .
+
+nazione:Z228 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "LAOS"@it ;
+    skos:prefLabel "LAOS"@it ;
+    skos:altLabel "LAO"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z228" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z228" ;
+    xkos:depth 1 .
+
+nazione:Z229 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "LIBANO"@it ;
+    skos:prefLabel "LIBANO"@it ;
+    skos:altLabel "RL"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z229" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z229" ;
+    xkos:depth 1 .
+
+nazione:Z230 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MALAYSIA (ANTE 1975)"@it ;
+    skos:prefLabel "MALAYSIA (ANTE 1975)"@it ;
+    skos:altLabel "MY"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z230" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z230" ;
+    xkos:depth 1 .
+
+nazione:Z231 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MACAO"@it ;
+    skos:prefLabel "MACAO"@it ;
+    skos:altLabel "MAC"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z231" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z231" ;
+    xkos:depth 1 .
+
+nazione:Z232 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MALDIVE"@it ;
+    skos:prefLabel "MALDIVE"@it ;
+    skos:altLabel "MV"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z232" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z232" ;
+    xkos:depth 1 .
+
+nazione:Z233 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MONGOLIA"@it ;
+    skos:prefLabel "MONGOLIA"@it ;
+    skos:altLabel "MNG"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z233" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z233" ;
+    xkos:depth 1 .
+
+nazione:Z234 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "NEPAL"@it ;
+    skos:prefLabel "NEPAL"@it ;
+    skos:altLabel "NEP"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z234" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z234" ;
+    xkos:depth 1 .
+
+nazione:Z235 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "OMAN"@it ;
+    skos:prefLabel "OMAN"@it ;
+    skos:altLabel "OM"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z235" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z235" ;
+    xkos:depth 1 .
+
+nazione:Z236 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "PAKISTAN"@it ;
+    skos:prefLabel "PAKISTAN"@it ;
+    skos:altLabel "PK"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z236" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z236" ;
+    xkos:depth 1 .
+
+nazione:Z237 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "QATAR"@it ;
+    skos:prefLabel "QATAR"@it ;
+    skos:altLabel "Q"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z237" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z237" ;
+    xkos:depth 1 .
+
+nazione:Z238 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "RYUKYU (ISOLE)"@it ;
+    skos:prefLabel "RYUKYU (ISOLE)"@it ;
+    skos:altLabel "238"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z238" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z238" ;
+    xkos:depth 1 .
+
+nazione:Z239 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SIKKIM"@it ;
+    skos:prefLabel "SIKKIM"@it ;
+    skos:altLabel "239"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z239" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z239" ;
+    xkos:depth 1 .
+
+nazione:Z240 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SIRIA"@it ;
+    skos:prefLabel "SIRIA"@it ;
+    skos:altLabel "SYR"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z240" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z240" ;
+    xkos:depth 1 .
+
+nazione:Z241 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "THAILANDIA"@it ;
+    skos:prefLabel "THAILANDIA"@it ;
+    skos:altLabel "T"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z241" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z241" ;
+    xkos:depth 1 .
+
+nazione:Z242 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "TIMOR (ISOLA)"@it ;
+    skos:prefLabel "TIMOR (ISOLA)"@it ;
+    skos:altLabel "TL"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z242" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z242" ;
+    xkos:depth 1 .
+
+nazione:Z243 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "TURCHIA"@it ;
+    skos:prefLabel "TURCHIA"@it ;
+    skos:altLabel "TR"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z243" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z243" ;
+    xkos:depth 1 .
+
+nazione:Z244 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "VIETNAM DEL SUD"@it ;
+    skos:prefLabel "VIETNAM DEL SUD"@it ;
+    skos:altLabel "VNS"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z244" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z244" ;
+    xkos:depth 1 .
+
+nazione:Z245 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "VIETNAM DEL NORD"@it ;
+    skos:prefLabel "VIETNAM DEL NORD"@it ;
+    skos:altLabel "VNN"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z245" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z245" ;
+    xkos:depth 1 .
+
+nazione:Z246 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "YEMEN"@it ;
+    skos:prefLabel "YEMEN"@it ;
+    skos:altLabel "ADN"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z246" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z246" ;
+    xkos:depth 1 .
+
+nazione:Z247 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MALAYSIA"@it ;
+    skos:prefLabel "MALAYSIA"@it ;
+    skos:altLabel "MAL"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z247" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z247" ;
+    xkos:depth 1 .
+
+nazione:Z248 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SINGAPORE"@it ;
+    skos:prefLabel "SINGAPORE"@it ;
+    skos:altLabel "SGP"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z248" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z248" ;
+    xkos:depth 1 .
+
+nazione:Z249 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "BANGLADESH"@it ;
+    skos:prefLabel "BANGLADESH"@it ;
+    skos:altLabel "BD"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z249" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z249" ;
+    xkos:depth 1 .
+
+nazione:Z250 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "YEMEN REPUBBLICA DEMOCRATICA POPOLARE"@it ;
+    skos:prefLabel "YEMEN REPUBBLICA DEMOCRATICA POPOLARE"@it ;
+    skos:altLabel "YS"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z250" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z250" ;
+    xkos:depth 1 .
+
+nazione:Z251 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "VIETNAM"@it ;
+    skos:prefLabel "VIETNAM"@it ;
+    skos:altLabel "VN"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z251" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z251" ;
+    xkos:depth 1 .
+
+nazione:Z252 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ARMENIA"@it ;
+    skos:prefLabel "ARMENIA"@it ;
+    skos:altLabel "ARM"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z252" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z252" ;
+    xkos:depth 1 .
+
+nazione:Z253 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "AZERBAIGIAN"@it ;
+    skos:prefLabel "AZERBAIGIAN"@it ;
+    skos:altLabel "AZ"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z253" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z253" ;
+    xkos:depth 1 .
+
+nazione:Z254 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "GEORGIA"@it ;
+    skos:prefLabel "GEORGIA"@it ;
+    skos:altLabel "GE"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z254" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z254" ;
+    xkos:depth 1 .
+
+nazione:Z255 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "KAZAKISTAN"@it ;
+    skos:prefLabel "KAZAKISTAN"@it ;
+    skos:altLabel "KZ"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z255" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z255" ;
+    xkos:depth 1 .
+
+nazione:Z256 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "KIRGHIZISTAN"@it ;
+    skos:prefLabel "KIRGHIZISTAN"@it ;
+    skos:altLabel "KS"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z256" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z256" ;
+    xkos:depth 1 .
+
+nazione:Z257 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "TAGIKISTAN"@it ;
+    skos:prefLabel "TAGIKISTAN"@it ;
+    skos:altLabel "TJ"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z257" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z257" ;
+    xkos:depth 1 .
+
+nazione:Z258 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "TURKEMENISTAN"@it ;
+    skos:prefLabel "TURKEMENISTAN"@it ;
+    skos:altLabel "TM"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z258" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z258" ;
+    xkos:depth 1 .
+
+nazione:Z259 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "UZBEKISTAN"@it ;
+    skos:prefLabel "UZBEKISTAN"@it ;
+    skos:altLabel "UZ"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z259" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z259" ;
+    xkos:depth 1 .
+
+nazione:Z300 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "NAMIBIA (AFRICA DEL SUD OVEST ANTE 1978)"@it ;
+    skos:prefLabel "NAMIBIA (AFRICA DEL SUD OVEST ANTE 1978)"@it ;
+    skos:altLabel "NAM"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z300" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z300" ;
+    xkos:depth 1 .
+
+nazione:Z301 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ALGERIA"@it ;
+    skos:prefLabel "ALGERIA"@it ;
+    skos:altLabel "DZ"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z301" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z301" ;
+    xkos:depth 1 .
+
+nazione:Z302 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ANGOLA"@it ;
+    skos:prefLabel "ANGOLA"@it ;
+    skos:altLabel "ANG"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z302" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z302" ;
+    xkos:depth 1 .
+
+nazione:Z303 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "BASUTOLAND-SUD AFRICA BRITANNICO"@it ;
+    skos:prefLabel "BASUTOLAND-SUD AFRICA BRITANNICO"@it ;
+    skos:altLabel "303"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z303" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z303" ;
+    xkos:depth 1 .
+
+nazione:Z304 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "BECIUANIA-SUD AFRICA BRITANNICO"@it ;
+    skos:prefLabel "BECIUANIA-SUD AFRICA BRITANNICO"@it ;
+    skos:altLabel "304"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z304" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z304" ;
+    xkos:depth 1 .
+
+nazione:Z305 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "BURUNDI"@it ;
+    skos:prefLabel "BURUNDI"@it ;
+    skos:altLabel "BU"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z305" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z305" ;
+    xkos:depth 1 .
+
+nazione:Z306 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "CAMERUN"@it ;
+    skos:prefLabel "CAMERUN"@it ;
+    skos:altLabel "CAM"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z306" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z306" ;
+    xkos:depth 1 .
+
+nazione:Z307 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "CAPO VERDE"@it ;
+    skos:prefLabel "CAPO VERDE"@it ;
+    skos:altLabel "CV"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z307" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z307" ;
+    xkos:depth 1 .
+
+nazione:Z308 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "CENTRAFRICANA REPUBBLICA (CENTROAFRICANO IMPERO ANTE 1980)"@it ;
+    skos:prefLabel "CENTRAFRICANA REPUBBLICA (CENTROAFRICANO IMPERO ANTE 1980)"@it ;
+    skos:altLabel "RCA"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z308" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z308" ;
+    xkos:depth 1 .
+
+nazione:Z309 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "CIAD"@it ;
+    skos:prefLabel "CIAD"@it ;
+    skos:altLabel "TCH"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z309" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z309" ;
+    xkos:depth 1 .
+
+nazione:Z310 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "COMORE (COMORE ISOLE ANTE 1977)"@it ;
+    skos:prefLabel "COMORE (COMORE ISOLE ANTE 1977)"@it ;
+    skos:altLabel "COM"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z310" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z310" ;
+    xkos:depth 1 .
+
+nazione:Z311 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "CONGO REPUBBLICA POPOLARE (CONGO BRAZZAVILLE ANTE 1975)"@it ;
+    skos:prefLabel "CONGO REPUBBLICA POPOLARE (CONGO BRAZZAVILLE ANTE 1975)"@it ;
+    skos:altLabel "RCB"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z311" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z311" ;
+    xkos:depth 1 .
+
+nazione:Z312 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "CONGO REPUBBLICA DEMOCRATICA (ZAIRE ANTE 1997)"@it ;
+    skos:prefLabel "CONGO REPUBBLICA DEMOCRATICA (ZAIRE ANTE 1997)"@it ;
+    skos:altLabel "ZRE"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z312" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z312" ;
+    xkos:depth 1 .
+
+nazione:Z313 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "COSTA D'AVORIO"@it ;
+    skos:prefLabel "COSTA D'AVORIO"@it ;
+    skos:altLabel "CI"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z313" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z313" ;
+    xkos:depth 1 .
+
+nazione:Z314 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "BENIN (DAHOMEI ANTE 1975)"@it ;
+    skos:prefLabel "BENIN (DAHOMEI ANTE 1975)"@it ;
+    skos:altLabel "BPB"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z314" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z314" ;
+    xkos:depth 1 .
+
+nazione:Z315 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ETIOPIA"@it ;
+    skos:prefLabel "ETIOPIA"@it ;
+    skos:altLabel "ETH"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z315" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z315" ;
+    xkos:depth 1 .
+
+nazione:Z316 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "GABON"@it ;
+    skos:prefLabel "GABON"@it ;
+    skos:altLabel "G"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z316" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z316" ;
+    xkos:depth 1 .
+
+nazione:Z317 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "GAMBIA"@it ;
+    skos:prefLabel "GAMBIA"@it ;
+    skos:altLabel "WAG"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z317" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z317" ;
+    xkos:depth 1 .
+
+nazione:Z318 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "GHANA"@it ;
+    skos:prefLabel "GHANA"@it ;
+    skos:altLabel "GH"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z318" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z318" ;
+    xkos:depth 1 .
+
+nazione:Z319 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "GUINEA"@it ;
+    skos:prefLabel "GUINEA"@it ;
+    skos:altLabel "RG"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z319" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z319" ;
+    xkos:depth 1 .
+
+nazione:Z320 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "GUINEA BISSAU (GUINEA PORTOGHESE ANTE 1975)"@it ;
+    skos:prefLabel "GUINEA BISSAU (GUINEA PORTOGHESE ANTE 1975)"@it ;
+    skos:altLabel "GNB"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z320" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z320" ;
+    xkos:depth 1 .
+
+nazione:Z321 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "GUINEA EQUATORIALE (GUINEA SPAGNOLA ANTE 1975)"@it ;
+    skos:prefLabel "GUINEA EQUATORIALE (GUINEA SPAGNOLA ANTE 1975)"@it ;
+    skos:altLabel "GQ"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z321" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z321" ;
+    xkos:depth 1 .
+
+nazione:Z322 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "KENYA"@it ;
+    skos:prefLabel "KENYA"@it ;
+    skos:altLabel "EAK"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z322" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z322" ;
+    xkos:depth 1 .
+
+nazione:Z323 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "IFNI (ANTE 1984)"@it ;
+    skos:prefLabel "IFNI (ANTE 1984)"@it ;
+    skos:altLabel "323"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z323" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z323" ;
+    xkos:depth 1 .
+
+nazione:Z324 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "LA REUNION (ISOLA)"@it ;
+    skos:prefLabel "LA REUNION (ISOLA)"@it ;
+    skos:altLabel "REU"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z324" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z324" ;
+    xkos:depth 1 .
+
+nazione:Z325 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "LIBERIA"@it ;
+    skos:prefLabel "LIBERIA"@it ;
+    skos:altLabel "LB"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z325" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z325" ;
+    xkos:depth 1 .
+
+nazione:Z326 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "LIBIA"@it ;
+    skos:prefLabel "LIBIA"@it ;
+    skos:altLabel "LAR"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z326" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z326" ;
+    xkos:depth 1 .
+
+nazione:Z327 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MADAGASCAR"@it ;
+    skos:prefLabel "MADAGASCAR"@it ;
+    skos:altLabel "RM"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z327" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z327" ;
+    xkos:depth 1 .
+
+nazione:Z328 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MALAWI"@it ;
+    skos:prefLabel "MALAWI"@it ;
+    skos:altLabel "MW"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z328" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z328" ;
+    xkos:depth 1 .
+
+nazione:Z329 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MALI"@it ;
+    skos:prefLabel "MALI"@it ;
+    skos:altLabel "RMM"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z329" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z329" ;
+    xkos:depth 1 .
+
+nazione:Z330 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MAROCCO"@it ;
+    skos:prefLabel "MAROCCO"@it ;
+    skos:altLabel "MA"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z330" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z330" ;
+    xkos:depth 1 .
+
+nazione:Z331 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MAURITANIA"@it ;
+    skos:prefLabel "MAURITANIA"@it ;
+    skos:altLabel "RIM"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z331" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z331" ;
+    xkos:depth 1 .
+
+nazione:Z332 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MAURIZIO (MAURIZIO ISOLE ANTE 1975)"@it ;
+    skos:prefLabel "MAURIZIO (MAURIZIO ISOLE ANTE 1975)"@it ;
+    skos:altLabel "MS"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z332" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z332" ;
+    xkos:depth 1 .
+
+nazione:Z333 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MOZAMBICO"@it ;
+    skos:prefLabel "MOZAMBICO"@it ;
+    skos:altLabel "MOC"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z333" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z333" ;
+    xkos:depth 1 .
+
+nazione:Z334 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "NIGER"@it ;
+    skos:prefLabel "NIGER"@it ;
+    skos:altLabel "RN"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z334" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z334" ;
+    xkos:depth 1 .
+
+nazione:Z335 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "NIGERIA"@it ;
+    skos:prefLabel "NIGERIA"@it ;
+    skos:altLabel "WAN"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z335" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z335" ;
+    xkos:depth 1 .
+
+nazione:Z336 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "EGITTO"@it ;
+    skos:prefLabel "EGITTO"@it ;
+    skos:altLabel "ET"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z336" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z336" ;
+    xkos:depth 1 .
+
+nazione:Z337 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ZIMBABWE (RHODESIA ANTE 1980)"@it ;
+    skos:prefLabel "ZIMBABWE (RHODESIA ANTE 1980)"@it ;
+    skos:altLabel "ZW"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z337" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z337" ;
+    xkos:depth 1 .
+
+nazione:Z338 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "RUANDA"@it ;
+    skos:prefLabel "RUANDA"@it ;
+    skos:altLabel "RWA"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z338" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z338" ;
+    xkos:depth 1 .
+
+nazione:Z339 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SAHARA SPAGNOLO"@it ;
+    skos:prefLabel "SAHARA SPAGNOLO"@it ;
+    skos:altLabel "339"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z339" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z339" ;
+    xkos:depth 1 .
+
+nazione:Z340 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SANT'ELENA (ISOLA)"@it ;
+    skos:prefLabel "SANT'ELENA (ISOLA)"@it ;
+    skos:altLabel "SHN"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z340" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z340" ;
+    xkos:depth 1 .
+
+nazione:Z341 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SAO TOME' E PRINCIPE (SAO TOME' E PRINCIPE ISOLE ANTE 1975)"@it ;
+    skos:prefLabel "SAO TOME' E PRINCIPE (SAO TOME' E PRINCIPE ISOLE ANTE 1975)"@it ;
+    skos:altLabel "STP"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z341" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z341" ;
+    xkos:depth 1 .
+
+nazione:Z342 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SEYCHELLES"@it ;
+    skos:prefLabel "SEYCHELLES"@it ;
+    skos:altLabel "SY"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z342" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z342" ;
+    xkos:depth 1 .
+
+nazione:Z343 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SENEGAL"@it ;
+    skos:prefLabel "SENEGAL"@it ;
+    skos:altLabel "SN"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z343" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z343" ;
+    xkos:depth 1 .
+
+nazione:Z344 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SIERRA LEONE"@it ;
+    skos:prefLabel "SIERRA LEONE"@it ;
+    skos:altLabel "WAL"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z344" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z344" ;
+    xkos:depth 1 .
+
+nazione:Z345 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SOMALIA"@it ;
+    skos:prefLabel "SOMALIA"@it ;
+    skos:altLabel "SO"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z345" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z345" ;
+    xkos:depth 1 .
+
+nazione:Z346 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SOMALIA FRANCESE (TERRITORIO FRANCESE DEGLI AFAR E DEGLI ISSA ANTE 1975)"@it ;
+    skos:prefLabel "SOMALIA FRANCESE (TERRITORIO FRANCESE DEGLI AFAR E DEGLI ISSA ANTE 1975)"@it ;
+    skos:altLabel "CFS"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z346" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z346" ;
+    xkos:depth 1 .
+
+nazione:Z347 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SUDAFRICANA REPUBBLICA"@it ;
+    skos:prefLabel "SUDAFRICANA REPUBBLICA"@it ;
+    skos:altLabel "ZA"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z347" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z347" ;
+    xkos:depth 1 .
+
+nazione:Z348 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SUDAN"@it ;
+    skos:prefLabel "SUDAN"@it ;
+    skos:altLabel "SUN"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z348" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z348" ;
+    xkos:depth 1 .
+
+nazione:Z349 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SWAZILAND (SWAZILAND-SUDAFRICA BRITANNICO ANTE 1975)"@it ;
+    skos:prefLabel "SWAZILAND (SWAZILAND-SUDAFRICA BRITANNICO ANTE 1975)"@it ;
+    skos:altLabel "SD"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z349" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z349" ;
+    xkos:depth 1 .
+
+nazione:Z350 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "TANGANICA"@it ;
+    skos:prefLabel "TANGANICA"@it ;
+    skos:altLabel "350"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z350" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z350" ;
+    xkos:depth 1 .
+
+nazione:Z351 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "TOGO"@it ;
+    skos:prefLabel "TOGO"@it ;
+    skos:altLabel "TG"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z351" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z351" ;
+    xkos:depth 1 .
+
+nazione:Z352 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "TUNISIA"@it ;
+    skos:prefLabel "TUNISIA"@it ;
+    skos:altLabel "TN"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z352" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z352" ;
+    xkos:depth 1 .
+
+nazione:Z353 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "UGANDA"@it ;
+    skos:prefLabel "UGANDA"@it ;
+    skos:altLabel "EAU"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z353" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z353" ;
+    xkos:depth 1 .
+
+nazione:Z354 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "BURKINA (VOLTA=ALTOVOLTA ANTE 1984)"@it ;
+    skos:prefLabel "BURKINA (VOLTA=ALTOVOLTA ANTE 1984)"@it ;
+    skos:altLabel "RHV"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z354" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z354" ;
+    xkos:depth 1 .
+
+nazione:Z355 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ZAMBIA"@it ;
+    skos:prefLabel "ZAMBIA"@it ;
+    skos:altLabel "Z"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z355" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z355" ;
+    xkos:depth 1 .
+
+nazione:Z356 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ZANZIBAR"@it ;
+    skos:prefLabel "ZANZIBAR"@it ;
+    skos:altLabel "356"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z356" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z356" ;
+    xkos:depth 1 .
+
+nazione:Z357 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "TANZANIA"@it ;
+    skos:prefLabel "TANZANIA"@it ;
+    skos:altLabel "EAT"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z357" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z357" ;
+    xkos:depth 1 .
+
+nazione:Z358 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "BOTSWANA"@it ;
+    skos:prefLabel "BOTSWANA"@it ;
+    skos:altLabel "BB"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z358" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z358" ;
+    xkos:depth 1 .
+
+nazione:Z359 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "LESOTHO"@it ;
+    skos:prefLabel "LESOTHO"@it ;
+    skos:altLabel "LS"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z359" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z359" ;
+    xkos:depth 1 .
+
+nazione:Z360 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MAYOTTE (ISOLA)"@it ;
+    skos:prefLabel "MAYOTTE (ISOLA)"@it ;
+    skos:altLabel "MYT"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z360" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z360" ;
+    xkos:depth 1 .
+
+nazione:Z361 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "GIBUTI"@it ;
+    skos:prefLabel "GIBUTI"@it ;
+    skos:altLabel "DJI"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z361" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z361" ;
+    xkos:depth 1 .
+
+nazione:Z362 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SAHARA MERIDIONALE"@it ;
+    skos:prefLabel "SAHARA MERIDIONALE"@it ;
+    skos:altLabel "362"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z362" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z362" ;
+    xkos:depth 1 .
+
+nazione:Z363 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SAHARA SETTENTRIONALE"@it ;
+    skos:prefLabel "SAHARA SETTENTRIONALE"@it ;
+    skos:altLabel "363"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z363" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z363" ;
+    xkos:depth 1 .
+
+nazione:Z364 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "BOPHUTHATSWANA"@it ;
+    skos:prefLabel "BOPHUTHATSWANA"@it ;
+    skos:altLabel "364"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z364" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z364" ;
+    xkos:depth 1 .
+
+nazione:Z365 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "TRANSKEI"@it ;
+    skos:prefLabel "TRANSKEI"@it ;
+    skos:altLabel "365"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z365" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z365" ;
+    xkos:depth 1 .
+
+nazione:Z366 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "VENDA"@it ;
+    skos:prefLabel "VENDA"@it ;
+    skos:altLabel "366"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z366" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z366" ;
+    xkos:depth 1 .
+
+nazione:Z367 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "CISKEI"@it ;
+    skos:prefLabel "CISKEI"@it ;
+    skos:altLabel "367"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z367" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z367" ;
+    xkos:depth 1 .
+
+nazione:Z368 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ERITREA"@it ;
+    skos:prefLabel "ERITREA"@it ;
+    skos:altLabel "ER"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z368" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z368" ;
+    xkos:depth 1 .
+
+nazione:Z369 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "NYASALAND"@it ;
+    skos:prefLabel "NYASALAND"@it ;
+    skos:altLabel "369"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z369" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z369" ;
+    xkos:depth 1 .
+
+nazione:Z370 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "CONGO BELGA"@it ;
+    skos:prefLabel "CONGO BELGA"@it ;
+    skos:altLabel "CB"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z370" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z370" ;
+    xkos:depth 1 .
+
+nazione:Z400 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "BERMUDA (ISOLE)"@it ;
+    skos:prefLabel "BERMUDA (ISOLE)"@it ;
+    skos:altLabel "BMU"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z400" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z400" ;
+    xkos:depth 1 .
+
+nazione:Z401 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "CANADA"@it ;
+    skos:prefLabel "CANADA"@it ;
+    skos:altLabel "CDN"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z401" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z401" ;
+    xkos:depth 1 .
+
+nazione:Z402 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "GROENLANDIA"@it ;
+    skos:prefLabel "GROENLANDIA"@it ;
+    skos:altLabel "GRL"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z402" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z402" ;
+    xkos:depth 1 .
+
+nazione:Z403 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SAINT PIERRE ET MIQUELON (ISOLE)"@it ;
+    skos:prefLabel "SAINT PIERRE ET MIQUELON (ISOLE)"@it ;
+    skos:altLabel "SPM"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z403" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z403" ;
+    xkos:depth 1 .
+
+nazione:Z404 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "STATI UNITI D'AMERICA"@it ;
+    skos:prefLabel "STATI UNITI D'AMERICA"@it ;
+    skos:altLabel "USA"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z404" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z404" ;
+    xkos:depth 1 .
+
+nazione:Z500 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ANTILLE BRITANNICHE"@it ;
+    skos:prefLabel "ANTILLE BRITANNICHE"@it ;
+    skos:altLabel "500"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z500" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z500" ;
+    xkos:depth 1 .
+
+nazione:Z501 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ANTILLE OLANDESI"@it ;
+    skos:prefLabel "ANTILLE OLANDESI"@it ;
+    skos:altLabel "ANT"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z501" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z501" ;
+    xkos:depth 1 .
+
+nazione:Z502 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "BAHAMA (BAHAMA ISOLE ANTE 1975)"@it ;
+    skos:prefLabel "BAHAMA (BAHAMA ISOLE ANTE 1975)"@it ;
+    skos:altLabel "BS"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z502" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z502" ;
+    xkos:depth 1 .
+
+nazione:Z503 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "COSTA RICA"@it ;
+    skos:prefLabel "COSTA RICA"@it ;
+    skos:altLabel "CR"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z503" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z503" ;
+    xkos:depth 1 .
+
+nazione:Z504 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "CUBA"@it ;
+    skos:prefLabel "CUBA"@it ;
+    skos:altLabel "C"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z504" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z504" ;
+    xkos:depth 1 .
+
+nazione:Z505 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "DOMINICANA REPUBBLICA"@it ;
+    skos:prefLabel "DOMINICANA REPUBBLICA"@it ;
+    skos:altLabel "DOM"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z505" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z505" ;
+    xkos:depth 1 .
+
+nazione:Z506 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "EL SALVADOR"@it ;
+    skos:prefLabel "EL SALVADOR"@it ;
+    skos:altLabel "ES"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z506" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z506" ;
+    xkos:depth 1 .
+
+nazione:Z507 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "GIAMAICA"@it ;
+    skos:prefLabel "GIAMAICA"@it ;
+    skos:altLabel "JA"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z507" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z507" ;
+    xkos:depth 1 .
+
+nazione:Z508 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "GUADALUPA"@it ;
+    skos:prefLabel "GUADALUPA"@it ;
+    skos:altLabel "GP"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z508" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z508" ;
+    xkos:depth 1 .
+
+nazione:Z509 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "GUATEMALA"@it ;
+    skos:prefLabel "GUATEMALA"@it ;
+    skos:altLabel "GCA"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z509" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z509" ;
+    xkos:depth 1 .
+
+nazione:Z510 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "HAITI"@it ;
+    skos:prefLabel "HAITI"@it ;
+    skos:altLabel "RH"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z510" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z510" ;
+    xkos:depth 1 .
+
+nazione:Z511 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "HONDURAS"@it ;
+    skos:prefLabel "HONDURAS"@it ;
+    skos:altLabel "HN"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z511" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z511" ;
+    xkos:depth 1 .
+
+nazione:Z512 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "BELIZE (HONDURAS BRITANNICO ANTE 1984)"@it ;
+    skos:prefLabel "BELIZE (HONDURAS BRITANNICO ANTE 1984)"@it ;
+    skos:altLabel "BH"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z512" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z512" ;
+    xkos:depth 1 .
+
+nazione:Z513 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MARTINICA"@it ;
+    skos:prefLabel "MARTINICA"@it ;
+    skos:altLabel "MQ"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z513" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z513" ;
+    xkos:depth 1 .
+
+nazione:Z514 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MESSICO"@it ;
+    skos:prefLabel "MESSICO"@it ;
+    skos:altLabel "MEX"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z514" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z514" ;
+    xkos:depth 1 .
+
+nazione:Z515 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "NICARAGUA"@it ;
+    skos:prefLabel "NICARAGUA"@it ;
+    skos:altLabel "NIC"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z515" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z515" ;
+    xkos:depth 1 .
+
+nazione:Z516 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "PANAMA'"@it ;
+    skos:prefLabel "PANAMA'"@it ;
+    skos:altLabel "PA"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z516" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z516" ;
+    xkos:depth 1 .
+
+nazione:Z517 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "PANAMA ZONA DEL CANALE"@it ;
+    skos:prefLabel "PANAMA ZONA DEL CANALE"@it ;
+    skos:altLabel "517"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z517" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z517" ;
+    xkos:depth 1 .
+
+nazione:Z518 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "PUERTO RICO"@it ;
+    skos:prefLabel "PUERTO RICO"@it ;
+    skos:altLabel "PRI"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z518" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z518" ;
+    xkos:depth 1 .
+
+nazione:Z519 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "TURKS E CAICOS (ISOLE)"@it ;
+    skos:prefLabel "TURKS E CAICOS (ISOLE)"@it ;
+    skos:altLabel "TCA"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z519" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z519" ;
+    xkos:depth 1 .
+
+nazione:Z520 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "VERGINI AMERICANE (ISOLE)"@it ;
+    skos:prefLabel "VERGINI AMERICANE (ISOLE)"@it ;
+    skos:altLabel "VIR"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z520" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z520" ;
+    xkos:depth 1 .
+
+nazione:Z521 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ANTILLE BRITANNICHE (ANTE 1977)"@it ;
+    skos:prefLabel "ANTILLE BRITANNICHE (ANTE 1977)"@it ;
+    skos:altLabel "521"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z521" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z521" ;
+    xkos:depth 1 .
+
+nazione:Z522 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "BARBADOS"@it ;
+    skos:prefLabel "BARBADOS"@it ;
+    skos:altLabel "BDS"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z522" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z522" ;
+    xkos:depth 1 .
+
+nazione:Z523 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ANTILLE BRITANNICHE"@it ;
+    skos:prefLabel "ANTILLE BRITANNICHE"@it ;
+    skos:altLabel "523"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z523" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z523" ;
+    xkos:depth 1 .
+
+nazione:Z524 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "GRENADA"@it ;
+    skos:prefLabel "GRENADA"@it ;
+    skos:altLabel "WG"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z524" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z524" ;
+    xkos:depth 1 .
+
+nazione:Z525 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "VERGINI BRITANNICHE (ISOLE)"@it ;
+    skos:prefLabel "VERGINI BRITANNICHE (ISOLE)"@it ;
+    skos:altLabel "BVI"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z525" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z525" ;
+    xkos:depth 1 .
+
+nazione:Z526 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "DOMINICA"@it ;
+    skos:prefLabel "DOMINICA"@it ;
+    skos:altLabel "WD"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z526" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z526" ;
+    xkos:depth 1 .
+
+nazione:Z527 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SAINT LUCIA"@it ;
+    skos:prefLabel "SAINT LUCIA"@it ;
+    skos:altLabel "WL"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z527" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z527" ;
+    xkos:depth 1 .
+
+nazione:Z528 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SAINT VINCENT E GRENADINE"@it ;
+    skos:prefLabel "SAINT VINCENT E GRENADINE"@it ;
+    skos:altLabel "WV"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z528" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z528" ;
+    xkos:depth 1 .
+
+nazione:Z529 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ANGUILLA (ISOLA)"@it ;
+    skos:prefLabel "ANGUILLA (ISOLA)"@it ;
+    skos:altLabel "AIA"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z529" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z529" ;
+    xkos:depth 1 .
+
+nazione:Z530 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "CAYMAN (ISOLE)"@it ;
+    skos:prefLabel "CAYMAN (ISOLE)"@it ;
+    skos:altLabel "CYM"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z530" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z530" ;
+    xkos:depth 1 .
+
+nazione:Z531 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MONTSERRAT"@it ;
+    skos:prefLabel "MONTSERRAT"@it ;
+    skos:altLabel "MSR"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z531" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z531" ;
+    xkos:depth 1 .
+
+nazione:Z532 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ANTIGUA E BARBUDA"@it ;
+    skos:prefLabel "ANTIGUA E BARBUDA"@it ;
+    skos:altLabel "AG"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z532" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z532" ;
+    xkos:depth 1 .
+
+nazione:Z533 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SAINT KITTS E NEVIS=SAINT CHRISTOPHER E NEVIS"@it ;
+    skos:prefLabel "SAINT KITTS E NEVIS=SAINT CHRISTOPHER E NEVIS"@it ;
+    skos:altLabel "KN"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z533" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z533" ;
+    xkos:depth 1 .
+
+nazione:Z600 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ARGENTINA"@it ;
+    skos:prefLabel "ARGENTINA"@it ;
+    skos:altLabel "RA"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z600" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z600" ;
+    xkos:depth 1 .
+
+nazione:Z601 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "BOLIVIA"@it ;
+    skos:prefLabel "BOLIVIA"@it ;
+    skos:altLabel "BOL"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z601" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z601" ;
+    xkos:depth 1 .
+
+nazione:Z602 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "BRASILE"@it ;
+    skos:prefLabel "BRASILE"@it ;
+    skos:altLabel "BR"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z602" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z602" ;
+    xkos:depth 1 .
+
+nazione:Z603 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "CILE"@it ;
+    skos:prefLabel "CILE"@it ;
+    skos:altLabel "RCH"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z603" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z603" ;
+    xkos:depth 1 .
+
+nazione:Z604 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "COLOMBIA"@it ;
+    skos:prefLabel "COLOMBIA"@it ;
+    skos:altLabel "CO"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z604" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z604" ;
+    xkos:depth 1 .
+
+nazione:Z605 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ECUADOR"@it ;
+    skos:prefLabel "ECUADOR"@it ;
+    skos:altLabel "EC"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z605" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z605" ;
+    xkos:depth 1 .
+
+nazione:Z606 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "GUYANA (GUYANA BRITANNICA ANTE 1975)"@it ;
+    skos:prefLabel "GUYANA (GUYANA BRITANNICA ANTE 1975)"@it ;
+    skos:altLabel "GUY"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z606" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z606" ;
+    xkos:depth 1 .
+
+nazione:Z607 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "GUAYANA=GUIANA FRANCESE"@it ;
+    skos:prefLabel "GUAYANA=GUIANA FRANCESE"@it ;
+    skos:altLabel "GF"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z607" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z607" ;
+    xkos:depth 1 .
+
+nazione:Z608 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SURINAME (GUAYANA OLANDESE ANTE 1975)"@it ;
+    skos:prefLabel "SURINAME (GUAYANA OLANDESE ANTE 1975)"@it ;
+    skos:altLabel "SME"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z608" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z608" ;
+    xkos:depth 1 .
+
+nazione:Z609 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MALVINE=FALKLAND (ISOLE)"@it ;
+    skos:prefLabel "MALVINE=FALKLAND (ISOLE)"@it ;
+    skos:altLabel "FLK"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z609" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z609" ;
+    xkos:depth 1 .
+
+nazione:Z610 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "PARAGUAY"@it ;
+    skos:prefLabel "PARAGUAY"@it ;
+    skos:altLabel "PY"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z610" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z610" ;
+    xkos:depth 1 .
+
+nazione:Z611 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "PERU'"@it ;
+    skos:prefLabel "PERU'"@it ;
+    skos:altLabel "PE"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z611" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z611" ;
+    xkos:depth 1 .
+
+nazione:Z612 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "TRINIDAD E TOBAGO"@it ;
+    skos:prefLabel "TRINIDAD E TOBAGO"@it ;
+    skos:altLabel "TT"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z612" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z612" ;
+    xkos:depth 1 .
+
+nazione:Z613 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "URUGUAY"@it ;
+    skos:prefLabel "URUGUAY"@it ;
+    skos:altLabel "MQ"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z613" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z613" ;
+    xkos:depth 1 .
+
+nazione:Z614 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "VENEZUELA"@it ;
+    skos:prefLabel "VENEZUELA"@it ;
+    skos:altLabel "YV"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z614" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z614" ;
+    xkos:depth 1 .
+
+nazione:Z700 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "AUSTRALIA"@it ;
+    skos:prefLabel "AUSTRALIA"@it ;
+    skos:altLabel "AUS"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z700" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z700" ;
+    xkos:depth 1 .
+
+nazione:Z701 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "CAROLINE (ISOLE) (STATI FEDERATI DI MICRONESIA ANTE 1990)"@it ;
+    skos:prefLabel "CAROLINE (ISOLE) (STATI FEDERATI DI MICRONESIA ANTE 1990)"@it ;
+    skos:altLabel "701"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z701" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z701" ;
+    xkos:depth 1 .
+
+nazione:Z702 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "CHRISTMAS (ISOLA)"@it ;
+    skos:prefLabel "CHRISTMAS (ISOLA)"@it ;
+    skos:altLabel "CXR"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z702" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z702" ;
+    xkos:depth 1 .
+
+nazione:Z703 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "COOK (ISOLE)"@it ;
+    skos:prefLabel "COOK (ISOLE)"@it ;
+    skos:altLabel "COK"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z703" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z703" ;
+    xkos:depth 1 .
+
+nazione:Z704 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "FIGI (VITI ISOLE ANTE 1975)"@it ;
+    skos:prefLabel "FIGI (VITI ISOLE ANTE 1975)"@it ;
+    skos:altLabel "FJI"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z704" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z704" ;
+    xkos:depth 1 .
+
+nazione:Z705 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "GILBERT E ELLICE (ISOLE)"@it ;
+    skos:prefLabel "GILBERT E ELLICE (ISOLE)"@it ;
+    skos:altLabel "705"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z705" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z705" ;
+    xkos:depth 1 .
+
+nazione:Z706 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "GUAM (ISOLA)"@it ;
+    skos:prefLabel "GUAM (ISOLA)"@it ;
+    skos:altLabel "GUM"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z706" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z706" ;
+    xkos:depth 1 .
+
+nazione:Z707 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "IRIAN OCCIDENTALE)"@it ;
+    skos:prefLabel "IRIAN OCCIDENTALE"@it ;
+    skos:altLabel "707"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z707" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z707" ;
+    xkos:depth 1 .
+
+nazione:Z708 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MACQUARIE (ISOLE)"@it ;
+    skos:prefLabel "MACQUARIE (ISOLE)"@it ;
+    skos:altLabel "708"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z708" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z708" ;
+    xkos:depth 1 .
+
+nazione:Z709 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MARCUS (ISOLE)"@it ;
+    skos:prefLabel "MARCUS (ISOLE)"@it ;
+    skos:altLabel "709"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z709" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z709" ;
+    xkos:depth 1 .
+
+nazione:Z710 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MARIANNE (ISOLE)"@it ;
+    skos:prefLabel "MARIANNE (ISOLE)"@it ;
+    skos:altLabel "MNP"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z710" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z710" ;
+    xkos:depth 1 .
+
+nazione:Z711 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MARSHALL (MARSHALL ISOLE ANTE 1990)"@it ;
+    skos:prefLabel "MARSHALL (MARSHALL ISOLE ANTE 1990)"@it ;
+    skos:altLabel "MH"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z711" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z711" ;
+    xkos:depth 1 .
+
+nazione:Z712 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MIDWAY (ISOLE)"@it ;
+    skos:prefLabel "MIDWAY (ISOLE)"@it ;
+    skos:altLabel "712"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z712" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z712" ;
+    xkos:depth 1 .
+
+nazione:Z713 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "NAURU (NAURU ISOLE ANTE 1975)"@it ;
+    skos:prefLabel "NAURU (NAURU ISOLE ANTE 1975)"@it ;
+    skos:altLabel "NAU"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z713" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z713" ;
+    xkos:depth 1 .
+
+nazione:Z714 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "NIUE=SAVAGE (ISOLE)"@it ;
+    skos:prefLabel "NIUE=SAVAGE (ISOLE)"@it ;
+    skos:altLabel "NIU"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z714" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z714" ;
+    xkos:depth 1 .
+
+nazione:Z715 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "NORFOLK (ISOLE E ISOLE DEL MAR DEI CORALLI)"@it ;
+    skos:prefLabel "NORFOLK (ISOLE E ISOLE DEL MAR DEI CORALLI)"@it ;
+    skos:altLabel "NFK"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z715" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z715" ;
+    xkos:depth 1 .
+
+nazione:Z716 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "NUOVA CALEDONIA (ISOLE E DIPENDENZE)"@it ;
+    skos:prefLabel "NUOVA CALEDONIA (ISOLE E DIPENDENZE)"@it ;
+    skos:altLabel "NCL"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z716" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z716" ;
+    xkos:depth 1 .
+
+nazione:Z717 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "NUOVE EBRIDI (ISOLE CONDOMINIO FRANCO-INGLESE)"@it ;
+    skos:prefLabel "NUOVE EBRIDI (ISOLE CONDOMINIO FRANCO-INGLESE)"@it ;
+    skos:altLabel "NHE"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z717" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z717" ;
+    xkos:depth 1 .
+
+nazione:Z718 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "NUOVA GUINEA"@it ;
+    skos:prefLabel "NUOVA GUINEA"@it ;
+    skos:altLabel "PG."@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z718" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z718" ;
+    xkos:depth 1 .
+
+nazione:Z719 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "NUOVA ZELANDA"@it ;
+    skos:prefLabel "NUOVA ZELANDA"@it ;
+    skos:altLabel "NZ"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z719" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z719" ;
+    xkos:depth 1 .
+
+nazione:Z720 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "PAPUASIA"@it ;
+    skos:prefLabel "PAPUASIA"@it ;
+    skos:altLabel "PG"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z720" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z720" ;
+    xkos:depth 1 .
+
+nazione:Z721 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "ISOLE CILENE (PASQUA E SALA Y GOMEZ) (PASQUA ISOLA ANTE 1984)"@it ;
+    skos:prefLabel "ISOLE CILENE (PASQUA E SALA Y GOMEZ) (PASQUA ISOLA ANTE 1984)"@it ;
+    skos:altLabel "721"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z721" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z721" ;
+    xkos:depth 1 .
+
+nazione:Z722 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "PITCAIRN (E DIPENDENZE)"@it ;
+    skos:prefLabel "PITCAIRN (E DIPENDENZE)"@it ;
+    skos:altLabel "PCN"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z722" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z722" ;
+    xkos:depth 1 .
+
+nazione:Z723 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "POLINESIA FRANCESE (ISOLE)"@it ;
+    skos:prefLabel "POLINESIA FRANCESE (ISOLE)"@it ;
+    skos:altLabel "PYF"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z723" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z723" ;
+    xkos:depth 1 .
+
+nazione:Z724 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SALOMONE (SALOMONE ISOLE ANTE 1978)"@it ;
+    skos:prefLabel "SALOMONE (SALOMONE ISOLE ANTE 1978)"@it ;
+    skos:altLabel "SLB"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z724" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z724" ;
+    xkos:depth 1 .
+
+nazione:Z725 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SAMOA AMERICANE (ISOLE)"@it ;
+    skos:prefLabel "SAMOA AMERICANE (ISOLE)"@it ;
+    skos:altLabel "ASM"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z725" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z725" ;
+    xkos:depth 1 .
+
+nazione:Z726 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SAMOA"@it ;
+    skos:prefLabel "SAMOA"@it ;
+    skos:altLabel "WS"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z726" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z726" ;
+    xkos:depth 1 .
+
+nazione:Z727 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "TOKELAU=ISOLE DELL'UNIONE"@it ;
+    skos:prefLabel "TOKELAU=ISOLE DELL'UNIONE"@it ;
+    skos:altLabel "TKL"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z727" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z727" ;
+    xkos:depth 1 .
+
+nazione:Z728 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "TONGA (ISOLE DEGLI AMICI ANTE 1975)"@it ;
+    skos:prefLabel "TONGA (ISOLE DEGLI AMICI ANTE 1975)"@it ;
+    skos:altLabel "TO"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z728" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z728" ;
+    xkos:depth 1 .
+
+nazione:Z729 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "WALLIS E FUTUNA (ISOLE)"@it ;
+    skos:prefLabel "WALLIS E FUTUNA (ISOLE)"@it ;
+    skos:altLabel "WLF"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z729" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z729" ;
+    xkos:depth 1 .
+
+nazione:Z730 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "PAPUA NUOVA GUINEA"@it ;
+    skos:prefLabel "PAPUA NUOVA GUINEA"@it ;
+    skos:altLabel "PNG"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z730" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z730" ;
+    xkos:depth 1 .
+
+nazione:Z731 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "KIRIBATI"@it ;
+    skos:prefLabel "KIRIBATI"@it ;
+    skos:altLabel "KIR"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z731" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z731" ;
+    xkos:depth 1 .
+
+nazione:Z732 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "TUVALU"@it ;
+    skos:prefLabel "TUVALU"@it ;
+    skos:altLabel "TUV"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z732" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z732" ;
+    xkos:depth 1 .
+
+nazione:Z733 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "VANUATU"@it ;
+    skos:prefLabel "VANUATU"@it ;
+    skos:altLabel "VU"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z733" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z733" ;
+    xkos:depth 1 .
+
+nazione:Z734 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "PALAU (PALAU REPUBBLICA ANTE 1997)"@it ;
+    skos:prefLabel "PALAU (PALAU REPUBBLICA ANTE 1997)"@it ;
+    skos:altLabel "PAL"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z734" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z734" ;
+    xkos:depth 1 .
+
+nazione:Z735 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "MICRONESIA STATI FEDERATI"@it ;
+    skos:prefLabel "MICRONESIA STATI FEDERATI"@it ;
+    skos:altLabel "FSM"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z735" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z735" ;
+    xkos:depth 1 .
+
+nazione:Z800 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "DIPENDENZE CANADESI"@it ;
+    skos:prefLabel "DIPENDENZE CANADESI"@it ;
+    skos:altLabel "800"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z800" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z800" ;
+    xkos:depth 1 .
+
+nazione:Z801 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "DIPENDENZE NORVEGESI ARTICHE"@it ;
+    skos:prefLabel "DIPENDENZE NORVEGESI ARTICHE"@it ;
+    skos:altLabel "801"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z801" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z801" ;
+    xkos:depth 1 .
+
+nazione:Z802 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "DIPENDENZE RUSSE (DIPENDENZE SOVIETICHE ANTE 1992)"@it ;
+    skos:prefLabel "DIPENDENZE RUSSE (DIPENDENZE SOVIETICHE ANTE 1992)"@it ;
+    skos:altLabel "802"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z802" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z802" ;
+    xkos:depth 1 .
+
+nazione:Z900 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "DIPENDENZE AUSTRALIANE"@it ;
+    skos:prefLabel "DIPENDENZE AUSTRALIANE"@it ;
+    skos:altLabel "900"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z900" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z900" ;
+    xkos:depth 1 .
+
+nazione:Z901 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "DIPENDENZE BRITANNICHE"@it ;
+    skos:prefLabel "DIPENDENZE BRITANNICHE"@it ;
+    skos:altLabel "901"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z901" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z901" ;
+    xkos:depth 1 .
+
+nazione:Z902 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "DIPENDENZE FRANCESI"@it ;
+    skos:prefLabel "DIPENDENZE FRANCESI"@it ;
+    skos:altLabel "902"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z902" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z902" ;
+    xkos:depth 1 .
+
+nazione:Z903 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "DIPENDENZE NEOZELANDESI"@it ;
+    skos:prefLabel "DIPENDENZE NEOZELANDESI"@it ;
+    skos:altLabel "903"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z903" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z903" ;
+    xkos:depth 1 .
+
+nazione:Z904 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "DIPENDENZE NORVEGESI ANTARTICHE"@it ;
+    skos:prefLabel "DIPENDENZE NORVEGESI ANTARTICHE"@it ;
+    skos:altLabel "904"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z904" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z904" ;
+    xkos:depth 1 .
+
+nazione:Z905 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "DIPENDENZE STATUNITENSI"@it ;
+    skos:prefLabel "DIPENDENZE STATUNITENSI"@it ;
+    skos:altLabel "905"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z905" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z905" ;
+    xkos:depth 1 .
+
+nazione:Z906 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "DIPENDENZE SUDAFRICANE"@it ;
+    skos:prefLabel "DIPENDENZE SUDAFRICANE"@it ;
+    skos:altLabel "906"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z906" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z906" ;
+    xkos:depth 1 .
+
+nazione:Z907 a INAILCore:NazioneINAIL,
+        skos:Concept ;
+    rdfs:label "SUD SUDAN"@it ;
+    skos:prefLabel "SUD SUDAN"@it ;
+    skos:altLabel "907"@it ;
+    CLV:hasRankOrder 1 ;
+    dcterms:identifier "Z907" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail> ;
+    skos:notation "Z907" ;
+    xkos:depth 1 .
+
+### Serialized using the ttlser deterministic serializer v1.2.0
