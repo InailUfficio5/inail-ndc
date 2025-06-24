@@ -1,0 +1,3837 @@
+[
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/W001",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "W001",
+    "label_it": "ITALIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z100",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z100",
+    "label_it": "ALBANIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z101",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z101",
+    "label_it": "ANDORRA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z102",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z102",
+    "label_it": "AUSTRIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z103",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z103",
+    "label_it": "BELGIO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z104",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z104",
+    "label_it": "BULGARIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z105",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z105",
+    "label_it": "CECOSLOVACCHIA (ANTE 1993)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z106",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z106",
+    "label_it": "CITTA' DEL VATICANO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z107",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z107",
+    "label_it": "DANIMARCA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z108",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z108",
+    "label_it": "FAER OER (ISOLE)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z109",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z109",
+    "label_it": "FINLANDIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z110",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z110",
+    "label_it": "FRANCIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z111",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z111",
+    "label_it": "GERMANIA REPUBBLICA DEMOCRATICA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z112",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z112",
+    "label_it": "GERMANIA (GERMANIA REPUBBLICA FEDERALE ANTE 1990)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z113",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z113",
+    "label_it": "GIBILTERRA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z114",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z114",
+    "label_it": "GRAN BRETAGNA E IRLANDA DEL NORD",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z115",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z115",
+    "label_it": "GRECIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z116",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z116",
+    "label_it": "IRLANDA=EIRE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z117",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z117",
+    "label_it": "ISLANDA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z118",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z118",
+    "label_it": "IUGOSLAVIA (ANTE 1991)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z119",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z119",
+    "label_it": "LIECHTENSTEIN",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z120",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z120",
+    "label_it": "LUSSEMBURGO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z121",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z121",
+    "label_it": "MALTA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z122",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z122",
+    "label_it": "MAN (ISOLA)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z123",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z123",
+    "label_it": "MONACO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z124",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z124",
+    "label_it": "NORMANNE (ISOLE)=ISOLE DEL CANALE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z125",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z125",
+    "label_it": "NORVEGIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z126",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z126",
+    "label_it": "PAESI BASSI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z127",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z127",
+    "label_it": "REPUBBLICA DI POLONIA (REPUBBLICA POPOLARE DI POLONIA ANTE 1989)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z128",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z128",
+    "label_it": "PORTOGALLO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z129",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z129",
+    "label_it": "ROMANIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z130",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z130",
+    "label_it": "SAN MARINO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z131",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z131",
+    "label_it": "SPAGNA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z132",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z132",
+    "label_it": "SVEZIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z133",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z133",
+    "label_it": "SVIZZERA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z134",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z134",
+    "label_it": "UNGHERIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z135",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z135",
+    "label_it": "UNIONE REPUBBLICHE SOCIALISTE SOVIETICHE (ANTE 1991)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z136",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z136",
+    "label_it": "GEORGIA (ANTE 1994)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z137",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z137",
+    "label_it": "ARMENIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z138",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z138",
+    "label_it": "UCRAINA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z139",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z139",
+    "label_it": "BIELORUSSIA=RUSSIA BIANCA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z140",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z140",
+    "label_it": "MOLDAVIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z141",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z141",
+    "label_it": "AZERBAIGIAN",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z142",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z142",
+    "label_it": "KIRGHIZISTAN",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z143",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z143",
+    "label_it": "UZBEKISTAN",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z144",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z144",
+    "label_it": "ESTONIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z145",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z145",
+    "label_it": "LETTONIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z146",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z146",
+    "label_it": "LITUANIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z147",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z147",
+    "label_it": "TAGIKISTAN",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z148",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z148",
+    "label_it": "MACEDONIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z149",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z149",
+    "label_it": "CROAZIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z150",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z150",
+    "label_it": "SLOVENIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z151",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z151",
+    "label_it": "TURKEMENISTAN",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z152",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z152",
+    "label_it": "KAZAKISTAN",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z153",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z153",
+    "label_it": "BOSNIA ED ERZEGOVINA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z154",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z154",
+    "label_it": "RUSSIA=FEDERAZIONE RUSSA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z155",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z155",
+    "label_it": "SLOVACCHIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z156",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z156",
+    "label_it": "CECA REPUBBLICA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z157",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z157",
+    "label_it": "SERBIA E MONTENEGRO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z158",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z158",
+    "label_it": "SERBIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z159",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z159",
+    "label_it": "MONTENEGRO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z160",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z160",
+    "label_it": "KOSSOVO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z161",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z161",
+    "label_it": "TERRITORI PALESTINESI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z200",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z200",
+    "label_it": "AFGHANISTAN",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z201",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z201",
+    "label_it": "ARABIA MERIDIONALE FEDERAZIONE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z202",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z202",
+    "label_it": "ARABIA MERIDIONALE PROTETTORATO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z203",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z203",
+    "label_it": "ARABIA SAUDITA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z204",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z204",
+    "label_it": "BAHREIN",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z205",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z205",
+    "label_it": "BHUTAN",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z206",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z206",
+    "label_it": "BIRMANIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z207",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z207",
+    "label_it": "BRUNEI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z208",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z208",
+    "label_it": "CAMBOGIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z209",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z209",
+    "label_it": "SRI LANKA (CEYLON ANTE 1975)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z210",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z210",
+    "label_it": "CINA REPUBBLICA POPOLARE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z211",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z211",
+    "label_it": "CIPRO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z212",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z212",
+    "label_it": "COCOS (ISOLE)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z213",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z213",
+    "label_it": "COREA DEL SUD",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z214",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z214",
+    "label_it": "COREA DEL NORD",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z215",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z215",
+    "label_it": "EMIRATI ARABI UNITI (COSTA DEI PIRATI=TRUCIAL STATES ANTE 1975)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z216",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z216",
+    "label_it": "FILIPPINE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z217",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z217",
+    "label_it": "TAIWAN (REPUBBLICA DELLA CINA NAZIONALE - FORMOSA ANTE 1975)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z218",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z218",
+    "label_it": "GAZA (TERRITORIO DI)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z219",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z219",
+    "label_it": "GIAPPONE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z220",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z220",
+    "label_it": "GIORDANIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z221",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z221",
+    "label_it": "HONG KONG",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z222",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z222",
+    "label_it": "INDIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z223",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z223",
+    "label_it": "INDONESIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z224",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z224",
+    "label_it": "IRAN",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z225",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z225",
+    "label_it": "IRAQ",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z226",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z226",
+    "label_it": "ISRAELE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z227",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z227",
+    "label_it": "KUWAIT",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z228",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z228",
+    "label_it": "LAOS",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z229",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z229",
+    "label_it": "LIBANO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z230",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z230",
+    "label_it": "MALAYSIA (ANTE 1975)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z231",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z231",
+    "label_it": "MACAO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z232",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z232",
+    "label_it": "MALDIVE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z233",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z233",
+    "label_it": "MONGOLIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z234",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z234",
+    "label_it": "NEPAL",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z235",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z235",
+    "label_it": "OMAN",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z236",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z236",
+    "label_it": "PAKISTAN",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z237",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z237",
+    "label_it": "QATAR",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z238",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z238",
+    "label_it": "RYUKYU (ISOLE)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z239",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z239",
+    "label_it": "SIKKIM",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z240",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z240",
+    "label_it": "SIRIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z241",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z241",
+    "label_it": "THAILANDIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z242",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z242",
+    "label_it": "TIMOR (ISOLA)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z243",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z243",
+    "label_it": "TURCHIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z244",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z244",
+    "label_it": "VIETNAM DEL SUD",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z245",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z245",
+    "label_it": "VIETNAM DEL NORD",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z246",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z246",
+    "label_it": "YEMEN",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z247",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z247",
+    "label_it": "MALAYSIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z248",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z248",
+    "label_it": "SINGAPORE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z249",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z249",
+    "label_it": "BANGLADESH",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z250",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z250",
+    "label_it": "YEMEN REPUBBLICA DEMOCRATICA POPOLARE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z251",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z251",
+    "label_it": "VIETNAM",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z252",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z252",
+    "label_it": "ARMENIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z253",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z253",
+    "label_it": "AZERBAIGIAN",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z254",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z254",
+    "label_it": "GEORGIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z255",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z255",
+    "label_it": "KAZAKISTAN",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z256",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z256",
+    "label_it": "KIRGHIZISTAN",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z257",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z257",
+    "label_it": "TAGIKISTAN",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z258",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z258",
+    "label_it": "TURKEMENISTAN",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z259",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z259",
+    "label_it": "UZBEKISTAN",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z300",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z300",
+    "label_it": "NAMIBIA (AFRICA DEL SUD OVEST ANTE 1978)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z301",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z301",
+    "label_it": "ALGERIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z302",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z302",
+    "label_it": "ANGOLA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z303",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z303",
+    "label_it": "BASUTOLAND-SUD AFRICA BRITANNICO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z304",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z304",
+    "label_it": "BECIUANIA-SUD AFRICA BRITANNICO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z305",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z305",
+    "label_it": "BURUNDI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z306",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z306",
+    "label_it": "CAMERUN",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z307",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z307",
+    "label_it": "CAPO VERDE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z308",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z308",
+    "label_it": "CENTRAFRICANA REPUBBLICA (CENTROAFRICANO IMPERO ANTE 1980)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z309",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z309",
+    "label_it": "CIAD",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z310",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z310",
+    "label_it": "COMORE (COMORE ISOLE ANTE 1977)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z311",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z311",
+    "label_it": "CONGO REPUBBLICA POPOLARE (CONGO BRAZZAVILLE ANTE 1975)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z312",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z312",
+    "label_it": "CONGO REPUBBLICA DEMOCRATICA (ZAIRE ANTE 1997)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z313",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z313",
+    "label_it": "COSTA D'AVORIO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z314",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z314",
+    "label_it": "BENIN (DAHOMEI ANTE 1975)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z315",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z315",
+    "label_it": "ETIOPIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z316",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z316",
+    "label_it": "GABON",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z317",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z317",
+    "label_it": "GAMBIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z318",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z318",
+    "label_it": "GHANA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z319",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z319",
+    "label_it": "GUINEA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z320",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z320",
+    "label_it": "GUINEA BISSAU (GUINEA PORTOGHESE ANTE 1975)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z321",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z321",
+    "label_it": "GUINEA EQUATORIALE (GUINEA SPAGNOLA ANTE 1975)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z322",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z322",
+    "label_it": "KENYA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z323",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z323",
+    "label_it": "IFNI (ANTE 1984)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z324",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z324",
+    "label_it": "LA REUNION (ISOLA)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z325",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z325",
+    "label_it": "LIBERIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z326",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z326",
+    "label_it": "LIBIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z327",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z327",
+    "label_it": "MADAGASCAR",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z328",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z328",
+    "label_it": "MALAWI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z329",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z329",
+    "label_it": "MALI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z330",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z330",
+    "label_it": "MAROCCO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z331",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z331",
+    "label_it": "MAURITANIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z332",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z332",
+    "label_it": "MAURIZIO (MAURIZIO ISOLE ANTE 1975)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z333",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z333",
+    "label_it": "MOZAMBICO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z334",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z334",
+    "label_it": "NIGER",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z335",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z335",
+    "label_it": "NIGERIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z336",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z336",
+    "label_it": "EGITTO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z337",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z337",
+    "label_it": "ZIMBABWE (RHODESIA ANTE 1980)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z338",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z338",
+    "label_it": "RUANDA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z339",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z339",
+    "label_it": "SAHARA SPAGNOLO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z340",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z340",
+    "label_it": "SANT'ELENA (ISOLA)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z341",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z341",
+    "label_it": "SAO TOME' E PRINCIPE (SAO TOME' E PRINCIPE ISOLE ANTE 1975)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z342",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z342",
+    "label_it": "SEYCHELLES",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z343",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z343",
+    "label_it": "SENEGAL",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z344",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z344",
+    "label_it": "SIERRA LEONE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z345",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z345",
+    "label_it": "SOMALIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z346",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z346",
+    "label_it": "SOMALIA FRANCESE (TERRITORIO FRANCESE DEGLI AFAR E DEGLI ISSA ANTE 1975)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z347",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z347",
+    "label_it": "SUDAFRICANA REPUBBLICA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z348",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z348",
+    "label_it": "SUDAN",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z349",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z349",
+    "label_it": "SWAZILAND (SWAZILAND-SUDAFRICA BRITANNICO ANTE 1975)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z350",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z350",
+    "label_it": "TANGANICA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z351",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z351",
+    "label_it": "TOGO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z352",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z352",
+    "label_it": "TUNISIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z353",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z353",
+    "label_it": "UGANDA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z354",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z354",
+    "label_it": "BURKINA (VOLTA=ALTOVOLTA ANTE 1984)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z355",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z355",
+    "label_it": "ZAMBIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z356",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z356",
+    "label_it": "ZANZIBAR",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z357",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z357",
+    "label_it": "TANZANIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z358",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z358",
+    "label_it": "BOTSWANA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z359",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z359",
+    "label_it": "LESOTHO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z360",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z360",
+    "label_it": "MAYOTTE (ISOLA)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z361",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z361",
+    "label_it": "GIBUTI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z362",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z362",
+    "label_it": "SAHARA MERIDIONALE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z363",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z363",
+    "label_it": "SAHARA SETTENTRIONALE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z364",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z364",
+    "label_it": "BOPHUTHATSWANA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z365",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z365",
+    "label_it": "TRANSKEI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z366",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z366",
+    "label_it": "VENDA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z367",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z367",
+    "label_it": "CISKEI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z368",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z368",
+    "label_it": "ERITREA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z369",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z369",
+    "label_it": "NYASALAND",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z370",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z370",
+    "label_it": "CONGO BELGA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z400",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z400",
+    "label_it": "BERMUDA (ISOLE)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z401",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z401",
+    "label_it": "CANADA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z402",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z402",
+    "label_it": "GROENLANDIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z403",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z403",
+    "label_it": "SAINT PIERRE ET MIQUELON (ISOLE)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z404",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z404",
+    "label_it": "STATI UNITI D'AMERICA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z500",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z500",
+    "label_it": "ANTILLE BRITANNICHE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z501",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z501",
+    "label_it": "ANTILLE OLANDESI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z502",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z502",
+    "label_it": "BAHAMA (BAHAMA ISOLE ANTE 1975)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z503",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z503",
+    "label_it": "COSTA RICA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z504",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z504",
+    "label_it": "CUBA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z505",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z505",
+    "label_it": "DOMINICANA REPUBBLICA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z506",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z506",
+    "label_it": "EL SALVADOR",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z507",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z507",
+    "label_it": "GIAMAICA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z508",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z508",
+    "label_it": "GUADALUPA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z509",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z509",
+    "label_it": "GUATEMALA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z510",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z510",
+    "label_it": "HAITI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z511",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z511",
+    "label_it": "HONDURAS",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z512",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z512",
+    "label_it": "BELIZE (HONDURAS BRITANNICO ANTE 1984)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z513",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z513",
+    "label_it": "MARTINICA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z514",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z514",
+    "label_it": "MESSICO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z515",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z515",
+    "label_it": "NICARAGUA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z516",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z516",
+    "label_it": "PANAMA'",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z517",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z517",
+    "label_it": "PANAMA ZONA DEL CANALE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z518",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z518",
+    "label_it": "PUERTO RICO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z519",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z519",
+    "label_it": "TURKS E CAICOS (ISOLE)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z520",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z520",
+    "label_it": "VERGINI AMERICANE (ISOLE)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z521",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z521",
+    "label_it": "ANTILLE BRITANNICHE (ANTE 1977)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z522",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z522",
+    "label_it": "BARBADOS",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z523",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z523",
+    "label_it": "ANTILLE BRITANNICHE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z524",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z524",
+    "label_it": "GRENADA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z525",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z525",
+    "label_it": "VERGINI BRITANNICHE (ISOLE)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z526",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z526",
+    "label_it": "DOMINICA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z527",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z527",
+    "label_it": "SAINT LUCIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z528",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z528",
+    "label_it": "SAINT VINCENT E GRENADINE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z529",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z529",
+    "label_it": "ANGUILLA (ISOLA)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z530",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z530",
+    "label_it": "CAYMAN (ISOLE)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z531",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z531",
+    "label_it": "MONTSERRAT",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z532",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z532",
+    "label_it": "ANTIGUA E BARBUDA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z533",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z533",
+    "label_it": "SAINT KITTS E NEVIS=SAINT CHRISTOPHER E NEVIS",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z600",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z600",
+    "label_it": "ARGENTINA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z601",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z601",
+    "label_it": "BOLIVIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z602",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z602",
+    "label_it": "BRASILE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z603",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z603",
+    "label_it": "CILE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z604",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z604",
+    "label_it": "COLOMBIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z605",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z605",
+    "label_it": "ECUADOR",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z606",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z606",
+    "label_it": "GUYANA (GUYANA BRITANNICA ANTE 1975)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z607",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z607",
+    "label_it": "GUAYANA=GUIANA FRANCESE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z608",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z608",
+    "label_it": "SURINAME (GUAYANA OLANDESE ANTE 1975)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z609",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z609",
+    "label_it": "MALVINE=FALKLAND (ISOLE)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z610",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z610",
+    "label_it": "PARAGUAY",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z611",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z611",
+    "label_it": "PERU'",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z612",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z612",
+    "label_it": "TRINIDAD E TOBAGO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z613",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z613",
+    "label_it": "URUGUAY",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z614",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z614",
+    "label_it": "VENEZUELA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z700",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z700",
+    "label_it": "AUSTRALIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z701",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z701",
+    "label_it": "CAROLINE (ISOLE) (STATI FEDERATI DI MICRONESIA ANTE 1990)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z702",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z702",
+    "label_it": "CHRISTMAS (ISOLA)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z703",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z703",
+    "label_it": "COOK (ISOLE)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z704",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z704",
+    "label_it": "FIGI (VITI ISOLE ANTE 1975)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z705",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z705",
+    "label_it": "GILBERT E ELLICE (ISOLE)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z706",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z706",
+    "label_it": "GUAM (ISOLA)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z707",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z707",
+    "label_it": "IRIAN OCCIDENTALE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z708",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z708",
+    "label_it": "MACQUARIE (ISOLE)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z709",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z709",
+    "label_it": "MARCUS (ISOLE)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z710",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z710",
+    "label_it": "MARIANNE (ISOLE)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z711",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z711",
+    "label_it": "MARSHALL (MARSHALL ISOLE ANTE 1990)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z712",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z712",
+    "label_it": "MIDWAY (ISOLE)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z713",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z713",
+    "label_it": "NAURU (NAURU ISOLE ANTE 1975)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z714",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z714",
+    "label_it": "NIUE=SAVAGE (ISOLE)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z715",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z715",
+    "label_it": "NORFOLK (ISOLE E ISOLE DEL MAR DEI CORALLI)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z716",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z716",
+    "label_it": "NUOVA CALEDONIA (ISOLE E DIPENDENZE)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z717",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z717",
+    "label_it": "NUOVE EBRIDI (ISOLE CONDOMINIO FRANCO-INGLESE)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z718",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z718",
+    "label_it": "NUOVA GUINEA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z719",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z719",
+    "label_it": "NUOVA ZELANDA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z720",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z720",
+    "label_it": "PAPUASIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z721",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z721",
+    "label_it": "ISOLE CILENE (PASQUA E SALA Y GOMEZ) (PASQUA ISOLA ANTE 1984)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z722",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z722",
+    "label_it": "PITCAIRN (E DIPENDENZE)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z723",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z723",
+    "label_it": "POLINESIA FRANCESE (ISOLE)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z724",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z724",
+    "label_it": "SALOMONE (SALOMONE ISOLE ANTE 1978)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z725",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z725",
+    "label_it": "SAMOA AMERICANE (ISOLE)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z726",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z726",
+    "label_it": "SAMOA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z727",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z727",
+    "label_it": "TOKELAU=ISOLE DELL'UNIONE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z728",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z728",
+    "label_it": "TONGA (ISOLE DEGLI AMICI ANTE 1975)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z729",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z729",
+    "label_it": "WALLIS E FUTUNA (ISOLE)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z730",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z730",
+    "label_it": "PAPUA NUOVA GUINEA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z731",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z731",
+    "label_it": "KIRIBATI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z732",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z732",
+    "label_it": "TUVALU",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z733",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z733",
+    "label_it": "VANUATU",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z734",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z734",
+    "label_it": "PALAU (PALAU REPUBBLICA ANTE 1997)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z735",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z735",
+    "label_it": "MICRONESIA STATI FEDERATI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z800",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z800",
+    "label_it": "DIPENDENZE CANADESI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z801",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z801",
+    "label_it": "DIPENDENZE NORVEGESI ARTICHE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z802",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z802",
+    "label_it": "DIPENDENZE RUSSE (DIPENDENZE SOVIETICHE ANTE 1992)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z900",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z900",
+    "label_it": "DIPENDENZE AUSTRALIANE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z901",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z901",
+    "label_it": "DIPENDENZE BRITANNICHE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z902",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z902",
+    "label_it": "DIPENDENZE FRANCESI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z903",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z903",
+    "label_it": "DIPENDENZE NEOZELANDESI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z904",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z904",
+    "label_it": "DIPENDENZE NORVEGESI ANTARTICHE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z905",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z905",
+    "label_it": "DIPENDENZE STATUNITENSI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z906",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z906",
+    "label_it": "DIPENDENZE SUDAFRICANE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/Z907",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/NazioneINAIL",
+      "skos:Concept"
+    ],
+    "id": "Z907",
+    "label_it": "SUD SUDAN",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  }
+]

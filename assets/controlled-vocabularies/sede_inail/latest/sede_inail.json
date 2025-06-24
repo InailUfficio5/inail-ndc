@@ -1,0 +1,2459 @@
+[
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/11100",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "11100",
+    "label_it": "ALESSANDRIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/11130",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "11130",
+    "label_it": "CASALE MONFERRATO (AL)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/11200",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "11200",
+    "label_it": "ASTI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/11300",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "11300",
+    "label_it": "CUNEO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/11332",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "11332",
+    "label_it": "ALBA (CN)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/11400",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "11400",
+    "label_it": "NOVARA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/11500",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "11500",
+    "label_it": "TORINO CENTRO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/11520",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "11520",
+    "label_it": "IVREA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/11523",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "11523",
+    "label_it": "CHIVASSO (TO)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/11540",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "11540",
+    "label_it": "MONCALIERI (TO)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/11542",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "11542",
+    "label_it": "RIVOLI (TO)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/11560",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "11560",
+    "label_it": "PINEROLO (TO)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/11570",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "11570",
+    "label_it": "TORINO SUD",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/11580",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "11580",
+    "label_it": "TORINO NORD",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/11600",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "11600",
+    "label_it": "VERCELLI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/11620",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "11620",
+    "label_it": "BIELLA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/11700",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "11700",
+    "label_it": "VERBANO CUSIO OSSOLA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/12100",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "12100",
+    "label_it": "AOSTA - SEDE REGIONALE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/13100",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "13100",
+    "label_it": "BERGAMO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/13140",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "13140",
+    "label_it": "TREVIGLIO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/13200",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "13200",
+    "label_it": "BRESCIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/13232",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "13232",
+    "label_it": "BRENO (BS)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/13233",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "13233",
+    "label_it": "MANERBIO (BS)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/13240",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "13240",
+    "label_it": "PALAZZOLO SULL'OGLIO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/13300",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "13300",
+    "label_it": "COMO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/13320",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "13320",
+    "label_it": "LECCO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/13400",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "13400",
+    "label_it": "CREMONA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/13430",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "13430",
+    "label_it": "CREMA (CR)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/13500",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "13500",
+    "label_it": "MANTOVA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/13600",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "13600",
+    "label_it": "MILANO NORD",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/13609",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "13609",
+    "label_it": "RHO(MI)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/13620",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "13620",
+    "label_it": "LEGNANO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/13621",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "13621",
+    "label_it": "LODI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/13622",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "13622",
+    "label_it": "MONZA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/13623",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "13623",
+    "label_it": "SESTO S.GIOVANNI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/13640",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "13640",
+    "label_it": "MILANO SUD",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/13670",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "13670",
+    "label_it": "MILANO EST",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/13680",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "13680",
+    "label_it": "MILANO CENTRO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/13700",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "13700",
+    "label_it": "PAVIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/13800",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "13800",
+    "label_it": "SONDRIO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/13900",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "13900",
+    "label_it": "VARESE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/13920",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "13920",
+    "label_it": "BUSTO ARSIZIO (VA)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/13921",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "13921",
+    "label_it": "GALLARATE (VA)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/13922",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "13922",
+    "label_it": "SARONNO (VA)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/14100",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "14100",
+    "label_it": "BOLZANO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/14110",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "14110",
+    "label_it": "BRESSANONE (BZ)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/14120",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "14120",
+    "label_it": "MERANO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/14200",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "14200",
+    "label_it": "DIREZIONE PROVINCIALE DI TRENTO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/14220",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "14220",
+    "label_it": "ROVERETO (TN)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/15100",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "15100",
+    "label_it": "BELLUNO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/15200",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "15200",
+    "label_it": "PADOVA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/15300",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "15300",
+    "label_it": "ROVIGO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/15400",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "15400",
+    "label_it": "TREVISO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/15401",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "15401",
+    "label_it": "CONEGLIANO (TV)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/15510",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "15510",
+    "label_it": "VENEZIA TERRAFERMA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/15540",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "15540",
+    "label_it": "SAN DONA' DI PIAVE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/15600",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "15600",
+    "label_it": "VERONA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/15640",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "15640",
+    "label_it": "LEGNAGO (VR)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/15700",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "15700",
+    "label_it": "BASSANO DEL GRAPPA (VI)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/15710",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "15710",
+    "label_it": "VICENZA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/15733",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "15733",
+    "label_it": "SCHIO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/16100",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "16100",
+    "label_it": "GORIZIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/16120",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "16120",
+    "label_it": "MONFALCONE (GO)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/16200",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "16200",
+    "label_it": "TRIESTE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/16300",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "16300",
+    "label_it": "UDINE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/16321",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "16321",
+    "label_it": "TOLMEZZO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/16700",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "16700",
+    "label_it": "PORDENONE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/17100",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "17100",
+    "label_it": "GENOVA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/17160",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "17160",
+    "label_it": "CHIAVARI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/17200",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "17200",
+    "label_it": "IMPERIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/17300",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "17300",
+    "label_it": "LA SPEZIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/17400",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "17400",
+    "label_it": "SAVONA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/18100",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "18100",
+    "label_it": "BOLOGNA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/18130",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "18130",
+    "label_it": "CASALECCHIO DI RENO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/18160",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "18160",
+    "label_it": "IMOLA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/18200",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "18200",
+    "label_it": "FERRARA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/18300",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "18300",
+    "label_it": "FORLI'",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/18320",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "18320",
+    "label_it": "RIMINI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/18330",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "18330",
+    "label_it": "CESENA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/18400",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "18400",
+    "label_it": "MODENA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/18500",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "18500",
+    "label_it": "PARMA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/18600",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "18600",
+    "label_it": "PIACENZA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/18700",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "18700",
+    "label_it": "RAVENNA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/18730",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "18730",
+    "label_it": "FAENZA (RA)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/18800",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "18800",
+    "label_it": "REGGIO EMILIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/21100",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "21100",
+    "label_it": "AREZZO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/21200",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "21200",
+    "label_it": "CARRARA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/21300",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "21300",
+    "label_it": "FIRENZE- PORTE NUOVE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/21320",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "21320",
+    "label_it": "PRATO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/21330",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "21330",
+    "label_it": "EMPOLI (FI)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/21400",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "21400",
+    "label_it": "GROSSETO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/21500",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "21500",
+    "label_it": "LIVORNO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/21520",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "21520",
+    "label_it": "PIOMBINO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/21521",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "21521",
+    "label_it": "PORTOFERRAIO (LI)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/21600",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "21600",
+    "label_it": "LUCCA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/21630",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "21630",
+    "label_it": "VIAREGGIO (LU)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/21700",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "21700",
+    "label_it": "PISA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/21730",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "21730",
+    "label_it": "PONTEDERA (PI)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/21800",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "21800",
+    "label_it": "PISTOIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/21900",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "21900",
+    "label_it": "SIENA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/22100",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "22100",
+    "label_it": "PERUGIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/22110",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "22110",
+    "label_it": "FOLIGNO (PG)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/22131",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "22131",
+    "label_it": "CITTA' DI CASTELLO (PG)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/22200",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "22200",
+    "label_it": "TERNI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/22230",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "22230",
+    "label_it": "ORVIETO (TR)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/23100",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "23100",
+    "label_it": "ANCONA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/23130",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "23130",
+    "label_it": "JESI (AN)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/23132",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "23132",
+    "label_it": "FABRIANO (AN)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/23133",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "23133",
+    "label_it": "SENIGALLIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/23200",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "23200",
+    "label_it": "ASCOLI PICENO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/23230",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "23230",
+    "label_it": "FERMO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/23300",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "23300",
+    "label_it": "MACERATA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/23400",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "23400",
+    "label_it": "PESARO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/23401",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "23401",
+    "label_it": "FANO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/24100",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "24100",
+    "label_it": "FROSINONE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/24110",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "24110",
+    "label_it": "CASSINO (FR)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/24200",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "24200",
+    "label_it": "LATINA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/24230",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "24230",
+    "label_it": "FORMIA (LT)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/24300",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "24300",
+    "label_it": "RIETI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/24400",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "24400",
+    "label_it": "ROMA CENTRO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/24401",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "24401",
+    "label_it": "ROMA AURELIO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/24441",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "24441",
+    "label_it": "ROMA TUSCOLANO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/24442",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "24442",
+    "label_it": "CIVITAVECCHIA (RM)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/24443",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "24443",
+    "label_it": "VELLETRI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/24460",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "24460",
+    "label_it": "TIVOLI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/24470",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "24470",
+    "label_it": "ROMA NOMENTANO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/24480",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "24480",
+    "label_it": "ROMA LAURENTINO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/24500",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "24500",
+    "label_it": "VITERBO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/31100",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "31100",
+    "label_it": "CHIETI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/31110",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "31110",
+    "label_it": "LANCIANO (CH)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/31200",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "31200",
+    "label_it": "L'AQUILA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/31210",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "31210",
+    "label_it": "AVEZZANO (AQ)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/31231",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "31231",
+    "label_it": "SULMONA (AQ)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/31300",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "31300",
+    "label_it": "PESCARA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/31400",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "31400",
+    "label_it": "TERAMO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/32100",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "32100",
+    "label_it": "DIREZIONE REGIONALE MOLISE - SEDE LOCALE DI CAMPOBASSO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/32130",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "32130",
+    "label_it": "TERMOLI (CB)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/32200",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "32200",
+    "label_it": "ISERNIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/33100",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "33100",
+    "label_it": "AVELLINO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/33101",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "33101",
+    "label_it": "S. ANGELO DEI LOMBARDI (AV)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/33200",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "33200",
+    "label_it": "BENEVENTO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/33300",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "33300",
+    "label_it": "CASERTA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/33310",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "33310",
+    "label_it": "AVERSA (CE)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/33400",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "33400",
+    "label_it": "NAPOLI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/33403",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "33403",
+    "label_it": "NAPOLI VIA DE GASPERI (NA)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/33420",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "33420",
+    "label_it": "CASTELLAMMARE DI STABIA (NA)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/33470",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "33470",
+    "label_it": "NOLA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/33500",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "33500",
+    "label_it": "SALERNO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/33530",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "33530",
+    "label_it": "BATTIPAGLIA (SA)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/34100",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "34100",
+    "label_it": "BARI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/34110",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "34110",
+    "label_it": "BARLETTA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/34140",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "34140",
+    "label_it": "MONOPOLI (BA)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/34141",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "34141",
+    "label_it": "ALTAMURA (BA)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/34200",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "34200",
+    "label_it": "BRINDISI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/34300",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "34300",
+    "label_it": "FOGGIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/34400",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "34400",
+    "label_it": "LECCE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/34402",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "34402",
+    "label_it": "CASARANO (LE)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/34500",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "34500",
+    "label_it": "TARANTO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/35100",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "35100",
+    "label_it": "MATERA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/35200",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "35200",
+    "label_it": "DIREZIONE REGIONALE BASILICATA - SEDE LOCALE DI POTENZA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/35201",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "35201",
+    "label_it": "MELFI (PZ)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/35230",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "35230",
+    "label_it": "LAGONEGRO (PZ)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/36100",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "36100",
+    "label_it": "CATANZARO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/36110",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "36110",
+    "label_it": "VIBO VALENTIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/36200",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "36200",
+    "label_it": "COSENZA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/36202",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "36202",
+    "label_it": "CORIGLIANO - ROSSANO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/36300",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "36300",
+    "label_it": "REGGIO CALABRIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/36302",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "36302",
+    "label_it": "LOCRI (RC)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/36303",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "36303",
+    "label_it": "PALMI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/36400",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "36400",
+    "label_it": "CROTONE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/41100",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "41100",
+    "label_it": "AGRIGENTO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/41200",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "41200",
+    "label_it": "CALTANISSETTA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/41300",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "41300",
+    "label_it": "CATANIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/41302",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "41302",
+    "label_it": "CALTAGIRONE (CT)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/41400",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "41400",
+    "label_it": "ENNA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/41500",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "41500",
+    "label_it": "MESSINA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/41520",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "41520",
+    "label_it": "MILAZZO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/41600",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "41600",
+    "label_it": "PALERMO DEL FANTE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/41640",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "41640",
+    "label_it": "PALERMO TITONE",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/41700",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "41700",
+    "label_it": "RAGUSA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/41800",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "41800",
+    "label_it": "SIRACUSA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/41900",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "41900",
+    "label_it": "TRAPANI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/41901",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "41901",
+    "label_it": "MAZARA DEL VALLO (TP)",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/42100",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "42100",
+    "label_it": "CAGLIARI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/42130",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "42130",
+    "label_it": "CARBONIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/42200",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "42200",
+    "label_it": "NUORO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/42300",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "42300",
+    "label_it": "SASSARI",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/42330",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "42330",
+    "label_it": "OLBIA",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/42400",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/core/SedeINAIL",
+      "skos:Concept"
+    ],
+    "id": "42400",
+    "label_it": "ORISTANO",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  }
+]
