@@ -2,7 +2,7 @@
 @prefix CLV: <https://w3id.org/italia/onto/CLV/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix INAILCore: <https://w3id.org/italia/work-accident/onto/core/> .
 @prefix ndc: <https://w3id.org/italia/onto/NDC/> .
@@ -17,50 +17,1985 @@
 ### Annotations
 
 <https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
-        dcterms:Standard ;
-    dcterms:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
-    dcterms:identifier "SKOS" ;
-    dcterms:title "Simple Knowledge Organization System - SKOS" .
+        dct:Standard ;
+    dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    dct:identifier "SKOS" ;
+    dct:title "Simple Knowledge Organization System - SKOS" .
 
-<https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> a adms:Asset,
+<https://w3id.org/italia/work-accident/data/core/distribution/SED_CSV> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/sede_inail/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/sede_inail/latest/sede_inail.csv> ;
+    dct:description "Questa è la distribuzione CSV del vocabolario controllato sulle sedi Inail"@it,
+        "The CSV distribution of the Inail office SKOS controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione CSV del vocabolario controllato sulle sedi Inail"@it,
+        "The CSV distribution of the Inail office SKOS controlled vocabulary"@en .
+
+<https://w3id.org/italia/work-accident/data/core/distribution/SED_JSON> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/sede_inail/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/sede_inail/latest/sede_inail.json> ;
+    dct:description "Questa è la distribuzione JSON del vocabolario controllato sulle sedi Inail"@it,
+        "This is the JSON distribution of the Inail offices SKOS controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Questa è la distribuzione JSON del vocabolario controllato sulle sedi Inail"@it,
+        "This is the JSON distribution of the Inail office SKOS controlled vocabulary"@en .
+
+<https://w3id.org/italia/work-accident/data/core/distribution/SED_RDF_TURTLE> a dcat:Distribution,
+        dcatapit:Distribution ;
+    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/sede_inail/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/sede_inail/latest/sede_inail.ttl> ;
+    dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulle sedi Inail"@it,
+        "This is the RDF/turtle distribution of the Inail office SKOS controlled vocabulary"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dct:title "Distribuzione RDF/Turtle del vocabolario controllato sulle sedi Inail"@it,
+        "This is the RDF/turtle distribution of the Inail office SKOS controlled vocabulary"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
+        foaf:Agent ;
+    dct:identifier "inail" ;
+    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
+        "National Institute for Insurance against Accidents at Work"@en .
+
+<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
+    vcard:hasEmail <mailto:dcod@inail.it> .
+
+sedeinail:11100 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "ALESSANDRIA"@it ;
+    skos:prefLabel "ALESSANDRIA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "11100" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "11100" ;
+    xkos:depth 1 .
+
+sedeinail:11130 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "CASALE MONFERRATO (AL)"@it ;
+    skos:prefLabel "CASALE MONFERRATO (AL)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "11130" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "11130" ;
+    xkos:depth 1 .
+
+sedeinail:11200 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "ASTI"@it ;
+    skos:prefLabel "ASTI"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "11200" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "11200" ;
+    xkos:depth 1 .
+
+sedeinail:11300 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "CUNEO"@it ;
+    skos:prefLabel "CUNEO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "11300" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "11300" ;
+    xkos:depth 1 .
+
+sedeinail:11332 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "ALBA (CN)"@it ;
+    skos:prefLabel "ALBA (CN)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "11332" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "11332" ;
+    xkos:depth 1 .
+
+sedeinail:11400 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "NOVARA"@it ;
+    skos:prefLabel "NOVARA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "11400" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "11400" ;
+    xkos:depth 1 .
+
+sedeinail:11500 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "TORINO CENTRO"@it ;
+    skos:prefLabel "TORINO CENTRO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "11500" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "11500" ;
+    xkos:depth 1 .
+
+sedeinail:11520 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "IVREA"@it ;
+    skos:prefLabel "IVREA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "11520" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "11520" ;
+    xkos:depth 1 .
+
+sedeinail:11523 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "CHIVASSO (TO)"@it ;
+    skos:prefLabel "CHIVASSO (TO)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "11523" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "11523" ;
+    xkos:depth 1 .
+
+sedeinail:11540 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "MONCALIERI (TO)"@it ;
+    skos:prefLabel "MONCALIERI (TO)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "11540" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "11540" ;
+    xkos:depth 1 .
+
+sedeinail:11542 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "RIVOLI (TO)"@it ;
+    skos:prefLabel "RIVOLI (TO)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "11542" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "11542" ;
+    xkos:depth 1 .
+
+sedeinail:11560 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "PINEROLO (TO)"@it ;
+    skos:prefLabel "PINEROLO (TO)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "11560" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "11560" ;
+    xkos:depth 1 .
+
+sedeinail:11570 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "TORINO SUD"@it ;
+    skos:prefLabel "TORINO SUD"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "11570" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "11570" ;
+    xkos:depth 1 .
+
+sedeinail:11580 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "TORINO NORD"@it ;
+    skos:prefLabel "TORINO NORD"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "11580" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "11580" ;
+    xkos:depth 1 .
+
+sedeinail:11600 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "VERCELLI"@it ;
+    skos:prefLabel "VERCELLI"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "11600" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "11600" ;
+    xkos:depth 1 .
+
+sedeinail:11620 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "BIELLA"@it ;
+    skos:prefLabel "BIELLA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "11620" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "11620" ;
+    xkos:depth 1 .
+
+sedeinail:11700 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "VERBANO CUSIO OSSOLA"@it ;
+    skos:prefLabel "VERBANO CUSIO OSSOLA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "11700" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "11700" ;
+    xkos:depth 1 .
+
+sedeinail:12100 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "AOSTA - SEDE REGIONALE"@it ;
+    skos:prefLabel "AOSTA - SEDE REGIONALE"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "12100" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "12100" ;
+    xkos:depth 1 .
+
+sedeinail:13100 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "BERGAMO"@it ;
+    skos:prefLabel "BERGAMO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "13100" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "13100" ;
+    xkos:depth 1 .
+
+sedeinail:13140 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "TREVIGLIO"@it ;
+    skos:prefLabel "TREVIGLIO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "13140" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "13140" ;
+    xkos:depth 1 .
+
+sedeinail:13200 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "BRESCIA"@it ;
+    skos:prefLabel "BRESCIA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "13200" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "13200" ;
+    xkos:depth 1 .
+
+sedeinail:13232 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "BRENO (BS)"@it ;
+    skos:prefLabel "BRENO (BS)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "13232" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "13232" ;
+    xkos:depth 1 .
+
+sedeinail:13233 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "MANERBIO (BS)"@it ;
+    skos:prefLabel "MANERBIO (BS)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "13233" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "13233" ;
+    xkos:depth 1 .
+
+sedeinail:13240 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "PALAZZOLO SULL'OGLIO"@it ;
+    skos:prefLabel "PALAZZOLO SULL'OGLIO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "13240" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "13240" ;
+    xkos:depth 1 .
+
+sedeinail:13300 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "COMO"@it ;
+    skos:prefLabel "COMO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "13300" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "13300" ;
+    xkos:depth 1 .
+
+sedeinail:13320 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "LECCO"@it ;
+    skos:prefLabel "LECCO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "13320" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "13320" ;
+    xkos:depth 1 .
+
+sedeinail:13400 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "CREMONA"@it ;
+    skos:prefLabel "CREMONA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "13400" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "13400" ;
+    xkos:depth 1 .
+
+sedeinail:13430 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "CREMA (CR)"@it ;
+    skos:prefLabel "CREMA (CR)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "13430" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "13430" ;
+    xkos:depth 1 .
+
+sedeinail:13500 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "MANTOVA"@it ;
+    skos:prefLabel "MANTOVA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "13500" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "13500" ;
+    xkos:depth 1 .
+
+sedeinail:13600 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "MILANO NORD"@it ;
+    skos:prefLabel "MILANO NORD"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "13600" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "13600" ;
+    xkos:depth 1 .
+
+sedeinail:13609 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "RHO(MI)"@it ;
+    skos:prefLabel "RHO(MI)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "13609" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "13609" ;
+    xkos:depth 1 .
+
+sedeinail:13620 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "LEGNANO"@it ;
+    skos:prefLabel "LEGNANO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "13620" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "13620" ;
+    xkos:depth 1 .
+
+sedeinail:13621 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "LODI"@it ;
+    skos:prefLabel "LODI"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "13621" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "13621" ;
+    xkos:depth 1 .
+
+sedeinail:13622 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "MONZA"@it ;
+    skos:prefLabel "MONZA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "13622" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "13622" ;
+    xkos:depth 1 .
+
+sedeinail:13623 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "SESTO S.GIOVANNI"@it ;
+    skos:prefLabel "SESTO S.GIOVANNI"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "13623" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "13623" ;
+    xkos:depth 1 .
+
+sedeinail:13640 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "MILANO SUD"@it ;
+    skos:prefLabel "MILANO SUD"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "13640" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "13640" ;
+    xkos:depth 1 .
+
+sedeinail:13670 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "MILANO EST"@it ;
+    skos:prefLabel "MILANO EST"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "13670" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "13670" ;
+    xkos:depth 1 .
+
+sedeinail:13680 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "MILANO CENTRO"@it ;
+    skos:prefLabel "MILANO CENTRO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "13680" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "13680" ;
+    xkos:depth 1 .
+
+sedeinail:13700 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "PAVIA"@it ;
+    skos:prefLabel "PAVIA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "13700" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "13700" ;
+    xkos:depth 1 .
+
+sedeinail:13800 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "SONDRIO"@it ;
+    skos:prefLabel "SONDRIO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "13800" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "13800" ;
+    xkos:depth 1 .
+
+sedeinail:13900 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "VARESE"@it ;
+    skos:prefLabel "VARESE"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "13900" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "13900" ;
+    xkos:depth 1 .
+
+sedeinail:13920 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "BUSTO ARSIZIO (VA)"@it ;
+    skos:prefLabel "BUSTO ARSIZIO (VA)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "13920" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "13920" ;
+    xkos:depth 1 .
+
+sedeinail:13921 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "GALLARATE (VA)"@it ;
+    skos:prefLabel "GALLARATE (VA)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "13921" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "13921" ;
+    xkos:depth 1 .
+
+sedeinail:13922 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "SARONNO (VA)"@it ;
+    skos:prefLabel "SARONNO (VA)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "13922" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "13922" ;
+    xkos:depth 1 .
+
+sedeinail:14100 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "BOLZANO"@it ;
+    skos:prefLabel "BOLZANO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "14100" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "14100" ;
+    xkos:depth 1 .
+
+sedeinail:14110 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "BRESSANONE (BZ)"@it ;
+    skos:prefLabel "BRESSANONE (BZ)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "14110" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "14110" ;
+    xkos:depth 1 .
+
+sedeinail:14120 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "MERANO"@it ;
+    skos:prefLabel "MERANO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "14120" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "14120" ;
+    xkos:depth 1 .
+
+sedeinail:14200 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "DIREZIONE PROVINCIALE DI TRENTO"@it ;
+    skos:prefLabel "DIREZIONE PROVINCIALE DI TRENTO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "14200" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "14200" ;
+    xkos:depth 1 .
+
+sedeinail:14220 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "ROVERETO (TN)"@it ;
+    skos:prefLabel "ROVERETO (TN)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "14220" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "14220" ;
+    xkos:depth 1 .
+
+sedeinail:15100 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "BELLUNO"@it ;
+    skos:prefLabel "BELLUNO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "15100" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "15100" ;
+    xkos:depth 1 .
+
+sedeinail:15200 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "PADOVA"@it ;
+    skos:prefLabel "PADOVA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "15200" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "15200" ;
+    xkos:depth 1 .
+
+sedeinail:15300 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "ROVIGO"@it ;
+    skos:prefLabel "ROVIGO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "15300" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "15300" ;
+    xkos:depth 1 .
+
+sedeinail:15400 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "TREVISO"@it ;
+    skos:prefLabel "TREVISO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "15400" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "15400" ;
+    xkos:depth 1 .
+
+sedeinail:15401 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "CONEGLIANO (TV)"@it ;
+    skos:prefLabel "CONEGLIANO (TV)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "15401" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "15401" ;
+    xkos:depth 1 .
+
+sedeinail:15510 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "VENEZIA TERRAFERMA"@it ;
+    skos:prefLabel "VENEZIA TERRAFERMA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "15510" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "15510" ;
+    xkos:depth 1 .
+
+sedeinail:15540 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "SAN DONA' DI PIAVE"@it ;
+    skos:prefLabel "SAN DONA' DI PIAVE"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "15540" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "15540" ;
+    xkos:depth 1 .
+
+sedeinail:15600 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "VERONA"@it ;
+    skos:prefLabel "VERONA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "15600" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "15600" ;
+    xkos:depth 1 .
+
+sedeinail:15640 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "LEGNAGO (VR)"@it ;
+    skos:prefLabel "LEGNAGO (VR)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "15640" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "15640" ;
+    xkos:depth 1 .
+
+sedeinail:15700 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "BASSANO DEL GRAPPA (VI)"@it ;
+    skos:prefLabel "BASSANO DEL GRAPPA (VI)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "15700" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "15700" ;
+    xkos:depth 1 .
+
+sedeinail:15710 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "VICENZA"@it ;
+    skos:prefLabel "VICENZA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "15710" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "15710" ;
+    xkos:depth 1 .
+
+sedeinail:15733 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "SCHIO"@it ;
+    skos:prefLabel "SCHIO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "15733" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "15733" ;
+    xkos:depth 1 .
+
+sedeinail:16100 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "GORIZIA"@it ;
+    skos:prefLabel "GORIZIA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "16100" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "16100" ;
+    xkos:depth 1 .
+
+sedeinail:16120 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "MONFALCONE (GO)"@it ;
+    skos:prefLabel "MONFALCONE (GO)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "16120" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "16120" ;
+    xkos:depth 1 .
+
+sedeinail:16200 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "TRIESTE"@it ;
+    skos:prefLabel "TRIESTE"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "16200" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "16200" ;
+    xkos:depth 1 .
+
+sedeinail:16300 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "UDINE"@it ;
+    skos:prefLabel "UDINE"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "16300" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "16300" ;
+    xkos:depth 1 .
+
+sedeinail:16321 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "TOLMEZZO"@it ;
+    skos:prefLabel "TOLMEZZO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "16321" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "16321" ;
+    xkos:depth 1 .
+
+sedeinail:16700 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "PORDENONE"@it ;
+    skos:prefLabel "PORDENONE"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "16700" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "16700" ;
+    xkos:depth 1 .
+
+sedeinail:17100 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "GENOVA"@it ;
+    skos:prefLabel "GENOVA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "17100" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "17100" ;
+    xkos:depth 1 .
+
+sedeinail:17160 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "CHIAVARI"@it ;
+    skos:prefLabel "CHIAVARI"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "17160" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "17160" ;
+    xkos:depth 1 .
+
+sedeinail:17200 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "IMPERIA"@it ;
+    skos:prefLabel "IMPERIA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "17200" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "17200" ;
+    xkos:depth 1 .
+
+sedeinail:17300 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "LA SPEZIA"@it ;
+    skos:prefLabel "LA SPEZIA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "17300" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "17300" ;
+    xkos:depth 1 .
+
+sedeinail:17400 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "SAVONA"@it ;
+    skos:prefLabel "SAVONA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "17400" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "17400" ;
+    xkos:depth 1 .
+
+sedeinail:18100 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "BOLOGNA"@it ;
+    skos:prefLabel "BOLOGNA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "18100" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "18100" ;
+    xkos:depth 1 .
+
+sedeinail:18130 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "CASALECCHIO DI RENO"@it ;
+    skos:prefLabel "CASALECCHIO DI RENO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "18130" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "18130" ;
+    xkos:depth 1 .
+
+sedeinail:18160 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "IMOLA"@it ;
+    skos:prefLabel "IMOLA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "18160" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "18160" ;
+    xkos:depth 1 .
+
+sedeinail:18200 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "FERRARA"@it ;
+    skos:prefLabel "FERRARA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "18200" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "18200" ;
+    xkos:depth 1 .
+
+sedeinail:18300 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "FORLI'"@it ;
+    skos:prefLabel "FORLI'"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "18300" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "18300" ;
+    xkos:depth 1 .
+
+sedeinail:18320 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "RIMINI"@it ;
+    skos:prefLabel "RIMINI"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "18320" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "18320" ;
+    xkos:depth 1 .
+
+sedeinail:18330 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "CESENA"@it ;
+    skos:prefLabel "CESENA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "18330" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "18330" ;
+    xkos:depth 1 .
+
+sedeinail:18400 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "MODENA"@it ;
+    skos:prefLabel "MODENA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "18400" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "18400" ;
+    xkos:depth 1 .
+
+sedeinail:18500 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "PARMA"@it ;
+    skos:prefLabel "PARMA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "18500" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "18500" ;
+    xkos:depth 1 .
+
+sedeinail:18600 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "PIACENZA"@it ;
+    skos:prefLabel "PIACENZA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "18600" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "18600" ;
+    xkos:depth 1 .
+
+sedeinail:18700 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "RAVENNA"@it ;
+    skos:prefLabel "RAVENNA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "18700" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "18700" ;
+    xkos:depth 1 .
+
+sedeinail:18730 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "FAENZA (RA)"@it ;
+    skos:prefLabel "FAENZA (RA)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "18730" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "18730" ;
+    xkos:depth 1 .
+
+sedeinail:18800 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "REGGIO EMILIA"@it ;
+    skos:prefLabel "REGGIO EMILIA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "18800" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "18800" ;
+    xkos:depth 1 .
+
+sedeinail:21100 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "AREZZO"@it ;
+    skos:prefLabel "AREZZO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "21100" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "21100" ;
+    xkos:depth 1 .
+
+sedeinail:21200 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "CARRARA"@it ;
+    skos:prefLabel "CARRARA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "21200" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "21200" ;
+    xkos:depth 1 .
+
+sedeinail:21300 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "FIRENZE- PORTE NUOVE"@it ;
+    skos:prefLabel "FIRENZE- PORTE NUOVE"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "21300" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "21300" ;
+    xkos:depth 1 .
+
+sedeinail:21320 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "PRATO"@it ;
+    skos:prefLabel "PRATO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "21320" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "21320" ;
+    xkos:depth 1 .
+
+sedeinail:21330 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "EMPOLI (FI)"@it ;
+    skos:prefLabel "EMPOLI (FI)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "21330" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "21330" ;
+    xkos:depth 1 .
+
+sedeinail:21400 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "GROSSETO"@it ;
+    skos:prefLabel "GROSSETO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "21400" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "21400" ;
+    xkos:depth 1 .
+
+sedeinail:21500 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "LIVORNO"@it ;
+    skos:prefLabel "LIVORNO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "21500" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "21500" ;
+    xkos:depth 1 .
+
+sedeinail:21520 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "PIOMBINO"@it ;
+    skos:prefLabel "PIOMBINO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "21520" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "21520" ;
+    xkos:depth 1 .
+
+sedeinail:21521 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "PORTOFERRAIO (LI)"@it ;
+    skos:prefLabel "PORTOFERRAIO (LI)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "21521" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "21521" ;
+    xkos:depth 1 .
+
+sedeinail:21600 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "LUCCA"@it ;
+    skos:prefLabel "LUCCA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "21600" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "21600" ;
+    xkos:depth 1 .
+
+sedeinail:21630 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "VIAREGGIO (LU)"@it ;
+    skos:prefLabel "VIAREGGIO (LU)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "21630" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "21630" ;
+    xkos:depth 1 .
+
+sedeinail:21700 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "PISA"@it ;
+    skos:prefLabel "PISA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "21700" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "21700" ;
+    xkos:depth 1 .
+
+sedeinail:21730 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "PONTEDERA (PI)"@it ;
+    skos:prefLabel "PONTEDERA (PI)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "21730" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "21730" ;
+    xkos:depth 1 .
+
+sedeinail:21800 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "PISTOIA"@it ;
+    skos:prefLabel "PISTOIA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "21800" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "21800" ;
+    xkos:depth 1 .
+
+sedeinail:21900 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "SIENA"@it ;
+    skos:prefLabel "SIENA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "21900" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "21900" ;
+    xkos:depth 1 .
+
+sedeinail:22100 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "PERUGIA"@it ;
+    skos:prefLabel "PERUGIA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "22100" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "22100" ;
+    xkos:depth 1 .
+
+sedeinail:22110 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "FOLIGNO (PG)"@it ;
+    skos:prefLabel "FOLIGNO (PG)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "22110" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "22110" ;
+    xkos:depth 1 .
+
+sedeinail:22131 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "CITTA' DI CASTELLO (PG)"@it ;
+    skos:prefLabel "CITTA' DI CASTELLO (PG)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "22131" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "22131" ;
+    xkos:depth 1 .
+
+sedeinail:22200 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "TERNI"@it ;
+    skos:prefLabel "TERNI"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "22200" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "22200" ;
+    xkos:depth 1 .
+
+sedeinail:22230 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "ORVIETO (TR)"@it ;
+    skos:prefLabel "ORVIETO (TR)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "22230" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "22230" ;
+    xkos:depth 1 .
+
+sedeinail:23100 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "ANCONA"@it ;
+    skos:prefLabel "ANCONA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "23100" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "23100" ;
+    xkos:depth 1 .
+
+sedeinail:23130 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "JESI (AN)"@it ;
+    skos:prefLabel "JESI (AN)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "23130" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "23130" ;
+    xkos:depth 1 .
+
+sedeinail:23132 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "FABRIANO (AN)"@it ;
+    skos:prefLabel "FABRIANO (AN)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "23132" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "23132" ;
+    xkos:depth 1 .
+
+sedeinail:23133 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "SENIGALLIA"@it ;
+    skos:prefLabel "SENIGALLIA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "23133" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "23133" ;
+    xkos:depth 1 .
+
+sedeinail:23200 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "ASCOLI PICENO"@it ;
+    skos:prefLabel "ASCOLI PICENO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "23200" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "23200" ;
+    xkos:depth 1 .
+
+sedeinail:23230 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "FERMO"@it ;
+    skos:prefLabel "FERMO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "23230" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "23230" ;
+    xkos:depth 1 .
+
+sedeinail:23300 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "MACERATA"@it ;
+    skos:prefLabel "MACERATA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "23300" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "23300" ;
+    xkos:depth 1 .
+
+sedeinail:23400 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "PESARO"@it ;
+    skos:prefLabel "PESARO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "23400" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "23400" ;
+    xkos:depth 1 .
+
+sedeinail:23401 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "FANO"@it ;
+    skos:prefLabel "FANO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "23401" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "23401" ;
+    xkos:depth 1 .
+
+sedeinail:24100 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "FROSINONE"@it ;
+    skos:prefLabel "FROSINONE"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "24100" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "24100" ;
+    xkos:depth 1 .
+
+sedeinail:24110 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "CASSINO (FR)"@it ;
+    skos:prefLabel "CASSINO (FR)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "24110" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "24110" ;
+    xkos:depth 1 .
+
+sedeinail:24200 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "LATINA"@it ;
+    skos:prefLabel "LATINA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "24200" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "24200" ;
+    xkos:depth 1 .
+
+sedeinail:24230 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "FORMIA (LT)"@it ;
+    skos:prefLabel "FORMIA (LT)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "24230" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "24230" ;
+    xkos:depth 1 .
+
+sedeinail:24300 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "RIETI"@it ;
+    skos:prefLabel "RIETI"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "24300" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "24300" ;
+    xkos:depth 1 .
+
+sedeinail:24400 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "ROMA CENTRO"@it ;
+    skos:prefLabel "ROMA CENTRO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "24400" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "24400" ;
+    xkos:depth 1 .
+
+sedeinail:24401 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "ROMA AURELIO"@it ;
+    skos:prefLabel "ROMA AURELIO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "24401" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "24401" ;
+    xkos:depth 1 .
+
+sedeinail:24441 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "ROMA TUSCOLANO"@it ;
+    skos:prefLabel "ROMA TUSCOLANO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "24441" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "24441" ;
+    xkos:depth 1 .
+
+sedeinail:24442 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "CIVITAVECCHIA (RM)"@it ;
+    skos:prefLabel "CIVITAVECCHIA (RM)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "24442" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "24442" ;
+    xkos:depth 1 .
+
+sedeinail:24443 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "VELLETRI"@it ;
+    skos:prefLabel "VELLETRI"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "24443" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "24443" ;
+    xkos:depth 1 .
+
+sedeinail:24460 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "TIVOLI"@it ;
+    skos:prefLabel "TIVOLI"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "24460" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "24460" ;
+    xkos:depth 1 .
+
+sedeinail:24470 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "ROMA NOMENTANO"@it ;
+    skos:prefLabel "ROMA NOMENTANO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "24470" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "24470" ;
+    xkos:depth 1 .
+
+sedeinail:24480 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "ROMA LAURENTINO"@it ;
+    skos:prefLabel "ROMA LAURENTINO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "24480" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "24480" ;
+    xkos:depth 1 .
+
+sedeinail:24500 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "VITERBO"@it ;
+    skos:prefLabel "VITERBO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "24500" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "24500" ;
+    xkos:depth 1 .
+
+sedeinail:31100 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "CHIETI"@it ;
+    skos:prefLabel "CHIETI"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "31100" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "31100" ;
+    xkos:depth 1 .
+
+sedeinail:31110 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "LANCIANO (CH)"@it ;
+    skos:prefLabel "LANCIANO (CH)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "31110" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "31110" ;
+    xkos:depth 1 .
+
+sedeinail:31200 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "L'AQUILA"@it ;
+    skos:prefLabel "L'AQUILA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "31200" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "31200" ;
+    xkos:depth 1 .
+
+sedeinail:31210 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "AVEZZANO (AQ)"@it ;
+    skos:prefLabel "AVEZZANO (AQ)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "31210" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "31210" ;
+    xkos:depth 1 .
+
+sedeinail:31231 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "SULMONA (AQ)"@it ;
+    skos:prefLabel "SULMONA (AQ)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "31231" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "31231" ;
+    xkos:depth 1 .
+
+sedeinail:31300 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "PESCARA"@it ;
+    skos:prefLabel "PESCARA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "31300" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "31300" ;
+    xkos:depth 1 .
+
+sedeinail:31400 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "TERAMO"@it ;
+    skos:prefLabel "TERAMO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "31400" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "31400" ;
+    xkos:depth 1 .
+
+sedeinail:32100 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "DIREZIONE REGIONALE MOLISE - SEDE LOCALE DI CAMPOBASSO"@it ;
+    skos:prefLabel "DIREZIONE REGIONALE MOLISE - SEDE LOCALE DI CAMPOBASSO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "32100" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "32100" ;
+    xkos:depth 1 .
+
+sedeinail:32130 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "TERMOLI (CB)"@it ;
+    skos:prefLabel "TERMOLI (CB)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "32130" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "32130" ;
+    xkos:depth 1 .
+
+sedeinail:32200 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "ISERNIA"@it ;
+    skos:prefLabel "ISERNIA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "32200" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "32200" ;
+    xkos:depth 1 .
+
+sedeinail:33100 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "AVELLINO"@it ;
+    skos:prefLabel "AVELLINO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "33100" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "33100" ;
+    xkos:depth 1 .
+
+sedeinail:33101 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "S. ANGELO DEI LOMBARDI (AV)"@it ;
+    skos:prefLabel "S. ANGELO DEI LOMBARDI (AV)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "33101" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "33101" ;
+    xkos:depth 1 .
+
+sedeinail:33200 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "BENEVENTO"@it ;
+    skos:prefLabel "BENEVENTO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "33200" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "33200" ;
+    xkos:depth 1 .
+
+sedeinail:33300 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "CASERTA"@it ;
+    skos:prefLabel "CASERTA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "33300" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "33300" ;
+    xkos:depth 1 .
+
+sedeinail:33310 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "AVERSA (CE)"@it ;
+    skos:prefLabel "AVERSA (CE)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "33310" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "33310" ;
+    xkos:depth 1 .
+
+sedeinail:33400 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "NAPOLI"@it ;
+    skos:prefLabel "NAPOLI"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "33400" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "33400" ;
+    xkos:depth 1 .
+
+sedeinail:33403 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "NAPOLI VIA DE GASPERI (NA)"@it ;
+    skos:prefLabel "NAPOLI VIA DE GASPERI (NA)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "33403" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "33403" ;
+    xkos:depth 1 .
+
+sedeinail:33420 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "CASTELLAMMARE DI STABIA (NA)"@it ;
+    skos:prefLabel "CASTELLAMMARE DI STABIA (NA)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "33420" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "33420" ;
+    xkos:depth 1 .
+
+sedeinail:33470 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "NOLA"@it ;
+    skos:prefLabel "NOLA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "33470" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "33470" ;
+    xkos:depth 1 .
+
+sedeinail:33500 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "SALERNO"@it ;
+    skos:prefLabel "SALERNO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "33500" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "33500" ;
+    xkos:depth 1 .
+
+sedeinail:33530 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "BATTIPAGLIA (SA)"@it ;
+    skos:prefLabel "BATTIPAGLIA (SA)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "33530" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "33530" ;
+    xkos:depth 1 .
+
+sedeinail:34100 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "BARI"@it ;
+    skos:prefLabel "BARI"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "34100" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "34100" ;
+    xkos:depth 1 .
+
+sedeinail:34110 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "BARLETTA"@it ;
+    skos:prefLabel "BARLETTA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "34110" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "34110" ;
+    xkos:depth 1 .
+
+sedeinail:34140 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "MONOPOLI (BA)"@it ;
+    skos:prefLabel "MONOPOLI (BA)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "34140" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "34140" ;
+    xkos:depth 1 .
+
+sedeinail:34141 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "ALTAMURA (BA)"@it ;
+    skos:prefLabel "ALTAMURA (BA)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "34141" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "34141" ;
+    xkos:depth 1 .
+
+sedeinail:34200 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "BRINDISI"@it ;
+    skos:prefLabel "BRINDISI"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "34200" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "34200" ;
+    xkos:depth 1 .
+
+sedeinail:34300 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "FOGGIA"@it ;
+    skos:prefLabel "FOGGIA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "34300" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "34300" ;
+    xkos:depth 1 .
+
+sedeinail:34400 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "LECCE"@it ;
+    skos:prefLabel "LECCE"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "34400" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "34400" ;
+    xkos:depth 1 .
+
+sedeinail:34402 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "CASARANO (LE)"@it ;
+    skos:prefLabel "CASARANO (LE)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "34402" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "34402" ;
+    xkos:depth 1 .
+
+sedeinail:34500 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "TARANTO"@it ;
+    skos:prefLabel "TARANTO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "34500" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "34500" ;
+    xkos:depth 1 .
+
+sedeinail:35100 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "MATERA"@it ;
+    skos:prefLabel "MATERA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "35100" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "35100" ;
+    xkos:depth 1 .
+
+sedeinail:35200 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "DIREZIONE REGIONALE BASILICATA - SEDE LOCALE DI POTENZA"@it ;
+    skos:prefLabel "DIREZIONE REGIONALE BASILICATA - SEDE LOCALE DI POTENZA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "35200" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "35200" ;
+    xkos:depth 1 .
+
+sedeinail:35201 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "MELFI (PZ)"@it ;
+    skos:prefLabel "MELFI (PZ)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "35201" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "35201" ;
+    xkos:depth 1 .
+
+sedeinail:35230 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "LAGONEGRO (PZ)"@it ;
+    skos:prefLabel "LAGONEGRO (PZ)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "35230" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "35230" ;
+    xkos:depth 1 .
+
+sedeinail:36100 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "CATANZARO"@it ;
+    skos:prefLabel "CATANZARO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "36100" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "36100" ;
+    xkos:depth 1 .
+
+sedeinail:36110 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "VIBO VALENTIA"@it ;
+    skos:prefLabel "VIBO VALENTIA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "36110" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "36110" ;
+    xkos:depth 1 .
+
+sedeinail:36200 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "COSENZA"@it ;
+    skos:prefLabel "COSENZA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "36200" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "36200" ;
+    xkos:depth 1 .
+
+sedeinail:36202 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "CORIGLIANO - ROSSANO"@it ;
+    skos:prefLabel "CORIGLIANO - ROSSANO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "36202" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "36202" ;
+    xkos:depth 1 .
+
+sedeinail:36300 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "REGGIO CALABRIA"@it ;
+    skos:prefLabel "REGGIO CALABRIA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "36300" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "36300" ;
+    xkos:depth 1 .
+
+sedeinail:36302 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "LOCRI (RC)"@it ;
+    skos:prefLabel "LOCRI (RC)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "36302" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "36302" ;
+    xkos:depth 1 .
+
+sedeinail:36303 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "PALMI"@it ;
+    skos:prefLabel "PALMI"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "36303" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "36303" ;
+    xkos:depth 1 .
+
+sedeinail:36400 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "CROTONE"@it ;
+    skos:prefLabel "CROTONE"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "36400" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "36400" ;
+    xkos:depth 1 .
+
+sedeinail:41100 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "AGRIGENTO"@it ;
+    skos:prefLabel "AGRIGENTO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "41100" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "41100" ;
+    xkos:depth 1 .
+
+sedeinail:41200 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "CALTANISSETTA"@it ;
+    skos:prefLabel "CALTANISSETTA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "41200" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "41200" ;
+    xkos:depth 1 .
+
+sedeinail:41300 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "CATANIA"@it ;
+    skos:prefLabel "CATANIA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "41300" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "41300" ;
+    xkos:depth 1 .
+
+sedeinail:41302 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "CALTAGIRONE (CT)"@it ;
+    skos:prefLabel "CALTAGIRONE (CT)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "41302" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "41302" ;
+    xkos:depth 1 .
+
+sedeinail:41400 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "ENNA"@it ;
+    skos:prefLabel "ENNA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "41400" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "41400" ;
+    xkos:depth 1 .
+
+sedeinail:41500 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "MESSINA"@it ;
+    skos:prefLabel "MESSINA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "41500" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "41500" ;
+    xkos:depth 1 .
+
+sedeinail:41520 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "MILAZZO"@it ;
+    skos:prefLabel "MILAZZO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "41520" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "41520" ;
+    xkos:depth 1 .
+
+sedeinail:41600 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "PALERMO DEL FANTE"@it ;
+    skos:prefLabel "PALERMO DEL FANTE"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "41600" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "41600" ;
+    xkos:depth 1 .
+
+sedeinail:41640 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "PALERMO TITONE"@it ;
+    skos:prefLabel "PALERMO TITONE"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "41640" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "41640" ;
+    xkos:depth 1 .
+
+sedeinail:41700 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "RAGUSA"@it ;
+    skos:prefLabel "RAGUSA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "41700" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "41700" ;
+    xkos:depth 1 .
+
+sedeinail:41800 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "SIRACUSA"@it ;
+    skos:prefLabel "SIRACUSA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "41800" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "41800" ;
+    xkos:depth 1 .
+
+sedeinail:41900 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "TRAPANI"@it ;
+    skos:prefLabel "TRAPANI"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "41900" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "41900" ;
+    xkos:depth 1 .
+
+sedeinail:41901 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "MAZARA DEL VALLO (TP)"@it ;
+    skos:prefLabel "MAZARA DEL VALLO (TP)"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "41901" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "41901" ;
+    xkos:depth 1 .
+
+sedeinail:42100 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "CAGLIARI"@it ;
+    skos:prefLabel "CAGLIARI"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "42100" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "42100" ;
+    xkos:depth 1 .
+
+sedeinail:42130 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "CARBONIA"@it ;
+    skos:prefLabel "CARBONIA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "42130" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "42130" ;
+    xkos:depth 1 .
+
+sedeinail:42200 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "NUORO"@it ;
+    skos:prefLabel "NUORO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "42200" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "42200" ;
+    xkos:depth 1 .
+
+sedeinail:42300 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "SASSARI"@it ;
+    skos:prefLabel "SASSARI"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "42300" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "42300" ;
+    xkos:depth 1 .
+
+sedeinail:42330 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "OLBIA"@it ;
+    skos:prefLabel "OLBIA"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "42330" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "42330" ;
+    xkos:depth 1 .
+
+sedeinail:42400 a INAILCore:SedeINAIL,
+        skos:Concept ;
+    rdfs:label "ORISTANO"@it ;
+    skos:prefLabel "ORISTANO"@it ;
+    CLV:hasRankOrder 1 ;
+    dct:identifier "42400" ;
+    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+    skos:notation "42400" ;
+    xkos:depth 1 .
+
+sedeinail:sede_inail a adms:Asset,
         dcatapit:Dataset,
         skos:ConceptScheme ;
-    rdfs:label "the Inail office SKOS controlled vocabulary"@en,
+    rdfs:label "The Inail Institute SKOS controlled vocabulary about the Inail offices across Italy"@en,
         "Vocabolario controllato sulle sedi Inail"@it ;
     skos:prefLabel "Vocabolario controllato sulla decodifica dei codici delle sedi Inail"@it ;
     rdfs:comment "Elenco delle sedi e dei codici delle sedi Inail"@it,
-        "the Inail office code list adopted by the Inail institute"@en ;
-    owl:versionInfo "0.6" ;
-    rdfs:isDefinedBy <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
+        "The Inail Institute SKOS controlled vocabulary about the Inail offices across the Italian regions"@en ;
+    owl:versionInfo "0.1" ;
+    rdfs:isDefinedBy sedeinail:sede_inail ;
     adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     dcat:contactPoint <https://w3id.org/italia/work-accident/data/organization/ufficioV> ;
-    dcat:distribution <https://w3id.org/italia/work-accident/data//distribution/SED_CSV>,
-        <https://w3id.org/italia/work-accident/data//distribution/SED_RDF_TURTLE>,
-        <https://w3id.org/italia/work-accident/data/distribution/SED_JSON> ;
+    dcat:distribution <https://w3id.org/italia/work-accident/data/core/distribution/SED_CSV>,
+        <https://w3id.org/italia/work-accident/data/core/distribution/SED_JSON>,
+        <https://w3id.org/italia/work-accident/data/core/distribution/SED_RDF_TURTLE> ;
     dcat:keyword "codice sede inail"@it,
         "inail office"@en,
         "inail office code"@en,
         "sede inail"@it ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
-    dcterms:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-    dcterms:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
-    dcterms:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
-    dcterms:description "Elenco delle sedi e dei codici delle sedi Inail"@it,
-        "The Inail office list adopted by the Inail institute"@en ;
-    dcterms:identifier "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail" ;
-    dcterms:issued "2025-05-29"^^xsd:date ;
-    dcterms:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-    dcterms:modified "2025-05-29"^^xsd:date ;
-    dcterms:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
-    dcterms:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
-    dcterms:subject <http://eurovoc.europa.eu/166>,
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dct:creator <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:description "Elenco delle sedi e dei codici delle sedi Inail"@it,
+        "The Inail Institute SKOS controlled vocabulary about the Inail offices across the Italian regions"@en ;
+    dct:identifier "https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail" ;
+    dct:issued "2025-06-24"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
+    dct:subject <http://eurovoc.europa.eu/166>,
         <http://eurovoc.europa.eu/414>,
         <http://eurovoc.europa.eu/825>,
         <http://eurovoc.europa.eu/1761>,
         <http://eurovoc.europa.eu/4543> ;
-    dcterms:title "The Inail offices SKOS controlled vocabulary"@en,
-        "Vocabolario controllato sulla decodifica dei codici delle sedi Inail"@it ;
-    dcterms:type <http://purl.org/adms/assettype/CodeList> ;
+    dct:title "The Inail Institute SKOS controlled vocabulary about the Inail offices across the Italian regions"@en,
+        "Vocabolario controllato sulla decodifica dei codici delle sedi Inail nelle regioni italiane"@it ;
+    dct:type <http://purl.org/adms/assettype/CodeList> ;
     ndc:keyConcept "sede_inail" ;
     skos:hasTopConcept sedeinail:11100,
         sedeinail:11130,
@@ -252,1940 +2187,5 @@
         sedeinail:42330,
         sedeinail:42400 ;
     xkos:numberOfLevels "1" .
-
-<https://w3id.org/italia/work-accident/data/distribution/SED_CSV> a dcat:Distribution,
-        dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/sede_inail/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/sede_inail/latest/sede_inail.csv> ;
-    dcterms:description "Questa è la distribuzione CSV del vocabolario controllato sulle sedi Inail"@it,
-        "The CSV distribution of the Inail office SKOS controlled vocabulary"@en ;
-    dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
-    dcterms:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    dcterms:title "Distribuzione CSV del vocabolario controllato sulle sedi Inail"@it,
-        "The CSV distribution of the Inail office SKOS controlled vocabulary"@en .
-
-<https://w3id.org/italia/work-accident/data/distribution/SED_JSON> a dcat:Distribution,
-        dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/sede_inail/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/sede_inail/latest/sede_inail.json> ;
-    dcterms:description "Questa è la distribuzione JSON del vocabolario controllato sulle sedi Inail"@it,
-        "This is the JSON distribution of the Inail offices SKOS controlled vocabulary"@en ;
-    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
-    dcterms:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    dcterms:title "Questa è la distribuzione JSON del vocabolario controllato sulle sedi Inail"@it,
-        "This is the JSON distribution of the Inail office SKOS controlled vocabulary"@en .
-
-<https://w3id.org/italia/work-accident/data/distribution/SED_RDF_TURTLE> a dcat:Distribution,
-        dcatapit:Distribution ;
-    dcat:accessURL <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/controlled-vocabularies/sede_inail/latest> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/controlled-vocabularies/sede_inail/latest/sede_inail.ttl> ;
-    dcterms:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulle sedi Inail"@it,
-        "This is the RDF/turtle distribution of the Inail office SKOS controlled vocabulary"@en ;
-    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    dcterms:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    dcterms:title "Distribuzione RDF/Turtle del vocabolario controllato sulle sedi Inail"@it,
-        "This is the RDF/turtle distribution of the Inail office SKOS controlled vocabulary"@en .
-
-<https://w3id.org/italia/work-accident/data/organization/inail> a dcatapit:Agent,
-        foaf:Agent ;
-    dcterms:identifier "inail" ;
-    foaf:name "Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"@it,
-        "National Institute for Insurance against Accidents at Work"@en .
-
-<https://w3id.org/italia/work-accident/data/organization/ufficioV> a dcatapit:Organization,
-        vcard:Kind,
-        vcard:Organization ;
-    vcard:fn "INAIL Ufficio V - D.C.O.D" ;
-    vcard:hasEmail <mailto:dcod@inail.it> .
-
-sedeinail:11100 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "ALESSANDRIA"@it ;
-    skos:prefLabel "ALESSANDRIA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "11100" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "11100" ;
-    xkos:depth 1 .
-
-sedeinail:11130 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "CASALE MONFERRATO (AL)"@it ;
-    skos:prefLabel "CASALE MONFERRATO (AL)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "11130" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "11130" ;
-    xkos:depth 1 .
-
-sedeinail:11200 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "ASTI"@it ;
-    skos:prefLabel "ASTI"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "11200" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "11200" ;
-    xkos:depth 1 .
-
-sedeinail:11300 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "CUNEO"@it ;
-    skos:prefLabel "CUNEO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "11300" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "11300" ;
-    xkos:depth 1 .
-
-sedeinail:11332 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "ALBA (CN)"@it ;
-    skos:prefLabel "ALBA (CN)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "11332" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "11332" ;
-    xkos:depth 1 .
-
-sedeinail:11400 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "NOVARA"@it ;
-    skos:prefLabel "NOVARA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "11400" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "11400" ;
-    xkos:depth 1 .
-
-sedeinail:11500 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "TORINO CENTRO"@it ;
-    skos:prefLabel "TORINO CENTRO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "11500" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "11500" ;
-    xkos:depth 1 .
-
-sedeinail:11520 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "IVREA"@it ;
-    skos:prefLabel "IVREA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "11520" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "11520" ;
-    xkos:depth 1 .
-
-sedeinail:11523 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "CHIVASSO (TO)"@it ;
-    skos:prefLabel "CHIVASSO (TO)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "11523" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "11523" ;
-    xkos:depth 1 .
-
-sedeinail:11540 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "MONCALIERI (TO)"@it ;
-    skos:prefLabel "MONCALIERI (TO)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "11540" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "11540" ;
-    xkos:depth 1 .
-
-sedeinail:11542 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "RIVOLI (TO)"@it ;
-    skos:prefLabel "RIVOLI (TO)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "11542" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "11542" ;
-    xkos:depth 1 .
-
-sedeinail:11560 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "PINEROLO (TO)"@it ;
-    skos:prefLabel "PINEROLO (TO)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "11560" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "11560" ;
-    xkos:depth 1 .
-
-sedeinail:11570 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "TORINO SUD"@it ;
-    skos:prefLabel "TORINO SUD"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "11570" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "11570" ;
-    xkos:depth 1 .
-
-sedeinail:11580 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "TORINO NORD"@it ;
-    skos:prefLabel "TORINO NORD"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "11580" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "11580" ;
-    xkos:depth 1 .
-
-sedeinail:11600 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "VERCELLI"@it ;
-    skos:prefLabel "VERCELLI"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "11600" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "11600" ;
-    xkos:depth 1 .
-
-sedeinail:11620 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "BIELLA"@it ;
-    skos:prefLabel "BIELLA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "11620" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "11620" ;
-    xkos:depth 1 .
-
-sedeinail:11700 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "VERBANO CUSIO OSSOLA"@it ;
-    skos:prefLabel "VERBANO CUSIO OSSOLA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "11700" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "11700" ;
-    xkos:depth 1 .
-
-sedeinail:12100 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "AOSTA - SEDE REGIONALE"@it ;
-    skos:prefLabel "AOSTA - SEDE REGIONALE"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "12100" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "12100" ;
-    xkos:depth 1 .
-
-sedeinail:13100 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "BERGAMO"@it ;
-    skos:prefLabel "BERGAMO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "13100" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "13100" ;
-    xkos:depth 1 .
-
-sedeinail:13140 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "TREVIGLIO"@it ;
-    skos:prefLabel "TREVIGLIO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "13140" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "13140" ;
-    xkos:depth 1 .
-
-sedeinail:13200 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "BRESCIA"@it ;
-    skos:prefLabel "BRESCIA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "13200" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "13200" ;
-    xkos:depth 1 .
-
-sedeinail:13232 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "BRENO (BS)"@it ;
-    skos:prefLabel "BRENO (BS)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "13232" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "13232" ;
-    xkos:depth 1 .
-
-sedeinail:13233 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "MANERBIO (BS)"@it ;
-    skos:prefLabel "MANERBIO (BS)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "13233" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "13233" ;
-    xkos:depth 1 .
-
-sedeinail:13240 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "PALAZZOLO SULL'OGLIO"@it ;
-    skos:prefLabel "PALAZZOLO SULL'OGLIO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "13240" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "13240" ;
-    xkos:depth 1 .
-
-sedeinail:13300 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "COMO"@it ;
-    skos:prefLabel "COMO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "13300" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "13300" ;
-    xkos:depth 1 .
-
-sedeinail:13320 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "LECCO"@it ;
-    skos:prefLabel "LECCO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "13320" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "13320" ;
-    xkos:depth 1 .
-
-sedeinail:13400 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "CREMONA"@it ;
-    skos:prefLabel "CREMONA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "13400" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "13400" ;
-    xkos:depth 1 .
-
-sedeinail:13430 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "CREMA (CR)"@it ;
-    skos:prefLabel "CREMA (CR)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "13430" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "13430" ;
-    xkos:depth 1 .
-
-sedeinail:13500 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "MANTOVA"@it ;
-    skos:prefLabel "MANTOVA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "13500" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "13500" ;
-    xkos:depth 1 .
-
-sedeinail:13600 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "MILANO NORD"@it ;
-    skos:prefLabel "MILANO NORD"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "13600" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "13600" ;
-    xkos:depth 1 .
-
-sedeinail:13609 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "RHO(MI)"@it ;
-    skos:prefLabel "RHO(MI)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "13609" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "13609" ;
-    xkos:depth 1 .
-
-sedeinail:13620 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "LEGNANO"@it ;
-    skos:prefLabel "LEGNANO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "13620" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "13620" ;
-    xkos:depth 1 .
-
-sedeinail:13621 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "LODI"@it ;
-    skos:prefLabel "LODI"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "13621" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "13621" ;
-    xkos:depth 1 .
-
-sedeinail:13622 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "MONZA"@it ;
-    skos:prefLabel "MONZA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "13622" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "13622" ;
-    xkos:depth 1 .
-
-sedeinail:13623 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "SESTO S.GIOVANNI"@it ;
-    skos:prefLabel "SESTO S.GIOVANNI"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "13623" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "13623" ;
-    xkos:depth 1 .
-
-sedeinail:13640 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "MILANO SUD"@it ;
-    skos:prefLabel "MILANO SUD"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "13640" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "13640" ;
-    xkos:depth 1 .
-
-sedeinail:13670 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "MILANO EST"@it ;
-    skos:prefLabel "MILANO EST"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "13670" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "13670" ;
-    xkos:depth 1 .
-
-sedeinail:13680 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "MILANO CENTRO"@it ;
-    skos:prefLabel "MILANO CENTRO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "13680" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "13680" ;
-    xkos:depth 1 .
-
-sedeinail:13700 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "PAVIA"@it ;
-    skos:prefLabel "PAVIA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "13700" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "13700" ;
-    xkos:depth 1 .
-
-sedeinail:13800 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "SONDRIO"@it ;
-    skos:prefLabel "SONDRIO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "13800" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "13800" ;
-    xkos:depth 1 .
-
-sedeinail:13900 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "VARESE"@it ;
-    skos:prefLabel "VARESE"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "13900" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "13900" ;
-    xkos:depth 1 .
-
-sedeinail:13920 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "BUSTO ARSIZIO (VA)"@it ;
-    skos:prefLabel "BUSTO ARSIZIO (VA)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "13920" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "13920" ;
-    xkos:depth 1 .
-
-sedeinail:13921 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "GALLARATE (VA)"@it ;
-    skos:prefLabel "GALLARATE (VA)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "13921" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "13921" ;
-    xkos:depth 1 .
-
-sedeinail:13922 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "SARONNO (VA)"@it ;
-    skos:prefLabel "SARONNO (VA)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "13922" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "13922" ;
-    xkos:depth 1 .
-
-sedeinail:14100 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "BOLZANO"@it ;
-    skos:prefLabel "BOLZANO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "14100" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "14100" ;
-    xkos:depth 1 .
-
-sedeinail:14110 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "BRESSANONE (BZ)"@it ;
-    skos:prefLabel "BRESSANONE (BZ)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "14110" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "14110" ;
-    xkos:depth 1 .
-
-sedeinail:14120 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "MERANO"@it ;
-    skos:prefLabel "MERANO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "14120" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "14120" ;
-    xkos:depth 1 .
-
-sedeinail:14200 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "DIREZIONE PROVINCIALE DI TRENTO"@it ;
-    skos:prefLabel "DIREZIONE PROVINCIALE DI TRENTO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "14200" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "14200" ;
-    xkos:depth 1 .
-
-sedeinail:14220 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "ROVERETO (TN)"@it ;
-    skos:prefLabel "ROVERETO (TN)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "14220" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "14220" ;
-    xkos:depth 1 .
-
-sedeinail:15100 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "BELLUNO"@it ;
-    skos:prefLabel "BELLUNO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "15100" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "15100" ;
-    xkos:depth 1 .
-
-sedeinail:15200 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "PADOVA"@it ;
-    skos:prefLabel "PADOVA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "15200" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "15200" ;
-    xkos:depth 1 .
-
-sedeinail:15300 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "ROVIGO"@it ;
-    skos:prefLabel "ROVIGO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "15300" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "15300" ;
-    xkos:depth 1 .
-
-sedeinail:15400 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "TREVISO"@it ;
-    skos:prefLabel "TREVISO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "15400" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "15400" ;
-    xkos:depth 1 .
-
-sedeinail:15401 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "CONEGLIANO (TV)"@it ;
-    skos:prefLabel "CONEGLIANO (TV)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "15401" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "15401" ;
-    xkos:depth 1 .
-
-sedeinail:15510 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "VENEZIA TERRAFERMA"@it ;
-    skos:prefLabel "VENEZIA TERRAFERMA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "15510" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "15510" ;
-    xkos:depth 1 .
-
-sedeinail:15540 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "SAN DONA' DI PIAVE"@it ;
-    skos:prefLabel "SAN DONA' DI PIAVE"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "15540" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "15540" ;
-    xkos:depth 1 .
-
-sedeinail:15600 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "VERONA"@it ;
-    skos:prefLabel "VERONA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "15600" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "15600" ;
-    xkos:depth 1 .
-
-sedeinail:15640 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "LEGNAGO (VR)"@it ;
-    skos:prefLabel "LEGNAGO (VR)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "15640" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "15640" ;
-    xkos:depth 1 .
-
-sedeinail:15700 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "BASSANO DEL GRAPPA (VI)"@it ;
-    skos:prefLabel "BASSANO DEL GRAPPA (VI)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "15700" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "15700" ;
-    xkos:depth 1 .
-
-sedeinail:15710 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "VICENZA"@it ;
-    skos:prefLabel "VICENZA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "15710" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "15710" ;
-    xkos:depth 1 .
-
-sedeinail:15733 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "SCHIO"@it ;
-    skos:prefLabel "SCHIO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "15733" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "15733" ;
-    xkos:depth 1 .
-
-sedeinail:16100 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "GORIZIA"@it ;
-    skos:prefLabel "GORIZIA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "16100" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "16100" ;
-    xkos:depth 1 .
-
-sedeinail:16120 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "MONFALCONE (GO)"@it ;
-    skos:prefLabel "MONFALCONE (GO)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "16120" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "16120" ;
-    xkos:depth 1 .
-
-sedeinail:16200 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "TRIESTE"@it ;
-    skos:prefLabel "TRIESTE"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "16200" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "16200" ;
-    xkos:depth 1 .
-
-sedeinail:16300 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "UDINE"@it ;
-    skos:prefLabel "UDINE"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "16300" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "16300" ;
-    xkos:depth 1 .
-
-sedeinail:16321 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "TOLMEZZO"@it ;
-    skos:prefLabel "TOLMEZZO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "16321" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "16321" ;
-    xkos:depth 1 .
-
-sedeinail:16700 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "PORDENONE"@it ;
-    skos:prefLabel "PORDENONE"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "16700" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "16700" ;
-    xkos:depth 1 .
-
-sedeinail:17100 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "GENOVA"@it ;
-    skos:prefLabel "GENOVA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "17100" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "17100" ;
-    xkos:depth 1 .
-
-sedeinail:17160 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "CHIAVARI"@it ;
-    skos:prefLabel "CHIAVARI"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "17160" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "17160" ;
-    xkos:depth 1 .
-
-sedeinail:17200 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "IMPERIA"@it ;
-    skos:prefLabel "IMPERIA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "17200" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "17200" ;
-    xkos:depth 1 .
-
-sedeinail:17300 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "LA SPEZIA"@it ;
-    skos:prefLabel "LA SPEZIA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "17300" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "17300" ;
-    xkos:depth 1 .
-
-sedeinail:17400 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "SAVONA"@it ;
-    skos:prefLabel "SAVONA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "17400" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "17400" ;
-    xkos:depth 1 .
-
-sedeinail:18100 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "BOLOGNA"@it ;
-    skos:prefLabel "BOLOGNA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "18100" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "18100" ;
-    xkos:depth 1 .
-
-sedeinail:18130 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "CASALECCHIO DI RENO"@it ;
-    skos:prefLabel "CASALECCHIO DI RENO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "18130" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "18130" ;
-    xkos:depth 1 .
-
-sedeinail:18160 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "IMOLA"@it ;
-    skos:prefLabel "IMOLA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "18160" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "18160" ;
-    xkos:depth 1 .
-
-sedeinail:18200 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "FERRARA"@it ;
-    skos:prefLabel "FERRARA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "18200" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "18200" ;
-    xkos:depth 1 .
-
-sedeinail:18300 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "FORLI'"@it ;
-    skos:prefLabel "FORLI'"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "18300" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "18300" ;
-    xkos:depth 1 .
-
-sedeinail:18320 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "RIMINI"@it ;
-    skos:prefLabel "RIMINI"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "18320" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "18320" ;
-    xkos:depth 1 .
-
-sedeinail:18330 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "CESENA"@it ;
-    skos:prefLabel "CESENA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "18330" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "18330" ;
-    xkos:depth 1 .
-
-sedeinail:18400 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "MODENA"@it ;
-    skos:prefLabel "MODENA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "18400" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "18400" ;
-    xkos:depth 1 .
-
-sedeinail:18500 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "PARMA"@it ;
-    skos:prefLabel "PARMA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "18500" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "18500" ;
-    xkos:depth 1 .
-
-sedeinail:18600 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "PIACENZA"@it ;
-    skos:prefLabel "PIACENZA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "18600" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "18600" ;
-    xkos:depth 1 .
-
-sedeinail:18700 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "RAVENNA"@it ;
-    skos:prefLabel "RAVENNA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "18700" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "18700" ;
-    xkos:depth 1 .
-
-sedeinail:18730 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "FAENZA (RA)"@it ;
-    skos:prefLabel "FAENZA (RA)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "18730" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "18730" ;
-    xkos:depth 1 .
-
-sedeinail:18800 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "REGGIO EMILIA"@it ;
-    skos:prefLabel "REGGIO EMILIA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "18800" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "18800" ;
-    xkos:depth 1 .
-
-sedeinail:21100 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "AREZZO"@it ;
-    skos:prefLabel "AREZZO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "21100" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "21100" ;
-    xkos:depth 1 .
-
-sedeinail:21200 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "CARRARA"@it ;
-    skos:prefLabel "CARRARA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "21200" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "21200" ;
-    xkos:depth 1 .
-
-sedeinail:21300 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "FIRENZE- PORTE NUOVE"@it ;
-    skos:prefLabel "FIRENZE- PORTE NUOVE"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "21300" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "21300" ;
-    xkos:depth 1 .
-
-sedeinail:21320 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "PRATO"@it ;
-    skos:prefLabel "PRATO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "21320" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "21320" ;
-    xkos:depth 1 .
-
-sedeinail:21330 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "EMPOLI (FI)"@it ;
-    skos:prefLabel "EMPOLI (FI)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "21330" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "21330" ;
-    xkos:depth 1 .
-
-sedeinail:21400 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "GROSSETO"@it ;
-    skos:prefLabel "GROSSETO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "21400" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "21400" ;
-    xkos:depth 1 .
-
-sedeinail:21500 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "LIVORNO"@it ;
-    skos:prefLabel "LIVORNO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "21500" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "21500" ;
-    xkos:depth 1 .
-
-sedeinail:21520 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "PIOMBINO"@it ;
-    skos:prefLabel "PIOMBINO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "21520" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "21520" ;
-    xkos:depth 1 .
-
-sedeinail:21521 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "PORTOFERRAIO (LI)"@it ;
-    skos:prefLabel "PORTOFERRAIO (LI)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "21521" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "21521" ;
-    xkos:depth 1 .
-
-sedeinail:21600 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "LUCCA"@it ;
-    skos:prefLabel "LUCCA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "21600" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "21600" ;
-    xkos:depth 1 .
-
-sedeinail:21630 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "VIAREGGIO (LU)"@it ;
-    skos:prefLabel "VIAREGGIO (LU)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "21630" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "21630" ;
-    xkos:depth 1 .
-
-sedeinail:21700 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "PISA"@it ;
-    skos:prefLabel "PISA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "21700" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "21700" ;
-    xkos:depth 1 .
-
-sedeinail:21730 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "PONTEDERA (PI)"@it ;
-    skos:prefLabel "PONTEDERA (PI)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "21730" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "21730" ;
-    xkos:depth 1 .
-
-sedeinail:21800 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "PISTOIA"@it ;
-    skos:prefLabel "PISTOIA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "21800" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "21800" ;
-    xkos:depth 1 .
-
-sedeinail:21900 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "SIENA"@it ;
-    skos:prefLabel "SIENA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "21900" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "21900" ;
-    xkos:depth 1 .
-
-sedeinail:22100 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "PERUGIA"@it ;
-    skos:prefLabel "PERUGIA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "22100" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "22100" ;
-    xkos:depth 1 .
-
-sedeinail:22110 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "FOLIGNO (PG)"@it ;
-    skos:prefLabel "FOLIGNO (PG)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "22110" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "22110" ;
-    xkos:depth 1 .
-
-sedeinail:22131 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "CITTA' DI CASTELLO (PG)"@it ;
-    skos:prefLabel "CITTA' DI CASTELLO (PG)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "22131" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "22131" ;
-    xkos:depth 1 .
-
-sedeinail:22200 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "TERNI"@it ;
-    skos:prefLabel "TERNI"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "22200" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "22200" ;
-    xkos:depth 1 .
-
-sedeinail:22230 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "ORVIETO (TR)"@it ;
-    skos:prefLabel "ORVIETO (TR)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "22230" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "22230" ;
-    xkos:depth 1 .
-
-sedeinail:23100 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "ANCONA"@it ;
-    skos:prefLabel "ANCONA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "23100" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "23100" ;
-    xkos:depth 1 .
-
-sedeinail:23130 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "JESI (AN)"@it ;
-    skos:prefLabel "JESI (AN)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "23130" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "23130" ;
-    xkos:depth 1 .
-
-sedeinail:23132 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "FABRIANO (AN)"@it ;
-    skos:prefLabel "FABRIANO (AN)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "23132" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "23132" ;
-    xkos:depth 1 .
-
-sedeinail:23133 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "SENIGALLIA"@it ;
-    skos:prefLabel "SENIGALLIA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "23133" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "23133" ;
-    xkos:depth 1 .
-
-sedeinail:23200 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "ASCOLI PICENO"@it ;
-    skos:prefLabel "ASCOLI PICENO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "23200" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "23200" ;
-    xkos:depth 1 .
-
-sedeinail:23230 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "FERMO"@it ;
-    skos:prefLabel "FERMO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "23230" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "23230" ;
-    xkos:depth 1 .
-
-sedeinail:23300 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "MACERATA"@it ;
-    skos:prefLabel "MACERATA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "23300" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "23300" ;
-    xkos:depth 1 .
-
-sedeinail:23400 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "PESARO"@it ;
-    skos:prefLabel "PESARO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "23400" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "23400" ;
-    xkos:depth 1 .
-
-sedeinail:23401 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "FANO"@it ;
-    skos:prefLabel "FANO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "23401" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "23401" ;
-    xkos:depth 1 .
-
-sedeinail:24100 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "FROSINONE"@it ;
-    skos:prefLabel "FROSINONE"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "24100" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "24100" ;
-    xkos:depth 1 .
-
-sedeinail:24110 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "CASSINO (FR)"@it ;
-    skos:prefLabel "CASSINO (FR)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "24110" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "24110" ;
-    xkos:depth 1 .
-
-sedeinail:24200 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "LATINA"@it ;
-    skos:prefLabel "LATINA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "24200" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "24200" ;
-    xkos:depth 1 .
-
-sedeinail:24230 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "FORMIA (LT)"@it ;
-    skos:prefLabel "FORMIA (LT)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "24230" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "24230" ;
-    xkos:depth 1 .
-
-sedeinail:24300 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "RIETI"@it ;
-    skos:prefLabel "RIETI"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "24300" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "24300" ;
-    xkos:depth 1 .
-
-sedeinail:24400 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "ROMA CENTRO"@it ;
-    skos:prefLabel "ROMA CENTRO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "24400" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "24400" ;
-    xkos:depth 1 .
-
-sedeinail:24401 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "ROMA AURELIO"@it ;
-    skos:prefLabel "ROMA AURELIO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "24401" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "24401" ;
-    xkos:depth 1 .
-
-sedeinail:24441 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "ROMA TUSCOLANO"@it ;
-    skos:prefLabel "ROMA TUSCOLANO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "24441" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "24441" ;
-    xkos:depth 1 .
-
-sedeinail:24442 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "CIVITAVECCHIA (RM)"@it ;
-    skos:prefLabel "CIVITAVECCHIA (RM)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "24442" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "24442" ;
-    xkos:depth 1 .
-
-sedeinail:24443 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "VELLETRI"@it ;
-    skos:prefLabel "VELLETRI"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "24443" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "24443" ;
-    xkos:depth 1 .
-
-sedeinail:24460 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "TIVOLI"@it ;
-    skos:prefLabel "TIVOLI"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "24460" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "24460" ;
-    xkos:depth 1 .
-
-sedeinail:24470 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "ROMA NOMENTANO"@it ;
-    skos:prefLabel "ROMA NOMENTANO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "24470" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "24470" ;
-    xkos:depth 1 .
-
-sedeinail:24480 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "ROMA LAURENTINO"@it ;
-    skos:prefLabel "ROMA LAURENTINO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "24480" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "24480" ;
-    xkos:depth 1 .
-
-sedeinail:24500 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "VITERBO"@it ;
-    skos:prefLabel "VITERBO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "24500" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "24500" ;
-    xkos:depth 1 .
-
-sedeinail:31100 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "CHIETI"@it ;
-    skos:prefLabel "CHIETI"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "31100" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "31100" ;
-    xkos:depth 1 .
-
-sedeinail:31110 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "LANCIANO (CH)"@it ;
-    skos:prefLabel "LANCIANO (CH)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "31110" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "31110" ;
-    xkos:depth 1 .
-
-sedeinail:31200 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "L'AQUILA"@it ;
-    skos:prefLabel "L'AQUILA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "31200" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "31200" ;
-    xkos:depth 1 .
-
-sedeinail:31210 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "AVEZZANO (AQ)"@it ;
-    skos:prefLabel "AVEZZANO (AQ)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "31210" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "31210" ;
-    xkos:depth 1 .
-
-sedeinail:31231 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "SULMONA (AQ)"@it ;
-    skos:prefLabel "SULMONA (AQ)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "31231" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "31231" ;
-    xkos:depth 1 .
-
-sedeinail:31300 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "PESCARA"@it ;
-    skos:prefLabel "PESCARA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "31300" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "31300" ;
-    xkos:depth 1 .
-
-sedeinail:31400 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "TERAMO"@it ;
-    skos:prefLabel "TERAMO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "31400" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "31400" ;
-    xkos:depth 1 .
-
-sedeinail:32100 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "DIREZIONE REGIONALE MOLISE - SEDE LOCALE DI CAMPOBASSO"@it ;
-    skos:prefLabel "DIREZIONE REGIONALE MOLISE - SEDE LOCALE DI CAMPOBASSO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "32100" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "32100" ;
-    xkos:depth 1 .
-
-sedeinail:32130 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "TERMOLI (CB)"@it ;
-    skos:prefLabel "TERMOLI (CB)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "32130" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "32130" ;
-    xkos:depth 1 .
-
-sedeinail:32200 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "ISERNIA"@it ;
-    skos:prefLabel "ISERNIA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "32200" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "32200" ;
-    xkos:depth 1 .
-
-sedeinail:33100 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "AVELLINO"@it ;
-    skos:prefLabel "AVELLINO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "33100" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "33100" ;
-    xkos:depth 1 .
-
-sedeinail:33101 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "S. ANGELO DEI LOMBARDI (AV)"@it ;
-    skos:prefLabel "S. ANGELO DEI LOMBARDI (AV)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "33101" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "33101" ;
-    xkos:depth 1 .
-
-sedeinail:33200 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "BENEVENTO"@it ;
-    skos:prefLabel "BENEVENTO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "33200" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "33200" ;
-    xkos:depth 1 .
-
-sedeinail:33300 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "CASERTA"@it ;
-    skos:prefLabel "CASERTA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "33300" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "33300" ;
-    xkos:depth 1 .
-
-sedeinail:33310 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "AVERSA (CE)"@it ;
-    skos:prefLabel "AVERSA (CE)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "33310" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "33310" ;
-    xkos:depth 1 .
-
-sedeinail:33400 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "NAPOLI"@it ;
-    skos:prefLabel "NAPOLI"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "33400" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "33400" ;
-    xkos:depth 1 .
-
-sedeinail:33403 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "NAPOLI VIA DE GASPERI (NA)"@it ;
-    skos:prefLabel "NAPOLI VIA DE GASPERI (NA)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "33403" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "33403" ;
-    xkos:depth 1 .
-
-sedeinail:33420 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "CASTELLAMMARE DI STABIA (NA)"@it ;
-    skos:prefLabel "CASTELLAMMARE DI STABIA (NA)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "33420" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "33420" ;
-    xkos:depth 1 .
-
-sedeinail:33470 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "NOLA"@it ;
-    skos:prefLabel "NOLA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "33470" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "33470" ;
-    xkos:depth 1 .
-
-sedeinail:33500 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "SALERNO"@it ;
-    skos:prefLabel "SALERNO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "33500" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "33500" ;
-    xkos:depth 1 .
-
-sedeinail:33530 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "BATTIPAGLIA (SA)"@it ;
-    skos:prefLabel "BATTIPAGLIA (SA)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "33530" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "33530" ;
-    xkos:depth 1 .
-
-sedeinail:34100 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "BARI"@it ;
-    skos:prefLabel "BARI"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "34100" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "34100" ;
-    xkos:depth 1 .
-
-sedeinail:34110 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "BARLETTA"@it ;
-    skos:prefLabel "BARLETTA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "34110" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "34110" ;
-    xkos:depth 1 .
-
-sedeinail:34140 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "MONOPOLI (BA)"@it ;
-    skos:prefLabel "MONOPOLI (BA)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "34140" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "34140" ;
-    xkos:depth 1 .
-
-sedeinail:34141 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "ALTAMURA (BA)"@it ;
-    skos:prefLabel "ALTAMURA (BA)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "34141" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "34141" ;
-    xkos:depth 1 .
-
-sedeinail:34200 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "BRINDISI"@it ;
-    skos:prefLabel "BRINDISI"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "34200" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "34200" ;
-    xkos:depth 1 .
-
-sedeinail:34300 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "FOGGIA"@it ;
-    skos:prefLabel "FOGGIA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "34300" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "34300" ;
-    xkos:depth 1 .
-
-sedeinail:34400 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "LECCE"@it ;
-    skos:prefLabel "LECCE"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "34400" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "34400" ;
-    xkos:depth 1 .
-
-sedeinail:34402 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "CASARANO (LE)"@it ;
-    skos:prefLabel "CASARANO (LE)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "34402" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "34402" ;
-    xkos:depth 1 .
-
-sedeinail:34500 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "TARANTO"@it ;
-    skos:prefLabel "TARANTO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "34500" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "34500" ;
-    xkos:depth 1 .
-
-sedeinail:35100 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "MATERA"@it ;
-    skos:prefLabel "MATERA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "35100" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "35100" ;
-    xkos:depth 1 .
-
-sedeinail:35200 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "DIREZIONE REGIONALE BASILICATA - SEDE LOCALE DI POTENZA"@it ;
-    skos:prefLabel "DIREZIONE REGIONALE BASILICATA - SEDE LOCALE DI POTENZA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "35200" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "35200" ;
-    xkos:depth 1 .
-
-sedeinail:35201 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "MELFI (PZ)"@it ;
-    skos:prefLabel "MELFI (PZ)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "35201" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "35201" ;
-    xkos:depth 1 .
-
-sedeinail:35230 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "LAGONEGRO (PZ)"@it ;
-    skos:prefLabel "LAGONEGRO (PZ)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "35230" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "35230" ;
-    xkos:depth 1 .
-
-sedeinail:36100 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "CATANZARO"@it ;
-    skos:prefLabel "CATANZARO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "36100" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "36100" ;
-    xkos:depth 1 .
-
-sedeinail:36110 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "VIBO VALENTIA"@it ;
-    skos:prefLabel "VIBO VALENTIA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "36110" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "36110" ;
-    xkos:depth 1 .
-
-sedeinail:36200 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "COSENZA"@it ;
-    skos:prefLabel "COSENZA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "36200" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "36200" ;
-    xkos:depth 1 .
-
-sedeinail:36202 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "CORIGLIANO - ROSSANO"@it ;
-    skos:prefLabel "CORIGLIANO - ROSSANO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "36202" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "36202" ;
-    xkos:depth 1 .
-
-sedeinail:36300 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "REGGIO CALABRIA"@it ;
-    skos:prefLabel "REGGIO CALABRIA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "36300" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "36300" ;
-    xkos:depth 1 .
-
-sedeinail:36302 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "LOCRI (RC)"@it ;
-    skos:prefLabel "LOCRI (RC)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "36302" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "36302" ;
-    xkos:depth 1 .
-
-sedeinail:36303 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "PALMI"@it ;
-    skos:prefLabel "PALMI"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "36303" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "36303" ;
-    xkos:depth 1 .
-
-sedeinail:36400 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "CROTONE"@it ;
-    skos:prefLabel "CROTONE"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "36400" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "36400" ;
-    xkos:depth 1 .
-
-sedeinail:41100 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "AGRIGENTO"@it ;
-    skos:prefLabel "AGRIGENTO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "41100" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "41100" ;
-    xkos:depth 1 .
-
-sedeinail:41200 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "CALTANISSETTA"@it ;
-    skos:prefLabel "CALTANISSETTA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "41200" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "41200" ;
-    xkos:depth 1 .
-
-sedeinail:41300 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "CATANIA"@it ;
-    skos:prefLabel "CATANIA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "41300" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "41300" ;
-    xkos:depth 1 .
-
-sedeinail:41302 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "CALTAGIRONE (CT)"@it ;
-    skos:prefLabel "CALTAGIRONE (CT)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "41302" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "41302" ;
-    xkos:depth 1 .
-
-sedeinail:41400 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "ENNA"@it ;
-    skos:prefLabel "ENNA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "41400" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "41400" ;
-    xkos:depth 1 .
-
-sedeinail:41500 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "MESSINA"@it ;
-    skos:prefLabel "MESSINA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "41500" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "41500" ;
-    xkos:depth 1 .
-
-sedeinail:41520 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "MILAZZO"@it ;
-    skos:prefLabel "MILAZZO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "41520" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "41520" ;
-    xkos:depth 1 .
-
-sedeinail:41600 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "PALERMO DEL FANTE"@it ;
-    skos:prefLabel "PALERMO DEL FANTE"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "41600" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "41600" ;
-    xkos:depth 1 .
-
-sedeinail:41640 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "PALERMO TITONE"@it ;
-    skos:prefLabel "PALERMO TITONE"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "41640" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "41640" ;
-    xkos:depth 1 .
-
-sedeinail:41700 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "RAGUSA"@it ;
-    skos:prefLabel "RAGUSA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "41700" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "41700" ;
-    xkos:depth 1 .
-
-sedeinail:41800 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "SIRACUSA"@it ;
-    skos:prefLabel "SIRACUSA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "41800" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "41800" ;
-    xkos:depth 1 .
-
-sedeinail:41900 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "TRAPANI"@it ;
-    skos:prefLabel "TRAPANI"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "41900" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "41900" ;
-    xkos:depth 1 .
-
-sedeinail:41901 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "MAZARA DEL VALLO (TP)"@it ;
-    skos:prefLabel "MAZARA DEL VALLO (TP)"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "41901" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "41901" ;
-    xkos:depth 1 .
-
-sedeinail:42100 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "CAGLIARI"@it ;
-    skos:prefLabel "CAGLIARI"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "42100" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "42100" ;
-    xkos:depth 1 .
-
-sedeinail:42130 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "CARBONIA"@it ;
-    skos:prefLabel "CARBONIA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "42130" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "42130" ;
-    xkos:depth 1 .
-
-sedeinail:42200 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "NUORO"@it ;
-    skos:prefLabel "NUORO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "42200" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "42200" ;
-    xkos:depth 1 .
-
-sedeinail:42300 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "SASSARI"@it ;
-    skos:prefLabel "SASSARI"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "42300" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "42300" ;
-    xkos:depth 1 .
-
-sedeinail:42330 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "OLBIA"@it ;
-    skos:prefLabel "OLBIA"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "42330" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "42330" ;
-    xkos:depth 1 .
-
-sedeinail:42400 a INAILCore:SedeINAIL,
-        skos:Concept ;
-    rdfs:label "ORISTANO"@it ;
-    skos:prefLabel "ORISTANO"@it ;
-    CLV:hasRankOrder 1 ;
-    dcterms:identifier "42400" ;
-    skos:inScheme <https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail> ;
-    skos:notation "42400" ;
-    xkos:depth 1 .
 
 ### Serialized using the ttlser deterministic serializer v1.2.0
