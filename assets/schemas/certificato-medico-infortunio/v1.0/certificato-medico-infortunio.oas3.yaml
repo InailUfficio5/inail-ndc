@@ -1,0 +1,735 @@
+openapi: 3.0.1
+info:
+  title: Schema API del Certificato Medico Infortunio
+  description: |-
+    Swagger Definition.
+    <br>Schema API del Certificato Medico Infortunio relativo all'e-service pubblicato sulla PDND al seguente link https://interoperabilita.inail.it/pdd/api-id_auth_channel_02/CMI-CertificatoMedicoInfortunio<br>
+  version: '1.0'
+paths: {}
+components:
+  schemas:
+    AnagraficaDTO:
+      title: AnagraficaDTO
+      type: object
+      properties:
+        aslDomCure:
+          type: string
+        aslDomicilio:
+          type: string
+        aslResidenza:
+          type: string
+        capDomCure:
+          type: string
+          description: Si riferisce al CAP del Soggetto Assicurato
+          minLength: 5
+          maxLength: 5
+          example: 00100
+        capDomicilio:
+          type: string
+          description: Si riferisce al CAP di domicilio del Soggetto Assicurato
+          minLength: 5
+          maxLength: 5
+          example: 00100
+        capResidenza:
+          type: string
+          description: Si riferisce al cap di residenza del Soggetto Assicurato
+          minLength: 5
+          maxLength: 5
+          example: 00100
+        cellulare:
+          type: string
+          description: Si riferisce al numero di cellullare del Soggetto Assicurato
+          minLength: 10
+          maxLength: 15
+          example: 1234567879
+        cittadinanza:
+          type: string
+          description: Si riferisce al codice che identifica la cittadinanza di appartenenza del Soggetto Assicurato
+          minLength: 4
+          maxLength: 4
+          example: W001
+        civicoDomCure:
+          type: string
+          description: Identifica il numero civico di appartenenza di una struttura dove il Soggetto Assicurato risiede per cure mediche
+          minLength: 1
+          maxLength: 5
+          example: 3
+        civicoDomicilio:
+          type: string
+          description: Si riferisce al numero civico del domicilio del Soggetto Assicurato
+          minLength: 1
+          maxLength: 5
+          example: 3
+        civicoResidenza:
+          type: string
+          description: Si riferisce al numero civico di residenza del Soggetto Assicurato
+          minLength: 1
+          maxLength: 5
+          example: 3
+        codiceFiscale:
+          type: string
+          description: Si riferisce al codice fiscale del Soggetto Assicurato
+          minLength: 1
+          maxLength: 5
+          example: RSSPLA80B12A806M
+        cognome:
+          type: string
+          description: Identifica il cognome del Soggetto Assicurato
+          minLength: 1
+          maxLength: 36
+          example: Rossi
+        comuneDomCure:
+          type: string
+          description: Si riferisce al comune di una struttura medica dove il Soggetto Assicurato risiede per cure
+          minLength: 1
+          maxLength: 6
+          example: 058091
+        comuneDomicilio:
+          type: string
+          description: Si riferisce al comune di domicilio del Soggetto Assicurato
+          minLength: 1
+          maxLength: 6
+          example: 075042
+        comuneEsteroDomCure:
+          type: string
+          description: Descrizione del comune estero
+          minLength: 1
+          maxLength: 70
+          example: FINLANDIA
+          nullable: true
+        comuneEsteroDomicilio:
+          type: string
+          description: Descrizione del comune estero
+          minLength: 1
+          maxLength: 70
+          example: CAMBOGIA
+          nullable: true
+        comuneEsteroNascita:
+          type: string
+          description: Descrizione del comune estero di nascita
+          minLength: 1
+          maxLength: 70
+          example: NUOVA ZELANDA
+          nullable: true
+        comuneEsteroResidenza:
+          type: string
+          description: Descrizione del comune estero
+          minLength: 1
+          maxLength: 70
+          example: ESTONIA
+          nullable: true
+        comuneNascita:
+          type: string
+          description: Indica il comune di nascita del Soggetto Assicurato
+          minLength: 1
+          maxLength: 6
+          example: 002032
+        comuneResidenza:
+          type: string
+          description: Codice ISTAT del comune
+          minLength: 1
+          maxLength: 6
+          example: 001254
+        dataNascita:
+          type: string
+          description: Si riferisce alla data di nascita del Soggetto Assicurato
+          format: date
+          minLength: 1
+          maxLength: 10
+        email:
+          type: string
+          description: Identifica l'indirizzo di posta elettronica del Soggetto Assicurato
+          minLength: 1
+          maxLength: 10
+          example: prova@prova.it
+        indirizzoDomCure:
+          type: string
+          description: Si riferisce all' indirizzo di una struttura medica dove il Soggetto Assicutrato ha acquisito il domicilio
+          minLength: 1
+          maxLength: 50
+          example: VIA PO
+        indirizzoDomicilio:
+          type: string
+          description: Si riferisce all'indirizzo dove il Soggetto Assicurato è domiciliato
+          minLength: 1
+          maxLength: 50
+          example: VIALE GRAMSCI
+        indirizzoResidenza:
+          type: string
+          description: Indica l'indirizzo di residenza del Soggetto Assicurato
+          minLength: 1
+          maxLength: 50
+          example: VIA PO
+        nazione:
+          type: string
+          description: Codice Belfiore/Catastale della nazione di nascita
+          minLength: 4
+          maxLength: 4
+          example: W001
+        nazioneDomCure:
+          type: string
+          description: Codice Belfiore/Catastale della nazione
+          minLength: 4
+          maxLength: 4
+          example: Z145
+        nazioneDomicilio:
+          type: string
+          description: Codice Belfiore/Catastale della nazione
+          minLength: 4
+          maxLength: 4
+          example: Z119
+        nazioneResidenza:
+          type: string
+          description: Codice Belfiore/Catastale della nazione
+          minLength: 4
+          maxLength: 4
+          example: Z730
+        nome:
+          type: string
+          description: Si riferisce al nome del Soggetto Assicurato
+          minLength: 1
+          maxLength: 30
+          example: Mario
+        pec:
+          type: string
+          description: Si riferisce all'indirizzo di posta elettronica certificata del Soggetto Assicurato
+          minLength: 1
+          maxLength: 200
+          example: prova@prova.it
+        prefissoInternazionale:
+          type: string
+        prefissoInternazionaleCell:
+          type: string
+        pressoDomCure:
+          type: string
+        sesso:
+          type: string
+          description: Sesso
+          minLength: 1
+          maxLength: 1
+          example: M
+        telefono:
+          type: string
+          description: Numero di telefono
+          minLength: 1
+          maxLength: 15
+          example: 12362435
+      x-jsonld-type: https://w3id.org/italia/onto/CLV/Address
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/onto/CLV/
+        capDomCure: postCode
+        capDomicilio: https://w3id.org/italia/onto/COV/legalName
+        capResidenza: postCode
+        cellulare:
+          '@id': https://w3id.org/italia/onto/SM/hasContactPoint
+          '@context':
+              telephoneNumber: https://w3id.org/italia/onto/SM/telephoneNumber
+        cittadinanza:
+          '@id': https://w3id.org/italia/onto/RPO/isCurrentlyPredominantlyCitizen
+          '@context':
+              citizenshipCode: https://w3id.org/italia/onto/RPO/citizenshipCode
+        civicoDomCure:
+          '@id': hasNumber
+          '@context':
+              streetNumber: streetNumber
+        civicoDomicilio:
+          '@id': hasNumber
+          '@context':
+              streetNumber: streetNumber
+        civicoResidenza:
+          '@id': hasNumber
+          '@context':
+              streetNumber: streetNumber
+        codiceFiscale: https://w3id.org/italia/onto/CPV/taxCode
+        cognome: https://w3id.org/italia/onto/CPV/familyName
+        comuneDomCure:
+          '@id': https://w3id.org/italia/onto/CLV/hasCity
+          '@context':
+              codiceComune: https://w3id.org/italia/onto/l0/identifier
+        comuneDomicilio:
+          '@id': https://w3id.org/italia/onto/CLV/hasCity
+          '@context':
+              codiceComune: https://w3id.org/italia/onto/l0/identifier
+        comuneEsteroDomCure: null
+        comuneEsteroDomicilio: null
+        comuneEsteroNascita: null
+        comuneEsteroResidenza: null
+        comuneNascita:
+          '@id': https://w3id.org/italia/onto/CLV/hasCity
+          '@context':
+              codiceComune: https://w3id.org/italia/onto/l0/identifier
+        comuneResidenza:
+          '@id': https://w3id.org/italia/onto/CLV/hasCity
+          '@context':
+              codiceComune: https://w3id.org/italia/onto/l0/identifier
+        dataNascita: https://w3id.org/italia/onto/CPV/dateOfBirth
+        email:
+          '@id': https://w3id.org/italia/onto/SM/hasEmail
+          '@context':
+              emailAddress: https://w3id.org/italia/onto/SM/emailAddress
+        indirizzoDomCure: fullAddress
+        indirizzoDomicilio: fullAddress
+        indirizzoResidenza: fullAddress
+        nazione:
+          '@id': hasCountry
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/'
+        nazioneDomCure:
+          '@id': hasCountry
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/'
+        nazioneDomicilio:
+          '@id': hasCountry
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/'
+        nazioneResidenza:
+          '@id': hasCountry
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/'
+        nome: https://w3id.org/italia/onto/CPV/givenName
+        pec:
+          '@id': https://w3id.org/italia/onto/SM/hasEmail
+          '@context':
+              emailAddress: https://w3id.org/italia/onto/SM/emailAddress
+        sesso:
+          '@id': https://w3id.org/italia/onto/CPV/hasGender
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+        telefono:
+          '@id': https://w3id.org/italia/onto/SM/hasContactPoint
+          '@context':
+              telephoneNumber: https://w3id.org/italia/onto/SM/telephoneNumber
+      example:
+        capDomCure: '00100'
+        capDomicilio: '00100'
+        capResidenza: '00100'
+        cellulare:
+          telephoneNumber: '1234567879'
+        cittadinanza:
+          citizenshipCode: 'W001'
+        civicoDomCure:
+          streetNumber: '3'
+        civicoDomicilio:
+          streetNumber: '3'
+        civicoResidenza:
+          streetNumber: '3'
+        codiceFiscale: 'RSSPLA80B12A806M'
+        cognome: 'Rossi'
+        comuneDomCure:
+          codiceComune: '058091'
+        comuneDomicilio:
+          codiceComune: '075042'
+        comuneNascita:
+         codiceComune: '002032'
+        comuneResidenza:
+          codiceComune: '001254'
+        dataNascita: '2021-11-22'
+        email:
+          emailAddress: 'prova@prova.it'
+        indirizzoDomCure: 'VIA PO'
+        indirizzoDomicilio: 'VIALE GRAMSCI'
+        indirizzoResidenza: 'VIA PO'
+        nazione: 'W001'
+        nazioneDomCure: 'Z145'
+        nazioneDomicilio: 'Z119'
+        nazioneResidenza: 'Z730'
+        nome: 'Mario'
+        pec:
+          emailAddress: 'prova@prova.it'
+        sesso:
+          label: 'M'
+        telefono:
+          telephoneNumber: '12362435'
+    CertificatoRequestWrapper:
+      title: CertificatoRequestWrapper
+      type: object
+      properties:
+        anagrafica:
+          $ref: '#/components/schemas/AnagraficaDTO'
+        datiSanitari:
+          $ref: '#/components/schemas/DatiSanitariDTO'
+        idEsterno:
+          type: string
+        infortunio:
+          $ref: '#/components/schemas/InfortunioDTO'
+        lavoro:
+          $ref: '#/components/schemas/LavoroDTO'
+        medico:
+          $ref: '#/components/schemas/MedicoDTO'
+    CertificatoResponseWrapper:
+      title: CertificatoResponseWrapper
+      type: object
+      properties:
+        codFis:
+          type: string
+          description: Codice fiscale del lavoratore infortunato
+          minLength: 16
+          maxLength: 16
+          example: RSSPLA80B12A806M
+        dataEvento:
+          type: string
+          description: Data in cui è avvenuto l'infortunio
+          format: date
+          minLength: 10
+          maxLength: 10
+        dataInvio:
+          type: string
+        errors:
+          type: array
+          items:
+            type: string
+        idCertificato:
+          type: string
+        idEsterno:
+          type: string
+        protocollo:
+          type: string
+        sedeInail:
+          type: string
+          description: Codice e descrizione della sede INAIL competente
+          example: 24441
+        warnings:
+          type: array
+          items:
+            type: string
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/EventoLesivoINAIL
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/work-accident/onto/adm_serv/
+        codFis: https://w3id.org/italia/onto/CPV/taxCode
+        dataEvento: dataEventoLesivo
+        sedeInail:
+          '@id' : https://w3id.org/italia/work-accident/onto/core/soggettoAssicuranteCompetenzaDi
+          '@type': '@id'
+          '@context':
+            '@base': 'https://w3id.org/italia/work-accident/controlled-vocabulary/core/sede_inail/'
+      example:
+        codFis: '123456'
+        dataEvento: '2021-11-22'
+        sedeInail: '24441'
+    DatiSanitariDTO:
+      title: DatiSanitariDTO
+      type: object
+      properties:
+        accertamenti:
+          type: string
+        assenzaPrognosi:
+          type: boolean
+        autopsiaGiudiziaria:
+          type: boolean
+        comuneInvio:
+          type: string
+          description: Codice ISTAT del luogo in cui viene effettuata la visita e rilasciato il certificato
+          minLength: 6
+          maxLength: 6
+          example: 058091
+        dataDecesso:
+          type: string
+          description: Data del decesso del lavoratore in conseguenza dell’evento infortunistico
+          format: date
+          minLength: 10
+          maxLength: 10
+        dataVisita:
+          type: string
+        diagnosi:
+          type: string
+        esameObiettivo:
+          type: string
+        esitiDiAltreLesioni:
+          type: string
+        esitiDiAltreLesioniDesc:
+          type: string
+        inabilitaPermanente:
+          type: string
+          description: Indicatore di inabilità permanente
+          minLength: 2
+          maxLength: 2
+          example: SI
+        invaliditaRiconosciute:
+          type: string
+          description: Indicatore di invalidità riconosciute
+          minLength: 2
+          maxLength: 2
+          example: NO
+        invaliditaRiconosciuteDesc:
+          type: string
+          description: Descrizione delle invalidità riconosciute
+          minLength: 1
+          maxLength: 400
+          example: 045
+        malattiaInfettiva:
+          type: string
+        osservazioni:
+          type: string
+        prescrizioni:
+          type: string
+        prognosiAl:
+          type: string
+        prognosiDal:
+          type: string
+        prognosiRiservata:
+          type: boolean
+        ricoveroOspedaliero:
+          type: string
+        riscontroDiagnostico:
+          type: boolean
+        strutturaRicovero:
+          type: string
+        tipoCertificato:
+          type: string
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/EventoLesivoINAIL
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/work-accident/onto/adm_serv/
+        comuneInvio:
+          '@id': https://w3id.org/italia/onto/CLV/hasCity
+          '@context':
+              codiceComune: https://w3id.org/italia/onto/l0/identifier
+        dataDecesso: dataDecessoEventoLesivo
+        inabilitaPermanente: inabilitaPermanente
+        invaliditaRiconosciute: invaliditaRiconosciute
+        invaliditaRiconosciuteDesc: descrizioneGradoDiInabilita
+      example:
+        comuneInvio:
+          codiceComune: '058091'
+        dataDecesso: '2021-11-22'
+        inabilitaPermanente: 'SI'
+        invaliditaRiconosciute: 'NO'
+        invaliditaRiconosciuteDesc: '045'
+    InfortunioDTO:
+      title: InfortunioDTO
+      type: object
+      properties:
+        causeEvento:
+          type: string
+          description: Descrizione delle cause e circostanze in cui si è verificato l’evento
+          minLength: 1
+          maxLength: 600
+          example: 1
+        civicoEvento:
+          type: string
+          description: Numero civico del luogo evento
+          minLength: 1
+          maxLength: 5
+          example: 3
+        comuneEsteroEvento:
+          type: string
+        comuneEvento:
+          type: string
+          description: Codice ISTAT del comune in cui si è verificato l'evento
+          minLength: 6
+          maxLength: 6
+          example: 058091
+        dataAbbandonoLavoro:
+          type: string
+          description: Data di abbandono del lavoro
+          format: date
+          minLength: 10
+          maxLength: 10
+        dataEvento:
+          type: string
+          description: Data dell'evento infortunistico / Data di manifestazione della malattia infettiva
+          format: date
+          minLength: 10
+          maxLength: 10
+        indirizzoEvento:
+          type: string
+          description: Indirizzo del luogo evento
+          minLength: 1
+          maxLength: 50
+          example: VIA PO
+        luogoEvento:
+          type: string
+          description: Descrizione del luogo in cui si è verificato l'infortunio (Località dei lavori / Unità produttiva / Struttura / Nave / altro luogo)
+          minLength: 1
+          maxLength: 50
+          example: 01.0
+        minutiAbbandonoLavoro:
+          type: string
+          description: Minuti di abbandono del lavoro
+          format: date
+          minLength: 2
+          maxLength: 2
+        minutiEvento:
+          type: string
+          description: Minuti evento
+          format: date
+          minLength: 2
+          maxLength: 2
+        nazioneEvento:
+          type: string
+          description: Codice Belfiore/Catastale della nazione del luogo evento
+          minLength: 4
+          maxLength: 4
+          example: W001
+        oraAbbandonoLavoro:
+          type: string
+          description: Ora di abbandono del lavoro
+          format: date
+          minLength: 2
+          maxLength: 2
+        oraEvento:
+          type: string
+          description: Ora evento
+          format: date
+          minLength: 2
+          maxLength: 2
+      x-jsonld-type: https://w3id.org/italia/work-accident/onto/adm_serv/EventoLesivoINAIL
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/work-accident/onto/adm_serv/
+        causeEvento:
+          '@id' : haAgenteCausale
+          '@type': '@id'
+          '@context':
+              '@base': 'https://schema.gov.it/lodview/work-accident/controlled-vocabulary/adm_serv/agente_causale/grande_gruppo/'
+        civicoEvento:
+          '@id': https://w3id.org/italia/onto/CLV/hasNumber
+          '@context':
+            streetNumber: https://w3id.org/italia/onto/CLV/streetNumber
+        comuneEvento:
+          '@id': https://w3id.org/italia/onto/CLV/hasCity
+          '@context':
+        dataAbbandonoLavoro: dataAbbandonoLavoro
+        dataEvento: dataEventoLesivo
+        indirizzoEvento: eventoAvvenutoInLuogo
+        luogoEvento:
+          '@id' : infortunioAccadutoInTipoLuogo
+          '@type': '@id'
+          '@context':
+            '@base': 'https://schema.gov.it/lodview/work-accident/controlled-vocabulary/adm_serv/tipo_luogo_accadimento/concetto/'
+        minutiAbbandonoLavoro: dataAbbandonoLavoro
+        minutiEvento: dataEventoLesivo
+        nazioneEvento:
+          '@id': https://w3id.org/italia/onto/CLV/hasCountry
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/work-accident/controlled-vocabulary/core/nazione_inail/'
+        oraAbbandonoLavoro: dataAbbandonoLavoro
+        oraEvento: dataEventoLesivo
+      example:
+        causeEvento: '1'
+        civicoEvento:
+          streetNumber: '3'
+        comuneEvento: '058091'
+        dataAbbandonoLavoro: '2025-06-20'
+        dataEvento: '2021-11-22'
+        indirizzoEvento: 'VIA PO'
+        luogoEvento: '01.0'
+        minutiAbbandonoLavoro: '30'
+        minutiEvento: '15'
+        nazioneEvento: 'W001'
+        oraAbbandonoLavoro: '12'
+        oraEvento: '20'
+    LavoroDTO:
+      title: LavoroDTO
+      type: object
+      properties:
+        aslDatLav:
+          type: string
+        capDatLav:
+          type: string
+          description: CAP del datore di lavoro
+          minLength: 5
+          maxLength: 5
+          example: 00140
+        civicoDatLav:
+          type: string
+          description: Numero civico del datore di lavoro
+          minLength: 1
+          maxLength: 5
+          example: 3
+        comuneDatLav:
+          type: string
+          description: Codice ISTAT del comune del datore di lavoro
+          minLength: 6
+          maxLength: 6
+          example: 058091
+        denominazioneDatLav:
+          type: string
+          description: Nominativo o ragione sociale del datore di lavoro
+          minLength: 1
+          maxLength: 70
+          example: Fabio Rossi
+        indirizzoDatLav:
+          type: string
+          description: Indirizzo del datore di lavoro
+          minLength: 1
+          maxLength: 50
+          example: VIA PO
+        mansione:
+          type: string
+          description: Attività lavorativa svolta dal lavoratore
+          minLength: 1
+          maxLength: 70
+          example: 1
+      x-jsonld-type: https://w3id.org/italia/onto/CLV/Address
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/onto/CLV/
+        capDatLav: postCode
+        civicoDatLav:
+          '@id': hasNumber
+          '@context':
+              streetNumber: streetNumber
+        comuneDatLav:
+          '@id': https://w3id.org/italia/onto/CLV/hasCity
+          '@context':
+              codiceComune: https://w3id.org/italia/onto/l0/identifier
+        denominazioneDatLav: https://w3id.org/italia/onto/COV/legalName
+        indirizzoDatLav: fullAddress
+        mansione:
+          '@id' : https://w3id.org/italia/work-accident/onto/adm_serv/eventoRelativoAMansione
+          '@type': '@id'
+          '@context':
+            '@base': 'https://schema.gov.it/lodview/work-accident/controlled-vocabulary/adm_serv/mansione/livello1/'
+      example:
+        capDatLav: '00140'
+        civicoDatLav:
+          streetNumber: '3'
+        comuneDatLav:
+          codiceComune: '058091'
+        denominazioneDatLav: 'Fabio Rossi'
+        indirizzoDatLav: 'VIA PO'
+        mansione: '1'
+    MedicoDTO:
+      title: MedicoDTO
+      type: object
+      properties:
+        codiceFiscaleMedCert:
+          type: string
+          description: Codice fiscale del medico certificatore
+          minLength: 1
+          maxLength: 30
+          example: SPDTST90A01H501W
+        cognomeMedCert:
+          type: string
+          description: Cognome del medico certificatore
+          minLength: 1
+          maxLength: 30
+          example: Verdi
+        nomeMedCert:
+          type: string
+          description: Nome del medico certificatore
+          minLength: 1
+          maxLength: 30
+          example: Luca
+      x-jsonld-type: https://w3id.org/italia/onto/CPV/Alive
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/onto/CPV/
+        codiceFiscaleMedCert: taxCode
+        cognomeMedCert: familyName
+        nomeMedCert: givenName
+      example:
+        codiceFiscaleMedCert: 'SPDTST90A01H501W'
+        cognomeMedCert: 'Verdi'
+        nomeMedCert: 'Luca'
+  securitySchemes:
+    JWTBearer:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: A bearer token in the format of a JWS and conformed to the specifications included in [RFC8725](https://tools.ietf.org/html/RFC8725).
+security:
+  - JWTBearer: []
+
