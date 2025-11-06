@@ -1,4 +1,5 @@
 @prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
 @prefix dct: <http://purl.org/dc/terms/> .
@@ -15,17 +16,35 @@
 
 ### Annotations
 
-gest:A a <https://w3id.org/italia/work-accident/onto/adm_serv/GestioneAssicurativaINAIL> ;
+gest:A a <https://w3id.org/italia/work-accident/onto/adm_serv/GestioneAssicurativaINAIL>,
+        skos:Concept ;
     rdfs:label "Agricoltura" ;
-    skos:notation "A" .
+    skos:prefLabel "Agricoltura"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "A" ;
+    skos:inScheme inailvoc:gestione ;
+    skos:notation "A" ;
+    xkos:depth 1 .
 
-gest:I a <https://w3id.org/italia/work-accident/onto/adm_serv/GestioneAssicurativaINAIL> ;
+gest:I a <https://w3id.org/italia/work-accident/onto/adm_serv/GestioneAssicurativaINAIL>,
+        skos:Concept ;
     rdfs:label "Industria e servizi" ;
-    skos:notation "I" .
+    skos:prefLabel "Industria e servizi"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "I" ;
+    skos:inScheme inailvoc:gestione ;
+    skos:notation "I" ;
+    xkos:depth 1 .
 
-gest:S a <https://w3id.org/italia/work-accident/onto/adm_serv/GestioneAssicurativaINAIL> ;
+gest:S a <https://w3id.org/italia/work-accident/onto/adm_serv/GestioneAssicurativaINAIL>,
+        skos:Concept ;
     rdfs:label "Per conto dello Stato" ;
-    skos:notation "S" .
+    skos:prefLabel "Per conto dello Stato"@it ;
+    clvapit:hasRankOrder 1 ;
+    dct:identifier "S" ;
+    skos:inScheme inailvoc:gestione ;
+    skos:notation "S" ;
+    xkos:depth 1 .
 
 <https://w3id.org/italia/data/standard/SKOS> a dcatapit:Standard,
         dct:Standard ;
