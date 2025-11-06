@@ -1,0 +1,41 @@
+[
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/gestione/A",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/adm_serv/GestioneAssicurativaINAIL",
+      "skos:Concept"
+    ],
+    "id": "A",
+    "label_it": "Agricoltura",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/gestione/I",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/adm_serv/GestioneAssicurativaINAIL",
+      "skos:Concept"
+    ],
+    "id": "I",
+    "label_it": "Industria e servizi",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  },
+  {
+    "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/gestione/S",
+    "@type": [
+      "https://w3id.org/italia/work-accident/onto/adm_serv/GestioneAssicurativaINAIL",
+      "skos:Concept"
+    ],
+    "id": "S",
+    "label_it": "Per conto dello Stato",
+    "level": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer",
+      "@value": "1"
+    }
+  }
+]

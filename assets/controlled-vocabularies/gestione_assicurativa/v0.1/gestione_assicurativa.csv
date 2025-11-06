@@ -1,0 +1,4 @@
+"url","id","label_it","level.@type","level.@value"
+"https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/gestione/A","A","Agricoltura","http://www.w3.org/2001/XMLSchema#integer","1"
+"https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/gestione/I","I","Industria e servizi","http://www.w3.org/2001/XMLSchema#integer","1"
+"https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/gestione/S","S","Per conto dello Stato","http://www.w3.org/2001/XMLSchema#integer","1"
