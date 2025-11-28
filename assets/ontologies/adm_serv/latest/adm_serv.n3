@@ -268,6 +268,11 @@
 <https://w3id.org/italia/work-accident/onto/adm_serv/infortunioHaDefinizioneAmministrativa> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/work-accident/onto/adm_serv/InfortunioSulLavoro> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/infortunioHaDefinizioneAmministrativa> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/infortunioHaDefinizioneAmministrativa> <http://www.w3.org/2000/01/rdf-schema#label> "infortunio ha definizione amministrativa"@it .
+<https://w3id.org/italia/work-accident/onto/adm_serv/infortunioHaDefinizioneAmministrativaEsitoMortale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/italia/work-accident/onto/adm_serv/infortunioHaDefinizioneAmministrativaEsitoMortale> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/italia/work-accident/onto/adm_serv/infortunioHaDefinizioneAmministrativa> .
+<https://w3id.org/italia/work-accident/onto/adm_serv/infortunioHaDefinizioneAmministrativaEsitoMortale> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/work-accident/onto/adm_serv/InfortunioSulLavoro> .
+<https://w3id.org/italia/work-accident/onto/adm_serv/infortunioHaDefinizioneAmministrativaEsitoMortale> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/italia/work-accident/onto/adm_serv/infortunioHaDefinizioneAmministrativaEsitoMortale> <http://www.w3.org/2000/01/rdf-schema#label> "infortunio ha definizione amministrativa dell'esito mortale"@it .
 <https://w3id.org/italia/work-accident/onto/adm_serv/infortunioHaGradoDiInabilitaAssunto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/infortunioHaGradoDiInabilitaAssunto> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/work-accident/onto/adm_serv/InfortunioSulLavoro> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/infortunioHaGradoDiInabilitaAssunto> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/work-accident/onto/adm_serv/GradoDiInabilitaINAIL> .

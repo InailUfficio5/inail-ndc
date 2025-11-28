@@ -325,6 +325,12 @@ INAILService:infortunioHaDefinizioneAmministrativa a owl:ObjectProperty ;
     rdfs:domain INAILService:InfortunioSulLavoro ;
     rdfs:range skos:Concept .
 
+INAILService:infortunioHaDefinizioneAmministrativaEsitoMortale a owl:ObjectProperty ;
+    rdfs:label "infortunio ha definizione amministrativa dell'esito mortale"@it ;
+    rdfs:subPropertyOf INAILService:infortunioHaDefinizioneAmministrativa ;
+    rdfs:domain INAILService:InfortunioSulLavoro ;
+    rdfs:range skos:Concept .
+
 INAILService:infortunioHaGradoDiInabilitaAssunto a owl:ObjectProperty ;
     rdfs:label "infortunio ha grado di inabilità assunto"@it ;
     rdfs:domain INAILService:InfortunioSulLavoro ;
