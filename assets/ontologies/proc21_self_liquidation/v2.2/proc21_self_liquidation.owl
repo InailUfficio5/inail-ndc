@@ -43,7 +43,7 @@
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-06T00:00:00Z</dct:issued>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-12-01T00:00:00Z</dct:modified>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-30T00:00:00Z</dct:modified>
         <dct:publisher rdf:resource="https://w3id.org/italia/work-accident/data/organization/inail"/>
         <dct:rightsHolder rdf:resource="https://w3id.org/italia/work-accident/data/organization/inail"/>
         <dct:title xml:lang="en">INAIL Ontology about Self-Liquidation</dct:title>

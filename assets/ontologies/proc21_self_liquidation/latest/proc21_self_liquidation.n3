@@ -19,7 +19,7 @@
 <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> <https://w3id.org/italia/onto/ADMS/target> "Pubbliche Amministrazioni"@it .
 <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> <https://w3id.org/italia/onto/ADMS/target> "Imprese"@it .
 <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> <http://purl.org/dc/terms/issued> "2022-09-06T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> <http://purl.org/dc/terms/modified> "2023-12-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> <http://purl.org/dc/terms/modified> "2026-07-30T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> <https://w3id.org/italia/onto/ADMS/hasTask> <https://w3id.org/italia/onto/ADMS/AnnotationTask> .
 <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> <https://w3id.org/italia/onto/ADMS/hasTask> <https://w3id.org/italia/onto/ADMS/QueryFormulationTask> .
 <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> <https://w3id.org/italia/onto/ADMS/hasTask> <https://w3id.org/italia/onto/ADMS/SearchTask> .
@@ -63,7 +63,7 @@
 <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> .
 <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> <https://w3id.org/italia/onto/ADMS/semanticAssetInUse> <https://w3id.org/italia/data/project/NDC> .
 <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> <https://w3id.org/italia/onto/ADMS/officialURI> "https://w3id.org/italia/work-accident/onto/proc21_self_liquidation"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-<https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> <https://w3id.org/italia/onto/ADMS/last> <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/22> .
+<https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/> <https://w3id.org/italia/onto/ADMS/last> <https://w3id.org/italia/work-accident/onto/proc21_self_liquidation/2.2> .
 <http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <http://purl.org/dc/terms/format> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .

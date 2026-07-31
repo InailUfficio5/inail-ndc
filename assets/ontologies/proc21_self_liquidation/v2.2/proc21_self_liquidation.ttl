@@ -80,7 +80,7 @@ INAILAutoliq: a owl:Ontology ;
     dct:issued "2022-09-06T00:00:00+00:00"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
         <http://publications.europa.eu/resource/authority/language/ITA> ;
-    dct:modified "2023-12-01T00:00:00+00:00"^^xsd:dateTime ;
+    dct:modified "2026-07-30T00:00:00+00:00"^^xsd:dateTime ;
     dct:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
     dct:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
     dct:title "INAIL Ontology about Self-Liquidation"@en,
