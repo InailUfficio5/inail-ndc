@@ -30,8 +30,8 @@ INAILRM: a owl:Ontology ;
         "Risk Management INAIL Ontology"@en ;
     rdfs:comment "Ontologia INAIL relativa ai Bandi ISI di cui i concetti pricipali sono: Bando ISI, Domanda Progetto Prevenzione, Progetto Prevenzione, Elenco Cronologico Bando ISI, Presentatore Domanda Progetto Prevenzione"@it,
         "This INAIL Organization ontology describes some of the main concepts of the Bando ISI funding program, such as: Bando ISI Application Form, Risk Management Plan, Bando ISI Funding Program, Bando ISI Grant List, Bando ISI Applicant"@en ;
-    owl:versionInfo "Version 1.0 - Modified 10 February 2025"@en,
-        "Versione 1.0 - Modificata il 10 Febbraio 2025"@it ;
+    owl:versionInfo "Version 1.1 - Modified 12 October 2026"@en,
+        "Versione 1.1 - Modificata il 12 Ottobre 2026"@it ;
     rdfs:isDefinedBy INAILRM: ;
     prov:wasDerivedFrom INAILRM:1.0 ;
     adms:acronym "inail" ;
@@ -50,7 +50,7 @@ INAILRM: a owl:Ontology ;
     adms:hasTask adms:AnnotationTask,
         adms:QueryFormulationTask,
         adms:SearchTask ;
-    adms:last INAILRM:1.0 ;
+    adms:last INAILRM:1.1 ;
     adms:officialURI "https://w3id.org/italia/work-accident/onto/risk_management"^^xsd:anyURI ;
     adms:prefix "inailc" ;
     adms:prev INAILRM:1.0 ;
@@ -81,7 +81,7 @@ INAILRM: a owl:Ontology ;
     dcterms:issued "2025-02-10T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:language <http://publications.europa.eu/resource/authority/language/ENG>,
         <http://publications.europa.eu/resource/authority/language/ITA> ;
-    dcterms:modified "2025-02-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-12T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:publisher <https://w3id.org/italia/work-accident/data/organization/inail> ;
     dcterms:rightsHolder <https://w3id.org/italia/work-accident/data/organization/inail> ;
     dcterms:title "Ontologia Prevenzione di INAIL "@it,
@@ -343,6 +343,66 @@ INAILRM:verificaPraticaProgettoPrevenzioneHaStato a owl:ObjectProperty ;
 
 xsd:dateTime a rdfs:Datatype .
 
+### Annotation Properties
+
+adms:acronym a owl:AnnotationProperty .
+
+adms:hasContributor a owl:AnnotationProperty .
+
+adms:hasFormalityLevel a owl:AnnotationProperty .
+
+adms:hasKeyClass a owl:AnnotationProperty .
+
+adms:hasOntologyLanguage a owl:AnnotationProperty .
+
+adms:hasSemanticAssetDistribution a owl:AnnotationProperty .
+
+adms:hasTask a owl:AnnotationProperty .
+
+adms:last a owl:AnnotationProperty .
+
+adms:officialURI a owl:AnnotationProperty .
+
+adms:prefix a owl:AnnotationProperty .
+
+adms:prev a owl:AnnotationProperty .
+
+adms:semanticAssetInUse a owl:AnnotationProperty .
+
+adms:status a owl:AnnotationProperty .
+
+adms:target a owl:AnnotationProperty .
+
+adms:type a owl:AnnotationProperty .
+
+dcat:contactPoint a owl:AnnotationProperty .
+
+dcat:keyword a owl:AnnotationProperty .
+
+dcat:theme a owl:AnnotationProperty .
+
+dcterms:accrualPeriodicity a owl:AnnotationProperty .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:identifier a owl:AnnotationProperty .
+
+dcterms:issued a owl:AnnotationProperty .
+
+dcterms:language a owl:AnnotationProperty .
+
+dcterms:modified a owl:AnnotationProperty .
+
+dcterms:publisher a owl:AnnotationProperty .
+
+dcterms:rightsHolder a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+prov:wasDerivedFrom a owl:AnnotationProperty .
+
 ### Data Properties
 
 INAILCore:emailRappresentanteLegale a owl:DatatypeProperty ;
@@ -468,6 +528,7 @@ INAILRM:codiceBandoISI a owl:DatatypeProperty ;
 INAILRM:codiceConcessioneCOR a owl:DatatypeProperty ;
     rdfs:label "codice concessione COR"@it,
         "COR code"@en ;
+    rdfs:domain INAILRM:ProvvedimentoBandoISI ;
     rdfs:comment "Il RNA rilascia il Codice Concessione - RNA - COR che viene attributo ad ogni singola pratica con esito positivo."@it,
         "The RNA association releases the COR code to each and everyone of those Bando ISI application that have been approved and are now labelled as funding eligible. "@en .
 
@@ -488,6 +549,7 @@ INAILRM:codiceGRU a owl:DatatypeProperty ;
 INAILRM:codiceUnicoCUP a owl:DatatypeProperty ;
     rdfs:label "codice unico CUP"@it,
         "CUP code"@en ;
+    rdfs:domain INAILRM:ProvvedimentoBandoISI ;
     rdfs:comment "CUP code is assigned to those Bando ISI applications that have been approved and are now marked as eligible for the Bando ISI funding program."@en,
         "Per ciascuna domanda dichiarata ammissibile al contributo, si richiede al CIPE codice unico di progetto (CUP) che dovrà essere indicato su tutti i documenti amministrativi e contabili relativi allo specifico contributo e i provvedimenti di ammissione che lo richiedono."@it .
 
@@ -604,6 +666,7 @@ INAILRM:dataScorrimentoGraduatoriaBandoISI a owl:DatatypeProperty ;
 INAILRM:dataStatoProvvedimentoBandoISI a owl:DatatypeProperty ;
     rdfs:label "Bando ISI evaluation result status date"@en,
         "data stato provvedimento Bando ISI"@it ;
+    rdfs:domain INAILRM:ProvvedimentoBandoISI ;
     rdfs:range xsd:dateTime ;
     rdfs:comment "data dello stato del provvedimento Bando ISI"@it .
 
@@ -617,12 +680,14 @@ INAILRM:dataUltimaModificaDomandaProgettoPrevenzione a owl:DatatypeProperty ;
 INAILRM:dataUltimoAggiornamentoBandoISI a owl:DatatypeProperty ;
     rdfs:label "Bando ISI evaluation result last update date"@en,
         "data ultimo aggiornamento Bando ISI"@it ;
+    rdfs:domain INAILRM:ProvvedimentoBandoISI ;
     rdfs:range xsd:dateTime ;
     rdfs:comment "Data dell'ultimo aggiornamento provvedimento Bando ISI"@it .
 
 INAILRM:dataValutazioneProvvedimentoBandoISI a owl:DatatypeProperty ;
     rdfs:label "Bando ISI evaluation result outcome date"@en,
         "data valutazione provvedimento Bando ISI"@it ;
+    rdfs:domain INAILRM:ProvvedimentoBandoISI ;
     rdfs:range xsd:dateTime ;
     rdfs:comment "data valutazione provvedimento Bando ISI"@it .
 
@@ -1047,7 +1112,7 @@ INAILRM:verificaValutatoreTecnicoCheck a owl:DatatypeProperty ;
 CLV:Region a owl:Class .
 
 INAILCore:ComponenteSocietarioINAIL a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAILCore:importoQuoteSocietà ;
             owl:someValuesFrom rdfs:Literal ],
         [ a owl:Restriction ;
@@ -1061,21 +1126,17 @@ INAILCore:ComponenteSocietarioINAIL a owl:Class ;
             owl:someValuesFrom owl:Thing ] .
 
 INAILCore:PersonaFisica a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAILRM:ricopreRuoloDiPresentatoreDiDomandaProgettoPrevenzione ;
-            owl:someValuesFrom owl:Thing ] ;
-    rdfs:label "PersonaFisica"@it ;
-    rdfs:comment "Una persona fisica , in diritto, è l'essere umano in quanto soggetto di diritto e, quindi, dotato di capacità giuridica. Nell'ordinamento italiano, secondo l'articolo 1 del codice civile, sono persone fisiche gli esseri umani che, con la loro nascita, divengono titolari di diritti e doveri, cioè acquisiscono la capacità giuridica. Con il raggiungimento della maggiore età (18 anni per l'ordinamento italiano), la persona fisica acquisisce la capacità di agire, cioè la possibilità di porre in essere atti rilevanti ai fini giuridici."@it .
+            owl:someValuesFrom owl:Thing ] .
 
 INAILCore:PosizioneAssicurativaTerritoriale a owl:Class ;
-    rdfs:label "PosizioneAssicurativaTerritoriale"@it ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAILCore:faRiferimentoASedeDiLavoro ;
-            owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "La Posizione Assicurativa Territoriale è l’entità di riferimento del rapporto assicurativo in termini di collocazione geografica dell’attività produttiva svolta dall’Azienda. Un’Azienda può essere associata ad una o più Pat secondo la distribuzione territoriale dei lavori svolti."@it .
+            owl:someValuesFrom owl:Thing ] .
 
 INAILCore:RappresentanteLegaleINAIL a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAILCore:emailRappresentanteLegale ;
             owl:someValuesFrom rdfs:Literal ],
         [ a owl:Restriction ;
@@ -1100,19 +1161,17 @@ INAILCore:SedeINAIL a owl:Class ;
     owl:versionInfo "Tipo Struttura" .
 
 INAILCore:SedeLavoro a owl:Class ;
-    rdfs:label "SedeLavoro"@it ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILCore:faRiferimentoASedeDiLavoro ] ;
-            owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "Sede lavoro"@it ;
-    owl:incompatibleWith true .
+            owl:someValuesFrom owl:Thing ] .
 
 INAILCore:Soggetto a owl:Class ;
     rdfs:label "Soggetto"@it ;
     rdfs:comment "Un soggetto in termini fiscali: può essere una persona fisica o una azienda."@it .
 
 INAILCore:StatoDiSoggettoAssicurante a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
+    rdfs:label "Stato di Soggetto Assicurante"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAILCore:fatturatoSoggettoAssicurante ;
             owl:someValuesFrom rdfs:Literal ],
         [ a owl:Restriction ;
@@ -1127,12 +1186,13 @@ INAILCore:StatoDiSoggettoAssicurante a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILRM:domandaRelativaAStatoDiSoggettoAssicurante ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label "Stato di Soggetto Assicurante"@it ;
     rdfs:comment "Rappresenta una fotografia passata o presente di una Aziende. Permette di modellare le cratteristiche di un'Aziende che evolvono nel tempo."@it ;
     owl:incompatibleWith true .
 
 INAILRM:AssegnazioneRuoloProgettoPrevenzione a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
+    rdfs:label "Assegnazione ruolo progetto prevenzione"@it,
+        "Risk management evaluation role"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAILRM:idAssegnazioneRuolo ;
             owl:someValuesFrom rdfs:Literal ],
         [ a owl:Restriction ;
@@ -1141,13 +1201,13 @@ INAILRM:AssegnazioneRuoloProgettoPrevenzione a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILRM:haAssegnazioneRuolo ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label "Assegnazione ruolo progetto prevenzione"@it,
-        "Risk management evaluation role"@en ;
     rdfs:comment "Fase di assegnazione del valutatore alla domanda VT, CT, VA , RAI e RPP sono i ruoli e vengono istanziati per ogni domanda."@it,
         "The different roles of examination that can be assinged to a Bando ISI application such as,  VT, CT, VA, RAI and RPP."@en .
 
 INAILRM:AssePrevenzione a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
+    rdfs:label "Asse prevenzione"@it,
+        "Funding program Appendix"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAILRM:asseHaTipoInterventoAmmissibile ;
             owl:someValuesFrom owl:Thing ],
         [ a owl:Restriction ;
@@ -1177,13 +1237,13 @@ INAILRM:AssePrevenzione a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILRM:elencoRispettoAdAsse ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label "Asse prevenzione"@it,
-        "Funding program Appendix"@en ;
     rdfs:comment "Asse di finanziamento per il quale si vuole presentare la domanda relativa al bando ISI. Le tipologie di Asse sono 5: - ASSE 1 - Progetti di investimento e modelli organizzativi e di responsabilità sociale:   - Investimento (Asse 1.1)   - Adozione di modelli organizzativi e di responsabilità  sociale (Asse 1.2)- ASSE 2 - Movimentazione manuale dei carichi (MMC):    Movimentazione Manuale dei Carichi (MMC)- ASSE 3 - Bonifica da materiali contenenti amianto:    Bonifica da materiali contenenti amianto- ASSE 4 - Micro e piccole imprese operanti in specifici settori di attività :   Imprese operanti in specifici settori di attivitÃ - ASSE 5 - Agricoltura:   - Progetti del settore della produzione primaria dei prodotti agricoli (Asse 5.1)   - Progetti presentati da giovani agricoltori (Asse 5.2)"@it,
         "Each application form is associated with a particular appendix of the BANDO ISI. There are five different appendices in the bando ISI funding program. See belows: - Appendix 1 - Investment, organisational models, and social responsibility risk management plans: - Investment (at Appendix 1.1) - Organizational models and social responsibility (at Appendix 1.2) - APPENDIX 2 - Manual Handling of Loads (MMC): - APPENDIX 3 - Asbestos remediation programme - APPENDIX 4 - Microenterprise and small business programme - APPENDIX 5 - Farming: - risk management plans that focus on agriculture and primary production (at Appendix 5.1) - risk management plans by young farmers operating in the agriculture sector (at Appendix 5.2)."@en .
 
 INAILRM:AvvisoPubblicoRegionale a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
+    rdfs:label "Avviso pubblico regionale"@it,
+        "Regional official announcement"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAILRM:avvisoRelativoABando ;
             owl:someValuesFrom owl:Thing ],
         [ a owl:Restriction ;
@@ -1210,13 +1270,13 @@ INAILRM:AvvisoPubblicoRegionale a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILRM:domandaPresentataPerBando ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label "Avviso pubblico regionale"@it,
-        "Regional official announcement"@en ;
     rdfs:comment "Avviso pubblico regionale relativo al bando ISI."@it,
         "Reglional official announcement for the Bando ISI funding program."@en .
 
 INAILRM:BandoISI a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
+    rdfs:label "Bando ISI"@it,
+        "BANDO ISI funding program"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAILRM:annoDiRiferimentoBandoISI ;
             owl:someValuesFrom rdfs:Literal ],
         [ a owl:Restriction ;
@@ -1249,37 +1309,41 @@ INAILRM:BandoISI a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILRM:avvisoRelativoABando ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label "Bando ISI"@it,
-        "BANDO ISI funding program"@en ;
     rdfs:comment "BANDO ISI is a funding grant program sponsored by the INAIL institution. Its main puprose is to support companies to reduce risks and improve safety in the workplace. In order to be approved for any of the Bando ISI grants, applicants must successfully complete the three different selection stages. Stage no.1 application review. Stage no.2 a selection process named CLICK DAY that gives direct acces to the official BANDO ISI list. Stage no 3 final decision, INAIL will have 30 days max to check all the documentation provided and make an offer to successfull applicants."@en,
         "Il Bando ISI è un finanziamento a fondo perduto promosso dall'INAIL, il quale ha l'obiettivo di incentivare le imprese ad investire nel miglioramento della sicurezza sul lavoro. Il suddetto contributo a fondo perduto viene erogato alle imprese che superano una prima analisi (studio di fattibilità) e successivamente rientrano nella graduatoria con esito positivo, il Click Day Inail. All'ingresso in graduatoria Click Day Inail con esito positivo, segue entro 30 giorni una documentazione per verificare la spesa e la successiva rendicontazione."@it .
 
 INAILRM:DomandaCheHasuperatoIlClickDay a owl:Class ;
     rdfs:label "Domanda che hasuperato il click day"@it,
         "Successful Click Day Application"@en ;
+    rdfs:subClassOf INAILRM:DomandaProgettoPrevenzione ;
     rdfs:comment "Applications that have passed the clickday application process."@en,
         "Domanda che hasuperato il click day"@it .
 
 INAILRM:DomandaCheNonHaPartecipatoAlClickDay a owl:Class ;
     rdfs:label "Application that has failed to join the clickDay application process"@en,
         "Domanda che non ha partecipato al click day"@it ;
+    rdfs:subClassOf INAILRM:DomandaProgettoPrevenzione ;
     rdfs:comment "Application that has failed to join the clickDay application process"@en,
         "Domanda che non ha partecipato al click day"@it .
 
 INAILRM:DomandaCheNonHaSuperatoIlClickDay a owl:Class ;
     rdfs:label "Domanda che non ha superato il click day"@it,
         "Unsuccessful ClickDay application"@en ;
+    rdfs:subClassOf INAILRM:DomandaProgettoPrevenzione ;
     rdfs:comment "ClickDay application forms that have not passed the selection process"@en,
         "Domanda che non ha superato il click day"@it .
 
 INAILRM:DomandaDecaduta a owl:Class ;
     rdfs:label "Domanda decaduta"@it,
         "Expired Bando ISI application"@en ;
+    rdfs:subClassOf INAILRM:DomandaProgettoPrevenzione ;
     rdfs:comment "An application that has exipered, thus, removed from the Bando ISI official ranking list."@en,
         "Domanda che è stata esclusa dalla graduatoria"@it .
 
 INAILRM:DomandaProgettoPrevenzione a owl:Class ;
-    owl:equivalentClass [ a owl:Class ;
+    rdfs:label "Bando ISI application form"@en,
+        "Domanda progetto prevenzione"@it ;
+    rdfs:subClassOf [ a owl:Class ;
             owl:unionOf (
                     INAILRM:DomandaCheHasuperatoIlClickDay
                     INAILRM:DomandaCheNonHaPartecipatoAlClickDay
@@ -1343,36 +1407,38 @@ INAILRM:DomandaProgettoPrevenzione a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILRM:presentaDomandaProgettoPrevenzione ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label "Bando ISI application form"@en,
-        "Domanda progetto prevenzione"@it ;
     rdfs:comment "Domanda di partecipazione al bando ISI contenente le informazioni dell'impresa e del progetto di prevenzione che la stessa intende presentare."@it,
         "INAIL Bando ISI application form that includes the business details as well as their risk management plan."@en .
 
 INAILRM:DomandaProgettoPrevenzioneAmmessaAlFinanziamento a owl:Class ;
     rdfs:label "Bando ISI application approved"@en,
         "Domanda progetto prevenzione ammessa al finanziamento"@it ;
+    rdfs:subClassOf INAILRM:DomandaProgettoPrevenzione ;
     rdfs:comment "Bando ISI applications that have been approved for a particular section of the Bando ISI grant which they have applied for."@en,
         "Domanda progetto prevenzione ammessa al finanziamento del Bando ISI a cui ha partecipato."@it .
 
 INAILRM:DomandaProgettoPrevenzioneAnnullata a owl:Class ;
     rdfs:label "Bando ISI application withdrawn"@en,
         "Domanda progetto prevenzione annullata"@it ;
+    rdfs:subClassOf INAILRM:DomandaProgettoPrevenzione ;
     rdfs:comment "Applications that have been withdrawn by applicants."@en,
         "Domanda annullata dal presentatore della domanda."@it .
 
 INAILRM:DomandaProgettoPrevenzioneDecaduta a owl:Class ;
-    owl:equivalentClass [ a owl:Class ;
+    rdfs:label "Bando ISI application denied"@en,
+        "Domanda progetto prevenzione decaduta"@it ;
+    rdfs:subClassOf INAILRM:DomandaProgettoPrevenzione,
+        [ a owl:Class ;
             owl:unionOf (
                     INAILRM:DomandaProgettoPrevenzioneDecadutaPerAccessiMultipli
                     INAILRM:DomandaProgettoPrevenzioneDecadutaPerMancanzaDocumentazione ) ] ;
-    rdfs:label "Bando ISI application denied"@en,
-        "Domanda progetto prevenzione decaduta"@it ;
     rdfs:comment "Applicant has failed to provide required documentation or has too many login attempts."@en,
         "Una domanda che non è più valida per due motivi: accessi multipli o mancata documentazione."@it .
 
 INAILRM:DomandaProgettoPrevenzioneDecadutaPerAccessiMultipli a owl:Class ;
     rdfs:label "Bando ISI application denied due to multiple login attempts"@en,
         "Domanda progetto prevenzione decaduta per accessi multipli"@it ;
+    rdfs:subClassOf INAILRM:DomandaProgettoPrevenzioneDecaduta ;
     owl:disjointWith INAILRM:DomandaProgettoPrevenzioneDecadutaPerMancanzaDocumentazione ;
     rdfs:comment "Application denied on the basis of multiple login attempts from various IP addresses."@en,
         "Domanda decaduta perché diversi utenti hanno provato ad accedere al click day mentre ne può accedere solamente uno."@it .
@@ -1380,47 +1446,56 @@ INAILRM:DomandaProgettoPrevenzioneDecadutaPerAccessiMultipli a owl:Class ;
 INAILRM:DomandaProgettoPrevenzioneDecadutaPerMancanzaDocumentazione a owl:Class ;
     rdfs:label "Application denied due to lack of necessary documentation"@en,
         "Domanda progetto prevenzione decaduta per mancanza documentazione"@it ;
+    rdfs:subClassOf INAILRM:DomandaProgettoPrevenzioneDecaduta ;
     rdfs:comment "Applicant has failed to provide necessary documentation thus application is denied on the basis of lack of supporting documents."@en,
         "Domanda decaduta perché non è stata presentata la documentazione necessaria."@it .
 
 INAILRM:DomandaProgettoPrevenzioneInBozza a owl:Class ;
     rdfs:label "Bando ISI application in Draft folder"@en,
         "Domanda progetto prevenzione in bozza"@it ;
+    rdfs:subClassOf INAILRM:DomandaProgettoPrevenzione ;
     rdfs:comment "An Application that is currently in drafts."@en,
         "Domanda di un progetto prevenzione in stato di bozza."@it .
 
 INAILRM:DomandaProgettoPrevenzioneInRendicontazione a owl:Class ;
     rdfs:label "Bando ISI application under review"@en,
         "Domanda progetto prevenzione in rendicontazione"@it ;
+    rdfs:subClassOf INAILRM:DomandaProgettoPrevenzione ;
     rdfs:comment "An application that is currently in the screening process."@en,
         "Domanda nello stato di rendicontazione."@it .
 
 INAILRM:DomandaProgettoPrevenzioneInRichiestaChiarimenti a owl:Class ;
     rdfs:label "Bando ISI application waiting for clarification"@en,
         "Domanda progetto prevenzione in richiesta chiarimenti"@it ;
+    rdfs:subClassOf INAILRM:DomandaProgettoPrevenzione ;
     rdfs:comment "An application form that needs additional clarification, thus, it's paused until applicant's response."@en,
         "Domanda progetto prevenzione che richiede ulteriori chiarimenti."@it .
 
 INAILRM:DomandaProgettoPrevenzioneInVerifica a owl:Class ;
     rdfs:label "Bando ISI application in progress"@en,
         "Domanda progetto prevenzione in verifica"@it ;
+    rdfs:subClassOf INAILRM:DomandaProgettoPrevenzione ;
     rdfs:comment "An application that has been received and is currently in the background check process."@en,
         "Domanda per progetto prevenzione in stato di verifica."@it .
 
 INAILRM:DomandaProgettoPrevenzioneRegistrata a owl:Class ;
     rdfs:label "Bando ISI application status received"@en,
         "Domanda progetto prevenzione registrata"@it ;
+    rdfs:subClassOf INAILRM:DomandaProgettoPrevenzione ;
     rdfs:comment "An application that has been received."@en,
         "Domanda di progetto prevenzione che è stata registrata."@it .
 
 INAILRM:ElencoBandoISIClickDay a owl:Class ;
     rdfs:label "Click Day Bando ISI list"@en,
         "Elenco Bando ISI Click Day"@it ;
+    rdfs:subClassOf INAILRM:ElencoCronologicoBandoISI ;
     owl:disjointWith INAILRM:ElencoNCD ;
     rdfs:comment "Elenchi Bando ISI delle domande che hanno partecipato al Click Day divise per regione e per asse di finanziamento. "@it .
 
 INAILRM:ElencoCronologicoBandoISI a owl:Class ;
-    owl:equivalentClass [ a owl:Class ;
+    rdfs:label "Bando ISI grant list"@en,
+        "Elenco cronologico bando ISI"@it ;
+    rdfs:subClassOf [ a owl:Class ;
             owl:unionOf (
                     INAILRM:ElencoBandoISIClickDay
                     INAILRM:ElencoNCD ) ],
@@ -1451,36 +1526,37 @@ INAILRM:ElencoCronologicoBandoISI a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILRM:domandaRiferitaAdElenco ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label "Bando ISI grant list"@en,
-        "Elenco cronologico bando ISI"@it ;
     rdfs:comment "Bando ISI grant lists."@en,
         "Domande Bando ISI ammesse agli elenchi cronologici. "@it .
 
 INAILRM:ElencoCronologicoBandoISIDefinitivo a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
-            owl:onProperty [ owl:inverseOf INAILRM:haElencoCronologicoDefinitivo ] ;
-            owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Bando ISI official ranking list"@en,
         "Elenco Cronologico Bando ISI Definitivo"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILRM:haElencoCronologicoDefinitivo ] ;
+            owl:someValuesFrom owl:Thing ] ;
     rdfs:comment "Each and every Bando ISI list has an official Bando ISI ranking list and a temporary one."@en,
         "Ogni istanza delle classi Elenco Click Day e Elenco NCD deve avere un elenco cronologico Bando ISI definitivo."@it .
 
 INAILRM:ElencoCronologicoBandoISIProvvisorio a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
-            owl:onProperty [ owl:inverseOf INAILRM:haElencoCronologicoProvvisorio ] ;
-            owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Bando ISI temporary ranking list"@en,
         "Elenco Cronologico Bando ISI Provvisorio"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILRM:haElencoCronologicoProvvisorio ] ;
+            owl:someValuesFrom owl:Thing ] ;
     rdfs:comment "Each and every Bando ISI list has an official Bando ISI ranking list and a temporary one."@en,
         "Ogni istanza delle classi Elenco Click Day e Elenco NCD deve avere un elenco cronologico Bando ISI provvisorio."@it .
 
 INAILRM:ElencoNCD a owl:Class ;
     rdfs:label "ElencoNCD"@it,
         "NCD Bando ISI list"@en ;
+    rdfs:subClassOf INAILRM:ElencoCronologicoBandoISI ;
     rdfs:comment "Elenchi regionali/provinciali No Click Day. "@it .
 
 INAILRM:Perito a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
+    rdfs:label "Perito"@it,
+        "Quantity Surveyor"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAILRM:alboProfessionalePerito ;
             owl:someValuesFrom rdfs:Literal ],
         [ a owl:Restriction ;
@@ -1501,13 +1577,13 @@ INAILRM:Perito a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILRM:ricopreRuoloDiPerito ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label "Perito"@it,
-        "Quantity Surveyor"@en ;
     rdfs:comment "An expert whose main role is to carry out a survey on behalf of either a private client or a judge. The latter, usually gets involved in the inspection process, only in case of an appeall or final examination. A judge can decide to appoint a second Quantity Surveyor to help them decide if the assesed plan can potentially qualify for the INAIL managemnt risk funding program."@en,
         "Esperto incaricato di un'indagine tecnica (perizia) per conto di privati, sia per incarico del giudice, cui riferisce mediante dichiarazione giurata. Il giudice interviene solo se c'è un ricorso e si arriva in giudizio. In tal caso il giudice può nominare un secondo perito per capire se il progetto di prevenzione può beneficiare o meno al finanziamento."@it .
 
 INAILRM:PeriziaProgettoPrevenzione a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
+    rdfs:label "Perizia progetto prevenzione"@it,
+        "Risk managment plan survey"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAILRM:dataInvioPeriziaProgettoPrevenzione ;
             owl:someValuesFrom rdfs:Literal ],
         [ a owl:Restriction ;
@@ -1519,13 +1595,13 @@ INAILRM:PeriziaProgettoPrevenzione a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILRM:progettoPrevenzioneAssociatoAPerizia ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label "Perizia progetto prevenzione"@it,
-        "Risk managment plan survey"@en ;
     rdfs:comment "Analisi tecnica redatta dal perito riguardo il progetto di prevenzione proposto per la partecipazione al bando Isi."@it,
         "Technical evaluation of a risk management plan carried out by a Quantity Surveyor in order for an applicant to apply for the INAIL Bando ISI program and funding."@en .
 
 INAILRM:PraticaProgettoPrevenzione a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
+    rdfs:label "Bando ISI application dossier"@en,
+        "Pratica progetto prevenzione"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAILRM:dataOperazionePraticaProgettoPrevenzione ;
             owl:someValuesFrom rdfs:Literal ],
         [ a owl:Restriction ;
@@ -1549,13 +1625,13 @@ INAILRM:PraticaProgettoPrevenzione a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty INAILRM:statoPraticaProgettoPrevenzione ;
             owl:someValuesFrom rdfs:Literal ] ;
-    rdfs:label "Bando ISI application dossier"@en,
-        "Pratica progetto prevenzione"@it ;
     rdfs:comment "Pratica relativa a una domanda di progetto prevenzione. La pratica ha degli stati passati che si susseguono nell'evolversi della pratica."@it,
         "There are different crucial stages of a Bando ISI application process and they are all stored in a dossier."@en .
 
 INAILRM:PresentatoreDomandaProgettoPrevenzione a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
+    rdfs:label "Bando ISI applicant"@en,
+        "Presentatore domanda progetto prevenzione"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAILRM:codiceGRU ;
             owl:someValuesFrom rdfs:Literal ],
         [ a owl:Restriction ;
@@ -1570,49 +1646,55 @@ INAILRM:PresentatoreDomandaProgettoPrevenzione a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILRM:ricopreRuoloDiPresentatoreDiDomandaProgettoPrevenzione ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label "Bando ISI applicant"@en,
-        "Presentatore domanda progetto prevenzione"@it ;
     rdfs:comment "A Bando ISI applicant is someone such as a designeted employee or a legal rapresentative of a company who is in charge of submitting the Bando ISI application to join the Bando ISI funding program on behalf of the company."@en,
         "Soggetto che presenta la domanda di partecipazione al bando ISI per conto di un'azienda. Il presentatore può essere il rappresentante legale dell'azienda o un suo dipendente di fiducia, oppure un intermediario."@it .
 
 INAILRM:ProgettoBonificaAmianto a owl:Class ;
     rdfs:label "Asbestos remediation program"@en,
         "Progetto bonifica amianto"@it ;
+    rdfs:subClassOf INAILRM:ProgettoPrevenzione ;
     rdfs:comment "A risk management plan that focuses on section 3, the asbestos remediation programme, of the INAIL Bando ISI funding program."@en,
         "Progetto di prevenzione presentato da un'azienda relativamente all'Asse 3 di finanziamento (Bonifica da materiali contenenti amianto)."@it .
 
 INAILRM:ProgettoDiInvestimento a owl:Class ;
     rdfs:label "Investment plan"@en,
         "Progetto di investimento"@it ;
+    rdfs:subClassOf INAILRM:ProgettoPrevenzione ;
     rdfs:comment "A risk management plan developed by a business or Insurer that focuses on section 1.1, investment , of the INAIL Bando ISI funding program."@en,
         "Progetto di prevenzione presentato da un'azienda relativamente all'Asse 1.1 di finanziamento (Investimento)."@it .
 
 INAILRM:ProgettoGiovaniAgricoltori a owl:Class ;
     rdfs:label "Progetto giovani agricoltori"@it,
         "Young Farming Scheme"@en ;
+    rdfs:subClassOf INAILRM:ProgettoPrevenzione ;
     rdfs:comment "A risk management plan that focuses on section 5.2 of the INAIL Bando ISI funding program. This section addresses young farmers operating in the agricultural field."@en,
         "Progetto di prevenzione presentato da un'azienda relativamente all'Asse 5.2 di finanziamento (Progetti presentati da giovani agricoltori)."@it .
 
 INAILRM:ProgettoMicroEPiccoleImprese a owl:Class ;
     rdfs:label "Microenterprise and small business program"@en,
         "Progetto micro e piccole imprese"@it ;
+    rdfs:subClassOf INAILRM:ProgettoPrevenzione ;
     rdfs:comment "A risk management plan developed by an Insurer that focuses on section 4, 'Businesses that provide only certain types of service' , of the INAIL Bando ISI funding program"@en,
         "Progetto di prevenzione presentato da un'azienda relativamente all'Asse 4 di finanziamento (Imprese operanti in specifici settori di attività)."@it .
 
 INAILRM:ProgettoModelliOrganizzativiEResponsabilitàSociale a owl:Class ;
     rdfs:label "Corporate Social Responsibility and organizational structure plan"@en,
         "Progetto modelli organizzativi e responsabilità sociale"@it ;
+    rdfs:subClassOf INAILRM:ProgettoPrevenzione ;
     rdfs:comment "Corporate Social Responsibility and organizational structure plan"@en,
         "Progetto modelli organizzativi e responsabilità sociale"@it .
 
 INAILRM:ProgettoMovimentazioneManualeCarichi a owl:Class ;
     rdfs:label "Manual Handling of Load Plan"@en,
         "Progetto movimentazione manuale carichi"@it ;
+    rdfs:subClassOf INAILRM:ProgettoPrevenzione ;
     rdfs:comment "A risk management plan that focuses on section 2, Manual Handling of Loads, of the INAIL Bando ISI funding program."@en,
         "Progetto di prevenzione presentato da un'azienda relativamente all'Asse 2 di finanziamento (Movimentazione Manuale dei Carichi (MMC))."@it .
 
 INAILRM:ProgettoPrevenzione a owl:Class ;
-    owl:equivalentClass [ a owl:Class ;
+    rdfs:label "Progetto prevenzione"@it,
+        "Risk management plan"@en ;
+    rdfs:subClassOf [ a owl:Class ;
             owl:unionOf (
                     INAILRM:ProgettoBonificaAmianto
                     INAILRM:ProgettoDiInvestimento
@@ -1669,19 +1751,20 @@ INAILRM:ProgettoPrevenzione a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILRM:domandaPresentaProgettoDiPrevenzione ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label "Progetto prevenzione"@it,
-        "Risk management plan"@en ;
     rdfs:comment "A risk management plan is a type of document that a business needs to put together to reduce risks in the workplace. In the context of BANDO ISI funding program, a risk management plan is a requirement for the INAIL institution to apply for the grants available in the Bando ISI program."@en,
         "Progetto di prevenzione finalizzato a migliorare la sicurezza sul posto di lavoro. Tale progetto viene presentato da un'azienda per ottenere i contributi a fondo perduto del bando ISI."@it .
 
 INAILRM:ProgettoProduzionePrimariaProdottiAgricoli a owl:Class ;
     rdfs:label "Progetto agricoltori over"@it,
         "Senior Farming Scheme"@en ;
+    rdfs:subClassOf INAILRM:ProgettoPrevenzione ;
     rdfs:comment "A risk management plan that focuses on section 5.1 of the INAIL Bando ISI funding program. This section is for business in the agriculture and primary production field."@en,
         "Progetto di prevenzione presentato da un'azienda relativamente all'Asse 5.1 di finanziamento (Progetti del settore della produzione primaria dei prodotti agricoli)."@it .
 
 INAILRM:ProvvedimentoBandoISI a owl:Class ;
-    owl:equivalentClass [ a owl:Class ;
+    rdfs:label "Bando ISI evaluation result"@en,
+        "Provvedimento Bando ISI"@it ;
+    rdfs:subClassOf [ a owl:Class ;
             owl:unionOf (
                     INAILRM:ProvvedimentoConcessioneBandoISI
                     INAILRM:ProvvedimentoConcessioneParziale
@@ -1692,40 +1775,27 @@ INAILRM:ProvvedimentoBandoISI a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILRM:PraticaProgettoPrevenzioneHaProvvedimetoBandoISI ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label "Bando ISI evaluation result"@en,
-        "Provvedimento Bando ISI"@it ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty INAILRM:codiceConcessioneCOR ;
-            owl:someValuesFrom rdfs:Literal ],
-        [ a owl:Restriction ;
-            owl:onProperty INAILRM:codiceUnicoCUP ;
-            owl:someValuesFrom rdfs:Literal ],
-        [ a owl:Restriction ;
-            owl:onProperty INAILRM:dataStatoProvvedimentoBandoISI ;
-            owl:someValuesFrom rdfs:Literal ],
-        [ a owl:Restriction ;
-            owl:onProperty INAILRM:dataUltimoAggiornamentoBandoISI ;
-            owl:someValuesFrom rdfs:Literal ],
-        [ a owl:Restriction ;
-            owl:onProperty INAILRM:dataValutazioneProvvedimentoBandoISI ;
-            owl:someValuesFrom rdfs:Literal ] ;
     rdfs:comment "A bando ISI funding application can have three different outcomes: awarded, partially awarded, and rejected."@en,
         "La classe Provvedimento Bando ISI ragruppa le tre tipologie di provvedimento Bando ISI ovvero: Il provvedimento di concessione, il provvedimento di concessione parziale e il provvedimento di esclusione."@it .
 
 INAILRM:ProvvedimentoConcessioneBandoISI a owl:Class ;
     rdfs:label "Bando ISI Funding Awarded"@en,
         "Provvedimento Concessione Bando ISI"@it ;
+    rdfs:subClassOf INAILRM:ProvvedimentoBandoISI ;
     rdfs:comment "Il provvedimento di concessione è un atto amministrativo con cui l'INAIL approva la richiesta di finanziamento presentata da un'azienda o ente per un progetto di prevenzione. Questo provvedimento sancisce l'assegnazione del contributo economico, nei termini stabiliti dal bando per la realizzazione di interventi volti al miglioramento delle condizioni di salute e sicurezza nei luoghi di lavoro."@it,
         "The Bando ISI grant scheme has been awarded by the INAIL organization. Contracts are now binding.  "@en .
 
 INAILRM:ProvvedimentoConcessioneParziale a owl:Class ;
     rdfs:label "Bando ISI Funding Partially Awarded"@en,
         "Provvedimento Concessione Parziale"@it ;
+    rdfs:subClassOf INAILRM:ProvvedimentoBandoISI ;
     rdfs:comment "Atto amministrativo in cui l'INAIL riconosce al richiedente un finanziamento parziale rispetto alla somma richiesta inizialmente nel progetto di prevenzione presentato. Questo provvedimento viene emesso quando, a seguito delle verifiche tecniche e amministrative, non è possibile concedere l'intero importo richiesto ma si approva comunque una parte del finanziamento."@it,
         "The Bando ISI grant scheme has been partially awarded by the INAIL organization."@en .
 
 INAILRM:ProvvedimentoDiRendicontazione a owl:Class ;
-    owl:equivalentClass [ a owl:Class ;
+    rdfs:label "Bando ISI Financial Reporting"@en,
+        "Provvedimento di Rendicontazione"@it ;
+    rdfs:subClassOf [ a owl:Class ;
             owl:unionOf (
                     INAILRM:RendicontazioneConDiniego
                     INAILRM:RendicontazioneConLiquidazioneParziale
@@ -1739,14 +1809,13 @@ INAILRM:ProvvedimentoDiRendicontazione a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILRM:haProvvedimentoDiRendicontazione ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label "Bando ISI Financial Reporting"@en,
-        "Provvedimento di Rendicontazione"@it ;
     rdfs:comment "A seguito dell'esito positivo della verifica amministrativa e tecnica delle rendicontazione, il responsabile di Area Prevenzione emette il provvedimento di rendicontazione il quale è condizionato dal provvedimento di concessione."@it,
         "When a Bando ISI scheme is awarded or partially awarded, it is then followed up by the Bando ISI financial reporting process."@en .
 
 INAILRM:ProvvedimentoEsclusioneBandoISI a owl:Class ;
     rdfs:label "Bando ISI Funding Rejected"@en,
         "Provvedimento Esclusione Bando ISI"@it ;
+    rdfs:subClassOf INAILRM:ProvvedimentoBandoISI ;
     owl:disjointWith [ a owl:Restriction ;
             owl:onProperty INAILRM:haProvvedimentoDiRendicontazione ;
             owl:someValuesFrom owl:Thing ] ;
@@ -1754,23 +1823,30 @@ INAILRM:ProvvedimentoEsclusioneBandoISI a owl:Class ;
         "Il provvedimento di esclusione e il suo preavviso avviene nel caso in cui la pratica non abbia superato la fase di istruttoria tecnica e la fase di istruttoria amministrativa. Tale provvedimento di esclusione dal bando viene notificato alle aziende a seguito dell’invio del preavviso di non ammissione e nel caso in cui l’azienda non abbia presentato le proprie osservazioni in merito alla decisione dell’Istituto entro la scadenza stabilita dal Bando."@it .
 
 INAILRM:RendicontazioneConDiniego a owl:Class ;
-    rdfs:label "Rendicontazione con diniego"@it ;
-    rdfs:comment "All'interno della comunicazione di diniego sono esplicitate le motivazioni della scelta; l'Impresa ha un tempo di dieci giorni per presentare le proprie osservazioni in merito alla decisione dell’Istituto. Se l’impresa presenta le proprie osservazioni queste saranno esaminate attraverso nuove verifiche tecniche e amministrative sulla rendicontazione. Viceversa si procederà con il rigetto definitivo e, qualora all’impresa sia stata erogata un‘anticipazione, si procederà con l’escussione della fideiussione. In caso contrario si procede direttamente con il rigetto della pratica."@it .
+    rdfs:label "Bando ISI Credit Denial"@en,
+        "Rendicontazione con diniego"@it ;
+    rdfs:subClassOf INAILRM:ProvvedimentoDiRendicontazione ;
+    rdfs:comment "All'interno della comunicazione di diniego sono esplicitate le motivazioni della scelta; l'Impresa ha un tempo di dieci giorni per presentare le proprie osservazioni in merito alla decisione dell’Istituto. Se l’impresa presenta le proprie osservazioni queste saranno esaminate attraverso nuove verifiche tecniche e amministrative sulla rendicontazione. Viceversa si procederà con il rigetto definitivo e, qualora all’impresa sia stata erogata un‘anticipazione, si procederà con l’escussione della fideiussione. In caso contrario si procede direttamente con il rigetto della pratica."@it,
+        "Bando ISI credit denial refers to the rejection of a Bando ISI application due to inconsistency in their financial reporting as well as other reasons. Applicants who wish to appeal the denial will have 10 working days from the date of their rejection notification to submit their appeal."@en .
 
 INAILRM:RendicontazioneConLiquidazioneParziale a owl:Class ;
     rdfs:label "Partially satisfied Bando ISI financial reporting"@en,
         "Rendicontazione con liquidazione parziale"@it ;
+    rdfs:subClassOf INAILRM:ProvvedimentoDiRendicontazione ;
     rdfs:comment "Nel caso di provvedimento di rendicontazione con liquidazione parziale, all'interno della comunicazione vengono esplicitate le motivazioni della scelta; l'Impresa ha un tempo di dieci giorni per presentare le proprie osservazioni in merito alla decisione dell’Istituto."@it,
         "The accounting reporting performance is only partially satisfied"@en .
 
 INAILRM:RendicontazioneConLiquidazioneTotale a owl:Class ;
     rdfs:label "Compliant Bando ISI finacial reporting"@en,
         "Rendicontazione con liquidazione totale"@it ;
+    rdfs:subClassOf INAILRM:ProvvedimentoDiRendicontazione ;
     rdfs:comment "A Bando ISI financial reporting that satisfies compliance requirements"@en,
         "La domanda progetto prevenzione è stata ammessa in modo totale al finanziamento"@it .
 
 INAILRM:StatoPassatoPraticaProgettoPrevenzione a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
+    rdfs:label "Bando ISI Archive"@en,
+        "Stato passato pratica progetto prevenzione"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAILRM:dataOperazioneStatoPassatoPraticaProgettoPrevenzione ;
             owl:someValuesFrom rdfs:Literal ],
         [ a owl:Restriction ;
@@ -1785,21 +1861,16 @@ INAILRM:StatoPassatoPraticaProgettoPrevenzione a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILRM:praticaProgettoPrevenzioneHaStatoPassato ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label "Bando ISI Archive"@en,
-        "Stato passato pratica progetto prevenzione"@it ;
     rdfs:comment "Each arvhived application can still be access through the Bando ISI archive. Each stage of an application is tracked and stored as a record."@en,
         "Lo stato passato di una pratica. Ogni pratica avrà uno o più stati passati che modellano l'evolversi della pratica nel tempo."@it .
 
 INAILRM:StatoVerificaPraticaProgettoPrevenzione a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
-            owl:onProperty INAILRM:dataOperazioneVerificaPraticaProgettoPrevenzione ;
-            owl:someValuesFrom rdfs:Literal ],
-        [ a owl:Restriction ;
-            owl:onProperty [ owl:inverseOf INAILRM:verificaPraticaProgettoPrevenzioneHaStato ] ;
-            owl:someValuesFrom owl:Thing ] ;
     rdfs:label "Bando ISI application examination status"@en,
         "Stato verifica pratica progetto prevenzione"@it ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty INAILRM:dataOperazioneVerificaPraticaProgettoPrevenzione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
             owl:onProperty INAILRM:verificaValutatoreAmministrativo ;
             owl:someValuesFrom rdfs:Literal ],
         [ a owl:Restriction ;
@@ -1810,12 +1881,17 @@ INAILRM:StatoVerificaPraticaProgettoPrevenzione a owl:Class ;
             owl:someValuesFrom rdfs:Literal ],
         [ a owl:Restriction ;
             owl:onProperty INAILRM:verificaValutatoreTecnicoCheck ;
-            owl:someValuesFrom rdfs:Literal ] ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILRM:verificaPraticaProgettoPrevenzioneHaStato ] ;
+            owl:someValuesFrom owl:Thing ] ;
     rdfs:comment "Rappresenta la fase o il risultato del processo di verifica per una specifica pratica."@it,
         "The Bando ISI application examination status class rapresents a record of the last outcome of a Bando ISI application. "@en .
 
 INAILRM:TipoInterventoBandiISI a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
+    rdfs:label "Bando ISI program strategy"@en,
+        "Tipo  Intervento Bandi ISI"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAILRM:descrizioneTipoIntervento ;
             owl:someValuesFrom rdfs:Literal ],
         [ a owl:Restriction ;
@@ -1839,13 +1915,13 @@ INAILRM:TipoInterventoBandiISI a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILRM:progettoHaTipoIntervento ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label "Bando ISI program strategy"@en,
-        "Tipo  Intervento Bandi ISI"@it ;
     rdfs:comment "Indica le tipologie di intervento che si intende effettuare con il progetto di prevenzione relativamente ad uno degli assi del bando ISI."@it,
         "The different strategies availabe in the INAIL Bando ISI program."@en .
 
 INAILRM:TipologiaDiAcquistoProgettoPrevenzione a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
+    rdfs:label "Tipologia di acquisto progetto prevenzione"@it,
+        "Types of availabe trade or purchase in a risk management plan"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAILRM:descrizioneTipoAcquisto ;
             owl:someValuesFrom rdfs:Literal ],
         [ a owl:Restriction ;
@@ -1854,24 +1930,19 @@ INAILRM:TipologiaDiAcquistoProgettoPrevenzione a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf INAILRM:progettoHaTipologiaDiAcquisto ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:label "Tipologia di acquisto progetto prevenzione"@it,
-        "Types of availabe trade or purchase in a risk management plan"@en ;
     rdfs:comment "Indica le tipologie di acquisto relative al progetto di prevenzione relativamente ad uno degli assi del bando ISI."@it,
         "The availabe trades or purchases listed under a particular area or appendix of the INAIL Bando ISI program and specified in a risk management plan application form."@en .
 
 INAILRM:VerificaPraticaProgettoPrevenzione a owl:Class ;
-    owl:equivalentClass [ a owl:Restriction ;
+    rdfs:label "Bando ISI examination checklist"@en,
+        "Verifica pratica progetto prevenzione"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAILRM:haAssegnazioneRuolo ;
             owl:someValuesFrom owl:Thing ],
         [ a owl:Restriction ;
             owl:onProperty INAILRM:verificaPraticaProgettoPrevenzioneHaStato ;
             owl:someValuesFrom owl:Thing ],
         [ a owl:Restriction ;
-            owl:onProperty [ owl:inverseOf INAILRM:praticaProgettoPrevenzioneVerificataDa ] ;
-            owl:someValuesFrom owl:Thing ] ;
-    rdfs:label "Bando ISI examination checklist"@en,
-        "Verifica pratica progetto prevenzione"@it ;
-    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty INAILRM:verificaValutatoreAmministrativo ;
             owl:someValuesFrom rdfs:Literal ],
         [ a owl:Restriction ;
@@ -1882,7 +1953,10 @@ INAILRM:VerificaPraticaProgettoPrevenzione a owl:Class ;
             owl:someValuesFrom rdfs:Literal ],
         [ a owl:Restriction ;
             owl:onProperty INAILRM:verificaValutatoreTecnicoCheck ;
-            owl:someValuesFrom rdfs:Literal ] ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf INAILRM:praticaProgettoPrevenzioneVerificataDa ] ;
+            owl:someValuesFrom owl:Thing ] ;
     rdfs:comment "Processo attraverso il quale l'INAIL esamina una pratica di finanziamento Bando ISI con l'obiettivo di accertare che il progetto soddisfi i requisiti stabiliti dal bando e che la documentazione fornita sia completa e corretta. La verifica ha una valutazione tecnica e una valutazione amministrativa"@it,
         "The Bando ISI review class rapresents the examination process of in the Bando ISI application process. Each Bando ISI application can have more than one examination and different sections of an application can be subjected to an examination by the INAIL institution. "@en .
 

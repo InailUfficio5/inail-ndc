@@ -1,5 +1,5 @@
 <https://w3id.org/italia/work-accident/onto/risk_management/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/italia/work-accident/onto/risk_management/> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/italia/work-accident/onto/risk_management/1.0> .
+<https://w3id.org/italia/work-accident/onto/risk_management/> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/italia/work-accident/onto/risk_management/1.1> .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/italia/onto/CLV/> .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/italia/onto/COV/> .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/italia/onto/CPV/> .
@@ -8,13 +8,13 @@
 <https://w3id.org/italia/work-accident/onto/risk_management/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/italia/onto/l0/> .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <http://purl.org/dc/terms/accrualPeriodicity> <http://publications.europa.eu/resource/authority/frequency/IRREG> .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <http://purl.org/dc/terms/creator> <https://w3id.org/italia/work-accident/data/organization/inail> .
-<https://w3id.org/italia/work-accident/onto/risk_management/> <http://purl.org/dc/terms/description> "Ontologia INAIL relativa ai Bandi ISI, un finanziamento a fondo perduto promosso dall'INAIL, il quale ha l'obiettivo di incentivare le imprese ad investire nel miglioramento della sicurezza sul lavoro"@it .
+<https://w3id.org/italia/work-accident/onto/risk_management/> <http://purl.org/dc/terms/description> "Ontologia INAIL relativa ai Bandi ISI un finanziamento a fondo perduto promosso dall'INAIL, il quale ha l'obiettivo di incentivare le imprese ad investire nel miglioramento della sicurezza sul lavoro"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <http://purl.org/dc/terms/description> "This INAIL Organization ontology describes the Bando ISI scheme, a funding grant program sponsored by the INAIL institution whose main puprose is to support companies to reduce risks and improve safety in the workplace."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <http://purl.org/dc/terms/identifier> "https://w3id.org/italia/work-accident/onto/core" .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <http://purl.org/dc/terms/issued> "2025-02-10T00:00:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG> .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ITA> .
-<https://w3id.org/italia/work-accident/onto/risk_management/> <http://purl.org/dc/terms/modified> "2025-02-10T00:00:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/italia/work-accident/onto/risk_management/> <http://purl.org/dc/terms/modified> "2026-10-12T00:00:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <http://purl.org/dc/terms/publisher> <https://w3id.org/italia/work-accident/data/organization/inail> .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <http://purl.org/dc/terms/rightsHolder> <https://w3id.org/italia/work-accident/data/organization/inail> .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <http://purl.org/dc/terms/title> "Ontologia Prevenzione di INAIL "@it .
@@ -24,8 +24,8 @@
 <https://w3id.org/italia/work-accident/onto/risk_management/> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/italia/work-accident/onto/risk_management/> .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <http://www.w3.org/2000/01/rdf-schema#label> "Ontologia Prevenzione di INAIL"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <http://www.w3.org/2000/01/rdf-schema#label> "Risk Management INAIL Ontology"@en .
-<https://w3id.org/italia/work-accident/onto/risk_management/> <http://www.w3.org/2002/07/owl#versionInfo> "Version 1.0 - Modified 10 February 2025"@en .
-<https://w3id.org/italia/work-accident/onto/risk_management/> <http://www.w3.org/2002/07/owl#versionInfo> "Versione 1.0 - Modificata il 10 Febbraio 2025"@it .
+<https://w3id.org/italia/work-accident/onto/risk_management/> <http://www.w3.org/2002/07/owl#versionInfo> "Version 1.1 - Modified 12 October 2026"@en .
+<https://w3id.org/italia/work-accident/onto/risk_management/> <http://www.w3.org/2002/07/owl#versionInfo> "Versione 1.1 - Modificata il 12 Ottobre 2026"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <http://www.w3.org/ns/dcat#contactPoint> <https://w3id.org/italia/work-accident/data/organization/ufficioV> .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <http://www.w3.org/ns/dcat#keyword> "Asse Prevenzione"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <http://www.w3.org/ns/dcat#keyword> "BANDO ISI funding program"@en .
@@ -49,13 +49,13 @@
 <https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/hasKeyClass> <https://w3id.org/italia/work-accident/onto/risk_management/PresentatoreDomandaProgettoPrevenzione> .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/hasKeyClass> <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/hasOntologyLanguage> <https://w3id.org/italia/onto/ADMS/OWL> .
-<https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> <https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-TURTLE> .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> <https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-N-TRIPLES> .
+<https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> <https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-TURTLE> .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> <https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-XML> .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/hasTask> <https://w3id.org/italia/onto/ADMS/AnnotationTask> .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/hasTask> <https://w3id.org/italia/onto/ADMS/QueryFormulationTask> .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/hasTask> <https://w3id.org/italia/onto/ADMS/SearchTask> .
-<https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/last> <https://w3id.org/italia/work-accident/onto/risk_management/1.0> .
+<https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/last> <https://w3id.org/italia/work-accident/onto/risk_management/1.1> .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/officialURI> "https://w3id.org/italia/work-accident/onto/risk_management"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/prefix> "inailc" .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/prev> <https://w3id.org/italia/work-accident/onto/risk_management/1.0> .
@@ -66,6 +66,35 @@
 <https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/target> "Imprese"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/target> "Pubbliche Amministrazioni"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/> <https://w3id.org/italia/onto/ADMS/type> <https://w3id.org/italia/onto/ADMS/ServiceOnytology> .
+<http://purl.org/dc/terms/accrualPeriodicity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/ns/dcat#contactPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/ns/dcat#keyword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/italia/onto/ADMS/acronym> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/italia/onto/ADMS/hasContributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/italia/onto/ADMS/hasFormalityLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/italia/onto/ADMS/hasKeyClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/italia/onto/ADMS/hasOntologyLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/italia/onto/ADMS/hasTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/italia/onto/ADMS/last> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/italia/onto/ADMS/officialURI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/italia/onto/ADMS/prefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/italia/onto/ADMS/prev> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/italia/onto/ADMS/semanticAssetInUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/italia/onto/ADMS/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/italia/onto/ADMS/target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/italia/onto/ADMS/type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <http://www.w3.org/2001/XMLSchema#dateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 <https://w3id.org/italia/work-accident/onto/core/faRiferimentoASedeDiLavoro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/italia/work-accident/onto/core/faRiferimentoASedeDiLavoro> <http://www.w3.org/2000/01/rdf-schema#label> "fa riferimento A sede di lavoro"@it .
@@ -383,6 +412,7 @@
 <https://w3id.org/italia/work-accident/onto/risk_management/codiceBandoISI> <http://www.w3.org/2000/01/rdf-schema#label> "bando ISI code"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/codiceBandoISI> <http://www.w3.org/2000/01/rdf-schema#label> "codice bando ISI"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/codiceConcessioneCOR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/italia/work-accident/onto/risk_management/codiceConcessioneCOR> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI> .
 <https://w3id.org/italia/work-accident/onto/risk_management/codiceConcessioneCOR> <http://www.w3.org/2000/01/rdf-schema#comment> "Il RNA rilascia il Codice Concessione - RNA - COR che viene attributo ad ogni singola pratica con esito positivo."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/codiceConcessioneCOR> <http://www.w3.org/2000/01/rdf-schema#comment> "The RNA association releases the COR code to each and everyone of those Bando ISI application that have been approved and are now labelled as funding eligible. "@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/codiceConcessioneCOR> <http://www.w3.org/2000/01/rdf-schema#label> "COR code"@en .
@@ -400,6 +430,7 @@
 <https://w3id.org/italia/work-accident/onto/risk_management/codiceGRU> <http://www.w3.org/2000/01/rdf-schema#label> "GRU code"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/codiceGRU> <http://www.w3.org/2000/01/rdf-schema#label> "codice GRU"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/codiceUnicoCUP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/italia/work-accident/onto/risk_management/codiceUnicoCUP> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI> .
 <https://w3id.org/italia/work-accident/onto/risk_management/codiceUnicoCUP> <http://www.w3.org/2000/01/rdf-schema#comment> "CUP code is assigned to those Bando ISI applications that have been approved and are now marked as eligible for the Bando ISI funding program."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/codiceUnicoCUP> <http://www.w3.org/2000/01/rdf-schema#comment> "Per ciascuna domanda dichiarata ammissibile al contributo, si richiede al CIPE codice unico di progetto (CUP) che dovr\u00E0 essere indicato su tutti i documenti amministrativi e contabili relativi allo specifico contributo e i provvedimenti di ammissione che lo richiedono."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/codiceUnicoCUP> <http://www.w3.org/2000/01/rdf-schema#label> "CUP code"@en .
@@ -500,6 +531,7 @@
 <https://w3id.org/italia/work-accident/onto/risk_management/dataScorrimentoGraduatoriaBandoISI> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI ranking list update date"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/dataScorrimentoGraduatoriaBandoISI> <http://www.w3.org/2000/01/rdf-schema#label> "data scorrimento graduatoria Bando ISI"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/dataStatoProvvedimentoBandoISI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/italia/work-accident/onto/risk_management/dataStatoProvvedimentoBandoISI> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI> .
 <https://w3id.org/italia/work-accident/onto/risk_management/dataStatoProvvedimentoBandoISI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/italia/work-accident/onto/risk_management/dataStatoProvvedimentoBandoISI> <http://www.w3.org/2000/01/rdf-schema#comment> "data dello stato del provvedimento Bando ISI"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/dataStatoProvvedimentoBandoISI> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI evaluation result status date"@en .
@@ -511,11 +543,13 @@
 <https://w3id.org/italia/work-accident/onto/risk_management/dataUltimaModificaDomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI application form last modified"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/dataUltimaModificaDomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#label> "data ultima modifica domanda progetto prevenzione"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/dataUltimoAggiornamentoBandoISI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/italia/work-accident/onto/risk_management/dataUltimoAggiornamentoBandoISI> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI> .
 <https://w3id.org/italia/work-accident/onto/risk_management/dataUltimoAggiornamentoBandoISI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/italia/work-accident/onto/risk_management/dataUltimoAggiornamentoBandoISI> <http://www.w3.org/2000/01/rdf-schema#comment> "Data dell'ultimo aggiornamento provvedimento Bando ISI"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/dataUltimoAggiornamentoBandoISI> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI evaluation result last update date"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/dataUltimoAggiornamentoBandoISI> <http://www.w3.org/2000/01/rdf-schema#label> "data ultimo aggiornamento Bando ISI"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/dataValutazioneProvvedimentoBandoISI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/italia/work-accident/onto/risk_management/dataValutazioneProvvedimentoBandoISI> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI> .
 <https://w3id.org/italia/work-accident/onto/risk_management/dataValutazioneProvvedimentoBandoISI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/italia/work-accident/onto/risk_management/dataValutazioneProvvedimentoBandoISI> <http://www.w3.org/2000/01/rdf-schema#comment> "data valutazione provvedimento Bando ISI"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/dataValutazioneProvvedimentoBandoISI> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI evaluation result outcome date"@en .
@@ -877,10 +911,10 @@
 <http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/onto/CLV/Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/work-accident/onto/core/ComponenteSocietarioINAIL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/work-accident/onto/core/ComponenteSocietarioINAIL> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
-<https://w3id.org/italia/work-accident/onto/core/ComponenteSocietarioINAIL> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid3 .
-<https://w3id.org/italia/work-accident/onto/core/ComponenteSocietarioINAIL> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid5 .
-<https://w3id.org/italia/work-accident/onto/core/ComponenteSocietarioINAIL> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid6 .
+<https://w3id.org/italia/work-accident/onto/core/ComponenteSocietarioINAIL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+<https://w3id.org/italia/work-accident/onto/core/ComponenteSocietarioINAIL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+<https://w3id.org/italia/work-accident/onto/core/ComponenteSocietarioINAIL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+<https://w3id.org/italia/work-accident/onto/core/ComponenteSocietarioINAIL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid1 <http://www.w3.org/2002/07/owl#onProperty> _:genid2 .
 _:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
@@ -896,26 +930,22 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 _:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/core/percentualeQuoteSociet\u00E0> .
 _:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/italia/work-accident/onto/core/PersonaFisica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/work-accident/onto/core/PersonaFisica> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid7 .
-<https://w3id.org/italia/work-accident/onto/core/PersonaFisica> <http://www.w3.org/2000/01/rdf-schema#comment> "Una persona fisica , in diritto, \u00E8 l'essere umano in quanto soggetto di diritto e, quindi, dotato di capacit\u00E0 giuridica. Nell'ordinamento italiano, secondo l'articolo 1 del codice civile, sono persone fisiche gli esseri umani che, con la loro nascita, divengono titolari di diritti e doveri, cio\u00E8 acquisiscono la capacit\u00E0 giuridica. Con il raggiungimento della maggiore et\u00E0 (18 anni per l'ordinamento italiano), la persona fisica acquisisce la capacit\u00E0 di agire, cio\u00E8 la possibilit\u00E0 di porre in essere atti rilevanti ai fini giuridici."@it .
-<https://w3id.org/italia/work-accident/onto/core/PersonaFisica> <http://www.w3.org/2000/01/rdf-schema#label> "PersonaFisica"@it .
+<https://w3id.org/italia/work-accident/onto/core/PersonaFisica> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/ricopreRuoloDiPresentatoreDiDomandaProgettoPrevenzione> .
 _:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
 <https://w3id.org/italia/work-accident/onto/core/PosizioneAssicurativaTerritoriale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/work-accident/onto/core/PosizioneAssicurativaTerritoriale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
-<https://w3id.org/italia/work-accident/onto/core/PosizioneAssicurativaTerritoriale> <http://www.w3.org/2000/01/rdf-schema#comment> "La Posizione Assicurativa Territoriale \u00E8 l\u2019entit\u00E0 di riferimento del rapporto assicurativo in termini di collocazione geografica dell\u2019attivit\u00E0 produttiva svolta dall\u2019Azienda. Un\u2019Azienda pu\u00F2 essere associata ad una o pi\u00F9 Pat secondo la distribuzione territoriale dei lavori svolti."@it .
-<https://w3id.org/italia/work-accident/onto/core/PosizioneAssicurativaTerritoriale> <http://www.w3.org/2000/01/rdf-schema#label> "PosizioneAssicurativaTerritoriale"@it .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/core/faRiferimentoASedeDiLavoro> .
 _:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
 <https://w3id.org/italia/work-accident/onto/core/RappresentanteLegaleINAIL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/work-accident/onto/core/RappresentanteLegaleINAIL> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid9 .
-<https://w3id.org/italia/work-accident/onto/core/RappresentanteLegaleINAIL> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid11 .
-<https://w3id.org/italia/work-accident/onto/core/RappresentanteLegaleINAIL> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid13 .
-<https://w3id.org/italia/work-accident/onto/core/RappresentanteLegaleINAIL> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid14 .
-<https://w3id.org/italia/work-accident/onto/core/RappresentanteLegaleINAIL> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid15 .
-<https://w3id.org/italia/work-accident/onto/core/RappresentanteLegaleINAIL> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid16 .
+<https://w3id.org/italia/work-accident/onto/core/RappresentanteLegaleINAIL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+<https://w3id.org/italia/work-accident/onto/core/RappresentanteLegaleINAIL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+<https://w3id.org/italia/work-accident/onto/core/RappresentanteLegaleINAIL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+<https://w3id.org/italia/work-accident/onto/core/RappresentanteLegaleINAIL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+<https://w3id.org/italia/work-accident/onto/core/RappresentanteLegaleINAIL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+<https://w3id.org/italia/work-accident/onto/core/RappresentanteLegaleINAIL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid9 <http://www.w3.org/2002/07/owl#onProperty> _:genid10 .
 _:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
@@ -942,9 +972,6 @@ _:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000
 <https://w3id.org/italia/work-accident/onto/core/SedeINAIL> <http://www.w3.org/2002/07/owl#versionInfo> "Tipo Struttura" .
 <https://w3id.org/italia/work-accident/onto/core/SedeLavoro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/work-accident/onto/core/SedeLavoro> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
-<https://w3id.org/italia/work-accident/onto/core/SedeLavoro> <http://www.w3.org/2000/01/rdf-schema#comment> "Sede lavoro"@it .
-<https://w3id.org/italia/work-accident/onto/core/SedeLavoro> <http://www.w3.org/2000/01/rdf-schema#label> "SedeLavoro"@it .
-<https://w3id.org/italia/work-accident/onto/core/SedeLavoro> <http://www.w3.org/2002/07/owl#incompatibleWith> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid17 <http://www.w3.org/2002/07/owl#onProperty> _:genid18 .
 _:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
@@ -953,11 +980,11 @@ _:genid18 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/wor
 <https://w3id.org/italia/work-accident/onto/core/Soggetto> <http://www.w3.org/2000/01/rdf-schema#comment> "Un soggetto in termini fiscali: pu\u00F2 essere una persona fisica o una azienda."@it .
 <https://w3id.org/italia/work-accident/onto/core/Soggetto> <http://www.w3.org/2000/01/rdf-schema#label> "Soggetto"@it .
 <https://w3id.org/italia/work-accident/onto/core/StatoDiSoggettoAssicurante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/work-accident/onto/core/StatoDiSoggettoAssicurante> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid19 .
-<https://w3id.org/italia/work-accident/onto/core/StatoDiSoggettoAssicurante> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid20 .
-<https://w3id.org/italia/work-accident/onto/core/StatoDiSoggettoAssicurante> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid22 .
-<https://w3id.org/italia/work-accident/onto/core/StatoDiSoggettoAssicurante> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid23 .
-<https://w3id.org/italia/work-accident/onto/core/StatoDiSoggettoAssicurante> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid24 .
+<https://w3id.org/italia/work-accident/onto/core/StatoDiSoggettoAssicurante> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+<https://w3id.org/italia/work-accident/onto/core/StatoDiSoggettoAssicurante> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+<https://w3id.org/italia/work-accident/onto/core/StatoDiSoggettoAssicurante> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+<https://w3id.org/italia/work-accident/onto/core/StatoDiSoggettoAssicurante> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+<https://w3id.org/italia/work-accident/onto/core/StatoDiSoggettoAssicurante> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
 <https://w3id.org/italia/work-accident/onto/core/StatoDiSoggettoAssicurante> <http://www.w3.org/2000/01/rdf-schema#comment> "Rappresenta una fotografia passata o presente di una Aziende. Permette di modellare le cratteristiche di un'Aziende che evolvono nel tempo."@it .
 <https://w3id.org/italia/work-accident/onto/core/StatoDiSoggettoAssicurante> <http://www.w3.org/2000/01/rdf-schema#label> "Stato di Soggetto Assicurante"@it .
 <https://w3id.org/italia/work-accident/onto/core/StatoDiSoggettoAssicurante> <http://www.w3.org/2002/07/owl#incompatibleWith> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -978,16 +1005,16 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/core/telefonoSoggettoAssicurante> .
 _:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/italia/work-accident/onto/risk_management/AssePrevenzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/work-accident/onto/risk_management/AssePrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid25 .
-<https://w3id.org/italia/work-accident/onto/risk_management/AssePrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid26 .
-<https://w3id.org/italia/work-accident/onto/risk_management/AssePrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid27 .
-<https://w3id.org/italia/work-accident/onto/risk_management/AssePrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid29 .
-<https://w3id.org/italia/work-accident/onto/risk_management/AssePrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid31 .
-<https://w3id.org/italia/work-accident/onto/risk_management/AssePrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid32 .
-<https://w3id.org/italia/work-accident/onto/risk_management/AssePrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid33 .
-<https://w3id.org/italia/work-accident/onto/risk_management/AssePrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid34 .
-<https://w3id.org/italia/work-accident/onto/risk_management/AssePrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid35 .
-<https://w3id.org/italia/work-accident/onto/risk_management/AssePrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid36 .
+<https://w3id.org/italia/work-accident/onto/risk_management/AssePrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+<https://w3id.org/italia/work-accident/onto/risk_management/AssePrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+<https://w3id.org/italia/work-accident/onto/risk_management/AssePrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+<https://w3id.org/italia/work-accident/onto/risk_management/AssePrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+<https://w3id.org/italia/work-accident/onto/risk_management/AssePrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+<https://w3id.org/italia/work-accident/onto/risk_management/AssePrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+<https://w3id.org/italia/work-accident/onto/risk_management/AssePrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+<https://w3id.org/italia/work-accident/onto/risk_management/AssePrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+<https://w3id.org/italia/work-accident/onto/risk_management/AssePrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+<https://w3id.org/italia/work-accident/onto/risk_management/AssePrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
 <https://w3id.org/italia/work-accident/onto/risk_management/AssePrevenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "Asse di finanziamento per il quale si vuole presentare la domanda relativa al bando ISI. Le tipologie di Asse sono 5: - ASSE 1 - Progetti di investimento e modelli organizzativi e di responsabilit\u00E0 sociale:   - Investimento (Asse 1.1)   - Adozione di modelli organizzativi e di responsabilit\u00E0  sociale (Asse 1.2)- ASSE 2 - Movimentazione manuale dei carichi (MMC):    Movimentazione Manuale dei Carichi (MMC)- ASSE 3 - Bonifica da materiali contenenti amianto:    Bonifica da materiali contenenti amianto- ASSE 4 - Micro e piccole imprese operanti in specifici settori di attivit\u00E0 :   Imprese operanti in specifici settori di attivit\u00C3 - ASSE 5 - Agricoltura:   - Progetti del settore della produzione primaria dei prodotti agricoli (Asse 5.1)   - Progetti presentati da giovani agricoltori (Asse 5.2)"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/AssePrevenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "Each application form is associated with a particular appendix of the BANDO ISI. There are five different appendices in the bando ISI funding program. See belows: - Appendix 1 - Investment, organisational models, and social responsibility risk management plans: - Investment (at Appendix 1.1) - Organizational models and social responsibility (at Appendix 1.2) - APPENDIX 2 - Manual Handling of Loads (MMC): - APPENDIX 3 - Asbestos remediation programme - APPENDIX 4 - Microenterprise and small business programme - APPENDIX 5 - Farming: - risk management plans that focus on agriculture and primary production (at Appendix 5.1) - risk management plans by young farmers operating in the agriculture sector (at Appendix 5.2)."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/AssePrevenzione> <http://www.w3.org/2000/01/rdf-schema#label> "Asse prevenzione"@it .
@@ -1025,9 +1052,9 @@ _:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/tipoAssePrevenzione> .
 _:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/italia/work-accident/onto/risk_management/AssegnazioneRuoloProgettoPrevenzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/work-accident/onto/risk_management/AssegnazioneRuoloProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid37 .
-<https://w3id.org/italia/work-accident/onto/risk_management/AssegnazioneRuoloProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid39 .
-<https://w3id.org/italia/work-accident/onto/risk_management/AssegnazioneRuoloProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid40 .
+<https://w3id.org/italia/work-accident/onto/risk_management/AssegnazioneRuoloProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+<https://w3id.org/italia/work-accident/onto/risk_management/AssegnazioneRuoloProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+<https://w3id.org/italia/work-accident/onto/risk_management/AssegnazioneRuoloProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
 <https://w3id.org/italia/work-accident/onto/risk_management/AssegnazioneRuoloProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "Fase di assegnazione del valutatore alla domanda VT, CT, VA , RAI e RPP sono i ruoli e vengono istanziati per ogni domanda."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/AssegnazioneRuoloProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "The different roles of examination that can be assinged to a Bando ISI application such as,  VT, CT, VA, RAI and RPP."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/AssegnazioneRuoloProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#label> "Assegnazione ruolo progetto prevenzione"@it .
@@ -1043,15 +1070,15 @@ _:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid40 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/idAzione> .
 _:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/italia/work-accident/onto/risk_management/AvvisoPubblicoRegionale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/work-accident/onto/risk_management/AvvisoPubblicoRegionale> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid41 .
-<https://w3id.org/italia/work-accident/onto/risk_management/AvvisoPubblicoRegionale> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid42 .
-<https://w3id.org/italia/work-accident/onto/risk_management/AvvisoPubblicoRegionale> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid43 .
-<https://w3id.org/italia/work-accident/onto/risk_management/AvvisoPubblicoRegionale> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid45 .
-<https://w3id.org/italia/work-accident/onto/risk_management/AvvisoPubblicoRegionale> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid47 .
-<https://w3id.org/italia/work-accident/onto/risk_management/AvvisoPubblicoRegionale> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid48 .
-<https://w3id.org/italia/work-accident/onto/risk_management/AvvisoPubblicoRegionale> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid49 .
-<https://w3id.org/italia/work-accident/onto/risk_management/AvvisoPubblicoRegionale> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid50 .
-<https://w3id.org/italia/work-accident/onto/risk_management/AvvisoPubblicoRegionale> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid51 .
+<https://w3id.org/italia/work-accident/onto/risk_management/AvvisoPubblicoRegionale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+<https://w3id.org/italia/work-accident/onto/risk_management/AvvisoPubblicoRegionale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+<https://w3id.org/italia/work-accident/onto/risk_management/AvvisoPubblicoRegionale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+<https://w3id.org/italia/work-accident/onto/risk_management/AvvisoPubblicoRegionale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+<https://w3id.org/italia/work-accident/onto/risk_management/AvvisoPubblicoRegionale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+<https://w3id.org/italia/work-accident/onto/risk_management/AvvisoPubblicoRegionale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+<https://w3id.org/italia/work-accident/onto/risk_management/AvvisoPubblicoRegionale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
+<https://w3id.org/italia/work-accident/onto/risk_management/AvvisoPubblicoRegionale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+<https://w3id.org/italia/work-accident/onto/risk_management/AvvisoPubblicoRegionale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
 <https://w3id.org/italia/work-accident/onto/risk_management/AvvisoPubblicoRegionale> <http://www.w3.org/2000/01/rdf-schema#comment> "Avviso pubblico regionale relativo al bando ISI."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/AvvisoPubblicoRegionale> <http://www.w3.org/2000/01/rdf-schema#comment> "Reglional official announcement for the Bando ISI funding program."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/AvvisoPubblicoRegionale> <http://www.w3.org/2000/01/rdf-schema#label> "Avviso pubblico regionale"@it .
@@ -1086,17 +1113,17 @@ _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid51 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/importoImpiegatoBandoISIRegionale> .
 _:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/italia/work-accident/onto/risk_management/BandoISI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/work-accident/onto/risk_management/BandoISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid52 .
-<https://w3id.org/italia/work-accident/onto/risk_management/BandoISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid54 .
-<https://w3id.org/italia/work-accident/onto/risk_management/BandoISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid55 .
-<https://w3id.org/italia/work-accident/onto/risk_management/BandoISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid56 .
-<https://w3id.org/italia/work-accident/onto/risk_management/BandoISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid57 .
-<https://w3id.org/italia/work-accident/onto/risk_management/BandoISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid58 .
-<https://w3id.org/italia/work-accident/onto/risk_management/BandoISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid59 .
-<https://w3id.org/italia/work-accident/onto/risk_management/BandoISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid60 .
-<https://w3id.org/italia/work-accident/onto/risk_management/BandoISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid61 .
-<https://w3id.org/italia/work-accident/onto/risk_management/BandoISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid62 .
-<https://w3id.org/italia/work-accident/onto/risk_management/BandoISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid63 .
+<https://w3id.org/italia/work-accident/onto/risk_management/BandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+<https://w3id.org/italia/work-accident/onto/risk_management/BandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+<https://w3id.org/italia/work-accident/onto/risk_management/BandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+<https://w3id.org/italia/work-accident/onto/risk_management/BandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
+<https://w3id.org/italia/work-accident/onto/risk_management/BandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+<https://w3id.org/italia/work-accident/onto/risk_management/BandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+<https://w3id.org/italia/work-accident/onto/risk_management/BandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+<https://w3id.org/italia/work-accident/onto/risk_management/BandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
+<https://w3id.org/italia/work-accident/onto/risk_management/BandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
+<https://w3id.org/italia/work-accident/onto/risk_management/BandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+<https://w3id.org/italia/work-accident/onto/risk_management/BandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
 <https://w3id.org/italia/work-accident/onto/risk_management/BandoISI> <http://www.w3.org/2000/01/rdf-schema#comment> "BANDO ISI is a funding grant program sponsored by the INAIL institution. Its main puprose is to support companies to reduce risks and improve safety in the workplace. In order to be approved for any of the Bando ISI grants, applicants must successfully complete the three different selection stages. Stage no.1 application review. Stage no.2 a selection process named CLICK DAY that gives direct acces to the official BANDO ISI list. Stage no 3 final decision, INAIL will have 30 days max to check all the documentation provided and make an offer to successfull applicants."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/BandoISI> <http://www.w3.org/2000/01/rdf-schema#comment> "Il Bando ISI \u00E8 un finanziamento a fondo perduto promosso dall'INAIL, il quale ha l'obiettivo di incentivare le imprese ad investire nel miglioramento della sicurezza sul lavoro. Il suddetto contributo a fondo perduto viene erogato alle imprese che superano una prima analisi (studio di fattibilit\u00E0) e successivamente rientrano nella graduatoria con esito positivo, il Click Day Inail. All'ingresso in graduatoria Click Day Inail con esito positivo, segue entro 30 giorni una documentazione per verificare la spesa e la successiva rendicontazione."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/BandoISI> <http://www.w3.org/2000/01/rdf-schema#label> "BANDO ISI funding program"@en .
@@ -1136,44 +1163,48 @@ _:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid63 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/pubblicazioneGUBandoISI> .
 _:genid63 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheHasuperatoIlClickDay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheHasuperatoIlClickDay> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheHasuperatoIlClickDay> <http://www.w3.org/2000/01/rdf-schema#comment> "Applications that have passed the clickday application process."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheHasuperatoIlClickDay> <http://www.w3.org/2000/01/rdf-schema#comment> "Domanda che hasuperato il click day"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheHasuperatoIlClickDay> <http://www.w3.org/2000/01/rdf-schema#label> "Domanda che hasuperato il click day"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheHasuperatoIlClickDay> <http://www.w3.org/2000/01/rdf-schema#label> "Successful Click Day Application"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheNonHaPartecipatoAlClickDay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheNonHaPartecipatoAlClickDay> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheNonHaPartecipatoAlClickDay> <http://www.w3.org/2000/01/rdf-schema#comment> "Application that has failed to join the clickDay application process"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheNonHaPartecipatoAlClickDay> <http://www.w3.org/2000/01/rdf-schema#comment> "Domanda che non ha partecipato al click day"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheNonHaPartecipatoAlClickDay> <http://www.w3.org/2000/01/rdf-schema#label> "Application that has failed to join the clickDay application process"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheNonHaPartecipatoAlClickDay> <http://www.w3.org/2000/01/rdf-schema#label> "Domanda che non ha partecipato al click day"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheNonHaSuperatoIlClickDay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheNonHaSuperatoIlClickDay> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheNonHaSuperatoIlClickDay> <http://www.w3.org/2000/01/rdf-schema#comment> "ClickDay application forms that have not passed the selection process"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheNonHaSuperatoIlClickDay> <http://www.w3.org/2000/01/rdf-schema#comment> "Domanda che non ha superato il click day"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheNonHaSuperatoIlClickDay> <http://www.w3.org/2000/01/rdf-schema#label> "Domanda che non ha superato il click day"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheNonHaSuperatoIlClickDay> <http://www.w3.org/2000/01/rdf-schema#label> "Unsuccessful ClickDay application"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaDecaduta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaDecaduta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaDecaduta> <http://www.w3.org/2000/01/rdf-schema#comment> "An application that has exipered, thus, removed from the Bando ISI official ranking list."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaDecaduta> <http://www.w3.org/2000/01/rdf-schema#comment> "Domanda che \u00E8 stata esclusa dalla graduatoria"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaDecaduta> <http://www.w3.org/2000/01/rdf-schema#label> "Domanda decaduta"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaDecaduta> <http://www.w3.org/2000/01/rdf-schema#label> "Expired Bando ISI application"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid64 .
-<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid69 .
-<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid78 .
-<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid79 .
-<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid80 .
-<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid81 .
-<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid82 .
-<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid83 .
-<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid84 .
-<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid86 .
-<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid88 .
-<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid89 .
-<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid90 .
-<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid91 .
-<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid92 .
-<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid93 .
-<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid94 .
-<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid95 .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid81 .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid83 .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid84 .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid86 .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid88 .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid89 .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid90 .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid91 .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid92 .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid93 .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid94 .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid95 .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "Domanda di partecipazione al bando ISI contenente le informazioni dell'impresa e del progetto di prevenzione che la stessa intende presentare."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "INAIL Bando ISI application form that includes the business details as well as their risk management plan."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI application form"@en .
@@ -1257,17 +1288,20 @@ _:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid95 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/statoDomandaProgettoPrevenzione> .
 _:genid95 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneAmmessaAlFinanziamento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneAmmessaAlFinanziamento> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneAmmessaAlFinanziamento> <http://www.w3.org/2000/01/rdf-schema#comment> "Bando ISI applications that have been approved for a particular section of the Bando ISI grant which they have applied for."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneAmmessaAlFinanziamento> <http://www.w3.org/2000/01/rdf-schema#comment> "Domanda progetto prevenzione ammessa al finanziamento del Bando ISI a cui ha partecipato."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneAmmessaAlFinanziamento> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI application approved"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneAmmessaAlFinanziamento> <http://www.w3.org/2000/01/rdf-schema#label> "Domanda progetto prevenzione ammessa al finanziamento"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneAnnullata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneAnnullata> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneAnnullata> <http://www.w3.org/2000/01/rdf-schema#comment> "Applications that have been withdrawn by applicants."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneAnnullata> <http://www.w3.org/2000/01/rdf-schema#comment> "Domanda annullata dal presentatore della domanda."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneAnnullata> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI application withdrawn"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneAnnullata> <http://www.w3.org/2000/01/rdf-schema#label> "Domanda progetto prevenzione annullata"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecaduta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecaduta> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid96 .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecaduta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecaduta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid96 .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecaduta> <http://www.w3.org/2000/01/rdf-schema#comment> "Applicant has failed to provide required documentation or has too many login attempts."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecaduta> <http://www.w3.org/2000/01/rdf-schema#comment> "Una domanda che non \u00E8 pi\u00F9 valida per due motivi: accessi multipli o mancata documentazione."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecaduta> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI application denied"@en .
@@ -1279,57 +1313,65 @@ _:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid98 .
 _:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecadutaPerMancanzaDocumentazione> .
 _:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecadutaPerAccessiMultipli> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecadutaPerAccessiMultipli> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecaduta> .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecadutaPerAccessiMultipli> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecadutaPerMancanzaDocumentazione> .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecadutaPerAccessiMultipli> <http://www.w3.org/2000/01/rdf-schema#comment> "Application denied on the basis of multiple login attempts from various IP addresses."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecadutaPerAccessiMultipli> <http://www.w3.org/2000/01/rdf-schema#comment> "Domanda decaduta perch\u00E9 diversi utenti hanno provato ad accedere al click day mentre ne pu\u00F2 accedere solamente uno."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecadutaPerAccessiMultipli> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI application denied due to multiple login attempts"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecadutaPerAccessiMultipli> <http://www.w3.org/2000/01/rdf-schema#label> "Domanda progetto prevenzione decaduta per accessi multipli"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecadutaPerMancanzaDocumentazione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecadutaPerMancanzaDocumentazione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecaduta> .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecadutaPerMancanzaDocumentazione> <http://www.w3.org/2000/01/rdf-schema#comment> "Applicant has failed to provide necessary documentation thus application is denied on the basis of lack of supporting documents."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecadutaPerMancanzaDocumentazione> <http://www.w3.org/2000/01/rdf-schema#comment> "Domanda decaduta perch\u00E9 non \u00E8 stata presentata la documentazione necessaria."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecadutaPerMancanzaDocumentazione> <http://www.w3.org/2000/01/rdf-schema#label> "Application denied due to lack of necessary documentation"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecadutaPerMancanzaDocumentazione> <http://www.w3.org/2000/01/rdf-schema#label> "Domanda progetto prevenzione decaduta per mancanza documentazione"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInBozza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInBozza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInBozza> <http://www.w3.org/2000/01/rdf-schema#comment> "An Application that is currently in drafts."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInBozza> <http://www.w3.org/2000/01/rdf-schema#comment> "Domanda di un progetto prevenzione in stato di bozza."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInBozza> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI application in Draft folder"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInBozza> <http://www.w3.org/2000/01/rdf-schema#label> "Domanda progetto prevenzione in bozza"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInRendicontazione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInRendicontazione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInRendicontazione> <http://www.w3.org/2000/01/rdf-schema#comment> "An application that is currently in the screening process."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInRendicontazione> <http://www.w3.org/2000/01/rdf-schema#comment> "Domanda nello stato di rendicontazione."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInRendicontazione> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI application under review"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInRendicontazione> <http://www.w3.org/2000/01/rdf-schema#label> "Domanda progetto prevenzione in rendicontazione"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInRichiestaChiarimenti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInRichiestaChiarimenti> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInRichiestaChiarimenti> <http://www.w3.org/2000/01/rdf-schema#comment> "An application form that needs additional clarification, thus, it's paused until applicant's response."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInRichiestaChiarimenti> <http://www.w3.org/2000/01/rdf-schema#comment> "Domanda progetto prevenzione che richiede ulteriori chiarimenti."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInRichiestaChiarimenti> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI application waiting for clarification"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInRichiestaChiarimenti> <http://www.w3.org/2000/01/rdf-schema#label> "Domanda progetto prevenzione in richiesta chiarimenti"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInVerifica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInVerifica> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInVerifica> <http://www.w3.org/2000/01/rdf-schema#comment> "An application that has been received and is currently in the background check process."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInVerifica> <http://www.w3.org/2000/01/rdf-schema#comment> "Domanda per progetto prevenzione in stato di verifica."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInVerifica> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI application in progress"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInVerifica> <http://www.w3.org/2000/01/rdf-schema#label> "Domanda progetto prevenzione in verifica"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneRegistrata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneRegistrata> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione> .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneRegistrata> <http://www.w3.org/2000/01/rdf-schema#comment> "An application that has been received."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneRegistrata> <http://www.w3.org/2000/01/rdf-schema#comment> "Domanda di progetto prevenzione che \u00E8 stata registrata."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneRegistrata> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI application status received"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneRegistrata> <http://www.w3.org/2000/01/rdf-schema#label> "Domanda progetto prevenzione registrata"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ElencoBandoISIClickDay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/ElencoBandoISIClickDay> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI> .
 <https://w3id.org/italia/work-accident/onto/risk_management/ElencoBandoISIClickDay> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/italia/work-accident/onto/risk_management/ElencoNCD> .
 <https://w3id.org/italia/work-accident/onto/risk_management/ElencoBandoISIClickDay> <http://www.w3.org/2000/01/rdf-schema#comment> "Elenchi Bando ISI delle domande che hanno partecipato al Click Day divise per regione e per asse di finanziamento. "@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ElencoBandoISIClickDay> <http://www.w3.org/2000/01/rdf-schema#label> "Click Day Bando ISI list"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ElencoBandoISIClickDay> <http://www.w3.org/2000/01/rdf-schema#label> "Elenco Bando ISI Click Day"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid99 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid102 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid103 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid104 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid105 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid107 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid108 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid109 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid110 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid111 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid99 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid102 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid103 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid104 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid105 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid107 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid108 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid109 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid110 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid111 .
 <https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI> <http://www.w3.org/2000/01/rdf-schema#comment> "Bando ISI grant lists."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI> <http://www.w3.org/2000/01/rdf-schema#comment> "Domande Bando ISI ammesse agli elenchi cronologici. "@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI grant list"@en .
@@ -1369,7 +1411,7 @@ _:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid111 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/descrizioneElencoBandoISI> .
 _:genid111 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISIDefinitivo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISIDefinitivo> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid112 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISIDefinitivo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid112 .
 <https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISIDefinitivo> <http://www.w3.org/2000/01/rdf-schema#comment> "Each and every Bando ISI list has an official Bando ISI ranking list and a temporary one."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISIDefinitivo> <http://www.w3.org/2000/01/rdf-schema#comment> "Ogni istanza delle classi Elenco Click Day e Elenco NCD deve avere un elenco cronologico Bando ISI definitivo."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISIDefinitivo> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI official ranking list"@en .
@@ -1379,7 +1421,7 @@ _:genid112 <http://www.w3.org/2002/07/owl#onProperty> _:genid113 .
 _:genid112 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
 _:genid113 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/work-accident/onto/risk_management/haElencoCronologicoDefinitivo> .
 <https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISIProvvisorio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISIProvvisorio> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid114 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISIProvvisorio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid114 .
 <https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISIProvvisorio> <http://www.w3.org/2000/01/rdf-schema#comment> "Each and every Bando ISI list has an official Bando ISI ranking list and a temporary one."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISIProvvisorio> <http://www.w3.org/2000/01/rdf-schema#comment> "Ogni istanza delle classi Elenco Click Day e Elenco NCD deve avere un elenco cronologico Bando ISI provvisorio."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISIProvvisorio> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI temporary ranking list"@en .
@@ -1389,17 +1431,18 @@ _:genid114 <http://www.w3.org/2002/07/owl#onProperty> _:genid115 .
 _:genid114 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
 _:genid115 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/work-accident/onto/risk_management/haElencoCronologicoProvvisorio> .
 <https://w3id.org/italia/work-accident/onto/risk_management/ElencoNCD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/ElencoNCD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI> .
 <https://w3id.org/italia/work-accident/onto/risk_management/ElencoNCD> <http://www.w3.org/2000/01/rdf-schema#comment> "Elenchi regionali/provinciali No Click Day. "@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ElencoNCD> <http://www.w3.org/2000/01/rdf-schema#label> "ElencoNCD"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ElencoNCD> <http://www.w3.org/2000/01/rdf-schema#label> "NCD Bando ISI list"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/Perito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/work-accident/onto/risk_management/Perito> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid116 .
-<https://w3id.org/italia/work-accident/onto/risk_management/Perito> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid118 .
-<https://w3id.org/italia/work-accident/onto/risk_management/Perito> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid120 .
-<https://w3id.org/italia/work-accident/onto/risk_management/Perito> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid121 .
-<https://w3id.org/italia/work-accident/onto/risk_management/Perito> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid122 .
-<https://w3id.org/italia/work-accident/onto/risk_management/Perito> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid123 .
-<https://w3id.org/italia/work-accident/onto/risk_management/Perito> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid124 .
+<https://w3id.org/italia/work-accident/onto/risk_management/Perito> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid116 .
+<https://w3id.org/italia/work-accident/onto/risk_management/Perito> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid118 .
+<https://w3id.org/italia/work-accident/onto/risk_management/Perito> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid120 .
+<https://w3id.org/italia/work-accident/onto/risk_management/Perito> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid121 .
+<https://w3id.org/italia/work-accident/onto/risk_management/Perito> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid122 .
+<https://w3id.org/italia/work-accident/onto/risk_management/Perito> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid123 .
+<https://w3id.org/italia/work-accident/onto/risk_management/Perito> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid124 .
 <https://w3id.org/italia/work-accident/onto/risk_management/Perito> <http://www.w3.org/2000/01/rdf-schema#comment> "An expert whose main role is to carry out a survey on behalf of either a private client or a judge. The latter, usually gets involved in the inspection process, only in case of an appeall or final examination. A judge can decide to appoint a second Quantity Surveyor to help them decide if the assesed plan can potentially qualify for the INAIL managemnt risk funding program."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/Perito> <http://www.w3.org/2000/01/rdf-schema#comment> "Esperto incaricato di un'indagine tecnica (perizia) per conto di privati, sia per incarico del giudice, cui riferisce mediante dichiarazione giurata. Il giudice interviene solo se c'\u00E8 un ricorso e si arriva in giudizio. In tal caso il giudice pu\u00F2 nominare un secondo perito per capire se il progetto di prevenzione pu\u00F2 beneficiare o meno al finanziamento."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/Perito> <http://www.w3.org/2000/01/rdf-schema#label> "Perito"@it .
@@ -1428,10 +1471,10 @@ _:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid124 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/telefonoStudioPerito> .
 _:genid124 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/italia/work-accident/onto/risk_management/PeriziaProgettoPrevenzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/work-accident/onto/risk_management/PeriziaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid125 .
-<https://w3id.org/italia/work-accident/onto/risk_management/PeriziaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid126 .
-<https://w3id.org/italia/work-accident/onto/risk_management/PeriziaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid128 .
-<https://w3id.org/italia/work-accident/onto/risk_management/PeriziaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid129 .
+<https://w3id.org/italia/work-accident/onto/risk_management/PeriziaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid125 .
+<https://w3id.org/italia/work-accident/onto/risk_management/PeriziaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid126 .
+<https://w3id.org/italia/work-accident/onto/risk_management/PeriziaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid128 .
+<https://w3id.org/italia/work-accident/onto/risk_management/PeriziaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid129 .
 <https://w3id.org/italia/work-accident/onto/risk_management/PeriziaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "Analisi tecnica redatta dal perito riguardo il progetto di prevenzione proposto per la partecipazione al bando Isi."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/PeriziaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "Technical evaluation of a risk management plan carried out by a Quantity Surveyor in order for an applicant to apply for the INAIL Bando ISI program and funding."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/PeriziaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#label> "Perizia progetto prevenzione"@it .
@@ -1450,14 +1493,14 @@ _:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid129 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/modelloPerizia> .
 _:genid129 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/italia/work-accident/onto/risk_management/PraticaProgettoPrevenzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/work-accident/onto/risk_management/PraticaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid130 .
-<https://w3id.org/italia/work-accident/onto/risk_management/PraticaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid131 .
-<https://w3id.org/italia/work-accident/onto/risk_management/PraticaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid132 .
-<https://w3id.org/italia/work-accident/onto/risk_management/PraticaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid133 .
-<https://w3id.org/italia/work-accident/onto/risk_management/PraticaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid134 .
-<https://w3id.org/italia/work-accident/onto/risk_management/PraticaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid135 .
-<https://w3id.org/italia/work-accident/onto/risk_management/PraticaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid136 .
-<https://w3id.org/italia/work-accident/onto/risk_management/PraticaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid137 .
+<https://w3id.org/italia/work-accident/onto/risk_management/PraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid130 .
+<https://w3id.org/italia/work-accident/onto/risk_management/PraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid131 .
+<https://w3id.org/italia/work-accident/onto/risk_management/PraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid132 .
+<https://w3id.org/italia/work-accident/onto/risk_management/PraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid133 .
+<https://w3id.org/italia/work-accident/onto/risk_management/PraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid134 .
+<https://w3id.org/italia/work-accident/onto/risk_management/PraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid135 .
+<https://w3id.org/italia/work-accident/onto/risk_management/PraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid136 .
+<https://w3id.org/italia/work-accident/onto/risk_management/PraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid137 .
 <https://w3id.org/italia/work-accident/onto/risk_management/PraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "Pratica relativa a una domanda di progetto prevenzione. La pratica ha degli stati passati che si susseguono nell'evolversi della pratica."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/PraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "There are different crucial stages of a Bando ISI application process and they are all stored in a dossier."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/PraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI application dossier"@en .
@@ -1487,11 +1530,11 @@ _:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid137 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/statoPraticaProgettoPrevenzione> .
 _:genid137 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/italia/work-accident/onto/risk_management/PresentatoreDomandaProgettoPrevenzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/work-accident/onto/risk_management/PresentatoreDomandaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid138 .
-<https://w3id.org/italia/work-accident/onto/risk_management/PresentatoreDomandaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid139 .
-<https://w3id.org/italia/work-accident/onto/risk_management/PresentatoreDomandaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid141 .
-<https://w3id.org/italia/work-accident/onto/risk_management/PresentatoreDomandaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid142 .
-<https://w3id.org/italia/work-accident/onto/risk_management/PresentatoreDomandaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid143 .
+<https://w3id.org/italia/work-accident/onto/risk_management/PresentatoreDomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid138 .
+<https://w3id.org/italia/work-accident/onto/risk_management/PresentatoreDomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid139 .
+<https://w3id.org/italia/work-accident/onto/risk_management/PresentatoreDomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid141 .
+<https://w3id.org/italia/work-accident/onto/risk_management/PresentatoreDomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid142 .
+<https://w3id.org/italia/work-accident/onto/risk_management/PresentatoreDomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid143 .
 <https://w3id.org/italia/work-accident/onto/risk_management/PresentatoreDomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "A Bando ISI applicant is someone such as a designeted employee or a legal rapresentative of a company who is in charge of submitting the Bando ISI application to join the Bando ISI funding program on behalf of the company."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/PresentatoreDomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "Soggetto che presenta la domanda di partecipazione al bando ISI per conto di un'azienda. Il presentatore pu\u00F2 essere il rappresentante legale dell'azienda o un suo dipendente di fiducia, oppure un intermediario."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/PresentatoreDomandaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI applicant"@en .
@@ -1513,53 +1556,59 @@ _:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid143 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/indirizzoPECPresentatoreDomandaPrevenzione> .
 _:genid143 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoBonificaAmianto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoBonificaAmianto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoBonificaAmianto> <http://www.w3.org/2000/01/rdf-schema#comment> "A risk management plan that focuses on section 3, the asbestos remediation programme, of the INAIL Bando ISI funding program."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoBonificaAmianto> <http://www.w3.org/2000/01/rdf-schema#comment> "Progetto di prevenzione presentato da un'azienda relativamente all'Asse 3 di finanziamento (Bonifica da materiali contenenti amianto)."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoBonificaAmianto> <http://www.w3.org/2000/01/rdf-schema#label> "Asbestos remediation program"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoBonificaAmianto> <http://www.w3.org/2000/01/rdf-schema#label> "Progetto bonifica amianto"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoDiInvestimento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoDiInvestimento> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoDiInvestimento> <http://www.w3.org/2000/01/rdf-schema#comment> "A risk management plan developed by a business or Insurer that focuses on section 1.1, investment , of the INAIL Bando ISI funding program."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoDiInvestimento> <http://www.w3.org/2000/01/rdf-schema#comment> "Progetto di prevenzione presentato da un'azienda relativamente all'Asse 1.1 di finanziamento (Investimento)."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoDiInvestimento> <http://www.w3.org/2000/01/rdf-schema#label> "Investment plan"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoDiInvestimento> <http://www.w3.org/2000/01/rdf-schema#label> "Progetto di investimento"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoGiovaniAgricoltori> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoGiovaniAgricoltori> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoGiovaniAgricoltori> <http://www.w3.org/2000/01/rdf-schema#comment> "A risk management plan that focuses on section 5.2 of the INAIL Bando ISI funding program. This section addresses young farmers operating in the agricultural field."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoGiovaniAgricoltori> <http://www.w3.org/2000/01/rdf-schema#comment> "Progetto di prevenzione presentato da un'azienda relativamente all'Asse 5.2 di finanziamento (Progetti presentati da giovani agricoltori)."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoGiovaniAgricoltori> <http://www.w3.org/2000/01/rdf-schema#label> "Progetto giovani agricoltori"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoGiovaniAgricoltori> <http://www.w3.org/2000/01/rdf-schema#label> "Young Farming Scheme"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoMicroEPiccoleImprese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoMicroEPiccoleImprese> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoMicroEPiccoleImprese> <http://www.w3.org/2000/01/rdf-schema#comment> "A risk management plan developed by an Insurer that focuses on section 4, 'Businesses that provide only certain types of service' , of the INAIL Bando ISI funding program"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoMicroEPiccoleImprese> <http://www.w3.org/2000/01/rdf-schema#comment> "Progetto di prevenzione presentato da un'azienda relativamente all'Asse 4 di finanziamento (Imprese operanti in specifici settori di attivit\u00E0)."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoMicroEPiccoleImprese> <http://www.w3.org/2000/01/rdf-schema#label> "Microenterprise and small business program"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoMicroEPiccoleImprese> <http://www.w3.org/2000/01/rdf-schema#label> "Progetto micro e piccole imprese"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoModelliOrganizzativiEResponsabilit\u00E0Sociale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoModelliOrganizzativiEResponsabilit\u00E0Sociale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoModelliOrganizzativiEResponsabilit\u00E0Sociale> <http://www.w3.org/2000/01/rdf-schema#comment> "Corporate Social Responsibility and organizational structure plan"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoModelliOrganizzativiEResponsabilit\u00E0Sociale> <http://www.w3.org/2000/01/rdf-schema#comment> "Progetto modelli organizzativi e responsabilit\u00E0 sociale"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoModelliOrganizzativiEResponsabilit\u00E0Sociale> <http://www.w3.org/2000/01/rdf-schema#label> "Corporate Social Responsibility and organizational structure plan"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoModelliOrganizzativiEResponsabilit\u00E0Sociale> <http://www.w3.org/2000/01/rdf-schema#label> "Progetto modelli organizzativi e responsabilit\u00E0 sociale"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoMovimentazioneManualeCarichi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoMovimentazioneManualeCarichi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoMovimentazioneManualeCarichi> <http://www.w3.org/2000/01/rdf-schema#comment> "A risk management plan that focuses on section 2, Manual Handling of Loads, of the INAIL Bando ISI funding program."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoMovimentazioneManualeCarichi> <http://www.w3.org/2000/01/rdf-schema#comment> "Progetto di prevenzione presentato da un'azienda relativamente all'Asse 2 di finanziamento (Movimentazione Manuale dei Carichi (MMC))."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoMovimentazioneManualeCarichi> <http://www.w3.org/2000/01/rdf-schema#label> "Manual Handling of Load Plan"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoMovimentazioneManualeCarichi> <http://www.w3.org/2000/01/rdf-schema#label> "Progetto movimentazione manuale carichi"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid144 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid152 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid153 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid154 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid155 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid157 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid158 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid159 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid160 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid161 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid162 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid163 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid164 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid165 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid166 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid167 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid168 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid144 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid152 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid153 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid154 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid155 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid157 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid158 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid159 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid160 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid161 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid162 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid163 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid164 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid165 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid166 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid167 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid168 .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "A risk management plan is a type of document that a business needs to put together to reduce risks in the workplace. In the context of BANDO ISI funding program, a risk management plan is a requirement for the INAIL institution to apply for the grants available in the Bando ISI program."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "Progetto di prevenzione finalizzato a migliorare la sicurezza sul posto di lavoro. Tale progetto viene presentato da un'azienda per ottenere i contributi a fondo perduto del bando ISI."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#label> "Progetto prevenzione"@it .
@@ -1630,19 +1679,15 @@ _:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid168 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/punteggioTotaleProgettoPrevenzione> .
 _:genid168 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoProduzionePrimariaProdottiAgricoli> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProgettoProduzionePrimariaProdottiAgricoli> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione> .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoProduzionePrimariaProdottiAgricoli> <http://www.w3.org/2000/01/rdf-schema#comment> "A risk management plan that focuses on section 5.1 of the INAIL Bando ISI funding program. This section is for business in the agriculture and primary production field."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoProduzionePrimariaProdottiAgricoli> <http://www.w3.org/2000/01/rdf-schema#comment> "Progetto di prevenzione presentato da un'azienda relativamente all'Asse 5.1 di finanziamento (Progetti del settore della produzione primaria dei prodotti agricoli)."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoProduzionePrimariaProdottiAgricoli> <http://www.w3.org/2000/01/rdf-schema#label> "Progetto agricoltori over"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoProduzionePrimariaProdottiAgricoli> <http://www.w3.org/2000/01/rdf-schema#label> "Senior Farming Scheme"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid169 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid173 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid174 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid176 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid177 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid178 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid179 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid180 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid169 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid173 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid174 .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI> <http://www.w3.org/2000/01/rdf-schema#comment> "A bando ISI funding application can have three different outcomes: awarded, partially awarded, and rejected."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI> <http://www.w3.org/2000/01/rdf-schema#comment> "La classe Provvedimento Bando ISI ragruppa le tre tipologie di provvedimento Bando ISI ovvero: Il provvedimento di concessione, il provvedimento di concessione parziale e il provvedimento di esclusione."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI evaluation result"@en .
@@ -1662,227 +1707,220 @@ _:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid174 <http://www.w3.org/2002/07/owl#onProperty> _:genid175 .
 _:genid174 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
 _:genid175 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/work-accident/onto/risk_management/PraticaProgettoPrevenzioneHaProvvedimetoBandoISI> .
-_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid176 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/codiceConcessioneCOR> .
-_:genid176 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid177 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/codiceUnicoCUP> .
-_:genid177 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid178 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/dataStatoProvvedimentoBandoISI> .
-_:genid178 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid179 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/dataUltimoAggiornamentoBandoISI> .
-_:genid179 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid180 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/dataValutazioneProvvedimentoBandoISI> .
-_:genid180 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoConcessioneBandoISI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoConcessioneBandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI> .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoConcessioneBandoISI> <http://www.w3.org/2000/01/rdf-schema#comment> "Il provvedimento di concessione \u00E8 un atto amministrativo con cui l'INAIL approva la richiesta di finanziamento presentata da un'azienda o ente per un progetto di prevenzione. Questo provvedimento sancisce l'assegnazione del contributo economico, nei termini stabiliti dal bando per la realizzazione di interventi volti al miglioramento delle condizioni di salute e sicurezza nei luoghi di lavoro."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoConcessioneBandoISI> <http://www.w3.org/2000/01/rdf-schema#comment> "The Bando ISI grant scheme has been awarded by the INAIL organization. Contracts are now binding.  "@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoConcessioneBandoISI> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI Funding Awarded"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoConcessioneBandoISI> <http://www.w3.org/2000/01/rdf-schema#label> "Provvedimento Concessione Bando ISI"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoConcessioneParziale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoConcessioneParziale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI> .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoConcessioneParziale> <http://www.w3.org/2000/01/rdf-schema#comment> "Atto amministrativo in cui l'INAIL riconosce al richiedente un finanziamento parziale rispetto alla somma richiesta inizialmente nel progetto di prevenzione presentato. Questo provvedimento viene emesso quando, a seguito delle verifiche tecniche e amministrative, non \u00E8 possibile concedere l'intero importo richiesto ma si approva comunque una parte del finanziamento."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoConcessioneParziale> <http://www.w3.org/2000/01/rdf-schema#comment> "The Bando ISI grant scheme has been partially awarded by the INAIL organization."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoConcessioneParziale> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI Funding Partially Awarded"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoConcessioneParziale> <http://www.w3.org/2000/01/rdf-schema#label> "Provvedimento Concessione Parziale"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoDiRendicontazione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoDiRendicontazione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid181 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoDiRendicontazione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid185 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoDiRendicontazione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid187 .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoDiRendicontazione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid188 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoDiRendicontazione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid176 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoDiRendicontazione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid180 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoDiRendicontazione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid182 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoDiRendicontazione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid183 .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoDiRendicontazione> <http://www.w3.org/2000/01/rdf-schema#comment> "A seguito dell'esito positivo della verifica amministrativa e tecnica delle rendicontazione, il responsabile di Area Prevenzione emette il provvedimento di rendicontazione il quale \u00E8 condizionato dal provvedimento di concessione."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoDiRendicontazione> <http://www.w3.org/2000/01/rdf-schema#comment> "When a Bando ISI scheme is awarded or partially awarded, it is then followed up by the Bando ISI financial reporting process."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoDiRendicontazione> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI Financial Reporting"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoDiRendicontazione> <http://www.w3.org/2000/01/rdf-schema#label> "Provvedimento di Rendicontazione"@it .
-_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid181 <http://www.w3.org/2002/07/owl#unionOf> _:genid182 .
-_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConDiniego> .
-_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid183 .
-_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConLiquidazioneParziale> .
-_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid184 .
-_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConLiquidazioneTotale> .
-_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid185 <http://www.w3.org/2002/07/owl#onProperty> _:genid186 .
-_:genid185 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
-_:genid186 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/work-accident/onto/risk_management/haProvvedimentoDiRendicontazione> .
-_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid187 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/descrizioneStatoRendicontazione> .
-_:genid187 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid188 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/idStatoRendicontazione> .
-_:genid188 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid176 <http://www.w3.org/2002/07/owl#unionOf> _:genid177 .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConDiniego> .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid178 .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConLiquidazioneParziale> .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid179 .
+_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConLiquidazioneTotale> .
+_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid180 <http://www.w3.org/2002/07/owl#onProperty> _:genid181 .
+_:genid180 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid181 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/work-accident/onto/risk_management/haProvvedimentoDiRendicontazione> .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid182 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/descrizioneStatoRendicontazione> .
+_:genid182 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid183 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/idStatoRendicontazione> .
+_:genid183 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoEsclusioneBandoISI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoEsclusioneBandoISI> <http://www.w3.org/2002/07/owl#disjointWith> _:genid189 .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoEsclusioneBandoISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI> .
+<https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoEsclusioneBandoISI> <http://www.w3.org/2002/07/owl#disjointWith> _:genid184 .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoEsclusioneBandoISI> <http://www.w3.org/2000/01/rdf-schema#comment> "Bando ISI applications that have been rejected for grant eligibiility are notified through the system and can appael to the decision."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoEsclusioneBandoISI> <http://www.w3.org/2000/01/rdf-schema#comment> "Il provvedimento di esclusione e il suo preavviso avviene nel caso in cui la pratica non abbia superato la fase di istruttoria tecnica e la fase di istruttoria amministrativa. Tale provvedimento di esclusione dal bando viene notificato alle aziende a seguito dell\u2019invio del preavviso di non ammissione e nel caso in cui l\u2019azienda non abbia presentato le proprie osservazioni in merito alla decisione dell\u2019Istituto entro la scadenza stabilita dal Bando."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoEsclusioneBandoISI> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI Funding Rejected"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoEsclusioneBandoISI> <http://www.w3.org/2000/01/rdf-schema#label> "Provvedimento Esclusione Bando ISI"@it .
-_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid189 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/haProvvedimentoDiRendicontazione> .
-_:genid189 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid184 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/haProvvedimentoDiRendicontazione> .
+_:genid184 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
 <https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConDiniego> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConDiniego> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoDiRendicontazione> .
 <https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConDiniego> <http://www.w3.org/2000/01/rdf-schema#comment> "All'interno della comunicazione di diniego sono esplicitate le motivazioni della scelta; l'Impresa ha un tempo di dieci giorni per presentare le proprie osservazioni in merito alla decisione dell\u2019Istituto. Se l\u2019impresa presenta le proprie osservazioni queste saranno esaminate attraverso nuove verifiche tecniche e amministrative sulla rendicontazione. Viceversa si proceder\u00E0 con il rigetto definitivo e, qualora all\u2019impresa sia stata erogata un\u2018anticipazione, si proceder\u00E0 con l\u2019escussione della fideiussione. In caso contrario si procede direttamente con il rigetto della pratica."@it .
+<https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConDiniego> <http://www.w3.org/2000/01/rdf-schema#comment> "Bando ISI credit denial refers to the rejection of a Bando ISI application due to inconsistency in their financial reporting as well as other reasons. Applicants who wish to appeal the denial will have 10 working days from the date of their rejection notification to submit their appeal."@en .
+<https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConDiniego> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI Credit Denial"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConDiniego> <http://www.w3.org/2000/01/rdf-schema#label> "Rendicontazione con diniego"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConLiquidazioneParziale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConLiquidazioneParziale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoDiRendicontazione> .
 <https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConLiquidazioneParziale> <http://www.w3.org/2000/01/rdf-schema#comment> "Nel caso di provvedimento di rendicontazione con liquidazione parziale, all'interno della comunicazione vengono esplicitate le motivazioni della scelta; l'Impresa ha un tempo di dieci giorni per presentare le proprie osservazioni in merito alla decisione dell\u2019Istituto."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConLiquidazioneParziale> <http://www.w3.org/2000/01/rdf-schema#comment> "The accounting reporting performance is only partially satisfied"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConLiquidazioneParziale> <http://www.w3.org/2000/01/rdf-schema#label> "Partially satisfied Bando ISI financial reporting"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConLiquidazioneParziale> <http://www.w3.org/2000/01/rdf-schema#label> "Rendicontazione con liquidazione parziale"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConLiquidazioneTotale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConLiquidazioneTotale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoDiRendicontazione> .
 <https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConLiquidazioneTotale> <http://www.w3.org/2000/01/rdf-schema#comment> "A Bando ISI financial reporting that satisfies compliance requirements"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConLiquidazioneTotale> <http://www.w3.org/2000/01/rdf-schema#comment> "La domanda progetto prevenzione \u00E8 stata ammessa in modo totale al finanziamento"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConLiquidazioneTotale> <http://www.w3.org/2000/01/rdf-schema#label> "Compliant Bando ISI finacial reporting"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConLiquidazioneTotale> <http://www.w3.org/2000/01/rdf-schema#label> "Rendicontazione con liquidazione totale"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/StatoPassatoPraticaProgettoPrevenzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/work-accident/onto/risk_management/StatoPassatoPraticaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid190 .
-<https://w3id.org/italia/work-accident/onto/risk_management/StatoPassatoPraticaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid192 .
-<https://w3id.org/italia/work-accident/onto/risk_management/StatoPassatoPraticaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid193 .
-<https://w3id.org/italia/work-accident/onto/risk_management/StatoPassatoPraticaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid194 .
-<https://w3id.org/italia/work-accident/onto/risk_management/StatoPassatoPraticaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid195 .
+<https://w3id.org/italia/work-accident/onto/risk_management/StatoPassatoPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid185 .
+<https://w3id.org/italia/work-accident/onto/risk_management/StatoPassatoPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid187 .
+<https://w3id.org/italia/work-accident/onto/risk_management/StatoPassatoPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid188 .
+<https://w3id.org/italia/work-accident/onto/risk_management/StatoPassatoPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid189 .
+<https://w3id.org/italia/work-accident/onto/risk_management/StatoPassatoPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid190 .
 <https://w3id.org/italia/work-accident/onto/risk_management/StatoPassatoPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "Each arvhived application can still be access through the Bando ISI archive. Each stage of an application is tracked and stored as a record."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/StatoPassatoPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "Lo stato passato di una pratica. Ogni pratica avr\u00E0 uno o pi\u00F9 stati passati che modellano l'evolversi della pratica nel tempo."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/StatoPassatoPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI Archive"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/StatoPassatoPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#label> "Stato passato pratica progetto prevenzione"@it .
+_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid185 <http://www.w3.org/2002/07/owl#onProperty> _:genid186 .
+_:genid185 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid186 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/work-accident/onto/risk_management/praticaProgettoPrevenzioneHaStatoPassato> .
+_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid187 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/dataOperazioneStatoPassatoPraticaProgettoPrevenzione> .
+_:genid187 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid188 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/importoProgettoRichiestoStatoPassatoPraticaProgettoPrevenzione> .
+_:genid188 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid189 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/importoProgettoStatoPassatoPraticaProgettoPrevenzione> .
+_:genid189 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 _:genid190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid190 <http://www.w3.org/2002/07/owl#onProperty> _:genid191 .
-_:genid190 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
-_:genid191 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/work-accident/onto/risk_management/praticaProgettoPrevenzioneHaStatoPassato> .
-_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid192 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/dataOperazioneStatoPassatoPraticaProgettoPrevenzione> .
-_:genid192 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid193 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/importoProgettoRichiestoStatoPassatoPraticaProgettoPrevenzione> .
-_:genid193 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid194 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/importoProgettoStatoPassatoPraticaProgettoPrevenzione> .
-_:genid194 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid195 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/statoPraticaStatoPassatoPraticaProgettoPrevenzione> .
-_:genid195 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid190 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/statoPraticaStatoPassatoPraticaProgettoPrevenzione> .
+_:genid190 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/italia/work-accident/onto/risk_management/StatoVerificaPraticaProgettoPrevenzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/work-accident/onto/risk_management/StatoVerificaPraticaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid196 .
-<https://w3id.org/italia/work-accident/onto/risk_management/StatoVerificaPraticaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid198 .
-<https://w3id.org/italia/work-accident/onto/risk_management/StatoVerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid199 .
-<https://w3id.org/italia/work-accident/onto/risk_management/StatoVerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid200 .
-<https://w3id.org/italia/work-accident/onto/risk_management/StatoVerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid201 .
-<https://w3id.org/italia/work-accident/onto/risk_management/StatoVerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid202 .
+<https://w3id.org/italia/work-accident/onto/risk_management/StatoVerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid191 .
+<https://w3id.org/italia/work-accident/onto/risk_management/StatoVerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid193 .
+<https://w3id.org/italia/work-accident/onto/risk_management/StatoVerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid194 .
+<https://w3id.org/italia/work-accident/onto/risk_management/StatoVerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid195 .
+<https://w3id.org/italia/work-accident/onto/risk_management/StatoVerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid196 .
+<https://w3id.org/italia/work-accident/onto/risk_management/StatoVerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid197 .
 <https://w3id.org/italia/work-accident/onto/risk_management/StatoVerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "Rappresenta la fase o il risultato del processo di verifica per una specifica pratica."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/StatoVerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "The Bando ISI application examination status class rapresents a record of the last outcome of a Bando ISI application. "@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/StatoVerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI application examination status"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/StatoVerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#label> "Stato verifica pratica progetto prevenzione"@it .
+_:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid191 <http://www.w3.org/2002/07/owl#onProperty> _:genid192 .
+_:genid191 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid192 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/work-accident/onto/risk_management/verificaPraticaProgettoPrevenzioneHaStato> .
+_:genid193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid193 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/dataOperazioneVerificaPraticaProgettoPrevenzione> .
+_:genid193 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid194 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/verificaValutatoreAmministrativo> .
+_:genid194 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid195 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/verificaValutatoreAmministrativoCheck> .
+_:genid195 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 _:genid196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid196 <http://www.w3.org/2002/07/owl#onProperty> _:genid197 .
-_:genid196 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
-_:genid197 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/work-accident/onto/risk_management/verificaPraticaProgettoPrevenzioneHaStato> .
-_:genid198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid198 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/dataOperazioneVerificaPraticaProgettoPrevenzione> .
-_:genid198 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid199 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/verificaValutatoreAmministrativo> .
-_:genid199 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid200 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/verificaValutatoreAmministrativoCheck> .
-_:genid200 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid201 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid201 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/verificaValutatoreTecnico> .
-_:genid201 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid202 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid202 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/verificaValutatoreTecnicoCheck> .
-_:genid202 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid196 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/verificaValutatoreTecnico> .
+_:genid196 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid197 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/verificaValutatoreTecnicoCheck> .
+_:genid197 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid203 .
-<https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid205 .
-<https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid207 .
-<https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid208 .
-<https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid209 .
-<https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid210 .
-<https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid211 .
-<https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid212 .
+<https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid198 .
+<https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid200 .
+<https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid202 .
+<https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid203 .
+<https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid204 .
+<https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid205 .
+<https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid206 .
+<https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid207 .
 <https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica le tipologie di intervento che si intende effettuare con il progetto di prevenzione relativamente ad uno degli assi del bando ISI."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI> <http://www.w3.org/2000/01/rdf-schema#comment> "The different strategies availabe in the INAIL Bando ISI program."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI program strategy"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo  Intervento Bandi ISI"@it .
+_:genid198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid198 <http://www.w3.org/2002/07/owl#onProperty> _:genid199 .
+_:genid198 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid199 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/work-accident/onto/risk_management/asseHaTipoInterventoAmmissibile> .
+_:genid200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid200 <http://www.w3.org/2002/07/owl#onProperty> _:genid201 .
+_:genid200 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid201 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/work-accident/onto/risk_management/progettoHaTipoIntervento> .
+_:genid202 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid202 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/descrizioneTipoIntervento> .
+_:genid202 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 _:genid203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid203 <http://www.w3.org/2002/07/owl#onProperty> _:genid204 .
-_:genid203 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
-_:genid204 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/work-accident/onto/risk_management/asseHaTipoInterventoAmmissibile> .
+_:genid203 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/dettaglioTipoIntervento> .
+_:genid203 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid204 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid204 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/idTipoIntervento> .
+_:genid204 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 _:genid205 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid205 <http://www.w3.org/2002/07/owl#onProperty> _:genid206 .
-_:genid205 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
-_:genid206 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/work-accident/onto/risk_management/progettoHaTipoIntervento> .
+_:genid205 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/misurazioneMiglioramentoTipoIntervento> .
+_:genid205 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid206 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid206 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/rischioTipoIntervento> .
+_:genid206 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 _:genid207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid207 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/descrizioneTipoIntervento> .
+_:genid207 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/soluzioneTipoIntervento> .
 _:genid207 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid208 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid208 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/dettaglioTipoIntervento> .
-_:genid208 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid209 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid209 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/idTipoIntervento> .
-_:genid209 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid210 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid210 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/misurazioneMiglioramentoTipoIntervento> .
-_:genid210 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid211 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid211 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/rischioTipoIntervento> .
-_:genid211 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid212 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid212 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/soluzioneTipoIntervento> .
-_:genid212 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/italia/work-accident/onto/risk_management/TipologiaDiAcquistoProgettoPrevenzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/work-accident/onto/risk_management/TipologiaDiAcquistoProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid213 .
-<https://w3id.org/italia/work-accident/onto/risk_management/TipologiaDiAcquistoProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid215 .
-<https://w3id.org/italia/work-accident/onto/risk_management/TipologiaDiAcquistoProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid216 .
+<https://w3id.org/italia/work-accident/onto/risk_management/TipologiaDiAcquistoProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid208 .
+<https://w3id.org/italia/work-accident/onto/risk_management/TipologiaDiAcquistoProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid210 .
+<https://w3id.org/italia/work-accident/onto/risk_management/TipologiaDiAcquistoProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid211 .
 <https://w3id.org/italia/work-accident/onto/risk_management/TipologiaDiAcquistoProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica le tipologie di acquisto relative al progetto di prevenzione relativamente ad uno degli assi del bando ISI."@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/TipologiaDiAcquistoProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "The availabe trades or purchases listed under a particular area or appendix of the INAIL Bando ISI program and specified in a risk management plan application form."@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/TipologiaDiAcquistoProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#label> "Tipologia di acquisto progetto prevenzione"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/TipologiaDiAcquistoProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#label> "Types of availabe trade or purchase in a risk management plan"@en .
-_:genid213 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid213 <http://www.w3.org/2002/07/owl#onProperty> _:genid214 .
-_:genid213 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
-_:genid214 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/work-accident/onto/risk_management/progettoHaTipologiaDiAcquisto> .
-_:genid215 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid215 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/descrizioneTipoAcquisto> .
-_:genid215 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid216 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid216 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/idTipoAcquisto> .
-_:genid216 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid208 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid208 <http://www.w3.org/2002/07/owl#onProperty> _:genid209 .
+_:genid208 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid209 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/work-accident/onto/risk_management/progettoHaTipologiaDiAcquisto> .
+_:genid210 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid210 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/descrizioneTipoAcquisto> .
+_:genid210 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid211 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid211 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/idTipoAcquisto> .
+_:genid211 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/italia/work-accident/onto/risk_management/VerificaPraticaProgettoPrevenzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/work-accident/onto/risk_management/VerificaPraticaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid217 .
-<https://w3id.org/italia/work-accident/onto/risk_management/VerificaPraticaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid218 .
-<https://w3id.org/italia/work-accident/onto/risk_management/VerificaPraticaProgettoPrevenzione> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid219 .
-<https://w3id.org/italia/work-accident/onto/risk_management/VerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid221 .
-<https://w3id.org/italia/work-accident/onto/risk_management/VerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid222 .
-<https://w3id.org/italia/work-accident/onto/risk_management/VerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid223 .
-<https://w3id.org/italia/work-accident/onto/risk_management/VerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid224 .
+<https://w3id.org/italia/work-accident/onto/risk_management/VerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid212 .
+<https://w3id.org/italia/work-accident/onto/risk_management/VerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid213 .
+<https://w3id.org/italia/work-accident/onto/risk_management/VerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid214 .
+<https://w3id.org/italia/work-accident/onto/risk_management/VerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid216 .
+<https://w3id.org/italia/work-accident/onto/risk_management/VerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid217 .
+<https://w3id.org/italia/work-accident/onto/risk_management/VerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid218 .
+<https://w3id.org/italia/work-accident/onto/risk_management/VerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid219 .
 <https://w3id.org/italia/work-accident/onto/risk_management/VerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "Processo attraverso il quale l'INAIL esamina una pratica di finanziamento Bando ISI con l'obiettivo di accertare che il progetto soddisfi i requisiti stabiliti dal bando e che la documentazione fornita sia completa e corretta. La verifica ha una valutazione tecnica e una valutazione amministrativa"@it .
 <https://w3id.org/italia/work-accident/onto/risk_management/VerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "The Bando ISI review class rapresents the examination process of in the Bando ISI application process. Each Bando ISI application can have more than one examination and different sections of an application can be subjected to an examination by the INAIL institution. "@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/VerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#label> "Bando ISI examination checklist"@en .
 <https://w3id.org/italia/work-accident/onto/risk_management/VerificaPraticaProgettoPrevenzione> <http://www.w3.org/2000/01/rdf-schema#label> "Verifica pratica progetto prevenzione"@it .
+_:genid212 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid212 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/haAssegnazioneRuolo> .
+_:genid212 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid213 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid213 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/verificaPraticaProgettoPrevenzioneHaStato> .
+_:genid213 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid214 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid214 <http://www.w3.org/2002/07/owl#onProperty> _:genid215 .
+_:genid214 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid215 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/work-accident/onto/risk_management/praticaProgettoPrevenzioneVerificataDa> .
+_:genid216 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid216 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/verificaValutatoreAmministrativo> .
+_:genid216 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 _:genid217 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid217 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/haAssegnazioneRuolo> .
-_:genid217 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid217 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/verificaValutatoreAmministrativoCheck> .
+_:genid217 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 _:genid218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid218 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/verificaPraticaProgettoPrevenzioneHaStato> .
-_:genid218 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid218 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/verificaValutatoreTecnico> .
+_:genid218 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 _:genid219 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid219 <http://www.w3.org/2002/07/owl#onProperty> _:genid220 .
-_:genid219 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
-_:genid220 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/work-accident/onto/risk_management/praticaProgettoPrevenzioneVerificataDa> .
-_:genid221 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid221 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/verificaValutatoreAmministrativo> .
-_:genid221 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid222 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid222 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/verificaValutatoreAmministrativoCheck> .
-_:genid222 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid223 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/verificaValutatoreTecnico> .
-_:genid223 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid224 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid224 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/verificaValutatoreTecnicoCheck> .
-_:genid224 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid219 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/work-accident/onto/risk_management/verificaValutatoreTecnicoCheck> .
+_:genid219 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/italia/work-accident/data/organization/inail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/italia/work-accident/data/organization/inail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dati.gov.it/onto/dcatapit#Agent> .
 <https://w3id.org/italia/work-accident/data/organization/inail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
@@ -1937,63 +1975,63 @@ _:genid224 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 <https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-XML> <http://purl.org/dc/terms/title> "RDF/XML distribution of INAIL Organization - Risk Management Ontology"@en .
 <https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-XML> <http://www.w3.org/ns/dcat#accessURL> <https://github.com/InailUfficio5/inail-ndc/tree/main/assets/ontologies/risk_management/latest> .
 <https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-XML> <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/ontologies/risk_management/latest/risk_management.owl> .
+_:genid220 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid220 <http://www.w3.org/2002/07/owl#members> _:genid221 .
+_:genid221 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheHasuperatoIlClickDay> .
+_:genid221 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid222 .
+_:genid222 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheNonHaPartecipatoAlClickDay> .
+_:genid222 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid223 .
+_:genid223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheNonHaSuperatoIlClickDay> .
+_:genid223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid224 .
+_:genid224 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaDecaduta> .
+_:genid224 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid225 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
 _:genid225 <http://www.w3.org/2002/07/owl#members> _:genid226 .
-_:genid226 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheHasuperatoIlClickDay> .
+_:genid226 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneAmmessaAlFinanziamento> .
 _:genid226 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid227 .
-_:genid227 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheNonHaPartecipatoAlClickDay> .
+_:genid227 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneAnnullata> .
 _:genid227 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid228 .
-_:genid228 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheNonHaSuperatoIlClickDay> .
+_:genid228 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecaduta> .
 _:genid228 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid229 .
-_:genid229 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaDecaduta> .
-_:genid229 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid230 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid230 <http://www.w3.org/2002/07/owl#members> _:genid231 .
-_:genid231 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneAmmessaAlFinanziamento> .
+_:genid229 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInBozza> .
+_:genid229 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid230 .
+_:genid230 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInRendicontazione> .
+_:genid230 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid231 .
+_:genid231 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInRichiestaChiarimenti> .
 _:genid231 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid232 .
-_:genid232 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneAnnullata> .
+_:genid232 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInVerifica> .
 _:genid232 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid233 .
-_:genid233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecaduta> .
-_:genid233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid234 .
-_:genid234 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInBozza> .
-_:genid234 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid235 .
-_:genid235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInRendicontazione> .
+_:genid233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneRegistrata> .
+_:genid233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid234 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid234 <http://www.w3.org/2002/07/owl#members> _:genid235 .
+_:genid235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoBonificaAmianto> .
 _:genid235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid236 .
-_:genid236 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInRichiestaChiarimenti> .
+_:genid236 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoDiInvestimento> .
 _:genid236 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid237 .
-_:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInVerifica> .
+_:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoGiovaniAgricoltori> .
 _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid238 .
-_:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneRegistrata> .
-_:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid239 <http://www.w3.org/2002/07/owl#members> _:genid240 .
-_:genid240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoBonificaAmianto> .
+_:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoMicroEPiccoleImprese> .
+_:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid239 .
+_:genid239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoModelliOrganizzativiEResponsabilit\u00E0Sociale> .
+_:genid239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid240 .
+_:genid240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoMovimentazioneManualeCarichi> .
 _:genid240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid241 .
-_:genid241 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoDiInvestimento> .
-_:genid241 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid242 .
-_:genid242 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoGiovaniAgricoltori> .
-_:genid242 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid243 .
-_:genid243 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoMicroEPiccoleImprese> .
+_:genid241 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoProduzionePrimariaProdottiAgricoli> .
+_:genid241 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid242 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid242 <http://www.w3.org/2002/07/owl#members> _:genid243 .
+_:genid243 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoConcessioneBandoISI> .
 _:genid243 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid244 .
-_:genid244 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoModelliOrganizzativiEResponsabilit\u00E0Sociale> .
+_:genid244 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoConcessioneParziale> .
 _:genid244 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid245 .
-_:genid245 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoMovimentazioneManualeCarichi> .
-_:genid245 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid246 .
-_:genid246 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/ProgettoProduzionePrimariaProdottiAgricoli> .
-_:genid246 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid247 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid247 <http://www.w3.org/2002/07/owl#members> _:genid248 .
-_:genid248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoConcessioneBandoISI> .
+_:genid245 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoEsclusioneBandoISI> .
+_:genid245 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid246 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid246 <http://www.w3.org/2002/07/owl#members> _:genid247 .
+_:genid247 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConDiniego> .
+_:genid247 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid248 .
+_:genid248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConLiquidazioneParziale> .
 _:genid248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid249 .
-_:genid249 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoConcessioneParziale> .
-_:genid249 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid250 .
-_:genid250 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoEsclusioneBandoISI> .
-_:genid250 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid251 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid251 <http://www.w3.org/2002/07/owl#members> _:genid252 .
-_:genid252 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConDiniego> .
-_:genid252 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid253 .
-_:genid253 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConLiquidazioneParziale> .
-_:genid253 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid254 .
-_:genid254 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConLiquidazioneTotale> .
-_:genid254 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid249 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConLiquidazioneTotale> .
+_:genid249 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .

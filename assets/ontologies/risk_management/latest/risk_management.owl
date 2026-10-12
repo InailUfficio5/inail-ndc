@@ -5,12 +5,9 @@
      xmlns:TI="https://w3id.org/italia/onto/TI/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:l0="https://w3id.org/italia/onto/l0/"
-     xmlns:qb="http://purl.org/linked-data/cube"
      xmlns:CLV="https://w3id.org/italia/onto/CLV/"
+     xmlns:COV="https://w3id.org/italia/onto/COV/"
      xmlns:CPV="https://w3id.org/italia/onto/CPV/"
-     xmlns:cov="https://w3id.org/italia/onto/COV/"
-     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
-     xmlns:oco="https://w3id.org/italia/controlled-vocabulary/classifications-for-organizations/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -20,18 +17,13 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-     xmlns:time="http://www.w3.org/2006/time#"
-     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
      xmlns:INAILRM="https://w3id.org/italia/work-accident/onto/risk_management/"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:dcatapit="http://dati.gov.it/onto/dcatapit#"
-     xmlns:dcmitype="http://purl.org/dc/dcmitype/"
      xmlns:INAILCore="https://w3id.org/italia/work-accident/onto/core/">
     <owl:Ontology rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/">
-        <owl:versionIRI rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/1.0"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/1.1"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/CLV/"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/COV/"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/CPV/"/>
@@ -40,13 +32,13 @@
         <owl:imports rdf:resource="https://w3id.org/italia/onto/l0/"/>
         <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
         <dcterms:creator rdf:resource="https://w3id.org/italia/work-accident/data/organization/inail"/>
-        <dcterms:description xml:lang="it">Ontologia INAIL relativa ai Bandi ISI, un finanziamento a fondo perduto promosso dall'INAIL, il quale ha l'obiettivo di incentivare le imprese ad investire nel miglioramento della sicurezza sul lavoro</dcterms:description>
+        <dcterms:description xml:lang="it">Ontologia INAIL relativa ai Bandi ISI un finanziamento a fondo perduto promosso dall&apos;INAIL, il quale ha l&apos;obiettivo di incentivare le imprese ad investire nel miglioramento della sicurezza sul lavoro</dcterms:description>
         <dcterms:description xml:lang="en">This INAIL Organization ontology describes the Bando ISI scheme, a funding grant program sponsored by the INAIL institution whose main puprose is to support companies to reduce risks and improve safety in the workplace.</dcterms:description>
         <dcterms:identifier>https://w3id.org/italia/work-accident/onto/core</dcterms:identifier>
         <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-10T00:00:00+00:00</dcterms:issued>
         <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
         <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-10T00:00:00+00:00</dcterms:modified>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-10-12T00:00:00+00:00</dcterms:modified>
         <dcterms:publisher rdf:resource="https://w3id.org/italia/work-accident/data/organization/inail"/>
         <dcterms:rightsHolder rdf:resource="https://w3id.org/italia/work-accident/data/organization/inail"/>
         <dcterms:title xml:lang="it">Ontologia Prevenzione di INAIL </dcterms:title>
@@ -56,8 +48,8 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/"/>
         <rdfs:label xml:lang="it">Ontologia Prevenzione di INAIL</rdfs:label>
         <rdfs:label xml:lang="en">Risk Management INAIL Ontology</rdfs:label>
-        <owl:versionInfo xml:lang="en">Version 1.0 - Modified 10 February 2025</owl:versionInfo>
-        <owl:versionInfo xml:lang="it">Versione 1.0 - Modificata il 10 Febbraio 2025</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Version 1.1 - Modified 12 October 2026</owl:versionInfo>
+        <owl:versionInfo xml:lang="it">Versione 1.1 - Modificata il 12 Ottobre 2026</owl:versionInfo>
         <dcat:contactPoint rdf:resource="https://w3id.org/italia/work-accident/data/organization/ufficioV"/>
         <dcat:keyword xml:lang="it">Asse Prevenzione</dcat:keyword>
         <dcat:keyword xml:lang="en">BANDO ISI funding program</dcat:keyword>
@@ -81,13 +73,13 @@
         <adms:hasKeyClass rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/PresentatoreDomandaProgettoPrevenzione"/>
         <adms:hasKeyClass rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione"/>
         <adms:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
-        <adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-TURTLE"/>
         <adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-N-TRIPLES"/>
+        <adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-TURTLE"/>
         <adms:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/work-accident/data/risk_management/distribution/RISKMGMT-RDF-XML"/>
         <adms:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/AnnotationTask"/>
         <adms:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/QueryFormulationTask"/>
         <adms:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/SearchTask"/>
-        <adms:last rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/1.0"/>
+        <adms:last rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/1.1"/>
         <adms:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/italia/work-accident/onto/risk_management</adms:officialURI>
         <adms:prefix>inailc</adms:prefix>
         <adms:prev rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/1.0"/>
@@ -99,6 +91,191 @@
         <adms:target xml:lang="it">Pubbliche Amministrazioni</adms:target>
         <adms:type rdf:resource="https://w3id.org/italia/onto/ADMS/ServiceOnytology"/>
     </owl:Ontology>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://purl.org/dc/terms/accrualPeriodicity -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accrualPeriodicity"/>
+
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language"/>
+
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+
+
+
+    <!-- http://purl.org/dc/terms/rightsHolder -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rightsHolder"/>
+
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+
+
+
+    <!-- http://www.w3.org/ns/dcat#contactPoint -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#contactPoint"/>
+
+
+
+    <!-- http://www.w3.org/ns/dcat#keyword -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#keyword"/>
+
+
+
+    <!-- http://www.w3.org/ns/dcat#theme -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#theme"/>
+
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/acronym -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/acronym"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasContributor -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasContributor"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasFormalityLevel -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasFormalityLevel"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasKeyClass -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasKeyClass"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasOntologyLanguage -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasOntologyLanguage"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasTask -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasTask"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/last -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/last"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/officialURI -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/officialURI"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/prefix -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/prefix"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/prev -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/prev"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/semanticAssetInUse -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/semanticAssetInUse"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/status -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/status"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/target -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/target"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/type -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/type"/>
 
 
 
@@ -789,6 +966,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/codiceConcessioneCOR -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/codiceConcessioneCOR">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI"/>
         <rdfs:comment xml:lang="it">Il RNA rilascia il Codice Concessione - RNA - COR che viene attributo ad ogni singola pratica con esito positivo.</rdfs:comment>
         <rdfs:comment xml:lang="en">The RNA association releases the COR code to each and everyone of those Bando ISI application that have been approved and are now labelled as funding eligible. </rdfs:comment>
         <rdfs:label xml:lang="en">COR code</rdfs:label>
@@ -824,6 +1002,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/codiceUnicoCUP -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/codiceUnicoCUP">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI"/>
         <rdfs:comment xml:lang="en">CUP code is assigned to those Bando ISI applications that have been approved and are now marked as eligible for the Bando ISI funding program.</rdfs:comment>
         <rdfs:comment xml:lang="it">Per ciascuna domanda dichiarata ammissibile al contributo, si richiede al CIPE codice unico di progetto (CUP) che dovrà essere indicato su tutti i documenti amministrativi e contabili relativi allo specifico contributo e i provvedimenti di ammissione che lo richiedono.</rdfs:comment>
         <rdfs:label xml:lang="en">CUP code</rdfs:label>
@@ -1020,6 +1199,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/dataStatoProvvedimentoBandoISI -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/dataStatoProvvedimentoBandoISI">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="it">data dello stato del provvedimento Bando ISI</rdfs:comment>
         <rdfs:label xml:lang="en">Bando ISI evaluation result status date</rdfs:label>
@@ -1043,6 +1223,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/dataUltimoAggiornamentoBandoISI -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/dataUltimoAggiornamentoBandoISI">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="it">Data dell&apos;ultimo aggiornamento provvedimento Bando ISI</rdfs:comment>
         <rdfs:label xml:lang="en">Bando ISI evaluation result last update date</rdfs:label>
@@ -1054,6 +1235,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/dataValutazioneProvvedimentoBandoISI -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/dataValutazioneProvvedimentoBandoISI">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="it">data valutazione provvedimento Bando ISI</rdfs:comment>
         <rdfs:label xml:lang="en">Bando ISI evaluation result outcome date</rdfs:label>
@@ -1825,7 +2007,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/core/ComponenteSocietarioINAIL -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/ComponenteSocietarioINAIL">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -1834,8 +2016,8 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -1844,19 +2026,19 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/core/importoQuoteSocietà"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/core/percentualeQuoteSocietà"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -1864,14 +2046,12 @@
     <!-- https://w3id.org/italia/work-accident/onto/core/PersonaFisica -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/PersonaFisica">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/ricopreRuoloDiPresentatoreDiDomandaProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:comment xml:lang="it">Una persona fisica , in diritto, è l&apos;essere umano in quanto soggetto di diritto e, quindi, dotato di capacità giuridica. Nell&apos;ordinamento italiano, secondo l&apos;articolo 1 del codice civile, sono persone fisiche gli esseri umani che, con la loro nascita, divengono titolari di diritti e doveri, cioè acquisiscono la capacità giuridica. Con il raggiungimento della maggiore età (18 anni per l&apos;ordinamento italiano), la persona fisica acquisisce la capacità di agire, cioè la possibilità di porre in essere atti rilevanti ai fini giuridici.</rdfs:comment>
-        <rdfs:label xml:lang="it">PersonaFisica</rdfs:label>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -1885,8 +2065,6 @@
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="it">La Posizione Assicurativa Territoriale è l’entità di riferimento del rapporto assicurativo in termini di collocazione geografica dell’attività produttiva svolta dall’Azienda. Un’Azienda può essere associata ad una o più Pat secondo la distribuzione territoriale dei lavori svolti.</rdfs:comment>
-        <rdfs:label xml:lang="it">PosizioneAssicurativaTerritoriale</rdfs:label>
     </owl:Class>
 
 
@@ -1894,7 +2072,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/core/RappresentanteLegaleINAIL -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/RappresentanteLegaleINAIL">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -1903,8 +2081,8 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -1913,31 +2091,31 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/core/emailRappresentanteLegale"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/core/idRappresentanteLegale"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/core/residenzaRappresentanteLegale"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/core/telefonoRappresentanteLegale"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -1965,9 +2143,6 @@
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="it">Sede lavoro</rdfs:comment>
-        <rdfs:label xml:lang="it">SedeLavoro</rdfs:label>
-        <owl:incompatibleWith rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:incompatibleWith>
     </owl:Class>
 
 
@@ -1984,13 +2159,13 @@
     <!-- https://w3id.org/italia/work-accident/onto/core/StatoDiSoggettoAssicurante -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/core/StatoDiSoggettoAssicurante">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/core/soggettoAssicuranteHaRappresentanteLegale"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -1999,25 +2174,25 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/core/fatturatoSoggettoAssicurante"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/core/indirizzoPECSoggettoAssicurante"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/core/telefonoSoggettoAssicurante"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">Rappresenta una fotografia passata o presente di una Aziende. Permette di modellare le cratteristiche di un&apos;Aziende che evolvono nel tempo.</rdfs:comment>
         <rdfs:label xml:lang="it">Stato di Soggetto Assicurante</rdfs:label>
         <owl:incompatibleWith rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:incompatibleWith>
@@ -2028,19 +2203,19 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/AssePrevenzione -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/AssePrevenzione">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/asseHaTipoInterventoAmmissibile"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/asseRelativaABando"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -2049,8 +2224,8 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -2059,43 +2234,43 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/budgetAsseDiPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/categoriaAssePrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/codiceAssePrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/descrizioneAssePrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/idAssePrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/tipoAssePrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">Asse di finanziamento per il quale si vuole presentare la domanda relativa al bando ISI. Le tipologie di Asse sono 5: - ASSE 1 - Progetti di investimento e modelli organizzativi e di responsabilità sociale:   - Investimento (Asse 1.1)   - Adozione di modelli organizzativi e di responsabilità  sociale (Asse 1.2)- ASSE 2 - Movimentazione manuale dei carichi (MMC):    Movimentazione Manuale dei Carichi (MMC)- ASSE 3 - Bonifica da materiali contenenti amianto:    Bonifica da materiali contenenti amianto- ASSE 4 - Micro e piccole imprese operanti in specifici settori di attività :   Imprese operanti in specifici settori di attivitÃ - ASSE 5 - Agricoltura:   - Progetti del settore della produzione primaria dei prodotti agricoli (Asse 5.1)   - Progetti presentati da giovani agricoltori (Asse 5.2)</rdfs:comment>
         <rdfs:comment xml:lang="en">Each application form is associated with a particular appendix of the BANDO ISI. There are five different appendices in the bando ISI funding program. See belows: - Appendix 1 - Investment, organisational models, and social responsibility risk management plans: - Investment (at Appendix 1.1) - Organizational models and social responsibility (at Appendix 1.2) - APPENDIX 2 - Manual Handling of Loads (MMC): - APPENDIX 3 - Asbestos remediation programme - APPENDIX 4 - Microenterprise and small business programme - APPENDIX 5 - Farming: - risk management plans that focus on agriculture and primary production (at Appendix 5.1) - risk management plans by young farmers operating in the agriculture sector (at Appendix 5.2).</rdfs:comment>
         <rdfs:label xml:lang="it">Asse prevenzione</rdfs:label>
@@ -2107,7 +2282,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/AssegnazioneRuoloProgettoPrevenzione -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/AssegnazioneRuoloProgettoPrevenzione">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -2116,19 +2291,19 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/idAssegnazioneRuolo"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/idAzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">Fase di assegnazione del valutatore alla domanda VT, CT, VA , RAI e RPP sono i ruoli e vengono istanziati per ogni domanda.</rdfs:comment>
         <rdfs:comment xml:lang="en">The different roles of examination that can be assinged to a Bando ISI application such as,  VT, CT, VA, RAI and RPP.</rdfs:comment>
         <rdfs:label xml:lang="it">Assegnazione ruolo progetto prevenzione</rdfs:label>
@@ -2140,19 +2315,19 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/AvvisoPubblicoRegionale -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/AvvisoPubblicoRegionale">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/avvisoRelativoABando"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/bandoRelativoARegione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -2161,8 +2336,8 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -2171,37 +2346,37 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/budgetAvvisoPubblicoRegionale"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/codiceAvvisoPubblicoRegionale"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/descrizioneAvvisoPubblicoRegionale"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/idAvvisoPubblicoRegionale"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/importoImpiegatoBandoISIRegionale"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">Avviso pubblico regionale relativo al bando ISI.</rdfs:comment>
         <rdfs:comment xml:lang="en">Reglional official announcement for the Bando ISI funding program.</rdfs:comment>
         <rdfs:label xml:lang="it">Avviso pubblico regionale</rdfs:label>
@@ -2213,7 +2388,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/BandoISI -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/BandoISI">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -2222,67 +2397,67 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/annoDiRiferimentoBandoISI"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/budgetBandoISI"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/codiceBandoISI"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/dataClickDayBandoISI"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/dataFineBandoISI"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/dataInizioBandoISI"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/dataPubblicazionePortaleBandoISI"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/descrizioneBandoISI"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/idBandoISI"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/pubblicazioneGUBandoISI"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">BANDO ISI is a funding grant program sponsored by the INAIL institution. Its main puprose is to support companies to reduce risks and improve safety in the workplace. In order to be approved for any of the Bando ISI grants, applicants must successfully complete the three different selection stages. Stage no.1 application review. Stage no.2 a selection process named CLICK DAY that gives direct acces to the official BANDO ISI list. Stage no 3 final decision, INAIL will have 30 days max to check all the documentation provided and make an offer to successfull applicants.</rdfs:comment>
         <rdfs:comment xml:lang="it">Il Bando ISI è un finanziamento a fondo perduto promosso dall&apos;INAIL, il quale ha l&apos;obiettivo di incentivare le imprese ad investire nel miglioramento della sicurezza sul lavoro. Il suddetto contributo a fondo perduto viene erogato alle imprese che superano una prima analisi (studio di fattibilità) e successivamente rientrano nella graduatoria con esito positivo, il Click Day Inail. All&apos;ingresso in graduatoria Click Day Inail con esito positivo, segue entro 30 giorni una documentazione per verificare la spesa e la successiva rendicontazione.</rdfs:comment>
         <rdfs:label xml:lang="en">BANDO ISI funding program</rdfs:label>
@@ -2294,6 +2469,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheHasuperatoIlClickDay -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheHasuperatoIlClickDay">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione"/>
         <rdfs:comment xml:lang="en">Applications that have passed the clickday application process.</rdfs:comment>
         <rdfs:comment xml:lang="it">Domanda che hasuperato il click day</rdfs:comment>
         <rdfs:label xml:lang="it">Domanda che hasuperato il click day</rdfs:label>
@@ -2305,6 +2481,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheNonHaPartecipatoAlClickDay -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheNonHaPartecipatoAlClickDay">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione"/>
         <rdfs:comment xml:lang="en">Application that has failed to join the clickDay application process</rdfs:comment>
         <rdfs:comment xml:lang="it">Domanda che non ha partecipato al click day</rdfs:comment>
         <rdfs:label xml:lang="en">Application that has failed to join the clickDay application process</rdfs:label>
@@ -2316,6 +2493,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheNonHaSuperatoIlClickDay -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheNonHaSuperatoIlClickDay">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione"/>
         <rdfs:comment xml:lang="en">ClickDay application forms that have not passed the selection process</rdfs:comment>
         <rdfs:comment xml:lang="it">Domanda che non ha superato il click day</rdfs:comment>
         <rdfs:label xml:lang="it">Domanda che non ha superato il click day</rdfs:label>
@@ -2327,6 +2505,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/DomandaDecaduta -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/DomandaDecaduta">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione"/>
         <rdfs:comment xml:lang="en">An application that has exipered, thus, removed from the Bando ISI official ranking list.</rdfs:comment>
         <rdfs:comment xml:lang="it">Domanda che è stata esclusa dalla graduatoria</rdfs:comment>
         <rdfs:label xml:lang="it">Domanda decaduta</rdfs:label>
@@ -2338,7 +2517,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/DomandaCheHasuperatoIlClickDay"/>
@@ -2347,8 +2526,8 @@
                     <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/DomandaDecaduta"/>
                 </owl:unionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneAmmessaAlFinanziamento"/>
@@ -2361,44 +2540,44 @@
                     <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneRegistrata"/>
                 </owl:unionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/domandaPresentaProgettoDiPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/domandaPresentataPerBando"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/domandaPresentataPressoSedeINAIL"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/domandaProgettoPrevenzionePressoPAT"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/domandaProgettoPrevenzioneRelativaAdAsse"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/domandaRelativaAStatoDiSoggettoAssicurante"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -2407,8 +2586,8 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -2417,55 +2596,55 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/codiceDomandaProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/dataInserimentoInElencoDomandaProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/dataInvioDomandaProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/dataScorrimentoDomandaProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/dataUltimaModificaDomandaProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/idDomandaProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/progressivoInvioDomandaProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/statoDomandaProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">Domanda di partecipazione al bando ISI contenente le informazioni dell&apos;impresa e del progetto di prevenzione che la stessa intende presentare.</rdfs:comment>
         <rdfs:comment xml:lang="en">INAIL Bando ISI application form that includes the business details as well as their risk management plan.</rdfs:comment>
         <rdfs:label xml:lang="en">Bando ISI application form</rdfs:label>
@@ -2477,6 +2656,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneAmmessaAlFinanziamento -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneAmmessaAlFinanziamento">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione"/>
         <rdfs:comment xml:lang="en">Bando ISI applications that have been approved for a particular section of the Bando ISI grant which they have applied for.</rdfs:comment>
         <rdfs:comment xml:lang="it">Domanda progetto prevenzione ammessa al finanziamento del Bando ISI a cui ha partecipato.</rdfs:comment>
         <rdfs:label xml:lang="en">Bando ISI application approved</rdfs:label>
@@ -2488,6 +2668,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneAnnullata -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneAnnullata">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione"/>
         <rdfs:comment xml:lang="en">Applications that have been withdrawn by applicants.</rdfs:comment>
         <rdfs:comment xml:lang="it">Domanda annullata dal presentatore della domanda.</rdfs:comment>
         <rdfs:label xml:lang="en">Bando ISI application withdrawn</rdfs:label>
@@ -2499,14 +2680,15 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecaduta -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecaduta">
-        <owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione"/>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecadutaPerAccessiMultipli"/>
                     <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecadutaPerMancanzaDocumentazione"/>
                 </owl:unionOf>
             </owl:Class>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Applicant has failed to provide required documentation or has too many login attempts.</rdfs:comment>
         <rdfs:comment xml:lang="it">Una domanda che non è più valida per due motivi: accessi multipli o mancata documentazione.</rdfs:comment>
         <rdfs:label xml:lang="en">Bando ISI application denied</rdfs:label>
@@ -2518,6 +2700,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecadutaPerAccessiMultipli -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecadutaPerAccessiMultipli">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecaduta"/>
         <owl:disjointWith rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecadutaPerMancanzaDocumentazione"/>
         <rdfs:comment xml:lang="en">Application denied on the basis of multiple login attempts from various IP addresses.</rdfs:comment>
         <rdfs:comment xml:lang="it">Domanda decaduta perché diversi utenti hanno provato ad accedere al click day mentre ne può accedere solamente uno.</rdfs:comment>
@@ -2530,6 +2713,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecadutaPerMancanzaDocumentazione -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecadutaPerMancanzaDocumentazione">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneDecaduta"/>
         <rdfs:comment xml:lang="en">Applicant has failed to provide necessary documentation thus application is denied on the basis of lack of supporting documents.</rdfs:comment>
         <rdfs:comment xml:lang="it">Domanda decaduta perché non è stata presentata la documentazione necessaria.</rdfs:comment>
         <rdfs:label xml:lang="en">Application denied due to lack of necessary documentation</rdfs:label>
@@ -2541,6 +2725,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInBozza -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInBozza">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione"/>
         <rdfs:comment xml:lang="en">An Application that is currently in drafts.</rdfs:comment>
         <rdfs:comment xml:lang="it">Domanda di un progetto prevenzione in stato di bozza.</rdfs:comment>
         <rdfs:label xml:lang="en">Bando ISI application in Draft folder</rdfs:label>
@@ -2552,6 +2737,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInRendicontazione -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInRendicontazione">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione"/>
         <rdfs:comment xml:lang="en">An application that is currently in the screening process.</rdfs:comment>
         <rdfs:comment xml:lang="it">Domanda nello stato di rendicontazione.</rdfs:comment>
         <rdfs:label xml:lang="en">Bando ISI application under review</rdfs:label>
@@ -2563,6 +2749,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInRichiestaChiarimenti -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInRichiestaChiarimenti">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione"/>
         <rdfs:comment xml:lang="en">An application form that needs additional clarification, thus, it&apos;s paused until applicant&apos;s response.</rdfs:comment>
         <rdfs:comment xml:lang="it">Domanda progetto prevenzione che richiede ulteriori chiarimenti.</rdfs:comment>
         <rdfs:label xml:lang="en">Bando ISI application waiting for clarification</rdfs:label>
@@ -2574,6 +2761,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInVerifica -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneInVerifica">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione"/>
         <rdfs:comment xml:lang="en">An application that has been received and is currently in the background check process.</rdfs:comment>
         <rdfs:comment xml:lang="it">Domanda per progetto prevenzione in stato di verifica.</rdfs:comment>
         <rdfs:label xml:lang="en">Bando ISI application in progress</rdfs:label>
@@ -2585,6 +2773,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneRegistrata -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzioneRegistrata">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/DomandaProgettoPrevenzione"/>
         <rdfs:comment xml:lang="en">An application that has been received.</rdfs:comment>
         <rdfs:comment xml:lang="it">Domanda di progetto prevenzione che è stata registrata.</rdfs:comment>
         <rdfs:label xml:lang="en">Bando ISI application status received</rdfs:label>
@@ -2596,6 +2785,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/ElencoBandoISIClickDay -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/ElencoBandoISIClickDay">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI"/>
         <owl:disjointWith rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/ElencoNCD"/>
         <rdfs:comment xml:lang="it">Elenchi Bando ISI delle domande che hanno partecipato al Click Day divise per regione e per asse di finanziamento. </rdfs:comment>
         <rdfs:label xml:lang="en">Click Day Bando ISI list</rdfs:label>
@@ -2607,33 +2797,33 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/ElencoBandoISIClickDay"/>
                     <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/ElencoNCD"/>
                 </owl:unionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/elencoRispettoAdAsse"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/haElencoCronologicoDefinitivo"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/haElencoCronologicoProvvisorio"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -2642,37 +2832,37 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/budgetElencoBandoISI"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/dataClickGraduatoriaBandoISI"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/dataInserimentoGraduatoriaBandoISI"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/dataScorrimentoGraduatoriaBandoISI"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/descrizioneElencoBandoISI"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Bando ISI grant lists.</rdfs:comment>
         <rdfs:comment xml:lang="it">Domande Bando ISI ammesse agli elenchi cronologici. </rdfs:comment>
         <rdfs:label xml:lang="en">Bando ISI grant list</rdfs:label>
@@ -2684,7 +2874,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISIDefinitivo -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISIDefinitivo">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -2693,7 +2883,7 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Each and every Bando ISI list has an official Bando ISI ranking list and a temporary one.</rdfs:comment>
         <rdfs:comment xml:lang="it">Ogni istanza delle classi Elenco Click Day e Elenco NCD deve avere un elenco cronologico Bando ISI definitivo.</rdfs:comment>
         <rdfs:label xml:lang="en">Bando ISI official ranking list</rdfs:label>
@@ -2705,7 +2895,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISIProvvisorio -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISIProvvisorio">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -2714,7 +2904,7 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Each and every Bando ISI list has an official Bando ISI ranking list and a temporary one.</rdfs:comment>
         <rdfs:comment xml:lang="it">Ogni istanza delle classi Elenco Click Day e Elenco NCD deve avere un elenco cronologico Bando ISI provvisorio.</rdfs:comment>
         <rdfs:label xml:lang="en">Bando ISI temporary ranking list</rdfs:label>
@@ -2726,6 +2916,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/ElencoNCD -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/ElencoNCD">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/ElencoCronologicoBandoISI"/>
         <rdfs:comment xml:lang="it">Elenchi regionali/provinciali No Click Day. </rdfs:comment>
         <rdfs:label xml:lang="it">ElencoNCD</rdfs:label>
         <rdfs:label xml:lang="en">NCD Bando ISI list</rdfs:label>
@@ -2736,7 +2927,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/Perito -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/Perito">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -2745,8 +2936,8 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -2755,37 +2946,37 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/alboProfessionalePerito"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/dataIscrizioneAlboPerito"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/emailStudioPerito"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/numeroIscrizionePerito"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/telefonoStudioPerito"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">An expert whose main role is to carry out a survey on behalf of either a private client or a judge. The latter, usually gets involved in the inspection process, only in case of an appeall or final examination. A judge can decide to appoint a second Quantity Surveyor to help them decide if the assesed plan can potentially qualify for the INAIL managemnt risk funding program.</rdfs:comment>
         <rdfs:comment xml:lang="it">Esperto incaricato di un&apos;indagine tecnica (perizia) per conto di privati, sia per incarico del giudice, cui riferisce mediante dichiarazione giurata. Il giudice interviene solo se c&apos;è un ricorso e si arriva in giudizio. In tal caso il giudice può nominare un secondo perito per capire se il progetto di prevenzione può beneficiare o meno al finanziamento.</rdfs:comment>
         <rdfs:label xml:lang="it">Perito</rdfs:label>
@@ -2797,13 +2988,13 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/PeriziaProgettoPrevenzione -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/PeriziaProgettoPrevenzione">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/periziaEffettuataDaPerito"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -2812,19 +3003,19 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/dataInvioPeriziaProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/modelloPerizia"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">Analisi tecnica redatta dal perito riguardo il progetto di prevenzione proposto per la partecipazione al bando Isi.</rdfs:comment>
         <rdfs:comment xml:lang="en">Technical evaluation of a risk management plan carried out by a Quantity Surveyor in order for an applicant to apply for the INAIL Bando ISI program and funding.</rdfs:comment>
         <rdfs:label xml:lang="it">Perizia progetto prevenzione</rdfs:label>
@@ -2836,54 +3027,54 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/PraticaProgettoPrevenzione -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/PraticaProgettoPrevenzione">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/PraticaProgettoPrevenzioneHaProvvedimetoBandoISI"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/praticaProgettoPrevenzioneHaStatoPassato"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/praticaProgettoPrevenzioneVerificataDa"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/praticaRelativaADomandaProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/dataOperazionePraticaProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/importoProgettoPraticaProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/importoProgettoRichiestoPraticaProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/statoPraticaProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">Pratica relativa a una domanda di progetto prevenzione. La pratica ha degli stati passati che si susseguono nell&apos;evolversi della pratica.</rdfs:comment>
         <rdfs:comment xml:lang="en">There are different crucial stages of a Bando ISI application process and they are all stored in a dossier.</rdfs:comment>
         <rdfs:label xml:lang="en">Bando ISI application dossier</rdfs:label>
@@ -2895,13 +3086,13 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/PresentatoreDomandaProgettoPrevenzione -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/PresentatoreDomandaProgettoPrevenzione">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/presentaDomandaProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -2910,25 +3101,25 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/codiceGRU"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/idPresentatoreDomandaProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/indirizzoPECPresentatoreDomandaPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A Bando ISI applicant is someone such as a designeted employee or a legal rapresentative of a company who is in charge of submitting the Bando ISI application to join the Bando ISI funding program on behalf of the company.</rdfs:comment>
         <rdfs:comment xml:lang="it">Soggetto che presenta la domanda di partecipazione al bando ISI per conto di un&apos;azienda. Il presentatore può essere il rappresentante legale dell&apos;azienda o un suo dipendente di fiducia, oppure un intermediario.</rdfs:comment>
         <rdfs:label xml:lang="en">Bando ISI applicant</rdfs:label>
@@ -2940,6 +3131,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/ProgettoBonificaAmianto -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/ProgettoBonificaAmianto">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione"/>
         <rdfs:comment xml:lang="en">A risk management plan that focuses on section 3, the asbestos remediation programme, of the INAIL Bando ISI funding program.</rdfs:comment>
         <rdfs:comment xml:lang="it">Progetto di prevenzione presentato da un&apos;azienda relativamente all&apos;Asse 3 di finanziamento (Bonifica da materiali contenenti amianto).</rdfs:comment>
         <rdfs:label xml:lang="en">Asbestos remediation program</rdfs:label>
@@ -2951,6 +3143,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/ProgettoDiInvestimento -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/ProgettoDiInvestimento">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione"/>
         <rdfs:comment xml:lang="en">A risk management plan developed by a business or Insurer that focuses on section 1.1, investment , of the INAIL Bando ISI funding program.</rdfs:comment>
         <rdfs:comment xml:lang="it">Progetto di prevenzione presentato da un&apos;azienda relativamente all&apos;Asse 1.1 di finanziamento (Investimento).</rdfs:comment>
         <rdfs:label xml:lang="en">Investment plan</rdfs:label>
@@ -2962,6 +3155,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/ProgettoGiovaniAgricoltori -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/ProgettoGiovaniAgricoltori">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione"/>
         <rdfs:comment xml:lang="en">A risk management plan that focuses on section 5.2 of the INAIL Bando ISI funding program. This section addresses young farmers operating in the agricultural field.</rdfs:comment>
         <rdfs:comment xml:lang="it">Progetto di prevenzione presentato da un&apos;azienda relativamente all&apos;Asse 5.2 di finanziamento (Progetti presentati da giovani agricoltori).</rdfs:comment>
         <rdfs:label xml:lang="it">Progetto giovani agricoltori</rdfs:label>
@@ -2973,6 +3167,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/ProgettoMicroEPiccoleImprese -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/ProgettoMicroEPiccoleImprese">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione"/>
         <rdfs:comment xml:lang="en">A risk management plan developed by an Insurer that focuses on section 4, &apos;Businesses that provide only certain types of service&apos; , of the INAIL Bando ISI funding program</rdfs:comment>
         <rdfs:comment xml:lang="it">Progetto di prevenzione presentato da un&apos;azienda relativamente all&apos;Asse 4 di finanziamento (Imprese operanti in specifici settori di attività).</rdfs:comment>
         <rdfs:label xml:lang="en">Microenterprise and small business program</rdfs:label>
@@ -2984,6 +3179,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/ProgettoModelliOrganizzativiEResponsabilitàSociale -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/ProgettoModelliOrganizzativiEResponsabilitàSociale">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione"/>
         <rdfs:comment xml:lang="en">Corporate Social Responsibility and organizational structure plan</rdfs:comment>
         <rdfs:comment xml:lang="it">Progetto modelli organizzativi e responsabilità sociale</rdfs:comment>
         <rdfs:label xml:lang="en">Corporate Social Responsibility and organizational structure plan</rdfs:label>
@@ -2995,6 +3191,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/ProgettoMovimentazioneManualeCarichi -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/ProgettoMovimentazioneManualeCarichi">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione"/>
         <rdfs:comment xml:lang="en">A risk management plan that focuses on section 2, Manual Handling of Loads, of the INAIL Bando ISI funding program.</rdfs:comment>
         <rdfs:comment xml:lang="it">Progetto di prevenzione presentato da un&apos;azienda relativamente all&apos;Asse 2 di finanziamento (Movimentazione Manuale dei Carichi (MMC)).</rdfs:comment>
         <rdfs:label xml:lang="en">Manual Handling of Load Plan</rdfs:label>
@@ -3006,7 +3203,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/ProgettoBonificaAmianto"/>
@@ -3018,26 +3215,26 @@
                     <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/ProgettoProduzionePrimariaProdottiAgricoli"/>
                 </owl:unionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/progettoHaTipoIntervento"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/progettoHaTipologiaDiAcquisto"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/progettoPrevenzioneAssociatoAPerizia"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -3046,79 +3243,79 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/descrizioneProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/ibanProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/idProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/importoAnticipoProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/importoCertificazioneProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/importoConsulenzaProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/importoMassimoFinanziatoProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/importoPrevisionaleVenditaOPermutaProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/importoProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/importoRichiestoProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/punteggioATECOProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/punteggioTotaleProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A risk management plan is a type of document that a business needs to put together to reduce risks in the workplace. In the context of BANDO ISI funding program, a risk management plan is a requirement for the INAIL institution to apply for the grants available in the Bando ISI program.</rdfs:comment>
         <rdfs:comment xml:lang="it">Progetto di prevenzione finalizzato a migliorare la sicurezza sul posto di lavoro. Tale progetto viene presentato da un&apos;azienda per ottenere i contributi a fondo perduto del bando ISI.</rdfs:comment>
         <rdfs:label xml:lang="it">Progetto prevenzione</rdfs:label>
@@ -3130,6 +3327,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/ProgettoProduzionePrimariaProdottiAgricoli -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/ProgettoProduzionePrimariaProdottiAgricoli">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/ProgettoPrevenzione"/>
         <rdfs:comment xml:lang="en">A risk management plan that focuses on section 5.1 of the INAIL Bando ISI funding program. This section is for business in the agriculture and primary production field.</rdfs:comment>
         <rdfs:comment xml:lang="it">Progetto di prevenzione presentato da un&apos;azienda relativamente all&apos;Asse 5.1 di finanziamento (Progetti del settore della produzione primaria dei prodotti agricoli).</rdfs:comment>
         <rdfs:label xml:lang="it">Progetto agricoltori over</rdfs:label>
@@ -3141,7 +3339,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoConcessioneBandoISI"/>
@@ -3149,14 +3347,14 @@
                     <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoEsclusioneBandoISI"/>
                 </owl:unionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/haProvvedimentoDiRendicontazione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -3164,36 +3362,6 @@
                     </rdf:Description>
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/codiceConcessioneCOR"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/codiceUnicoCUP"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/dataStatoProvvedimentoBandoISI"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/dataUltimoAggiornamentoBandoISI"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/dataValutazioneProvvedimentoBandoISI"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A bando ISI funding application can have three different outcomes: awarded, partially awarded, and rejected.</rdfs:comment>
@@ -3207,6 +3375,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoConcessioneBandoISI -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoConcessioneBandoISI">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI"/>
         <rdfs:comment xml:lang="it">Il provvedimento di concessione è un atto amministrativo con cui l&apos;INAIL approva la richiesta di finanziamento presentata da un&apos;azienda o ente per un progetto di prevenzione. Questo provvedimento sancisce l&apos;assegnazione del contributo economico, nei termini stabiliti dal bando per la realizzazione di interventi volti al miglioramento delle condizioni di salute e sicurezza nei luoghi di lavoro.</rdfs:comment>
         <rdfs:comment xml:lang="en">The Bando ISI grant scheme has been awarded by the INAIL organization. Contracts are now binding.  </rdfs:comment>
         <rdfs:label xml:lang="en">Bando ISI Funding Awarded</rdfs:label>
@@ -3218,6 +3387,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoConcessioneParziale -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoConcessioneParziale">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI"/>
         <rdfs:comment xml:lang="it">Atto amministrativo in cui l&apos;INAIL riconosce al richiedente un finanziamento parziale rispetto alla somma richiesta inizialmente nel progetto di prevenzione presentato. Questo provvedimento viene emesso quando, a seguito delle verifiche tecniche e amministrative, non è possibile concedere l&apos;intero importo richiesto ma si approva comunque una parte del finanziamento.</rdfs:comment>
         <rdfs:comment xml:lang="en">The Bando ISI grant scheme has been partially awarded by the INAIL organization.</rdfs:comment>
         <rdfs:label xml:lang="en">Bando ISI Funding Partially Awarded</rdfs:label>
@@ -3229,7 +3399,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoDiRendicontazione -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoDiRendicontazione">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConDiniego"/>
@@ -3237,8 +3407,8 @@
                     <rdf:Description rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConLiquidazioneTotale"/>
                 </owl:unionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -3247,19 +3417,19 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/descrizioneStatoRendicontazione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/idStatoRendicontazione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">A seguito dell&apos;esito positivo della verifica amministrativa e tecnica delle rendicontazione, il responsabile di Area Prevenzione emette il provvedimento di rendicontazione il quale è condizionato dal provvedimento di concessione.</rdfs:comment>
         <rdfs:comment xml:lang="en">When a Bando ISI scheme is awarded or partially awarded, it is then followed up by the Bando ISI financial reporting process.</rdfs:comment>
         <rdfs:label xml:lang="en">Bando ISI Financial Reporting</rdfs:label>
@@ -3271,6 +3441,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoEsclusioneBandoISI -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoEsclusioneBandoISI">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoBandoISI"/>
         <owl:disjointWith>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/haProvvedimentoDiRendicontazione"/>
@@ -3288,7 +3459,10 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConDiniego -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConDiniego">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoDiRendicontazione"/>
         <rdfs:comment xml:lang="it">All&apos;interno della comunicazione di diniego sono esplicitate le motivazioni della scelta; l&apos;Impresa ha un tempo di dieci giorni per presentare le proprie osservazioni in merito alla decisione dell’Istituto. Se l’impresa presenta le proprie osservazioni queste saranno esaminate attraverso nuove verifiche tecniche e amministrative sulla rendicontazione. Viceversa si procederà con il rigetto definitivo e, qualora all’impresa sia stata erogata un‘anticipazione, si procederà con l’escussione della fideiussione. In caso contrario si procede direttamente con il rigetto della pratica.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Bando ISI credit denial refers to the rejection of a Bando ISI application due to inconsistency in their financial reporting as well as other reasons. Applicants who wish to appeal the denial will have 10 working days from the date of their rejection notification to submit their appeal.</rdfs:comment>
+        <rdfs:label xml:lang="en">Bando ISI Credit Denial</rdfs:label>
         <rdfs:label xml:lang="it">Rendicontazione con diniego</rdfs:label>
     </owl:Class>
 
@@ -3297,6 +3471,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConLiquidazioneParziale -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConLiquidazioneParziale">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoDiRendicontazione"/>
         <rdfs:comment xml:lang="it">Nel caso di provvedimento di rendicontazione con liquidazione parziale, all&apos;interno della comunicazione vengono esplicitate le motivazioni della scelta; l&apos;Impresa ha un tempo di dieci giorni per presentare le proprie osservazioni in merito alla decisione dell’Istituto.</rdfs:comment>
         <rdfs:comment xml:lang="en">The accounting reporting performance is only partially satisfied</rdfs:comment>
         <rdfs:label xml:lang="en">Partially satisfied Bando ISI financial reporting</rdfs:label>
@@ -3308,6 +3483,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConLiquidazioneTotale -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/RendicontazioneConLiquidazioneTotale">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/ProvvedimentoDiRendicontazione"/>
         <rdfs:comment xml:lang="en">A Bando ISI financial reporting that satisfies compliance requirements</rdfs:comment>
         <rdfs:comment xml:lang="it">La domanda progetto prevenzione è stata ammessa in modo totale al finanziamento</rdfs:comment>
         <rdfs:label xml:lang="en">Compliant Bando ISI finacial reporting</rdfs:label>
@@ -3319,7 +3495,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/StatoPassatoPraticaProgettoPrevenzione -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/StatoPassatoPraticaProgettoPrevenzione">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -3328,31 +3504,31 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/dataOperazioneStatoPassatoPraticaProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/importoProgettoRichiestoStatoPassatoPraticaProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/importoProgettoStatoPassatoPraticaProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/statoPraticaStatoPassatoPraticaProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Each arvhived application can still be access through the Bando ISI archive. Each stage of an application is tracked and stored as a record.</rdfs:comment>
         <rdfs:comment xml:lang="it">Lo stato passato di una pratica. Ogni pratica avrà uno o più stati passati che modellano l&apos;evolversi della pratica nel tempo.</rdfs:comment>
         <rdfs:label xml:lang="en">Bando ISI Archive</rdfs:label>
@@ -3364,7 +3540,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/StatoVerificaPraticaProgettoPrevenzione -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/StatoVerificaPraticaProgettoPrevenzione">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -3373,13 +3549,13 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/dataOperazioneVerificaPraticaProgettoPrevenzione"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/verificaValutatoreAmministrativo"/>
@@ -3415,7 +3591,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/TipoInterventoBandiISI">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -3424,8 +3600,8 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -3434,43 +3610,43 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/descrizioneTipoIntervento"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/dettaglioTipoIntervento"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/idTipoIntervento"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/misurazioneMiglioramentoTipoIntervento"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/rischioTipoIntervento"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/soluzioneTipoIntervento"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">Indica le tipologie di intervento che si intende effettuare con il progetto di prevenzione relativamente ad uno degli assi del bando ISI.</rdfs:comment>
         <rdfs:comment xml:lang="en">The different strategies availabe in the INAIL Bando ISI program.</rdfs:comment>
         <rdfs:label xml:lang="en">Bando ISI program strategy</rdfs:label>
@@ -3482,7 +3658,7 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/TipologiaDiAcquistoProgettoPrevenzione -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/TipologiaDiAcquistoProgettoPrevenzione">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -3491,19 +3667,19 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/descrizioneTipoAcquisto"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/idTipoAcquisto"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">Indica le tipologie di acquisto relative al progetto di prevenzione relativamente ad uno degli assi del bando ISI.</rdfs:comment>
         <rdfs:comment xml:lang="en">The availabe trades or purchases listed under a particular area or appendix of the INAIL Bando ISI program and specified in a risk management plan application form.</rdfs:comment>
         <rdfs:label xml:lang="it">Tipologia di acquisto progetto prevenzione</rdfs:label>
@@ -3515,19 +3691,19 @@
     <!-- https://w3id.org/italia/work-accident/onto/risk_management/VerificaPraticaProgettoPrevenzione -->
 
     <owl:Class rdf:about="https://w3id.org/italia/work-accident/onto/risk_management/VerificaPraticaProgettoPrevenzione">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/haAssegnazioneRuolo"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/verificaPraticaProgettoPrevenzioneHaStato"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
@@ -3536,7 +3712,7 @@
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/work-accident/onto/risk_management/verificaValutatoreAmministrativo"/>
