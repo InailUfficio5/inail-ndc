@@ -1,5 +1,5 @@
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/italia/work-accident/onto/adm_serv/> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/italia/work-accident/onto/adm_serv/2.2> .
+<https://w3id.org/italia/work-accident/onto/adm_serv/> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/italia/work-accident/onto/adm_serv/2.3> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/italia/onto/CLV/> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/italia/onto/COV/> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/italia/onto/CPV/> .
@@ -15,7 +15,7 @@
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <http://purl.org/dc/terms/issued> "2022-09-06T00:00:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ITA> .
-<https://w3id.org/italia/work-accident/onto/adm_serv/> <http://purl.org/dc/terms/modified> "2025-06-24T00:00:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/italia/work-accident/onto/adm_serv/> <http://purl.org/dc/terms/modified> "2026-10-13T00:00:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <http://purl.org/dc/terms/publisher> <https://w3id.org/italia/work-accident/data/organization/inail> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <http://purl.org/dc/terms/rightsHolder> <https://w3id.org/italia/work-accident/data/organization/inail> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <http://purl.org/dc/terms/title> "INAIL Ontology about Injuries and Occupational Diseases"@en .
@@ -25,8 +25,8 @@
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/italia/work-accident/onto/adm_serv/> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <http://www.w3.org/2000/01/rdf-schema#label> "INAIL Ontology  about Injuries and Occupational Diseases"@en .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <http://www.w3.org/2000/01/rdf-schema#label> "Ontologia INAIL relativa a Infortuni e Malattie Professionali"@it .
-<https://w3id.org/italia/work-accident/onto/adm_serv/> <http://www.w3.org/2002/07/owl#versionInfo> "Version 2.2 - Modified on 24 June 2025"@en .
-<https://w3id.org/italia/work-accident/onto/adm_serv/> <http://www.w3.org/2002/07/owl#versionInfo> "Versione 2.2 - Modificata il 24 Giugno 2025"@it .
+<https://w3id.org/italia/work-accident/onto/adm_serv/> <http://www.w3.org/2002/07/owl#versionInfo> "Version 2.3 - Modified on 13 October 2026"@en .
+<https://w3id.org/italia/work-accident/onto/adm_serv/> <http://www.w3.org/2002/07/owl#versionInfo> "Versione 2.3 - Modificata il 13 Ottobre 2026"@it .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <http://www.w3.org/ns/dcat#contactPoint> <https://w3id.org/italia/work-accident/data/organization/ufficioV> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <http://www.w3.org/ns/dcat#keyword> "Evento Lesivo"@it .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <http://www.w3.org/ns/dcat#keyword> "Gestione Assicurativa"@it .
@@ -37,7 +37,7 @@
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <http://www.w3.org/ns/dcat#keyword> "Occupational Injury"@en .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <http://www.w3.org/ns/dcat#keyword> "Work Accident"@en .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/data-theme/SOCI> .
-<https://w3id.org/italia/work-accident/onto/adm_serv/> <http://www.w3.org/ns/prov#wasDerivedFrom> <https://w3id.org/italia/work-accident/onto/adm_serv/2.1> .
+<https://w3id.org/italia/work-accident/onto/adm_serv/> <http://www.w3.org/ns/prov#wasDerivedFrom> <https://w3id.org/italia/work-accident/onto/adm_serv/2.2> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <https://w3id.org/italia/onto/ADMS/acronym> "inail" .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <https://w3id.org/italia/onto/ADMS/hasContributor> <https://w3id.org/italia/work-accident/data/organization/td> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <https://w3id.org/italia/onto/ADMS/hasFormalityLevel> <https://w3id.org/italia/onto/ADMS/Formal> .
@@ -53,10 +53,10 @@
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <https://w3id.org/italia/onto/ADMS/hasTask> <https://w3id.org/italia/onto/ADMS/AnnotationTask> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <https://w3id.org/italia/onto/ADMS/hasTask> <https://w3id.org/italia/onto/ADMS/QueryFormulationTask> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <https://w3id.org/italia/onto/ADMS/hasTask> <https://w3id.org/italia/onto/ADMS/SearchTask> .
-<https://w3id.org/italia/work-accident/onto/adm_serv/> <https://w3id.org/italia/onto/ADMS/last> <https://w3id.org/italia/work-accident/onto/adm_serv/2.2> .
+<https://w3id.org/italia/work-accident/onto/adm_serv/> <https://w3id.org/italia/onto/ADMS/last> <https://w3id.org/italia/work-accident/onto/adm_serv/2.3> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <https://w3id.org/italia/onto/ADMS/officialURI> "https://w3id.org/italia/work-accident/onto/adm_serv"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <https://w3id.org/italia/onto/ADMS/prefix> "inailas" .
-<https://w3id.org/italia/work-accident/onto/adm_serv/> <https://w3id.org/italia/onto/ADMS/prev> <https://w3id.org/italia/work-accident/onto/adm_serv/2.1> .
+<https://w3id.org/italia/work-accident/onto/adm_serv/> <https://w3id.org/italia/onto/ADMS/prev> <https://w3id.org/italia/work-accident/onto/adm_serv/2.2> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <https://w3id.org/italia/onto/ADMS/semanticAssetInUse> <https://w3id.org/italia/data/project/NDC> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <https://w3id.org/italia/onto/ADMS/status> "catalogued" .
 <https://w3id.org/italia/work-accident/onto/adm_serv/> <https://w3id.org/italia/onto/ADMS/status> "published" .
@@ -74,7 +74,6 @@
 <http://www.w3.org/2006/vcard/ns#fn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <http://www.w3.org/2006/vcard/ns#hasEmail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/italia/onto/l0/controlledVocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <http://www.w3.org/2001/XMLSchema#boolean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 <http://www.w3.org/2001/XMLSchema#double> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/appartieneAGrandeGruppoVoceDiTariffa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -305,6 +304,11 @@
 <https://w3id.org/italia/work-accident/onto/adm_serv/malattiaProfessionaleHaDefinizioneAmministrativa> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/work-accident/onto/adm_serv/MalattiaProfessionale> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/malattiaProfessionaleHaDefinizioneAmministrativa> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/malattiaProfessionaleHaDefinizioneAmministrativa> <http://www.w3.org/2000/01/rdf-schema#label> "malattia professionale ha definizione amministrativa"@it .
+<https://w3id.org/italia/work-accident/onto/adm_serv/malattiaProfessionaleHaDefinizioneAmministrativaEsitoMortale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/italia/work-accident/onto/adm_serv/malattiaProfessionaleHaDefinizioneAmministrativaEsitoMortale> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/italia/work-accident/onto/adm_serv/malattiaProfessionaleHaDefinizioneAmministrativa> .
+<https://w3id.org/italia/work-accident/onto/adm_serv/malattiaProfessionaleHaDefinizioneAmministrativaEsitoMortale> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/work-accident/onto/adm_serv/MalattiaProfessionale> .
+<https://w3id.org/italia/work-accident/onto/adm_serv/malattiaProfessionaleHaDefinizioneAmministrativaEsitoMortale> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/italia/work-accident/onto/adm_serv/malattiaProfessionaleHaDefinizioneAmministrativaEsitoMortale> <http://www.w3.org/2000/01/rdf-schema#label> "malattia professionale ha definizione amministrativa dell'esito mortale"@it .
 <https://w3id.org/italia/work-accident/onto/adm_serv/malattiaProfessionaleHaGradoDiInabilitaAssunto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/malattiaProfessionaleHaGradoDiInabilitaAssunto> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/work-accident/onto/adm_serv/MalattiaProfessionale> .
 <https://w3id.org/italia/work-accident/onto/adm_serv/malattiaProfessionaleHaGradoDiInabilitaAssunto> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/work-accident/onto/adm_serv/GradoDiInabilitaINAIL> .

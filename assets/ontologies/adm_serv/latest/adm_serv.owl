@@ -24,7 +24,7 @@
      xmlns:INAILCore="https://w3id.org/italia/work-accident/onto/core/"
      xmlns:INAILService="https://w3id.org/italia/work-accident/onto/adm_serv/">
     <owl:Ontology rdf:about="https://w3id.org/italia/work-accident/onto/adm_serv/">
-        <owl:versionIRI rdf:resource="https://w3id.org/italia/work-accident/onto/adm_serv/2.2"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/italia/work-accident/onto/adm_serv/2.3"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/CLV/"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/COV/"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/CPV/"/>
@@ -40,7 +40,7 @@
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-06T00:00:00+00:00</dct:issued>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-24T00:00:00+00:00</dct:modified>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-10-13T00:00:00+00:00</dct:modified>
         <dct:publisher rdf:resource="https://w3id.org/italia/work-accident/data/organization/inail"/>
         <dct:rightsHolder rdf:resource="https://w3id.org/italia/work-accident/data/organization/inail"/>
         <dct:title xml:lang="en">INAIL Ontology about Injuries and Occupational Diseases</dct:title>
@@ -50,8 +50,8 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/work-accident/onto/adm_serv/"/>
         <rdfs:label xml:lang="en">INAIL Ontology  about Injuries and Occupational Diseases</rdfs:label>
         <rdfs:label xml:lang="it">Ontologia INAIL relativa a Infortuni e Malattie Professionali</rdfs:label>
-        <owl:versionInfo xml:lang="en">Version 2.2 - Modified on 24 June 2025</owl:versionInfo>
-        <owl:versionInfo xml:lang="it">Versione 2.2 - Modificata il 24 Giugno 2025</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Version 2.3 - Modified on 13 October 2026</owl:versionInfo>
+        <owl:versionInfo xml:lang="it">Versione 2.3 - Modificata il 13 Ottobre 2026</owl:versionInfo>
         <dcat:contactPoint rdf:resource="https://w3id.org/italia/work-accident/data/organization/ufficioV"/>
         <dcat:keyword xml:lang="it">Evento Lesivo</dcat:keyword>
         <dcat:keyword xml:lang="it">Gestione Assicurativa</dcat:keyword>
@@ -62,7 +62,7 @@
         <dcat:keyword xml:lang="en">Occupational Injury</dcat:keyword>
         <dcat:keyword xml:lang="en">Work Accident</dcat:keyword>
         <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI"/>
-        <prov:wasDerivedFrom rdf:resource="https://w3id.org/italia/work-accident/onto/adm_serv/2.1"/>
+        <prov:wasDerivedFrom rdf:resource="https://w3id.org/italia/work-accident/onto/adm_serv/2.2"/>
         <adms:acronym>inail</adms:acronym>
         <adms:hasContributor rdf:resource="https://w3id.org/italia/work-accident/data/organization/td"/>
         <adms:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
@@ -78,10 +78,10 @@
         <adms:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/AnnotationTask"/>
         <adms:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/QueryFormulationTask"/>
         <adms:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/SearchTask"/>
-        <adms:last rdf:resource="https://w3id.org/italia/work-accident/onto/adm_serv/2.2"/>
+        <adms:last rdf:resource="https://w3id.org/italia/work-accident/onto/adm_serv/2.3"/>
         <adms:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/italia/work-accident/onto/adm_serv</adms:officialURI>
         <adms:prefix>inailas</adms:prefix>
-        <adms:prev rdf:resource="https://w3id.org/italia/work-accident/onto/adm_serv/2.1"/>
+        <adms:prev rdf:resource="https://w3id.org/italia/work-accident/onto/adm_serv/2.2"/>
         <adms:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/NDC"/>
         <adms:status>catalogued</adms:status>
         <adms:status>published</adms:status>
@@ -162,10 +162,6 @@
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
 
-
-    <!-- https://w3id.org/italia/onto/l0/controlledVocabulary -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/l0/controlledVocabulary"/>
 
 
     <!--
@@ -668,14 +664,16 @@
     </owl:ObjectProperty>
 
 
+
     <!-- https://w3id.org/italia/work-accident/onto/adm_serv/infortunioHaDefinizioneAmministrativaEsitoMortale -->
 
-	<owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/adm_serv/infortunioHaDefinizioneAmministrativaEsitoMortale">
-		<rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/work-accident/onto/adm_serv/infortunioHaDefinizioneAmministrativa"/>
-		<rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/adm_serv/InfortunioSulLavoro"/>
-		<rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-		<rdfs:label xml:lang="it">infortunio ha definizione amministrativa dell'esito mortale</rdfs:label>
-	</owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/adm_serv/infortunioHaDefinizioneAmministrativaEsitoMortale">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/work-accident/onto/adm_serv/infortunioHaDefinizioneAmministrativa"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/adm_serv/InfortunioSulLavoro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="it">infortunio ha definizione amministrativa dell&apos;esito mortale</rdfs:label>
+    </owl:ObjectProperty>
+
 
 
     <!-- https://w3id.org/italia/work-accident/onto/adm_serv/infortunioHaGradoDiInabilitaAssunto -->
@@ -754,6 +752,17 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/adm_serv/MalattiaProfessionale"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:label xml:lang="it">malattia professionale ha definizione amministrativa</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/work-accident/onto/adm_serv/malattiaProfessionaleHaDefinizioneAmministrativaEsitoMortale -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/work-accident/onto/adm_serv/malattiaProfessionaleHaDefinizioneAmministrativaEsitoMortale">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/work-accident/onto/adm_serv/malattiaProfessionaleHaDefinizioneAmministrativa"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/work-accident/onto/adm_serv/MalattiaProfessionale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="it">malattia professionale ha definizione amministrativa dell&apos;esito mortale</rdfs:label>
     </owl:ObjectProperty>
 
 
@@ -3469,7 +3478,7 @@
         <rdfs:comment xml:lang="it">Decodifica dell&apos;agente, della lavorazione o dell&apos;esposizione che può essere causa o concausa di malattia professionale</rdfs:comment>
         <rdfs:label xml:lang="it">Agente causale INAIL</rdfs:label>
         <rdfs:label xml:lang="en">INAIL casual agent</rdfs:label>
-		<L0:controlledVocabulary>https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/agente_causale</L0:controlledVocabulary>
+        <L0:controlledVocabulary rdf:resource="https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/agente_causale"/>
     </owl:Class>
 
 
@@ -5630,7 +5639,7 @@
         <rdfs:comment xml:lang="it">Il mansionario Inail è realizzato in un&apos;ottica di analisi del rischio e individua le singole professioni. Il mansionario Istat, invece, riporta anche il dettaglio di gruppi di mansioni affini ed è molto specifico solo per alcune professioni (es. Medici). </rdfs:comment>
         <rdfs:label xml:lang="en">INAIL job task</rdfs:label>
         <rdfs:label xml:lang="it">Mansione INAIL</rdfs:label>
-		<L0:controlledVocabulary>https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/mansione</L0:controlledVocabulary>
+        <L0:controlledVocabulary rdf:resource="https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/mansione"/>
     </owl:Class>
 
 
@@ -6608,7 +6617,7 @@
         <rdfs:comment xml:lang="it">Classificazione dei luoghi in cui è avvenuto l&apos;evento lesivo.</rdfs:comment>
         <rdfs:label xml:lang="en">INAIL type of happening place</rdfs:label>
         <rdfs:label xml:lang="it">Tipo luogo accadimento INAIL</rdfs:label>
-		<L0:controlledVocabulary>https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/luogo_accadimento</L0:controlledVocabulary>
+        <L0:controlledVocabulary rdf:resource="https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/luogo_accadimento"/>
     </owl:Class>
 
 
